@@ -1,0 +1,24 @@
+org.jfree.data.DataUtilities.equal : if r0 != null >>>>>>>> org.jfree.data.DataUtilities.equal : if r1 != null
+org.jfree.data.DataUtilities.equal : if r0 != null >>>>>>>> org.jfree.data.DataUtilities.equal : if r1 != null
+org.jfree.data.DataUtilities.equal : if r1 != null >>>>>>>> org.jfree.data.DataUtilities.equal : return 0
+org.jfree.data.DataUtilities.equal : if r1 != null >>>>>>>> org.jfree.data.DataUtilities.equal : $i1 = lengthof r0
+org.jfree.data.DataUtilities.equal : $i1 = lengthof r0 >>>>>>>> org.jfree.data.DataUtilities.equal : $i2 = lengthof r1
+org.jfree.data.DataUtilities.equal : $i2 = lengthof r1 >>>>>>>> org.jfree.data.DataUtilities.equal : if $i1 == $i2
+org.jfree.data.DataUtilities.equal : if $i1 == $i2 >>>>>>>> org.jfree.data.DataUtilities.equal : return 0
+org.jfree.data.DataUtilities.equal : if $i1 == $i2 >>>>>>>> org.jfree.data.DataUtilities.equal : i0 = 0
+org.jfree.data.DataUtilities.equal : i0 = 0 >>>>>>>> org.jfree.data.DataUtilities.equal : $i3 = lengthof r0
+org.jfree.data.DataUtilities.equal : $i3 = lengthof r0 >>>>>>>> org.jfree.data.DataUtilities.equal : if i0 >= $i3
+org.jfree.data.DataUtilities.equal : if i0 >= $i3 >>>>>>>> org.jfree.data.DataUtilities.equal : $r2 = r0[i0]
+org.jfree.data.DataUtilities.equal : if i0 >= $i3 >>>>>>>> org.jfree.data.DataUtilities.equal : return 1
+org.jfree.data.DataUtilities.equal : $r2 = r0[i0] >>>>>>>> org.jfree.data.DataUtilities.equal : $r3 = r1[i0]
+org.jfree.data.DataUtilities.equal : $r3 = r1[i0] >>>>>>>> org.jfree.data.DataUtilities.equal : $z1 = staticinvoke <java.util.Arrays: boolean equals(double[],double[])>($r2, $r3)
+org.jfree.data.DataUtilities.equal : $z1 = staticinvoke <java.util.Arrays: boolean equals(double[],double[])>($r2, $r3) >>>>>>>> org.jfree.data.DataUtilities.equal : if $z1 != 0
+org.jfree.data.DataUtilities.equal : if $z1 != 0 >>>>>>>> org.jfree.data.DataUtilities.equal : return 0
+org.jfree.data.DataUtilities.equal : if $z1 != 0 >>>>>>>> org.jfree.data.DataUtilities.equal : i0 = i0 + 1
+org.jfree.data.DataUtilities.equal : i0 = i0 + 1 >>>>>>>> org.jfree.data.DataUtilities.equal : goto [?= $i3 = lengthof r0]
+org.jfree.data.DataUtilities.equal : goto [?= $i3 = lengthof r0] >>>>>>>> org.jfree.data.DataUtilities.equal : $i3 = lengthof r0
+org.jfree.data.DataUtilities.equal : if r1 != null >>>>>>>> org.jfree.data.DataUtilities.equal : $z0 = 1
+org.jfree.data.DataUtilities.equal : if r1 != null >>>>>>>> org.jfree.data.DataUtilities.equal : $z0 = 0
+org.jfree.data.DataUtilities.equal : $z0 = 0 >>>>>>>> org.jfree.data.DataUtilities.equal : return $z0
+org.jfree.data.DataUtilities.equal : $z0 = 1 >>>>>>>> org.jfree.data.DataUtilities.equal : goto [?= return $z0]
+org.jfree.data.DataUtilities.equal : goto [?= return $z0] >>>>>>>> org.jfree.data.DataUtilities.equal : return $z0

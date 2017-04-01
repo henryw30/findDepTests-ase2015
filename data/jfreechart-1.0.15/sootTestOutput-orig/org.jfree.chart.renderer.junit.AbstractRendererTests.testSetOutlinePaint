@@ -1,0 +1,15 @@
+org.jfree.chart.renderer.AbstractRenderer.lookupSeriesOutlinePaint : $r4 = r0.<org.jfree.chart.renderer.AbstractRenderer: java.awt.Paint outlinePaint>
+org.jfree.chart.renderer.AbstractRenderer.lookupSeriesOutlinePaint : $r3 = r0.<org.jfree.chart.renderer.AbstractRenderer: java.awt.Paint outlinePaint>
+org.jfree.chart.renderer.AbstractRenderer.setOutlinePaint : virtualinvoke r0.<org.jfree.chart.renderer.AbstractRenderer: void fireChangeEvent()>()
+org.jfree.chart.renderer.AbstractRenderer.setOutlinePaint : if z0 == 0 goto return
+org.jfree.chart.renderer.AbstractRenderer.setOutlinePaint : virtualinvoke r0.<org.jfree.chart.renderer.AbstractRenderer: void setOutlinePaint(java.awt.Paint,boolean)>(r1, 1)
+org.jfree.chart.renderer.AbstractRenderer.setOutlinePaint : r0.<org.jfree.chart.renderer.AbstractRenderer: java.awt.Paint outlinePaint> = r1
+org.jfree.chart.renderer.AbstractRenderer.getItemOutlinePaint : $r1 = virtualinvoke r0.<org.jfree.chart.renderer.AbstractRenderer: java.awt.Paint lookupSeriesOutlinePaint(int)>(i0)
+org.jfree.chart.renderer.AbstractRenderer.fireChangeEvent : $r1 = new org.jfree.chart.event.RendererChangeEvent
+org.jfree.chart.renderer.AbstractRenderer.notifyListeners : $r3 = r0.<org.jfree.chart.renderer.AbstractRenderer: javax.swing.event.EventListenerList listenerList>
+org.jfree.chart.renderer.AbstractRenderer.notifyListeners : $i1 = lengthof r2
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null goto return
+org.jfree.chart.renderer.AbstractRenderer.setBaseLegendShape : virtualinvoke r0.<org.jfree.chart.renderer.AbstractRenderer: void fireChangeEvent()>()
+org.jfree.chart.renderer.AbstractRenderer.setBaseLegendShape : r0.<org.jfree.chart.renderer.AbstractRenderer: java.awt.Shape baseLegendShape> = r1
+org.jfree.chart.renderer.category.BarRenderer.getDefaultShadowsVisible : $z0 = <org.jfree.chart.renderer.category.BarRenderer: boolean defaultShadowsVisible>
+org.jfree.chart.renderer.category.BarRenderer.getDefaultBarPainter : $r0 = <org.jfree.chart.renderer.category.BarRenderer: org.jfree.chart.renderer.category.BarPainter defaultBarPainter>

@@ -1,0 +1,76 @@
+org.jfree.data.general.AbstractDataset.writeObject : virtualinvoke r1.<java.io.ObjectOutputStream: void defaultWriteObject()>() >>>>>>>> org.jfree.data.general.AbstractDataset.readObject : virtualinvoke r1.<java.io.ObjectInputStream: void defaultReadObject()>()
+org.jfree.data.general.AbstractDataset.readObject : virtualinvoke r1.<java.io.ObjectInputStream: void defaultReadObject()>() >>>>>>>> org.jfree.data.general.AbstractDataset.readObject : $r2 = new javax.swing.event.EventListenerList
+org.jfree.data.general.AbstractDataset.readObject : $r2 = new javax.swing.event.EventListenerList >>>>>>>> org.jfree.data.general.AbstractDataset.readObject : specialinvoke $r2.<javax.swing.event.EventListenerList: void <init>()>()
+org.jfree.data.general.AbstractDataset.readObject : specialinvoke $r2.<javax.swing.event.EventListenerList: void <init>()>() >>>>>>>> org.jfree.data.general.AbstractDataset.readObject : r0.<org.jfree.data.general.AbstractDataset: javax.swing.event.EventListenerList listenerList> = $r2
+org.jfree.data.general.AbstractDataset.readObject : r0.<org.jfree.data.general.AbstractDataset: javax.swing.event.EventListenerList listenerList> = $r2 >>>>>>>> org.jfree.data.general.AbstractDataset.readObject : virtualinvoke r1.<java.io.ObjectInputStream: void registerValidation(java.io.ObjectInputValidation,int)>(r0, 10)
+org.jfree.data.general.AbstractDataset.readObject : virtualinvoke r1.<java.io.ObjectInputStream: void registerValidation(java.io.ObjectInputValidation,int)>(r0, 10) >>>>>>>> org.jfree.data.general.AbstractDataset.validateObject : virtualinvoke r0.<org.jfree.data.general.AbstractDataset: void fireDatasetChanged()>()
+org.jfree.data.general.AbstractDataset.validateObject : virtualinvoke r0.<org.jfree.data.general.AbstractDataset: void fireDatasetChanged()>() >>>>>>>> org.jfree.data.general.AbstractDataset.fireDatasetChanged : $r1 = new org.jfree.data.general.DatasetChangeEvent
+org.jfree.data.general.AbstractDataset.fireDatasetChanged : $r1 = new org.jfree.data.general.DatasetChangeEvent >>>>>>>> org.jfree.data.general.AbstractDataset.fireDatasetChanged : specialinvoke $r1.<org.jfree.data.general.DatasetChangeEvent: void <init>(java.lang.Object,org.jfree.data.general.Dataset)>(r0, r0)
+org.jfree.data.general.AbstractDataset.fireDatasetChanged : specialinvoke $r1.<org.jfree.data.general.DatasetChangeEvent: void <init>(java.lang.Object,org.jfree.data.general.Dataset)>(r0, r0) >>>>>>>> org.jfree.data.general.AbstractDataset.fireDatasetChanged : virtualinvoke r0.<org.jfree.data.general.AbstractDataset: void notifyListeners(org.jfree.data.general.DatasetChangeEvent)>($r1)
+org.jfree.data.general.AbstractDataset.fireDatasetChanged : virtualinvoke r0.<org.jfree.data.general.AbstractDataset: void notifyListeners(org.jfree.data.general.DatasetChangeEvent)>($r1) >>>>>>>> org.jfree.data.general.AbstractDataset.notifyListeners : $r3 = r0.<org.jfree.data.general.AbstractDataset: javax.swing.event.EventListenerList listenerList>
+org.jfree.data.general.AbstractDataset.notifyListeners : $r3 = r0.<org.jfree.data.general.AbstractDataset: javax.swing.event.EventListenerList listenerList> >>>>>>>> org.jfree.data.general.AbstractDataset.notifyListeners : r2 = virtualinvoke $r3.<javax.swing.event.EventListenerList: java.lang.Object[] getListenerList()>()
+org.jfree.data.general.AbstractDataset.notifyListeners : r2 = virtualinvoke $r3.<javax.swing.event.EventListenerList: java.lang.Object[] getListenerList()>() >>>>>>>> org.jfree.data.general.AbstractDataset.notifyListeners : $i1 = lengthof r2
+org.jfree.data.general.AbstractDataset.notifyListeners : $i1 = lengthof r2 >>>>>>>> org.jfree.data.general.AbstractDataset.notifyListeners : i0 = $i1 - 2
+org.jfree.data.general.AbstractDataset.notifyListeners : i0 = $i1 - 2 >>>>>>>> org.jfree.data.general.AbstractDataset.notifyListeners : if i0 < 0
+org.jfree.data.general.AbstractDataset.notifyListeners : if i0 < 0 >>>>>>>> org.jfree.data.xy.DefaultXYZDataset.equals : if r1 != r0
+org.jfree.data.xy.DefaultXYZDataset.equals : if r1 != r0 >>>>>>>> org.jfree.data.xy.DefaultXYZDataset.equals : $z0 = r1 instanceof org.jfree.data.xy.DefaultXYZDataset
+org.jfree.data.xy.DefaultXYZDataset.equals : $z0 = r1 instanceof org.jfree.data.xy.DefaultXYZDataset >>>>>>>> org.jfree.data.xy.DefaultXYZDataset.equals : if $z0 != 0
+org.jfree.data.xy.DefaultXYZDataset.equals : if $z0 != 0 >>>>>>>> org.jfree.data.xy.DefaultXYZDataset.equals : r2 = (org.jfree.data.xy.DefaultXYZDataset) r1
+org.jfree.data.xy.DefaultXYZDataset.equals : r2 = (org.jfree.data.xy.DefaultXYZDataset) r1 >>>>>>>> org.jfree.data.xy.DefaultXYZDataset.equals : $r11 = r0.<org.jfree.data.xy.DefaultXYZDataset: java.util.List seriesKeys>
+org.jfree.data.xy.DefaultXYZDataset.equals : $r11 = r0.<org.jfree.data.xy.DefaultXYZDataset: java.util.List seriesKeys> >>>>>>>> org.jfree.data.xy.DefaultXYZDataset.equals : $r12 = r2.<org.jfree.data.xy.DefaultXYZDataset: java.util.List seriesKeys>
+org.jfree.data.xy.DefaultXYZDataset.equals : $r12 = r2.<org.jfree.data.xy.DefaultXYZDataset: java.util.List seriesKeys> >>>>>>>> org.jfree.data.xy.DefaultXYZDataset.equals : $z1 = interfaceinvoke $r11.<java.util.List: boolean equals(java.lang.Object)>($r12)
+org.jfree.data.xy.DefaultXYZDataset.equals : $z1 = interfaceinvoke $r11.<java.util.List: boolean equals(java.lang.Object)>($r12) >>>>>>>> org.jfree.data.xy.DefaultXYZDataset.equals : if $z1 != 0
+org.jfree.data.xy.DefaultXYZDataset.equals : if $z1 != 0 >>>>>>>> org.jfree.data.xy.DefaultXYZDataset.equals : i0 = 0
+org.jfree.data.xy.DefaultXYZDataset.equals : i0 = 0 >>>>>>>> org.jfree.data.xy.DefaultXYZDataset.equals : $r13 = r0.<org.jfree.data.xy.DefaultXYZDataset: java.util.List seriesList>
+org.jfree.data.xy.DefaultXYZDataset.equals : $r13 = r0.<org.jfree.data.xy.DefaultXYZDataset: java.util.List seriesList> >>>>>>>> org.jfree.data.xy.DefaultXYZDataset.equals : $i1 = interfaceinvoke $r13.<java.util.List: int size()>()
+org.jfree.data.xy.DefaultXYZDataset.equals : $i1 = interfaceinvoke $r13.<java.util.List: int size()>() >>>>>>>> org.jfree.data.xy.DefaultXYZDataset.equals : if i0 >= $i1
+org.jfree.data.xy.DefaultXYZDataset.equals : if i0 >= $i1 >>>>>>>> org.jfree.data.xy.DefaultXYZDataset.equals : return 1
+org.jfree.data.xy.DefaultXYZDataset.equals : return 1 >>>>>>>> org.jfree.data.xy.DefaultXYZDataset.addSeries : if r1 != null
+org.jfree.data.xy.DefaultXYZDataset.addSeries : if r1 != null >>>>>>>> org.jfree.data.xy.DefaultXYZDataset.addSeries : if r2 != null
+org.jfree.data.xy.DefaultXYZDataset.addSeries : if r2 != null >>>>>>>> org.jfree.data.xy.DefaultXYZDataset.addSeries : $i1 = lengthof r2
+org.jfree.data.xy.DefaultXYZDataset.addSeries : $i1 = lengthof r2 >>>>>>>> org.jfree.data.xy.DefaultXYZDataset.addSeries : if $i1 == 3
+org.jfree.data.xy.DefaultXYZDataset.addSeries : if $i1 == 3 >>>>>>>> org.jfree.data.xy.DefaultXYZDataset.addSeries : $r6 = r2[0]
+org.jfree.data.xy.DefaultXYZDataset.addSeries : $r6 = r2[0] >>>>>>>> org.jfree.data.xy.DefaultXYZDataset.addSeries : $i2 = lengthof $r6
+org.jfree.data.xy.DefaultXYZDataset.addSeries : $i2 = lengthof $r6 >>>>>>>> org.jfree.data.xy.DefaultXYZDataset.addSeries : $r7 = r2[1]
+org.jfree.data.xy.DefaultXYZDataset.addSeries : $r7 = r2[1] >>>>>>>> org.jfree.data.xy.DefaultXYZDataset.addSeries : $i3 = lengthof $r7
+org.jfree.data.xy.DefaultXYZDataset.addSeries : $i3 = lengthof $r7 >>>>>>>> org.jfree.data.xy.DefaultXYZDataset.addSeries : if $i2 != $i3
+org.jfree.data.xy.DefaultXYZDataset.addSeries : if $i2 != $i3 >>>>>>>> org.jfree.data.xy.DefaultXYZDataset.addSeries : $r8 = r2[0]
+org.jfree.data.xy.DefaultXYZDataset.addSeries : $r8 = r2[0] >>>>>>>> org.jfree.data.xy.DefaultXYZDataset.addSeries : $i4 = lengthof $r8
+org.jfree.data.xy.DefaultXYZDataset.addSeries : $i4 = lengthof $r8 >>>>>>>> org.jfree.data.xy.DefaultXYZDataset.addSeries : $r9 = r2[2]
+org.jfree.data.xy.DefaultXYZDataset.addSeries : $r9 = r2[2] >>>>>>>> org.jfree.data.xy.DefaultXYZDataset.addSeries : $i5 = lengthof $r9
+org.jfree.data.xy.DefaultXYZDataset.addSeries : $i5 = lengthof $r9 >>>>>>>> org.jfree.data.xy.DefaultXYZDataset.addSeries : if $i4 == $i5
+org.jfree.data.xy.DefaultXYZDataset.addSeries : if $i4 == $i5 >>>>>>>> org.jfree.data.xy.DefaultXYZDataset.addSeries : i0 = virtualinvoke r0.<org.jfree.data.xy.DefaultXYZDataset: int indexOf(java.lang.Comparable)>(r1)
+org.jfree.data.xy.DefaultXYZDataset.addSeries : i0 = virtualinvoke r0.<org.jfree.data.xy.DefaultXYZDataset: int indexOf(java.lang.Comparable)>(r1) >>>>>>>> org.jfree.data.xy.DefaultXYZDataset.indexOf : $r2 = r0.<org.jfree.data.xy.DefaultXYZDataset: java.util.List seriesKeys>
+org.jfree.data.xy.DefaultXYZDataset.indexOf : $r2 = r0.<org.jfree.data.xy.DefaultXYZDataset: java.util.List seriesKeys> >>>>>>>> org.jfree.data.xy.DefaultXYZDataset.indexOf : $i0 = interfaceinvoke $r2.<java.util.List: int indexOf(java.lang.Object)>(r1)
+org.jfree.data.xy.DefaultXYZDataset.indexOf : $i0 = interfaceinvoke $r2.<java.util.List: int indexOf(java.lang.Object)>(r1) >>>>>>>> org.jfree.data.xy.DefaultXYZDataset.indexOf : return $i0
+org.jfree.data.xy.DefaultXYZDataset.indexOf : return $i0 >>>>>>>> org.jfree.data.xy.DefaultXYZDataset.addSeries : if i0 != -1
+org.jfree.data.xy.DefaultXYZDataset.addSeries : if i0 != -1 >>>>>>>> org.jfree.data.xy.DefaultXYZDataset.addSeries : $r11 = r0.<org.jfree.data.xy.DefaultXYZDataset: java.util.List seriesKeys>
+org.jfree.data.xy.DefaultXYZDataset.addSeries : $r11 = r0.<org.jfree.data.xy.DefaultXYZDataset: java.util.List seriesKeys> >>>>>>>> org.jfree.data.xy.DefaultXYZDataset.addSeries : interfaceinvoke $r11.<java.util.List: boolean add(java.lang.Object)>(r1)
+org.jfree.data.xy.DefaultXYZDataset.addSeries : interfaceinvoke $r11.<java.util.List: boolean add(java.lang.Object)>(r1) >>>>>>>> org.jfree.data.xy.DefaultXYZDataset.addSeries : $r12 = r0.<org.jfree.data.xy.DefaultXYZDataset: java.util.List seriesList>
+org.jfree.data.xy.DefaultXYZDataset.addSeries : $r12 = r0.<org.jfree.data.xy.DefaultXYZDataset: java.util.List seriesList> >>>>>>>> org.jfree.data.xy.DefaultXYZDataset.addSeries : interfaceinvoke $r12.<java.util.List: boolean add(java.lang.Object)>(r2)
+org.jfree.data.xy.DefaultXYZDataset.addSeries : interfaceinvoke $r12.<java.util.List: boolean add(java.lang.Object)>(r2) >>>>>>>> org.jfree.data.xy.DefaultXYZDataset.addSeries : goto [?= $r16 = new org.jfree.data.general.DatasetChangeEvent]
+org.jfree.data.xy.DefaultXYZDataset.addSeries : goto [?= $r16 = new org.jfree.data.general.DatasetChangeEvent] >>>>>>>> org.jfree.data.xy.DefaultXYZDataset.addSeries : $r16 = new org.jfree.data.general.DatasetChangeEvent
+org.jfree.data.xy.DefaultXYZDataset.addSeries : $r16 = new org.jfree.data.general.DatasetChangeEvent >>>>>>>> org.jfree.data.xy.DefaultXYZDataset.addSeries : specialinvoke $r16.<org.jfree.data.general.DatasetChangeEvent: void <init>(java.lang.Object,org.jfree.data.general.Dataset)>(r0, r0)
+org.jfree.data.xy.DefaultXYZDataset.addSeries : specialinvoke $r16.<org.jfree.data.general.DatasetChangeEvent: void <init>(java.lang.Object,org.jfree.data.general.Dataset)>(r0, r0) >>>>>>>> org.jfree.data.xy.DefaultXYZDataset.addSeries : virtualinvoke r0.<org.jfree.data.xy.DefaultXYZDataset: void notifyListeners(org.jfree.data.general.DatasetChangeEvent)>($r16)
+org.jfree.data.xy.DefaultXYZDataset.addSeries : virtualinvoke r0.<org.jfree.data.xy.DefaultXYZDataset: void notifyListeners(org.jfree.data.general.DatasetChangeEvent)>($r16) >>>>>>>> org.jfree.data.xy.DefaultXYZDataset.equals : $r14 = r0.<org.jfree.data.xy.DefaultXYZDataset: java.util.List seriesList>
+org.jfree.data.xy.DefaultXYZDataset.equals : $r14 = r0.<org.jfree.data.xy.DefaultXYZDataset: java.util.List seriesList> >>>>>>>> org.jfree.data.xy.DefaultXYZDataset.equals : $r15 = interfaceinvoke $r14.<java.util.List: java.lang.Object get(int)>(i0)
+org.jfree.data.xy.DefaultXYZDataset.equals : $r15 = interfaceinvoke $r14.<java.util.List: java.lang.Object get(int)>(i0) >>>>>>>> org.jfree.data.xy.DefaultXYZDataset.equals : $r16 = (double[][]) $r15
+org.jfree.data.xy.DefaultXYZDataset.equals : $r16 = (double[][]) $r15 >>>>>>>> org.jfree.data.xy.DefaultXYZDataset.equals : r3 = (double[][]) $r16
+org.jfree.data.xy.DefaultXYZDataset.equals : r3 = (double[][]) $r16 >>>>>>>> org.jfree.data.xy.DefaultXYZDataset.equals : $r17 = r2.<org.jfree.data.xy.DefaultXYZDataset: java.util.List seriesList>
+org.jfree.data.xy.DefaultXYZDataset.equals : $r17 = r2.<org.jfree.data.xy.DefaultXYZDataset: java.util.List seriesList> >>>>>>>> org.jfree.data.xy.DefaultXYZDataset.equals : $r18 = interfaceinvoke $r17.<java.util.List: java.lang.Object get(int)>(i0)
+org.jfree.data.xy.DefaultXYZDataset.equals : $r18 = interfaceinvoke $r17.<java.util.List: java.lang.Object get(int)>(i0) >>>>>>>> org.jfree.data.xy.DefaultXYZDataset.equals : $r19 = (double[][]) $r18
+org.jfree.data.xy.DefaultXYZDataset.equals : $r19 = (double[][]) $r18 >>>>>>>> org.jfree.data.xy.DefaultXYZDataset.equals : r4 = (double[][]) $r19
+org.jfree.data.xy.DefaultXYZDataset.equals : r4 = (double[][]) $r19 >>>>>>>> org.jfree.data.xy.DefaultXYZDataset.equals : r5 = r3[0]
+org.jfree.data.xy.DefaultXYZDataset.equals : r5 = r3[0] >>>>>>>> org.jfree.data.xy.DefaultXYZDataset.equals : r6 = r4[0]
+org.jfree.data.xy.DefaultXYZDataset.equals : r6 = r4[0] >>>>>>>> org.jfree.data.xy.DefaultXYZDataset.equals : $z2 = staticinvoke <java.util.Arrays: boolean equals(double[],double[])>(r5, r6)
+org.jfree.data.xy.DefaultXYZDataset.equals : $z2 = staticinvoke <java.util.Arrays: boolean equals(double[],double[])>(r5, r6) >>>>>>>> org.jfree.data.xy.DefaultXYZDataset.equals : if $z2 != 0
+org.jfree.data.xy.DefaultXYZDataset.equals : if $z2 != 0 >>>>>>>> org.jfree.data.xy.DefaultXYZDataset.equals : r7 = r3[1]
+org.jfree.data.xy.DefaultXYZDataset.equals : r7 = r3[1] >>>>>>>> org.jfree.data.xy.DefaultXYZDataset.equals : r8 = r4[1]
+org.jfree.data.xy.DefaultXYZDataset.equals : r8 = r4[1] >>>>>>>> org.jfree.data.xy.DefaultXYZDataset.equals : $z3 = staticinvoke <java.util.Arrays: boolean equals(double[],double[])>(r7, r8)
+org.jfree.data.xy.DefaultXYZDataset.equals : $z3 = staticinvoke <java.util.Arrays: boolean equals(double[],double[])>(r7, r8) >>>>>>>> org.jfree.data.xy.DefaultXYZDataset.equals : if $z3 != 0
+org.jfree.data.xy.DefaultXYZDataset.equals : if $z3 != 0 >>>>>>>> org.jfree.data.xy.DefaultXYZDataset.equals : r9 = r3[2]
+org.jfree.data.xy.DefaultXYZDataset.equals : r9 = r3[2] >>>>>>>> org.jfree.data.xy.DefaultXYZDataset.equals : r10 = r4[2]
+org.jfree.data.xy.DefaultXYZDataset.equals : r10 = r4[2] >>>>>>>> org.jfree.data.xy.DefaultXYZDataset.equals : $z4 = staticinvoke <java.util.Arrays: boolean equals(double[],double[])>(r9, r10)
+org.jfree.data.xy.DefaultXYZDataset.equals : $z4 = staticinvoke <java.util.Arrays: boolean equals(double[],double[])>(r9, r10) >>>>>>>> org.jfree.data.xy.DefaultXYZDataset.equals : if $z4 != 0
+org.jfree.data.xy.DefaultXYZDataset.equals : if $z4 != 0 >>>>>>>> org.jfree.data.xy.DefaultXYZDataset.equals : i0 = i0 + 1
+org.jfree.data.xy.DefaultXYZDataset.equals : i0 = i0 + 1 >>>>>>>> org.jfree.data.xy.DefaultXYZDataset.equals : goto [?= $r13 = r0.<org.jfree.data.xy.DefaultXYZDataset: java.util.List seriesList>]

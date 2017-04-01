@@ -1,0 +1,69 @@
+org.jfree.data.time.TimePeriodValue.clone : goto [?= return r2]
+org.jfree.data.time.TimePeriodValue.clone : return r2
+org.jfree.data.time.TimePeriodValue.clone : r2 = specialinvoke r0.<java.lang.Object: java.lang.Object clone()>()
+org.jfree.data.time.TimePeriodValue.clone : n0 = null
+org.jfree.data.xy.XYDataItem.getY : $r1 = r0.<org.jfree.data.xy.XYDataItem: java.lang.Number y>
+org.jfree.data.xy.XYSeries.maxIgnoreNaN : return d1
+org.jfree.data.xy.XYSeries.maxIgnoreNaN : $z0 = staticinvoke <java.lang.Double: boolean isNaN(double)>(d0)
+org.jfree.data.time.Week.peg : $l1 = virtualinvoke r0.<org.jfree.data.time.Week: long getLastMillisecond(java.util.Calendar)>(r1)
+org.jfree.data.time.Week.peg : $l0 = virtualinvoke r0.<org.jfree.data.time.Week: long getFirstMillisecond(java.util.Calendar)>(r1)
+org.jfree.data.time.Week.getFirstMillisecond : $s0 = r0.<org.jfree.data.time.Week: short year>
+org.jfree.data.time.Week.getFirstMillisecond : virtualinvoke r2.<java.util.Calendar: void clear()>()
+org.jfree.data.time.Week.getFirstMillisecond : $b1 = r0.<org.jfree.data.time.Week: byte week>
+org.jfree.data.time.Week.getFirstMillisecond : $r3 = virtualinvoke r1.<java.util.Calendar: java.lang.Object clone()>()
+org.jfree.data.time.Week.getFirstMillisecond : virtualinvoke r2.<java.util.Calendar: void set(int,int)>(10, 0)
+org.jfree.data.time.Week.getFirstMillisecond : $l3 = virtualinvoke r2.<java.util.Calendar: long getTimeInMillis()>()
+org.jfree.data.time.Week.getFirstMillisecond : virtualinvoke r2.<java.util.Calendar: void set(int,int)>(12, 0)
+org.jfree.data.time.Week.getFirstMillisecond : virtualinvoke r2.<java.util.Calendar: void set(int,int)>(14, 0)
+org.jfree.data.time.Week.getFirstMillisecond : virtualinvoke r2.<java.util.Calendar: void set(int,int)>(13, 0)
+org.jfree.data.time.Week.getFirstMillisecond : $i2 = virtualinvoke r2.<java.util.Calendar: int getFirstDayOfWeek()>()
+org.jfree.data.xy.XYDataItem.getXValue : $r1 = r0.<org.jfree.data.xy.XYDataItem: java.lang.Number x>
+org.jfree.data.xy.XYSeries.add : if z0 == 0 goto return
+org.jfree.data.xy.XYSeries.add : $i7 = virtualinvoke r0.<org.jfree.data.xy.XYSeries: int getItemCount()>()
+org.jfree.data.xy.XYSeries.add : goto [?= specialinvoke r0.<org.jfree.data.xy.XYSeries: void updateBoundsForAddedItem(org.jfree.data.xy.XYDataItem)>(r3)]
+org.jfree.data.xy.XYSeries.add : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "item")
+org.jfree.data.xy.XYSeries.add : virtualinvoke r0.<org.jfree.data.xy.XYSeries: void add(org.jfree.data.xy.XYDataItem,boolean)>(r4, z0)
+org.jfree.data.xy.XYSeries.add : $r3 = new org.jfree.data.xy.XYDataItem
+org.jfree.data.xy.XYSeries.add : $z1 = r0.<org.jfree.data.xy.XYSeries: boolean autoSort>
+org.jfree.data.xy.XYSeries.add : $r5 = r0.<org.jfree.data.xy.XYSeries: java.util.List data>
+org.jfree.data.xy.XYSeries.add : if i0 >= 0 goto $z2 = r0.<org.jfree.data.xy.XYSeries: boolean allowDuplicateXValues>
+org.jfree.data.xy.XYSeries.add : $r4 = r0.<org.jfree.data.xy.XYSeries: java.util.List data>
+org.jfree.data.xy.XYSeries.add : $r1 = new java.lang.Double
+org.jfree.data.xy.XYSeries.add : specialinvoke r0.<org.jfree.data.xy.XYSeries: void updateBoundsForAddedItem(org.jfree.data.xy.XYDataItem)>(r3)
+org.jfree.data.xy.XYSeries.add : $r2 = virtualinvoke r1.<org.jfree.data.xy.XYDataItem: java.lang.Object clone()>()
+org.jfree.data.xy.XYSeries.getItemCount : $r1 = r0.<org.jfree.data.xy.XYSeries: java.util.List data>
+org.jfree.data.time.TimePeriodValue.getPeriod : $r1 = r0.<org.jfree.data.time.TimePeriodValue: org.jfree.data.time.TimePeriod period>
+org.jfree.data.xy.XYSeries.minIgnoreNaN : return d1
+org.jfree.data.xy.XYSeries.minIgnoreNaN : $z0 = staticinvoke <java.lang.Double: boolean isNaN(double)>(d0)
+org.jfree.data.xy.XYDataItem.getYValue : d0 = #NaN
+org.jfree.data.xy.XYDataItem.getYValue : $r1 = r0.<org.jfree.data.xy.XYDataItem: java.lang.Number y>
+org.jfree.data.xy.XYDataItem.getYValue : return d0
+org.jfree.data.xy.XYDataItem.getYValue : $r2 = r0.<org.jfree.data.xy.XYDataItem: java.lang.Number y>
+org.jfree.data.time.Week.getLastMillisecond : $s0 = r0.<org.jfree.data.time.Week: short year>
+org.jfree.data.time.Week.getLastMillisecond : virtualinvoke r2.<java.util.Calendar: void clear()>()
+org.jfree.data.time.Week.getLastMillisecond : $b1 = r0.<org.jfree.data.time.Week: byte week>
+org.jfree.data.time.Week.getLastMillisecond : $r3 = virtualinvoke r1.<java.util.Calendar: java.lang.Object clone()>()
+org.jfree.data.time.Week.getLastMillisecond : virtualinvoke r2.<java.util.Calendar: void set(int,int)>(10, 0)
+org.jfree.data.time.Week.getLastMillisecond : virtualinvoke r2.<java.util.Calendar: void set(int,int)>(12, 0)
+org.jfree.data.time.Week.getLastMillisecond : $l4 = virtualinvoke r2.<java.util.Calendar: long getTimeInMillis()>()
+org.jfree.data.time.Week.getLastMillisecond : virtualinvoke r2.<java.util.Calendar: void set(int,int)>(14, 0)
+org.jfree.data.time.Week.getLastMillisecond : virtualinvoke r2.<java.util.Calendar: void set(int,int)>(13, 0)
+org.jfree.data.time.Week.getLastMillisecond : $i3 = virtualinvoke r2.<java.util.Calendar: int getFirstDayOfWeek()>()
+org.jfree.data.time.Week.toString : $r1 = new java.lang.StringBuilder
+org.jfree.data.time.TimePeriodValue.equals : if r0 != r1 goto $z0 = r1 instanceof org.jfree.data.time.TimePeriodValue
+org.jfree.data.time.TimePeriodValue.equals : $z0 = r1 instanceof org.jfree.data.time.TimePeriodValue
+org.jfree.data.time.TimePeriodValue.equals : return 0
+org.jfree.data.xy.XYSeries.updateBoundsForAddedItem : $d2 = r0.<org.jfree.data.xy.XYSeries: double minX>
+org.jfree.data.xy.XYSeries.updateBoundsForAddedItem : d0 = virtualinvoke r1.<org.jfree.data.xy.XYDataItem: double getXValue()>()
+org.jfree.data.xy.XYSeries.updateBoundsForAddedItem : $d4 = r0.<org.jfree.data.xy.XYSeries: double maxX>
+org.jfree.data.xy.XYSeries.updateBoundsForAddedItem : $d6 = r0.<org.jfree.data.xy.XYSeries: double minY>
+org.jfree.data.xy.XYSeries.updateBoundsForAddedItem : $d8 = r0.<org.jfree.data.xy.XYSeries: double maxY>
+org.jfree.data.xy.XYSeries.updateBoundsForAddedItem : $r2 = virtualinvoke r1.<org.jfree.data.xy.XYDataItem: java.lang.Number getY()>()
+org.jfree.data.xy.XYSeries.updateBoundsForAddedItem : d1 = virtualinvoke r1.<org.jfree.data.xy.XYDataItem: double getYValue()>()
+org.jfree.data.time.TimePeriodValue.toString : $r1 = new java.lang.StringBuilder
+org.jfree.data.xy.XYDataItem.clone : goto [?= return r1]
+org.jfree.data.xy.XYDataItem.clone : r1 = null
+org.jfree.data.xy.XYDataItem.clone : return r1
+org.jfree.data.xy.XYDataItem.clone : r1 = specialinvoke r0.<java.lang.Object: java.lang.Object clone()>()
+org.jfree.data.time.TimePeriodValue.getValue : $r1 = r0.<org.jfree.data.time.TimePeriodValue: java.lang.Number value>
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null goto return

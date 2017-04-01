@@ -1,0 +1,14 @@
+org.jfree.data.Range.getUpperBound : $d0 = r0.<org.jfree.data.Range: double upper>
+org.jfree.data.Range.equals : $d2 = r0.<org.jfree.data.Range: double upper>
+org.jfree.data.Range.equals : $z0 = r1 instanceof org.jfree.data.Range
+org.jfree.data.Range.equals : $d0 = r0.<org.jfree.data.Range: double lower>
+org.jfree.data.Range.equals : return 1
+org.jfree.data.Range.equals : r2 = (org.jfree.data.Range) r1
+org.jfree.data.Range.getLowerBound : $d0 = r0.<org.jfree.data.Range: double lower>
+org.jfree.data.Range.scale : $r2 = new org.jfree.data.Range
+org.jfree.data.Range.scale : $d3 = virtualinvoke r0.<org.jfree.data.Range: double getUpperBound()>()
+org.jfree.data.Range.scale : $b0 = d0 cmpg 0.0
+org.jfree.data.Range.scale : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r0, "base")
+org.jfree.data.Range.scale : $r1 = new java.lang.IllegalArgumentException
+org.jfree.chart.util.ParamChecks.nullNotPermitted : $r3 = new java.lang.IllegalArgumentException
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null goto return

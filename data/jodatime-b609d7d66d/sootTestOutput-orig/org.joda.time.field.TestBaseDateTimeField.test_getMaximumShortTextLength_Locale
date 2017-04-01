@@ -1,0 +1,8 @@
+org.joda.time.DateTimeFieldType.secondOfMinute : $r0 = <org.joda.time.DateTimeFieldType: org.joda.time.DateTimeFieldType SECOND_OF_MINUTE_TYPE>
+org.joda.time.field.BaseDateTimeField.getMaximumTextLength : if i0 >= 10 goto (branch)
+org.joda.time.field.BaseDateTimeField.getMaximumTextLength : if i0 < 0 goto $r2 = staticinvoke <java.lang.Integer: java.lang.String toString(int)>(i0)
+org.joda.time.field.BaseDateTimeField.getMaximumTextLength : i0 = virtualinvoke r0.<org.joda.time.field.BaseDateTimeField: int getMaximumValue()>()
+org.joda.time.field.BaseDateTimeField.getMaximumTextLength : return 2
+org.joda.time.field.BaseDateTimeField.getMaximumTextLength : if i0 >= 100 goto (branch)
+org.joda.time.field.TestBaseDateTimeField$MockBaseDateTimeField.getMaximumValue : return 59
+org.joda.time.field.BaseDateTimeField.getMaximumShortTextLength : $i0 = virtualinvoke r0.<org.joda.time.field.BaseDateTimeField: int getMaximumTextLength(java.util.Locale)>(r1)

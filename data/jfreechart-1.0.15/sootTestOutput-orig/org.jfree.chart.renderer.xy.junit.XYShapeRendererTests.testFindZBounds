@@ -1,0 +1,54 @@
+org.jfree.chart.renderer.AbstractRenderer.setBaseShape : virtualinvoke r0.<org.jfree.chart.renderer.AbstractRenderer: void fireChangeEvent()>()
+org.jfree.chart.renderer.AbstractRenderer.setBaseShape : if z0 == 0 goto return
+org.jfree.chart.renderer.AbstractRenderer.setBaseShape : virtualinvoke r0.<org.jfree.chart.renderer.AbstractRenderer: void setBaseShape(java.awt.Shape,boolean)>(r1, 1)
+org.jfree.chart.renderer.AbstractRenderer.setBaseShape : r0.<org.jfree.chart.renderer.AbstractRenderer: java.awt.Shape baseShape> = r1
+org.jfree.chart.renderer.AbstractRenderer.setBaseShape : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "shape")
+org.jfree.chart.renderer.AbstractRenderer.setAutoPopulateSeriesShape : r0.<org.jfree.chart.renderer.AbstractRenderer: boolean autoPopulateSeriesShape> = z0
+org.jfree.data.Range.getUpperBound : $d0 = r0.<org.jfree.data.Range: double upper>
+org.jfree.data.xy.DefaultXYZDataset.removeSeries : $r4 = r0.<org.jfree.data.xy.DefaultXYZDataset: java.util.List seriesList>
+org.jfree.data.xy.DefaultXYZDataset.removeSeries : $r6 = new org.jfree.data.general.DatasetChangeEvent
+org.jfree.data.xy.DefaultXYZDataset.removeSeries : $r2 = r0.<org.jfree.data.xy.DefaultXYZDataset: java.util.List seriesKeys>
+org.jfree.data.xy.DefaultXYZDataset.removeSeries : if i0 < 0 goto return
+org.jfree.data.xy.DefaultXYZDataset.removeSeries : i0 = virtualinvoke r0.<org.jfree.data.xy.DefaultXYZDataset: int indexOf(java.lang.Comparable)>(r1)
+org.jfree.data.general.AbstractDataset.notifyListeners : $r3 = r0.<org.jfree.data.general.AbstractDataset: javax.swing.event.EventListenerList listenerList>
+org.jfree.data.general.AbstractDataset.notifyListeners : $i1 = lengthof r2
+org.jfree.chart.renderer.xy.XYShapeRenderer.findZBounds : return null
+org.jfree.chart.renderer.xy.XYShapeRenderer.findZBounds : $r2 = staticinvoke <org.jfree.data.general.DatasetUtilities: org.jfree.data.Range findZBounds(org.jfree.data.xy.XYZDataset)>(r1)
+org.jfree.chart.renderer.xy.XYShapeRenderer.findZBounds : if r1 == null goto return null
+org.jfree.data.Range.getLowerBound : $d0 = r0.<org.jfree.data.Range: double lower>
+org.jfree.chart.renderer.AbstractRenderer.fireChangeEvent : $r1 = new org.jfree.chart.event.RendererChangeEvent
+org.jfree.data.xy.DefaultXYZDataset.indexOf : $r2 = r0.<org.jfree.data.xy.DefaultXYZDataset: java.util.List seriesKeys>
+org.jfree.chart.renderer.AbstractRenderer.notifyListeners : $r3 = r0.<org.jfree.chart.renderer.AbstractRenderer: javax.swing.event.EventListenerList listenerList>
+org.jfree.chart.renderer.AbstractRenderer.notifyListeners : $i1 = lengthof r2
+org.jfree.data.xy.DefaultXYZDataset.getZValue : $r2 = r0.<org.jfree.data.xy.DefaultXYZDataset: java.util.List seriesList>
+org.jfree.data.xy.DefaultXYZDataset.getZValue : $r5 = r1[2]
+org.jfree.data.general.DatasetUtilities.iterateZBounds : i1 = 0
+org.jfree.data.general.DatasetUtilities.iterateZBounds : d1 = staticinvoke <java.lang.Math: double max(double,double)>(d1, d2)
+org.jfree.data.general.DatasetUtilities.iterateZBounds : i2 = interfaceinvoke r0.<org.jfree.data.xy.XYZDataset: int getItemCount(int)>(i1)
+org.jfree.data.general.DatasetUtilities.iterateZBounds : d0 = #Infinity
+org.jfree.data.general.DatasetUtilities.iterateZBounds : $b4 = d0 cmpl #Infinity
+org.jfree.data.general.DatasetUtilities.iterateZBounds : i0 = interfaceinvoke r0.<org.jfree.data.xy.XYZDataset: int getSeriesCount()>()
+org.jfree.data.general.DatasetUtilities.iterateZBounds : i3 = 0
+org.jfree.data.general.DatasetUtilities.iterateZBounds : $z1 = staticinvoke <java.lang.Double: boolean isNaN(double)>(d2)
+org.jfree.data.general.DatasetUtilities.iterateZBounds : $r1 = new org.jfree.data.Range
+org.jfree.data.general.DatasetUtilities.iterateZBounds : d0 = staticinvoke <java.lang.Math: double min(double,double)>(d0, d2)
+org.jfree.data.general.DatasetUtilities.iterateZBounds : d1 = #-Infinity
+org.jfree.data.general.DatasetUtilities.iterateZBounds : d2 = interfaceinvoke r0.<org.jfree.data.xy.XYZDataset: double getZValue(int,int)>(i1, i3)
+org.jfree.data.xy.DefaultXYZDataset.addSeries : if i0 != -1 goto $r13 = r0.<org.jfree.data.xy.DefaultXYZDataset: java.util.List seriesList>
+org.jfree.data.xy.DefaultXYZDataset.addSeries : $r6 = r2[0]
+org.jfree.data.xy.DefaultXYZDataset.addSeries : $r11 = r0.<org.jfree.data.xy.DefaultXYZDataset: java.util.List seriesKeys>
+org.jfree.data.xy.DefaultXYZDataset.addSeries : $r16 = new org.jfree.data.general.DatasetChangeEvent
+org.jfree.data.xy.DefaultXYZDataset.addSeries : i0 = virtualinvoke r0.<org.jfree.data.xy.DefaultXYZDataset: int indexOf(java.lang.Comparable)>(r1)
+org.jfree.data.xy.DefaultXYZDataset.addSeries : if r1 != null goto (branch)
+org.jfree.data.xy.DefaultXYZDataset.addSeries : $i1 = lengthof r2
+org.jfree.data.xy.DefaultXYZDataset.addSeries : $r12 = r0.<org.jfree.data.xy.DefaultXYZDataset: java.util.List seriesList>
+org.jfree.data.xy.DefaultXYZDataset.addSeries : if r2 != null goto $i1 = lengthof r2
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null goto return
+org.jfree.data.xy.DefaultXYZDataset.getItemCount : $r6 = r1[0]
+org.jfree.data.xy.DefaultXYZDataset.getItemCount : $r3 = r0.<org.jfree.data.xy.DefaultXYZDataset: java.util.List seriesList>
+org.jfree.data.xy.DefaultXYZDataset.getItemCount : if i0 < 0 goto $r2 = new java.lang.IllegalArgumentException
+org.jfree.data.general.DatasetUtilities.findZBounds : $r1 = staticinvoke <org.jfree.data.general.DatasetUtilities: org.jfree.data.Range findZBounds(org.jfree.data.xy.XYZDataset,boolean)>(r0, 1)
+org.jfree.data.general.DatasetUtilities.findZBounds : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r0, "dataset")
+org.jfree.data.general.DatasetUtilities.findZBounds : return r1
+org.jfree.data.general.DatasetUtilities.findZBounds : r1 = staticinvoke <org.jfree.data.general.DatasetUtilities: org.jfree.data.Range iterateZBounds(org.jfree.data.xy.XYZDataset,boolean)>(r0, z0)
+org.jfree.data.xy.DefaultXYZDataset.getSeriesCount : $r1 = r0.<org.jfree.data.xy.DefaultXYZDataset: java.util.List seriesList>

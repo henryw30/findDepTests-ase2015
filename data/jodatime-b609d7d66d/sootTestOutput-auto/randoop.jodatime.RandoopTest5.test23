@@ -1,0 +1,23 @@
+org.joda.time.format.DateTimeFormatterBuilder.appendDayOfWeek : $r1 = staticinvoke <org.joda.time.DateTimeFieldType: org.joda.time.DateTimeFieldType dayOfWeek()>()
+org.joda.time.DateTimeFieldType.clockhourOfHalfday : $r0 = <org.joda.time.DateTimeFieldType: org.joda.time.DateTimeFieldType CLOCKHOUR_OF_HALFDAY_TYPE>
+org.joda.time.format.DateTimeFormatterBuilder.appendMillisOfDay : $r1 = staticinvoke <org.joda.time.DateTimeFieldType: org.joda.time.DateTimeFieldType millisOfDay()>()
+org.joda.time.DateTimeFieldType.minuteOfHour : $r0 = <org.joda.time.DateTimeFieldType: org.joda.time.DateTimeFieldType MINUTE_OF_HOUR_TYPE>
+org.joda.time.format.DateTimeFormatterBuilder.appendDecimal : if i0 < 0 goto $r3 = new java.lang.IllegalArgumentException
+org.joda.time.format.DateTimeFormatterBuilder.appendDecimal : $r6 = new org.joda.time.format.DateTimeFormatterBuilder$PaddedNumber
+org.joda.time.format.DateTimeFormatterBuilder.appendDecimal : i1 = i0
+org.joda.time.format.DateTimeFormatterBuilder.appendDecimal : if i0 > 1 goto $r6 = new org.joda.time.format.DateTimeFormatterBuilder$PaddedNumber
+org.joda.time.format.DateTimeFormatterBuilder.appendDecimal : if r1 != null goto (branch)
+org.joda.time.format.DateTimeFormatterBuilder.appendDecimal : if i1 >= i0 goto (branch)
+org.joda.time.format.DateTimeFormatterBuilder.appendClockhourOfHalfday : $r1 = staticinvoke <org.joda.time.DateTimeFieldType: org.joda.time.DateTimeFieldType clockhourOfHalfday()>()
+org.joda.time.DateTimeFieldType.dayOfMonth : $r0 = <org.joda.time.DateTimeFieldType: org.joda.time.DateTimeFieldType DAY_OF_MONTH_TYPE>
+org.joda.time.format.DateTimeFormatterBuilder.appendMinuteOfHour : $r1 = staticinvoke <org.joda.time.DateTimeFieldType: org.joda.time.DateTimeFieldType minuteOfHour()>()
+org.joda.time.DateTimeFieldType.millisOfDay : $r0 = <org.joda.time.DateTimeFieldType: org.joda.time.DateTimeFieldType MILLIS_OF_DAY_TYPE>
+org.joda.time.DateTimeFieldType.dayOfWeek : $r0 = <org.joda.time.DateTimeFieldType: org.joda.time.DateTimeFieldType DAY_OF_WEEK_TYPE>
+org.joda.time.format.DateTimeFormatterBuilder.appendTimeZoneId : $r1 = <org.joda.time.format.DateTimeFormatterBuilder$TimeZoneId: org.joda.time.format.DateTimeFormatterBuilder$TimeZoneId INSTANCE>
+org.joda.time.format.DateTimeFormatterBuilder.append0 : r0.<org.joda.time.format.DateTimeFormatterBuilder: java.lang.Object iFormatter> = null
+org.joda.time.format.DateTimeFormatterBuilder.append0 : $r3 = r0.<org.joda.time.format.DateTimeFormatterBuilder: java.util.ArrayList iElementPairs>
+org.joda.time.format.DateTimeFormatterBuilder.append0 : $r4 = r0.<org.joda.time.format.DateTimeFormatterBuilder: java.util.ArrayList iElementPairs>
+org.joda.time.format.DateTimeFormatterBuilder.append0 : return r0
+org.joda.time.format.DateTimeFormatterBuilder.append0 : $r2 = r0.<org.joda.time.format.DateTimeFormatterBuilder: java.util.ArrayList iElementPairs>
+org.joda.time.format.DateTimeFormatterBuilder.appendTimeZoneName : $r1 = new org.joda.time.format.DateTimeFormatterBuilder$TimeZoneName
+org.joda.time.format.DateTimeFormatterBuilder.appendDayOfMonth : $r1 = staticinvoke <org.joda.time.DateTimeFieldType: org.joda.time.DateTimeFieldType dayOfMonth()>()

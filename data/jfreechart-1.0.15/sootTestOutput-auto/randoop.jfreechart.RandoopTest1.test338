@@ -1,0 +1,19 @@
+org.jfree.chart.renderer.category.AbstractCategoryItemRenderer.getSeriesItemURLGenerator : $r4 = r0.<org.jfree.chart.renderer.category.AbstractCategoryItemRenderer: org.jfree.util.ObjectList itemURLGeneratorList>
+org.jfree.chart.renderer.category.AbstractCategoryItemRenderer.getSeriesItemURLGenerator : r1 = r0.<org.jfree.chart.renderer.category.AbstractCategoryItemRenderer: org.jfree.chart.urls.CategoryURLGenerator baseItemURLGenerator>
+org.jfree.chart.renderer.category.AbstractCategoryItemRenderer.getSeriesItemURLGenerator : if r1 != null goto return r1
+org.jfree.chart.renderer.category.AbstractCategoryItemRenderer.getSeriesItemURLGenerator : $r5 = virtualinvoke $r4.<org.jfree.util.ObjectList: java.lang.Object get(int)>(i0)
+org.jfree.chart.renderer.category.AbstractCategoryItemRenderer.getSeriesItemURLGenerator : return r1
+org.jfree.chart.renderer.category.AbstractCategoryItemRenderer.getSeriesItemURLGenerator : $r2 = r0.<org.jfree.chart.renderer.category.AbstractCategoryItemRenderer: org.jfree.chart.urls.CategoryURLGenerator itemURLGenerator>
+org.jfree.chart.renderer.category.LineAndShapeRenderer.getBaseShapesVisible : $z0 = r0.<org.jfree.chart.renderer.category.LineAndShapeRenderer: boolean baseShapesVisible>
+org.jfree.chart.renderer.AbstractRenderer.fireChangeEvent : $r1 = new org.jfree.chart.event.RendererChangeEvent
+org.jfree.chart.renderer.AbstractRenderer.notifyListeners : $r3 = r0.<org.jfree.chart.renderer.AbstractRenderer: javax.swing.event.EventListenerList listenerList>
+org.jfree.chart.renderer.AbstractRenderer.notifyListeners : $i1 = lengthof r2
+org.jfree.chart.renderer.AbstractRenderer.setSeriesItemLabelsVisible : virtualinvoke r0.<org.jfree.chart.renderer.AbstractRenderer: void fireChangeEvent()>()
+org.jfree.chart.renderer.AbstractRenderer.setSeriesItemLabelsVisible : if z0 == 0 goto return
+org.jfree.chart.renderer.AbstractRenderer.setSeriesItemLabelsVisible : virtualinvoke r0.<org.jfree.chart.renderer.AbstractRenderer: void setSeriesItemLabelsVisible(int,java.lang.Boolean,boolean)>(i0, r1, 1)
+org.jfree.chart.renderer.AbstractRenderer.setSeriesItemLabelsVisible : $r2 = r0.<org.jfree.chart.renderer.AbstractRenderer: org.jfree.util.BooleanList itemLabelsVisibleList>
+org.jfree.chart.renderer.category.LineAndShapeRenderer.getPassCount : return 2
+org.jfree.chart.renderer.category.LineAndShapeRenderer.setLinesVisible : virtualinvoke r0.<org.jfree.chart.renderer.category.LineAndShapeRenderer: void fireChangeEvent()>()
+org.jfree.chart.renderer.category.LineAndShapeRenderer.setLinesVisible : $r1 = staticinvoke <org.jfree.util.BooleanUtilities: java.lang.Boolean valueOf(boolean)>(z0)
+org.jfree.chart.renderer.category.LineAndShapeRenderer.setLinesVisible : r0.<org.jfree.chart.renderer.category.LineAndShapeRenderer: java.lang.Boolean linesVisible> = r1
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null goto return

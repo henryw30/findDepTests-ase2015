@@ -1,0 +1,35 @@
+org.joda.time.base.AbstractInstant.getZone : $r1 = virtualinvoke r0.<org.joda.time.base.AbstractInstant: org.joda.time.Chronology getChronology()>()
+org.joda.time.chrono.EthiopicChronology.getInstanceUTC : $r0 = <org.joda.time.chrono.EthiopicChronology: org.joda.time.chrono.EthiopicChronology INSTANCE_UTC>
+org.joda.time.base.BaseDateTime.checkInstant : return l0
+org.joda.time.chrono.ISOChronology.getInstance : if r0 != null goto $i1 = staticinvoke <java.lang.System: int identityHashCode(java.lang.Object)>(r0)
+org.joda.time.chrono.ISOChronology.getInstance : $i1 = staticinvoke <java.lang.System: int identityHashCode(java.lang.Object)>(r0)
+org.joda.time.chrono.ISOChronology.getInstance : $r5 = <org.joda.time.chrono.ISOChronology: org.joda.time.chrono.ISOChronology[] cFastCache>
+org.joda.time.chrono.ISOChronology.getInstance : return r1
+org.joda.time.chrono.ISOChronology.getInstance : if r1 == null goto $r7 = <org.joda.time.chrono.ISOChronology: java.util.Map cCache>
+org.joda.time.chrono.BasicChronology.getZone : $r2 = virtualinvoke r0.<org.joda.time.chrono.BasicChronology: org.joda.time.Chronology getBase()>()
+org.joda.time.chrono.BasicChronology.getZone : $r4 = <org.joda.time.DateTimeZone: org.joda.time.DateTimeZone UTC>
+org.joda.time.chrono.BasicChronology.getZone : $r3 = virtualinvoke r1.<org.joda.time.Chronology: org.joda.time.DateTimeZone getZone()>()
+org.joda.time.chrono.AssembledChronology.dayOfMonth : $r1 = r0.<org.joda.time.chrono.AssembledChronology: org.joda.time.DateTimeField iDayOfMonth>
+org.joda.time.DateTimeUtils.getChronology : if r0 != null goto return r0
+org.joda.time.DateTimeUtils.getChronology : return r0
+org.joda.time.field.DecoratedDateTimeField.getWrappedField : $r1 = r0.<org.joda.time.field.DecoratedDateTimeField: org.joda.time.DateTimeField iField>
+org.joda.time.chrono.AssembledChronology.getBase : $r1 = r0.<org.joda.time.chrono.AssembledChronology: org.joda.time.Chronology iBase>
+org.joda.time.field.PreciseDurationDateTimeField.roundFloor : $b1 = l0 cmp 0L
+org.joda.time.field.PreciseDurationDateTimeField.roundFloor : $l2 = r0.<org.joda.time.field.PreciseDurationDateTimeField: long iUnitMillis>
+org.joda.time.chrono.AssembledChronology.getZone : $r3 = virtualinvoke r1.<org.joda.time.Chronology: org.joda.time.DateTimeZone getZone()>()
+org.joda.time.chrono.AssembledChronology.getZone : $r2 = r0.<org.joda.time.chrono.AssembledChronology: org.joda.time.Chronology iBase>
+org.joda.time.chrono.LimitChronology.checkLimits : $r3 = r0.<org.joda.time.chrono.LimitChronology: org.joda.time.DateTime iLowerLimit>
+org.joda.time.chrono.LimitChronology.checkLimits : $r5 = r0.<org.joda.time.chrono.LimitChronology: org.joda.time.DateTime iUpperLimit>
+org.joda.time.DateTimeUtils.currentTimeMillis : $r0 = <org.joda.time.DateTimeUtils: org.joda.time.DateTimeUtils$MillisProvider cMillisProvider>
+org.joda.time.base.BaseDateTime.checkChronology : $r2 = staticinvoke <org.joda.time.DateTimeUtils: org.joda.time.Chronology getChronology(org.joda.time.Chronology)>(r1)
+org.joda.time.base.BaseDateTime.getMillis : $l0 = r0.<org.joda.time.base.BaseDateTime: long iMillis>
+org.joda.time.base.BaseDateTime.getChronology : $r1 = r0.<org.joda.time.base.BaseDateTime: org.joda.time.Chronology iChronology>
+org.joda.time.base.AbstractInstant.toMutableDateTimeISO : $r1 = new org.joda.time.MutableDateTime
+org.joda.time.DateTimeUtils$OffsetMillisProvider.getMillis : $l0 = staticinvoke <java.lang.System: long currentTimeMillis()>()
+org.joda.time.DateMidnight.checkInstant : $r2 = virtualinvoke r1.<org.joda.time.Chronology: org.joda.time.DateTimeField dayOfMonth()>()
+org.joda.time.chrono.LimitChronology$LimitDateTimeField.roundFloor : $r2 = virtualinvoke r0.<org.joda.time.chrono.LimitChronology$LimitDateTimeField: org.joda.time.DateTimeField getWrappedField()>()
+org.joda.time.chrono.LimitChronology$LimitDateTimeField.roundFloor : $r3 = r0.<org.joda.time.chrono.LimitChronology$LimitDateTimeField: org.joda.time.chrono.LimitChronology this$0>
+org.joda.time.chrono.LimitChronology$LimitDateTimeField.roundFloor : return l1
+org.joda.time.chrono.LimitChronology$LimitDateTimeField.roundFloor : $r1 = r0.<org.joda.time.chrono.LimitChronology$LimitDateTimeField: org.joda.time.chrono.LimitChronology this$0>
+org.joda.time.chrono.EthiopicChronology.getZone : $r1 = specialinvoke r0.<org.joda.time.chrono.BasicFixedMonthChronology: org.joda.time.DateTimeZone getZone()>()
+org.joda.time.chrono.GregorianChronology.getZone : $r1 = specialinvoke r0.<org.joda.time.chrono.BasicGJChronology: org.joda.time.DateTimeZone getZone()>()

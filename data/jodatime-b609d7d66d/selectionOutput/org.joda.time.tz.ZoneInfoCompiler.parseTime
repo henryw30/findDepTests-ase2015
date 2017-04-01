@@ -1,0 +1,21 @@
+org.joda.time.tz.ZoneInfoCompiler.parseTime : r1 = staticinvoke <org.joda.time.format.ISODateTimeFormat: org.joda.time.format.DateTimeFormatter hourMinuteSecondFraction()>() >>>>>>>> org.joda.time.tz.ZoneInfoCompiler.parseTime : $r4 = new org.joda.time.MutableDateTime
+org.joda.time.tz.ZoneInfoCompiler.parseTime : $r4 = new org.joda.time.MutableDateTime >>>>>>>> org.joda.time.tz.ZoneInfoCompiler.parseTime : $r2 = staticinvoke <org.joda.time.tz.ZoneInfoCompiler: org.joda.time.Chronology getLenientISOChronology()>()
+org.joda.time.tz.ZoneInfoCompiler.parseTime : $r2 = staticinvoke <org.joda.time.tz.ZoneInfoCompiler: org.joda.time.Chronology getLenientISOChronology()>() >>>>>>>> org.joda.time.tz.ZoneInfoCompiler.parseTime : specialinvoke $r4.<org.joda.time.MutableDateTime: void <init>(long,org.joda.time.Chronology)>(0L, $r2)
+org.joda.time.tz.ZoneInfoCompiler.parseTime : specialinvoke $r4.<org.joda.time.MutableDateTime: void <init>(long,org.joda.time.Chronology)>(0L, $r2) >>>>>>>> org.joda.time.tz.ZoneInfoCompiler.parseTime : r3 = $r4
+org.joda.time.tz.ZoneInfoCompiler.parseTime : r3 = $r4 >>>>>>>> org.joda.time.tz.ZoneInfoCompiler.parseTime : b0 = 0
+org.joda.time.tz.ZoneInfoCompiler.parseTime : b0 = 0 >>>>>>>> org.joda.time.tz.ZoneInfoCompiler.parseTime : $z0 = virtualinvoke r0.<java.lang.String: boolean startsWith(java.lang.String)>("-")
+org.joda.time.tz.ZoneInfoCompiler.parseTime : $z0 = virtualinvoke r0.<java.lang.String: boolean startsWith(java.lang.String)>("-") >>>>>>>> org.joda.time.tz.ZoneInfoCompiler.parseTime : if $z0 == 0
+org.joda.time.tz.ZoneInfoCompiler.parseTime : if $z0 == 0 >>>>>>>> org.joda.time.tz.ZoneInfoCompiler.parseTime : b0 = 1
+org.joda.time.tz.ZoneInfoCompiler.parseTime : if $z0 == 0 >>>>>>>> org.joda.time.tz.ZoneInfoCompiler.parseTime : i1 = virtualinvoke r1.<org.joda.time.format.DateTimeFormatter: int parseInto(org.joda.time.ReadWritableInstant,java.lang.String,int)>(r3, r0, b0)
+org.joda.time.tz.ZoneInfoCompiler.parseTime : i1 = virtualinvoke r1.<org.joda.time.format.DateTimeFormatter: int parseInto(org.joda.time.ReadWritableInstant,java.lang.String,int)>(r3, r0, b0) >>>>>>>> org.joda.time.tz.ZoneInfoCompiler.parseTime : $b3 = b0 ^ -1
+org.joda.time.tz.ZoneInfoCompiler.parseTime : $b3 = b0 ^ -1 >>>>>>>> org.joda.time.tz.ZoneInfoCompiler.parseTime : if i1 != $b3
+org.joda.time.tz.ZoneInfoCompiler.parseTime : if i1 != $b3 >>>>>>>> org.joda.time.tz.ZoneInfoCompiler.parseTime : $r5 = new java.lang.IllegalArgumentException
+org.joda.time.tz.ZoneInfoCompiler.parseTime : if i1 != $b3 >>>>>>>> org.joda.time.tz.ZoneInfoCompiler.parseTime : $l4 = virtualinvoke r3.<org.joda.time.MutableDateTime: long getMillis()>()
+org.joda.time.tz.ZoneInfoCompiler.parseTime : $l4 = virtualinvoke r3.<org.joda.time.MutableDateTime: long getMillis()>() >>>>>>>> org.joda.time.tz.ZoneInfoCompiler.parseTime : i2 = (int) $l4
+org.joda.time.tz.ZoneInfoCompiler.parseTime : i2 = (int) $l4 >>>>>>>> org.joda.time.tz.ZoneInfoCompiler.parseTime : if b0 != 1
+org.joda.time.tz.ZoneInfoCompiler.parseTime : if b0 != 1 >>>>>>>> org.joda.time.tz.ZoneInfoCompiler.parseTime : i2 = neg i2
+org.joda.time.tz.ZoneInfoCompiler.parseTime : if b0 != 1 >>>>>>>> org.joda.time.tz.ZoneInfoCompiler.parseTime : return i2
+org.joda.time.tz.ZoneInfoCompiler.parseTime : i2 = neg i2 >>>>>>>> org.joda.time.tz.ZoneInfoCompiler.parseTime : return i2
+org.joda.time.tz.ZoneInfoCompiler.parseTime : $r5 = new java.lang.IllegalArgumentException >>>>>>>> org.joda.time.tz.ZoneInfoCompiler.parseTime : specialinvoke $r5.<java.lang.IllegalArgumentException: void <init>(java.lang.String)>(r0)
+org.joda.time.tz.ZoneInfoCompiler.parseTime : specialinvoke $r5.<java.lang.IllegalArgumentException: void <init>(java.lang.String)>(r0) >>>>>>>> org.joda.time.tz.ZoneInfoCompiler.parseTime : throw $r5
+org.joda.time.tz.ZoneInfoCompiler.parseTime : b0 = 1 >>>>>>>> org.joda.time.tz.ZoneInfoCompiler.parseTime : i1 = virtualinvoke r1.<org.joda.time.format.DateTimeFormatter: int parseInto(org.joda.time.ReadWritableInstant,java.lang.String,int)>(r3, r0, b0)

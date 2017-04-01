@@ -1,0 +1,24 @@
+org.jfree.chart.util.PaintAlpha.cloneImage : r1 = virtualinvoke r0.<java.awt.image.BufferedImage: java.awt.image.WritableRaster getRaster()>() >>>>>>>> org.jfree.chart.util.PaintAlpha.cloneImage : r2 = virtualinvoke r1.<java.awt.image.WritableRaster: java.awt.image.WritableRaster createCompatibleWritableRaster()>()
+org.jfree.chart.util.PaintAlpha.cloneImage : r2 = virtualinvoke r1.<java.awt.image.WritableRaster: java.awt.image.WritableRaster createCompatibleWritableRaster()>() >>>>>>>> org.jfree.chart.util.PaintAlpha.cloneImage : virtualinvoke r2.<java.awt.image.WritableRaster: void setRect(java.awt.image.Raster)>(r1)
+org.jfree.chart.util.PaintAlpha.cloneImage : virtualinvoke r2.<java.awt.image.WritableRaster: void setRect(java.awt.image.Raster)>(r1) >>>>>>>> org.jfree.chart.util.PaintAlpha.cloneImage : r3 = null
+org.jfree.chart.util.PaintAlpha.cloneImage : r3 = null >>>>>>>> org.jfree.chart.util.PaintAlpha.cloneImage : r4 = virtualinvoke r0.<java.awt.image.BufferedImage: java.lang.String[] getPropertyNames()>()
+org.jfree.chart.util.PaintAlpha.cloneImage : r4 = virtualinvoke r0.<java.awt.image.BufferedImage: java.lang.String[] getPropertyNames()>() >>>>>>>> org.jfree.chart.util.PaintAlpha.cloneImage : if r4 == null
+org.jfree.chart.util.PaintAlpha.cloneImage : if r4 == null >>>>>>>> org.jfree.chart.util.PaintAlpha.cloneImage : $r5 = new java.util.Hashtable
+org.jfree.chart.util.PaintAlpha.cloneImage : if r4 == null >>>>>>>> org.jfree.chart.util.PaintAlpha.cloneImage : $r10 = new java.awt.image.BufferedImage
+org.jfree.chart.util.PaintAlpha.cloneImage : $r10 = new java.awt.image.BufferedImage >>>>>>>> org.jfree.chart.util.PaintAlpha.cloneImage : $r11 = virtualinvoke r0.<java.awt.image.BufferedImage: java.awt.image.ColorModel getColorModel()>()
+org.jfree.chart.util.PaintAlpha.cloneImage : $r11 = virtualinvoke r0.<java.awt.image.BufferedImage: java.awt.image.ColorModel getColorModel()>() >>>>>>>> org.jfree.chart.util.PaintAlpha.cloneImage : $z0 = virtualinvoke r0.<java.awt.image.BufferedImage: boolean isAlphaPremultiplied()>()
+org.jfree.chart.util.PaintAlpha.cloneImage : $z0 = virtualinvoke r0.<java.awt.image.BufferedImage: boolean isAlphaPremultiplied()>() >>>>>>>> org.jfree.chart.util.PaintAlpha.cloneImage : specialinvoke $r10.<java.awt.image.BufferedImage: void <init>(java.awt.image.ColorModel,java.awt.image.WritableRaster,boolean,java.util.Hashtable)>($r11, r2, $z0, r3)
+org.jfree.chart.util.PaintAlpha.cloneImage : specialinvoke $r10.<java.awt.image.BufferedImage: void <init>(java.awt.image.ColorModel,java.awt.image.WritableRaster,boolean,java.util.Hashtable)>($r11, r2, $z0, r3) >>>>>>>> org.jfree.chart.util.PaintAlpha.cloneImage : return $r10
+org.jfree.chart.util.PaintAlpha.cloneImage : $r5 = new java.util.Hashtable >>>>>>>> org.jfree.chart.util.PaintAlpha.cloneImage : specialinvoke $r5.<java.util.Hashtable: void <init>()>()
+org.jfree.chart.util.PaintAlpha.cloneImage : specialinvoke $r5.<java.util.Hashtable: void <init>()>() >>>>>>>> org.jfree.chart.util.PaintAlpha.cloneImage : r3 = $r5
+org.jfree.chart.util.PaintAlpha.cloneImage : r3 = $r5 >>>>>>>> org.jfree.chart.util.PaintAlpha.cloneImage : i0 = 0
+org.jfree.chart.util.PaintAlpha.cloneImage : i0 = 0 >>>>>>>> org.jfree.chart.util.PaintAlpha.cloneImage : $i1 = lengthof r4
+org.jfree.chart.util.PaintAlpha.cloneImage : $i1 = lengthof r4 >>>>>>>> org.jfree.chart.util.PaintAlpha.cloneImage : if i0 >= $i1
+org.jfree.chart.util.PaintAlpha.cloneImage : if i0 >= $i1 >>>>>>>> org.jfree.chart.util.PaintAlpha.cloneImage : $r6 = r4[i0]
+org.jfree.chart.util.PaintAlpha.cloneImage : if i0 >= $i1 >>>>>>>> org.jfree.chart.util.PaintAlpha.cloneImage : $r10 = new java.awt.image.BufferedImage
+org.jfree.chart.util.PaintAlpha.cloneImage : $r6 = r4[i0] >>>>>>>> org.jfree.chart.util.PaintAlpha.cloneImage : $r7 = r4[i0]
+org.jfree.chart.util.PaintAlpha.cloneImage : $r7 = r4[i0] >>>>>>>> org.jfree.chart.util.PaintAlpha.cloneImage : $r8 = virtualinvoke r0.<java.awt.image.BufferedImage: java.lang.Object getProperty(java.lang.String)>($r7)
+org.jfree.chart.util.PaintAlpha.cloneImage : $r8 = virtualinvoke r0.<java.awt.image.BufferedImage: java.lang.Object getProperty(java.lang.String)>($r7) >>>>>>>> org.jfree.chart.util.PaintAlpha.cloneImage : virtualinvoke r3.<java.util.Hashtable: java.lang.Object put(java.lang.Object,java.lang.Object)>($r6, $r8)
+org.jfree.chart.util.PaintAlpha.cloneImage : virtualinvoke r3.<java.util.Hashtable: java.lang.Object put(java.lang.Object,java.lang.Object)>($r6, $r8) >>>>>>>> org.jfree.chart.util.PaintAlpha.cloneImage : i0 = i0 + 1
+org.jfree.chart.util.PaintAlpha.cloneImage : i0 = i0 + 1 >>>>>>>> org.jfree.chart.util.PaintAlpha.cloneImage : goto [?= $i1 = lengthof r4]
+org.jfree.chart.util.PaintAlpha.cloneImage : goto [?= $i1 = lengthof r4] >>>>>>>> org.jfree.chart.util.PaintAlpha.cloneImage : $i1 = lengthof r4

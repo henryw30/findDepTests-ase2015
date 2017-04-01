@@ -1,0 +1,39 @@
+org.jfree.chart.plot.XYPlot.getLegendItems : $r5 = r0.<org.jfree.chart.plot.XYPlot: org.jfree.chart.LegendItemCollection fixedLegendItems> >>>>>>>> org.jfree.chart.plot.XYPlot.getLegendItems : if $r5 == null
+org.jfree.chart.plot.XYPlot.getLegendItems : if $r5 == null >>>>>>>> org.jfree.chart.plot.XYPlot.getLegendItems : $r6 = r0.<org.jfree.chart.plot.XYPlot: org.jfree.chart.LegendItemCollection fixedLegendItems>
+org.jfree.chart.plot.XYPlot.getLegendItems : if $r5 == null >>>>>>>> org.jfree.chart.plot.XYPlot.getLegendItems : $r7 = new org.jfree.chart.LegendItemCollection
+org.jfree.chart.plot.XYPlot.getLegendItems : $r7 = new org.jfree.chart.LegendItemCollection >>>>>>>> org.jfree.chart.plot.XYPlot.getLegendItems : specialinvoke $r7.<org.jfree.chart.LegendItemCollection: void <init>()>()
+org.jfree.chart.plot.XYPlot.getLegendItems : specialinvoke $r7.<org.jfree.chart.LegendItemCollection: void <init>()>() >>>>>>>> org.jfree.chart.plot.XYPlot.getLegendItems : r1 = $r7
+org.jfree.chart.plot.XYPlot.getLegendItems : r1 = $r7 >>>>>>>> org.jfree.chart.plot.XYPlot.getLegendItems : $r8 = r0.<org.jfree.chart.plot.XYPlot: org.jfree.util.ObjectList datasets>
+org.jfree.chart.plot.XYPlot.getLegendItems : $r8 = r0.<org.jfree.chart.plot.XYPlot: org.jfree.util.ObjectList datasets> >>>>>>>> org.jfree.chart.plot.XYPlot.getLegendItems : i0 = virtualinvoke $r8.<org.jfree.util.ObjectList: int size()>()
+org.jfree.chart.plot.XYPlot.getLegendItems : i0 = virtualinvoke $r8.<org.jfree.util.ObjectList: int size()>() >>>>>>>> org.jfree.chart.plot.XYPlot.getLegendItems : i1 = 0
+org.jfree.chart.plot.XYPlot.getLegendItems : i1 = 0 >>>>>>>> org.jfree.chart.plot.XYPlot.getLegendItems : if i1 >= i0
+org.jfree.chart.plot.XYPlot.getLegendItems : if i1 >= i0 >>>>>>>> org.jfree.chart.plot.XYPlot.getLegendItems : r2 = virtualinvoke r0.<org.jfree.chart.plot.XYPlot: org.jfree.data.xy.XYDataset getDataset(int)>(i1)
+org.jfree.chart.plot.XYPlot.getLegendItems : if i1 >= i0 >>>>>>>> org.jfree.chart.plot.XYPlot.getLegendItems : return r1
+org.jfree.chart.plot.XYPlot.getLegendItems : r2 = virtualinvoke r0.<org.jfree.chart.plot.XYPlot: org.jfree.data.xy.XYDataset getDataset(int)>(i1) >>>>>>>> org.jfree.chart.plot.XYPlot.getLegendItems : if r2 == null
+org.jfree.chart.plot.XYPlot.getLegendItems : if r2 == null >>>>>>>> org.jfree.chart.plot.XYPlot.getLegendItems : r3 = virtualinvoke r0.<org.jfree.chart.plot.XYPlot: org.jfree.chart.renderer.xy.XYItemRenderer getRenderer(int)>(i1)
+org.jfree.chart.plot.XYPlot.getLegendItems : if r2 == null >>>>>>>> org.jfree.chart.plot.XYPlot.getLegendItems : i1 = i1 + 1
+org.jfree.chart.plot.XYPlot.getLegendItems : i1 = i1 + 1 >>>>>>>> org.jfree.chart.plot.XYPlot.getLegendItems : goto [?= (branch)]
+org.jfree.chart.plot.XYPlot.getLegendItems : goto [?= (branch)] >>>>>>>> org.jfree.chart.plot.XYPlot.getLegendItems : if i1 >= i0
+org.jfree.chart.plot.XYPlot.getLegendItems : r3 = virtualinvoke r0.<org.jfree.chart.plot.XYPlot: org.jfree.chart.renderer.xy.XYItemRenderer getRenderer(int)>(i1) >>>>>>>> org.jfree.chart.plot.XYPlot.getLegendItems : if r3 != null
+org.jfree.chart.plot.XYPlot.getLegendItems : if r3 != null >>>>>>>> org.jfree.chart.plot.XYPlot.getLegendItems : r3 = virtualinvoke r0.<org.jfree.chart.plot.XYPlot: org.jfree.chart.renderer.xy.XYItemRenderer getRenderer(int)>(0)
+org.jfree.chart.plot.XYPlot.getLegendItems : if r3 != null >>>>>>>> org.jfree.chart.plot.XYPlot.getLegendItems : if r3 == null
+org.jfree.chart.plot.XYPlot.getLegendItems : if r3 == null >>>>>>>> org.jfree.chart.plot.XYPlot.getLegendItems : i2 = interfaceinvoke r2.<org.jfree.data.xy.XYDataset: int getSeriesCount()>()
+org.jfree.chart.plot.XYPlot.getLegendItems : if r3 == null >>>>>>>> org.jfree.chart.plot.XYPlot.getLegendItems : i1 = i1 + 1
+org.jfree.chart.plot.XYPlot.getLegendItems : i2 = interfaceinvoke r2.<org.jfree.data.xy.XYDataset: int getSeriesCount()>() >>>>>>>> org.jfree.chart.plot.XYPlot.getLegendItems : i3 = 0
+org.jfree.chart.plot.XYPlot.getLegendItems : i3 = 0 >>>>>>>> org.jfree.chart.plot.XYPlot.getLegendItems : if i3 >= i2
+org.jfree.chart.plot.XYPlot.getLegendItems : if i3 >= i2 >>>>>>>> org.jfree.chart.plot.XYPlot.getLegendItems : $z0 = interfaceinvoke r3.<org.jfree.chart.renderer.xy.XYItemRenderer: boolean isSeriesVisible(int)>(i3)
+org.jfree.chart.plot.XYPlot.getLegendItems : if i3 >= i2 >>>>>>>> org.jfree.chart.plot.XYPlot.getLegendItems : i1 = i1 + 1
+org.jfree.chart.plot.XYPlot.getLegendItems : $z0 = interfaceinvoke r3.<org.jfree.chart.renderer.xy.XYItemRenderer: boolean isSeriesVisible(int)>(i3) >>>>>>>> org.jfree.chart.plot.XYPlot.getLegendItems : if $z0 == 0
+org.jfree.chart.plot.XYPlot.getLegendItems : if $z0 == 0 >>>>>>>> org.jfree.chart.plot.XYPlot.getLegendItems : $z1 = interfaceinvoke r3.<org.jfree.chart.renderer.xy.XYItemRenderer: boolean isSeriesVisibleInLegend(int)>(i3)
+org.jfree.chart.plot.XYPlot.getLegendItems : if $z0 == 0 >>>>>>>> org.jfree.chart.plot.XYPlot.getLegendItems : i3 = i3 + 1
+org.jfree.chart.plot.XYPlot.getLegendItems : i3 = i3 + 1 >>>>>>>> org.jfree.chart.plot.XYPlot.getLegendItems : goto [?= (branch)]
+org.jfree.chart.plot.XYPlot.getLegendItems : goto [?= (branch)] >>>>>>>> org.jfree.chart.plot.XYPlot.getLegendItems : if i3 >= i2
+org.jfree.chart.plot.XYPlot.getLegendItems : $z1 = interfaceinvoke r3.<org.jfree.chart.renderer.xy.XYItemRenderer: boolean isSeriesVisibleInLegend(int)>(i3) >>>>>>>> org.jfree.chart.plot.XYPlot.getLegendItems : if $z1 == 0
+org.jfree.chart.plot.XYPlot.getLegendItems : if $z1 == 0 >>>>>>>> org.jfree.chart.plot.XYPlot.getLegendItems : r4 = interfaceinvoke r3.<org.jfree.chart.renderer.xy.XYItemRenderer: org.jfree.chart.LegendItem getLegendItem(int,int)>(i1, i3)
+org.jfree.chart.plot.XYPlot.getLegendItems : if $z1 == 0 >>>>>>>> org.jfree.chart.plot.XYPlot.getLegendItems : i3 = i3 + 1
+org.jfree.chart.plot.XYPlot.getLegendItems : r4 = interfaceinvoke r3.<org.jfree.chart.renderer.xy.XYItemRenderer: org.jfree.chart.LegendItem getLegendItem(int,int)>(i1, i3) >>>>>>>> org.jfree.chart.plot.XYPlot.getLegendItems : if r4 == null
+org.jfree.chart.plot.XYPlot.getLegendItems : if r4 == null >>>>>>>> org.jfree.chart.plot.XYPlot.getLegendItems : virtualinvoke r1.<org.jfree.chart.LegendItemCollection: void add(org.jfree.chart.LegendItem)>(r4)
+org.jfree.chart.plot.XYPlot.getLegendItems : if r4 == null >>>>>>>> org.jfree.chart.plot.XYPlot.getLegendItems : i3 = i3 + 1
+org.jfree.chart.plot.XYPlot.getLegendItems : virtualinvoke r1.<org.jfree.chart.LegendItemCollection: void add(org.jfree.chart.LegendItem)>(r4) >>>>>>>> org.jfree.chart.plot.XYPlot.getLegendItems : i3 = i3 + 1
+org.jfree.chart.plot.XYPlot.getLegendItems : r3 = virtualinvoke r0.<org.jfree.chart.plot.XYPlot: org.jfree.chart.renderer.xy.XYItemRenderer getRenderer(int)>(0) >>>>>>>> org.jfree.chart.plot.XYPlot.getLegendItems : if r3 == null
+org.jfree.chart.plot.XYPlot.getLegendItems : $r6 = r0.<org.jfree.chart.plot.XYPlot: org.jfree.chart.LegendItemCollection fixedLegendItems> >>>>>>>> org.jfree.chart.plot.XYPlot.getLegendItems : return $r6

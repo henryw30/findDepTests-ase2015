@@ -1,0 +1,38 @@
+org.jfree.chart.axis.SegmentedTimeline.getExceptionSegments : $r1 = r0.<org.jfree.chart.axis.SegmentedTimeline: java.util.List exceptionSegments>
+org.jfree.chart.axis.SegmentedTimeline.getSegmentSize : $l0 = r0.<org.jfree.chart.axis.SegmentedTimeline: long segmentSize>
+org.jfree.chart.axis.SegmentedTimeline.newFifteenMinuteTimeline : $r0 = new org.jfree.chart.axis.SegmentedTimeline
+org.jfree.chart.axis.SegmentedTimeline.newFifteenMinuteTimeline : $r2 = staticinvoke <org.jfree.chart.axis.SegmentedTimeline: org.jfree.chart.axis.SegmentedTimeline newMondayThroughFridayTimeline()>()
+org.jfree.chart.axis.SegmentedTimeline.newFifteenMinuteTimeline : $l1 = virtualinvoke r1.<org.jfree.chart.axis.SegmentedTimeline: long getSegmentSize()>()
+org.jfree.chart.axis.SegmentedTimeline.newFifteenMinuteTimeline : $l0 = staticinvoke <org.jfree.chart.axis.SegmentedTimeline: long firstMondayAfter1900()>()
+org.jfree.chart.axis.SegmentedTimeline.newFifteenMinuteTimeline : return r1
+org.jfree.chart.axis.SegmentedTimeline.newMondayThroughFridayTimeline : $r0 = new org.jfree.chart.axis.SegmentedTimeline
+org.jfree.chart.axis.SegmentedTimeline.newMondayThroughFridayTimeline : $l0 = staticinvoke <org.jfree.chart.axis.SegmentedTimeline: long firstMondayAfter1900()>()
+org.jfree.chart.axis.SegmentedTimeline.newMondayThroughFridayTimeline : return r1
+org.jfree.chart.axis.SegmentedTimeline.getSegmentsExcluded : $i0 = r0.<org.jfree.chart.axis.SegmentedTimeline: int segmentsExcluded>
+org.jfree.chart.axis.SegmentedTimeline.setBaseTimeline : r0.<org.jfree.chart.axis.SegmentedTimeline: org.jfree.chart.axis.SegmentedTimeline baseTimeline> = r1
+org.jfree.chart.axis.SegmentedTimeline.setBaseTimeline : if r1 == null goto r0.<org.jfree.chart.axis.SegmentedTimeline: org.jfree.chart.axis.SegmentedTimeline baseTimeline> = r1
+org.jfree.chart.axis.SegmentedTimeline.setBaseTimeline : $l0 = virtualinvoke r1.<org.jfree.chart.axis.SegmentedTimeline: long getSegmentSize()>()
+org.jfree.chart.axis.SegmentedTimeline.setBaseTimeline : $l3 = virtualinvoke r1.<org.jfree.chart.axis.SegmentedTimeline: long getStartTime()>()
+org.jfree.chart.axis.SegmentedTimeline.setBaseTimeline : $l11 = virtualinvoke r1.<org.jfree.chart.axis.SegmentedTimeline: long getStartTime()>()
+org.jfree.chart.axis.SegmentedTimeline.setBaseTimeline : $l6 = virtualinvoke r1.<org.jfree.chart.axis.SegmentedTimeline: long getSegmentSize()>()
+org.jfree.chart.axis.SegmentedTimeline.setBaseTimeline : $l10 = r0.<org.jfree.chart.axis.SegmentedTimeline: long startTime>
+org.jfree.chart.axis.SegmentedTimeline.getSegmentsIncluded : $i0 = r0.<org.jfree.chart.axis.SegmentedTimeline: int segmentsIncluded>
+org.jfree.chart.axis.SegmentedTimeline.firstMondayAfter1900 : $r8 = new java.util.GregorianCalendar
+org.jfree.chart.axis.SegmentedTimeline.firstMondayAfter1900 : $i1 = virtualinvoke r3.<java.util.Calendar: int get(int)>(7)
+org.jfree.chart.axis.SegmentedTimeline.firstMondayAfter1900 : $r4 = new java.util.SimpleTimeZone
+org.jfree.chart.axis.SegmentedTimeline.firstMondayAfter1900 : virtualinvoke r3.<java.util.Calendar: void set(int,int,int,int,int,int)>(1900, 0, 1, 0, 0, 0)
+org.jfree.chart.axis.SegmentedTimeline.firstMondayAfter1900 : virtualinvoke r3.<java.util.Calendar: void set(int,int)>(14, 0)
+org.jfree.chart.axis.SegmentedTimeline.firstMondayAfter1900 : $r9 = virtualinvoke r3.<java.util.Calendar: java.util.Date getTime()>()
+org.jfree.chart.axis.SegmentedTimeline.firstMondayAfter1900 : $r0 = staticinvoke <java.util.TimeZone: java.util.TimeZone getDefault()>()
+org.jfree.chart.axis.SegmentedTimeline.getStartTime : $l0 = r0.<org.jfree.chart.axis.SegmentedTimeline: long startTime>
+org.jfree.chart.axis.SegmentedTimeline.equals : if r1 == r2 goto $z1 = 1
+org.jfree.chart.axis.SegmentedTimeline.equals : if z0 == 0 goto $z10 = 0
+org.jfree.chart.axis.SegmentedTimeline.equals : $r3 = r0.<org.jfree.chart.axis.SegmentedTimeline: java.util.List exceptionSegments>
+org.jfree.chart.axis.SegmentedTimeline.equals : $i3 = r0.<org.jfree.chart.axis.SegmentedTimeline: int segmentsIncluded>
+org.jfree.chart.axis.SegmentedTimeline.equals : r2 = (org.jfree.chart.axis.SegmentedTimeline) r1
+org.jfree.chart.axis.SegmentedTimeline.equals : $z5 = r1 instanceof org.jfree.chart.axis.SegmentedTimeline
+org.jfree.chart.axis.SegmentedTimeline.equals : $l7 = r0.<org.jfree.chart.axis.SegmentedTimeline: long startTime>
+org.jfree.chart.axis.SegmentedTimeline.equals : $i5 = r0.<org.jfree.chart.axis.SegmentedTimeline: int segmentsExcluded>
+org.jfree.chart.axis.SegmentedTimeline.equals : $r4 = virtualinvoke r2.<org.jfree.chart.axis.SegmentedTimeline: java.util.List getExceptionSegments()>()
+org.jfree.chart.axis.SegmentedTimeline.equals : $l0 = r0.<org.jfree.chart.axis.SegmentedTimeline: long segmentSize>
+org.jfree.chart.axis.SegmentedTimeline.setStartTime : r0.<org.jfree.chart.axis.SegmentedTimeline: long startTime> = l0

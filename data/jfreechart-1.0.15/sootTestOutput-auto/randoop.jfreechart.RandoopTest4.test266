@@ -1,0 +1,15 @@
+org.jfree.data.general.AbstractDataset.notifyListeners : $r3 = r0.<org.jfree.data.general.AbstractDataset: javax.swing.event.EventListenerList listenerList>
+org.jfree.data.general.AbstractDataset.notifyListeners : $i1 = lengthof r2
+org.jfree.data.xy.YIntervalSeriesCollection.removeSeries : if i0 < 0 goto $r2 = new java.lang.IllegalArgumentException
+org.jfree.data.xy.YIntervalSeriesCollection.removeSeries : $r2 = new java.lang.IllegalArgumentException
+org.jfree.data.general.AbstractDataset.clone : $r2 = new javax.swing.event.EventListenerList
+org.jfree.data.general.AbstractDataset.clone : return r1
+org.jfree.data.general.AbstractDataset.clone : $r3 = specialinvoke r0.<java.lang.Object: java.lang.Object clone()>()
+org.jfree.data.xy.YIntervalSeriesCollection.clone : $r2 = specialinvoke r0.<org.jfree.data.xy.AbstractIntervalXYDataset: java.lang.Object clone()>()
+org.jfree.data.xy.YIntervalSeriesCollection.clone : $r3 = r0.<org.jfree.data.xy.YIntervalSeriesCollection: java.util.List data>
+org.jfree.data.xy.YIntervalSeriesCollection.clone : return r1
+org.jfree.data.xy.YIntervalSeriesCollection.getSeriesCount : $r1 = r0.<org.jfree.data.xy.YIntervalSeriesCollection: java.util.List data>
+org.jfree.data.general.AbstractDataset.fireDatasetChanged : $r1 = new org.jfree.data.general.DatasetChangeEvent
+org.jfree.data.xy.YIntervalSeriesCollection.removeAllSeries : $r5 = r0.<org.jfree.data.xy.YIntervalSeriesCollection: java.util.List data>
+org.jfree.data.xy.YIntervalSeriesCollection.removeAllSeries : virtualinvoke r0.<org.jfree.data.xy.YIntervalSeriesCollection: void fireDatasetChanged()>()
+org.jfree.data.xy.YIntervalSeriesCollection.removeAllSeries : i0 = 0

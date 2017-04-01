@@ -1,0 +1,57 @@
+org.jfree.data.KeyedObjects2D.getColumnIndex : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "key")
+org.jfree.data.KeyedObjects2D.getColumnIndex : $r2 = r0.<org.jfree.data.KeyedObjects2D: java.util.List columnKeys>
+org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset.add : d0 = #NaN
+org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset.add : r0.<org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset: int minimumRangeValueColumn> = i1
+org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset.add : $i2 = r0.<org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset: int maximumRangeValueRow>
+org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset.add : $d3 = r0.<org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset: double maximumRangeValue>
+org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset.add : $r10 = virtualinvoke r1.<org.jfree.data.statistics.BoxAndWhiskerItem: java.lang.Number getMaxOutlier()>()
+org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset.add : $d4 = r0.<org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset: double minimumRangeValue>
+org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset.add : $r8 = virtualinvoke r1.<org.jfree.data.statistics.BoxAndWhiskerItem: java.lang.Number getMinOutlier()>()
+org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset.add : r0.<org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset: int minimumRangeValueRow> = i0
+org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset.add : $r6 = r0.<org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset: org.jfree.data.KeyedObjects2D data>
+org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset.add : d1 = #NaN
+org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset.add : $r7 = virtualinvoke r1.<org.jfree.data.statistics.BoxAndWhiskerItem: java.lang.Number getMinOutlier()>()
+org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset.add : $r9 = virtualinvoke r1.<org.jfree.data.statistics.BoxAndWhiskerItem: java.lang.Number getMaxOutlier()>()
+org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset.add : r0.<org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset: double minimumRangeValue> = d0
+org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset.add : r0.<org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset: int maximumRangeValueRow> = i0
+org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset.add : r0.<org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset: double maximumRangeValue> = d1
+org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset.add : virtualinvoke r0.<org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset: void fireDatasetChanged()>()
+org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset.add : $d2 = r0.<org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset: double maximumRangeValue>
+org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset.add : r0.<org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset: int maximumRangeValueColumn> = i1
+org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset.add : $r5 = r0.<org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset: org.jfree.data.KeyedObjects2D data>
+org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset.add : $r4 = r0.<org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset: org.jfree.data.KeyedObjects2D data>
+org.jfree.data.KeyedObjects2D.getRowIndex : $r2 = r0.<org.jfree.data.KeyedObjects2D: java.util.List rowKeys>
+org.jfree.data.KeyedObjects2D.getRowIndex : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "key")
+org.jfree.data.KeyedObjects2D.setObject : $r6 = r0.<org.jfree.data.KeyedObjects2D: java.util.List rows>
+org.jfree.data.KeyedObjects2D.setObject : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r3, "columnKey")
+org.jfree.data.KeyedObjects2D.setObject : $r10 = r0.<org.jfree.data.KeyedObjects2D: java.util.List rows>
+org.jfree.data.KeyedObjects2D.setObject : if i1 >= 0 goto return
+org.jfree.data.KeyedObjects2D.setObject : $r9 = new org.jfree.data.KeyedObjects
+org.jfree.data.KeyedObjects2D.setObject : $r5 = r0.<org.jfree.data.KeyedObjects2D: java.util.List rowKeys>
+org.jfree.data.KeyedObjects2D.setObject : virtualinvoke r4.<org.jfree.data.KeyedObjects: void setObject(java.lang.Comparable,java.lang.Object)>(r3, r1)
+org.jfree.data.KeyedObjects2D.setObject : if i0 < 0 goto $r8 = r0.<org.jfree.data.KeyedObjects2D: java.util.List rowKeys>
+org.jfree.data.KeyedObjects2D.setObject : $r11 = r0.<org.jfree.data.KeyedObjects2D: java.util.List columnKeys>
+org.jfree.data.KeyedObjects2D.setObject : $r12 = r0.<org.jfree.data.KeyedObjects2D: java.util.List columnKeys>
+org.jfree.data.KeyedObjects2D.setObject : $r8 = r0.<org.jfree.data.KeyedObjects2D: java.util.List rowKeys>
+org.jfree.data.KeyedObjects2D.setObject : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r2, "rowKey")
+org.jfree.data.general.AbstractDataset.notifyListeners : $r3 = r0.<org.jfree.data.general.AbstractDataset: javax.swing.event.EventListenerList listenerList>
+org.jfree.data.general.AbstractDataset.notifyListeners : $i1 = lengthof r2
+org.jfree.data.general.AbstractDataset.fireDatasetChanged : $r1 = new org.jfree.data.general.DatasetChangeEvent
+org.jfree.data.KeyedObjects.setObject : if i0 < 0 goto $r6 = new org.jfree.data.KeyedObject
+org.jfree.data.KeyedObjects.setObject : $r6 = new org.jfree.data.KeyedObject
+org.jfree.data.KeyedObjects.setObject : i0 = virtualinvoke r0.<org.jfree.data.KeyedObjects: int getIndex(java.lang.Comparable)>(r1)
+org.jfree.data.KeyedObjects.setObject : $r8 = r0.<org.jfree.data.KeyedObjects: java.util.List data>
+org.jfree.data.statistics.BoxAndWhiskerItem.getMinOutlier : $r1 = r0.<org.jfree.data.statistics.BoxAndWhiskerItem: java.lang.Number minOutlier>
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null goto return
+org.jfree.data.KeyedObjects.getIndex : return -1
+org.jfree.data.KeyedObjects.getIndex : $r5 = interfaceinvoke r2.<java.util.Iterator: java.lang.Object next()>()
+org.jfree.data.KeyedObjects.getIndex : $r4 = r0.<org.jfree.data.KeyedObjects: java.util.List data>
+org.jfree.data.KeyedObjects.getIndex : i0 = i0 + 1
+org.jfree.data.KeyedObjects.getIndex : i0 = 0
+org.jfree.data.KeyedObjects.getIndex : goto [?= staticinvoke <edu.washington.cs.dt.impact.util.Tracer: void trace(java.lang.String,java.lang.String)>("$z0 = interfaceinvoke r2.<java.util.Iterator: boolean hasNext()>()", "org.jfree.data.KeyedObjects.getIndex")]
+org.jfree.data.KeyedObjects.getIndex : $z0 = interfaceinvoke r2.<java.util.Iterator: boolean hasNext()>()
+org.jfree.data.KeyedObjects.getIndex : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "key")
+org.jfree.data.KeyedObjects.getIndex : $r6 = virtualinvoke r3.<org.jfree.data.KeyedObject: java.lang.Comparable getKey()>()
+org.jfree.data.KeyedObject.getKey : $r1 = r0.<org.jfree.data.KeyedObject: java.lang.Comparable key>
+org.jfree.data.statistics.BoxAndWhiskerItem.getMaxOutlier : $r1 = r0.<org.jfree.data.statistics.BoxAndWhiskerItem: java.lang.Number maxOutlier>
+org.jfree.data.KeyedObjects2D.addObject : virtualinvoke r0.<org.jfree.data.KeyedObjects2D: void setObject(java.lang.Object,java.lang.Comparable,java.lang.Comparable)>(r1, r2, r3)

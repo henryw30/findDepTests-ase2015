@@ -1,0 +1,46 @@
+org.jfree.data.ComparableObjectSeries.add : virtualinvoke r0.<org.jfree.data.ComparableObjectSeries: void fireSeriesChanged()>()
+org.jfree.data.ComparableObjectSeries.add : if z0 == 0 goto return
+org.jfree.data.ComparableObjectSeries.add : $i7 = virtualinvoke r0.<org.jfree.data.ComparableObjectSeries: int getItemCount()>()
+org.jfree.data.ComparableObjectSeries.add : if i0 >= 0 goto $z2 = r0.<org.jfree.data.ComparableObjectSeries: boolean allowDuplicateXValues>
+org.jfree.data.ComparableObjectSeries.add : $r3 = r0.<org.jfree.data.ComparableObjectSeries: java.util.List data>
+org.jfree.data.ComparableObjectSeries.add : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "item")
+org.jfree.data.ComparableObjectSeries.add : $r2 = r0.<org.jfree.data.ComparableObjectSeries: java.util.List data>
+org.jfree.data.ComparableObjectSeries.add : goto [?= $i7 = virtualinvoke r0.<org.jfree.data.ComparableObjectSeries: int getItemCount()>()]
+org.jfree.data.ComparableObjectSeries.add : $z1 = r0.<org.jfree.data.ComparableObjectSeries: boolean autoSort>
+org.jfree.data.ComparableObjectItem.equals : $z0 = r1 instanceof org.jfree.data.ComparableObjectItem
+org.jfree.data.ComparableObjectItem.equals : if r1 != r0 goto $z0 = r1 instanceof org.jfree.data.ComparableObjectItem
+org.jfree.data.ComparableObjectItem.equals : $r5 = r0.<org.jfree.data.ComparableObjectItem: java.lang.Object obj>
+org.jfree.data.ComparableObjectItem.equals : $r3 = r0.<org.jfree.data.ComparableObjectItem: java.lang.Comparable x>
+org.jfree.data.ComparableObjectItem.equals : return 1
+org.jfree.data.ComparableObjectItem.equals : r2 = (org.jfree.data.ComparableObjectItem) r1
+org.jfree.data.ComparableObjectSeries.equals : $z1 = specialinvoke r0.<org.jfree.data.general.Series: boolean equals(java.lang.Object)>(r1)
+org.jfree.data.ComparableObjectSeries.equals : if r1 != r0 goto $z0 = r1 instanceof org.jfree.data.ComparableObjectSeries
+org.jfree.data.ComparableObjectSeries.equals : $r3 = r0.<org.jfree.data.ComparableObjectSeries: java.util.List data>
+org.jfree.data.ComparableObjectSeries.equals : r2 = (org.jfree.data.ComparableObjectSeries) r1
+org.jfree.data.ComparableObjectSeries.equals : return 1
+org.jfree.data.ComparableObjectSeries.equals : $z0 = r1 instanceof org.jfree.data.ComparableObjectSeries
+org.jfree.data.ComparableObjectSeries.equals : $i0 = r0.<org.jfree.data.ComparableObjectSeries: int maximumItemCount>
+org.jfree.data.ComparableObjectSeries.equals : $z4 = r0.<org.jfree.data.ComparableObjectSeries: boolean allowDuplicateXValues>
+org.jfree.data.ComparableObjectSeries.equals : $z2 = r0.<org.jfree.data.ComparableObjectSeries: boolean autoSort>
+org.jfree.data.general.Series.equals : $r3 = virtualinvoke r0.<org.jfree.data.general.Series: java.lang.Comparable getKey()>()
+org.jfree.data.general.Series.equals : $z0 = r1 instanceof org.jfree.data.general.Series
+org.jfree.data.general.Series.equals : if r1 != r0 goto $z0 = r1 instanceof org.jfree.data.general.Series
+org.jfree.data.general.Series.equals : r2 = (org.jfree.data.general.Series) r1
+org.jfree.data.general.Series.equals : return 1
+org.jfree.data.general.Series.equals : $r5 = virtualinvoke r0.<org.jfree.data.general.Series: java.lang.String getDescription()>()
+org.jfree.data.general.Series.getKey : $r1 = r0.<org.jfree.data.general.Series: java.lang.Comparable key>
+org.jfree.data.xy.YIntervalSeries.add : $r1 = new org.jfree.data.xy.YIntervalDataItem
+org.jfree.data.general.Series.fireSeriesChanged : $z0 = r0.<org.jfree.data.general.Series: boolean notify>
+org.jfree.data.general.Series.fireSeriesChanged : $r1 = new org.jfree.data.general.SeriesChangeEvent
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null goto return
+org.jfree.data.xy.YInterval.equals : $d2 = r0.<org.jfree.data.xy.YInterval: double yLow>
+org.jfree.data.xy.YInterval.equals : $z0 = r1 instanceof org.jfree.data.xy.YInterval
+org.jfree.data.xy.YInterval.equals : $d4 = r0.<org.jfree.data.xy.YInterval: double yHigh>
+org.jfree.data.xy.YInterval.equals : $d0 = r0.<org.jfree.data.xy.YInterval: double y>
+org.jfree.data.xy.YInterval.equals : if r1 != r0 goto $z0 = r1 instanceof org.jfree.data.xy.YInterval
+org.jfree.data.xy.YInterval.equals : return 1
+org.jfree.data.xy.YInterval.equals : r2 = (org.jfree.data.xy.YInterval) r1
+org.jfree.data.general.Series.getDescription : $r1 = r0.<org.jfree.data.general.Series: java.lang.String description>
+org.jfree.data.ComparableObjectSeries.getItemCount : $r1 = r0.<org.jfree.data.ComparableObjectSeries: java.util.List data>
+org.jfree.data.general.Series.notifyListeners : $r3 = r0.<org.jfree.data.general.Series: javax.swing.event.EventListenerList listeners>
+org.jfree.data.general.Series.notifyListeners : $i1 = lengthof r2

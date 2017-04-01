@@ -1,0 +1,17 @@
+ant.HexDump.byte2bin : i1 = 0 >>>>>>>> ant.HexDump.byte2bin : if i1 >= 8
+ant.HexDump.byte2bin : if i1 >= 8 >>>>>>>> ant.HexDump.byte2bin : $r1 = <ant.HexDump: byte[] COMPARE_BITS>
+ant.HexDump.byte2bin : if i1 >= 8 >>>>>>>> ant.HexDump.byte2bin : return
+ant.HexDump.byte2bin : $r1 = <ant.HexDump: byte[] COMPARE_BITS> >>>>>>>> ant.HexDump.byte2bin : $b2 = $r1[i1]
+ant.HexDump.byte2bin : $b2 = $r1[i1] >>>>>>>> ant.HexDump.byte2bin : $b3 = b0 & $b2
+ant.HexDump.byte2bin : $b3 = b0 & $b2 >>>>>>>> ant.HexDump.byte2bin : if $b3 == 0
+ant.HexDump.byte2bin : if $b3 == 0 >>>>>>>> ant.HexDump.byte2bin : $r2 = <ant.HexDump: char[] BIT_DIGIT>
+ant.HexDump.byte2bin : if $b3 == 0 >>>>>>>> ant.HexDump.byte2bin : $r4 = <ant.HexDump: char[] BIT_DIGIT>
+ant.HexDump.byte2bin : $r4 = <ant.HexDump: char[] BIT_DIGIT> >>>>>>>> ant.HexDump.byte2bin : $c5 = $r4[0]
+ant.HexDump.byte2bin : $c5 = $r4[0] >>>>>>>> ant.HexDump.byte2bin : virtualinvoke r0.<java.lang.StringBuffer: java.lang.StringBuffer append(char)>($c5)
+ant.HexDump.byte2bin : virtualinvoke r0.<java.lang.StringBuffer: java.lang.StringBuffer append(char)>($c5) >>>>>>>> ant.HexDump.byte2bin : i1 = i1 + 1
+ant.HexDump.byte2bin : i1 = i1 + 1 >>>>>>>> ant.HexDump.byte2bin : goto [?= (branch)]
+ant.HexDump.byte2bin : goto [?= (branch)] >>>>>>>> ant.HexDump.byte2bin : if i1 >= 8
+ant.HexDump.byte2bin : $r2 = <ant.HexDump: char[] BIT_DIGIT> >>>>>>>> ant.HexDump.byte2bin : $c4 = $r2[1]
+ant.HexDump.byte2bin : $c4 = $r2[1] >>>>>>>> ant.HexDump.byte2bin : virtualinvoke r0.<java.lang.StringBuffer: java.lang.StringBuffer append(char)>($c4)
+ant.HexDump.byte2bin : virtualinvoke r0.<java.lang.StringBuffer: java.lang.StringBuffer append(char)>($c4) >>>>>>>> ant.HexDump.byte2bin : goto [?= i1 = i1 + 1]
+ant.HexDump.byte2bin : goto [?= i1 = i1 + 1] >>>>>>>> ant.HexDump.byte2bin : i1 = i1 + 1

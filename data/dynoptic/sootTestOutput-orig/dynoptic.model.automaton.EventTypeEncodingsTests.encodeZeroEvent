@@ -1,0 +1,16 @@
+dynoptic.main.DynopticMain.setUpLogging : $r1 = <dynoptic.main.DynopticMain: java.util.logging.Logger logger>
+dynoptic.model.fifosys.gfsm.observed.fifosys.ObsFifoSysState.clearCache : $r0 = <dynoptic.model.fifosys.gfsm.observed.fifosys.ObsFifoSysState: java.util.Map fifoSysStatesMap>
+dynoptic.model.automaton.EventTypeEncodings.equals : $r3 = r0.<dynoptic.model.automaton.EventTypeEncodings: java.util.Map eventEncodings>
+dynoptic.model.automaton.EventTypeEncodings.equals : r2 = (dynoptic.model.automaton.EventTypeEncodings) r1
+dynoptic.model.automaton.EventTypeEncodings.equals : if r1 != r0 goto $z0 = r1 instanceof dynoptic.model.automaton.EventTypeEncodings
+dynoptic.model.automaton.EventTypeEncodings.equals : $z0 = r1 instanceof dynoptic.model.automaton.EventTypeEncodings
+dynoptic.model.fifosys.gfsm.observed.ObsFSMState.clearCache : $r1 = <dynoptic.model.fifosys.gfsm.observed.ObsFSMState: java.util.Map initialProcessStatesMap>
+dynoptic.model.fifosys.gfsm.observed.ObsFSMState.clearCache : <dynoptic.model.fifosys.gfsm.observed.ObsFSMState: int prevAnonId> = -1
+dynoptic.model.fifosys.gfsm.observed.ObsFSMState.clearCache : $r0 = <dynoptic.model.fifosys.gfsm.observed.ObsFSMState: java.util.Map prevStateAndEventMap>
+dynoptic.model.automaton.EventTypeEncodingsTests.checkEncodingEquality : $r3 = new dynoptic.model.automaton.EventTypeEncodings
+dynoptic.model.automaton.EventTypeEncodingsTests.checkEncodingEquality : $z0 = interfaceinvoke r1.<java.util.Set: boolean equals(java.lang.Object)>(r2)
+dynoptic.model.automaton.EventTypeEncodingsTests.checkEncodingEquality : staticinvoke <org.junit.Assert: void assertEquals(java.lang.Object,java.lang.Object)>(r4, r5)
+dynoptic.model.automaton.EventTypeEncodingsTests.checkEncodingEquality : $r6 = new dynoptic.model.automaton.EventTypeEncodings
+dynoptic.util.Util.newMap : $r0 = new java.util.LinkedHashMap
+dynoptic.util.Util.newList : $r0 = new java.util.ArrayList
+dynoptic.model.fifosys.gfsm.observed.ObsMultFSMState.clearCache : $r0 = <dynoptic.model.fifosys.gfsm.observed.ObsMultFSMState: java.util.Map cache>

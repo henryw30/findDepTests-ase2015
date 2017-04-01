@@ -1,0 +1,41 @@
+org.joda.time.Instant.getMillis : $l0 = r0.<org.joda.time.Instant: long iMillis>
+org.joda.time.chrono.BaseChronology.add : $l5 = staticinvoke <org.joda.time.field.FieldUtils: long safeAdd(long,long)>(l0, l3)
+org.joda.time.chrono.BaseChronology.add : $b4 = l1 cmp 0L
+org.joda.time.chrono.BaseChronology.add : l3 = staticinvoke <org.joda.time.field.FieldUtils: long safeMultiply(long,int)>(l1, i2)
+org.joda.time.Duration.plus : if r1 != null goto $l0 = interfaceinvoke r1.<org.joda.time.ReadableDuration: long getMillis()>()
+org.joda.time.Duration.plus : $l0 = interfaceinvoke r1.<org.joda.time.ReadableDuration: long getMillis()>()
+org.joda.time.Duration.standardHours : $r1 = new org.joda.time.Duration
+org.joda.time.Duration.standardHours : $b1 = l0 cmp 0L
+org.joda.time.Instant.withDurationAdded : $l1 = interfaceinvoke r1.<org.joda.time.ReadableDuration: long getMillis()>()
+org.joda.time.Instant.withDurationAdded : $r1 = virtualinvoke r0.<org.joda.time.Instant: org.joda.time.Chronology getChronology()>()
+org.joda.time.Instant.withDurationAdded : $b3 = l0 cmp 0L
+org.joda.time.Instant.withDurationAdded : $r2 = virtualinvoke r0.<org.joda.time.Instant: org.joda.time.Instant withMillis(long)>(l2)
+org.joda.time.Instant.withDurationAdded : if r1 == null goto return r0
+org.joda.time.Instant.withMillis : $l1 = r0.<org.joda.time.Instant: long iMillis>
+org.joda.time.DateTimeUtils.currentTimeMillis : $r0 = <org.joda.time.DateTimeUtils: org.joda.time.DateTimeUtils$MillisProvider cMillisProvider>
+org.joda.time.base.AbstractDuration.compareTo : $b3 = l0 cmp l1
+org.joda.time.base.AbstractDuration.compareTo : $b2 = l0 cmp l1
+org.joda.time.base.AbstractDuration.compareTo : l0 = virtualinvoke r0.<org.joda.time.base.AbstractDuration: long getMillis()>()
+org.joda.time.base.AbstractDuration.compareTo : return 0
+org.joda.time.base.AbstractDuration.compareTo : l1 = interfaceinvoke r1.<org.joda.time.ReadableDuration: long getMillis()>()
+org.joda.time.base.AbstractDuration.isShorterThan : if r1 != null goto $i0 = virtualinvoke r0.<org.joda.time.base.AbstractDuration: int compareTo(org.joda.time.ReadableDuration)>(r1)
+org.joda.time.base.AbstractDuration.isShorterThan : $i0 = virtualinvoke r0.<org.joda.time.base.AbstractDuration: int compareTo(org.joda.time.ReadableDuration)>(r1)
+org.joda.time.Duration.withDurationAdded : $b4 = l0 cmp 0L
+org.joda.time.Duration.withDurationAdded : $r1 = new org.joda.time.Duration
+org.joda.time.Duration.withDurationAdded : l2 = staticinvoke <org.joda.time.field.FieldUtils: long safeMultiply(long,int)>(l0, i1)
+org.joda.time.Duration.withDurationAdded : $l5 = virtualinvoke r0.<org.joda.time.Duration: long getMillis()>()
+org.joda.time.Instant.toInstant : return r0
+org.joda.time.DateTimeUtils$OffsetMillisProvider.getMillis : $l0 = staticinvoke <java.lang.System: long currentTimeMillis()>()
+org.joda.time.field.FieldUtils.safeAdd : l2 = l0 + l1
+org.joda.time.field.FieldUtils.safeAdd : $l3 = l0 ^ l2
+org.joda.time.field.FieldUtils.safeAdd : return l2
+org.joda.time.field.FieldUtils.safeMultiply : $l5 = (long) i1
+org.joda.time.field.FieldUtils.safeMultiply : tableswitch(i1) {     case -1: goto $l3 = neg l0;     case 0: goto return 0L;     case 1: goto return l0;     default: goto $l4 = (long) i1; }
+org.joda.time.field.FieldUtils.safeMultiply : return l2
+org.joda.time.field.FieldUtils.safeMultiply : return l0
+org.joda.time.field.FieldUtils.safeMultiply : $l4 = (long) i1
+org.joda.time.DateTimeUtils.getDurationMillis : $l0 = interfaceinvoke r0.<org.joda.time.ReadableDuration: long getMillis()>()
+org.joda.time.DateTimeUtils.getDurationMillis : if r0 != null goto $l0 = interfaceinvoke r0.<org.joda.time.ReadableDuration: long getMillis()>()
+org.joda.time.base.BaseDuration.getMillis : $l0 = r0.<org.joda.time.base.BaseDuration: long iMillis>
+org.joda.time.Instant.getChronology : $r1 = staticinvoke <org.joda.time.chrono.ISOChronology: org.joda.time.chrono.ISOChronology getInstanceUTC()>()
+org.joda.time.chrono.ISOChronology.getInstanceUTC : $r0 = <org.joda.time.chrono.ISOChronology: org.joda.time.chrono.ISOChronology INSTANCE_UTC>

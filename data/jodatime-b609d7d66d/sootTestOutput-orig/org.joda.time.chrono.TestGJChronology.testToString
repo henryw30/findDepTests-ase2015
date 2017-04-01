@@ -1,0 +1,662 @@
+org.joda.time.DateTimeFieldType.monthOfYear : $r0 = <org.joda.time.DateTimeFieldType: org.joda.time.DateTimeFieldType MONTH_OF_YEAR_TYPE>
+org.joda.time.field.UnsupportedDurationField.getInstance : $r4 = <org.joda.time.field.UnsupportedDurationField: java.util.HashMap cCache>
+org.joda.time.field.UnsupportedDurationField.getInstance : return r2
+org.joda.time.field.UnsupportedDurationField.getInstance : $r1 = <org.joda.time.field.UnsupportedDurationField: java.util.HashMap cCache>
+org.joda.time.field.UnsupportedDurationField.getInstance : if r2 != null goto return r2
+org.joda.time.format.FormatUtils.appendPaddedInteger : if i0 >= 10000 goto $d0 = (double) i0
+org.joda.time.format.FormatUtils.appendPaddedInteger : if i0 >= 1000 goto (branch)
+org.joda.time.format.FormatUtils.appendPaddedInteger : if i0 >= 10 goto (branch)
+org.joda.time.format.FormatUtils.appendPaddedInteger : virtualinvoke r0.<java.lang.StringBuffer: java.lang.StringBuffer append(char)>(48)
+org.joda.time.format.FormatUtils.appendPaddedInteger : if i1 <= 1 goto $i3 = i0 + 48
+org.joda.time.format.FormatUtils.appendPaddedInteger : if i1 <= i15 goto $r10 = staticinvoke <java.lang.Integer: java.lang.String toString(int)>(i0)
+org.joda.time.format.FormatUtils.appendPaddedInteger : i15 = 4
+org.joda.time.format.FormatUtils.appendPaddedInteger : if i0 >= 100 goto (branch)
+org.joda.time.format.FormatUtils.appendPaddedInteger : $r10 = staticinvoke <java.lang.Integer: java.lang.String toString(int)>(i0)
+org.joda.time.format.FormatUtils.appendPaddedInteger : $i3 = i0 + 48
+org.joda.time.format.FormatUtils.appendPaddedInteger : if i0 >= 0 goto (branch)
+org.joda.time.format.DateTimeFormatter.requirePrinter : r1 = r0.<org.joda.time.format.DateTimeFormatter: org.joda.time.format.DateTimePrinter iPrinter>
+org.joda.time.format.DateTimeFormatter.requirePrinter : if r1 != null goto return r1
+org.joda.time.format.DateTimeFormatter.requirePrinter : return r1
+org.joda.time.Instant.getMillis : $l0 = r0.<org.joda.time.Instant: long iMillis>
+org.joda.time.chrono.GJChronology.julianToGregorianByYear : $r1 = r0.<org.joda.time.chrono.GJChronology: org.joda.time.chrono.JulianChronology iJulianChronology>
+org.joda.time.field.PreciseDurationDateTimeField.set : $i4 = virtualinvoke r0.<org.joda.time.field.PreciseDurationDateTimeField: int get(long)>(l0)
+org.joda.time.field.PreciseDurationDateTimeField.set : $i2 = virtualinvoke r0.<org.joda.time.field.PreciseDurationDateTimeField: int getMinimumValue()>()
+org.joda.time.field.PreciseDurationDateTimeField.set : $i3 = virtualinvoke r0.<org.joda.time.field.PreciseDurationDateTimeField: int getMaximumValueForSet(long,int)>(l0, i1)
+org.joda.time.chrono.AssembledChronology.minuteOfDay : $r1 = r0.<org.joda.time.chrono.AssembledChronology: org.joda.time.DateTimeField iMinuteOfDay>
+org.joda.time.chrono.BasicMonthOfYearDateTimeField.get : $r1 = r0.<org.joda.time.chrono.BasicMonthOfYearDateTimeField: org.joda.time.chrono.BasicChronology iChronology>
+org.joda.time.chrono.BasicWeekyearDateTimeField.roundFloor : $r3 = r0.<org.joda.time.chrono.BasicWeekyearDateTimeField: org.joda.time.chrono.BasicChronology iChronology>
+org.joda.time.chrono.BasicWeekyearDateTimeField.roundFloor : if i1 <= 1 goto return l2
+org.joda.time.chrono.BasicWeekyearDateTimeField.roundFloor : $r1 = r0.<org.joda.time.chrono.BasicWeekyearDateTimeField: org.joda.time.chrono.BasicChronology iChronology>
+org.joda.time.chrono.BasicWeekyearDateTimeField.roundFloor : return l2
+org.joda.time.chrono.GregorianChronology.getMaxYear : return 292278993
+org.joda.time.chrono.GregorianChronology.getDateTimeMillis : $l4 = specialinvoke r0.<org.joda.time.chrono.BasicGJChronology: long getDateTimeMillis(int,int,int,int)>(i0, i1, i2, i3)
+org.joda.time.chrono.AssembledChronology.millisOfSecond : $r1 = r0.<org.joda.time.chrono.AssembledChronology: org.joda.time.DateTimeField iMillisOfSecond>
+org.joda.time.chrono.GregorianChronology.getAverageMillisPerYearDividedByTwo : return 15778476000L
+org.joda.time.chrono.AssembledChronology.halfdays : $r1 = r0.<org.joda.time.chrono.AssembledChronology: org.joda.time.DurationField iHalfdays>
+org.joda.time.chrono.GJEraDateTimeField.getDurationField : $r1 = staticinvoke <org.joda.time.DurationFieldType: org.joda.time.DurationFieldType eras()>()
+org.joda.time.chrono.ISOChronology.getInstance : return r10
+org.joda.time.chrono.ISOChronology.getInstance : exitmonitor r2
+org.joda.time.chrono.ISOChronology.getInstance : if r10 != null goto exitmonitor r2
+org.joda.time.chrono.ISOChronology.getInstance : $r8 = <org.joda.time.chrono.ISOChronology: java.util.Map cCache>
+org.joda.time.chrono.ISOChronology.getInstance : if r0 != null goto $i1 = staticinvoke <java.lang.System: int identityHashCode(java.lang.Object)>(r0)
+org.joda.time.chrono.ISOChronology.getInstance : $r16 = <org.joda.time.chrono.ISOChronology: org.joda.time.chrono.ISOChronology[] cFastCache>
+org.joda.time.chrono.ISOChronology.getInstance : $i1 = staticinvoke <java.lang.System: int identityHashCode(java.lang.Object)>(r0)
+org.joda.time.chrono.ISOChronology.getInstance : $r5 = <org.joda.time.chrono.ISOChronology: org.joda.time.chrono.ISOChronology[] cFastCache>
+org.joda.time.chrono.ISOChronology.getInstance : $r7 = <org.joda.time.chrono.ISOChronology: java.util.Map cCache>
+org.joda.time.chrono.ISOChronology.getInstance : if r1 == null goto $r7 = <org.joda.time.chrono.ISOChronology: java.util.Map cCache>
+org.joda.time.chrono.ISOChronology.getInstance : $r0 = staticinvoke <org.joda.time.DateTimeZone: org.joda.time.DateTimeZone getDefault()>()
+org.joda.time.chrono.AssembledChronology.months : $r1 = r0.<org.joda.time.chrono.AssembledChronology: org.joda.time.DurationField iMonths>
+org.joda.time.format.DateTimeFormatter.selectChronology : return r2
+org.joda.time.format.DateTimeFormatter.selectChronology : $r4 = r0.<org.joda.time.format.DateTimeFormatter: org.joda.time.DateTimeZone iZone>
+org.joda.time.format.DateTimeFormatter.selectChronology : $r3 = r0.<org.joda.time.format.DateTimeFormatter: org.joda.time.Chronology iChrono>
+org.joda.time.format.DateTimeFormatter.selectChronology : r2 = staticinvoke <org.joda.time.DateTimeUtils: org.joda.time.Chronology getChronology(org.joda.time.Chronology)>(r1)
+org.joda.time.format.DateTimeFormatter.selectChronology : r2 = r0.<org.joda.time.format.DateTimeFormatter: org.joda.time.Chronology iChrono>
+org.joda.time.chrono.GJChronology.getMinimumDaysInFirstWeek : $r1 = r0.<org.joda.time.chrono.GJChronology: org.joda.time.chrono.GregorianChronology iGregorianChronology>
+org.joda.time.chrono.BasicWeekyearDateTimeField.getRangeDurationField : return null
+org.joda.time.field.DelegatedDateTimeField.getRangeDurationField : $r1 = r0.<org.joda.time.field.DelegatedDateTimeField: org.joda.time.DateTimeField iField>
+org.joda.time.chrono.BaseChronology.eras : $r1 = staticinvoke <org.joda.time.DurationFieldType: org.joda.time.DurationFieldType eras()>()
+org.joda.time.chrono.AssembledChronology.yearOfCentury : $r1 = r0.<org.joda.time.chrono.AssembledChronology: org.joda.time.DateTimeField iYearOfCentury>
+org.joda.time.chrono.BasicYearDateTimeField.getRangeDurationField : return null
+org.joda.time.field.BaseDateTimeField.isSupported : return 1
+org.joda.time.field.BaseDateTimeField.remainder : $l1 = virtualinvoke r0.<org.joda.time.field.BaseDateTimeField: long roundFloor(long)>(l0)
+org.joda.time.chrono.GJDayOfWeekDateTimeField.get : $r1 = r0.<org.joda.time.chrono.GJDayOfWeekDateTimeField: org.joda.time.chrono.BasicChronology iChronology>
+org.joda.time.field.BaseDateTimeField.roundCeiling : l1 = virtualinvoke r0.<org.joda.time.field.BaseDateTimeField: long roundFloor(long)>(l0)
+org.joda.time.field.BaseDateTimeField.roundCeiling : $b2 = l1 cmp l0
+org.joda.time.field.BaseDateTimeField.roundCeiling : return l0
+org.joda.time.field.BaseDateTimeField.roundCeiling : l0 = virtualinvoke r0.<org.joda.time.field.BaseDateTimeField: long add(long,int)>(l1, 1)
+org.joda.time.chrono.GJChronology.assemble : r0.<org.joda.time.chrono.GJChronology: org.joda.time.chrono.GregorianChronology iGregorianChronology> = r4
+org.joda.time.chrono.GJChronology.assemble : $r35 = new org.joda.time.chrono.GJChronology$CutoverField
+org.joda.time.chrono.GJChronology.assemble : $r32 = new org.joda.time.chrono.GJChronology$CutoverField
+org.joda.time.chrono.GJChronology.assemble : $r64 = virtualinvoke r3.<org.joda.time.chrono.JulianChronology: org.joda.time.DateTimeField yearOfEra()>()
+org.joda.time.chrono.GJChronology.assemble : $r82 = virtualinvoke r3.<org.joda.time.chrono.JulianChronology: org.joda.time.DateTimeField weekyear()>()
+org.joda.time.chrono.GJChronology.assemble : $r58 = new org.joda.time.chrono.GJChronology$ImpreciseCutoverField
+org.joda.time.chrono.GJChronology.assemble : r0.<org.joda.time.chrono.GJChronology: org.joda.time.chrono.JulianChronology iJulianChronology> = r3
+org.joda.time.chrono.GJChronology.assemble : $r41 = new org.joda.time.chrono.GJChronology$CutoverField
+org.joda.time.chrono.GJChronology.assemble : $r38 = new org.joda.time.chrono.GJChronology$CutoverField
+org.joda.time.chrono.GJChronology.assemble : $r61 = r1.<org.joda.time.chrono.AssembledChronology$Fields: org.joda.time.DateTimeField year>
+org.joda.time.chrono.GJChronology.assemble : $r94 = r1.<org.joda.time.chrono.AssembledChronology$Fields: org.joda.time.DurationField months>
+org.joda.time.chrono.GJChronology.assemble : $r71 = new org.joda.time.chrono.GJChronology$ImpreciseCutoverField
+org.joda.time.chrono.GJChronology.assemble : $l1 = virtualinvoke r5.<org.joda.time.Instant: long getMillis()>()
+org.joda.time.chrono.GJChronology.assemble : $r10 = r2[2]
+org.joda.time.chrono.GJChronology.assemble : $r6 = virtualinvoke r0.<org.joda.time.chrono.GJChronology: java.lang.Object getParam()>()
+org.joda.time.chrono.GJChronology.assemble : $r11 = virtualinvoke r0.<org.joda.time.chrono.GJChronology: org.joda.time.Chronology getBase()>()
+org.joda.time.chrono.GJChronology.assemble : $r26 = new org.joda.time.chrono.GJChronology$CutoverField
+org.joda.time.chrono.GJChronology.assemble : $r47 = new org.joda.time.chrono.GJChronology$CutoverField
+org.joda.time.chrono.GJChronology.assemble : $r52 = virtualinvoke r3.<org.joda.time.chrono.JulianChronology: org.joda.time.DateTimeField dayOfYear()>()
+org.joda.time.chrono.GJChronology.assemble : $r91 = virtualinvoke r3.<org.joda.time.chrono.JulianChronology: org.joda.time.DateTimeField dayOfMonth()>()
+org.joda.time.chrono.GJChronology.assemble : $r81 = new org.joda.time.chrono.GJChronology$ImpreciseCutoverField
+org.joda.time.chrono.GJChronology.assemble : $r77 = virtualinvoke r3.<org.joda.time.chrono.JulianChronology: org.joda.time.DateTimeField monthOfYear()>()
+org.joda.time.chrono.GJChronology.assemble : $r79 = r1.<org.joda.time.chrono.AssembledChronology$Fields: org.joda.time.DateTimeField monthOfYear>
+org.joda.time.chrono.GJChronology.assemble : $r84 = new org.joda.time.chrono.GJChronology$ImpreciseCutoverField
+org.joda.time.chrono.GJChronology.assemble : $r74 = r1.<org.joda.time.chrono.AssembledChronology$Fields: org.joda.time.DateTimeField centuryOfEra>
+org.joda.time.chrono.GJChronology.assemble : $r50 = virtualinvoke r4.<org.joda.time.chrono.GregorianChronology: org.joda.time.DateTimeField year()>()
+org.joda.time.chrono.GJChronology.assemble : r1.<org.joda.time.chrono.AssembledChronology$Fields: org.joda.time.DateTimeField dayOfMonth> = r93
+org.joda.time.chrono.GJChronology.assemble : r0.<org.joda.time.chrono.GJChronology: org.joda.time.Instant iCutoverInstant> = r5
+org.joda.time.chrono.GJChronology.assemble : $r9 = r2[1]
+org.joda.time.chrono.GJChronology.assemble : $r63 = new org.joda.time.chrono.GJChronology$ImpreciseCutoverField
+org.joda.time.chrono.GJChronology.assemble : $r68 = virtualinvoke r3.<org.joda.time.chrono.JulianChronology: org.joda.time.DateTimeField yearOfCentury()>()
+org.joda.time.chrono.GJChronology.assemble : $l4 = r0.<org.joda.time.chrono.GJChronology: long iCutoverMillis>
+org.joda.time.chrono.GJChronology.assemble : $r20 = new org.joda.time.chrono.GJChronology$CutoverField
+org.joda.time.chrono.GJChronology.assemble : $r88 = r1.<org.joda.time.chrono.AssembledChronology$Fields: org.joda.time.DateTimeField weekyear>
+org.joda.time.chrono.GJChronology.assemble : $r23 = new org.joda.time.chrono.GJChronology$CutoverField
+org.joda.time.chrono.GJChronology.assemble : $r59 = virtualinvoke r3.<org.joda.time.chrono.JulianChronology: org.joda.time.DateTimeField year()>()
+org.joda.time.chrono.GJChronology.assemble : $r14 = new org.joda.time.chrono.GJChronology$CutoverField
+org.joda.time.chrono.GJChronology.assemble : $r54 = virtualinvoke r4.<org.joda.time.chrono.GregorianChronology: org.joda.time.DateTimeField weekyear()>()
+org.joda.time.chrono.GJChronology.assemble : $r17 = new org.joda.time.chrono.GJChronology$CutoverField
+org.joda.time.chrono.GJChronology.assemble : $r85 = virtualinvoke r3.<org.joda.time.chrono.JulianChronology: org.joda.time.DateTimeField weekyearOfCentury()>()
+org.joda.time.chrono.GJChronology.assemble : virtualinvoke r1.<org.joda.time.chrono.AssembledChronology$Fields: void copyFieldsFrom(org.joda.time.Chronology)>(r4)
+org.joda.time.chrono.GJChronology.assemble : $r29 = new org.joda.time.chrono.GJChronology$CutoverField
+org.joda.time.chrono.GJChronology.assemble : $r76 = new org.joda.time.chrono.GJChronology$ImpreciseCutoverField
+org.joda.time.chrono.GJChronology.assemble : $r8 = r2[0]
+org.joda.time.chrono.GJChronology.assemble : $r67 = new org.joda.time.chrono.GJChronology$ImpreciseCutoverField
+org.joda.time.chrono.GJChronology.assemble : $r44 = new org.joda.time.chrono.GJChronology$CutoverField
+org.joda.time.chrono.GJChronology.assemble : $i2 = virtualinvoke r3.<org.joda.time.chrono.JulianChronology: int getMinimumDaysInFirstWeek()>()
+org.joda.time.chrono.GJChronology.assemble : $r90 = new org.joda.time.chrono.GJChronology$CutoverField
+org.joda.time.chrono.GJChronology.assemble : $r72 = virtualinvoke r3.<org.joda.time.chrono.JulianChronology: org.joda.time.DateTimeField centuryOfEra()>()
+org.joda.time.chrono.GJChronology.assemble : $r51 = new org.joda.time.chrono.GJChronology$CutoverField
+org.joda.time.chrono.GJChronology.assemble : $r55 = new org.joda.time.chrono.GJChronology$CutoverField
+org.joda.time.chrono.GJChronology.assemble : $r56 = virtualinvoke r3.<org.joda.time.chrono.JulianChronology: org.joda.time.DateTimeField weekOfWeekyear()>()
+org.joda.time.chrono.GJChronology.assemble : $r13 = virtualinvoke r4.<org.joda.time.chrono.GregorianChronology: org.joda.time.DateTimeField millisOfDay()>()
+org.joda.time.chrono.AssembledChronology.halfdayOfDay : $r1 = r0.<org.joda.time.chrono.AssembledChronology: org.joda.time.DateTimeField iHalfdayOfDay>
+org.joda.time.chrono.AssembledChronology.dayOfMonth : $r1 = r0.<org.joda.time.chrono.AssembledChronology: org.joda.time.DateTimeField iDayOfMonth>
+org.joda.time.chrono.ZonedChronology.getZone : $r1 = virtualinvoke r0.<org.joda.time.chrono.ZonedChronology: java.lang.Object getParam()>()
+org.joda.time.chrono.AssembledChronology.weekyearOfCentury : $r1 = r0.<org.joda.time.chrono.AssembledChronology: org.joda.time.DateTimeField iWeekyearOfCentury>
+org.joda.time.chrono.AssembledChronology.hours : $r1 = r0.<org.joda.time.chrono.AssembledChronology: org.joda.time.DurationField iHours>
+org.joda.time.chrono.AssembledChronology.years : $r1 = r0.<org.joda.time.chrono.AssembledChronology: org.joda.time.DurationField iYears>
+org.joda.time.chrono.GJChronology$CutoverField.get : $r1 = r0.<org.joda.time.chrono.GJChronology$CutoverField: org.joda.time.DateTimeField iGregorianField>
+org.joda.time.chrono.GJChronology$CutoverField.get : $l1 = r0.<org.joda.time.chrono.GJChronology$CutoverField: long iCutover>
+org.joda.time.DateTimeUtils.getChronology : if r0 != null goto return r0
+org.joda.time.DateTimeUtils.getChronology : return r0
+org.joda.time.DateTimeUtils.getChronology : $r1 = staticinvoke <org.joda.time.chrono.ISOChronology: org.joda.time.chrono.ISOChronology getInstance()>()
+org.joda.time.chrono.AssembledChronology.era : $r1 = r0.<org.joda.time.chrono.AssembledChronology: org.joda.time.DateTimeField iEra>
+org.joda.time.field.PreciseDurationDateTimeField.roundFloor : $b1 = l0 cmp 0L
+org.joda.time.field.PreciseDurationDateTimeField.roundFloor : $l2 = r0.<org.joda.time.field.PreciseDurationDateTimeField: long iUnitMillis>
+org.joda.time.field.MillisDurationField.isSupported : return 1
+org.joda.time.chrono.AssembledChronology.getBase : $r1 = r0.<org.joda.time.chrono.AssembledChronology: org.joda.time.Chronology iBase>
+org.joda.time.chrono.AssembledChronology.year : $r1 = r0.<org.joda.time.chrono.AssembledChronology: org.joda.time.DateTimeField iYear>
+org.joda.time.field.PreciseDurationDateTimeField.getMaximumValueForSet : $i2 = virtualinvoke r0.<org.joda.time.field.PreciseDurationDateTimeField: int getMaximumValue(long)>(l0)
+org.joda.time.chrono.AssembledChronology.weekyears : $r1 = r0.<org.joda.time.chrono.AssembledChronology: org.joda.time.DurationField iWeekyears>
+org.joda.time.chrono.BasicChronology.getDateTimeMillis : $r3 = staticinvoke <org.joda.time.DateTimeFieldType: org.joda.time.DateTimeFieldType millisOfDay()>()
+org.joda.time.chrono.BasicChronology.getDateTimeMillis : $r2 = virtualinvoke r0.<org.joda.time.chrono.BasicChronology: org.joda.time.Chronology getBase()>()
+org.joda.time.chrono.BasicChronology.getDateTimeMillis : $l5 = virtualinvoke r0.<org.joda.time.chrono.BasicChronology: long getDateMidnightMillis(int,int,int)>(i0, i1, i2)
+org.joda.time.format.ISODateTimeFormat.date : $r0 = staticinvoke <org.joda.time.format.ISODateTimeFormat: org.joda.time.format.DateTimeFormatter yearMonthDay()>()
+org.joda.time.chrono.BasicDayOfYearDateTimeField.getRangeDurationField : $r1 = r0.<org.joda.time.chrono.BasicDayOfYearDateTimeField: org.joda.time.chrono.BasicChronology iChronology>
+org.joda.time.format.DateTimeFormatterBuilder$Fraction.getFractionData : $l4 = l1 * l3
+org.joda.time.format.DateTimeFormatterBuilder$Fraction.getFractionData : goto [?= $r3 = newarray (long)[2]]
+org.joda.time.format.DateTimeFormatterBuilder$Fraction.getFractionData : l3 = 1000000000L
+org.joda.time.format.DateTimeFormatterBuilder$Fraction.getFractionData : tableswitch(i2) {     case 1: goto l3 = 10L;     case 2: goto l3 = 100L;     case 3: goto l3 = 1000L;     case 4: goto l3 = 10000L;     case 5: goto l3 = 100000L;     case 6: goto l3 = 1000000L;     case 7: goto l3 = 10000000L;     case 8: goto l3 = 100000000L;     case 9: goto l3 = 1000000000L;     case 10: goto l3 = 10000000000L;     case 11: goto l3 = 100000000000L;     case 12: goto l3 = 1000000000000L;     case 13: goto l3 = 10000000000000L;     case 14: goto l3 = 100000000000000L;     case 15: goto l3 = 1000000000000000L;     case 16: goto l3 = 10000000000000000L;     case 17: goto l3 = 100000000000000000L;     case 18: goto l3 = 1000000000000000000L;     default: goto l3 = 1L; }
+org.joda.time.format.DateTimeFormatterBuilder$Fraction.getFractionData : $r3 = newarray (long)[2]
+org.joda.time.format.DateTimeFormatterBuilder$Fraction.getFractionData : $r2 = virtualinvoke r1.<org.joda.time.DateTimeField: org.joda.time.DurationField getDurationField()>()
+org.joda.time.format.DateTimeFormatterBuilder$Fraction.getFractionData : i2 = r0.<org.joda.time.format.DateTimeFormatterBuilder$Fraction: int iMaxDigits>
+org.joda.time.tz.FixedDateTimeZone.hashCode : $r1 = virtualinvoke r0.<org.joda.time.tz.FixedDateTimeZone: java.lang.String getID()>()
+org.joda.time.tz.DateTimeZoneBuilder$PrecalculatedZone.equals : $r3 = virtualinvoke r0.<org.joda.time.tz.DateTimeZoneBuilder$PrecalculatedZone: java.lang.String getID()>()
+org.joda.time.tz.DateTimeZoneBuilder$PrecalculatedZone.equals : $z0 = r1 instanceof org.joda.time.tz.DateTimeZoneBuilder$PrecalculatedZone
+org.joda.time.tz.DateTimeZoneBuilder$PrecalculatedZone.equals : $z4 = staticinvoke <java.util.Arrays: boolean equals(int[],int[])>($r9, $r10)
+org.joda.time.tz.DateTimeZoneBuilder$PrecalculatedZone.equals : $z6 = virtualinvoke $r15.<org.joda.time.tz.DateTimeZoneBuilder$DSTZone: boolean equals(java.lang.Object)>($r16)
+org.joda.time.tz.DateTimeZoneBuilder$PrecalculatedZone.equals : $z3 = staticinvoke <java.util.Arrays: boolean equals(java.lang.Object[],java.lang.Object[])>($r7, $r8)
+org.joda.time.tz.DateTimeZoneBuilder$PrecalculatedZone.equals : $z5 = staticinvoke <java.util.Arrays: boolean equals(int[],int[])>($r11, $r12)
+org.joda.time.tz.DateTimeZoneBuilder$PrecalculatedZone.equals : r2 = (org.joda.time.tz.DateTimeZoneBuilder$PrecalculatedZone) r1
+org.joda.time.tz.DateTimeZoneBuilder$PrecalculatedZone.equals : return $z7
+org.joda.time.tz.DateTimeZoneBuilder$PrecalculatedZone.equals : $z2 = staticinvoke <java.util.Arrays: boolean equals(long[],long[])>($r5, $r6)
+org.joda.time.tz.DateTimeZoneBuilder$PrecalculatedZone.equals : if r0 != r1 goto $z0 = r1 instanceof org.joda.time.tz.DateTimeZoneBuilder$PrecalculatedZone
+org.joda.time.chrono.BasicChronology.getMinimumDaysInFirstWeek : $i0 = r0.<org.joda.time.chrono.BasicChronology: int iMinDaysInFirstWeek>
+org.joda.time.chrono.BasicChronology.getDayOfYear : $l3 = l0 - l2
+org.joda.time.chrono.BasicChronology.getDayOfYear : l2 = virtualinvoke r0.<org.joda.time.chrono.BasicChronology: long getYearMillis(int)>(i1)
+org.joda.time.chrono.AssembledChronology.hourOfHalfday : $r1 = r0.<org.joda.time.chrono.AssembledChronology: org.joda.time.DateTimeField iHourOfHalfday>
+org.joda.time.field.DelegatedDateTimeField.get : $r1 = r0.<org.joda.time.field.DelegatedDateTimeField: org.joda.time.DateTimeField iField>
+org.joda.time.chrono.BasicGJChronology.setYear : return l7
+org.joda.time.chrono.BasicGJChronology.setYear : $l6 = (long) i4
+org.joda.time.chrono.BasicGJChronology.setYear : i3 = virtualinvoke r0.<org.joda.time.chrono.BasicGJChronology: int getDayOfYear(long,int)>(l0, i2)
+org.joda.time.chrono.BasicGJChronology.setYear : $z0 = virtualinvoke r0.<org.joda.time.chrono.BasicGJChronology: boolean isLeapYear(int)>(i2)
+org.joda.time.chrono.BasicGJChronology.setYear : i4 = virtualinvoke r0.<org.joda.time.chrono.BasicGJChronology: int getMillisOfDay(long)>(l0)
+org.joda.time.chrono.BasicGJChronology.setYear : if i3 <= 59 goto l5 = virtualinvoke r0.<org.joda.time.chrono.BasicGJChronology: long getYearMonthDayMillis(int,int,int)>(i1, 1, i3)
+org.joda.time.chrono.BasicGJChronology.setYear : l5 = virtualinvoke r0.<org.joda.time.chrono.BasicGJChronology: long getYearMonthDayMillis(int,int,int)>(i1, 1, i3)
+org.joda.time.chrono.BasicGJChronology.setYear : $z2 = virtualinvoke r0.<org.joda.time.chrono.BasicGJChronology: boolean isLeapYear(int)>(i1)
+org.joda.time.chrono.BasicGJChronology.setYear : i2 = virtualinvoke r0.<org.joda.time.chrono.BasicGJChronology: int getYear(long)>(l0)
+org.joda.time.chrono.GJEraDateTimeField.getRangeDurationField : return null
+org.joda.time.format.DateTimeFormatter.printTo : $l3 = (long) i1
+org.joda.time.format.DateTimeFormatter.printTo : i1 = virtualinvoke r4.<org.joda.time.DateTimeZone: int getOffset(long)>(l0)
+org.joda.time.format.DateTimeFormatter.printTo : specialinvoke r0.<org.joda.time.format.DateTimeFormatter: void printTo(java.lang.StringBuffer,long,org.joda.time.Chronology)>(r1, l0, null)
+org.joda.time.format.DateTimeFormatter.printTo : r4 = virtualinvoke r5.<org.joda.time.Chronology: org.joda.time.DateTimeZone getZone()>()
+org.joda.time.format.DateTimeFormatter.printTo : r5 = specialinvoke r0.<org.joda.time.format.DateTimeFormatter: org.joda.time.Chronology selectChronology(org.joda.time.Chronology)>(r2)
+org.joda.time.format.DateTimeFormatter.printTo : r3 = specialinvoke r0.<org.joda.time.format.DateTimeFormatter: org.joda.time.format.DateTimePrinter requirePrinter()>()
+org.joda.time.format.DateTimeFormatter.printTo : $r6 = virtualinvoke r5.<org.joda.time.Chronology: org.joda.time.Chronology withUTC()>()
+org.joda.time.format.DateTimeFormatter.printTo : $l4 = l0 ^ l2
+org.joda.time.chrono.BasicGJChronology.getTotalMillisByYearMonth : $r2 = <org.joda.time.chrono.BasicGJChronology: long[] MIN_TOTAL_MILLIS_BY_MONTH_ARRAY>
+org.joda.time.chrono.BasicGJChronology.getTotalMillisByYearMonth : $z0 = virtualinvoke r0.<org.joda.time.chrono.BasicGJChronology: boolean isLeapYear(int)>(i0)
+org.joda.time.chrono.JulianChronology.getAverageMillisPerYearDividedByTwo : return 15778800000L
+org.joda.time.field.UnsupportedDurationField.isSupported : return 0
+org.joda.time.chrono.GregorianChronology.calculateFirstDayOfYearMillis : $l12 = (long) i0
+org.joda.time.chrono.GregorianChronology.calculateFirstDayOfYearMillis : i1 = i0 / 100
+org.joda.time.chrono.GregorianChronology.calculateFirstDayOfYearMillis : if i0 >= 0 goto $i9 = i0 >> 2
+org.joda.time.chrono.GregorianChronology.calculateFirstDayOfYearMillis : $i9 = i0 >> 2
+org.joda.time.chrono.GregorianChronology.calculateFirstDayOfYearMillis : i8 = i8 + -1
+org.joda.time.chrono.GregorianChronology.calculateFirstDayOfYearMillis : $z0 = virtualinvoke r0.<org.joda.time.chrono.GregorianChronology: boolean isLeapYear(int)>(i0)
+org.joda.time.DateTimeUtils.getZone : if r0 != null goto return r0
+org.joda.time.DateTimeUtils.getZone : return r0
+org.joda.time.chrono.BasicWeekyearDateTimeField.get : $r1 = r0.<org.joda.time.chrono.BasicWeekyearDateTimeField: org.joda.time.chrono.BasicChronology iChronology>
+org.joda.time.DateTimeZone.forID : if r0 != null goto $z0 = virtualinvoke r0.<java.lang.String: boolean equals(java.lang.Object)>("UTC")
+org.joda.time.DateTimeZone.forID : $z0 = virtualinvoke r0.<java.lang.String: boolean equals(java.lang.Object)>("UTC")
+org.joda.time.DateTimeZone.forID : return r1
+org.joda.time.DateTimeZone.forID : if r1 == null goto $z1 = virtualinvoke r0.<java.lang.String: boolean startsWith(java.lang.String)>("+")
+org.joda.time.DateTimeZone.forID : $r4 = <org.joda.time.DateTimeZone: org.joda.time.tz.Provider cProvider>
+org.joda.time.field.PreciseDurationField.getUnitMillis : $l0 = r0.<org.joda.time.field.PreciseDurationField: long iUnitMillis>
+org.joda.time.DateTimeFieldType.year : $r0 = <org.joda.time.DateTimeFieldType: org.joda.time.DateTimeFieldType YEAR_TYPE>
+org.joda.time.tz.ZoneInfoProvider.getZone : return r4
+org.joda.time.tz.ZoneInfoProvider.getZone : if r1 != null goto $r5 = r0.<org.joda.time.tz.ZoneInfoProvider: java.util.Map iZoneInfoMap>
+org.joda.time.tz.ZoneInfoProvider.getZone : $z0 = virtualinvoke r1.<java.lang.String: boolean equals(java.lang.Object)>(r2)
+org.joda.time.tz.ZoneInfoProvider.getZone : $r5 = r0.<org.joda.time.tz.ZoneInfoProvider: java.util.Map iZoneInfoMap>
+org.joda.time.tz.ZoneInfoProvider.getZone : r3 = (java.lang.ref.SoftReference) r2
+org.joda.time.tz.ZoneInfoProvider.getZone : if r2 != null goto $z0 = virtualinvoke r1.<java.lang.String: boolean equals(java.lang.Object)>(r2)
+org.joda.time.tz.ZoneInfoProvider.getZone : $z1 = r2 instanceof java.lang.ref.SoftReference
+org.joda.time.tz.ZoneInfoProvider.getZone : $r7 = virtualinvoke r3.<java.lang.ref.SoftReference: java.lang.Object get()>()
+org.joda.time.tz.ZoneInfoProvider.getZone : if r4 == null goto $r8 = specialinvoke r0.<org.joda.time.tz.ZoneInfoProvider: org.joda.time.DateTimeZone loadZoneData(java.lang.String)>(r1)
+org.joda.time.DateTimeUtils.checkPermission : r0 = staticinvoke <java.lang.System: java.lang.SecurityManager getSecurityManager()>()
+org.joda.time.DateTimeUtils.checkPermission : if r0 == null goto return
+org.joda.time.chrono.BasicWeekOfWeekyearDateTimeField.getRangeDurationField : $r1 = r0.<org.joda.time.chrono.BasicWeekOfWeekyearDateTimeField: org.joda.time.chrono.BasicChronology iChronology>
+org.joda.time.DateTimeFieldType.dayOfMonth : $r0 = <org.joda.time.DateTimeFieldType: org.joda.time.DateTimeFieldType DAY_OF_MONTH_TYPE>
+org.joda.time.chrono.AssembledChronology.getZone : $r3 = virtualinvoke r1.<org.joda.time.Chronology: org.joda.time.DateTimeZone getZone()>()
+org.joda.time.chrono.AssembledChronology.getZone : $r2 = r0.<org.joda.time.chrono.AssembledChronology: org.joda.time.Chronology iBase>
+org.joda.time.field.DividedDateTimeField.getDurationField : $r1 = r0.<org.joda.time.field.DividedDateTimeField: org.joda.time.DurationField iDurationField>
+org.joda.time.chrono.BasicYearDateTimeField.get : $r1 = r0.<org.joda.time.chrono.BasicYearDateTimeField: org.joda.time.chrono.BasicChronology iChronology>
+org.joda.time.chrono.BasicChronology.getMonthOfYear : $i1 = virtualinvoke r0.<org.joda.time.chrono.BasicChronology: int getYear(long)>(l0)
+org.joda.time.chrono.AssembledChronology.setFields : $r118 = r2.<org.joda.time.chrono.AssembledChronology$Fields: org.joda.time.DateTimeField weekyearOfCentury>
+org.joda.time.chrono.AssembledChronology.setFields : $r110 = r2.<org.joda.time.chrono.AssembledChronology$Fields: org.joda.time.DateTimeField weekOfWeekyear>
+org.joda.time.chrono.AssembledChronology.setFields : $r42 = r2.<org.joda.time.chrono.AssembledChronology$Fields: org.joda.time.DurationField years>
+org.joda.time.chrono.AssembledChronology.setFields : $r54 = r2.<org.joda.time.chrono.AssembledChronology$Fields: org.joda.time.DateTimeField millisOfSecond>
+org.joda.time.chrono.AssembledChronology.setFields : $r70 = r2.<org.joda.time.chrono.AssembledChronology$Fields: org.joda.time.DateTimeField minuteOfHour>
+org.joda.time.chrono.AssembledChronology.setFields : $r138 = r2.<org.joda.time.chrono.AssembledChronology$Fields: org.joda.time.DateTimeField centuryOfEra>
+org.joda.time.chrono.AssembledChronology.setFields : $r30 = r2.<org.joda.time.chrono.AssembledChronology$Fields: org.joda.time.DurationField weeks>
+org.joda.time.chrono.AssembledChronology.setFields : $r7 = r2.<org.joda.time.chrono.AssembledChronology$Fields: org.joda.time.DurationField millis>
+org.joda.time.chrono.AssembledChronology.setFields : $r126 = r2.<org.joda.time.chrono.AssembledChronology$Fields: org.joda.time.DateTimeField year>
+org.joda.time.chrono.AssembledChronology.setFields : $r102 = r2.<org.joda.time.chrono.AssembledChronology$Fields: org.joda.time.DateTimeField dayOfMonth>
+org.joda.time.chrono.AssembledChronology.setFields : $r14 = r2.<org.joda.time.chrono.AssembledChronology$Fields: org.joda.time.DurationField minutes>
+org.joda.time.chrono.AssembledChronology.setFields : $r50 = r2.<org.joda.time.chrono.AssembledChronology$Fields: org.joda.time.DurationField eras>
+org.joda.time.chrono.AssembledChronology.setFields : virtualinvoke r0.<org.joda.time.chrono.AssembledChronology: void assemble(org.joda.time.chrono.AssembledChronology$Fields)>(r2)
+org.joda.time.chrono.AssembledChronology.setFields : $r90 = r2.<org.joda.time.chrono.AssembledChronology$Fields: org.joda.time.DateTimeField clockhourOfHalfday>
+org.joda.time.chrono.AssembledChronology.setFields : $r46 = r2.<org.joda.time.chrono.AssembledChronology$Fields: org.joda.time.DurationField centuries>
+org.joda.time.chrono.AssembledChronology.setFields : $r66 = r2.<org.joda.time.chrono.AssembledChronology$Fields: org.joda.time.DateTimeField secondOfDay>
+org.joda.time.chrono.AssembledChronology.setFields : $r18 = r2.<org.joda.time.chrono.AssembledChronology$Fields: org.joda.time.DurationField hours>
+org.joda.time.chrono.AssembledChronology.setFields : $r10 = r2.<org.joda.time.chrono.AssembledChronology$Fields: org.joda.time.DurationField seconds>
+org.joda.time.chrono.AssembledChronology.setFields : $r1 = new org.joda.time.chrono.AssembledChronology$Fields
+org.joda.time.chrono.AssembledChronology.setFields : $r38 = r2.<org.joda.time.chrono.AssembledChronology$Fields: org.joda.time.DurationField months>
+org.joda.time.chrono.AssembledChronology.setFields : $r78 = r2.<org.joda.time.chrono.AssembledChronology$Fields: org.joda.time.DateTimeField hourOfDay>
+org.joda.time.chrono.AssembledChronology.setFields : $r134 = r2.<org.joda.time.chrono.AssembledChronology$Fields: org.joda.time.DateTimeField yearOfCentury>
+org.joda.time.chrono.AssembledChronology.setFields : $r26 = r2.<org.joda.time.chrono.AssembledChronology$Fields: org.joda.time.DurationField days>
+org.joda.time.chrono.AssembledChronology.setFields : b0 = 0
+org.joda.time.chrono.AssembledChronology.setFields : $r145 = r0.<org.joda.time.chrono.AssembledChronology: org.joda.time.Chronology iBase>
+org.joda.time.chrono.AssembledChronology.setFields : $r4 = r0.<org.joda.time.chrono.AssembledChronology: org.joda.time.Chronology iBase>
+org.joda.time.chrono.AssembledChronology.setFields : $r82 = r2.<org.joda.time.chrono.AssembledChronology$Fields: org.joda.time.DateTimeField clockhourOfDay>
+org.joda.time.chrono.AssembledChronology.setFields : $r58 = r2.<org.joda.time.chrono.AssembledChronology$Fields: org.joda.time.DateTimeField millisOfDay>
+org.joda.time.chrono.AssembledChronology.setFields : $r74 = r2.<org.joda.time.chrono.AssembledChronology$Fields: org.joda.time.DateTimeField minuteOfDay>
+org.joda.time.chrono.AssembledChronology.setFields : $r142 = r2.<org.joda.time.chrono.AssembledChronology$Fields: org.joda.time.DateTimeField era>
+org.joda.time.chrono.AssembledChronology.setFields : $r22 = r2.<org.joda.time.chrono.AssembledChronology$Fields: org.joda.time.DurationField halfdays>
+org.joda.time.chrono.AssembledChronology.setFields : $r106 = r2.<org.joda.time.chrono.AssembledChronology$Fields: org.joda.time.DateTimeField dayOfYear>
+org.joda.time.chrono.AssembledChronology.setFields : $r98 = r2.<org.joda.time.chrono.AssembledChronology$Fields: org.joda.time.DateTimeField dayOfWeek>
+org.joda.time.chrono.AssembledChronology.setFields : $r94 = r2.<org.joda.time.chrono.AssembledChronology$Fields: org.joda.time.DateTimeField halfdayOfDay>
+org.joda.time.chrono.AssembledChronology.setFields : $r86 = r2.<org.joda.time.chrono.AssembledChronology$Fields: org.joda.time.DateTimeField hourOfHalfday>
+org.joda.time.chrono.AssembledChronology.setFields : $r130 = r2.<org.joda.time.chrono.AssembledChronology$Fields: org.joda.time.DateTimeField yearOfEra>
+org.joda.time.chrono.AssembledChronology.setFields : r0.<org.joda.time.chrono.AssembledChronology: int iBaseFlags> = b0
+org.joda.time.chrono.AssembledChronology.setFields : $r34 = r2.<org.joda.time.chrono.AssembledChronology$Fields: org.joda.time.DurationField weekyears>
+org.joda.time.chrono.AssembledChronology.setFields : $r122 = r2.<org.joda.time.chrono.AssembledChronology$Fields: org.joda.time.DateTimeField monthOfYear>
+org.joda.time.chrono.AssembledChronology.setFields : $r114 = r2.<org.joda.time.chrono.AssembledChronology$Fields: org.joda.time.DateTimeField weekyear>
+org.joda.time.chrono.AssembledChronology.setFields : $r62 = r2.<org.joda.time.chrono.AssembledChronology$Fields: org.joda.time.DateTimeField secondOfMinute>
+org.joda.time.chrono.AssembledChronology.minutes : $r1 = r0.<org.joda.time.chrono.AssembledChronology: org.joda.time.DurationField iMinutes>
+org.joda.time.chrono.BasicChronology.getYearInfo : $r4 = r0.<org.joda.time.chrono.BasicChronology: org.joda.time.chrono.BasicChronology$YearInfo[] iYearInfoCache>
+org.joda.time.chrono.BasicChronology.getYearInfo : $r3 = new org.joda.time.chrono.BasicChronology$YearInfo
+org.joda.time.chrono.BasicChronology.getYearInfo : if r1 == null goto $r3 = new org.joda.time.chrono.BasicChronology$YearInfo
+org.joda.time.chrono.BasicChronology.getYearInfo : $r2 = r0.<org.joda.time.chrono.BasicChronology: org.joda.time.chrono.BasicChronology$YearInfo[] iYearInfoCache>
+org.joda.time.chrono.BasicChronology.getYearInfo : return r1
+org.joda.time.chrono.BasicDayOfMonthDateTimeField.get : $r1 = r0.<org.joda.time.chrono.BasicDayOfMonthDateTimeField: org.joda.time.chrono.BasicChronology iChronology>
+org.joda.time.chrono.AssembledChronology.clockhourOfDay : $r1 = r0.<org.joda.time.chrono.AssembledChronology: org.joda.time.DateTimeField iClockhourOfDay>
+org.joda.time.chrono.GJChronology.getInstance : return r4
+org.joda.time.chrono.GJChronology.getInstance : $r16 = staticinvoke <org.joda.time.chrono.GregorianChronology: org.joda.time.chrono.GregorianChronology getInstance(org.joda.time.DateTimeZone,int)>(r5, i0)
+org.joda.time.chrono.GJChronology.getInstance : virtualinvoke r3.<java.util.ArrayList: boolean add(java.lang.Object)>(r17)
+org.joda.time.chrono.GJChronology.getInstance : $r15 = staticinvoke <org.joda.time.chrono.JulianChronology: org.joda.time.chrono.JulianChronology getInstance(org.joda.time.DateTimeZone,int)>(r5, i0)
+org.joda.time.chrono.GJChronology.getInstance : $r14 = new org.joda.time.chrono.GJChronology
+org.joda.time.chrono.GJChronology.getInstance : return r17
+org.joda.time.chrono.GJChronology.getInstance : $r3 = new org.joda.time.Instant
+org.joda.time.chrono.GJChronology.getInstance : r5 = staticinvoke <org.joda.time.DateTimeUtils: org.joda.time.DateTimeZone getZone(org.joda.time.DateTimeZone)>(r0)
+org.joda.time.chrono.GJChronology.getInstance : $r0 = staticinvoke <org.joda.time.DateTimeZone: org.joda.time.DateTimeZone getDefault()>()
+org.joda.time.chrono.GJChronology.getInstance : $r12 = virtualinvoke r4.<org.joda.time.chrono.GJChronology: org.joda.time.Instant getGregorianCutover()>()
+org.joda.time.chrono.GJChronology.getInstance : $r6 = <org.joda.time.chrono.GJChronology: java.util.Map cCache>
+org.joda.time.chrono.GJChronology.getInstance : if r3 != null goto i1 = virtualinvoke r3.<java.util.ArrayList: int size()>()
+org.joda.time.chrono.GJChronology.getInstance : $i2 = virtualinvoke r4.<org.joda.time.chrono.GJChronology: int getMinimumDaysInFirstWeek()>()
+org.joda.time.chrono.GJChronology.getInstance : $r13 = <org.joda.time.DateTimeZone: org.joda.time.DateTimeZone UTC>
+org.joda.time.chrono.GJChronology.getInstance : if r1 != null goto r2 = interfaceinvoke r1.<org.joda.time.ReadableInstant: org.joda.time.Instant toInstant()>()
+org.joda.time.chrono.GJChronology.getInstance : r2 = interfaceinvoke r1.<org.joda.time.ReadableInstant: org.joda.time.Instant toInstant()>()
+org.joda.time.chrono.GJChronology.getInstance : $r4 = staticinvoke <org.joda.time.chrono.GJChronology: org.joda.time.chrono.GJChronology getInstance(org.joda.time.DateTimeZone,org.joda.time.ReadableInstant,int)>(r0, r2, i1)
+org.joda.time.chrono.GJChronology.getInstance : $r1 = <org.joda.time.chrono.GJChronology: org.joda.time.Instant DEFAULT_CUTOVER>
+org.joda.time.chrono.GJChronology.getInstance : $r11 = virtualinvoke r3.<java.util.ArrayList: java.lang.Object get(int)>(i1)
+org.joda.time.chrono.GJChronology.getInstance : i1 = virtualinvoke r3.<java.util.ArrayList: int size()>()
+org.joda.time.field.PreciseDateTimeField.getRangeDurationField : $r1 = r0.<org.joda.time.field.PreciseDateTimeField: org.joda.time.DurationField iRangeField>
+org.joda.time.chrono.AssembledChronology.monthOfYear : $r1 = r0.<org.joda.time.chrono.AssembledChronology: org.joda.time.DateTimeField iMonthOfYear>
+org.joda.time.field.DecoratedDateTimeField.getRangeDurationField : $r1 = r0.<org.joda.time.field.DecoratedDateTimeField: org.joda.time.DateTimeField iField>
+org.joda.time.chrono.BasicGJChronology.getMonthOfYear : $z0 = virtualinvoke r0.<org.joda.time.chrono.BasicGJChronology: boolean isLeapYear(int)>(i1)
+org.joda.time.chrono.BasicGJChronology.getMonthOfYear : return $b6
+org.joda.time.chrono.BasicGJChronology.getMonthOfYear : $l3 = virtualinvoke r0.<org.joda.time.chrono.BasicGJChronology: long getYearMillis(int)>(i1)
+org.joda.time.DurationFieldType.eras : $r0 = <org.joda.time.DurationFieldType: org.joda.time.DurationFieldType ERAS_TYPE>
+org.joda.time.chrono.GJChronology.withZone : if r1 != null goto $r2 = virtualinvoke r0.<org.joda.time.chrono.GJChronology: org.joda.time.DateTimeZone getZone()>()
+org.joda.time.chrono.GJChronology.withZone : $r2 = virtualinvoke r0.<org.joda.time.chrono.GJChronology: org.joda.time.DateTimeZone getZone()>()
+org.joda.time.chrono.GJChronology.withZone : return r0
+org.joda.time.field.PreciseDurationDateTimeField.getUnitMillis : $l0 = r0.<org.joda.time.field.PreciseDurationDateTimeField: long iUnitMillis>
+org.joda.time.chrono.BasicChronology.getMaxMonth : $i1 = virtualinvoke r0.<org.joda.time.chrono.BasicChronology: int getMaxMonth()>()
+org.joda.time.chrono.BasicChronology.getMaxMonth : return 12
+org.joda.time.DateTimeZone.getID : $r1 = r0.<org.joda.time.DateTimeZone: java.lang.String iID>
+org.joda.time.DateTimeFieldType.millisOfDay : $r0 = <org.joda.time.DateTimeFieldType: org.joda.time.DateTimeFieldType MILLIS_OF_DAY_TYPE>
+org.joda.time.field.PreciseDurationDateTimeField.getDurationField : $r1 = r0.<org.joda.time.field.PreciseDurationDateTimeField: org.joda.time.DurationField iUnitField>
+org.joda.time.chrono.AssembledChronology.dayOfWeek : $r1 = r0.<org.joda.time.chrono.AssembledChronology: org.joda.time.DateTimeField iDayOfWeek>
+org.joda.time.chrono.JulianChronology.isLeapYear : $i1 = i0 & 3
+org.joda.time.chrono.GJChronology.toString : virtualinvoke r2.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>("GJChronology")
+org.joda.time.chrono.GJChronology.toString : virtualinvoke r2.<java.lang.StringBuffer: java.lang.StringBuffer append(char)>(91)
+org.joda.time.chrono.GJChronology.toString : virtualinvoke r2.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>(",mdfw=")
+org.joda.time.chrono.GJChronology.toString : $r6 = virtualinvoke r0.<org.joda.time.chrono.GJChronology: org.joda.time.DateTimeZone getZone()>()
+org.joda.time.chrono.GJChronology.toString : virtualinvoke r2.<java.lang.StringBuffer: java.lang.StringBuffer append(char)>(93)
+org.joda.time.chrono.GJChronology.toString : $r13 = virtualinvoke r0.<org.joda.time.chrono.GJChronology: org.joda.time.Chronology withUTC()>()
+org.joda.time.chrono.GJChronology.toString : $l0 = r0.<org.joda.time.chrono.GJChronology: long iCutoverMillis>
+org.joda.time.chrono.GJChronology.toString : r3 = staticinvoke <org.joda.time.format.ISODateTimeFormat: org.joda.time.format.DateTimeFormatter dateTime()>()
+org.joda.time.chrono.GJChronology.toString : r3 = staticinvoke <org.joda.time.format.ISODateTimeFormat: org.joda.time.format.DateTimeFormatter date()>()
+org.joda.time.chrono.GJChronology.toString : $r1 = new java.lang.StringBuffer
+org.joda.time.chrono.GJChronology.toString : $i7 = virtualinvoke r0.<org.joda.time.chrono.GJChronology: int getMinimumDaysInFirstWeek()>()
+org.joda.time.chrono.GJChronology.toString : virtualinvoke r2.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>(",cutover=")
+org.joda.time.chrono.GJChronology.toString : $r11 = virtualinvoke r0.<org.joda.time.chrono.GJChronology: org.joda.time.Chronology withUTC()>()
+org.joda.time.chrono.GJChronology.toString : $i8 = virtualinvoke r0.<org.joda.time.chrono.GJChronology: int getMinimumDaysInFirstWeek()>()
+org.joda.time.chrono.GJChronology.toString : $r18 = virtualinvoke r2.<java.lang.StringBuffer: java.lang.String toString()>()
+org.joda.time.DateTimeZone.getDefault : if r0 != null goto return r0
+org.joda.time.DateTimeZone.getDefault : r0 = <org.joda.time.DateTimeZone: org.joda.time.DateTimeZone cDefault>
+org.joda.time.DateTimeZone.getDefault : return r0
+org.joda.time.tz.FixedDateTimeZone.getOffset : $i1 = r0.<org.joda.time.tz.FixedDateTimeZone: int iWallOffset>
+org.joda.time.field.BaseDateTimeField.getType : $r1 = r0.<org.joda.time.field.BaseDateTimeField: org.joda.time.DateTimeFieldType iType>
+org.joda.time.chrono.GJChronology$CutoverField.roundFloor : $r3 = r0.<org.joda.time.chrono.GJChronology$CutoverField: org.joda.time.DateTimeField iJulianField>
+org.joda.time.chrono.GJChronology$CutoverField.roundFloor : $r1 = r0.<org.joda.time.chrono.GJChronology$CutoverField: org.joda.time.DateTimeField iGregorianField>
+org.joda.time.chrono.GJChronology$CutoverField.roundFloor : $l1 = r0.<org.joda.time.chrono.GJChronology$CutoverField: long iCutover>
+org.joda.time.chrono.GJChronology$CutoverField.roundFloor : return l3
+org.joda.time.chrono.GJChronology$CutoverField.roundFloor : $l4 = r0.<org.joda.time.chrono.GJChronology$CutoverField: long iCutover>
+org.joda.time.format.DateTimeFormatterBuilder$TimeZoneOffset.printTo : $r6 = r0.<org.joda.time.format.DateTimeFormatterBuilder$TimeZoneOffset: java.lang.String iZeroOffsetPrintText>
+org.joda.time.format.DateTimeFormatterBuilder$TimeZoneOffset.printTo : if r3 != null goto (branch)
+org.joda.time.format.DateTimeFormatterBuilder$TimeZoneOffset.printTo : if i1 != 0 goto (branch)
+org.joda.time.chrono.GJChronology.getInstanceUTC : $r0 = <org.joda.time.DateTimeZone: org.joda.time.DateTimeZone UTC>
+org.joda.time.field.BaseDurationField.getType : $r1 = r0.<org.joda.time.field.BaseDurationField: org.joda.time.DurationFieldType iType>
+org.joda.time.chrono.GJChronology$CutoverField.getDurationField : $r1 = r0.<org.joda.time.chrono.GJChronology$CutoverField: org.joda.time.DurationField iDurationField>
+org.joda.time.format.DateTimeFormatterBuilder$CharacterLiteral.printTo : $c2 = r0.<org.joda.time.format.DateTimeFormatterBuilder$CharacterLiteral: char iValue>
+org.joda.time.chrono.GJChronology.withUTC : $r1 = <org.joda.time.DateTimeZone: org.joda.time.DateTimeZone UTC>
+org.joda.time.chrono.AssembledChronology.millisOfDay : $r1 = r0.<org.joda.time.chrono.AssembledChronology: org.joda.time.DateTimeField iMillisOfDay>
+org.joda.time.field.SkipDateTimeField.get : i1 = specialinvoke r0.<org.joda.time.field.DelegatedDateTimeField: int get(long)>(l0)
+org.joda.time.field.SkipDateTimeField.get : $i2 = r0.<org.joda.time.field.SkipDateTimeField: int iSkip>
+org.joda.time.field.SkipDateTimeField.get : return i1
+org.joda.time.chrono.BasicChronology.getYearMonthDayMillis : l3 = virtualinvoke r0.<org.joda.time.chrono.BasicChronology: long getYearMillis(int)>(i0)
+org.joda.time.chrono.BasicChronology.getYearMonthDayMillis : $i6 = i2 - 1
+org.joda.time.chrono.BasicChronology.getYearMonthDayMillis : $l4 = virtualinvoke r0.<org.joda.time.chrono.BasicChronology: long getTotalMillisByYearMonth(int,int)>(i0, i1)
+org.joda.time.chrono.AssembledChronology.yearOfEra : $r1 = r0.<org.joda.time.chrono.AssembledChronology: org.joda.time.DateTimeField iYearOfEra>
+org.joda.time.chrono.AssembledChronology.eras : $r1 = r0.<org.joda.time.chrono.AssembledChronology: org.joda.time.DurationField iEras>
+org.joda.time.chrono.BasicDayOfMonthDateTimeField.getRangeDurationField : $r1 = r0.<org.joda.time.chrono.BasicDayOfMonthDateTimeField: org.joda.time.chrono.BasicChronology iChronology>
+org.joda.time.chrono.JulianChronology.calculateFirstDayOfYearMillis : i1 = i0 - 1968
+org.joda.time.chrono.JulianChronology.calculateFirstDayOfYearMillis : $l5 = (long) i1
+org.joda.time.chrono.JulianChronology.calculateFirstDayOfYearMillis : i2 = i2 + 1
+org.joda.time.chrono.JulianChronology.calculateFirstDayOfYearMillis : $l9 = l3 - 62035200000L
+org.joda.time.chrono.JulianChronology.calculateFirstDayOfYearMillis : i2 = i1 >> 2
+org.joda.time.chrono.JulianChronology.calculateFirstDayOfYearMillis : if i1 > 0 goto i2 = i1 >> 2
+org.joda.time.chrono.JulianChronology.calculateFirstDayOfYearMillis : $z0 = virtualinvoke r0.<org.joda.time.chrono.JulianChronology: boolean isLeapYear(int)>(i0)
+org.joda.time.chrono.BasicWeekyearDateTimeField.add : $i2 = virtualinvoke r0.<org.joda.time.chrono.BasicWeekyearDateTimeField: int get(long)>(l0)
+org.joda.time.chrono.BasicWeekyearDateTimeField.add : if i1 != 0 goto $i2 = virtualinvoke r0.<org.joda.time.chrono.BasicWeekyearDateTimeField: int get(long)>(l0)
+org.joda.time.tz.DateTimeZoneBuilder$DSTZone.equals : r2 = (org.joda.time.tz.DateTimeZoneBuilder$DSTZone) r1
+org.joda.time.tz.DateTimeZoneBuilder$DSTZone.equals : return $z4
+org.joda.time.tz.DateTimeZoneBuilder$DSTZone.equals : $z0 = r1 instanceof org.joda.time.tz.DateTimeZoneBuilder$DSTZone
+org.joda.time.tz.DateTimeZoneBuilder$DSTZone.equals : $z3 = virtualinvoke $r7.<org.joda.time.tz.DateTimeZoneBuilder$Recurrence: boolean equals(java.lang.Object)>($r8)
+org.joda.time.tz.DateTimeZoneBuilder$DSTZone.equals : $z2 = virtualinvoke $r5.<org.joda.time.tz.DateTimeZoneBuilder$Recurrence: boolean equals(java.lang.Object)>($r6)
+org.joda.time.tz.DateTimeZoneBuilder$DSTZone.equals : if r0 != r1 goto $z0 = r1 instanceof org.joda.time.tz.DateTimeZoneBuilder$DSTZone
+org.joda.time.tz.DateTimeZoneBuilder$DSTZone.equals : $r3 = virtualinvoke r0.<org.joda.time.tz.DateTimeZoneBuilder$DSTZone: java.lang.String getID()>()
+org.joda.time.Instant.toInstant : return r0
+org.joda.time.field.RemainderDateTimeField.getRangeDurationField : $r1 = r0.<org.joda.time.field.RemainderDateTimeField: org.joda.time.DurationField iRangeField>
+org.joda.time.base.AbstractInstant.equals : $l0 = virtualinvoke r0.<org.joda.time.base.AbstractInstant: long getMillis()>()
+org.joda.time.base.AbstractInstant.equals : return $z2
+org.joda.time.base.AbstractInstant.equals : r2 = (org.joda.time.ReadableInstant) r1
+org.joda.time.base.AbstractInstant.equals : return 1
+org.joda.time.base.AbstractInstant.equals : $z0 = r1 instanceof org.joda.time.ReadableInstant
+org.joda.time.base.AbstractInstant.equals : if r0 != r1 goto $z0 = r1 instanceof org.joda.time.ReadableInstant
+org.joda.time.chrono.GregorianChronology.isLeapYear : $i1 = i0 & 3
+org.joda.time.chrono.AssembledChronology.getParam : $r1 = r0.<org.joda.time.chrono.AssembledChronology: java.lang.Object iParam>
+org.joda.time.chrono.BasicChronology.getDayOfWeek : $l9 = l1 + 3L
+org.joda.time.chrono.BasicChronology.getDayOfWeek : $l3 = l0 - 86399999L
+org.joda.time.chrono.BasicChronology.getDayOfWeek : $b4 = l1 cmp -3L
+org.joda.time.chrono.BasicChronology.getDayOfWeek : l1 = l0 / 86400000L
+org.joda.time.chrono.BasicChronology.getDayOfWeek : $l5 = l1 + 4L
+org.joda.time.chrono.BasicChronology.getDayOfWeek : $b2 = l0 cmp 0L
+org.joda.time.chrono.BasicGJChronology.getDaysInYearMonth : $r2 = <org.joda.time.chrono.BasicGJChronology: int[] MIN_DAYS_PER_MONTH_ARRAY>
+org.joda.time.chrono.BasicGJChronology.getDaysInYearMonth : $z0 = virtualinvoke r0.<org.joda.time.chrono.BasicGJChronology: boolean isLeapYear(int)>(i0)
+org.joda.time.field.PreciseDateTimeField.get : $b1 = l0 cmp 0L
+org.joda.time.field.PreciseDateTimeField.get : $l2 = virtualinvoke r0.<org.joda.time.field.PreciseDateTimeField: long getUnitMillis()>()
+org.joda.time.chrono.BasicYearDateTimeField.roundCeiling : $b3 = l0 cmp l2
+org.joda.time.chrono.BasicYearDateTimeField.roundCeiling : $r2 = r0.<org.joda.time.chrono.BasicYearDateTimeField: org.joda.time.chrono.BasicChronology iChronology>
+org.joda.time.chrono.BasicYearDateTimeField.roundCeiling : i1 = virtualinvoke r0.<org.joda.time.chrono.BasicYearDateTimeField: int get(long)>(l0)
+org.joda.time.chrono.BasicYearDateTimeField.roundCeiling : $r1 = r0.<org.joda.time.chrono.BasicYearDateTimeField: org.joda.time.chrono.BasicChronology iChronology>
+org.joda.time.chrono.BasicYearDateTimeField.roundCeiling : return l0
+org.joda.time.chrono.BasicMonthOfYearDateTimeField.getRangeDurationField : $r1 = r0.<org.joda.time.chrono.BasicMonthOfYearDateTimeField: org.joda.time.chrono.BasicChronology iChronology>
+org.joda.time.chrono.AssembledChronology.centuries : $r1 = r0.<org.joda.time.chrono.AssembledChronology: org.joda.time.DurationField iCenturies>
+org.joda.time.chrono.AssembledChronology.weekyear : $r1 = r0.<org.joda.time.chrono.AssembledChronology: org.joda.time.DateTimeField iWeekyear>
+org.joda.time.chrono.AssembledChronology.clockhourOfHalfday : $r1 = r0.<org.joda.time.chrono.AssembledChronology: org.joda.time.DateTimeField iClockhourOfHalfday>
+org.joda.time.tz.DateTimeZoneBuilder$OfYear.equals : $c0 = r0.<org.joda.time.tz.DateTimeZoneBuilder$OfYear: char iMode>
+org.joda.time.tz.DateTimeZoneBuilder$OfYear.equals : if r0 != r1 goto $z0 = r1 instanceof org.joda.time.tz.DateTimeZoneBuilder$OfYear
+org.joda.time.tz.DateTimeZoneBuilder$OfYear.equals : r2 = (org.joda.time.tz.DateTimeZoneBuilder$OfYear) r1
+org.joda.time.tz.DateTimeZoneBuilder$OfYear.equals : $z0 = r1 instanceof org.joda.time.tz.DateTimeZoneBuilder$OfYear
+org.joda.time.tz.CachedDateTimeZone.equals : $z0 = r1 instanceof org.joda.time.tz.CachedDateTimeZone
+org.joda.time.tz.CachedDateTimeZone.equals : if r0 != r1 goto $z0 = r1 instanceof org.joda.time.tz.CachedDateTimeZone
+org.joda.time.tz.CachedDateTimeZone.equals : $r2 = r0.<org.joda.time.tz.CachedDateTimeZone: org.joda.time.DateTimeZone iZone>
+org.joda.time.format.DateTimeFormatterBuilder$Fraction.printTo : if i1 >= i6 goto (branch)
+org.joda.time.format.DateTimeFormatterBuilder$Fraction.printTo : virtualinvoke r1.<java.lang.StringBuffer: java.lang.StringBuffer append(char)>(48)
+org.joda.time.format.DateTimeFormatterBuilder$Fraction.printTo : $b8 = l2 cmp 0L
+org.joda.time.format.DateTimeFormatterBuilder$Fraction.printTo : i5 = i5 + -1
+org.joda.time.format.DateTimeFormatterBuilder$Fraction.printTo : r6 = specialinvoke r0.<org.joda.time.format.DateTimeFormatterBuilder$Fraction: long[] getFractionData(long,org.joda.time.DateTimeField)>(l2, r4)
+org.joda.time.format.DateTimeFormatterBuilder$Fraction.printTo : i5 = virtualinvoke r10.<java.lang.String: int length()>()
+org.joda.time.format.DateTimeFormatterBuilder$Fraction.printTo : $l9 = r6[1]
+org.joda.time.format.DateTimeFormatterBuilder$Fraction.printTo : if i5 >= i6 goto (branch)
+org.joda.time.format.DateTimeFormatterBuilder$Fraction.printTo : goto [?= $b8 = l2 cmp 0L]
+org.joda.time.format.DateTimeFormatterBuilder$Fraction.printTo : $i12 = (int) l3
+org.joda.time.format.DateTimeFormatterBuilder$Fraction.printTo : l2 = virtualinvoke r4.<org.joda.time.DateTimeField: long remainder(long)>(l0)
+org.joda.time.format.DateTimeFormatterBuilder$Fraction.printTo : if r1 == null goto i17 = 0
+org.joda.time.format.DateTimeFormatterBuilder$Fraction.printTo : goto [?= return]
+org.joda.time.format.DateTimeFormatterBuilder$Fraction.printTo : i6 = i6 + -1
+org.joda.time.format.DateTimeFormatterBuilder$Fraction.printTo : $c16 = virtualinvoke r10.<java.lang.String: char charAt(int)>(i7)
+org.joda.time.format.DateTimeFormatterBuilder$Fraction.printTo : $i15 = virtualinvoke r10.<java.lang.String: int length()>()
+org.joda.time.format.DateTimeFormatterBuilder$Fraction.printTo : l3 = r6[0]
+org.joda.time.format.DateTimeFormatterBuilder$Fraction.printTo : $r7 = r0.<org.joda.time.format.DateTimeFormatterBuilder$Fraction: org.joda.time.DateTimeFieldType iFieldType>
+org.joda.time.format.DateTimeFormatterBuilder$Fraction.printTo : i1 = i1 + -1
+org.joda.time.format.DateTimeFormatterBuilder$Fraction.printTo : virtualinvoke r0.<org.joda.time.format.DateTimeFormatterBuilder$Fraction: void printTo(java.lang.StringBuffer,java.io.Writer,long,org.joda.time.Chronology)>(r1, null, l0, r2)
+org.joda.time.format.DateTimeFormatterBuilder$Fraction.printTo : if r1 == null goto virtualinvoke r2.<java.io.Writer: void write(int)>(48)
+org.joda.time.format.DateTimeFormatterBuilder$Fraction.printTo : if i5 <= 1 goto $i15 = virtualinvoke r10.<java.lang.String: int length()>()
+org.joda.time.format.DateTimeFormatterBuilder$Fraction.printTo : i6 = i4
+org.joda.time.format.DateTimeFormatterBuilder$Fraction.printTo : i7 = 0
+org.joda.time.format.DateTimeFormatterBuilder$Fraction.printTo : $l10 = l3 & 2147483647L
+org.joda.time.format.DateTimeFormatterBuilder$Fraction.printTo : i1 = r0.<org.joda.time.format.DateTimeFormatterBuilder$Fraction: int iMinDigits>
+org.joda.time.format.DateTimeFormatterBuilder$Fraction.printTo : if i1 >= i6 goto $i15 = virtualinvoke r10.<java.lang.String: int length()>()
+org.joda.time.format.DateTimeFormatterBuilder$PaddedNumber.printTo : $i2 = virtualinvoke r5.<org.joda.time.DateTimeField: int get(long)>(l0)
+org.joda.time.format.DateTimeFormatterBuilder$PaddedNumber.printTo : $r6 = r0.<org.joda.time.format.DateTimeFormatterBuilder$PaddedNumber: org.joda.time.DateTimeFieldType iFieldType>
+org.joda.time.format.DateTimeFormatterBuilder$PaddedNumber.printTo : goto [?= return]
+org.joda.time.chrono.GregorianChronology.getMinimumDaysInFirstWeek : $i0 = specialinvoke r0.<org.joda.time.chrono.BasicGJChronology: int getMinimumDaysInFirstWeek()>()
+org.joda.time.field.BaseDateTimeField.getMaximumValue : $i1 = virtualinvoke r0.<org.joda.time.field.BaseDateTimeField: int getMaximumValue()>()
+org.joda.time.chrono.AssembledChronology.millis : $r1 = r0.<org.joda.time.chrono.AssembledChronology: org.joda.time.DurationField iMillis>
+org.joda.time.chrono.GJChronology.convertByYear : return $l5
+org.joda.time.chrono.GJChronology.convertByYear : $r5 = virtualinvoke r0.<org.joda.time.Chronology: org.joda.time.DateTimeField millisOfDay()>()
+org.joda.time.chrono.GJChronology.convertByYear : $r4 = virtualinvoke r0.<org.joda.time.Chronology: org.joda.time.DateTimeField dayOfMonth()>()
+org.joda.time.chrono.GJChronology.convertByYear : $r2 = virtualinvoke r0.<org.joda.time.Chronology: org.joda.time.DateTimeField year()>()
+org.joda.time.chrono.GJChronology.convertByYear : $r3 = virtualinvoke r0.<org.joda.time.Chronology: org.joda.time.DateTimeField monthOfYear()>()
+org.joda.time.field.PreciseDurationDateTimeField.remainder : $b1 = l0 cmp 0L
+org.joda.time.field.PreciseDurationDateTimeField.remainder : $l2 = r0.<org.joda.time.field.PreciseDurationDateTimeField: long iUnitMillis>
+org.joda.time.format.ISODateTimeFormat.dateTime : $r0 = <org.joda.time.format.ISODateTimeFormat: org.joda.time.format.DateTimeFormatter dt>
+org.joda.time.format.ISODateTimeFormat.dateTime : $r7 = <org.joda.time.format.ISODateTimeFormat: org.joda.time.format.DateTimeFormatter dt>
+org.joda.time.chrono.AssembledChronology.weekOfWeekyear : $r1 = r0.<org.joda.time.chrono.AssembledChronology: org.joda.time.DateTimeField iWeekOfWeekyear>
+org.joda.time.tz.DateTimeZoneBuilder$Recurrence.equals : $z2 = virtualinvoke $r5.<org.joda.time.tz.DateTimeZoneBuilder$OfYear: boolean equals(java.lang.Object)>($r6)
+org.joda.time.tz.DateTimeZoneBuilder$Recurrence.equals : $z0 = r1 instanceof org.joda.time.tz.DateTimeZoneBuilder$Recurrence
+org.joda.time.tz.DateTimeZoneBuilder$Recurrence.equals : if r0 != r1 goto $z0 = r1 instanceof org.joda.time.tz.DateTimeZoneBuilder$Recurrence
+org.joda.time.tz.DateTimeZoneBuilder$Recurrence.equals : $i0 = r0.<org.joda.time.tz.DateTimeZoneBuilder$Recurrence: int iSaveMillis>
+org.joda.time.tz.DateTimeZoneBuilder$Recurrence.equals : $z1 = virtualinvoke $r3.<java.lang.String: boolean equals(java.lang.Object)>($r4)
+org.joda.time.tz.DateTimeZoneBuilder$Recurrence.equals : r2 = (org.joda.time.tz.DateTimeZoneBuilder$Recurrence) r1
+org.joda.time.DateTimeUtils.setCurrentMillisFixed : $r0 = new org.joda.time.DateTimeUtils$FixedMillisProvider
+org.joda.time.DateTimeUtils.setCurrentMillisFixed : staticinvoke <org.joda.time.DateTimeUtils: void checkPermission()>()
+org.joda.time.chrono.AssembledChronology.secondOfMinute : $r1 = r0.<org.joda.time.chrono.AssembledChronology: org.joda.time.DateTimeField iSecondOfMinute>
+org.joda.time.format.DateTimeFormatterBuilder$Composite.printTo : r4 = staticinvoke <java.util.Locale: java.util.Locale getDefault()>()
+org.joda.time.format.DateTimeFormatterBuilder$Composite.printTo : if r5 != null goto (branch)
+org.joda.time.format.DateTimeFormatterBuilder$Composite.printTo : r5 = r0.<org.joda.time.format.DateTimeFormatterBuilder$Composite: org.joda.time.format.DateTimePrinter[] iPrinters>
+org.joda.time.format.DateTimeFormatterBuilder$Composite.printTo : i2 = lengthof r5
+org.joda.time.format.DateTimeFormatterBuilder$Composite.printTo : $r7 = r5[i3]
+org.joda.time.format.DateTimeFormatterBuilder$Composite.printTo : i3 = 0
+org.joda.time.format.DateTimeFormatterBuilder$Composite.printTo : if r4 != null goto i2 = lengthof r5
+org.joda.time.format.DateTimeFormatter.withChronology : $r3 = new org.joda.time.format.DateTimeFormatter
+org.joda.time.format.DateTimeFormatter.withChronology : $r2 = r0.<org.joda.time.format.DateTimeFormatter: org.joda.time.Chronology iChrono>
+org.joda.time.chrono.JulianChronology.getMinimumDaysInFirstWeek : $i0 = specialinvoke r0.<org.joda.time.chrono.BasicGJChronology: int getMinimumDaysInFirstWeek()>()
+org.joda.time.DateTimeZone.hashCode : $r1 = virtualinvoke r0.<org.joda.time.DateTimeZone: java.lang.String getID()>()
+org.joda.time.field.FieldUtils.verifyValueBounds : if i0 < i1 goto $r1 = new org.joda.time.IllegalFieldValueException
+org.joda.time.chrono.AssembledChronology.dayOfYear : $r1 = r0.<org.joda.time.chrono.AssembledChronology: org.joda.time.DateTimeField iDayOfYear>
+org.joda.time.chrono.GregorianChronology.getInstance : $i1 = i0 - 1
+org.joda.time.chrono.GregorianChronology.getInstance : exitmonitor r1
+org.joda.time.chrono.GregorianChronology.getInstance : return r3
+org.joda.time.chrono.GregorianChronology.getInstance : $r7 = <org.joda.time.chrono.GregorianChronology: java.util.Map cCache>
+org.joda.time.chrono.GregorianChronology.getInstance : if r0 != null goto $r6 = <org.joda.time.chrono.GregorianChronology: java.util.Map cCache>
+org.joda.time.chrono.GregorianChronology.getInstance : $r6 = <org.joda.time.chrono.GregorianChronology: java.util.Map cCache>
+org.joda.time.chrono.GregorianChronology.getInstance : if r3 != null goto exitmonitor r1
+org.joda.time.chrono.GregorianChronology.getInstance : goto [?= (branch)]
+org.joda.time.chrono.GregorianChronology.getInstance : if r2 != null goto $i1 = i0 - 1
+org.joda.time.DurationFieldType$StandardDurationFieldType.hashCode : $b0 = r0.<org.joda.time.DurationFieldType$StandardDurationFieldType: byte iOrdinal>
+org.joda.time.chrono.GJChronology.getZone : $r4 = <org.joda.time.DateTimeZone: org.joda.time.DateTimeZone UTC>
+org.joda.time.chrono.GJChronology.getZone : $r2 = virtualinvoke r0.<org.joda.time.chrono.GJChronology: org.joda.time.Chronology getBase()>()
+org.joda.time.chrono.GJChronology.getZone : $r3 = virtualinvoke r1.<org.joda.time.Chronology: org.joda.time.DateTimeZone getZone()>()
+org.joda.time.chrono.AssembledChronology$Fields.isSupported : if r0 != null goto $z0 = virtualinvoke r0.<org.joda.time.DurationField: boolean isSupported()>()
+org.joda.time.chrono.AssembledChronology$Fields.isSupported : if r0 != null goto $z0 = virtualinvoke r0.<org.joda.time.DateTimeField: boolean isSupported()>()
+org.joda.time.DateTimeZone.setDefault : exitmonitor r3
+org.joda.time.DateTimeZone.setDefault : $r6 = class "org/joda/time/DateTimeZone"
+org.joda.time.DateTimeZone.setDefault : <org.joda.time.DateTimeZone: org.joda.time.DateTimeZone cDefault> = r0
+org.joda.time.DateTimeZone.setDefault : if r1 == null goto (branch)
+org.joda.time.DateTimeZone.setDefault : if r0 != null goto $r6 = class "org/joda/time/DateTimeZone"
+org.joda.time.DateTimeZone.setDefault : r1 = staticinvoke <java.lang.System: java.lang.SecurityManager getSecurityManager()>()
+org.joda.time.chrono.AssembledChronology.centuryOfEra : $r1 = r0.<org.joda.time.chrono.AssembledChronology: org.joda.time.DateTimeField iCenturyOfEra>
+org.joda.time.chrono.AssembledChronology$Fields.copyFieldsFrom : r0.<org.joda.time.chrono.AssembledChronology$Fields: org.joda.time.DateTimeField era> = r71
+org.joda.time.chrono.AssembledChronology$Fields.copyFieldsFrom : r0.<org.joda.time.chrono.AssembledChronology$Fields: org.joda.time.DateTimeField weekyear> = r57
+org.joda.time.chrono.AssembledChronology$Fields.copyFieldsFrom : r0.<org.joda.time.chrono.AssembledChronology$Fields: org.joda.time.DurationField hours> = r9
+org.joda.time.chrono.AssembledChronology$Fields.copyFieldsFrom : $r70 = virtualinvoke r1.<org.joda.time.Chronology: org.joda.time.DateTimeField era()>()
+org.joda.time.chrono.AssembledChronology$Fields.copyFieldsFrom : $r28 = virtualinvoke r1.<org.joda.time.Chronology: org.joda.time.DateTimeField millisOfDay()>()
+org.joda.time.chrono.AssembledChronology$Fields.copyFieldsFrom : r0.<org.joda.time.chrono.AssembledChronology$Fields: org.joda.time.DateTimeField dayOfYear> = r53
+org.joda.time.chrono.AssembledChronology$Fields.copyFieldsFrom : $r16 = virtualinvoke r1.<org.joda.time.Chronology: org.joda.time.DurationField weekyears()>()
+org.joda.time.chrono.AssembledChronology$Fields.copyFieldsFrom : r0.<org.joda.time.chrono.AssembledChronology$Fields: org.joda.time.DateTimeField millisOfSecond> = r27
+org.joda.time.chrono.AssembledChronology$Fields.copyFieldsFrom : r0.<org.joda.time.chrono.AssembledChronology$Fields: org.joda.time.DateTimeField year> = r63
+org.joda.time.chrono.AssembledChronology$Fields.copyFieldsFrom : r0.<org.joda.time.chrono.AssembledChronology$Fields: org.joda.time.DateTimeField clockhourOfHalfday> = r45
+org.joda.time.chrono.AssembledChronology$Fields.copyFieldsFrom : r0.<org.joda.time.chrono.AssembledChronology$Fields: org.joda.time.DurationField centuries> = r23
+org.joda.time.chrono.AssembledChronology$Fields.copyFieldsFrom : $r44 = virtualinvoke r1.<org.joda.time.Chronology: org.joda.time.DateTimeField clockhourOfHalfday()>()
+org.joda.time.chrono.AssembledChronology$Fields.copyFieldsFrom : r0.<org.joda.time.chrono.AssembledChronology$Fields: org.joda.time.DateTimeField weekOfWeekyear> = r55
+org.joda.time.chrono.AssembledChronology$Fields.copyFieldsFrom : r0.<org.joda.time.chrono.AssembledChronology$Fields: org.joda.time.DateTimeField secondOfDay> = r33
+org.joda.time.chrono.AssembledChronology$Fields.copyFieldsFrom : $r4 = virtualinvoke r1.<org.joda.time.Chronology: org.joda.time.DurationField seconds()>()
+org.joda.time.chrono.AssembledChronology$Fields.copyFieldsFrom : $r66 = virtualinvoke r1.<org.joda.time.Chronology: org.joda.time.DateTimeField yearOfCentury()>()
+org.joda.time.chrono.AssembledChronology$Fields.copyFieldsFrom : $r62 = virtualinvoke r1.<org.joda.time.Chronology: org.joda.time.DateTimeField year()>()
+org.joda.time.chrono.AssembledChronology$Fields.copyFieldsFrom : r0.<org.joda.time.chrono.AssembledChronology$Fields: org.joda.time.DurationField years> = r21
+org.joda.time.chrono.AssembledChronology$Fields.copyFieldsFrom : r0.<org.joda.time.chrono.AssembledChronology$Fields: org.joda.time.DurationField days> = r13
+org.joda.time.chrono.AssembledChronology$Fields.copyFieldsFrom : r0.<org.joda.time.chrono.AssembledChronology$Fields: org.joda.time.DateTimeField centuryOfEra> = r69
+org.joda.time.chrono.AssembledChronology$Fields.copyFieldsFrom : r0.<org.joda.time.chrono.AssembledChronology$Fields: org.joda.time.DateTimeField dayOfWeek> = r49
+org.joda.time.chrono.AssembledChronology$Fields.copyFieldsFrom : r0.<org.joda.time.chrono.AssembledChronology$Fields: org.joda.time.DateTimeField yearOfEra> = r65
+org.joda.time.chrono.AssembledChronology$Fields.copyFieldsFrom : $r3 = virtualinvoke r1.<org.joda.time.Chronology: org.joda.time.DurationField millis()>()
+org.joda.time.chrono.AssembledChronology$Fields.copyFieldsFrom : r0.<org.joda.time.chrono.AssembledChronology$Fields: org.joda.time.DateTimeField minuteOfHour> = r35
+org.joda.time.chrono.AssembledChronology$Fields.copyFieldsFrom : r0.<org.joda.time.chrono.AssembledChronology$Fields: org.joda.time.DateTimeField hourOfDay> = r39
+org.joda.time.chrono.AssembledChronology$Fields.copyFieldsFrom : r0.<org.joda.time.chrono.AssembledChronology$Fields: org.joda.time.DateTimeField monthOfYear> = r61
+org.joda.time.chrono.AssembledChronology$Fields.copyFieldsFrom : r0.<org.joda.time.chrono.AssembledChronology$Fields: org.joda.time.DateTimeField weekyearOfCentury> = r59
+org.joda.time.chrono.AssembledChronology$Fields.copyFieldsFrom : r0.<org.joda.time.chrono.AssembledChronology$Fields: org.joda.time.DurationField minutes> = r7
+org.joda.time.chrono.AssembledChronology$Fields.copyFieldsFrom : r0.<org.joda.time.chrono.AssembledChronology$Fields: org.joda.time.DateTimeField yearOfCentury> = r67
+org.joda.time.chrono.AssembledChronology$Fields.copyFieldsFrom : $r22 = virtualinvoke r1.<org.joda.time.Chronology: org.joda.time.DurationField centuries()>()
+org.joda.time.chrono.AssembledChronology$Fields.copyFieldsFrom : r0.<org.joda.time.chrono.AssembledChronology$Fields: org.joda.time.DateTimeField dayOfMonth> = r51
+org.joda.time.chrono.AssembledChronology$Fields.copyFieldsFrom : $r46 = virtualinvoke r1.<org.joda.time.Chronology: org.joda.time.DateTimeField halfdayOfDay()>()
+org.joda.time.chrono.AssembledChronology$Fields.copyFieldsFrom : $r30 = virtualinvoke r1.<org.joda.time.Chronology: org.joda.time.DateTimeField secondOfMinute()>()
+org.joda.time.chrono.AssembledChronology$Fields.copyFieldsFrom : $r10 = virtualinvoke r1.<org.joda.time.Chronology: org.joda.time.DurationField halfdays()>()
+org.joda.time.chrono.AssembledChronology$Fields.copyFieldsFrom : r0.<org.joda.time.chrono.AssembledChronology$Fields: org.joda.time.DateTimeField halfdayOfDay> = r47
+org.joda.time.chrono.AssembledChronology$Fields.copyFieldsFrom : $r64 = virtualinvoke r1.<org.joda.time.Chronology: org.joda.time.DateTimeField yearOfEra()>()
+org.joda.time.chrono.AssembledChronology$Fields.copyFieldsFrom : r0.<org.joda.time.chrono.AssembledChronology$Fields: org.joda.time.DateTimeField minuteOfDay> = r37
+org.joda.time.chrono.AssembledChronology$Fields.copyFieldsFrom : $r56 = virtualinvoke r1.<org.joda.time.Chronology: org.joda.time.DateTimeField weekyear()>()
+org.joda.time.chrono.AssembledChronology$Fields.copyFieldsFrom : $r18 = virtualinvoke r1.<org.joda.time.Chronology: org.joda.time.DurationField months()>()
+org.joda.time.chrono.AssembledChronology$Fields.copyFieldsFrom : $r6 = virtualinvoke r1.<org.joda.time.Chronology: org.joda.time.DurationField minutes()>()
+org.joda.time.chrono.AssembledChronology$Fields.copyFieldsFrom : $r26 = virtualinvoke r1.<org.joda.time.Chronology: org.joda.time.DateTimeField millisOfSecond()>()
+org.joda.time.chrono.AssembledChronology$Fields.copyFieldsFrom : $r34 = virtualinvoke r1.<org.joda.time.Chronology: org.joda.time.DateTimeField minuteOfHour()>()
+org.joda.time.chrono.AssembledChronology$Fields.copyFieldsFrom : r0.<org.joda.time.chrono.AssembledChronology$Fields: org.joda.time.DateTimeField clockhourOfDay> = r41
+org.joda.time.chrono.AssembledChronology$Fields.copyFieldsFrom : $r48 = virtualinvoke r1.<org.joda.time.Chronology: org.joda.time.DateTimeField dayOfWeek()>()
+org.joda.time.chrono.AssembledChronology$Fields.copyFieldsFrom : $r50 = virtualinvoke r1.<org.joda.time.Chronology: org.joda.time.DateTimeField dayOfMonth()>()
+org.joda.time.chrono.AssembledChronology$Fields.copyFieldsFrom : $r38 = virtualinvoke r1.<org.joda.time.Chronology: org.joda.time.DateTimeField hourOfDay()>()
+org.joda.time.chrono.AssembledChronology$Fields.copyFieldsFrom : $r60 = virtualinvoke r1.<org.joda.time.Chronology: org.joda.time.DateTimeField monthOfYear()>()
+org.joda.time.chrono.AssembledChronology$Fields.copyFieldsFrom : $r52 = virtualinvoke r1.<org.joda.time.Chronology: org.joda.time.DateTimeField dayOfYear()>()
+org.joda.time.chrono.AssembledChronology$Fields.copyFieldsFrom : r0.<org.joda.time.chrono.AssembledChronology$Fields: org.joda.time.DurationField weekyears> = r17
+org.joda.time.chrono.AssembledChronology$Fields.copyFieldsFrom : $r8 = virtualinvoke r1.<org.joda.time.Chronology: org.joda.time.DurationField hours()>()
+org.joda.time.chrono.AssembledChronology$Fields.copyFieldsFrom : r0.<org.joda.time.chrono.AssembledChronology$Fields: org.joda.time.DurationField weeks> = r15
+org.joda.time.chrono.AssembledChronology$Fields.copyFieldsFrom : $r40 = virtualinvoke r1.<org.joda.time.Chronology: org.joda.time.DateTimeField clockhourOfDay()>()
+org.joda.time.chrono.AssembledChronology$Fields.copyFieldsFrom : $r32 = virtualinvoke r1.<org.joda.time.Chronology: org.joda.time.DateTimeField secondOfDay()>()
+org.joda.time.chrono.AssembledChronology$Fields.copyFieldsFrom : r0.<org.joda.time.chrono.AssembledChronology$Fields: org.joda.time.DurationField halfdays> = r11
+org.joda.time.chrono.AssembledChronology$Fields.copyFieldsFrom : $r68 = virtualinvoke r1.<org.joda.time.Chronology: org.joda.time.DateTimeField centuryOfEra()>()
+org.joda.time.chrono.AssembledChronology$Fields.copyFieldsFrom : r0.<org.joda.time.chrono.AssembledChronology$Fields: org.joda.time.DurationField months> = r19
+org.joda.time.chrono.AssembledChronology$Fields.copyFieldsFrom : $r36 = virtualinvoke r1.<org.joda.time.Chronology: org.joda.time.DateTimeField minuteOfDay()>()
+org.joda.time.chrono.AssembledChronology$Fields.copyFieldsFrom : $r58 = virtualinvoke r1.<org.joda.time.Chronology: org.joda.time.DateTimeField weekyearOfCentury()>()
+org.joda.time.chrono.AssembledChronology$Fields.copyFieldsFrom : $r14 = virtualinvoke r1.<org.joda.time.Chronology: org.joda.time.DurationField weeks()>()
+org.joda.time.chrono.AssembledChronology$Fields.copyFieldsFrom : $r12 = virtualinvoke r1.<org.joda.time.Chronology: org.joda.time.DurationField days()>()
+org.joda.time.chrono.AssembledChronology$Fields.copyFieldsFrom : r0.<org.joda.time.chrono.AssembledChronology$Fields: org.joda.time.DateTimeField hourOfHalfday> = r43
+org.joda.time.chrono.AssembledChronology$Fields.copyFieldsFrom : $r24 = virtualinvoke r1.<org.joda.time.Chronology: org.joda.time.DurationField eras()>()
+org.joda.time.chrono.AssembledChronology$Fields.copyFieldsFrom : r0.<org.joda.time.chrono.AssembledChronology$Fields: org.joda.time.DateTimeField secondOfMinute> = r31
+org.joda.time.chrono.AssembledChronology$Fields.copyFieldsFrom : $r42 = virtualinvoke r1.<org.joda.time.Chronology: org.joda.time.DateTimeField hourOfHalfday()>()
+org.joda.time.chrono.AssembledChronology$Fields.copyFieldsFrom : r0.<org.joda.time.chrono.AssembledChronology$Fields: org.joda.time.DurationField seconds> = r5
+org.joda.time.chrono.AssembledChronology$Fields.copyFieldsFrom : $r54 = virtualinvoke r1.<org.joda.time.Chronology: org.joda.time.DateTimeField weekOfWeekyear()>()
+org.joda.time.chrono.AssembledChronology$Fields.copyFieldsFrom : r0.<org.joda.time.chrono.AssembledChronology$Fields: org.joda.time.DurationField millis> = r2
+org.joda.time.chrono.AssembledChronology$Fields.copyFieldsFrom : r0.<org.joda.time.chrono.AssembledChronology$Fields: org.joda.time.DateTimeField millisOfDay> = r29
+org.joda.time.chrono.AssembledChronology$Fields.copyFieldsFrom : $r20 = virtualinvoke r1.<org.joda.time.Chronology: org.joda.time.DurationField years()>()
+org.joda.time.chrono.BasicChronology.getYearMillis : $r1 = specialinvoke r0.<org.joda.time.chrono.BasicChronology: org.joda.time.chrono.BasicChronology$YearInfo getYearInfo(int)>(i0)
+org.joda.time.chrono.BasicChronology.getWeekyear : $l3 = l0 + 604800000L
+org.joda.time.chrono.BasicChronology.getWeekyear : i1 = virtualinvoke r0.<org.joda.time.chrono.BasicChronology: int getYear(long)>(l0)
+org.joda.time.chrono.BasicChronology.getWeekyear : if i2 <= 51 goto return i1
+org.joda.time.chrono.BasicChronology.getWeekyear : $l5 = l0 - 1209600000L
+org.joda.time.chrono.BasicChronology.getWeekyear : i2 = virtualinvoke r0.<org.joda.time.chrono.BasicChronology: int getWeekOfWeekyear(long,int)>(l0, i1)
+org.joda.time.chrono.BasicChronology.getWeekyear : if i2 != 1 goto (branch)
+org.joda.time.field.DecoratedDateTimeField.getDurationField : $r1 = r0.<org.joda.time.field.DecoratedDateTimeField: org.joda.time.DateTimeField iField>
+org.joda.time.chrono.GregorianChronology.getApproxMillisAtEpochDividedByTwo : return 31083597720000L
+org.joda.time.field.ImpreciseDateTimeField.getDurationField : $r1 = r0.<org.joda.time.field.ImpreciseDateTimeField: org.joda.time.DurationField iDurationField>
+org.joda.time.chrono.GJChronology.getGregorianCutover : $r1 = r0.<org.joda.time.chrono.GJChronology: org.joda.time.Instant iCutoverInstant>
+org.joda.time.chrono.JulianChronology.getApproxMillisAtEpochDividedByTwo : return 31083663600000L
+org.joda.time.chrono.BasicChronology.getDateMidnightMillis : $l7 = virtualinvoke r0.<org.joda.time.chrono.BasicChronology: long getYearMonthDayMillis(int,int,int)>(i0, i1, i2)
+org.joda.time.chrono.BasicChronology.getDateMidnightMillis : $r1 = staticinvoke <org.joda.time.DateTimeFieldType: org.joda.time.DateTimeFieldType year()>()
+org.joda.time.chrono.BasicChronology.getDateMidnightMillis : $r2 = staticinvoke <org.joda.time.DateTimeFieldType: org.joda.time.DateTimeFieldType monthOfYear()>()
+org.joda.time.chrono.BasicChronology.getDateMidnightMillis : $r3 = staticinvoke <org.joda.time.DateTimeFieldType: org.joda.time.DateTimeFieldType dayOfMonth()>()
+org.joda.time.DateTimeUtils.setCurrentMillisSystem : staticinvoke <org.joda.time.DateTimeUtils: void checkPermission()>()
+org.joda.time.DateTimeUtils.setCurrentMillisSystem : $r0 = <org.joda.time.DateTimeUtils: org.joda.time.DateTimeUtils$SystemMillisProvider SYSTEM_MILLIS_PROVIDER>
+org.joda.time.chrono.BasicChronology.getDayOfMonth : i1 = virtualinvoke r0.<org.joda.time.chrono.BasicChronology: int getYear(long)>(l0)
+org.joda.time.chrono.BasicChronology.getDayOfMonth : $l4 = virtualinvoke r0.<org.joda.time.chrono.BasicChronology: long getTotalMillisByYearMonth(int,int)>(i1, i2)
+org.joda.time.chrono.BasicChronology.getDayOfMonth : $i3 = virtualinvoke r0.<org.joda.time.chrono.BasicChronology: int getDayOfMonth(long,int,int)>(l0, i1, i2)
+org.joda.time.chrono.BasicChronology.getDayOfMonth : l3 = virtualinvoke r0.<org.joda.time.chrono.BasicChronology: long getYearMillis(int)>(i1)
+org.joda.time.chrono.BasicChronology.getDayOfMonth : $l6 = l0 - l5
+org.joda.time.chrono.BasicChronology.getDayOfMonth : i2 = virtualinvoke r0.<org.joda.time.chrono.BasicChronology: int getMonthOfYear(long,int)>(l0, i1)
+org.joda.time.chrono.BasicChronology.getWeeksInYear : $l4 = l2 - l1
+org.joda.time.chrono.BasicChronology.getWeeksInYear : $i3 = i0 + 1
+org.joda.time.chrono.BasicChronology.getWeeksInYear : l1 = virtualinvoke r0.<org.joda.time.chrono.BasicChronology: long getFirstWeekOfYearMillis(int)>(i0)
+org.joda.time.chrono.BasicChronology.getMillisOfDay : $l4 = l0 + 1L
+org.joda.time.chrono.BasicChronology.getMillisOfDay : $b1 = l0 cmp 0L
+org.joda.time.chrono.BasicChronology.getFirstWeekOfYearMillis : $i5 = 8 - i2
+org.joda.time.chrono.BasicChronology.getFirstWeekOfYearMillis : l1 = virtualinvoke r0.<org.joda.time.chrono.BasicChronology: long getYearMillis(int)>(i0)
+org.joda.time.chrono.BasicChronology.getFirstWeekOfYearMillis : $i9 = i2 - 1
+org.joda.time.chrono.BasicChronology.getFirstWeekOfYearMillis : $i3 = r0.<org.joda.time.chrono.BasicChronology: int iMinDaysInFirstWeek>
+org.joda.time.chrono.BasicChronology.getFirstWeekOfYearMillis : i2 = virtualinvoke r0.<org.joda.time.chrono.BasicChronology: int getDayOfWeek(long)>(l1)
+org.joda.time.chrono.BasicChronology.getYear : $b12 = l5 cmp 0L
+org.joda.time.chrono.BasicChronology.getYear : $b9 = l2 cmp 0L
+org.joda.time.chrono.BasicChronology.getYear : l4 = virtualinvoke r0.<org.joda.time.chrono.BasicChronology: long getYearMillis(int)>(i3)
+org.joda.time.chrono.BasicChronology.getYear : $l7 = l0 >> 1
+org.joda.time.chrono.BasicChronology.getYear : $b13 = l5 cmp 31536000000L
+org.joda.time.chrono.BasicChronology.getYear : l5 = l0 - l4
+org.joda.time.chrono.BasicChronology.getYear : return i3
+org.joda.time.chrono.BasicChronology.getYear : l1 = virtualinvoke r0.<org.joda.time.chrono.BasicChronology: long getAverageMillisPerYearDividedByTwo()>()
+org.joda.time.chrono.BasicChronology.getYear : $l11 = l2 / l1
+org.joda.time.chrono.AssembledChronology.secondOfDay : $r1 = r0.<org.joda.time.chrono.AssembledChronology: org.joda.time.DateTimeField iSecondOfDay>
+org.joda.time.chrono.AssembledChronology.weeks : $r1 = r0.<org.joda.time.chrono.AssembledChronology: org.joda.time.DurationField iWeeks>
+org.joda.time.chrono.JulianChronology.getInstance : $i1 = i0 - 1
+org.joda.time.chrono.JulianChronology.getInstance : exitmonitor r1
+org.joda.time.chrono.JulianChronology.getInstance : return r3
+org.joda.time.chrono.JulianChronology.getInstance : $r6 = <org.joda.time.chrono.JulianChronology: java.util.Map cCache>
+org.joda.time.chrono.JulianChronology.getInstance : if r0 != null goto $r6 = <org.joda.time.chrono.JulianChronology: java.util.Map cCache>
+org.joda.time.chrono.JulianChronology.getInstance : if r3 != null goto exitmonitor r1
+org.joda.time.chrono.JulianChronology.getInstance : goto [?= (branch)]
+org.joda.time.chrono.JulianChronology.getInstance : $r7 = <org.joda.time.chrono.JulianChronology: java.util.Map cCache>
+org.joda.time.chrono.JulianChronology.getInstance : if r2 != null goto $i1 = i0 - 1
+org.joda.time.tz.CachedDateTimeZone.hashCode : $r1 = r0.<org.joda.time.tz.CachedDateTimeZone: org.joda.time.DateTimeZone iZone>
+org.joda.time.format.ISODateTimeFormat.yearMonthDay : $r9 = <org.joda.time.format.ISODateTimeFormat: org.joda.time.format.DateTimeFormatter ymd>
+org.joda.time.format.ISODateTimeFormat.yearMonthDay : $r0 = <org.joda.time.format.ISODateTimeFormat: org.joda.time.format.DateTimeFormatter ymd>
+org.joda.time.field.BaseDurationField.isSupported : return 1
+org.joda.time.chrono.GJDayOfWeekDateTimeField.getMaximumValue : return 7
+org.joda.time.chrono.AssembledChronology.days : $r1 = r0.<org.joda.time.chrono.AssembledChronology: org.joda.time.DurationField iDays>
+org.joda.time.chrono.GJDayOfWeekDateTimeField.getMinimumValue : return 1
+org.joda.time.chrono.AssembledChronology.minuteOfHour : $r1 = r0.<org.joda.time.chrono.AssembledChronology: org.joda.time.DateTimeField iMinuteOfHour>
+org.joda.time.chrono.BasicChronology.getWeekOfWeekyear : $b8 = l0 cmp l3
+org.joda.time.chrono.BasicChronology.getWeekOfWeekyear : $i1 = virtualinvoke r0.<org.joda.time.chrono.BasicChronology: int getYear(long)>(l0)
+org.joda.time.chrono.BasicChronology.getWeekOfWeekyear : $i7 = i1 + 1
+org.joda.time.chrono.BasicChronology.getWeekOfWeekyear : $l9 = l0 - l2
+org.joda.time.chrono.BasicChronology.getWeekOfWeekyear : return 1
+org.joda.time.chrono.BasicChronology.getWeekOfWeekyear : l2 = virtualinvoke r0.<org.joda.time.chrono.BasicChronology: long getFirstWeekOfYearMillis(int)>(i1)
+org.joda.time.chrono.BasicChronology.getWeekOfWeekyear : $b4 = l0 cmp l2
+org.joda.time.chrono.AssembledChronology.seconds : $r1 = r0.<org.joda.time.chrono.AssembledChronology: org.joda.time.DurationField iSeconds>
+org.joda.time.DateTimeFieldType$StandardDateTimeFieldType.getField : $r7 = virtualinvoke r2.<org.joda.time.Chronology: org.joda.time.DateTimeField year()>()
+org.joda.time.DateTimeFieldType$StandardDateTimeFieldType.getField : $r10 = virtualinvoke r2.<org.joda.time.Chronology: org.joda.time.DateTimeField dayOfMonth()>()
+org.joda.time.DateTimeFieldType$StandardDateTimeFieldType.getField : r2 = staticinvoke <org.joda.time.DateTimeUtils: org.joda.time.Chronology getChronology(org.joda.time.Chronology)>(r1)
+org.joda.time.DateTimeFieldType$StandardDateTimeFieldType.getField : $r22 = virtualinvoke r2.<org.joda.time.Chronology: org.joda.time.DateTimeField secondOfDay()>()
+org.joda.time.DateTimeFieldType$StandardDateTimeFieldType.getField : $b0 = r0.<org.joda.time.DateTimeFieldType$StandardDateTimeFieldType: byte iOrdinal>
+org.joda.time.DateTimeFieldType$StandardDateTimeFieldType.getField : $r9 = virtualinvoke r2.<org.joda.time.Chronology: org.joda.time.DateTimeField monthOfYear()>()
+org.joda.time.DateTimeFieldType$StandardDateTimeFieldType.getField : $r23 = virtualinvoke r2.<org.joda.time.Chronology: org.joda.time.DateTimeField secondOfMinute()>()
+org.joda.time.DateTimeFieldType$StandardDateTimeFieldType.getField : $r21 = virtualinvoke r2.<org.joda.time.Chronology: org.joda.time.DateTimeField minuteOfHour()>()
+org.joda.time.DateTimeFieldType$StandardDateTimeFieldType.getField : $r19 = virtualinvoke r2.<org.joda.time.Chronology: org.joda.time.DateTimeField hourOfDay()>()
+org.joda.time.chrono.BasicWeekOfWeekyearDateTimeField.roundFloor : $l1 = l0 + 259200000L
+org.joda.time.chrono.GregorianChronology.getMinYear : return -292275054
+org.joda.time.chrono.AssembledChronology.hourOfDay : $r1 = r0.<org.joda.time.chrono.AssembledChronology: org.joda.time.DateTimeField iHourOfDay>
+org.joda.time.chrono.BasicWeekyearDateTimeField.set : if i2 != i1 goto $r3 = r0.<org.joda.time.chrono.BasicWeekyearDateTimeField: org.joda.time.chrono.BasicChronology iChronology>
+org.joda.time.chrono.BasicWeekyearDateTimeField.set : $r3 = r0.<org.joda.time.chrono.BasicWeekyearDateTimeField: org.joda.time.chrono.BasicChronology iChronology>
+org.joda.time.chrono.BasicWeekyearDateTimeField.set : $r9 = r0.<org.joda.time.chrono.BasicWeekyearDateTimeField: org.joda.time.chrono.BasicChronology iChronology>
+org.joda.time.chrono.BasicWeekyearDateTimeField.set : $r7 = r0.<org.joda.time.chrono.BasicWeekyearDateTimeField: org.joda.time.chrono.BasicChronology iChronology>
+org.joda.time.chrono.BasicWeekyearDateTimeField.set : if i5 >= i4 goto $i14 = i4
+org.joda.time.chrono.BasicWeekyearDateTimeField.set : $r8 = r0.<org.joda.time.chrono.BasicWeekyearDateTimeField: org.joda.time.chrono.BasicChronology iChronology>
+org.joda.time.chrono.BasicWeekyearDateTimeField.set : i9 = virtualinvoke r0.<org.joda.time.chrono.BasicWeekyearDateTimeField: int get(long)>(l15)
+org.joda.time.chrono.BasicWeekyearDateTimeField.set : $i11 = staticinvoke <java.lang.Math: int abs(int)>(i1)
+org.joda.time.chrono.BasicWeekyearDateTimeField.set : $r4 = r0.<org.joda.time.chrono.BasicWeekyearDateTimeField: org.joda.time.chrono.BasicChronology iChronology>
+org.joda.time.chrono.BasicWeekyearDateTimeField.set : if i7 <= i6 goto l8 = l0
+org.joda.time.chrono.BasicWeekyearDateTimeField.set : $i16 = i7 - i10
+org.joda.time.chrono.BasicWeekyearDateTimeField.set : l15 = l15 - 604800000L
+org.joda.time.chrono.BasicWeekyearDateTimeField.set : l8 = l0
+org.joda.time.chrono.BasicWeekyearDateTimeField.set : if i9 >= i1 goto (branch)
+org.joda.time.chrono.BasicWeekyearDateTimeField.set : $r6 = r0.<org.joda.time.chrono.BasicWeekyearDateTimeField: org.joda.time.chrono.BasicChronology iChronology>
+org.joda.time.chrono.BasicWeekyearDateTimeField.set : if i9 <= i1 goto $r8 = r0.<org.joda.time.chrono.BasicWeekyearDateTimeField: org.joda.time.chrono.BasicChronology iChronology>
+org.joda.time.chrono.BasicWeekyearDateTimeField.set : $i12 = virtualinvoke $r1.<org.joda.time.chrono.BasicChronology: int getMinYear()>()
+org.joda.time.chrono.BasicWeekyearDateTimeField.set : i2 = virtualinvoke r0.<org.joda.time.chrono.BasicWeekyearDateTimeField: int get(long)>(l0)
+org.joda.time.chrono.BasicWeekyearDateTimeField.set : $r5 = r0.<org.joda.time.chrono.BasicWeekyearDateTimeField: org.joda.time.chrono.BasicChronology iChronology>
+org.joda.time.chrono.BasicWeekyearDateTimeField.set : return l20

@@ -1,0 +1,186 @@
+org.jfree.chart.plot.PolarAxisLocation.equals : r2 = (org.jfree.chart.plot.PolarAxisLocation) r1
+org.jfree.chart.plot.PolarAxisLocation.equals : if r1 != r0 goto $z0 = r1 instanceof org.jfree.chart.plot.PolarAxisLocation
+org.jfree.chart.plot.PolarAxisLocation.equals : $r3 = r0.<org.jfree.chart.plot.PolarAxisLocation: java.lang.String name>
+org.jfree.chart.plot.PolarAxisLocation.equals : $z0 = r1 instanceof org.jfree.chart.plot.PolarAxisLocation
+org.jfree.chart.plot.PolarAxisLocation.equals : return 1
+org.jfree.chart.plot.PolarAxisLocation.equals : return 0
+org.jfree.chart.plot.DefaultDrawingSupplier.equalShapes : $r3 = r1[i0]
+org.jfree.chart.plot.DefaultDrawingSupplier.equalShapes : i0 = 0
+org.jfree.chart.plot.DefaultDrawingSupplier.equalShapes : return 1
+org.jfree.chart.plot.DefaultDrawingSupplier.equalShapes : $i1 = lengthof r1
+org.jfree.chart.plot.DefaultDrawingSupplier.equalShapes : if r1 != null goto (branch)
+org.jfree.chart.plot.DefaultDrawingSupplier.equalShapes : if r2 != null goto $i1 = lengthof r1
+org.jfree.chart.plot.Plot.notifyListeners : $r3 = r0.<org.jfree.chart.plot.Plot: javax.swing.event.EventListenerList listenerList>
+org.jfree.chart.plot.Plot.notifyListeners : $i1 = lengthof r2
+org.jfree.chart.plot.Plot.notifyListeners : $z0 = r0.<org.jfree.chart.plot.Plot: boolean notify>
+org.jfree.chart.plot.PolarPlot.setAngleGridlinePaint : virtualinvoke r0.<org.jfree.chart.plot.PolarPlot: void fireChangeEvent()>()
+org.jfree.chart.plot.PolarPlot.setAngleGridlinePaint : r0.<org.jfree.chart.plot.PolarPlot: java.awt.Paint angleGridlinePaint> = r1
+org.jfree.chart.plot.PolarPlot.readObject : i5 = 0
+org.jfree.chart.plot.PolarPlot.readObject : $r7 = staticinvoke <org.jfree.io.SerialUtilities: java.awt.Stroke readStroke(java.io.ObjectInputStream)>(r1)
+org.jfree.chart.plot.PolarPlot.readObject : $r6 = staticinvoke <org.jfree.io.SerialUtilities: java.awt.Paint readPaint(java.io.ObjectInputStream)>(r1)
+org.jfree.chart.plot.PolarPlot.readObject : i3 = 0
+org.jfree.chart.plot.PolarPlot.readObject : $r10 = r0.<org.jfree.chart.plot.PolarPlot: org.jfree.util.ObjectList axes>
+org.jfree.chart.plot.PolarPlot.readObject : $r17 = r0.<org.jfree.chart.plot.PolarPlot: org.jfree.util.ObjectList renderers>
+org.jfree.chart.plot.PolarPlot.readObject : $r13 = r0.<org.jfree.chart.plot.PolarPlot: org.jfree.util.ObjectList datasets>
+org.jfree.chart.plot.PolarPlot.readObject : if r3 == null goto i3 = i3 + 1
+org.jfree.chart.plot.PolarPlot.readObject : $r16 = r0.<org.jfree.chart.plot.PolarPlot: org.jfree.util.ObjectList renderers>
+org.jfree.chart.plot.PolarPlot.readObject : $r8 = staticinvoke <org.jfree.io.SerialUtilities: java.awt.Paint readPaint(java.io.ObjectInputStream)>(r1)
+org.jfree.chart.plot.PolarPlot.readObject : i1 = 0
+org.jfree.chart.plot.PolarPlot.readObject : $r14 = r0.<org.jfree.chart.plot.PolarPlot: org.jfree.util.ObjectList datasets>
+org.jfree.chart.plot.PolarPlot.readObject : virtualinvoke r1.<java.io.ObjectInputStream: void defaultReadObject()>()
+org.jfree.chart.plot.PolarPlot.readObject : $r9 = staticinvoke <org.jfree.io.SerialUtilities: java.awt.Paint readPaint(java.io.ObjectInputStream)>(r1)
+org.jfree.chart.plot.PolarPlot.readObject : $r11 = r0.<org.jfree.chart.plot.PolarPlot: org.jfree.util.ObjectList axes>
+org.jfree.chart.plot.PolarPlot.readObject : if r2 == null goto i1 = i1 + 1
+org.jfree.chart.plot.PolarPlot.readObject : $r5 = staticinvoke <org.jfree.io.SerialUtilities: java.awt.Stroke readStroke(java.io.ObjectInputStream)>(r1)
+org.jfree.chart.plot.PolarPlot.readObject : if r4 == null goto i5 = i5 + 1
+org.jfree.chart.plot.PolarAxisLocation.toString : $r1 = r0.<org.jfree.chart.plot.PolarAxisLocation: java.lang.String name>
+org.jfree.chart.plot.Plot.equals : $r15 = r0.<org.jfree.chart.plot.Plot: java.awt.Paint backgroundPaint>
+org.jfree.chart.plot.Plot.equals : $f4 = r0.<org.jfree.chart.plot.Plot: float backgroundAlpha>
+org.jfree.chart.plot.Plot.equals : $r7 = r0.<org.jfree.chart.plot.Plot: java.awt.Paint noDataMessagePaint>
+org.jfree.chart.plot.Plot.equals : $f2 = r0.<org.jfree.chart.plot.Plot: float foregroundAlpha>
+org.jfree.chart.plot.Plot.equals : if r1 != r0 goto $z0 = r1 instanceof org.jfree.chart.plot.Plot
+org.jfree.chart.plot.Plot.equals : $r3 = r0.<org.jfree.chart.plot.Plot: java.lang.String noDataMessage>
+org.jfree.chart.plot.Plot.equals : $z12 = r0.<org.jfree.chart.plot.Plot: boolean notify>
+org.jfree.chart.plot.Plot.equals : return 1
+org.jfree.chart.plot.Plot.equals : $r19 = r0.<org.jfree.chart.plot.Plot: org.jfree.chart.plot.DrawingSupplier drawingSupplier>
+org.jfree.chart.plot.Plot.equals : $r9 = r0.<org.jfree.chart.plot.Plot: org.jfree.ui.RectangleInsets insets>
+org.jfree.chart.plot.Plot.equals : $r17 = r0.<org.jfree.chart.plot.Plot: java.awt.Image backgroundImage>
+org.jfree.chart.plot.Plot.equals : $z0 = r1 instanceof org.jfree.chart.plot.Plot
+org.jfree.chart.plot.Plot.equals : $r5 = r0.<org.jfree.chart.plot.Plot: java.awt.Font noDataMessageFont>
+org.jfree.chart.plot.Plot.equals : $r11 = r0.<org.jfree.chart.plot.Plot: java.awt.Stroke outlineStroke>
+org.jfree.chart.plot.Plot.equals : r2 = (org.jfree.chart.plot.Plot) r1
+org.jfree.chart.plot.Plot.equals : $i0 = r0.<org.jfree.chart.plot.Plot: int backgroundImageAlignment>
+org.jfree.chart.plot.Plot.equals : $r13 = r0.<org.jfree.chart.plot.Plot: java.awt.Paint outlinePaint>
+org.jfree.chart.plot.Plot.equals : $f0 = r0.<org.jfree.chart.plot.Plot: float backgroundImageAlpha>
+org.jfree.chart.plot.Plot.equals : $z5 = r0.<org.jfree.chart.plot.Plot: boolean outlineVisible>
+org.jfree.chart.plot.PolarPlot.equals : $r9 = r0.<org.jfree.chart.plot.PolarPlot: org.jfree.chart.axis.TickUnit angleTickUnit>
+org.jfree.chart.plot.PolarPlot.equals : $z23 = specialinvoke r0.<org.jfree.chart.plot.Plot: boolean equals(java.lang.Object)>(r1)
+org.jfree.chart.plot.PolarPlot.equals : $r15 = r0.<org.jfree.chart.plot.PolarPlot: java.awt.Stroke angleGridlineStroke>
+org.jfree.chart.plot.PolarPlot.equals : $r13 = r0.<org.jfree.chart.plot.PolarPlot: java.awt.Paint angleLabelPaint>
+org.jfree.chart.plot.PolarPlot.equals : $z7 = r0.<org.jfree.chart.plot.PolarPlot: boolean counterClockwise>
+org.jfree.chart.plot.PolarPlot.equals : $r11 = r0.<org.jfree.chart.plot.PolarPlot: java.awt.Font angleLabelFont>
+org.jfree.chart.plot.PolarPlot.equals : $i1 = r0.<org.jfree.chart.plot.PolarPlot: int margin>
+org.jfree.chart.plot.PolarPlot.equals : $r5 = r0.<org.jfree.chart.plot.PolarPlot: org.jfree.util.ObjectList axisLocations>
+org.jfree.chart.plot.PolarPlot.equals : $d0 = r0.<org.jfree.chart.plot.PolarPlot: double angleOffset>
+org.jfree.chart.plot.PolarPlot.equals : $r25 = r0.<org.jfree.chart.plot.PolarPlot: org.jfree.chart.LegendItemCollection fixedLegendItems>
+org.jfree.chart.plot.PolarPlot.equals : $z19 = r0.<org.jfree.chart.plot.PolarPlot: boolean radiusMinorGridlinesVisible>
+org.jfree.chart.plot.PolarPlot.equals : $r21 = r0.<org.jfree.chart.plot.PolarPlot: java.awt.Paint radiusGridlinePaint>
+org.jfree.chart.plot.PolarPlot.equals : if r1 != r0 goto $z0 = r1 instanceof org.jfree.chart.plot.PolarPlot
+org.jfree.chart.plot.PolarPlot.equals : $z5 = r0.<org.jfree.chart.plot.PolarPlot: boolean angleGridlinesVisible>
+org.jfree.chart.plot.PolarPlot.equals : $z9 = r0.<org.jfree.chart.plot.PolarPlot: boolean angleLabelsVisible>
+org.jfree.chart.plot.PolarPlot.equals : $z0 = r1 instanceof org.jfree.chart.plot.PolarPlot
+org.jfree.chart.plot.PolarPlot.equals : $r3 = r0.<org.jfree.chart.plot.PolarPlot: org.jfree.util.ObjectList axes>
+org.jfree.chart.plot.PolarPlot.equals : $r17 = r0.<org.jfree.chart.plot.PolarPlot: java.awt.Paint angleGridlinePaint>
+org.jfree.chart.plot.PolarPlot.equals : $r19 = r0.<org.jfree.chart.plot.PolarPlot: java.awt.Stroke radiusGridlineStroke>
+org.jfree.chart.plot.PolarPlot.equals : $z15 = r0.<org.jfree.chart.plot.PolarPlot: boolean radiusGridlinesVisible>
+org.jfree.chart.plot.PolarPlot.equals : $r23 = r0.<org.jfree.chart.plot.PolarPlot: java.util.List cornerTextItems>
+org.jfree.chart.plot.PolarPlot.equals : $r7 = r0.<org.jfree.chart.plot.PolarPlot: org.jfree.util.ObjectList renderers>
+org.jfree.chart.plot.PolarPlot.equals : r2 = (org.jfree.chart.plot.PolarPlot) r1
+org.jfree.chart.plot.PolarPlot.writeObject : $r6 = r0.<org.jfree.chart.plot.PolarPlot: java.awt.Paint angleLabelPaint>
+org.jfree.chart.plot.PolarPlot.writeObject : $r5 = r0.<org.jfree.chart.plot.PolarPlot: java.awt.Paint radiusGridlinePaint>
+org.jfree.chart.plot.PolarPlot.writeObject : $r3 = r0.<org.jfree.chart.plot.PolarPlot: java.awt.Paint angleGridlinePaint>
+org.jfree.chart.plot.PolarPlot.writeObject : $r2 = r0.<org.jfree.chart.plot.PolarPlot: java.awt.Stroke angleGridlineStroke>
+org.jfree.chart.plot.PolarPlot.writeObject : $r4 = r0.<org.jfree.chart.plot.PolarPlot: java.awt.Stroke radiusGridlineStroke>
+org.jfree.chart.plot.PolarPlot.writeObject : virtualinvoke r1.<java.io.ObjectOutputStream: void defaultWriteObject()>()
+org.jfree.chart.axis.TickUnit.equals : $i1 = r0.<org.jfree.chart.axis.TickUnit: int minorTickCount>
+org.jfree.chart.axis.TickUnit.equals : if r1 != r0 goto $z0 = r1 instanceof org.jfree.chart.axis.TickUnit
+org.jfree.chart.axis.TickUnit.equals : $d0 = r0.<org.jfree.chart.axis.TickUnit: double size>
+org.jfree.chart.axis.TickUnit.equals : $z0 = r1 instanceof org.jfree.chart.axis.TickUnit
+org.jfree.chart.axis.TickUnit.equals : return 1
+org.jfree.chart.axis.TickUnit.equals : r2 = (org.jfree.chart.axis.TickUnit) r1
+org.jfree.chart.plot.DefaultDrawingSupplier.readObject : i5 = 0
+org.jfree.chart.plot.DefaultDrawingSupplier.readObject : i0 = virtualinvoke r1.<java.io.ObjectInputStream: int readInt()>()
+org.jfree.chart.plot.DefaultDrawingSupplier.readObject : i8 = virtualinvoke r1.<java.io.ObjectInputStream: int readInt()>()
+org.jfree.chart.plot.DefaultDrawingSupplier.readObject : $r15 = r0.<org.jfree.chart.plot.DefaultDrawingSupplier: java.awt.Shape[] shapeSequence>
+org.jfree.chart.plot.DefaultDrawingSupplier.readObject : $r14 = newarray (java.awt.Shape)[i9]
+org.jfree.chart.plot.DefaultDrawingSupplier.readObject : i3 = 0
+org.jfree.chart.plot.DefaultDrawingSupplier.readObject : $r11 = newarray (java.awt.Stroke)[i8]
+org.jfree.chart.plot.DefaultDrawingSupplier.readObject : i7 = virtualinvoke r1.<java.io.ObjectInputStream: int readInt()>()
+org.jfree.chart.plot.DefaultDrawingSupplier.readObject : $r12 = r0.<org.jfree.chart.plot.DefaultDrawingSupplier: java.awt.Stroke[] outlineStrokeSequence>
+org.jfree.chart.plot.DefaultDrawingSupplier.readObject : $r9 = r0.<org.jfree.chart.plot.DefaultDrawingSupplier: java.awt.Stroke[] strokeSequence>
+org.jfree.chart.plot.DefaultDrawingSupplier.readObject : i6 = virtualinvoke r1.<java.io.ObjectInputStream: int readInt()>()
+org.jfree.chart.plot.DefaultDrawingSupplier.readObject : $r3 = r0.<org.jfree.chart.plot.DefaultDrawingSupplier: java.awt.Paint[] paintSequence>
+org.jfree.chart.plot.DefaultDrawingSupplier.readObject : i1 = 0
+org.jfree.chart.plot.DefaultDrawingSupplier.readObject : virtualinvoke r1.<java.io.ObjectInputStream: void defaultReadObject()>()
+org.jfree.chart.plot.DefaultDrawingSupplier.readObject : $r5 = newarray (java.awt.Paint)[i6]
+org.jfree.chart.plot.DefaultDrawingSupplier.readObject : i2 = 0
+org.jfree.chart.plot.DefaultDrawingSupplier.readObject : $r2 = newarray (java.awt.Paint)[i0]
+org.jfree.chart.plot.DefaultDrawingSupplier.readObject : i9 = virtualinvoke r1.<java.io.ObjectInputStream: int readInt()>()
+org.jfree.chart.plot.DefaultDrawingSupplier.readObject : i4 = 0
+org.jfree.chart.plot.DefaultDrawingSupplier.readObject : $r6 = r0.<org.jfree.chart.plot.DefaultDrawingSupplier: java.awt.Paint[] outlinePaintSequence>
+org.jfree.chart.plot.DefaultDrawingSupplier.readObject : $r8 = newarray (java.awt.Stroke)[i7]
+org.jfree.chart.plot.DefaultDrawingSupplier.writeObject : i5 = 0
+org.jfree.chart.plot.DefaultDrawingSupplier.writeObject : $r15 = r0.<org.jfree.chart.plot.DefaultDrawingSupplier: java.awt.Shape[] shapeSequence>
+org.jfree.chart.plot.DefaultDrawingSupplier.writeObject : $r11 = r0.<org.jfree.chart.plot.DefaultDrawingSupplier: java.awt.Stroke[] outlineStrokeSequence>
+org.jfree.chart.plot.DefaultDrawingSupplier.writeObject : i3 = 0
+org.jfree.chart.plot.DefaultDrawingSupplier.writeObject : $r14 = r0.<org.jfree.chart.plot.DefaultDrawingSupplier: java.awt.Shape[] shapeSequence>
+org.jfree.chart.plot.DefaultDrawingSupplier.writeObject : $r12 = r0.<org.jfree.chart.plot.DefaultDrawingSupplier: java.awt.Stroke[] outlineStrokeSequence>
+org.jfree.chart.plot.DefaultDrawingSupplier.writeObject : $r9 = r0.<org.jfree.chart.plot.DefaultDrawingSupplier: java.awt.Stroke[] strokeSequence>
+org.jfree.chart.plot.DefaultDrawingSupplier.writeObject : virtualinvoke r1.<java.io.ObjectOutputStream: void defaultWriteObject()>()
+org.jfree.chart.plot.DefaultDrawingSupplier.writeObject : virtualinvoke r1.<java.io.ObjectOutputStream: void writeInt(int)>(i6)
+org.jfree.chart.plot.DefaultDrawingSupplier.writeObject : $r2 = r0.<org.jfree.chart.plot.DefaultDrawingSupplier: java.awt.Paint[] paintSequence>
+org.jfree.chart.plot.DefaultDrawingSupplier.writeObject : $r3 = r0.<org.jfree.chart.plot.DefaultDrawingSupplier: java.awt.Paint[] paintSequence>
+org.jfree.chart.plot.DefaultDrawingSupplier.writeObject : virtualinvoke r1.<java.io.ObjectOutputStream: void writeInt(int)>(i7)
+org.jfree.chart.plot.DefaultDrawingSupplier.writeObject : i1 = 0
+org.jfree.chart.plot.DefaultDrawingSupplier.writeObject : virtualinvoke r1.<java.io.ObjectOutputStream: void writeInt(int)>(i8)
+org.jfree.chart.plot.DefaultDrawingSupplier.writeObject : i2 = 0
+org.jfree.chart.plot.DefaultDrawingSupplier.writeObject : virtualinvoke r1.<java.io.ObjectOutputStream: void writeInt(int)>(i0)
+org.jfree.chart.plot.DefaultDrawingSupplier.writeObject : $r8 = r0.<org.jfree.chart.plot.DefaultDrawingSupplier: java.awt.Stroke[] strokeSequence>
+org.jfree.chart.plot.DefaultDrawingSupplier.writeObject : $r5 = r0.<org.jfree.chart.plot.DefaultDrawingSupplier: java.awt.Paint[] outlinePaintSequence>
+org.jfree.chart.plot.DefaultDrawingSupplier.writeObject : virtualinvoke r1.<java.io.ObjectOutputStream: void writeInt(int)>(i9)
+org.jfree.chart.plot.DefaultDrawingSupplier.writeObject : i4 = 0
+org.jfree.chart.plot.DefaultDrawingSupplier.writeObject : $r6 = r0.<org.jfree.chart.plot.DefaultDrawingSupplier: java.awt.Paint[] outlinePaintSequence>
+org.jfree.chart.plot.Plot.fireChangeEvent : $r1 = new org.jfree.chart.event.PlotChangeEvent
+org.jfree.chart.axis.NumberTickUnit.equals : if r1 != r0 goto $z0 = r1 instanceof org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.NumberTickUnit.equals : $r3 = r0.<org.jfree.chart.axis.NumberTickUnit: java.text.NumberFormat formatter>
+org.jfree.chart.axis.NumberTickUnit.equals : r2 = (org.jfree.chart.axis.NumberTickUnit) r1
+org.jfree.chart.axis.NumberTickUnit.equals : return 1
+org.jfree.chart.axis.NumberTickUnit.equals : $z1 = specialinvoke r0.<org.jfree.chart.axis.TickUnit: boolean equals(java.lang.Object)>(r1)
+org.jfree.chart.axis.NumberTickUnit.equals : $z0 = r1 instanceof org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.plot.Plot.writeObject : $r4 = r0.<org.jfree.chart.plot.Plot: java.awt.Paint outlinePaint>
+org.jfree.chart.plot.Plot.writeObject : $r2 = r0.<org.jfree.chart.plot.Plot: java.awt.Paint noDataMessagePaint>
+org.jfree.chart.plot.Plot.writeObject : $r5 = r0.<org.jfree.chart.plot.Plot: java.awt.Paint backgroundPaint>
+org.jfree.chart.plot.Plot.writeObject : $r3 = r0.<org.jfree.chart.plot.Plot: java.awt.Stroke outlineStroke>
+org.jfree.chart.plot.Plot.writeObject : virtualinvoke r1.<java.io.ObjectOutputStream: void defaultWriteObject()>()
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null goto return
+org.jfree.chart.plot.PolarAxisLocation.readResolve : $r6 = <org.jfree.chart.plot.PolarAxisLocation: org.jfree.chart.plot.PolarAxisLocation SOUTH_RIGHT>
+org.jfree.chart.plot.PolarAxisLocation.readResolve : $r8 = <org.jfree.chart.plot.PolarAxisLocation: org.jfree.chart.plot.PolarAxisLocation SOUTH_LEFT>
+org.jfree.chart.plot.PolarAxisLocation.readResolve : $r3 = <org.jfree.chart.plot.PolarAxisLocation: org.jfree.chart.plot.PolarAxisLocation NORTH_LEFT>
+org.jfree.chart.plot.PolarAxisLocation.readResolve : $r7 = <org.jfree.chart.plot.PolarAxisLocation: org.jfree.chart.plot.PolarAxisLocation SOUTH_LEFT>
+org.jfree.chart.plot.PolarAxisLocation.readResolve : $r13 = <org.jfree.chart.plot.PolarAxisLocation: org.jfree.chart.plot.PolarAxisLocation WEST_ABOVE>
+org.jfree.chart.plot.PolarAxisLocation.readResolve : $r12 = <org.jfree.chart.plot.PolarAxisLocation: org.jfree.chart.plot.PolarAxisLocation EAST_BELOW>
+org.jfree.chart.plot.PolarAxisLocation.readResolve : $r11 = <org.jfree.chart.plot.PolarAxisLocation: org.jfree.chart.plot.PolarAxisLocation EAST_BELOW>
+org.jfree.chart.plot.PolarAxisLocation.readResolve : $r15 = <org.jfree.chart.plot.PolarAxisLocation: org.jfree.chart.plot.PolarAxisLocation WEST_BELOW>
+org.jfree.chart.plot.PolarAxisLocation.readResolve : $r9 = <org.jfree.chart.plot.PolarAxisLocation: org.jfree.chart.plot.PolarAxisLocation EAST_ABOVE>
+org.jfree.chart.plot.PolarAxisLocation.readResolve : $r4 = <org.jfree.chart.plot.PolarAxisLocation: org.jfree.chart.plot.PolarAxisLocation NORTH_LEFT>
+org.jfree.chart.plot.PolarAxisLocation.readResolve : $r16 = <org.jfree.chart.plot.PolarAxisLocation: org.jfree.chart.plot.PolarAxisLocation WEST_BELOW>
+org.jfree.chart.plot.PolarAxisLocation.readResolve : $r10 = <org.jfree.chart.plot.PolarAxisLocation: org.jfree.chart.plot.PolarAxisLocation EAST_ABOVE>
+org.jfree.chart.plot.PolarAxisLocation.readResolve : $r5 = <org.jfree.chart.plot.PolarAxisLocation: org.jfree.chart.plot.PolarAxisLocation SOUTH_RIGHT>
+org.jfree.chart.plot.PolarAxisLocation.readResolve : $r2 = <org.jfree.chart.plot.PolarAxisLocation: org.jfree.chart.plot.PolarAxisLocation NORTH_RIGHT>
+org.jfree.chart.plot.PolarAxisLocation.readResolve : $r1 = <org.jfree.chart.plot.PolarAxisLocation: org.jfree.chart.plot.PolarAxisLocation NORTH_RIGHT>
+org.jfree.chart.plot.PolarAxisLocation.readResolve : $r14 = <org.jfree.chart.plot.PolarAxisLocation: org.jfree.chart.plot.PolarAxisLocation WEST_ABOVE>
+org.jfree.chart.plot.DefaultDrawingSupplier.equals : $r7 = r0.<org.jfree.chart.plot.DefaultDrawingSupplier: java.awt.Stroke[] strokeSequence>
+org.jfree.chart.plot.DefaultDrawingSupplier.equals : $i8 = r0.<org.jfree.chart.plot.DefaultDrawingSupplier: int shapeIndex>
+org.jfree.chart.plot.DefaultDrawingSupplier.equals : $i6 = r0.<org.jfree.chart.plot.DefaultDrawingSupplier: int outlineStrokeIndex>
+org.jfree.chart.plot.DefaultDrawingSupplier.equals : $r11 = r0.<org.jfree.chart.plot.DefaultDrawingSupplier: java.awt.Shape[] shapeSequence>
+org.jfree.chart.plot.DefaultDrawingSupplier.equals : $r9 = r0.<org.jfree.chart.plot.DefaultDrawingSupplier: java.awt.Stroke[] outlineStrokeSequence>
+org.jfree.chart.plot.DefaultDrawingSupplier.equals : $i2 = r0.<org.jfree.chart.plot.DefaultDrawingSupplier: int outlinePaintIndex>
+org.jfree.chart.plot.DefaultDrawingSupplier.equals : r2 = (org.jfree.chart.plot.DefaultDrawingSupplier) r1
+org.jfree.chart.plot.DefaultDrawingSupplier.equals : return 1
+org.jfree.chart.plot.DefaultDrawingSupplier.equals : $z0 = r1 instanceof org.jfree.chart.plot.DefaultDrawingSupplier
+org.jfree.chart.plot.DefaultDrawingSupplier.equals : if r1 != r0 goto $z0 = r1 instanceof org.jfree.chart.plot.DefaultDrawingSupplier
+org.jfree.chart.plot.DefaultDrawingSupplier.equals : $r5 = r0.<org.jfree.chart.plot.DefaultDrawingSupplier: java.awt.Paint[] outlinePaintSequence>
+org.jfree.chart.plot.DefaultDrawingSupplier.equals : $i4 = r0.<org.jfree.chart.plot.DefaultDrawingSupplier: int strokeIndex>
+org.jfree.chart.plot.DefaultDrawingSupplier.equals : $i0 = r0.<org.jfree.chart.plot.DefaultDrawingSupplier: int paintIndex>
+org.jfree.chart.plot.DefaultDrawingSupplier.equals : $r3 = r0.<org.jfree.chart.plot.DefaultDrawingSupplier: java.awt.Paint[] paintSequence>
+org.jfree.chart.plot.Plot.readObject : $r2 = staticinvoke <org.jfree.io.SerialUtilities: java.awt.Paint readPaint(java.io.ObjectInputStream)>(r1)
+org.jfree.chart.plot.Plot.readObject : $r5 = staticinvoke <org.jfree.io.SerialUtilities: java.awt.Paint readPaint(java.io.ObjectInputStream)>(r1)
+org.jfree.chart.plot.Plot.readObject : virtualinvoke r1.<java.io.ObjectInputStream: void defaultReadObject()>()
+org.jfree.chart.plot.Plot.readObject : $r3 = staticinvoke <org.jfree.io.SerialUtilities: java.awt.Stroke readStroke(java.io.ObjectInputStream)>(r1)
+org.jfree.chart.plot.Plot.readObject : $r6 = new javax.swing.event.EventListenerList
+org.jfree.chart.plot.Plot.readObject : $r4 = staticinvoke <org.jfree.io.SerialUtilities: java.awt.Paint readPaint(java.io.ObjectInputStream)>(r1)
+org.jfree.chart.plot.PolarPlot.setAngleLabelPaint : virtualinvoke r0.<org.jfree.chart.plot.PolarPlot: void fireChangeEvent()>()
+org.jfree.chart.plot.PolarPlot.setAngleLabelPaint : r0.<org.jfree.chart.plot.PolarPlot: java.awt.Paint angleLabelPaint> = r1
+org.jfree.chart.plot.PolarPlot.setAngleLabelPaint : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "paint")
+org.jfree.chart.plot.PolarPlot.setRadiusGridlinePaint : r0.<org.jfree.chart.plot.PolarPlot: java.awt.Paint radiusGridlinePaint> = r1
+org.jfree.chart.plot.PolarPlot.setRadiusGridlinePaint : virtualinvoke r0.<org.jfree.chart.plot.PolarPlot: void fireChangeEvent()>()

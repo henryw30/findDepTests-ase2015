@@ -1,0 +1,40 @@
+org.apache.xml.security.utils.XMLUtils.circumventBug2650recurse : if z0 == 0 goto i3 = i3 + 1
+org.apache.xml.security.utils.XMLUtils.circumventBug2650recurse : interfaceinvoke r5.<org.w3c.dom.Element: void setAttributeNS(java.lang.String,java.lang.String,java.lang.String)>("http://www.w3.org/2000/xmlns/", r7, r8)
+org.apache.xml.security.utils.XMLUtils.circumventBug2650recurse : r7 = interfaceinvoke r6.<org.w3c.dom.Attr: java.lang.String getNodeName()>()
+org.apache.xml.security.utils.XMLUtils.circumventBug2650recurse : i3 = 0
+org.apache.xml.security.utils.XMLUtils.circumventBug2650recurse : r2 = interfaceinvoke r1.<org.w3c.dom.Element: org.w3c.dom.NamedNodeMap getAttributes()>()
+org.apache.xml.security.utils.XMLUtils.circumventBug2650recurse : $s6 = interfaceinvoke r10.<org.w3c.dom.Node: short getNodeType()>()
+org.apache.xml.security.utils.XMLUtils.circumventBug2650recurse : r1 = (org.w3c.dom.Element) r0
+org.apache.xml.security.utils.XMLUtils.circumventBug2650recurse : i0 = interfaceinvoke r2.<org.w3c.dom.NamedNodeMap: int getLength()>()
+org.apache.xml.security.utils.XMLUtils.circumventBug2650recurse : $s4 = interfaceinvoke r0.<org.w3c.dom.Node: short getNodeType()>()
+org.apache.xml.security.utils.XMLUtils.circumventBug2650recurse : i1 = interfaceinvoke r3.<org.w3c.dom.NodeList: int getLength()>()
+org.apache.xml.security.utils.XMLUtils.circumventBug2650recurse : r8 = interfaceinvoke r6.<org.w3c.dom.Attr: java.lang.String getNodeValue()>()
+org.apache.xml.security.utils.XMLUtils.circumventBug2650recurse : r10 = interfaceinvoke r10.<org.w3c.dom.Node: org.w3c.dom.Node getNextSibling()>()
+org.apache.xml.security.utils.XMLUtils.circumventBug2650recurse : staticinvoke <org.apache.xml.security.utils.XMLUtils: void circumventBug2650recurse(org.w3c.dom.Node)>(r10)
+org.apache.xml.security.utils.XMLUtils.circumventBug2650recurse : $r9 = interfaceinvoke r2.<org.w3c.dom.NamedNodeMap: org.w3c.dom.Node item(int)>(i3)
+org.apache.xml.security.utils.XMLUtils.circumventBug2650recurse : r10 = interfaceinvoke r0.<org.w3c.dom.Node: org.w3c.dom.Node getFirstChild()>()
+org.apache.xml.security.utils.XMLUtils.circumventBug2650recurse : r3 = interfaceinvoke r1.<org.w3c.dom.Element: org.w3c.dom.NodeList getChildNodes()>()
+org.apache.xml.security.utils.XMLUtils.circumventBug2650recurse : r4 = interfaceinvoke r3.<org.w3c.dom.NodeList: org.w3c.dom.Node item(int)>(i2)
+org.apache.xml.security.utils.XMLUtils.circumventBug2650recurse : i2 = 0
+org.apache.xml.security.utils.XMLUtils.circumventBug2650recurse : r5 = (org.w3c.dom.Element) r4
+org.apache.xml.security.utils.XMLUtils.circumventBug2650recurse : $s5 = interfaceinvoke r4.<org.w3c.dom.Node: short getNodeType()>()
+org.apache.xml.security.utils.XMLUtils.circumventBug2650recurse : $z1 = virtualinvoke r7.<java.lang.String: boolean startsWith(java.lang.String)>("xmlns")
+org.apache.xml.security.utils.XMLUtils.circumventBug2650recurse : $z2 = interfaceinvoke r5.<org.w3c.dom.Element: boolean hasAttribute(java.lang.String)>(r7)
+org.apache.xml.security.utils.IgnoreAllErrorHandler.error : $r2 = <org.apache.xml.security.utils.IgnoreAllErrorHandler: org.apache.log4j.Category cat>
+org.apache.xml.security.utils.I18n.getExceptionMessage : $z0 = staticinvoke <org.apache.xml.security.Init: boolean isInitialized()>()
+org.apache.xml.security.utils.I18n.getExceptionMessage : $r1 = <org.apache.xml.security.utils.I18n: java.util.ResourceBundle resourceBundle>
+org.apache.xml.security.utils.I18n.getExceptionMessage : r5 = $r4
+org.apache.xml.security.utils.I18n.getExceptionMessage : $r6 = new java.lang.StringBuilder
+org.apache.xml.security.c14n.Canonicalizer.getInstance : $r1 = new org.apache.xml.security.c14n.Canonicalizer
+org.apache.xml.security.utils.XMLUtils.circumventBug2650 : staticinvoke <org.apache.xml.security.utils.XMLUtils: void circumventBug2650recurse(org.w3c.dom.Node)>(r0)
+org.apache.xml.security.utils.Constants.getSignatureSpecNSprefix : $r0 = staticinvoke <org.apache.xml.security.utils.ElementProxy: java.lang.String getDefaultPrefix(java.lang.String)>("http://www.w3.org/2000/09/xmldsig#")
+org.apache.xml.security.c14n.Canonicalizer.getImplementingClass : $r1 = <org.apache.xml.security.c14n.Canonicalizer: java.util.Map _canonicalizerHash>
+org.apache.xml.security.utils.XMLUtils.createElementInSignatureSpace : r3 = interfaceinvoke r0.<org.w3c.dom.Document: org.w3c.dom.Element createElementNS(java.lang.String,java.lang.String)>("http://www.w3.org/2000/09/xmldsig#", r1)
+org.apache.xml.security.utils.XMLUtils.createElementInSignatureSpace : return r3
+org.apache.xml.security.utils.XMLUtils.createElementInSignatureSpace : if r0 != null goto r2 = staticinvoke <org.apache.xml.security.utils.Constants: java.lang.String getSignatureSpecNSprefix()>()
+org.apache.xml.security.utils.XMLUtils.createElementInSignatureSpace : r2 = staticinvoke <org.apache.xml.security.utils.Constants: java.lang.String getSignatureSpecNSprefix()>()
+org.apache.xml.security.utils.XMLUtils.createElementInSignatureSpace : interfaceinvoke r3.<org.w3c.dom.Element: void setAttributeNS(java.lang.String,java.lang.String,java.lang.String)>("http://www.w3.org/2000/xmlns/", "xmlns", "http://www.w3.org/2000/09/xmldsig#")
+org.apache.xml.security.utils.XMLUtils.createElementInSignatureSpace : if r2 == null goto r3 = interfaceinvoke r0.<org.w3c.dom.Document: org.w3c.dom.Element createElementNS(java.lang.String,java.lang.String)>("http://www.w3.org/2000/09/xmldsig#", r1)
+org.apache.xml.security.utils.ElementProxy.getDefaultPrefix : return r2
+org.apache.xml.security.utils.ElementProxy.getDefaultPrefix : $r1 = <org.apache.xml.security.utils.ElementProxy: java.util.HashMap _prefixMappings>
+org.apache.xml.security.Init.isInitialized : $z0 = <org.apache.xml.security.Init: boolean _alreadyInitialized>

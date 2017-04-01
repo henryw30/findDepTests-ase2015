@@ -1,0 +1,28 @@
+org.jfree.data.Range.combine : if r0 != null >>>>>>>> org.jfree.data.Range.combine : return r1
+org.jfree.data.Range.combine : return r1 >>>>>>>> org.jfree.data.Range.combine : if r1 != null
+org.jfree.data.Range.combine : if r1 != null >>>>>>>> org.jfree.data.Range.combine : return r0
+org.jfree.data.Range.combine : return r0 >>>>>>>> org.jfree.data.Range.equals : $z0 = r1 instanceof org.jfree.data.Range
+org.jfree.data.Range.equals : $z0 = r1 instanceof org.jfree.data.Range >>>>>>>> org.jfree.data.Range.equals : if $z0 != 0
+org.jfree.data.Range.equals : if $z0 != 0 >>>>>>>> org.jfree.data.Range.equals : r2 = (org.jfree.data.Range) r1
+org.jfree.data.Range.equals : r2 = (org.jfree.data.Range) r1 >>>>>>>> org.jfree.data.Range.equals : $d0 = r0.<org.jfree.data.Range: double lower>
+org.jfree.data.Range.equals : $d0 = r0.<org.jfree.data.Range: double lower> >>>>>>>> org.jfree.data.Range.equals : $d1 = r2.<org.jfree.data.Range: double lower>
+org.jfree.data.Range.equals : $d1 = r2.<org.jfree.data.Range: double lower> >>>>>>>> org.jfree.data.Range.equals : $b0 = $d0 cmpl $d1
+org.jfree.data.Range.equals : $b0 = $d0 cmpl $d1 >>>>>>>> org.jfree.data.Range.equals : if $b0 == 0
+org.jfree.data.Range.equals : if $b0 == 0 >>>>>>>> org.jfree.data.Range.equals : $d2 = r0.<org.jfree.data.Range: double upper>
+org.jfree.data.Range.equals : $d2 = r0.<org.jfree.data.Range: double upper> >>>>>>>> org.jfree.data.Range.equals : $d3 = r2.<org.jfree.data.Range: double upper>
+org.jfree.data.Range.equals : $d3 = r2.<org.jfree.data.Range: double upper> >>>>>>>> org.jfree.data.Range.equals : $b1 = $d2 cmpl $d3
+org.jfree.data.Range.equals : $b1 = $d2 cmpl $d3 >>>>>>>> org.jfree.data.Range.equals : if $b1 == 0
+org.jfree.data.Range.equals : if $b1 == 0 >>>>>>>> org.jfree.data.Range.equals : return 1
+org.jfree.data.Range.equals : return 1 >>>>>>>> org.jfree.data.Range.combine : $d2 = virtualinvoke r0.<org.jfree.data.Range: double getLowerBound()>()
+org.jfree.data.Range.combine : $d2 = virtualinvoke r0.<org.jfree.data.Range: double getLowerBound()>() >>>>>>>> org.jfree.data.Range.getLowerBound : $d0 = r0.<org.jfree.data.Range: double lower>
+org.jfree.data.Range.getLowerBound : $d0 = r0.<org.jfree.data.Range: double lower> >>>>>>>> org.jfree.data.Range.getLowerBound : return $d0
+org.jfree.data.Range.getLowerBound : return $d0 >>>>>>>> org.jfree.data.Range.combine : $d3 = virtualinvoke r1.<org.jfree.data.Range: double getLowerBound()>()
+org.jfree.data.Range.combine : $d3 = virtualinvoke r1.<org.jfree.data.Range: double getLowerBound()>() >>>>>>>> org.jfree.data.Range.combine : d0 = staticinvoke <java.lang.Math: double min(double,double)>($d2, $d3)
+org.jfree.data.Range.combine : d0 = staticinvoke <java.lang.Math: double min(double,double)>($d2, $d3) >>>>>>>> org.jfree.data.Range.combine : $d4 = virtualinvoke r0.<org.jfree.data.Range: double getUpperBound()>()
+org.jfree.data.Range.combine : $d4 = virtualinvoke r0.<org.jfree.data.Range: double getUpperBound()>() >>>>>>>> org.jfree.data.Range.getUpperBound : $d0 = r0.<org.jfree.data.Range: double upper>
+org.jfree.data.Range.getUpperBound : $d0 = r0.<org.jfree.data.Range: double upper> >>>>>>>> org.jfree.data.Range.getUpperBound : return $d0
+org.jfree.data.Range.getUpperBound : return $d0 >>>>>>>> org.jfree.data.Range.combine : $d5 = virtualinvoke r1.<org.jfree.data.Range: double getUpperBound()>()
+org.jfree.data.Range.combine : $d5 = virtualinvoke r1.<org.jfree.data.Range: double getUpperBound()>() >>>>>>>> org.jfree.data.Range.combine : d1 = staticinvoke <java.lang.Math: double max(double,double)>($d4, $d5)
+org.jfree.data.Range.combine : d1 = staticinvoke <java.lang.Math: double max(double,double)>($d4, $d5) >>>>>>>> org.jfree.data.Range.combine : $r2 = new org.jfree.data.Range
+org.jfree.data.Range.combine : $r2 = new org.jfree.data.Range >>>>>>>> org.jfree.data.Range.combine : specialinvoke $r2.<org.jfree.data.Range: void <init>(double,double)>(d0, d1)
+org.jfree.data.Range.combine : specialinvoke $r2.<org.jfree.data.Range: void <init>(double,double)>(d0, d1) >>>>>>>> org.jfree.data.Range.combine : return $r2

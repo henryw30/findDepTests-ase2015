@@ -1,0 +1,14 @@
+crystal.util.ValidInputChecker.checkCommand : if r0 == null >>>>>>>> crystal.util.ValidInputChecker.checkCommand : $r1 = virtualinvoke r0.<java.lang.String: java.lang.String trim()>()
+crystal.util.ValidInputChecker.checkCommand : $r1 = virtualinvoke r0.<java.lang.String: java.lang.String trim()>() >>>>>>>> crystal.util.ValidInputChecker.checkCommand : $z0 = virtualinvoke $r1.<java.lang.String: boolean isEmpty()>()
+crystal.util.ValidInputChecker.checkCommand : $z0 = virtualinvoke $r1.<java.lang.String: boolean isEmpty()>() >>>>>>>> crystal.util.ValidInputChecker.checkCommand : if $z0 != 0
+crystal.util.ValidInputChecker.checkCommand : if $z0 != 0 >>>>>>>> crystal.util.ValidInputChecker.checkCommand : $r2 = staticinvoke <crystal.util.RunIt: java.lang.String getExecutable(java.lang.String)>(r0)
+crystal.util.ValidInputChecker.checkCommand : $r2 = staticinvoke <crystal.util.RunIt: java.lang.String getExecutable(java.lang.String)>(r0) >>>>>>>> crystal.util.RunIt.getExecutable : if r0 != null
+crystal.util.RunIt.getExecutable : if r0 != null >>>>>>>> crystal.util.RunIt.getExecutable : $r8 = new java.io.File
+crystal.util.RunIt.getExecutable : $r8 = new java.io.File >>>>>>>> crystal.util.RunIt.getExecutable : specialinvoke $r8.<java.io.File: void <init>(java.lang.String)>(r0)
+crystal.util.RunIt.getExecutable : specialinvoke $r8.<java.io.File: void <init>(java.lang.String)>(r0) >>>>>>>> crystal.util.RunIt.getExecutable : $z0 = virtualinvoke $r8.<java.io.File: boolean exists()>()
+crystal.util.RunIt.getExecutable : $z0 = virtualinvoke $r8.<java.io.File: boolean exists()>() >>>>>>>> crystal.util.RunIt.getExecutable : if $z0 == 0
+crystal.util.RunIt.getExecutable : if $z0 == 0 >>>>>>>> crystal.util.RunIt.getExecutable : return r0
+crystal.util.RunIt.getExecutable : return r0 >>>>>>>> crystal.util.ValidInputChecker.checkCommand : if $r2 == null
+crystal.util.ValidInputChecker.checkCommand : if $r2 == null >>>>>>>> crystal.util.ValidInputChecker.checkCommand : $z1 = 1
+crystal.util.ValidInputChecker.checkCommand : $z1 = 1 >>>>>>>> crystal.util.ValidInputChecker.checkCommand : goto [?= return $z1]
+crystal.util.ValidInputChecker.checkCommand : goto [?= return $z1] >>>>>>>> crystal.util.ValidInputChecker.checkCommand : return $z1

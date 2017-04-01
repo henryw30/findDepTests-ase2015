@@ -1,0 +1,24 @@
+org.joda.time.PeriodType.withFieldRemoved : if i2 <= i1 goto i2 = i2 + 1
+org.joda.time.PeriodType.withFieldRemoved : $i7 = i2 - 1
+org.joda.time.PeriodType.withFieldRemoved : $r14 = new org.joda.time.PeriodType
+org.joda.time.PeriodType.withFieldRemoved : $i10 = i3
+org.joda.time.PeriodType.withFieldRemoved : i3 = 0
+org.joda.time.PeriodType.withFieldRemoved : if i3 <= i0 goto r9[i3] = -1
+org.joda.time.PeriodType.withFieldRemoved : if i3 >= i0 goto (branch)
+org.joda.time.PeriodType.withFieldRemoved : r9[i3] = -1
+org.joda.time.PeriodType.withFieldRemoved : if i1 != -1 goto $i4 = virtualinvoke r0.<org.joda.time.PeriodType: int size()>()
+org.joda.time.PeriodType.withFieldRemoved : r9 = newarray (int)[8]
+org.joda.time.PeriodType.withFieldRemoved : $i4 = virtualinvoke r0.<org.joda.time.PeriodType: int size()>()
+org.joda.time.PeriodType.withFieldRemoved : $r10 = r0.<org.joda.time.PeriodType: int[] iIndices>
+org.joda.time.PeriodType.withFieldRemoved : $r5 = r0.<org.joda.time.PeriodType: org.joda.time.DurationFieldType[] iTypes>
+org.joda.time.PeriodType.withFieldRemoved : i2 = 0
+org.joda.time.PeriodType.withFieldRemoved : $r3 = r0.<org.joda.time.PeriodType: int[] iIndices>
+org.joda.time.PeriodType.withFieldRemoved : if i2 >= i1 goto (branch)
+org.joda.time.DateTimeUtils.getPeriodType : if r0 != null goto return r0
+org.joda.time.DateTimeUtils.getPeriodType : return r0
+org.joda.time.PeriodType.size : $r1 = r0.<org.joda.time.PeriodType: org.joda.time.DurationFieldType[] iTypes>
+org.joda.time.PeriodType.withWeeksRemoved : $r1 = specialinvoke r0.<org.joda.time.PeriodType: org.joda.time.PeriodType withFieldRemoved(int,java.lang.String)>(2, "NoWeeks")
+org.joda.time.PeriodType.standard : if r0 != null goto return r0
+org.joda.time.PeriodType.standard : r0 = <org.joda.time.PeriodType: org.joda.time.PeriodType cStandard>
+org.joda.time.PeriodType.standard : return r0
+org.joda.time.PeriodType.getName : $r1 = r0.<org.joda.time.PeriodType: java.lang.String iName>

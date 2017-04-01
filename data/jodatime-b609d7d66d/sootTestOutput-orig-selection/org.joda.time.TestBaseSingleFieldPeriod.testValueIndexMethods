@@ -1,0 +1,11 @@
+org.joda.time.base.BaseSingleFieldPeriod.size : return 1 >>>>>>>> org.joda.time.base.BaseSingleFieldPeriod.getValue : if i0 == 0
+org.joda.time.base.BaseSingleFieldPeriod.getValue : if i0 == 0 >>>>>>>> org.joda.time.base.BaseSingleFieldPeriod.getValue : $i1 = virtualinvoke r0.<org.joda.time.base.BaseSingleFieldPeriod: int getValue()>()
+org.joda.time.base.BaseSingleFieldPeriod.getValue : $i1 = virtualinvoke r0.<org.joda.time.base.BaseSingleFieldPeriod: int getValue()>() >>>>>>>> org.joda.time.TestBaseSingleFieldPeriod$Single.getValue : $i0 = specialinvoke r0.<org.joda.time.base.BaseSingleFieldPeriod: int getValue()>()
+org.joda.time.TestBaseSingleFieldPeriod$Single.getValue : $i0 = specialinvoke r0.<org.joda.time.base.BaseSingleFieldPeriod: int getValue()>() >>>>>>>> org.joda.time.base.BaseSingleFieldPeriod.getValue : $i0 = r0.<org.joda.time.base.BaseSingleFieldPeriod: int iPeriod>
+org.joda.time.base.BaseSingleFieldPeriod.getValue : $i0 = r0.<org.joda.time.base.BaseSingleFieldPeriod: int iPeriod> >>>>>>>> org.joda.time.base.BaseSingleFieldPeriod.getValue : return $i0
+org.joda.time.base.BaseSingleFieldPeriod.getValue : return $i0 >>>>>>>> org.joda.time.TestBaseSingleFieldPeriod$Single.getValue : return $i0
+org.joda.time.TestBaseSingleFieldPeriod$Single.getValue : return $i0 >>>>>>>> org.joda.time.base.BaseSingleFieldPeriod.getValue : return $i1
+org.joda.time.base.BaseSingleFieldPeriod.getValue : return $i1 >>>>>>>> org.joda.time.base.BaseSingleFieldPeriod.getValue : $r1 = new java.lang.IndexOutOfBoundsException
+org.joda.time.base.BaseSingleFieldPeriod.getValue : $r1 = new java.lang.IndexOutOfBoundsException >>>>>>>> org.joda.time.base.BaseSingleFieldPeriod.getValue : $r2 = staticinvoke <java.lang.String: java.lang.String valueOf(int)>(i0)
+org.joda.time.base.BaseSingleFieldPeriod.getValue : $r2 = staticinvoke <java.lang.String: java.lang.String valueOf(int)>(i0) >>>>>>>> org.joda.time.base.BaseSingleFieldPeriod.getValue : specialinvoke $r1.<java.lang.IndexOutOfBoundsException: void <init>(java.lang.String)>($r2)
+org.joda.time.base.BaseSingleFieldPeriod.getValue : specialinvoke $r1.<java.lang.IndexOutOfBoundsException: void <init>(java.lang.String)>($r2) >>>>>>>> org.joda.time.base.BaseSingleFieldPeriod.getValue : throw $r1

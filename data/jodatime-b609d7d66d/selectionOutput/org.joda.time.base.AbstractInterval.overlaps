@@ -1,0 +1,25 @@
+org.joda.time.base.AbstractInterval.overlaps : l0 = virtualinvoke r0.<org.joda.time.base.AbstractInterval: long getStartMillis()>() >>>>>>>> org.joda.time.base.AbstractInterval.overlaps : l1 = virtualinvoke r0.<org.joda.time.base.AbstractInterval: long getEndMillis()>()
+org.joda.time.base.AbstractInterval.overlaps : l1 = virtualinvoke r0.<org.joda.time.base.AbstractInterval: long getEndMillis()>() >>>>>>>> org.joda.time.base.AbstractInterval.overlaps : if r1 != null
+org.joda.time.base.AbstractInterval.overlaps : if r1 != null >>>>>>>> org.joda.time.base.AbstractInterval.overlaps : l2 = staticinvoke <org.joda.time.DateTimeUtils: long currentTimeMillis()>()
+org.joda.time.base.AbstractInterval.overlaps : if r1 != null >>>>>>>> org.joda.time.base.AbstractInterval.overlaps : l6 = interfaceinvoke r1.<org.joda.time.ReadableInterval: long getStartMillis()>()
+org.joda.time.base.AbstractInterval.overlaps : l6 = interfaceinvoke r1.<org.joda.time.ReadableInterval: long getStartMillis()>() >>>>>>>> org.joda.time.base.AbstractInterval.overlaps : l3 = interfaceinvoke r1.<org.joda.time.ReadableInterval: long getEndMillis()>()
+org.joda.time.base.AbstractInterval.overlaps : l3 = interfaceinvoke r1.<org.joda.time.ReadableInterval: long getEndMillis()>() >>>>>>>> org.joda.time.base.AbstractInterval.overlaps : $b7 = l0 cmp l3
+org.joda.time.base.AbstractInterval.overlaps : $b7 = l0 cmp l3 >>>>>>>> org.joda.time.base.AbstractInterval.overlaps : if $b7 >= 0
+org.joda.time.base.AbstractInterval.overlaps : if $b7 >= 0 >>>>>>>> org.joda.time.base.AbstractInterval.overlaps : $b8 = l6 cmp l1
+org.joda.time.base.AbstractInterval.overlaps : if $b7 >= 0 >>>>>>>> org.joda.time.base.AbstractInterval.overlaps : $z1 = 0
+org.joda.time.base.AbstractInterval.overlaps : $z1 = 0 >>>>>>>> org.joda.time.base.AbstractInterval.overlaps : return $z1
+org.joda.time.base.AbstractInterval.overlaps : $b8 = l6 cmp l1 >>>>>>>> org.joda.time.base.AbstractInterval.overlaps : if $b8 >= 0
+org.joda.time.base.AbstractInterval.overlaps : if $b8 >= 0 >>>>>>>> org.joda.time.base.AbstractInterval.overlaps : $z1 = 1
+org.joda.time.base.AbstractInterval.overlaps : if $b8 >= 0 >>>>>>>> org.joda.time.base.AbstractInterval.overlaps : $z1 = 0
+org.joda.time.base.AbstractInterval.overlaps : $z1 = 1 >>>>>>>> org.joda.time.base.AbstractInterval.overlaps : goto [?= return $z1]
+org.joda.time.base.AbstractInterval.overlaps : goto [?= return $z1] >>>>>>>> org.joda.time.base.AbstractInterval.overlaps : return $z1
+org.joda.time.base.AbstractInterval.overlaps : l2 = staticinvoke <org.joda.time.DateTimeUtils: long currentTimeMillis()>() >>>>>>>> org.joda.time.base.AbstractInterval.overlaps : $b4 = l0 cmp l2
+org.joda.time.base.AbstractInterval.overlaps : $b4 = l0 cmp l2 >>>>>>>> org.joda.time.base.AbstractInterval.overlaps : if $b4 >= 0
+org.joda.time.base.AbstractInterval.overlaps : if $b4 >= 0 >>>>>>>> org.joda.time.base.AbstractInterval.overlaps : $b5 = l2 cmp l1
+org.joda.time.base.AbstractInterval.overlaps : if $b4 >= 0 >>>>>>>> org.joda.time.base.AbstractInterval.overlaps : $z0 = 0
+org.joda.time.base.AbstractInterval.overlaps : $z0 = 0 >>>>>>>> org.joda.time.base.AbstractInterval.overlaps : return $z0
+org.joda.time.base.AbstractInterval.overlaps : $b5 = l2 cmp l1 >>>>>>>> org.joda.time.base.AbstractInterval.overlaps : if $b5 >= 0
+org.joda.time.base.AbstractInterval.overlaps : if $b5 >= 0 >>>>>>>> org.joda.time.base.AbstractInterval.overlaps : $z0 = 1
+org.joda.time.base.AbstractInterval.overlaps : if $b5 >= 0 >>>>>>>> org.joda.time.base.AbstractInterval.overlaps : $z0 = 0
+org.joda.time.base.AbstractInterval.overlaps : $z0 = 1 >>>>>>>> org.joda.time.base.AbstractInterval.overlaps : goto [?= return $z0]
+org.joda.time.base.AbstractInterval.overlaps : goto [?= return $z0] >>>>>>>> org.joda.time.base.AbstractInterval.overlaps : return $z0

@@ -1,0 +1,12 @@
+org.jfree.chart.plot.Marker.setAlpha : $b0 = f0 cmpg 0.0F >>>>>>>> org.jfree.chart.plot.Marker.setAlpha : if $b0 < 0
+org.jfree.chart.plot.Marker.setAlpha : if $b0 < 0 >>>>>>>> org.jfree.chart.plot.Marker.setAlpha : $b1 = f0 cmpl 1.0F
+org.jfree.chart.plot.Marker.setAlpha : if $b0 < 0 >>>>>>>> org.jfree.chart.plot.Marker.setAlpha : $r1 = new java.lang.IllegalArgumentException
+org.jfree.chart.plot.Marker.setAlpha : $r1 = new java.lang.IllegalArgumentException >>>>>>>> org.jfree.chart.plot.Marker.setAlpha : specialinvoke $r1.<java.lang.IllegalArgumentException: void <init>(java.lang.String)>("The \'alpha\' value must be in the range 0.0f to 1.0f")
+org.jfree.chart.plot.Marker.setAlpha : specialinvoke $r1.<java.lang.IllegalArgumentException: void <init>(java.lang.String)>("The \'alpha\' value must be in the range 0.0f to 1.0f") >>>>>>>> org.jfree.chart.plot.Marker.setAlpha : throw $r1
+org.jfree.chart.plot.Marker.setAlpha : $b1 = f0 cmpl 1.0F >>>>>>>> org.jfree.chart.plot.Marker.setAlpha : if $b1 <= 0
+org.jfree.chart.plot.Marker.setAlpha : if $b1 <= 0 >>>>>>>> org.jfree.chart.plot.Marker.setAlpha : $r1 = new java.lang.IllegalArgumentException
+org.jfree.chart.plot.Marker.setAlpha : if $b1 <= 0 >>>>>>>> org.jfree.chart.plot.Marker.setAlpha : r0.<org.jfree.chart.plot.Marker: float alpha> = f0
+org.jfree.chart.plot.Marker.setAlpha : r0.<org.jfree.chart.plot.Marker: float alpha> = f0 >>>>>>>> org.jfree.chart.plot.Marker.setAlpha : $r2 = new org.jfree.chart.event.MarkerChangeEvent
+org.jfree.chart.plot.Marker.setAlpha : $r2 = new org.jfree.chart.event.MarkerChangeEvent >>>>>>>> org.jfree.chart.plot.Marker.setAlpha : specialinvoke $r2.<org.jfree.chart.event.MarkerChangeEvent: void <init>(org.jfree.chart.plot.Marker)>(r0)
+org.jfree.chart.plot.Marker.setAlpha : specialinvoke $r2.<org.jfree.chart.event.MarkerChangeEvent: void <init>(org.jfree.chart.plot.Marker)>(r0) >>>>>>>> org.jfree.chart.plot.Marker.setAlpha : virtualinvoke r0.<org.jfree.chart.plot.Marker: void notifyListeners(org.jfree.chart.event.MarkerChangeEvent)>($r2)
+org.jfree.chart.plot.Marker.setAlpha : virtualinvoke r0.<org.jfree.chart.plot.Marker: void notifyListeners(org.jfree.chart.event.MarkerChangeEvent)>($r2) >>>>>>>> org.jfree.chart.plot.Marker.setAlpha : return

@@ -1,0 +1,28 @@
+org.jfree.chart.renderer.AbstractRenderer.lookupLegendShape : r1 = virtualinvoke r0.<org.jfree.chart.renderer.AbstractRenderer: java.awt.Shape lookupSeriesShape(int)>(i0)
+org.jfree.chart.renderer.AbstractRenderer.lookupLegendShape : if r1 != null goto return r1
+org.jfree.chart.renderer.AbstractRenderer.lookupLegendShape : r1 = r0.<org.jfree.chart.renderer.AbstractRenderer: java.awt.Shape baseLegendShape>
+org.jfree.chart.renderer.AbstractRenderer.lookupLegendShape : if r1 != null goto (branch)
+org.jfree.chart.renderer.AbstractRenderer.lookupLegendShape : return r1
+org.jfree.chart.renderer.AbstractRenderer.lookupLegendShape : r1 = virtualinvoke r0.<org.jfree.chart.renderer.AbstractRenderer: java.awt.Shape getLegendShape(int)>(i0)
+org.jfree.chart.renderer.AbstractRenderer.getSeriesShape : $r1 = r0.<org.jfree.chart.renderer.AbstractRenderer: org.jfree.util.ShapeList shapeList>
+org.jfree.chart.renderer.AbstractRenderer.getLegendShape : $r1 = r0.<org.jfree.chart.renderer.AbstractRenderer: org.jfree.util.ShapeList legendShapeList>
+org.jfree.chart.renderer.AbstractRenderer.fireChangeEvent : $r1 = new org.jfree.chart.event.RendererChangeEvent
+org.jfree.chart.renderer.xy.AbstractXYItemRenderer.getDrawingSupplier : if r2 == null goto return r1
+org.jfree.chart.renderer.xy.AbstractXYItemRenderer.getDrawingSupplier : r2 = virtualinvoke r0.<org.jfree.chart.renderer.xy.AbstractXYItemRenderer: org.jfree.chart.plot.XYPlot getPlot()>()
+org.jfree.chart.renderer.xy.AbstractXYItemRenderer.getDrawingSupplier : r1 = null
+org.jfree.chart.renderer.xy.AbstractXYItemRenderer.getDrawingSupplier : return r1
+org.jfree.chart.renderer.AbstractRenderer.lookupSeriesShape : r1 = virtualinvoke r0.<org.jfree.chart.renderer.AbstractRenderer: java.awt.Shape getSeriesShape(int)>(i0)
+org.jfree.chart.renderer.AbstractRenderer.lookupSeriesShape : $r3 = r0.<org.jfree.chart.renderer.AbstractRenderer: java.awt.Shape shape>
+org.jfree.chart.renderer.AbstractRenderer.lookupSeriesShape : if r2 == null goto (branch)
+org.jfree.chart.renderer.AbstractRenderer.lookupSeriesShape : r2 = virtualinvoke r0.<org.jfree.chart.renderer.AbstractRenderer: org.jfree.chart.plot.DrawingSupplier getDrawingSupplier()>()
+org.jfree.chart.renderer.AbstractRenderer.lookupSeriesShape : if r1 != null goto return r1
+org.jfree.chart.renderer.AbstractRenderer.lookupSeriesShape : if r1 != null goto (branch)
+org.jfree.chart.renderer.AbstractRenderer.lookupSeriesShape : return r1
+org.jfree.chart.renderer.AbstractRenderer.lookupSeriesShape : r1 = r0.<org.jfree.chart.renderer.AbstractRenderer: java.awt.Shape baseShape>
+org.jfree.chart.renderer.xy.XYLineAndShapeRenderer.setLinesVisible : virtualinvoke r0.<org.jfree.chart.renderer.xy.XYLineAndShapeRenderer: void fireChangeEvent()>()
+org.jfree.chart.renderer.xy.XYLineAndShapeRenderer.setLinesVisible : $r1 = staticinvoke <java.lang.Boolean: java.lang.Boolean valueOf(boolean)>(z0)
+org.jfree.chart.renderer.xy.XYLineAndShapeRenderer.setLinesVisible : r0.<org.jfree.chart.renderer.xy.XYLineAndShapeRenderer: java.lang.Boolean linesVisible> = r1
+org.jfree.chart.renderer.AbstractRenderer.notifyListeners : $r3 = r0.<org.jfree.chart.renderer.AbstractRenderer: javax.swing.event.EventListenerList listenerList>
+org.jfree.chart.renderer.AbstractRenderer.notifyListeners : $i1 = lengthof r2
+org.jfree.chart.renderer.xy.AbstractXYItemRenderer.getPlot : $r1 = r0.<org.jfree.chart.renderer.xy.AbstractXYItemRenderer: org.jfree.chart.plot.XYPlot plot>
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null goto return

@@ -1,0 +1,31 @@
+crystal.server.GitLogParser.parseLog : $r1 = <crystal.server.GitLogParser: java.util.Map gitCheckpoint>
+crystal.util.ValidInputChecker.checkNullInput : if r0 != null goto return
+crystal.server.AbstractLogParser.clipFront : $r5 = new java.lang.StringBuilder
+crystal.server.AbstractLogParser.clipFront : $r1 = new java.util.StringTokenizer
+crystal.server.AbstractLogParser.clipFront : $r10 = virtualinvoke r3.<java.lang.String: java.lang.String trim()>()
+crystal.server.AbstractLogParser.clipFront : r3 = ""
+crystal.server.AbstractLogParser.clipFront : $z0 = virtualinvoke r2.<java.util.StringTokenizer: boolean hasMoreTokens()>()
+crystal.server.AbstractLogParser.clipFront : virtualinvoke r2.<java.util.StringTokenizer: java.lang.String nextToken()>()
+crystal.server.AbstractLogParser.abstractParseLog : r8 = ""
+crystal.server.AbstractLogParser.abstractParseLog : r7 = null
+crystal.server.AbstractLogParser.abstractParseLog : $z1 = virtualinvoke r6.<java.util.StringTokenizer: boolean hasMoreTokens()>()
+crystal.server.AbstractLogParser.abstractParseLog : if r9 != null goto (branch)
+crystal.server.AbstractLogParser.abstractParseLog : $r16 = new java.lang.StringBuilder
+crystal.server.AbstractLogParser.abstractParseLog : return r2
+crystal.server.AbstractLogParser.abstractParseLog : $r22 = virtualinvoke r5.<java.lang.String: java.lang.String trim()>()
+crystal.server.AbstractLogParser.abstractParseLog : $r31 = new java.util.ArrayList
+crystal.server.AbstractLogParser.abstractParseLog : if r7 == null goto $r96 = new java.lang.RuntimeException
+crystal.server.AbstractLogParser.abstractParseLog : $r32 = virtualinvoke r6.<java.util.StringTokenizer: java.lang.String nextToken()>()
+crystal.server.AbstractLogParser.abstractParseLog : staticinvoke <crystal.util.ValidInputChecker: void checkNullInput(java.lang.Object)>(r0)
+crystal.server.AbstractLogParser.abstractParseLog : $r30 = new java.util.StringTokenizer
+crystal.server.AbstractLogParser.abstractParseLog : r10 = ""
+crystal.server.AbstractLogParser.abstractParseLog : goto [?= staticinvoke <edu.washington.cs.dt.impact.util.Tracer: void trace(java.lang.String,java.lang.String)>("$z1 = virtualinvoke r6.<java.util.StringTokenizer: boolean hasMoreTokens()>()", "crystal.server.AbstractLogParser.abstractParseLog")]
+crystal.server.AbstractLogParser.abstractParseLog : $r15 = new java.util.HashMap
+crystal.server.AbstractLogParser.abstractParseLog : r7 = staticinvoke <crystal.server.AbstractLogParser: java.lang.String clipFront(java.lang.String)>(r12)
+crystal.server.AbstractLogParser.abstractParseLog : $r36 = staticinvoke <crystal.server.AbstractLogParser: java.lang.String clipFront(java.lang.String)>(r12)
+crystal.server.AbstractLogParser.abstractParseLog : r9 = ""
+crystal.server.AbstractLogParser.abstractParseLog : $r33 = <crystal.server.AbstractLogParser$CheckpointLabels: crystal.server.AbstractLogParser$CheckpointLabels CHANGESET>
+crystal.server.AbstractLogParser.abstractParseLog : $r89 = virtualinvoke r7.<java.lang.String: java.lang.String intern()>()
+crystal.server.AbstractLogParser.abstractParseLog : if r8 != null goto (branch)
+crystal.server.AbstractLogParser.abstractParseLog : if r10 != null goto (branch)
+crystal.server.AbstractLogParser.abstractParseLog : $r23 = new java.lang.StringBuilder

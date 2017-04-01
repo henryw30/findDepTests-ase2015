@@ -1,0 +1,61 @@
+org.jfree.data.Range.getUpperBound : $d0 = r0.<org.jfree.data.Range: double upper>
+org.jfree.data.Range.getLowerBound : $d0 = r0.<org.jfree.data.Range: double lower>
+org.jfree.data.category.DefaultIntervalCategoryDataset.getCategoryCount : return i0
+org.jfree.data.category.DefaultIntervalCategoryDataset.getCategoryCount : $i1 = virtualinvoke r0.<org.jfree.data.category.DefaultIntervalCategoryDataset: int getSeriesCount()>()
+org.jfree.data.category.DefaultIntervalCategoryDataset.getCategoryCount : $r2 = r0.<org.jfree.data.category.DefaultIntervalCategoryDataset: java.lang.Number[][] startData>
+org.jfree.data.category.DefaultIntervalCategoryDataset.getCategoryCount : i0 = 0
+org.jfree.data.category.DefaultIntervalCategoryDataset.getCategoryCount : $r1 = r0.<org.jfree.data.category.DefaultIntervalCategoryDataset: java.lang.Number[][] startData>
+org.jfree.data.category.DefaultIntervalCategoryDataset.getRowCount : $r1 = r0.<org.jfree.data.category.DefaultIntervalCategoryDataset: java.lang.Comparable[] seriesKeys>
+org.jfree.data.category.DefaultIntervalCategoryDataset.getStartValue : if i0 < 0 goto $r1 = new java.lang.IllegalArgumentException
+org.jfree.data.category.DefaultIntervalCategoryDataset.getStartValue : if i1 < 0 goto $r2 = new java.lang.IllegalArgumentException
+org.jfree.data.category.DefaultIntervalCategoryDataset.getStartValue : $r3 = r0.<org.jfree.data.category.DefaultIntervalCategoryDataset: java.lang.Number[][] startData>
+org.jfree.data.category.DefaultIntervalCategoryDataset.generateKeys : i1 = 0
+org.jfree.data.category.DefaultIntervalCategoryDataset.generateKeys : return r2
+org.jfree.data.category.DefaultIntervalCategoryDataset.generateKeys : r2 = newarray (java.lang.Comparable)[i0]
+org.jfree.data.category.DefaultIntervalCategoryDataset.generateKeys : r2[i1] = r3
+org.jfree.data.category.DefaultIntervalCategoryDataset.generateKeys : $r4 = new java.lang.StringBuilder
+org.jfree.data.category.DefaultIntervalCategoryDataset.getColumnCount : $r1 = r0.<org.jfree.data.category.DefaultIntervalCategoryDataset: java.lang.Comparable[] categoryKeys>
+org.jfree.chart.util.ResourceBundleWrapper.getBundle : $r1 = <org.jfree.chart.util.ResourceBundleWrapper: java.net.URLClassLoader noCodeBaseClassLoader>
+org.jfree.chart.util.ResourceBundleWrapper.getBundle : $r5 = staticinvoke <java.util.ResourceBundle: java.util.ResourceBundle getBundle(java.lang.String)>(r0)
+org.jfree.data.general.DatasetUtilities.iterateRangeBounds : $d6 = virtualinvoke r4.<java.lang.Number: double doubleValue()>()
+org.jfree.data.general.DatasetUtilities.iterateRangeBounds : if r2 == null goto r3 = interfaceinvoke r1.<org.jfree.data.category.IntervalCategoryDataset: java.lang.Number getStartValue(int,int)>(i2, i3)
+org.jfree.data.general.DatasetUtilities.iterateRangeBounds : d0 = #Infinity
+org.jfree.data.general.DatasetUtilities.iterateRangeBounds : r2 = interfaceinvoke r1.<org.jfree.data.category.IntervalCategoryDataset: java.lang.Number getValue(int,int)>(i2, i3)
+org.jfree.data.general.DatasetUtilities.iterateRangeBounds : i3 = 0
+org.jfree.data.general.DatasetUtilities.iterateRangeBounds : $d3 = virtualinvoke r2.<java.lang.Number: double doubleValue()>()
+org.jfree.data.general.DatasetUtilities.iterateRangeBounds : d0 = staticinvoke <java.lang.Math: double min(double,double)>(d2, d0)
+org.jfree.data.general.DatasetUtilities.iterateRangeBounds : r3 = interfaceinvoke r1.<org.jfree.data.category.IntervalCategoryDataset: java.lang.Number getStartValue(int,int)>(i2, i3)
+org.jfree.data.general.DatasetUtilities.iterateRangeBounds : if r3 == null goto r4 = interfaceinvoke r1.<org.jfree.data.category.IntervalCategoryDataset: java.lang.Number getEndValue(int,int)>(i2, i3)
+org.jfree.data.general.DatasetUtilities.iterateRangeBounds : d1 = #-Infinity
+org.jfree.data.general.DatasetUtilities.iterateRangeBounds : $r6 = new org.jfree.data.Range
+org.jfree.data.general.DatasetUtilities.iterateRangeBounds : r1 = (org.jfree.data.category.IntervalCategoryDataset) r0
+org.jfree.data.general.DatasetUtilities.iterateRangeBounds : goto [?= $b6 = d0 cmpl #Infinity]
+org.jfree.data.general.DatasetUtilities.iterateRangeBounds : d1 = staticinvoke <java.lang.Math: double max(double,double)>(d1, d8)
+org.jfree.data.general.DatasetUtilities.iterateRangeBounds : if r4 == null goto i3 = i3 + 1
+org.jfree.data.general.DatasetUtilities.iterateRangeBounds : d8 = virtualinvoke r5.<java.lang.Number: double doubleValue()>()
+org.jfree.data.general.DatasetUtilities.iterateRangeBounds : $b6 = d0 cmpl #Infinity
+org.jfree.data.general.DatasetUtilities.iterateRangeBounds : i5 = 0
+org.jfree.data.general.DatasetUtilities.iterateRangeBounds : d1 = staticinvoke <java.lang.Math: double max(double,double)>(d7, d1)
+org.jfree.data.general.DatasetUtilities.iterateRangeBounds : i1 = interfaceinvoke r0.<org.jfree.data.category.CategoryDataset: int getColumnCount()>()
+org.jfree.data.general.DatasetUtilities.iterateRangeBounds : d0 = staticinvoke <java.lang.Math: double min(double,double)>(d5, d0)
+org.jfree.data.general.DatasetUtilities.iterateRangeBounds : r5 = interfaceinvoke r0.<org.jfree.data.category.CategoryDataset: java.lang.Number getValue(int,int)>(i4, i5)
+org.jfree.data.general.DatasetUtilities.iterateRangeBounds : i0 = interfaceinvoke r0.<org.jfree.data.category.CategoryDataset: int getRowCount()>()
+org.jfree.data.general.DatasetUtilities.iterateRangeBounds : if z0 == 0 goto i4 = 0
+org.jfree.data.general.DatasetUtilities.iterateRangeBounds : d0 = staticinvoke <java.lang.Math: double min(double,double)>(d7, d0)
+org.jfree.data.general.DatasetUtilities.iterateRangeBounds : d1 = staticinvoke <java.lang.Math: double max(double,double)>(d5, d1)
+org.jfree.data.general.DatasetUtilities.iterateRangeBounds : d1 = staticinvoke <java.lang.Math: double max(double,double)>(d2, d1)
+org.jfree.data.general.DatasetUtilities.iterateRangeBounds : $z5 = staticinvoke <java.lang.Double: boolean isNaN(double)>(d8)
+org.jfree.data.general.DatasetUtilities.iterateRangeBounds : i2 = 0
+org.jfree.data.general.DatasetUtilities.iterateRangeBounds : r4 = interfaceinvoke r1.<org.jfree.data.category.IntervalCategoryDataset: java.lang.Number getEndValue(int,int)>(i2, i3)
+org.jfree.data.general.DatasetUtilities.iterateRangeBounds : if r5 == null goto i5 = i5 + 1
+org.jfree.data.general.DatasetUtilities.iterateRangeBounds : d0 = staticinvoke <java.lang.Math: double min(double,double)>(d0, d8)
+org.jfree.data.general.DatasetUtilities.iterateRangeBounds : $d4 = virtualinvoke r3.<java.lang.Number: double doubleValue()>()
+org.jfree.data.general.DatasetUtilities.iterateRangeBounds : i4 = 0
+org.jfree.data.category.DefaultIntervalCategoryDataset.getValue : $r1 = virtualinvoke r0.<org.jfree.data.category.DefaultIntervalCategoryDataset: java.lang.Number getEndValue(int,int)>(i0, i1)
+org.jfree.data.category.DefaultIntervalCategoryDataset.getSeriesCount : return i0
+org.jfree.data.category.DefaultIntervalCategoryDataset.getSeriesCount : $r2 = r0.<org.jfree.data.category.DefaultIntervalCategoryDataset: java.lang.Number[][] startData>
+org.jfree.data.category.DefaultIntervalCategoryDataset.getSeriesCount : i0 = 0
+org.jfree.data.category.DefaultIntervalCategoryDataset.getSeriesCount : $r1 = r0.<org.jfree.data.category.DefaultIntervalCategoryDataset: java.lang.Number[][] startData>
+org.jfree.data.category.DefaultIntervalCategoryDataset.getEndValue : if i0 < 0 goto $r1 = new java.lang.IllegalArgumentException
+org.jfree.data.category.DefaultIntervalCategoryDataset.getEndValue : if i1 < 0 goto $r2 = new java.lang.IllegalArgumentException
+org.jfree.data.category.DefaultIntervalCategoryDataset.getEndValue : $r3 = r0.<org.jfree.data.category.DefaultIntervalCategoryDataset: java.lang.Number[][] endData>

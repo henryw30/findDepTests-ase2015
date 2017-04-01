@@ -1,0 +1,37 @@
+org.jfree.data.general.AbstractDataset.notifyListeners : $r3 = r0.<org.jfree.data.general.AbstractDataset: javax.swing.event.EventListenerList listenerList>
+org.jfree.data.general.AbstractDataset.notifyListeners : $i1 = lengthof r2
+org.jfree.chart.urls.TimeSeriesURLGenerator.generateURL : $r5 = new java.lang.StringBuilder
+org.jfree.chart.urls.TimeSeriesURLGenerator.generateURL : z0 = 0
+org.jfree.chart.urls.TimeSeriesURLGenerator.generateURL : $r15 = virtualinvoke r3.<java.lang.Object: java.lang.String toString()>()
+org.jfree.chart.urls.TimeSeriesURLGenerator.generateURL : $r10 = new java.lang.StringBuilder
+org.jfree.chart.urls.TimeSeriesURLGenerator.generateURL : $r25 = new java.lang.StringBuilder
+org.jfree.chart.urls.TimeSeriesURLGenerator.generateURL : $r18 = r0.<org.jfree.chart.urls.TimeSeriesURLGenerator: java.text.DateFormat dateFormat>
+org.jfree.chart.urls.TimeSeriesURLGenerator.generateURL : return r32
+org.jfree.chart.urls.TimeSeriesURLGenerator.generateURL : $r20 = new java.lang.StringBuilder
+org.jfree.chart.urls.TimeSeriesURLGenerator.generateURL : $d0 = interfaceinvoke r1.<org.jfree.data.xy.XYDataset: double getXValue(int,int)>(i0, i1)
+org.jfree.chart.urls.TimeSeriesURLGenerator.generateURL : r2 = r0.<org.jfree.chart.urls.TimeSeriesURLGenerator: java.lang.String prefix>
+org.jfree.chart.urls.TimeSeriesURLGenerator.generateURL : if r3 == null goto $d0 = interfaceinvoke r1.<org.jfree.data.xy.XYDataset: double getXValue(int,int)>(i0, i1)
+org.jfree.chart.urls.TimeSeriesURLGenerator.generateURL : r3 = interfaceinvoke r1.<org.jfree.data.xy.XYDataset: java.lang.Comparable getSeriesKey(int)>(i0)
+org.jfree.chart.urls.TimeSeriesURLGenerator.generateURL : $i3 = virtualinvoke r2.<java.lang.String: int indexOf(java.lang.String)>("?")
+org.jfree.data.xy.DefaultXYDataset.addSeries : $r6 = r2[0]
+org.jfree.data.xy.DefaultXYDataset.addSeries : i0 = virtualinvoke r0.<org.jfree.data.xy.DefaultXYDataset: int indexOf(java.lang.Comparable)>(r1)
+org.jfree.data.xy.DefaultXYDataset.addSeries : $r9 = r0.<org.jfree.data.xy.DefaultXYDataset: java.util.List seriesKeys>
+org.jfree.data.xy.DefaultXYDataset.addSeries : $r14 = new org.jfree.data.general.DatasetChangeEvent
+org.jfree.data.xy.DefaultXYDataset.addSeries : if r1 != null goto (branch)
+org.jfree.data.xy.DefaultXYDataset.addSeries : $i1 = lengthof r2
+org.jfree.data.xy.DefaultXYDataset.addSeries : if r2 != null goto $i1 = lengthof r2
+org.jfree.data.xy.DefaultXYDataset.addSeries : if i0 != -1 goto $r11 = r0.<org.jfree.data.xy.DefaultXYDataset: java.util.List seriesList>
+org.jfree.data.xy.DefaultXYDataset.addSeries : $r10 = r0.<org.jfree.data.xy.DefaultXYDataset: java.util.List seriesList>
+org.jfree.data.xy.DefaultXYDataset.indexOf : $r2 = r0.<org.jfree.data.xy.DefaultXYDataset: java.util.List seriesKeys>
+org.jfree.chart.urls.URLUtilities.encode : r3 = null
+org.jfree.chart.urls.URLUtilities.encode : r2 = class "java/net/URLEncoder"
+org.jfree.chart.urls.URLUtilities.encode : return r3
+org.jfree.chart.urls.URLUtilities.encode : goto [?= return r3]
+org.jfree.chart.urls.URLUtilities.encode : $r4 = <org.jfree.chart.urls.URLUtilities: java.lang.Class[] STRING_ARGS_2>
+org.jfree.chart.urls.URLUtilities.encode : goto [?= (branch)]
+org.jfree.chart.urls.URLUtilities.encode : $r7 = newarray (java.lang.Object)[2]
+org.jfree.data.xy.DefaultXYDataset.getXValue : $r5 = r1[0]
+org.jfree.data.xy.DefaultXYDataset.getXValue : $r2 = r0.<org.jfree.data.xy.DefaultXYDataset: java.util.List seriesList>
+org.jfree.data.xy.DefaultXYDataset.getSeriesCount : $r1 = r0.<org.jfree.data.xy.DefaultXYDataset: java.util.List seriesList>
+org.jfree.data.xy.DefaultXYDataset.getSeriesKey : if i0 < 0 goto $r1 = new java.lang.IllegalArgumentException
+org.jfree.data.xy.DefaultXYDataset.getSeriesKey : $r2 = r0.<org.jfree.data.xy.DefaultXYDataset: java.util.List seriesKeys>

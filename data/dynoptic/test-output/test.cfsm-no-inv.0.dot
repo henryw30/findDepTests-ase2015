@@ -1,0 +1,50 @@
+digraph {
+  0 [label="0",shape=circle,shape=doublecircle];
+  start_0 [label="start",shape=plaintext];
+  start_0->0;
+  1 [label="1",shape=circle,shape=doublecircle];
+  2 [label="2",shape=circle];
+title_node [label="pid 0",shape=box, style=rounded];0->0 [label="send_m",];
+0->1 [label="ch0 ! m",];
+0->2 [label="ch0 ! m",];
+0->0 [label="ch1 ? a",];
+1->0 [label="send_m",];
+1->1 [label="send_m",];
+1->1 [label="ch0 ! m",];
+1->2 [label="ch0 ! m",];
+1->0 [label="ch1 ? a",];
+1->1 [label="ch1 ? a",];
+2->0 [label="ch1 ? a",];
+2->1 [label="ch1 ? a",];
+2->2 [label="ch0 ! m",];
+} // digraph {
+digraph {
+  0 [label="0",shape=circle,shape=doublecircle];
+  start_0 [label="start",shape=plaintext];
+  start_0->0;
+  1 [label="1",shape=circle];
+  2 [label="2",shape=circle];
+  3 [label="3",shape=circle,shape=doublecircle];
+title_node [label="pid 1",shape=box, style=rounded];0->0 [label="recv_m",];
+0->1 [label="recv_m",];
+0->3 [label="ch1 ! a",];
+0->2 [label="ch1 ! a",];
+0->0 [label="ch0 ? m",];
+0->1 [label="ch0 ? m",];
+1->0 [label="ch0 ? m",];
+1->1 [label="ch0 ? m",];
+1->1 [label="recv_m",];
+1->2 [label="ch1 ! a",];
+2->0 [label="ch0 ? m",];
+2->1 [label="ch0 ? m",];
+2->3 [label="ch0 ? m",];
+2->1 [label="recv_m",];
+2->2 [label="ch1 ! a",];
+3->0 [label="recv_m",];
+3->1 [label="recv_m",];
+3->3 [label="ch1 ! a",];
+3->2 [label="ch1 ! a",];
+3->0 [label="ch0 ? m",];
+3->1 [label="ch0 ? m",];
+3->3 [label="ch0 ? m",];
+} // digraph {

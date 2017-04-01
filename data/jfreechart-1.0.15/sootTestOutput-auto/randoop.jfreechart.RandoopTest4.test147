@@ -1,0 +1,38 @@
+org.jfree.chart.ChartRenderingInfo.getEntityCollection : $r1 = r0.<org.jfree.chart.ChartRenderingInfo: org.jfree.chart.entity.EntityCollection entities>
+org.jfree.chart.entity.StandardEntityCollection.getEntityCount : $r1 = r0.<org.jfree.chart.entity.StandardEntityCollection: java.util.List entities>
+org.jfree.chart.renderer.xy.AbstractXYItemRenderer.setURLGenerator : virtualinvoke r0.<org.jfree.chart.renderer.xy.AbstractXYItemRenderer: void fireChangeEvent()>()
+org.jfree.chart.renderer.xy.AbstractXYItemRenderer.setURLGenerator : r0.<org.jfree.chart.renderer.xy.AbstractXYItemRenderer: org.jfree.chart.urls.XYURLGenerator urlGenerator> = r1
+org.jfree.chart.renderer.xy.XYAreaRenderer2.getPlotLines : return 0
+org.jfree.chart.renderer.AbstractRenderer.fireChangeEvent : $r1 = new org.jfree.chart.event.RendererChangeEvent
+org.jfree.chart.renderer.AbstractRenderer.notifyListeners : $r3 = r0.<org.jfree.chart.renderer.AbstractRenderer: javax.swing.event.EventListenerList listenerList>
+org.jfree.chart.renderer.AbstractRenderer.notifyListeners : $i1 = lengthof r2
+org.jfree.chart.ChartRenderingInfo.getChartArea : $r1 = r0.<org.jfree.chart.ChartRenderingInfo: java.awt.geom.Rectangle2D chartArea>
+org.jfree.chart.renderer.xy.XYAreaRenderer2.setLegendArea : virtualinvoke r0.<org.jfree.chart.renderer.xy.XYAreaRenderer2: void fireChangeEvent()>()
+org.jfree.chart.renderer.xy.XYAreaRenderer2.setLegendArea : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "area")
+org.jfree.chart.renderer.xy.XYAreaRenderer2.setLegendArea : r0.<org.jfree.chart.renderer.xy.XYAreaRenderer2: java.awt.Shape legendArea> = r1
+org.jfree.chart.imagemap.ImageMapUtilities.getImageMap : i0 = interfaceinvoke r6.<org.jfree.chart.entity.EntityCollection: int getEntityCount()>()
+org.jfree.chart.imagemap.ImageMapUtilities.getImageMap : $r12 = virtualinvoke r5.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>("\" name=\"")
+org.jfree.chart.imagemap.ImageMapUtilities.getImageMap : $r24 = virtualinvoke r5.<java.lang.StringBuffer: java.lang.String toString()>()
+org.jfree.chart.imagemap.ImageMapUtilities.getImageMap : virtualinvoke r5.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>("</map>")
+org.jfree.chart.imagemap.ImageMapUtilities.getImageMap : if r6 == null goto virtualinvoke r5.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>("</map>")
+org.jfree.chart.imagemap.ImageMapUtilities.getImageMap : $r4 = new java.lang.StringBuffer
+org.jfree.chart.imagemap.ImageMapUtilities.getImageMap : i1 = i0 - 1
+org.jfree.chart.imagemap.ImageMapUtilities.getImageMap : $r16 = staticinvoke <org.jfree.util.StringUtils: java.lang.String getLineSeparator()>()
+org.jfree.chart.imagemap.ImageMapUtilities.getImageMap : $r9 = virtualinvoke r5.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>("<map id=\"")
+org.jfree.chart.imagemap.ImageMapUtilities.getImageMap : r6 = virtualinvoke r1.<org.jfree.chart.ChartRenderingInfo: org.jfree.chart.entity.EntityCollection getEntityCollection()>()
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null goto return
+org.jfree.chart.imagemap.ImageMapUtilities.htmlEscape : if c2 != 39 goto (branch)
+org.jfree.chart.imagemap.ImageMapUtilities.htmlEscape : i0 = virtualinvoke r0.<java.lang.String: int length()>()
+org.jfree.chart.imagemap.ImageMapUtilities.htmlEscape : c2 = virtualinvoke r0.<java.lang.String: char charAt(int)>(i1)
+org.jfree.chart.imagemap.ImageMapUtilities.htmlEscape : $r10 = virtualinvoke r1.<java.lang.StringBuffer: java.lang.String toString()>()
+org.jfree.chart.imagemap.ImageMapUtilities.htmlEscape : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r0, "input")
+org.jfree.chart.imagemap.ImageMapUtilities.htmlEscape : if c2 != 92 goto virtualinvoke r1.<java.lang.StringBuffer: java.lang.StringBuffer append(char)>(c2)
+org.jfree.chart.imagemap.ImageMapUtilities.htmlEscape : i1 = 0
+org.jfree.chart.imagemap.ImageMapUtilities.htmlEscape : if c2 != 38 goto (branch)
+org.jfree.chart.imagemap.ImageMapUtilities.htmlEscape : if c2 != 62 goto (branch)
+org.jfree.chart.imagemap.ImageMapUtilities.htmlEscape : if c2 != 60 goto (branch)
+org.jfree.chart.imagemap.ImageMapUtilities.htmlEscape : $r2 = new java.lang.StringBuffer
+org.jfree.chart.imagemap.ImageMapUtilities.htmlEscape : if c2 != 34 goto (branch)
+org.jfree.chart.imagemap.ImageMapUtilities.htmlEscape : virtualinvoke r1.<java.lang.StringBuffer: java.lang.StringBuffer append(char)>(c2)
+org.jfree.chart.renderer.xy.AbstractXYItemRenderer.setBaseToolTipGenerator : r0.<org.jfree.chart.renderer.xy.AbstractXYItemRenderer: org.jfree.chart.labels.XYToolTipGenerator baseToolTipGenerator> = r1
+org.jfree.chart.renderer.xy.AbstractXYItemRenderer.setBaseToolTipGenerator : virtualinvoke r0.<org.jfree.chart.renderer.xy.AbstractXYItemRenderer: void fireChangeEvent()>()

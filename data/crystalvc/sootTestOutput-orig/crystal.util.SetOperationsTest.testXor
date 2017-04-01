@@ -1,0 +1,8 @@
+crystal.util.SetOperations.xor : $r2 = new java.util.HashSet
+crystal.util.SetOperations.xor : return r3
+crystal.util.SetOperations.xor : $r4 = staticinvoke <crystal.util.SetOperations: java.util.Set setDifference(java.util.Set,java.util.Set)>(r0, r1)
+crystal.util.SetOperations.xor : $r5 = staticinvoke <crystal.util.SetOperations: java.util.Set setDifference(java.util.Set,java.util.Set)>(r1, r0)
+crystal.util.SetOperations.setDifference : interfaceinvoke r3.<java.util.Set: boolean removeAll(java.util.Collection)>(r1)
+crystal.util.SetOperations.setDifference : $r2 = new java.util.HashSet
+crystal.util.SetOperations.setDifference : return r3
+crystal.util.SetOperations.setDifference : interfaceinvoke r3.<java.util.Set: boolean addAll(java.util.Collection)>(r0)

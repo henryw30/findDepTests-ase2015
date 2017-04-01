@@ -1,0 +1,20 @@
+org.jfree.data.statistics.Statistics.calculateMean : r2 = interfaceinvoke r1.<java.util.Iterator: java.lang.Object next()>()
+org.jfree.data.statistics.Statistics.calculateMean : $z1 = interfaceinvoke r1.<java.util.Iterator: boolean hasNext()>()
+org.jfree.data.statistics.Statistics.calculateMean : $d3 = (double) i0
+org.jfree.data.statistics.Statistics.calculateMean : return #NaN
+org.jfree.data.statistics.Statistics.calculateMean : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r0, "values")
+org.jfree.data.statistics.Statistics.calculateMean : if r2 != null goto $z2 = r2 instanceof java.lang.Number
+org.jfree.data.statistics.Statistics.calculateMean : $z2 = r2 instanceof java.lang.Number
+org.jfree.data.statistics.Statistics.calculateMean : d0 = 0.0
+org.jfree.data.statistics.Statistics.calculateMean : d1 = virtualinvoke r3.<java.lang.Number: double doubleValue()>()
+org.jfree.data.statistics.Statistics.calculateMean : if z0 == 0 goto (branch)
+org.jfree.data.statistics.Statistics.calculateMean : r3 = (java.lang.Number) r2
+org.jfree.data.statistics.Statistics.calculateMean : $d0 = staticinvoke <org.jfree.data.statistics.Statistics: double calculateMean(java.util.Collection,boolean)>(r0, 1)
+org.jfree.data.statistics.Statistics.calculateMean : $z3 = staticinvoke <java.lang.Double: boolean isNaN(double)>(d1)
+org.jfree.data.statistics.Statistics.calculateMean : r1 = interfaceinvoke r0.<java.util.Collection: java.util.Iterator iterator()>()
+org.jfree.data.statistics.Statistics.calculateMean : i0 = i0 + 1
+org.jfree.data.statistics.Statistics.calculateMean : i0 = 0
+org.jfree.data.statistics.Statistics.calculateMean : goto [?= staticinvoke <edu.washington.cs.dt.impact.util.Tracer: void trace(java.lang.String,java.lang.String)>("$z1 = interfaceinvoke r1.<java.util.Iterator: boolean hasNext()>()", "org.jfree.data.statistics.Statistics.calculateMean")]
+org.jfree.data.statistics.Statistics.calculateMean : $d2 = virtualinvoke r3.<java.lang.Number: double doubleValue()>()
+org.jfree.chart.util.ParamChecks.nullNotPermitted : $r3 = new java.lang.IllegalArgumentException
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null goto return

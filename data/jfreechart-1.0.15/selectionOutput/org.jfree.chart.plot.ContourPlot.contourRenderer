@@ -1,0 +1,230 @@
+org.jfree.chart.plot.ContourPlot.contourRenderer : r10 = null >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : if r3 == null
+org.jfree.chart.plot.ContourPlot.contourRenderer : if r3 == null >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : $r25 = virtualinvoke r3.<org.jfree.chart.plot.PlotRenderingInfo: org.jfree.chart.ChartRenderingInfo getOwner()>()
+org.jfree.chart.plot.ContourPlot.contourRenderer : if r3 == null >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : $r26 = new java.awt.geom.Rectangle2D$Double
+org.jfree.chart.plot.ContourPlot.contourRenderer : $r26 = new java.awt.geom.Rectangle2D$Double >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : specialinvoke $r26.<java.awt.geom.Rectangle2D$Double: void <init>()>()
+org.jfree.chart.plot.ContourPlot.contourRenderer : specialinvoke $r26.<java.awt.geom.Rectangle2D$Double: void <init>()>() >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : r11 = $r26
+org.jfree.chart.plot.ContourPlot.contourRenderer : r11 = $r26 >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : $r27 = <java.awt.RenderingHints: java.awt.RenderingHints$Key KEY_ANTIALIASING>
+org.jfree.chart.plot.ContourPlot.contourRenderer : $r27 = <java.awt.RenderingHints: java.awt.RenderingHints$Key KEY_ANTIALIASING> >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : r12 = virtualinvoke r1.<java.awt.Graphics2D: java.lang.Object getRenderingHint(java.awt.RenderingHints$Key)>($r27)
+org.jfree.chart.plot.ContourPlot.contourRenderer : r12 = virtualinvoke r1.<java.awt.Graphics2D: java.lang.Object getRenderingHint(java.awt.RenderingHints$Key)>($r27) >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : $r28 = <java.awt.RenderingHints: java.awt.RenderingHints$Key KEY_ANTIALIASING>
+org.jfree.chart.plot.ContourPlot.contourRenderer : $r28 = <java.awt.RenderingHints: java.awt.RenderingHints$Key KEY_ANTIALIASING> >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : $r13 = <java.awt.RenderingHints: java.lang.Object VALUE_ANTIALIAS_OFF>
+org.jfree.chart.plot.ContourPlot.contourRenderer : $r13 = <java.awt.RenderingHints: java.lang.Object VALUE_ANTIALIAS_OFF> >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : virtualinvoke r1.<java.awt.Graphics2D: void setRenderingHint(java.awt.RenderingHints$Key,java.lang.Object)>($r28, $r13)
+org.jfree.chart.plot.ContourPlot.contourRenderer : virtualinvoke r1.<java.awt.Graphics2D: void setRenderingHint(java.awt.RenderingHints$Key,java.lang.Object)>($r28, $r13) >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : r14 = interfaceinvoke r8.<org.jfree.data.contour.ContourDataset: java.lang.Number[] getXValues()>()
+org.jfree.chart.plot.ContourPlot.contourRenderer : r14 = interfaceinvoke r8.<org.jfree.data.contour.ContourDataset: java.lang.Number[] getXValues()>() >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : r15 = interfaceinvoke r8.<org.jfree.data.contour.ContourDataset: java.lang.Number[] getYValues()>()
+org.jfree.chart.plot.ContourPlot.contourRenderer : r15 = interfaceinvoke r8.<org.jfree.data.contour.ContourDataset: java.lang.Number[] getYValues()>() >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : r16 = interfaceinvoke r8.<org.jfree.data.contour.ContourDataset: java.lang.Number[] getZValues()>()
+org.jfree.chart.plot.ContourPlot.contourRenderer : r16 = interfaceinvoke r8.<org.jfree.data.contour.ContourDataset: java.lang.Number[] getZValues()>() >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : $i4 = lengthof r14
+org.jfree.chart.plot.ContourPlot.contourRenderer : $i4 = lengthof r14 >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : r17 = newarray (double)[$i4]
+org.jfree.chart.plot.ContourPlot.contourRenderer : r17 = newarray (double)[$i4] >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : $i5 = lengthof r15
+org.jfree.chart.plot.ContourPlot.contourRenderer : $i5 = lengthof r15 >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : r18 = newarray (double)[$i5]
+org.jfree.chart.plot.ContourPlot.contourRenderer : r18 = newarray (double)[$i5] >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : i0 = 0
+org.jfree.chart.plot.ContourPlot.contourRenderer : i0 = 0 >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : $i6 = lengthof r17
+org.jfree.chart.plot.ContourPlot.contourRenderer : $i6 = lengthof r17 >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : if i0 >= $i6
+org.jfree.chart.plot.ContourPlot.contourRenderer : if i0 >= $i6 >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : $r29 = r14[i0]
+org.jfree.chart.plot.ContourPlot.contourRenderer : if i0 >= $i6 >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : r31 = interfaceinvoke r8.<org.jfree.data.contour.ContourDataset: int[] indexX()>()
+org.jfree.chart.plot.ContourPlot.contourRenderer : r31 = interfaceinvoke r8.<org.jfree.data.contour.ContourDataset: int[] indexX()>() >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : r19 = interfaceinvoke r8.<org.jfree.data.contour.ContourDataset: int[] getXIndices()>()
+org.jfree.chart.plot.ContourPlot.contourRenderer : r19 = interfaceinvoke r8.<org.jfree.data.contour.ContourDataset: int[] getXIndices()>() >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : $r32 = (org.jfree.chart.axis.NumberAxis) r6
+org.jfree.chart.plot.ContourPlot.contourRenderer : $r32 = (org.jfree.chart.axis.NumberAxis) r6 >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : z0 = virtualinvoke $r32.<org.jfree.chart.axis.NumberAxis: boolean isInverted()>()
+org.jfree.chart.plot.ContourPlot.contourRenderer : z0 = virtualinvoke $r32.<org.jfree.chart.axis.NumberAxis: boolean isInverted()>() >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : z1 = 0
+org.jfree.chart.plot.ContourPlot.contourRenderer : z1 = 0 >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : $z2 = r5 instanceof org.jfree.chart.axis.NumberAxis
+org.jfree.chart.plot.ContourPlot.contourRenderer : $z2 = r5 instanceof org.jfree.chart.axis.NumberAxis >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : if $z2 == 0
+org.jfree.chart.plot.ContourPlot.contourRenderer : if $z2 == 0 >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : $r33 = (org.jfree.chart.axis.NumberAxis) r5
+org.jfree.chart.plot.ContourPlot.contourRenderer : if $z2 == 0 >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : d0 = 0.0
+org.jfree.chart.plot.ContourPlot.contourRenderer : d0 = 0.0 >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : d1 = 0.0
+org.jfree.chart.plot.ContourPlot.contourRenderer : d1 = 0.0 >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : d2 = 0.0
+org.jfree.chart.plot.ContourPlot.contourRenderer : d2 = 0.0 >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : d3 = 0.0
+org.jfree.chart.plot.ContourPlot.contourRenderer : d3 = 0.0 >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : $i7 = lengthof r31
+org.jfree.chart.plot.ContourPlot.contourRenderer : $i7 = lengthof r31 >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : $i8 = $i7 - 1
+org.jfree.chart.plot.ContourPlot.contourRenderer : $i8 = $i7 - 1 >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : i1 = r31[$i8]
+org.jfree.chart.plot.ContourPlot.contourRenderer : i1 = r31[$i8] >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : i2 = 0
+org.jfree.chart.plot.ContourPlot.contourRenderer : i2 = 0 >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : $i9 = lengthof r17
+org.jfree.chart.plot.ContourPlot.contourRenderer : $i9 = lengthof r17 >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : if i2 >= $i9
+org.jfree.chart.plot.ContourPlot.contourRenderer : if i2 >= $i9 >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : i3 = r31[i2]
+org.jfree.chart.plot.ContourPlot.contourRenderer : if i2 >= $i9 >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : $r55 = <java.awt.RenderingHints: java.awt.RenderingHints$Key KEY_ANTIALIASING>
+org.jfree.chart.plot.ContourPlot.contourRenderer : $r55 = <java.awt.RenderingHints: java.awt.RenderingHints$Key KEY_ANTIALIASING> >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : virtualinvoke r1.<java.awt.Graphics2D: void setRenderingHint(java.awt.RenderingHints$Key,java.lang.Object)>($r55, r12)
+org.jfree.chart.plot.ContourPlot.contourRenderer : virtualinvoke r1.<java.awt.Graphics2D: void setRenderingHint(java.awt.RenderingHints$Key,java.lang.Object)>($r55, r12) >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : return
+org.jfree.chart.plot.ContourPlot.contourRenderer : i3 = r31[i2] >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : $i10 = r19[i3]
+org.jfree.chart.plot.ContourPlot.contourRenderer : $i10 = r19[i3] >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : if $i10 != i2
+org.jfree.chart.plot.ContourPlot.contourRenderer : if $i10 != i2 >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : if i3 != 0
+org.jfree.chart.plot.ContourPlot.contourRenderer : if $i10 != i2 >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : $i20 = lengthof r19
+org.jfree.chart.plot.ContourPlot.contourRenderer : $i20 = lengthof r19 >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : $i21 = $i20 - 1
+org.jfree.chart.plot.ContourPlot.contourRenderer : $i21 = $i20 - 1 >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : if i3 >= $i21
+org.jfree.chart.plot.ContourPlot.contourRenderer : if i3 >= $i21 >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : $i22 = i3 + 1
+org.jfree.chart.plot.ContourPlot.contourRenderer : if i3 >= $i21 >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : $i25 = lengthof r17
+org.jfree.chart.plot.ContourPlot.contourRenderer : $i25 = lengthof r17 >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : $i26 = $i25 - 1
+org.jfree.chart.plot.ContourPlot.contourRenderer : $i26 = $i25 - 1 >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : if i2 != $i26
+org.jfree.chart.plot.ContourPlot.contourRenderer : if i2 != $i26 >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : $d40 = r18[i2]
+org.jfree.chart.plot.ContourPlot.contourRenderer : if i2 != $i26 >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : $d48 = r18[i2]
+org.jfree.chart.plot.ContourPlot.contourRenderer : $d48 = r18[i2] >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : $r43 = <org.jfree.ui.RectangleEdge: org.jfree.ui.RectangleEdge LEFT>
+org.jfree.chart.plot.ContourPlot.contourRenderer : $r43 = <org.jfree.ui.RectangleEdge: org.jfree.ui.RectangleEdge LEFT> >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : d7 = virtualinvoke r6.<org.jfree.chart.axis.ValueAxis: double valueToJava2D(double,java.awt.geom.Rectangle2D,org.jfree.ui.RectangleEdge)>($d48, r2, $r43)
+org.jfree.chart.plot.ContourPlot.contourRenderer : d7 = virtualinvoke r6.<org.jfree.chart.axis.ValueAxis: double valueToJava2D(double,java.awt.geom.Rectangle2D,org.jfree.ui.RectangleEdge)>($d48, r2, $r43) >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : $i28 = i2 + 1
+org.jfree.chart.plot.ContourPlot.contourRenderer : $i28 = i2 + 1 >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : $d49 = r18[$i28]
+org.jfree.chart.plot.ContourPlot.contourRenderer : $d49 = r18[$i28] >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : $r44 = <org.jfree.ui.RectangleEdge: org.jfree.ui.RectangleEdge LEFT>
+org.jfree.chart.plot.ContourPlot.contourRenderer : $r44 = <org.jfree.ui.RectangleEdge: org.jfree.ui.RectangleEdge LEFT> >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : d50 = virtualinvoke r6.<org.jfree.chart.axis.ValueAxis: double valueToJava2D(double,java.awt.geom.Rectangle2D,org.jfree.ui.RectangleEdge)>($d49, r2, $r44)
+org.jfree.chart.plot.ContourPlot.contourRenderer : d50 = virtualinvoke r6.<org.jfree.chart.axis.ValueAxis: double valueToJava2D(double,java.awt.geom.Rectangle2D,org.jfree.ui.RectangleEdge)>($d49, r2, $r44) >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : d10 = d3
+org.jfree.chart.plot.ContourPlot.contourRenderer : d10 = d3 >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : $d51 = d7 - d50
+org.jfree.chart.plot.ContourPlot.contourRenderer : $d51 = d7 - d50 >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : $d52 = 0.5 * $d51
+org.jfree.chart.plot.ContourPlot.contourRenderer : $d52 = 0.5 * $d51 >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : d3 = staticinvoke <java.lang.Math: double abs(double)>($d52)
+org.jfree.chart.plot.ContourPlot.contourRenderer : d3 = staticinvoke <java.lang.Math: double abs(double)>($d52) >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : if z0 == 0
+org.jfree.chart.plot.ContourPlot.contourRenderer : if z0 == 0 >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : d53 = d7 - d10
+org.jfree.chart.plot.ContourPlot.contourRenderer : if z0 == 0 >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : d53 = d7 - d3
+org.jfree.chart.plot.ContourPlot.contourRenderer : d53 = d7 - d3 >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : d11 = d10 + d3
+org.jfree.chart.plot.ContourPlot.contourRenderer : d11 = d10 + d3 >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : virtualinvoke r11.<java.awt.geom.Rectangle2D$Double: void setRect(double,double,double,double)>(d0, d53, d2, d11)
+org.jfree.chart.plot.ContourPlot.contourRenderer : virtualinvoke r11.<java.awt.geom.Rectangle2D$Double: void setRect(double,double,double,double)>(d0, d53, d2, d11) >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : $r45 = r16[i2]
+org.jfree.chart.plot.ContourPlot.contourRenderer : $r45 = r16[i2] >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : if $r45 == null
+org.jfree.chart.plot.ContourPlot.contourRenderer : if $r45 == null >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : $r46 = r16[i2]
+org.jfree.chart.plot.ContourPlot.contourRenderer : if $r45 == null >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : $r48 = r0.<org.jfree.chart.plot.ContourPlot: java.awt.Paint missingPaint>
+org.jfree.chart.plot.ContourPlot.contourRenderer : $r48 = r0.<org.jfree.chart.plot.ContourPlot: java.awt.Paint missingPaint> >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : if $r48 == null
+org.jfree.chart.plot.ContourPlot.contourRenderer : if $r48 == null >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : $r49 = r0.<org.jfree.chart.plot.ContourPlot: java.awt.Paint missingPaint>
+org.jfree.chart.plot.ContourPlot.contourRenderer : if $r48 == null >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : r21 = r11
+org.jfree.chart.plot.ContourPlot.contourRenderer : r21 = r11 >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : if r10 == null
+org.jfree.chart.plot.ContourPlot.contourRenderer : if r10 == null >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : r22 = ""
+org.jfree.chart.plot.ContourPlot.contourRenderer : if r10 == null >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : $z3 = virtualinvoke r4.<org.jfree.chart.plot.ContourPlot: boolean isDomainCrosshairLockedOnData()>()
+org.jfree.chart.plot.ContourPlot.contourRenderer : $z3 = virtualinvoke r4.<org.jfree.chart.plot.ContourPlot: boolean isDomainCrosshairLockedOnData()>() >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : if $z3 == 0
+org.jfree.chart.plot.ContourPlot.contourRenderer : if $z3 == 0 >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : $z4 = virtualinvoke r4.<org.jfree.chart.plot.ContourPlot: boolean isRangeCrosshairLockedOnData()>()
+org.jfree.chart.plot.ContourPlot.contourRenderer : if $z3 == 0 >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : $z5 = virtualinvoke r4.<org.jfree.chart.plot.ContourPlot: boolean isRangeCrosshairLockedOnData()>()
+org.jfree.chart.plot.ContourPlot.contourRenderer : $z5 = virtualinvoke r4.<org.jfree.chart.plot.ContourPlot: boolean isRangeCrosshairLockedOnData()>() >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : if $z5 == 0
+org.jfree.chart.plot.ContourPlot.contourRenderer : if $z5 == 0 >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : virtualinvoke r9.<org.jfree.chart.plot.CrosshairState: void updateCrosshairY(double)>(d53)
+org.jfree.chart.plot.ContourPlot.contourRenderer : if $z5 == 0 >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : i2 = i2 + 1
+org.jfree.chart.plot.ContourPlot.contourRenderer : i2 = i2 + 1 >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : goto [?= $i9 = lengthof r17]
+org.jfree.chart.plot.ContourPlot.contourRenderer : goto [?= $i9 = lengthof r17] >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : $i9 = lengthof r17
+org.jfree.chart.plot.ContourPlot.contourRenderer : virtualinvoke r9.<org.jfree.chart.plot.CrosshairState: void updateCrosshairY(double)>(d53) >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : i2 = i2 + 1
+org.jfree.chart.plot.ContourPlot.contourRenderer : $z4 = virtualinvoke r4.<org.jfree.chart.plot.ContourPlot: boolean isRangeCrosshairLockedOnData()>() >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : if $z4 == 0
+org.jfree.chart.plot.ContourPlot.contourRenderer : if $z4 == 0 >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : $d55 = r17[i2]
+org.jfree.chart.plot.ContourPlot.contourRenderer : if $z4 == 0 >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : virtualinvoke r9.<org.jfree.chart.plot.CrosshairState: void updateCrosshairX(double)>(d0)
+org.jfree.chart.plot.ContourPlot.contourRenderer : virtualinvoke r9.<org.jfree.chart.plot.CrosshairState: void updateCrosshairX(double)>(d0) >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : goto [?= i2 = i2 + 1]
+org.jfree.chart.plot.ContourPlot.contourRenderer : goto [?= i2 = i2 + 1] >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : i2 = i2 + 1
+org.jfree.chart.plot.ContourPlot.contourRenderer : $d55 = r17[i2] >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : $d56 = r18[i2]
+org.jfree.chart.plot.ContourPlot.contourRenderer : $d56 = r18[i2] >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : $r24 = <org.jfree.chart.plot.PlotOrientation: org.jfree.chart.plot.PlotOrientation VERTICAL>
+org.jfree.chart.plot.ContourPlot.contourRenderer : $r24 = <org.jfree.chart.plot.PlotOrientation: org.jfree.chart.plot.PlotOrientation VERTICAL> >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : virtualinvoke r9.<org.jfree.chart.plot.CrosshairState: void updateCrosshairPoint(double,double,double,double,org.jfree.chart.plot.PlotOrientation)>($d55, $d56, d0, d53, $r24)
+org.jfree.chart.plot.ContourPlot.contourRenderer : virtualinvoke r9.<org.jfree.chart.plot.CrosshairState: void updateCrosshairPoint(double,double,double,double,org.jfree.chart.plot.PlotOrientation)>($d55, $d56, d0, d53, $r24) >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : goto [?= i2 = i2 + 1]
+org.jfree.chart.plot.ContourPlot.contourRenderer : goto [?= i2 = i2 + 1] >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : i2 = i2 + 1
+org.jfree.chart.plot.ContourPlot.contourRenderer : r22 = "" >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : $r50 = virtualinvoke r0.<org.jfree.chart.plot.ContourPlot: org.jfree.chart.labels.ContourToolTipGenerator getToolTipGenerator()>()
+org.jfree.chart.plot.ContourPlot.contourRenderer : $r50 = virtualinvoke r0.<org.jfree.chart.plot.ContourPlot: org.jfree.chart.labels.ContourToolTipGenerator getToolTipGenerator()>() >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : if $r50 == null
+org.jfree.chart.plot.ContourPlot.contourRenderer : if $r50 == null >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : $r51 = r0.<org.jfree.chart.plot.ContourPlot: org.jfree.chart.labels.ContourToolTipGenerator toolTipGenerator>
+org.jfree.chart.plot.ContourPlot.contourRenderer : if $r50 == null >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : n0 = null
+org.jfree.chart.plot.ContourPlot.contourRenderer : n0 = null >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : $r52 = new org.jfree.chart.entity.ContourEntity
+org.jfree.chart.plot.ContourPlot.contourRenderer : $r52 = new org.jfree.chart.entity.ContourEntity >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : $r53 = virtualinvoke r21.<java.awt.geom.Rectangle2D$Double: java.lang.Object clone()>()
+org.jfree.chart.plot.ContourPlot.contourRenderer : $r53 = virtualinvoke r21.<java.awt.geom.Rectangle2D$Double: java.lang.Object clone()>() >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : $r54 = (java.awt.geom.Rectangle2D$Double) $r53
+org.jfree.chart.plot.ContourPlot.contourRenderer : $r54 = (java.awt.geom.Rectangle2D$Double) $r53 >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : specialinvoke $r52.<org.jfree.chart.entity.ContourEntity: void <init>(java.awt.Shape,java.lang.String,java.lang.String)>($r54, r22, n0)
+org.jfree.chart.plot.ContourPlot.contourRenderer : specialinvoke $r52.<org.jfree.chart.entity.ContourEntity: void <init>(java.awt.Shape,java.lang.String,java.lang.String)>($r54, r22, n0) >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : r23 = $r52
+org.jfree.chart.plot.ContourPlot.contourRenderer : r23 = $r52 >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : virtualinvoke r23.<org.jfree.chart.entity.ContourEntity: void setIndex(int)>(i2)
+org.jfree.chart.plot.ContourPlot.contourRenderer : virtualinvoke r23.<org.jfree.chart.entity.ContourEntity: void setIndex(int)>(i2) >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : interfaceinvoke r10.<org.jfree.chart.entity.EntityCollection: void add(org.jfree.chart.entity.ChartEntity)>(r23)
+org.jfree.chart.plot.ContourPlot.contourRenderer : interfaceinvoke r10.<org.jfree.chart.entity.EntityCollection: void add(org.jfree.chart.entity.ChartEntity)>(r23) >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : $z3 = virtualinvoke r4.<org.jfree.chart.plot.ContourPlot: boolean isDomainCrosshairLockedOnData()>()
+org.jfree.chart.plot.ContourPlot.contourRenderer : $r51 = r0.<org.jfree.chart.plot.ContourPlot: org.jfree.chart.labels.ContourToolTipGenerator toolTipGenerator> >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : r22 = interfaceinvoke $r51.<org.jfree.chart.labels.ContourToolTipGenerator: java.lang.String generateToolTip(org.jfree.data.contour.ContourDataset,int)>(r8, i2)
+org.jfree.chart.plot.ContourPlot.contourRenderer : r22 = interfaceinvoke $r51.<org.jfree.chart.labels.ContourToolTipGenerator: java.lang.String generateToolTip(org.jfree.data.contour.ContourDataset,int)>(r8, i2) >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : n0 = null
+org.jfree.chart.plot.ContourPlot.contourRenderer : $r49 = r0.<org.jfree.chart.plot.ContourPlot: java.awt.Paint missingPaint> >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : virtualinvoke r1.<java.awt.Graphics2D: void setPaint(java.awt.Paint)>($r49)
+org.jfree.chart.plot.ContourPlot.contourRenderer : virtualinvoke r1.<java.awt.Graphics2D: void setPaint(java.awt.Paint)>($r49) >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : virtualinvoke r1.<java.awt.Graphics2D: void fill(java.awt.Shape)>(r11)
+org.jfree.chart.plot.ContourPlot.contourRenderer : virtualinvoke r1.<java.awt.Graphics2D: void fill(java.awt.Shape)>(r11) >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : r21 = r11
+org.jfree.chart.plot.ContourPlot.contourRenderer : $r46 = r16[i2] >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : $d54 = virtualinvoke $r46.<java.lang.Number: double doubleValue()>()
+org.jfree.chart.plot.ContourPlot.contourRenderer : $d54 = virtualinvoke $r46.<java.lang.Number: double doubleValue()>() >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : $r47 = virtualinvoke r7.<org.jfree.chart.axis.ColorBar: java.awt.Paint getPaint(double)>($d54)
+org.jfree.chart.plot.ContourPlot.contourRenderer : $r47 = virtualinvoke r7.<org.jfree.chart.axis.ColorBar: java.awt.Paint getPaint(double)>($d54) >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : virtualinvoke r1.<java.awt.Graphics2D: void setPaint(java.awt.Paint)>($r47)
+org.jfree.chart.plot.ContourPlot.contourRenderer : virtualinvoke r1.<java.awt.Graphics2D: void setPaint(java.awt.Paint)>($r47) >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : virtualinvoke r1.<java.awt.Graphics2D: void fill(java.awt.Shape)>(r11)
+org.jfree.chart.plot.ContourPlot.contourRenderer : virtualinvoke r1.<java.awt.Graphics2D: void fill(java.awt.Shape)>(r11) >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : goto [?= r21 = r11]
+org.jfree.chart.plot.ContourPlot.contourRenderer : goto [?= r21 = r11] >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : r21 = r11
+org.jfree.chart.plot.ContourPlot.contourRenderer : d53 = d7 - d10 >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : goto [?= d11 = d10 + d3]
+org.jfree.chart.plot.ContourPlot.contourRenderer : goto [?= d11 = d10 + d3] >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : d11 = d10 + d3
+org.jfree.chart.plot.ContourPlot.contourRenderer : $d40 = r18[i2] >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : $r41 = <org.jfree.ui.RectangleEdge: org.jfree.ui.RectangleEdge LEFT>
+org.jfree.chart.plot.ContourPlot.contourRenderer : $r41 = <org.jfree.ui.RectangleEdge: org.jfree.ui.RectangleEdge LEFT> >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : d7 = virtualinvoke r6.<org.jfree.chart.axis.ValueAxis: double valueToJava2D(double,java.awt.geom.Rectangle2D,org.jfree.ui.RectangleEdge)>($d40, r2, $r41)
+org.jfree.chart.plot.ContourPlot.contourRenderer : d7 = virtualinvoke r6.<org.jfree.chart.axis.ValueAxis: double valueToJava2D(double,java.awt.geom.Rectangle2D,org.jfree.ui.RectangleEdge)>($d40, r2, $r41) >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : $i27 = i2 - 1
+org.jfree.chart.plot.ContourPlot.contourRenderer : $i27 = i2 - 1 >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : $d41 = r18[$i27]
+org.jfree.chart.plot.ContourPlot.contourRenderer : $d41 = r18[$i27] >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : $r42 = <org.jfree.ui.RectangleEdge: org.jfree.ui.RectangleEdge LEFT>
+org.jfree.chart.plot.ContourPlot.contourRenderer : $r42 = <org.jfree.ui.RectangleEdge: org.jfree.ui.RectangleEdge LEFT> >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : d42 = virtualinvoke r6.<org.jfree.chart.axis.ValueAxis: double valueToJava2D(double,java.awt.geom.Rectangle2D,org.jfree.ui.RectangleEdge)>($d41, r2, $r42)
+org.jfree.chart.plot.ContourPlot.contourRenderer : d42 = virtualinvoke r6.<org.jfree.chart.axis.ValueAxis: double valueToJava2D(double,java.awt.geom.Rectangle2D,org.jfree.ui.RectangleEdge)>($d41, r2, $r42) >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : d43 = d7
+org.jfree.chart.plot.ContourPlot.contourRenderer : d43 = d7 >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : $d44 = d7 - d42
+org.jfree.chart.plot.ContourPlot.contourRenderer : $d44 = d7 - d42 >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : $d45 = 0.5 * $d44
+org.jfree.chart.plot.ContourPlot.contourRenderer : $d45 = 0.5 * $d44 >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : d10 = staticinvoke <java.lang.Math: double abs(double)>($d45)
+org.jfree.chart.plot.ContourPlot.contourRenderer : d10 = staticinvoke <java.lang.Math: double abs(double)>($d45) >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : $d46 = d7 - d43
+org.jfree.chart.plot.ContourPlot.contourRenderer : $d46 = d7 - d43 >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : $d47 = 0.5 * $d46
+org.jfree.chart.plot.ContourPlot.contourRenderer : $d47 = 0.5 * $d46 >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : d3 = staticinvoke <java.lang.Math: double abs(double)>($d47)
+org.jfree.chart.plot.ContourPlot.contourRenderer : d3 = staticinvoke <java.lang.Math: double abs(double)>($d47) >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : goto [?= (branch)]
+org.jfree.chart.plot.ContourPlot.contourRenderer : goto [?= (branch)] >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : if z0 == 0
+org.jfree.chart.plot.ContourPlot.contourRenderer : $i22 = i3 + 1 >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : $i23 = r19[$i22]
+org.jfree.chart.plot.ContourPlot.contourRenderer : $i23 = r19[$i22] >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : $i24 = $i23 - 1
+org.jfree.chart.plot.ContourPlot.contourRenderer : $i24 = $i23 - 1 >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : if $i24 == i2
+org.jfree.chart.plot.ContourPlot.contourRenderer : if $i24 == i2 >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : $i25 = lengthof r17
+org.jfree.chart.plot.ContourPlot.contourRenderer : if $i24 == i2 >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : $d40 = r18[i2]
+org.jfree.chart.plot.ContourPlot.contourRenderer : if i3 != 0 >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : $d14 = r17[i2]
+org.jfree.chart.plot.ContourPlot.contourRenderer : if i3 != 0 >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : if i3 != i1
+org.jfree.chart.plot.ContourPlot.contourRenderer : if i3 != i1 >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : $d21 = r17[i2]
+org.jfree.chart.plot.ContourPlot.contourRenderer : if i3 != i1 >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : $d29 = r17[i2]
+org.jfree.chart.plot.ContourPlot.contourRenderer : $d29 = r17[i2] >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : $r37 = <org.jfree.ui.RectangleEdge: org.jfree.ui.RectangleEdge BOTTOM>
+org.jfree.chart.plot.ContourPlot.contourRenderer : $r37 = <org.jfree.ui.RectangleEdge: org.jfree.ui.RectangleEdge BOTTOM> >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : d15 = virtualinvoke r5.<org.jfree.chart.axis.ValueAxis: double valueToJava2D(double,java.awt.geom.Rectangle2D,org.jfree.ui.RectangleEdge)>($d29, r2, $r37)
+org.jfree.chart.plot.ContourPlot.contourRenderer : d15 = virtualinvoke r5.<org.jfree.chart.axis.ValueAxis: double valueToJava2D(double,java.awt.geom.Rectangle2D,org.jfree.ui.RectangleEdge)>($d29, r2, $r37) >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : $i15 = i3 + 1
+org.jfree.chart.plot.ContourPlot.contourRenderer : $i15 = i3 + 1 >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : $i16 = r19[$i15]
+org.jfree.chart.plot.ContourPlot.contourRenderer : $i16 = r19[$i15] >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : $d30 = r17[$i16]
+org.jfree.chart.plot.ContourPlot.contourRenderer : $d30 = r17[$i16] >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : $r38 = <org.jfree.ui.RectangleEdge: org.jfree.ui.RectangleEdge BOTTOM>
+org.jfree.chart.plot.ContourPlot.contourRenderer : $r38 = <org.jfree.ui.RectangleEdge: org.jfree.ui.RectangleEdge BOTTOM> >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : d31 = virtualinvoke r5.<org.jfree.chart.axis.ValueAxis: double valueToJava2D(double,java.awt.geom.Rectangle2D,org.jfree.ui.RectangleEdge)>($d30, r2, $r38)
+org.jfree.chart.plot.ContourPlot.contourRenderer : d31 = virtualinvoke r5.<org.jfree.chart.axis.ValueAxis: double valueToJava2D(double,java.awt.geom.Rectangle2D,org.jfree.ui.RectangleEdge)>($d30, r2, $r38) >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : d6 = d1
+org.jfree.chart.plot.ContourPlot.contourRenderer : d6 = d1 >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : $d32 = d15 - d31
+org.jfree.chart.plot.ContourPlot.contourRenderer : $d32 = d15 - d31 >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : $d33 = 0.5 * $d32
+org.jfree.chart.plot.ContourPlot.contourRenderer : $d33 = 0.5 * $d32 >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : d1 = staticinvoke <java.lang.Math: double abs(double)>($d33)
+org.jfree.chart.plot.ContourPlot.contourRenderer : d1 = staticinvoke <java.lang.Math: double abs(double)>($d33) >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : if z1 == 0
+org.jfree.chart.plot.ContourPlot.contourRenderer : if z1 == 0 >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : d0 = d15 - d1
+org.jfree.chart.plot.ContourPlot.contourRenderer : if z1 == 0 >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : d0 = d15 - d6
+org.jfree.chart.plot.ContourPlot.contourRenderer : d0 = d15 - d6 >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : d2 = d6 + d1
+org.jfree.chart.plot.ContourPlot.contourRenderer : d2 = d6 + d1 >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : $d34 = r18[i2]
+org.jfree.chart.plot.ContourPlot.contourRenderer : $d34 = r18[i2] >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : $r39 = <org.jfree.ui.RectangleEdge: org.jfree.ui.RectangleEdge LEFT>
+org.jfree.chart.plot.ContourPlot.contourRenderer : $r39 = <org.jfree.ui.RectangleEdge: org.jfree.ui.RectangleEdge LEFT> >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : d7 = virtualinvoke r6.<org.jfree.chart.axis.ValueAxis: double valueToJava2D(double,java.awt.geom.Rectangle2D,org.jfree.ui.RectangleEdge)>($d34, r2, $r39)
+org.jfree.chart.plot.ContourPlot.contourRenderer : d7 = virtualinvoke r6.<org.jfree.chart.axis.ValueAxis: double valueToJava2D(double,java.awt.geom.Rectangle2D,org.jfree.ui.RectangleEdge)>($d34, r2, $r39) >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : d8 = d7
+org.jfree.chart.plot.ContourPlot.contourRenderer : d8 = d7 >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : $i17 = i2 + 1
+org.jfree.chart.plot.ContourPlot.contourRenderer : $i17 = i2 + 1 >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : $i18 = lengthof r18
+org.jfree.chart.plot.ContourPlot.contourRenderer : $i18 = lengthof r18 >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : if $i17 != $i18
+org.jfree.chart.plot.ContourPlot.contourRenderer : if $i17 != $i18 >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : goto [?= i2 = i2 + 1]
+org.jfree.chart.plot.ContourPlot.contourRenderer : if $i17 != $i18 >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : $i19 = i2 + 1
+org.jfree.chart.plot.ContourPlot.contourRenderer : $i19 = i2 + 1 >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : $d35 = r18[$i19]
+org.jfree.chart.plot.ContourPlot.contourRenderer : $d35 = r18[$i19] >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : $r40 = <org.jfree.ui.RectangleEdge: org.jfree.ui.RectangleEdge LEFT>
+org.jfree.chart.plot.ContourPlot.contourRenderer : $r40 = <org.jfree.ui.RectangleEdge: org.jfree.ui.RectangleEdge LEFT> >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : d9 = virtualinvoke r6.<org.jfree.chart.axis.ValueAxis: double valueToJava2D(double,java.awt.geom.Rectangle2D,org.jfree.ui.RectangleEdge)>($d35, r2, $r40)
+org.jfree.chart.plot.ContourPlot.contourRenderer : d9 = virtualinvoke r6.<org.jfree.chart.axis.ValueAxis: double valueToJava2D(double,java.awt.geom.Rectangle2D,org.jfree.ui.RectangleEdge)>($d35, r2, $r40) >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : $d36 = d7 - d8
+org.jfree.chart.plot.ContourPlot.contourRenderer : $d36 = d7 - d8 >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : $d37 = 0.5 * $d36
+org.jfree.chart.plot.ContourPlot.contourRenderer : $d37 = 0.5 * $d36 >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : d10 = staticinvoke <java.lang.Math: double abs(double)>($d37)
+org.jfree.chart.plot.ContourPlot.contourRenderer : d10 = staticinvoke <java.lang.Math: double abs(double)>($d37) >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : $d38 = d7 - d9
+org.jfree.chart.plot.ContourPlot.contourRenderer : $d38 = d7 - d9 >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : $d39 = 0.5 * $d38
+org.jfree.chart.plot.ContourPlot.contourRenderer : $d39 = 0.5 * $d38 >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : d3 = staticinvoke <java.lang.Math: double abs(double)>($d39)
+org.jfree.chart.plot.ContourPlot.contourRenderer : d3 = staticinvoke <java.lang.Math: double abs(double)>($d39) >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : goto [?= (branch)]
+org.jfree.chart.plot.ContourPlot.contourRenderer : goto [?= (branch)] >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : if z0 == 0
+org.jfree.chart.plot.ContourPlot.contourRenderer : goto [?= i2 = i2 + 1] >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : i2 = i2 + 1
+org.jfree.chart.plot.ContourPlot.contourRenderer : d0 = d15 - d1 >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : goto [?= d2 = d6 + d1]
+org.jfree.chart.plot.ContourPlot.contourRenderer : goto [?= d2 = d6 + d1] >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : d2 = d6 + d1
+org.jfree.chart.plot.ContourPlot.contourRenderer : $d21 = r17[i2] >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : $r35 = <org.jfree.ui.RectangleEdge: org.jfree.ui.RectangleEdge BOTTOM>
+org.jfree.chart.plot.ContourPlot.contourRenderer : $r35 = <org.jfree.ui.RectangleEdge: org.jfree.ui.RectangleEdge BOTTOM> >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : d15 = virtualinvoke r5.<org.jfree.chart.axis.ValueAxis: double valueToJava2D(double,java.awt.geom.Rectangle2D,org.jfree.ui.RectangleEdge)>($d21, r2, $r35)
+org.jfree.chart.plot.ContourPlot.contourRenderer : d15 = virtualinvoke r5.<org.jfree.chart.axis.ValueAxis: double valueToJava2D(double,java.awt.geom.Rectangle2D,org.jfree.ui.RectangleEdge)>($d21, r2, $r35) >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : $i13 = i3 - 1
+org.jfree.chart.plot.ContourPlot.contourRenderer : $i13 = i3 - 1 >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : $i14 = r19[$i13]
+org.jfree.chart.plot.ContourPlot.contourRenderer : $i14 = r19[$i13] >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : $d22 = r17[$i14]
+org.jfree.chart.plot.ContourPlot.contourRenderer : $d22 = r17[$i14] >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : $r36 = <org.jfree.ui.RectangleEdge: org.jfree.ui.RectangleEdge BOTTOM>
+org.jfree.chart.plot.ContourPlot.contourRenderer : $r36 = <org.jfree.ui.RectangleEdge: org.jfree.ui.RectangleEdge BOTTOM> >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : d23 = virtualinvoke r5.<org.jfree.chart.axis.ValueAxis: double valueToJava2D(double,java.awt.geom.Rectangle2D,org.jfree.ui.RectangleEdge)>($d22, r2, $r36)
+org.jfree.chart.plot.ContourPlot.contourRenderer : d23 = virtualinvoke r5.<org.jfree.chart.axis.ValueAxis: double valueToJava2D(double,java.awt.geom.Rectangle2D,org.jfree.ui.RectangleEdge)>($d22, r2, $r36) >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : d24 = d15
+org.jfree.chart.plot.ContourPlot.contourRenderer : d24 = d15 >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : $d25 = d15 - d23
+org.jfree.chart.plot.ContourPlot.contourRenderer : $d25 = d15 - d23 >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : $d26 = 0.5 * $d25
+org.jfree.chart.plot.ContourPlot.contourRenderer : $d26 = 0.5 * $d25 >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : d6 = staticinvoke <java.lang.Math: double abs(double)>($d26)
+org.jfree.chart.plot.ContourPlot.contourRenderer : d6 = staticinvoke <java.lang.Math: double abs(double)>($d26) >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : $d27 = d15 - d24
+org.jfree.chart.plot.ContourPlot.contourRenderer : $d27 = d15 - d24 >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : $d28 = 0.5 * $d27
+org.jfree.chart.plot.ContourPlot.contourRenderer : $d28 = 0.5 * $d27 >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : d1 = staticinvoke <java.lang.Math: double abs(double)>($d28)
+org.jfree.chart.plot.ContourPlot.contourRenderer : d1 = staticinvoke <java.lang.Math: double abs(double)>($d28) >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : goto [?= (branch)]
+org.jfree.chart.plot.ContourPlot.contourRenderer : goto [?= (branch)] >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : if z1 == 0
+org.jfree.chart.plot.ContourPlot.contourRenderer : $d14 = r17[i2] >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : $r20 = <org.jfree.ui.RectangleEdge: org.jfree.ui.RectangleEdge BOTTOM>
+org.jfree.chart.plot.ContourPlot.contourRenderer : $r20 = <org.jfree.ui.RectangleEdge: org.jfree.ui.RectangleEdge BOTTOM> >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : d15 = virtualinvoke r5.<org.jfree.chart.axis.ValueAxis: double valueToJava2D(double,java.awt.geom.Rectangle2D,org.jfree.ui.RectangleEdge)>($d14, r2, $r20)
+org.jfree.chart.plot.ContourPlot.contourRenderer : d15 = virtualinvoke r5.<org.jfree.chart.axis.ValueAxis: double valueToJava2D(double,java.awt.geom.Rectangle2D,org.jfree.ui.RectangleEdge)>($d14, r2, $r20) >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : d4 = d15
+org.jfree.chart.plot.ContourPlot.contourRenderer : d4 = d15 >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : $i11 = i3 + 1
+org.jfree.chart.plot.ContourPlot.contourRenderer : $i11 = i3 + 1 >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : $i12 = r19[$i11]
+org.jfree.chart.plot.ContourPlot.contourRenderer : $i12 = r19[$i11] >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : $d16 = r17[$i12]
+org.jfree.chart.plot.ContourPlot.contourRenderer : $d16 = r17[$i12] >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : $r34 = <org.jfree.ui.RectangleEdge: org.jfree.ui.RectangleEdge BOTTOM>
+org.jfree.chart.plot.ContourPlot.contourRenderer : $r34 = <org.jfree.ui.RectangleEdge: org.jfree.ui.RectangleEdge BOTTOM> >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : d5 = virtualinvoke r5.<org.jfree.chart.axis.ValueAxis: double valueToJava2D(double,java.awt.geom.Rectangle2D,org.jfree.ui.RectangleEdge)>($d16, r2, $r34)
+org.jfree.chart.plot.ContourPlot.contourRenderer : d5 = virtualinvoke r5.<org.jfree.chart.axis.ValueAxis: double valueToJava2D(double,java.awt.geom.Rectangle2D,org.jfree.ui.RectangleEdge)>($d16, r2, $r34) >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : $d17 = d15 - d4
+org.jfree.chart.plot.ContourPlot.contourRenderer : $d17 = d15 - d4 >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : $d18 = 0.5 * $d17
+org.jfree.chart.plot.ContourPlot.contourRenderer : $d18 = 0.5 * $d17 >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : d6 = staticinvoke <java.lang.Math: double abs(double)>($d18)
+org.jfree.chart.plot.ContourPlot.contourRenderer : d6 = staticinvoke <java.lang.Math: double abs(double)>($d18) >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : $d19 = d15 - d5
+org.jfree.chart.plot.ContourPlot.contourRenderer : $d19 = d15 - d5 >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : $d20 = 0.5 * $d19
+org.jfree.chart.plot.ContourPlot.contourRenderer : $d20 = 0.5 * $d19 >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : d1 = staticinvoke <java.lang.Math: double abs(double)>($d20)
+org.jfree.chart.plot.ContourPlot.contourRenderer : d1 = staticinvoke <java.lang.Math: double abs(double)>($d20) >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : goto [?= (branch)]
+org.jfree.chart.plot.ContourPlot.contourRenderer : goto [?= (branch)] >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : if z1 == 0
+org.jfree.chart.plot.ContourPlot.contourRenderer : $r33 = (org.jfree.chart.axis.NumberAxis) r5 >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : z1 = virtualinvoke $r33.<org.jfree.chart.axis.NumberAxis: boolean isInverted()>()
+org.jfree.chart.plot.ContourPlot.contourRenderer : z1 = virtualinvoke $r33.<org.jfree.chart.axis.NumberAxis: boolean isInverted()>() >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : d0 = 0.0
+org.jfree.chart.plot.ContourPlot.contourRenderer : $r29 = r14[i0] >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : $d12 = virtualinvoke $r29.<java.lang.Number: double doubleValue()>()
+org.jfree.chart.plot.ContourPlot.contourRenderer : $d12 = virtualinvoke $r29.<java.lang.Number: double doubleValue()>() >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : r17[i0] = $d12
+org.jfree.chart.plot.ContourPlot.contourRenderer : r17[i0] = $d12 >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : $r30 = r15[i0]
+org.jfree.chart.plot.ContourPlot.contourRenderer : $r30 = r15[i0] >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : $d13 = virtualinvoke $r30.<java.lang.Number: double doubleValue()>()
+org.jfree.chart.plot.ContourPlot.contourRenderer : $d13 = virtualinvoke $r30.<java.lang.Number: double doubleValue()>() >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : r18[i0] = $d13
+org.jfree.chart.plot.ContourPlot.contourRenderer : r18[i0] = $d13 >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : i0 = i0 + 1
+org.jfree.chart.plot.ContourPlot.contourRenderer : i0 = i0 + 1 >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : goto [?= $i6 = lengthof r17]
+org.jfree.chart.plot.ContourPlot.contourRenderer : goto [?= $i6 = lengthof r17] >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : $i6 = lengthof r17
+org.jfree.chart.plot.ContourPlot.contourRenderer : $r25 = virtualinvoke r3.<org.jfree.chart.plot.PlotRenderingInfo: org.jfree.chart.ChartRenderingInfo getOwner()>() >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : r10 = virtualinvoke $r25.<org.jfree.chart.ChartRenderingInfo: org.jfree.chart.entity.EntityCollection getEntityCollection()>()
+org.jfree.chart.plot.ContourPlot.contourRenderer : r10 = virtualinvoke $r25.<org.jfree.chart.ChartRenderingInfo: org.jfree.chart.entity.EntityCollection getEntityCollection()>() >>>>>>>> org.jfree.chart.plot.ContourPlot.contourRenderer : $r26 = new java.awt.geom.Rectangle2D$Double

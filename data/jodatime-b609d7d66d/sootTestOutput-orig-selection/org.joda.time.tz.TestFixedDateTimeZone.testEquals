@@ -1,0 +1,32 @@
+org.joda.time.DateTimeZone.setDefault : r1 = staticinvoke <java.lang.System: java.lang.SecurityManager getSecurityManager()>() >>>>>>>> org.joda.time.DateTimeZone.setDefault : if r1 == null
+org.joda.time.DateTimeZone.setDefault : if r1 == null >>>>>>>> org.joda.time.DateTimeZone.setDefault : if r0 != null
+org.joda.time.DateTimeZone.setDefault : if r0 != null >>>>>>>> org.joda.time.DateTimeZone.setDefault : $r6 = class "org/joda/time/DateTimeZone"
+org.joda.time.DateTimeZone.setDefault : $r6 = class "org/joda/time/DateTimeZone" >>>>>>>> org.joda.time.DateTimeZone.setDefault : r3 = $r6
+org.joda.time.DateTimeZone.setDefault : r3 = $r6 >>>>>>>> org.joda.time.DateTimeZone.setDefault : entermonitor $r6
+org.joda.time.DateTimeZone.setDefault : entermonitor $r6 >>>>>>>> org.joda.time.DateTimeZone.setDefault : <org.joda.time.DateTimeZone: org.joda.time.DateTimeZone cDefault> = r0
+org.joda.time.DateTimeZone.setDefault : <org.joda.time.DateTimeZone: org.joda.time.DateTimeZone cDefault> = r0 >>>>>>>> org.joda.time.DateTimeZone.setDefault : exitmonitor r3
+org.joda.time.DateTimeZone.setDefault : exitmonitor r3 >>>>>>>> org.joda.time.DateTimeZone.setDefault : goto [?= return]
+org.joda.time.DateTimeZone.setDefault : goto [?= return] >>>>>>>> org.joda.time.DateTimeZone.getDefault : r0 = <org.joda.time.DateTimeZone: org.joda.time.DateTimeZone cDefault>
+org.joda.time.DateTimeZone.getDefault : r0 = <org.joda.time.DateTimeZone: org.joda.time.DateTimeZone cDefault> >>>>>>>> org.joda.time.DateTimeZone.getDefault : if r0 != null
+org.joda.time.DateTimeZone.getDefault : if r0 != null >>>>>>>> org.joda.time.DateTimeZone.getDefault : return r0
+org.joda.time.DateTimeZone.getDefault : return r0 >>>>>>>> org.joda.time.tz.FixedDateTimeZone.equals : if r0 != r1
+org.joda.time.tz.FixedDateTimeZone.equals : if r0 != r1 >>>>>>>> org.joda.time.tz.FixedDateTimeZone.equals : return 1
+org.joda.time.tz.FixedDateTimeZone.equals : return 1 >>>>>>>> org.joda.time.tz.FixedDateTimeZone.equals : $z0 = r1 instanceof org.joda.time.tz.FixedDateTimeZone
+org.joda.time.tz.FixedDateTimeZone.equals : $z0 = r1 instanceof org.joda.time.tz.FixedDateTimeZone >>>>>>>> org.joda.time.tz.FixedDateTimeZone.equals : if $z0 == 0
+org.joda.time.tz.FixedDateTimeZone.equals : if $z0 == 0 >>>>>>>> org.joda.time.tz.FixedDateTimeZone.equals : r2 = (org.joda.time.tz.FixedDateTimeZone) r1
+org.joda.time.tz.FixedDateTimeZone.equals : r2 = (org.joda.time.tz.FixedDateTimeZone) r1 >>>>>>>> org.joda.time.tz.FixedDateTimeZone.equals : $r3 = virtualinvoke r0.<org.joda.time.tz.FixedDateTimeZone: java.lang.String getID()>()
+org.joda.time.tz.FixedDateTimeZone.equals : $r3 = virtualinvoke r0.<org.joda.time.tz.FixedDateTimeZone: java.lang.String getID()>() >>>>>>>> org.joda.time.DateTimeZone.getID : $r1 = r0.<org.joda.time.DateTimeZone: java.lang.String iID>
+org.joda.time.DateTimeZone.getID : $r1 = r0.<org.joda.time.DateTimeZone: java.lang.String iID> >>>>>>>> org.joda.time.DateTimeZone.getID : return $r1
+org.joda.time.DateTimeZone.getID : return $r1 >>>>>>>> org.joda.time.tz.FixedDateTimeZone.equals : $r4 = virtualinvoke r2.<org.joda.time.tz.FixedDateTimeZone: java.lang.String getID()>()
+org.joda.time.tz.FixedDateTimeZone.equals : $r4 = virtualinvoke r2.<org.joda.time.tz.FixedDateTimeZone: java.lang.String getID()>() >>>>>>>> org.joda.time.tz.FixedDateTimeZone.equals : $z1 = virtualinvoke $r3.<java.lang.String: boolean equals(java.lang.Object)>($r4)
+org.joda.time.tz.FixedDateTimeZone.equals : $z1 = virtualinvoke $r3.<java.lang.String: boolean equals(java.lang.Object)>($r4) >>>>>>>> org.joda.time.tz.FixedDateTimeZone.equals : if $z1 == 0
+org.joda.time.tz.FixedDateTimeZone.equals : if $z1 == 0 >>>>>>>> org.joda.time.tz.FixedDateTimeZone.equals : $i0 = r0.<org.joda.time.tz.FixedDateTimeZone: int iStandardOffset>
+org.joda.time.tz.FixedDateTimeZone.equals : $i0 = r0.<org.joda.time.tz.FixedDateTimeZone: int iStandardOffset> >>>>>>>> org.joda.time.tz.FixedDateTimeZone.equals : $i1 = r2.<org.joda.time.tz.FixedDateTimeZone: int iStandardOffset>
+org.joda.time.tz.FixedDateTimeZone.equals : $i1 = r2.<org.joda.time.tz.FixedDateTimeZone: int iStandardOffset> >>>>>>>> org.joda.time.tz.FixedDateTimeZone.equals : if $i0 != $i1
+org.joda.time.tz.FixedDateTimeZone.equals : if $i0 != $i1 >>>>>>>> org.joda.time.tz.FixedDateTimeZone.equals : $i2 = r0.<org.joda.time.tz.FixedDateTimeZone: int iWallOffset>
+org.joda.time.tz.FixedDateTimeZone.equals : $i2 = r0.<org.joda.time.tz.FixedDateTimeZone: int iWallOffset> >>>>>>>> org.joda.time.tz.FixedDateTimeZone.equals : $i3 = r2.<org.joda.time.tz.FixedDateTimeZone: int iWallOffset>
+org.joda.time.tz.FixedDateTimeZone.equals : $i3 = r2.<org.joda.time.tz.FixedDateTimeZone: int iWallOffset> >>>>>>>> org.joda.time.tz.FixedDateTimeZone.equals : if $i2 != $i3
+org.joda.time.tz.FixedDateTimeZone.equals : if $i2 != $i3 >>>>>>>> org.joda.time.tz.FixedDateTimeZone.equals : $z2 = 1
+org.joda.time.tz.FixedDateTimeZone.equals : $z2 = 1 >>>>>>>> org.joda.time.tz.FixedDateTimeZone.equals : goto [?= return $z2]
+org.joda.time.tz.FixedDateTimeZone.equals : goto [?= return $z2] >>>>>>>> org.joda.time.tz.FixedDateTimeZone.equals : return $z2
+org.joda.time.tz.FixedDateTimeZone.equals : return $z2 >>>>>>>> org.joda.time.tz.FixedDateTimeZone.equals : $z2 = 0

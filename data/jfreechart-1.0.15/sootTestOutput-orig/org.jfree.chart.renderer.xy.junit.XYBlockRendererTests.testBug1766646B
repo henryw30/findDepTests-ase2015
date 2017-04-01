@@ -1,0 +1,25 @@
+org.jfree.data.general.DatasetUtilities.findRangeBounds : r2 = staticinvoke <org.jfree.data.general.DatasetUtilities: org.jfree.data.Range iterateRangeBounds(org.jfree.data.xy.XYDataset,boolean)>(r0, z0)
+org.jfree.data.general.DatasetUtilities.findRangeBounds : return r2
+org.jfree.data.general.DatasetUtilities.findRangeBounds : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r0, "dataset")
+org.jfree.data.general.DatasetUtilities.findRangeBounds : $z1 = r0 instanceof org.jfree.data.RangeInfo
+org.jfree.chart.renderer.xy.XYBlockRenderer.findRangeBounds : if r2 != null goto $r3 = new org.jfree.data.Range
+org.jfree.chart.renderer.xy.XYBlockRenderer.findRangeBounds : return null
+org.jfree.chart.renderer.xy.XYBlockRenderer.findRangeBounds : r2 = staticinvoke <org.jfree.data.general.DatasetUtilities: org.jfree.data.Range findRangeBounds(org.jfree.data.xy.XYDataset,boolean)>(r1, 0)
+org.jfree.chart.renderer.xy.XYBlockRenderer.findRangeBounds : if r1 == null goto return null
+org.jfree.chart.renderer.xy.XYBlockRenderer.updateOffsets : $r2 = r0.<org.jfree.chart.renderer.xy.XYBlockRenderer: org.jfree.ui.RectangleAnchor blockAnchor>
+org.jfree.chart.renderer.xy.XYBlockRenderer.updateOffsets : $r5 = r0.<org.jfree.chart.renderer.xy.XYBlockRenderer: org.jfree.ui.RectangleAnchor blockAnchor>
+org.jfree.chart.renderer.xy.XYBlockRenderer.updateOffsets : $r3 = r0.<org.jfree.chart.renderer.xy.XYBlockRenderer: org.jfree.ui.RectangleAnchor blockAnchor>
+org.jfree.chart.renderer.xy.XYBlockRenderer.updateOffsets : $r7 = r0.<org.jfree.chart.renderer.xy.XYBlockRenderer: org.jfree.ui.RectangleAnchor blockAnchor>
+org.jfree.chart.renderer.xy.XYBlockRenderer.updateOffsets : $d11 = r0.<org.jfree.chart.renderer.xy.XYBlockRenderer: double blockHeight>
+org.jfree.chart.renderer.xy.XYBlockRenderer.updateOffsets : $r9 = r0.<org.jfree.chart.renderer.xy.XYBlockRenderer: org.jfree.ui.RectangleAnchor blockAnchor>
+org.jfree.chart.renderer.xy.XYBlockRenderer.updateOffsets : $d8 = r0.<org.jfree.chart.renderer.xy.XYBlockRenderer: double blockWidth>
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null goto return
+org.jfree.data.general.DatasetUtilities.iterateRangeBounds : $b10 = d0 cmpl #Infinity
+org.jfree.data.general.DatasetUtilities.iterateRangeBounds : if z0 == 0 goto (branch)
+org.jfree.data.general.DatasetUtilities.iterateRangeBounds : d0 = #Infinity
+org.jfree.data.general.DatasetUtilities.iterateRangeBounds : return null
+org.jfree.data.general.DatasetUtilities.iterateRangeBounds : i0 = interfaceinvoke r0.<org.jfree.data.xy.XYDataset: int getSeriesCount()>()
+org.jfree.data.general.DatasetUtilities.iterateRangeBounds : i7 = 0
+org.jfree.data.general.DatasetUtilities.iterateRangeBounds : if z0 == 0 goto i7 = 0
+org.jfree.data.general.DatasetUtilities.iterateRangeBounds : d1 = #-Infinity
+org.jfree.data.xy.DefaultXYZDataset.getSeriesCount : $r1 = r0.<org.jfree.data.xy.DefaultXYZDataset: java.util.List seriesList>

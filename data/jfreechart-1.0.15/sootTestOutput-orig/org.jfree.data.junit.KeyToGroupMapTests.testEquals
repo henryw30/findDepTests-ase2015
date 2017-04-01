@@ -1,0 +1,21 @@
+org.jfree.data.KeyToGroupMap.mapKeyToGroup : $r9 = r0.<org.jfree.data.KeyToGroupMap: java.lang.Comparable defaultGroup>
+org.jfree.data.KeyToGroupMap.mapKeyToGroup : r3 = virtualinvoke r0.<org.jfree.data.KeyToGroupMap: java.lang.Comparable getGroup(java.lang.Comparable)>(r1)
+org.jfree.data.KeyToGroupMap.mapKeyToGroup : $r11 = r0.<org.jfree.data.KeyToGroupMap: java.util.Map keyToGroupMap>
+org.jfree.data.KeyToGroupMap.mapKeyToGroup : $r10 = r0.<org.jfree.data.KeyToGroupMap: java.util.List groups>
+org.jfree.data.KeyToGroupMap.mapKeyToGroup : $r8 = r0.<org.jfree.data.KeyToGroupMap: java.util.List groups>
+org.jfree.data.KeyToGroupMap.mapKeyToGroup : $r4 = r0.<org.jfree.data.KeyToGroupMap: java.lang.Comparable defaultGroup>
+org.jfree.data.KeyToGroupMap.mapKeyToGroup : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "key")
+org.jfree.data.KeyToGroupMap.mapKeyToGroup : if r2 != null goto $r8 = r0.<org.jfree.data.KeyToGroupMap: java.util.List groups>
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null goto return
+org.jfree.data.KeyToGroupMap.getGroup : return r2
+org.jfree.data.KeyToGroupMap.getGroup : if r3 == null goto return r2
+org.jfree.data.KeyToGroupMap.getGroup : $r4 = r0.<org.jfree.data.KeyToGroupMap: java.util.Map keyToGroupMap>
+org.jfree.data.KeyToGroupMap.getGroup : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "key")
+org.jfree.data.KeyToGroupMap.getGroup : r2 = r0.<org.jfree.data.KeyToGroupMap: java.lang.Comparable defaultGroup>
+org.jfree.data.KeyToGroupMap.equals : if r1 != r0 goto $z0 = r1 instanceof org.jfree.data.KeyToGroupMap
+org.jfree.data.KeyToGroupMap.equals : $r5 = r0.<org.jfree.data.KeyToGroupMap: java.util.Map keyToGroupMap>
+org.jfree.data.KeyToGroupMap.equals : r2 = (org.jfree.data.KeyToGroupMap) r1
+org.jfree.data.KeyToGroupMap.equals : $r3 = r0.<org.jfree.data.KeyToGroupMap: java.lang.Comparable defaultGroup>
+org.jfree.data.KeyToGroupMap.equals : return 1
+org.jfree.data.KeyToGroupMap.equals : return 0
+org.jfree.data.KeyToGroupMap.equals : $z0 = r1 instanceof org.jfree.data.KeyToGroupMap

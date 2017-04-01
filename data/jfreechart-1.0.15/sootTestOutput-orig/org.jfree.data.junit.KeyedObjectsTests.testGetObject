@@ -1,0 +1,22 @@
+org.jfree.data.KeyedObjects.getObject : r1 = virtualinvoke r2.<org.jfree.data.KeyedObject: java.lang.Object getObject()>()
+org.jfree.data.KeyedObjects.getObject : if r2 == null goto return r1
+org.jfree.data.KeyedObjects.getObject : $r3 = r0.<org.jfree.data.KeyedObjects: java.util.List data>
+org.jfree.data.KeyedObjects.getObject : r1 = null
+org.jfree.data.KeyedObjects.getObject : return r1
+org.jfree.data.KeyedObjects.addObject : virtualinvoke r0.<org.jfree.data.KeyedObjects: void setObject(java.lang.Comparable,java.lang.Object)>(r1, r2)
+org.jfree.data.KeyedObjects.setObject : if i0 < 0 goto $r6 = new org.jfree.data.KeyedObject
+org.jfree.data.KeyedObjects.setObject : $r6 = new org.jfree.data.KeyedObject
+org.jfree.data.KeyedObjects.setObject : i0 = virtualinvoke r0.<org.jfree.data.KeyedObjects: int getIndex(java.lang.Comparable)>(r1)
+org.jfree.data.KeyedObjects.setObject : $r8 = r0.<org.jfree.data.KeyedObjects: java.util.List data>
+org.jfree.data.KeyedObject.getObject : $r1 = r0.<org.jfree.data.KeyedObject: java.lang.Object object>
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null goto return
+org.jfree.data.KeyedObjects.getIndex : return -1
+org.jfree.data.KeyedObjects.getIndex : $r5 = interfaceinvoke r2.<java.util.Iterator: java.lang.Object next()>()
+org.jfree.data.KeyedObjects.getIndex : $r4 = r0.<org.jfree.data.KeyedObjects: java.util.List data>
+org.jfree.data.KeyedObjects.getIndex : i0 = i0 + 1
+org.jfree.data.KeyedObjects.getIndex : i0 = 0
+org.jfree.data.KeyedObjects.getIndex : goto [?= staticinvoke <edu.washington.cs.dt.impact.util.Tracer: void trace(java.lang.String,java.lang.String)>("$z0 = interfaceinvoke r2.<java.util.Iterator: boolean hasNext()>()", "org.jfree.data.KeyedObjects.getIndex")]
+org.jfree.data.KeyedObjects.getIndex : $z0 = interfaceinvoke r2.<java.util.Iterator: boolean hasNext()>()
+org.jfree.data.KeyedObjects.getIndex : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "key")
+org.jfree.data.KeyedObjects.getIndex : $r6 = virtualinvoke r3.<org.jfree.data.KeyedObject: java.lang.Comparable getKey()>()
+org.jfree.data.KeyedObject.getKey : $r1 = r0.<org.jfree.data.KeyedObject: java.lang.Comparable key>

@@ -1,0 +1,12 @@
+org.jfree.data.contour.DefaultContourDataset.getItemCount : $r2 = r0.<org.jfree.data.contour.DefaultContourDataset: java.lang.Number[] zValues>
+org.jfree.data.contour.DefaultContourDataset.getItemCount : if i0 <= 0 goto $r2 = r0.<org.jfree.data.contour.DefaultContourDataset: java.lang.Number[] zValues>
+org.jfree.data.contour.DefaultContourDataset.getSeriesCount : return 1
+org.jfree.data.general.DatasetUtilities.iterateZBounds : i1 = 0
+org.jfree.data.general.DatasetUtilities.iterateZBounds : i2 = interfaceinvoke r0.<org.jfree.data.xy.XYZDataset: int getItemCount(int)>(i1)
+org.jfree.data.general.DatasetUtilities.iterateZBounds : d0 = #Infinity
+org.jfree.data.general.DatasetUtilities.iterateZBounds : i0 = interfaceinvoke r0.<org.jfree.data.xy.XYZDataset: int getSeriesCount()>()
+org.jfree.data.general.DatasetUtilities.iterateZBounds : d1 = #-Infinity
+org.jfree.data.contour.DefaultContourDataset.getXIndices : $r1 = r0.<org.jfree.data.contour.DefaultContourDataset: int[] xIndex>
+org.jfree.data.general.DatasetUtilities.findZBounds : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r0, "dataset")
+org.jfree.data.general.DatasetUtilities.findZBounds : r1 = staticinvoke <org.jfree.data.general.DatasetUtilities: org.jfree.data.Range iterateZBounds(org.jfree.data.xy.XYZDataset,boolean)>(r0, z0)
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null goto return

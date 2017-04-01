@@ -1,0 +1,18 @@
+org.joda.time.field.BaseDateTimeField.roundHalfFloor : $b5 = l3 cmp l4
+org.joda.time.field.BaseDateTimeField.roundHalfFloor : l1 = virtualinvoke r0.<org.joda.time.field.BaseDateTimeField: long roundFloor(long)>(l0)
+org.joda.time.field.BaseDateTimeField.roundHalfFloor : return l2
+org.joda.time.field.BaseDateTimeField.roundHalfFloor : return l1
+org.joda.time.field.BaseDateTimeField.roundHalfFloor : l2 = virtualinvoke r0.<org.joda.time.field.BaseDateTimeField: long roundCeiling(long)>(l0)
+org.joda.time.field.BaseDateTimeField.roundHalfFloor : l3 = l0 - l1
+org.joda.time.field.BaseDateTimeField.roundHalfFloor : l4 = l2 - l0
+org.joda.time.DateTimeFieldType.secondOfMinute : $r0 = <org.joda.time.DateTimeFieldType: org.joda.time.DateTimeFieldType SECOND_OF_MINUTE_TYPE>
+org.joda.time.DurationFieldType.seconds : $r0 = <org.joda.time.DurationFieldType: org.joda.time.DurationFieldType SECONDS_TYPE>
+org.joda.time.field.BaseDateTimeField.roundCeiling : l1 = virtualinvoke r0.<org.joda.time.field.BaseDateTimeField: long roundFloor(long)>(l0)
+org.joda.time.field.BaseDateTimeField.roundCeiling : $b2 = l1 cmp l0
+org.joda.time.field.BaseDateTimeField.roundCeiling : return l0
+org.joda.time.field.BaseDateTimeField.roundCeiling : l0 = virtualinvoke r0.<org.joda.time.field.BaseDateTimeField: long add(long,int)>(l1, 1)
+org.joda.time.field.TestBaseDateTimeField$MockBaseDateTimeField.roundFloor : $l1 = l0 / 60L
+org.joda.time.field.TestBaseDateTimeField$MockBaseDateTimeField.getDurationField : $r1 = new org.joda.time.field.TestBaseDateTimeField$MockCountingDurationField
+org.joda.time.field.TestBaseDateTimeField$MockCountingDurationField.add : $i2 = <org.joda.time.field.TestBaseDateTimeField$MockCountingDurationField: int add_int>
+org.joda.time.field.TestBaseDateTimeField$MockCountingDurationField.add : $l4 = (long) i1
+org.joda.time.field.BaseDateTimeField.add : $r1 = virtualinvoke r0.<org.joda.time.field.BaseDateTimeField: org.joda.time.DurationField getDurationField()>()

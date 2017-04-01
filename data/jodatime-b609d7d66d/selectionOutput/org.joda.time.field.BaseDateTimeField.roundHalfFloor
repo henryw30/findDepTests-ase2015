@@ -1,0 +1,7 @@
+org.joda.time.field.BaseDateTimeField.roundHalfFloor : l1 = virtualinvoke r0.<org.joda.time.field.BaseDateTimeField: long roundFloor(long)>(l0) >>>>>>>> org.joda.time.field.BaseDateTimeField.roundHalfFloor : l2 = virtualinvoke r0.<org.joda.time.field.BaseDateTimeField: long roundCeiling(long)>(l0)
+org.joda.time.field.BaseDateTimeField.roundHalfFloor : l2 = virtualinvoke r0.<org.joda.time.field.BaseDateTimeField: long roundCeiling(long)>(l0) >>>>>>>> org.joda.time.field.BaseDateTimeField.roundHalfFloor : l3 = l0 - l1
+org.joda.time.field.BaseDateTimeField.roundHalfFloor : l3 = l0 - l1 >>>>>>>> org.joda.time.field.BaseDateTimeField.roundHalfFloor : l4 = l2 - l0
+org.joda.time.field.BaseDateTimeField.roundHalfFloor : l4 = l2 - l0 >>>>>>>> org.joda.time.field.BaseDateTimeField.roundHalfFloor : $b5 = l3 cmp l4
+org.joda.time.field.BaseDateTimeField.roundHalfFloor : $b5 = l3 cmp l4 >>>>>>>> org.joda.time.field.BaseDateTimeField.roundHalfFloor : if $b5 > 0
+org.joda.time.field.BaseDateTimeField.roundHalfFloor : if $b5 > 0 >>>>>>>> org.joda.time.field.BaseDateTimeField.roundHalfFloor : return l1
+org.joda.time.field.BaseDateTimeField.roundHalfFloor : if $b5 > 0 >>>>>>>> org.joda.time.field.BaseDateTimeField.roundHalfFloor : return l2

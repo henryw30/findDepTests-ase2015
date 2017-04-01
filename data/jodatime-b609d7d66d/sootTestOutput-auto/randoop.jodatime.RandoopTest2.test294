@@ -1,0 +1,56 @@
+org.joda.time.format.FormatUtils.appendPaddedInteger : if i0 >= 1000 goto (branch)
+org.joda.time.format.FormatUtils.appendPaddedInteger : if i0 >= 10 goto (branch)
+org.joda.time.format.FormatUtils.appendPaddedInteger : if i1 <= i15 goto $r10 = staticinvoke <java.lang.Integer: java.lang.String toString(int)>(i0)
+org.joda.time.format.FormatUtils.appendPaddedInteger : virtualinvoke r0.<java.lang.StringBuffer: java.lang.StringBuffer append(char)>(48)
+org.joda.time.format.FormatUtils.appendPaddedInteger : if i1 <= 1 goto $i3 = i0 + 48
+org.joda.time.format.FormatUtils.appendPaddedInteger : i15 = 3
+org.joda.time.format.FormatUtils.appendPaddedInteger : if i0 >= 100 goto (branch)
+org.joda.time.format.FormatUtils.appendPaddedInteger : $r10 = staticinvoke <java.lang.Integer: java.lang.String toString(int)>(i0)
+org.joda.time.format.FormatUtils.appendPaddedInteger : $i3 = i0 + 48
+org.joda.time.format.FormatUtils.appendPaddedInteger : if i0 >= 0 goto (branch)
+org.joda.time.base.AbstractInterval.checkInterval : $b2 = l1 cmp l0
+org.joda.time.base.AbstractInterval.checkInterval : $r1 = new java.lang.IllegalArgumentException
+org.joda.time.base.BaseDateTime.checkInstant : return l0
+org.joda.time.chrono.ISOChronology.getInstance : if r0 != null goto $i1 = staticinvoke <java.lang.System: int identityHashCode(java.lang.Object)>(r0)
+org.joda.time.chrono.ISOChronology.getInstance : $i1 = staticinvoke <java.lang.System: int identityHashCode(java.lang.Object)>(r0)
+org.joda.time.chrono.ISOChronology.getInstance : $r5 = <org.joda.time.chrono.ISOChronology: org.joda.time.chrono.ISOChronology[] cFastCache>
+org.joda.time.chrono.ISOChronology.getInstance : return r1
+org.joda.time.chrono.ISOChronology.getInstance : if r1 == null goto $r7 = <org.joda.time.chrono.ISOChronology: java.util.Map cCache>
+org.joda.time.chrono.ZonedChronology.getZone : $r1 = virtualinvoke r0.<org.joda.time.chrono.ZonedChronology: java.lang.Object getParam()>()
+org.joda.time.DateTimeUtils.getChronology : if r0 != null goto return r0
+org.joda.time.DateTimeUtils.getChronology : return r0
+org.joda.time.DateTimeZone.fixedOffsetZone : if i0 != 0 goto $r4 = <org.joda.time.DateTimeZone: java.util.Map iFixedOffsetCache>
+org.joda.time.DateTimeZone.fixedOffsetZone : return r2
+org.joda.time.DateTimeZone.fixedOffsetZone : if r2 == null goto $r9 = new org.joda.time.tz.FixedDateTimeZone
+org.joda.time.DateTimeZone.fixedOffsetZone : $r8 = virtualinvoke r1.<java.lang.ref.Reference: java.lang.Object get()>()
+org.joda.time.DateTimeZone.fixedOffsetZone : $r4 = <org.joda.time.DateTimeZone: java.util.Map iFixedOffsetCache>
+org.joda.time.DateTimeZone.fixedOffsetZone : $r6 = <org.joda.time.DateTimeZone: java.util.Map iFixedOffsetCache>
+org.joda.time.DateTimeZone.fixedOffsetZone : if r1 == null goto $r9 = new org.joda.time.tz.FixedDateTimeZone
+org.joda.time.DateTimeUtils.getZone : if r0 != null goto return r0
+org.joda.time.DateTimeUtils.getZone : return r0
+org.joda.time.chrono.AssembledChronology.getZone : $r3 = virtualinvoke r1.<org.joda.time.Chronology: org.joda.time.DateTimeZone getZone()>()
+org.joda.time.chrono.AssembledChronology.getZone : $r2 = r0.<org.joda.time.chrono.AssembledChronology: org.joda.time.Chronology iBase>
+org.joda.time.DateTimeUtils.currentTimeMillis : $r0 = <org.joda.time.DateTimeUtils: org.joda.time.DateTimeUtils$MillisProvider cMillisProvider>
+org.joda.time.base.BaseDateTime.checkChronology : $r2 = staticinvoke <org.joda.time.DateTimeUtils: org.joda.time.Chronology getChronology(org.joda.time.Chronology)>(r1)
+org.joda.time.DateTimeZone.printOffset : staticinvoke <org.joda.time.format.FormatUtils: void appendPaddedInteger(java.lang.StringBuffer,int,int)>(r1, i3, 2)
+org.joda.time.DateTimeZone.printOffset : i1 = i0 / 3600000
+org.joda.time.DateTimeZone.printOffset : if i9 != 0 goto virtualinvoke r1.<java.lang.StringBuffer: java.lang.StringBuffer append(char)>(46)
+org.joda.time.DateTimeZone.printOffset : virtualinvoke r1.<java.lang.StringBuffer: java.lang.StringBuffer append(char)>(43)
+org.joda.time.DateTimeZone.printOffset : virtualinvoke r1.<java.lang.StringBuffer: java.lang.StringBuffer append(char)>(46)
+org.joda.time.DateTimeZone.printOffset : $i8 = i3 * 1000
+org.joda.time.DateTimeZone.printOffset : virtualinvoke r1.<java.lang.StringBuffer: java.lang.StringBuffer append(char)>(58)
+org.joda.time.DateTimeZone.printOffset : staticinvoke <org.joda.time.format.FormatUtils: void appendPaddedInteger(java.lang.StringBuffer,int,int)>(r1, i2, 2)
+org.joda.time.DateTimeZone.printOffset : $i4 = i1 * 3600000
+org.joda.time.DateTimeZone.printOffset : $i6 = i2 * 60000
+org.joda.time.DateTimeZone.printOffset : if i0 < 0 goto virtualinvoke r1.<java.lang.StringBuffer: java.lang.StringBuffer append(char)>(45)
+org.joda.time.DateTimeZone.printOffset : staticinvoke <org.joda.time.format.FormatUtils: void appendPaddedInteger(java.lang.StringBuffer,int,int)>(r1, i1, 2)
+org.joda.time.DateTimeZone.printOffset : i2 = i5 / 60000
+org.joda.time.DateTimeZone.printOffset : $r9 = virtualinvoke r1.<java.lang.StringBuffer: java.lang.String toString()>()
+org.joda.time.DateTimeZone.printOffset : staticinvoke <org.joda.time.format.FormatUtils: void appendPaddedInteger(java.lang.StringBuffer,int,int)>(r1, i9, 3)
+org.joda.time.DateTimeZone.printOffset : i3 = i7 / 1000
+org.joda.time.DateTimeZone.printOffset : $r0 = new java.lang.StringBuffer
+org.joda.time.DateTimeZone.printOffset : if i7 != 0 goto i3 = i7 / 1000
+org.joda.time.chrono.AssembledChronology.getParam : $r1 = r0.<org.joda.time.chrono.AssembledChronology: java.lang.Object iParam>
+org.joda.time.DateTimeZone.forOffsetMillis : $r1 = staticinvoke <org.joda.time.DateTimeZone: org.joda.time.DateTimeZone fixedOffsetZone(java.lang.String,int)>(r0, i0)
+org.joda.time.DateTimeZone.forOffsetMillis : r0 = staticinvoke <org.joda.time.DateTimeZone: java.lang.String printOffset(int)>(i0)
+org.joda.time.DateTimeUtils$OffsetMillisProvider.getMillis : $l0 = staticinvoke <java.lang.System: long currentTimeMillis()>()

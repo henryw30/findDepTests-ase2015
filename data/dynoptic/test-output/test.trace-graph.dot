@@ -1,0 +1,26 @@
+digraph {
+  0 [label="1-A:1->0 ? a"];
+  1 [label="1-A:1->0 ! a"];
+  2 [label="0-M:0->1 ! m"];
+  3 [label="0-M:0->1 ! m"];
+  4 [label="0-M:0->1 ? m"];
+  5 [label="0-M:0->1 ? m"];
+  6 [label="recv_mp1L"];
+  7 [label="send_mp0L"];
+  8 [label="send_mp0L"];
+  9 [label="TERMINAL",shape=diamond];
+  10 [label="INITIAL",shape=box];
+0->8 [label="0t",];
+1->0 [label="0t",];
+1->5 [label="0t",];
+2->0 [label="0t",];
+2->5 [label="0t",];
+3->2 [label="0t",];
+3->4 [label="0t",];
+4->6 [label="0t",];
+5->9 [label="0t",];
+6->1 [label="0t",];
+7->3 [label="0t",];
+8->9 [label="0t",];
+10->7 [label="0t",];
+} // digraph {

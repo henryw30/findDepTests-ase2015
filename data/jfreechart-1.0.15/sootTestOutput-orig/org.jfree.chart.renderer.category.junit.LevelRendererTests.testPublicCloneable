@@ -1,0 +1,11 @@
+org.jfree.chart.renderer.AbstractRenderer.setBaseOutlinePaint : virtualinvoke r0.<org.jfree.chart.renderer.AbstractRenderer: void fireChangeEvent()>()
+org.jfree.chart.renderer.AbstractRenderer.setBaseOutlinePaint : if z0 == 0 goto return
+org.jfree.chart.renderer.AbstractRenderer.setBaseOutlinePaint : r0.<org.jfree.chart.renderer.AbstractRenderer: java.awt.Paint baseOutlinePaint> = r1
+org.jfree.chart.renderer.AbstractRenderer.setBaseOutlinePaint : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "paint")
+org.jfree.chart.renderer.AbstractRenderer.setBaseOutlinePaint : virtualinvoke r0.<org.jfree.chart.renderer.AbstractRenderer: void setBaseOutlinePaint(java.awt.Paint,boolean)>(r1, 1)
+org.jfree.chart.renderer.AbstractRenderer.fireChangeEvent : $r1 = new org.jfree.chart.event.RendererChangeEvent
+org.jfree.chart.renderer.AbstractRenderer.notifyListeners : $r3 = r0.<org.jfree.chart.renderer.AbstractRenderer: javax.swing.event.EventListenerList listenerList>
+org.jfree.chart.renderer.AbstractRenderer.notifyListeners : $i1 = lengthof r2
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null goto return
+org.jfree.chart.renderer.AbstractRenderer.setBaseLegendShape : virtualinvoke r0.<org.jfree.chart.renderer.AbstractRenderer: void fireChangeEvent()>()
+org.jfree.chart.renderer.AbstractRenderer.setBaseLegendShape : r0.<org.jfree.chart.renderer.AbstractRenderer: java.awt.Shape baseLegendShape> = r1

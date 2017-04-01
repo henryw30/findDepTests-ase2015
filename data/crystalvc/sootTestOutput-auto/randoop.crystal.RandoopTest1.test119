@@ -1,0 +1,17 @@
+crystal.client.ClientPreferences.setRefresh : r0.<crystal.client.ClientPreferences: long _refresh> = l0
+crystal.client.ClientPreferences.getTempDirectory : $r1 = r0.<crystal.client.ClientPreferences: java.lang.String _tempDirectory>
+crystal.client.ClientPreferences.getGitPath : $r1 = r0.<crystal.client.ClientPreferences: java.lang.String _gitPath>
+crystal.client.ClientPreferences.setChanged : r0.<crystal.client.ClientPreferences: boolean _hasChanged> = z0
+crystal.client.ClientPreferences.clone : $r7 = r0.<crystal.client.ClientPreferences: java.util.Vector _projectPreferences>
+crystal.client.ClientPreferences.clone : r1.<crystal.client.ClientPreferences: java.util.Vector _projectPreferences> = r2
+crystal.client.ClientPreferences.clone : $r5 = specialinvoke r0.<java.lang.Object: java.lang.Object clone()>()
+crystal.client.ClientPreferences.clone : $r6 = new java.util.Vector
+crystal.client.ClientPreferences.clone : return r1
+crystal.client.ClientPreferences.setGitPath : r0.<crystal.client.ClientPreferences: java.lang.String _gitPath> = r1
+crystal.util.ValidInputChecker.checkValidStringInput : if r0 == null goto $r2 = new java.lang.IllegalArgumentException
+crystal.client.ClientPreferences.setTempDirectory : r0.<crystal.client.ClientPreferences: java.lang.String _tempDirectory> = r1
+crystal.client.ClientPreferences.equals : $z2 = virtualinvoke $r9.<java.util.Vector: boolean equals(java.lang.Object)>($r10)
+crystal.client.ClientPreferences.equals : r2 = (crystal.client.ClientPreferences) r1
+crystal.client.ClientPreferences.equals : return 0
+crystal.client.ClientPreferences.equals : if r1 == null goto return 0
+crystal.client.ClientPreferences.equals : $r5 = r0.<crystal.client.ClientPreferences: java.lang.String _tempDirectory>

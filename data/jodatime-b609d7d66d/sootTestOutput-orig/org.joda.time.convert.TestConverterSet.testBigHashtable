@@ -1,0 +1,53 @@
+org.joda.time.convert.TestConverterSet$4.getSupportedType : return class "java/lang/Short"
+org.joda.time.convert.ConverterSet.select : return r4
+org.joda.time.convert.ConverterSet.select : $r6 = r2[i1]
+org.joda.time.convert.ConverterSet.select : if r1 != null goto $i5 = virtualinvoke r1.<java.lang.Object: int hashCode()>()
+org.joda.time.convert.ConverterSet.select : r4 = staticinvoke <org.joda.time.convert.ConverterSet: org.joda.time.convert.Converter selectSlow(org.joda.time.convert.ConverterSet,java.lang.Class)>(r0, r1)
+org.joda.time.convert.ConverterSet.select : if r16 != null goto $i9 = virtualinvoke r16.<java.lang.Object: int hashCode()>()
+org.joda.time.convert.ConverterSet.select : i3 = 0
+org.joda.time.convert.ConverterSet.select : r15 = r13[i3]
+org.joda.time.convert.ConverterSet.select : i1 = 0
+org.joda.time.convert.ConverterSet.select : $r14 = r13[i2]
+org.joda.time.convert.ConverterSet.select : i7 = i0 << 1
+org.joda.time.convert.ConverterSet.select : $r9 = new org.joda.time.convert.ConverterSet$Entry
+org.joda.time.convert.ConverterSet.select : r5[i11] = r15
+org.joda.time.convert.ConverterSet.select : r13[i1] = r10
+org.joda.time.convert.ConverterSet.select : r2 = r0.<org.joda.time.convert.ConverterSet: org.joda.time.convert.ConverterSet$Entry[] iSelectEntries>
+org.joda.time.convert.ConverterSet.select : i1 = i1 + 1
+org.joda.time.convert.ConverterSet.select : i11 = i11 + 1
+org.joda.time.convert.ConverterSet.select : r0.<org.joda.time.convert.ConverterSet: org.joda.time.convert.ConverterSet$Entry[] iSelectEntries> = r13
+org.joda.time.convert.ConverterSet.select : r0.<org.joda.time.convert.ConverterSet: org.joda.time.convert.ConverterSet$Entry[] iSelectEntries> = r5
+org.joda.time.convert.ConverterSet.select : r5 = newarray (org.joda.time.convert.ConverterSet$Entry)[i7]
+org.joda.time.convert.ConverterSet.select : $r17 = r5[i11]
+org.joda.time.convert.ConverterSet.select : $r11 = virtualinvoke r2.<java.lang.Object: java.lang.Object clone()>()
+org.joda.time.convert.ConverterSet.select : i0 = lengthof r2
+org.joda.time.convert.ConverterSet.select : i2 = 0
+org.joda.time.convert.ConverterSet.select : $r7 = r3.<org.joda.time.convert.ConverterSet$Entry: java.lang.Class iType>
+org.joda.time.convert.ConverterSet.select : $r8 = r3.<org.joda.time.convert.ConverterSet$Entry: org.joda.time.convert.Converter iConverter>
+org.joda.time.convert.ConverterSet.select : r16 = r15.<org.joda.time.convert.ConverterSet$Entry: java.lang.Class iType>
+org.joda.time.convert.TestConverterSet$1.getSupportedType : return class "java/lang/Boolean"
+org.joda.time.convert.ConverterSet.remove : $r7 = new org.joda.time.convert.ConverterSet
+org.joda.time.convert.ConverterSet.remove : $i4 = i1 - 1
+org.joda.time.convert.ConverterSet.remove : if i3 == i0 goto i3 = i3 + 1
+org.joda.time.convert.ConverterSet.remove : i3 = 0
+org.joda.time.convert.ConverterSet.remove : i2 = 0
+org.joda.time.convert.ConverterSet.remove : if r1 == null goto $i4 = i1 - 1
+org.joda.time.convert.ConverterSet.remove : $i5 = i2
+org.joda.time.convert.ConverterSet.remove : r2 = r0.<org.joda.time.convert.ConverterSet: org.joda.time.convert.Converter[] iConverters>
+org.joda.time.convert.ConverterSet.remove : if i0 < i1 goto (branch)
+org.joda.time.convert.ConverterSet.remove : i1 = lengthof r2
+org.joda.time.convert.ConverterSet.selectSlow : return r3
+org.joda.time.convert.ConverterSet.selectSlow : if r4 == null goto r0 = virtualinvoke r0.<org.joda.time.convert.ConverterSet: org.joda.time.convert.ConverterSet remove(int,org.joda.time.convert.Converter[])>(i1, null)
+org.joda.time.convert.ConverterSet.selectSlow : return null
+org.joda.time.convert.ConverterSet.selectSlow : r0 = virtualinvoke r0.<org.joda.time.convert.ConverterSet: org.joda.time.convert.ConverterSet remove(int,org.joda.time.convert.Converter[])>(i1, null)
+org.joda.time.convert.ConverterSet.selectSlow : i0 = lengthof r2
+org.joda.time.convert.ConverterSet.selectSlow : r4 = interfaceinvoke r3.<org.joda.time.convert.Converter: java.lang.Class getSupportedType()>()
+org.joda.time.convert.ConverterSet.selectSlow : r3 = r2[i1]
+org.joda.time.convert.ConverterSet.selectSlow : i1 = i0
+org.joda.time.convert.ConverterSet.selectSlow : r2 = r0.<org.joda.time.convert.ConverterSet: org.joda.time.convert.Converter[] iConverters>
+org.joda.time.convert.ConverterSet.selectSlow : if r4 != r1 goto (branch)
+org.joda.time.convert.ConverterSet.selectSlow : if r1 == null goto return null
+org.joda.time.convert.ConverterSet.selectSlow : goto [?= i1 = i1 + -1]
+org.joda.time.convert.TestConverterSet$3.getSupportedType : return class "java/lang/Byte"
+org.joda.time.convert.TestConverterSet$2.getSupportedType : return class "java/lang/Character"
+org.joda.time.convert.ConverterSet.size : $r1 = r0.<org.joda.time.convert.ConverterSet: org.joda.time.convert.Converter[] iConverters>

@@ -1,0 +1,9 @@
+org.joda.time.DateTimeUtils.setCurrentMillisProvider : staticinvoke <org.joda.time.DateTimeUtils: void checkPermission()>()
+org.joda.time.DateTimeUtils.setCurrentMillisProvider : if r0 != null goto staticinvoke <org.joda.time.DateTimeUtils: void checkPermission()>()
+org.joda.time.DateTimeUtils.setCurrentMillisProvider : <org.joda.time.DateTimeUtils: org.joda.time.DateTimeUtils$MillisProvider cMillisProvider> = r0
+org.joda.time.DateTimeUtils.checkPermission : r0 = staticinvoke <java.lang.System: java.lang.SecurityManager getSecurityManager()>()
+org.joda.time.DateTimeUtils.checkPermission : if r0 == null goto return
+org.joda.time.DateTimeUtils.currentTimeMillis : $r0 = <org.joda.time.DateTimeUtils: org.joda.time.DateTimeUtils$MillisProvider cMillisProvider>
+org.joda.time.TestDateTimeUtils$4.getMillis : return 1L
+org.joda.time.DateTimeUtils.setCurrentMillisSystem : staticinvoke <org.joda.time.DateTimeUtils: void checkPermission()>()
+org.joda.time.DateTimeUtils.setCurrentMillisSystem : $r0 = <org.joda.time.DateTimeUtils: org.joda.time.DateTimeUtils$SystemMillisProvider SYSTEM_MILLIS_PROVIDER>

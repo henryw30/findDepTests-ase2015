@@ -1,0 +1,26 @@
+org.jfree.chart.plot.ContourPlot.setURLGenerator : r0.<org.jfree.chart.plot.ContourPlot: org.jfree.chart.urls.XYURLGenerator urlGenerator> = r1
+org.jfree.chart.plot.Plot.fireChangeEvent : $r1 = new org.jfree.chart.event.PlotChangeEvent
+org.jfree.chart.plot.Plot.notifyListeners : $r3 = r0.<org.jfree.chart.plot.Plot: javax.swing.event.EventListenerList listenerList>
+org.jfree.chart.plot.Plot.notifyListeners : $i1 = lengthof r2
+org.jfree.chart.plot.Plot.notifyListeners : $z0 = r0.<org.jfree.chart.plot.Plot: boolean notify>
+org.jfree.chart.plot.ContourPlot.clearAnnotations : $r1 = r0.<org.jfree.chart.plot.ContourPlot: java.util.List annotations>
+org.jfree.data.general.AbstractDataset.notifyListeners : $r3 = r0.<org.jfree.data.general.AbstractDataset: javax.swing.event.EventListenerList listenerList>
+org.jfree.data.general.AbstractDataset.notifyListeners : $i1 = lengthof r2
+org.jfree.data.statistics.SimpleHistogramDataset.removeAllBins : $r2 = new org.jfree.data.general.DatasetChangeEvent
+org.jfree.data.statistics.SimpleHistogramDataset.removeAllBins : $r1 = new java.util.ArrayList
+org.jfree.chart.plot.Plot.getBackgroundImageAlignment : $i0 = r0.<org.jfree.chart.plot.Plot: int backgroundImageAlignment>
+org.jfree.chart.plot.Marker.notifyListeners : $r3 = r0.<org.jfree.chart.plot.Marker: javax.swing.event.EventListenerList listenerList>
+org.jfree.chart.plot.Marker.notifyListeners : $i1 = lengthof r2
+org.jfree.chart.urls.StandardXYURLGenerator.generateURL : $r3 = new java.lang.StringBuilder
+org.jfree.chart.urls.StandardXYURLGenerator.generateURL : $i2 = virtualinvoke r2.<java.lang.String: int indexOf(java.lang.String)>("?")
+org.jfree.chart.urls.StandardXYURLGenerator.generateURL : return r19
+org.jfree.chart.urls.StandardXYURLGenerator.generateURL : $r8 = new java.lang.StringBuilder
+org.jfree.chart.urls.StandardXYURLGenerator.generateURL : r2 = r0.<org.jfree.chart.urls.StandardXYURLGenerator: java.lang.String prefix>
+org.jfree.chart.plot.Marker.setLabelOffsetType : r0.<org.jfree.chart.plot.Marker: org.jfree.ui.LengthAdjustmentType labelOffsetType> = r1
+org.jfree.chart.plot.Marker.setLabelOffsetType : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "adj")
+org.jfree.chart.plot.Marker.setLabelOffsetType : $r2 = new org.jfree.chart.event.MarkerChangeEvent
+org.jfree.chart.plot.ContourPlot.addRangeMarker : $r4 = r0.<org.jfree.chart.plot.ContourPlot: java.util.List rangeMarkers>
+org.jfree.chart.plot.ContourPlot.addRangeMarker : virtualinvoke r0.<org.jfree.chart.plot.ContourPlot: void fireChangeEvent()>()
+org.jfree.chart.plot.ContourPlot.addRangeMarker : $r3 = r0.<org.jfree.chart.plot.ContourPlot: java.util.List rangeMarkers>
+org.jfree.chart.plot.ContourPlot.addRangeMarker : $r2 = new java.util.ArrayList
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null goto return

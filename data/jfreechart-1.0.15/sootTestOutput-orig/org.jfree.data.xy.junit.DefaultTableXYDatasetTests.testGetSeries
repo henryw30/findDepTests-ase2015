@@ -1,0 +1,30 @@
+org.jfree.data.xy.DefaultTableXYDataset.getSeriesCount : $r1 = r0.<org.jfree.data.xy.DefaultTableXYDataset: java.util.List data>
+org.jfree.data.xy.DefaultTableXYDataset.updateXPoints : z0 = r0.<org.jfree.data.xy.DefaultTableXYDataset: boolean propagateEvents>
+org.jfree.data.xy.DefaultTableXYDataset.updateXPoints : r0.<org.jfree.data.xy.DefaultTableXYDataset: boolean propagateEvents> = 0
+org.jfree.data.xy.DefaultTableXYDataset.updateXPoints : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "series")
+org.jfree.data.xy.DefaultTableXYDataset.updateXPoints : r0.<org.jfree.data.xy.DefaultTableXYDataset: boolean propagateEvents> = z0
+org.jfree.data.xy.DefaultTableXYDataset.updateXPoints : i0 = 0
+org.jfree.data.xy.DefaultTableXYDataset.updateXPoints : $z5 = interfaceinvoke r12.<java.util.Iterator: boolean hasNext()>()
+org.jfree.data.xy.DefaultTableXYDataset.updateXPoints : $r5 = new java.util.HashSet
+org.jfree.data.xy.DefaultTableXYDataset.updateXPoints : $r11 = r0.<org.jfree.data.xy.DefaultTableXYDataset: java.util.HashSet xPoints>
+org.jfree.data.xy.IntervalXYDelegate.datasetChanged : $z0 = r0.<org.jfree.data.xy.IntervalXYDelegate: boolean autoWidth>
+org.jfree.data.general.AbstractDataset.addChangeListener : $r2 = r0.<org.jfree.data.general.AbstractDataset: javax.swing.event.EventListenerList listenerList>
+org.jfree.data.xy.DefaultTableXYDataset.addSeries : $z0 = virtualinvoke r1.<org.jfree.data.xy.XYSeries: boolean getAllowDuplicateXValues()>()
+org.jfree.data.xy.DefaultTableXYDataset.addSeries : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "series")
+org.jfree.data.xy.DefaultTableXYDataset.addSeries : $r3 = r0.<org.jfree.data.xy.DefaultTableXYDataset: java.util.List data>
+org.jfree.data.xy.DefaultTableXYDataset.addSeries : virtualinvoke r0.<org.jfree.data.xy.DefaultTableXYDataset: void fireDatasetChanged()>()
+org.jfree.data.xy.DefaultTableXYDataset.addSeries : specialinvoke r0.<org.jfree.data.xy.DefaultTableXYDataset: void updateXPoints(org.jfree.data.xy.XYSeries)>(r1)
+org.jfree.data.xy.DefaultTableXYDataset.addSeries : virtualinvoke r1.<org.jfree.data.xy.XYSeries: void addChangeListener(org.jfree.data.general.SeriesChangeListener)>(r0)
+org.jfree.data.xy.XYSeries.getItemCount : $r1 = r0.<org.jfree.data.xy.XYSeries: java.util.List data>
+org.jfree.data.general.AbstractDataset.notifyListeners : $r4 = r2[i0]
+org.jfree.data.general.AbstractDataset.notifyListeners : $r3 = r0.<org.jfree.data.general.AbstractDataset: javax.swing.event.EventListenerList listenerList>
+org.jfree.data.general.AbstractDataset.notifyListeners : $i2 = i0 + 1
+org.jfree.data.general.AbstractDataset.notifyListeners : $i1 = lengthof r2
+org.jfree.data.xy.XYSeries.getAllowDuplicateXValues : $z0 = r0.<org.jfree.data.xy.XYSeries: boolean allowDuplicateXValues>
+org.jfree.data.general.AbstractDataset.fireDatasetChanged : $r1 = new org.jfree.data.general.DatasetChangeEvent
+org.jfree.data.general.Series.getKey : $r1 = r0.<org.jfree.data.general.Series: java.lang.Comparable key>
+org.jfree.data.general.Series.addChangeListener : $r2 = r0.<org.jfree.data.general.Series: javax.swing.event.EventListenerList listeners>
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null goto return
+org.jfree.data.xy.DefaultTableXYDataset.getSeries : if i0 < 0 goto $r1 = new java.lang.IllegalArgumentException
+org.jfree.data.xy.DefaultTableXYDataset.getSeries : $r1 = new java.lang.IllegalArgumentException
+org.jfree.data.xy.DefaultTableXYDataset.getSeries : $r2 = r0.<org.jfree.data.xy.DefaultTableXYDataset: java.util.List data>

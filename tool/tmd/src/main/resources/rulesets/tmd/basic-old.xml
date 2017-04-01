@@ -1,0 +1,290 @@
+<?xml version="1.0"?>
+
+<ruleset name="basic"
+    xmlns="http://pmd.sourceforge.net/ruleset/2.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://pmd.sourceforge.net/ruleset/2.0.0 http://pmd.sourceforge.net/ruleset_2_0_0.xsd">
+  <description>
+The Basic ruleset contains a collection of good practices which should be followed.
+  </description>
+
+
+<rule name="SetUpShouldBeDeclaredBeforeTests"
+      message="Set Up method should be declared before tests."
+      class="edu.unl.e2.tmd.SetUpShouldBeDeclaredBeforeTestsRule"
+      language="java">
+     <description></description>
+     <priority>3</priority>
+     <example>
+     <![CDATA[
+  
+     ]]>
+     </example>
+</rule>
+
+<rule name="BeforeClassShouldBeDeclaredBeforeTests"
+      message="BeforeClass method should be declared before tests."
+      class="edu.unl.e2.tmd.BeforeClassShouldBeDeclaredBeforeTestsRule"
+      language="java">
+     <description></description>
+     <priority>3</priority>
+     <example>
+     <![CDATA[
+  
+     ]]>
+     </example>
+</rule>
+
+<rule name="TearDownShouldBeDeclaredBeforeTests"
+      message="Tear Down method should be declared before tests."
+      class="edu.unl.e2.tmd.TearDownShouldBeDeclaredBeforeTestsRule"
+      language="java">
+     <description></description>
+     <priority>3</priority>
+     <example>
+     <![CDATA[
+  
+     ]]>
+     </example>
+</rule>
+
+<rule name="AfterClassShouldBeDeclaredBeforeTests"
+      message="AfterClass method should be declared before tests."
+      class="edu.unl.e2.tmd.AfterClassShouldBeDeclaredBeforeTestsRule"
+      language="java">
+     <description></description>
+     <priority>3</priority>
+     <example>
+     <![CDATA[
+  
+     ]]>
+     </example>
+</rule>
+
+<rule name="TestsShouldBeDeclaredBeforeHelperMethods"
+      message="Tests should be declared before helper methods."
+      class="edu.unl.e2.tmd.TestsShouldBeDeclaredBeforeHelperMethodsRule"
+      language="java">
+     <description></description>
+     <priority>3</priority>
+     <example>
+     <![CDATA[
+  
+     ]]>
+     </example>
+</rule>
+
+<rule name="StubShouldBeGeneric"
+      message="Stub declaration should be not fixed to a literal."
+      class="edu.unl.e2.tmd.StubShouldBeGenericRule"
+      language="java">
+     <description></description>
+     <priority>3</priority>
+     <example>
+     <![CDATA[
+  
+     ]]>
+     </example>
+</rule>
+
+<rule name="MocksShouldBeMinimized"
+      message="It is better to use a stub and check the state instead of verifying the interaction with a dependency."
+      class="edu.unl.e2.tmd.MocksShouldBeMinimizedRule"
+      language="java">
+     <description></description>
+     <priority>3</priority>
+     <example>
+     <![CDATA[
+  
+     ]]>
+     </example>
+</rule>
+
+<rule name="ShouldNotUseReflection"
+      message="SUT should be test through its public API."
+      class="edu.unl.e2.tmd.ShouldNotUseReflectionRule"
+      language="java">
+     <description></description>
+     <priority>3</priority>
+     <example>
+     <![CDATA[
+    
+     ]]>
+     </example>
+</rule>
+
+
+<rule name="StaticFieldsShouldBeSetUpOrTearedDown"
+      message="Static field should be set up or teared down in order to avoid test dependency issues."
+      class="edu.unl.e2.tmd.StaticFieldsShouldBeSetUpOrTearedDownRule"
+      language="java">
+     <description></description>
+     <priority>3</priority>
+     <example>
+     <![CDATA[
+        private static Option option;
+        
+        @Before public void setUp(){
+        	option=null;
+        }    
+     ]]>
+     </example>
+</rule>
+
+<rule name="RefactorNewCalls"
+      message="It is better to extract call to new in their own methods."
+      class="edu.unl.e2.tmd.RefactorNewCallsRule"
+      language="java">
+     <description>To Do.</description>
+     <priority>3</priority>
+     <example>
+     <![CDATA[
+    
+     ]]>
+     </example>
+</rule>
+
+
+
+<rule name="ThreadSleepCallShouldBeAvoided"
+      message="Calls to Thread.sleep should be avoided."
+      class="net.sourceforge.pmd.lang.rule.XPathRule"
+      language="java">
+      <properties>
+        <property name="xpath">
+           <value>
+           <![CDATA[
+//ClassOrInterfaceBodyDeclaration[Annotation/MarkerAnnotation/Name/@Image='Test']/MethodDeclaration/Block[BlockStatement/Statement/StatementExpression/PrimaryExpression/PrimaryPrefix/Name/@Image='Thread.sleep']
+           ]]>
+           </value>
+        </property>
+     </properties>
+     <description></description>
+     <priority>1</priority>
+     <example>
+     <![CDATA[
+        @Test public void test(){
+            ...            
+            Thread.wait();
+            ...        
+        }     
+     ]]>
+     </example>
+</rule>
+<rule name="ThreadSleepCallShouldBeAvoided2"
+      message="Calls to Thread.sleep should be avoided."
+      class="net.sourceforge.pmd.lang.rule.XPathRule"
+      language="java">
+      <properties>
+        <property name="xpath">
+           <value>
+           <![CDATA[
+//MethodDeclaration[starts-with(@MethodName,'test')]/Block[BlockStatement/Statement/StatementExpression/PrimaryExpression/PrimaryPrefix/Name/@Image='Thread.sleep']
+           ]]>
+           </value>
+        </property>
+     </properties>
+     <description></description>
+     <priority>1</priority>
+     <example>
+     <![CDATA[
+        @Test public void test(){
+            ...            
+            Thread.wait();
+            ...        
+        }     
+     ]]>
+     </example>
+</rule>
+
+
+<rule name="ExpetedExceptionShouldNotBeGeneric"
+      message="Expected exception should no be a specific type other than Exception and RuntimeException."
+      class="net.sourceforge.pmd.lang.rule.XPathRule"
+      language="java">
+      <properties>
+        <property name="xpath">
+           <value>
+           <![CDATA[
+//ClassOrInterfaceBodyDeclaration/Annotation/NormalAnnotation[Name/@Image='Test']/MemberValuePairs/MemberValuePair[@Image='expected']//ClassOrInterfaceType[@Image='Exception' or @Image='RuntimeException']
+           ]]>
+           </value>
+        </property>
+     </properties>
+     <description></description>
+     <priority>1</priority>
+     <example>
+     <![CDATA[
+     ]]>
+     </example>
+</rule>
+
+
+<rule name="ExpetedExceptionShouldNotBeGeneric2"
+      message="Expected exception should no be a specific type other than Exception and RuntimeException."
+      class="net.sourceforge.pmd.lang.rule.XPathRule"
+      language="java">
+      <properties>
+        <property name="xpath">
+           <value>
+           <![CDATA[
+//ClassOrInterfaceBodyDeclaration[Annotation/MarkerAnnotation/Name/@Image='Test']//CatchStatement//ClassOrInterfaceType[@Image='Exception' or @Image='RuntimeException']
+           ]]>
+           </value>
+        </property>
+     </properties>
+     <description></description>
+     <priority>1</priority>
+     <example>
+     <![CDATA[    
+     ]]>
+     </example>
+</rule>
+
+<rule name="ExpetedExceptionShouldNotBeGeneric3"
+      message="Expected exception should no be a specific type other than Exception and RuntimeException."
+      class="net.sourceforge.pmd.lang.rule.XPathRule"
+      language="java">
+      <properties>
+        <property name="xpath">
+           <value>
+           <![CDATA[
+//MethodDeclaration[starts-with(@MethodName,'test')]//CatchStatement//ClassOrInterfaceType[@Image='Exception' or @Image='RuntimeException']
+           ]]>
+           </value>
+        </property>
+     </properties>
+     <description></description>
+     <priority>1</priority>
+     <example>
+     <![CDATA[    
+     ]]>
+     </example>
+</rule>
+
+<!-- rule name="JUnitTestsShouldIncludeAssert"
+    		 since="2.0"
+          message="JUnit tests should include assert() or fail()"
+          class="net.sourceforge.pmd.lang.java.rule.junit.JUnitTestsShouldIncludeAssertRule"
+          externalInfoUrl="${pmd.website.baseurl}/rules/java/junit.html#JUnitTestsShouldIncludeAssert">
+        <description>
+JUnit tests should include at least one assertion.  This makes the tests more robust, and using assert 
+with messages provide the developer a clearer idea of what the test does.
+        </description>
+          <priority>3</priority>
+        <example>
+    <![CDATA[
+public class Foo extends TestCase {
+   public void testSomething() {
+      Bar b = findBar();
+   // This is better than having a NullPointerException
+   // assertNotNull("bar not found", b);
+   b.work();
+   }
+}
+    ]]>
+        </example>
+</rule-->
+
+
+</ruleset>

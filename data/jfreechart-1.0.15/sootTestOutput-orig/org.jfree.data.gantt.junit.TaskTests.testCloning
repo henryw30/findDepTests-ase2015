@@ -1,0 +1,11 @@
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null goto return
+org.jfree.data.gantt.Task.equals : r2 = (org.jfree.data.gantt.Task) r1
+org.jfree.data.gantt.Task.equals : $r7 = r0.<org.jfree.data.gantt.Task: java.lang.Double percentComplete>
+org.jfree.data.gantt.Task.equals : $r3 = r0.<org.jfree.data.gantt.Task: java.lang.String description>
+org.jfree.data.gantt.Task.equals : $z0 = r1 instanceof org.jfree.data.gantt.Task
+org.jfree.data.gantt.Task.equals : $r9 = r0.<org.jfree.data.gantt.Task: java.util.List subtasks>
+org.jfree.data.gantt.Task.equals : if r1 != r0 goto $z0 = r1 instanceof org.jfree.data.gantt.Task
+org.jfree.data.gantt.Task.equals : return 1
+org.jfree.data.gantt.Task.equals : $r5 = r0.<org.jfree.data.gantt.Task: org.jfree.data.time.TimePeriod duration>
+org.jfree.data.gantt.Task.clone : $r2 = specialinvoke r0.<java.lang.Object: java.lang.Object clone()>()
+org.jfree.data.gantt.Task.clone : return r1

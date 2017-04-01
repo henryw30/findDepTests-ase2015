@@ -1,0 +1,72 @@
+org.joda.time.DateTimeFieldType.monthOfYear : $r0 = <org.joda.time.DateTimeFieldType: org.joda.time.DateTimeFieldType MONTH_OF_YEAR_TYPE>
+org.joda.time.DateTimeFieldType.secondOfMinute : $r0 = <org.joda.time.DateTimeFieldType: org.joda.time.DateTimeFieldType SECOND_OF_MINUTE_TYPE>
+org.joda.time.convert.ConverterManager.getInstantConverter : if r2 == null goto $r7 = new java.lang.IllegalArgumentException
+org.joda.time.convert.ConverterManager.getInstantConverter : return r2
+org.joda.time.convert.ConverterManager.getInstantConverter : $r5 = virtualinvoke r1.<java.lang.Object: java.lang.Class getClass()>()
+org.joda.time.convert.ConverterManager.getInstantConverter : $r4 = r0.<org.joda.time.convert.ConverterManager: org.joda.time.convert.ConverterSet iInstantConverters>
+org.joda.time.DateTimeFieldType.dayOfYear : $r0 = <org.joda.time.DateTimeFieldType: org.joda.time.DateTimeFieldType DAY_OF_YEAR_TYPE>
+org.joda.time.DateTimeComparator.compare : $b3 = l0 cmp l1
+org.joda.time.DateTimeComparator.compare : $r3 = staticinvoke <org.joda.time.convert.ConverterManager: org.joda.time.convert.ConverterManager getInstance()>()
+org.joda.time.DateTimeComparator.compare : l0 = interfaceinvoke r4.<org.joda.time.convert.InstantConverter: long getInstantMillis(java.lang.Object,org.joda.time.Chronology)>(r1, r5)
+org.joda.time.DateTimeComparator.compare : $r11 = r0.<org.joda.time.DateTimeComparator: org.joda.time.DateTimeFieldType iLowerLimit>
+org.joda.time.DateTimeComparator.compare : return 1
+org.joda.time.DateTimeComparator.compare : $r7 = (org.joda.time.Chronology) null
+org.joda.time.DateTimeComparator.compare : $r8 = staticinvoke <org.joda.time.convert.ConverterManager: org.joda.time.convert.ConverterManager getInstance()>()
+org.joda.time.DateTimeComparator.compare : return -1
+org.joda.time.DateTimeComparator.compare : $r19 = r0.<org.joda.time.DateTimeComparator: org.joda.time.DateTimeFieldType iUpperLimit>
+org.joda.time.DateTimeComparator.compare : $r10 = (org.joda.time.Chronology) null
+org.joda.time.DateTimeComparator.compare : l1 = interfaceinvoke r9.<org.joda.time.convert.InstantConverter: long getInstantMillis(java.lang.Object,org.joda.time.Chronology)>(r2, r6)
+org.joda.time.DateTimeComparator.compare : $b2 = l0 cmp l1
+org.joda.time.DateTimeComparator.compare : $r16 = r0.<org.joda.time.DateTimeComparator: org.joda.time.DateTimeFieldType iUpperLimit>
+org.joda.time.DateTimeComparator.compare : $r17 = r0.<org.joda.time.DateTimeComparator: org.joda.time.DateTimeFieldType iUpperLimit>
+org.joda.time.convert.ReadableInstantConverter.getInstantMillis : $r3 = (org.joda.time.ReadableInstant) r1
+org.joda.time.base.BaseDateTime.checkInstant : return l0
+org.joda.time.chrono.ISOChronology.getInstance : if r0 != null goto $i1 = staticinvoke <java.lang.System: int identityHashCode(java.lang.Object)>(r0)
+org.joda.time.chrono.ISOChronology.getInstance : $i1 = staticinvoke <java.lang.System: int identityHashCode(java.lang.Object)>(r0)
+org.joda.time.chrono.ISOChronology.getInstance : $r5 = <org.joda.time.chrono.ISOChronology: org.joda.time.chrono.ISOChronology[] cFastCache>
+org.joda.time.chrono.ISOChronology.getInstance : return r1
+org.joda.time.chrono.ISOChronology.getInstance : if r1 == null goto $r7 = <org.joda.time.chrono.ISOChronology: java.util.Map cCache>
+org.joda.time.DateTimeFieldType.minuteOfHour : $r0 = <org.joda.time.DateTimeFieldType: org.joda.time.DateTimeFieldType MINUTE_OF_HOUR_TYPE>
+org.joda.time.convert.ConverterSet.select : $r6 = r2[i1]
+org.joda.time.convert.ConverterSet.select : if r1 != null goto $i5 = virtualinvoke r1.<java.lang.Object: int hashCode()>()
+org.joda.time.convert.ConverterSet.select : r2 = r0.<org.joda.time.convert.ConverterSet: org.joda.time.convert.ConverterSet$Entry[] iSelectEntries>
+org.joda.time.convert.ConverterSet.select : i0 = lengthof r2
+org.joda.time.convert.ConverterSet.select : $r7 = r3.<org.joda.time.convert.ConverterSet$Entry: java.lang.Class iType>
+org.joda.time.convert.ConverterSet.select : $r8 = r3.<org.joda.time.convert.ConverterSet$Entry: org.joda.time.convert.Converter iConverter>
+org.joda.time.chrono.BasicChronology.getZone : $r2 = virtualinvoke r0.<org.joda.time.chrono.BasicChronology: org.joda.time.Chronology getBase()>()
+org.joda.time.chrono.BasicChronology.getZone : $r4 = <org.joda.time.DateTimeZone: org.joda.time.DateTimeZone UTC>
+org.joda.time.DateTimeUtils.getChronology : if r0 != null goto return r0
+org.joda.time.DateTimeUtils.getChronology : return r0
+org.joda.time.chrono.AssembledChronology.getBase : $r1 = r0.<org.joda.time.chrono.AssembledChronology: org.joda.time.Chronology iBase>
+org.joda.time.DateTimeComparator.getTimeOnlyInstance : $r0 = <org.joda.time.DateTimeComparator: org.joda.time.DateTimeComparator TIME_INSTANCE>
+org.joda.time.DateTimeComparator.getDateOnlyInstance : $r0 = <org.joda.time.DateTimeComparator: org.joda.time.DateTimeComparator DATE_INSTANCE>
+org.joda.time.DateTimeFieldType.weekOfWeekyear : $r0 = <org.joda.time.DateTimeFieldType: org.joda.time.DateTimeFieldType WEEK_OF_WEEKYEAR_TYPE>
+org.joda.time.DateTimeFieldType.year : $r0 = <org.joda.time.DateTimeFieldType: org.joda.time.DateTimeFieldType YEAR_TYPE>
+org.joda.time.DateTimeComparator.getInstance : $r7 = new org.joda.time.DateTimeComparator
+org.joda.time.DateTimeComparator.getInstance : if r0 != null goto $r2 = staticinvoke <org.joda.time.DateTimeFieldType: org.joda.time.DateTimeFieldType dayOfYear()>()
+org.joda.time.DateTimeComparator.getInstance : $r2 = staticinvoke <org.joda.time.DateTimeFieldType: org.joda.time.DateTimeFieldType dayOfYear()>()
+org.joda.time.DateTimeComparator.getInstance : $r1 = staticinvoke <org.joda.time.DateTimeComparator: org.joda.time.DateTimeComparator getInstance(org.joda.time.DateTimeFieldType,org.joda.time.DateTimeFieldType)>(r0, null)
+org.joda.time.DateTimeComparator.getInstance : if r0 != null goto $r7 = new org.joda.time.DateTimeComparator
+org.joda.time.DateTimeFieldType.dayOfMonth : $r0 = <org.joda.time.DateTimeFieldType: org.joda.time.DateTimeFieldType DAY_OF_MONTH_TYPE>
+org.joda.time.chrono.AssembledChronology.getZone : $r3 = virtualinvoke r1.<org.joda.time.Chronology: org.joda.time.DateTimeZone getZone()>()
+org.joda.time.chrono.AssembledChronology.getZone : $r2 = r0.<org.joda.time.chrono.AssembledChronology: org.joda.time.Chronology iBase>
+org.joda.time.base.BaseDateTime.checkChronology : $r2 = staticinvoke <org.joda.time.DateTimeUtils: org.joda.time.Chronology getChronology(org.joda.time.Chronology)>(r1)
+org.joda.time.DateTimeFieldType.dayOfWeek : $r0 = <org.joda.time.DateTimeFieldType: org.joda.time.DateTimeFieldType DAY_OF_WEEK_TYPE>
+org.joda.time.DateTimeFieldType.weekyear : $r0 = <org.joda.time.DateTimeFieldType: org.joda.time.DateTimeFieldType WEEKYEAR_TYPE>
+org.joda.time.base.BaseDateTime.getMillis : $l0 = r0.<org.joda.time.base.BaseDateTime: long iMillis>
+org.joda.time.base.BaseDateTime.getChronology : $r1 = r0.<org.joda.time.base.BaseDateTime: org.joda.time.Chronology iChronology>
+org.joda.time.DateTimeFieldType.hourOfDay : $r0 = <org.joda.time.DateTimeFieldType: org.joda.time.DateTimeFieldType HOUR_OF_DAY_TYPE>
+org.joda.time.field.PreciseDurationDateTimeField.remainder : $b1 = l0 cmp 0L
+org.joda.time.field.PreciseDurationDateTimeField.remainder : $l2 = r0.<org.joda.time.field.PreciseDurationDateTimeField: long iUnitMillis>
+org.joda.time.chrono.AssembledChronology.secondOfMinute : $r1 = r0.<org.joda.time.chrono.AssembledChronology: org.joda.time.DateTimeField iSecondOfMinute>
+org.joda.time.convert.ReadableInstantConverter.getChronology : r2 = staticinvoke <org.joda.time.DateTimeUtils: org.joda.time.Chronology getChronology(org.joda.time.Chronology)>(r4)
+org.joda.time.convert.ReadableInstantConverter.getChronology : return r2
+org.joda.time.convert.ReadableInstantConverter.getChronology : $r3 = (org.joda.time.ReadableInstant) r1
+org.joda.time.convert.ReadableInstantConverter.getChronology : if r2 != null goto return r2
+org.joda.time.convert.ConverterManager.getInstance : $r2 = <org.joda.time.convert.ConverterManager: org.joda.time.convert.ConverterManager INSTANCE>
+org.joda.time.convert.ConverterManager.getInstance : $r0 = <org.joda.time.convert.ConverterManager: org.joda.time.convert.ConverterManager INSTANCE>
+org.joda.time.chrono.GregorianChronology.getZone : $r1 = specialinvoke r0.<org.joda.time.chrono.BasicGJChronology: org.joda.time.DateTimeZone getZone()>()
+org.joda.time.chrono.ISOChronology.getInstanceUTC : $r0 = <org.joda.time.chrono.ISOChronology: org.joda.time.chrono.ISOChronology INSTANCE_UTC>
+org.joda.time.DateTimeFieldType$StandardDateTimeFieldType.getField : r2 = staticinvoke <org.joda.time.DateTimeUtils: org.joda.time.Chronology getChronology(org.joda.time.Chronology)>(r1)
+org.joda.time.DateTimeFieldType$StandardDateTimeFieldType.getField : $b0 = r0.<org.joda.time.DateTimeFieldType$StandardDateTimeFieldType: byte iOrdinal>
+org.joda.time.DateTimeFieldType$StandardDateTimeFieldType.getField : $r23 = virtualinvoke r2.<org.joda.time.Chronology: org.joda.time.DateTimeField secondOfMinute()>()

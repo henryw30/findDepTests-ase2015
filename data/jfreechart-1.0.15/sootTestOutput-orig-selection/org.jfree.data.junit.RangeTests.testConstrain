@@ -1,0 +1,22 @@
+org.jfree.data.Range.constrain : d1 = d0 >>>>>>>> org.jfree.data.Range.constrain : $z0 = virtualinvoke r0.<org.jfree.data.Range: boolean contains(double)>(d0)
+org.jfree.data.Range.constrain : $z0 = virtualinvoke r0.<org.jfree.data.Range: boolean contains(double)>(d0) >>>>>>>> org.jfree.data.Range.contains : $d1 = r0.<org.jfree.data.Range: double lower>
+org.jfree.data.Range.contains : $d1 = r0.<org.jfree.data.Range: double lower> >>>>>>>> org.jfree.data.Range.contains : $b0 = d0 cmpl $d1
+org.jfree.data.Range.contains : $b0 = d0 cmpl $d1 >>>>>>>> org.jfree.data.Range.contains : if $b0 < 0
+org.jfree.data.Range.contains : if $b0 < 0 >>>>>>>> org.jfree.data.Range.contains : $d2 = r0.<org.jfree.data.Range: double upper>
+org.jfree.data.Range.contains : $d2 = r0.<org.jfree.data.Range: double upper> >>>>>>>> org.jfree.data.Range.contains : $b1 = d0 cmpg $d2
+org.jfree.data.Range.contains : $b1 = d0 cmpg $d2 >>>>>>>> org.jfree.data.Range.contains : if $b1 > 0
+org.jfree.data.Range.contains : if $b1 > 0 >>>>>>>> org.jfree.data.Range.contains : $z0 = 1
+org.jfree.data.Range.contains : $z0 = 1 >>>>>>>> org.jfree.data.Range.contains : goto [?= return $z0]
+org.jfree.data.Range.contains : goto [?= return $z0] >>>>>>>> org.jfree.data.Range.contains : return $z0
+org.jfree.data.Range.contains : return $z0 >>>>>>>> org.jfree.data.Range.constrain : if $z0 != 0
+org.jfree.data.Range.constrain : if $z0 != 0 >>>>>>>> org.jfree.data.Range.constrain : return d1
+org.jfree.data.Range.constrain : return d1 >>>>>>>> org.jfree.data.Range.contains : $z0 = 0
+org.jfree.data.Range.contains : $z0 = 0 >>>>>>>> org.jfree.data.Range.constrain : $d2 = r0.<org.jfree.data.Range: double upper>
+org.jfree.data.Range.constrain : $d2 = r0.<org.jfree.data.Range: double upper> >>>>>>>> org.jfree.data.Range.constrain : $b0 = d0 cmpl $d2
+org.jfree.data.Range.constrain : $b0 = d0 cmpl $d2 >>>>>>>> org.jfree.data.Range.constrain : if $b0 <= 0
+org.jfree.data.Range.constrain : if $b0 <= 0 >>>>>>>> org.jfree.data.Range.constrain : $d3 = r0.<org.jfree.data.Range: double lower>
+org.jfree.data.Range.constrain : $d3 = r0.<org.jfree.data.Range: double lower> >>>>>>>> org.jfree.data.Range.constrain : $b1 = d0 cmpg $d3
+org.jfree.data.Range.constrain : $b1 = d0 cmpg $d3 >>>>>>>> org.jfree.data.Range.constrain : if $b1 >= 0
+org.jfree.data.Range.constrain : if $b1 >= 0 >>>>>>>> org.jfree.data.Range.constrain : d1 = r0.<org.jfree.data.Range: double lower>
+org.jfree.data.Range.constrain : d1 = r0.<org.jfree.data.Range: double lower> >>>>>>>> org.jfree.data.Range.constrain : d1 = r0.<org.jfree.data.Range: double upper>
+org.jfree.data.Range.constrain : d1 = r0.<org.jfree.data.Range: double upper> >>>>>>>> org.jfree.data.Range.constrain : goto [?= return d1]

@@ -1,0 +1,20 @@
+org.jfree.data.xy.XYSeries.toArray : i0 = virtualinvoke r0.<org.jfree.data.xy.XYSeries: int getItemCount()>() >>>>>>>> org.jfree.data.xy.XYSeries.toArray : r1 = newmultiarray (double)[2][i0]
+org.jfree.data.xy.XYSeries.toArray : r1 = newmultiarray (double)[2][i0] >>>>>>>> org.jfree.data.xy.XYSeries.toArray : i1 = 0
+org.jfree.data.xy.XYSeries.toArray : i1 = 0 >>>>>>>> org.jfree.data.xy.XYSeries.toArray : if i1 >= i0
+org.jfree.data.xy.XYSeries.toArray : if i1 >= i0 >>>>>>>> org.jfree.data.xy.XYSeries.toArray : $r3 = r1[0]
+org.jfree.data.xy.XYSeries.toArray : if i1 >= i0 >>>>>>>> org.jfree.data.xy.XYSeries.toArray : return r1
+org.jfree.data.xy.XYSeries.toArray : $r3 = r1[0] >>>>>>>> org.jfree.data.xy.XYSeries.toArray : $r4 = virtualinvoke r0.<org.jfree.data.xy.XYSeries: java.lang.Number getX(int)>(i1)
+org.jfree.data.xy.XYSeries.toArray : $r4 = virtualinvoke r0.<org.jfree.data.xy.XYSeries: java.lang.Number getX(int)>(i1) >>>>>>>> org.jfree.data.xy.XYSeries.toArray : $d0 = virtualinvoke $r4.<java.lang.Number: double doubleValue()>()
+org.jfree.data.xy.XYSeries.toArray : $d0 = virtualinvoke $r4.<java.lang.Number: double doubleValue()>() >>>>>>>> org.jfree.data.xy.XYSeries.toArray : $r3[i1] = $d0
+org.jfree.data.xy.XYSeries.toArray : $r3[i1] = $d0 >>>>>>>> org.jfree.data.xy.XYSeries.toArray : r2 = virtualinvoke r0.<org.jfree.data.xy.XYSeries: java.lang.Number getY(int)>(i1)
+org.jfree.data.xy.XYSeries.toArray : r2 = virtualinvoke r0.<org.jfree.data.xy.XYSeries: java.lang.Number getY(int)>(i1) >>>>>>>> org.jfree.data.xy.XYSeries.toArray : if r2 == null
+org.jfree.data.xy.XYSeries.toArray : if r2 == null >>>>>>>> org.jfree.data.xy.XYSeries.toArray : $r5 = r1[1]
+org.jfree.data.xy.XYSeries.toArray : if r2 == null >>>>>>>> org.jfree.data.xy.XYSeries.toArray : $r6 = r1[1]
+org.jfree.data.xy.XYSeries.toArray : $r6 = r1[1] >>>>>>>> org.jfree.data.xy.XYSeries.toArray : $r6[i1] = #NaN
+org.jfree.data.xy.XYSeries.toArray : $r6[i1] = #NaN >>>>>>>> org.jfree.data.xy.XYSeries.toArray : i1 = i1 + 1
+org.jfree.data.xy.XYSeries.toArray : i1 = i1 + 1 >>>>>>>> org.jfree.data.xy.XYSeries.toArray : goto [?= (branch)]
+org.jfree.data.xy.XYSeries.toArray : goto [?= (branch)] >>>>>>>> org.jfree.data.xy.XYSeries.toArray : if i1 >= i0
+org.jfree.data.xy.XYSeries.toArray : $r5 = r1[1] >>>>>>>> org.jfree.data.xy.XYSeries.toArray : $d1 = virtualinvoke r2.<java.lang.Number: double doubleValue()>()
+org.jfree.data.xy.XYSeries.toArray : $d1 = virtualinvoke r2.<java.lang.Number: double doubleValue()>() >>>>>>>> org.jfree.data.xy.XYSeries.toArray : $r5[i1] = $d1
+org.jfree.data.xy.XYSeries.toArray : $r5[i1] = $d1 >>>>>>>> org.jfree.data.xy.XYSeries.toArray : goto [?= i1 = i1 + 1]
+org.jfree.data.xy.XYSeries.toArray : goto [?= i1 = i1 + 1] >>>>>>>> org.jfree.data.xy.XYSeries.toArray : i1 = i1 + 1

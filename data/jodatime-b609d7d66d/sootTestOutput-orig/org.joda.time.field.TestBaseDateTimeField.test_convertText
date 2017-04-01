@@ -1,0 +1,13 @@
+org.joda.time.field.BaseDateTimeField.convertText : $r5 = new org.joda.time.IllegalFieldValueException
+org.joda.time.field.BaseDateTimeField.convertText : r3 = $r4
+org.joda.time.field.BaseDateTimeField.convertText : $i0 = staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>(r1)
+org.joda.time.DateTimeFieldType.secondOfMinute : $r0 = <org.joda.time.DateTimeFieldType: org.joda.time.DateTimeFieldType SECOND_OF_MINUTE_TYPE>
+org.joda.time.IllegalFieldValueException.createMessage : $r12 = virtualinvoke r3.<java.lang.StringBuffer: java.lang.String toString()>()
+org.joda.time.IllegalFieldValueException.createMessage : virtualinvoke r3.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>(r1)
+org.joda.time.IllegalFieldValueException.createMessage : $r8 = virtualinvoke r3.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>(" for ")
+org.joda.time.IllegalFieldValueException.createMessage : virtualinvoke r3.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>("null")
+org.joda.time.IllegalFieldValueException.createMessage : $r2 = new java.lang.StringBuffer
+org.joda.time.IllegalFieldValueException.createMessage : if r1 != null goto virtualinvoke r3.<java.lang.StringBuffer: java.lang.StringBuffer append(char)>(34)
+org.joda.time.IllegalFieldValueException.createMessage : virtualinvoke r3.<java.lang.StringBuffer: java.lang.StringBuffer append(char)>(34)
+org.joda.time.DateTimeFieldType.getName : $r1 = r0.<org.joda.time.DateTimeFieldType: java.lang.String iName>
+org.joda.time.field.BaseDateTimeField.getType : $r1 = r0.<org.joda.time.field.BaseDateTimeField: org.joda.time.DateTimeFieldType iType>

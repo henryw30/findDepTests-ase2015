@@ -1,0 +1,39 @@
+ERROR 2016-09-25 12:05:17,455 (ConflictDaemon.java:153) - Runtime Exception caught while getting state for: shortName_HG_cloneString
+null
+java.lang.NullPointerException
+	at crystal.client.ConflictDaemon.calculateRelationship(ConflictDaemon.java:111)
+	at crystal.client.ConflictDaemonTest.testRelationship(ConflictDaemonTest.java:84)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:160)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:138)
+	at edu.washington.cs.dt.util.JUnitTestExecutor.executeWithJUnit4Runner(JUnitTestExecutor.java:64)
+	at edu.washington.cs.dt.util.TestRunnerWrapper.main(TestRunnerWrapper.java:46)
+myProject
+myProject
+Kenneth Reitz <me@kennethreitz.com> and Georg Brandl <georg@python.org>
+false
+false
+false
+false
+false
+Execution time: 18297570626
+0-th run
+Pass: 54, Fail: 0, Error: 23
+{crystal.client.ProjectPreferencesTest.testNullInputConstructor=87916664, crystal.client.ProjectPreferencesTest.testProjectPreferences=87412329, crystal.client.ProjectPreferencesTest.testDuplicateAddDataSource=1614152, crystal.client.ProjectPreferencesTest.testAddDataSource=2016023, crystal.client.ProjectPreferencesTest.testGetNumOfVisibleSources=1430921, crystal.client.ProjectPreferencesTest.testRemoveDataSource=1983896, crystal.client.ProjectPreferencesTest.testGetProjectCheckoutLocation=2113836, crystal.client.ProjectPreferencesTest.testClone=1751006, crystal.client.ConflictDaemonTest.testGetInstance=2524110, crystal.client.ConflictDaemonTest.testPrePerformCalculations=2626730, crystal.client.ConflictDaemonTest.testLocalState=13441588, crystal.client.ConflictDaemonTest.testRelationship=31682356, crystal.client.ConflictDaemonTest.testAddListener=4264122, crystal.client.ClientPreferencesTest.testNullInputConstructor=1671488, crystal.client.ClientPreferencesTest.testClone=1866432, crystal.client.ClientPreferencesTest.testDuplicateAddProjectPreferences=1699589, crystal.client.ClientPreferencesTest.testAddProjectPreferences=1685040, crystal.client.ClientPreferencesTest.testDuplicateProject=2011685, crystal.client.ClientPreferencesTest.testRemoveProjectPreferences=1660630, crystal.client.ClientPreferencesTest.testRemoveProjectPreferencesAtIndex=1625329, crystal.client.ClientPreferencesTest.testLoadPreferencesFromXML=4545156, crystal.client.ClientPreferencesTest.testClientPreferences=1538192, crystal.client.ClientPreferencesTest.testDefaultSetting=1659806, crystal.client.ClientPreferencesTest.testSavePreferencesToXML=36851027, crystal.model.RevisionHistoryTest.testEqualsObject=261766528, crystal.model.RevisionHistoryTest.testSuperSubHistory=121360600, crystal.model.RevisionHistoryTest.testGetCommitters=62855875, crystal.model.DataSourceTest.testClone=1605500, crystal.model.DataSourceTest.testSetField=1314061, crystal.model.DataSourceTest.testSetRemoteCmd=1288103, crystal.model.DataSourceTest.testSetCompileCommand=1301324, crystal.model.DataSourceTest.testSetEnabled=1335369, crystal.model.DataSourceTest.testIsHidden=1378145, crystal.model.DataSourceTest.testSetParent=1226233, crystal.model.DataSourceTest.testSetKind=1178714, crystal.model.DataSourceTest.testSetCloneString=1188906, crystal.model.DataSourceTest.testToString=1195491, crystal.model.DataSourceTest.testSetHistory=1989164470, crystal.model.RelationshipTest.testNullInputConstructor=1493551, crystal.model.RelationshipTest.testEqualsObject=2003024, crystal.model.RelationshipTest.testStrangeNameConstructor=1192612, crystal.model.RelationshipTest.testConstructor=1349435, crystal.model.RelationshipTest.testCalculateAction=2216908, crystal.model.RelationshipTest.testGetActionRepoKind=1447277, crystal.model.RelationshipTest.testGetDominant=1171984, crystal.model.LocalStateResultTest.testToString=1332705, crystal.model.LocalStateResultTest.testGetLastAction=1197678, crystal.model.LocalStateResultTest.testGetName=1150065, crystal.model.LocalStateResultTest.testGetNoErrorMessage=1179932, crystal.model.LocalStateResultTest.testGetLastErrorMessage=1172838, crystal.model.LocalStateResultTest.testGetLocalState=1239232, crystal.model.LocalStateResultTest.testGetLastLocalState=1186025, crystal.model.LocalStateResultTest.testErrorActionNameConstructor=1103352, crystal.model.LocalStateResultTest.testGetAction=1095829, crystal.model.LocalStateResultTest.testStrangeActionName=1288263, crystal.server.HgLogParserTest.testParseNullLog=690466, crystal.server.HgLogParserTest.testParseLog=154320507, crystal.server.HgLogParserTest.testSingleLog=1586732, crystal.server.HgLogParserTest.testTwoLogs=1206258, crystal.server.TestHgStateChecker.testBasicMergeConflict=7654243, crystal.server.TestHgStateChecker.testBasicCleanMerge=1373215, crystal.server.TestHgStateChecker.testBasicAhead=1990739, crystal.server.TestHgStateChecker.testBasicBehind=1572405, crystal.server.TestHgStateChecker.testBasicSame=1262317, crystal.server.GuidanceCheckerTest.testGetWhen=3097364, crystal.server.GuidanceCheckerTest.testGetCommitters=1196203, crystal.util.ValidInputCheckerTest.testCheckValidDirectoryPath=1175118, crystal.util.ValidInputCheckerTest.testCheckValidFilePath=896094, crystal.util.ValidInputCheckerTest.testCheckUrl=15073273919, crystal.util.SpringLayoutUtilityTest.testInvalidPanelParameter=20385548, crystal.util.SpringLayoutUtilityTest.testFormGrid=558920, crystal.util.SetOperationsTest.testNullIntersection=824805, crystal.util.SetOperationsTest.testIntersection=771156, crystal.util.SetOperationsTest.testNullUnion=723387, crystal.util.SetOperationsTest.testUnion=699641, crystal.util.SetOperationsTest.testSetDifference=776814, crystal.util.SetOperationsTest.testXor=778708}
+

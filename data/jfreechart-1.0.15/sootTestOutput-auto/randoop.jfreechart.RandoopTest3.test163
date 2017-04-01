@@ -1,0 +1,8 @@
+org.jfree.data.xml.RootHandler.characters : if r2 == r0 goto return
+org.jfree.data.xml.RootHandler.characters : r2 = virtualinvoke r0.<org.jfree.data.xml.RootHandler: org.xml.sax.helpers.DefaultHandler getCurrentHandler()>()
+org.jfree.data.xml.KeyHandler.endElement : $r12 = new org.xml.sax.SAXException
+org.jfree.data.xml.KeyHandler.endElement : $z0 = virtualinvoke r3.<java.lang.String: boolean equals(java.lang.Object)>("Key")
+org.jfree.data.xml.RootHandler.getCurrentHandler : $r4 = r0.<org.jfree.data.xml.RootHandler: java.util.Stack subHandlers>
+org.jfree.data.xml.RootHandler.getCurrentHandler : $r3 = r0.<org.jfree.data.xml.RootHandler: java.util.Stack subHandlers>
+org.jfree.data.xml.RootHandler.getCurrentHandler : r1 = r0
+org.jfree.data.xml.RootHandler.getCurrentHandler : return r1

@@ -1,0 +1,95 @@
+org.jfree.data.gantt.TaskSeriesCollection.getRowCount : $r1 = r0.<org.jfree.data.gantt.TaskSeriesCollection: java.util.List data>
+org.jfree.data.gantt.Task.getDescription : $r1 = r0.<org.jfree.data.gantt.Task: java.lang.String description>
+org.jfree.data.gantt.SlidingGanttCategoryDataset.setFirstCategoryIndex : virtualinvoke r0.<org.jfree.data.gantt.SlidingGanttCategoryDataset: void fireDatasetChanged()>()
+org.jfree.data.gantt.SlidingGanttCategoryDataset.setFirstCategoryIndex : r0.<org.jfree.data.gantt.SlidingGanttCategoryDataset: int firstCategoryIndex> = i0
+org.jfree.data.gantt.SlidingGanttCategoryDataset.setFirstCategoryIndex : if i0 < 0 goto $r2 = new java.lang.IllegalArgumentException
+org.jfree.data.time.SimpleTimePeriod.getStart : $r1 = new java.util.Date
+org.jfree.data.gantt.TaskSeriesCollection.equals : $r3 = r0.<org.jfree.data.gantt.TaskSeriesCollection: java.util.List data>
+org.jfree.data.gantt.TaskSeriesCollection.equals : if r1 != r0 goto $z0 = r1 instanceof org.jfree.data.gantt.TaskSeriesCollection
+org.jfree.data.gantt.TaskSeriesCollection.equals : return 1
+org.jfree.data.gantt.TaskSeriesCollection.equals : r2 = (org.jfree.data.gantt.TaskSeriesCollection) r1
+org.jfree.data.gantt.TaskSeriesCollection.equals : $z0 = r1 instanceof org.jfree.data.gantt.TaskSeriesCollection
+org.jfree.data.gantt.TaskSeriesCollection.equals : return 0
+org.jfree.data.gantt.TaskSeriesCollection.getSeriesCount : $i0 = virtualinvoke r0.<org.jfree.data.gantt.TaskSeriesCollection: int getRowCount()>()
+org.jfree.data.general.AbstractDataset.notifyListeners : $r3 = r0.<org.jfree.data.general.AbstractDataset: javax.swing.event.EventListenerList listenerList>
+org.jfree.data.general.AbstractDataset.notifyListeners : $i1 = lengthof r2
+org.jfree.data.general.Series.equals : $r3 = virtualinvoke r0.<org.jfree.data.general.Series: java.lang.Comparable getKey()>()
+org.jfree.data.general.Series.equals : $z0 = r1 instanceof org.jfree.data.general.Series
+org.jfree.data.general.Series.equals : if r1 != r0 goto $z0 = r1 instanceof org.jfree.data.general.Series
+org.jfree.data.general.Series.equals : r2 = (org.jfree.data.general.Series) r1
+org.jfree.data.general.Series.equals : return 1
+org.jfree.data.general.Series.equals : $r5 = virtualinvoke r0.<org.jfree.data.general.Series: java.lang.String getDescription()>()
+org.jfree.data.gantt.TaskSeries.add : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "task")
+org.jfree.data.gantt.TaskSeries.add : $r2 = r0.<org.jfree.data.gantt.TaskSeries: java.util.List tasks>
+org.jfree.data.gantt.TaskSeries.add : virtualinvoke r0.<org.jfree.data.gantt.TaskSeries: void fireSeriesChanged()>()
+org.jfree.data.gantt.TaskSeriesCollection.add : r4 = virtualinvoke r3.<org.jfree.data.gantt.Task: java.lang.String getDescription()>()
+org.jfree.data.gantt.TaskSeriesCollection.add : $r6 = virtualinvoke r1.<org.jfree.data.gantt.TaskSeries: java.util.List getTasks()>()
+org.jfree.data.gantt.TaskSeriesCollection.add : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "series")
+org.jfree.data.gantt.TaskSeriesCollection.add : $r8 = r0.<org.jfree.data.gantt.TaskSeriesCollection: java.util.List keys>
+org.jfree.data.gantt.TaskSeriesCollection.add : $z1 = interfaceinvoke r2.<java.util.Iterator: boolean hasNext()>()
+org.jfree.data.gantt.TaskSeriesCollection.add : $r5 = r0.<org.jfree.data.gantt.TaskSeriesCollection: java.util.List data>
+org.jfree.data.gantt.TaskSeriesCollection.add : goto [?= staticinvoke <edu.washington.cs.dt.impact.util.Tracer: void trace(java.lang.String,java.lang.String)>("$z1 = interfaceinvoke r2.<java.util.Iterator: boolean hasNext()>()", "org.jfree.data.gantt.TaskSeriesCollection.add")]
+org.jfree.data.gantt.TaskSeriesCollection.add : virtualinvoke r1.<org.jfree.data.gantt.TaskSeries: void addChangeListener(org.jfree.data.general.SeriesChangeListener)>(r0)
+org.jfree.data.gantt.TaskSeriesCollection.add : $r7 = interfaceinvoke r2.<java.util.Iterator: java.lang.Object next()>()
+org.jfree.data.gantt.TaskSeriesCollection.add : virtualinvoke r0.<org.jfree.data.gantt.TaskSeriesCollection: void fireDatasetChanged()>()
+org.jfree.data.gantt.TaskSeriesCollection.add : $r9 = r0.<org.jfree.data.gantt.TaskSeriesCollection: java.util.List keys>
+org.jfree.data.gantt.TaskSeriesCollection.add : if i0 >= 0 goto (branch)
+org.jfree.data.general.AbstractDataset.fireDatasetChanged : $r1 = new org.jfree.data.general.DatasetChangeEvent
+org.jfree.data.general.Series.getKey : $r1 = r0.<org.jfree.data.general.Series: java.lang.Comparable key>
+org.jfree.data.gantt.SlidingGanttCategoryDataset.setMaximumCategoryCount : r0.<org.jfree.data.gantt.SlidingGanttCategoryDataset: int maximumCategoryCount> = i0
+org.jfree.data.gantt.SlidingGanttCategoryDataset.setMaximumCategoryCount : virtualinvoke r0.<org.jfree.data.gantt.SlidingGanttCategoryDataset: void fireDatasetChanged()>()
+org.jfree.data.gantt.SlidingGanttCategoryDataset.setMaximumCategoryCount : if i0 >= 0 goto r0.<org.jfree.data.gantt.SlidingGanttCategoryDataset: int maximumCategoryCount> = i0
+org.jfree.data.gantt.TaskSeriesCollection.getColumnCount : $r1 = r0.<org.jfree.data.gantt.TaskSeriesCollection: java.util.List keys>
+org.jfree.data.general.Series.addChangeListener : $r2 = r0.<org.jfree.data.general.Series: javax.swing.event.EventListenerList listeners>
+org.jfree.data.general.Series.fireSeriesChanged : $z0 = r0.<org.jfree.data.general.Series: boolean notify>
+org.jfree.data.general.Series.fireSeriesChanged : $r1 = new org.jfree.data.general.SeriesChangeEvent
+org.jfree.data.time.SimpleTimePeriod.equals : $r5 = virtualinvoke r0.<org.jfree.data.time.SimpleTimePeriod: java.util.Date getEnd()>()
+org.jfree.data.time.SimpleTimePeriod.equals : r2 = (org.jfree.data.time.TimePeriod) r1
+org.jfree.data.time.SimpleTimePeriod.equals : $r3 = virtualinvoke r0.<org.jfree.data.time.SimpleTimePeriod: java.util.Date getStart()>()
+org.jfree.data.time.SimpleTimePeriod.equals : return 1
+org.jfree.data.time.SimpleTimePeriod.equals : if r1 != r0 goto $z0 = r1 instanceof org.jfree.data.time.TimePeriod
+org.jfree.data.time.SimpleTimePeriod.equals : $z0 = r1 instanceof org.jfree.data.time.TimePeriod
+org.jfree.data.gantt.TaskSeriesCollection.seriesChanged : specialinvoke r0.<org.jfree.data.gantt.TaskSeriesCollection: void refreshKeys()>()
+org.jfree.data.gantt.TaskSeriesCollection.seriesChanged : virtualinvoke r0.<org.jfree.data.gantt.TaskSeriesCollection: void fireDatasetChanged()>()
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null goto return
+org.jfree.data.general.Series.getDescription : $r1 = r0.<org.jfree.data.general.Series: java.lang.String description>
+org.jfree.data.gantt.TaskSeries.getTasks : $r1 = r0.<org.jfree.data.gantt.TaskSeries: java.util.List tasks>
+org.jfree.data.gantt.TaskSeries.equals : $z1 = specialinvoke r0.<org.jfree.data.general.Series: boolean equals(java.lang.Object)>(r1)
+org.jfree.data.gantt.TaskSeries.equals : $r3 = r0.<org.jfree.data.gantt.TaskSeries: java.util.List tasks>
+org.jfree.data.gantt.TaskSeries.equals : r2 = (org.jfree.data.gantt.TaskSeries) r1
+org.jfree.data.gantt.TaskSeries.equals : $z0 = r1 instanceof org.jfree.data.gantt.TaskSeries
+org.jfree.data.gantt.TaskSeries.equals : return 1
+org.jfree.data.gantt.TaskSeries.equals : return 0
+org.jfree.data.gantt.TaskSeries.equals : if r1 != r0 goto $z0 = r1 instanceof org.jfree.data.gantt.TaskSeries
+org.jfree.data.gantt.SlidingGanttCategoryDataset.equals : $z0 = r1 instanceof org.jfree.data.gantt.SlidingGanttCategoryDataset
+org.jfree.data.gantt.SlidingGanttCategoryDataset.equals : $i2 = r0.<org.jfree.data.gantt.SlidingGanttCategoryDataset: int maximumCategoryCount>
+org.jfree.data.gantt.SlidingGanttCategoryDataset.equals : r2 = (org.jfree.data.gantt.SlidingGanttCategoryDataset) r1
+org.jfree.data.gantt.SlidingGanttCategoryDataset.equals : $i0 = r0.<org.jfree.data.gantt.SlidingGanttCategoryDataset: int firstCategoryIndex>
+org.jfree.data.gantt.SlidingGanttCategoryDataset.equals : return 1
+org.jfree.data.gantt.SlidingGanttCategoryDataset.equals : return 0
+org.jfree.data.gantt.SlidingGanttCategoryDataset.equals : if r1 != r0 goto $z0 = r1 instanceof org.jfree.data.gantt.SlidingGanttCategoryDataset
+org.jfree.data.gantt.SlidingGanttCategoryDataset.equals : $r3 = r0.<org.jfree.data.gantt.SlidingGanttCategoryDataset: org.jfree.data.gantt.GanttCategoryDataset underlying>
+org.jfree.data.gantt.Task.equals : r2 = (org.jfree.data.gantt.Task) r1
+org.jfree.data.gantt.Task.equals : $r7 = r0.<org.jfree.data.gantt.Task: java.lang.Double percentComplete>
+org.jfree.data.gantt.Task.equals : $r3 = r0.<org.jfree.data.gantt.Task: java.lang.String description>
+org.jfree.data.gantt.Task.equals : $z0 = r1 instanceof org.jfree.data.gantt.Task
+org.jfree.data.gantt.Task.equals : $r9 = r0.<org.jfree.data.gantt.Task: java.util.List subtasks>
+org.jfree.data.gantt.Task.equals : if r1 != r0 goto $z0 = r1 instanceof org.jfree.data.gantt.Task
+org.jfree.data.gantt.Task.equals : return 1
+org.jfree.data.gantt.Task.equals : $r5 = r0.<org.jfree.data.gantt.Task: org.jfree.data.time.TimePeriod duration>
+org.jfree.data.gantt.TaskSeriesCollection.refreshKeys : goto [?= staticinvoke <edu.washington.cs.dt.impact.util.Tracer: void trace(java.lang.String,java.lang.String)>("$z0 = interfaceinvoke r2.<java.util.Iterator: boolean hasNext()>()", "org.jfree.data.gantt.TaskSeriesCollection.refreshKeys")]
+org.jfree.data.gantt.TaskSeriesCollection.refreshKeys : r4 = virtualinvoke r3.<org.jfree.data.gantt.Task: java.lang.String getDescription()>()
+org.jfree.data.gantt.TaskSeriesCollection.refreshKeys : $r11 = r0.<org.jfree.data.gantt.TaskSeriesCollection: java.util.List keys>
+org.jfree.data.gantt.TaskSeriesCollection.refreshKeys : $r5 = r0.<org.jfree.data.gantt.TaskSeriesCollection: java.util.List keys>
+org.jfree.data.gantt.TaskSeriesCollection.refreshKeys : $r6 = r0.<org.jfree.data.gantt.TaskSeriesCollection: java.util.List data>
+org.jfree.data.gantt.TaskSeriesCollection.refreshKeys : i0 = 0
+org.jfree.data.gantt.TaskSeriesCollection.refreshKeys : $r9 = interfaceinvoke r2.<java.util.Iterator: java.lang.Object next()>()
+org.jfree.data.gantt.TaskSeriesCollection.refreshKeys : $z0 = interfaceinvoke r2.<java.util.Iterator: boolean hasNext()>()
+org.jfree.data.gantt.TaskSeriesCollection.refreshKeys : if i1 >= 0 goto (branch)
+org.jfree.data.gantt.TaskSeriesCollection.refreshKeys : $r10 = r0.<org.jfree.data.gantt.TaskSeriesCollection: java.util.List keys>
+org.jfree.data.gantt.TaskSeriesCollection.refreshKeys : $r8 = virtualinvoke r1.<org.jfree.data.gantt.TaskSeries: java.util.List getTasks()>()
+org.jfree.data.general.Series.notifyListeners : $r4 = r2[i0]
+org.jfree.data.general.Series.notifyListeners : $r3 = r0.<org.jfree.data.general.Series: javax.swing.event.EventListenerList listeners>
+org.jfree.data.general.Series.notifyListeners : $i2 = i0 + 1
+org.jfree.data.general.Series.notifyListeners : $i1 = lengthof r2
+org.jfree.data.time.SimpleTimePeriod.getEnd : $r1 = new java.util.Date

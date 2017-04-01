@@ -1,0 +1,22 @@
+org.jfree.chart.ChartPanel.doCopy : $r1 = staticinvoke <java.awt.Toolkit: java.awt.Toolkit getDefaultToolkit()>() >>>>>>>> org.jfree.chart.ChartPanel.doCopy : r2 = virtualinvoke $r1.<java.awt.Toolkit: java.awt.datatransfer.Clipboard getSystemClipboard()>()
+org.jfree.chart.ChartPanel.doCopy : r2 = virtualinvoke $r1.<java.awt.Toolkit: java.awt.datatransfer.Clipboard getSystemClipboard()>() >>>>>>>> org.jfree.chart.ChartPanel.doCopy : r3 = virtualinvoke r0.<org.jfree.chart.ChartPanel: java.awt.Insets getInsets()>()
+org.jfree.chart.ChartPanel.doCopy : r3 = virtualinvoke r0.<org.jfree.chart.ChartPanel: java.awt.Insets getInsets()>() >>>>>>>> org.jfree.chart.ChartPanel.doCopy : $i2 = virtualinvoke r0.<org.jfree.chart.ChartPanel: int getWidth()>()
+org.jfree.chart.ChartPanel.doCopy : $i2 = virtualinvoke r0.<org.jfree.chart.ChartPanel: int getWidth()>() >>>>>>>> org.jfree.chart.ChartPanel.doCopy : $i3 = r3.<java.awt.Insets: int left>
+org.jfree.chart.ChartPanel.doCopy : $i3 = r3.<java.awt.Insets: int left> >>>>>>>> org.jfree.chart.ChartPanel.doCopy : $i4 = $i2 - $i3
+org.jfree.chart.ChartPanel.doCopy : $i4 = $i2 - $i3 >>>>>>>> org.jfree.chart.ChartPanel.doCopy : $i5 = r3.<java.awt.Insets: int right>
+org.jfree.chart.ChartPanel.doCopy : $i5 = r3.<java.awt.Insets: int right> >>>>>>>> org.jfree.chart.ChartPanel.doCopy : i0 = $i4 - $i5
+org.jfree.chart.ChartPanel.doCopy : i0 = $i4 - $i5 >>>>>>>> org.jfree.chart.ChartPanel.doCopy : $i6 = virtualinvoke r0.<org.jfree.chart.ChartPanel: int getHeight()>()
+org.jfree.chart.ChartPanel.doCopy : $i6 = virtualinvoke r0.<org.jfree.chart.ChartPanel: int getHeight()>() >>>>>>>> org.jfree.chart.ChartPanel.doCopy : $i7 = r3.<java.awt.Insets: int top>
+org.jfree.chart.ChartPanel.doCopy : $i7 = r3.<java.awt.Insets: int top> >>>>>>>> org.jfree.chart.ChartPanel.doCopy : $i8 = $i6 - $i7
+org.jfree.chart.ChartPanel.doCopy : $i8 = $i6 - $i7 >>>>>>>> org.jfree.chart.ChartPanel.doCopy : $i9 = r3.<java.awt.Insets: int bottom>
+org.jfree.chart.ChartPanel.doCopy : $i9 = r3.<java.awt.Insets: int bottom> >>>>>>>> org.jfree.chart.ChartPanel.doCopy : i1 = $i8 - $i9
+org.jfree.chart.ChartPanel.doCopy : i1 = $i8 - $i9 >>>>>>>> org.jfree.chart.ChartPanel.doCopy : $r5 = new org.jfree.chart.ChartTransferable
+org.jfree.chart.ChartPanel.doCopy : $r5 = new org.jfree.chart.ChartTransferable >>>>>>>> org.jfree.chart.ChartPanel.doCopy : $r6 = r0.<org.jfree.chart.ChartPanel: org.jfree.chart.JFreeChart chart>
+org.jfree.chart.ChartPanel.doCopy : $r6 = r0.<org.jfree.chart.ChartPanel: org.jfree.chart.JFreeChart chart> >>>>>>>> org.jfree.chart.ChartPanel.doCopy : $i10 = virtualinvoke r0.<org.jfree.chart.ChartPanel: int getMinimumDrawWidth()>()
+org.jfree.chart.ChartPanel.doCopy : $i10 = virtualinvoke r0.<org.jfree.chart.ChartPanel: int getMinimumDrawWidth()>() >>>>>>>> org.jfree.chart.ChartPanel.doCopy : $i11 = virtualinvoke r0.<org.jfree.chart.ChartPanel: int getMinimumDrawHeight()>()
+org.jfree.chart.ChartPanel.doCopy : $i11 = virtualinvoke r0.<org.jfree.chart.ChartPanel: int getMinimumDrawHeight()>() >>>>>>>> org.jfree.chart.ChartPanel.doCopy : $i12 = virtualinvoke r0.<org.jfree.chart.ChartPanel: int getMaximumDrawWidth()>()
+org.jfree.chart.ChartPanel.doCopy : $i12 = virtualinvoke r0.<org.jfree.chart.ChartPanel: int getMaximumDrawWidth()>() >>>>>>>> org.jfree.chart.ChartPanel.doCopy : $i13 = virtualinvoke r0.<org.jfree.chart.ChartPanel: int getMaximumDrawHeight()>()
+org.jfree.chart.ChartPanel.doCopy : $i13 = virtualinvoke r0.<org.jfree.chart.ChartPanel: int getMaximumDrawHeight()>() >>>>>>>> org.jfree.chart.ChartPanel.doCopy : specialinvoke $r5.<org.jfree.chart.ChartTransferable: void <init>(org.jfree.chart.JFreeChart,int,int,int,int,int,int,boolean)>($r6, i0, i1, $i10, $i11, $i12, $i13, 1)
+org.jfree.chart.ChartPanel.doCopy : specialinvoke $r5.<org.jfree.chart.ChartTransferable: void <init>(org.jfree.chart.JFreeChart,int,int,int,int,int,int,boolean)>($r6, i0, i1, $i10, $i11, $i12, $i13, 1) >>>>>>>> org.jfree.chart.ChartPanel.doCopy : r4 = $r5
+org.jfree.chart.ChartPanel.doCopy : r4 = $r5 >>>>>>>> org.jfree.chart.ChartPanel.doCopy : virtualinvoke r2.<java.awt.datatransfer.Clipboard: void setContents(java.awt.datatransfer.Transferable,java.awt.datatransfer.ClipboardOwner)>(r4, null)
+org.jfree.chart.ChartPanel.doCopy : virtualinvoke r2.<java.awt.datatransfer.Clipboard: void setContents(java.awt.datatransfer.Transferable,java.awt.datatransfer.ClipboardOwner)>(r4, null) >>>>>>>> org.jfree.chart.ChartPanel.doCopy : return

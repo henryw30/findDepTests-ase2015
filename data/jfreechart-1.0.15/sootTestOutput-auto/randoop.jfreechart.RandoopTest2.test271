@@ -1,0 +1,50 @@
+org.jfree.data.general.DatasetUtilities.createPieDatasetForRow : return r2
+org.jfree.data.general.DatasetUtilities.createPieDatasetForRow : i1 = interfaceinvoke r0.<org.jfree.data.category.CategoryDataset: int getColumnCount()>()
+org.jfree.data.general.DatasetUtilities.createPieDatasetForRow : i2 = 0
+org.jfree.data.general.DatasetUtilities.createPieDatasetForRow : $r1 = new org.jfree.data.general.DefaultPieDataset
+org.jfree.chart.urls.StandardPieURLGenerator.generateURL : $r20 = virtualinvoke r2.<java.lang.Object: java.lang.String toString()>()
+org.jfree.chart.urls.StandardPieURLGenerator.generateURL : $r24 = new java.lang.StringBuilder
+org.jfree.chart.urls.StandardPieURLGenerator.generateURL : $i1 = virtualinvoke r3.<java.lang.String: int indexOf(java.lang.String)>("?")
+org.jfree.chart.urls.StandardPieURLGenerator.generateURL : return r13
+org.jfree.chart.urls.StandardPieURLGenerator.generateURL : $r23 = r0.<org.jfree.chart.urls.StandardPieURLGenerator: java.lang.String indexParameterName>
+org.jfree.chart.urls.StandardPieURLGenerator.generateURL : $r14 = new java.lang.StringBuilder
+org.jfree.chart.urls.StandardPieURLGenerator.generateURL : $r30 = staticinvoke <java.lang.String: java.lang.String valueOf(int)>(i0)
+org.jfree.chart.urls.StandardPieURLGenerator.generateURL : r3 = r0.<org.jfree.chart.urls.StandardPieURLGenerator: java.lang.String prefix>
+org.jfree.data.time.Year.getFirstMillisecond : $l1 = virtualinvoke r1.<java.util.Calendar: long getTimeInMillis()>()
+org.jfree.data.time.Year.getFirstMillisecond : virtualinvoke r1.<java.util.Calendar: void set(int,int)>(14, 0)
+org.jfree.data.time.Year.getFirstMillisecond : $s0 = r0.<org.jfree.data.time.Year: short year>
+org.jfree.data.time.Year.getLastMillisecond : virtualinvoke r1.<java.util.Calendar: void set(int,int)>(14, 999)
+org.jfree.data.time.Year.getLastMillisecond : $l1 = virtualinvoke r1.<java.util.Calendar: long getTimeInMillis()>()
+org.jfree.data.time.Year.getLastMillisecond : $s0 = r0.<org.jfree.data.time.Year: short year>
+org.jfree.data.general.DatasetUtilities.calculatePieDatasetTotal : return d0
+org.jfree.data.general.DatasetUtilities.calculatePieDatasetTotal : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r0, "dataset")
+org.jfree.data.general.DatasetUtilities.calculatePieDatasetTotal : r2 = interfaceinvoke r1.<java.util.List: java.util.Iterator iterator()>()
+org.jfree.data.general.DatasetUtilities.calculatePieDatasetTotal : $z0 = interfaceinvoke r2.<java.util.Iterator: boolean hasNext()>()
+org.jfree.data.general.DatasetUtilities.calculatePieDatasetTotal : d0 = 0.0
+org.jfree.data.general.DatasetUtilities.calculatePieDatasetTotal : r1 = interfaceinvoke r0.<org.jfree.data.general.PieDataset: java.util.List getKeys()>()
+org.jfree.data.general.DefaultPieDataset.getKeys : $r1 = r0.<org.jfree.data.general.DefaultPieDataset: org.jfree.data.DefaultKeyedValues data>
+org.jfree.data.KeyedObjects2D.getColumnCount : $r1 = r0.<org.jfree.data.KeyedObjects2D: java.util.List columnKeys>
+org.jfree.data.time.Year.peg : $l1 = virtualinvoke r0.<org.jfree.data.time.Year: long getLastMillisecond(java.util.Calendar)>(r1)
+org.jfree.data.time.Year.peg : $l0 = virtualinvoke r0.<org.jfree.data.time.Year: long getFirstMillisecond(java.util.Calendar)>(r1)
+org.jfree.data.DefaultKeyedValues.getKeys : $r1 = r0.<org.jfree.data.DefaultKeyedValues: java.util.ArrayList keys>
+org.jfree.chart.urls.URLUtilities.encode : r3 = null
+org.jfree.chart.urls.URLUtilities.encode : r2 = class "java/net/URLEncoder"
+org.jfree.chart.urls.URLUtilities.encode : return r3
+org.jfree.chart.urls.URLUtilities.encode : goto [?= return r3]
+org.jfree.chart.urls.URLUtilities.encode : $r4 = <org.jfree.chart.urls.URLUtilities: java.lang.Class[] STRING_ARGS_2>
+org.jfree.chart.urls.URLUtilities.encode : goto [?= (branch)]
+org.jfree.chart.urls.URLUtilities.encode : $r7 = newarray (java.lang.Object)[2]
+org.jfree.data.statistics.DefaultStatisticalCategoryDataset.getColumnCount : $r1 = r0.<org.jfree.data.statistics.DefaultStatisticalCategoryDataset: org.jfree.data.KeyedObjects2D data>
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null goto return
+org.jfree.data.general.DatasetUtilities.createConsolidatedPieDataset : $r2 = staticinvoke <org.jfree.data.general.DatasetUtilities: org.jfree.data.general.PieDataset createConsolidatedPieDataset(org.jfree.data.general.PieDataset,java.lang.Comparable,double,int)>(r0, r1, d0, 2)
+org.jfree.data.general.DatasetUtilities.createConsolidatedPieDataset : r12 = interfaceinvoke r4.<java.util.List: java.util.Iterator iterator()>()
+org.jfree.data.general.DatasetUtilities.createConsolidatedPieDataset : $z0 = interfaceinvoke r6.<java.util.Iterator: boolean hasNext()>()
+org.jfree.data.general.DatasetUtilities.createConsolidatedPieDataset : r4 = interfaceinvoke r0.<org.jfree.data.general.PieDataset: java.util.List getKeys()>()
+org.jfree.data.general.DatasetUtilities.createConsolidatedPieDataset : d1 = staticinvoke <org.jfree.data.general.DatasetUtilities: double calculatePieDatasetTotal(org.jfree.data.general.PieDataset)>(r0)
+org.jfree.data.general.DatasetUtilities.createConsolidatedPieDataset : return r3
+org.jfree.data.general.DatasetUtilities.createConsolidatedPieDataset : d4 = 0.0
+org.jfree.data.general.DatasetUtilities.createConsolidatedPieDataset : r6 = interfaceinvoke r4.<java.util.List: java.util.Iterator iterator()>()
+org.jfree.data.general.DatasetUtilities.createConsolidatedPieDataset : $r2 = new org.jfree.data.general.DefaultPieDataset
+org.jfree.data.general.DatasetUtilities.createConsolidatedPieDataset : $i3 = virtualinvoke r5.<java.util.ArrayList: int size()>()
+org.jfree.data.general.DatasetUtilities.createConsolidatedPieDataset : $z2 = interfaceinvoke r12.<java.util.Iterator: boolean hasNext()>()
+org.jfree.data.general.DatasetUtilities.createConsolidatedPieDataset : $r10 = new java.util.ArrayList

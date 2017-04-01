@@ -1,0 +1,65 @@
+org.joda.time.chrono.ISOChronology.withUTC : $r1 = <org.joda.time.chrono.ISOChronology: org.joda.time.chrono.ISOChronology INSTANCE_UTC>
+org.joda.time.base.BaseDateTime.checkInstant : return l0
+org.joda.time.chrono.ISOChronology.getInstance : if r0 != null goto $i1 = staticinvoke <java.lang.System: int identityHashCode(java.lang.Object)>(r0)
+org.joda.time.chrono.ISOChronology.getInstance : $i1 = staticinvoke <java.lang.System: int identityHashCode(java.lang.Object)>(r0)
+org.joda.time.chrono.ISOChronology.getInstance : $r5 = <org.joda.time.chrono.ISOChronology: org.joda.time.chrono.ISOChronology[] cFastCache>
+org.joda.time.chrono.ISOChronology.getInstance : return r1
+org.joda.time.chrono.ISOChronology.getInstance : if r1 == null goto $r7 = <org.joda.time.chrono.ISOChronology: java.util.Map cCache>
+org.joda.time.chrono.ISOChronology.getInstance : $r0 = staticinvoke <org.joda.time.DateTimeZone: org.joda.time.DateTimeZone getDefault()>()
+org.joda.time.chrono.BasicChronology.getZone : $r2 = virtualinvoke r0.<org.joda.time.chrono.BasicChronology: org.joda.time.Chronology getBase()>()
+org.joda.time.chrono.BasicChronology.getZone : $r4 = <org.joda.time.DateTimeZone: org.joda.time.DateTimeZone UTC>
+org.joda.time.DateTimeUtils.getChronology : if r0 != null goto return r0
+org.joda.time.DateTimeUtils.getChronology : return r0
+org.joda.time.chrono.AssembledChronology.getBase : $r1 = r0.<org.joda.time.chrono.AssembledChronology: org.joda.time.Chronology iBase>
+org.joda.time.DateTimeZone.getMillisKeepLocal : return l0
+org.joda.time.DateTimeZone.getMillisKeepLocal : if r1 != null goto (branch)
+org.joda.time.DateTimeZone.getMillisKeepLocal : if r1 != r0 goto l1 = virtualinvoke r0.<org.joda.time.DateTimeZone: long convertUTCToLocal(long)>(l0)
+org.joda.time.field.AbstractReadableInstantFieldProperty.getFieldType : $r1 = virtualinvoke r0.<org.joda.time.field.AbstractReadableInstantFieldProperty: org.joda.time.DateTimeField getField()>()
+org.joda.time.DateTimeUtils.checkPermission : r0 = staticinvoke <java.lang.System: java.lang.SecurityManager getSecurityManager()>()
+org.joda.time.DateTimeUtils.checkPermission : if r0 == null goto return
+org.joda.time.chrono.AssembledChronology.getZone : $r3 = virtualinvoke r1.<org.joda.time.Chronology: org.joda.time.DateTimeZone getZone()>()
+org.joda.time.chrono.AssembledChronology.getZone : $r2 = r0.<org.joda.time.chrono.AssembledChronology: org.joda.time.Chronology iBase>
+org.joda.time.base.AbstractDateTime.get : $r3 = virtualinvoke r0.<org.joda.time.base.AbstractDateTime: org.joda.time.Chronology getChronology()>()
+org.joda.time.base.AbstractDateTime.get : if r1 != null goto $r3 = virtualinvoke r0.<org.joda.time.base.AbstractDateTime: org.joda.time.Chronology getChronology()>()
+org.joda.time.LocalDateTime.getLocalMillis : $l0 = r0.<org.joda.time.LocalDateTime: long iLocalMillis>
+org.joda.time.field.AbstractReadableInstantFieldProperty.get : $r1 = virtualinvoke r0.<org.joda.time.field.AbstractReadableInstantFieldProperty: org.joda.time.DateTimeField getField()>()
+org.joda.time.field.PreciseDurationDateTimeField.getUnitMillis : $l0 = r0.<org.joda.time.field.PreciseDurationDateTimeField: long iUnitMillis>
+org.joda.time.field.AbstractReadableInstantFieldProperty.compareTo : return -1
+org.joda.time.field.AbstractReadableInstantFieldProperty.compareTo : $r3 = virtualinvoke r0.<org.joda.time.field.AbstractReadableInstantFieldProperty: org.joda.time.DateTimeFieldType getFieldType()>()
+org.joda.time.field.AbstractReadableInstantFieldProperty.compareTo : if i0 <= i1 goto return 0
+org.joda.time.field.AbstractReadableInstantFieldProperty.compareTo : if r1 != null goto i0 = virtualinvoke r0.<org.joda.time.field.AbstractReadableInstantFieldProperty: int get()>()
+org.joda.time.field.AbstractReadableInstantFieldProperty.compareTo : return 1
+org.joda.time.field.AbstractReadableInstantFieldProperty.compareTo : if i0 >= i1 goto (branch)
+org.joda.time.field.AbstractReadableInstantFieldProperty.compareTo : return 0
+org.joda.time.field.AbstractReadableInstantFieldProperty.compareTo : $r2 = new java.lang.IllegalArgumentException
+org.joda.time.field.AbstractReadableInstantFieldProperty.compareTo : i0 = virtualinvoke r0.<org.joda.time.field.AbstractReadableInstantFieldProperty: int get()>()
+org.joda.time.DateTimeZone.getDefault : if r0 != null goto return r0
+org.joda.time.DateTimeZone.getDefault : r0 = <org.joda.time.DateTimeZone: org.joda.time.DateTimeZone cDefault>
+org.joda.time.DateTimeZone.getDefault : return r0
+org.joda.time.base.BaseDateTime.checkChronology : $r2 = staticinvoke <org.joda.time.DateTimeUtils: org.joda.time.Chronology getChronology(org.joda.time.Chronology)>(r1)
+org.joda.time.field.BaseDateTimeField.getType : $r1 = r0.<org.joda.time.field.BaseDateTimeField: org.joda.time.DateTimeFieldType iType>
+org.joda.time.base.BaseDateTime.getMillis : $l0 = r0.<org.joda.time.base.BaseDateTime: long iMillis>
+org.joda.time.LocalDateTime$Property.getMillis : $r1 = r0.<org.joda.time.LocalDateTime$Property: org.joda.time.LocalDateTime iInstant>
+org.joda.time.LocalDateTime.secondOfMinute : $r1 = new org.joda.time.LocalDateTime$Property
+org.joda.time.LocalDateTime.get : $r3 = virtualinvoke r0.<org.joda.time.LocalDateTime: org.joda.time.Chronology getChronology()>()
+org.joda.time.LocalDateTime.get : if r1 != null goto $r3 = virtualinvoke r0.<org.joda.time.LocalDateTime: org.joda.time.Chronology getChronology()>()
+org.joda.time.base.BaseDateTime.getChronology : $r1 = r0.<org.joda.time.base.BaseDateTime: org.joda.time.Chronology iChronology>
+org.joda.time.field.PreciseDateTimeField.get : $b1 = l0 cmp 0L
+org.joda.time.field.PreciseDateTimeField.get : $l2 = virtualinvoke r0.<org.joda.time.field.PreciseDateTimeField: long getUnitMillis()>()
+org.joda.time.DateTimeUtils.setCurrentMillisFixed : $r0 = new org.joda.time.DateTimeUtils$FixedMillisProvider
+org.joda.time.DateTimeUtils.setCurrentMillisFixed : staticinvoke <org.joda.time.DateTimeUtils: void checkPermission()>()
+org.joda.time.chrono.AssembledChronology.secondOfMinute : $r1 = r0.<org.joda.time.chrono.AssembledChronology: org.joda.time.DateTimeField iSecondOfMinute>
+org.joda.time.LocalDateTime.getChronology : $r1 = r0.<org.joda.time.LocalDateTime: org.joda.time.Chronology iChronology>
+org.joda.time.DateTimeZone.setDefault : exitmonitor r3
+org.joda.time.DateTimeZone.setDefault : $r6 = class "org/joda/time/DateTimeZone"
+org.joda.time.DateTimeZone.setDefault : <org.joda.time.DateTimeZone: org.joda.time.DateTimeZone cDefault> = r0
+org.joda.time.DateTimeZone.setDefault : if r1 == null goto (branch)
+org.joda.time.DateTimeZone.setDefault : if r0 != null goto $r6 = class "org/joda/time/DateTimeZone"
+org.joda.time.DateTimeZone.setDefault : r1 = staticinvoke <java.lang.System: java.lang.SecurityManager getSecurityManager()>()
+org.joda.time.DateTimeUtils.setCurrentMillisSystem : staticinvoke <org.joda.time.DateTimeUtils: void checkPermission()>()
+org.joda.time.DateTimeUtils.setCurrentMillisSystem : $r0 = <org.joda.time.DateTimeUtils: org.joda.time.DateTimeUtils$SystemMillisProvider SYSTEM_MILLIS_PROVIDER>
+org.joda.time.chrono.GregorianChronology.getZone : $r1 = specialinvoke r0.<org.joda.time.chrono.BasicGJChronology: org.joda.time.DateTimeZone getZone()>()
+org.joda.time.LocalDateTime$Property.getField : $r1 = r0.<org.joda.time.LocalDateTime$Property: org.joda.time.DateTimeField iField>
+org.joda.time.DateTimeFieldType$StandardDateTimeFieldType.getField : r2 = staticinvoke <org.joda.time.DateTimeUtils: org.joda.time.Chronology getChronology(org.joda.time.Chronology)>(r1)
+org.joda.time.DateTimeFieldType$StandardDateTimeFieldType.getField : $b0 = r0.<org.joda.time.DateTimeFieldType$StandardDateTimeFieldType: byte iOrdinal>
+org.joda.time.DateTimeFieldType$StandardDateTimeFieldType.getField : $r23 = virtualinvoke r2.<org.joda.time.Chronology: org.joda.time.DateTimeField secondOfMinute()>()

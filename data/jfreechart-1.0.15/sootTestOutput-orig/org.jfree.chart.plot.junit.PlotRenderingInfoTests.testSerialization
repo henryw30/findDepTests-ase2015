@@ -1,0 +1,17 @@
+org.jfree.chart.plot.PlotRenderingInfo.readObject : virtualinvoke r1.<java.io.ObjectInputStream: void defaultReadObject()>()
+org.jfree.chart.plot.PlotRenderingInfo.readObject : $r2 = staticinvoke <org.jfree.io.SerialUtilities: java.awt.Shape readShape(java.io.ObjectInputStream)>(r1)
+org.jfree.chart.plot.PlotRenderingInfo.readObject : $r4 = staticinvoke <org.jfree.io.SerialUtilities: java.awt.Shape readShape(java.io.ObjectInputStream)>(r1)
+org.jfree.chart.plot.PlotRenderingInfo.writeObject : $r3 = r0.<org.jfree.chart.plot.PlotRenderingInfo: java.awt.geom.Rectangle2D plotArea>
+org.jfree.chart.plot.PlotRenderingInfo.writeObject : $r2 = r0.<org.jfree.chart.plot.PlotRenderingInfo: java.awt.geom.Rectangle2D dataArea>
+org.jfree.chart.plot.PlotRenderingInfo.writeObject : virtualinvoke r1.<java.io.ObjectOutputStream: void defaultWriteObject()>()
+org.jfree.chart.plot.PlotRenderingInfo.equals : $r5 = r0.<org.jfree.chart.plot.PlotRenderingInfo: java.awt.geom.Rectangle2D plotArea>
+org.jfree.chart.plot.PlotRenderingInfo.equals : $r3 = r0.<org.jfree.chart.plot.PlotRenderingInfo: java.awt.geom.Rectangle2D dataArea>
+org.jfree.chart.plot.PlotRenderingInfo.equals : $r7 = r0.<org.jfree.chart.plot.PlotRenderingInfo: java.util.List subplotInfo>
+org.jfree.chart.plot.PlotRenderingInfo.equals : $z0 = r1 instanceof org.jfree.chart.plot.PlotRenderingInfo
+org.jfree.chart.plot.PlotRenderingInfo.equals : return 1
+org.jfree.chart.plot.PlotRenderingInfo.equals : if r0 != r1 goto $z0 = r1 instanceof org.jfree.chart.plot.PlotRenderingInfo
+org.jfree.chart.plot.PlotRenderingInfo.equals : r2 = (org.jfree.chart.plot.PlotRenderingInfo) r1
+org.jfree.chart.ChartRenderingInfo.readObject : virtualinvoke r1.<java.io.ObjectInputStream: void defaultReadObject()>()
+org.jfree.chart.ChartRenderingInfo.readObject : $r2 = staticinvoke <org.jfree.io.SerialUtilities: java.awt.Shape readShape(java.io.ObjectInputStream)>(r1)
+org.jfree.chart.ChartRenderingInfo.writeObject : virtualinvoke r1.<java.io.ObjectOutputStream: void defaultWriteObject()>()
+org.jfree.chart.ChartRenderingInfo.writeObject : $r2 = r0.<org.jfree.chart.ChartRenderingInfo: java.awt.geom.Rectangle2D chartArea>

@@ -1,0 +1,26 @@
+org.jfree.chart.renderer.xy.XYBlockRenderer.setPaintScale : virtualinvoke r0.<org.jfree.chart.renderer.xy.XYBlockRenderer: void fireChangeEvent()>()
+org.jfree.chart.renderer.xy.XYBlockRenderer.setPaintScale : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "scale")
+org.jfree.chart.renderer.xy.XYBlockRenderer.setPaintScale : r0.<org.jfree.chart.renderer.xy.XYBlockRenderer: org.jfree.chart.renderer.PaintScale paintScale> = r1
+org.jfree.chart.renderer.category.StatisticalLineAndShapeRenderer.getErrorIndicatorPaint : $r1 = r0.<org.jfree.chart.renderer.category.StatisticalLineAndShapeRenderer: java.awt.Paint errorIndicatorPaint>
+org.jfree.chart.renderer.AbstractRenderer.setItemLabelsVisible : virtualinvoke r0.<org.jfree.chart.renderer.AbstractRenderer: void fireChangeEvent()>()
+org.jfree.chart.renderer.AbstractRenderer.setItemLabelsVisible : if z0 == 0 goto return
+org.jfree.chart.renderer.AbstractRenderer.setItemLabelsVisible : virtualinvoke r0.<org.jfree.chart.renderer.AbstractRenderer: void setItemLabelsVisible(java.lang.Boolean,boolean)>(r1, 1)
+org.jfree.chart.renderer.AbstractRenderer.setItemLabelsVisible : r0.<org.jfree.chart.renderer.AbstractRenderer: java.lang.Boolean itemLabelsVisible> = r1
+org.jfree.chart.renderer.AbstractRenderer.setItemLabelsVisible : $r1 = staticinvoke <java.lang.Boolean: java.lang.Boolean valueOf(boolean)>(z0)
+org.jfree.chart.renderer.AbstractRenderer.fireChangeEvent : $r1 = new org.jfree.chart.event.RendererChangeEvent
+org.jfree.chart.renderer.AbstractRenderer.notifyListeners : $r3 = r0.<org.jfree.chart.renderer.AbstractRenderer: javax.swing.event.EventListenerList listenerList>
+org.jfree.chart.renderer.AbstractRenderer.notifyListeners : $i1 = lengthof r2
+org.jfree.chart.renderer.category.StatisticalLineAndShapeRenderer.equals : $z0 = r1 instanceof org.jfree.chart.renderer.category.StatisticalLineAndShapeRenderer
+org.jfree.chart.renderer.category.StatisticalLineAndShapeRenderer.equals : return 0
+org.jfree.chart.renderer.category.StatisticalLineAndShapeRenderer.equals : if r1 != r0 goto $z0 = r1 instanceof org.jfree.chart.renderer.category.StatisticalLineAndShapeRenderer
+org.jfree.chart.renderer.xy.XYBlockRenderer.updateOffsets : $r2 = r0.<org.jfree.chart.renderer.xy.XYBlockRenderer: org.jfree.ui.RectangleAnchor blockAnchor>
+org.jfree.chart.renderer.xy.XYBlockRenderer.updateOffsets : $r5 = r0.<org.jfree.chart.renderer.xy.XYBlockRenderer: org.jfree.ui.RectangleAnchor blockAnchor>
+org.jfree.chart.renderer.xy.XYBlockRenderer.updateOffsets : $r3 = r0.<org.jfree.chart.renderer.xy.XYBlockRenderer: org.jfree.ui.RectangleAnchor blockAnchor>
+org.jfree.chart.renderer.xy.XYBlockRenderer.updateOffsets : $r7 = r0.<org.jfree.chart.renderer.xy.XYBlockRenderer: org.jfree.ui.RectangleAnchor blockAnchor>
+org.jfree.chart.renderer.xy.XYBlockRenderer.updateOffsets : $d11 = r0.<org.jfree.chart.renderer.xy.XYBlockRenderer: double blockHeight>
+org.jfree.chart.renderer.xy.XYBlockRenderer.updateOffsets : $r9 = r0.<org.jfree.chart.renderer.xy.XYBlockRenderer: org.jfree.ui.RectangleAnchor blockAnchor>
+org.jfree.chart.renderer.xy.XYBlockRenderer.updateOffsets : $d8 = r0.<org.jfree.chart.renderer.xy.XYBlockRenderer: double blockWidth>
+org.jfree.chart.renderer.category.LineAndShapeRenderer.setUseSeriesOffset : virtualinvoke r0.<org.jfree.chart.renderer.category.LineAndShapeRenderer: void fireChangeEvent()>()
+org.jfree.chart.renderer.category.LineAndShapeRenderer.setUseSeriesOffset : r0.<org.jfree.chart.renderer.category.LineAndShapeRenderer: boolean useSeriesOffset> = z0
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null goto return
+org.jfree.chart.renderer.xy.XYBlockRenderer.getPaintScale : $r1 = r0.<org.jfree.chart.renderer.xy.XYBlockRenderer: org.jfree.chart.renderer.PaintScale paintScale>

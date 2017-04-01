@@ -1,0 +1,164 @@
+org.jfree.chart.LegendItem.getLabel : $r1 = r0.<org.jfree.chart.LegendItem: java.lang.String label>
+org.jfree.chart.plot.Plot.notifyListeners : $r3 = r0.<org.jfree.chart.plot.Plot: javax.swing.event.EventListenerList listenerList>
+org.jfree.chart.plot.Plot.notifyListeners : $i1 = lengthof r2
+org.jfree.chart.plot.Plot.notifyListeners : $z0 = r0.<org.jfree.chart.plot.Plot: boolean notify>
+org.jfree.chart.LegendItem.setSeriesKey : r0.<org.jfree.chart.LegendItem: java.lang.Comparable seriesKey> = r1
+org.jfree.chart.LegendItemCollection.get : $r1 = r0.<org.jfree.chart.LegendItemCollection: java.util.List items>
+org.jfree.chart.LegendItem.setDataset : r0.<org.jfree.chart.LegendItem: org.jfree.data.general.Dataset dataset> = r1
+org.jfree.chart.plot.PiePlot.setIgnoreNullValues : virtualinvoke r0.<org.jfree.chart.plot.PiePlot: void fireChangeEvent()>()
+org.jfree.chart.plot.PiePlot.setIgnoreNullValues : r0.<org.jfree.chart.plot.PiePlot: boolean ignoreNullValues> = z0
+org.jfree.chart.title.Title.setPosition : $r3 = new org.jfree.chart.event.TitleChangeEvent
+org.jfree.chart.title.Title.setPosition : r0.<org.jfree.chart.title.Title: org.jfree.ui.RectangleEdge position> = r1
+org.jfree.chart.title.Title.setPosition : $r2 = r0.<org.jfree.chart.title.Title: org.jfree.ui.RectangleEdge position>
+org.jfree.chart.title.Title.setPosition : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "position")
+org.jfree.chart.JFreeChart.removeLegend : $r1 = virtualinvoke r0.<org.jfree.chart.JFreeChart: org.jfree.chart.title.LegendTitle getLegend()>()
+org.jfree.chart.block.AbstractBlock.setMargin : r0.<org.jfree.chart.block.AbstractBlock: org.jfree.ui.RectangleInsets margin> = r1
+org.jfree.chart.block.AbstractBlock.setMargin : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "margin")
+org.jfree.chart.LegendItemCollection.getItemCount : $r1 = r0.<org.jfree.chart.LegendItemCollection: java.util.List items>
+org.jfree.chart.plot.MultiplePiePlot.setDataset : $r5 = new org.jfree.data.general.DatasetChangeEvent
+org.jfree.chart.plot.MultiplePiePlot.setDataset : r0.<org.jfree.chart.plot.MultiplePiePlot: org.jfree.data.category.CategoryDataset dataset> = r1
+org.jfree.chart.plot.MultiplePiePlot.setDataset : $r4 = interfaceinvoke r1.<org.jfree.data.category.CategoryDataset: org.jfree.data.general.DatasetGroup getGroup()>()
+org.jfree.chart.plot.MultiplePiePlot.setDataset : if r1 == null goto $r5 = new org.jfree.data.general.DatasetChangeEvent
+org.jfree.chart.plot.MultiplePiePlot.setDataset : $r2 = r0.<org.jfree.chart.plot.MultiplePiePlot: org.jfree.data.category.CategoryDataset dataset>
+org.jfree.chart.plot.MultiplePiePlot.setDataset : interfaceinvoke r1.<org.jfree.data.category.CategoryDataset: void addChangeListener(org.jfree.data.general.DatasetChangeListener)>(r0)
+org.jfree.chart.LegendItemCollection.add : $r2 = r0.<org.jfree.chart.LegendItemCollection: java.util.List items>
+org.jfree.chart.plot.Plot.getDrawingSupplier : return r2
+org.jfree.chart.plot.Plot.getDrawingSupplier : if r1 == null goto r2 = r0.<org.jfree.chart.plot.Plot: org.jfree.chart.plot.DrawingSupplier drawingSupplier>
+org.jfree.chart.plot.Plot.getDrawingSupplier : r2 = r0.<org.jfree.chart.plot.Plot: org.jfree.chart.plot.DrawingSupplier drawingSupplier>
+org.jfree.chart.plot.Plot.getDrawingSupplier : r1 = virtualinvoke r0.<org.jfree.chart.plot.Plot: org.jfree.chart.plot.Plot getParent()>()
+org.jfree.chart.plot.Plot.getDrawingSupplier : n0 = null
+org.jfree.chart.event.ChartChangeEvent.setType : r0.<org.jfree.chart.event.ChartChangeEvent: org.jfree.chart.event.ChartChangeEventType type> = r1
+org.jfree.chart.JFreeChart.notifyListeners : $z0 = r0.<org.jfree.chart.JFreeChart: boolean notify>
+org.jfree.chart.JFreeChart.notifyListeners : $r3 = r0.<org.jfree.chart.JFreeChart: javax.swing.event.EventListenerList changeListeners>
+org.jfree.chart.JFreeChart.notifyListeners : $i1 = lengthof r2
+org.jfree.chart.JFreeChart.getLegend : $z1 = r2 instanceof org.jfree.chart.title.LegendTitle
+org.jfree.chart.JFreeChart.getLegend : $r4 = interfaceinvoke r1.<java.util.Iterator: java.lang.Object next()>()
+org.jfree.chart.JFreeChart.getLegend : i1 = 0
+org.jfree.chart.JFreeChart.getLegend : $r5 = (org.jfree.chart.title.LegendTitle) r2
+org.jfree.chart.JFreeChart.getLegend : $r3 = r0.<org.jfree.chart.JFreeChart: java.util.List subtitles>
+org.jfree.chart.JFreeChart.getLegend : if i1 != i0 goto i1 = i1 + 1
+org.jfree.chart.JFreeChart.getLegend : $z0 = interfaceinvoke r1.<java.util.Iterator: boolean hasNext()>()
+org.jfree.chart.JFreeChart.getLegend : $r1 = virtualinvoke r0.<org.jfree.chart.JFreeChart: org.jfree.chart.title.LegendTitle getLegend(int)>(0)
+org.jfree.data.DefaultKeyedValues2D.getRowKey : $r1 = r0.<org.jfree.data.DefaultKeyedValues2D: java.util.List rowKeys>
+org.jfree.data.DefaultKeyedValues2D.getRowIndex : $z0 = r0.<org.jfree.data.DefaultKeyedValues2D: boolean sortRowKeys>
+org.jfree.data.DefaultKeyedValues2D.getRowIndex : $r3 = r0.<org.jfree.data.DefaultKeyedValues2D: java.util.List rowKeys>
+org.jfree.data.DefaultKeyedValues2D.getRowIndex : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "key")
+org.jfree.data.DefaultKeyedValues2D.setValue : if i0 < 0 goto $r7 = new org.jfree.data.DefaultKeyedValues
+org.jfree.data.DefaultKeyedValues2D.setValue : $r13 = r0.<org.jfree.data.DefaultKeyedValues2D: java.util.List columnKeys>
+org.jfree.data.DefaultKeyedValues2D.setValue : if i1 >= 0 goto return
+org.jfree.data.DefaultKeyedValues2D.setValue : $z0 = r0.<org.jfree.data.DefaultKeyedValues2D: boolean sortRowKeys>
+org.jfree.data.DefaultKeyedValues2D.setValue : $r7 = new org.jfree.data.DefaultKeyedValues
+org.jfree.data.DefaultKeyedValues2D.setValue : $r11 = r0.<org.jfree.data.DefaultKeyedValues2D: java.util.List rows>
+org.jfree.data.DefaultKeyedValues2D.setValue : i0 = virtualinvoke r0.<org.jfree.data.DefaultKeyedValues2D: int getRowIndex(java.lang.Comparable)>(r2)
+org.jfree.data.DefaultKeyedValues2D.setValue : $r12 = r0.<org.jfree.data.DefaultKeyedValues2D: java.util.List columnKeys>
+org.jfree.data.DefaultKeyedValues2D.setValue : $r5 = r0.<org.jfree.data.DefaultKeyedValues2D: java.util.List rows>
+org.jfree.data.DefaultKeyedValues2D.setValue : virtualinvoke r4.<org.jfree.data.DefaultKeyedValues: void setValue(java.lang.Comparable,java.lang.Number)>(r3, r1)
+org.jfree.data.DefaultKeyedValues2D.setValue : $r10 = r0.<org.jfree.data.DefaultKeyedValues2D: java.util.List rowKeys>
+org.jfree.data.general.AbstractDataset.addChangeListener : $r2 = r0.<org.jfree.data.general.AbstractDataset: javax.swing.event.EventListenerList listenerList>
+org.jfree.chart.block.AbstractBlock.setFrame : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "frame")
+org.jfree.chart.block.AbstractBlock.setFrame : r0.<org.jfree.chart.block.AbstractBlock: org.jfree.chart.block.BlockFrame frame> = r1
+org.jfree.data.DefaultKeyedValues2D.addValue : virtualinvoke r0.<org.jfree.data.DefaultKeyedValues2D: void setValue(java.lang.Number,java.lang.Comparable,java.lang.Comparable)>(r1, r2, r3)
+org.jfree.data.DefaultKeyedValues.getIndex : return -1
+org.jfree.data.DefaultKeyedValues.getIndex : $r3 = r0.<org.jfree.data.DefaultKeyedValues: java.util.HashMap indexMap>
+org.jfree.data.DefaultKeyedValues.getIndex : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "key")
+org.jfree.data.DefaultKeyedValues.getIndex : if r2 != null goto $i0 = virtualinvoke r2.<java.lang.Integer: int intValue()>()
+org.jfree.chart.title.Title.addChangeListener : $r2 = r0.<org.jfree.chart.title.Title: javax.swing.event.EventListenerList listenerList>
+org.jfree.chart.title.Title.notifyListeners : $z0 = r0.<org.jfree.chart.title.Title: boolean notify>
+org.jfree.chart.title.Title.notifyListeners : $i1 = lengthof r2
+org.jfree.chart.title.Title.notifyListeners : $r3 = r0.<org.jfree.chart.title.Title: javax.swing.event.EventListenerList listenerList>
+org.jfree.data.category.DefaultCategoryDataset.getRowCount : $r1 = r0.<org.jfree.data.category.DefaultCategoryDataset: org.jfree.data.DefaultKeyedValues2D data>
+org.jfree.chart.JFreeChart.setBackgroundPaint : virtualinvoke r0.<org.jfree.chart.JFreeChart: void fireChartChanged()>()
+org.jfree.chart.JFreeChart.setBackgroundPaint : $r2 = r0.<org.jfree.chart.JFreeChart: java.awt.Paint backgroundPaint>
+org.jfree.chart.JFreeChart.setBackgroundPaint : $r3 = r0.<org.jfree.chart.JFreeChart: java.awt.Paint backgroundPaint>
+org.jfree.chart.JFreeChart.setBackgroundPaint : r0.<org.jfree.chart.JFreeChart: java.awt.Paint backgroundPaint> = r1
+org.jfree.data.DefaultKeyedValues2D.getRowCount : $r1 = r0.<org.jfree.data.DefaultKeyedValues2D: java.util.List rowKeys>
+org.jfree.chart.plot.DefaultDrawingSupplier.getNextPaint : $i3 = r0.<org.jfree.chart.plot.DefaultDrawingSupplier: int paintIndex>
+org.jfree.chart.plot.DefaultDrawingSupplier.getNextPaint : return r1
+org.jfree.chart.plot.DefaultDrawingSupplier.getNextPaint : $r2 = r0.<org.jfree.chart.plot.DefaultDrawingSupplier: java.awt.Paint[] paintSequence>
+org.jfree.chart.title.LegendTitle.setBackgroundPaint : $r2 = new org.jfree.chart.event.TitleChangeEvent
+org.jfree.chart.title.LegendTitle.setBackgroundPaint : r0.<org.jfree.chart.title.LegendTitle: java.awt.Paint backgroundPaint> = r1
+org.jfree.data.general.AbstractDataset.notifyListeners : $r3 = r0.<org.jfree.data.general.AbstractDataset: javax.swing.event.EventListenerList listenerList>
+org.jfree.data.general.AbstractDataset.notifyListeners : $i1 = lengthof r2
+org.jfree.chart.plot.MultiplePiePlot.getLegendItemShape : $r1 = r0.<org.jfree.chart.plot.MultiplePiePlot: java.awt.Shape legendItemShape>
+org.jfree.chart.plot.MultiplePiePlot.prefetchSectionPaints : $r19 = r0.<org.jfree.chart.plot.MultiplePiePlot: java.util.Map sectionPaints>
+org.jfree.chart.plot.MultiplePiePlot.prefetchSectionPaints : $r5 = virtualinvoke r0.<org.jfree.chart.plot.MultiplePiePlot: org.jfree.chart.JFreeChart getPieChart()>()
+org.jfree.chart.plot.MultiplePiePlot.prefetchSectionPaints : $r22 = r0.<org.jfree.chart.plot.MultiplePiePlot: java.util.Map sectionPaints>
+org.jfree.chart.plot.MultiplePiePlot.prefetchSectionPaints : $r16 = r0.<org.jfree.chart.plot.MultiplePiePlot: org.jfree.data.category.CategoryDataset dataset>
+org.jfree.chart.plot.MultiplePiePlot.prefetchSectionPaints : r18 = virtualinvoke r1.<org.jfree.chart.plot.PiePlot: java.awt.Paint getSectionPaint(java.lang.Comparable)>(r17)
+org.jfree.chart.plot.MultiplePiePlot.prefetchSectionPaints : i2 = 0
+org.jfree.chart.plot.MultiplePiePlot.prefetchSectionPaints : if r18 != null goto $r22 = r0.<org.jfree.chart.plot.MultiplePiePlot: java.util.Map sectionPaints>
+org.jfree.chart.plot.MultiplePiePlot.prefetchSectionPaints : $r21 = virtualinvoke r0.<org.jfree.chart.plot.MultiplePiePlot: org.jfree.chart.plot.DrawingSupplier getDrawingSupplier()>()
+org.jfree.chart.plot.MultiplePiePlot.prefetchSectionPaints : $r7 = r0.<org.jfree.chart.plot.MultiplePiePlot: org.jfree.util.TableOrder dataExtractOrder>
+org.jfree.chart.plot.MultiplePiePlot.getPieChart : $r1 = r0.<org.jfree.chart.plot.MultiplePiePlot: org.jfree.chart.JFreeChart pieChart>
+org.jfree.chart.plot.PiePlot.getSectionPaint : $r2 = r0.<org.jfree.chart.plot.PiePlot: org.jfree.chart.PaintMap sectionPaintMap>
+org.jfree.chart.plot.MultiplePiePlot.getDataset : $r1 = r0.<org.jfree.chart.plot.MultiplePiePlot: org.jfree.data.category.CategoryDataset dataset>
+org.jfree.chart.LegendItem.getSeriesIndex : $i0 = r0.<org.jfree.chart.LegendItem: int series>
+org.jfree.chart.plot.Plot.datasetChanged : virtualinvoke r0.<org.jfree.chart.plot.Plot: void notifyListeners(org.jfree.chart.event.PlotChangeEvent)>(r3)
+org.jfree.chart.plot.Plot.datasetChanged : $r2 = new org.jfree.chart.event.PlotChangeEvent
+org.jfree.chart.plot.Plot.datasetChanged : $r4 = <org.jfree.chart.event.ChartChangeEventType: org.jfree.chart.event.ChartChangeEventType DATASET_UPDATED>
+org.jfree.data.general.AbstractDataset.fireDatasetChanged : $r1 = new org.jfree.data.general.DatasetChangeEvent
+org.jfree.chart.JFreeChart.removeSubtitle : virtualinvoke r0.<org.jfree.chart.JFreeChart: void fireChartChanged()>()
+org.jfree.chart.JFreeChart.removeSubtitle : $r2 = r0.<org.jfree.chart.JFreeChart: java.util.List subtitles>
+org.jfree.chart.plot.Plot.fireChangeEvent : $r1 = new org.jfree.chart.event.PlotChangeEvent
+org.jfree.chart.title.LegendTitle.equals : return 1
+org.jfree.chart.title.LegendTitle.equals : if r1 != r0 goto $z0 = r1 instanceof org.jfree.chart.title.LegendTitle
+org.jfree.chart.plot.Plot.setDatasetGroup : r0.<org.jfree.chart.plot.Plot: org.jfree.data.general.DatasetGroup datasetGroup> = r1
+org.jfree.chart.block.AbstractBlock.setPadding : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "padding")
+org.jfree.chart.block.AbstractBlock.setPadding : r0.<org.jfree.chart.block.AbstractBlock: org.jfree.ui.RectangleInsets padding> = r1
+org.jfree.data.category.DefaultCategoryDataset.getRowKey : $r1 = r0.<org.jfree.data.category.DefaultCategoryDataset: org.jfree.data.DefaultKeyedValues2D data>
+org.jfree.chart.plot.MultiplePiePlot.getLegendItems : r7 = r6
+org.jfree.chart.plot.MultiplePiePlot.getLegendItems : return r2
+org.jfree.chart.plot.MultiplePiePlot.getLegendItems : specialinvoke r0.<org.jfree.chart.plot.MultiplePiePlot: void prefetchSectionPaints()>()
+org.jfree.chart.plot.MultiplePiePlot.getLegendItems : r4 = interfaceinvoke r3.<java.util.List: java.util.Iterator iterator()>()
+org.jfree.chart.plot.MultiplePiePlot.getLegendItems : virtualinvoke r2.<org.jfree.chart.LegendItemCollection: void add(org.jfree.chart.LegendItem)>(r10)
+org.jfree.chart.plot.MultiplePiePlot.getLegendItems : virtualinvoke r10.<org.jfree.chart.LegendItem: void setSeriesIndex(int)>(i0)
+org.jfree.chart.plot.MultiplePiePlot.getLegendItems : $r21 = new org.jfree.chart.LegendItem
+org.jfree.chart.plot.MultiplePiePlot.getLegendItems : $r18 = interfaceinvoke r4.<java.util.Iterator: java.lang.Object next()>()
+org.jfree.chart.plot.MultiplePiePlot.getLegendItems : $r22 = virtualinvoke r0.<org.jfree.chart.plot.MultiplePiePlot: java.awt.Shape getLegendItemShape()>()
+org.jfree.chart.plot.MultiplePiePlot.getLegendItems : r6 = virtualinvoke r5.<java.lang.Object: java.lang.String toString()>()
+org.jfree.chart.plot.MultiplePiePlot.getLegendItems : $z0 = interfaceinvoke r4.<java.util.Iterator: boolean hasNext()>()
+org.jfree.chart.plot.MultiplePiePlot.getLegendItems : $r17 = r0.<org.jfree.chart.plot.MultiplePiePlot: org.jfree.data.category.CategoryDataset dataset>
+org.jfree.chart.plot.MultiplePiePlot.getLegendItems : goto [?= staticinvoke <edu.washington.cs.dt.impact.util.Tracer: void trace(java.lang.String,java.lang.String)>("$z0 = interfaceinvoke r4.<java.util.Iterator: boolean hasNext()>()", "org.jfree.chart.plot.MultiplePiePlot.getLegendItems")]
+org.jfree.chart.plot.MultiplePiePlot.getLegendItems : $r19 = r0.<org.jfree.chart.plot.MultiplePiePlot: java.util.Map sectionPaints>
+org.jfree.chart.plot.MultiplePiePlot.getLegendItems : $r12 = r0.<org.jfree.chart.plot.MultiplePiePlot: org.jfree.util.TableOrder dataExtractOrder>
+org.jfree.chart.plot.MultiplePiePlot.getLegendItems : $r1 = new org.jfree.chart.LegendItemCollection
+org.jfree.chart.plot.MultiplePiePlot.getLegendItems : virtualinvoke r10.<org.jfree.chart.LegendItem: void setSeriesKey(java.lang.Comparable)>(r5)
+org.jfree.chart.plot.MultiplePiePlot.getLegendItems : $d0 = r0.<org.jfree.chart.plot.MultiplePiePlot: double limit>
+org.jfree.chart.plot.MultiplePiePlot.getLegendItems : if r3 != null goto i0 = 0
+org.jfree.chart.plot.MultiplePiePlot.getLegendItems : r3 = null
+org.jfree.chart.plot.MultiplePiePlot.getLegendItems : $r23 = virtualinvoke r0.<org.jfree.chart.plot.MultiplePiePlot: org.jfree.data.category.CategoryDataset getDataset()>()
+org.jfree.chart.plot.MultiplePiePlot.getLegendItems : i0 = 0
+org.jfree.chart.plot.MultiplePiePlot.getLegendItems : i0 = i0 + 1
+org.jfree.chart.plot.MultiplePiePlot.getLegendItems : $r15 = r0.<org.jfree.chart.plot.MultiplePiePlot: org.jfree.util.TableOrder dataExtractOrder>
+org.jfree.chart.plot.MultiplePiePlot.getLegendItems : $r11 = r0.<org.jfree.chart.plot.MultiplePiePlot: org.jfree.data.category.CategoryDataset dataset>
+org.jfree.data.general.AbstractDataset.getGroup : $r1 = r0.<org.jfree.data.general.AbstractDataset: org.jfree.data.general.DatasetGroup group>
+org.jfree.data.DefaultKeyedValues2D.getRowKeys : $r1 = r0.<org.jfree.data.DefaultKeyedValues2D: java.util.List rowKeys>
+org.jfree.chart.LegendItem.setSeriesIndex : r0.<org.jfree.chart.LegendItem: int series> = i0
+org.jfree.chart.PaintMap.getPaint : $r2 = r0.<org.jfree.chart.PaintMap: java.util.Map store>
+org.jfree.chart.PaintMap.getPaint : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "key")
+org.jfree.data.DefaultKeyedValues.setValue : i0 = virtualinvoke r0.<org.jfree.data.DefaultKeyedValues: int getIndex(java.lang.Comparable)>(r1)
+org.jfree.data.DefaultKeyedValues.setValue : $r8 = r0.<org.jfree.data.DefaultKeyedValues: java.util.ArrayList values>
+org.jfree.data.DefaultKeyedValues.setValue : $r9 = r0.<org.jfree.data.DefaultKeyedValues: java.util.HashMap indexMap>
+org.jfree.data.DefaultKeyedValues.setValue : $r7 = r0.<org.jfree.data.DefaultKeyedValues: java.util.ArrayList keys>
+org.jfree.data.DefaultKeyedValues.setValue : if i0 < 0 goto $r7 = r0.<org.jfree.data.DefaultKeyedValues: java.util.ArrayList keys>
+org.jfree.data.DefaultKeyedValues.setValue : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "key")
+org.jfree.data.category.DefaultCategoryDataset.addValue : virtualinvoke r0.<org.jfree.data.category.DefaultCategoryDataset: void fireDatasetChanged()>()
+org.jfree.data.category.DefaultCategoryDataset.addValue : $r4 = r0.<org.jfree.data.category.DefaultCategoryDataset: org.jfree.data.DefaultKeyedValues2D data>
+org.jfree.data.category.DefaultCategoryDataset.addValue : $r3 = new java.lang.Double
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null goto return
+org.jfree.chart.JFreeChart.setTitle : virtualinvoke r0.<org.jfree.chart.JFreeChart: void fireChartChanged()>()
+org.jfree.chart.JFreeChart.setTitle : $r2 = r0.<org.jfree.chart.JFreeChart: org.jfree.chart.title.TextTitle title>
+org.jfree.chart.JFreeChart.setTitle : if r1 == null goto virtualinvoke r0.<org.jfree.chart.JFreeChart: void fireChartChanged()>()
+org.jfree.chart.JFreeChart.setTitle : r0.<org.jfree.chart.JFreeChart: org.jfree.chart.title.TextTitle title> = r1
+org.jfree.chart.JFreeChart.setTitle : virtualinvoke r1.<org.jfree.chart.title.TextTitle: void addChangeListener(org.jfree.chart.event.TitleChangeListener)>(r0)
+org.jfree.chart.JFreeChart.fireChartChanged : $r1 = new org.jfree.chart.event.ChartChangeEvent
+org.jfree.chart.JFreeChart.fireChartChanged : virtualinvoke r0.<org.jfree.chart.JFreeChart: void notifyListeners(org.jfree.chart.event.ChartChangeEvent)>(r2)
+org.jfree.data.category.DefaultCategoryDataset.getRowKeys : $r1 = r0.<org.jfree.data.category.DefaultCategoryDataset: org.jfree.data.DefaultKeyedValues2D data>
+org.jfree.chart.plot.Plot.getParent : $r1 = r0.<org.jfree.chart.plot.Plot: org.jfree.chart.plot.Plot parent>
+org.jfree.chart.plot.Plot.addChangeListener : $r2 = r0.<org.jfree.chart.plot.Plot: javax.swing.event.EventListenerList listenerList>
+org.jfree.chart.LegendItem.getDataset : $r1 = r0.<org.jfree.chart.LegendItem: org.jfree.data.general.Dataset dataset>
+org.jfree.chart.LegendItem.getDatasetIndex : $i0 = r0.<org.jfree.chart.LegendItem: int datasetIndex>
+org.jfree.chart.JFreeChart.getPlot : $r1 = r0.<org.jfree.chart.JFreeChart: org.jfree.chart.plot.Plot plot>
+org.jfree.data.category.DefaultCategoryDataset.equals : return 1
+org.jfree.data.category.DefaultCategoryDataset.equals : if r1 != r0 goto $z0 = r1 instanceof org.jfree.data.category.CategoryDataset
+org.jfree.chart.LegendItem.getSeriesKey : $r1 = r0.<org.jfree.chart.LegendItem: java.lang.Comparable seriesKey>

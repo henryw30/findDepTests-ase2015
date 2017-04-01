@@ -1,0 +1,124 @@
+org.jfree.chart.util.PaintAlpha.darker : $r5 = virtualinvoke r0.<java.awt.TexturePaint: java.awt.image.BufferedImage getImage()>() >>>>>>>> org.jfree.chart.util.PaintAlpha.darker : $r6 = virtualinvoke $r5.<java.awt.image.BufferedImage: java.awt.image.ColorModel getColorModel()>()
+org.jfree.chart.util.PaintAlpha.darker : $r6 = virtualinvoke $r5.<java.awt.image.BufferedImage: java.awt.image.ColorModel getColorModel()>() >>>>>>>> org.jfree.chart.util.PaintAlpha.darker : $z0 = virtualinvoke $r6.<java.awt.image.ColorModel: boolean isAlphaPremultiplied()>()
+org.jfree.chart.util.PaintAlpha.darker : $z0 = virtualinvoke $r6.<java.awt.image.ColorModel: boolean isAlphaPremultiplied()>() >>>>>>>> org.jfree.chart.util.PaintAlpha.darker : if $z0 == 0
+org.jfree.chart.util.PaintAlpha.darker : if $z0 == 0 >>>>>>>> org.jfree.chart.util.PaintAlpha.darker : $r7 = virtualinvoke r0.<java.awt.TexturePaint: java.awt.image.BufferedImage getImage()>()
+org.jfree.chart.util.PaintAlpha.darker : $r7 = virtualinvoke r0.<java.awt.TexturePaint: java.awt.image.BufferedImage getImage()>() >>>>>>>> org.jfree.chart.util.PaintAlpha.darker : r1 = staticinvoke <org.jfree.chart.util.PaintAlpha: java.awt.image.BufferedImage cloneImage(java.awt.image.BufferedImage)>($r7)
+org.jfree.chart.util.PaintAlpha.darker : r1 = staticinvoke <org.jfree.chart.util.PaintAlpha: java.awt.image.BufferedImage cloneImage(java.awt.image.BufferedImage)>($r7) >>>>>>>> org.jfree.chart.util.PaintAlpha.darker : r2 = virtualinvoke r1.<java.awt.image.BufferedImage: java.awt.image.WritableRaster copyData(java.awt.image.WritableRaster)>(null)
+org.jfree.chart.util.PaintAlpha.darker : r2 = virtualinvoke r1.<java.awt.image.BufferedImage: java.awt.image.WritableRaster copyData(java.awt.image.WritableRaster)>(null) >>>>>>>> org.jfree.chart.util.PaintAlpha.darker : i0 = virtualinvoke r2.<java.awt.image.WritableRaster: int getMinX()>()
+org.jfree.chart.util.PaintAlpha.darker : i0 = virtualinvoke r2.<java.awt.image.WritableRaster: int getMinX()>() >>>>>>>> org.jfree.chart.util.PaintAlpha.darker : i1 = virtualinvoke r2.<java.awt.image.WritableRaster: int getMinY()>()
+org.jfree.chart.util.PaintAlpha.darker : i1 = virtualinvoke r2.<java.awt.image.WritableRaster: int getMinY()>() >>>>>>>> org.jfree.chart.util.PaintAlpha.darker : $i6 = virtualinvoke r2.<java.awt.image.WritableRaster: int getMinY()>()
+org.jfree.chart.util.PaintAlpha.darker : $i6 = virtualinvoke r2.<java.awt.image.WritableRaster: int getMinY()>() >>>>>>>> org.jfree.chart.util.PaintAlpha.darker : $i7 = virtualinvoke r2.<java.awt.image.WritableRaster: int getHeight()>()
+org.jfree.chart.util.PaintAlpha.darker : $i7 = virtualinvoke r2.<java.awt.image.WritableRaster: int getHeight()>() >>>>>>>> org.jfree.chart.util.PaintAlpha.darker : i2 = $i6 + $i7
+org.jfree.chart.util.PaintAlpha.darker : i2 = $i6 + $i7 >>>>>>>> org.jfree.chart.util.PaintAlpha.darker : i3 = virtualinvoke r2.<java.awt.image.WritableRaster: int getWidth()>()
+org.jfree.chart.util.PaintAlpha.darker : i3 = virtualinvoke r2.<java.awt.image.WritableRaster: int getWidth()>() >>>>>>>> org.jfree.chart.util.PaintAlpha.darker : $r8 = virtualinvoke r1.<java.awt.image.BufferedImage: java.awt.image.SampleModel getSampleModel()>()
+org.jfree.chart.util.PaintAlpha.darker : $r8 = virtualinvoke r1.<java.awt.image.BufferedImage: java.awt.image.SampleModel getSampleModel()>() >>>>>>>> org.jfree.chart.util.PaintAlpha.darker : $i8 = virtualinvoke $r8.<java.awt.image.SampleModel: int getNumBands()>()
+org.jfree.chart.util.PaintAlpha.darker : $i8 = virtualinvoke $r8.<java.awt.image.SampleModel: int getNumBands()>() >>>>>>>> org.jfree.chart.util.PaintAlpha.darker : $i9 = i3 * $i8
+org.jfree.chart.util.PaintAlpha.darker : $i9 = i3 * $i8 >>>>>>>> org.jfree.chart.util.PaintAlpha.darker : r3 = newarray (int)[$i9]
+org.jfree.chart.util.PaintAlpha.darker : r3 = newarray (int)[$i9] >>>>>>>> org.jfree.chart.util.PaintAlpha.darker : $r9 = virtualinvoke r1.<java.awt.image.BufferedImage: java.awt.image.ColorModel getColorModel()>()
+org.jfree.chart.util.PaintAlpha.darker : $r9 = virtualinvoke r1.<java.awt.image.BufferedImage: java.awt.image.ColorModel getColorModel()>() >>>>>>>> org.jfree.chart.util.PaintAlpha.darker : $z1 = $r9 instanceof java.awt.image.IndexColorModel
+org.jfree.chart.util.PaintAlpha.darker : $z1 = $r9 instanceof java.awt.image.IndexColorModel >>>>>>>> org.jfree.chart.util.PaintAlpha.darker : if $z1 == 0
+org.jfree.chart.util.PaintAlpha.darker : if $z1 == 0 >>>>>>>> org.jfree.chart.util.PaintAlpha.darker : r4 = newarray (int)[4]
+org.jfree.chart.util.PaintAlpha.darker : if $z1 == 0 >>>>>>>> org.jfree.chart.util.PaintAlpha.darker : $r17 = virtualinvoke r1.<java.awt.image.BufferedImage: java.awt.image.SampleModel getSampleModel()>()
+org.jfree.chart.util.PaintAlpha.darker : $r17 = virtualinvoke r1.<java.awt.image.BufferedImage: java.awt.image.SampleModel getSampleModel()>() >>>>>>>> org.jfree.chart.util.PaintAlpha.darker : $i22 = virtualinvoke $r17.<java.awt.image.SampleModel: int getNumBands()>()
+org.jfree.chart.util.PaintAlpha.darker : $i22 = virtualinvoke $r17.<java.awt.image.SampleModel: int getNumBands()>() >>>>>>>> org.jfree.chart.util.PaintAlpha.darker : if $i22 != 4
+org.jfree.chart.util.PaintAlpha.darker : if $i22 != 4 >>>>>>>> org.jfree.chart.util.PaintAlpha.darker : i23 = i1
+org.jfree.chart.util.PaintAlpha.darker : if $i22 != 4 >>>>>>>> org.jfree.chart.util.PaintAlpha.darker : i35 = i1
+org.jfree.chart.util.PaintAlpha.darker : i35 = i1 >>>>>>>> org.jfree.chart.util.PaintAlpha.darker : if i35 >= i2
+org.jfree.chart.util.PaintAlpha.darker : if i35 >= i2 >>>>>>>> org.jfree.chart.util.PaintAlpha.darker : r3 = virtualinvoke r2.<java.awt.image.WritableRaster: int[] getPixels(int,int,int,int,int[])>(i0, i35, i3, 1, r3)
+org.jfree.chart.util.PaintAlpha.darker : if i35 >= i2 >>>>>>>> org.jfree.chart.util.PaintAlpha.darker : virtualinvoke r1.<java.awt.image.BufferedImage: void setData(java.awt.image.Raster)>(r2)
+org.jfree.chart.util.PaintAlpha.darker : virtualinvoke r1.<java.awt.image.BufferedImage: void setData(java.awt.image.Raster)>(r2) >>>>>>>> org.jfree.chart.util.PaintAlpha.darker : $r20 = new java.awt.TexturePaint
+org.jfree.chart.util.PaintAlpha.darker : $r20 = new java.awt.TexturePaint >>>>>>>> org.jfree.chart.util.PaintAlpha.darker : $r21 = virtualinvoke r0.<java.awt.TexturePaint: java.awt.geom.Rectangle2D getAnchorRect()>()
+org.jfree.chart.util.PaintAlpha.darker : $r21 = virtualinvoke r0.<java.awt.TexturePaint: java.awt.geom.Rectangle2D getAnchorRect()>() >>>>>>>> org.jfree.chart.util.PaintAlpha.darker : specialinvoke $r20.<java.awt.TexturePaint: void <init>(java.awt.image.BufferedImage,java.awt.geom.Rectangle2D)>(r1, $r21)
+org.jfree.chart.util.PaintAlpha.darker : specialinvoke $r20.<java.awt.TexturePaint: void <init>(java.awt.image.BufferedImage,java.awt.geom.Rectangle2D)>(r1, $r21) >>>>>>>> org.jfree.chart.util.PaintAlpha.darker : return $r20
+org.jfree.chart.util.PaintAlpha.darker : r3 = virtualinvoke r2.<java.awt.image.WritableRaster: int[] getPixels(int,int,int,int,int[])>(i0, i35, i3, 1, r3) >>>>>>>> org.jfree.chart.util.PaintAlpha.darker : i36 = 0
+org.jfree.chart.util.PaintAlpha.darker : i36 = 0 >>>>>>>> org.jfree.chart.util.PaintAlpha.darker : $i37 = lengthof r3
+org.jfree.chart.util.PaintAlpha.darker : $i37 = lengthof r3 >>>>>>>> org.jfree.chart.util.PaintAlpha.darker : if i36 >= $i37
+org.jfree.chart.util.PaintAlpha.darker : if i36 >= $i37 >>>>>>>> org.jfree.chart.util.PaintAlpha.darker : $i38 = r3[i36]
+org.jfree.chart.util.PaintAlpha.darker : if i36 >= $i37 >>>>>>>> org.jfree.chart.util.PaintAlpha.darker : virtualinvoke r2.<java.awt.image.WritableRaster: void setPixels(int,int,int,int,int[])>(i0, i35, i3, 1, r3)
+org.jfree.chart.util.PaintAlpha.darker : virtualinvoke r2.<java.awt.image.WritableRaster: void setPixels(int,int,int,int,int[])>(i0, i35, i3, 1, r3) >>>>>>>> org.jfree.chart.util.PaintAlpha.darker : i35 = i35 + 1
+org.jfree.chart.util.PaintAlpha.darker : i35 = i35 + 1 >>>>>>>> org.jfree.chart.util.PaintAlpha.darker : goto [?= (branch)]
+org.jfree.chart.util.PaintAlpha.darker : goto [?= (branch)] >>>>>>>> org.jfree.chart.util.PaintAlpha.darker : if i35 >= i2
+org.jfree.chart.util.PaintAlpha.darker : $i38 = r3[i36] >>>>>>>> org.jfree.chart.util.PaintAlpha.darker : $d12 = (double) $i38
+org.jfree.chart.util.PaintAlpha.darker : $d12 = (double) $i38 >>>>>>>> org.jfree.chart.util.PaintAlpha.darker : $d13 = $d12 * 0.7
+org.jfree.chart.util.PaintAlpha.darker : $d13 = $d12 * 0.7 >>>>>>>> org.jfree.chart.util.PaintAlpha.darker : $i39 = (int) $d13
+org.jfree.chart.util.PaintAlpha.darker : $i39 = (int) $d13 >>>>>>>> org.jfree.chart.util.PaintAlpha.darker : r3[i36] = $i39
+org.jfree.chart.util.PaintAlpha.darker : r3[i36] = $i39 >>>>>>>> org.jfree.chart.util.PaintAlpha.darker : i36 = i36 + 1
+org.jfree.chart.util.PaintAlpha.darker : i36 = i36 + 1 >>>>>>>> org.jfree.chart.util.PaintAlpha.darker : goto [?= $i37 = lengthof r3]
+org.jfree.chart.util.PaintAlpha.darker : goto [?= $i37 = lengthof r3] >>>>>>>> org.jfree.chart.util.PaintAlpha.darker : $i37 = lengthof r3
+org.jfree.chart.util.PaintAlpha.darker : i23 = i1 >>>>>>>> org.jfree.chart.util.PaintAlpha.darker : if i23 >= i2
+org.jfree.chart.util.PaintAlpha.darker : if i23 >= i2 >>>>>>>> org.jfree.chart.util.PaintAlpha.darker : r3 = virtualinvoke r2.<java.awt.image.WritableRaster: int[] getPixels(int,int,int,int,int[])>(i0, i23, i3, 1, r3)
+org.jfree.chart.util.PaintAlpha.darker : if i23 >= i2 >>>>>>>> org.jfree.chart.util.PaintAlpha.darker : virtualinvoke r1.<java.awt.image.BufferedImage: void setData(java.awt.image.Raster)>(r2)
+org.jfree.chart.util.PaintAlpha.darker : virtualinvoke r1.<java.awt.image.BufferedImage: void setData(java.awt.image.Raster)>(r2) >>>>>>>> org.jfree.chart.util.PaintAlpha.darker : $r18 = new java.awt.TexturePaint
+org.jfree.chart.util.PaintAlpha.darker : $r18 = new java.awt.TexturePaint >>>>>>>> org.jfree.chart.util.PaintAlpha.darker : $r19 = virtualinvoke r0.<java.awt.TexturePaint: java.awt.geom.Rectangle2D getAnchorRect()>()
+org.jfree.chart.util.PaintAlpha.darker : $r19 = virtualinvoke r0.<java.awt.TexturePaint: java.awt.geom.Rectangle2D getAnchorRect()>() >>>>>>>> org.jfree.chart.util.PaintAlpha.darker : specialinvoke $r18.<java.awt.TexturePaint: void <init>(java.awt.image.BufferedImage,java.awt.geom.Rectangle2D)>(r1, $r19)
+org.jfree.chart.util.PaintAlpha.darker : specialinvoke $r18.<java.awt.TexturePaint: void <init>(java.awt.image.BufferedImage,java.awt.geom.Rectangle2D)>(r1, $r19) >>>>>>>> org.jfree.chart.util.PaintAlpha.darker : return $r18
+org.jfree.chart.util.PaintAlpha.darker : r3 = virtualinvoke r2.<java.awt.image.WritableRaster: int[] getPixels(int,int,int,int,int[])>(i0, i23, i3, 1, r3) >>>>>>>> org.jfree.chart.util.PaintAlpha.darker : i24 = 0
+org.jfree.chart.util.PaintAlpha.darker : i24 = 0 >>>>>>>> org.jfree.chart.util.PaintAlpha.darker : $i25 = lengthof r3
+org.jfree.chart.util.PaintAlpha.darker : $i25 = lengthof r3 >>>>>>>> org.jfree.chart.util.PaintAlpha.darker : if i24 >= $i25
+org.jfree.chart.util.PaintAlpha.darker : if i24 >= $i25 >>>>>>>> org.jfree.chart.util.PaintAlpha.darker : i26 = i24 + 1
+org.jfree.chart.util.PaintAlpha.darker : if i24 >= $i25 >>>>>>>> org.jfree.chart.util.PaintAlpha.darker : virtualinvoke r2.<java.awt.image.WritableRaster: void setPixels(int,int,int,int,int[])>(i0, i23, i3, 1, r3)
+org.jfree.chart.util.PaintAlpha.darker : virtualinvoke r2.<java.awt.image.WritableRaster: void setPixels(int,int,int,int,int[])>(i0, i23, i3, 1, r3) >>>>>>>> org.jfree.chart.util.PaintAlpha.darker : i23 = i23 + 1
+org.jfree.chart.util.PaintAlpha.darker : i23 = i23 + 1 >>>>>>>> org.jfree.chart.util.PaintAlpha.darker : goto [?= (branch)]
+org.jfree.chart.util.PaintAlpha.darker : goto [?= (branch)] >>>>>>>> org.jfree.chart.util.PaintAlpha.darker : if i23 >= i2
+org.jfree.chart.util.PaintAlpha.darker : i26 = i24 + 1 >>>>>>>> org.jfree.chart.util.PaintAlpha.darker : $i27 = r3[i24]
+org.jfree.chart.util.PaintAlpha.darker : $i27 = r3[i24] >>>>>>>> org.jfree.chart.util.PaintAlpha.darker : $d6 = (double) $i27
+org.jfree.chart.util.PaintAlpha.darker : $d6 = (double) $i27 >>>>>>>> org.jfree.chart.util.PaintAlpha.darker : $d7 = $d6 * 0.7
+org.jfree.chart.util.PaintAlpha.darker : $d7 = $d6 * 0.7 >>>>>>>> org.jfree.chart.util.PaintAlpha.darker : $i28 = (int) $d7
+org.jfree.chart.util.PaintAlpha.darker : $i28 = (int) $d7 >>>>>>>> org.jfree.chart.util.PaintAlpha.darker : r3[i24] = $i28
+org.jfree.chart.util.PaintAlpha.darker : r3[i24] = $i28 >>>>>>>> org.jfree.chart.util.PaintAlpha.darker : i29 = i26 + 1
+org.jfree.chart.util.PaintAlpha.darker : i29 = i26 + 1 >>>>>>>> org.jfree.chart.util.PaintAlpha.darker : $i30 = r3[i26]
+org.jfree.chart.util.PaintAlpha.darker : $i30 = r3[i26] >>>>>>>> org.jfree.chart.util.PaintAlpha.darker : $d8 = (double) $i30
+org.jfree.chart.util.PaintAlpha.darker : $d8 = (double) $i30 >>>>>>>> org.jfree.chart.util.PaintAlpha.darker : $d9 = $d8 * 0.7
+org.jfree.chart.util.PaintAlpha.darker : $d9 = $d8 * 0.7 >>>>>>>> org.jfree.chart.util.PaintAlpha.darker : $i31 = (int) $d9
+org.jfree.chart.util.PaintAlpha.darker : $i31 = (int) $d9 >>>>>>>> org.jfree.chart.util.PaintAlpha.darker : r3[i26] = $i31
+org.jfree.chart.util.PaintAlpha.darker : r3[i26] = $i31 >>>>>>>> org.jfree.chart.util.PaintAlpha.darker : i32 = i29 + 1
+org.jfree.chart.util.PaintAlpha.darker : i32 = i29 + 1 >>>>>>>> org.jfree.chart.util.PaintAlpha.darker : $i33 = r3[i29]
+org.jfree.chart.util.PaintAlpha.darker : $i33 = r3[i29] >>>>>>>> org.jfree.chart.util.PaintAlpha.darker : $d10 = (double) $i33
+org.jfree.chart.util.PaintAlpha.darker : $d10 = (double) $i33 >>>>>>>> org.jfree.chart.util.PaintAlpha.darker : $d11 = $d10 * 0.7
+org.jfree.chart.util.PaintAlpha.darker : $d11 = $d10 * 0.7 >>>>>>>> org.jfree.chart.util.PaintAlpha.darker : $i34 = (int) $d11
+org.jfree.chart.util.PaintAlpha.darker : $i34 = (int) $d11 >>>>>>>> org.jfree.chart.util.PaintAlpha.darker : r3[i29] = $i34
+org.jfree.chart.util.PaintAlpha.darker : r3[i29] = $i34 >>>>>>>> org.jfree.chart.util.PaintAlpha.darker : i24 = i32 + 1
+org.jfree.chart.util.PaintAlpha.darker : i24 = i32 + 1 >>>>>>>> org.jfree.chart.util.PaintAlpha.darker : goto [?= $i25 = lengthof r3]
+org.jfree.chart.util.PaintAlpha.darker : goto [?= $i25 = lengthof r3] >>>>>>>> org.jfree.chart.util.PaintAlpha.darker : $i25 = lengthof r3
+org.jfree.chart.util.PaintAlpha.darker : r4 = newarray (int)[4] >>>>>>>> org.jfree.chart.util.PaintAlpha.darker : i4 = i1
+org.jfree.chart.util.PaintAlpha.darker : i4 = i1 >>>>>>>> org.jfree.chart.util.PaintAlpha.darker : if i4 >= i2
+org.jfree.chart.util.PaintAlpha.darker : if i4 >= i2 >>>>>>>> org.jfree.chart.util.PaintAlpha.darker : r3 = virtualinvoke r2.<java.awt.image.WritableRaster: int[] getPixels(int,int,int,int,int[])>(i0, i4, i3, 1, r3)
+org.jfree.chart.util.PaintAlpha.darker : if i4 >= i2 >>>>>>>> org.jfree.chart.util.PaintAlpha.darker : virtualinvoke r1.<java.awt.image.BufferedImage: void setData(java.awt.image.Raster)>(r2)
+org.jfree.chart.util.PaintAlpha.darker : virtualinvoke r1.<java.awt.image.BufferedImage: void setData(java.awt.image.Raster)>(r2) >>>>>>>> org.jfree.chart.util.PaintAlpha.darker : $r15 = new java.awt.TexturePaint
+org.jfree.chart.util.PaintAlpha.darker : $r15 = new java.awt.TexturePaint >>>>>>>> org.jfree.chart.util.PaintAlpha.darker : $r16 = virtualinvoke r0.<java.awt.TexturePaint: java.awt.geom.Rectangle2D getAnchorRect()>()
+org.jfree.chart.util.PaintAlpha.darker : $r16 = virtualinvoke r0.<java.awt.TexturePaint: java.awt.geom.Rectangle2D getAnchorRect()>() >>>>>>>> org.jfree.chart.util.PaintAlpha.darker : specialinvoke $r15.<java.awt.TexturePaint: void <init>(java.awt.image.BufferedImage,java.awt.geom.Rectangle2D)>(r1, $r16)
+org.jfree.chart.util.PaintAlpha.darker : specialinvoke $r15.<java.awt.TexturePaint: void <init>(java.awt.image.BufferedImage,java.awt.geom.Rectangle2D)>(r1, $r16) >>>>>>>> org.jfree.chart.util.PaintAlpha.darker : return $r15
+org.jfree.chart.util.PaintAlpha.darker : r3 = virtualinvoke r2.<java.awt.image.WritableRaster: int[] getPixels(int,int,int,int,int[])>(i0, i4, i3, 1, r3) >>>>>>>> org.jfree.chart.util.PaintAlpha.darker : i5 = 0
+org.jfree.chart.util.PaintAlpha.darker : i5 = 0 >>>>>>>> org.jfree.chart.util.PaintAlpha.darker : $i10 = lengthof r3
+org.jfree.chart.util.PaintAlpha.darker : $i10 = lengthof r3 >>>>>>>> org.jfree.chart.util.PaintAlpha.darker : if i5 >= $i10
+org.jfree.chart.util.PaintAlpha.darker : if i5 >= $i10 >>>>>>>> org.jfree.chart.util.PaintAlpha.darker : $r10 = virtualinvoke r1.<java.awt.image.BufferedImage: java.awt.image.ColorModel getColorModel()>()
+org.jfree.chart.util.PaintAlpha.darker : if i5 >= $i10 >>>>>>>> org.jfree.chart.util.PaintAlpha.darker : virtualinvoke r2.<java.awt.image.WritableRaster: void setPixels(int,int,int,int,int[])>(i0, i4, i3, 1, r3)
+org.jfree.chart.util.PaintAlpha.darker : virtualinvoke r2.<java.awt.image.WritableRaster: void setPixels(int,int,int,int,int[])>(i0, i4, i3, 1, r3) >>>>>>>> org.jfree.chart.util.PaintAlpha.darker : i4 = i4 + 1
+org.jfree.chart.util.PaintAlpha.darker : i4 = i4 + 1 >>>>>>>> org.jfree.chart.util.PaintAlpha.darker : goto [?= (branch)]
+org.jfree.chart.util.PaintAlpha.darker : goto [?= (branch)] >>>>>>>> org.jfree.chart.util.PaintAlpha.darker : if i4 >= i2
+org.jfree.chart.util.PaintAlpha.darker : $r10 = virtualinvoke r1.<java.awt.image.BufferedImage: java.awt.image.ColorModel getColorModel()>() >>>>>>>> org.jfree.chart.util.PaintAlpha.darker : $i11 = r3[i5]
+org.jfree.chart.util.PaintAlpha.darker : $i11 = r3[i5] >>>>>>>> org.jfree.chart.util.PaintAlpha.darker : r4 = virtualinvoke $r10.<java.awt.image.ColorModel: int[] getComponents(int,int[],int)>($i11, r4, 0)
+org.jfree.chart.util.PaintAlpha.darker : r4 = virtualinvoke $r10.<java.awt.image.ColorModel: int[] getComponents(int,int[],int)>($i11, r4, 0) >>>>>>>> org.jfree.chart.util.PaintAlpha.darker : $b12 = 0
+org.jfree.chart.util.PaintAlpha.darker : $b12 = 0 >>>>>>>> org.jfree.chart.util.PaintAlpha.darker : $i13 = r4[$b12]
+org.jfree.chart.util.PaintAlpha.darker : $i13 = r4[$b12] >>>>>>>> org.jfree.chart.util.PaintAlpha.darker : $d0 = (double) $i13
+org.jfree.chart.util.PaintAlpha.darker : $d0 = (double) $i13 >>>>>>>> org.jfree.chart.util.PaintAlpha.darker : $d1 = $d0 * 0.7
+org.jfree.chart.util.PaintAlpha.darker : $d1 = $d0 * 0.7 >>>>>>>> org.jfree.chart.util.PaintAlpha.darker : $i14 = (int) $d1
+org.jfree.chart.util.PaintAlpha.darker : $i14 = (int) $d1 >>>>>>>> org.jfree.chart.util.PaintAlpha.darker : r4[$b12] = $i14
+org.jfree.chart.util.PaintAlpha.darker : r4[$b12] = $i14 >>>>>>>> org.jfree.chart.util.PaintAlpha.darker : $b15 = 1
+org.jfree.chart.util.PaintAlpha.darker : $b15 = 1 >>>>>>>> org.jfree.chart.util.PaintAlpha.darker : $i16 = r4[$b15]
+org.jfree.chart.util.PaintAlpha.darker : $i16 = r4[$b15] >>>>>>>> org.jfree.chart.util.PaintAlpha.darker : $d2 = (double) $i16
+org.jfree.chart.util.PaintAlpha.darker : $d2 = (double) $i16 >>>>>>>> org.jfree.chart.util.PaintAlpha.darker : $d3 = $d2 * 0.7
+org.jfree.chart.util.PaintAlpha.darker : $d3 = $d2 * 0.7 >>>>>>>> org.jfree.chart.util.PaintAlpha.darker : $i17 = (int) $d3
+org.jfree.chart.util.PaintAlpha.darker : $i17 = (int) $d3 >>>>>>>> org.jfree.chart.util.PaintAlpha.darker : r4[$b15] = $i17
+org.jfree.chart.util.PaintAlpha.darker : r4[$b15] = $i17 >>>>>>>> org.jfree.chart.util.PaintAlpha.darker : $b18 = 2
+org.jfree.chart.util.PaintAlpha.darker : $b18 = 2 >>>>>>>> org.jfree.chart.util.PaintAlpha.darker : $i19 = r4[$b18]
+org.jfree.chart.util.PaintAlpha.darker : $i19 = r4[$b18] >>>>>>>> org.jfree.chart.util.PaintAlpha.darker : $d4 = (double) $i19
+org.jfree.chart.util.PaintAlpha.darker : $d4 = (double) $i19 >>>>>>>> org.jfree.chart.util.PaintAlpha.darker : $d5 = $d4 * 0.7
+org.jfree.chart.util.PaintAlpha.darker : $d5 = $d4 * 0.7 >>>>>>>> org.jfree.chart.util.PaintAlpha.darker : $i20 = (int) $d5
+org.jfree.chart.util.PaintAlpha.darker : $i20 = (int) $d5 >>>>>>>> org.jfree.chart.util.PaintAlpha.darker : r4[$b18] = $i20
+org.jfree.chart.util.PaintAlpha.darker : r4[$b18] = $i20 >>>>>>>> org.jfree.chart.util.PaintAlpha.darker : $r14 = virtualinvoke r1.<java.awt.image.BufferedImage: java.awt.image.ColorModel getColorModel()>()
+org.jfree.chart.util.PaintAlpha.darker : $r14 = virtualinvoke r1.<java.awt.image.BufferedImage: java.awt.image.ColorModel getColorModel()>() >>>>>>>> org.jfree.chart.util.PaintAlpha.darker : $i21 = virtualinvoke $r14.<java.awt.image.ColorModel: int getDataElement(int[],int)>(r4, 0)
+org.jfree.chart.util.PaintAlpha.darker : $i21 = virtualinvoke $r14.<java.awt.image.ColorModel: int getDataElement(int[],int)>(r4, 0) >>>>>>>> org.jfree.chart.util.PaintAlpha.darker : r3[i5] = $i21
+org.jfree.chart.util.PaintAlpha.darker : r3[i5] = $i21 >>>>>>>> org.jfree.chart.util.PaintAlpha.darker : i5 = i5 + 1
+org.jfree.chart.util.PaintAlpha.darker : i5 = i5 + 1 >>>>>>>> org.jfree.chart.util.PaintAlpha.darker : goto [?= $i10 = lengthof r3]
+org.jfree.chart.util.PaintAlpha.darker : goto [?= $i10 = lengthof r3] >>>>>>>> org.jfree.chart.util.PaintAlpha.darker : $i10 = lengthof r3

@@ -1,0 +1,15 @@
+org.jfree.chart.StrokeMap.readObject : virtualinvoke r1.<java.io.ObjectInputStream: void defaultReadObject()>() >>>>>>>> org.jfree.chart.StrokeMap.readObject : $r2 = new java.util.TreeMap
+org.jfree.chart.StrokeMap.readObject : $r2 = new java.util.TreeMap >>>>>>>> org.jfree.chart.StrokeMap.readObject : specialinvoke $r2.<java.util.TreeMap: void <init>()>()
+org.jfree.chart.StrokeMap.readObject : specialinvoke $r2.<java.util.TreeMap: void <init>()>() >>>>>>>> org.jfree.chart.StrokeMap.readObject : r0.<org.jfree.chart.StrokeMap: java.util.Map store> = $r2
+org.jfree.chart.StrokeMap.readObject : r0.<org.jfree.chart.StrokeMap: java.util.Map store> = $r2 >>>>>>>> org.jfree.chart.StrokeMap.readObject : i0 = virtualinvoke r1.<java.io.ObjectInputStream: int readInt()>()
+org.jfree.chart.StrokeMap.readObject : i0 = virtualinvoke r1.<java.io.ObjectInputStream: int readInt()>() >>>>>>>> org.jfree.chart.StrokeMap.readObject : i1 = 0
+org.jfree.chart.StrokeMap.readObject : i1 = 0 >>>>>>>> org.jfree.chart.StrokeMap.readObject : if i1 >= i0
+org.jfree.chart.StrokeMap.readObject : if i1 >= i0 >>>>>>>> org.jfree.chart.StrokeMap.readObject : $r5 = virtualinvoke r1.<java.io.ObjectInputStream: java.lang.Object readObject()>()
+org.jfree.chart.StrokeMap.readObject : if i1 >= i0 >>>>>>>> org.jfree.chart.StrokeMap.readObject : return
+org.jfree.chart.StrokeMap.readObject : $r5 = virtualinvoke r1.<java.io.ObjectInputStream: java.lang.Object readObject()>() >>>>>>>> org.jfree.chart.StrokeMap.readObject : r3 = (java.lang.Comparable) $r5
+org.jfree.chart.StrokeMap.readObject : r3 = (java.lang.Comparable) $r5 >>>>>>>> org.jfree.chart.StrokeMap.readObject : r4 = staticinvoke <org.jfree.io.SerialUtilities: java.awt.Stroke readStroke(java.io.ObjectInputStream)>(r1)
+org.jfree.chart.StrokeMap.readObject : r4 = staticinvoke <org.jfree.io.SerialUtilities: java.awt.Stroke readStroke(java.io.ObjectInputStream)>(r1) >>>>>>>> org.jfree.chart.StrokeMap.readObject : $r6 = r0.<org.jfree.chart.StrokeMap: java.util.Map store>
+org.jfree.chart.StrokeMap.readObject : $r6 = r0.<org.jfree.chart.StrokeMap: java.util.Map store> >>>>>>>> org.jfree.chart.StrokeMap.readObject : interfaceinvoke $r6.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r3, r4)
+org.jfree.chart.StrokeMap.readObject : interfaceinvoke $r6.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r3, r4) >>>>>>>> org.jfree.chart.StrokeMap.readObject : i1 = i1 + 1
+org.jfree.chart.StrokeMap.readObject : i1 = i1 + 1 >>>>>>>> org.jfree.chart.StrokeMap.readObject : goto [?= (branch)]
+org.jfree.chart.StrokeMap.readObject : goto [?= (branch)] >>>>>>>> org.jfree.chart.StrokeMap.readObject : if i1 >= i0

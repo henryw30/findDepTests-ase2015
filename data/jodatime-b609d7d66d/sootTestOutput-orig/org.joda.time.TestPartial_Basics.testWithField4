@@ -1,0 +1,73 @@
+org.joda.time.DurationFieldType$StandardDurationFieldType.getField : $r12 = virtualinvoke r2.<org.joda.time.Chronology: org.joda.time.DurationField minutes()>()
+org.joda.time.DurationFieldType$StandardDurationFieldType.getField : r2 = staticinvoke <org.joda.time.DateTimeUtils: org.joda.time.Chronology getChronology(org.joda.time.Chronology)>(r1)
+org.joda.time.DurationFieldType$StandardDurationFieldType.getField : $r11 = virtualinvoke r2.<org.joda.time.Chronology: org.joda.time.DurationField hours()>()
+org.joda.time.DurationFieldType$StandardDurationFieldType.getField : $b0 = r0.<org.joda.time.DurationFieldType$StandardDurationFieldType: byte iOrdinal>
+org.joda.time.field.BaseDurationField.compareTo : $r2 = (org.joda.time.DurationField) r1
+org.joda.time.field.BaseDurationField.compareTo : $b2 = l1 cmp l0
+org.joda.time.field.BaseDurationField.compareTo : l0 = virtualinvoke r1.<org.joda.time.DurationField: long getUnitMillis()>()
+org.joda.time.field.BaseDurationField.compareTo : l1 = virtualinvoke r0.<org.joda.time.field.BaseDurationField: long getUnitMillis()>()
+org.joda.time.field.BaseDurationField.compareTo : return 1
+org.joda.time.field.BaseDurationField.compareTo : $b3 = l1 cmp l0
+org.joda.time.Partial.withField : $i2 = virtualinvoke r0.<org.joda.time.Partial: int getValue(int)>(i1)
+org.joda.time.Partial.withField : i1 = virtualinvoke r0.<org.joda.time.Partial: int indexOfSupported(org.joda.time.DateTimeFieldType)>(r1)
+org.joda.time.Partial.withField : return r0
+org.joda.time.chrono.ISOChronology.withUTC : $r1 = <org.joda.time.chrono.ISOChronology: org.joda.time.chrono.ISOChronology INSTANCE_UTC>
+org.joda.time.field.PreciseDurationDateTimeField.getMinimumValue : return 0
+org.joda.time.DateTimeFieldType.minuteOfHour : $r0 = <org.joda.time.DateTimeFieldType: org.joda.time.DateTimeFieldType MINUTE_OF_HOUR_TYPE>
+org.joda.time.DateTimeFieldType$StandardDateTimeFieldType.getDurationType : $r1 = r0.<org.joda.time.DateTimeFieldType$StandardDateTimeFieldType: org.joda.time.DurationFieldType iUnitType>
+org.joda.time.chrono.AssembledChronology.hours : $r1 = r0.<org.joda.time.chrono.AssembledChronology: org.joda.time.DurationField iHours>
+org.joda.time.base.AbstractPartial.indexOfSupported : return i0
+org.joda.time.base.AbstractPartial.indexOfSupported : i0 = virtualinvoke r0.<org.joda.time.base.AbstractPartial: int indexOf(org.joda.time.DateTimeFieldType)>(r1)
+org.joda.time.base.AbstractPartial.indexOfSupported : if i0 != -1 goto return i0
+org.joda.time.DateTimeUtils.getChronology : if r0 != null goto return r0
+org.joda.time.DateTimeUtils.getChronology : return r0
+org.joda.time.field.PreciseDurationField.getUnitMillis : $l0 = r0.<org.joda.time.field.PreciseDurationField: long iUnitMillis>
+org.joda.time.DateTimeUtils.checkPermission : r0 = staticinvoke <java.lang.System: java.lang.SecurityManager getSecurityManager()>()
+org.joda.time.DateTimeUtils.checkPermission : if r0 == null goto return
+org.joda.time.field.PreciseDateTimeField.getMaximumValue : $i0 = r0.<org.joda.time.field.PreciseDateTimeField: int iRange>
+org.joda.time.base.AbstractPartial.indexOf : return i0
+org.joda.time.base.AbstractPartial.indexOf : $r2 = virtualinvoke r0.<org.joda.time.base.AbstractPartial: org.joda.time.DateTimeFieldType getFieldType(int)>(i0)
+org.joda.time.base.AbstractPartial.indexOf : i0 = 0
+org.joda.time.chrono.AssembledChronology.minutes : $r1 = r0.<org.joda.time.chrono.AssembledChronology: org.joda.time.DurationField iMinutes>
+org.joda.time.base.AbstractPartial.getField : $r1 = virtualinvoke r0.<org.joda.time.base.AbstractPartial: org.joda.time.Chronology getChronology()>()
+org.joda.time.Partial.getFieldType : $r1 = r0.<org.joda.time.Partial: org.joda.time.DateTimeFieldType[] iTypes>
+org.joda.time.Partial.getValue : $r1 = r0.<org.joda.time.Partial: int[] iValues>
+org.joda.time.DateTimeZone.getDefault : if r0 != null goto return r0
+org.joda.time.DateTimeZone.getDefault : r0 = <org.joda.time.DateTimeZone: org.joda.time.DateTimeZone cDefault>
+org.joda.time.DateTimeZone.getDefault : return r0
+org.joda.time.DateTimeFieldType.hourOfDay : $r0 = <org.joda.time.DateTimeFieldType: org.joda.time.DateTimeFieldType HOUR_OF_DAY_TYPE>
+org.joda.time.field.BaseDateTimeField.getMinimumValue : $i0 = virtualinvoke r0.<org.joda.time.field.BaseDateTimeField: int getMinimumValue()>()
+org.joda.time.field.BaseDateTimeField.getMinimumValue : $i0 = virtualinvoke r0.<org.joda.time.field.BaseDateTimeField: int getMinimumValue(org.joda.time.ReadablePartial)>(r1)
+org.joda.time.field.BaseDateTimeField.getMaximumValue : $i0 = virtualinvoke r0.<org.joda.time.field.BaseDateTimeField: int getMaximumValue()>()
+org.joda.time.field.BaseDateTimeField.getMaximumValue : $i0 = virtualinvoke r0.<org.joda.time.field.BaseDateTimeField: int getMaximumValue(org.joda.time.ReadablePartial)>(r1)
+org.joda.time.DateTimeUtils.setCurrentMillisFixed : $r0 = new org.joda.time.DateTimeUtils$FixedMillisProvider
+org.joda.time.DateTimeUtils.setCurrentMillisFixed : staticinvoke <org.joda.time.DateTimeUtils: void checkPermission()>()
+org.joda.time.DateTimeZone.setDefault : exitmonitor r3
+org.joda.time.DateTimeZone.setDefault : $r6 = class "org/joda/time/DateTimeZone"
+org.joda.time.DateTimeZone.setDefault : <org.joda.time.DateTimeZone: org.joda.time.DateTimeZone cDefault> = r0
+org.joda.time.DateTimeZone.setDefault : if r1 == null goto (branch)
+org.joda.time.DateTimeZone.setDefault : if r0 != null goto $r6 = class "org/joda/time/DateTimeZone"
+org.joda.time.DateTimeZone.setDefault : r1 = staticinvoke <java.lang.System: java.lang.SecurityManager getSecurityManager()>()
+org.joda.time.Partial.getField : $r2 = r0.<org.joda.time.Partial: org.joda.time.DateTimeFieldType[] iTypes>
+org.joda.time.chrono.BaseChronology.validate : r12 = interfaceinvoke r1.<org.joda.time.ReadablePartial: org.joda.time.DateTimeField getField(int)>(i7)
+org.joda.time.chrono.BaseChronology.validate : $i5 = virtualinvoke r3.<org.joda.time.DateTimeField: int getMaximumValue()>()
+org.joda.time.chrono.BaseChronology.validate : i2 = r2[i1]
+org.joda.time.chrono.BaseChronology.validate : i1 = 0
+org.joda.time.chrono.BaseChronology.validate : r3 = interfaceinvoke r1.<org.joda.time.ReadablePartial: org.joda.time.DateTimeField getField(int)>(i1)
+org.joda.time.chrono.BaseChronology.validate : $i11 = virtualinvoke r12.<org.joda.time.DateTimeField: int getMaximumValue(org.joda.time.ReadablePartial,int[])>(r1, r2)
+org.joda.time.chrono.BaseChronology.validate : i7 = 0
+org.joda.time.chrono.BaseChronology.validate : i8 = r2[i7]
+org.joda.time.chrono.BaseChronology.validate : $i9 = virtualinvoke r12.<org.joda.time.DateTimeField: int getMinimumValue(org.joda.time.ReadablePartial,int[])>(r1, r2)
+org.joda.time.chrono.BaseChronology.validate : $i3 = virtualinvoke r3.<org.joda.time.DateTimeField: int getMinimumValue()>()
+org.joda.time.chrono.BaseChronology.validate : i0 = interfaceinvoke r1.<org.joda.time.ReadablePartial: int size()>()
+org.joda.time.DateTimeUtils.setCurrentMillisSystem : staticinvoke <org.joda.time.DateTimeUtils: void checkPermission()>()
+org.joda.time.DateTimeUtils.setCurrentMillisSystem : $r0 = <org.joda.time.DateTimeUtils: org.joda.time.DateTimeUtils$SystemMillisProvider SYSTEM_MILLIS_PROVIDER>
+org.joda.time.Partial.getChronology : $r1 = r0.<org.joda.time.Partial: org.joda.time.Chronology iChronology>
+org.joda.time.field.BaseDurationField.isSupported : return 1
+org.joda.time.chrono.AssembledChronology.minuteOfHour : $r1 = r0.<org.joda.time.chrono.AssembledChronology: org.joda.time.DateTimeField iMinuteOfHour>
+org.joda.time.Partial.size : $r1 = r0.<org.joda.time.Partial: org.joda.time.DateTimeFieldType[] iTypes>
+org.joda.time.DateTimeFieldType$StandardDateTimeFieldType.getField : r2 = staticinvoke <org.joda.time.DateTimeUtils: org.joda.time.Chronology getChronology(org.joda.time.Chronology)>(r1)
+org.joda.time.DateTimeFieldType$StandardDateTimeFieldType.getField : $b0 = r0.<org.joda.time.DateTimeFieldType$StandardDateTimeFieldType: byte iOrdinal>
+org.joda.time.DateTimeFieldType$StandardDateTimeFieldType.getField : $r21 = virtualinvoke r2.<org.joda.time.Chronology: org.joda.time.DateTimeField minuteOfHour()>()
+org.joda.time.DateTimeFieldType$StandardDateTimeFieldType.getField : $r19 = virtualinvoke r2.<org.joda.time.Chronology: org.joda.time.DateTimeField hourOfDay()>()
+org.joda.time.chrono.AssembledChronology.hourOfDay : $r1 = r0.<org.joda.time.chrono.AssembledChronology: org.joda.time.DateTimeField iHourOfDay>

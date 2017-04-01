@@ -1,0 +1,14 @@
+org.jfree.chart.plot.Plot.setBackgroundImageAlpha : $b0 = f0 cmpg 0.0F >>>>>>>> org.jfree.chart.plot.Plot.setBackgroundImageAlpha : if $b0 < 0
+org.jfree.chart.plot.Plot.setBackgroundImageAlpha : if $b0 < 0 >>>>>>>> org.jfree.chart.plot.Plot.setBackgroundImageAlpha : $b1 = f0 cmpl 1.0F
+org.jfree.chart.plot.Plot.setBackgroundImageAlpha : if $b0 < 0 >>>>>>>> org.jfree.chart.plot.Plot.setBackgroundImageAlpha : $r1 = new java.lang.IllegalArgumentException
+org.jfree.chart.plot.Plot.setBackgroundImageAlpha : $r1 = new java.lang.IllegalArgumentException >>>>>>>> org.jfree.chart.plot.Plot.setBackgroundImageAlpha : specialinvoke $r1.<java.lang.IllegalArgumentException: void <init>(java.lang.String)>("The \'alpha\' value must be in the range 0.0f to 1.0f.")
+org.jfree.chart.plot.Plot.setBackgroundImageAlpha : specialinvoke $r1.<java.lang.IllegalArgumentException: void <init>(java.lang.String)>("The \'alpha\' value must be in the range 0.0f to 1.0f.") >>>>>>>> org.jfree.chart.plot.Plot.setBackgroundImageAlpha : throw $r1
+org.jfree.chart.plot.Plot.setBackgroundImageAlpha : $b1 = f0 cmpl 1.0F >>>>>>>> org.jfree.chart.plot.Plot.setBackgroundImageAlpha : if $b1 <= 0
+org.jfree.chart.plot.Plot.setBackgroundImageAlpha : if $b1 <= 0 >>>>>>>> org.jfree.chart.plot.Plot.setBackgroundImageAlpha : $r1 = new java.lang.IllegalArgumentException
+org.jfree.chart.plot.Plot.setBackgroundImageAlpha : if $b1 <= 0 >>>>>>>> org.jfree.chart.plot.Plot.setBackgroundImageAlpha : $f1 = r0.<org.jfree.chart.plot.Plot: float backgroundImageAlpha>
+org.jfree.chart.plot.Plot.setBackgroundImageAlpha : $f1 = r0.<org.jfree.chart.plot.Plot: float backgroundImageAlpha> >>>>>>>> org.jfree.chart.plot.Plot.setBackgroundImageAlpha : $b2 = $f1 cmpl f0
+org.jfree.chart.plot.Plot.setBackgroundImageAlpha : $b2 = $f1 cmpl f0 >>>>>>>> org.jfree.chart.plot.Plot.setBackgroundImageAlpha : if $b2 == 0
+org.jfree.chart.plot.Plot.setBackgroundImageAlpha : if $b2 == 0 >>>>>>>> org.jfree.chart.plot.Plot.setBackgroundImageAlpha : r0.<org.jfree.chart.plot.Plot: float backgroundImageAlpha> = f0
+org.jfree.chart.plot.Plot.setBackgroundImageAlpha : if $b2 == 0 >>>>>>>> org.jfree.chart.plot.Plot.setBackgroundImageAlpha : return
+org.jfree.chart.plot.Plot.setBackgroundImageAlpha : r0.<org.jfree.chart.plot.Plot: float backgroundImageAlpha> = f0 >>>>>>>> org.jfree.chart.plot.Plot.setBackgroundImageAlpha : virtualinvoke r0.<org.jfree.chart.plot.Plot: void fireChangeEvent()>()
+org.jfree.chart.plot.Plot.setBackgroundImageAlpha : virtualinvoke r0.<org.jfree.chart.plot.Plot: void fireChangeEvent()>() >>>>>>>> org.jfree.chart.plot.Plot.setBackgroundImageAlpha : return

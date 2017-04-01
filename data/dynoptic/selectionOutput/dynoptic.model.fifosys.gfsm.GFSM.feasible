@@ -1,0 +1,41 @@
+dynoptic.model.fifosys.gfsm.GFSM.feasible : $z0 = <dynoptic.model.fifosys.gfsm.GFSM: boolean $assertionsDisabled> >>>>>>>> dynoptic.model.fifosys.gfsm.GFSM.feasible : if $z0 != 0
+dynoptic.model.fifosys.gfsm.GFSM.feasible : if $z0 != 0 >>>>>>>> dynoptic.model.fifosys.gfsm.GFSM.feasible : $z1 = interfaceinvoke r1.<java.util.List: boolean isEmpty()>()
+dynoptic.model.fifosys.gfsm.GFSM.feasible : if $z0 != 0 >>>>>>>> dynoptic.model.fifosys.gfsm.GFSM.feasible : r3 = interfaceinvoke r1.<java.util.List: java.util.Iterator iterator()>()
+dynoptic.model.fifosys.gfsm.GFSM.feasible : r3 = interfaceinvoke r1.<java.util.List: java.util.Iterator iterator()>() >>>>>>>> dynoptic.model.fifosys.gfsm.GFSM.feasible : $z2 = interfaceinvoke r3.<java.util.Iterator: boolean hasNext()>()
+dynoptic.model.fifosys.gfsm.GFSM.feasible : $z2 = interfaceinvoke r3.<java.util.Iterator: boolean hasNext()>() >>>>>>>> dynoptic.model.fifosys.gfsm.GFSM.feasible : if $z2 == 0
+dynoptic.model.fifosys.gfsm.GFSM.feasible : if $z2 == 0 >>>>>>>> dynoptic.model.fifosys.gfsm.GFSM.feasible : $r8 = interfaceinvoke r3.<java.util.Iterator: java.lang.Object next()>()
+dynoptic.model.fifosys.gfsm.GFSM.feasible : if $z2 == 0 >>>>>>>> dynoptic.model.fifosys.gfsm.GFSM.feasible : i0 = 0
+dynoptic.model.fifosys.gfsm.GFSM.feasible : i0 = 0 >>>>>>>> dynoptic.model.fifosys.gfsm.GFSM.feasible : $i1 = interfaceinvoke r1.<java.util.List: int size()>()
+dynoptic.model.fifosys.gfsm.GFSM.feasible : $i1 = interfaceinvoke r1.<java.util.List: int size()>() >>>>>>>> dynoptic.model.fifosys.gfsm.GFSM.feasible : $i2 = $i1 - 1
+dynoptic.model.fifosys.gfsm.GFSM.feasible : $i2 = $i1 - 1 >>>>>>>> dynoptic.model.fifosys.gfsm.GFSM.feasible : if i0 >= $i2
+dynoptic.model.fifosys.gfsm.GFSM.feasible : if i0 >= $i2 >>>>>>>> dynoptic.model.fifosys.gfsm.GFSM.feasible : $r10 = interfaceinvoke r1.<java.util.List: java.lang.Object get(int)>(i0)
+dynoptic.model.fifosys.gfsm.GFSM.feasible : if i0 >= $i2 >>>>>>>> dynoptic.model.fifosys.gfsm.GFSM.feasible : return 1
+dynoptic.model.fifosys.gfsm.GFSM.feasible : $r10 = interfaceinvoke r1.<java.util.List: java.lang.Object get(int)>(i0) >>>>>>>> dynoptic.model.fifosys.gfsm.GFSM.feasible : r11 = (dynoptic.model.fifosys.gfsm.GFSMState) $r10
+dynoptic.model.fifosys.gfsm.GFSM.feasible : r11 = (dynoptic.model.fifosys.gfsm.GFSMState) $r10 >>>>>>>> dynoptic.model.fifosys.gfsm.GFSM.feasible : $i3 = i0 + 1
+dynoptic.model.fifosys.gfsm.GFSM.feasible : $i3 = i0 + 1 >>>>>>>> dynoptic.model.fifosys.gfsm.GFSM.feasible : $r12 = interfaceinvoke r1.<java.util.List: java.lang.Object get(int)>($i3)
+dynoptic.model.fifosys.gfsm.GFSM.feasible : $r12 = interfaceinvoke r1.<java.util.List: java.lang.Object get(int)>($i3) >>>>>>>> dynoptic.model.fifosys.gfsm.GFSM.feasible : r5 = (dynoptic.model.fifosys.gfsm.GFSMState) $r12
+dynoptic.model.fifosys.gfsm.GFSM.feasible : r5 = (dynoptic.model.fifosys.gfsm.GFSMState) $r12 >>>>>>>> dynoptic.model.fifosys.gfsm.GFSM.feasible : $r13 = interfaceinvoke r2.<java.util.List: java.lang.Object get(int)>(i0)
+dynoptic.model.fifosys.gfsm.GFSM.feasible : $r13 = interfaceinvoke r2.<java.util.List: java.lang.Object get(int)>(i0) >>>>>>>> dynoptic.model.fifosys.gfsm.GFSM.feasible : r6 = (synoptic.model.event.DistEventType) $r13
+dynoptic.model.fifosys.gfsm.GFSM.feasible : r6 = (synoptic.model.event.DistEventType) $r13 >>>>>>>> dynoptic.model.fifosys.gfsm.GFSM.feasible : $r14 = virtualinvoke r11.<dynoptic.model.fifosys.gfsm.GFSMState: java.util.Set getTransitioningEvents()>()
+dynoptic.model.fifosys.gfsm.GFSM.feasible : $r14 = virtualinvoke r11.<dynoptic.model.fifosys.gfsm.GFSMState: java.util.Set getTransitioningEvents()>() >>>>>>>> dynoptic.model.fifosys.gfsm.GFSM.feasible : $z4 = interfaceinvoke $r14.<java.util.Set: boolean contains(java.lang.Object)>(r6)
+dynoptic.model.fifosys.gfsm.GFSM.feasible : $z4 = interfaceinvoke $r14.<java.util.Set: boolean contains(java.lang.Object)>(r6) >>>>>>>> dynoptic.model.fifosys.gfsm.GFSM.feasible : if $z4 != 0
+dynoptic.model.fifosys.gfsm.GFSM.feasible : if $z4 != 0 >>>>>>>> dynoptic.model.fifosys.gfsm.GFSM.feasible : return 0
+dynoptic.model.fifosys.gfsm.GFSM.feasible : if $z4 != 0 >>>>>>>> dynoptic.model.fifosys.gfsm.GFSM.feasible : $r15 = virtualinvoke r11.<dynoptic.model.fifosys.gfsm.GFSMState: java.util.Set getNextStates(synoptic.model.event.DistEventType)>(r6)
+dynoptic.model.fifosys.gfsm.GFSM.feasible : $r15 = virtualinvoke r11.<dynoptic.model.fifosys.gfsm.GFSMState: java.util.Set getNextStates(synoptic.model.event.DistEventType)>(r6) >>>>>>>> dynoptic.model.fifosys.gfsm.GFSM.feasible : $z5 = interfaceinvoke $r15.<java.util.Set: boolean contains(java.lang.Object)>(r5)
+dynoptic.model.fifosys.gfsm.GFSM.feasible : $z5 = interfaceinvoke $r15.<java.util.Set: boolean contains(java.lang.Object)>(r5) >>>>>>>> dynoptic.model.fifosys.gfsm.GFSM.feasible : if $z5 != 0
+dynoptic.model.fifosys.gfsm.GFSM.feasible : if $z5 != 0 >>>>>>>> dynoptic.model.fifosys.gfsm.GFSM.feasible : return 0
+dynoptic.model.fifosys.gfsm.GFSM.feasible : if $z5 != 0 >>>>>>>> dynoptic.model.fifosys.gfsm.GFSM.feasible : i0 = i0 + 1
+dynoptic.model.fifosys.gfsm.GFSM.feasible : i0 = i0 + 1 >>>>>>>> dynoptic.model.fifosys.gfsm.GFSM.feasible : goto [?= $i1 = interfaceinvoke r1.<java.util.List: int size()>()]
+dynoptic.model.fifosys.gfsm.GFSM.feasible : goto [?= $i1 = interfaceinvoke r1.<java.util.List: int size()>()] >>>>>>>> dynoptic.model.fifosys.gfsm.GFSM.feasible : $i1 = interfaceinvoke r1.<java.util.List: int size()>()
+dynoptic.model.fifosys.gfsm.GFSM.feasible : $r8 = interfaceinvoke r3.<java.util.Iterator: java.lang.Object next()>() >>>>>>>> dynoptic.model.fifosys.gfsm.GFSM.feasible : r4 = (dynoptic.model.fifosys.gfsm.GFSMState) $r8
+dynoptic.model.fifosys.gfsm.GFSM.feasible : r4 = (dynoptic.model.fifosys.gfsm.GFSMState) $r8 >>>>>>>> dynoptic.model.fifosys.gfsm.GFSM.feasible : $r9 = r0.<dynoptic.model.fifosys.gfsm.GFSM: java.util.Set states>
+dynoptic.model.fifosys.gfsm.GFSM.feasible : $r9 = r0.<dynoptic.model.fifosys.gfsm.GFSM: java.util.Set states> >>>>>>>> dynoptic.model.fifosys.gfsm.GFSM.feasible : $z3 = interfaceinvoke $r9.<java.util.Set: boolean contains(java.lang.Object)>(r4)
+dynoptic.model.fifosys.gfsm.GFSM.feasible : $z3 = interfaceinvoke $r9.<java.util.Set: boolean contains(java.lang.Object)>(r4) >>>>>>>> dynoptic.model.fifosys.gfsm.GFSM.feasible : if $z3 != 0
+dynoptic.model.fifosys.gfsm.GFSM.feasible : if $z3 != 0 >>>>>>>> dynoptic.model.fifosys.gfsm.GFSM.feasible : return 0
+dynoptic.model.fifosys.gfsm.GFSM.feasible : if $z3 != 0 >>>>>>>> dynoptic.model.fifosys.gfsm.GFSM.feasible : goto [?= $z2 = interfaceinvoke r3.<java.util.Iterator: boolean hasNext()>()]
+dynoptic.model.fifosys.gfsm.GFSM.feasible : goto [?= $z2 = interfaceinvoke r3.<java.util.Iterator: boolean hasNext()>()] >>>>>>>> dynoptic.model.fifosys.gfsm.GFSM.feasible : $z2 = interfaceinvoke r3.<java.util.Iterator: boolean hasNext()>()
+dynoptic.model.fifosys.gfsm.GFSM.feasible : $z1 = interfaceinvoke r1.<java.util.List: boolean isEmpty()>() >>>>>>>> dynoptic.model.fifosys.gfsm.GFSM.feasible : if $z1 == 0
+dynoptic.model.fifosys.gfsm.GFSM.feasible : if $z1 == 0 >>>>>>>> dynoptic.model.fifosys.gfsm.GFSM.feasible : $r7 = new java.lang.AssertionError
+dynoptic.model.fifosys.gfsm.GFSM.feasible : if $z1 == 0 >>>>>>>> dynoptic.model.fifosys.gfsm.GFSM.feasible : r3 = interfaceinvoke r1.<java.util.List: java.util.Iterator iterator()>()
+dynoptic.model.fifosys.gfsm.GFSM.feasible : $r7 = new java.lang.AssertionError >>>>>>>> dynoptic.model.fifosys.gfsm.GFSM.feasible : specialinvoke $r7.<java.lang.AssertionError: void <init>()>()
+dynoptic.model.fifosys.gfsm.GFSM.feasible : specialinvoke $r7.<java.lang.AssertionError: void <init>()>() >>>>>>>> dynoptic.model.fifosys.gfsm.GFSM.feasible : throw $r7

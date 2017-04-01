@@ -1,0 +1,24 @@
+ant.HexDump.byteArrayToBinaryString : $r1 = new java.lang.StringBuffer >>>>>>>> ant.HexDump.byteArrayToBinaryString : specialinvoke $r1.<java.lang.StringBuffer: void <init>()>()
+ant.HexDump.byteArrayToBinaryString : specialinvoke $r1.<java.lang.StringBuffer: void <init>()>() >>>>>>>> ant.HexDump.byteArrayToBinaryString : r2 = $r1
+ant.HexDump.byteArrayToBinaryString : r2 = $r1 >>>>>>>> ant.HexDump.byteArrayToBinaryString : i0 = lengthof r0
+ant.HexDump.byteArrayToBinaryString : i0 = lengthof r0 >>>>>>>> ant.HexDump.byteArrayToBinaryString : i1 = 0
+ant.HexDump.byteArrayToBinaryString : i1 = 0 >>>>>>>> ant.HexDump.byteArrayToBinaryString : if i1 >= i0
+ant.HexDump.byteArrayToBinaryString : if i1 >= i0 >>>>>>>> ant.HexDump.byteArrayToBinaryString : $b2 = r0[i1]
+ant.HexDump.byteArrayToBinaryString : if i1 >= i0 >>>>>>>> ant.HexDump.byteArrayToBinaryString : $r4 = virtualinvoke r2.<java.lang.StringBuffer: java.lang.String toString()>()
+ant.HexDump.byteArrayToBinaryString : $r4 = virtualinvoke r2.<java.lang.StringBuffer: java.lang.String toString()>() >>>>>>>> ant.HexDump.byteArrayToBinaryString : return $r4
+ant.HexDump.byteArrayToBinaryString : $b2 = r0[i1] >>>>>>>> ant.HexDump.byteArrayToBinaryString : staticinvoke <ant.HexDump: void byte2bin(byte,java.lang.StringBuffer)>($b2, r2)
+ant.HexDump.byteArrayToBinaryString : staticinvoke <ant.HexDump: void byte2bin(byte,java.lang.StringBuffer)>($b2, r2) >>>>>>>> ant.HexDump.byteArrayToBinaryString : $i3 = i0 - 1
+ant.HexDump.byteArrayToBinaryString : $i3 = i0 - 1 >>>>>>>> ant.HexDump.byteArrayToBinaryString : if i1 >= $i3
+ant.HexDump.byteArrayToBinaryString : if i1 >= $i3 >>>>>>>> ant.HexDump.byteArrayToBinaryString : $z0 = 1
+ant.HexDump.byteArrayToBinaryString : if i1 >= $i3 >>>>>>>> ant.HexDump.byteArrayToBinaryString : $z0 = 0
+ant.HexDump.byteArrayToBinaryString : $z0 = 0 >>>>>>>> ant.HexDump.byteArrayToBinaryString : $z1 = <ant.HexDump: boolean WITH_BYTE_SEPARATOR>
+ant.HexDump.byteArrayToBinaryString : $z1 = <ant.HexDump: boolean WITH_BYTE_SEPARATOR> >>>>>>>> ant.HexDump.byteArrayToBinaryString : $z2 = $z0 & $z1
+ant.HexDump.byteArrayToBinaryString : $z2 = $z0 & $z1 >>>>>>>> ant.HexDump.byteArrayToBinaryString : if $z2 == 0
+ant.HexDump.byteArrayToBinaryString : if $z2 == 0 >>>>>>>> ant.HexDump.byteArrayToBinaryString : $c4 = <ant.HexDump: char BYTE_SEPARATOR>
+ant.HexDump.byteArrayToBinaryString : if $z2 == 0 >>>>>>>> ant.HexDump.byteArrayToBinaryString : i1 = i1 + 1
+ant.HexDump.byteArrayToBinaryString : i1 = i1 + 1 >>>>>>>> ant.HexDump.byteArrayToBinaryString : goto [?= (branch)]
+ant.HexDump.byteArrayToBinaryString : goto [?= (branch)] >>>>>>>> ant.HexDump.byteArrayToBinaryString : if i1 >= i0
+ant.HexDump.byteArrayToBinaryString : $c4 = <ant.HexDump: char BYTE_SEPARATOR> >>>>>>>> ant.HexDump.byteArrayToBinaryString : virtualinvoke r2.<java.lang.StringBuffer: java.lang.StringBuffer append(char)>($c4)
+ant.HexDump.byteArrayToBinaryString : virtualinvoke r2.<java.lang.StringBuffer: java.lang.StringBuffer append(char)>($c4) >>>>>>>> ant.HexDump.byteArrayToBinaryString : i1 = i1 + 1
+ant.HexDump.byteArrayToBinaryString : $z0 = 1 >>>>>>>> ant.HexDump.byteArrayToBinaryString : goto [?= $z1 = <ant.HexDump: boolean WITH_BYTE_SEPARATOR>]
+ant.HexDump.byteArrayToBinaryString : goto [?= $z1 = <ant.HexDump: boolean WITH_BYTE_SEPARATOR>] >>>>>>>> ant.HexDump.byteArrayToBinaryString : $z1 = <ant.HexDump: boolean WITH_BYTE_SEPARATOR>

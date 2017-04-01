@@ -1,0 +1,17 @@
+org.jfree.chart.block.AbstractBlock.setPadding : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "padding")
+org.jfree.chart.block.AbstractBlock.setPadding : r0.<org.jfree.chart.block.AbstractBlock: org.jfree.ui.RectangleInsets padding> = r1
+org.jfree.data.general.DefaultKeyedValueDataset.equals : if r1 != r0 goto $z0 = r1 instanceof org.jfree.data.general.KeyedValueDataset
+org.jfree.data.general.DefaultKeyedValueDataset.equals : return 0
+org.jfree.data.general.DefaultKeyedValueDataset.equals : $z0 = r1 instanceof org.jfree.data.general.KeyedValueDataset
+org.jfree.data.general.DefaultKeyedValueDataset.setValue : $r3 = new org.jfree.data.DefaultKeyedValue
+org.jfree.data.general.DefaultKeyedValueDataset.setValue : $r4 = new org.jfree.data.general.DatasetChangeEvent
+org.jfree.data.DefaultKeyedValue.getKey : $r1 = r0.<org.jfree.data.DefaultKeyedValue: java.lang.Comparable key>
+org.jfree.data.general.AbstractDataset.notifyListeners : $r3 = r0.<org.jfree.data.general.AbstractDataset: javax.swing.event.EventListenerList listenerList>
+org.jfree.data.general.AbstractDataset.notifyListeners : $i1 = lengthof r2
+org.jfree.data.general.DefaultKeyedValueDataset.getKey : $r3 = r0.<org.jfree.data.general.DefaultKeyedValueDataset: org.jfree.data.KeyedValue data>
+org.jfree.data.general.DefaultKeyedValueDataset.getKey : $r2 = r0.<org.jfree.data.general.DefaultKeyedValueDataset: org.jfree.data.KeyedValue data>
+org.jfree.data.general.DefaultKeyedValueDataset.getKey : r1 = null
+org.jfree.data.general.DefaultKeyedValueDataset.getKey : return r1
+org.jfree.data.general.AbstractDataset.getGroup : $r1 = r0.<org.jfree.data.general.AbstractDataset: org.jfree.data.general.DatasetGroup group>
+org.jfree.chart.title.Title.isVisible : $z0 = r0.<org.jfree.chart.title.Title: boolean visible>
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null goto return

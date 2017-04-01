@@ -1,0 +1,20 @@
+org.joda.time.field.FieldUtils.safeMultiply : $b3 = l1 cmp 1L >>>>>>>> org.joda.time.field.FieldUtils.safeMultiply : if $b3 != 0
+org.joda.time.field.FieldUtils.safeMultiply : if $b3 != 0 >>>>>>>> org.joda.time.field.FieldUtils.safeMultiply : return l0
+org.joda.time.field.FieldUtils.safeMultiply : if $b3 != 0 >>>>>>>> org.joda.time.field.FieldUtils.safeMultiply : $b4 = l1 cmp 0L
+org.joda.time.field.FieldUtils.safeMultiply : $b4 = l1 cmp 0L >>>>>>>> org.joda.time.field.FieldUtils.safeMultiply : if $b4 != 0
+org.joda.time.field.FieldUtils.safeMultiply : if $b4 != 0 >>>>>>>> org.joda.time.field.FieldUtils.safeMultiply : return 0L
+org.joda.time.field.FieldUtils.safeMultiply : if $b4 != 0 >>>>>>>> org.joda.time.field.FieldUtils.safeMultiply : l2 = l0 * l1
+org.joda.time.field.FieldUtils.safeMultiply : l2 = l0 * l1 >>>>>>>> org.joda.time.field.FieldUtils.safeMultiply : $l5 = l2 / l1
+org.joda.time.field.FieldUtils.safeMultiply : $l5 = l2 / l1 >>>>>>>> org.joda.time.field.FieldUtils.safeMultiply : $b6 = $l5 cmp l0
+org.joda.time.field.FieldUtils.safeMultiply : $b6 = $l5 cmp l0 >>>>>>>> org.joda.time.field.FieldUtils.safeMultiply : if $b6 == 0
+org.joda.time.field.FieldUtils.safeMultiply : if $b6 == 0 >>>>>>>> org.joda.time.field.FieldUtils.safeMultiply : $r0 = new java.lang.ArithmeticException
+org.joda.time.field.FieldUtils.safeMultiply : if $b6 == 0 >>>>>>>> org.joda.time.field.FieldUtils.safeMultiply : return l2
+org.joda.time.field.FieldUtils.safeMultiply : $r0 = new java.lang.ArithmeticException >>>>>>>> org.joda.time.field.FieldUtils.safeMultiply : $r1 = new java.lang.StringBuilder
+org.joda.time.field.FieldUtils.safeMultiply : $r1 = new java.lang.StringBuilder >>>>>>>> org.joda.time.field.FieldUtils.safeMultiply : specialinvoke $r1.<java.lang.StringBuilder: void <init>()>()
+org.joda.time.field.FieldUtils.safeMultiply : specialinvoke $r1.<java.lang.StringBuilder: void <init>()>() >>>>>>>> org.joda.time.field.FieldUtils.safeMultiply : $r2 = virtualinvoke $r1.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("The calculation caused an overflow: ")
+org.joda.time.field.FieldUtils.safeMultiply : $r2 = virtualinvoke $r1.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("The calculation caused an overflow: ") >>>>>>>> org.joda.time.field.FieldUtils.safeMultiply : $r3 = virtualinvoke $r2.<java.lang.StringBuilder: java.lang.StringBuilder append(long)>(l0)
+org.joda.time.field.FieldUtils.safeMultiply : $r3 = virtualinvoke $r2.<java.lang.StringBuilder: java.lang.StringBuilder append(long)>(l0) >>>>>>>> org.joda.time.field.FieldUtils.safeMultiply : $r4 = virtualinvoke $r3.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(" * ")
+org.joda.time.field.FieldUtils.safeMultiply : $r4 = virtualinvoke $r3.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(" * ") >>>>>>>> org.joda.time.field.FieldUtils.safeMultiply : $r5 = virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(long)>(l1)
+org.joda.time.field.FieldUtils.safeMultiply : $r5 = virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(long)>(l1) >>>>>>>> org.joda.time.field.FieldUtils.safeMultiply : $r6 = virtualinvoke $r5.<java.lang.StringBuilder: java.lang.String toString()>()
+org.joda.time.field.FieldUtils.safeMultiply : $r6 = virtualinvoke $r5.<java.lang.StringBuilder: java.lang.String toString()>() >>>>>>>> org.joda.time.field.FieldUtils.safeMultiply : specialinvoke $r0.<java.lang.ArithmeticException: void <init>(java.lang.String)>($r6)
+org.joda.time.field.FieldUtils.safeMultiply : specialinvoke $r0.<java.lang.ArithmeticException: void <init>(java.lang.String)>($r6) >>>>>>>> org.joda.time.field.FieldUtils.safeMultiply : throw $r0

@@ -1,0 +1,17 @@
+org.jfree.chart.MouseWheelHandler.mouseWheelMoved : $r5 = r0.<org.jfree.chart.MouseWheelHandler: org.jfree.chart.ChartPanel chartPanel> >>>>>>>> org.jfree.chart.MouseWheelHandler.mouseWheelMoved : r2 = virtualinvoke $r5.<org.jfree.chart.ChartPanel: org.jfree.chart.JFreeChart getChart()>()
+org.jfree.chart.MouseWheelHandler.mouseWheelMoved : r2 = virtualinvoke $r5.<org.jfree.chart.ChartPanel: org.jfree.chart.JFreeChart getChart()>() >>>>>>>> org.jfree.chart.MouseWheelHandler.mouseWheelMoved : if r2 != null
+org.jfree.chart.MouseWheelHandler.mouseWheelMoved : if r2 != null >>>>>>>> org.jfree.chart.MouseWheelHandler.mouseWheelMoved : return
+org.jfree.chart.MouseWheelHandler.mouseWheelMoved : if r2 != null >>>>>>>> org.jfree.chart.MouseWheelHandler.mouseWheelMoved : r3 = virtualinvoke r2.<org.jfree.chart.JFreeChart: org.jfree.chart.plot.Plot getPlot()>()
+org.jfree.chart.MouseWheelHandler.mouseWheelMoved : r3 = virtualinvoke r2.<org.jfree.chart.JFreeChart: org.jfree.chart.plot.Plot getPlot()>() >>>>>>>> org.jfree.chart.MouseWheelHandler.mouseWheelMoved : $z0 = r3 instanceof org.jfree.chart.plot.Zoomable
+org.jfree.chart.MouseWheelHandler.mouseWheelMoved : $z0 = r3 instanceof org.jfree.chart.plot.Zoomable >>>>>>>> org.jfree.chart.MouseWheelHandler.mouseWheelMoved : if $z0 == 0
+org.jfree.chart.MouseWheelHandler.mouseWheelMoved : if $z0 == 0 >>>>>>>> org.jfree.chart.MouseWheelHandler.mouseWheelMoved : r4 = (org.jfree.chart.plot.Zoomable) r3
+org.jfree.chart.MouseWheelHandler.mouseWheelMoved : if $z0 == 0 >>>>>>>> org.jfree.chart.MouseWheelHandler.mouseWheelMoved : $z1 = r3 instanceof org.jfree.chart.plot.PiePlot
+org.jfree.chart.MouseWheelHandler.mouseWheelMoved : $z1 = r3 instanceof org.jfree.chart.plot.PiePlot >>>>>>>> org.jfree.chart.MouseWheelHandler.mouseWheelMoved : if $z1 == 0
+org.jfree.chart.MouseWheelHandler.mouseWheelMoved : if $z1 == 0 >>>>>>>> org.jfree.chart.MouseWheelHandler.mouseWheelMoved : r6 = (org.jfree.chart.plot.PiePlot) r3
+org.jfree.chart.MouseWheelHandler.mouseWheelMoved : if $z1 == 0 >>>>>>>> org.jfree.chart.MouseWheelHandler.mouseWheelMoved : return
+org.jfree.chart.MouseWheelHandler.mouseWheelMoved : r6 = (org.jfree.chart.plot.PiePlot) r3 >>>>>>>> org.jfree.chart.MouseWheelHandler.mouseWheelMoved : $i0 = virtualinvoke r1.<java.awt.event.MouseWheelEvent: int getWheelRotation()>()
+org.jfree.chart.MouseWheelHandler.mouseWheelMoved : $i0 = virtualinvoke r1.<java.awt.event.MouseWheelEvent: int getWheelRotation()>() >>>>>>>> org.jfree.chart.MouseWheelHandler.mouseWheelMoved : virtualinvoke r6.<org.jfree.chart.plot.PiePlot: void handleMouseWheelRotation(int)>($i0)
+org.jfree.chart.MouseWheelHandler.mouseWheelMoved : virtualinvoke r6.<org.jfree.chart.plot.PiePlot: void handleMouseWheelRotation(int)>($i0) >>>>>>>> org.jfree.chart.MouseWheelHandler.mouseWheelMoved : return
+org.jfree.chart.MouseWheelHandler.mouseWheelMoved : r4 = (org.jfree.chart.plot.Zoomable) r3 >>>>>>>> org.jfree.chart.MouseWheelHandler.mouseWheelMoved : specialinvoke r0.<org.jfree.chart.MouseWheelHandler: void handleZoomable(org.jfree.chart.plot.Zoomable,java.awt.event.MouseWheelEvent)>(r4, r1)
+org.jfree.chart.MouseWheelHandler.mouseWheelMoved : specialinvoke r0.<org.jfree.chart.MouseWheelHandler: void handleZoomable(org.jfree.chart.plot.Zoomable,java.awt.event.MouseWheelEvent)>(r4, r1) >>>>>>>> org.jfree.chart.MouseWheelHandler.mouseWheelMoved : goto [?= return]
+org.jfree.chart.MouseWheelHandler.mouseWheelMoved : goto [?= return] >>>>>>>> org.jfree.chart.MouseWheelHandler.mouseWheelMoved : return

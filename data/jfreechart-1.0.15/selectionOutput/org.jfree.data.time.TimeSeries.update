@@ -1,0 +1,38 @@
+org.jfree.data.time.TimeSeries.update : $r4 = r0.<org.jfree.data.time.TimeSeries: java.util.List data> >>>>>>>> org.jfree.data.time.TimeSeries.update : $r5 = interfaceinvoke $r4.<java.util.List: java.lang.Object get(int)>(i0)
+org.jfree.data.time.TimeSeries.update : $r5 = interfaceinvoke $r4.<java.util.List: java.lang.Object get(int)>(i0) >>>>>>>> org.jfree.data.time.TimeSeries.update : r2 = (org.jfree.data.time.TimeSeriesDataItem) $r5
+org.jfree.data.time.TimeSeries.update : r2 = (org.jfree.data.time.TimeSeriesDataItem) $r5 >>>>>>>> org.jfree.data.time.TimeSeries.update : z0 = 0
+org.jfree.data.time.TimeSeries.update : z0 = 0 >>>>>>>> org.jfree.data.time.TimeSeries.update : r3 = virtualinvoke r2.<org.jfree.data.time.TimeSeriesDataItem: java.lang.Number getValue()>()
+org.jfree.data.time.TimeSeries.update : r3 = virtualinvoke r2.<org.jfree.data.time.TimeSeriesDataItem: java.lang.Number getValue()>() >>>>>>>> org.jfree.data.time.TimeSeries.update : if r3 == null
+org.jfree.data.time.TimeSeries.update : if r3 == null >>>>>>>> org.jfree.data.time.TimeSeries.update : d0 = virtualinvoke r3.<java.lang.Number: double doubleValue()>()
+org.jfree.data.time.TimeSeries.update : if r3 == null >>>>>>>> org.jfree.data.time.TimeSeries.update : virtualinvoke r2.<org.jfree.data.time.TimeSeriesDataItem: void setValue(java.lang.Number)>(r1)
+org.jfree.data.time.TimeSeries.update : virtualinvoke r2.<org.jfree.data.time.TimeSeriesDataItem: void setValue(java.lang.Number)>(r1) >>>>>>>> org.jfree.data.time.TimeSeries.update : if z0 == 0
+org.jfree.data.time.TimeSeries.update : if z0 == 0 >>>>>>>> org.jfree.data.time.TimeSeries.update : specialinvoke r0.<org.jfree.data.time.TimeSeries: void findBoundsByIteration()>()
+org.jfree.data.time.TimeSeries.update : if z0 == 0 >>>>>>>> org.jfree.data.time.TimeSeries.update : if r1 == null
+org.jfree.data.time.TimeSeries.update : if r1 == null >>>>>>>> org.jfree.data.time.TimeSeries.update : d3 = virtualinvoke r1.<java.lang.Number: double doubleValue()>()
+org.jfree.data.time.TimeSeries.update : if r1 == null >>>>>>>> org.jfree.data.time.TimeSeries.update : virtualinvoke r0.<org.jfree.data.time.TimeSeries: void fireSeriesChanged()>()
+org.jfree.data.time.TimeSeries.update : virtualinvoke r0.<org.jfree.data.time.TimeSeries: void fireSeriesChanged()>() >>>>>>>> org.jfree.data.time.TimeSeries.update : return
+org.jfree.data.time.TimeSeries.update : d3 = virtualinvoke r1.<java.lang.Number: double doubleValue()>() >>>>>>>> org.jfree.data.time.TimeSeries.update : $d4 = r0.<org.jfree.data.time.TimeSeries: double minY>
+org.jfree.data.time.TimeSeries.update : $d4 = r0.<org.jfree.data.time.TimeSeries: double minY> >>>>>>>> org.jfree.data.time.TimeSeries.update : $d5 = specialinvoke r0.<org.jfree.data.time.TimeSeries: double minIgnoreNaN(double,double)>($d4, d3)
+org.jfree.data.time.TimeSeries.update : $d5 = specialinvoke r0.<org.jfree.data.time.TimeSeries: double minIgnoreNaN(double,double)>($d4, d3) >>>>>>>> org.jfree.data.time.TimeSeries.update : r0.<org.jfree.data.time.TimeSeries: double minY> = $d5
+org.jfree.data.time.TimeSeries.update : r0.<org.jfree.data.time.TimeSeries: double minY> = $d5 >>>>>>>> org.jfree.data.time.TimeSeries.update : $d6 = r0.<org.jfree.data.time.TimeSeries: double maxY>
+org.jfree.data.time.TimeSeries.update : $d6 = r0.<org.jfree.data.time.TimeSeries: double maxY> >>>>>>>> org.jfree.data.time.TimeSeries.update : $d7 = specialinvoke r0.<org.jfree.data.time.TimeSeries: double maxIgnoreNaN(double,double)>($d6, d3)
+org.jfree.data.time.TimeSeries.update : $d7 = specialinvoke r0.<org.jfree.data.time.TimeSeries: double maxIgnoreNaN(double,double)>($d6, d3) >>>>>>>> org.jfree.data.time.TimeSeries.update : r0.<org.jfree.data.time.TimeSeries: double maxY> = $d7
+org.jfree.data.time.TimeSeries.update : r0.<org.jfree.data.time.TimeSeries: double maxY> = $d7 >>>>>>>> org.jfree.data.time.TimeSeries.update : virtualinvoke r0.<org.jfree.data.time.TimeSeries: void fireSeriesChanged()>()
+org.jfree.data.time.TimeSeries.update : specialinvoke r0.<org.jfree.data.time.TimeSeries: void findBoundsByIteration()>() >>>>>>>> org.jfree.data.time.TimeSeries.update : goto [?= virtualinvoke r0.<org.jfree.data.time.TimeSeries: void fireSeriesChanged()>()]
+org.jfree.data.time.TimeSeries.update : goto [?= virtualinvoke r0.<org.jfree.data.time.TimeSeries: void fireSeriesChanged()>()] >>>>>>>> org.jfree.data.time.TimeSeries.update : virtualinvoke r0.<org.jfree.data.time.TimeSeries: void fireSeriesChanged()>()
+org.jfree.data.time.TimeSeries.update : d0 = virtualinvoke r3.<java.lang.Number: double doubleValue()>() >>>>>>>> org.jfree.data.time.TimeSeries.update : $z1 = staticinvoke <java.lang.Double: boolean isNaN(double)>(d0)
+org.jfree.data.time.TimeSeries.update : $z1 = staticinvoke <java.lang.Double: boolean isNaN(double)>(d0) >>>>>>>> org.jfree.data.time.TimeSeries.update : if $z1 != 0
+org.jfree.data.time.TimeSeries.update : if $z1 != 0 >>>>>>>> org.jfree.data.time.TimeSeries.update : $d1 = r0.<org.jfree.data.time.TimeSeries: double minY>
+org.jfree.data.time.TimeSeries.update : if $z1 != 0 >>>>>>>> org.jfree.data.time.TimeSeries.update : virtualinvoke r2.<org.jfree.data.time.TimeSeriesDataItem: void setValue(java.lang.Number)>(r1)
+org.jfree.data.time.TimeSeries.update : $d1 = r0.<org.jfree.data.time.TimeSeries: double minY> >>>>>>>> org.jfree.data.time.TimeSeries.update : $b1 = d0 cmpg $d1
+org.jfree.data.time.TimeSeries.update : $b1 = d0 cmpg $d1 >>>>>>>> org.jfree.data.time.TimeSeries.update : if $b1 <= 0
+org.jfree.data.time.TimeSeries.update : if $b1 <= 0 >>>>>>>> org.jfree.data.time.TimeSeries.update : $d2 = r0.<org.jfree.data.time.TimeSeries: double maxY>
+org.jfree.data.time.TimeSeries.update : if $b1 <= 0 >>>>>>>> org.jfree.data.time.TimeSeries.update : $z2 = 1
+org.jfree.data.time.TimeSeries.update : $z2 = 1 >>>>>>>> org.jfree.data.time.TimeSeries.update : goto [?= z0 = $z2]
+org.jfree.data.time.TimeSeries.update : goto [?= z0 = $z2] >>>>>>>> org.jfree.data.time.TimeSeries.update : z0 = $z2
+org.jfree.data.time.TimeSeries.update : z0 = $z2 >>>>>>>> org.jfree.data.time.TimeSeries.update : virtualinvoke r2.<org.jfree.data.time.TimeSeriesDataItem: void setValue(java.lang.Number)>(r1)
+org.jfree.data.time.TimeSeries.update : $d2 = r0.<org.jfree.data.time.TimeSeries: double maxY> >>>>>>>> org.jfree.data.time.TimeSeries.update : $b2 = d0 cmpl $d2
+org.jfree.data.time.TimeSeries.update : $b2 = d0 cmpl $d2 >>>>>>>> org.jfree.data.time.TimeSeries.update : if $b2 < 0
+org.jfree.data.time.TimeSeries.update : if $b2 < 0 >>>>>>>> org.jfree.data.time.TimeSeries.update : $z2 = 1
+org.jfree.data.time.TimeSeries.update : if $b2 < 0 >>>>>>>> org.jfree.data.time.TimeSeries.update : $z2 = 0
+org.jfree.data.time.TimeSeries.update : $z2 = 0 >>>>>>>> org.jfree.data.time.TimeSeries.update : z0 = $z2

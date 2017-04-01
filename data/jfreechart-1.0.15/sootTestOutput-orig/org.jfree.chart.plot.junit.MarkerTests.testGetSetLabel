@@ -1,0 +1,12 @@
+org.jfree.chart.plot.Marker.addChangeListener : $r2 = r0.<org.jfree.chart.plot.Marker: javax.swing.event.EventListenerList listenerList>
+org.jfree.chart.plot.Marker.getLabel : $r1 = r0.<org.jfree.chart.plot.Marker: java.lang.String label>
+org.jfree.chart.plot.Marker.setLabel : r0.<org.jfree.chart.plot.Marker: java.lang.String label> = r1
+org.jfree.chart.plot.Marker.setLabel : $r2 = new org.jfree.chart.event.MarkerChangeEvent
+org.jfree.chart.plot.Marker.notifyListeners : $r4 = r2[i0]
+org.jfree.chart.plot.Marker.notifyListeners : $i2 = i0 + 1
+org.jfree.chart.plot.Marker.notifyListeners : $r3 = r0.<org.jfree.chart.plot.Marker: javax.swing.event.EventListenerList listenerList>
+org.jfree.chart.plot.Marker.notifyListeners : $i1 = lengthof r2
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null goto return
+org.jfree.chart.event.MarkerChangeEvent.getMarker : $r1 = r0.<org.jfree.chart.event.MarkerChangeEvent: org.jfree.chart.plot.Marker marker>
+org.jfree.chart.plot.ValueMarker.equals : if r1 != r0 goto $z0 = specialinvoke r0.<org.jfree.chart.plot.Marker: boolean equals(java.lang.Object)>(r1)
+org.jfree.chart.plot.ValueMarker.equals : return 1

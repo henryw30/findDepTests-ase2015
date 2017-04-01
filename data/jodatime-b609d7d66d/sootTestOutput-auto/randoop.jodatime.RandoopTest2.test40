@@ -1,0 +1,15 @@
+org.joda.time.tz.UTCProvider.getAvailableIDs : $r1 = staticinvoke <java.util.Collections: java.util.Set singleton(java.lang.Object)>("UTC")
+org.joda.time.tz.FixedDateTimeZone.equals : return 1
+org.joda.time.tz.FixedDateTimeZone.equals : if r0 != r1 goto $z0 = r1 instanceof org.joda.time.tz.FixedDateTimeZone
+org.joda.time.DateTimeZone.setProvider : if r1 == null goto staticinvoke <org.joda.time.DateTimeZone: void setProvider0(org.joda.time.tz.Provider)>(r0)
+org.joda.time.DateTimeZone.setProvider : staticinvoke <org.joda.time.DateTimeZone: void setProvider0(org.joda.time.tz.Provider)>(r0)
+org.joda.time.DateTimeZone.setProvider : r1 = staticinvoke <java.lang.System: java.lang.SecurityManager getSecurityManager()>()
+org.joda.time.DateTimeZone.setProvider0 : if r0 != null goto r1 = interfaceinvoke r0.<org.joda.time.tz.Provider: java.util.Set getAvailableIDs()>()
+org.joda.time.DateTimeZone.setProvider0 : $r4 = <org.joda.time.DateTimeZone: org.joda.time.DateTimeZone UTC>
+org.joda.time.DateTimeZone.setProvider0 : <org.joda.time.DateTimeZone: java.util.Set cAvailableIDs> = r1
+org.joda.time.DateTimeZone.setProvider0 : if r1 == null goto $r2 = new java.lang.IllegalArgumentException
+org.joda.time.DateTimeZone.setProvider0 : $z0 = interfaceinvoke r1.<java.util.Set: boolean contains(java.lang.Object)>("UTC")
+org.joda.time.DateTimeZone.setProvider0 : <org.joda.time.DateTimeZone: org.joda.time.tz.Provider cProvider> = r0
+org.joda.time.DateTimeZone.setProvider0 : r1 = interfaceinvoke r0.<org.joda.time.tz.Provider: java.util.Set getAvailableIDs()>()
+org.joda.time.tz.UTCProvider.getZone : $r3 = <org.joda.time.DateTimeZone: org.joda.time.DateTimeZone UTC>
+org.joda.time.tz.UTCProvider.getZone : $r2 = "UTC"

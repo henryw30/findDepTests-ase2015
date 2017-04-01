@@ -1,0 +1,11 @@
+org.jfree.chart.plot.dial.StandardDialScale.setTickLabelsVisible : r0.<org.jfree.chart.plot.dial.StandardDialScale: boolean tickLabelsVisible> = z0
+org.jfree.chart.plot.dial.StandardDialScale.setTickLabelsVisible : $r1 = new org.jfree.chart.plot.dial.DialLayerChangeEvent
+org.jfree.chart.plot.dial.DialPlot.getLayerIndex : $r2 = r0.<org.jfree.chart.plot.dial.DialPlot: java.util.List layers>
+org.jfree.chart.plot.dial.DialPlot.getLayerIndex : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "layer")
+org.jfree.chart.plot.dial.StandardDialScale.getMinorTickLength : $d0 = r0.<org.jfree.chart.plot.dial.StandardDialScale: double minorTickLength>
+org.jfree.chart.plot.dial.AbstractDialLayer.notifyListeners : $r3 = r0.<org.jfree.chart.plot.dial.AbstractDialLayer: javax.swing.event.EventListenerList listenerList>
+org.jfree.chart.plot.dial.AbstractDialLayer.notifyListeners : $i1 = lengthof r2
+org.jfree.chart.plot.dial.StandardDialScale.setTickRadius : r0.<org.jfree.chart.plot.dial.StandardDialScale: double tickRadius> = d0
+org.jfree.chart.plot.dial.StandardDialScale.setTickRadius : $b0 = d0 cmpg 0.0
+org.jfree.chart.plot.dial.StandardDialScale.setTickRadius : $r2 = new org.jfree.chart.plot.dial.DialLayerChangeEvent
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null goto return

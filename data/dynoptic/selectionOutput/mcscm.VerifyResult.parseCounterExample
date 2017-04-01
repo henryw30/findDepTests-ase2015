@@ -1,0 +1,31 @@
+mcscm.VerifyResult.parseCounterExample : $r2 = new mcscm.McScMCExample >>>>>>>> mcscm.VerifyResult.parseCounterExample : $r7 = r0.<mcscm.VerifyResult: java.util.List cids>
+mcscm.VerifyResult.parseCounterExample : $r7 = r0.<mcscm.VerifyResult: java.util.List cids> >>>>>>>> mcscm.VerifyResult.parseCounterExample : specialinvoke $r2.<mcscm.McScMCExample: void <init>(java.util.List)>($r7)
+mcscm.VerifyResult.parseCounterExample : specialinvoke $r2.<mcscm.McScMCExample: void <init>(java.util.List)>($r7) >>>>>>>> mcscm.VerifyResult.parseCounterExample : r0.<mcscm.VerifyResult: mcscm.McScMCExample cExample> = $r2
+mcscm.VerifyResult.parseCounterExample : r0.<mcscm.VerifyResult: mcscm.McScMCExample cExample> = $r2 >>>>>>>> mcscm.VerifyResult.parseCounterExample : $r8 = <mcscm.VerifyResult: java.lang.String counterExEventRe>
+mcscm.VerifyResult.parseCounterExample : $r8 = <mcscm.VerifyResult: java.lang.String counterExEventRe> >>>>>>>> mcscm.VerifyResult.parseCounterExample : r3 = staticinvoke <java.util.regex.Pattern: java.util.regex.Pattern compile(java.lang.String)>($r8)
+mcscm.VerifyResult.parseCounterExample : r3 = staticinvoke <java.util.regex.Pattern: java.util.regex.Pattern compile(java.lang.String)>($r8) >>>>>>>> mcscm.VerifyResult.parseCounterExample : $i1 = i0 + 1
+mcscm.VerifyResult.parseCounterExample : $i1 = i0 + 1 >>>>>>>> mcscm.VerifyResult.parseCounterExample : $i2 = interfaceinvoke r1.<java.util.List: int size()>()
+mcscm.VerifyResult.parseCounterExample : $i2 = interfaceinvoke r1.<java.util.List: int size()>() >>>>>>>> mcscm.VerifyResult.parseCounterExample : $r9 = interfaceinvoke r1.<java.util.List: java.util.List subList(int,int)>($i1, $i2)
+mcscm.VerifyResult.parseCounterExample : $r9 = interfaceinvoke r1.<java.util.List: java.util.List subList(int,int)>($i1, $i2) >>>>>>>> mcscm.VerifyResult.parseCounterExample : r4 = interfaceinvoke $r9.<java.util.List: java.util.Iterator iterator()>()
+mcscm.VerifyResult.parseCounterExample : r4 = interfaceinvoke $r9.<java.util.List: java.util.Iterator iterator()>() >>>>>>>> mcscm.VerifyResult.parseCounterExample : $z0 = interfaceinvoke r4.<java.util.Iterator: boolean hasNext()>()
+mcscm.VerifyResult.parseCounterExample : $z0 = interfaceinvoke r4.<java.util.Iterator: boolean hasNext()>() >>>>>>>> mcscm.VerifyResult.parseCounterExample : if $z0 == 0
+mcscm.VerifyResult.parseCounterExample : if $z0 == 0 >>>>>>>> mcscm.VerifyResult.parseCounterExample : $r10 = interfaceinvoke r4.<java.util.Iterator: java.lang.Object next()>()
+mcscm.VerifyResult.parseCounterExample : if $z0 == 0 >>>>>>>> mcscm.VerifyResult.parseCounterExample : return
+mcscm.VerifyResult.parseCounterExample : $r10 = interfaceinvoke r4.<java.util.Iterator: java.lang.Object next()>() >>>>>>>> mcscm.VerifyResult.parseCounterExample : r5 = (java.lang.String) $r10
+mcscm.VerifyResult.parseCounterExample : r5 = (java.lang.String) $r10 >>>>>>>> mcscm.VerifyResult.parseCounterExample : r6 = virtualinvoke r3.<java.util.regex.Pattern: java.util.regex.Matcher matcher(java.lang.CharSequence)>(r5)
+mcscm.VerifyResult.parseCounterExample : r6 = virtualinvoke r3.<java.util.regex.Pattern: java.util.regex.Matcher matcher(java.lang.CharSequence)>(r5) >>>>>>>> mcscm.VerifyResult.parseCounterExample : $z1 = virtualinvoke r6.<java.util.regex.Matcher: boolean find()>()
+mcscm.VerifyResult.parseCounterExample : $z1 = virtualinvoke r6.<java.util.regex.Matcher: boolean find()>() >>>>>>>> mcscm.VerifyResult.parseCounterExample : if $z1 == 0
+mcscm.VerifyResult.parseCounterExample : if $z1 == 0 >>>>>>>> mcscm.VerifyResult.parseCounterExample : $z2 = <mcscm.VerifyResult: boolean $assertionsDisabled>
+mcscm.VerifyResult.parseCounterExample : if $z1 == 0 >>>>>>>> mcscm.VerifyResult.parseCounterExample : goto [?= $z0 = interfaceinvoke r4.<java.util.Iterator: boolean hasNext()>()]
+mcscm.VerifyResult.parseCounterExample : goto [?= $z0 = interfaceinvoke r4.<java.util.Iterator: boolean hasNext()>()] >>>>>>>> mcscm.VerifyResult.parseCounterExample : $z0 = interfaceinvoke r4.<java.util.Iterator: boolean hasNext()>()
+mcscm.VerifyResult.parseCounterExample : $z2 = <mcscm.VerifyResult: boolean $assertionsDisabled> >>>>>>>> mcscm.VerifyResult.parseCounterExample : if $z2 != 0
+mcscm.VerifyResult.parseCounterExample : if $z2 != 0 >>>>>>>> mcscm.VerifyResult.parseCounterExample : $i3 = virtualinvoke r6.<java.util.regex.Matcher: int groupCount()>()
+mcscm.VerifyResult.parseCounterExample : if $z2 != 0 >>>>>>>> mcscm.VerifyResult.parseCounterExample : $r12 = r0.<mcscm.VerifyResult: mcscm.McScMCExample cExample>
+mcscm.VerifyResult.parseCounterExample : $r12 = r0.<mcscm.VerifyResult: mcscm.McScMCExample cExample> >>>>>>>> mcscm.VerifyResult.parseCounterExample : $r13 = virtualinvoke r6.<java.util.regex.Matcher: java.lang.String group(int)>(1)
+mcscm.VerifyResult.parseCounterExample : $r13 = virtualinvoke r6.<java.util.regex.Matcher: java.lang.String group(int)>(1) >>>>>>>> mcscm.VerifyResult.parseCounterExample : virtualinvoke $r12.<mcscm.McScMCExample: void addScmEventStrToPath(java.lang.String)>($r13)
+mcscm.VerifyResult.parseCounterExample : virtualinvoke $r12.<mcscm.McScMCExample: void addScmEventStrToPath(java.lang.String)>($r13) >>>>>>>> mcscm.VerifyResult.parseCounterExample : goto [?= $z0 = interfaceinvoke r4.<java.util.Iterator: boolean hasNext()>()]
+mcscm.VerifyResult.parseCounterExample : $i3 = virtualinvoke r6.<java.util.regex.Matcher: int groupCount()>() >>>>>>>> mcscm.VerifyResult.parseCounterExample : if $i3 == 1
+mcscm.VerifyResult.parseCounterExample : if $i3 == 1 >>>>>>>> mcscm.VerifyResult.parseCounterExample : $r11 = new java.lang.AssertionError
+mcscm.VerifyResult.parseCounterExample : if $i3 == 1 >>>>>>>> mcscm.VerifyResult.parseCounterExample : $r12 = r0.<mcscm.VerifyResult: mcscm.McScMCExample cExample>
+mcscm.VerifyResult.parseCounterExample : $r11 = new java.lang.AssertionError >>>>>>>> mcscm.VerifyResult.parseCounterExample : specialinvoke $r11.<java.lang.AssertionError: void <init>()>()
+mcscm.VerifyResult.parseCounterExample : specialinvoke $r11.<java.lang.AssertionError: void <init>()>() >>>>>>>> mcscm.VerifyResult.parseCounterExample : throw $r11

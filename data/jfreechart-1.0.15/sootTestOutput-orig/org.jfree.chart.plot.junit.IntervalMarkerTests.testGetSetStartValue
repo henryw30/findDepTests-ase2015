@@ -1,0 +1,15 @@
+org.jfree.chart.plot.Marker.addChangeListener : $r2 = r0.<org.jfree.chart.plot.Marker: javax.swing.event.EventListenerList listenerList>
+org.jfree.chart.plot.Marker.setLabelOffsetType : r0.<org.jfree.chart.plot.Marker: org.jfree.ui.LengthAdjustmentType labelOffsetType> = r1
+org.jfree.chart.plot.Marker.setLabelOffsetType : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "adj")
+org.jfree.chart.plot.Marker.setLabelOffsetType : $r2 = new org.jfree.chart.event.MarkerChangeEvent
+org.jfree.chart.plot.IntervalMarker.getStartValue : $d0 = r0.<org.jfree.chart.plot.IntervalMarker: double startValue>
+org.jfree.chart.plot.Marker.notifyListeners : $r4 = r2[i0]
+org.jfree.chart.plot.Marker.notifyListeners : $i2 = i0 + 1
+org.jfree.chart.plot.Marker.notifyListeners : $r3 = r0.<org.jfree.chart.plot.Marker: javax.swing.event.EventListenerList listenerList>
+org.jfree.chart.plot.Marker.notifyListeners : $i1 = lengthof r2
+org.jfree.chart.plot.IntervalMarker.equals : return 1
+org.jfree.chart.plot.IntervalMarker.equals : if r1 != r0 goto $z0 = r1 instanceof org.jfree.chart.plot.IntervalMarker
+org.jfree.chart.plot.IntervalMarker.setStartValue : $r1 = new org.jfree.chart.event.MarkerChangeEvent
+org.jfree.chart.plot.IntervalMarker.setStartValue : r0.<org.jfree.chart.plot.IntervalMarker: double startValue> = d0
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null goto return
+org.jfree.chart.event.MarkerChangeEvent.getMarker : $r1 = r0.<org.jfree.chart.event.MarkerChangeEvent: org.jfree.chart.plot.Marker marker>

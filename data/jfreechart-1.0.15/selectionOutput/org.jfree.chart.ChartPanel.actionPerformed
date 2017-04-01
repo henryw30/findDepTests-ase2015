@@ -1,0 +1,79 @@
+org.jfree.chart.ChartPanel.actionPerformed : r2 = virtualinvoke r1.<java.awt.event.ActionEvent: java.lang.String getActionCommand()>() >>>>>>>> org.jfree.chart.ChartPanel.actionPerformed : d0 = -1.0
+org.jfree.chart.ChartPanel.actionPerformed : d0 = -1.0 >>>>>>>> org.jfree.chart.ChartPanel.actionPerformed : d1 = -1.0
+org.jfree.chart.ChartPanel.actionPerformed : d1 = -1.0 >>>>>>>> org.jfree.chart.ChartPanel.actionPerformed : $r4 = r0.<org.jfree.chart.ChartPanel: java.awt.geom.Point2D zoomPoint>
+org.jfree.chart.ChartPanel.actionPerformed : $r4 = r0.<org.jfree.chart.ChartPanel: java.awt.geom.Point2D zoomPoint> >>>>>>>> org.jfree.chart.ChartPanel.actionPerformed : if $r4 == null
+org.jfree.chart.ChartPanel.actionPerformed : if $r4 == null >>>>>>>> org.jfree.chart.ChartPanel.actionPerformed : $r5 = r0.<org.jfree.chart.ChartPanel: java.awt.geom.Point2D zoomPoint>
+org.jfree.chart.ChartPanel.actionPerformed : if $r4 == null >>>>>>>> org.jfree.chart.ChartPanel.actionPerformed : $z0 = virtualinvoke r2.<java.lang.String: boolean equals(java.lang.Object)>("PROPERTIES")
+org.jfree.chart.ChartPanel.actionPerformed : $z0 = virtualinvoke r2.<java.lang.String: boolean equals(java.lang.Object)>("PROPERTIES") >>>>>>>> org.jfree.chart.ChartPanel.actionPerformed : if $z0 == 0
+org.jfree.chart.ChartPanel.actionPerformed : if $z0 == 0 >>>>>>>> org.jfree.chart.ChartPanel.actionPerformed : virtualinvoke r0.<org.jfree.chart.ChartPanel: void doEditChartProperties()>()
+org.jfree.chart.ChartPanel.actionPerformed : if $z0 == 0 >>>>>>>> org.jfree.chart.ChartPanel.actionPerformed : $z1 = virtualinvoke r2.<java.lang.String: boolean equals(java.lang.Object)>("COPY")
+org.jfree.chart.ChartPanel.actionPerformed : $z1 = virtualinvoke r2.<java.lang.String: boolean equals(java.lang.Object)>("COPY") >>>>>>>> org.jfree.chart.ChartPanel.actionPerformed : if $z1 == 0
+org.jfree.chart.ChartPanel.actionPerformed : if $z1 == 0 >>>>>>>> org.jfree.chart.ChartPanel.actionPerformed : virtualinvoke r0.<org.jfree.chart.ChartPanel: void doCopy()>()
+org.jfree.chart.ChartPanel.actionPerformed : if $z1 == 0 >>>>>>>> org.jfree.chart.ChartPanel.actionPerformed : $z2 = virtualinvoke r2.<java.lang.String: boolean equals(java.lang.Object)>("SAVE")
+org.jfree.chart.ChartPanel.actionPerformed : $z2 = virtualinvoke r2.<java.lang.String: boolean equals(java.lang.Object)>("SAVE") >>>>>>>> org.jfree.chart.ChartPanel.actionPerformed : if $z2 == 0
+org.jfree.chart.ChartPanel.actionPerformed : if $z2 == 0 >>>>>>>> org.jfree.chart.ChartPanel.actionPerformed : virtualinvoke r0.<org.jfree.chart.ChartPanel: void doSaveAs()>()
+org.jfree.chart.ChartPanel.actionPerformed : if $z2 == 0 >>>>>>>> org.jfree.chart.ChartPanel.actionPerformed : $z3 = virtualinvoke r2.<java.lang.String: boolean equals(java.lang.Object)>("PRINT")
+org.jfree.chart.ChartPanel.actionPerformed : if $z2 == 0 >>>>>>>> org.jfree.chart.ChartPanel.actionPerformed : $r7 := @caughtexception
+org.jfree.chart.ChartPanel.actionPerformed : r3 = $r7 >>>>>>>> org.jfree.chart.ChartPanel.actionPerformed : virtualinvoke r3.<java.io.IOException: void printStackTrace()>()
+org.jfree.chart.ChartPanel.actionPerformed : virtualinvoke r3.<java.io.IOException: void printStackTrace()>() >>>>>>>> org.jfree.chart.ChartPanel.actionPerformed : goto [?= return]
+org.jfree.chart.ChartPanel.actionPerformed : goto [?= return] >>>>>>>> org.jfree.chart.ChartPanel.actionPerformed : return
+org.jfree.chart.ChartPanel.actionPerformed : $z3 = virtualinvoke r2.<java.lang.String: boolean equals(java.lang.Object)>("PRINT") >>>>>>>> org.jfree.chart.ChartPanel.actionPerformed : if $z3 == 0
+org.jfree.chart.ChartPanel.actionPerformed : if $z3 == 0 >>>>>>>> org.jfree.chart.ChartPanel.actionPerformed : virtualinvoke r0.<org.jfree.chart.ChartPanel: void createChartPrintJob()>()
+org.jfree.chart.ChartPanel.actionPerformed : if $z3 == 0 >>>>>>>> org.jfree.chart.ChartPanel.actionPerformed : $z4 = virtualinvoke r2.<java.lang.String: boolean equals(java.lang.Object)>("ZOOM_IN_BOTH")
+org.jfree.chart.ChartPanel.actionPerformed : $z4 = virtualinvoke r2.<java.lang.String: boolean equals(java.lang.Object)>("ZOOM_IN_BOTH") >>>>>>>> org.jfree.chart.ChartPanel.actionPerformed : if $z4 == 0
+org.jfree.chart.ChartPanel.actionPerformed : if $z4 == 0 >>>>>>>> org.jfree.chart.ChartPanel.actionPerformed : virtualinvoke r0.<org.jfree.chart.ChartPanel: void zoomInBoth(double,double)>(d0, d1)
+org.jfree.chart.ChartPanel.actionPerformed : if $z4 == 0 >>>>>>>> org.jfree.chart.ChartPanel.actionPerformed : $z5 = virtualinvoke r2.<java.lang.String: boolean equals(java.lang.Object)>("ZOOM_IN_DOMAIN")
+org.jfree.chart.ChartPanel.actionPerformed : $z5 = virtualinvoke r2.<java.lang.String: boolean equals(java.lang.Object)>("ZOOM_IN_DOMAIN") >>>>>>>> org.jfree.chart.ChartPanel.actionPerformed : if $z5 == 0
+org.jfree.chart.ChartPanel.actionPerformed : if $z5 == 0 >>>>>>>> org.jfree.chart.ChartPanel.actionPerformed : virtualinvoke r0.<org.jfree.chart.ChartPanel: void zoomInDomain(double,double)>(d0, d1)
+org.jfree.chart.ChartPanel.actionPerformed : if $z5 == 0 >>>>>>>> org.jfree.chart.ChartPanel.actionPerformed : $z6 = virtualinvoke r2.<java.lang.String: boolean equals(java.lang.Object)>("ZOOM_IN_RANGE")
+org.jfree.chart.ChartPanel.actionPerformed : $z6 = virtualinvoke r2.<java.lang.String: boolean equals(java.lang.Object)>("ZOOM_IN_RANGE") >>>>>>>> org.jfree.chart.ChartPanel.actionPerformed : if $z6 == 0
+org.jfree.chart.ChartPanel.actionPerformed : if $z6 == 0 >>>>>>>> org.jfree.chart.ChartPanel.actionPerformed : virtualinvoke r0.<org.jfree.chart.ChartPanel: void zoomInRange(double,double)>(d0, d1)
+org.jfree.chart.ChartPanel.actionPerformed : if $z6 == 0 >>>>>>>> org.jfree.chart.ChartPanel.actionPerformed : $z7 = virtualinvoke r2.<java.lang.String: boolean equals(java.lang.Object)>("ZOOM_OUT_BOTH")
+org.jfree.chart.ChartPanel.actionPerformed : $z7 = virtualinvoke r2.<java.lang.String: boolean equals(java.lang.Object)>("ZOOM_OUT_BOTH") >>>>>>>> org.jfree.chart.ChartPanel.actionPerformed : if $z7 == 0
+org.jfree.chart.ChartPanel.actionPerformed : if $z7 == 0 >>>>>>>> org.jfree.chart.ChartPanel.actionPerformed : virtualinvoke r0.<org.jfree.chart.ChartPanel: void zoomOutBoth(double,double)>(d0, d1)
+org.jfree.chart.ChartPanel.actionPerformed : if $z7 == 0 >>>>>>>> org.jfree.chart.ChartPanel.actionPerformed : $z8 = virtualinvoke r2.<java.lang.String: boolean equals(java.lang.Object)>("ZOOM_DOMAIN_BOTH")
+org.jfree.chart.ChartPanel.actionPerformed : $z8 = virtualinvoke r2.<java.lang.String: boolean equals(java.lang.Object)>("ZOOM_DOMAIN_BOTH") >>>>>>>> org.jfree.chart.ChartPanel.actionPerformed : if $z8 == 0
+org.jfree.chart.ChartPanel.actionPerformed : if $z8 == 0 >>>>>>>> org.jfree.chart.ChartPanel.actionPerformed : virtualinvoke r0.<org.jfree.chart.ChartPanel: void zoomOutDomain(double,double)>(d0, d1)
+org.jfree.chart.ChartPanel.actionPerformed : if $z8 == 0 >>>>>>>> org.jfree.chart.ChartPanel.actionPerformed : $z9 = virtualinvoke r2.<java.lang.String: boolean equals(java.lang.Object)>("ZOOM_RANGE_BOTH")
+org.jfree.chart.ChartPanel.actionPerformed : $z9 = virtualinvoke r2.<java.lang.String: boolean equals(java.lang.Object)>("ZOOM_RANGE_BOTH") >>>>>>>> org.jfree.chart.ChartPanel.actionPerformed : if $z9 == 0
+org.jfree.chart.ChartPanel.actionPerformed : if $z9 == 0 >>>>>>>> org.jfree.chart.ChartPanel.actionPerformed : virtualinvoke r0.<org.jfree.chart.ChartPanel: void zoomOutRange(double,double)>(d0, d1)
+org.jfree.chart.ChartPanel.actionPerformed : if $z9 == 0 >>>>>>>> org.jfree.chart.ChartPanel.actionPerformed : $z10 = virtualinvoke r2.<java.lang.String: boolean equals(java.lang.Object)>("ZOOM_RESET_BOTH")
+org.jfree.chart.ChartPanel.actionPerformed : $z10 = virtualinvoke r2.<java.lang.String: boolean equals(java.lang.Object)>("ZOOM_RESET_BOTH") >>>>>>>> org.jfree.chart.ChartPanel.actionPerformed : if $z10 == 0
+org.jfree.chart.ChartPanel.actionPerformed : if $z10 == 0 >>>>>>>> org.jfree.chart.ChartPanel.actionPerformed : virtualinvoke r0.<org.jfree.chart.ChartPanel: void restoreAutoBounds()>()
+org.jfree.chart.ChartPanel.actionPerformed : if $z10 == 0 >>>>>>>> org.jfree.chart.ChartPanel.actionPerformed : $z11 = virtualinvoke r2.<java.lang.String: boolean equals(java.lang.Object)>("ZOOM_RESET_DOMAIN")
+org.jfree.chart.ChartPanel.actionPerformed : $z11 = virtualinvoke r2.<java.lang.String: boolean equals(java.lang.Object)>("ZOOM_RESET_DOMAIN") >>>>>>>> org.jfree.chart.ChartPanel.actionPerformed : if $z11 == 0
+org.jfree.chart.ChartPanel.actionPerformed : if $z11 == 0 >>>>>>>> org.jfree.chart.ChartPanel.actionPerformed : virtualinvoke r0.<org.jfree.chart.ChartPanel: void restoreAutoDomainBounds()>()
+org.jfree.chart.ChartPanel.actionPerformed : if $z11 == 0 >>>>>>>> org.jfree.chart.ChartPanel.actionPerformed : $z12 = virtualinvoke r2.<java.lang.String: boolean equals(java.lang.Object)>("ZOOM_RESET_RANGE")
+org.jfree.chart.ChartPanel.actionPerformed : $z12 = virtualinvoke r2.<java.lang.String: boolean equals(java.lang.Object)>("ZOOM_RESET_RANGE") >>>>>>>> org.jfree.chart.ChartPanel.actionPerformed : if $z12 == 0
+org.jfree.chart.ChartPanel.actionPerformed : if $z12 == 0 >>>>>>>> org.jfree.chart.ChartPanel.actionPerformed : virtualinvoke r0.<org.jfree.chart.ChartPanel: void restoreAutoRangeBounds()>()
+org.jfree.chart.ChartPanel.actionPerformed : if $z12 == 0 >>>>>>>> org.jfree.chart.ChartPanel.actionPerformed : return
+org.jfree.chart.ChartPanel.actionPerformed : virtualinvoke r0.<org.jfree.chart.ChartPanel: void restoreAutoRangeBounds()>() >>>>>>>> org.jfree.chart.ChartPanel.actionPerformed : return
+org.jfree.chart.ChartPanel.actionPerformed : virtualinvoke r0.<org.jfree.chart.ChartPanel: void restoreAutoDomainBounds()>() >>>>>>>> org.jfree.chart.ChartPanel.actionPerformed : goto [?= return]
+org.jfree.chart.ChartPanel.actionPerformed : goto [?= return] >>>>>>>> org.jfree.chart.ChartPanel.actionPerformed : return
+org.jfree.chart.ChartPanel.actionPerformed : virtualinvoke r0.<org.jfree.chart.ChartPanel: void restoreAutoBounds()>() >>>>>>>> org.jfree.chart.ChartPanel.actionPerformed : goto [?= return]
+org.jfree.chart.ChartPanel.actionPerformed : goto [?= return] >>>>>>>> org.jfree.chart.ChartPanel.actionPerformed : return
+org.jfree.chart.ChartPanel.actionPerformed : virtualinvoke r0.<org.jfree.chart.ChartPanel: void zoomOutRange(double,double)>(d0, d1) >>>>>>>> org.jfree.chart.ChartPanel.actionPerformed : goto [?= return]
+org.jfree.chart.ChartPanel.actionPerformed : goto [?= return] >>>>>>>> org.jfree.chart.ChartPanel.actionPerformed : return
+org.jfree.chart.ChartPanel.actionPerformed : virtualinvoke r0.<org.jfree.chart.ChartPanel: void zoomOutDomain(double,double)>(d0, d1) >>>>>>>> org.jfree.chart.ChartPanel.actionPerformed : goto [?= return]
+org.jfree.chart.ChartPanel.actionPerformed : goto [?= return] >>>>>>>> org.jfree.chart.ChartPanel.actionPerformed : return
+org.jfree.chart.ChartPanel.actionPerformed : virtualinvoke r0.<org.jfree.chart.ChartPanel: void zoomOutBoth(double,double)>(d0, d1) >>>>>>>> org.jfree.chart.ChartPanel.actionPerformed : goto [?= return]
+org.jfree.chart.ChartPanel.actionPerformed : goto [?= return] >>>>>>>> org.jfree.chart.ChartPanel.actionPerformed : return
+org.jfree.chart.ChartPanel.actionPerformed : virtualinvoke r0.<org.jfree.chart.ChartPanel: void zoomInRange(double,double)>(d0, d1) >>>>>>>> org.jfree.chart.ChartPanel.actionPerformed : goto [?= return]
+org.jfree.chart.ChartPanel.actionPerformed : goto [?= return] >>>>>>>> org.jfree.chart.ChartPanel.actionPerformed : return
+org.jfree.chart.ChartPanel.actionPerformed : virtualinvoke r0.<org.jfree.chart.ChartPanel: void zoomInDomain(double,double)>(d0, d1) >>>>>>>> org.jfree.chart.ChartPanel.actionPerformed : goto [?= return]
+org.jfree.chart.ChartPanel.actionPerformed : goto [?= return] >>>>>>>> org.jfree.chart.ChartPanel.actionPerformed : return
+org.jfree.chart.ChartPanel.actionPerformed : virtualinvoke r0.<org.jfree.chart.ChartPanel: void zoomInBoth(double,double)>(d0, d1) >>>>>>>> org.jfree.chart.ChartPanel.actionPerformed : goto [?= return]
+org.jfree.chart.ChartPanel.actionPerformed : goto [?= return] >>>>>>>> org.jfree.chart.ChartPanel.actionPerformed : return
+org.jfree.chart.ChartPanel.actionPerformed : virtualinvoke r0.<org.jfree.chart.ChartPanel: void createChartPrintJob()>() >>>>>>>> org.jfree.chart.ChartPanel.actionPerformed : goto [?= return]
+org.jfree.chart.ChartPanel.actionPerformed : goto [?= return] >>>>>>>> org.jfree.chart.ChartPanel.actionPerformed : return
+org.jfree.chart.ChartPanel.actionPerformed : virtualinvoke r0.<org.jfree.chart.ChartPanel: void doSaveAs()>() >>>>>>>> org.jfree.chart.ChartPanel.actionPerformed : goto [?= return]
+org.jfree.chart.ChartPanel.actionPerformed : virtualinvoke r0.<org.jfree.chart.ChartPanel: void doSaveAs()>() >>>>>>>> org.jfree.chart.ChartPanel.actionPerformed : $r7 := @caughtexception
+org.jfree.chart.ChartPanel.actionPerformed : goto [?= return] >>>>>>>> org.jfree.chart.ChartPanel.actionPerformed : return
+org.jfree.chart.ChartPanel.actionPerformed : virtualinvoke r0.<org.jfree.chart.ChartPanel: void doCopy()>() >>>>>>>> org.jfree.chart.ChartPanel.actionPerformed : goto [?= return]
+org.jfree.chart.ChartPanel.actionPerformed : goto [?= return] >>>>>>>> org.jfree.chart.ChartPanel.actionPerformed : return
+org.jfree.chart.ChartPanel.actionPerformed : virtualinvoke r0.<org.jfree.chart.ChartPanel: void doEditChartProperties()>() >>>>>>>> org.jfree.chart.ChartPanel.actionPerformed : goto [?= return]
+org.jfree.chart.ChartPanel.actionPerformed : goto [?= return] >>>>>>>> org.jfree.chart.ChartPanel.actionPerformed : return
+org.jfree.chart.ChartPanel.actionPerformed : $r5 = r0.<org.jfree.chart.ChartPanel: java.awt.geom.Point2D zoomPoint> >>>>>>>> org.jfree.chart.ChartPanel.actionPerformed : d0 = virtualinvoke $r5.<java.awt.geom.Point2D: double getX()>()
+org.jfree.chart.ChartPanel.actionPerformed : d0 = virtualinvoke $r5.<java.awt.geom.Point2D: double getX()>() >>>>>>>> org.jfree.chart.ChartPanel.actionPerformed : $r6 = r0.<org.jfree.chart.ChartPanel: java.awt.geom.Point2D zoomPoint>
+org.jfree.chart.ChartPanel.actionPerformed : $r6 = r0.<org.jfree.chart.ChartPanel: java.awt.geom.Point2D zoomPoint> >>>>>>>> org.jfree.chart.ChartPanel.actionPerformed : d1 = virtualinvoke $r6.<java.awt.geom.Point2D: double getY()>()
+org.jfree.chart.ChartPanel.actionPerformed : d1 = virtualinvoke $r6.<java.awt.geom.Point2D: double getY()>() >>>>>>>> org.jfree.chart.ChartPanel.actionPerformed : $z0 = virtualinvoke r2.<java.lang.String: boolean equals(java.lang.Object)>("PROPERTIES")

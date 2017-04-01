@@ -1,0 +1,69 @@
+org.joda.time.YearMonth.getYear : $i0 = virtualinvoke r0.<org.joda.time.YearMonth: int getValue(int)>(0)
+org.joda.time.chrono.BasicYearDateTimeField.getMaximumValue : $r1 = r0.<org.joda.time.chrono.BasicYearDateTimeField: org.joda.time.chrono.BasicChronology iChronology>
+org.joda.time.chrono.BasicMonthOfYearDateTimeField.getMinimumValue : return 1
+org.joda.time.chrono.GregorianChronology.getMaxYear : return 292278993
+org.joda.time.IllegalFieldValueException.createMessage : if r3 != null goto $r16 = virtualinvoke r6.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>("must be in the range [")
+org.joda.time.IllegalFieldValueException.createMessage : $r23 = virtualinvoke r6.<java.lang.StringBuffer: java.lang.String toString()>()
+org.joda.time.IllegalFieldValueException.createMessage : if r4 == null goto $r23 = virtualinvoke r6.<java.lang.StringBuffer: java.lang.String toString()>()
+org.joda.time.IllegalFieldValueException.createMessage : $r12 = virtualinvoke r6.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>("must not be larger than ")
+org.joda.time.IllegalFieldValueException.createMessage : $r7 = virtualinvoke $r5.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>("Value ")
+org.joda.time.IllegalFieldValueException.createMessage : $r5 = new java.lang.StringBuffer
+org.joda.time.IllegalFieldValueException.createMessage : $r14 = virtualinvoke r6.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>("must not be smaller than ")
+org.joda.time.IllegalFieldValueException.createMessage : if r3 != null goto $r12 = virtualinvoke r6.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>("must not be larger than ")
+org.joda.time.IllegalFieldValueException.createMessage : if r2 != null goto (branch)
+org.joda.time.YearMonth.getMonthOfYear : $i0 = virtualinvoke r0.<org.joda.time.YearMonth: int getValue(int)>(1)
+org.joda.time.DateTimeFieldType.getName : $r1 = r0.<org.joda.time.DateTimeFieldType: java.lang.String iName>
+org.joda.time.DateTimeUtils.getChronology : if r0 != null goto return r0
+org.joda.time.DateTimeUtils.getChronology : return r0
+org.joda.time.chrono.AssembledChronology.year : $r1 = r0.<org.joda.time.chrono.AssembledChronology: org.joda.time.DateTimeField iYear>
+org.joda.time.DateTimeUtils.checkPermission : r0 = staticinvoke <java.lang.System: java.lang.SecurityManager getSecurityManager()>()
+org.joda.time.DateTimeUtils.checkPermission : if r0 == null goto return
+org.joda.time.chrono.BasicMonthOfYearDateTimeField.getMaximumValue : $i0 = r0.<org.joda.time.chrono.BasicMonthOfYearDateTimeField: int iMax>
+org.joda.time.chrono.BasicYearDateTimeField.getMinimumValue : $r1 = r0.<org.joda.time.chrono.BasicYearDateTimeField: org.joda.time.chrono.BasicChronology iChronology>
+org.joda.time.chrono.AssembledChronology.monthOfYear : $r1 = r0.<org.joda.time.chrono.AssembledChronology: org.joda.time.DateTimeField iMonthOfYear>
+org.joda.time.base.AbstractPartial.getField : $r1 = virtualinvoke r0.<org.joda.time.base.AbstractPartial: org.joda.time.Chronology getChronology()>()
+org.joda.time.DateTimeZone.getDefault : if r0 != null goto return r0
+org.joda.time.DateTimeZone.getDefault : r0 = <org.joda.time.DateTimeZone: org.joda.time.DateTimeZone cDefault>
+org.joda.time.DateTimeZone.getDefault : return r0
+org.joda.time.field.BaseDateTimeField.getType : $r1 = r0.<org.joda.time.field.BaseDateTimeField: org.joda.time.DateTimeFieldType iType>
+org.joda.time.base.BasePartial.getChronology : $r1 = r0.<org.joda.time.base.BasePartial: org.joda.time.Chronology iChronology>
+org.joda.time.YearMonth.getField : $r4 = virtualinvoke r1.<org.joda.time.Chronology: org.joda.time.DateTimeField monthOfYear()>()
+org.joda.time.YearMonth.getField : $r3 = virtualinvoke r1.<org.joda.time.Chronology: org.joda.time.DateTimeField year()>()
+org.joda.time.YearMonth.getField : lookupswitch(i0) {     case 0: goto $r3 = virtualinvoke r1.<org.joda.time.Chronology: org.joda.time.DateTimeField year()>();     case 1: goto $r4 = virtualinvoke r1.<org.joda.time.Chronology: org.joda.time.DateTimeField monthOfYear()>();     default: goto $r5 = new java.lang.IndexOutOfBoundsException; }
+org.joda.time.field.BaseDateTimeField.getMinimumValue : $i0 = virtualinvoke r0.<org.joda.time.field.BaseDateTimeField: int getMinimumValue()>()
+org.joda.time.field.BaseDateTimeField.getMinimumValue : $i0 = virtualinvoke r0.<org.joda.time.field.BaseDateTimeField: int getMinimumValue(org.joda.time.ReadablePartial)>(r1)
+org.joda.time.field.BaseDateTimeField.getMaximumValue : $i0 = virtualinvoke r0.<org.joda.time.field.BaseDateTimeField: int getMaximumValue()>()
+org.joda.time.field.BaseDateTimeField.getMaximumValue : $i0 = virtualinvoke r0.<org.joda.time.field.BaseDateTimeField: int getMaximumValue(org.joda.time.ReadablePartial)>(r1)
+org.joda.time.base.BasePartial.getValue : $r1 = r0.<org.joda.time.base.BasePartial: int[] iValues>
+org.joda.time.DateTimeUtils.setCurrentMillisFixed : $r0 = new org.joda.time.DateTimeUtils$FixedMillisProvider
+org.joda.time.DateTimeUtils.setCurrentMillisFixed : staticinvoke <org.joda.time.DateTimeUtils: void checkPermission()>()
+org.joda.time.chrono.BasicChronology.equals : $z0 = specialinvoke r0.<java.lang.Object: boolean equals(java.lang.Object)>(r1)
+org.joda.time.chrono.GregorianChronology.withUTC : $r1 = <org.joda.time.chrono.GregorianChronology: org.joda.time.chrono.GregorianChronology INSTANCE_UTC>
+org.joda.time.YearMonth.size : return 2
+org.joda.time.DateTimeZone.setDefault : exitmonitor r3
+org.joda.time.DateTimeZone.setDefault : $r6 = class "org/joda/time/DateTimeZone"
+org.joda.time.DateTimeZone.setDefault : <org.joda.time.DateTimeZone: org.joda.time.DateTimeZone cDefault> = r0
+org.joda.time.DateTimeZone.setDefault : if r1 == null goto (branch)
+org.joda.time.DateTimeZone.setDefault : if r0 != null goto $r6 = class "org/joda/time/DateTimeZone"
+org.joda.time.DateTimeZone.setDefault : r1 = staticinvoke <java.lang.System: java.lang.SecurityManager getSecurityManager()>()
+org.joda.time.chrono.BaseChronology.validate : i2 = r2[i1]
+org.joda.time.chrono.BaseChronology.validate : r12 = interfaceinvoke r1.<org.joda.time.ReadablePartial: org.joda.time.DateTimeField getField(int)>(i7)
+org.joda.time.chrono.BaseChronology.validate : $i4 = virtualinvoke r3.<org.joda.time.DateTimeField: int getMinimumValue()>()
+org.joda.time.chrono.BaseChronology.validate : r3 = interfaceinvoke r1.<org.joda.time.ReadablePartial: org.joda.time.DateTimeField getField(int)>(i1)
+org.joda.time.chrono.BaseChronology.validate : $i6 = virtualinvoke r3.<org.joda.time.DateTimeField: int getMaximumValue()>()
+org.joda.time.chrono.BaseChronology.validate : $i11 = virtualinvoke r12.<org.joda.time.DateTimeField: int getMaximumValue(org.joda.time.ReadablePartial,int[])>(r1, r2)
+org.joda.time.chrono.BaseChronology.validate : i8 = r2[i7]
+org.joda.time.chrono.BaseChronology.validate : i0 = interfaceinvoke r1.<org.joda.time.ReadablePartial: int size()>()
+org.joda.time.chrono.BaseChronology.validate : $r5 = virtualinvoke r3.<org.joda.time.DateTimeField: org.joda.time.DateTimeFieldType getType()>()
+org.joda.time.chrono.BaseChronology.validate : $r8 = new org.joda.time.IllegalFieldValueException
+org.joda.time.chrono.BaseChronology.validate : i1 = 0
+org.joda.time.chrono.BaseChronology.validate : $i5 = virtualinvoke r3.<org.joda.time.DateTimeField: int getMaximumValue()>()
+org.joda.time.chrono.BaseChronology.validate : $r4 = new org.joda.time.IllegalFieldValueException
+org.joda.time.chrono.BaseChronology.validate : i7 = 0
+org.joda.time.chrono.BaseChronology.validate : $r9 = virtualinvoke r3.<org.joda.time.DateTimeField: org.joda.time.DateTimeFieldType getType()>()
+org.joda.time.chrono.BaseChronology.validate : $i3 = virtualinvoke r3.<org.joda.time.DateTimeField: int getMinimumValue()>()
+org.joda.time.chrono.BaseChronology.validate : $i9 = virtualinvoke r12.<org.joda.time.DateTimeField: int getMinimumValue(org.joda.time.ReadablePartial,int[])>(r1, r2)
+org.joda.time.DateTimeUtils.setCurrentMillisSystem : staticinvoke <org.joda.time.DateTimeUtils: void checkPermission()>()
+org.joda.time.DateTimeUtils.setCurrentMillisSystem : $r0 = <org.joda.time.DateTimeUtils: org.joda.time.DateTimeUtils$SystemMillisProvider SYSTEM_MILLIS_PROVIDER>
+org.joda.time.chrono.GregorianChronology.getMinYear : return -292275054
+org.joda.time.chrono.GregorianChronology.equals : $z0 = specialinvoke r0.<org.joda.time.chrono.BasicGJChronology: boolean equals(java.lang.Object)>(r1)

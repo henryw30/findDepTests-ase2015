@@ -1,0 +1,30 @@
+org.jfree.chart.plot.PolarPlot.render : z0 = 0 >>>>>>>> org.jfree.chart.plot.PolarPlot.render : $r6 = r0.<org.jfree.chart.plot.PolarPlot: org.jfree.util.ObjectList datasets>
+org.jfree.chart.plot.PolarPlot.render : $r6 = r0.<org.jfree.chart.plot.PolarPlot: org.jfree.util.ObjectList datasets> >>>>>>>> org.jfree.chart.plot.PolarPlot.render : i0 = virtualinvoke $r6.<org.jfree.util.ObjectList: int size()>()
+org.jfree.chart.plot.PolarPlot.render : i0 = virtualinvoke $r6.<org.jfree.util.ObjectList: int size()>() >>>>>>>> org.jfree.chart.plot.PolarPlot.render : i1 = i0 - 1
+org.jfree.chart.plot.PolarPlot.render : i1 = i0 - 1 >>>>>>>> org.jfree.chart.plot.PolarPlot.render : if i1 < 0
+org.jfree.chart.plot.PolarPlot.render : if i1 < 0 >>>>>>>> org.jfree.chart.plot.PolarPlot.render : r4 = virtualinvoke r0.<org.jfree.chart.plot.PolarPlot: org.jfree.data.xy.XYDataset getDataset(int)>(i1)
+org.jfree.chart.plot.PolarPlot.render : if i1 < 0 >>>>>>>> org.jfree.chart.plot.PolarPlot.render : if z0 != 0
+org.jfree.chart.plot.PolarPlot.render : if z0 != 0 >>>>>>>> org.jfree.chart.plot.PolarPlot.render : virtualinvoke r0.<org.jfree.chart.plot.PolarPlot: void drawNoDataMessage(java.awt.Graphics2D,java.awt.geom.Rectangle2D)>(r1, r2)
+org.jfree.chart.plot.PolarPlot.render : if z0 != 0 >>>>>>>> org.jfree.chart.plot.PolarPlot.render : return
+org.jfree.chart.plot.PolarPlot.render : virtualinvoke r0.<org.jfree.chart.plot.PolarPlot: void drawNoDataMessage(java.awt.Graphics2D,java.awt.geom.Rectangle2D)>(r1, r2) >>>>>>>> org.jfree.chart.plot.PolarPlot.render : return
+org.jfree.chart.plot.PolarPlot.render : r4 = virtualinvoke r0.<org.jfree.chart.plot.PolarPlot: org.jfree.data.xy.XYDataset getDataset(int)>(i1) >>>>>>>> org.jfree.chart.plot.PolarPlot.render : if r4 != null
+org.jfree.chart.plot.PolarPlot.render : if r4 != null >>>>>>>> org.jfree.chart.plot.PolarPlot.render : goto [?= i1 = i1 + -1]
+org.jfree.chart.plot.PolarPlot.render : if r4 != null >>>>>>>> org.jfree.chart.plot.PolarPlot.render : r5 = virtualinvoke r0.<org.jfree.chart.plot.PolarPlot: org.jfree.chart.renderer.PolarItemRenderer getRenderer(int)>(i1)
+org.jfree.chart.plot.PolarPlot.render : r5 = virtualinvoke r0.<org.jfree.chart.plot.PolarPlot: org.jfree.chart.renderer.PolarItemRenderer getRenderer(int)>(i1) >>>>>>>> org.jfree.chart.plot.PolarPlot.render : if r5 != null
+org.jfree.chart.plot.PolarPlot.render : if r5 != null >>>>>>>> org.jfree.chart.plot.PolarPlot.render : goto [?= i1 = i1 + -1]
+org.jfree.chart.plot.PolarPlot.render : if r5 != null >>>>>>>> org.jfree.chart.plot.PolarPlot.render : $z1 = staticinvoke <org.jfree.data.general.DatasetUtilities: boolean isEmptyOrNull(org.jfree.data.xy.XYDataset)>(r4)
+org.jfree.chart.plot.PolarPlot.render : $z1 = staticinvoke <org.jfree.data.general.DatasetUtilities: boolean isEmptyOrNull(org.jfree.data.xy.XYDataset)>(r4) >>>>>>>> org.jfree.chart.plot.PolarPlot.render : if $z1 != 0
+org.jfree.chart.plot.PolarPlot.render : if $z1 != 0 >>>>>>>> org.jfree.chart.plot.PolarPlot.render : z0 = 1
+org.jfree.chart.plot.PolarPlot.render : if $z1 != 0 >>>>>>>> org.jfree.chart.plot.PolarPlot.render : i1 = i1 + -1
+org.jfree.chart.plot.PolarPlot.render : i1 = i1 + -1 >>>>>>>> org.jfree.chart.plot.PolarPlot.render : goto [?= (branch)]
+org.jfree.chart.plot.PolarPlot.render : goto [?= (branch)] >>>>>>>> org.jfree.chart.plot.PolarPlot.render : if i1 < 0
+org.jfree.chart.plot.PolarPlot.render : z0 = 1 >>>>>>>> org.jfree.chart.plot.PolarPlot.render : i2 = interfaceinvoke r4.<org.jfree.data.xy.XYDataset: int getSeriesCount()>()
+org.jfree.chart.plot.PolarPlot.render : i2 = interfaceinvoke r4.<org.jfree.data.xy.XYDataset: int getSeriesCount()>() >>>>>>>> org.jfree.chart.plot.PolarPlot.render : i3 = 0
+org.jfree.chart.plot.PolarPlot.render : i3 = 0 >>>>>>>> org.jfree.chart.plot.PolarPlot.render : if i3 >= i2
+org.jfree.chart.plot.PolarPlot.render : if i3 >= i2 >>>>>>>> org.jfree.chart.plot.PolarPlot.render : interfaceinvoke r5.<org.jfree.chart.renderer.PolarItemRenderer: void drawSeries(java.awt.Graphics2D,java.awt.geom.Rectangle2D,org.jfree.chart.plot.PlotRenderingInfo,org.jfree.chart.plot.PolarPlot,org.jfree.data.xy.XYDataset,int)>(r1, r2, r3, r0, r4, i3)
+org.jfree.chart.plot.PolarPlot.render : if i3 >= i2 >>>>>>>> org.jfree.chart.plot.PolarPlot.render : i1 = i1 + -1
+org.jfree.chart.plot.PolarPlot.render : interfaceinvoke r5.<org.jfree.chart.renderer.PolarItemRenderer: void drawSeries(java.awt.Graphics2D,java.awt.geom.Rectangle2D,org.jfree.chart.plot.PlotRenderingInfo,org.jfree.chart.plot.PolarPlot,org.jfree.data.xy.XYDataset,int)>(r1, r2, r3, r0, r4, i3) >>>>>>>> org.jfree.chart.plot.PolarPlot.render : i3 = i3 + 1
+org.jfree.chart.plot.PolarPlot.render : i3 = i3 + 1 >>>>>>>> org.jfree.chart.plot.PolarPlot.render : goto [?= (branch)]
+org.jfree.chart.plot.PolarPlot.render : goto [?= (branch)] >>>>>>>> org.jfree.chart.plot.PolarPlot.render : if i3 >= i2
+org.jfree.chart.plot.PolarPlot.render : goto [?= i1 = i1 + -1] >>>>>>>> org.jfree.chart.plot.PolarPlot.render : i1 = i1 + -1
+org.jfree.chart.plot.PolarPlot.render : goto [?= i1 = i1 + -1] >>>>>>>> org.jfree.chart.plot.PolarPlot.render : i1 = i1 + -1

@@ -1,0 +1,13 @@
+org.jfree.data.time.Week.parseWeek : if r0 == null goto return r1
+org.jfree.data.time.Week.parseWeek : r5 = virtualinvoke r0.<java.lang.String: java.lang.String trim()>()
+org.jfree.data.time.Week.parseWeek : r1 = null
+org.jfree.data.time.Week.parseWeek : i0 = staticinvoke <org.jfree.data.time.Week: int findSeparator(java.lang.String)>(r5)
+org.jfree.data.time.Week.parseWeek : if i0 == -1 goto $r14 = new org.jfree.data.time.TimePeriodFormatException
+org.jfree.data.time.Week.parseWeek : $r14 = new org.jfree.data.time.TimePeriodFormatException
+org.jfree.data.time.Week.findSeparator : return i0
+org.jfree.data.time.Week.findSeparator : i0 = virtualinvoke r0.<java.lang.String: int indexOf(int)>(44)
+org.jfree.data.time.Week.findSeparator : i0 = virtualinvoke r0.<java.lang.String: int indexOf(int)>(46)
+org.jfree.data.time.Week.findSeparator : i0 = virtualinvoke r0.<java.lang.String: int indexOf(int)>(32)
+org.jfree.data.time.Week.findSeparator : if i0 != -1 goto return i0
+org.jfree.data.time.Week.findSeparator : if i0 != -1 goto (branch)
+org.jfree.data.time.Week.findSeparator : i0 = virtualinvoke r0.<java.lang.String: int indexOf(int)>(45)

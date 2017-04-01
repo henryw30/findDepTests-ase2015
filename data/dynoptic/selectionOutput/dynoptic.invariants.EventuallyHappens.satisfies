@@ -1,0 +1,11 @@
+dynoptic.invariants.EventuallyHappens.satisfies : r2 = interfaceinvoke r1.<java.util.List: java.util.Iterator iterator()>() >>>>>>>> dynoptic.invariants.EventuallyHappens.satisfies : $z0 = interfaceinvoke r2.<java.util.Iterator: boolean hasNext()>()
+dynoptic.invariants.EventuallyHappens.satisfies : $z0 = interfaceinvoke r2.<java.util.Iterator: boolean hasNext()>() >>>>>>>> dynoptic.invariants.EventuallyHappens.satisfies : if $z0 == 0
+dynoptic.invariants.EventuallyHappens.satisfies : if $z0 == 0 >>>>>>>> dynoptic.invariants.EventuallyHappens.satisfies : $r4 = interfaceinvoke r2.<java.util.Iterator: java.lang.Object next()>()
+dynoptic.invariants.EventuallyHappens.satisfies : if $z0 == 0 >>>>>>>> dynoptic.invariants.EventuallyHappens.satisfies : return 0
+dynoptic.invariants.EventuallyHappens.satisfies : $r4 = interfaceinvoke r2.<java.util.Iterator: java.lang.Object next()>() >>>>>>>> dynoptic.invariants.EventuallyHappens.satisfies : r3 = (synoptic.model.event.DistEventType) $r4
+dynoptic.invariants.EventuallyHappens.satisfies : r3 = (synoptic.model.event.DistEventType) $r4 >>>>>>>> dynoptic.invariants.EventuallyHappens.satisfies : $r5 = r0.<dynoptic.invariants.EventuallyHappens: synoptic.model.event.DistEventType second>
+dynoptic.invariants.EventuallyHappens.satisfies : $r5 = r0.<dynoptic.invariants.EventuallyHappens: synoptic.model.event.DistEventType second> >>>>>>>> dynoptic.invariants.EventuallyHappens.satisfies : $z1 = virtualinvoke r3.<synoptic.model.event.DistEventType: boolean equals(java.lang.Object)>($r5)
+dynoptic.invariants.EventuallyHappens.satisfies : $z1 = virtualinvoke r3.<synoptic.model.event.DistEventType: boolean equals(java.lang.Object)>($r5) >>>>>>>> dynoptic.invariants.EventuallyHappens.satisfies : if $z1 == 0
+dynoptic.invariants.EventuallyHappens.satisfies : if $z1 == 0 >>>>>>>> dynoptic.invariants.EventuallyHappens.satisfies : return 1
+dynoptic.invariants.EventuallyHappens.satisfies : if $z1 == 0 >>>>>>>> dynoptic.invariants.EventuallyHappens.satisfies : goto [?= $z0 = interfaceinvoke r2.<java.util.Iterator: boolean hasNext()>()]
+dynoptic.invariants.EventuallyHappens.satisfies : goto [?= $z0 = interfaceinvoke r2.<java.util.Iterator: boolean hasNext()>()] >>>>>>>> dynoptic.invariants.EventuallyHappens.satisfies : $z0 = interfaceinvoke r2.<java.util.Iterator: boolean hasNext()>()

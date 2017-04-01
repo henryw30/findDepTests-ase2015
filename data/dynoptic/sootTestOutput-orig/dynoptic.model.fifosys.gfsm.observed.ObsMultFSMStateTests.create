@@ -1,0 +1,41 @@
+dynoptic.model.fifosys.gfsm.observed.ObsMultFSMState.isInitial : $r3 = r0.<dynoptic.model.fifosys.gfsm.observed.ObsMultFSMState: java.util.List fsmStates>
+dynoptic.model.fifosys.gfsm.observed.ObsMultFSMState.isInitial : return 0
+dynoptic.model.fifosys.gfsm.observed.ObsMultFSMState.isInitial : $z1 = virtualinvoke r2.<dynoptic.model.fifosys.gfsm.observed.ObsFSMState: boolean isInitial()>()
+dynoptic.model.fifosys.gfsm.observed.ObsFSMState.toString : $r1 = new java.lang.StringBuilder
+dynoptic.model.fifosys.gfsm.observed.ObsFSMState.namedObsFSMState : $r1 = new dynoptic.model.fifosys.gfsm.observed.ObsFSMState
+dynoptic.main.DynopticMain.setUpLogging : $r1 = <dynoptic.main.DynopticMain: java.util.logging.Logger logger>
+dynoptic.model.fifosys.gfsm.observed.ObsFSMState.hashCode : $i7 = 31 * i6
+dynoptic.model.fifosys.gfsm.observed.ObsFSMState.hashCode : $i1 = 31 * b0
+dynoptic.model.fifosys.gfsm.observed.ObsFSMState.hashCode : b0 = 17
+dynoptic.model.fifosys.gfsm.observed.ObsFSMState.hashCode : $i4 = 31 * i3
+dynoptic.model.fifosys.gfsm.observed.ObsFSMState.hashCode : return i12
+dynoptic.model.fifosys.gfsm.observed.ObsFSMState.hashCode : $i10 = 31 * i9
+dynoptic.model.fifosys.gfsm.observed.fifosys.ObsFifoSysState.clearCache : $r0 = <dynoptic.model.fifosys.gfsm.observed.fifosys.ObsFifoSysState: java.util.Map fifoSysStatesMap>
+dynoptic.model.fifosys.gfsm.observed.ObsMultFSMState.equals : if r0 != r1 goto $z0 = r1 instanceof dynoptic.model.fifosys.gfsm.observed.ObsMultFSMState
+dynoptic.model.fifosys.gfsm.observed.ObsMultFSMState.equals : return 1
+dynoptic.model.fifosys.gfsm.observed.ObsMultFSMState.equals : return 0
+dynoptic.model.fifosys.gfsm.observed.ObsMultFSMState.equals : if r1 != null goto (branch)
+dynoptic.model.fifosys.gfsm.observed.ObsFSMState.clearCache : $r1 = <dynoptic.model.fifosys.gfsm.observed.ObsFSMState: java.util.Map initialProcessStatesMap>
+dynoptic.model.fifosys.gfsm.observed.ObsFSMState.clearCache : <dynoptic.model.fifosys.gfsm.observed.ObsFSMState: int prevAnonId> = -1
+dynoptic.model.fifosys.gfsm.observed.ObsFSMState.clearCache : $r0 = <dynoptic.model.fifosys.gfsm.observed.ObsFSMState: java.util.Map prevStateAndEventMap>
+dynoptic.model.fifosys.gfsm.observed.ObsFSMState.isInitial : $z0 = r0.<dynoptic.model.fifosys.gfsm.observed.ObsFSMState: boolean isInitial>
+dynoptic.model.fifosys.gfsm.observed.ObsMultFSMState.clearCache : $r0 = <dynoptic.model.fifosys.gfsm.observed.ObsMultFSMState: java.util.Map cache>
+dynoptic.model.fifosys.gfsm.observed.ObsFSMState.isTerminal : $z0 = r0.<dynoptic.model.fifosys.gfsm.observed.ObsFSMState: boolean isTerminal>
+dynoptic.model.fifosys.gfsm.observed.ObsMultFSMState.isAccept : $z1 = virtualinvoke r2.<dynoptic.model.fifosys.gfsm.observed.ObsFSMState: boolean isTerminal()>()
+dynoptic.model.fifosys.gfsm.observed.ObsMultFSMState.isAccept : goto [?= $z0 = interfaceinvoke r1.<java.util.Iterator: boolean hasNext()>()]
+dynoptic.model.fifosys.gfsm.observed.ObsMultFSMState.isAccept : $r3 = r0.<dynoptic.model.fifosys.gfsm.observed.ObsMultFSMState: java.util.List fsmStates>
+dynoptic.model.fifosys.gfsm.observed.ObsMultFSMState.isAccept : return 1
+dynoptic.model.fifosys.gfsm.observed.ObsMultFSMState.isAcceptForPid : $r1 = r0.<dynoptic.model.fifosys.gfsm.observed.ObsMultFSMState: java.util.List fsmStates>
+dynoptic.model.fifosys.gfsm.observed.ObsMultFSMState.isInitForPid : $r1 = r0.<dynoptic.model.fifosys.gfsm.observed.ObsMultFSMState: java.util.List fsmStates>
+dynoptic.model.fifosys.AbsMultiFSMState.getNumProcesses : $i0 = r0.<dynoptic.model.fifosys.AbsMultiFSMState: int numProcesses>
+dynoptic.model.fifosys.gfsm.observed.ObsMultFSMState.getMultiFSMState : $r6 = new dynoptic.model.fifosys.gfsm.observed.ObsMultFSMState
+dynoptic.model.fifosys.gfsm.observed.ObsMultFSMState.getMultiFSMState : return r2
+dynoptic.model.fifosys.gfsm.observed.ObsMultFSMState.getMultiFSMState : $r7 = <dynoptic.model.fifosys.gfsm.observed.ObsMultFSMState: java.util.Map cache>
+dynoptic.model.fifosys.gfsm.observed.ObsMultFSMState.getMultiFSMState : $r3 = <dynoptic.model.fifosys.gfsm.observed.ObsMultFSMState: java.util.Map cache>
+dynoptic.model.fifosys.gfsm.observed.ObsMultFSMState.getMultiFSMState : $r1 = <dynoptic.model.fifosys.gfsm.observed.ObsMultFSMState: java.util.Map cache>
+dynoptic.model.fifosys.gfsm.observed.ObsMultFSMState.toString : $r11 = new java.lang.StringBuilder
+dynoptic.model.fifosys.gfsm.observed.ObsMultFSMState.toString : r1 = ""
+dynoptic.model.fifosys.gfsm.observed.ObsMultFSMState.toString : goto [?= $z0 = interfaceinvoke r2.<java.util.Iterator: boolean hasNext()>()]
+dynoptic.model.fifosys.gfsm.observed.ObsMultFSMState.toString : $r4 = r0.<dynoptic.model.fifosys.gfsm.observed.ObsMultFSMState: java.util.List fsmStates>
+dynoptic.model.fifosys.gfsm.observed.ObsMultFSMState.toString : $r6 = new java.lang.StringBuilder
+dynoptic.util.Util.newList : $r0 = new java.util.ArrayList

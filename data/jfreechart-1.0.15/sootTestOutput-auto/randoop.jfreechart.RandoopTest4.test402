@@ -1,0 +1,9 @@
+org.jfree.data.KeyedObjects.getIndex : return -1
+org.jfree.data.KeyedObjects.getIndex : $r4 = r0.<org.jfree.data.KeyedObjects: java.util.List data>
+org.jfree.data.KeyedObjects.getIndex : i0 = 0
+org.jfree.data.KeyedObjects.getIndex : $z0 = interfaceinvoke r2.<java.util.Iterator: boolean hasNext()>()
+org.jfree.data.KeyedObjects.getIndex : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "key")
+org.jfree.data.KeyedObjects.getObject : if i0 >= 0 goto $r8 = virtualinvoke r0.<org.jfree.data.KeyedObjects: java.lang.Object getObject(int)>(i0)
+org.jfree.data.KeyedObjects.getObject : i0 = virtualinvoke r0.<org.jfree.data.KeyedObjects: int getIndex(java.lang.Comparable)>(r1)
+org.jfree.data.KeyedObjects.getObject : $r3 = new org.jfree.data.UnknownKeyException
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null goto return

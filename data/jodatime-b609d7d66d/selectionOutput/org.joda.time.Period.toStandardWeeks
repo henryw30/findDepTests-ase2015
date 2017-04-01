@@ -1,0 +1,25 @@
+org.joda.time.Period.toStandardWeeks : specialinvoke r0.<org.joda.time.Period: void checkYearsAndMonths(java.lang.String)>("Weeks") >>>>>>>> org.joda.time.Period.toStandardWeeks : $i2 = virtualinvoke r0.<org.joda.time.Period: int getMillis()>()
+org.joda.time.Period.toStandardWeeks : $i2 = virtualinvoke r0.<org.joda.time.Period: int getMillis()>() >>>>>>>> org.joda.time.Period.toStandardWeeks : l0 = (long) $i2
+org.joda.time.Period.toStandardWeeks : l0 = (long) $i2 >>>>>>>> org.joda.time.Period.toStandardWeeks : $i3 = virtualinvoke r0.<org.joda.time.Period: int getSeconds()>()
+org.joda.time.Period.toStandardWeeks : $i3 = virtualinvoke r0.<org.joda.time.Period: int getSeconds()>() >>>>>>>> org.joda.time.Period.toStandardWeeks : $l4 = (long) $i3
+org.joda.time.Period.toStandardWeeks : $l4 = (long) $i3 >>>>>>>> org.joda.time.Period.toStandardWeeks : $l5 = $l4 * 1000L
+org.joda.time.Period.toStandardWeeks : $l5 = $l4 * 1000L >>>>>>>> org.joda.time.Period.toStandardWeeks : l6 = l0 + $l5
+org.joda.time.Period.toStandardWeeks : l6 = l0 + $l5 >>>>>>>> org.joda.time.Period.toStandardWeeks : $i7 = virtualinvoke r0.<org.joda.time.Period: int getMinutes()>()
+org.joda.time.Period.toStandardWeeks : $i7 = virtualinvoke r0.<org.joda.time.Period: int getMinutes()>() >>>>>>>> org.joda.time.Period.toStandardWeeks : $l8 = (long) $i7
+org.joda.time.Period.toStandardWeeks : $l8 = (long) $i7 >>>>>>>> org.joda.time.Period.toStandardWeeks : $l9 = $l8 * 60000L
+org.joda.time.Period.toStandardWeeks : $l9 = $l8 * 60000L >>>>>>>> org.joda.time.Period.toStandardWeeks : l10 = l6 + $l9
+org.joda.time.Period.toStandardWeeks : l10 = l6 + $l9 >>>>>>>> org.joda.time.Period.toStandardWeeks : $i11 = virtualinvoke r0.<org.joda.time.Period: int getHours()>()
+org.joda.time.Period.toStandardWeeks : $i11 = virtualinvoke r0.<org.joda.time.Period: int getHours()>() >>>>>>>> org.joda.time.Period.toStandardWeeks : $l12 = (long) $i11
+org.joda.time.Period.toStandardWeeks : $l12 = (long) $i11 >>>>>>>> org.joda.time.Period.toStandardWeeks : $l13 = $l12 * 3600000L
+org.joda.time.Period.toStandardWeeks : $l13 = $l12 * 3600000L >>>>>>>> org.joda.time.Period.toStandardWeeks : l14 = l10 + $l13
+org.joda.time.Period.toStandardWeeks : l14 = l10 + $l13 >>>>>>>> org.joda.time.Period.toStandardWeeks : $i15 = virtualinvoke r0.<org.joda.time.Period: int getDays()>()
+org.joda.time.Period.toStandardWeeks : $i15 = virtualinvoke r0.<org.joda.time.Period: int getDays()>() >>>>>>>> org.joda.time.Period.toStandardWeeks : $l16 = (long) $i15
+org.joda.time.Period.toStandardWeeks : $l16 = (long) $i15 >>>>>>>> org.joda.time.Period.toStandardWeeks : $l17 = $l16 * 86400000L
+org.joda.time.Period.toStandardWeeks : $l17 = $l16 * 86400000L >>>>>>>> org.joda.time.Period.toStandardWeeks : l18 = l14 + $l17
+org.joda.time.Period.toStandardWeeks : l18 = l14 + $l17 >>>>>>>> org.joda.time.Period.toStandardWeeks : $i19 = virtualinvoke r0.<org.joda.time.Period: int getWeeks()>()
+org.joda.time.Period.toStandardWeeks : $i19 = virtualinvoke r0.<org.joda.time.Period: int getWeeks()>() >>>>>>>> org.joda.time.Period.toStandardWeeks : $l20 = (long) $i19
+org.joda.time.Period.toStandardWeeks : $l20 = (long) $i19 >>>>>>>> org.joda.time.Period.toStandardWeeks : $l21 = l18 / 604800000L
+org.joda.time.Period.toStandardWeeks : $l21 = l18 / 604800000L >>>>>>>> org.joda.time.Period.toStandardWeeks : l1 = $l20 + $l21
+org.joda.time.Period.toStandardWeeks : l1 = $l20 + $l21 >>>>>>>> org.joda.time.Period.toStandardWeeks : $i22 = staticinvoke <org.joda.time.field.FieldUtils: int safeToInt(long)>(l1)
+org.joda.time.Period.toStandardWeeks : $i22 = staticinvoke <org.joda.time.field.FieldUtils: int safeToInt(long)>(l1) >>>>>>>> org.joda.time.Period.toStandardWeeks : $r1 = staticinvoke <org.joda.time.Weeks: org.joda.time.Weeks weeks(int)>($i22)
+org.joda.time.Period.toStandardWeeks : $r1 = staticinvoke <org.joda.time.Weeks: org.joda.time.Weeks weeks(int)>($i22) >>>>>>>> org.joda.time.Period.toStandardWeeks : return $r1

@@ -1,0 +1,137 @@
+org.jfree.data.KeyedObjects.addObject : virtualinvoke r0.<org.jfree.data.KeyedObjects: void setObject(java.lang.Comparable,java.lang.Object)>(r1, r2) >>>>>>>> org.jfree.data.KeyedObjects.setObject : i0 = virtualinvoke r0.<org.jfree.data.KeyedObjects: int getIndex(java.lang.Comparable)>(r1)
+org.jfree.data.KeyedObjects.setObject : i0 = virtualinvoke r0.<org.jfree.data.KeyedObjects: int getIndex(java.lang.Comparable)>(r1) >>>>>>>> org.jfree.data.KeyedObjects.getIndex : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "key")
+org.jfree.data.KeyedObjects.getIndex : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "key") >>>>>>>> org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null >>>>>>>> org.jfree.data.KeyedObjects.getIndex : i0 = 0
+org.jfree.data.KeyedObjects.getIndex : i0 = 0 >>>>>>>> org.jfree.data.KeyedObjects.getIndex : $r4 = r0.<org.jfree.data.KeyedObjects: java.util.List data>
+org.jfree.data.KeyedObjects.getIndex : $r4 = r0.<org.jfree.data.KeyedObjects: java.util.List data> >>>>>>>> org.jfree.data.KeyedObjects.getIndex : r2 = interfaceinvoke $r4.<java.util.List: java.util.Iterator iterator()>()
+org.jfree.data.KeyedObjects.getIndex : r2 = interfaceinvoke $r4.<java.util.List: java.util.Iterator iterator()>() >>>>>>>> org.jfree.data.KeyedObjects.getIndex : $z0 = interfaceinvoke r2.<java.util.Iterator: boolean hasNext()>()
+org.jfree.data.KeyedObjects.getIndex : $z0 = interfaceinvoke r2.<java.util.Iterator: boolean hasNext()>() >>>>>>>> org.jfree.data.KeyedObjects.getIndex : if $z0 == 0
+org.jfree.data.KeyedObjects.getIndex : if $z0 == 0 >>>>>>>> org.jfree.data.KeyedObjects.getIndex : return -1
+org.jfree.data.KeyedObjects.getIndex : return -1 >>>>>>>> org.jfree.data.KeyedObjects.setObject : if i0 < 0
+org.jfree.data.KeyedObjects.setObject : if i0 < 0 >>>>>>>> org.jfree.data.KeyedObjects.setObject : $r6 = new org.jfree.data.KeyedObject
+org.jfree.data.KeyedObjects.setObject : $r6 = new org.jfree.data.KeyedObject >>>>>>>> org.jfree.data.KeyedObjects.setObject : specialinvoke $r6.<org.jfree.data.KeyedObject: void <init>(java.lang.Comparable,java.lang.Object)>(r1, r2)
+org.jfree.data.KeyedObjects.setObject : specialinvoke $r6.<org.jfree.data.KeyedObject: void <init>(java.lang.Comparable,java.lang.Object)>(r1, r2) >>>>>>>> org.jfree.data.KeyedObjects.setObject : r7 = $r6
+org.jfree.data.KeyedObjects.setObject : r7 = $r6 >>>>>>>> org.jfree.data.KeyedObjects.setObject : $r8 = r0.<org.jfree.data.KeyedObjects: java.util.List data>
+org.jfree.data.KeyedObjects.setObject : $r8 = r0.<org.jfree.data.KeyedObjects: java.util.List data> >>>>>>>> org.jfree.data.KeyedObjects.setObject : interfaceinvoke $r8.<java.util.List: boolean add(java.lang.Object)>(r7)
+org.jfree.data.KeyedObjects.setObject : interfaceinvoke $r8.<java.util.List: boolean add(java.lang.Object)>(r7) >>>>>>>> org.jfree.data.KeyedObjects.clone : $r5 = specialinvoke r0.<java.lang.Object: java.lang.Object clone()>()
+org.jfree.data.KeyedObjects.clone : $r5 = specialinvoke r0.<java.lang.Object: java.lang.Object clone()>() >>>>>>>> org.jfree.data.KeyedObjects.clone : r1 = (org.jfree.data.KeyedObjects) $r5
+org.jfree.data.KeyedObjects.clone : r1 = (org.jfree.data.KeyedObjects) $r5 >>>>>>>> org.jfree.data.KeyedObjects.clone : $r2 = new java.util.ArrayList
+org.jfree.data.KeyedObjects.clone : $r2 = new java.util.ArrayList >>>>>>>> org.jfree.data.KeyedObjects.clone : specialinvoke $r2.<java.util.ArrayList: void <init>()>()
+org.jfree.data.KeyedObjects.clone : specialinvoke $r2.<java.util.ArrayList: void <init>()>() >>>>>>>> org.jfree.data.KeyedObjects.clone : r1.<org.jfree.data.KeyedObjects: java.util.List data> = $r2
+org.jfree.data.KeyedObjects.clone : r1.<org.jfree.data.KeyedObjects: java.util.List data> = $r2 >>>>>>>> org.jfree.data.KeyedObjects.clone : $r6 = r0.<org.jfree.data.KeyedObjects: java.util.List data>
+org.jfree.data.KeyedObjects.clone : $r6 = r0.<org.jfree.data.KeyedObjects: java.util.List data> >>>>>>>> org.jfree.data.KeyedObjects.clone : r3 = interfaceinvoke $r6.<java.util.List: java.util.Iterator iterator()>()
+org.jfree.data.KeyedObjects.clone : r3 = interfaceinvoke $r6.<java.util.List: java.util.Iterator iterator()>() >>>>>>>> org.jfree.data.KeyedObjects.clone : $z0 = interfaceinvoke r3.<java.util.Iterator: boolean hasNext()>()
+org.jfree.data.KeyedObjects.clone : $z0 = interfaceinvoke r3.<java.util.Iterator: boolean hasNext()>() >>>>>>>> org.jfree.data.KeyedObjects.clone : if $z0 == 0
+org.jfree.data.KeyedObjects.clone : if $z0 == 0 >>>>>>>> org.jfree.data.KeyedObjects.clone : $r7 = interfaceinvoke r3.<java.util.Iterator: java.lang.Object next()>()
+org.jfree.data.KeyedObjects.clone : $r7 = interfaceinvoke r3.<java.util.Iterator: java.lang.Object next()>() >>>>>>>> org.jfree.data.KeyedObjects.clone : r4 = (org.jfree.data.KeyedObject) $r7
+org.jfree.data.KeyedObjects.clone : r4 = (org.jfree.data.KeyedObject) $r7 >>>>>>>> org.jfree.data.KeyedObjects.clone : $r8 = r1.<org.jfree.data.KeyedObjects: java.util.List data>
+org.jfree.data.KeyedObjects.clone : $r8 = r1.<org.jfree.data.KeyedObjects: java.util.List data> >>>>>>>> org.jfree.data.KeyedObjects.clone : $r9 = virtualinvoke r4.<org.jfree.data.KeyedObject: java.lang.Object clone()>()
+org.jfree.data.KeyedObjects.clone : $r9 = virtualinvoke r4.<org.jfree.data.KeyedObject: java.lang.Object clone()>() >>>>>>>> org.jfree.data.KeyedObject.clone : $r3 = specialinvoke r0.<java.lang.Object: java.lang.Object clone()>()
+org.jfree.data.KeyedObject.clone : $r3 = specialinvoke r0.<java.lang.Object: java.lang.Object clone()>() >>>>>>>> org.jfree.data.KeyedObject.clone : r1 = (org.jfree.data.KeyedObject) $r3
+org.jfree.data.KeyedObject.clone : r1 = (org.jfree.data.KeyedObject) $r3 >>>>>>>> org.jfree.data.KeyedObject.clone : $r4 = r0.<org.jfree.data.KeyedObject: java.lang.Object object>
+org.jfree.data.KeyedObject.clone : $r4 = r0.<org.jfree.data.KeyedObject: java.lang.Object object> >>>>>>>> org.jfree.data.KeyedObject.clone : $z0 = $r4 instanceof org.jfree.util.PublicCloneable
+org.jfree.data.KeyedObject.clone : $z0 = $r4 instanceof org.jfree.util.PublicCloneable >>>>>>>> org.jfree.data.KeyedObject.clone : if $z0 == 0
+org.jfree.data.KeyedObject.clone : if $z0 == 0 >>>>>>>> org.jfree.data.KeyedObject.clone : return r1
+org.jfree.data.KeyedObject.clone : return r1 >>>>>>>> org.jfree.data.KeyedObjects.clone : interfaceinvoke $r8.<java.util.List: boolean add(java.lang.Object)>($r9)
+org.jfree.data.KeyedObjects.clone : interfaceinvoke $r8.<java.util.List: boolean add(java.lang.Object)>($r9) >>>>>>>> org.jfree.data.KeyedObjects.clone : goto [?= $z0 = interfaceinvoke r3.<java.util.Iterator: boolean hasNext()>()]
+org.jfree.data.KeyedObjects.clone : goto [?= $z0 = interfaceinvoke r3.<java.util.Iterator: boolean hasNext()>()] >>>>>>>> org.jfree.data.KeyedObjects.clone : return r1
+org.jfree.data.KeyedObjects.clone : return r1 >>>>>>>> org.jfree.data.KeyedObjects.equals : if r1 != r0
+org.jfree.data.KeyedObjects.equals : if r1 != r0 >>>>>>>> org.jfree.data.KeyedObjects.equals : $z0 = r1 instanceof org.jfree.data.KeyedObjects
+org.jfree.data.KeyedObjects.equals : $z0 = r1 instanceof org.jfree.data.KeyedObjects >>>>>>>> org.jfree.data.KeyedObjects.equals : if $z0 != 0
+org.jfree.data.KeyedObjects.equals : if $z0 != 0 >>>>>>>> org.jfree.data.KeyedObjects.equals : r2 = (org.jfree.data.KeyedObjects) r1
+org.jfree.data.KeyedObjects.equals : r2 = (org.jfree.data.KeyedObjects) r1 >>>>>>>> org.jfree.data.KeyedObjects.equals : i0 = virtualinvoke r0.<org.jfree.data.KeyedObjects: int getItemCount()>()
+org.jfree.data.KeyedObjects.equals : i0 = virtualinvoke r0.<org.jfree.data.KeyedObjects: int getItemCount()>() >>>>>>>> org.jfree.data.KeyedObjects.getItemCount : $r1 = r0.<org.jfree.data.KeyedObjects: java.util.List data>
+org.jfree.data.KeyedObjects.getItemCount : $r1 = r0.<org.jfree.data.KeyedObjects: java.util.List data> >>>>>>>> org.jfree.data.KeyedObjects.getItemCount : $i0 = interfaceinvoke $r1.<java.util.List: int size()>()
+org.jfree.data.KeyedObjects.getItemCount : $i0 = interfaceinvoke $r1.<java.util.List: int size()>() >>>>>>>> org.jfree.data.KeyedObjects.getItemCount : return $i0
+org.jfree.data.KeyedObjects.getItemCount : return $i0 >>>>>>>> org.jfree.data.KeyedObjects.equals : $i2 = virtualinvoke r2.<org.jfree.data.KeyedObjects: int getItemCount()>()
+org.jfree.data.KeyedObjects.equals : $i2 = virtualinvoke r2.<org.jfree.data.KeyedObjects: int getItemCount()>() >>>>>>>> org.jfree.data.KeyedObjects.equals : if i0 == $i2
+org.jfree.data.KeyedObjects.equals : if i0 == $i2 >>>>>>>> org.jfree.data.KeyedObjects.equals : i1 = 0
+org.jfree.data.KeyedObjects.equals : i1 = 0 >>>>>>>> org.jfree.data.KeyedObjects.equals : if i1 >= i0
+org.jfree.data.KeyedObjects.equals : if i1 >= i0 >>>>>>>> org.jfree.data.KeyedObjects.equals : r3 = virtualinvoke r0.<org.jfree.data.KeyedObjects: java.lang.Comparable getKey(int)>(i1)
+org.jfree.data.KeyedObjects.equals : r3 = virtualinvoke r0.<org.jfree.data.KeyedObjects: java.lang.Comparable getKey(int)>(i1) >>>>>>>> org.jfree.data.KeyedObjects.getKey : r1 = null
+org.jfree.data.KeyedObjects.getKey : r1 = null >>>>>>>> org.jfree.data.KeyedObjects.getKey : $r3 = r0.<org.jfree.data.KeyedObjects: java.util.List data>
+org.jfree.data.KeyedObjects.getKey : $r3 = r0.<org.jfree.data.KeyedObjects: java.util.List data> >>>>>>>> org.jfree.data.KeyedObjects.getKey : $r4 = interfaceinvoke $r3.<java.util.List: java.lang.Object get(int)>(i0)
+org.jfree.data.KeyedObjects.getKey : $r4 = interfaceinvoke $r3.<java.util.List: java.lang.Object get(int)>(i0) >>>>>>>> org.jfree.data.KeyedObjects.getKey : r2 = (org.jfree.data.KeyedObject) $r4
+org.jfree.data.KeyedObjects.getKey : r2 = (org.jfree.data.KeyedObject) $r4 >>>>>>>> org.jfree.data.KeyedObjects.getKey : if r2 == null
+org.jfree.data.KeyedObjects.getKey : if r2 == null >>>>>>>> org.jfree.data.KeyedObjects.getKey : r1 = virtualinvoke r2.<org.jfree.data.KeyedObject: java.lang.Comparable getKey()>()
+org.jfree.data.KeyedObjects.getKey : r1 = virtualinvoke r2.<org.jfree.data.KeyedObject: java.lang.Comparable getKey()>() >>>>>>>> org.jfree.data.KeyedObject.getKey : $r1 = r0.<org.jfree.data.KeyedObject: java.lang.Comparable key>
+org.jfree.data.KeyedObject.getKey : $r1 = r0.<org.jfree.data.KeyedObject: java.lang.Comparable key> >>>>>>>> org.jfree.data.KeyedObject.getKey : return $r1
+org.jfree.data.KeyedObject.getKey : return $r1 >>>>>>>> org.jfree.data.KeyedObjects.getKey : return r1
+org.jfree.data.KeyedObjects.getKey : return r1 >>>>>>>> org.jfree.data.KeyedObjects.equals : r4 = virtualinvoke r2.<org.jfree.data.KeyedObjects: java.lang.Comparable getKey(int)>(i1)
+org.jfree.data.KeyedObjects.equals : r4 = virtualinvoke r2.<org.jfree.data.KeyedObjects: java.lang.Comparable getKey(int)>(i1) >>>>>>>> org.jfree.data.KeyedObjects.equals : $z1 = virtualinvoke r3.<java.lang.Object: boolean equals(java.lang.Object)>(r4)
+org.jfree.data.KeyedObjects.equals : $z1 = virtualinvoke r3.<java.lang.Object: boolean equals(java.lang.Object)>(r4) >>>>>>>> org.jfree.data.KeyedObjects.equals : if $z1 != 0
+org.jfree.data.KeyedObjects.equals : if $z1 != 0 >>>>>>>> org.jfree.data.KeyedObjects.equals : r5 = virtualinvoke r0.<org.jfree.data.KeyedObjects: java.lang.Object getObject(int)>(i1)
+org.jfree.data.KeyedObjects.equals : r5 = virtualinvoke r0.<org.jfree.data.KeyedObjects: java.lang.Object getObject(int)>(i1) >>>>>>>> org.jfree.data.KeyedObjects.getObject : r1 = null
+org.jfree.data.KeyedObjects.getObject : r1 = null >>>>>>>> org.jfree.data.KeyedObjects.getObject : $r3 = r0.<org.jfree.data.KeyedObjects: java.util.List data>
+org.jfree.data.KeyedObjects.getObject : $r3 = r0.<org.jfree.data.KeyedObjects: java.util.List data> >>>>>>>> org.jfree.data.KeyedObjects.getObject : $r4 = interfaceinvoke $r3.<java.util.List: java.lang.Object get(int)>(i0)
+org.jfree.data.KeyedObjects.getObject : $r4 = interfaceinvoke $r3.<java.util.List: java.lang.Object get(int)>(i0) >>>>>>>> org.jfree.data.KeyedObjects.getObject : r2 = (org.jfree.data.KeyedObject) $r4
+org.jfree.data.KeyedObjects.getObject : r2 = (org.jfree.data.KeyedObject) $r4 >>>>>>>> org.jfree.data.KeyedObjects.getObject : if r2 == null
+org.jfree.data.KeyedObjects.getObject : if r2 == null >>>>>>>> org.jfree.data.KeyedObjects.getObject : r1 = virtualinvoke r2.<org.jfree.data.KeyedObject: java.lang.Object getObject()>()
+org.jfree.data.KeyedObjects.getObject : r1 = virtualinvoke r2.<org.jfree.data.KeyedObject: java.lang.Object getObject()>() >>>>>>>> org.jfree.data.KeyedObject.getObject : $r1 = r0.<org.jfree.data.KeyedObject: java.lang.Object object>
+org.jfree.data.KeyedObject.getObject : $r1 = r0.<org.jfree.data.KeyedObject: java.lang.Object object> >>>>>>>> org.jfree.data.KeyedObject.getObject : return $r1
+org.jfree.data.KeyedObject.getObject : return $r1 >>>>>>>> org.jfree.data.KeyedObjects.getObject : return r1
+org.jfree.data.KeyedObjects.getObject : return r1 >>>>>>>> org.jfree.data.KeyedObjects.equals : r6 = virtualinvoke r2.<org.jfree.data.KeyedObjects: java.lang.Object getObject(int)>(i1)
+org.jfree.data.KeyedObjects.equals : r6 = virtualinvoke r2.<org.jfree.data.KeyedObjects: java.lang.Object getObject(int)>(i1) >>>>>>>> org.jfree.data.KeyedObjects.equals : if r5 != null
+org.jfree.data.KeyedObjects.equals : if r5 != null >>>>>>>> org.jfree.data.KeyedObjects.equals : $z2 = virtualinvoke r5.<java.lang.Object: boolean equals(java.lang.Object)>(r6)
+org.jfree.data.KeyedObjects.equals : $z2 = virtualinvoke r5.<java.lang.Object: boolean equals(java.lang.Object)>(r6) >>>>>>>> org.jfree.data.KeyedObjects.equals : if $z2 != 0
+org.jfree.data.KeyedObjects.equals : if $z2 != 0 >>>>>>>> org.jfree.data.KeyedObjects.equals : i1 = i1 + 1
+org.jfree.data.KeyedObjects.equals : i1 = i1 + 1 >>>>>>>> org.jfree.data.KeyedObjects.equals : goto [?= (branch)]
+org.jfree.data.KeyedObjects.equals : goto [?= (branch)] >>>>>>>> org.jfree.data.KeyedObjects.equals : return 1
+org.jfree.data.KeyedObjects.equals : return 1 >>>>>>>> org.jfree.data.KeyedObjects.getObject : i0 = virtualinvoke r0.<org.jfree.data.KeyedObjects: int getIndex(java.lang.Comparable)>(r1)
+org.jfree.data.KeyedObjects.getObject : i0 = virtualinvoke r0.<org.jfree.data.KeyedObjects: int getIndex(java.lang.Comparable)>(r1) >>>>>>>> org.jfree.data.KeyedObjects.getIndex : $r5 = interfaceinvoke r2.<java.util.Iterator: java.lang.Object next()>()
+org.jfree.data.KeyedObjects.getIndex : $r5 = interfaceinvoke r2.<java.util.Iterator: java.lang.Object next()>() >>>>>>>> org.jfree.data.KeyedObjects.getIndex : r3 = (org.jfree.data.KeyedObject) $r5
+org.jfree.data.KeyedObjects.getIndex : r3 = (org.jfree.data.KeyedObject) $r5 >>>>>>>> org.jfree.data.KeyedObjects.getIndex : $r6 = virtualinvoke r3.<org.jfree.data.KeyedObject: java.lang.Comparable getKey()>()
+org.jfree.data.KeyedObjects.getIndex : $r6 = virtualinvoke r3.<org.jfree.data.KeyedObject: java.lang.Comparable getKey()>() >>>>>>>> org.jfree.data.KeyedObjects.getIndex : $z1 = virtualinvoke $r6.<java.lang.Object: boolean equals(java.lang.Object)>(r1)
+org.jfree.data.KeyedObjects.getIndex : $z1 = virtualinvoke $r6.<java.lang.Object: boolean equals(java.lang.Object)>(r1) >>>>>>>> org.jfree.data.KeyedObjects.getIndex : if $z1 == 0
+org.jfree.data.KeyedObjects.getIndex : if $z1 == 0 >>>>>>>> org.jfree.data.KeyedObjects.getIndex : return i0
+org.jfree.data.KeyedObjects.getIndex : return i0 >>>>>>>> org.jfree.data.KeyedObjects.getObject : if i0 >= 0
+org.jfree.data.KeyedObjects.getObject : if i0 >= 0 >>>>>>>> org.jfree.data.KeyedObjects.getObject : $r8 = virtualinvoke r0.<org.jfree.data.KeyedObjects: java.lang.Object getObject(int)>(i0)
+org.jfree.data.KeyedObjects.getObject : $r8 = virtualinvoke r0.<org.jfree.data.KeyedObjects: java.lang.Object getObject(int)>(i0) >>>>>>>> org.jfree.data.KeyedObjects.getObject : return $r8
+org.jfree.data.KeyedObjects.getObject : return $r8 >>>>>>>> org.jfree.data.KeyedObject.clone : $r5 = r0.<org.jfree.data.KeyedObject: java.lang.Object object>
+org.jfree.data.KeyedObject.clone : $r5 = r0.<org.jfree.data.KeyedObject: java.lang.Object object> >>>>>>>> org.jfree.data.KeyedObject.clone : r2 = (org.jfree.util.PublicCloneable) $r5
+org.jfree.data.KeyedObject.clone : r2 = (org.jfree.util.PublicCloneable) $r5 >>>>>>>> org.jfree.data.KeyedObject.clone : $r6 = interfaceinvoke r2.<org.jfree.util.PublicCloneable: java.lang.Object clone()>()
+org.jfree.data.KeyedObject.clone : $r6 = interfaceinvoke r2.<org.jfree.util.PublicCloneable: java.lang.Object clone()>() >>>>>>>> org.jfree.data.general.DefaultPieDataset.clone : $r2 = specialinvoke r0.<org.jfree.data.general.AbstractDataset: java.lang.Object clone()>()
+org.jfree.data.general.DefaultPieDataset.clone : $r2 = specialinvoke r0.<org.jfree.data.general.AbstractDataset: java.lang.Object clone()>() >>>>>>>> org.jfree.data.general.AbstractDataset.clone : $r3 = specialinvoke r0.<java.lang.Object: java.lang.Object clone()>()
+org.jfree.data.general.AbstractDataset.clone : $r3 = specialinvoke r0.<java.lang.Object: java.lang.Object clone()>() >>>>>>>> org.jfree.data.general.AbstractDataset.clone : r1 = (org.jfree.data.general.AbstractDataset) $r3
+org.jfree.data.general.AbstractDataset.clone : r1 = (org.jfree.data.general.AbstractDataset) $r3 >>>>>>>> org.jfree.data.general.AbstractDataset.clone : $r2 = new javax.swing.event.EventListenerList
+org.jfree.data.general.AbstractDataset.clone : $r2 = new javax.swing.event.EventListenerList >>>>>>>> org.jfree.data.general.AbstractDataset.clone : specialinvoke $r2.<javax.swing.event.EventListenerList: void <init>()>()
+org.jfree.data.general.AbstractDataset.clone : specialinvoke $r2.<javax.swing.event.EventListenerList: void <init>()>() >>>>>>>> org.jfree.data.general.AbstractDataset.clone : r1.<org.jfree.data.general.AbstractDataset: javax.swing.event.EventListenerList listenerList> = $r2
+org.jfree.data.general.AbstractDataset.clone : r1.<org.jfree.data.general.AbstractDataset: javax.swing.event.EventListenerList listenerList> = $r2 >>>>>>>> org.jfree.data.general.AbstractDataset.clone : return r1
+org.jfree.data.general.AbstractDataset.clone : return r1 >>>>>>>> org.jfree.data.general.DefaultPieDataset.clone : r1 = (org.jfree.data.general.DefaultPieDataset) $r2
+org.jfree.data.general.DefaultPieDataset.clone : r1 = (org.jfree.data.general.DefaultPieDataset) $r2 >>>>>>>> org.jfree.data.general.DefaultPieDataset.clone : $r3 = r0.<org.jfree.data.general.DefaultPieDataset: org.jfree.data.DefaultKeyedValues data>
+org.jfree.data.general.DefaultPieDataset.clone : $r3 = r0.<org.jfree.data.general.DefaultPieDataset: org.jfree.data.DefaultKeyedValues data> >>>>>>>> org.jfree.data.general.DefaultPieDataset.clone : $r4 = virtualinvoke $r3.<org.jfree.data.DefaultKeyedValues: java.lang.Object clone()>()
+org.jfree.data.general.DefaultPieDataset.clone : $r4 = virtualinvoke $r3.<org.jfree.data.DefaultKeyedValues: java.lang.Object clone()>() >>>>>>>> org.jfree.data.DefaultKeyedValues.clone : $r2 = specialinvoke r0.<java.lang.Object: java.lang.Object clone()>()
+org.jfree.data.DefaultKeyedValues.clone : $r2 = specialinvoke r0.<java.lang.Object: java.lang.Object clone()>() >>>>>>>> org.jfree.data.DefaultKeyedValues.clone : r1 = (org.jfree.data.DefaultKeyedValues) $r2
+org.jfree.data.DefaultKeyedValues.clone : r1 = (org.jfree.data.DefaultKeyedValues) $r2 >>>>>>>> org.jfree.data.DefaultKeyedValues.clone : $r3 = r0.<org.jfree.data.DefaultKeyedValues: java.util.ArrayList keys>
+org.jfree.data.DefaultKeyedValues.clone : $r3 = r0.<org.jfree.data.DefaultKeyedValues: java.util.ArrayList keys> >>>>>>>> org.jfree.data.DefaultKeyedValues.clone : $r4 = virtualinvoke $r3.<java.util.ArrayList: java.lang.Object clone()>()
+org.jfree.data.DefaultKeyedValues.clone : $r4 = virtualinvoke $r3.<java.util.ArrayList: java.lang.Object clone()>() >>>>>>>> org.jfree.data.DefaultKeyedValues.clone : $r5 = (java.util.ArrayList) $r4
+org.jfree.data.DefaultKeyedValues.clone : $r5 = (java.util.ArrayList) $r4 >>>>>>>> org.jfree.data.DefaultKeyedValues.clone : r1.<org.jfree.data.DefaultKeyedValues: java.util.ArrayList keys> = $r5
+org.jfree.data.DefaultKeyedValues.clone : r1.<org.jfree.data.DefaultKeyedValues: java.util.ArrayList keys> = $r5 >>>>>>>> org.jfree.data.DefaultKeyedValues.clone : $r6 = r0.<org.jfree.data.DefaultKeyedValues: java.util.ArrayList values>
+org.jfree.data.DefaultKeyedValues.clone : $r6 = r0.<org.jfree.data.DefaultKeyedValues: java.util.ArrayList values> >>>>>>>> org.jfree.data.DefaultKeyedValues.clone : $r7 = virtualinvoke $r6.<java.util.ArrayList: java.lang.Object clone()>()
+org.jfree.data.DefaultKeyedValues.clone : $r7 = virtualinvoke $r6.<java.util.ArrayList: java.lang.Object clone()>() >>>>>>>> org.jfree.data.DefaultKeyedValues.clone : $r8 = (java.util.ArrayList) $r7
+org.jfree.data.DefaultKeyedValues.clone : $r8 = (java.util.ArrayList) $r7 >>>>>>>> org.jfree.data.DefaultKeyedValues.clone : r1.<org.jfree.data.DefaultKeyedValues: java.util.ArrayList values> = $r8
+org.jfree.data.DefaultKeyedValues.clone : r1.<org.jfree.data.DefaultKeyedValues: java.util.ArrayList values> = $r8 >>>>>>>> org.jfree.data.DefaultKeyedValues.clone : $r9 = r0.<org.jfree.data.DefaultKeyedValues: java.util.HashMap indexMap>
+org.jfree.data.DefaultKeyedValues.clone : $r9 = r0.<org.jfree.data.DefaultKeyedValues: java.util.HashMap indexMap> >>>>>>>> org.jfree.data.DefaultKeyedValues.clone : $r10 = virtualinvoke $r9.<java.util.HashMap: java.lang.Object clone()>()
+org.jfree.data.DefaultKeyedValues.clone : $r10 = virtualinvoke $r9.<java.util.HashMap: java.lang.Object clone()>() >>>>>>>> org.jfree.data.DefaultKeyedValues.clone : $r11 = (java.util.HashMap) $r10
+org.jfree.data.DefaultKeyedValues.clone : $r11 = (java.util.HashMap) $r10 >>>>>>>> org.jfree.data.DefaultKeyedValues.clone : r1.<org.jfree.data.DefaultKeyedValues: java.util.HashMap indexMap> = $r11
+org.jfree.data.DefaultKeyedValues.clone : r1.<org.jfree.data.DefaultKeyedValues: java.util.HashMap indexMap> = $r11 >>>>>>>> org.jfree.data.DefaultKeyedValues.clone : return r1
+org.jfree.data.DefaultKeyedValues.clone : return r1 >>>>>>>> org.jfree.data.general.DefaultPieDataset.clone : $r5 = (org.jfree.data.DefaultKeyedValues) $r4
+org.jfree.data.general.DefaultPieDataset.clone : $r5 = (org.jfree.data.DefaultKeyedValues) $r4 >>>>>>>> org.jfree.data.general.DefaultPieDataset.clone : r1.<org.jfree.data.general.DefaultPieDataset: org.jfree.data.DefaultKeyedValues data> = $r5
+org.jfree.data.general.DefaultPieDataset.clone : r1.<org.jfree.data.general.DefaultPieDataset: org.jfree.data.DefaultKeyedValues data> = $r5 >>>>>>>> org.jfree.data.general.DefaultPieDataset.clone : return r1
+org.jfree.data.general.DefaultPieDataset.clone : return r1 >>>>>>>> org.jfree.data.KeyedObject.clone : r1.<org.jfree.data.KeyedObject: java.lang.Object object> = $r6
+org.jfree.data.KeyedObject.clone : r1.<org.jfree.data.KeyedObject: java.lang.Object object> = $r6 >>>>>>>> org.jfree.data.general.DefaultPieDataset.equals : if r1 != r0
+org.jfree.data.general.DefaultPieDataset.equals : if r1 != r0 >>>>>>>> org.jfree.data.general.DefaultPieDataset.equals : $z0 = r1 instanceof org.jfree.data.general.PieDataset
+org.jfree.data.general.DefaultPieDataset.equals : $z0 = r1 instanceof org.jfree.data.general.PieDataset >>>>>>>> org.jfree.data.general.DefaultPieDataset.equals : if $z0 != 0
+org.jfree.data.general.DefaultPieDataset.equals : if $z0 != 0 >>>>>>>> org.jfree.data.general.DefaultPieDataset.equals : r2 = (org.jfree.data.general.PieDataset) r1
+org.jfree.data.general.DefaultPieDataset.equals : r2 = (org.jfree.data.general.PieDataset) r1 >>>>>>>> org.jfree.data.general.DefaultPieDataset.equals : i0 = virtualinvoke r0.<org.jfree.data.general.DefaultPieDataset: int getItemCount()>()
+org.jfree.data.general.DefaultPieDataset.equals : i0 = virtualinvoke r0.<org.jfree.data.general.DefaultPieDataset: int getItemCount()>() >>>>>>>> org.jfree.data.general.DefaultPieDataset.getItemCount : $r1 = r0.<org.jfree.data.general.DefaultPieDataset: org.jfree.data.DefaultKeyedValues data>
+org.jfree.data.general.DefaultPieDataset.getItemCount : $r1 = r0.<org.jfree.data.general.DefaultPieDataset: org.jfree.data.DefaultKeyedValues data> >>>>>>>> org.jfree.data.general.DefaultPieDataset.getItemCount : $i0 = virtualinvoke $r1.<org.jfree.data.DefaultKeyedValues: int getItemCount()>()
+org.jfree.data.general.DefaultPieDataset.getItemCount : $i0 = virtualinvoke $r1.<org.jfree.data.DefaultKeyedValues: int getItemCount()>() >>>>>>>> org.jfree.data.DefaultKeyedValues.getItemCount : $r1 = r0.<org.jfree.data.DefaultKeyedValues: java.util.HashMap indexMap>
+org.jfree.data.DefaultKeyedValues.getItemCount : $r1 = r0.<org.jfree.data.DefaultKeyedValues: java.util.HashMap indexMap> >>>>>>>> org.jfree.data.DefaultKeyedValues.getItemCount : $i0 = virtualinvoke $r1.<java.util.HashMap: int size()>()
+org.jfree.data.DefaultKeyedValues.getItemCount : $i0 = virtualinvoke $r1.<java.util.HashMap: int size()>() >>>>>>>> org.jfree.data.DefaultKeyedValues.getItemCount : return $i0
+org.jfree.data.DefaultKeyedValues.getItemCount : return $i0 >>>>>>>> org.jfree.data.general.DefaultPieDataset.getItemCount : return $i0
+org.jfree.data.general.DefaultPieDataset.getItemCount : return $i0 >>>>>>>> org.jfree.data.general.DefaultPieDataset.equals : $i2 = interfaceinvoke r2.<org.jfree.data.general.PieDataset: int getItemCount()>()
+org.jfree.data.general.DefaultPieDataset.equals : $i2 = interfaceinvoke r2.<org.jfree.data.general.PieDataset: int getItemCount()>() >>>>>>>> org.jfree.data.general.DefaultPieDataset.equals : if $i2 == i0
+org.jfree.data.general.DefaultPieDataset.equals : if $i2 == i0 >>>>>>>> org.jfree.data.general.DefaultPieDataset.equals : i1 = 0
+org.jfree.data.general.DefaultPieDataset.equals : i1 = 0 >>>>>>>> org.jfree.data.general.DefaultPieDataset.equals : if i1 >= i0
+org.jfree.data.general.DefaultPieDataset.equals : if i1 >= i0 >>>>>>>> org.jfree.data.general.DefaultPieDataset.equals : return 1

@@ -1,0 +1,67 @@
+org.jfree.chart.renderer.category.AbstractCategoryItemRenderer.getSeriesItemURLGenerator : $r4 = r0.<org.jfree.chart.renderer.category.AbstractCategoryItemRenderer: org.jfree.util.ObjectList itemURLGeneratorList>
+org.jfree.chart.renderer.category.AbstractCategoryItemRenderer.getSeriesItemURLGenerator : r1 = r0.<org.jfree.chart.renderer.category.AbstractCategoryItemRenderer: org.jfree.chart.urls.CategoryURLGenerator baseItemURLGenerator>
+org.jfree.chart.renderer.category.AbstractCategoryItemRenderer.getSeriesItemURLGenerator : if r1 != null goto return r1
+org.jfree.chart.renderer.category.AbstractCategoryItemRenderer.getSeriesItemURLGenerator : $r5 = virtualinvoke $r4.<org.jfree.util.ObjectList: java.lang.Object get(int)>(i0)
+org.jfree.chart.renderer.category.AbstractCategoryItemRenderer.getSeriesItemURLGenerator : return r1
+org.jfree.chart.renderer.category.AbstractCategoryItemRenderer.getSeriesItemURLGenerator : $r2 = r0.<org.jfree.chart.renderer.category.AbstractCategoryItemRenderer: org.jfree.chart.urls.CategoryURLGenerator itemURLGenerator>
+org.jfree.chart.plot.XYPlot.isDomainPannable : $z0 = r0.<org.jfree.chart.plot.XYPlot: boolean domainPannable>
+org.jfree.chart.plot.XYPlot.mapDatasetToRangeAxes : $r8 = new org.jfree.data.general.DatasetChangeEvent
+org.jfree.chart.plot.XYPlot.mapDatasetToRangeAxes : $r5 = r0.<org.jfree.chart.plot.XYPlot: java.util.Map datasetToRangeAxesMap>
+org.jfree.chart.plot.XYPlot.mapDatasetToRangeAxes : $r4 = new java.lang.Integer
+org.jfree.chart.plot.XYPlot.mapDatasetToRangeAxes : specialinvoke r0.<org.jfree.chart.plot.XYPlot: void checkAxisIndices(java.util.List)>(r1)
+org.jfree.chart.plot.XYPlot.mapDatasetToRangeAxes : if i0 >= 0 goto specialinvoke r0.<org.jfree.chart.plot.XYPlot: void checkAxisIndices(java.util.List)>(r1)
+org.jfree.chart.plot.dial.DialCap.getOutlinePaint : $r1 = r0.<org.jfree.chart.plot.dial.DialCap: java.awt.Paint outlinePaint>
+org.jfree.chart.plot.Plot.fireChangeEvent : $r1 = new org.jfree.chart.event.PlotChangeEvent
+org.jfree.chart.plot.Plot.notifyListeners : $r3 = r0.<org.jfree.chart.plot.Plot: javax.swing.event.EventListenerList listenerList>
+org.jfree.chart.plot.Plot.notifyListeners : $i1 = lengthof r2
+org.jfree.chart.plot.Plot.notifyListeners : $z0 = r0.<org.jfree.chart.plot.Plot: boolean notify>
+org.jfree.chart.plot.XYPlot.getDomainCrosshairValue : $d0 = r0.<org.jfree.chart.plot.XYPlot: double domainCrosshairValue>
+org.jfree.chart.plot.XYPlot.setRangeGridlinePaint : r0.<org.jfree.chart.plot.XYPlot: java.awt.Paint rangeGridlinePaint> = r1
+org.jfree.chart.plot.XYPlot.setRangeGridlinePaint : virtualinvoke r0.<org.jfree.chart.plot.XYPlot: void fireChangeEvent()>()
+org.jfree.chart.plot.XYPlot.setRangeGridlinePaint : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "paint")
+org.jfree.chart.plot.Plot.getParent : $r1 = r0.<org.jfree.chart.plot.Plot: org.jfree.chart.plot.Plot parent>
+org.jfree.chart.renderer.AbstractRenderer.getBaseOutlinePaint : $r1 = r0.<org.jfree.chart.renderer.AbstractRenderer: java.awt.Paint baseOutlinePaint>
+org.jfree.chart.plot.XYPlot.mapDatasetToDomainAxes : $r5 = r0.<org.jfree.chart.plot.XYPlot: java.util.Map datasetToDomainAxesMap>
+org.jfree.chart.plot.XYPlot.mapDatasetToDomainAxes : $r8 = new org.jfree.data.general.DatasetChangeEvent
+org.jfree.chart.plot.XYPlot.mapDatasetToDomainAxes : $r4 = new java.lang.Integer
+org.jfree.chart.plot.XYPlot.mapDatasetToDomainAxes : specialinvoke r0.<org.jfree.chart.plot.XYPlot: void checkAxisIndices(java.util.List)>(r1)
+org.jfree.chart.plot.XYPlot.mapDatasetToDomainAxes : if i0 >= 0 goto specialinvoke r0.<org.jfree.chart.plot.XYPlot: void checkAxisIndices(java.util.List)>(r1)
+org.jfree.chart.event.ChartChangeEvent.setType : r0.<org.jfree.chart.event.ChartChangeEvent: org.jfree.chart.event.ChartChangeEventType type> = r1
+org.jfree.chart.plot.dial.DialCap.setOutlinePaint : r0.<org.jfree.chart.plot.dial.DialCap: java.awt.Paint outlinePaint> = r1
+org.jfree.chart.plot.dial.DialCap.setOutlinePaint : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "paint")
+org.jfree.chart.plot.dial.DialCap.setOutlinePaint : $r2 = new org.jfree.chart.plot.dial.DialLayerChangeEvent
+org.jfree.chart.plot.dial.AbstractDialLayer.notifyListeners : $r3 = r0.<org.jfree.chart.plot.dial.AbstractDialLayer: javax.swing.event.EventListenerList listenerList>
+org.jfree.chart.plot.dial.AbstractDialLayer.notifyListeners : $i1 = lengthof r2
+org.jfree.chart.plot.XYPlot.mapDatasetToRangeAxis : $r3 = new java.lang.Integer
+org.jfree.chart.plot.XYPlot.mapDatasetToRangeAxis : $r1 = new java.util.ArrayList
+org.jfree.chart.plot.XYPlot.mapDatasetToRangeAxis : virtualinvoke r0.<org.jfree.chart.plot.XYPlot: void mapDatasetToRangeAxes(int,java.util.List)>(i0, r2)
+org.jfree.chart.plot.dial.DialCap.getRadius : $d0 = r0.<org.jfree.chart.plot.dial.DialCap: double radius>
+org.jfree.chart.plot.XYPlot.configureDomainAxes : if r1 == null goto i0 = i0 + 1
+org.jfree.chart.plot.XYPlot.configureDomainAxes : i0 = 0
+org.jfree.chart.plot.XYPlot.configureDomainAxes : $r3 = r0.<org.jfree.chart.plot.XYPlot: org.jfree.util.ObjectList domainAxes>
+org.jfree.chart.plot.XYPlot.configureRangeAxes : $r3 = r0.<org.jfree.chart.plot.XYPlot: org.jfree.util.ObjectList rangeAxes>
+org.jfree.chart.plot.XYPlot.configureRangeAxes : if r1 == null goto i0 = i0 + 1
+org.jfree.chart.plot.XYPlot.configureRangeAxes : i0 = 0
+org.jfree.chart.plot.XYPlot.datasetChanged : $r5 = new org.jfree.chart.event.PlotChangeEvent
+org.jfree.chart.plot.XYPlot.datasetChanged : $r3 = virtualinvoke r0.<org.jfree.chart.plot.XYPlot: org.jfree.chart.plot.Plot getParent()>()
+org.jfree.chart.plot.XYPlot.datasetChanged : virtualinvoke r0.<org.jfree.chart.plot.XYPlot: void configureRangeAxes()>()
+org.jfree.chart.plot.XYPlot.datasetChanged : virtualinvoke r0.<org.jfree.chart.plot.XYPlot: void notifyListeners(org.jfree.chart.event.PlotChangeEvent)>(r2)
+org.jfree.chart.plot.XYPlot.datasetChanged : virtualinvoke r0.<org.jfree.chart.plot.XYPlot: void configureDomainAxes()>()
+org.jfree.chart.plot.XYPlot.datasetChanged : $r6 = <org.jfree.chart.event.ChartChangeEventType: org.jfree.chart.event.ChartChangeEventType DATASET_UPDATED>
+org.jfree.chart.plot.XYPlot.checkAxisIndices : if i0 != 0 goto $r5 = new java.util.HashSet
+org.jfree.chart.plot.XYPlot.checkAxisIndices : i1 = 0
+org.jfree.chart.plot.XYPlot.checkAxisIndices : r3 = interfaceinvoke r1.<java.util.List: java.lang.Object get(int)>(i1)
+org.jfree.chart.plot.XYPlot.checkAxisIndices : i0 = interfaceinvoke r1.<java.util.List: int size()>()
+org.jfree.chart.plot.XYPlot.checkAxisIndices : if r1 != null goto i0 = interfaceinvoke r1.<java.util.List: int size()>()
+org.jfree.chart.plot.XYPlot.checkAxisIndices : virtualinvoke r2.<java.util.HashSet: boolean add(java.lang.Object)>(r3)
+org.jfree.chart.plot.XYPlot.checkAxisIndices : $r5 = new java.util.HashSet
+org.jfree.chart.plot.XYPlot.checkAxisIndices : $z0 = r3 instanceof java.lang.Integer
+org.jfree.chart.plot.XYPlot.checkAxisIndices : $z1 = virtualinvoke r2.<java.util.HashSet: boolean contains(java.lang.Object)>(r3)
+org.jfree.chart.plot.XYPlot.mapDatasetToDomainAxis : $r3 = new java.lang.Integer
+org.jfree.chart.plot.XYPlot.mapDatasetToDomainAxis : virtualinvoke r0.<org.jfree.chart.plot.XYPlot: void mapDatasetToDomainAxes(int,java.util.List)>(i0, r2)
+org.jfree.chart.plot.XYPlot.mapDatasetToDomainAxis : $r1 = new java.util.ArrayList
+org.jfree.chart.plot.XYPlot.getDataset : $r3 = r0.<org.jfree.chart.plot.XYPlot: org.jfree.util.ObjectList datasets>
+org.jfree.chart.plot.XYPlot.getDataset : $r2 = r0.<org.jfree.chart.plot.XYPlot: org.jfree.util.ObjectList datasets>
+org.jfree.chart.plot.XYPlot.getDataset : r1 = null
+org.jfree.chart.plot.XYPlot.getDataset : return r1
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null goto return

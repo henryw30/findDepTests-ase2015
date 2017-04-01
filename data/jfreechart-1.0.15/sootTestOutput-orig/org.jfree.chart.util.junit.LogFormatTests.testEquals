@@ -1,0 +1,13 @@
+org.jfree.chart.util.LogFormat.setExponentFormat : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "format")
+org.jfree.chart.util.LogFormat.setExponentFormat : r0.<org.jfree.chart.util.LogFormat: java.text.NumberFormat formatter> = r1
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null goto return
+org.jfree.chart.util.LogFormat.equals : r2 = (org.jfree.chart.util.LogFormat) r1
+org.jfree.chart.util.LogFormat.equals : $z5 = specialinvoke r0.<java.text.NumberFormat: boolean equals(java.lang.Object)>(r1)
+org.jfree.chart.util.LogFormat.equals : $d2 = r0.<org.jfree.chart.util.LogFormat: double baseLog>
+org.jfree.chart.util.LogFormat.equals : $z0 = r1 instanceof org.jfree.chart.util.LogFormat
+org.jfree.chart.util.LogFormat.equals : $d0 = r0.<org.jfree.chart.util.LogFormat: double base>
+org.jfree.chart.util.LogFormat.equals : if r1 != r0 goto $z0 = r1 instanceof org.jfree.chart.util.LogFormat
+org.jfree.chart.util.LogFormat.equals : $r3 = r0.<org.jfree.chart.util.LogFormat: java.lang.String baseLabel>
+org.jfree.chart.util.LogFormat.equals : $r5 = r0.<org.jfree.chart.util.LogFormat: java.text.NumberFormat formatter>
+org.jfree.chart.util.LogFormat.equals : return 0
+org.jfree.chart.util.LogFormat.equals : $z2 = r0.<org.jfree.chart.util.LogFormat: boolean showBase>

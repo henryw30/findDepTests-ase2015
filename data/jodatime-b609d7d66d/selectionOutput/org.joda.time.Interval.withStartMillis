@@ -1,0 +1,8 @@
+org.joda.time.Interval.withStartMillis : $l1 = virtualinvoke r0.<org.joda.time.Interval: long getStartMillis()>() >>>>>>>> org.joda.time.Interval.withStartMillis : $b2 = l0 cmp $l1
+org.joda.time.Interval.withStartMillis : $b2 = l0 cmp $l1 >>>>>>>> org.joda.time.Interval.withStartMillis : if $b2 != 0
+org.joda.time.Interval.withStartMillis : if $b2 != 0 >>>>>>>> org.joda.time.Interval.withStartMillis : return r0
+org.joda.time.Interval.withStartMillis : if $b2 != 0 >>>>>>>> org.joda.time.Interval.withStartMillis : $r1 = new org.joda.time.Interval
+org.joda.time.Interval.withStartMillis : $r1 = new org.joda.time.Interval >>>>>>>> org.joda.time.Interval.withStartMillis : $l3 = virtualinvoke r0.<org.joda.time.Interval: long getEndMillis()>()
+org.joda.time.Interval.withStartMillis : $l3 = virtualinvoke r0.<org.joda.time.Interval: long getEndMillis()>() >>>>>>>> org.joda.time.Interval.withStartMillis : $r2 = virtualinvoke r0.<org.joda.time.Interval: org.joda.time.Chronology getChronology()>()
+org.joda.time.Interval.withStartMillis : $r2 = virtualinvoke r0.<org.joda.time.Interval: org.joda.time.Chronology getChronology()>() >>>>>>>> org.joda.time.Interval.withStartMillis : specialinvoke $r1.<org.joda.time.Interval: void <init>(long,long,org.joda.time.Chronology)>(l0, $l3, $r2)
+org.joda.time.Interval.withStartMillis : specialinvoke $r1.<org.joda.time.Interval: void <init>(long,long,org.joda.time.Chronology)>(l0, $l3, $r2) >>>>>>>> org.joda.time.Interval.withStartMillis : return $r1

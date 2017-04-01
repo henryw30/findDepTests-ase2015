@@ -1,0 +1,30 @@
+org.apache.xml.security.utils.XMLUtils.getDirectChild : r3 = interfaceinvoke r0.<org.w3c.dom.Element: org.w3c.dom.NodeList getChildNodes()>() >>>>>>>> org.apache.xml.security.utils.XMLUtils.getDirectChild : $r6 = new java.util.Vector
+org.apache.xml.security.utils.XMLUtils.getDirectChild : $r6 = new java.util.Vector >>>>>>>> org.apache.xml.security.utils.XMLUtils.getDirectChild : specialinvoke $r6.<java.util.Vector: void <init>()>()
+org.apache.xml.security.utils.XMLUtils.getDirectChild : specialinvoke $r6.<java.util.Vector: void <init>()>() >>>>>>>> org.apache.xml.security.utils.XMLUtils.getDirectChild : r4 = $r6
+org.apache.xml.security.utils.XMLUtils.getDirectChild : r4 = $r6 >>>>>>>> org.apache.xml.security.utils.XMLUtils.getDirectChild : i0 = 0
+org.apache.xml.security.utils.XMLUtils.getDirectChild : i0 = 0 >>>>>>>> org.apache.xml.security.utils.XMLUtils.getDirectChild : $i1 = interfaceinvoke r3.<org.w3c.dom.NodeList: int getLength()>()
+org.apache.xml.security.utils.XMLUtils.getDirectChild : $i1 = interfaceinvoke r3.<org.w3c.dom.NodeList: int getLength()>() >>>>>>>> org.apache.xml.security.utils.XMLUtils.getDirectChild : if i0 >= $i1
+org.apache.xml.security.utils.XMLUtils.getDirectChild : if i0 >= $i1 >>>>>>>> org.apache.xml.security.utils.XMLUtils.getDirectChild : r5 = interfaceinvoke r3.<org.w3c.dom.NodeList: org.w3c.dom.Node item(int)>(i0)
+org.apache.xml.security.utils.XMLUtils.getDirectChild : if i0 >= $i1 >>>>>>>> org.apache.xml.security.utils.XMLUtils.getDirectChild : $i3 = virtualinvoke r4.<java.util.Vector: int size()>()
+org.apache.xml.security.utils.XMLUtils.getDirectChild : $i3 = virtualinvoke r4.<java.util.Vector: int size()>() >>>>>>>> org.apache.xml.security.utils.XMLUtils.getDirectChild : if $i3 == 1
+org.apache.xml.security.utils.XMLUtils.getDirectChild : if $i3 == 1 >>>>>>>> org.apache.xml.security.utils.XMLUtils.getDirectChild : return null
+org.apache.xml.security.utils.XMLUtils.getDirectChild : if $i3 == 1 >>>>>>>> org.apache.xml.security.utils.XMLUtils.getDirectChild : $r11 = virtualinvoke r4.<java.util.Vector: java.lang.Object elementAt(int)>(0)
+org.apache.xml.security.utils.XMLUtils.getDirectChild : $r11 = virtualinvoke r4.<java.util.Vector: java.lang.Object elementAt(int)>(0) >>>>>>>> org.apache.xml.security.utils.XMLUtils.getDirectChild : $r12 = (org.w3c.dom.Element) $r11
+org.apache.xml.security.utils.XMLUtils.getDirectChild : $r12 = (org.w3c.dom.Element) $r11 >>>>>>>> org.apache.xml.security.utils.XMLUtils.getDirectChild : return $r12
+org.apache.xml.security.utils.XMLUtils.getDirectChild : r5 = interfaceinvoke r3.<org.w3c.dom.NodeList: org.w3c.dom.Node item(int)>(i0) >>>>>>>> org.apache.xml.security.utils.XMLUtils.getDirectChild : $s2 = interfaceinvoke r5.<org.w3c.dom.Node: short getNodeType()>()
+org.apache.xml.security.utils.XMLUtils.getDirectChild : $s2 = interfaceinvoke r5.<org.w3c.dom.Node: short getNodeType()>() >>>>>>>> org.apache.xml.security.utils.XMLUtils.getDirectChild : if $s2 != 1
+org.apache.xml.security.utils.XMLUtils.getDirectChild : if $s2 != 1 >>>>>>>> org.apache.xml.security.utils.XMLUtils.getDirectChild : $r7 = (org.w3c.dom.Element) r5
+org.apache.xml.security.utils.XMLUtils.getDirectChild : if $s2 != 1 >>>>>>>> org.apache.xml.security.utils.XMLUtils.getDirectChild : i0 = i0 + 1
+org.apache.xml.security.utils.XMLUtils.getDirectChild : i0 = i0 + 1 >>>>>>>> org.apache.xml.security.utils.XMLUtils.getDirectChild : goto [?= $i1 = interfaceinvoke r3.<org.w3c.dom.NodeList: int getLength()>()]
+org.apache.xml.security.utils.XMLUtils.getDirectChild : goto [?= $i1 = interfaceinvoke r3.<org.w3c.dom.NodeList: int getLength()>()] >>>>>>>> org.apache.xml.security.utils.XMLUtils.getDirectChild : $i1 = interfaceinvoke r3.<org.w3c.dom.NodeList: int getLength()>()
+org.apache.xml.security.utils.XMLUtils.getDirectChild : $r7 = (org.w3c.dom.Element) r5 >>>>>>>> org.apache.xml.security.utils.XMLUtils.getDirectChild : $r8 = interfaceinvoke $r7.<org.w3c.dom.Element: java.lang.String getLocalName()>()
+org.apache.xml.security.utils.XMLUtils.getDirectChild : $r8 = interfaceinvoke $r7.<org.w3c.dom.Element: java.lang.String getLocalName()>() >>>>>>>> org.apache.xml.security.utils.XMLUtils.getDirectChild : $z0 = virtualinvoke $r8.<java.lang.String: boolean equals(java.lang.Object)>(r1)
+org.apache.xml.security.utils.XMLUtils.getDirectChild : $z0 = virtualinvoke $r8.<java.lang.String: boolean equals(java.lang.Object)>(r1) >>>>>>>> org.apache.xml.security.utils.XMLUtils.getDirectChild : if $z0 == 0
+org.apache.xml.security.utils.XMLUtils.getDirectChild : if $z0 == 0 >>>>>>>> org.apache.xml.security.utils.XMLUtils.getDirectChild : $r9 = (org.w3c.dom.Element) r5
+org.apache.xml.security.utils.XMLUtils.getDirectChild : if $z0 == 0 >>>>>>>> org.apache.xml.security.utils.XMLUtils.getDirectChild : i0 = i0 + 1
+org.apache.xml.security.utils.XMLUtils.getDirectChild : $r9 = (org.w3c.dom.Element) r5 >>>>>>>> org.apache.xml.security.utils.XMLUtils.getDirectChild : $r10 = interfaceinvoke $r9.<org.w3c.dom.Element: java.lang.String getNamespaceURI()>()
+org.apache.xml.security.utils.XMLUtils.getDirectChild : $r10 = interfaceinvoke $r9.<org.w3c.dom.Element: java.lang.String getNamespaceURI()>() >>>>>>>> org.apache.xml.security.utils.XMLUtils.getDirectChild : $z1 = virtualinvoke $r10.<java.lang.String: boolean equals(java.lang.Object)>(r2)
+org.apache.xml.security.utils.XMLUtils.getDirectChild : $z1 = virtualinvoke $r10.<java.lang.String: boolean equals(java.lang.Object)>(r2) >>>>>>>> org.apache.xml.security.utils.XMLUtils.getDirectChild : if $z1 == 0
+org.apache.xml.security.utils.XMLUtils.getDirectChild : if $z1 == 0 >>>>>>>> org.apache.xml.security.utils.XMLUtils.getDirectChild : virtualinvoke r4.<java.util.Vector: boolean add(java.lang.Object)>(r5)
+org.apache.xml.security.utils.XMLUtils.getDirectChild : if $z1 == 0 >>>>>>>> org.apache.xml.security.utils.XMLUtils.getDirectChild : i0 = i0 + 1
+org.apache.xml.security.utils.XMLUtils.getDirectChild : virtualinvoke r4.<java.util.Vector: boolean add(java.lang.Object)>(r5) >>>>>>>> org.apache.xml.security.utils.XMLUtils.getDirectChild : i0 = i0 + 1

@@ -1,0 +1,66 @@
+org.jfree.chart.renderer.category.BarRenderer.getDefaultShadowsVisible : $z0 = <org.jfree.chart.renderer.category.BarRenderer: boolean defaultShadowsVisible>
+org.jfree.data.general.AbstractDataset.addChangeListener : $r2 = r0.<org.jfree.data.general.AbstractDataset: javax.swing.event.EventListenerList listenerList>
+org.jfree.chart.renderer.AbstractRenderer.setBaseNegativeItemLabelPosition : virtualinvoke r0.<org.jfree.chart.renderer.AbstractRenderer: void fireChangeEvent()>()
+org.jfree.chart.renderer.AbstractRenderer.setBaseNegativeItemLabelPosition : if z0 == 0 goto return
+org.jfree.chart.renderer.AbstractRenderer.setBaseNegativeItemLabelPosition : r0.<org.jfree.chart.renderer.AbstractRenderer: org.jfree.chart.labels.ItemLabelPosition baseNegativeItemLabelPosition> = r1
+org.jfree.chart.renderer.AbstractRenderer.setBaseNegativeItemLabelPosition : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "position")
+org.jfree.chart.renderer.AbstractRenderer.setBaseNegativeItemLabelPosition : virtualinvoke r0.<org.jfree.chart.renderer.AbstractRenderer: void setBaseNegativeItemLabelPosition(org.jfree.chart.labels.ItemLabelPosition,boolean)>(r1, 1)
+org.jfree.chart.renderer.AbstractRenderer.getItemLabelFont : $r1 = r0.<org.jfree.chart.renderer.AbstractRenderer: java.awt.Font itemLabelFont>
+org.jfree.data.xy.CategoryTableXYDataset.getSeriesCount : $r1 = r0.<org.jfree.data.xy.CategoryTableXYDataset: org.jfree.data.DefaultKeyedValues2D values>
+org.jfree.chart.renderer.xy.XYBarRenderer.setNegativeItemLabelPositionFallback : virtualinvoke r0.<org.jfree.chart.renderer.xy.XYBarRenderer: void fireChangeEvent()>()
+org.jfree.chart.renderer.xy.XYBarRenderer.setNegativeItemLabelPositionFallback : r0.<org.jfree.chart.renderer.xy.XYBarRenderer: org.jfree.chart.labels.ItemLabelPosition negativeItemLabelPositionFallback> = r1
+org.jfree.data.xy.CategoryTableXYDataset.getDomainBounds : $r3 = staticinvoke <org.jfree.data.general.DatasetUtilities: org.jfree.data.Range iterateDomainBounds(org.jfree.data.xy.XYDataset,boolean)>(r0, z0)
+org.jfree.data.xy.CategoryTableXYDataset.getDomainBounds : if z0 == 0 goto $r3 = staticinvoke <org.jfree.data.general.DatasetUtilities: org.jfree.data.Range iterateDomainBounds(org.jfree.data.xy.XYDataset,boolean)>(r0, z0)
+org.jfree.chart.renderer.AbstractRenderer.setBasePositiveItemLabelPosition : virtualinvoke r0.<org.jfree.chart.renderer.AbstractRenderer: void fireChangeEvent()>()
+org.jfree.chart.renderer.AbstractRenderer.setBasePositiveItemLabelPosition : if z0 == 0 goto return
+org.jfree.chart.renderer.AbstractRenderer.setBasePositiveItemLabelPosition : virtualinvoke r0.<org.jfree.chart.renderer.AbstractRenderer: void setBasePositiveItemLabelPosition(org.jfree.chart.labels.ItemLabelPosition,boolean)>(r1, 1)
+org.jfree.chart.renderer.AbstractRenderer.setBasePositiveItemLabelPosition : r0.<org.jfree.chart.renderer.AbstractRenderer: org.jfree.chart.labels.ItemLabelPosition basePositiveItemLabelPosition> = r1
+org.jfree.chart.renderer.AbstractRenderer.setBasePositiveItemLabelPosition : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "position")
+org.jfree.chart.renderer.xy.XYBarRenderer.getDefaultShadowsVisible : $z0 = <org.jfree.chart.renderer.xy.XYBarRenderer: boolean defaultShadowsVisible>
+org.jfree.chart.renderer.xy.XYBlockRenderer.findDomainBounds : if r1 != null goto r2 = staticinvoke <org.jfree.data.general.DatasetUtilities: org.jfree.data.Range findDomainBounds(org.jfree.data.xy.XYDataset,boolean)>(r1, 0)
+org.jfree.chart.renderer.xy.XYBlockRenderer.findDomainBounds : if r2 != null goto $r3 = new org.jfree.data.Range
+org.jfree.chart.renderer.xy.XYBlockRenderer.findDomainBounds : return null
+org.jfree.chart.renderer.xy.XYBlockRenderer.findDomainBounds : r2 = staticinvoke <org.jfree.data.general.DatasetUtilities: org.jfree.data.Range findDomainBounds(org.jfree.data.xy.XYDataset,boolean)>(r1, 0)
+org.jfree.chart.renderer.AbstractRenderer.getSeriesNegativeItemLabelPosition : if r1 != null goto return r1
+org.jfree.chart.renderer.AbstractRenderer.getSeriesNegativeItemLabelPosition : $r2 = r0.<org.jfree.chart.renderer.AbstractRenderer: org.jfree.chart.labels.ItemLabelPosition negativeItemLabelPosition>
+org.jfree.chart.renderer.AbstractRenderer.getSeriesNegativeItemLabelPosition : $r5 = virtualinvoke $r4.<org.jfree.util.ObjectList: java.lang.Object get(int)>(i0)
+org.jfree.chart.renderer.AbstractRenderer.getSeriesNegativeItemLabelPosition : $r4 = r0.<org.jfree.chart.renderer.AbstractRenderer: org.jfree.util.ObjectList negativeItemLabelPositionList>
+org.jfree.chart.renderer.AbstractRenderer.getSeriesNegativeItemLabelPosition : return r1
+org.jfree.chart.renderer.AbstractRenderer.getSeriesNegativeItemLabelPosition : r1 = r0.<org.jfree.chart.renderer.AbstractRenderer: org.jfree.chart.labels.ItemLabelPosition baseNegativeItemLabelPosition>
+org.jfree.chart.renderer.xy.XYBarRenderer.getDefaultBarPainter : $r0 = <org.jfree.chart.renderer.xy.XYBarRenderer: org.jfree.chart.renderer.xy.XYBarPainter defaultBarPainter>
+org.jfree.chart.renderer.xy.XYBlockRenderer.updateOffsets : $r2 = r0.<org.jfree.chart.renderer.xy.XYBlockRenderer: org.jfree.ui.RectangleAnchor blockAnchor>
+org.jfree.chart.renderer.xy.XYBlockRenderer.updateOffsets : $r5 = r0.<org.jfree.chart.renderer.xy.XYBlockRenderer: org.jfree.ui.RectangleAnchor blockAnchor>
+org.jfree.chart.renderer.xy.XYBlockRenderer.updateOffsets : $r3 = r0.<org.jfree.chart.renderer.xy.XYBlockRenderer: org.jfree.ui.RectangleAnchor blockAnchor>
+org.jfree.chart.renderer.xy.XYBlockRenderer.updateOffsets : $r7 = r0.<org.jfree.chart.renderer.xy.XYBlockRenderer: org.jfree.ui.RectangleAnchor blockAnchor>
+org.jfree.chart.renderer.xy.XYBlockRenderer.updateOffsets : $d11 = r0.<org.jfree.chart.renderer.xy.XYBlockRenderer: double blockHeight>
+org.jfree.chart.renderer.xy.XYBlockRenderer.updateOffsets : $r9 = r0.<org.jfree.chart.renderer.xy.XYBlockRenderer: org.jfree.ui.RectangleAnchor blockAnchor>
+org.jfree.chart.renderer.xy.XYBlockRenderer.updateOffsets : $d8 = r0.<org.jfree.chart.renderer.xy.XYBlockRenderer: double blockWidth>
+org.jfree.data.general.DatasetUtilities.findDomainBounds : goto [?= return r2]
+org.jfree.data.general.DatasetUtilities.findDomainBounds : return r2
+org.jfree.data.general.DatasetUtilities.findDomainBounds : $z1 = r0 instanceof org.jfree.data.DomainInfo
+org.jfree.data.general.DatasetUtilities.findDomainBounds : r1 = (org.jfree.data.DomainInfo) r0
+org.jfree.data.general.DatasetUtilities.findDomainBounds : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r0, "dataset")
+org.jfree.data.general.DatasetUtilities.findDomainBounds : r2 = interfaceinvoke r1.<org.jfree.data.DomainInfo: org.jfree.data.Range getDomainBounds(boolean)>(z0)
+org.jfree.chart.renderer.AbstractRenderer.fireChangeEvent : $r1 = new org.jfree.chart.event.RendererChangeEvent
+org.jfree.chart.renderer.category.BarRenderer.getDefaultBarPainter : $r0 = <org.jfree.chart.renderer.category.BarRenderer: org.jfree.chart.renderer.category.BarPainter defaultBarPainter>
+org.jfree.chart.renderer.AbstractRenderer.setBaseLegendShape : virtualinvoke r0.<org.jfree.chart.renderer.AbstractRenderer: void fireChangeEvent()>()
+org.jfree.chart.renderer.AbstractRenderer.setBaseLegendShape : r0.<org.jfree.chart.renderer.AbstractRenderer: java.awt.Shape baseLegendShape> = r1
+org.jfree.data.general.DatasetUtilities.iterateDomainBounds : d0 = #Infinity
+org.jfree.data.general.DatasetUtilities.iterateDomainBounds : return null
+org.jfree.data.general.DatasetUtilities.iterateDomainBounds : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r0, "dataset")
+org.jfree.data.general.DatasetUtilities.iterateDomainBounds : i0 = interfaceinvoke r0.<org.jfree.data.xy.XYDataset: int getSeriesCount()>()
+org.jfree.data.general.DatasetUtilities.iterateDomainBounds : if z0 == 0 goto i4 = 0
+org.jfree.data.general.DatasetUtilities.iterateDomainBounds : $b7 = d0 cmpl d1
+org.jfree.data.general.DatasetUtilities.iterateDomainBounds : d1 = #-Infinity
+org.jfree.data.general.DatasetUtilities.iterateDomainBounds : i4 = 0
+org.jfree.chart.renderer.AbstractRenderer.getItemLabelAnchorOffset : $d0 = r0.<org.jfree.chart.renderer.AbstractRenderer: double itemLabelAnchorOffset>
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null goto return
+org.jfree.chart.labels.ItemLabelPosition.getAngle : $d0 = r0.<org.jfree.chart.labels.ItemLabelPosition: double angle>
+org.jfree.data.DefaultKeyedValues2D.getColumnCount : $r1 = r0.<org.jfree.data.DefaultKeyedValues2D: java.util.List columnKeys>
+org.jfree.chart.renderer.AbstractRenderer.getNegativeItemLabelPosition : $r1 = virtualinvoke r0.<org.jfree.chart.renderer.AbstractRenderer: org.jfree.chart.labels.ItemLabelPosition getSeriesNegativeItemLabelPosition(int)>(i0)
+org.jfree.chart.renderer.AbstractRenderer.notifyListeners : $r3 = r0.<org.jfree.chart.renderer.AbstractRenderer: javax.swing.event.EventListenerList listenerList>
+org.jfree.chart.renderer.AbstractRenderer.notifyListeners : $i1 = lengthof r2
+org.jfree.chart.renderer.AbstractRenderer.setNegativeItemLabelPosition : virtualinvoke r0.<org.jfree.chart.renderer.AbstractRenderer: void fireChangeEvent()>()
+org.jfree.chart.renderer.AbstractRenderer.setNegativeItemLabelPosition : if z0 == 0 goto return
+org.jfree.chart.renderer.AbstractRenderer.setNegativeItemLabelPosition : r0.<org.jfree.chart.renderer.AbstractRenderer: org.jfree.chart.labels.ItemLabelPosition negativeItemLabelPosition> = r1
+org.jfree.chart.renderer.AbstractRenderer.setNegativeItemLabelPosition : virtualinvoke r0.<org.jfree.chart.renderer.AbstractRenderer: void setNegativeItemLabelPosition(org.jfree.chart.labels.ItemLabelPosition,boolean)>(r1, 1)

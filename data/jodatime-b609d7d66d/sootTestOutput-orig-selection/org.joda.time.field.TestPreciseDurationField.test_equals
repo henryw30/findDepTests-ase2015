@@ -1,0 +1,49 @@
+org.joda.time.DurationFieldType.seconds : $r0 = <org.joda.time.DurationFieldType: org.joda.time.DurationFieldType SECONDS_TYPE> >>>>>>>> org.joda.time.DurationFieldType.seconds : return $r0
+org.joda.time.DurationFieldType.seconds : return $r0 >>>>>>>> org.joda.time.field.PreciseDurationField.equals : if r0 != r1
+org.joda.time.field.PreciseDurationField.equals : if r0 != r1 >>>>>>>> org.joda.time.field.PreciseDurationField.equals : return 1
+org.joda.time.field.PreciseDurationField.equals : return 1 >>>>>>>> org.joda.time.chrono.ISOChronology.getInstance : $r0 = staticinvoke <org.joda.time.DateTimeZone: org.joda.time.DateTimeZone getDefault()>()
+org.joda.time.chrono.ISOChronology.getInstance : $r0 = staticinvoke <org.joda.time.DateTimeZone: org.joda.time.DateTimeZone getDefault()>() >>>>>>>> org.joda.time.DateTimeZone.getDefault : r0 = <org.joda.time.DateTimeZone: org.joda.time.DateTimeZone cDefault>
+org.joda.time.DateTimeZone.getDefault : r0 = <org.joda.time.DateTimeZone: org.joda.time.DateTimeZone cDefault> >>>>>>>> org.joda.time.DateTimeZone.getDefault : if r0 != null
+org.joda.time.DateTimeZone.getDefault : if r0 != null >>>>>>>> org.joda.time.DateTimeZone.getDefault : return r0
+org.joda.time.DateTimeZone.getDefault : return r0 >>>>>>>> org.joda.time.chrono.ISOChronology.getInstance : $r1 = staticinvoke <org.joda.time.chrono.ISOChronology: org.joda.time.chrono.ISOChronology getInstance(org.joda.time.DateTimeZone)>($r0)
+org.joda.time.chrono.ISOChronology.getInstance : $r1 = staticinvoke <org.joda.time.chrono.ISOChronology: org.joda.time.chrono.ISOChronology getInstance(org.joda.time.DateTimeZone)>($r0) >>>>>>>> org.joda.time.chrono.ISOChronology.getInstance : if r0 != null
+org.joda.time.chrono.ISOChronology.getInstance : if r0 != null >>>>>>>> org.joda.time.chrono.ISOChronology.getInstance : $i1 = staticinvoke <java.lang.System: int identityHashCode(java.lang.Object)>(r0)
+org.joda.time.chrono.ISOChronology.getInstance : $i1 = staticinvoke <java.lang.System: int identityHashCode(java.lang.Object)>(r0) >>>>>>>> org.joda.time.chrono.ISOChronology.getInstance : i0 = $i1 & 63
+org.joda.time.chrono.ISOChronology.getInstance : i0 = $i1 & 63 >>>>>>>> org.joda.time.chrono.ISOChronology.getInstance : $r5 = <org.joda.time.chrono.ISOChronology: org.joda.time.chrono.ISOChronology[] cFastCache>
+org.joda.time.chrono.ISOChronology.getInstance : $r5 = <org.joda.time.chrono.ISOChronology: org.joda.time.chrono.ISOChronology[] cFastCache> >>>>>>>> org.joda.time.chrono.ISOChronology.getInstance : r1 = $r5[i0]
+org.joda.time.chrono.ISOChronology.getInstance : r1 = $r5[i0] >>>>>>>> org.joda.time.chrono.ISOChronology.getInstance : if r1 == null
+org.joda.time.chrono.ISOChronology.getInstance : if r1 == null >>>>>>>> org.joda.time.chrono.ISOChronology.getInstance : $r6 = virtualinvoke r1.<org.joda.time.chrono.ISOChronology: org.joda.time.DateTimeZone getZone()>()
+org.joda.time.chrono.ISOChronology.getInstance : $r6 = virtualinvoke r1.<org.joda.time.chrono.ISOChronology: org.joda.time.DateTimeZone getZone()>() >>>>>>>> org.joda.time.chrono.AssembledChronology.getZone : $r2 = r0.<org.joda.time.chrono.AssembledChronology: org.joda.time.Chronology iBase>
+org.joda.time.chrono.AssembledChronology.getZone : $r2 = r0.<org.joda.time.chrono.AssembledChronology: org.joda.time.Chronology iBase> >>>>>>>> org.joda.time.chrono.AssembledChronology.getZone : r1 = $r2
+org.joda.time.chrono.AssembledChronology.getZone : r1 = $r2 >>>>>>>> org.joda.time.chrono.AssembledChronology.getZone : if $r2 == null
+org.joda.time.chrono.AssembledChronology.getZone : if $r2 == null >>>>>>>> org.joda.time.chrono.AssembledChronology.getZone : $r3 = virtualinvoke r1.<org.joda.time.Chronology: org.joda.time.DateTimeZone getZone()>()
+org.joda.time.chrono.AssembledChronology.getZone : $r3 = virtualinvoke r1.<org.joda.time.Chronology: org.joda.time.DateTimeZone getZone()>() >>>>>>>> org.joda.time.chrono.ZonedChronology.getZone : $r1 = virtualinvoke r0.<org.joda.time.chrono.ZonedChronology: java.lang.Object getParam()>()
+org.joda.time.chrono.ZonedChronology.getZone : $r1 = virtualinvoke r0.<org.joda.time.chrono.ZonedChronology: java.lang.Object getParam()>() >>>>>>>> org.joda.time.chrono.AssembledChronology.getParam : $r1 = r0.<org.joda.time.chrono.AssembledChronology: java.lang.Object iParam>
+org.joda.time.chrono.AssembledChronology.getParam : $r1 = r0.<org.joda.time.chrono.AssembledChronology: java.lang.Object iParam> >>>>>>>> org.joda.time.chrono.AssembledChronology.getParam : return $r1
+org.joda.time.chrono.AssembledChronology.getParam : return $r1 >>>>>>>> org.joda.time.chrono.ZonedChronology.getZone : $r2 = (org.joda.time.DateTimeZone) $r1
+org.joda.time.chrono.ZonedChronology.getZone : $r2 = (org.joda.time.DateTimeZone) $r1 >>>>>>>> org.joda.time.chrono.ZonedChronology.getZone : return $r2
+org.joda.time.chrono.ZonedChronology.getZone : return $r2 >>>>>>>> org.joda.time.chrono.AssembledChronology.getZone : return $r3
+org.joda.time.chrono.AssembledChronology.getZone : return $r3 >>>>>>>> org.joda.time.chrono.ISOChronology.getInstance : if $r6 != r0
+org.joda.time.chrono.ISOChronology.getInstance : if $r6 != r0 >>>>>>>> org.joda.time.chrono.ISOChronology.getInstance : return r1
+org.joda.time.chrono.ISOChronology.getInstance : return r1 >>>>>>>> org.joda.time.chrono.ISOChronology.getInstance : return $r1
+org.joda.time.chrono.ISOChronology.getInstance : return $r1 >>>>>>>> org.joda.time.chrono.AssembledChronology.minutes : $r1 = r0.<org.joda.time.chrono.AssembledChronology: org.joda.time.DurationField iMinutes>
+org.joda.time.chrono.AssembledChronology.minutes : $r1 = r0.<org.joda.time.chrono.AssembledChronology: org.joda.time.DurationField iMinutes> >>>>>>>> org.joda.time.chrono.AssembledChronology.minutes : return $r1
+org.joda.time.chrono.AssembledChronology.minutes : return $r1 >>>>>>>> org.joda.time.field.PreciseDurationField.equals : $z0 = r1 instanceof org.joda.time.field.PreciseDurationField
+org.joda.time.field.PreciseDurationField.equals : $z0 = r1 instanceof org.joda.time.field.PreciseDurationField >>>>>>>> org.joda.time.field.PreciseDurationField.equals : if $z0 == 0
+org.joda.time.field.PreciseDurationField.equals : if $z0 == 0 >>>>>>>> org.joda.time.field.PreciseDurationField.equals : return 0
+org.joda.time.field.PreciseDurationField.equals : return 0 >>>>>>>> org.joda.time.field.PreciseDurationField.equals : r2 = (org.joda.time.field.PreciseDurationField) r1
+org.joda.time.field.PreciseDurationField.equals : r2 = (org.joda.time.field.PreciseDurationField) r1 >>>>>>>> org.joda.time.field.PreciseDurationField.equals : $r3 = virtualinvoke r0.<org.joda.time.field.PreciseDurationField: org.joda.time.DurationFieldType getType()>()
+org.joda.time.field.PreciseDurationField.equals : $r3 = virtualinvoke r0.<org.joda.time.field.PreciseDurationField: org.joda.time.DurationFieldType getType()>() >>>>>>>> org.joda.time.field.BaseDurationField.getType : $r1 = r0.<org.joda.time.field.BaseDurationField: org.joda.time.DurationFieldType iType>
+org.joda.time.field.BaseDurationField.getType : $r1 = r0.<org.joda.time.field.BaseDurationField: org.joda.time.DurationFieldType iType> >>>>>>>> org.joda.time.field.BaseDurationField.getType : return $r1
+org.joda.time.field.BaseDurationField.getType : return $r1 >>>>>>>> org.joda.time.field.PreciseDurationField.equals : $r4 = virtualinvoke r2.<org.joda.time.field.PreciseDurationField: org.joda.time.DurationFieldType getType()>()
+org.joda.time.field.PreciseDurationField.equals : $r4 = virtualinvoke r2.<org.joda.time.field.PreciseDurationField: org.joda.time.DurationFieldType getType()>() >>>>>>>> org.joda.time.field.PreciseDurationField.equals : if $r3 != $r4
+org.joda.time.field.PreciseDurationField.equals : if $r3 != $r4 >>>>>>>> org.joda.time.field.PreciseDurationField.equals : $l0 = r0.<org.joda.time.field.PreciseDurationField: long iUnitMillis>
+org.joda.time.field.PreciseDurationField.equals : $l0 = r0.<org.joda.time.field.PreciseDurationField: long iUnitMillis> >>>>>>>> org.joda.time.field.PreciseDurationField.equals : $l1 = r2.<org.joda.time.field.PreciseDurationField: long iUnitMillis>
+org.joda.time.field.PreciseDurationField.equals : $l1 = r2.<org.joda.time.field.PreciseDurationField: long iUnitMillis> >>>>>>>> org.joda.time.field.PreciseDurationField.equals : $b2 = $l0 cmp $l1
+org.joda.time.field.PreciseDurationField.equals : $b2 = $l0 cmp $l1 >>>>>>>> org.joda.time.field.PreciseDurationField.equals : if $b2 != 0
+org.joda.time.field.PreciseDurationField.equals : if $b2 != 0 >>>>>>>> org.joda.time.field.PreciseDurationField.equals : $z1 = 0
+org.joda.time.field.PreciseDurationField.equals : $z1 = 0 >>>>>>>> org.joda.time.field.PreciseDurationField.equals : return $z1
+org.joda.time.field.PreciseDurationField.equals : return $z1 >>>>>>>> org.joda.time.field.PreciseDurationField.equals : $z1 = 1
+org.joda.time.field.PreciseDurationField.equals : $z1 = 1 >>>>>>>> org.joda.time.field.PreciseDurationField.equals : goto [?= return $z1]
+org.joda.time.field.PreciseDurationField.equals : goto [?= return $z1] >>>>>>>> org.joda.time.DurationFieldType.millis : $r0 = <org.joda.time.DurationFieldType: org.joda.time.DurationFieldType MILLIS_TYPE>
+org.joda.time.DurationFieldType.millis : $r0 = <org.joda.time.DurationFieldType: org.joda.time.DurationFieldType MILLIS_TYPE> >>>>>>>> org.joda.time.DurationFieldType.millis : return $r0

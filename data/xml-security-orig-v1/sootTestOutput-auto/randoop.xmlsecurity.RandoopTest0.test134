@@ -1,0 +1,53 @@
+org.apache.xml.security.utils.Base64.getValue : return -1
+org.apache.xml.security.utils.Base64.getValue : if c0 < 65 goto (branch)
+org.apache.xml.security.utils.Base64.getValue : if c0 != 61 goto return -1
+org.apache.xml.security.utils.Base64.getValue : if c0 != 43 goto (branch)
+org.apache.xml.security.utils.Base64.getValue : if c0 < 97 goto (branch)
+org.apache.xml.security.utils.Base64.getValue : if c0 < 48 goto (branch)
+org.apache.xml.security.utils.Base64.getValue : if c0 != 47 goto (branch)
+org.apache.xml.security.utils.Base64.getValue : $i4 = c0 - 48
+org.apache.xml.security.utils.I18n.getExceptionMessage : $z0 = staticinvoke <org.apache.xml.security.Init: boolean isInitialized()>()
+org.apache.xml.security.utils.I18n.getExceptionMessage : $r4 = newarray (java.lang.Object)[1]
+org.apache.xml.security.utils.I18n.getExceptionMessage : r10 = $r9
+org.apache.xml.security.utils.I18n.getExceptionMessage : $r6 = <org.apache.xml.security.utils.I18n: java.util.ResourceBundle resourceBundle>
+org.apache.xml.security.utils.I18n.getExceptionMessage : return "You must initialize the xml-security library correctly before you use it. Call the static method \"org.apache.xml.security.Init.init();\" to do that before you use any functionality from that library."
+org.apache.xml.security.utils.Base64.decode : i5 = 2
+org.apache.xml.security.utils.Base64.decode : $z0 = virtualinvoke r1.<java.util.StringTokenizer: boolean hasMoreElements()>()
+org.apache.xml.security.utils.Base64.decode : $r25 = new org.apache.xml.security.exceptions.Base64DecodingException
+org.apache.xml.security.utils.Base64.decode : i4 = i4 >> 8
+org.apache.xml.security.utils.Base64.decode : i2 = i2 + 4
+org.apache.xml.security.utils.Base64.decode : $r1 = new java.lang.String
+org.apache.xml.security.utils.Base64.decode : $r4 = <org.apache.xml.security.utils.Base64: org.apache.log4j.Category cat>
+org.apache.xml.security.utils.Base64.decode : $i6 = virtualinvoke r0.<java.lang.String: int length()>()
+org.apache.xml.security.utils.Base64.decode : $r17 = new java.util.StringTokenizer
+org.apache.xml.security.utils.Base64.decode : r21 = virtualinvoke r2.<java.lang.StringBuffer: java.lang.String toString()>()
+org.apache.xml.security.utils.Base64.decode : i0 = 0
+org.apache.xml.security.utils.Base64.decode : if i1 <= 0 goto $i10 = virtualinvoke r21.<java.lang.String: int length()>()
+org.apache.xml.security.utils.Base64.decode : i2 = 0
+org.apache.xml.security.utils.Base64.decode : $r19 = virtualinvoke r1.<java.util.StringTokenizer: java.lang.String nextToken()>()
+org.apache.xml.security.utils.Base64.decode : $c15 = virtualinvoke r21.<java.lang.String: char charAt(int)>(i2)
+org.apache.xml.security.utils.Base64.decode : $i8 = virtualinvoke r21.<java.lang.String: int length()>()
+org.apache.xml.security.utils.Base64.decode : r24 = $r23
+org.apache.xml.security.utils.Base64.decode : r3 = newarray (byte)[i13]
+org.apache.xml.security.utils.Base64.decode : $i10 = virtualinvoke r21.<java.lang.String: int length()>()
+org.apache.xml.security.utils.Base64.decode : $i33 = i3 + i5
+org.apache.xml.security.utils.Base64.decode : $i31 = i3 + i5
+org.apache.xml.security.utils.Base64.decode : $r18 = new java.lang.StringBuffer
+org.apache.xml.security.utils.HexDump.byte2hex : b2 = b0 & 15
+org.apache.xml.security.utils.HexDump.byte2hex : $c5 = r1[b2]
+org.apache.xml.security.utils.HexDump.byte2hex : $r2 = newarray (char)[16]
+org.apache.xml.security.utils.HexDump.byte2hex : $s3 = b0 & 240
+org.apache.xml.security.utils.HexDump.byte2hex : $c4 = r1[s1]
+org.apache.xml.security.Init.isInitialized : $z0 = <org.apache.xml.security.Init: boolean _alreadyInitialized>
+org.apache.xml.security.utils.HexDump.byteArrayToHexString : i1 = lengthof r0
+org.apache.xml.security.utils.HexDump.byteArrayToHexString : $i4 = i1 - 1
+org.apache.xml.security.utils.HexDump.byteArrayToHexString : $b3 = r0[i2]
+org.apache.xml.security.utils.HexDump.byteArrayToHexString : $r4 = virtualinvoke r1.<java.lang.StringBuffer: java.lang.String toString()>()
+org.apache.xml.security.utils.HexDump.byteArrayToHexString : i2 = 0
+org.apache.xml.security.utils.HexDump.byteArrayToHexString : $r2 = new java.lang.StringBuffer
+org.apache.xml.security.utils.HexDump.byteArrayToHexString : staticinvoke <java.lang.System: long currentTimeMillis()>()
+org.apache.xml.security.keys.provider.KeyElement.PKCS12PasswordToBytes : i0 = 0
+org.apache.xml.security.keys.provider.KeyElement.PKCS12PasswordToBytes : $i5 = i0 * 2
+org.apache.xml.security.keys.provider.KeyElement.PKCS12PasswordToBytes : $i1 = lengthof r0
+org.apache.xml.security.keys.provider.KeyElement.PKCS12PasswordToBytes : $i9 = i0 * 2
+org.apache.xml.security.keys.provider.KeyElement.PKCS12PasswordToBytes : return r1

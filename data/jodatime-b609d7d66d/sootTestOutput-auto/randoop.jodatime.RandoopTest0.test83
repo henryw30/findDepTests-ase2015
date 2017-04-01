@@ -1,0 +1,103 @@
+org.joda.time.base.BasePeriod.getPeriodType : $r1 = r0.<org.joda.time.base.BasePeriod: org.joda.time.PeriodType iType>
+org.joda.time.base.AbstractInterval.checkInterval : $b2 = l1 cmp l0
+org.joda.time.base.AbstractInterval.checkInterval : $r1 = new java.lang.IllegalArgumentException
+org.joda.time.Period.plusSeconds : r1 = virtualinvoke r0.<org.joda.time.Period: int[] getValues()>()
+org.joda.time.Period.plusSeconds : if i0 != 0 goto r1 = virtualinvoke r0.<org.joda.time.Period: int[] getValues()>()
+org.joda.time.Period.plusSeconds : $r2 = virtualinvoke r0.<org.joda.time.Period: org.joda.time.PeriodType getPeriodType()>()
+org.joda.time.Period.plusSeconds : $r3 = new org.joda.time.Period
+org.joda.time.DurationFieldType.seconds : $r0 = <org.joda.time.DurationFieldType: org.joda.time.DurationFieldType SECONDS_TYPE>
+org.joda.time.DurationFieldType.millis : $r0 = <org.joda.time.DurationFieldType: org.joda.time.DurationFieldType MILLIS_TYPE>
+org.joda.time.chrono.AssembledChronology.dayOfMonth : $r1 = r0.<org.joda.time.chrono.AssembledChronology: org.joda.time.DateTimeField iDayOfMonth>
+org.joda.time.DateTimeUtils.getChronology : if r0 != null goto return r0
+org.joda.time.DateTimeUtils.getChronology : return r0
+org.joda.time.field.PreciseDurationDateTimeField.roundFloor : $b1 = l0 cmp 0L
+org.joda.time.field.PreciseDurationDateTimeField.roundFloor : $l2 = r0.<org.joda.time.field.PreciseDurationDateTimeField: long iUnitMillis>
+org.joda.time.chrono.JulianChronology.getInstanceUTC : $r0 = <org.joda.time.chrono.JulianChronology: org.joda.time.chrono.JulianChronology INSTANCE_UTC>
+org.joda.time.base.AbstractPeriod.indexOf : $r2 = virtualinvoke r0.<org.joda.time.base.AbstractPeriod: org.joda.time.PeriodType getPeriodType()>()
+org.joda.time.DateTimeUtils.getPeriodType : if r0 != null goto return r0
+org.joda.time.DateTimeUtils.getPeriodType : return r0
+org.joda.time.base.BasePeriod.getValue : $r1 = r0.<org.joda.time.base.BasePeriod: int[] iValues>
+org.joda.time.PeriodType.addIndexedField : $i3 = r2[i2]
+org.joda.time.PeriodType.addIndexedField : $r3 = r0.<org.joda.time.PeriodType: int[] iIndices>
+org.joda.time.PeriodType.addIndexedField : return 1
+org.joda.time.PeriodType.addIndexedField : if i1 != 0 goto $r3 = r0.<org.joda.time.PeriodType: int[] iIndices>
+org.joda.time.PeriodType.addIndexedField : if i2 != -1 goto $i3 = r2[i2]
+org.joda.time.DurationFieldType.hours : $r0 = <org.joda.time.DurationFieldType: org.joda.time.DurationFieldType HOURS_TYPE>
+org.joda.time.Duration.standardHours : $r1 = new org.joda.time.Duration
+org.joda.time.Duration.standardHours : $b1 = l0 cmp 0L
+org.joda.time.DurationFieldType.days : $r0 = <org.joda.time.DurationFieldType: org.joda.time.DurationFieldType DAYS_TYPE>
+org.joda.time.DateTimeUtils.currentTimeMillis : $r0 = <org.joda.time.DateTimeUtils: org.joda.time.DateTimeUtils$MillisProvider cMillisProvider>
+org.joda.time.DateTimeUtils$SystemMillisProvider.getMillis : $l0 = staticinvoke <java.lang.System: long currentTimeMillis()>()
+org.joda.time.base.AbstractDuration.compareTo : $b3 = l0 cmp l1
+org.joda.time.base.AbstractDuration.compareTo : $b2 = l0 cmp l1
+org.joda.time.base.AbstractDuration.compareTo : l0 = virtualinvoke r0.<org.joda.time.base.AbstractDuration: long getMillis()>()
+org.joda.time.base.AbstractDuration.compareTo : return 0
+org.joda.time.base.AbstractDuration.compareTo : l1 = interfaceinvoke r1.<org.joda.time.ReadableDuration: long getMillis()>()
+org.joda.time.PeriodType.size : $r1 = r0.<org.joda.time.PeriodType: org.joda.time.DurationFieldType[] iTypes>
+org.joda.time.DateMidnight.dayOfYear : $r1 = new org.joda.time.DateMidnight$Property
+org.joda.time.base.AbstractDuration.isShorterThan : if r1 != null goto $i0 = virtualinvoke r0.<org.joda.time.base.AbstractDuration: int compareTo(org.joda.time.ReadableDuration)>(r1)
+org.joda.time.base.AbstractDuration.isShorterThan : $i0 = virtualinvoke r0.<org.joda.time.base.AbstractDuration: int compareTo(org.joda.time.ReadableDuration)>(r1)
+org.joda.time.base.BaseDateTime.checkChronology : $r2 = staticinvoke <org.joda.time.DateTimeUtils: org.joda.time.Chronology getChronology(org.joda.time.Chronology)>(r1)
+org.joda.time.base.BaseDateTime.getMillis : $l0 = r0.<org.joda.time.base.BaseDateTime: long iMillis>
+org.joda.time.DurationFieldType.minutes : $r0 = <org.joda.time.DurationFieldType: org.joda.time.DurationFieldType MINUTES_TYPE>
+org.joda.time.PeriodType.standard : if r0 != null goto return r0
+org.joda.time.PeriodType.standard : r0 = <org.joda.time.PeriodType: org.joda.time.PeriodType cStandard>
+org.joda.time.PeriodType.standard : return r0
+org.joda.time.base.AbstractInstant.equals : return 0
+org.joda.time.base.AbstractInstant.equals : $z0 = r1 instanceof org.joda.time.ReadableInstant
+org.joda.time.base.AbstractInstant.equals : if r0 != r1 goto $z0 = r1 instanceof org.joda.time.ReadableInstant
+org.joda.time.base.BaseDateTime.getChronology : $r1 = r0.<org.joda.time.base.BaseDateTime: org.joda.time.Chronology iChronology>
+org.joda.time.base.BasePeriod.checkPeriodType : $r2 = staticinvoke <org.joda.time.DateTimeUtils: org.joda.time.PeriodType getPeriodType(org.joda.time.PeriodType)>(r1)
+org.joda.time.DurationFieldType.months : $r0 = <org.joda.time.DurationFieldType: org.joda.time.DurationFieldType MONTHS_TYPE>
+org.joda.time.base.BasePeriod.checkAndUpdate : r2[i1] = i0
+org.joda.time.base.BasePeriod.checkAndUpdate : i1 = virtualinvoke r0.<org.joda.time.base.BasePeriod: int indexOf(org.joda.time.DurationFieldType)>(r1)
+org.joda.time.base.BasePeriod.checkAndUpdate : if i1 != -1 goto r2[i1] = i0
+org.joda.time.field.FieldUtils.safeAdd : l2 = l0 + l1
+org.joda.time.field.FieldUtils.safeAdd : $l3 = l0 ^ l2
+org.joda.time.field.FieldUtils.safeAdd : return l2
+org.joda.time.field.FieldUtils.safeAdd : return i2
+org.joda.time.field.FieldUtils.safeAdd : $i3 = i0 ^ i2
+org.joda.time.field.FieldUtils.safeAdd : i2 = i0 + i1
+org.joda.time.DateTimeUtils.getInstantMillis : $l1 = interfaceinvoke r0.<org.joda.time.ReadableInstant: long getMillis()>()
+org.joda.time.DateTimeUtils.getInstantMillis : if r0 != null goto $l1 = interfaceinvoke r0.<org.joda.time.ReadableInstant: long getMillis()>()
+org.joda.time.field.FieldUtils.safeMultiply : $l5 = (long) i1
+org.joda.time.field.FieldUtils.safeMultiply : tableswitch(i1) {     case -1: goto $l3 = neg l0;     case 0: goto return 0L;     case 1: goto return l0;     default: goto $l4 = (long) i1; }
+org.joda.time.field.FieldUtils.safeMultiply : return l2
+org.joda.time.field.FieldUtils.safeMultiply : $l4 = (long) i1
+org.joda.time.chrono.AssembledChronology.dayOfYear : $r1 = r0.<org.joda.time.chrono.AssembledChronology: org.joda.time.DateTimeField iDayOfYear>
+org.joda.time.DateTimeUtils.getDurationMillis : $l0 = interfaceinvoke r0.<org.joda.time.ReadableDuration: long getMillis()>()
+org.joda.time.DateTimeUtils.getDurationMillis : if r0 != null goto $l0 = interfaceinvoke r0.<org.joda.time.ReadableDuration: long getMillis()>()
+org.joda.time.base.BasePeriod.setPeriodInternal : $r4 = staticinvoke <org.joda.time.DurationFieldType: org.joda.time.DurationFieldType weeks()>()
+org.joda.time.base.BasePeriod.setPeriodInternal : $r6 = staticinvoke <org.joda.time.DurationFieldType: org.joda.time.DurationFieldType hours()>()
+org.joda.time.base.BasePeriod.setPeriodInternal : $i8 = virtualinvoke r0.<org.joda.time.base.BasePeriod: int size()>()
+org.joda.time.base.BasePeriod.setPeriodInternal : $r3 = staticinvoke <org.joda.time.DurationFieldType: org.joda.time.DurationFieldType months()>()
+org.joda.time.base.BasePeriod.setPeriodInternal : $r8 = staticinvoke <org.joda.time.DurationFieldType: org.joda.time.DurationFieldType seconds()>()
+org.joda.time.base.BasePeriod.setPeriodInternal : $r2 = staticinvoke <org.joda.time.DurationFieldType: org.joda.time.DurationFieldType years()>()
+org.joda.time.base.BasePeriod.setPeriodInternal : $r5 = staticinvoke <org.joda.time.DurationFieldType: org.joda.time.DurationFieldType days()>()
+org.joda.time.base.BasePeriod.setPeriodInternal : return r1
+org.joda.time.base.BasePeriod.setPeriodInternal : $r9 = staticinvoke <org.joda.time.DurationFieldType: org.joda.time.DurationFieldType millis()>()
+org.joda.time.base.BasePeriod.setPeriodInternal : $r7 = staticinvoke <org.joda.time.DurationFieldType: org.joda.time.DurationFieldType minutes()>()
+org.joda.time.DateMidnight.checkInstant : $r2 = virtualinvoke r1.<org.joda.time.Chronology: org.joda.time.DateTimeField dayOfMonth()>()
+org.joda.time.DurationFieldType.years : $r0 = <org.joda.time.DurationFieldType: org.joda.time.DurationFieldType YEARS_TYPE>
+org.joda.time.base.BaseDuration.getMillis : $l0 = r0.<org.joda.time.base.BaseDuration: long iMillis>
+org.joda.time.DurationFieldType.weeks : $r0 = <org.joda.time.DurationFieldType: org.joda.time.DurationFieldType WEEKS_TYPE>
+org.joda.time.DateMidnight.now : if r0 != null goto $r2 = new org.joda.time.DateMidnight
+org.joda.time.DateMidnight.now : $r2 = new org.joda.time.DateMidnight
+org.joda.time.base.AbstractPeriod.getValues : $i3 = virtualinvoke r0.<org.joda.time.base.AbstractPeriod: int getValue(int)>(i0)
+org.joda.time.base.AbstractPeriod.getValues : i0 = 0
+org.joda.time.base.AbstractPeriod.getValues : $i1 = virtualinvoke r0.<org.joda.time.base.AbstractPeriod: int size()>()
+org.joda.time.base.AbstractPeriod.getValues : return r1
+org.joda.time.base.AbstractPeriod.size : $r1 = virtualinvoke r0.<org.joda.time.base.AbstractPeriod: org.joda.time.PeriodType getPeriodType()>()
+org.joda.time.Period.plusMillis : r1 = virtualinvoke r0.<org.joda.time.Period: int[] getValues()>()
+org.joda.time.Period.plusMillis : if i0 != 0 goto r1 = virtualinvoke r0.<org.joda.time.Period: int[] getValues()>()
+org.joda.time.Period.plusMillis : $r2 = virtualinvoke r0.<org.joda.time.Period: org.joda.time.PeriodType getPeriodType()>()
+org.joda.time.Period.plusMillis : $r3 = new org.joda.time.Period
+org.joda.time.PeriodType.indexOf : return i0
+org.joda.time.PeriodType.indexOf : $r2 = r0.<org.joda.time.PeriodType: org.joda.time.DurationFieldType[] iTypes>
+org.joda.time.PeriodType.indexOf : i0 = 0
+org.joda.time.Duration.toDuration : return r0
+org.joda.time.DateTimeUtils.getInstantChronology : if r1 != null goto return r1
+org.joda.time.DateTimeUtils.getInstantChronology : r1 = interfaceinvoke r0.<org.joda.time.ReadableInstant: org.joda.time.Chronology getChronology()>()
+org.joda.time.DateTimeUtils.getInstantChronology : if r0 != null goto r1 = interfaceinvoke r0.<org.joda.time.ReadableInstant: org.joda.time.Chronology getChronology()>()
+org.joda.time.DateTimeUtils.getInstantChronology : return r1
+org.joda.time.Period.minusMillis : $i1 = neg i0

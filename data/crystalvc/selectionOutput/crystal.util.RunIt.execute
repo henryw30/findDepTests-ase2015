@@ -1,0 +1,147 @@
+crystal.util.RunIt.execute : l0 = staticinvoke <java.lang.System: long currentTimeMillis()>() >>>>>>>> crystal.util.RunIt.execute : $r13 = new java.lang.ProcessBuilder
+crystal.util.RunIt.execute : $r13 = new java.lang.ProcessBuilder >>>>>>>> crystal.util.RunIt.execute : $r14 = newarray (java.lang.String)[0]
+crystal.util.RunIt.execute : $r14 = newarray (java.lang.String)[0] >>>>>>>> crystal.util.RunIt.execute : specialinvoke $r13.<java.lang.ProcessBuilder: void <init>(java.lang.String[])>($r14)
+crystal.util.RunIt.execute : specialinvoke $r13.<java.lang.ProcessBuilder: void <init>(java.lang.String[])>($r14) >>>>>>>> crystal.util.RunIt.execute : r3 = $r13
+crystal.util.RunIt.execute : r3 = $r13 >>>>>>>> crystal.util.RunIt.execute : $r15 = new java.io.File
+crystal.util.RunIt.execute : $r15 = new java.io.File >>>>>>>> crystal.util.RunIt.execute : specialinvoke $r15.<java.io.File: void <init>(java.lang.String)>(r2)
+crystal.util.RunIt.execute : specialinvoke $r15.<java.io.File: void <init>(java.lang.String)>(r2) >>>>>>>> crystal.util.RunIt.execute : r4 = $r15
+crystal.util.RunIt.execute : r4 = $r15 >>>>>>>> crystal.util.RunIt.execute : $z1 = <crystal.util.RunIt: boolean $assertionsDisabled>
+crystal.util.RunIt.execute : $z1 = <crystal.util.RunIt: boolean $assertionsDisabled> >>>>>>>> crystal.util.RunIt.execute : if $z1 != 0
+crystal.util.RunIt.execute : if $z1 != 0 >>>>>>>> crystal.util.RunIt.execute : $z2 = virtualinvoke r4.<java.io.File: boolean exists()>()
+crystal.util.RunIt.execute : if $z1 != 0 >>>>>>>> crystal.util.RunIt.execute : $z3 = <crystal.util.RunIt: boolean $assertionsDisabled>
+crystal.util.RunIt.execute : $z3 = <crystal.util.RunIt: boolean $assertionsDisabled> >>>>>>>> crystal.util.RunIt.execute : if $z3 != 0
+crystal.util.RunIt.execute : if $z3 != 0 >>>>>>>> crystal.util.RunIt.execute : $z4 = virtualinvoke r4.<java.io.File: boolean isDirectory()>()
+crystal.util.RunIt.execute : if $z3 != 0 >>>>>>>> crystal.util.RunIt.execute : $r18 = new java.io.File
+crystal.util.RunIt.execute : $r18 = new java.io.File >>>>>>>> crystal.util.RunIt.execute : specialinvoke $r18.<java.io.File: void <init>(java.lang.String)>(r2)
+crystal.util.RunIt.execute : specialinvoke $r18.<java.io.File: void <init>(java.lang.String)>(r2) >>>>>>>> crystal.util.RunIt.execute : virtualinvoke r3.<java.lang.ProcessBuilder: java.lang.ProcessBuilder directory(java.io.File)>($r18)
+crystal.util.RunIt.execute : virtualinvoke r3.<java.lang.ProcessBuilder: java.lang.ProcessBuilder directory(java.io.File)>($r18) >>>>>>>> crystal.util.RunIt.execute : if r1 == null
+crystal.util.RunIt.execute : if r1 == null >>>>>>>> crystal.util.RunIt.execute : $i4 = lengthof r1
+crystal.util.RunIt.execute : if r1 == null >>>>>>>> crystal.util.RunIt.execute : $r20 = newarray (java.lang.String)[1]
+crystal.util.RunIt.execute : $r20 = newarray (java.lang.String)[1] >>>>>>>> crystal.util.RunIt.execute : $r20[0] = r0
+crystal.util.RunIt.execute : $r20[0] = r0 >>>>>>>> crystal.util.RunIt.execute : virtualinvoke r3.<java.lang.ProcessBuilder: java.lang.ProcessBuilder command(java.lang.String[])>($r20)
+crystal.util.RunIt.execute : virtualinvoke r3.<java.lang.ProcessBuilder: java.lang.ProcessBuilder command(java.lang.String[])>($r20) >>>>>>>> crystal.util.RunIt.execute : goto [?= $r24 = <crystal.util.RunIt: org.apache.log4j.Logger _log>]
+crystal.util.RunIt.execute : goto [?= $r24 = <crystal.util.RunIt: org.apache.log4j.Logger _log>] >>>>>>>> crystal.util.RunIt.execute : $r24 = <crystal.util.RunIt: org.apache.log4j.Logger _log>
+crystal.util.RunIt.execute : $r24 = <crystal.util.RunIt: org.apache.log4j.Logger _log> >>>>>>>> crystal.util.RunIt.execute : $r25 = new java.lang.StringBuilder
+crystal.util.RunIt.execute : $r25 = new java.lang.StringBuilder >>>>>>>> crystal.util.RunIt.execute : specialinvoke $r25.<java.lang.StringBuilder: void <init>()>()
+crystal.util.RunIt.execute : specialinvoke $r25.<java.lang.StringBuilder: void <init>()>() >>>>>>>> crystal.util.RunIt.execute : $r26 = virtualinvoke $r25.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("\tRunIt::execute(..) - command: ")
+crystal.util.RunIt.execute : $r26 = virtualinvoke $r25.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("\tRunIt::execute(..) - command: ") >>>>>>>> crystal.util.RunIt.execute : $r27 = virtualinvoke r3.<java.lang.ProcessBuilder: java.util.List command()>()
+crystal.util.RunIt.execute : $r27 = virtualinvoke r3.<java.lang.ProcessBuilder: java.util.List command()>() >>>>>>>> crystal.util.RunIt.execute : $r28 = virtualinvoke $r27.<java.lang.Object: java.lang.String toString()>()
+crystal.util.RunIt.execute : $r28 = virtualinvoke $r27.<java.lang.Object: java.lang.String toString()>() >>>>>>>> crystal.util.RunIt.execute : $r29 = virtualinvoke $r26.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($r28)
+crystal.util.RunIt.execute : $r29 = virtualinvoke $r26.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($r28) >>>>>>>> crystal.util.RunIt.execute : $r30 = virtualinvoke $r29.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("; in path: ")
+crystal.util.RunIt.execute : $r30 = virtualinvoke $r29.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("; in path: ") >>>>>>>> crystal.util.RunIt.execute : $r31 = virtualinvoke r3.<java.lang.ProcessBuilder: java.io.File directory()>()
+crystal.util.RunIt.execute : $r31 = virtualinvoke r3.<java.lang.ProcessBuilder: java.io.File directory()>() >>>>>>>> crystal.util.RunIt.execute : $r32 = virtualinvoke $r30.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.Object)>($r31)
+crystal.util.RunIt.execute : $r32 = virtualinvoke $r30.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.Object)>($r31) >>>>>>>> crystal.util.RunIt.execute : $r33 = virtualinvoke $r32.<java.lang.StringBuilder: java.lang.String toString()>()
+crystal.util.RunIt.execute : $r33 = virtualinvoke $r32.<java.lang.StringBuilder: java.lang.String toString()>() >>>>>>>> crystal.util.RunIt.execute : virtualinvoke $r24.<org.apache.log4j.Logger: void info(java.lang.Object)>($r33)
+crystal.util.RunIt.execute : virtualinvoke $r24.<org.apache.log4j.Logger: void info(java.lang.Object)>($r33) >>>>>>>> crystal.util.RunIt.execute : r34 = virtualinvoke r3.<java.lang.ProcessBuilder: java.lang.Process start()>()
+crystal.util.RunIt.execute : r34 = virtualinvoke r3.<java.lang.ProcessBuilder: java.lang.Process start()>() >>>>>>>> crystal.util.RunIt.execute : $r35 = new java.io.BufferedInputStream
+crystal.util.RunIt.execute : $r35 = new java.io.BufferedInputStream >>>>>>>> crystal.util.RunIt.execute : $r36 = virtualinvoke r34.<java.lang.Process: java.io.InputStream getErrorStream()>()
+crystal.util.RunIt.execute : $r36 = virtualinvoke r34.<java.lang.Process: java.io.InputStream getErrorStream()>() >>>>>>>> crystal.util.RunIt.execute : specialinvoke $r35.<java.io.BufferedInputStream: void <init>(java.io.InputStream)>($r36)
+crystal.util.RunIt.execute : specialinvoke $r35.<java.io.BufferedInputStream: void <init>(java.io.InputStream)>($r36) >>>>>>>> crystal.util.RunIt.execute : r37 = $r35
+crystal.util.RunIt.execute : r37 = $r35 >>>>>>>> crystal.util.RunIt.execute : $r38 = new java.io.BufferedInputStream
+crystal.util.RunIt.execute : $r38 = new java.io.BufferedInputStream >>>>>>>> crystal.util.RunIt.execute : $r39 = virtualinvoke r34.<java.lang.Process: java.io.InputStream getInputStream()>()
+crystal.util.RunIt.execute : $r39 = virtualinvoke r34.<java.lang.Process: java.io.InputStream getInputStream()>() >>>>>>>> crystal.util.RunIt.execute : specialinvoke $r38.<java.io.BufferedInputStream: void <init>(java.io.InputStream)>($r39)
+crystal.util.RunIt.execute : specialinvoke $r38.<java.io.BufferedInputStream: void <init>(java.io.InputStream)>($r39) >>>>>>>> crystal.util.RunIt.execute : r40 = $r38
+crystal.util.RunIt.execute : r40 = $r38 >>>>>>>> crystal.util.RunIt.execute : $r41 = new crystal.util.StreamCatcher
+crystal.util.RunIt.execute : $r41 = new crystal.util.StreamCatcher >>>>>>>> crystal.util.RunIt.execute : specialinvoke $r41.<crystal.util.StreamCatcher: void <init>(java.io.BufferedInputStream)>(r40)
+crystal.util.RunIt.execute : specialinvoke $r41.<crystal.util.StreamCatcher: void <init>(java.io.BufferedInputStream)>(r40) >>>>>>>> crystal.util.RunIt.execute : r42 = $r41
+crystal.util.RunIt.execute : r42 = $r41 >>>>>>>> crystal.util.RunIt.execute : $r43 = new java.lang.Thread
+crystal.util.RunIt.execute : $r43 = new java.lang.Thread >>>>>>>> crystal.util.RunIt.execute : specialinvoke $r43.<java.lang.Thread: void <init>(java.lang.Runnable)>(r42)
+crystal.util.RunIt.execute : specialinvoke $r43.<java.lang.Thread: void <init>(java.lang.Runnable)>(r42) >>>>>>>> crystal.util.RunIt.execute : r44 = $r43
+crystal.util.RunIt.execute : r44 = $r43 >>>>>>>> crystal.util.RunIt.execute : virtualinvoke r44.<java.lang.Thread: void start()>()
+crystal.util.RunIt.execute : virtualinvoke r44.<java.lang.Thread: void start()>() >>>>>>>> crystal.util.RunIt.execute : $r45 = new crystal.util.StreamCatcher
+crystal.util.RunIt.execute : $r45 = new crystal.util.StreamCatcher >>>>>>>> crystal.util.RunIt.execute : specialinvoke $r45.<crystal.util.StreamCatcher: void <init>(java.io.BufferedInputStream)>(r37)
+crystal.util.RunIt.execute : specialinvoke $r45.<crystal.util.StreamCatcher: void <init>(java.io.BufferedInputStream)>(r37) >>>>>>>> crystal.util.RunIt.execute : r8 = $r45
+crystal.util.RunIt.execute : r8 = $r45 >>>>>>>> crystal.util.RunIt.execute : $r46 = new java.lang.Thread
+crystal.util.RunIt.execute : $r46 = new java.lang.Thread >>>>>>>> crystal.util.RunIt.execute : specialinvoke $r46.<java.lang.Thread: void <init>(java.lang.Runnable)>(r8)
+crystal.util.RunIt.execute : specialinvoke $r46.<java.lang.Thread: void <init>(java.lang.Runnable)>(r8) >>>>>>>> crystal.util.RunIt.execute : r9 = $r46
+crystal.util.RunIt.execute : r9 = $r46 >>>>>>>> crystal.util.RunIt.execute : virtualinvoke r9.<java.lang.Thread: void start()>()
+crystal.util.RunIt.execute : virtualinvoke r9.<java.lang.Thread: void start()>() >>>>>>>> crystal.util.RunIt.execute : virtualinvoke r9.<java.lang.Thread: void join()>()
+crystal.util.RunIt.execute : virtualinvoke r9.<java.lang.Thread: void start()>() >>>>>>>> crystal.util.RunIt.execute : $r53 := @caughtexception
+crystal.util.RunIt.execute : r10 = $r53 >>>>>>>> crystal.util.RunIt.execute : virtualinvoke r10.<java.lang.InterruptedException: void printStackTrace()>()
+crystal.util.RunIt.execute : virtualinvoke r10.<java.lang.InterruptedException: void printStackTrace()>() >>>>>>>> crystal.util.RunIt.execute : r54 = virtualinvoke r42.<crystal.util.StreamCatcher: java.lang.String getOutput()>()
+crystal.util.RunIt.execute : r54 = virtualinvoke r42.<crystal.util.StreamCatcher: java.lang.String getOutput()>() >>>>>>>> crystal.util.RunIt.execute : r11 = virtualinvoke r8.<crystal.util.StreamCatcher: java.lang.String getOutput()>()
+crystal.util.RunIt.execute : r11 = virtualinvoke r8.<crystal.util.StreamCatcher: java.lang.String getOutput()>() >>>>>>>> crystal.util.RunIt.execute : if z0 == 0
+crystal.util.RunIt.execute : if z0 == 0 >>>>>>>> crystal.util.RunIt.execute : $r55 = <crystal.util.RunIt: org.apache.log4j.Logger _log>
+crystal.util.RunIt.execute : if z0 == 0 >>>>>>>> crystal.util.RunIt.execute : i3 = 0
+crystal.util.RunIt.execute : i3 = 0 >>>>>>>> crystal.util.RunIt.execute : $r76 = new crystal.util.RunIt$Output
+crystal.util.RunIt.execute : $r76 = new crystal.util.RunIt$Output >>>>>>>> crystal.util.RunIt.execute : specialinvoke $r76.<crystal.util.RunIt$Output: void <init>(java.lang.String,java.lang.String,int)>(r54, r11, i3)
+crystal.util.RunIt.execute : specialinvoke $r76.<crystal.util.RunIt$Output: void <init>(java.lang.String,java.lang.String,int)>(r54, r11, i3) >>>>>>>> crystal.util.RunIt.execute : return $r76
+crystal.util.RunIt.execute : $r55 = <crystal.util.RunIt: org.apache.log4j.Logger _log> >>>>>>>> crystal.util.RunIt.execute : $r56 = new java.lang.StringBuilder
+crystal.util.RunIt.execute : $r56 = new java.lang.StringBuilder >>>>>>>> crystal.util.RunIt.execute : specialinvoke $r56.<java.lang.StringBuilder: void <init>()>()
+crystal.util.RunIt.execute : specialinvoke $r56.<java.lang.StringBuilder: void <init>()>() >>>>>>>> crystal.util.RunIt.execute : $r57 = virtualinvoke $r56.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("Waiting for exit status of ")
+crystal.util.RunIt.execute : $r57 = virtualinvoke $r56.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("Waiting for exit status of ") >>>>>>>> crystal.util.RunIt.execute : $r58 = virtualinvoke r3.<java.lang.ProcessBuilder: java.util.List command()>()
+crystal.util.RunIt.execute : $r58 = virtualinvoke r3.<java.lang.ProcessBuilder: java.util.List command()>() >>>>>>>> crystal.util.RunIt.execute : $r59 = virtualinvoke $r58.<java.lang.Object: java.lang.String toString()>()
+crystal.util.RunIt.execute : $r59 = virtualinvoke $r58.<java.lang.Object: java.lang.String toString()>() >>>>>>>> crystal.util.RunIt.execute : $r60 = virtualinvoke $r57.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($r59)
+crystal.util.RunIt.execute : $r60 = virtualinvoke $r57.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($r59) >>>>>>>> crystal.util.RunIt.execute : $r61 = virtualinvoke $r60.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("; in path: ")
+crystal.util.RunIt.execute : $r61 = virtualinvoke $r60.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("; in path: ") >>>>>>>> crystal.util.RunIt.execute : $r62 = virtualinvoke r3.<java.lang.ProcessBuilder: java.io.File directory()>()
+crystal.util.RunIt.execute : $r62 = virtualinvoke r3.<java.lang.ProcessBuilder: java.io.File directory()>() >>>>>>>> crystal.util.RunIt.execute : $r63 = virtualinvoke $r61.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.Object)>($r62)
+crystal.util.RunIt.execute : $r63 = virtualinvoke $r61.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.Object)>($r62) >>>>>>>> crystal.util.RunIt.execute : $r64 = virtualinvoke $r63.<java.lang.StringBuilder: java.lang.String toString()>()
+crystal.util.RunIt.execute : $r64 = virtualinvoke $r63.<java.lang.StringBuilder: java.lang.String toString()>() >>>>>>>> crystal.util.RunIt.execute : virtualinvoke $r55.<org.apache.log4j.Logger: void info(java.lang.Object)>($r64)
+crystal.util.RunIt.execute : virtualinvoke $r55.<org.apache.log4j.Logger: void info(java.lang.Object)>($r64) >>>>>>>> crystal.util.RunIt.execute : i3 = virtualinvoke r34.<java.lang.Process: int waitFor()>()
+crystal.util.RunIt.execute : virtualinvoke $r55.<org.apache.log4j.Logger: void info(java.lang.Object)>($r64) >>>>>>>> crystal.util.RunIt.execute : $r65 := @caughtexception
+crystal.util.RunIt.execute : r12 = $r65 >>>>>>>> crystal.util.RunIt.execute : $r66 = <crystal.util.RunIt: org.apache.log4j.Logger _log>
+crystal.util.RunIt.execute : $r66 = <crystal.util.RunIt: org.apache.log4j.Logger _log> >>>>>>>> crystal.util.RunIt.execute : $r67 = new java.lang.StringBuilder
+crystal.util.RunIt.execute : $r67 = new java.lang.StringBuilder >>>>>>>> crystal.util.RunIt.execute : specialinvoke $r67.<java.lang.StringBuilder: void <init>()>()
+crystal.util.RunIt.execute : specialinvoke $r67.<java.lang.StringBuilder: void <init>()>() >>>>>>>> crystal.util.RunIt.execute : $r68 = virtualinvoke $r67.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("Encountered an interrupt exception while executing ")
+crystal.util.RunIt.execute : $r68 = virtualinvoke $r67.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("Encountered an interrupt exception while executing ") >>>>>>>> crystal.util.RunIt.execute : $r69 = virtualinvoke r3.<java.lang.ProcessBuilder: java.util.List command()>()
+crystal.util.RunIt.execute : $r69 = virtualinvoke r3.<java.lang.ProcessBuilder: java.util.List command()>() >>>>>>>> crystal.util.RunIt.execute : $r70 = virtualinvoke $r69.<java.lang.Object: java.lang.String toString()>()
+crystal.util.RunIt.execute : $r70 = virtualinvoke $r69.<java.lang.Object: java.lang.String toString()>() >>>>>>>> crystal.util.RunIt.execute : $r71 = virtualinvoke $r68.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($r70)
+crystal.util.RunIt.execute : $r71 = virtualinvoke $r68.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($r70) >>>>>>>> crystal.util.RunIt.execute : $r72 = virtualinvoke $r71.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("; in path: ")
+crystal.util.RunIt.execute : $r72 = virtualinvoke $r71.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("; in path: ") >>>>>>>> crystal.util.RunIt.execute : $r73 = virtualinvoke r3.<java.lang.ProcessBuilder: java.io.File directory()>()
+crystal.util.RunIt.execute : $r73 = virtualinvoke r3.<java.lang.ProcessBuilder: java.io.File directory()>() >>>>>>>> crystal.util.RunIt.execute : $r74 = virtualinvoke $r72.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.Object)>($r73)
+crystal.util.RunIt.execute : $r74 = virtualinvoke $r72.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.Object)>($r73) >>>>>>>> crystal.util.RunIt.execute : $r75 = virtualinvoke $r74.<java.lang.StringBuilder: java.lang.String toString()>()
+crystal.util.RunIt.execute : $r75 = virtualinvoke $r74.<java.lang.StringBuilder: java.lang.String toString()>() >>>>>>>> crystal.util.RunIt.execute : virtualinvoke $r66.<org.apache.log4j.Logger: void error(java.lang.Object)>($r75)
+crystal.util.RunIt.execute : virtualinvoke $r66.<org.apache.log4j.Logger: void error(java.lang.Object)>($r75) >>>>>>>> crystal.util.RunIt.execute : i3 = -1
+crystal.util.RunIt.execute : i3 = -1 >>>>>>>> crystal.util.RunIt.execute : goto [?= $r76 = new crystal.util.RunIt$Output]
+crystal.util.RunIt.execute : goto [?= $r76 = new crystal.util.RunIt$Output] >>>>>>>> crystal.util.RunIt.execute : $r76 = new crystal.util.RunIt$Output
+crystal.util.RunIt.execute : i3 = virtualinvoke r34.<java.lang.Process: int waitFor()>() >>>>>>>> crystal.util.RunIt.execute : goto [?= $r76 = new crystal.util.RunIt$Output]
+crystal.util.RunIt.execute : i3 = virtualinvoke r34.<java.lang.Process: int waitFor()>() >>>>>>>> crystal.util.RunIt.execute : $r65 := @caughtexception
+crystal.util.RunIt.execute : goto [?= $r76 = new crystal.util.RunIt$Output] >>>>>>>> crystal.util.RunIt.execute : $r76 = new crystal.util.RunIt$Output
+crystal.util.RunIt.execute : virtualinvoke r9.<java.lang.Thread: void join()>() >>>>>>>> crystal.util.RunIt.execute : virtualinvoke r44.<java.lang.Thread: void join()>()
+crystal.util.RunIt.execute : virtualinvoke r9.<java.lang.Thread: void join()>() >>>>>>>> crystal.util.RunIt.execute : $r53 := @caughtexception
+crystal.util.RunIt.execute : virtualinvoke r44.<java.lang.Thread: void join()>() >>>>>>>> crystal.util.RunIt.execute : $r47 = <crystal.util.RunIt: org.apache.log4j.Logger _log>
+crystal.util.RunIt.execute : virtualinvoke r44.<java.lang.Thread: void join()>() >>>>>>>> crystal.util.RunIt.execute : $r53 := @caughtexception
+crystal.util.RunIt.execute : $r47 = <crystal.util.RunIt: org.apache.log4j.Logger _log> >>>>>>>> crystal.util.RunIt.execute : $r48 = new java.lang.StringBuilder
+crystal.util.RunIt.execute : $r47 = <crystal.util.RunIt: org.apache.log4j.Logger _log> >>>>>>>> crystal.util.RunIt.execute : $r53 := @caughtexception
+crystal.util.RunIt.execute : $r48 = new java.lang.StringBuilder >>>>>>>> crystal.util.RunIt.execute : specialinvoke $r48.<java.lang.StringBuilder: void <init>()>()
+crystal.util.RunIt.execute : $r48 = new java.lang.StringBuilder >>>>>>>> crystal.util.RunIt.execute : $r53 := @caughtexception
+crystal.util.RunIt.execute : specialinvoke $r48.<java.lang.StringBuilder: void <init>()>() >>>>>>>> crystal.util.RunIt.execute : $r49 = virtualinvoke $r48.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("RunIt::execute(..) - Threads joined peacefully after: ")
+crystal.util.RunIt.execute : specialinvoke $r48.<java.lang.StringBuilder: void <init>()>() >>>>>>>> crystal.util.RunIt.execute : $r53 := @caughtexception
+crystal.util.RunIt.execute : $r49 = virtualinvoke $r48.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("RunIt::execute(..) - Threads joined peacefully after: ") >>>>>>>> crystal.util.RunIt.execute : $r50 = staticinvoke <crystal.util.TimeUtility: java.lang.String msToHumanReadableDelta(long)>(l0)
+crystal.util.RunIt.execute : $r49 = virtualinvoke $r48.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("RunIt::execute(..) - Threads joined peacefully after: ") >>>>>>>> crystal.util.RunIt.execute : $r53 := @caughtexception
+crystal.util.RunIt.execute : $r50 = staticinvoke <crystal.util.TimeUtility: java.lang.String msToHumanReadableDelta(long)>(l0) >>>>>>>> crystal.util.RunIt.execute : $r51 = virtualinvoke $r49.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($r50)
+crystal.util.RunIt.execute : $r50 = staticinvoke <crystal.util.TimeUtility: java.lang.String msToHumanReadableDelta(long)>(l0) >>>>>>>> crystal.util.RunIt.execute : $r53 := @caughtexception
+crystal.util.RunIt.execute : $r51 = virtualinvoke $r49.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($r50) >>>>>>>> crystal.util.RunIt.execute : $r52 = virtualinvoke $r51.<java.lang.StringBuilder: java.lang.String toString()>()
+crystal.util.RunIt.execute : $r51 = virtualinvoke $r49.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($r50) >>>>>>>> crystal.util.RunIt.execute : $r53 := @caughtexception
+crystal.util.RunIt.execute : $r52 = virtualinvoke $r51.<java.lang.StringBuilder: java.lang.String toString()>() >>>>>>>> crystal.util.RunIt.execute : virtualinvoke $r47.<org.apache.log4j.Logger: void info(java.lang.Object)>($r52)
+crystal.util.RunIt.execute : $r52 = virtualinvoke $r51.<java.lang.StringBuilder: java.lang.String toString()>() >>>>>>>> crystal.util.RunIt.execute : $r53 := @caughtexception
+crystal.util.RunIt.execute : virtualinvoke $r47.<org.apache.log4j.Logger: void info(java.lang.Object)>($r52) >>>>>>>> crystal.util.RunIt.execute : goto [?= r54 = virtualinvoke r42.<crystal.util.StreamCatcher: java.lang.String getOutput()>()]
+crystal.util.RunIt.execute : virtualinvoke $r47.<org.apache.log4j.Logger: void info(java.lang.Object)>($r52) >>>>>>>> crystal.util.RunIt.execute : $r53 := @caughtexception
+crystal.util.RunIt.execute : goto [?= r54 = virtualinvoke r42.<crystal.util.StreamCatcher: java.lang.String getOutput()>()] >>>>>>>> crystal.util.RunIt.execute : r54 = virtualinvoke r42.<crystal.util.StreamCatcher: java.lang.String getOutput()>()
+crystal.util.RunIt.execute : $i4 = lengthof r1 >>>>>>>> crystal.util.RunIt.execute : if $i4 != 0
+crystal.util.RunIt.execute : if $i4 != 0 >>>>>>>> crystal.util.RunIt.execute : $r20 = newarray (java.lang.String)[1]
+crystal.util.RunIt.execute : if $i4 != 0 >>>>>>>> crystal.util.RunIt.execute : $r22 = new java.util.Vector
+crystal.util.RunIt.execute : $r22 = new java.util.Vector >>>>>>>> crystal.util.RunIt.execute : specialinvoke $r22.<java.util.Vector: void <init>()>()
+crystal.util.RunIt.execute : specialinvoke $r22.<java.util.Vector: void <init>()>() >>>>>>>> crystal.util.RunIt.execute : r5 = $r22
+crystal.util.RunIt.execute : r5 = $r22 >>>>>>>> crystal.util.RunIt.execute : interfaceinvoke r5.<java.util.List: boolean add(java.lang.Object)>(r0)
+crystal.util.RunIt.execute : interfaceinvoke r5.<java.util.List: boolean add(java.lang.Object)>(r0) >>>>>>>> crystal.util.RunIt.execute : r6 = r1
+crystal.util.RunIt.execute : r6 = r1 >>>>>>>> crystal.util.RunIt.execute : i1 = lengthof r6
+crystal.util.RunIt.execute : i1 = lengthof r6 >>>>>>>> crystal.util.RunIt.execute : i2 = 0
+crystal.util.RunIt.execute : i2 = 0 >>>>>>>> crystal.util.RunIt.execute : if i2 >= i1
+crystal.util.RunIt.execute : if i2 >= i1 >>>>>>>> crystal.util.RunIt.execute : r7 = r6[i2]
+crystal.util.RunIt.execute : if i2 >= i1 >>>>>>>> crystal.util.RunIt.execute : virtualinvoke r3.<java.lang.ProcessBuilder: java.lang.ProcessBuilder command(java.util.List)>(r5)
+crystal.util.RunIt.execute : virtualinvoke r3.<java.lang.ProcessBuilder: java.lang.ProcessBuilder command(java.util.List)>(r5) >>>>>>>> crystal.util.RunIt.execute : $r24 = <crystal.util.RunIt: org.apache.log4j.Logger _log>
+crystal.util.RunIt.execute : r7 = r6[i2] >>>>>>>> crystal.util.RunIt.execute : interfaceinvoke r5.<java.util.List: boolean add(java.lang.Object)>(r7)
+crystal.util.RunIt.execute : interfaceinvoke r5.<java.util.List: boolean add(java.lang.Object)>(r7) >>>>>>>> crystal.util.RunIt.execute : i2 = i2 + 1
+crystal.util.RunIt.execute : i2 = i2 + 1 >>>>>>>> crystal.util.RunIt.execute : goto [?= (branch)]
+crystal.util.RunIt.execute : goto [?= (branch)] >>>>>>>> crystal.util.RunIt.execute : if i2 >= i1
+crystal.util.RunIt.execute : $z4 = virtualinvoke r4.<java.io.File: boolean isDirectory()>() >>>>>>>> crystal.util.RunIt.execute : if $z4 != 0
+crystal.util.RunIt.execute : if $z4 != 0 >>>>>>>> crystal.util.RunIt.execute : $r17 = new java.lang.AssertionError
+crystal.util.RunIt.execute : if $z4 != 0 >>>>>>>> crystal.util.RunIt.execute : $r18 = new java.io.File
+crystal.util.RunIt.execute : $r17 = new java.lang.AssertionError >>>>>>>> crystal.util.RunIt.execute : specialinvoke $r17.<java.lang.AssertionError: void <init>()>()
+crystal.util.RunIt.execute : specialinvoke $r17.<java.lang.AssertionError: void <init>()>() >>>>>>>> crystal.util.RunIt.execute : throw $r17
+crystal.util.RunIt.execute : $z2 = virtualinvoke r4.<java.io.File: boolean exists()>() >>>>>>>> crystal.util.RunIt.execute : if $z2 != 0
+crystal.util.RunIt.execute : if $z2 != 0 >>>>>>>> crystal.util.RunIt.execute : $r16 = new java.lang.AssertionError
+crystal.util.RunIt.execute : if $z2 != 0 >>>>>>>> crystal.util.RunIt.execute : $z3 = <crystal.util.RunIt: boolean $assertionsDisabled>
+crystal.util.RunIt.execute : $r16 = new java.lang.AssertionError >>>>>>>> crystal.util.RunIt.execute : specialinvoke $r16.<java.lang.AssertionError: void <init>()>()
+crystal.util.RunIt.execute : specialinvoke $r16.<java.lang.AssertionError: void <init>()>() >>>>>>>> crystal.util.RunIt.execute : throw $r16

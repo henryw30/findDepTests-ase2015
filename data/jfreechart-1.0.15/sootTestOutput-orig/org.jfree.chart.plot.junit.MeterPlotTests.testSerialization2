@@ -1,0 +1,171 @@
+org.jfree.chart.plot.DefaultDrawingSupplier.equalShapes : $r3 = r1[i0]
+org.jfree.chart.plot.DefaultDrawingSupplier.equalShapes : i0 = 0
+org.jfree.chart.plot.DefaultDrawingSupplier.equalShapes : return 1
+org.jfree.chart.plot.DefaultDrawingSupplier.equalShapes : $i1 = lengthof r1
+org.jfree.chart.plot.DefaultDrawingSupplier.equalShapes : if r1 != null goto (branch)
+org.jfree.chart.plot.DefaultDrawingSupplier.equalShapes : if r2 != null goto $i1 = lengthof r1
+org.jfree.chart.plot.Plot.notifyListeners : $r3 = r0.<org.jfree.chart.plot.Plot: javax.swing.event.EventListenerList listenerList>
+org.jfree.chart.plot.Plot.notifyListeners : $i1 = lengthof r2
+org.jfree.chart.plot.Plot.notifyListeners : $z0 = r0.<org.jfree.chart.plot.Plot: boolean notify>
+org.jfree.chart.plot.DialShape.readResolve : $r2 = <org.jfree.chart.plot.DialShape: org.jfree.chart.plot.DialShape CIRCLE>
+org.jfree.chart.plot.DialShape.readResolve : $r1 = <org.jfree.chart.plot.DialShape: org.jfree.chart.plot.DialShape CIRCLE>
+org.jfree.chart.event.ChartChangeEvent.setType : r0.<org.jfree.chart.event.ChartChangeEvent: org.jfree.chart.event.ChartChangeEventType type> = r1
+org.jfree.chart.plot.Plot.equals : $r15 = r0.<org.jfree.chart.plot.Plot: java.awt.Paint backgroundPaint>
+org.jfree.chart.plot.Plot.equals : $f4 = r0.<org.jfree.chart.plot.Plot: float backgroundAlpha>
+org.jfree.chart.plot.Plot.equals : $r7 = r0.<org.jfree.chart.plot.Plot: java.awt.Paint noDataMessagePaint>
+org.jfree.chart.plot.Plot.equals : $f2 = r0.<org.jfree.chart.plot.Plot: float foregroundAlpha>
+org.jfree.chart.plot.Plot.equals : if r1 != r0 goto $z0 = r1 instanceof org.jfree.chart.plot.Plot
+org.jfree.chart.plot.Plot.equals : $r3 = r0.<org.jfree.chart.plot.Plot: java.lang.String noDataMessage>
+org.jfree.chart.plot.Plot.equals : $z12 = r0.<org.jfree.chart.plot.Plot: boolean notify>
+org.jfree.chart.plot.Plot.equals : return 1
+org.jfree.chart.plot.Plot.equals : $r19 = r0.<org.jfree.chart.plot.Plot: org.jfree.chart.plot.DrawingSupplier drawingSupplier>
+org.jfree.chart.plot.Plot.equals : $r9 = r0.<org.jfree.chart.plot.Plot: org.jfree.ui.RectangleInsets insets>
+org.jfree.chart.plot.Plot.equals : $r17 = r0.<org.jfree.chart.plot.Plot: java.awt.Image backgroundImage>
+org.jfree.chart.plot.Plot.equals : $z0 = r1 instanceof org.jfree.chart.plot.Plot
+org.jfree.chart.plot.Plot.equals : $r5 = r0.<org.jfree.chart.plot.Plot: java.awt.Font noDataMessageFont>
+org.jfree.chart.plot.Plot.equals : $r11 = r0.<org.jfree.chart.plot.Plot: java.awt.Stroke outlineStroke>
+org.jfree.chart.plot.Plot.equals : r2 = (org.jfree.chart.plot.Plot) r1
+org.jfree.chart.plot.Plot.equals : $i0 = r0.<org.jfree.chart.plot.Plot: int backgroundImageAlignment>
+org.jfree.chart.plot.Plot.equals : $r13 = r0.<org.jfree.chart.plot.Plot: java.awt.Paint outlinePaint>
+org.jfree.chart.plot.Plot.equals : $f0 = r0.<org.jfree.chart.plot.Plot: float backgroundImageAlpha>
+org.jfree.chart.plot.Plot.equals : $z5 = r0.<org.jfree.chart.plot.Plot: boolean outlineVisible>
+org.jfree.data.general.AbstractDataset.addChangeListener : $r2 = r0.<org.jfree.data.general.AbstractDataset: javax.swing.event.EventListenerList listenerList>
+org.jfree.data.general.AbstractDataset.validateObject : virtualinvoke r0.<org.jfree.data.general.AbstractDataset: void fireDatasetChanged()>()
+org.jfree.chart.plot.DialShape.equals : $r3 = r0.<org.jfree.chart.plot.DialShape: java.lang.String name>
+org.jfree.chart.plot.DialShape.equals : r2 = (org.jfree.chart.plot.DialShape) r1
+org.jfree.chart.plot.DialShape.equals : if r0 != r1 goto $z0 = r1 instanceof org.jfree.chart.plot.DialShape
+org.jfree.chart.plot.DialShape.equals : $z0 = r1 instanceof org.jfree.chart.plot.DialShape
+org.jfree.chart.plot.DialShape.equals : return 1
+org.jfree.data.Range.equals : $d2 = r0.<org.jfree.data.Range: double upper>
+org.jfree.data.Range.equals : $z0 = r1 instanceof org.jfree.data.Range
+org.jfree.data.Range.equals : $d0 = r0.<org.jfree.data.Range: double lower>
+org.jfree.data.Range.equals : return 1
+org.jfree.data.Range.equals : r2 = (org.jfree.data.Range) r1
+org.jfree.chart.plot.MeterPlot.readObject : $r2 = staticinvoke <org.jfree.io.SerialUtilities: java.awt.Paint readPaint(java.io.ObjectInputStream)>(r1)
+org.jfree.chart.plot.MeterPlot.readObject : $r5 = staticinvoke <org.jfree.io.SerialUtilities: java.awt.Paint readPaint(java.io.ObjectInputStream)>(r1)
+org.jfree.chart.plot.MeterPlot.readObject : $r9 = r0.<org.jfree.chart.plot.MeterPlot: org.jfree.data.general.ValueDataset dataset>
+org.jfree.chart.plot.MeterPlot.readObject : $r7 = staticinvoke <org.jfree.io.SerialUtilities: java.awt.Paint readPaint(java.io.ObjectInputStream)>(r1)
+org.jfree.chart.plot.MeterPlot.readObject : virtualinvoke r1.<java.io.ObjectInputStream: void defaultReadObject()>()
+org.jfree.chart.plot.MeterPlot.readObject : $r8 = r0.<org.jfree.chart.plot.MeterPlot: org.jfree.data.general.ValueDataset dataset>
+org.jfree.chart.plot.MeterPlot.readObject : $r6 = staticinvoke <org.jfree.io.SerialUtilities: java.awt.Paint readPaint(java.io.ObjectInputStream)>(r1)
+org.jfree.chart.plot.MeterPlot.readObject : $r4 = staticinvoke <org.jfree.io.SerialUtilities: java.awt.Paint readPaint(java.io.ObjectInputStream)>(r1)
+org.jfree.chart.plot.MeterPlot.readObject : $r3 = staticinvoke <org.jfree.io.SerialUtilities: java.awt.Paint readPaint(java.io.ObjectInputStream)>(r1)
+org.jfree.data.general.AbstractDataset.notifyListeners : $r4 = r2[i0]
+org.jfree.data.general.AbstractDataset.notifyListeners : $r3 = r0.<org.jfree.data.general.AbstractDataset: javax.swing.event.EventListenerList listenerList>
+org.jfree.data.general.AbstractDataset.notifyListeners : $i2 = i0 + 1
+org.jfree.data.general.AbstractDataset.notifyListeners : $i1 = lengthof r2
+org.jfree.chart.plot.DefaultDrawingSupplier.readObject : i5 = 0
+org.jfree.chart.plot.DefaultDrawingSupplier.readObject : i0 = virtualinvoke r1.<java.io.ObjectInputStream: int readInt()>()
+org.jfree.chart.plot.DefaultDrawingSupplier.readObject : i8 = virtualinvoke r1.<java.io.ObjectInputStream: int readInt()>()
+org.jfree.chart.plot.DefaultDrawingSupplier.readObject : $r15 = r0.<org.jfree.chart.plot.DefaultDrawingSupplier: java.awt.Shape[] shapeSequence>
+org.jfree.chart.plot.DefaultDrawingSupplier.readObject : $r14 = newarray (java.awt.Shape)[i9]
+org.jfree.chart.plot.DefaultDrawingSupplier.readObject : i3 = 0
+org.jfree.chart.plot.DefaultDrawingSupplier.readObject : $r11 = newarray (java.awt.Stroke)[i8]
+org.jfree.chart.plot.DefaultDrawingSupplier.readObject : i7 = virtualinvoke r1.<java.io.ObjectInputStream: int readInt()>()
+org.jfree.chart.plot.DefaultDrawingSupplier.readObject : $r12 = r0.<org.jfree.chart.plot.DefaultDrawingSupplier: java.awt.Stroke[] outlineStrokeSequence>
+org.jfree.chart.plot.DefaultDrawingSupplier.readObject : $r9 = r0.<org.jfree.chart.plot.DefaultDrawingSupplier: java.awt.Stroke[] strokeSequence>
+org.jfree.chart.plot.DefaultDrawingSupplier.readObject : i6 = virtualinvoke r1.<java.io.ObjectInputStream: int readInt()>()
+org.jfree.chart.plot.DefaultDrawingSupplier.readObject : $r3 = r0.<org.jfree.chart.plot.DefaultDrawingSupplier: java.awt.Paint[] paintSequence>
+org.jfree.chart.plot.DefaultDrawingSupplier.readObject : i1 = 0
+org.jfree.chart.plot.DefaultDrawingSupplier.readObject : virtualinvoke r1.<java.io.ObjectInputStream: void defaultReadObject()>()
+org.jfree.chart.plot.DefaultDrawingSupplier.readObject : $r5 = newarray (java.awt.Paint)[i6]
+org.jfree.chart.plot.DefaultDrawingSupplier.readObject : i2 = 0
+org.jfree.chart.plot.DefaultDrawingSupplier.readObject : $r2 = newarray (java.awt.Paint)[i0]
+org.jfree.chart.plot.DefaultDrawingSupplier.readObject : i9 = virtualinvoke r1.<java.io.ObjectInputStream: int readInt()>()
+org.jfree.chart.plot.DefaultDrawingSupplier.readObject : i4 = 0
+org.jfree.chart.plot.DefaultDrawingSupplier.readObject : $r6 = r0.<org.jfree.chart.plot.DefaultDrawingSupplier: java.awt.Paint[] outlinePaintSequence>
+org.jfree.chart.plot.DefaultDrawingSupplier.readObject : $r8 = newarray (java.awt.Stroke)[i7]
+org.jfree.chart.plot.MeterPlot.setDataset : if r2 == null goto r0.<org.jfree.chart.plot.MeterPlot: org.jfree.data.general.ValueDataset dataset> = r1
+org.jfree.chart.plot.MeterPlot.setDataset : virtualinvoke r0.<org.jfree.chart.plot.MeterPlot: void datasetChanged(org.jfree.data.general.DatasetChangeEvent)>(r3)
+org.jfree.chart.plot.MeterPlot.setDataset : $r5 = new org.jfree.data.general.DatasetChangeEvent
+org.jfree.chart.plot.MeterPlot.setDataset : r0.<org.jfree.chart.plot.MeterPlot: org.jfree.data.general.ValueDataset dataset> = r1
+org.jfree.chart.plot.MeterPlot.setDataset : r2 = r0.<org.jfree.chart.plot.MeterPlot: org.jfree.data.general.ValueDataset dataset>
+org.jfree.chart.plot.MeterPlot.setDataset : $r4 = interfaceinvoke r1.<org.jfree.data.general.ValueDataset: org.jfree.data.general.DatasetGroup getGroup()>()
+org.jfree.chart.plot.MeterPlot.setDataset : if r1 == null goto $r5 = new org.jfree.data.general.DatasetChangeEvent
+org.jfree.chart.plot.MeterPlot.setDataset : interfaceinvoke r1.<org.jfree.data.general.ValueDataset: void addChangeListener(org.jfree.data.general.DatasetChangeListener)>(r0)
+org.jfree.chart.plot.DefaultDrawingSupplier.writeObject : i5 = 0
+org.jfree.chart.plot.DefaultDrawingSupplier.writeObject : $r15 = r0.<org.jfree.chart.plot.DefaultDrawingSupplier: java.awt.Shape[] shapeSequence>
+org.jfree.chart.plot.DefaultDrawingSupplier.writeObject : $r11 = r0.<org.jfree.chart.plot.DefaultDrawingSupplier: java.awt.Stroke[] outlineStrokeSequence>
+org.jfree.chart.plot.DefaultDrawingSupplier.writeObject : i3 = 0
+org.jfree.chart.plot.DefaultDrawingSupplier.writeObject : $r14 = r0.<org.jfree.chart.plot.DefaultDrawingSupplier: java.awt.Shape[] shapeSequence>
+org.jfree.chart.plot.DefaultDrawingSupplier.writeObject : $r12 = r0.<org.jfree.chart.plot.DefaultDrawingSupplier: java.awt.Stroke[] outlineStrokeSequence>
+org.jfree.chart.plot.DefaultDrawingSupplier.writeObject : $r9 = r0.<org.jfree.chart.plot.DefaultDrawingSupplier: java.awt.Stroke[] strokeSequence>
+org.jfree.chart.plot.DefaultDrawingSupplier.writeObject : virtualinvoke r1.<java.io.ObjectOutputStream: void defaultWriteObject()>()
+org.jfree.chart.plot.DefaultDrawingSupplier.writeObject : virtualinvoke r1.<java.io.ObjectOutputStream: void writeInt(int)>(i6)
+org.jfree.chart.plot.DefaultDrawingSupplier.writeObject : $r2 = r0.<org.jfree.chart.plot.DefaultDrawingSupplier: java.awt.Paint[] paintSequence>
+org.jfree.chart.plot.DefaultDrawingSupplier.writeObject : $r3 = r0.<org.jfree.chart.plot.DefaultDrawingSupplier: java.awt.Paint[] paintSequence>
+org.jfree.chart.plot.DefaultDrawingSupplier.writeObject : virtualinvoke r1.<java.io.ObjectOutputStream: void writeInt(int)>(i7)
+org.jfree.chart.plot.DefaultDrawingSupplier.writeObject : i1 = 0
+org.jfree.chart.plot.DefaultDrawingSupplier.writeObject : virtualinvoke r1.<java.io.ObjectOutputStream: void writeInt(int)>(i8)
+org.jfree.chart.plot.DefaultDrawingSupplier.writeObject : i2 = 0
+org.jfree.chart.plot.DefaultDrawingSupplier.writeObject : virtualinvoke r1.<java.io.ObjectOutputStream: void writeInt(int)>(i0)
+org.jfree.chart.plot.DefaultDrawingSupplier.writeObject : $r8 = r0.<org.jfree.chart.plot.DefaultDrawingSupplier: java.awt.Stroke[] strokeSequence>
+org.jfree.chart.plot.DefaultDrawingSupplier.writeObject : $r5 = r0.<org.jfree.chart.plot.DefaultDrawingSupplier: java.awt.Paint[] outlinePaintSequence>
+org.jfree.chart.plot.DefaultDrawingSupplier.writeObject : virtualinvoke r1.<java.io.ObjectOutputStream: void writeInt(int)>(i9)
+org.jfree.chart.plot.DefaultDrawingSupplier.writeObject : i4 = 0
+org.jfree.chart.plot.DefaultDrawingSupplier.writeObject : $r6 = r0.<org.jfree.chart.plot.DefaultDrawingSupplier: java.awt.Paint[] outlinePaintSequence>
+org.jfree.chart.plot.Plot.datasetChanged : virtualinvoke r0.<org.jfree.chart.plot.Plot: void notifyListeners(org.jfree.chart.event.PlotChangeEvent)>(r3)
+org.jfree.chart.plot.Plot.datasetChanged : $r2 = new org.jfree.chart.event.PlotChangeEvent
+org.jfree.chart.plot.Plot.datasetChanged : $r4 = <org.jfree.chart.event.ChartChangeEventType: org.jfree.chart.event.ChartChangeEventType DATASET_UPDATED>
+org.jfree.data.general.AbstractDataset.fireDatasetChanged : $r1 = new org.jfree.data.general.DatasetChangeEvent
+org.jfree.chart.plot.Plot.setDatasetGroup : r0.<org.jfree.chart.plot.Plot: org.jfree.data.general.DatasetGroup datasetGroup> = r1
+org.jfree.data.general.AbstractDataset.writeObject : virtualinvoke r1.<java.io.ObjectOutputStream: void defaultWriteObject()>()
+org.jfree.chart.plot.Plot.writeObject : $r4 = r0.<org.jfree.chart.plot.Plot: java.awt.Paint outlinePaint>
+org.jfree.chart.plot.Plot.writeObject : $r2 = r0.<org.jfree.chart.plot.Plot: java.awt.Paint noDataMessagePaint>
+org.jfree.chart.plot.Plot.writeObject : $r5 = r0.<org.jfree.chart.plot.Plot: java.awt.Paint backgroundPaint>
+org.jfree.chart.plot.Plot.writeObject : $r3 = r0.<org.jfree.chart.plot.Plot: java.awt.Stroke outlineStroke>
+org.jfree.chart.plot.Plot.writeObject : virtualinvoke r1.<java.io.ObjectOutputStream: void defaultWriteObject()>()
+org.jfree.data.general.AbstractDataset.getGroup : $r1 = r0.<org.jfree.data.general.AbstractDataset: org.jfree.data.general.DatasetGroup group>
+org.jfree.data.general.AbstractDataset.readObject : $r2 = new javax.swing.event.EventListenerList
+org.jfree.data.general.AbstractDataset.readObject : virtualinvoke r1.<java.io.ObjectInputStream: void defaultReadObject()>()
+org.jfree.data.general.AbstractDataset.readObject : virtualinvoke r1.<java.io.ObjectInputStream: void registerValidation(java.io.ObjectInputValidation,int)>(r0, 10)
+org.jfree.chart.plot.DialShape.toString : $r1 = r0.<org.jfree.chart.plot.DialShape: java.lang.String name>
+org.jfree.chart.plot.DefaultDrawingSupplier.equals : $r7 = r0.<org.jfree.chart.plot.DefaultDrawingSupplier: java.awt.Stroke[] strokeSequence>
+org.jfree.chart.plot.DefaultDrawingSupplier.equals : $i8 = r0.<org.jfree.chart.plot.DefaultDrawingSupplier: int shapeIndex>
+org.jfree.chart.plot.DefaultDrawingSupplier.equals : $i6 = r0.<org.jfree.chart.plot.DefaultDrawingSupplier: int outlineStrokeIndex>
+org.jfree.chart.plot.DefaultDrawingSupplier.equals : $r11 = r0.<org.jfree.chart.plot.DefaultDrawingSupplier: java.awt.Shape[] shapeSequence>
+org.jfree.chart.plot.DefaultDrawingSupplier.equals : $r9 = r0.<org.jfree.chart.plot.DefaultDrawingSupplier: java.awt.Stroke[] outlineStrokeSequence>
+org.jfree.chart.plot.DefaultDrawingSupplier.equals : $i2 = r0.<org.jfree.chart.plot.DefaultDrawingSupplier: int outlinePaintIndex>
+org.jfree.chart.plot.DefaultDrawingSupplier.equals : r2 = (org.jfree.chart.plot.DefaultDrawingSupplier) r1
+org.jfree.chart.plot.DefaultDrawingSupplier.equals : return 1
+org.jfree.chart.plot.DefaultDrawingSupplier.equals : $z0 = r1 instanceof org.jfree.chart.plot.DefaultDrawingSupplier
+org.jfree.chart.plot.DefaultDrawingSupplier.equals : if r1 != r0 goto $z0 = r1 instanceof org.jfree.chart.plot.DefaultDrawingSupplier
+org.jfree.chart.plot.DefaultDrawingSupplier.equals : $r5 = r0.<org.jfree.chart.plot.DefaultDrawingSupplier: java.awt.Paint[] outlinePaintSequence>
+org.jfree.chart.plot.DefaultDrawingSupplier.equals : $i4 = r0.<org.jfree.chart.plot.DefaultDrawingSupplier: int strokeIndex>
+org.jfree.chart.plot.DefaultDrawingSupplier.equals : $i0 = r0.<org.jfree.chart.plot.DefaultDrawingSupplier: int paintIndex>
+org.jfree.chart.plot.DefaultDrawingSupplier.equals : $r3 = r0.<org.jfree.chart.plot.DefaultDrawingSupplier: java.awt.Paint[] paintSequence>
+org.jfree.chart.plot.Plot.readObject : $r2 = staticinvoke <org.jfree.io.SerialUtilities: java.awt.Paint readPaint(java.io.ObjectInputStream)>(r1)
+org.jfree.chart.plot.Plot.readObject : $r5 = staticinvoke <org.jfree.io.SerialUtilities: java.awt.Paint readPaint(java.io.ObjectInputStream)>(r1)
+org.jfree.chart.plot.Plot.readObject : virtualinvoke r1.<java.io.ObjectInputStream: void defaultReadObject()>()
+org.jfree.chart.plot.Plot.readObject : $r3 = staticinvoke <org.jfree.io.SerialUtilities: java.awt.Stroke readStroke(java.io.ObjectInputStream)>(r1)
+org.jfree.chart.plot.Plot.readObject : $r6 = new javax.swing.event.EventListenerList
+org.jfree.chart.plot.Plot.readObject : $r4 = staticinvoke <org.jfree.io.SerialUtilities: java.awt.Paint readPaint(java.io.ObjectInputStream)>(r1)
+org.jfree.chart.plot.MeterPlot.writeObject : $r2 = r0.<org.jfree.chart.plot.MeterPlot: java.awt.Paint dialBackgroundPaint>
+org.jfree.chart.plot.MeterPlot.writeObject : $r7 = r0.<org.jfree.chart.plot.MeterPlot: java.awt.Paint tickLabelPaint>
+org.jfree.chart.plot.MeterPlot.writeObject : $r5 = r0.<org.jfree.chart.plot.MeterPlot: java.awt.Paint valuePaint>
+org.jfree.chart.plot.MeterPlot.writeObject : $r6 = r0.<org.jfree.chart.plot.MeterPlot: java.awt.Paint tickPaint>
+org.jfree.chart.plot.MeterPlot.writeObject : $r4 = r0.<org.jfree.chart.plot.MeterPlot: java.awt.Paint needlePaint>
+org.jfree.chart.plot.MeterPlot.writeObject : virtualinvoke r1.<java.io.ObjectOutputStream: void defaultWriteObject()>()
+org.jfree.chart.plot.MeterPlot.writeObject : $r3 = r0.<org.jfree.chart.plot.MeterPlot: java.awt.Paint dialOutlinePaint>
+org.jfree.chart.plot.MeterPlot.equals : if r1 != r0 goto $z0 = r1 instanceof org.jfree.chart.plot.MeterPlot
+org.jfree.chart.plot.MeterPlot.equals : $r13 = r0.<org.jfree.chart.plot.MeterPlot: java.awt.Paint dialBackgroundPaint>
+org.jfree.chart.plot.MeterPlot.equals : $z1 = specialinvoke r0.<org.jfree.chart.plot.Plot: boolean equals(java.lang.Object)>(r1)
+org.jfree.chart.plot.MeterPlot.equals : $r15 = r0.<org.jfree.chart.plot.MeterPlot: java.awt.Paint needlePaint>
+org.jfree.chart.plot.MeterPlot.equals : $r17 = r0.<org.jfree.chart.plot.MeterPlot: java.awt.Font valueFont>
+org.jfree.chart.plot.MeterPlot.equals : return 1
+org.jfree.chart.plot.MeterPlot.equals : $r23 = r0.<org.jfree.chart.plot.MeterPlot: java.awt.Font tickLabelFont>
+org.jfree.chart.plot.MeterPlot.equals : $i1 = r0.<org.jfree.chart.plot.MeterPlot: int meterAngle>
+org.jfree.chart.plot.MeterPlot.equals : $z11 = r0.<org.jfree.chart.plot.MeterPlot: boolean tickLabelsVisible>
+org.jfree.chart.plot.MeterPlot.equals : $z16 = r0.<org.jfree.chart.plot.MeterPlot: boolean drawBorder>
+org.jfree.chart.plot.MeterPlot.equals : $r19 = r0.<org.jfree.chart.plot.MeterPlot: java.awt.Paint valuePaint>
+org.jfree.chart.plot.MeterPlot.equals : $r5 = r0.<org.jfree.chart.plot.MeterPlot: org.jfree.data.Range range>
+org.jfree.chart.plot.MeterPlot.equals : $r3 = r0.<org.jfree.chart.plot.MeterPlot: java.lang.String units>
+org.jfree.chart.plot.MeterPlot.equals : $r21 = r0.<org.jfree.chart.plot.MeterPlot: java.awt.Paint tickPaint>
+org.jfree.chart.plot.MeterPlot.equals : $r9 = r0.<org.jfree.chart.plot.MeterPlot: java.awt.Paint dialOutlinePaint>
+org.jfree.chart.plot.MeterPlot.equals : $r11 = r0.<org.jfree.chart.plot.MeterPlot: org.jfree.chart.plot.DialShape shape>
+org.jfree.chart.plot.MeterPlot.equals : $d0 = r0.<org.jfree.chart.plot.MeterPlot: double tickSize>
+org.jfree.chart.plot.MeterPlot.equals : $r25 = r0.<org.jfree.chart.plot.MeterPlot: java.awt.Paint tickLabelPaint>
+org.jfree.chart.plot.MeterPlot.equals : $r7 = r0.<org.jfree.chart.plot.MeterPlot: java.util.List intervals>
+org.jfree.chart.plot.MeterPlot.equals : $r27 = r0.<org.jfree.chart.plot.MeterPlot: java.text.NumberFormat tickLabelFormat>
+org.jfree.chart.plot.MeterPlot.equals : $z0 = r1 instanceof org.jfree.chart.plot.MeterPlot
+org.jfree.chart.plot.MeterPlot.equals : r2 = (org.jfree.chart.plot.MeterPlot) r1

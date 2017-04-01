@@ -1,0 +1,98 @@
+org.joda.time.chrono.BaseChronology.get : $r3 = interfaceinvoke r1.<org.joda.time.ReadablePartial: org.joda.time.DateTimeFieldType getFieldType(int)>(i2)
+org.joda.time.chrono.BaseChronology.get : return r2
+org.joda.time.chrono.BaseChronology.get : i1 = interfaceinvoke r1.<org.joda.time.ReadablePartial: int size()>()
+org.joda.time.chrono.BaseChronology.get : r2 = newarray (int)[i1]
+org.joda.time.chrono.BaseChronology.get : i2 = 0
+org.joda.time.field.AbstractPartialFieldProperty.compareTo : return -1
+org.joda.time.field.AbstractPartialFieldProperty.compareTo : i0 = virtualinvoke r0.<org.joda.time.field.AbstractPartialFieldProperty: int get()>()
+org.joda.time.field.AbstractPartialFieldProperty.compareTo : if i0 <= i1 goto return 0
+org.joda.time.field.AbstractPartialFieldProperty.compareTo : return 1
+org.joda.time.field.AbstractPartialFieldProperty.compareTo : if i0 >= i1 goto (branch)
+org.joda.time.field.AbstractPartialFieldProperty.compareTo : return 0
+org.joda.time.field.AbstractPartialFieldProperty.compareTo : $r3 = virtualinvoke r0.<org.joda.time.field.AbstractPartialFieldProperty: org.joda.time.DateTimeFieldType getFieldType()>()
+org.joda.time.field.AbstractPartialFieldProperty.compareTo : $r2 = new java.lang.IllegalArgumentException
+org.joda.time.field.AbstractPartialFieldProperty.compareTo : if r1 != null goto i0 = virtualinvoke r0.<org.joda.time.field.AbstractPartialFieldProperty: int get()>()
+org.joda.time.chrono.ISOChronology.withUTC : $r1 = <org.joda.time.chrono.ISOChronology: org.joda.time.chrono.ISOChronology INSTANCE_UTC>
+org.joda.time.chrono.BasicMonthOfYearDateTimeField.get : $r1 = r0.<org.joda.time.chrono.BasicMonthOfYearDateTimeField: org.joda.time.chrono.BasicChronology iChronology>
+org.joda.time.chrono.GregorianChronology.getAverageMillisPerYearDividedByTwo : return 15778476000L
+org.joda.time.base.BaseDateTime.checkInstant : return l0
+org.joda.time.chrono.ISOChronology.getInstance : if r0 != null goto $i1 = staticinvoke <java.lang.System: int identityHashCode(java.lang.Object)>(r0)
+org.joda.time.chrono.ISOChronology.getInstance : $i1 = staticinvoke <java.lang.System: int identityHashCode(java.lang.Object)>(r0)
+org.joda.time.chrono.ISOChronology.getInstance : $r5 = <org.joda.time.chrono.ISOChronology: org.joda.time.chrono.ISOChronology[] cFastCache>
+org.joda.time.chrono.ISOChronology.getInstance : return r1
+org.joda.time.chrono.ISOChronology.getInstance : if r1 == null goto $r7 = <org.joda.time.chrono.ISOChronology: java.util.Map cCache>
+org.joda.time.chrono.ISOChronology.getInstance : $r0 = staticinvoke <org.joda.time.DateTimeZone: org.joda.time.DateTimeZone getDefault()>()
+org.joda.time.chrono.BasicChronology.getZone : $r2 = virtualinvoke r0.<org.joda.time.chrono.BasicChronology: org.joda.time.Chronology getBase()>()
+org.joda.time.chrono.BasicChronology.getZone : $r4 = <org.joda.time.DateTimeZone: org.joda.time.DateTimeZone UTC>
+org.joda.time.base.AbstractPartial.indexOfSupported : return i0
+org.joda.time.base.AbstractPartial.indexOfSupported : i0 = virtualinvoke r0.<org.joda.time.base.AbstractPartial: int indexOf(org.joda.time.DateTimeFieldType)>(r1)
+org.joda.time.base.AbstractPartial.indexOfSupported : if i0 != -1 goto return i0
+org.joda.time.DateTimeUtils.getChronology : if r0 != null goto return r0
+org.joda.time.DateTimeUtils.getChronology : return r0
+org.joda.time.DateTimeUtils.getChronology : $r1 = staticinvoke <org.joda.time.chrono.ISOChronology: org.joda.time.chrono.ISOChronology getInstance()>()
+org.joda.time.chrono.AssembledChronology.getBase : $r1 = r0.<org.joda.time.chrono.AssembledChronology: org.joda.time.Chronology iBase>
+org.joda.time.chrono.AssembledChronology.year : $r1 = r0.<org.joda.time.chrono.AssembledChronology: org.joda.time.DateTimeField iYear>
+org.joda.time.YearMonth$Property.getField : $r1 = r0.<org.joda.time.YearMonth$Property: org.joda.time.YearMonth iBase>
+org.joda.time.YearMonth.getFieldType : $r1 = <org.joda.time.YearMonth: org.joda.time.DateTimeFieldType[] FIELD_TYPES>
+org.joda.time.DateTimeUtils.checkPermission : r0 = staticinvoke <java.lang.System: java.lang.SecurityManager getSecurityManager()>()
+org.joda.time.DateTimeUtils.checkPermission : if r0 == null goto return
+org.joda.time.chrono.AssembledChronology.getZone : $r3 = virtualinvoke r1.<org.joda.time.Chronology: org.joda.time.DateTimeZone getZone()>()
+org.joda.time.chrono.AssembledChronology.getZone : $r2 = r0.<org.joda.time.chrono.AssembledChronology: org.joda.time.Chronology iBase>
+org.joda.time.base.AbstractDateTime.get : $r3 = virtualinvoke r0.<org.joda.time.base.AbstractDateTime: org.joda.time.Chronology getChronology()>()
+org.joda.time.base.AbstractDateTime.get : if r1 != null goto $r3 = virtualinvoke r0.<org.joda.time.base.AbstractDateTime: org.joda.time.Chronology getChronology()>()
+org.joda.time.chrono.BasicYearDateTimeField.get : $r1 = r0.<org.joda.time.chrono.BasicYearDateTimeField: org.joda.time.chrono.BasicChronology iChronology>
+org.joda.time.chrono.BasicChronology.getMonthOfYear : $i1 = virtualinvoke r0.<org.joda.time.chrono.BasicChronology: int getYear(long)>(l0)
+org.joda.time.base.AbstractPartial.get : $i0 = virtualinvoke r0.<org.joda.time.base.AbstractPartial: int indexOfSupported(org.joda.time.DateTimeFieldType)>(r1)
+org.joda.time.base.AbstractPartial.indexOf : return i0
+org.joda.time.base.AbstractPartial.indexOf : $r2 = virtualinvoke r0.<org.joda.time.base.AbstractPartial: org.joda.time.DateTimeFieldType getFieldType(int)>(i0)
+org.joda.time.base.AbstractPartial.indexOf : i0 = 0
+org.joda.time.chrono.BasicChronology.getYearInfo : if r1 == null goto $r3 = new org.joda.time.chrono.BasicChronology$YearInfo
+org.joda.time.chrono.BasicChronology.getYearInfo : $r2 = r0.<org.joda.time.chrono.BasicChronology: org.joda.time.chrono.BasicChronology$YearInfo[] iYearInfoCache>
+org.joda.time.chrono.BasicChronology.getYearInfo : return r1
+org.joda.time.chrono.AssembledChronology.monthOfYear : $r1 = r0.<org.joda.time.chrono.AssembledChronology: org.joda.time.DateTimeField iMonthOfYear>
+org.joda.time.chrono.BasicGJChronology.getMonthOfYear : $z0 = virtualinvoke r0.<org.joda.time.chrono.BasicGJChronology: boolean isLeapYear(int)>(i1)
+org.joda.time.chrono.BasicGJChronology.getMonthOfYear : return $b6
+org.joda.time.chrono.BasicGJChronology.getMonthOfYear : $l3 = virtualinvoke r0.<org.joda.time.chrono.BasicGJChronology: long getYearMillis(int)>(i1)
+org.joda.time.base.AbstractPartial.getField : $r1 = virtualinvoke r0.<org.joda.time.base.AbstractPartial: org.joda.time.Chronology getChronology()>()
+org.joda.time.DateTimeZone.getDefault : if r0 != null goto return r0
+org.joda.time.DateTimeZone.getDefault : r0 = <org.joda.time.DateTimeZone: org.joda.time.DateTimeZone cDefault>
+org.joda.time.DateTimeZone.getDefault : return r0
+org.joda.time.base.BaseDateTime.checkChronology : $r2 = staticinvoke <org.joda.time.DateTimeUtils: org.joda.time.Chronology getChronology(org.joda.time.Chronology)>(r1)
+org.joda.time.field.BaseDateTimeField.getType : $r1 = r0.<org.joda.time.field.BaseDateTimeField: org.joda.time.DateTimeFieldType iType>
+org.joda.time.base.BaseDateTime.getMillis : $l0 = r0.<org.joda.time.base.BaseDateTime: long iMillis>
+org.joda.time.YearMonth.year : $r1 = new org.joda.time.YearMonth$Property
+org.joda.time.field.AbstractPartialFieldProperty.getFieldType : $r1 = virtualinvoke r0.<org.joda.time.field.AbstractPartialFieldProperty: org.joda.time.DateTimeField getField()>()
+org.joda.time.base.BaseDateTime.getChronology : $r1 = r0.<org.joda.time.base.BaseDateTime: org.joda.time.Chronology iChronology>
+org.joda.time.chrono.GregorianChronology.isLeapYear : $i1 = i0 & 3
+org.joda.time.base.BasePartial.getChronology : $r1 = r0.<org.joda.time.base.BasePartial: org.joda.time.Chronology iChronology>
+org.joda.time.YearMonth.getField : $r3 = virtualinvoke r1.<org.joda.time.Chronology: org.joda.time.DateTimeField year()>()
+org.joda.time.YearMonth.getField : lookupswitch(i0) {     case 0: goto $r3 = virtualinvoke r1.<org.joda.time.Chronology: org.joda.time.DateTimeField year()>();     case 1: goto $r4 = virtualinvoke r1.<org.joda.time.Chronology: org.joda.time.DateTimeField monthOfYear()>();     default: goto $r5 = new java.lang.IndexOutOfBoundsException; }
+org.joda.time.YearMonth$Property.get : $r1 = r0.<org.joda.time.YearMonth$Property: org.joda.time.YearMonth iBase>
+org.joda.time.base.BasePartial.getValue : $r1 = r0.<org.joda.time.base.BasePartial: int[] iValues>
+org.joda.time.DateTimeUtils.setCurrentMillisFixed : $r0 = new org.joda.time.DateTimeUtils$FixedMillisProvider
+org.joda.time.DateTimeUtils.setCurrentMillisFixed : staticinvoke <org.joda.time.DateTimeUtils: void checkPermission()>()
+org.joda.time.YearMonth.size : return 2
+org.joda.time.DateTimeZone.setDefault : exitmonitor r3
+org.joda.time.DateTimeZone.setDefault : $r6 = class "org/joda/time/DateTimeZone"
+org.joda.time.DateTimeZone.setDefault : <org.joda.time.DateTimeZone: org.joda.time.DateTimeZone cDefault> = r0
+org.joda.time.DateTimeZone.setDefault : if r1 == null goto (branch)
+org.joda.time.DateTimeZone.setDefault : if r0 != null goto $r6 = class "org/joda/time/DateTimeZone"
+org.joda.time.DateTimeZone.setDefault : r1 = staticinvoke <java.lang.System: java.lang.SecurityManager getSecurityManager()>()
+org.joda.time.chrono.BasicChronology.getYearMillis : $r1 = specialinvoke r0.<org.joda.time.chrono.BasicChronology: org.joda.time.chrono.BasicChronology$YearInfo getYearInfo(int)>(i0)
+org.joda.time.chrono.GregorianChronology.getApproxMillisAtEpochDividedByTwo : return 31083597720000L
+org.joda.time.DateTimeUtils.setCurrentMillisSystem : staticinvoke <org.joda.time.DateTimeUtils: void checkPermission()>()
+org.joda.time.DateTimeUtils.setCurrentMillisSystem : $r0 = <org.joda.time.DateTimeUtils: org.joda.time.DateTimeUtils$SystemMillisProvider SYSTEM_MILLIS_PROVIDER>
+org.joda.time.chrono.GregorianChronology.getZone : $r1 = specialinvoke r0.<org.joda.time.chrono.BasicGJChronology: org.joda.time.DateTimeZone getZone()>()
+org.joda.time.chrono.BasicChronology.getYear : $b12 = l5 cmp 0L
+org.joda.time.chrono.BasicChronology.getYear : $b9 = l2 cmp 0L
+org.joda.time.chrono.BasicChronology.getYear : l4 = virtualinvoke r0.<org.joda.time.chrono.BasicChronology: long getYearMillis(int)>(i3)
+org.joda.time.chrono.BasicChronology.getYear : $l7 = l0 >> 1
+org.joda.time.chrono.BasicChronology.getYear : $b13 = l5 cmp 31536000000L
+org.joda.time.chrono.BasicChronology.getYear : l5 = l0 - l4
+org.joda.time.chrono.BasicChronology.getYear : return i3
+org.joda.time.chrono.BasicChronology.getYear : l1 = virtualinvoke r0.<org.joda.time.chrono.BasicChronology: long getAverageMillisPerYearDividedByTwo()>()
+org.joda.time.chrono.BasicChronology.getYear : $l11 = l2 / l1
+org.joda.time.DateTimeFieldType$StandardDateTimeFieldType.getField : $r7 = virtualinvoke r2.<org.joda.time.Chronology: org.joda.time.DateTimeField year()>()
+org.joda.time.DateTimeFieldType$StandardDateTimeFieldType.getField : r2 = staticinvoke <org.joda.time.DateTimeUtils: org.joda.time.Chronology getChronology(org.joda.time.Chronology)>(r1)
+org.joda.time.DateTimeFieldType$StandardDateTimeFieldType.getField : $b0 = r0.<org.joda.time.DateTimeFieldType$StandardDateTimeFieldType: byte iOrdinal>
+org.joda.time.DateTimeFieldType$StandardDateTimeFieldType.getField : $r9 = virtualinvoke r2.<org.joda.time.Chronology: org.joda.time.DateTimeField monthOfYear()>()

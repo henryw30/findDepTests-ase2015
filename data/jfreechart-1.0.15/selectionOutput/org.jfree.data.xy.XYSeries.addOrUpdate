@@ -1,0 +1,72 @@
+org.jfree.data.xy.XYSeries.addOrUpdate : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "item") >>>>>>>> org.jfree.data.xy.XYSeries.addOrUpdate : $z1 = r0.<org.jfree.data.xy.XYSeries: boolean allowDuplicateXValues>
+org.jfree.data.xy.XYSeries.addOrUpdate : $z1 = r0.<org.jfree.data.xy.XYSeries: boolean allowDuplicateXValues> >>>>>>>> org.jfree.data.xy.XYSeries.addOrUpdate : if $z1 == 0
+org.jfree.data.xy.XYSeries.addOrUpdate : if $z1 == 0 >>>>>>>> org.jfree.data.xy.XYSeries.addOrUpdate : virtualinvoke r0.<org.jfree.data.xy.XYSeries: void add(org.jfree.data.xy.XYDataItem)>(r1)
+org.jfree.data.xy.XYSeries.addOrUpdate : if $z1 == 0 >>>>>>>> org.jfree.data.xy.XYSeries.addOrUpdate : r2 = null
+org.jfree.data.xy.XYSeries.addOrUpdate : r2 = null >>>>>>>> org.jfree.data.xy.XYSeries.addOrUpdate : $r4 = virtualinvoke r1.<org.jfree.data.xy.XYDataItem: java.lang.Number getX()>()
+org.jfree.data.xy.XYSeries.addOrUpdate : $r4 = virtualinvoke r1.<org.jfree.data.xy.XYDataItem: java.lang.Number getX()>() >>>>>>>> org.jfree.data.xy.XYSeries.addOrUpdate : i0 = virtualinvoke r0.<org.jfree.data.xy.XYSeries: int indexOf(java.lang.Number)>($r4)
+org.jfree.data.xy.XYSeries.addOrUpdate : i0 = virtualinvoke r0.<org.jfree.data.xy.XYSeries: int indexOf(java.lang.Number)>($r4) >>>>>>>> org.jfree.data.xy.XYSeries.addOrUpdate : if i0 < 0
+org.jfree.data.xy.XYSeries.addOrUpdate : if i0 < 0 >>>>>>>> org.jfree.data.xy.XYSeries.addOrUpdate : $r5 = r0.<org.jfree.data.xy.XYSeries: java.util.List data>
+org.jfree.data.xy.XYSeries.addOrUpdate : if i0 < 0 >>>>>>>> org.jfree.data.xy.XYSeries.addOrUpdate : $r11 = virtualinvoke r1.<org.jfree.data.xy.XYDataItem: java.lang.Object clone()>()
+org.jfree.data.xy.XYSeries.addOrUpdate : $r11 = virtualinvoke r1.<org.jfree.data.xy.XYDataItem: java.lang.Object clone()>() >>>>>>>> org.jfree.data.xy.XYSeries.addOrUpdate : r12 = (org.jfree.data.xy.XYDataItem) $r11
+org.jfree.data.xy.XYSeries.addOrUpdate : r12 = (org.jfree.data.xy.XYDataItem) $r11 >>>>>>>> org.jfree.data.xy.XYSeries.addOrUpdate : $z4 = r0.<org.jfree.data.xy.XYSeries: boolean autoSort>
+org.jfree.data.xy.XYSeries.addOrUpdate : $z4 = r0.<org.jfree.data.xy.XYSeries: boolean autoSort> >>>>>>>> org.jfree.data.xy.XYSeries.addOrUpdate : if $z4 == 0
+org.jfree.data.xy.XYSeries.addOrUpdate : if $z4 == 0 >>>>>>>> org.jfree.data.xy.XYSeries.addOrUpdate : $r13 = r0.<org.jfree.data.xy.XYSeries: java.util.List data>
+org.jfree.data.xy.XYSeries.addOrUpdate : if $z4 == 0 >>>>>>>> org.jfree.data.xy.XYSeries.addOrUpdate : $r14 = r0.<org.jfree.data.xy.XYSeries: java.util.List data>
+org.jfree.data.xy.XYSeries.addOrUpdate : $r14 = r0.<org.jfree.data.xy.XYSeries: java.util.List data> >>>>>>>> org.jfree.data.xy.XYSeries.addOrUpdate : interfaceinvoke $r14.<java.util.List: boolean add(java.lang.Object)>(r12)
+org.jfree.data.xy.XYSeries.addOrUpdate : interfaceinvoke $r14.<java.util.List: boolean add(java.lang.Object)>(r12) >>>>>>>> org.jfree.data.xy.XYSeries.addOrUpdate : specialinvoke r0.<org.jfree.data.xy.XYSeries: void updateBoundsForAddedItem(org.jfree.data.xy.XYDataItem)>(r12)
+org.jfree.data.xy.XYSeries.addOrUpdate : specialinvoke r0.<org.jfree.data.xy.XYSeries: void updateBoundsForAddedItem(org.jfree.data.xy.XYDataItem)>(r12) >>>>>>>> org.jfree.data.xy.XYSeries.addOrUpdate : $i5 = virtualinvoke r0.<org.jfree.data.xy.XYSeries: int getItemCount()>()
+org.jfree.data.xy.XYSeries.addOrUpdate : $i5 = virtualinvoke r0.<org.jfree.data.xy.XYSeries: int getItemCount()>() >>>>>>>> org.jfree.data.xy.XYSeries.addOrUpdate : $i6 = r0.<org.jfree.data.xy.XYSeries: int maximumItemCount>
+org.jfree.data.xy.XYSeries.addOrUpdate : $i6 = r0.<org.jfree.data.xy.XYSeries: int maximumItemCount> >>>>>>>> org.jfree.data.xy.XYSeries.addOrUpdate : if $i5 <= $i6
+org.jfree.data.xy.XYSeries.addOrUpdate : if $i5 <= $i6 >>>>>>>> org.jfree.data.xy.XYSeries.addOrUpdate : $r15 = r0.<org.jfree.data.xy.XYSeries: java.util.List data>
+org.jfree.data.xy.XYSeries.addOrUpdate : if $i5 <= $i6 >>>>>>>> org.jfree.data.xy.XYSeries.addOrUpdate : virtualinvoke r0.<org.jfree.data.xy.XYSeries: void fireSeriesChanged()>()
+org.jfree.data.xy.XYSeries.addOrUpdate : virtualinvoke r0.<org.jfree.data.xy.XYSeries: void fireSeriesChanged()>() >>>>>>>> org.jfree.data.xy.XYSeries.addOrUpdate : return r2
+org.jfree.data.xy.XYSeries.addOrUpdate : $r15 = r0.<org.jfree.data.xy.XYSeries: java.util.List data> >>>>>>>> org.jfree.data.xy.XYSeries.addOrUpdate : $r16 = interfaceinvoke $r15.<java.util.List: java.lang.Object remove(int)>(0)
+org.jfree.data.xy.XYSeries.addOrUpdate : $r16 = interfaceinvoke $r15.<java.util.List: java.lang.Object remove(int)>(0) >>>>>>>> org.jfree.data.xy.XYSeries.addOrUpdate : r17 = (org.jfree.data.xy.XYDataItem) $r16
+org.jfree.data.xy.XYSeries.addOrUpdate : r17 = (org.jfree.data.xy.XYDataItem) $r16 >>>>>>>> org.jfree.data.xy.XYSeries.addOrUpdate : specialinvoke r0.<org.jfree.data.xy.XYSeries: void updateBoundsForRemovedItem(org.jfree.data.xy.XYDataItem)>(r17)
+org.jfree.data.xy.XYSeries.addOrUpdate : specialinvoke r0.<org.jfree.data.xy.XYSeries: void updateBoundsForRemovedItem(org.jfree.data.xy.XYDataItem)>(r17) >>>>>>>> org.jfree.data.xy.XYSeries.addOrUpdate : virtualinvoke r0.<org.jfree.data.xy.XYSeries: void fireSeriesChanged()>()
+org.jfree.data.xy.XYSeries.addOrUpdate : $r13 = r0.<org.jfree.data.xy.XYSeries: java.util.List data> >>>>>>>> org.jfree.data.xy.XYSeries.addOrUpdate : $i3 = neg i0
+org.jfree.data.xy.XYSeries.addOrUpdate : $i3 = neg i0 >>>>>>>> org.jfree.data.xy.XYSeries.addOrUpdate : $i4 = $i3 - 1
+org.jfree.data.xy.XYSeries.addOrUpdate : $i4 = $i3 - 1 >>>>>>>> org.jfree.data.xy.XYSeries.addOrUpdate : interfaceinvoke $r13.<java.util.List: void add(int,java.lang.Object)>($i4, r12)
+org.jfree.data.xy.XYSeries.addOrUpdate : interfaceinvoke $r13.<java.util.List: void add(int,java.lang.Object)>($i4, r12) >>>>>>>> org.jfree.data.xy.XYSeries.addOrUpdate : goto [?= specialinvoke r0.<org.jfree.data.xy.XYSeries: void updateBoundsForAddedItem(org.jfree.data.xy.XYDataItem)>(r12)]
+org.jfree.data.xy.XYSeries.addOrUpdate : goto [?= specialinvoke r0.<org.jfree.data.xy.XYSeries: void updateBoundsForAddedItem(org.jfree.data.xy.XYDataItem)>(r12)] >>>>>>>> org.jfree.data.xy.XYSeries.addOrUpdate : specialinvoke r0.<org.jfree.data.xy.XYSeries: void updateBoundsForAddedItem(org.jfree.data.xy.XYDataItem)>(r12)
+org.jfree.data.xy.XYSeries.addOrUpdate : $r5 = r0.<org.jfree.data.xy.XYSeries: java.util.List data> >>>>>>>> org.jfree.data.xy.XYSeries.addOrUpdate : $r6 = interfaceinvoke $r5.<java.util.List: java.lang.Object get(int)>(i0)
+org.jfree.data.xy.XYSeries.addOrUpdate : $r6 = interfaceinvoke $r5.<java.util.List: java.lang.Object get(int)>(i0) >>>>>>>> org.jfree.data.xy.XYSeries.addOrUpdate : r3 = (org.jfree.data.xy.XYDataItem) $r6
+org.jfree.data.xy.XYSeries.addOrUpdate : r3 = (org.jfree.data.xy.XYDataItem) $r6 >>>>>>>> org.jfree.data.xy.XYSeries.addOrUpdate : $r7 = virtualinvoke r3.<org.jfree.data.xy.XYDataItem: java.lang.Object clone()>()
+org.jfree.data.xy.XYSeries.addOrUpdate : $r7 = virtualinvoke r3.<org.jfree.data.xy.XYDataItem: java.lang.Object clone()>() >>>>>>>> org.jfree.data.xy.XYSeries.addOrUpdate : r2 = (org.jfree.data.xy.XYDataItem) $r7
+org.jfree.data.xy.XYSeries.addOrUpdate : r2 = (org.jfree.data.xy.XYDataItem) $r7 >>>>>>>> org.jfree.data.xy.XYSeries.addOrUpdate : z0 = 0
+org.jfree.data.xy.XYSeries.addOrUpdate : z0 = 0 >>>>>>>> org.jfree.data.xy.XYSeries.addOrUpdate : d0 = virtualinvoke r3.<org.jfree.data.xy.XYDataItem: double getYValue()>()
+org.jfree.data.xy.XYSeries.addOrUpdate : d0 = virtualinvoke r3.<org.jfree.data.xy.XYDataItem: double getYValue()>() >>>>>>>> org.jfree.data.xy.XYSeries.addOrUpdate : $z2 = staticinvoke <java.lang.Double: boolean isNaN(double)>(d0)
+org.jfree.data.xy.XYSeries.addOrUpdate : $z2 = staticinvoke <java.lang.Double: boolean isNaN(double)>(d0) >>>>>>>> org.jfree.data.xy.XYSeries.addOrUpdate : if $z2 != 0
+org.jfree.data.xy.XYSeries.addOrUpdate : if $z2 != 0 >>>>>>>> org.jfree.data.xy.XYSeries.addOrUpdate : $d2 = r0.<org.jfree.data.xy.XYSeries: double minY>
+org.jfree.data.xy.XYSeries.addOrUpdate : if $z2 != 0 >>>>>>>> org.jfree.data.xy.XYSeries.addOrUpdate : $r8 = virtualinvoke r1.<org.jfree.data.xy.XYDataItem: java.lang.Number getY()>()
+org.jfree.data.xy.XYSeries.addOrUpdate : $r8 = virtualinvoke r1.<org.jfree.data.xy.XYDataItem: java.lang.Number getY()>() >>>>>>>> org.jfree.data.xy.XYSeries.addOrUpdate : virtualinvoke r3.<org.jfree.data.xy.XYDataItem: void setY(java.lang.Number)>($r8)
+org.jfree.data.xy.XYSeries.addOrUpdate : virtualinvoke r3.<org.jfree.data.xy.XYDataItem: void setY(java.lang.Number)>($r8) >>>>>>>> org.jfree.data.xy.XYSeries.addOrUpdate : if z0 == 0
+org.jfree.data.xy.XYSeries.addOrUpdate : if z0 == 0 >>>>>>>> org.jfree.data.xy.XYSeries.addOrUpdate : specialinvoke r0.<org.jfree.data.xy.XYSeries: void findBoundsByIteration()>()
+org.jfree.data.xy.XYSeries.addOrUpdate : if z0 == 0 >>>>>>>> org.jfree.data.xy.XYSeries.addOrUpdate : $r9 = virtualinvoke r1.<org.jfree.data.xy.XYDataItem: java.lang.Number getY()>()
+org.jfree.data.xy.XYSeries.addOrUpdate : $r9 = virtualinvoke r1.<org.jfree.data.xy.XYDataItem: java.lang.Number getY()>() >>>>>>>> org.jfree.data.xy.XYSeries.addOrUpdate : if $r9 == null
+org.jfree.data.xy.XYSeries.addOrUpdate : if $r9 == null >>>>>>>> org.jfree.data.xy.XYSeries.addOrUpdate : $r10 = virtualinvoke r1.<org.jfree.data.xy.XYDataItem: java.lang.Number getY()>()
+org.jfree.data.xy.XYSeries.addOrUpdate : if $r9 == null >>>>>>>> org.jfree.data.xy.XYSeries.addOrUpdate : goto [?= virtualinvoke r0.<org.jfree.data.xy.XYSeries: void fireSeriesChanged()>()]
+org.jfree.data.xy.XYSeries.addOrUpdate : goto [?= virtualinvoke r0.<org.jfree.data.xy.XYSeries: void fireSeriesChanged()>()] >>>>>>>> org.jfree.data.xy.XYSeries.addOrUpdate : virtualinvoke r0.<org.jfree.data.xy.XYSeries: void fireSeriesChanged()>()
+org.jfree.data.xy.XYSeries.addOrUpdate : $r10 = virtualinvoke r1.<org.jfree.data.xy.XYDataItem: java.lang.Number getY()>() >>>>>>>> org.jfree.data.xy.XYSeries.addOrUpdate : d1 = virtualinvoke $r10.<java.lang.Number: double doubleValue()>()
+org.jfree.data.xy.XYSeries.addOrUpdate : d1 = virtualinvoke $r10.<java.lang.Number: double doubleValue()>() >>>>>>>> org.jfree.data.xy.XYSeries.addOrUpdate : $d4 = r0.<org.jfree.data.xy.XYSeries: double minY>
+org.jfree.data.xy.XYSeries.addOrUpdate : $d4 = r0.<org.jfree.data.xy.XYSeries: double minY> >>>>>>>> org.jfree.data.xy.XYSeries.addOrUpdate : $d5 = specialinvoke r0.<org.jfree.data.xy.XYSeries: double minIgnoreNaN(double,double)>($d4, d1)
+org.jfree.data.xy.XYSeries.addOrUpdate : $d5 = specialinvoke r0.<org.jfree.data.xy.XYSeries: double minIgnoreNaN(double,double)>($d4, d1) >>>>>>>> org.jfree.data.xy.XYSeries.addOrUpdate : r0.<org.jfree.data.xy.XYSeries: double minY> = $d5
+org.jfree.data.xy.XYSeries.addOrUpdate : r0.<org.jfree.data.xy.XYSeries: double minY> = $d5 >>>>>>>> org.jfree.data.xy.XYSeries.addOrUpdate : $d6 = r0.<org.jfree.data.xy.XYSeries: double maxY>
+org.jfree.data.xy.XYSeries.addOrUpdate : $d6 = r0.<org.jfree.data.xy.XYSeries: double maxY> >>>>>>>> org.jfree.data.xy.XYSeries.addOrUpdate : $d7 = specialinvoke r0.<org.jfree.data.xy.XYSeries: double minIgnoreNaN(double,double)>($d6, d1)
+org.jfree.data.xy.XYSeries.addOrUpdate : $d7 = specialinvoke r0.<org.jfree.data.xy.XYSeries: double minIgnoreNaN(double,double)>($d6, d1) >>>>>>>> org.jfree.data.xy.XYSeries.addOrUpdate : r0.<org.jfree.data.xy.XYSeries: double maxY> = $d7
+org.jfree.data.xy.XYSeries.addOrUpdate : r0.<org.jfree.data.xy.XYSeries: double maxY> = $d7 >>>>>>>> org.jfree.data.xy.XYSeries.addOrUpdate : goto [?= virtualinvoke r0.<org.jfree.data.xy.XYSeries: void fireSeriesChanged()>()]
+org.jfree.data.xy.XYSeries.addOrUpdate : specialinvoke r0.<org.jfree.data.xy.XYSeries: void findBoundsByIteration()>() >>>>>>>> org.jfree.data.xy.XYSeries.addOrUpdate : goto [?= (branch)]
+org.jfree.data.xy.XYSeries.addOrUpdate : goto [?= (branch)] >>>>>>>> org.jfree.data.xy.XYSeries.addOrUpdate : goto [?= virtualinvoke r0.<org.jfree.data.xy.XYSeries: void fireSeriesChanged()>()]
+org.jfree.data.xy.XYSeries.addOrUpdate : $d2 = r0.<org.jfree.data.xy.XYSeries: double minY> >>>>>>>> org.jfree.data.xy.XYSeries.addOrUpdate : $b1 = d0 cmpg $d2
+org.jfree.data.xy.XYSeries.addOrUpdate : $b1 = d0 cmpg $d2 >>>>>>>> org.jfree.data.xy.XYSeries.addOrUpdate : if $b1 <= 0
+org.jfree.data.xy.XYSeries.addOrUpdate : if $b1 <= 0 >>>>>>>> org.jfree.data.xy.XYSeries.addOrUpdate : $d3 = r0.<org.jfree.data.xy.XYSeries: double maxY>
+org.jfree.data.xy.XYSeries.addOrUpdate : if $b1 <= 0 >>>>>>>> org.jfree.data.xy.XYSeries.addOrUpdate : $z3 = 1
+org.jfree.data.xy.XYSeries.addOrUpdate : $z3 = 1 >>>>>>>> org.jfree.data.xy.XYSeries.addOrUpdate : goto [?= z0 = $z3]
+org.jfree.data.xy.XYSeries.addOrUpdate : goto [?= z0 = $z3] >>>>>>>> org.jfree.data.xy.XYSeries.addOrUpdate : z0 = $z3
+org.jfree.data.xy.XYSeries.addOrUpdate : z0 = $z3 >>>>>>>> org.jfree.data.xy.XYSeries.addOrUpdate : $r8 = virtualinvoke r1.<org.jfree.data.xy.XYDataItem: java.lang.Number getY()>()
+org.jfree.data.xy.XYSeries.addOrUpdate : $d3 = r0.<org.jfree.data.xy.XYSeries: double maxY> >>>>>>>> org.jfree.data.xy.XYSeries.addOrUpdate : $b2 = d0 cmpl $d3
+org.jfree.data.xy.XYSeries.addOrUpdate : $b2 = d0 cmpl $d3 >>>>>>>> org.jfree.data.xy.XYSeries.addOrUpdate : if $b2 < 0
+org.jfree.data.xy.XYSeries.addOrUpdate : if $b2 < 0 >>>>>>>> org.jfree.data.xy.XYSeries.addOrUpdate : $z3 = 1
+org.jfree.data.xy.XYSeries.addOrUpdate : if $b2 < 0 >>>>>>>> org.jfree.data.xy.XYSeries.addOrUpdate : $z3 = 0
+org.jfree.data.xy.XYSeries.addOrUpdate : $z3 = 0 >>>>>>>> org.jfree.data.xy.XYSeries.addOrUpdate : z0 = $z3
+org.jfree.data.xy.XYSeries.addOrUpdate : virtualinvoke r0.<org.jfree.data.xy.XYSeries: void add(org.jfree.data.xy.XYDataItem)>(r1) >>>>>>>> org.jfree.data.xy.XYSeries.addOrUpdate : return null

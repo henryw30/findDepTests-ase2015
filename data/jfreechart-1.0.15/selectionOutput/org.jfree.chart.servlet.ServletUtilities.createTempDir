@@ -1,0 +1,12 @@
+org.jfree.chart.servlet.ServletUtilities.createTempDir : r0 = staticinvoke <java.lang.System: java.lang.String getProperty(java.lang.String)>("java.io.tmpdir") >>>>>>>> org.jfree.chart.servlet.ServletUtilities.createTempDir : if r0 != null
+org.jfree.chart.servlet.ServletUtilities.createTempDir : if r0 != null >>>>>>>> org.jfree.chart.servlet.ServletUtilities.createTempDir : $r2 = new java.lang.RuntimeException
+org.jfree.chart.servlet.ServletUtilities.createTempDir : if r0 != null >>>>>>>> org.jfree.chart.servlet.ServletUtilities.createTempDir : $r3 = new java.io.File
+org.jfree.chart.servlet.ServletUtilities.createTempDir : $r3 = new java.io.File >>>>>>>> org.jfree.chart.servlet.ServletUtilities.createTempDir : specialinvoke $r3.<java.io.File: void <init>(java.lang.String)>(r0)
+org.jfree.chart.servlet.ServletUtilities.createTempDir : specialinvoke $r3.<java.io.File: void <init>(java.lang.String)>(r0) >>>>>>>> org.jfree.chart.servlet.ServletUtilities.createTempDir : r1 = $r3
+org.jfree.chart.servlet.ServletUtilities.createTempDir : r1 = $r3 >>>>>>>> org.jfree.chart.servlet.ServletUtilities.createTempDir : $z0 = virtualinvoke r1.<java.io.File: boolean exists()>()
+org.jfree.chart.servlet.ServletUtilities.createTempDir : $z0 = virtualinvoke r1.<java.io.File: boolean exists()>() >>>>>>>> org.jfree.chart.servlet.ServletUtilities.createTempDir : if $z0 != 0
+org.jfree.chart.servlet.ServletUtilities.createTempDir : if $z0 != 0 >>>>>>>> org.jfree.chart.servlet.ServletUtilities.createTempDir : virtualinvoke r1.<java.io.File: boolean mkdirs()>()
+org.jfree.chart.servlet.ServletUtilities.createTempDir : if $z0 != 0 >>>>>>>> org.jfree.chart.servlet.ServletUtilities.createTempDir : return
+org.jfree.chart.servlet.ServletUtilities.createTempDir : virtualinvoke r1.<java.io.File: boolean mkdirs()>() >>>>>>>> org.jfree.chart.servlet.ServletUtilities.createTempDir : return
+org.jfree.chart.servlet.ServletUtilities.createTempDir : $r2 = new java.lang.RuntimeException >>>>>>>> org.jfree.chart.servlet.ServletUtilities.createTempDir : specialinvoke $r2.<java.lang.RuntimeException: void <init>(java.lang.String)>("Temporary directory system property (java.io.tmpdir) is null.")
+org.jfree.chart.servlet.ServletUtilities.createTempDir : specialinvoke $r2.<java.lang.RuntimeException: void <init>(java.lang.String)>("Temporary directory system property (java.io.tmpdir) is null.") >>>>>>>> org.jfree.chart.servlet.ServletUtilities.createTempDir : throw $r2

@@ -1,0 +1,14 @@
+org.joda.time.LocalTime.fromDateFields : if r0 != null >>>>>>>> org.joda.time.LocalTime.fromDateFields : $r1 = new java.lang.IllegalArgumentException
+org.joda.time.LocalTime.fromDateFields : if r0 != null >>>>>>>> org.joda.time.LocalTime.fromDateFields : $r2 = new org.joda.time.LocalTime
+org.joda.time.LocalTime.fromDateFields : $r2 = new org.joda.time.LocalTime >>>>>>>> org.joda.time.LocalTime.fromDateFields : $i0 = virtualinvoke r0.<java.util.Date: int getHours()>()
+org.joda.time.LocalTime.fromDateFields : $i0 = virtualinvoke r0.<java.util.Date: int getHours()>() >>>>>>>> org.joda.time.LocalTime.fromDateFields : $i1 = virtualinvoke r0.<java.util.Date: int getMinutes()>()
+org.joda.time.LocalTime.fromDateFields : $i1 = virtualinvoke r0.<java.util.Date: int getMinutes()>() >>>>>>>> org.joda.time.LocalTime.fromDateFields : $i2 = virtualinvoke r0.<java.util.Date: int getSeconds()>()
+org.joda.time.LocalTime.fromDateFields : $i2 = virtualinvoke r0.<java.util.Date: int getSeconds()>() >>>>>>>> org.joda.time.LocalTime.fromDateFields : $l3 = virtualinvoke r0.<java.util.Date: long getTime()>()
+org.joda.time.LocalTime.fromDateFields : $l3 = virtualinvoke r0.<java.util.Date: long getTime()>() >>>>>>>> org.joda.time.LocalTime.fromDateFields : $l4 = $l3 % 1000L
+org.joda.time.LocalTime.fromDateFields : $l4 = $l3 % 1000L >>>>>>>> org.joda.time.LocalTime.fromDateFields : $i5 = (int) $l4
+org.joda.time.LocalTime.fromDateFields : $i5 = (int) $l4 >>>>>>>> org.joda.time.LocalTime.fromDateFields : $i6 = $i5 + 1000
+org.joda.time.LocalTime.fromDateFields : $i6 = $i5 + 1000 >>>>>>>> org.joda.time.LocalTime.fromDateFields : $i7 = $i6 % 1000
+org.joda.time.LocalTime.fromDateFields : $i7 = $i6 % 1000 >>>>>>>> org.joda.time.LocalTime.fromDateFields : specialinvoke $r2.<org.joda.time.LocalTime: void <init>(int,int,int,int)>($i0, $i1, $i2, $i7)
+org.joda.time.LocalTime.fromDateFields : specialinvoke $r2.<org.joda.time.LocalTime: void <init>(int,int,int,int)>($i0, $i1, $i2, $i7) >>>>>>>> org.joda.time.LocalTime.fromDateFields : return $r2
+org.joda.time.LocalTime.fromDateFields : $r1 = new java.lang.IllegalArgumentException >>>>>>>> org.joda.time.LocalTime.fromDateFields : specialinvoke $r1.<java.lang.IllegalArgumentException: void <init>(java.lang.String)>("The date must not be null")
+org.joda.time.LocalTime.fromDateFields : specialinvoke $r1.<java.lang.IllegalArgumentException: void <init>(java.lang.String)>("The date must not be null") >>>>>>>> org.joda.time.LocalTime.fromDateFields : throw $r1

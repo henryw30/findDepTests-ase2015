@@ -1,0 +1,41 @@
+org.apache.xml.security.utils.Base64.encodeFullBlock : i1 = 0
+org.apache.xml.security.utils.Base64.encodeFullBlock : $i6 = i0 + i2
+org.apache.xml.security.utils.Base64.encodeFullBlock : i4 = i20 & 63
+org.apache.xml.security.utils.Base64.encodeFullBlock : i2 = 0
+org.apache.xml.security.utils.Base64.encodeFullBlock : $b9 = r0[i0]
+org.apache.xml.security.utils.Base64.encodeFullBlock : i3 = 3
+org.apache.xml.security.utils.Base64.encodeFullBlock : return r1
+org.apache.xml.security.utils.Base64.encodeFullBlock : i5 = i1 << 8
+org.apache.xml.security.utils.Base64.encodeFullBlock : r1 = newarray (char)[4]
+org.apache.xml.security.utils.Base64.encodeFullBlock : i20 = i20 >> 6
+org.apache.xml.security.utils.Base64.encodeFullBlock : $c21 = staticinvoke <org.apache.xml.security.utils.Base64: char getChar(int)>(i4)
+org.apache.xml.security.keys.provider.ApacheKeyStore.engineSetKeyEntry : $r4 = r0.<org.apache.xml.security.keys.provider.ApacheKeyStore: org.apache.xml.security.keys.provider.KeyStoreElement _keyStoreElement>
+org.apache.xml.security.utils.Base64.encode : $i12 = lengthof r0
+org.apache.xml.security.utils.Base64.encode : $i8 = i0 % 4
+org.apache.xml.security.utils.Base64.encode : i3 = 0
+org.apache.xml.security.utils.Base64.encode : if i0 <= 3 goto i9 = 2147483647
+org.apache.xml.security.utils.Base64.encode : $i15 = lengthof r0
+org.apache.xml.security.utils.Base64.encode : $i5 = lengthof r0
+org.apache.xml.security.utils.Base64.encode : $r4 = staticinvoke <org.apache.xml.security.utils.Base64: char[] encodeFullBlock(byte[],int)>(r0, i4)
+org.apache.xml.security.utils.Base64.encode : if i3 < i9 goto $i15 = lengthof r0
+org.apache.xml.security.utils.Base64.encode : $r9 = virtualinvoke r1.<java.lang.StringBuffer: java.lang.String toString()>()
+org.apache.xml.security.utils.Base64.encode : $i14 = i3 + 4
+org.apache.xml.security.utils.Base64.encode : $i10 = i1 / i9
+org.apache.xml.security.utils.Base64.encode : $r2 = new java.lang.StringBuffer
+org.apache.xml.security.utils.Base64.encode : virtualinvoke r1.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>("\n")
+org.apache.xml.security.utils.Base64.encode : i4 = 0
+org.apache.xml.security.utils.Base64.getChar : $i1 = 65 + i0
+org.apache.xml.security.utils.Base64.getChar : if i0 < 0 goto (branch)
+org.apache.xml.security.keys.provider.KeyElement.PKCS12PasswordToBytes : i0 = 0
+org.apache.xml.security.keys.provider.KeyElement.PKCS12PasswordToBytes : $i5 = i0 * 2
+org.apache.xml.security.keys.provider.KeyElement.PKCS12PasswordToBytes : $i1 = lengthof r0
+org.apache.xml.security.keys.provider.KeyElement.PKCS12PasswordToBytes : $i9 = i0 * 2
+org.apache.xml.security.keys.provider.KeyElement.PKCS12PasswordToBytes : return r1
+org.apache.xml.security.utils.ElementProxy.setDefaultPrefix : $r8 = interfaceinvoke r3.<java.util.Iterator: java.lang.Object next()>()
+org.apache.xml.security.utils.ElementProxy.setDefaultPrefix : $z0 = interfaceinvoke r3.<java.util.Iterator: boolean hasNext()>()
+org.apache.xml.security.utils.ElementProxy.setDefaultPrefix : $r9 = <org.apache.xml.security.utils.ElementProxy: java.util.HashMap _prefixMappings>
+org.apache.xml.security.utils.ElementProxy.setDefaultPrefix : $z1 = virtualinvoke r5.<java.lang.String: boolean equals(java.lang.Object)>(r1)
+org.apache.xml.security.utils.ElementProxy.setDefaultPrefix : goto [?= staticinvoke <edu.washington.cs.dt.impact.util.Tracer: void trace(java.lang.String,java.lang.String)>("$z0 = interfaceinvoke r3.<java.util.Iterator: boolean hasNext()>()", "org.apache.xml.security.utils.ElementProxy.setDefaultPrefix")]
+org.apache.xml.security.utils.ElementProxy.setDefaultPrefix : $r10 = virtualinvoke $r9.<java.util.HashMap: java.lang.Object get(java.lang.Object)>(r4)
+org.apache.xml.security.utils.ElementProxy.setDefaultPrefix : $r2 = <org.apache.xml.security.utils.ElementProxy: java.util.HashMap _prefixMappings>
+org.apache.xml.security.utils.ElementProxy.setDefaultPrefix : $r13 = <org.apache.xml.security.utils.ElementProxy: java.util.HashMap _prefixMappings>

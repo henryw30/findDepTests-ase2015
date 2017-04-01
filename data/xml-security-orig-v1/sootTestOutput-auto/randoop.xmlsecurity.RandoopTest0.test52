@@ -1,0 +1,15 @@
+org.apache.xml.security.utils.JavaUtils.runGC : l4 = virtualinvoke r1.<java.lang.Runtime: long freeMemory()>()
+org.apache.xml.security.utils.JavaUtils.runGC : r1 = staticinvoke <java.lang.Runtime: java.lang.Runtime getRuntime()>()
+org.apache.xml.security.utils.JavaUtils.runGC : $l6 = l3 - l2
+org.apache.xml.security.utils.JavaUtils.runGC : l3 = staticinvoke <java.lang.System: long currentTimeMillis()>()
+org.apache.xml.security.utils.JavaUtils.runGC : l0 = virtualinvoke r1.<java.lang.Runtime: long freeMemory()>()
+org.apache.xml.security.utils.JavaUtils.runGC : l2 = staticinvoke <java.lang.System: long currentTimeMillis()>()
+org.apache.xml.security.utils.JavaUtils.runGC : $r2 = <org.apache.xml.security.utils.JavaUtils: org.apache.log4j.Category cat>
+org.apache.xml.security.utils.JavaUtils.runGC : l5 = virtualinvoke r1.<java.lang.Runtime: long totalMemory()>()
+org.apache.xml.security.utils.JavaUtils.runGC : virtualinvoke r1.<java.lang.Runtime: void gc()>()
+org.apache.xml.security.utils.JavaUtils.runGC : $r0 = <org.apache.xml.security.utils.JavaUtils: org.apache.log4j.Category cat>
+org.apache.xml.security.utils.JavaUtils.runGC : $r40 = <org.apache.xml.security.utils.JavaUtils: org.apache.log4j.Category cat>
+org.apache.xml.security.utils.JavaUtils.runGC : l1 = virtualinvoke r1.<java.lang.Runtime: long totalMemory()>()
+org.apache.xml.security.utils.JavaUtils.runGC : virtualinvoke r1.<java.lang.Runtime: void runFinalization()>()
+org.apache.xml.security.utils.JavaUtils.runGC : $r8 = <org.apache.xml.security.utils.JavaUtils: org.apache.log4j.Category cat>
+org.apache.xml.security.utils.JavaUtils.runGC : $r24 = <org.apache.xml.security.utils.JavaUtils: org.apache.log4j.Category cat>

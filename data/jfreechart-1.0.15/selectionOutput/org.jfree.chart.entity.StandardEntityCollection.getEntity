@@ -1,0 +1,14 @@
+org.jfree.chart.entity.StandardEntityCollection.getEntity : $r2 = r0.<org.jfree.chart.entity.StandardEntityCollection: java.util.List entities> >>>>>>>> org.jfree.chart.entity.StandardEntityCollection.getEntity : i0 = interfaceinvoke $r2.<java.util.List: int size()>()
+org.jfree.chart.entity.StandardEntityCollection.getEntity : i0 = interfaceinvoke $r2.<java.util.List: int size()>() >>>>>>>> org.jfree.chart.entity.StandardEntityCollection.getEntity : i1 = i0 - 1
+org.jfree.chart.entity.StandardEntityCollection.getEntity : i1 = i0 - 1 >>>>>>>> org.jfree.chart.entity.StandardEntityCollection.getEntity : if i1 < 0
+org.jfree.chart.entity.StandardEntityCollection.getEntity : if i1 < 0 >>>>>>>> org.jfree.chart.entity.StandardEntityCollection.getEntity : $r3 = r0.<org.jfree.chart.entity.StandardEntityCollection: java.util.List entities>
+org.jfree.chart.entity.StandardEntityCollection.getEntity : if i1 < 0 >>>>>>>> org.jfree.chart.entity.StandardEntityCollection.getEntity : return null
+org.jfree.chart.entity.StandardEntityCollection.getEntity : $r3 = r0.<org.jfree.chart.entity.StandardEntityCollection: java.util.List entities> >>>>>>>> org.jfree.chart.entity.StandardEntityCollection.getEntity : $r4 = interfaceinvoke $r3.<java.util.List: java.lang.Object get(int)>(i1)
+org.jfree.chart.entity.StandardEntityCollection.getEntity : $r4 = interfaceinvoke $r3.<java.util.List: java.lang.Object get(int)>(i1) >>>>>>>> org.jfree.chart.entity.StandardEntityCollection.getEntity : r1 = (org.jfree.chart.entity.ChartEntity) $r4
+org.jfree.chart.entity.StandardEntityCollection.getEntity : r1 = (org.jfree.chart.entity.ChartEntity) $r4 >>>>>>>> org.jfree.chart.entity.StandardEntityCollection.getEntity : $r5 = virtualinvoke r1.<org.jfree.chart.entity.ChartEntity: java.awt.Shape getArea()>()
+org.jfree.chart.entity.StandardEntityCollection.getEntity : $r5 = virtualinvoke r1.<org.jfree.chart.entity.ChartEntity: java.awt.Shape getArea()>() >>>>>>>> org.jfree.chart.entity.StandardEntityCollection.getEntity : $z0 = interfaceinvoke $r5.<java.awt.Shape: boolean contains(double,double)>(d0, d1)
+org.jfree.chart.entity.StandardEntityCollection.getEntity : $z0 = interfaceinvoke $r5.<java.awt.Shape: boolean contains(double,double)>(d0, d1) >>>>>>>> org.jfree.chart.entity.StandardEntityCollection.getEntity : if $z0 == 0
+org.jfree.chart.entity.StandardEntityCollection.getEntity : if $z0 == 0 >>>>>>>> org.jfree.chart.entity.StandardEntityCollection.getEntity : return r1
+org.jfree.chart.entity.StandardEntityCollection.getEntity : if $z0 == 0 >>>>>>>> org.jfree.chart.entity.StandardEntityCollection.getEntity : i1 = i1 + -1
+org.jfree.chart.entity.StandardEntityCollection.getEntity : i1 = i1 + -1 >>>>>>>> org.jfree.chart.entity.StandardEntityCollection.getEntity : goto [?= (branch)]
+org.jfree.chart.entity.StandardEntityCollection.getEntity : goto [?= (branch)] >>>>>>>> org.jfree.chart.entity.StandardEntityCollection.getEntity : if i1 < 0

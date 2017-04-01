@@ -1,0 +1,19 @@
+org.joda.time.base.AbstractInterval.contains : if r1 != null >>>>>>>> org.joda.time.base.AbstractInterval.contains : $z0 = virtualinvoke r0.<org.joda.time.base.AbstractInterval: boolean containsNow()>()
+org.joda.time.base.AbstractInterval.contains : if r1 != null >>>>>>>> org.joda.time.base.AbstractInterval.contains : l0 = interfaceinvoke r1.<org.joda.time.ReadableInterval: long getStartMillis()>()
+org.joda.time.base.AbstractInterval.contains : l0 = interfaceinvoke r1.<org.joda.time.ReadableInterval: long getStartMillis()>() >>>>>>>> org.joda.time.base.AbstractInterval.contains : l1 = interfaceinvoke r1.<org.joda.time.ReadableInterval: long getEndMillis()>()
+org.joda.time.base.AbstractInterval.contains : l1 = interfaceinvoke r1.<org.joda.time.ReadableInterval: long getEndMillis()>() >>>>>>>> org.joda.time.base.AbstractInterval.contains : l2 = virtualinvoke r0.<org.joda.time.base.AbstractInterval: long getStartMillis()>()
+org.joda.time.base.AbstractInterval.contains : l2 = virtualinvoke r0.<org.joda.time.base.AbstractInterval: long getStartMillis()>() >>>>>>>> org.joda.time.base.AbstractInterval.contains : l3 = virtualinvoke r0.<org.joda.time.base.AbstractInterval: long getEndMillis()>()
+org.joda.time.base.AbstractInterval.contains : l3 = virtualinvoke r0.<org.joda.time.base.AbstractInterval: long getEndMillis()>() >>>>>>>> org.joda.time.base.AbstractInterval.contains : $b4 = l2 cmp l0
+org.joda.time.base.AbstractInterval.contains : $b4 = l2 cmp l0 >>>>>>>> org.joda.time.base.AbstractInterval.contains : if $b4 > 0
+org.joda.time.base.AbstractInterval.contains : if $b4 > 0 >>>>>>>> org.joda.time.base.AbstractInterval.contains : $b5 = l0 cmp l3
+org.joda.time.base.AbstractInterval.contains : if $b4 > 0 >>>>>>>> org.joda.time.base.AbstractInterval.contains : $z1 = 0
+org.joda.time.base.AbstractInterval.contains : $z1 = 0 >>>>>>>> org.joda.time.base.AbstractInterval.contains : return $z1
+org.joda.time.base.AbstractInterval.contains : $b5 = l0 cmp l3 >>>>>>>> org.joda.time.base.AbstractInterval.contains : if $b5 >= 0
+org.joda.time.base.AbstractInterval.contains : if $b5 >= 0 >>>>>>>> org.joda.time.base.AbstractInterval.contains : $b6 = l1 cmp l3
+org.joda.time.base.AbstractInterval.contains : if $b5 >= 0 >>>>>>>> org.joda.time.base.AbstractInterval.contains : $z1 = 0
+org.joda.time.base.AbstractInterval.contains : $b6 = l1 cmp l3 >>>>>>>> org.joda.time.base.AbstractInterval.contains : if $b6 > 0
+org.joda.time.base.AbstractInterval.contains : if $b6 > 0 >>>>>>>> org.joda.time.base.AbstractInterval.contains : $z1 = 1
+org.joda.time.base.AbstractInterval.contains : if $b6 > 0 >>>>>>>> org.joda.time.base.AbstractInterval.contains : $z1 = 0
+org.joda.time.base.AbstractInterval.contains : $z1 = 1 >>>>>>>> org.joda.time.base.AbstractInterval.contains : goto [?= return $z1]
+org.joda.time.base.AbstractInterval.contains : goto [?= return $z1] >>>>>>>> org.joda.time.base.AbstractInterval.contains : return $z1
+org.joda.time.base.AbstractInterval.contains : $z0 = virtualinvoke r0.<org.joda.time.base.AbstractInterval: boolean containsNow()>() >>>>>>>> org.joda.time.base.AbstractInterval.contains : return $z0

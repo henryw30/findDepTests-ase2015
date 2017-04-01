@@ -1,0 +1,45 @@
+org.joda.time.DateTimeFieldType.clockhourOfHalfday : $r0 = <org.joda.time.DateTimeFieldType: org.joda.time.DateTimeFieldType CLOCKHOUR_OF_HALFDAY_TYPE>
+org.joda.time.format.DateTimeFormatterBuilder.append : specialinvoke r0.<org.joda.time.format.DateTimeFormatterBuilder: void checkParser(org.joda.time.format.DateTimeParser)>(r1)
+org.joda.time.format.DateTimeFormatterBuilder.append : $r2 = specialinvoke r0.<org.joda.time.format.DateTimeFormatterBuilder: org.joda.time.format.DateTimeFormatterBuilder append0(org.joda.time.format.DateTimePrinter,org.joda.time.format.DateTimeParser)>(null, r1)
+org.joda.time.format.DateTimeFormatterBuilder$NumberFormatter.estimateParsedLength : $i0 = r0.<org.joda.time.format.DateTimeFormatterBuilder$NumberFormatter: int iMaxParsedDigits>
+org.joda.time.format.DateTimeFormatterBuilder.isParser : $r2 = (org.joda.time.format.DateTimeFormatterBuilder$Composite) r1
+org.joda.time.format.DateTimeFormatterBuilder.isParser : $z1 = r1 instanceof org.joda.time.format.DateTimeFormatterBuilder$Composite
+org.joda.time.format.DateTimeFormatterBuilder.isParser : $z0 = r1 instanceof org.joda.time.format.DateTimeParser
+org.joda.time.format.DateTimeFormatterBuilder.appendDecimal : if i0 < 0 goto $r3 = new java.lang.IllegalArgumentException
+org.joda.time.format.DateTimeFormatterBuilder.appendDecimal : $r6 = new org.joda.time.format.DateTimeFormatterBuilder$PaddedNumber
+org.joda.time.format.DateTimeFormatterBuilder.appendDecimal : i1 = i0
+org.joda.time.format.DateTimeFormatterBuilder.appendDecimal : if i0 > 1 goto $r6 = new org.joda.time.format.DateTimeFormatterBuilder$PaddedNumber
+org.joda.time.format.DateTimeFormatterBuilder.appendDecimal : if r1 != null goto (branch)
+org.joda.time.format.DateTimeFormatterBuilder.appendDecimal : if i1 >= i0 goto (branch)
+org.joda.time.format.DateTimeFormatterBuilder.appendClockhourOfHalfday : $r1 = staticinvoke <org.joda.time.DateTimeFieldType: org.joda.time.DateTimeFieldType clockhourOfHalfday()>()
+org.joda.time.format.DateTimeFormatterBuilder$TimeZoneId.estimateParsedLength : $i0 = <org.joda.time.format.DateTimeFormatterBuilder$TimeZoneId: int MAX_LENGTH>
+org.joda.time.format.DateTimeFormatterBuilder$PaddedNumber.estimatePrintedLength : $i0 = r0.<org.joda.time.format.DateTimeFormatterBuilder$PaddedNumber: int iMaxParsedDigits>
+org.joda.time.format.DateTimeFormatterBuilder$Composite.isParser : $r1 = r0.<org.joda.time.format.DateTimeFormatterBuilder$Composite: org.joda.time.format.DateTimeParser[] iParsers>
+org.joda.time.format.DateTimeFormatterBuilder.appendTimeZoneId : $r1 = <org.joda.time.format.DateTimeFormatterBuilder$TimeZoneId: org.joda.time.format.DateTimeFormatterBuilder$TimeZoneId INSTANCE>
+org.joda.time.format.DateTimeFormatterBuilder.append0 : r0.<org.joda.time.format.DateTimeFormatterBuilder: java.lang.Object iFormatter> = null
+org.joda.time.format.DateTimeFormatterBuilder.append0 : $r3 = r0.<org.joda.time.format.DateTimeFormatterBuilder: java.util.ArrayList iElementPairs>
+org.joda.time.format.DateTimeFormatterBuilder.append0 : $r4 = r0.<org.joda.time.format.DateTimeFormatterBuilder: java.util.ArrayList iElementPairs>
+org.joda.time.format.DateTimeFormatterBuilder.append0 : return r0
+org.joda.time.format.DateTimeFormatterBuilder.append0 : $r2 = r0.<org.joda.time.format.DateTimeFormatterBuilder: java.util.ArrayList iElementPairs>
+org.joda.time.format.DateTimeFormatterBuilder.toParser : $z0 = specialinvoke r0.<org.joda.time.format.DateTimeFormatterBuilder: boolean isParser(java.lang.Object)>(r1)
+org.joda.time.format.DateTimeFormatterBuilder.toParser : r1 = specialinvoke r0.<org.joda.time.format.DateTimeFormatterBuilder: java.lang.Object getFormatter()>()
+org.joda.time.format.DateTimeFormatterBuilder.toParser : $r2 = (org.joda.time.format.DateTimeParser) r1
+org.joda.time.format.DateTimeFormatterBuilder.checkParser : if r1 != null goto return
+org.joda.time.format.DateTimeFormatterBuilder$Composite.decompose : $z3 = r7 instanceof org.joda.time.format.DateTimeParser
+org.joda.time.format.DateTimeFormatterBuilder$Composite.decompose : i1 = 0
+org.joda.time.format.DateTimeFormatterBuilder$Composite.decompose : i0 = interfaceinvoke r1.<java.util.List: int size()>()
+org.joda.time.format.DateTimeFormatterBuilder$Composite.decompose : $z1 = r4 instanceof org.joda.time.format.DateTimeFormatterBuilder$Composite
+org.joda.time.format.DateTimeFormatterBuilder$Composite.decompose : $z0 = r4 instanceof org.joda.time.format.DateTimePrinter
+org.joda.time.format.DateTimeFormatterBuilder$Composite.decompose : r4 = interfaceinvoke r1.<java.util.List: java.lang.Object get(int)>(i1)
+org.joda.time.format.DateTimeFormatterBuilder$Composite.decompose : interfaceinvoke r2.<java.util.List: boolean add(java.lang.Object)>(r4)
+org.joda.time.format.DateTimeFormatterBuilder$Composite.decompose : $i2 = i1 + 1
+org.joda.time.format.DateTimeFormatterBuilder$Composite.decompose : $z4 = r7 instanceof org.joda.time.format.DateTimeFormatterBuilder$Composite
+org.joda.time.format.DateTimeFormatterBuilder$Composite.decompose : interfaceinvoke r3.<java.util.List: boolean add(java.lang.Object)>(r7)
+org.joda.time.format.DateTimeFormatterBuilder.getFormatter : $r7 = new org.joda.time.format.DateTimeFormatterBuilder$Composite
+org.joda.time.format.DateTimeFormatterBuilder.getFormatter : if r1 != null goto return r1
+org.joda.time.format.DateTimeFormatterBuilder.getFormatter : if r1 != null goto r0.<org.joda.time.format.DateTimeFormatterBuilder: java.lang.Object iFormatter> = r1
+org.joda.time.format.DateTimeFormatterBuilder.getFormatter : r1 = r0.<org.joda.time.format.DateTimeFormatterBuilder: java.lang.Object iFormatter>
+org.joda.time.format.DateTimeFormatterBuilder.getFormatter : r0.<org.joda.time.format.DateTimeFormatterBuilder: java.lang.Object iFormatter> = r1
+org.joda.time.format.DateTimeFormatterBuilder.getFormatter : return r1
+org.joda.time.format.DateTimeFormatterBuilder.getFormatter : $r4 = r0.<org.joda.time.format.DateTimeFormatterBuilder: java.util.ArrayList iElementPairs>
+org.joda.time.format.DateTimeFormatterBuilder$TimeZoneId.estimatePrintedLength : $i0 = <org.joda.time.format.DateTimeFormatterBuilder$TimeZoneId: int MAX_LENGTH>

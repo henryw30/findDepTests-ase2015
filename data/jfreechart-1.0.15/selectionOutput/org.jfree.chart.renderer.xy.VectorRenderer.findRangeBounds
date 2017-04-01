@@ -1,0 +1,51 @@
+org.jfree.chart.renderer.xy.VectorRenderer.findRangeBounds : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "dataset") >>>>>>>> org.jfree.chart.renderer.xy.VectorRenderer.findRangeBounds : d0 = #Infinity
+org.jfree.chart.renderer.xy.VectorRenderer.findRangeBounds : d0 = #Infinity >>>>>>>> org.jfree.chart.renderer.xy.VectorRenderer.findRangeBounds : d1 = #-Infinity
+org.jfree.chart.renderer.xy.VectorRenderer.findRangeBounds : d1 = #-Infinity >>>>>>>> org.jfree.chart.renderer.xy.VectorRenderer.findRangeBounds : i0 = interfaceinvoke r1.<org.jfree.data.xy.XYDataset: int getSeriesCount()>()
+org.jfree.chart.renderer.xy.VectorRenderer.findRangeBounds : i0 = interfaceinvoke r1.<org.jfree.data.xy.XYDataset: int getSeriesCount()>() >>>>>>>> org.jfree.chart.renderer.xy.VectorRenderer.findRangeBounds : $z0 = r1 instanceof org.jfree.data.xy.VectorXYDataset
+org.jfree.chart.renderer.xy.VectorRenderer.findRangeBounds : $z0 = r1 instanceof org.jfree.data.xy.VectorXYDataset >>>>>>>> org.jfree.chart.renderer.xy.VectorRenderer.findRangeBounds : if $z0 == 0
+org.jfree.chart.renderer.xy.VectorRenderer.findRangeBounds : if $z0 == 0 >>>>>>>> org.jfree.chart.renderer.xy.VectorRenderer.findRangeBounds : r2 = (org.jfree.data.xy.VectorXYDataset) r1
+org.jfree.chart.renderer.xy.VectorRenderer.findRangeBounds : if $z0 == 0 >>>>>>>> org.jfree.chart.renderer.xy.VectorRenderer.findRangeBounds : i5 = 0
+org.jfree.chart.renderer.xy.VectorRenderer.findRangeBounds : i5 = 0 >>>>>>>> org.jfree.chart.renderer.xy.VectorRenderer.findRangeBounds : if i5 >= i0
+org.jfree.chart.renderer.xy.VectorRenderer.findRangeBounds : if i5 >= i0 >>>>>>>> org.jfree.chart.renderer.xy.VectorRenderer.findRangeBounds : i6 = interfaceinvoke r1.<org.jfree.data.xy.XYDataset: int getItemCount(int)>(i5)
+org.jfree.chart.renderer.xy.VectorRenderer.findRangeBounds : if i5 >= i0 >>>>>>>> org.jfree.chart.renderer.xy.VectorRenderer.findRangeBounds : $b8 = d0 cmpl d1
+org.jfree.chart.renderer.xy.VectorRenderer.findRangeBounds : $b8 = d0 cmpl d1 >>>>>>>> org.jfree.chart.renderer.xy.VectorRenderer.findRangeBounds : if $b8 <= 0
+org.jfree.chart.renderer.xy.VectorRenderer.findRangeBounds : if $b8 <= 0 >>>>>>>> org.jfree.chart.renderer.xy.VectorRenderer.findRangeBounds : return null
+org.jfree.chart.renderer.xy.VectorRenderer.findRangeBounds : if $b8 <= 0 >>>>>>>> org.jfree.chart.renderer.xy.VectorRenderer.findRangeBounds : $r3 = new org.jfree.data.Range
+org.jfree.chart.renderer.xy.VectorRenderer.findRangeBounds : $r3 = new org.jfree.data.Range >>>>>>>> org.jfree.chart.renderer.xy.VectorRenderer.findRangeBounds : specialinvoke $r3.<org.jfree.data.Range: void <init>(double,double)>(d0, d1)
+org.jfree.chart.renderer.xy.VectorRenderer.findRangeBounds : specialinvoke $r3.<org.jfree.data.Range: void <init>(double,double)>(d0, d1) >>>>>>>> org.jfree.chart.renderer.xy.VectorRenderer.findRangeBounds : return $r3
+org.jfree.chart.renderer.xy.VectorRenderer.findRangeBounds : i6 = interfaceinvoke r1.<org.jfree.data.xy.XYDataset: int getItemCount(int)>(i5) >>>>>>>> org.jfree.chart.renderer.xy.VectorRenderer.findRangeBounds : i7 = 0
+org.jfree.chart.renderer.xy.VectorRenderer.findRangeBounds : i7 = 0 >>>>>>>> org.jfree.chart.renderer.xy.VectorRenderer.findRangeBounds : if i7 >= i6
+org.jfree.chart.renderer.xy.VectorRenderer.findRangeBounds : if i7 >= i6 >>>>>>>> org.jfree.chart.renderer.xy.VectorRenderer.findRangeBounds : d5 = interfaceinvoke r1.<org.jfree.data.xy.XYDataset: double getYValue(int,int)>(i5, i7)
+org.jfree.chart.renderer.xy.VectorRenderer.findRangeBounds : if i7 >= i6 >>>>>>>> org.jfree.chart.renderer.xy.VectorRenderer.findRangeBounds : i5 = i5 + 1
+org.jfree.chart.renderer.xy.VectorRenderer.findRangeBounds : i5 = i5 + 1 >>>>>>>> org.jfree.chart.renderer.xy.VectorRenderer.findRangeBounds : goto [?= (branch)]
+org.jfree.chart.renderer.xy.VectorRenderer.findRangeBounds : goto [?= (branch)] >>>>>>>> org.jfree.chart.renderer.xy.VectorRenderer.findRangeBounds : if i5 >= i0
+org.jfree.chart.renderer.xy.VectorRenderer.findRangeBounds : d5 = interfaceinvoke r1.<org.jfree.data.xy.XYDataset: double getYValue(int,int)>(i5, i7) >>>>>>>> org.jfree.chart.renderer.xy.VectorRenderer.findRangeBounds : d6 = d5
+org.jfree.chart.renderer.xy.VectorRenderer.findRangeBounds : d6 = d5 >>>>>>>> org.jfree.chart.renderer.xy.VectorRenderer.findRangeBounds : d0 = staticinvoke <java.lang.Math: double min(double,double)>(d0, d5)
+org.jfree.chart.renderer.xy.VectorRenderer.findRangeBounds : d0 = staticinvoke <java.lang.Math: double min(double,double)>(d0, d5) >>>>>>>> org.jfree.chart.renderer.xy.VectorRenderer.findRangeBounds : d1 = staticinvoke <java.lang.Math: double max(double,double)>(d1, d6)
+org.jfree.chart.renderer.xy.VectorRenderer.findRangeBounds : d1 = staticinvoke <java.lang.Math: double max(double,double)>(d1, d6) >>>>>>>> org.jfree.chart.renderer.xy.VectorRenderer.findRangeBounds : i7 = i7 + 1
+org.jfree.chart.renderer.xy.VectorRenderer.findRangeBounds : i7 = i7 + 1 >>>>>>>> org.jfree.chart.renderer.xy.VectorRenderer.findRangeBounds : goto [?= (branch)]
+org.jfree.chart.renderer.xy.VectorRenderer.findRangeBounds : goto [?= (branch)] >>>>>>>> org.jfree.chart.renderer.xy.VectorRenderer.findRangeBounds : if i7 >= i6
+org.jfree.chart.renderer.xy.VectorRenderer.findRangeBounds : r2 = (org.jfree.data.xy.VectorXYDataset) r1 >>>>>>>> org.jfree.chart.renderer.xy.VectorRenderer.findRangeBounds : i1 = 0
+org.jfree.chart.renderer.xy.VectorRenderer.findRangeBounds : i1 = 0 >>>>>>>> org.jfree.chart.renderer.xy.VectorRenderer.findRangeBounds : if i1 >= i0
+org.jfree.chart.renderer.xy.VectorRenderer.findRangeBounds : if i1 >= i0 >>>>>>>> org.jfree.chart.renderer.xy.VectorRenderer.findRangeBounds : i2 = interfaceinvoke r1.<org.jfree.data.xy.XYDataset: int getItemCount(int)>(i1)
+org.jfree.chart.renderer.xy.VectorRenderer.findRangeBounds : if i1 >= i0 >>>>>>>> org.jfree.chart.renderer.xy.VectorRenderer.findRangeBounds : goto [?= $b8 = d0 cmpl d1]
+org.jfree.chart.renderer.xy.VectorRenderer.findRangeBounds : goto [?= $b8 = d0 cmpl d1] >>>>>>>> org.jfree.chart.renderer.xy.VectorRenderer.findRangeBounds : $b8 = d0 cmpl d1
+org.jfree.chart.renderer.xy.VectorRenderer.findRangeBounds : i2 = interfaceinvoke r1.<org.jfree.data.xy.XYDataset: int getItemCount(int)>(i1) >>>>>>>> org.jfree.chart.renderer.xy.VectorRenderer.findRangeBounds : i3 = 0
+org.jfree.chart.renderer.xy.VectorRenderer.findRangeBounds : i3 = 0 >>>>>>>> org.jfree.chart.renderer.xy.VectorRenderer.findRangeBounds : if i3 >= i2
+org.jfree.chart.renderer.xy.VectorRenderer.findRangeBounds : if i3 >= i2 >>>>>>>> org.jfree.chart.renderer.xy.VectorRenderer.findRangeBounds : d2 = interfaceinvoke r2.<org.jfree.data.xy.VectorXYDataset: double getVectorYValue(int,int)>(i1, i3)
+org.jfree.chart.renderer.xy.VectorRenderer.findRangeBounds : if i3 >= i2 >>>>>>>> org.jfree.chart.renderer.xy.VectorRenderer.findRangeBounds : i1 = i1 + 1
+org.jfree.chart.renderer.xy.VectorRenderer.findRangeBounds : i1 = i1 + 1 >>>>>>>> org.jfree.chart.renderer.xy.VectorRenderer.findRangeBounds : goto [?= (branch)]
+org.jfree.chart.renderer.xy.VectorRenderer.findRangeBounds : goto [?= (branch)] >>>>>>>> org.jfree.chart.renderer.xy.VectorRenderer.findRangeBounds : if i1 >= i0
+org.jfree.chart.renderer.xy.VectorRenderer.findRangeBounds : d2 = interfaceinvoke r2.<org.jfree.data.xy.VectorXYDataset: double getVectorYValue(int,int)>(i1, i3) >>>>>>>> org.jfree.chart.renderer.xy.VectorRenderer.findRangeBounds : $b4 = d2 cmpg 0.0
+org.jfree.chart.renderer.xy.VectorRenderer.findRangeBounds : $b4 = d2 cmpg 0.0 >>>>>>>> org.jfree.chart.renderer.xy.VectorRenderer.findRangeBounds : if $b4 >= 0
+org.jfree.chart.renderer.xy.VectorRenderer.findRangeBounds : if $b4 >= 0 >>>>>>>> org.jfree.chart.renderer.xy.VectorRenderer.findRangeBounds : d3 = interfaceinvoke r2.<org.jfree.data.xy.VectorXYDataset: double getYValue(int,int)>(i1, i3)
+org.jfree.chart.renderer.xy.VectorRenderer.findRangeBounds : if $b4 >= 0 >>>>>>>> org.jfree.chart.renderer.xy.VectorRenderer.findRangeBounds : d4 = interfaceinvoke r2.<org.jfree.data.xy.VectorXYDataset: double getYValue(int,int)>(i1, i3)
+org.jfree.chart.renderer.xy.VectorRenderer.findRangeBounds : d4 = interfaceinvoke r2.<org.jfree.data.xy.VectorXYDataset: double getYValue(int,int)>(i1, i3) >>>>>>>> org.jfree.chart.renderer.xy.VectorRenderer.findRangeBounds : d3 = d4 + d2
+org.jfree.chart.renderer.xy.VectorRenderer.findRangeBounds : d3 = d4 + d2 >>>>>>>> org.jfree.chart.renderer.xy.VectorRenderer.findRangeBounds : d0 = staticinvoke <java.lang.Math: double min(double,double)>(d0, d4)
+org.jfree.chart.renderer.xy.VectorRenderer.findRangeBounds : d0 = staticinvoke <java.lang.Math: double min(double,double)>(d0, d4) >>>>>>>> org.jfree.chart.renderer.xy.VectorRenderer.findRangeBounds : d1 = staticinvoke <java.lang.Math: double max(double,double)>(d1, d3)
+org.jfree.chart.renderer.xy.VectorRenderer.findRangeBounds : d1 = staticinvoke <java.lang.Math: double max(double,double)>(d1, d3) >>>>>>>> org.jfree.chart.renderer.xy.VectorRenderer.findRangeBounds : i3 = i3 + 1
+org.jfree.chart.renderer.xy.VectorRenderer.findRangeBounds : i3 = i3 + 1 >>>>>>>> org.jfree.chart.renderer.xy.VectorRenderer.findRangeBounds : goto [?= (branch)]
+org.jfree.chart.renderer.xy.VectorRenderer.findRangeBounds : goto [?= (branch)] >>>>>>>> org.jfree.chart.renderer.xy.VectorRenderer.findRangeBounds : if i3 >= i2
+org.jfree.chart.renderer.xy.VectorRenderer.findRangeBounds : d3 = interfaceinvoke r2.<org.jfree.data.xy.VectorXYDataset: double getYValue(int,int)>(i1, i3) >>>>>>>> org.jfree.chart.renderer.xy.VectorRenderer.findRangeBounds : d4 = d3 + d2
+org.jfree.chart.renderer.xy.VectorRenderer.findRangeBounds : d4 = d3 + d2 >>>>>>>> org.jfree.chart.renderer.xy.VectorRenderer.findRangeBounds : goto [?= d0 = staticinvoke <java.lang.Math: double min(double,double)>(d0, d4)]
+org.jfree.chart.renderer.xy.VectorRenderer.findRangeBounds : goto [?= d0 = staticinvoke <java.lang.Math: double min(double,double)>(d0, d4)] >>>>>>>> org.jfree.chart.renderer.xy.VectorRenderer.findRangeBounds : d0 = staticinvoke <java.lang.Math: double min(double,double)>(d0, d4)

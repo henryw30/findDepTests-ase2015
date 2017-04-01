@@ -1,0 +1,48 @@
+org.joda.time.TestAbstractPartial$MockProperty0Val.get : return 99
+org.joda.time.TestAbstractPartial$MockPartial.getChronology : $r1 = staticinvoke <org.joda.time.chrono.BuddhistChronology: org.joda.time.chrono.BuddhistChronology getInstanceUTC()>()
+org.joda.time.TestAbstractPartial$MockProperty0.getReadablePartial : $r1 = r0.<org.joda.time.TestAbstractPartial$MockProperty0: org.joda.time.TestAbstractPartial$MockPartial partial>
+org.joda.time.chrono.AssembledChronology.year : $r1 = r0.<org.joda.time.chrono.AssembledChronology: org.joda.time.DateTimeField iYear>
+org.joda.time.TestAbstractPartial$MockProperty0.getField : $r1 = r0.<org.joda.time.TestAbstractPartial$MockProperty0: org.joda.time.TestAbstractPartial$MockPartial partial>
+org.joda.time.TestAbstractPartial$MockProperty1.get : $r1 = r0.<org.joda.time.TestAbstractPartial$MockProperty1: org.joda.time.TestAbstractPartial$MockPartial partial>
+org.joda.time.field.FieldUtils.equals : if r0 != r1 goto (branch)
+org.joda.time.field.FieldUtils.equals : $z0 = virtualinvoke r0.<java.lang.Object: boolean equals(java.lang.Object)>(r1)
+org.joda.time.field.FieldUtils.equals : return 1
+org.joda.time.field.FieldUtils.equals : if r0 == null goto return 0
+org.joda.time.DateTimeUtils.checkPermission : r0 = staticinvoke <java.lang.System: java.lang.SecurityManager getSecurityManager()>()
+org.joda.time.DateTimeUtils.checkPermission : if r0 == null goto return
+org.joda.time.TestAbstractPartial$MockProperty0Chrono$1.getChronology : $r1 = staticinvoke <org.joda.time.chrono.ISOChronology: org.joda.time.chrono.ISOChronology getInstanceUTC()>()
+org.joda.time.base.AbstractPartial.getField : $r1 = virtualinvoke r0.<org.joda.time.base.AbstractPartial: org.joda.time.Chronology getChronology()>()
+org.joda.time.TestAbstractPartial$MockProperty0Chrono.getReadablePartial : $r1 = new org.joda.time.TestAbstractPartial$MockProperty0Chrono$1
+org.joda.time.DateTimeZone.getDefault : if r0 != null goto return r0
+org.joda.time.DateTimeZone.getDefault : r0 = <org.joda.time.DateTimeZone: org.joda.time.DateTimeZone cDefault>
+org.joda.time.DateTimeZone.getDefault : return r0
+org.joda.time.chrono.BuddhistChronology.getInstanceUTC : $r0 = <org.joda.time.chrono.BuddhistChronology: org.joda.time.chrono.BuddhistChronology INSTANCE_UTC>
+org.joda.time.field.BaseDateTimeField.getType : $r1 = r0.<org.joda.time.field.BaseDateTimeField: org.joda.time.DateTimeFieldType iType>
+org.joda.time.field.AbstractPartialFieldProperty.getFieldType : $r1 = virtualinvoke r0.<org.joda.time.field.AbstractPartialFieldProperty: org.joda.time.DateTimeField getField()>()
+org.joda.time.field.AbstractPartialFieldProperty.equals : $i0 = virtualinvoke r0.<org.joda.time.field.AbstractPartialFieldProperty: int get()>()
+org.joda.time.field.AbstractPartialFieldProperty.equals : return $z2
+org.joda.time.field.AbstractPartialFieldProperty.equals : $r5 = virtualinvoke r0.<org.joda.time.field.AbstractPartialFieldProperty: org.joda.time.ReadablePartial getReadablePartial()>()
+org.joda.time.field.AbstractPartialFieldProperty.equals : r2 = (org.joda.time.field.AbstractPartialFieldProperty) r1
+org.joda.time.field.AbstractPartialFieldProperty.equals : return 1
+org.joda.time.field.AbstractPartialFieldProperty.equals : return 0
+org.joda.time.field.AbstractPartialFieldProperty.equals : if r0 != r1 goto $z0 = r1 instanceof org.joda.time.field.AbstractPartialFieldProperty
+org.joda.time.field.AbstractPartialFieldProperty.equals : $r3 = virtualinvoke r0.<org.joda.time.field.AbstractPartialFieldProperty: org.joda.time.DateTimeFieldType getFieldType()>()
+org.joda.time.field.AbstractPartialFieldProperty.equals : $z0 = r1 instanceof org.joda.time.field.AbstractPartialFieldProperty
+org.joda.time.TestAbstractPartial$MockPartial.getValue : $r1 = r0.<org.joda.time.TestAbstractPartial$MockPartial: int[] val>
+org.joda.time.TestAbstractPartial$MockPartial.getField : $r2 = virtualinvoke r1.<org.joda.time.Chronology: org.joda.time.DateTimeField year()>()
+org.joda.time.TestAbstractPartial$MockPartial.getField : lookupswitch(i0) {     case 0: goto $r2 = virtualinvoke r1.<org.joda.time.Chronology: org.joda.time.DateTimeField year()>();     case 1: goto $r3 = virtualinvoke r1.<org.joda.time.Chronology: org.joda.time.DateTimeField monthOfYear()>();     default: goto $r4 = new java.lang.IndexOutOfBoundsException; }
+org.joda.time.DateTimeUtils.setCurrentMillisFixed : $r0 = new org.joda.time.DateTimeUtils$FixedMillisProvider
+org.joda.time.DateTimeUtils.setCurrentMillisFixed : staticinvoke <org.joda.time.DateTimeUtils: void checkPermission()>()
+org.joda.time.chrono.BuddhistChronology.equals : $z0 = specialinvoke r0.<java.lang.Object: boolean equals(java.lang.Object)>(r1)
+org.joda.time.TestAbstractPartial$MockProperty0Field.getField : $r1 = staticinvoke <org.joda.time.chrono.BuddhistChronology: org.joda.time.chrono.BuddhistChronology getInstanceUTC()>()
+org.joda.time.DateTimeZone.setDefault : exitmonitor r3
+org.joda.time.DateTimeZone.setDefault : $r6 = class "org/joda/time/DateTimeZone"
+org.joda.time.DateTimeZone.setDefault : <org.joda.time.DateTimeZone: org.joda.time.DateTimeZone cDefault> = r0
+org.joda.time.DateTimeZone.setDefault : if r1 == null goto (branch)
+org.joda.time.DateTimeZone.setDefault : if r0 != null goto $r6 = class "org/joda/time/DateTimeZone"
+org.joda.time.DateTimeZone.setDefault : r1 = staticinvoke <java.lang.System: java.lang.SecurityManager getSecurityManager()>()
+org.joda.time.DateTimeUtils.setCurrentMillisSystem : staticinvoke <org.joda.time.DateTimeUtils: void checkPermission()>()
+org.joda.time.DateTimeUtils.setCurrentMillisSystem : $r0 = <org.joda.time.DateTimeUtils: org.joda.time.DateTimeUtils$SystemMillisProvider SYSTEM_MILLIS_PROVIDER>
+org.joda.time.TestAbstractPartial$MockProperty0.get : $r1 = r0.<org.joda.time.TestAbstractPartial$MockProperty0: org.joda.time.TestAbstractPartial$MockPartial partial>
+org.joda.time.chrono.ISOChronology.getInstanceUTC : $r0 = <org.joda.time.chrono.ISOChronology: org.joda.time.chrono.ISOChronology INSTANCE_UTC>
+org.joda.time.chrono.AssembledChronology.hourOfDay : $r1 = r0.<org.joda.time.chrono.AssembledChronology: org.joda.time.DateTimeField iHourOfDay>

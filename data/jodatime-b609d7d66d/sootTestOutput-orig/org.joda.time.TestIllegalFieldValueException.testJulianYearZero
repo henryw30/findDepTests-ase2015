@@ -1,0 +1,43 @@
+org.joda.time.chrono.BasicYearDateTimeField.getMaximumValue : $r1 = r0.<org.joda.time.chrono.BasicYearDateTimeField: org.joda.time.chrono.BasicChronology iChronology>
+org.joda.time.IllegalFieldValueException.createMessage : $r23 = virtualinvoke r6.<java.lang.StringBuffer: java.lang.String toString()>()
+org.joda.time.IllegalFieldValueException.createMessage : if r4 == null goto $r23 = virtualinvoke r6.<java.lang.StringBuffer: java.lang.String toString()>()
+org.joda.time.IllegalFieldValueException.createMessage : $r7 = virtualinvoke $r5.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>("Value ")
+org.joda.time.IllegalFieldValueException.createMessage : $r5 = new java.lang.StringBuffer
+org.joda.time.IllegalFieldValueException.createMessage : virtualinvoke r6.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>("is not supported")
+org.joda.time.IllegalFieldValueException.createMessage : if r3 != null goto $r12 = virtualinvoke r6.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>("must not be larger than ")
+org.joda.time.IllegalFieldValueException.createMessage : if r2 != null goto (branch)
+org.joda.time.base.BaseDateTime.checkInstant : return l0
+org.joda.time.IllegalFieldValueException.getFieldName : $r1 = r0.<org.joda.time.IllegalFieldValueException: java.lang.String iFieldName>
+org.joda.time.IllegalFieldValueException.getDurationFieldType : $r1 = r0.<org.joda.time.IllegalFieldValueException: org.joda.time.DurationFieldType iDurationFieldType>
+org.joda.time.DateTimeFieldType.getName : $r1 = r0.<org.joda.time.DateTimeFieldType: java.lang.String iName>
+org.joda.time.DateTime$Property.setCopy : $r1 = r0.<org.joda.time.DateTime$Property: org.joda.time.DateTime iInstant>
+org.joda.time.DateTimeUtils.getChronology : if r0 != null goto return r0
+org.joda.time.DateTimeUtils.getChronology : return r0
+org.joda.time.chrono.AssembledChronology.year : $r1 = r0.<org.joda.time.chrono.AssembledChronology: org.joda.time.DateTimeField iYear>
+org.joda.time.IllegalFieldValueException.getDateTimeFieldType : $r1 = r0.<org.joda.time.IllegalFieldValueException: org.joda.time.DateTimeFieldType iDateTimeFieldType>
+org.joda.time.chrono.JulianChronology.getInstanceUTC : $r0 = <org.joda.time.chrono.JulianChronology: org.joda.time.chrono.JulianChronology INSTANCE_UTC>
+org.joda.time.IllegalFieldValueException.getUpperBound : $r1 = r0.<org.joda.time.IllegalFieldValueException: java.lang.Number iUpperBound>
+org.joda.time.DateTimeFieldType.year : $r0 = <org.joda.time.DateTimeFieldType: org.joda.time.DateTimeFieldType YEAR_TYPE>
+org.joda.time.IllegalFieldValueException.getIllegalStringValue : $r1 = r0.<org.joda.time.IllegalFieldValueException: java.lang.String iStringValue>
+org.joda.time.DateTimeUtils.currentTimeMillis : $r0 = <org.joda.time.DateTimeUtils: org.joda.time.DateTimeUtils$MillisProvider cMillisProvider>
+org.joda.time.IllegalFieldValueException.getIllegalValueAsString : if r1 != null goto return r1
+org.joda.time.IllegalFieldValueException.getIllegalValueAsString : return r1
+org.joda.time.IllegalFieldValueException.getIllegalValueAsString : $r2 = r0.<org.joda.time.IllegalFieldValueException: java.lang.Number iNumberValue>
+org.joda.time.IllegalFieldValueException.getIllegalValueAsString : r1 = r0.<org.joda.time.IllegalFieldValueException: java.lang.String iStringValue>
+org.joda.time.DateTimeUtils$SystemMillisProvider.getMillis : $l0 = staticinvoke <java.lang.System: long currentTimeMillis()>()
+org.joda.time.base.BaseDateTime.checkChronology : $r2 = staticinvoke <org.joda.time.DateTimeUtils: org.joda.time.Chronology getChronology(org.joda.time.Chronology)>(r1)
+org.joda.time.DateTime.year : $r1 = new org.joda.time.DateTime$Property
+org.joda.time.base.BaseDateTime.getMillis : $l0 = r0.<org.joda.time.base.BaseDateTime: long iMillis>
+org.joda.time.chrono.JulianChronology.getMaxYear : return 292272992
+org.joda.time.IllegalFieldValueException.getIllegalNumberValue : $r1 = r0.<org.joda.time.IllegalFieldValueException: java.lang.Number iNumberValue>
+org.joda.time.base.BaseDateTime.getChronology : $r1 = r0.<org.joda.time.base.BaseDateTime: org.joda.time.Chronology iChronology>
+org.joda.time.field.SkipDateTimeField.set : $r1 = new org.joda.time.IllegalFieldValueException
+org.joda.time.field.SkipDateTimeField.set : $i2 = r0.<org.joda.time.field.SkipDateTimeField: int iMinValue>
+org.joda.time.field.SkipDateTimeField.set : $r2 = staticinvoke <org.joda.time.DateTimeFieldType: org.joda.time.DateTimeFieldType year()>()
+org.joda.time.field.SkipDateTimeField.set : $i5 = r0.<org.joda.time.field.SkipDateTimeField: int iSkip>
+org.joda.time.field.SkipDateTimeField.set : $i4 = r0.<org.joda.time.field.SkipDateTimeField: int iSkip>
+org.joda.time.field.FieldUtils.verifyValueBounds : if i0 < i1 goto $r1 = new org.joda.time.IllegalFieldValueException
+org.joda.time.DateTimeFieldType$StandardDateTimeFieldType.equals : if r0 != r1 goto $z0 = r1 instanceof org.joda.time.DateTimeFieldType$StandardDateTimeFieldType
+org.joda.time.DateTimeFieldType$StandardDateTimeFieldType.equals : return 1
+org.joda.time.IllegalFieldValueException.getLowerBound : $r1 = r0.<org.joda.time.IllegalFieldValueException: java.lang.Number iLowerBound>
+org.joda.time.field.DelegatedDateTimeField.getMaximumValue : $r1 = r0.<org.joda.time.field.DelegatedDateTimeField: org.joda.time.DateTimeField iField>

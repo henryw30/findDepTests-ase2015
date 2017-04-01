@@ -1,0 +1,14 @@
+dynoptic.model.fifosys.gfsm.observed.fifosys.ObsFifoSysState.clearCache : $r0 = <dynoptic.model.fifosys.gfsm.observed.fifosys.ObsFifoSysState: java.util.Map fifoSysStatesMap>
+dynoptic.util.Util.newList : $r0 = new java.util.ArrayList
+dynoptic.model.fifosys.gfsm.observed.ObsMultFSMState.clearCache : $r0 = <dynoptic.model.fifosys.gfsm.observed.ObsMultFSMState: java.util.Map cache>
+dynoptic.main.DynopticMain.setUpLogging : $r1 = <dynoptic.main.DynopticMain: java.util.logging.Logger logger>
+dynoptic.invariants.AlwaysPrecedes.satisfies : goto [?= $z1 = interfaceinvoke r2.<java.util.Iterator: boolean hasNext()>()]
+dynoptic.invariants.AlwaysPrecedes.satisfies : z0 = 1
+dynoptic.invariants.AlwaysPrecedes.satisfies : z0 = 0
+dynoptic.invariants.AlwaysPrecedes.satisfies : r2 = interfaceinvoke r1.<java.util.List: java.util.Iterator iterator()>()
+dynoptic.invariants.AlwaysPrecedes.satisfies : return 1
+dynoptic.invariants.AlwaysPrecedes.satisfies : return 0
+dynoptic.invariants.AlwaysPrecedes.satisfies : if z0 != 0 goto (branch)
+dynoptic.model.fifosys.gfsm.observed.ObsFSMState.clearCache : $r1 = <dynoptic.model.fifosys.gfsm.observed.ObsFSMState: java.util.Map initialProcessStatesMap>
+dynoptic.model.fifosys.gfsm.observed.ObsFSMState.clearCache : <dynoptic.model.fifosys.gfsm.observed.ObsFSMState: int prevAnonId> = -1
+dynoptic.model.fifosys.gfsm.observed.ObsFSMState.clearCache : $r0 = <dynoptic.model.fifosys.gfsm.observed.ObsFSMState: java.util.Map prevStateAndEventMap>

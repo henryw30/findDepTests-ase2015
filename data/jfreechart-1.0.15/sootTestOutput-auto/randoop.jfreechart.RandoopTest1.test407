@@ -1,0 +1,17 @@
+org.jfree.chart.axis.NumberTickUnit.valueToString : $r1 = r0.<org.jfree.chart.axis.NumberTickUnit: java.text.NumberFormat formatter>
+org.jfree.chart.axis.TickUnit.getSize : $d0 = r0.<org.jfree.chart.axis.TickUnit: double size>
+org.jfree.chart.axis.NumberTickUnit.toString : $r1 = new java.lang.StringBuilder
+org.jfree.chart.StrokeMap.clone : $r1 = specialinvoke r0.<java.lang.Object: java.lang.Object clone()>()
+org.jfree.chart.StrokeMap.getStroke : $r2 = r0.<org.jfree.chart.StrokeMap: java.util.Map store>
+org.jfree.chart.StrokeMap.getStroke : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "key")
+org.jfree.chart.util.HexNumberFormat.format : return r4
+org.jfree.chart.util.HexNumberFormat.format : $r5 = staticinvoke <java.lang.Long: java.lang.String toHexString(long)>(l0)
+org.jfree.chart.util.HexNumberFormat.format : $r6 = new java.lang.StringBuffer
+org.jfree.chart.util.HexNumberFormat.format : if 0 >= i1 goto $i5 = 0
+org.jfree.chart.util.HexNumberFormat.format : i2 = 0
+org.jfree.chart.util.HexNumberFormat.format : virtualinvoke r4.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>(r3)
+org.jfree.chart.util.HexNumberFormat.format : $i3 = r0.<org.jfree.chart.util.HexNumberFormat: int m_numDigits>
+org.jfree.chart.util.HexNumberFormat.format : $l0 = (long) d0
+org.jfree.chart.util.HexNumberFormat.format : virtualinvoke r4.<java.lang.StringBuffer: java.lang.StringBuffer append(int)>(0)
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null goto return
+org.jfree.chart.axis.TickUnit.getMinorTickCount : $i0 = r0.<org.jfree.chart.axis.TickUnit: int minorTickCount>

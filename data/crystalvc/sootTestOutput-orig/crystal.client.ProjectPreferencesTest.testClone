@@ -1,0 +1,28 @@
+crystal.model.DataSource.setShortName : staticinvoke <crystal.util.ValidInputChecker: void checkValidStringInput(java.lang.String)>(r1)
+crystal.model.DataSource.setShortName : $r2 = virtualinvoke r1.<java.lang.String: java.lang.String replace(char,char)>(32, 95)
+crystal.client.ProjectPreferences.getDataSources : $r1 = r0.<crystal.client.ProjectPreferences: java.util.Vector _dataSources>
+crystal.client.ProjectPreferences.getEnvironment : $r1 = r0.<crystal.client.ProjectPreferences: crystal.model.DataSource _myEnvironment>
+crystal.client.ProjectPreferences.clone : goto [?= $z0 = interfaceinvoke r3.<java.util.Iterator: boolean hasNext()>()]
+crystal.client.ProjectPreferences.clone : $r9 = virtualinvoke r4.<crystal.model.DataSource: crystal.model.DataSource clone()>()
+crystal.client.ProjectPreferences.clone : $r7 = r0.<crystal.client.ProjectPreferences: java.util.Vector _dataSources>
+crystal.client.ProjectPreferences.clone : $r5 = specialinvoke r0.<java.lang.Object: java.lang.Object clone()>()
+crystal.client.ProjectPreferences.clone : $r12 = r0.<crystal.client.ProjectPreferences: crystal.client.ClientPreferences _clientPreferences>
+crystal.client.ProjectPreferences.clone : $r6 = new java.util.Vector
+crystal.client.ProjectPreferences.clone : return r1
+crystal.client.ProjectPreferences.clone : $r10 = r0.<crystal.client.ProjectPreferences: crystal.model.DataSource _myEnvironment>
+crystal.client.ProjectPreferences.clone : r1.<crystal.client.ProjectPreferences: java.util.Vector _dataSources> = r2
+crystal.model.DataSource.setParent : if r1 == null goto r0.<crystal.model.DataSource: java.lang.String _parent> = null
+crystal.model.DataSource.setParent : r0.<crystal.model.DataSource: java.lang.String _parent> = r1
+crystal.util.ValidInputChecker.checkValidStringInput : if r0 == null goto $r2 = new java.lang.IllegalArgumentException
+crystal.model.DataSource.getShortName : $r1 = r0.<crystal.model.DataSource: java.lang.String _shortName>
+crystal.client.ProjectPreferences.getDataSource : return r3
+crystal.client.ProjectPreferences.getDataSource : $r6 = virtualinvoke r3.<crystal.model.DataSource: java.lang.String getShortName()>()
+crystal.client.ProjectPreferences.getDataSource : return null
+crystal.client.ProjectPreferences.getDataSource : goto [?= $z0 = interfaceinvoke r2.<java.util.Iterator: boolean hasNext()>()]
+crystal.client.ProjectPreferences.getDataSource : $r4 = r0.<crystal.client.ProjectPreferences: java.util.Vector _dataSources>
+crystal.model.DataSource.clone : $r2 = specialinvoke r0.<java.lang.Object: java.lang.Object clone()>()
+crystal.model.DataSource.clone : $r6 = r0.<crystal.model.DataSource: crystal.model.RevisionHistory _oldHistory>
+crystal.model.DataSource.clone : $r3 = r0.<crystal.model.DataSource: crystal.model.RevisionHistory _history>
+crystal.model.DataSource.clone : return r1
+crystal.client.ProjectPreferences.addDataSource : $r5 = r0.<crystal.client.ProjectPreferences: java.util.Vector _dataSources>
+crystal.client.ProjectPreferences.addDataSource : $r18 = r0.<crystal.client.ProjectPreferences: java.util.Vector _dataSources>

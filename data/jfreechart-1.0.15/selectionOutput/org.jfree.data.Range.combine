@@ -1,0 +1,12 @@
+org.jfree.data.Range.combine : if r0 != null >>>>>>>> org.jfree.data.Range.combine : return r1
+org.jfree.data.Range.combine : if r0 != null >>>>>>>> org.jfree.data.Range.combine : if r1 != null
+org.jfree.data.Range.combine : if r1 != null >>>>>>>> org.jfree.data.Range.combine : return r0
+org.jfree.data.Range.combine : if r1 != null >>>>>>>> org.jfree.data.Range.combine : $d2 = virtualinvoke r0.<org.jfree.data.Range: double getLowerBound()>()
+org.jfree.data.Range.combine : $d2 = virtualinvoke r0.<org.jfree.data.Range: double getLowerBound()>() >>>>>>>> org.jfree.data.Range.combine : $d3 = virtualinvoke r1.<org.jfree.data.Range: double getLowerBound()>()
+org.jfree.data.Range.combine : $d3 = virtualinvoke r1.<org.jfree.data.Range: double getLowerBound()>() >>>>>>>> org.jfree.data.Range.combine : d0 = staticinvoke <java.lang.Math: double min(double,double)>($d2, $d3)
+org.jfree.data.Range.combine : d0 = staticinvoke <java.lang.Math: double min(double,double)>($d2, $d3) >>>>>>>> org.jfree.data.Range.combine : $d4 = virtualinvoke r0.<org.jfree.data.Range: double getUpperBound()>()
+org.jfree.data.Range.combine : $d4 = virtualinvoke r0.<org.jfree.data.Range: double getUpperBound()>() >>>>>>>> org.jfree.data.Range.combine : $d5 = virtualinvoke r1.<org.jfree.data.Range: double getUpperBound()>()
+org.jfree.data.Range.combine : $d5 = virtualinvoke r1.<org.jfree.data.Range: double getUpperBound()>() >>>>>>>> org.jfree.data.Range.combine : d1 = staticinvoke <java.lang.Math: double max(double,double)>($d4, $d5)
+org.jfree.data.Range.combine : d1 = staticinvoke <java.lang.Math: double max(double,double)>($d4, $d5) >>>>>>>> org.jfree.data.Range.combine : $r2 = new org.jfree.data.Range
+org.jfree.data.Range.combine : $r2 = new org.jfree.data.Range >>>>>>>> org.jfree.data.Range.combine : specialinvoke $r2.<org.jfree.data.Range: void <init>(double,double)>(d0, d1)
+org.jfree.data.Range.combine : specialinvoke $r2.<org.jfree.data.Range: void <init>(double,double)>(d0, d1) >>>>>>>> org.jfree.data.Range.combine : return $r2

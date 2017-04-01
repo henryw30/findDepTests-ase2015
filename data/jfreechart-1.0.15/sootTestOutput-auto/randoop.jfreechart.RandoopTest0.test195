@@ -1,0 +1,19 @@
+org.jfree.chart.axis.TickUnits.clone : return r1
+org.jfree.chart.axis.TickUnits.clone : $r2 = new java.util.ArrayList
+org.jfree.chart.axis.TickUnits.clone : $r3 = specialinvoke r0.<java.lang.Object: java.lang.Object clone()>()
+org.jfree.chart.axis.NumberTickUnit.valueToString : $r1 = r0.<org.jfree.chart.axis.NumberTickUnit: java.text.NumberFormat formatter>
+org.jfree.chart.util.HexNumberFormat.format : return r4
+org.jfree.chart.util.HexNumberFormat.format : $r5 = staticinvoke <java.lang.Long: java.lang.String toHexString(long)>(l0)
+org.jfree.chart.util.HexNumberFormat.format : $r6 = new java.lang.StringBuffer
+org.jfree.chart.util.HexNumberFormat.format : if 0 >= i1 goto $i5 = 0
+org.jfree.chart.util.HexNumberFormat.format : i2 = 0
+org.jfree.chart.util.HexNumberFormat.format : virtualinvoke r4.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>(r3)
+org.jfree.chart.util.HexNumberFormat.format : $i3 = r0.<org.jfree.chart.util.HexNumberFormat: int m_numDigits>
+org.jfree.chart.util.HexNumberFormat.format : $l0 = (long) d0
+org.jfree.chart.util.HexNumberFormat.format : virtualinvoke r4.<java.lang.StringBuffer: java.lang.StringBuffer append(int)>(0)
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null goto return
+org.jfree.chart.axis.TickUnits.getCeilingTickUnit : $r2 = r0.<org.jfree.chart.axis.TickUnits: java.util.List tickUnits>
+org.jfree.chart.axis.TickUnits.getCeilingTickUnit : if i0 < 0 goto $i1 = i0 + 1
+org.jfree.chart.axis.TickUnits.getCeilingTickUnit : $r6 = r0.<org.jfree.chart.axis.TickUnits: java.util.List tickUnits>
+org.jfree.chart.axis.TickUnits.getCeilingTickUnit : $i3 = interfaceinvoke $r7.<java.util.List: int size()>()
+org.jfree.chart.axis.TickUnits.getCeilingTickUnit : $i1 = i0 + 1

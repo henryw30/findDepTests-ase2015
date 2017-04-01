@@ -1,0 +1,16 @@
+org.jfree.chart.LegendItem.characterIteratorToString : i0 = interfaceinvoke r1.<java.text.CharacterIterator: int getEndIndex()>() >>>>>>>> org.jfree.chart.LegendItem.characterIteratorToString : i1 = interfaceinvoke r1.<java.text.CharacterIterator: int getBeginIndex()>()
+org.jfree.chart.LegendItem.characterIteratorToString : i1 = interfaceinvoke r1.<java.text.CharacterIterator: int getBeginIndex()>() >>>>>>>> org.jfree.chart.LegendItem.characterIteratorToString : i2 = i0 - i1
+org.jfree.chart.LegendItem.characterIteratorToString : i2 = i0 - i1 >>>>>>>> org.jfree.chart.LegendItem.characterIteratorToString : if i2 > 0
+org.jfree.chart.LegendItem.characterIteratorToString : if i2 > 0 >>>>>>>> org.jfree.chart.LegendItem.characterIteratorToString : return ""
+org.jfree.chart.LegendItem.characterIteratorToString : if i2 > 0 >>>>>>>> org.jfree.chart.LegendItem.characterIteratorToString : r2 = newarray (char)[i2]
+org.jfree.chart.LegendItem.characterIteratorToString : r2 = newarray (char)[i2] >>>>>>>> org.jfree.chart.LegendItem.characterIteratorToString : i3 = 0
+org.jfree.chart.LegendItem.characterIteratorToString : i3 = 0 >>>>>>>> org.jfree.chart.LegendItem.characterIteratorToString : c4 = interfaceinvoke r1.<java.text.CharacterIterator: char first()>()
+org.jfree.chart.LegendItem.characterIteratorToString : c4 = interfaceinvoke r1.<java.text.CharacterIterator: char first()>() >>>>>>>> org.jfree.chart.LegendItem.characterIteratorToString : if c4 == 65535
+org.jfree.chart.LegendItem.characterIteratorToString : if c4 == 65535 >>>>>>>> org.jfree.chart.LegendItem.characterIteratorToString : r2[i3] = c4
+org.jfree.chart.LegendItem.characterIteratorToString : if c4 == 65535 >>>>>>>> org.jfree.chart.LegendItem.characterIteratorToString : $r3 = new java.lang.String
+org.jfree.chart.LegendItem.characterIteratorToString : $r3 = new java.lang.String >>>>>>>> org.jfree.chart.LegendItem.characterIteratorToString : specialinvoke $r3.<java.lang.String: void <init>(char[])>(r2)
+org.jfree.chart.LegendItem.characterIteratorToString : specialinvoke $r3.<java.lang.String: void <init>(char[])>(r2) >>>>>>>> org.jfree.chart.LegendItem.characterIteratorToString : return $r3
+org.jfree.chart.LegendItem.characterIteratorToString : r2[i3] = c4 >>>>>>>> org.jfree.chart.LegendItem.characterIteratorToString : i3 = i3 + 1
+org.jfree.chart.LegendItem.characterIteratorToString : i3 = i3 + 1 >>>>>>>> org.jfree.chart.LegendItem.characterIteratorToString : c4 = interfaceinvoke r1.<java.text.CharacterIterator: char next()>()
+org.jfree.chart.LegendItem.characterIteratorToString : c4 = interfaceinvoke r1.<java.text.CharacterIterator: char next()>() >>>>>>>> org.jfree.chart.LegendItem.characterIteratorToString : goto [?= (branch)]
+org.jfree.chart.LegendItem.characterIteratorToString : goto [?= (branch)] >>>>>>>> org.jfree.chart.LegendItem.characterIteratorToString : if c4 == 65535

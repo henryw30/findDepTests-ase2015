@@ -1,0 +1,16 @@
+org.jfree.data.xy.YWithXInterval.getY : $d0 = r0.<org.jfree.data.xy.YWithXInterval: double y>
+org.jfree.data.xy.XIntervalDataItem.getXHighValue : if r1 == null goto return #NaN
+org.jfree.data.xy.XIntervalDataItem.getXHighValue : $d0 = virtualinvoke r1.<org.jfree.data.xy.YWithXInterval: double getXHigh()>()
+org.jfree.data.xy.XIntervalDataItem.getXHighValue : $r2 = virtualinvoke r0.<org.jfree.data.xy.XIntervalDataItem: java.lang.Object getObject()>()
+org.jfree.data.xy.YWithXInterval.getXHigh : $d0 = r0.<org.jfree.data.xy.YWithXInterval: double xHigh>
+org.jfree.data.ComparableObjectItem.getObject : $r1 = r0.<org.jfree.data.ComparableObjectItem: java.lang.Object obj>
+org.jfree.data.xy.XIntervalDataItem.getXLowValue : if r1 == null goto return #NaN
+org.jfree.data.xy.XIntervalDataItem.getXLowValue : $d0 = virtualinvoke r1.<org.jfree.data.xy.YWithXInterval: double getXLow()>()
+org.jfree.data.xy.XIntervalDataItem.getXLowValue : $r2 = virtualinvoke r0.<org.jfree.data.xy.XIntervalDataItem: java.lang.Object getObject()>()
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null goto return
+org.jfree.data.ComparableObjectItem.getComparable : $r1 = r0.<org.jfree.data.ComparableObjectItem: java.lang.Comparable x>
+org.jfree.data.xy.XIntervalDataItem.getX : $r1 = virtualinvoke r0.<org.jfree.data.xy.XIntervalDataItem: java.lang.Comparable getComparable()>()
+org.jfree.data.xy.XIntervalDataItem.getYValue : $d0 = virtualinvoke r1.<org.jfree.data.xy.YWithXInterval: double getY()>()
+org.jfree.data.xy.XIntervalDataItem.getYValue : if r1 == null goto return #NaN
+org.jfree.data.xy.XIntervalDataItem.getYValue : $r2 = virtualinvoke r0.<org.jfree.data.xy.XIntervalDataItem: java.lang.Object getObject()>()
+org.jfree.data.xy.YWithXInterval.getXLow : $d0 = r0.<org.jfree.data.xy.YWithXInterval: double xLow>

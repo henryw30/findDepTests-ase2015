@@ -1,0 +1,13 @@
+org.jfree.chart.axis.DateAxis.getMaximumDate : n0 = null >>>>>>>> org.jfree.chart.axis.DateAxis.getMaximumDate : r1 = virtualinvoke r0.<org.jfree.chart.axis.DateAxis: org.jfree.data.Range getRange()>()
+org.jfree.chart.axis.DateAxis.getMaximumDate : r1 = virtualinvoke r0.<org.jfree.chart.axis.DateAxis: org.jfree.data.Range getRange()>() >>>>>>>> org.jfree.chart.axis.DateAxis.getMaximumDate : $z0 = r1 instanceof org.jfree.data.time.DateRange
+org.jfree.chart.axis.DateAxis.getMaximumDate : $z0 = r1 instanceof org.jfree.data.time.DateRange >>>>>>>> org.jfree.chart.axis.DateAxis.getMaximumDate : if $z0 == 0
+org.jfree.chart.axis.DateAxis.getMaximumDate : if $z0 == 0 >>>>>>>> org.jfree.chart.axis.DateAxis.getMaximumDate : r2 = (org.jfree.data.time.DateRange) r1
+org.jfree.chart.axis.DateAxis.getMaximumDate : if $z0 == 0 >>>>>>>> org.jfree.chart.axis.DateAxis.getMaximumDate : $r4 = new java.util.Date
+org.jfree.chart.axis.DateAxis.getMaximumDate : $r4 = new java.util.Date >>>>>>>> org.jfree.chart.axis.DateAxis.getMaximumDate : $d0 = virtualinvoke r1.<org.jfree.data.Range: double getUpperBound()>()
+org.jfree.chart.axis.DateAxis.getMaximumDate : $d0 = virtualinvoke r1.<org.jfree.data.Range: double getUpperBound()>() >>>>>>>> org.jfree.chart.axis.DateAxis.getMaximumDate : $l0 = (long) $d0
+org.jfree.chart.axis.DateAxis.getMaximumDate : $l0 = (long) $d0 >>>>>>>> org.jfree.chart.axis.DateAxis.getMaximumDate : specialinvoke $r4.<java.util.Date: void <init>(long)>($l0)
+org.jfree.chart.axis.DateAxis.getMaximumDate : specialinvoke $r4.<java.util.Date: void <init>(long)>($l0) >>>>>>>> org.jfree.chart.axis.DateAxis.getMaximumDate : r3 = $r4
+org.jfree.chart.axis.DateAxis.getMaximumDate : r3 = $r4 >>>>>>>> org.jfree.chart.axis.DateAxis.getMaximumDate : return r3
+org.jfree.chart.axis.DateAxis.getMaximumDate : r2 = (org.jfree.data.time.DateRange) r1 >>>>>>>> org.jfree.chart.axis.DateAxis.getMaximumDate : r3 = virtualinvoke r2.<org.jfree.data.time.DateRange: java.util.Date getUpperDate()>()
+org.jfree.chart.axis.DateAxis.getMaximumDate : r3 = virtualinvoke r2.<org.jfree.data.time.DateRange: java.util.Date getUpperDate()>() >>>>>>>> org.jfree.chart.axis.DateAxis.getMaximumDate : goto [?= return r3]
+org.jfree.chart.axis.DateAxis.getMaximumDate : goto [?= return r3] >>>>>>>> org.jfree.chart.axis.DateAxis.getMaximumDate : return r3

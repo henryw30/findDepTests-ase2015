@@ -1,0 +1,11 @@
+org.jfree.chart.renderer.xy.XYLineAndShapeRenderer.getSeriesLinesVisible : $r1 = r0.<org.jfree.chart.renderer.xy.XYLineAndShapeRenderer: org.jfree.util.BooleanList seriesLinesVisible>
+org.jfree.chart.renderer.AbstractRenderer.fireChangeEvent : $r1 = new org.jfree.chart.event.RendererChangeEvent
+org.jfree.chart.renderer.xy.XYLineAndShapeRenderer.setLinesVisible : virtualinvoke r0.<org.jfree.chart.renderer.xy.XYLineAndShapeRenderer: void fireChangeEvent()>()
+org.jfree.chart.renderer.xy.XYLineAndShapeRenderer.setLinesVisible : $r1 = staticinvoke <java.lang.Boolean: java.lang.Boolean valueOf(boolean)>(z0)
+org.jfree.chart.renderer.xy.XYLineAndShapeRenderer.setLinesVisible : r0.<org.jfree.chart.renderer.xy.XYLineAndShapeRenderer: java.lang.Boolean linesVisible> = r1
+org.jfree.chart.renderer.AbstractRenderer.notifyListeners : $r3 = r0.<org.jfree.chart.renderer.AbstractRenderer: javax.swing.event.EventListenerList listenerList>
+org.jfree.chart.renderer.AbstractRenderer.notifyListeners : $i1 = lengthof r2
+org.jfree.chart.renderer.xy.XYLineAndShapeRenderer.setSeriesShapesVisible : $r2 = r0.<org.jfree.chart.renderer.xy.XYLineAndShapeRenderer: org.jfree.util.BooleanList seriesShapesVisible>
+org.jfree.chart.renderer.xy.XYLineAndShapeRenderer.setSeriesShapesVisible : virtualinvoke r0.<org.jfree.chart.renderer.xy.XYLineAndShapeRenderer: void fireChangeEvent()>()
+org.jfree.chart.renderer.xy.XYLineAndShapeRenderer.setSeriesShapesVisible : $r1 = staticinvoke <java.lang.Boolean: java.lang.Boolean valueOf(boolean)>(z0)
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null goto return

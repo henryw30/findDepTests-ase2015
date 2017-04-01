@@ -1,0 +1,29 @@
+org.joda.time.Period.seconds : $r0 = new org.joda.time.Period >>>>>>>> org.joda.time.Period.seconds : $r1 = newarray (int)[8]
+org.joda.time.Period.seconds : $r1 = newarray (int)[8] >>>>>>>> org.joda.time.Period.seconds : $r1[0] = 0
+org.joda.time.Period.seconds : $r1[0] = 0 >>>>>>>> org.joda.time.Period.seconds : $r1[1] = 0
+org.joda.time.Period.seconds : $r1[1] = 0 >>>>>>>> org.joda.time.Period.seconds : $r1[2] = 0
+org.joda.time.Period.seconds : $r1[2] = 0 >>>>>>>> org.joda.time.Period.seconds : $r1[3] = 0
+org.joda.time.Period.seconds : $r1[3] = 0 >>>>>>>> org.joda.time.Period.seconds : $r1[4] = 0
+org.joda.time.Period.seconds : $r1[4] = 0 >>>>>>>> org.joda.time.Period.seconds : $r1[5] = 0
+org.joda.time.Period.seconds : $r1[5] = 0 >>>>>>>> org.joda.time.Period.seconds : $r1[6] = i0
+org.joda.time.Period.seconds : $r1[6] = i0 >>>>>>>> org.joda.time.Period.seconds : $r1[7] = 0
+org.joda.time.Period.seconds : $r1[7] = 0 >>>>>>>> org.joda.time.Period.seconds : $r2 = staticinvoke <org.joda.time.PeriodType: org.joda.time.PeriodType standard()>()
+org.joda.time.Period.seconds : $r2 = staticinvoke <org.joda.time.PeriodType: org.joda.time.PeriodType standard()>() >>>>>>>> org.joda.time.PeriodType.standard : r0 = <org.joda.time.PeriodType: org.joda.time.PeriodType cStandard>
+org.joda.time.PeriodType.standard : r0 = <org.joda.time.PeriodType: org.joda.time.PeriodType cStandard> >>>>>>>> org.joda.time.PeriodType.standard : if r0 != null
+org.joda.time.PeriodType.standard : if r0 != null >>>>>>>> org.joda.time.PeriodType.standard : return r0
+org.joda.time.PeriodType.standard : return r0 >>>>>>>> org.joda.time.Period.seconds : specialinvoke $r0.<org.joda.time.Period: void <init>(int[],org.joda.time.PeriodType)>($r1, $r2)
+org.joda.time.Period.seconds : specialinvoke $r0.<org.joda.time.Period: void <init>(int[],org.joda.time.PeriodType)>($r1, $r2) >>>>>>>> org.joda.time.Period.seconds : return $r0
+org.joda.time.Period.seconds : return $r0 >>>>>>>> org.joda.time.Period.getMinutes : $r1 = virtualinvoke r0.<org.joda.time.Period: org.joda.time.PeriodType getPeriodType()>()
+org.joda.time.Period.getMinutes : $r1 = virtualinvoke r0.<org.joda.time.Period: org.joda.time.PeriodType getPeriodType()>() >>>>>>>> org.joda.time.base.BasePeriod.getPeriodType : $r1 = r0.<org.joda.time.base.BasePeriod: org.joda.time.PeriodType iType>
+org.joda.time.base.BasePeriod.getPeriodType : $r1 = r0.<org.joda.time.base.BasePeriod: org.joda.time.PeriodType iType> >>>>>>>> org.joda.time.base.BasePeriod.getPeriodType : return $r1
+org.joda.time.base.BasePeriod.getPeriodType : return $r1 >>>>>>>> org.joda.time.Period.getMinutes : $i0 = <org.joda.time.PeriodType: int MINUTE_INDEX>
+org.joda.time.Period.getMinutes : $i0 = <org.joda.time.PeriodType: int MINUTE_INDEX> >>>>>>>> org.joda.time.Period.getMinutes : $i1 = virtualinvoke $r1.<org.joda.time.PeriodType: int getIndexedField(org.joda.time.ReadablePeriod,int)>(r0, $i0)
+org.joda.time.Period.getMinutes : $i1 = virtualinvoke $r1.<org.joda.time.PeriodType: int getIndexedField(org.joda.time.ReadablePeriod,int)>(r0, $i0) >>>>>>>> org.joda.time.PeriodType.getIndexedField : $r2 = r0.<org.joda.time.PeriodType: int[] iIndices>
+org.joda.time.PeriodType.getIndexedField : $r2 = r0.<org.joda.time.PeriodType: int[] iIndices> >>>>>>>> org.joda.time.PeriodType.getIndexedField : i1 = $r2[i0]
+org.joda.time.PeriodType.getIndexedField : i1 = $r2[i0] >>>>>>>> org.joda.time.PeriodType.getIndexedField : if i1 != -1
+org.joda.time.PeriodType.getIndexedField : if i1 != -1 >>>>>>>> org.joda.time.PeriodType.getIndexedField : $i2 = interfaceinvoke r1.<org.joda.time.ReadablePeriod: int getValue(int)>(i1)
+org.joda.time.PeriodType.getIndexedField : $i2 = interfaceinvoke r1.<org.joda.time.ReadablePeriod: int getValue(int)>(i1) >>>>>>>> org.joda.time.base.BasePeriod.getValue : $r1 = r0.<org.joda.time.base.BasePeriod: int[] iValues>
+org.joda.time.base.BasePeriod.getValue : $r1 = r0.<org.joda.time.base.BasePeriod: int[] iValues> >>>>>>>> org.joda.time.base.BasePeriod.getValue : $i1 = $r1[i0]
+org.joda.time.base.BasePeriod.getValue : $i1 = $r1[i0] >>>>>>>> org.joda.time.base.BasePeriod.getValue : return $i1
+org.joda.time.base.BasePeriod.getValue : return $i1 >>>>>>>> org.joda.time.PeriodType.getIndexedField : return $i2
+org.joda.time.PeriodType.getIndexedField : return $i2 >>>>>>>> org.joda.time.Period.getMinutes : return $i1

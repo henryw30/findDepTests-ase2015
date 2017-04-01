@@ -1,0 +1,10 @@
+crystal.model.DataSource.getShortName : $r1 = r0.<crystal.model.DataSource: java.lang.String _shortName>
+crystal.model.DataSource.clone : $r2 = specialinvoke r0.<java.lang.Object: java.lang.Object clone()>()
+crystal.model.DataSource.clone : $r6 = r0.<crystal.model.DataSource: crystal.model.RevisionHistory _oldHistory>
+crystal.model.DataSource.clone : $r3 = r0.<crystal.model.DataSource: crystal.model.RevisionHistory _history>
+crystal.model.DataSource.clone : return r1
+crystal.model.DataSource.setShortName : staticinvoke <crystal.util.ValidInputChecker: void checkValidStringInput(java.lang.String)>(r1)
+crystal.model.DataSource.setShortName : $r2 = virtualinvoke r1.<java.lang.String: java.lang.String replace(char,char)>(32, 95)
+crystal.model.DataSource.setParent : if r1 == null goto r0.<crystal.model.DataSource: java.lang.String _parent> = null
+crystal.model.DataSource.setParent : r0.<crystal.model.DataSource: java.lang.String _parent> = r1
+crystal.util.ValidInputChecker.checkValidStringInput : if r0 == null goto $r2 = new java.lang.IllegalArgumentException

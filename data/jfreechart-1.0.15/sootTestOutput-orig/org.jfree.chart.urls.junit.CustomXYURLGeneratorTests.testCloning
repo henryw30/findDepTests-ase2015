@@ -1,0 +1,35 @@
+org.jfree.chart.urls.CustomXYURLGenerator.getURLCount : i1 = 0
+org.jfree.chart.urls.CustomXYURLGenerator.getURLCount : if r1 == null goto return i1
+org.jfree.chart.urls.CustomXYURLGenerator.getURLCount : i1 = interfaceinvoke r1.<java.util.List: int size()>()
+org.jfree.chart.urls.CustomXYURLGenerator.getURLCount : $r2 = r0.<org.jfree.chart.urls.CustomXYURLGenerator: java.util.ArrayList urlSeries>
+org.jfree.chart.urls.CustomXYURLGenerator.getURLCount : return i1
+org.jfree.chart.urls.CustomXYURLGenerator.getListCount : $r1 = r0.<org.jfree.chart.urls.CustomXYURLGenerator: java.util.ArrayList urlSeries>
+org.jfree.chart.urls.CustomXYURLGenerator.equals : if r1 != r0 goto $z0 = r1 instanceof org.jfree.chart.urls.CustomXYURLGenerator
+org.jfree.chart.urls.CustomXYURLGenerator.equals : i1 = 0
+org.jfree.chart.urls.CustomXYURLGenerator.equals : $i4 = virtualinvoke r2.<org.jfree.chart.urls.CustomXYURLGenerator: int getListCount()>()
+org.jfree.chart.urls.CustomXYURLGenerator.equals : if r3 == null goto (branch)
+org.jfree.chart.urls.CustomXYURLGenerator.equals : $i5 = virtualinvoke r2.<org.jfree.chart.urls.CustomXYURLGenerator: int getURLCount(int)>(i1)
+org.jfree.chart.urls.CustomXYURLGenerator.equals : r4 = virtualinvoke r2.<org.jfree.chart.urls.CustomXYURLGenerator: java.lang.String getURL(int,int)>(i1, i3)
+org.jfree.chart.urls.CustomXYURLGenerator.equals : r3 = virtualinvoke r0.<org.jfree.chart.urls.CustomXYURLGenerator: java.lang.String getURL(int,int)>(i1, i3)
+org.jfree.chart.urls.CustomXYURLGenerator.equals : i3 = 0
+org.jfree.chart.urls.CustomXYURLGenerator.equals : $z1 = virtualinvoke r3.<java.lang.String: boolean equals(java.lang.Object)>(r4)
+org.jfree.chart.urls.CustomXYURLGenerator.equals : return 1
+org.jfree.chart.urls.CustomXYURLGenerator.equals : return 0
+org.jfree.chart.urls.CustomXYURLGenerator.equals : i0 = virtualinvoke r0.<org.jfree.chart.urls.CustomXYURLGenerator: int getListCount()>()
+org.jfree.chart.urls.CustomXYURLGenerator.equals : $z0 = r1 instanceof org.jfree.chart.urls.CustomXYURLGenerator
+org.jfree.chart.urls.CustomXYURLGenerator.equals : r2 = (org.jfree.chart.urls.CustomXYURLGenerator) r1
+org.jfree.chart.urls.CustomXYURLGenerator.equals : i2 = virtualinvoke r0.<org.jfree.chart.urls.CustomXYURLGenerator: int getURLCount(int)>(i1)
+org.jfree.chart.urls.CustomXYURLGenerator.addURLSeries : if r1 == null goto $r4 = r0.<org.jfree.chart.urls.CustomXYURLGenerator: java.util.ArrayList urlSeries>
+org.jfree.chart.urls.CustomXYURLGenerator.addURLSeries : $r3 = new java.util.ArrayList
+org.jfree.chart.urls.CustomXYURLGenerator.addURLSeries : r2 = null
+org.jfree.chart.urls.CustomXYURLGenerator.addURLSeries : $r4 = r0.<org.jfree.chart.urls.CustomXYURLGenerator: java.util.ArrayList urlSeries>
+org.jfree.chart.urls.CustomXYURLGenerator.clone : return r1
+org.jfree.chart.urls.CustomXYURLGenerator.clone : $r2 = new java.util.ArrayList
+org.jfree.chart.urls.CustomXYURLGenerator.clone : $r3 = specialinvoke r0.<java.lang.Object: java.lang.Object clone()>()
+org.jfree.chart.urls.CustomXYURLGenerator.getURL : if r2 == null goto return r1
+org.jfree.chart.urls.CustomXYURLGenerator.getURL : $r3 = r0.<org.jfree.chart.urls.CustomXYURLGenerator: java.util.ArrayList urlSeries>
+org.jfree.chart.urls.CustomXYURLGenerator.getURL : $i3 = interfaceinvoke r2.<java.util.List: int size()>()
+org.jfree.chart.urls.CustomXYURLGenerator.getURL : $i2 = virtualinvoke r0.<org.jfree.chart.urls.CustomXYURLGenerator: int getListCount()>()
+org.jfree.chart.urls.CustomXYURLGenerator.getURL : r1 = null
+org.jfree.chart.urls.CustomXYURLGenerator.getURL : return r1
+org.jfree.chart.urls.CustomXYURLGenerator.getURL : $r5 = interfaceinvoke r2.<java.util.List: java.lang.Object get(int)>(i1)

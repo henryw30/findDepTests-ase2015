@@ -1,0 +1,37 @@
+org.joda.time.DateTimeUtils.setCurrentMillisSystem : staticinvoke <org.joda.time.DateTimeUtils: void checkPermission()>() >>>>>>>> org.joda.time.DateTimeUtils.checkPermission : r0 = staticinvoke <java.lang.System: java.lang.SecurityManager getSecurityManager()>()
+org.joda.time.DateTimeUtils.checkPermission : r0 = staticinvoke <java.lang.System: java.lang.SecurityManager getSecurityManager()>() >>>>>>>> org.joda.time.DateTimeUtils.checkPermission : if r0 == null
+org.joda.time.DateTimeUtils.checkPermission : if r0 == null >>>>>>>> org.joda.time.DateTimeUtils.setCurrentMillisSystem : $r0 = <org.joda.time.DateTimeUtils: org.joda.time.DateTimeUtils$SystemMillisProvider SYSTEM_MILLIS_PROVIDER>
+org.joda.time.DateTimeUtils.setCurrentMillisSystem : $r0 = <org.joda.time.DateTimeUtils: org.joda.time.DateTimeUtils$SystemMillisProvider SYSTEM_MILLIS_PROVIDER> >>>>>>>> org.joda.time.DateTimeUtils.setCurrentMillisSystem : <org.joda.time.DateTimeUtils: org.joda.time.DateTimeUtils$MillisProvider cMillisProvider> = $r0
+org.joda.time.DateTimeUtils.setCurrentMillisSystem : <org.joda.time.DateTimeUtils: org.joda.time.DateTimeUtils$MillisProvider cMillisProvider> = $r0 >>>>>>>> org.joda.time.DateTimeZone.setDefault : r1 = staticinvoke <java.lang.System: java.lang.SecurityManager getSecurityManager()>()
+org.joda.time.DateTimeZone.setDefault : r1 = staticinvoke <java.lang.System: java.lang.SecurityManager getSecurityManager()>() >>>>>>>> org.joda.time.DateTimeZone.setDefault : if r1 == null
+org.joda.time.DateTimeZone.setDefault : if r1 == null >>>>>>>> org.joda.time.DateTimeZone.setDefault : if r0 != null
+org.joda.time.DateTimeZone.setDefault : if r0 != null >>>>>>>> org.joda.time.DateTimeZone.setDefault : $r6 = class "org/joda/time/DateTimeZone"
+org.joda.time.DateTimeZone.setDefault : $r6 = class "org/joda/time/DateTimeZone" >>>>>>>> org.joda.time.DateTimeZone.setDefault : r3 = $r6
+org.joda.time.DateTimeZone.setDefault : r3 = $r6 >>>>>>>> org.joda.time.DateTimeZone.setDefault : entermonitor $r6
+org.joda.time.DateTimeZone.setDefault : entermonitor $r6 >>>>>>>> org.joda.time.DateTimeZone.setDefault : <org.joda.time.DateTimeZone: org.joda.time.DateTimeZone cDefault> = r0
+org.joda.time.DateTimeZone.setDefault : <org.joda.time.DateTimeZone: org.joda.time.DateTimeZone cDefault> = r0 >>>>>>>> org.joda.time.DateTimeZone.setDefault : exitmonitor r3
+org.joda.time.DateTimeZone.setDefault : exitmonitor r3 >>>>>>>> org.joda.time.DateTimeZone.setDefault : goto [?= return]
+org.joda.time.DateTimeZone.setDefault : goto [?= return] >>>>>>>> org.joda.time.DateTimeUtils.setCurrentMillisFixed : staticinvoke <org.joda.time.DateTimeUtils: void checkPermission()>()
+org.joda.time.DateTimeUtils.setCurrentMillisFixed : staticinvoke <org.joda.time.DateTimeUtils: void checkPermission()>() >>>>>>>> org.joda.time.DateTimeUtils.setCurrentMillisFixed : $r0 = new org.joda.time.DateTimeUtils$FixedMillisProvider
+org.joda.time.DateTimeUtils.setCurrentMillisFixed : $r0 = new org.joda.time.DateTimeUtils$FixedMillisProvider >>>>>>>> org.joda.time.DateTimeUtils.setCurrentMillisFixed : specialinvoke $r0.<org.joda.time.DateTimeUtils$FixedMillisProvider: void <init>(long)>(l0)
+org.joda.time.DateTimeUtils.setCurrentMillisFixed : specialinvoke $r0.<org.joda.time.DateTimeUtils$FixedMillisProvider: void <init>(long)>(l0) >>>>>>>> org.joda.time.DateTimeUtils.setCurrentMillisFixed : <org.joda.time.DateTimeUtils: org.joda.time.DateTimeUtils$MillisProvider cMillisProvider> = $r0
+org.joda.time.DateTimeUtils.setCurrentMillisFixed : <org.joda.time.DateTimeUtils: org.joda.time.DateTimeUtils$MillisProvider cMillisProvider> = $r0 >>>>>>>> org.joda.time.DateTimeZone.getDefault : r0 = <org.joda.time.DateTimeZone: org.joda.time.DateTimeZone cDefault>
+org.joda.time.DateTimeZone.getDefault : r0 = <org.joda.time.DateTimeZone: org.joda.time.DateTimeZone cDefault> >>>>>>>> org.joda.time.DateTimeZone.getDefault : if r0 != null
+org.joda.time.DateTimeZone.getDefault : if r0 != null >>>>>>>> org.joda.time.DateTimeZone.getDefault : return r0
+org.joda.time.DateTimeZone.getDefault : return r0 >>>>>>>> org.joda.time.base.AbstractInstant.isAfterNow : $l0 = staticinvoke <org.joda.time.DateTimeUtils: long currentTimeMillis()>()
+org.joda.time.base.AbstractInstant.isAfterNow : $l0 = staticinvoke <org.joda.time.DateTimeUtils: long currentTimeMillis()>() >>>>>>>> org.joda.time.DateTimeUtils.currentTimeMillis : $r0 = <org.joda.time.DateTimeUtils: org.joda.time.DateTimeUtils$MillisProvider cMillisProvider>
+org.joda.time.DateTimeUtils.currentTimeMillis : $r0 = <org.joda.time.DateTimeUtils: org.joda.time.DateTimeUtils$MillisProvider cMillisProvider> >>>>>>>> org.joda.time.DateTimeUtils.currentTimeMillis : $l0 = interfaceinvoke $r0.<org.joda.time.DateTimeUtils$MillisProvider: long getMillis()>()
+org.joda.time.DateTimeUtils.currentTimeMillis : $l0 = interfaceinvoke $r0.<org.joda.time.DateTimeUtils$MillisProvider: long getMillis()>() >>>>>>>> org.joda.time.DateTimeUtils$FixedMillisProvider.getMillis : $l0 = r0.<org.joda.time.DateTimeUtils$FixedMillisProvider: long iMillis>
+org.joda.time.DateTimeUtils$FixedMillisProvider.getMillis : $l0 = r0.<org.joda.time.DateTimeUtils$FixedMillisProvider: long iMillis> >>>>>>>> org.joda.time.DateTimeUtils$FixedMillisProvider.getMillis : return $l0
+org.joda.time.DateTimeUtils$FixedMillisProvider.getMillis : return $l0 >>>>>>>> org.joda.time.DateTimeUtils.currentTimeMillis : return $l0
+org.joda.time.DateTimeUtils.currentTimeMillis : return $l0 >>>>>>>> org.joda.time.base.AbstractInstant.isAfterNow : $z0 = virtualinvoke r0.<org.joda.time.base.AbstractInstant: boolean isAfter(long)>($l0)
+org.joda.time.base.AbstractInstant.isAfterNow : $z0 = virtualinvoke r0.<org.joda.time.base.AbstractInstant: boolean isAfter(long)>($l0) >>>>>>>> org.joda.time.base.AbstractInstant.isAfter : $l1 = virtualinvoke r0.<org.joda.time.base.AbstractInstant: long getMillis()>()
+org.joda.time.base.AbstractInstant.isAfter : $l1 = virtualinvoke r0.<org.joda.time.base.AbstractInstant: long getMillis()>() >>>>>>>> org.joda.time.Instant.getMillis : $l0 = r0.<org.joda.time.Instant: long iMillis>
+org.joda.time.Instant.getMillis : $l0 = r0.<org.joda.time.Instant: long iMillis> >>>>>>>> org.joda.time.Instant.getMillis : return $l0
+org.joda.time.Instant.getMillis : return $l0 >>>>>>>> org.joda.time.base.AbstractInstant.isAfter : $b2 = $l1 cmp l0
+org.joda.time.base.AbstractInstant.isAfter : $b2 = $l1 cmp l0 >>>>>>>> org.joda.time.base.AbstractInstant.isAfter : if $b2 <= 0
+org.joda.time.base.AbstractInstant.isAfter : if $b2 <= 0 >>>>>>>> org.joda.time.base.AbstractInstant.isAfter : $z0 = 0
+org.joda.time.base.AbstractInstant.isAfter : $z0 = 0 >>>>>>>> org.joda.time.base.AbstractInstant.isAfter : return $z0
+org.joda.time.base.AbstractInstant.isAfter : return $z0 >>>>>>>> org.joda.time.base.AbstractInstant.isAfterNow : return $z0
+org.joda.time.base.AbstractInstant.isAfterNow : return $z0 >>>>>>>> org.joda.time.base.AbstractInstant.isAfter : $z0 = 1
+org.joda.time.base.AbstractInstant.isAfter : $z0 = 1 >>>>>>>> org.joda.time.base.AbstractInstant.isAfter : goto [?= return $z0]

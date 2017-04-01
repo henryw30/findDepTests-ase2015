@@ -1,0 +1,27 @@
+org.jfree.chart.annotations.XYPolygonAnnotation.writeObject : $r3 = r0.<org.jfree.chart.annotations.XYPolygonAnnotation: java.awt.Paint outlinePaint>
+org.jfree.chart.annotations.XYPolygonAnnotation.writeObject : $r4 = r0.<org.jfree.chart.annotations.XYPolygonAnnotation: java.awt.Paint fillPaint>
+org.jfree.chart.annotations.XYPolygonAnnotation.writeObject : $r2 = r0.<org.jfree.chart.annotations.XYPolygonAnnotation: java.awt.Stroke stroke>
+org.jfree.chart.annotations.XYPolygonAnnotation.writeObject : virtualinvoke r1.<java.io.ObjectOutputStream: void defaultWriteObject()>()
+org.jfree.chart.annotations.AbstractXYAnnotation.equals : $r5 = r0.<org.jfree.chart.annotations.AbstractXYAnnotation: java.lang.String url>
+org.jfree.chart.annotations.AbstractXYAnnotation.equals : if r1 != r0 goto $z0 = r1 instanceof org.jfree.chart.annotations.AbstractXYAnnotation
+org.jfree.chart.annotations.AbstractXYAnnotation.equals : r2 = (org.jfree.chart.annotations.AbstractXYAnnotation) r1
+org.jfree.chart.annotations.AbstractXYAnnotation.equals : return 1
+org.jfree.chart.annotations.AbstractXYAnnotation.equals : $z0 = r1 instanceof org.jfree.chart.annotations.AbstractXYAnnotation
+org.jfree.chart.annotations.AbstractXYAnnotation.equals : $r3 = r0.<org.jfree.chart.annotations.AbstractXYAnnotation: java.lang.String toolTipText>
+org.jfree.chart.annotations.AbstractAnnotation.writeObject : virtualinvoke r1.<java.io.ObjectOutputStream: void defaultWriteObject()>()
+org.jfree.chart.annotations.XYPolygonAnnotation.equals : $z1 = r1 instanceof org.jfree.chart.annotations.XYPolygonAnnotation
+org.jfree.chart.annotations.XYPolygonAnnotation.equals : $r5 = r0.<org.jfree.chart.annotations.XYPolygonAnnotation: java.awt.Stroke stroke>
+org.jfree.chart.annotations.XYPolygonAnnotation.equals : $r3 = r0.<org.jfree.chart.annotations.XYPolygonAnnotation: double[] polygon>
+org.jfree.chart.annotations.XYPolygonAnnotation.equals : r2 = (org.jfree.chart.annotations.XYPolygonAnnotation) r1
+org.jfree.chart.annotations.XYPolygonAnnotation.equals : $z0 = specialinvoke r0.<org.jfree.chart.annotations.AbstractXYAnnotation: boolean equals(java.lang.Object)>(r1)
+org.jfree.chart.annotations.XYPolygonAnnotation.equals : if r1 != r0 goto $z0 = specialinvoke r0.<org.jfree.chart.annotations.AbstractXYAnnotation: boolean equals(java.lang.Object)>(r1)
+org.jfree.chart.annotations.XYPolygonAnnotation.equals : $r7 = r0.<org.jfree.chart.annotations.XYPolygonAnnotation: java.awt.Paint outlinePaint>
+org.jfree.chart.annotations.XYPolygonAnnotation.equals : return 1
+org.jfree.chart.annotations.XYPolygonAnnotation.equals : $r9 = r0.<org.jfree.chart.annotations.XYPolygonAnnotation: java.awt.Paint fillPaint>
+org.jfree.chart.annotations.AbstractAnnotation.readObject : $r2 = new javax.swing.event.EventListenerList
+org.jfree.chart.annotations.AbstractAnnotation.readObject : virtualinvoke r1.<java.io.ObjectInputStream: void defaultReadObject()>()
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null goto return
+org.jfree.chart.annotations.XYPolygonAnnotation.readObject : virtualinvoke r1.<java.io.ObjectInputStream: void defaultReadObject()>()
+org.jfree.chart.annotations.XYPolygonAnnotation.readObject : $r2 = staticinvoke <org.jfree.io.SerialUtilities: java.awt.Stroke readStroke(java.io.ObjectInputStream)>(r1)
+org.jfree.chart.annotations.XYPolygonAnnotation.readObject : $r4 = staticinvoke <org.jfree.io.SerialUtilities: java.awt.Paint readPaint(java.io.ObjectInputStream)>(r1)
+org.jfree.chart.annotations.XYPolygonAnnotation.readObject : $r3 = staticinvoke <org.jfree.io.SerialUtilities: java.awt.Paint readPaint(java.io.ObjectInputStream)>(r1)

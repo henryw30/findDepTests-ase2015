@@ -1,0 +1,65 @@
+org.joda.time.format.PeriodFormatter.parseMutablePeriod : $r7 = new java.lang.IllegalArgumentException
+org.joda.time.format.PeriodFormatter.parseMutablePeriod : $r3 = new org.joda.time.MutablePeriod
+org.joda.time.format.PeriodFormatter.parseMutablePeriod : i0 = i0 ^ -1
+org.joda.time.format.PeriodFormatter.parseMutablePeriod : $r5 = virtualinvoke r0.<org.joda.time.format.PeriodFormatter: org.joda.time.format.PeriodParser getParser()>()
+org.joda.time.format.PeriodFormatter.parseMutablePeriod : if i0 < 0 goto i0 = i0 ^ -1
+org.joda.time.format.PeriodFormatter.parseMutablePeriod : specialinvoke r0.<org.joda.time.format.PeriodFormatter: void checkParser()>()
+org.joda.time.chrono.BaseChronology.get : return r2
+org.joda.time.chrono.BaseChronology.get : r2 = newarray (int)[i1]
+org.joda.time.chrono.BaseChronology.get : i1 = interfaceinvoke r1.<org.joda.time.ReadablePeriod: int size()>()
+org.joda.time.chrono.BaseChronology.get : $b5 = l0 cmp 0L
+org.joda.time.base.BasePeriod.getPeriodType : $r1 = r0.<org.joda.time.base.BasePeriod: org.joda.time.PeriodType iType>
+org.joda.time.DateTimeZone.getDefault : if r0 != null goto return r0
+org.joda.time.DateTimeZone.getDefault : r0 = <org.joda.time.DateTimeZone: org.joda.time.DateTimeZone cDefault>
+org.joda.time.DateTimeZone.getDefault : return r0
+org.joda.time.format.PeriodFormatter.withParseType : $r3 = new org.joda.time.format.PeriodFormatter
+org.joda.time.format.PeriodFormatter.withParseType : $r2 = r0.<org.joda.time.format.PeriodFormatter: org.joda.time.PeriodType iParseType>
+org.joda.time.DurationFieldType.seconds : $r0 = <org.joda.time.DurationFieldType: org.joda.time.DurationFieldType SECONDS_TYPE>
+org.joda.time.Seconds.parseSeconds : $r3 = <org.joda.time.Seconds: org.joda.time.format.PeriodFormatter PARSER>
+org.joda.time.Seconds.parseSeconds : if r0 != null goto $r3 = <org.joda.time.Seconds: org.joda.time.format.PeriodFormatter PARSER>
+org.joda.time.chrono.ISOChronology.getInstance : if r0 != null goto $i1 = staticinvoke <java.lang.System: int identityHashCode(java.lang.Object)>(r0)
+org.joda.time.chrono.ISOChronology.getInstance : $i1 = staticinvoke <java.lang.System: int identityHashCode(java.lang.Object)>(r0)
+org.joda.time.chrono.ISOChronology.getInstance : $r5 = <org.joda.time.chrono.ISOChronology: org.joda.time.chrono.ISOChronology[] cFastCache>
+org.joda.time.chrono.ISOChronology.getInstance : return r1
+org.joda.time.chrono.ISOChronology.getInstance : if r1 == null goto $r7 = <org.joda.time.chrono.ISOChronology: java.util.Map cCache>
+org.joda.time.chrono.ISOChronology.getInstance : $r0 = staticinvoke <org.joda.time.DateTimeZone: org.joda.time.DateTimeZone getDefault()>()
+org.joda.time.chrono.AssembledChronology.getParam : $r1 = r0.<org.joda.time.chrono.AssembledChronology: java.lang.Object iParam>
+org.joda.time.format.PeriodFormatter.getParser : $r1 = r0.<org.joda.time.format.PeriodFormatter: org.joda.time.format.PeriodParser iParser>
+org.joda.time.base.BasePeriod.checkPeriodType : $r2 = staticinvoke <org.joda.time.DateTimeUtils: org.joda.time.PeriodType getPeriodType(org.joda.time.PeriodType)>(r1)
+org.joda.time.PeriodType.seconds : if r0 != null goto return r0
+org.joda.time.PeriodType.seconds : $r2 = new org.joda.time.PeriodType
+org.joda.time.PeriodType.seconds : r0 = <org.joda.time.PeriodType: org.joda.time.PeriodType cSeconds>
+org.joda.time.PeriodType.seconds : return r0
+org.joda.time.PeriodType.seconds : $r1 = staticinvoke <org.joda.time.DurationFieldType: org.joda.time.DurationFieldType seconds()>()
+org.joda.time.PeriodType.seconds : <org.joda.time.PeriodType: org.joda.time.PeriodType cSeconds> = r0
+org.joda.time.chrono.ZonedChronology.getZone : $r1 = virtualinvoke r0.<org.joda.time.chrono.ZonedChronology: java.lang.Object getParam()>()
+org.joda.time.DateTimeUtils.getChronology : if r0 != null goto return r0
+org.joda.time.DateTimeUtils.getChronology : $r1 = staticinvoke <org.joda.time.chrono.ISOChronology: org.joda.time.chrono.ISOChronology getInstance()>()
+org.joda.time.format.ISOPeriodFormat.standard : $r0 = <org.joda.time.format.ISOPeriodFormat: org.joda.time.format.PeriodFormatter cStandard>
+org.joda.time.format.ISOPeriodFormat.standard : $r19 = <org.joda.time.format.ISOPeriodFormat: org.joda.time.format.PeriodFormatter cStandard>
+org.joda.time.format.FormatUtils.createErrorMessage : $r3 = new java.lang.StringBuilder
+org.joda.time.format.FormatUtils.createErrorMessage : i1 = i0 + 32
+org.joda.time.format.FormatUtils.createErrorMessage : $i2 = virtualinvoke r0.<java.lang.String: int length()>()
+org.joda.time.format.FormatUtils.createErrorMessage : r1 = r0
+org.joda.time.format.FormatUtils.createErrorMessage : if i0 > 0 goto $i4 = virtualinvoke r0.<java.lang.String: int length()>()
+org.joda.time.DateTimeUtils.getPeriodType : if r0 != null goto return r0
+org.joda.time.DateTimeUtils.getPeriodType : return r0
+org.joda.time.format.PeriodFormatterBuilder$Separator.parseInto : if i4 >= 0 goto z0 = 0
+org.joda.time.format.PeriodFormatterBuilder$Separator.parseInto : $r6 = r0.<org.joda.time.format.PeriodFormatterBuilder$Separator: org.joda.time.format.PeriodParser iBeforeParser>
+org.joda.time.format.PeriodFormatterBuilder$Separator.parseInto : i1 = i0
+org.joda.time.format.PeriodFormatterBuilder$Separator.parseInto : return i4
+org.joda.time.format.PeriodFormatterBuilder$Composite.parseInto : return i0
+org.joda.time.format.PeriodFormatterBuilder$Composite.parseInto : $r6 = r4[i2]
+org.joda.time.format.PeriodFormatterBuilder$Composite.parseInto : if r4 != null goto i1 = lengthof r4
+org.joda.time.format.PeriodFormatterBuilder$Composite.parseInto : i2 = 0
+org.joda.time.format.PeriodFormatterBuilder$Composite.parseInto : r4 = r0.<org.joda.time.format.PeriodFormatterBuilder$Composite: org.joda.time.format.PeriodParser[] iParsers>
+org.joda.time.format.PeriodFormatterBuilder$Composite.parseInto : i1 = lengthof r4
+org.joda.time.base.AbstractPeriod.size : $r1 = virtualinvoke r0.<org.joda.time.base.AbstractPeriod: org.joda.time.PeriodType getPeriodType()>()
+org.joda.time.format.PeriodFormatterBuilder$Literal.parseInto : $r4 = r0.<org.joda.time.format.PeriodFormatterBuilder$Literal: java.lang.String iText>
+org.joda.time.format.PeriodFormatterBuilder$Literal.parseInto : $i4 = i0 ^ -1
+org.joda.time.chrono.AssembledChronology.getZone : $r3 = virtualinvoke r1.<org.joda.time.Chronology: org.joda.time.DateTimeZone getZone()>()
+org.joda.time.chrono.AssembledChronology.getZone : $r2 = r0.<org.joda.time.chrono.AssembledChronology: org.joda.time.Chronology iBase>
+org.joda.time.format.PeriodFormatter.checkParser : $r1 = r0.<org.joda.time.format.PeriodFormatter: org.joda.time.format.PeriodParser iParser>
+org.joda.time.PeriodType.size : $r1 = r0.<org.joda.time.PeriodType: org.joda.time.DurationFieldType[] iTypes>
+org.joda.time.format.PeriodFormatter.parsePeriod : $r2 = virtualinvoke r0.<org.joda.time.format.PeriodFormatter: org.joda.time.MutablePeriod parseMutablePeriod(java.lang.String)>(r1)
+org.joda.time.format.PeriodFormatter.parsePeriod : specialinvoke r0.<org.joda.time.format.PeriodFormatter: void checkParser()>()

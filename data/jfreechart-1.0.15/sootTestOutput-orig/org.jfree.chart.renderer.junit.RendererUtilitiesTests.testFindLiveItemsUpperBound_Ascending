@@ -1,0 +1,44 @@
+org.jfree.data.general.AbstractDataset.notifyListeners : $r3 = r0.<org.jfree.data.general.AbstractDataset: javax.swing.event.EventListenerList listenerList>
+org.jfree.data.general.AbstractDataset.notifyListeners : $i1 = lengthof r2
+org.jfree.data.xy.DefaultXYDataset.addSeries : $r11 = r0.<org.jfree.data.xy.DefaultXYDataset: java.util.List seriesList>
+org.jfree.data.xy.DefaultXYDataset.addSeries : $r6 = r2[0]
+org.jfree.data.xy.DefaultXYDataset.addSeries : i0 = virtualinvoke r0.<org.jfree.data.xy.DefaultXYDataset: int indexOf(java.lang.Comparable)>(r1)
+org.jfree.data.xy.DefaultXYDataset.addSeries : $r9 = r0.<org.jfree.data.xy.DefaultXYDataset: java.util.List seriesKeys>
+org.jfree.data.xy.DefaultXYDataset.addSeries : $r14 = new org.jfree.data.general.DatasetChangeEvent
+org.jfree.data.xy.DefaultXYDataset.addSeries : if r1 != null goto (branch)
+org.jfree.data.xy.DefaultXYDataset.addSeries : $i1 = lengthof r2
+org.jfree.data.xy.DefaultXYDataset.addSeries : if r2 != null goto $i1 = lengthof r2
+org.jfree.data.xy.DefaultXYDataset.addSeries : $r13 = r0.<org.jfree.data.xy.DefaultXYDataset: java.util.List seriesList>
+org.jfree.data.xy.DefaultXYDataset.addSeries : if i0 != -1 goto $r11 = r0.<org.jfree.data.xy.DefaultXYDataset: java.util.List seriesList>
+org.jfree.data.xy.DefaultXYDataset.addSeries : $r10 = r0.<org.jfree.data.xy.DefaultXYDataset: java.util.List seriesList>
+org.jfree.data.xy.DefaultXYDataset.indexOf : $r2 = r0.<org.jfree.data.xy.DefaultXYDataset: java.util.List seriesKeys>
+org.jfree.chart.renderer.RendererUtilities.findLiveItemsUpperBound : d2 = interfaceinvoke r0.<org.jfree.data.xy.XYDataset: double getXValue(int,int)>(i0, i2)
+org.jfree.chart.renderer.RendererUtilities.findLiveItemsUpperBound : i3 = i1 - 1
+org.jfree.chart.renderer.RendererUtilities.findLiveItemsUpperBound : $b6 = d2 cmpl d1
+org.jfree.chart.renderer.RendererUtilities.findLiveItemsUpperBound : $b5 = d0 cmpl d1
+org.jfree.chart.renderer.RendererUtilities.findLiveItemsUpperBound : return 0
+org.jfree.chart.renderer.RendererUtilities.findLiveItemsUpperBound : $i8 = i2 + i3
+org.jfree.chart.renderer.RendererUtilities.findLiveItemsUpperBound : if i1 > 1 goto $r2 = interfaceinvoke r0.<org.jfree.data.xy.XYDataset: org.jfree.data.DomainOrder getDomainOrder()>()
+org.jfree.chart.renderer.RendererUtilities.findLiveItemsUpperBound : i2 = i4
+org.jfree.chart.renderer.RendererUtilities.findLiveItemsUpperBound : d3 = interfaceinvoke r0.<org.jfree.data.xy.XYDataset: double getXValue(int,int)>(i0, i3)
+org.jfree.chart.renderer.RendererUtilities.findLiveItemsUpperBound : $i9 = i3 - i2
+org.jfree.chart.renderer.RendererUtilities.findLiveItemsUpperBound : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r0, "dataset")
+org.jfree.chart.renderer.RendererUtilities.findLiveItemsUpperBound : $b7 = d3 cmpg d1
+org.jfree.chart.renderer.RendererUtilities.findLiveItemsUpperBound : i3 = i4
+org.jfree.chart.renderer.RendererUtilities.findLiveItemsUpperBound : i2 = 0
+org.jfree.chart.renderer.RendererUtilities.findLiveItemsUpperBound : $i11 = i2 + i3
+org.jfree.chart.renderer.RendererUtilities.findLiveItemsUpperBound : $r2 = interfaceinvoke r0.<org.jfree.data.xy.XYDataset: org.jfree.data.DomainOrder getDomainOrder()>()
+org.jfree.chart.renderer.RendererUtilities.findLiveItemsUpperBound : return i3
+org.jfree.chart.renderer.RendererUtilities.findLiveItemsUpperBound : i1 = interfaceinvoke r0.<org.jfree.data.xy.XYDataset: int getItemCount(int)>(i0)
+org.jfree.chart.renderer.RendererUtilities.findLiveItemsUpperBound : return i4
+org.jfree.chart.renderer.RendererUtilities.findLiveItemsUpperBound : $b10 = d4 cmpg d1
+org.jfree.chart.renderer.RendererUtilities.findLiveItemsUpperBound : goto [?= staticinvoke <edu.washington.cs.dt.impact.util.Tracer: void trace(java.lang.String,java.lang.String)>("$i9 = i3 - i2", "org.jfree.chart.renderer.RendererUtilities.findLiveItemsUpperBound")]
+org.jfree.chart.renderer.RendererUtilities.findLiveItemsUpperBound : d4 = interfaceinvoke r0.<org.jfree.data.xy.XYDataset: double getXValue(int,int)>(i0, i4)
+org.jfree.chart.renderer.junit.RendererUtilitiesTests$3.getDomainOrder : $r1 = <org.jfree.data.DomainOrder: org.jfree.data.DomainOrder ASCENDING>
+org.jfree.data.xy.DefaultXYDataset.getXValue : $r5 = r1[0]
+org.jfree.data.xy.DefaultXYDataset.getXValue : $r2 = r0.<org.jfree.data.xy.DefaultXYDataset: java.util.List seriesList>
+org.jfree.data.xy.DefaultXYDataset.getSeriesCount : $r1 = r0.<org.jfree.data.xy.DefaultXYDataset: java.util.List seriesList>
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null goto return
+org.jfree.data.xy.DefaultXYDataset.getItemCount : $r6 = r1[0]
+org.jfree.data.xy.DefaultXYDataset.getItemCount : $r3 = r0.<org.jfree.data.xy.DefaultXYDataset: java.util.List seriesList>
+org.jfree.data.xy.DefaultXYDataset.getItemCount : if i0 < 0 goto $r2 = new java.lang.IllegalArgumentException

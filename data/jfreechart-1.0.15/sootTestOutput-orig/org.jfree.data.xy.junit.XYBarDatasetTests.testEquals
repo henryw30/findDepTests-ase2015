@@ -1,0 +1,33 @@
+org.jfree.data.general.AbstractDataset.addChangeListener : $r2 = r0.<org.jfree.data.general.AbstractDataset: javax.swing.event.EventListenerList listenerList>
+org.jfree.data.general.AbstractDataset.notifyListeners : $r3 = r0.<org.jfree.data.general.AbstractDataset: javax.swing.event.EventListenerList listenerList>
+org.jfree.data.general.AbstractDataset.notifyListeners : $i1 = lengthof r2
+org.jfree.data.xy.DefaultXYDataset.addSeries : $r6 = r2[0]
+org.jfree.data.xy.DefaultXYDataset.addSeries : i0 = virtualinvoke r0.<org.jfree.data.xy.DefaultXYDataset: int indexOf(java.lang.Comparable)>(r1)
+org.jfree.data.xy.DefaultXYDataset.addSeries : $r9 = r0.<org.jfree.data.xy.DefaultXYDataset: java.util.List seriesKeys>
+org.jfree.data.xy.DefaultXYDataset.addSeries : $r14 = new org.jfree.data.general.DatasetChangeEvent
+org.jfree.data.xy.DefaultXYDataset.addSeries : if r1 != null goto (branch)
+org.jfree.data.xy.DefaultXYDataset.addSeries : $i1 = lengthof r2
+org.jfree.data.xy.DefaultXYDataset.addSeries : if r2 != null goto $i1 = lengthof r2
+org.jfree.data.xy.DefaultXYDataset.addSeries : if i0 != -1 goto $r11 = r0.<org.jfree.data.xy.DefaultXYDataset: java.util.List seriesList>
+org.jfree.data.xy.DefaultXYDataset.addSeries : $r10 = r0.<org.jfree.data.xy.DefaultXYDataset: java.util.List seriesList>
+org.jfree.data.xy.DefaultXYDataset.indexOf : $r2 = r0.<org.jfree.data.xy.DefaultXYDataset: java.util.List seriesKeys>
+org.jfree.data.xy.DefaultXYDataset.equals : if r1 != r0 goto $z0 = r1 instanceof org.jfree.data.xy.DefaultXYDataset
+org.jfree.data.xy.DefaultXYDataset.equals : r2 = (org.jfree.data.xy.DefaultXYDataset) r1
+org.jfree.data.xy.DefaultXYDataset.equals : r7 = r3[1]
+org.jfree.data.xy.DefaultXYDataset.equals : $r12 = r0.<org.jfree.data.xy.DefaultXYDataset: java.util.List seriesList>
+org.jfree.data.xy.DefaultXYDataset.equals : return 1
+org.jfree.data.xy.DefaultXYDataset.equals : $z0 = r1 instanceof org.jfree.data.xy.DefaultXYDataset
+org.jfree.data.xy.DefaultXYDataset.equals : $z3 = staticinvoke <java.util.Arrays: boolean equals(double[],double[])>(r7, r8)
+org.jfree.data.xy.DefaultXYDataset.equals : i0 = 0
+org.jfree.data.xy.DefaultXYDataset.equals : $r15 = r2.<org.jfree.data.xy.DefaultXYDataset: java.util.List seriesList>
+org.jfree.data.xy.DefaultXYDataset.equals : $r9 = r0.<org.jfree.data.xy.DefaultXYDataset: java.util.List seriesKeys>
+org.jfree.data.xy.DefaultXYDataset.equals : $z2 = staticinvoke <java.util.Arrays: boolean equals(double[],double[])>(r5, r6)
+org.jfree.data.xy.DefaultXYDataset.equals : r8 = r4[1]
+org.jfree.data.xy.DefaultXYDataset.equals : r5 = r3[0]
+org.jfree.data.xy.DefaultXYDataset.equals : r6 = r4[0]
+org.jfree.data.xy.XYBarDataset.equals : $d0 = r0.<org.jfree.data.xy.XYBarDataset: double barWidth>
+org.jfree.data.xy.XYBarDataset.equals : if r1 != r0 goto $z0 = r1 instanceof org.jfree.data.xy.XYBarDataset
+org.jfree.data.xy.XYBarDataset.equals : r2 = (org.jfree.data.xy.XYBarDataset) r1
+org.jfree.data.xy.XYBarDataset.equals : $r3 = r0.<org.jfree.data.xy.XYBarDataset: org.jfree.data.xy.XYDataset underlying>
+org.jfree.data.xy.XYBarDataset.equals : return 1
+org.jfree.data.xy.XYBarDataset.equals : $z0 = r1 instanceof org.jfree.data.xy.XYBarDataset

@@ -1,0 +1,34 @@
+org.jfree.data.gantt.TaskSeriesCollection.getRowCount : $r1 = r0.<org.jfree.data.gantt.TaskSeriesCollection: java.util.List data>
+org.jfree.data.gantt.TaskSeriesCollection.getSeriesCount : $i0 = virtualinvoke r0.<org.jfree.data.gantt.TaskSeriesCollection: int getRowCount()>()
+org.jfree.data.general.AbstractDataset.notifyListeners : $r3 = r0.<org.jfree.data.general.AbstractDataset: javax.swing.event.EventListenerList listenerList>
+org.jfree.data.general.AbstractDataset.notifyListeners : $i1 = lengthof r2
+org.jfree.data.gantt.TaskSeriesCollection.add : $r6 = virtualinvoke r1.<org.jfree.data.gantt.TaskSeries: java.util.List getTasks()>()
+org.jfree.data.gantt.TaskSeriesCollection.add : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "series")
+org.jfree.data.gantt.TaskSeriesCollection.add : $z1 = interfaceinvoke r2.<java.util.Iterator: boolean hasNext()>()
+org.jfree.data.gantt.TaskSeriesCollection.add : $r5 = r0.<org.jfree.data.gantt.TaskSeriesCollection: java.util.List data>
+org.jfree.data.gantt.TaskSeriesCollection.add : virtualinvoke r1.<org.jfree.data.gantt.TaskSeries: void addChangeListener(org.jfree.data.general.SeriesChangeListener)>(r0)
+org.jfree.data.gantt.TaskSeriesCollection.add : virtualinvoke r0.<org.jfree.data.gantt.TaskSeriesCollection: void fireDatasetChanged()>()
+org.jfree.data.general.AbstractDataset.fireDatasetChanged : $r1 = new org.jfree.data.general.DatasetChangeEvent
+org.jfree.data.general.Series.getKey : $r1 = r0.<org.jfree.data.general.Series: java.lang.Comparable key>
+org.jfree.data.general.Series.addChangeListener : $r2 = r0.<org.jfree.data.general.Series: javax.swing.event.EventListenerList listeners>
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null goto return
+org.jfree.data.gantt.TaskSeriesCollection.getSeries : i0 = virtualinvoke r0.<org.jfree.data.gantt.TaskSeriesCollection: int getRowIndex(java.lang.Comparable)>(r1)
+org.jfree.data.gantt.TaskSeriesCollection.getSeries : $r3 = new java.lang.NullPointerException
+org.jfree.data.gantt.TaskSeriesCollection.getSeries : r2 = virtualinvoke r0.<org.jfree.data.gantt.TaskSeriesCollection: org.jfree.data.gantt.TaskSeries getSeries(int)>(i0)
+org.jfree.data.gantt.TaskSeriesCollection.getSeries : if i0 < 0 goto $r1 = new java.lang.IllegalArgumentException
+org.jfree.data.gantt.TaskSeriesCollection.getSeries : return r2
+org.jfree.data.gantt.TaskSeriesCollection.getSeries : if r1 != null goto r2 = null
+org.jfree.data.gantt.TaskSeriesCollection.getSeries : r2 = null
+org.jfree.data.gantt.TaskSeriesCollection.getSeries : $r2 = r0.<org.jfree.data.gantt.TaskSeriesCollection: java.util.List data>
+org.jfree.data.gantt.TaskSeriesCollection.getSeries : if i0 < 0 goto return r2
+org.jfree.data.gantt.TaskSeries.getTasks : $r1 = r0.<org.jfree.data.gantt.TaskSeries: java.util.List tasks>
+org.jfree.data.gantt.TaskSeriesCollection.getRowIndex : goto [?= return i0]
+org.jfree.data.gantt.TaskSeriesCollection.getRowIndex : return i0
+org.jfree.data.gantt.TaskSeriesCollection.getRowIndex : i0 = i2
+org.jfree.data.gantt.TaskSeriesCollection.getRowIndex : $r3 = r0.<org.jfree.data.gantt.TaskSeriesCollection: java.util.List data>
+org.jfree.data.gantt.TaskSeriesCollection.getRowIndex : i2 = 0
+org.jfree.data.gantt.TaskSeriesCollection.getRowIndex : $r6 = virtualinvoke r2.<org.jfree.data.gantt.TaskSeries: java.lang.Comparable getKey()>()
+org.jfree.data.gantt.TaskSeriesCollection.getRowIndex : i0 = -1
+org.jfree.data.gantt.TaskSeriesCollection.getRowIndex : $r4 = r0.<org.jfree.data.gantt.TaskSeriesCollection: java.util.List data>
+org.jfree.data.gantt.TaskSeries.equals : return 1
+org.jfree.data.gantt.TaskSeries.equals : if r1 != r0 goto $z0 = r1 instanceof org.jfree.data.gantt.TaskSeries

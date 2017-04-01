@@ -1,0 +1,37 @@
+org.jfree.chart.plot.dial.AbstractDialLayer.removeChangeListener : $r2 = r0.<org.jfree.chart.plot.dial.AbstractDialLayer: javax.swing.event.EventListenerList listenerList>
+org.jfree.chart.plot.Plot.notifyListeners : $r4 = r2[i0]
+org.jfree.chart.plot.Plot.notifyListeners : $i2 = i0 + 1
+org.jfree.chart.plot.Plot.notifyListeners : $r3 = r0.<org.jfree.chart.plot.Plot: javax.swing.event.EventListenerList listenerList>
+org.jfree.chart.plot.Plot.notifyListeners : $i1 = lengthof r2
+org.jfree.chart.plot.Plot.notifyListeners : $z0 = r0.<org.jfree.chart.plot.Plot: boolean notify>
+org.jfree.chart.plot.dial.AbstractDialLayer.addChangeListener : $r2 = r0.<org.jfree.chart.plot.dial.AbstractDialLayer: javax.swing.event.EventListenerList listenerList>
+org.jfree.chart.plot.dial.StandardDialScale.setStartAngle : r0.<org.jfree.chart.plot.dial.StandardDialScale: double startAngle> = d0
+org.jfree.chart.plot.dial.StandardDialScale.setStartAngle : $r1 = new org.jfree.chart.plot.dial.DialLayerChangeEvent
+org.jfree.chart.plot.dial.AbstractDialLayer.notifyListeners : $r4 = r2[i0]
+org.jfree.chart.plot.dial.AbstractDialLayer.notifyListeners : $r3 = r0.<org.jfree.chart.plot.dial.AbstractDialLayer: javax.swing.event.EventListenerList listenerList>
+org.jfree.chart.plot.dial.AbstractDialLayer.notifyListeners : $i2 = i0 + 1
+org.jfree.chart.plot.dial.AbstractDialLayer.notifyListeners : $i1 = lengthof r2
+org.jfree.chart.plot.dial.DialPlot.removeLayer : virtualinvoke r0.<org.jfree.chart.plot.dial.DialPlot: void fireChangeEvent()>()
+org.jfree.chart.plot.dial.DialPlot.removeLayer : $r2 = r0.<org.jfree.chart.plot.dial.DialPlot: java.util.List layers>
+org.jfree.chart.plot.dial.DialPlot.removeLayer : $i0 = virtualinvoke r0.<org.jfree.chart.plot.dial.DialPlot: int getLayerIndex(org.jfree.chart.plot.dial.DialLayer)>(r1)
+org.jfree.chart.plot.dial.DialPlot.removeLayer : if r1 == null goto $r4 = r0.<org.jfree.chart.plot.dial.DialPlot: java.util.List layers>
+org.jfree.chart.plot.dial.DialPlot.removeLayer : interfaceinvoke r1.<org.jfree.chart.plot.dial.DialLayer: void removeChangeListener(org.jfree.chart.plot.dial.DialLayerChangeListener)>(r0)
+org.jfree.chart.plot.dial.DialPlot.removeLayer : $r4 = r0.<org.jfree.chart.plot.dial.DialPlot: java.util.List layers>
+org.jfree.chart.plot.dial.DialPlot.equals : if r1 != r0 goto $z0 = r1 instanceof org.jfree.chart.plot.dial.DialPlot
+org.jfree.chart.plot.dial.DialPlot.equals : return 1
+org.jfree.chart.plot.dial.DialPlot.addScale : virtualinvoke r0.<org.jfree.chart.plot.dial.DialPlot: void fireChangeEvent()>()
+org.jfree.chart.plot.dial.DialPlot.addScale : interfaceinvoke r1.<org.jfree.chart.plot.dial.DialScale: void addChangeListener(org.jfree.chart.plot.dial.DialLayerChangeListener)>(r0)
+org.jfree.chart.plot.dial.DialPlot.addScale : $r6 = r0.<org.jfree.chart.plot.dial.DialPlot: org.jfree.util.ObjectList scales>
+org.jfree.chart.plot.dial.DialPlot.addScale : $r5 = r0.<org.jfree.chart.plot.dial.DialPlot: java.util.List layers>
+org.jfree.chart.plot.dial.DialPlot.addScale : $r3 = r0.<org.jfree.chart.plot.dial.DialPlot: org.jfree.util.ObjectList scales>
+org.jfree.chart.plot.dial.DialPlot.addScale : virtualinvoke r0.<org.jfree.chart.plot.dial.DialPlot: void removeLayer(org.jfree.chart.plot.dial.DialLayer)>(r2)
+org.jfree.chart.plot.dial.DialPlot.addScale : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "scale")
+org.jfree.chart.plot.dial.DialPlot.addScale : if r2 == null goto $r5 = r0.<org.jfree.chart.plot.dial.DialPlot: java.util.List layers>
+org.jfree.chart.plot.Plot.fireChangeEvent : $r1 = new org.jfree.chart.event.PlotChangeEvent
+org.jfree.chart.plot.dial.DialPlot.dialLayerChanged : virtualinvoke r0.<org.jfree.chart.plot.dial.DialPlot: void fireChangeEvent()>()
+org.jfree.chart.plot.dial.DialPlot.getLayerIndex : $r2 = r0.<org.jfree.chart.plot.dial.DialPlot: java.util.List layers>
+org.jfree.chart.plot.dial.DialPlot.getLayerIndex : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "layer")
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null goto return
+org.jfree.chart.plot.dial.StandardDialScale.equals : return 1
+org.jfree.chart.plot.dial.StandardDialScale.equals : if r1 != r0 goto $z0 = r1 instanceof org.jfree.chart.plot.dial.StandardDialScale
+org.jfree.chart.plot.Plot.addChangeListener : $r2 = r0.<org.jfree.chart.plot.Plot: javax.swing.event.EventListenerList listenerList>

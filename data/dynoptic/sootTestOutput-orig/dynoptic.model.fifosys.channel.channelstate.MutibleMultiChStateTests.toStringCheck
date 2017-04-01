@@ -1,0 +1,31 @@
+dynoptic.model.fifosys.channel.channelstate.ChState.hashCode : $i1 = 31 * b0
+dynoptic.model.fifosys.channel.channelstate.ChState.hashCode : b0 = 17
+dynoptic.model.fifosys.channel.channelstate.ChState.hashCode : $i4 = 31 * i3
+dynoptic.model.fifosys.channel.channelstate.ChState.hashCode : return i6
+dynoptic.main.DynopticMain.setUpLogging : $r1 = <dynoptic.main.DynopticMain: java.util.logging.Logger logger>
+dynoptic.model.fifosys.channel.channelstate.AbsMultiChState.chStatesFromChIds : $r6 = new dynoptic.model.fifosys.channel.channelstate.ChState
+dynoptic.model.fifosys.channel.channelstate.AbsMultiChState.chStatesFromChIds : goto [?= $z1 = interfaceinvoke r2.<java.util.Iterator: boolean hasNext()>()]
+dynoptic.model.fifosys.channel.channelstate.AbsMultiChState.chStatesFromChIds : $i0 = interfaceinvoke r0.<java.util.List: int size()>()
+dynoptic.model.fifosys.channel.channelstate.AbsMultiChState.chStatesFromChIds : return r1
+dynoptic.model.fifosys.channel.channelstate.AbsMultiChState.chStatesFromChIds : $z0 = <dynoptic.model.fifosys.channel.channelstate.AbsMultiChState: boolean $assertionsDisabled>
+dynoptic.model.fifosys.channel.channelstate.AbsMultiChState.chStatesFromChIds : r2 = interfaceinvoke r0.<java.util.List: java.util.Iterator iterator()>()
+dynoptic.model.fifosys.channel.channelstate.MutableMultiChState.fromChannelIds : $r2 = new dynoptic.model.fifosys.channel.channelstate.MutableMultiChState
+dynoptic.model.fifosys.channel.channelstate.MutableMultiChState.fromChannelIds : r1 = staticinvoke <dynoptic.model.fifosys.channel.channelstate.AbsMultiChState: java.util.List chStatesFromChIds(java.util.List)>(r0)
+dynoptic.model.fifosys.gfsm.observed.fifosys.ObsFifoSysState.clearCache : $r0 = <dynoptic.model.fifosys.gfsm.observed.fifosys.ObsFifoSysState: java.util.Map fifoSysStatesMap>
+dynoptic.model.fifosys.gfsm.observed.ObsFSMState.clearCache : $r1 = <dynoptic.model.fifosys.gfsm.observed.ObsFSMState: java.util.Map initialProcessStatesMap>
+dynoptic.model.fifosys.gfsm.observed.ObsFSMState.clearCache : <dynoptic.model.fifosys.gfsm.observed.ObsFSMState: int prevAnonId> = -1
+dynoptic.model.fifosys.gfsm.observed.ObsFSMState.clearCache : $r0 = <dynoptic.model.fifosys.gfsm.observed.ObsFSMState: java.util.Map prevStateAndEventMap>
+dynoptic.model.fifosys.gfsm.observed.ObsMultFSMState.clearCache : $r0 = <dynoptic.model.fifosys.gfsm.observed.ObsMultFSMState: java.util.Map cache>
+dynoptic.model.fifosys.channel.channelstate.ChState.toString : $r16 = new java.lang.StringBuilder
+dynoptic.model.fifosys.channel.channelstate.ChState.toString : $r9 = r0.<dynoptic.model.fifosys.channel.channelstate.ChState: java.util.List queue>
+dynoptic.model.fifosys.channel.channelstate.ChState.toString : return r19
+dynoptic.model.fifosys.channel.channelstate.ChState.toString : $r1 = new java.lang.StringBuilder
+dynoptic.model.fifosys.channel.channelstate.AbsMultiChState.toString : return r15
+dynoptic.model.fifosys.channel.channelstate.AbsMultiChState.toString : $r11 = new java.lang.StringBuilder
+dynoptic.model.fifosys.channel.channelstate.AbsMultiChState.toString : $r4 = r0.<dynoptic.model.fifosys.channel.channelstate.AbsMultiChState: java.util.List channelStates>
+dynoptic.model.fifosys.channel.channelstate.AbsMultiChState.toString : goto [?= $z0 = interfaceinvoke r2.<java.util.Iterator: boolean hasNext()>()]
+dynoptic.model.fifosys.channel.channelstate.AbsMultiChState.toString : $r6 = new java.lang.StringBuilder
+dynoptic.model.fifosys.channel.channelstate.AbsMultiChState.toString : r1 = "ChStates["
+dynoptic.util.Util.newList : $r0 = new java.util.ArrayList
+dynoptic.model.fifosys.channel.channelstate.AbsMultiChState.hashCode : $r1 = r0.<dynoptic.model.fifosys.channel.channelstate.AbsMultiChState: java.util.List channelStates>
+dynoptic.model.fifosys.channel.channelstate.MutableMultiChState.hashCode : $i0 = specialinvoke r0.<dynoptic.model.fifosys.channel.channelstate.AbsMultiChState: int hashCode()>()

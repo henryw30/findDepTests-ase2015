@@ -1,0 +1,14 @@
+org.jfree.data.xy.XYSeriesCollection.getSeriesIndex : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "key") >>>>>>>> org.jfree.data.xy.XYSeriesCollection.getSeriesIndex : i0 = virtualinvoke r0.<org.jfree.data.xy.XYSeriesCollection: int getSeriesCount()>()
+org.jfree.data.xy.XYSeriesCollection.getSeriesIndex : i0 = virtualinvoke r0.<org.jfree.data.xy.XYSeriesCollection: int getSeriesCount()>() >>>>>>>> org.jfree.data.xy.XYSeriesCollection.getSeriesIndex : i1 = 0
+org.jfree.data.xy.XYSeriesCollection.getSeriesIndex : i1 = 0 >>>>>>>> org.jfree.data.xy.XYSeriesCollection.getSeriesIndex : if i1 >= i0
+org.jfree.data.xy.XYSeriesCollection.getSeriesIndex : if i1 >= i0 >>>>>>>> org.jfree.data.xy.XYSeriesCollection.getSeriesIndex : $r3 = r0.<org.jfree.data.xy.XYSeriesCollection: java.util.List data>
+org.jfree.data.xy.XYSeriesCollection.getSeriesIndex : if i1 >= i0 >>>>>>>> org.jfree.data.xy.XYSeriesCollection.getSeriesIndex : return -1
+org.jfree.data.xy.XYSeriesCollection.getSeriesIndex : $r3 = r0.<org.jfree.data.xy.XYSeriesCollection: java.util.List data> >>>>>>>> org.jfree.data.xy.XYSeriesCollection.getSeriesIndex : $r4 = interfaceinvoke $r3.<java.util.List: java.lang.Object get(int)>(i1)
+org.jfree.data.xy.XYSeriesCollection.getSeriesIndex : $r4 = interfaceinvoke $r3.<java.util.List: java.lang.Object get(int)>(i1) >>>>>>>> org.jfree.data.xy.XYSeriesCollection.getSeriesIndex : r2 = (org.jfree.data.xy.XYSeries) $r4
+org.jfree.data.xy.XYSeriesCollection.getSeriesIndex : r2 = (org.jfree.data.xy.XYSeries) $r4 >>>>>>>> org.jfree.data.xy.XYSeriesCollection.getSeriesIndex : $r5 = virtualinvoke r2.<org.jfree.data.xy.XYSeries: java.lang.Comparable getKey()>()
+org.jfree.data.xy.XYSeriesCollection.getSeriesIndex : $r5 = virtualinvoke r2.<org.jfree.data.xy.XYSeries: java.lang.Comparable getKey()>() >>>>>>>> org.jfree.data.xy.XYSeriesCollection.getSeriesIndex : $z0 = virtualinvoke r1.<java.lang.Object: boolean equals(java.lang.Object)>($r5)
+org.jfree.data.xy.XYSeriesCollection.getSeriesIndex : $z0 = virtualinvoke r1.<java.lang.Object: boolean equals(java.lang.Object)>($r5) >>>>>>>> org.jfree.data.xy.XYSeriesCollection.getSeriesIndex : if $z0 == 0
+org.jfree.data.xy.XYSeriesCollection.getSeriesIndex : if $z0 == 0 >>>>>>>> org.jfree.data.xy.XYSeriesCollection.getSeriesIndex : return i1
+org.jfree.data.xy.XYSeriesCollection.getSeriesIndex : if $z0 == 0 >>>>>>>> org.jfree.data.xy.XYSeriesCollection.getSeriesIndex : i1 = i1 + 1
+org.jfree.data.xy.XYSeriesCollection.getSeriesIndex : i1 = i1 + 1 >>>>>>>> org.jfree.data.xy.XYSeriesCollection.getSeriesIndex : goto [?= (branch)]
+org.jfree.data.xy.XYSeriesCollection.getSeriesIndex : goto [?= (branch)] >>>>>>>> org.jfree.data.xy.XYSeriesCollection.getSeriesIndex : if i1 >= i0

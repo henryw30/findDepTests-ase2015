@@ -1,0 +1,93 @@
+org.jfree.data.general.DefaultHeatMapDataset.setZValue : virtualinvoke r0.<org.jfree.data.general.DefaultHeatMapDataset: void setZValue(int,int,double,boolean)>(i0, i1, d0, 1) >>>>>>>> org.jfree.data.general.DefaultHeatMapDataset.setZValue : $r1 = r0.<org.jfree.data.general.DefaultHeatMapDataset: double[][] zValues>
+org.jfree.data.general.DefaultHeatMapDataset.setZValue : $r1 = r0.<org.jfree.data.general.DefaultHeatMapDataset: double[][] zValues> >>>>>>>> org.jfree.data.general.DefaultHeatMapDataset.setZValue : $r2 = $r1[i0]
+org.jfree.data.general.DefaultHeatMapDataset.setZValue : $r2 = $r1[i0] >>>>>>>> org.jfree.data.general.DefaultHeatMapDataset.setZValue : $r2[i1] = d0
+org.jfree.data.general.DefaultHeatMapDataset.setZValue : $r2[i1] = d0 >>>>>>>> org.jfree.data.general.DefaultHeatMapDataset.setZValue : if z0 == 0
+org.jfree.data.general.DefaultHeatMapDataset.setZValue : if z0 == 0 >>>>>>>> org.jfree.data.general.DefaultHeatMapDataset.setZValue : virtualinvoke r0.<org.jfree.data.general.DefaultHeatMapDataset: void fireDatasetChanged()>()
+org.jfree.data.general.DefaultHeatMapDataset.setZValue : virtualinvoke r0.<org.jfree.data.general.DefaultHeatMapDataset: void fireDatasetChanged()>() >>>>>>>> org.jfree.data.general.AbstractDataset.fireDatasetChanged : $r1 = new org.jfree.data.general.DatasetChangeEvent
+org.jfree.data.general.AbstractDataset.fireDatasetChanged : $r1 = new org.jfree.data.general.DatasetChangeEvent >>>>>>>> org.jfree.data.general.AbstractDataset.fireDatasetChanged : specialinvoke $r1.<org.jfree.data.general.DatasetChangeEvent: void <init>(java.lang.Object,org.jfree.data.general.Dataset)>(r0, r0)
+org.jfree.data.general.AbstractDataset.fireDatasetChanged : specialinvoke $r1.<org.jfree.data.general.DatasetChangeEvent: void <init>(java.lang.Object,org.jfree.data.general.Dataset)>(r0, r0) >>>>>>>> org.jfree.data.general.AbstractDataset.fireDatasetChanged : virtualinvoke r0.<org.jfree.data.general.AbstractDataset: void notifyListeners(org.jfree.data.general.DatasetChangeEvent)>($r1)
+org.jfree.data.general.AbstractDataset.fireDatasetChanged : virtualinvoke r0.<org.jfree.data.general.AbstractDataset: void notifyListeners(org.jfree.data.general.DatasetChangeEvent)>($r1) >>>>>>>> org.jfree.data.general.AbstractDataset.notifyListeners : $r3 = r0.<org.jfree.data.general.AbstractDataset: javax.swing.event.EventListenerList listenerList>
+org.jfree.data.general.AbstractDataset.notifyListeners : $r3 = r0.<org.jfree.data.general.AbstractDataset: javax.swing.event.EventListenerList listenerList> >>>>>>>> org.jfree.data.general.AbstractDataset.notifyListeners : r2 = virtualinvoke $r3.<javax.swing.event.EventListenerList: java.lang.Object[] getListenerList()>()
+org.jfree.data.general.AbstractDataset.notifyListeners : r2 = virtualinvoke $r3.<javax.swing.event.EventListenerList: java.lang.Object[] getListenerList()>() >>>>>>>> org.jfree.data.general.AbstractDataset.notifyListeners : $i1 = lengthof r2
+org.jfree.data.general.AbstractDataset.notifyListeners : $i1 = lengthof r2 >>>>>>>> org.jfree.data.general.AbstractDataset.notifyListeners : i0 = $i1 - 2
+org.jfree.data.general.AbstractDataset.notifyListeners : i0 = $i1 - 2 >>>>>>>> org.jfree.data.general.AbstractDataset.notifyListeners : if i0 < 0
+org.jfree.data.general.AbstractDataset.notifyListeners : if i0 < 0 >>>>>>>> org.jfree.data.general.DefaultHeatMapDataset.clone : $r2 = specialinvoke r0.<org.jfree.data.general.AbstractDataset: java.lang.Object clone()>()
+org.jfree.data.general.DefaultHeatMapDataset.clone : $r2 = specialinvoke r0.<org.jfree.data.general.AbstractDataset: java.lang.Object clone()>() >>>>>>>> org.jfree.data.general.AbstractDataset.clone : $r3 = specialinvoke r0.<java.lang.Object: java.lang.Object clone()>()
+org.jfree.data.general.AbstractDataset.clone : $r3 = specialinvoke r0.<java.lang.Object: java.lang.Object clone()>() >>>>>>>> org.jfree.data.general.AbstractDataset.clone : r1 = (org.jfree.data.general.AbstractDataset) $r3
+org.jfree.data.general.AbstractDataset.clone : r1 = (org.jfree.data.general.AbstractDataset) $r3 >>>>>>>> org.jfree.data.general.AbstractDataset.clone : $r2 = new javax.swing.event.EventListenerList
+org.jfree.data.general.AbstractDataset.clone : $r2 = new javax.swing.event.EventListenerList >>>>>>>> org.jfree.data.general.AbstractDataset.clone : specialinvoke $r2.<javax.swing.event.EventListenerList: void <init>()>()
+org.jfree.data.general.AbstractDataset.clone : specialinvoke $r2.<javax.swing.event.EventListenerList: void <init>()>() >>>>>>>> org.jfree.data.general.AbstractDataset.clone : r1.<org.jfree.data.general.AbstractDataset: javax.swing.event.EventListenerList listenerList> = $r2
+org.jfree.data.general.AbstractDataset.clone : r1.<org.jfree.data.general.AbstractDataset: javax.swing.event.EventListenerList listenerList> = $r2 >>>>>>>> org.jfree.data.general.AbstractDataset.clone : return r1
+org.jfree.data.general.AbstractDataset.clone : return r1 >>>>>>>> org.jfree.data.general.DefaultHeatMapDataset.clone : r1 = (org.jfree.data.general.DefaultHeatMapDataset) $r2
+org.jfree.data.general.DefaultHeatMapDataset.clone : r1 = (org.jfree.data.general.DefaultHeatMapDataset) $r2 >>>>>>>> org.jfree.data.general.DefaultHeatMapDataset.clone : $r3 = r0.<org.jfree.data.general.DefaultHeatMapDataset: double[][] zValues>
+org.jfree.data.general.DefaultHeatMapDataset.clone : $r3 = r0.<org.jfree.data.general.DefaultHeatMapDataset: double[][] zValues> >>>>>>>> org.jfree.data.general.DefaultHeatMapDataset.clone : $r4 = staticinvoke <org.jfree.data.DataUtilities: double[][] clone(double[][])>($r3)
+org.jfree.data.general.DefaultHeatMapDataset.clone : $r4 = staticinvoke <org.jfree.data.DataUtilities: double[][] clone(double[][])>($r3) >>>>>>>> org.jfree.data.DataUtilities.clone : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r0, "source")
+org.jfree.data.DataUtilities.clone : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r0, "source") >>>>>>>> org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null >>>>>>>> org.jfree.data.DataUtilities.clone : $i1 = lengthof r0
+org.jfree.data.DataUtilities.clone : $i1 = lengthof r0 >>>>>>>> org.jfree.data.DataUtilities.clone : r1 = newarray (double[])[$i1]
+org.jfree.data.DataUtilities.clone : r1 = newarray (double[])[$i1] >>>>>>>> org.jfree.data.DataUtilities.clone : i0 = 0
+org.jfree.data.DataUtilities.clone : i0 = 0 >>>>>>>> org.jfree.data.DataUtilities.clone : $i2 = lengthof r0
+org.jfree.data.DataUtilities.clone : $i2 = lengthof r0 >>>>>>>> org.jfree.data.DataUtilities.clone : if i0 >= $i2
+org.jfree.data.DataUtilities.clone : if i0 >= $i2 >>>>>>>> org.jfree.data.DataUtilities.clone : $r3 = r0[i0]
+org.jfree.data.DataUtilities.clone : $r3 = r0[i0] >>>>>>>> org.jfree.data.DataUtilities.clone : if $r3 == null
+org.jfree.data.DataUtilities.clone : if $r3 == null >>>>>>>> org.jfree.data.DataUtilities.clone : $r4 = r0[i0]
+org.jfree.data.DataUtilities.clone : $r4 = r0[i0] >>>>>>>> org.jfree.data.DataUtilities.clone : $i3 = lengthof $r4
+org.jfree.data.DataUtilities.clone : $i3 = lengthof $r4 >>>>>>>> org.jfree.data.DataUtilities.clone : r2 = newarray (double)[$i3]
+org.jfree.data.DataUtilities.clone : r2 = newarray (double)[$i3] >>>>>>>> org.jfree.data.DataUtilities.clone : $r5 = r0[i0]
+org.jfree.data.DataUtilities.clone : $r5 = r0[i0] >>>>>>>> org.jfree.data.DataUtilities.clone : $r6 = r0[i0]
+org.jfree.data.DataUtilities.clone : $r6 = r0[i0] >>>>>>>> org.jfree.data.DataUtilities.clone : $i4 = lengthof $r6
+org.jfree.data.DataUtilities.clone : $i4 = lengthof $r6 >>>>>>>> org.jfree.data.DataUtilities.clone : staticinvoke <java.lang.System: void arraycopy(java.lang.Object,int,java.lang.Object,int,int)>($r5, 0, r2, 0, $i4)
+org.jfree.data.DataUtilities.clone : staticinvoke <java.lang.System: void arraycopy(java.lang.Object,int,java.lang.Object,int,int)>($r5, 0, r2, 0, $i4) >>>>>>>> org.jfree.data.DataUtilities.clone : r1[i0] = r2
+org.jfree.data.DataUtilities.clone : r1[i0] = r2 >>>>>>>> org.jfree.data.DataUtilities.clone : i0 = i0 + 1
+org.jfree.data.DataUtilities.clone : i0 = i0 + 1 >>>>>>>> org.jfree.data.DataUtilities.clone : goto [?= $i2 = lengthof r0]
+org.jfree.data.DataUtilities.clone : goto [?= $i2 = lengthof r0] >>>>>>>> org.jfree.data.DataUtilities.clone : return r1
+org.jfree.data.DataUtilities.clone : return r1 >>>>>>>> org.jfree.data.general.DefaultHeatMapDataset.clone : r1.<org.jfree.data.general.DefaultHeatMapDataset: double[][] zValues> = $r4
+org.jfree.data.general.DefaultHeatMapDataset.clone : r1.<org.jfree.data.general.DefaultHeatMapDataset: double[][] zValues> = $r4 >>>>>>>> org.jfree.data.general.DefaultHeatMapDataset.clone : return r1
+org.jfree.data.general.DefaultHeatMapDataset.clone : return r1 >>>>>>>> org.jfree.data.general.DefaultHeatMapDataset.equals : if r1 != r0
+org.jfree.data.general.DefaultHeatMapDataset.equals : if r1 != r0 >>>>>>>> org.jfree.data.general.DefaultHeatMapDataset.equals : $z0 = r1 instanceof org.jfree.data.general.DefaultHeatMapDataset
+org.jfree.data.general.DefaultHeatMapDataset.equals : $z0 = r1 instanceof org.jfree.data.general.DefaultHeatMapDataset >>>>>>>> org.jfree.data.general.DefaultHeatMapDataset.equals : if $z0 != 0
+org.jfree.data.general.DefaultHeatMapDataset.equals : if $z0 != 0 >>>>>>>> org.jfree.data.general.DefaultHeatMapDataset.equals : r2 = (org.jfree.data.general.DefaultHeatMapDataset) r1
+org.jfree.data.general.DefaultHeatMapDataset.equals : r2 = (org.jfree.data.general.DefaultHeatMapDataset) r1 >>>>>>>> org.jfree.data.general.DefaultHeatMapDataset.equals : $i0 = r0.<org.jfree.data.general.DefaultHeatMapDataset: int xSamples>
+org.jfree.data.general.DefaultHeatMapDataset.equals : $i0 = r0.<org.jfree.data.general.DefaultHeatMapDataset: int xSamples> >>>>>>>> org.jfree.data.general.DefaultHeatMapDataset.equals : $i1 = r2.<org.jfree.data.general.DefaultHeatMapDataset: int xSamples>
+org.jfree.data.general.DefaultHeatMapDataset.equals : $i1 = r2.<org.jfree.data.general.DefaultHeatMapDataset: int xSamples> >>>>>>>> org.jfree.data.general.DefaultHeatMapDataset.equals : if $i0 == $i1
+org.jfree.data.general.DefaultHeatMapDataset.equals : if $i0 == $i1 >>>>>>>> org.jfree.data.general.DefaultHeatMapDataset.equals : $i2 = r0.<org.jfree.data.general.DefaultHeatMapDataset: int ySamples>
+org.jfree.data.general.DefaultHeatMapDataset.equals : $i2 = r0.<org.jfree.data.general.DefaultHeatMapDataset: int ySamples> >>>>>>>> org.jfree.data.general.DefaultHeatMapDataset.equals : $i3 = r2.<org.jfree.data.general.DefaultHeatMapDataset: int ySamples>
+org.jfree.data.general.DefaultHeatMapDataset.equals : $i3 = r2.<org.jfree.data.general.DefaultHeatMapDataset: int ySamples> >>>>>>>> org.jfree.data.general.DefaultHeatMapDataset.equals : if $i2 == $i3
+org.jfree.data.general.DefaultHeatMapDataset.equals : if $i2 == $i3 >>>>>>>> org.jfree.data.general.DefaultHeatMapDataset.equals : $d0 = r0.<org.jfree.data.general.DefaultHeatMapDataset: double minX>
+org.jfree.data.general.DefaultHeatMapDataset.equals : $d0 = r0.<org.jfree.data.general.DefaultHeatMapDataset: double minX> >>>>>>>> org.jfree.data.general.DefaultHeatMapDataset.equals : $d1 = r2.<org.jfree.data.general.DefaultHeatMapDataset: double minX>
+org.jfree.data.general.DefaultHeatMapDataset.equals : $d1 = r2.<org.jfree.data.general.DefaultHeatMapDataset: double minX> >>>>>>>> org.jfree.data.general.DefaultHeatMapDataset.equals : $b4 = $d0 cmpl $d1
+org.jfree.data.general.DefaultHeatMapDataset.equals : $b4 = $d0 cmpl $d1 >>>>>>>> org.jfree.data.general.DefaultHeatMapDataset.equals : if $b4 == 0
+org.jfree.data.general.DefaultHeatMapDataset.equals : if $b4 == 0 >>>>>>>> org.jfree.data.general.DefaultHeatMapDataset.equals : $d2 = r0.<org.jfree.data.general.DefaultHeatMapDataset: double maxX>
+org.jfree.data.general.DefaultHeatMapDataset.equals : $d2 = r0.<org.jfree.data.general.DefaultHeatMapDataset: double maxX> >>>>>>>> org.jfree.data.general.DefaultHeatMapDataset.equals : $d3 = r2.<org.jfree.data.general.DefaultHeatMapDataset: double maxX>
+org.jfree.data.general.DefaultHeatMapDataset.equals : $d3 = r2.<org.jfree.data.general.DefaultHeatMapDataset: double maxX> >>>>>>>> org.jfree.data.general.DefaultHeatMapDataset.equals : $b5 = $d2 cmpl $d3
+org.jfree.data.general.DefaultHeatMapDataset.equals : $b5 = $d2 cmpl $d3 >>>>>>>> org.jfree.data.general.DefaultHeatMapDataset.equals : if $b5 == 0
+org.jfree.data.general.DefaultHeatMapDataset.equals : if $b5 == 0 >>>>>>>> org.jfree.data.general.DefaultHeatMapDataset.equals : $d4 = r0.<org.jfree.data.general.DefaultHeatMapDataset: double minY>
+org.jfree.data.general.DefaultHeatMapDataset.equals : $d4 = r0.<org.jfree.data.general.DefaultHeatMapDataset: double minY> >>>>>>>> org.jfree.data.general.DefaultHeatMapDataset.equals : $d5 = r2.<org.jfree.data.general.DefaultHeatMapDataset: double minY>
+org.jfree.data.general.DefaultHeatMapDataset.equals : $d5 = r2.<org.jfree.data.general.DefaultHeatMapDataset: double minY> >>>>>>>> org.jfree.data.general.DefaultHeatMapDataset.equals : $b6 = $d4 cmpl $d5
+org.jfree.data.general.DefaultHeatMapDataset.equals : $b6 = $d4 cmpl $d5 >>>>>>>> org.jfree.data.general.DefaultHeatMapDataset.equals : if $b6 == 0
+org.jfree.data.general.DefaultHeatMapDataset.equals : if $b6 == 0 >>>>>>>> org.jfree.data.general.DefaultHeatMapDataset.equals : $d6 = r0.<org.jfree.data.general.DefaultHeatMapDataset: double maxY>
+org.jfree.data.general.DefaultHeatMapDataset.equals : $d6 = r0.<org.jfree.data.general.DefaultHeatMapDataset: double maxY> >>>>>>>> org.jfree.data.general.DefaultHeatMapDataset.equals : $d7 = r2.<org.jfree.data.general.DefaultHeatMapDataset: double maxY>
+org.jfree.data.general.DefaultHeatMapDataset.equals : $d7 = r2.<org.jfree.data.general.DefaultHeatMapDataset: double maxY> >>>>>>>> org.jfree.data.general.DefaultHeatMapDataset.equals : $b7 = $d6 cmpl $d7
+org.jfree.data.general.DefaultHeatMapDataset.equals : $b7 = $d6 cmpl $d7 >>>>>>>> org.jfree.data.general.DefaultHeatMapDataset.equals : if $b7 == 0
+org.jfree.data.general.DefaultHeatMapDataset.equals : if $b7 == 0 >>>>>>>> org.jfree.data.general.DefaultHeatMapDataset.equals : $r3 = r0.<org.jfree.data.general.DefaultHeatMapDataset: double[][] zValues>
+org.jfree.data.general.DefaultHeatMapDataset.equals : $r3 = r0.<org.jfree.data.general.DefaultHeatMapDataset: double[][] zValues> >>>>>>>> org.jfree.data.general.DefaultHeatMapDataset.equals : $r4 = r2.<org.jfree.data.general.DefaultHeatMapDataset: double[][] zValues>
+org.jfree.data.general.DefaultHeatMapDataset.equals : $r4 = r2.<org.jfree.data.general.DefaultHeatMapDataset: double[][] zValues> >>>>>>>> org.jfree.data.general.DefaultHeatMapDataset.equals : $z1 = staticinvoke <org.jfree.data.DataUtilities: boolean equal(double[][],double[][])>($r3, $r4)
+org.jfree.data.general.DefaultHeatMapDataset.equals : $z1 = staticinvoke <org.jfree.data.DataUtilities: boolean equal(double[][],double[][])>($r3, $r4) >>>>>>>> org.jfree.data.DataUtilities.equal : if r0 != null
+org.jfree.data.DataUtilities.equal : if r0 != null >>>>>>>> org.jfree.data.DataUtilities.equal : if r1 != null
+org.jfree.data.DataUtilities.equal : if r1 != null >>>>>>>> org.jfree.data.DataUtilities.equal : $i1 = lengthof r0
+org.jfree.data.DataUtilities.equal : $i1 = lengthof r0 >>>>>>>> org.jfree.data.DataUtilities.equal : $i2 = lengthof r1
+org.jfree.data.DataUtilities.equal : $i2 = lengthof r1 >>>>>>>> org.jfree.data.DataUtilities.equal : if $i1 == $i2
+org.jfree.data.DataUtilities.equal : if $i1 == $i2 >>>>>>>> org.jfree.data.DataUtilities.equal : i0 = 0
+org.jfree.data.DataUtilities.equal : i0 = 0 >>>>>>>> org.jfree.data.DataUtilities.equal : $i3 = lengthof r0
+org.jfree.data.DataUtilities.equal : $i3 = lengthof r0 >>>>>>>> org.jfree.data.DataUtilities.equal : if i0 >= $i3
+org.jfree.data.DataUtilities.equal : if i0 >= $i3 >>>>>>>> org.jfree.data.DataUtilities.equal : $r2 = r0[i0]
+org.jfree.data.DataUtilities.equal : $r2 = r0[i0] >>>>>>>> org.jfree.data.DataUtilities.equal : $r3 = r1[i0]
+org.jfree.data.DataUtilities.equal : $r3 = r1[i0] >>>>>>>> org.jfree.data.DataUtilities.equal : $z1 = staticinvoke <java.util.Arrays: boolean equals(double[],double[])>($r2, $r3)
+org.jfree.data.DataUtilities.equal : $z1 = staticinvoke <java.util.Arrays: boolean equals(double[],double[])>($r2, $r3) >>>>>>>> org.jfree.data.DataUtilities.equal : if $z1 != 0
+org.jfree.data.DataUtilities.equal : if $z1 != 0 >>>>>>>> org.jfree.data.DataUtilities.equal : i0 = i0 + 1
+org.jfree.data.DataUtilities.equal : i0 = i0 + 1 >>>>>>>> org.jfree.data.DataUtilities.equal : goto [?= $i3 = lengthof r0]
+org.jfree.data.DataUtilities.equal : goto [?= $i3 = lengthof r0] >>>>>>>> org.jfree.data.DataUtilities.equal : return 1
+org.jfree.data.DataUtilities.equal : return 1 >>>>>>>> org.jfree.data.general.DefaultHeatMapDataset.equals : if $z1 != 0
+org.jfree.data.general.DefaultHeatMapDataset.equals : if $z1 != 0 >>>>>>>> org.jfree.data.general.DefaultHeatMapDataset.equals : return 1
+org.jfree.data.general.DefaultHeatMapDataset.equals : return 1 >>>>>>>> org.jfree.data.DataUtilities.equal : return 0
+org.jfree.data.DataUtilities.equal : return 0 >>>>>>>> org.jfree.data.general.DefaultHeatMapDataset.equals : return 0

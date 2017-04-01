@@ -1,0 +1,25 @@
+org.apache.xml.security.utils.HexDump.toHexString : $z1 = <org.apache.xml.security.utils.HexDump: boolean WITH_BYTE_SEPARATOR>
+org.apache.xml.security.utils.HexDump.toHexString : i4 = i10 + 1
+org.apache.xml.security.utils.HexDump.toHexString : i3 = i0
+org.apache.xml.security.utils.HexDump.toHexString : $i0 = lengthof r0
+org.apache.xml.security.utils.HexDump.toHexString : $i9 = i3
+org.apache.xml.security.utils.HexDump.toHexString : $z0 = <org.apache.xml.security.utils.HexDump: boolean WITH_BYTE_SEPARATOR>
+org.apache.xml.security.utils.HexDump.toHexString : $i7 = i1 * 2
+org.apache.xml.security.utils.HexDump.toHexString : $r4 = new java.lang.String
+org.apache.xml.security.utils.HexDump.toHexString : i10 = i4 + 1
+org.apache.xml.security.utils.HexDump.toHexString : staticinvoke <java.lang.System: long currentTimeMillis()>()
+org.apache.xml.security.utils.HexDump.hexStringToByteArray : $r4 = virtualinvoke r2.<java.io.ByteArrayOutputStream: byte[] toByteArray()>()
+org.apache.xml.security.utils.HexDump.hexStringToByteArray : $b5 = b0 | 0
+org.apache.xml.security.utils.HexDump.hexStringToByteArray : $c4 = staticinvoke <java.lang.Character: char toUpperCase(char)>(c2)
+org.apache.xml.security.utils.HexDump.hexStringToByteArray : goto [?= i1 = i1 + 1]
+org.apache.xml.security.utils.HexDump.hexStringToByteArray : virtualinvoke r2.<java.io.ByteArrayOutputStream: void write(int)>(b0)
+org.apache.xml.security.utils.HexDump.hexStringToByteArray : b0 = 0
+org.apache.xml.security.utils.HexDump.hexStringToByteArray : c2 = virtualinvoke r0.<java.lang.String: char charAt(int)>(i1)
+org.apache.xml.security.utils.HexDump.hexStringToByteArray : if z0 == 0 goto $b5 = b0 | 0
+org.apache.xml.security.utils.HexDump.hexStringToByteArray : i1 = 0
+org.apache.xml.security.utils.HexDump.hexStringToByteArray : $r1 = new java.io.ByteArrayOutputStream
+org.apache.xml.security.utils.HexDump.hexStringToByteArray : z0 = 1
+org.apache.xml.security.utils.HexDump.hexStringToByteArray : if z0 != 0 goto $r4 = virtualinvoke r2.<java.io.ByteArrayOutputStream: byte[] toByteArray()>()
+org.apache.xml.security.utils.HexDump.hexStringToByteArray : z0 = 0
+org.apache.xml.security.utils.HexDump.hexStringToByteArray : $b6 = b0 | 1
+org.apache.xml.security.utils.HexDump.hexStringToByteArray : if z0 == 0 goto $b6 = b0 | 1

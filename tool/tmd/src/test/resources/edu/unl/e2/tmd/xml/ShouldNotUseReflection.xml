@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<test-data>
+<test-code>
+        <description><![CDATA[
+     ]]></description>
+        <expected-problems>1</expected-problems>
+        <code><![CDATA[
+import static org.junit.Assert.*;
+
+import java.lang.reflect.Method;
+
+import org.junit.Test;
+
+public class BadTest {
+
+@Test
+public void testName() throws Exception {
+	OneClass oneClass = new OneClass();
+	
+	Method declaredMethod = oneClass.getClass().getDeclaredMethod("doSomething");
+	
+	declaredMethod.setAccessible(true);
+	declaredMethod.invoke(oneClass);
+	
+
+	assertEquals(1,oneClass.getValue());
+		
+}
+
+}
+     ]]></code>
+</test-code>
+<test-code>
+        <description><![CDATA[
+     ]]></description>
+        <expected-problems>1</expected-problems>
+        <code><![CDATA[
+import static org.junit.Assert.*;
+
+import java.lang.reflect.Field;
+
+import org.junit.Test;
+
+public class BadTest {
+
+@Test
+public void testName() throws Exception {
+	OneClass oneClass = new OneClass();
+	
+	oneClass.doSomething();
+	
+	Field declaredField = oneClass.getClass().getDeclaredField("value");
+	declaredField.setAccessible(true);
+	
+	
+	assertEquals(0,declaredField.get(oneClass));
+}
+
+}
+     ]]></code>
+</test-code>
+
+<test-code>
+        <description><![CDATA[
+     ]]></description>
+        <expected-problems>1</expected-problems>
+        <code><![CDATA[
+import static org.junit.Assert.*;
+
+import java.lang.reflect.Field;
+
+import org.junit.Test;
+
+public class BadTest {
+
+@Test
+public void testName() throws Exception {
+	OneClass oneClass = new OneClass();
+	
+	oneClass.doSomething();
+	
+	Field[] declaredFields = oneClass.getClass().getDeclaredFields();
+	
+	for(Field decalredField:declaredFields){
+	
+		if(decalredField.getName().equals("value")){
+			decalredField.setAccessible(true);
+	
+			assertEquals(0,decalredField.get(oneClass));
+		}
+	}
+}
+
+}
+     ]]></code>
+</test-code>
+</test-data>

@@ -1,0 +1,78 @@
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null >>>>>>>> org.jfree.chart.axis.PeriodAxisLabelInfo.createInstance : r4 = null
+org.jfree.chart.axis.PeriodAxisLabelInfo.createInstance : r4 = null >>>>>>>> org.jfree.chart.axis.PeriodAxisLabelInfo.createInstance : $r6 = r0.<org.jfree.chart.axis.PeriodAxisLabelInfo: java.lang.Class periodClass>
+org.jfree.chart.axis.PeriodAxisLabelInfo.createInstance : $r6 = r0.<org.jfree.chart.axis.PeriodAxisLabelInfo: java.lang.Class periodClass> >>>>>>>> org.jfree.chart.axis.PeriodAxisLabelInfo.createInstance : $r7 = newarray (java.lang.Class)[3]
+org.jfree.chart.axis.PeriodAxisLabelInfo.createInstance : $r7 = newarray (java.lang.Class)[3] >>>>>>>> org.jfree.chart.axis.PeriodAxisLabelInfo.createInstance : $r7[0] = class "java/util/Date"
+org.jfree.chart.axis.PeriodAxisLabelInfo.createInstance : $r7[0] = class "java/util/Date" >>>>>>>> org.jfree.chart.axis.PeriodAxisLabelInfo.createInstance : $r7[1] = class "java/util/TimeZone"
+org.jfree.chart.axis.PeriodAxisLabelInfo.createInstance : $r7[1] = class "java/util/TimeZone" >>>>>>>> org.jfree.chart.axis.PeriodAxisLabelInfo.createInstance : $r7[2] = class "java/util/Locale"
+org.jfree.chart.axis.PeriodAxisLabelInfo.createInstance : $r7[2] = class "java/util/Locale" >>>>>>>> org.jfree.chart.axis.PeriodAxisLabelInfo.createInstance : r5 = virtualinvoke $r6.<java.lang.Class: java.lang.reflect.Constructor getDeclaredConstructor(java.lang.Class[])>($r7)
+org.jfree.chart.axis.PeriodAxisLabelInfo.createInstance : r5 = virtualinvoke $r6.<java.lang.Class: java.lang.reflect.Constructor getDeclaredConstructor(java.lang.Class[])>($r7) >>>>>>>> org.jfree.chart.axis.PeriodAxisLabelInfo.createInstance : $r8 = newarray (java.lang.Object)[3]
+org.jfree.chart.axis.PeriodAxisLabelInfo.createInstance : $r8 = newarray (java.lang.Object)[3] >>>>>>>> org.jfree.chart.axis.PeriodAxisLabelInfo.createInstance : $r8[0] = r1
+org.jfree.chart.axis.PeriodAxisLabelInfo.createInstance : $r8[0] = r1 >>>>>>>> org.jfree.chart.axis.PeriodAxisLabelInfo.createInstance : $r8[1] = r2
+org.jfree.chart.axis.PeriodAxisLabelInfo.createInstance : $r8[1] = r2 >>>>>>>> org.jfree.chart.axis.PeriodAxisLabelInfo.createInstance : $r8[2] = r3
+org.jfree.chart.axis.PeriodAxisLabelInfo.createInstance : $r8[2] = r3 >>>>>>>> org.jfree.chart.axis.PeriodAxisLabelInfo.createInstance : $r9 = virtualinvoke r5.<java.lang.reflect.Constructor: java.lang.Object newInstance(java.lang.Object[])>($r8)
+org.jfree.chart.axis.PeriodAxisLabelInfo.createInstance : $r9 = virtualinvoke r5.<java.lang.reflect.Constructor: java.lang.Object newInstance(java.lang.Object[])>($r8) >>>>>>>> org.jfree.data.time.Day.peg : $l0 = virtualinvoke r0.<org.jfree.data.time.Day: long getFirstMillisecond(java.util.Calendar)>(r1)
+org.jfree.data.time.Day.peg : $l0 = virtualinvoke r0.<org.jfree.data.time.Day: long getFirstMillisecond(java.util.Calendar)>(r1) >>>>>>>> org.jfree.data.time.Day.getFirstMillisecond : $r2 = r0.<org.jfree.data.time.Day: org.jfree.date.SerialDate serialDate>
+org.jfree.data.time.Day.getFirstMillisecond : $r2 = r0.<org.jfree.data.time.Day: org.jfree.date.SerialDate serialDate> >>>>>>>> org.jfree.data.time.Day.getFirstMillisecond : i0 = virtualinvoke $r2.<org.jfree.date.SerialDate: int getYYYY()>()
+org.jfree.data.time.Day.getFirstMillisecond : i0 = virtualinvoke $r2.<org.jfree.date.SerialDate: int getYYYY()>() >>>>>>>> org.jfree.data.time.Day.getFirstMillisecond : $r3 = r0.<org.jfree.data.time.Day: org.jfree.date.SerialDate serialDate>
+org.jfree.data.time.Day.getFirstMillisecond : $r3 = r0.<org.jfree.data.time.Day: org.jfree.date.SerialDate serialDate> >>>>>>>> org.jfree.data.time.Day.getFirstMillisecond : i1 = virtualinvoke $r3.<org.jfree.date.SerialDate: int getMonth()>()
+org.jfree.data.time.Day.getFirstMillisecond : i1 = virtualinvoke $r3.<org.jfree.date.SerialDate: int getMonth()>() >>>>>>>> org.jfree.data.time.Day.getFirstMillisecond : $r4 = r0.<org.jfree.data.time.Day: org.jfree.date.SerialDate serialDate>
+org.jfree.data.time.Day.getFirstMillisecond : $r4 = r0.<org.jfree.data.time.Day: org.jfree.date.SerialDate serialDate> >>>>>>>> org.jfree.data.time.Day.getFirstMillisecond : i2 = virtualinvoke $r4.<org.jfree.date.SerialDate: int getDayOfMonth()>()
+org.jfree.data.time.Day.getFirstMillisecond : i2 = virtualinvoke $r4.<org.jfree.date.SerialDate: int getDayOfMonth()>() >>>>>>>> org.jfree.data.time.Day.getFirstMillisecond : virtualinvoke r1.<java.util.Calendar: void clear()>()
+org.jfree.data.time.Day.getFirstMillisecond : virtualinvoke r1.<java.util.Calendar: void clear()>() >>>>>>>> org.jfree.data.time.Day.getFirstMillisecond : $i3 = i1 - 1
+org.jfree.data.time.Day.getFirstMillisecond : $i3 = i1 - 1 >>>>>>>> org.jfree.data.time.Day.getFirstMillisecond : virtualinvoke r1.<java.util.Calendar: void set(int,int,int,int,int,int)>(i0, $i3, i2, 0, 0, 0)
+org.jfree.data.time.Day.getFirstMillisecond : virtualinvoke r1.<java.util.Calendar: void set(int,int,int,int,int,int)>(i0, $i3, i2, 0, 0, 0) >>>>>>>> org.jfree.data.time.Day.getFirstMillisecond : virtualinvoke r1.<java.util.Calendar: void set(int,int)>(14, 0)
+org.jfree.data.time.Day.getFirstMillisecond : virtualinvoke r1.<java.util.Calendar: void set(int,int)>(14, 0) >>>>>>>> org.jfree.data.time.Day.getFirstMillisecond : $l4 = virtualinvoke r1.<java.util.Calendar: long getTimeInMillis()>()
+org.jfree.data.time.Day.getFirstMillisecond : $l4 = virtualinvoke r1.<java.util.Calendar: long getTimeInMillis()>() >>>>>>>> org.jfree.data.time.Day.getFirstMillisecond : return $l4
+org.jfree.data.time.Day.getFirstMillisecond : return $l4 >>>>>>>> org.jfree.data.time.Day.peg : r0.<org.jfree.data.time.Day: long firstMillisecond> = $l0
+org.jfree.data.time.Day.peg : r0.<org.jfree.data.time.Day: long firstMillisecond> = $l0 >>>>>>>> org.jfree.data.time.Day.peg : $l1 = virtualinvoke r0.<org.jfree.data.time.Day: long getLastMillisecond(java.util.Calendar)>(r1)
+org.jfree.data.time.Day.peg : $l1 = virtualinvoke r0.<org.jfree.data.time.Day: long getLastMillisecond(java.util.Calendar)>(r1) >>>>>>>> org.jfree.data.time.Day.getLastMillisecond : $r2 = r0.<org.jfree.data.time.Day: org.jfree.date.SerialDate serialDate>
+org.jfree.data.time.Day.getLastMillisecond : $r2 = r0.<org.jfree.data.time.Day: org.jfree.date.SerialDate serialDate> >>>>>>>> org.jfree.data.time.Day.getLastMillisecond : i0 = virtualinvoke $r2.<org.jfree.date.SerialDate: int getYYYY()>()
+org.jfree.data.time.Day.getLastMillisecond : i0 = virtualinvoke $r2.<org.jfree.date.SerialDate: int getYYYY()>() >>>>>>>> org.jfree.data.time.Day.getLastMillisecond : $r3 = r0.<org.jfree.data.time.Day: org.jfree.date.SerialDate serialDate>
+org.jfree.data.time.Day.getLastMillisecond : $r3 = r0.<org.jfree.data.time.Day: org.jfree.date.SerialDate serialDate> >>>>>>>> org.jfree.data.time.Day.getLastMillisecond : i1 = virtualinvoke $r3.<org.jfree.date.SerialDate: int getMonth()>()
+org.jfree.data.time.Day.getLastMillisecond : i1 = virtualinvoke $r3.<org.jfree.date.SerialDate: int getMonth()>() >>>>>>>> org.jfree.data.time.Day.getLastMillisecond : $r4 = r0.<org.jfree.data.time.Day: org.jfree.date.SerialDate serialDate>
+org.jfree.data.time.Day.getLastMillisecond : $r4 = r0.<org.jfree.data.time.Day: org.jfree.date.SerialDate serialDate> >>>>>>>> org.jfree.data.time.Day.getLastMillisecond : i2 = virtualinvoke $r4.<org.jfree.date.SerialDate: int getDayOfMonth()>()
+org.jfree.data.time.Day.getLastMillisecond : i2 = virtualinvoke $r4.<org.jfree.date.SerialDate: int getDayOfMonth()>() >>>>>>>> org.jfree.data.time.Day.getLastMillisecond : virtualinvoke r1.<java.util.Calendar: void clear()>()
+org.jfree.data.time.Day.getLastMillisecond : virtualinvoke r1.<java.util.Calendar: void clear()>() >>>>>>>> org.jfree.data.time.Day.getLastMillisecond : $i3 = i1 - 1
+org.jfree.data.time.Day.getLastMillisecond : $i3 = i1 - 1 >>>>>>>> org.jfree.data.time.Day.getLastMillisecond : virtualinvoke r1.<java.util.Calendar: void set(int,int,int,int,int,int)>(i0, $i3, i2, 23, 59, 59)
+org.jfree.data.time.Day.getLastMillisecond : virtualinvoke r1.<java.util.Calendar: void set(int,int,int,int,int,int)>(i0, $i3, i2, 23, 59, 59) >>>>>>>> org.jfree.data.time.Day.getLastMillisecond : virtualinvoke r1.<java.util.Calendar: void set(int,int)>(14, 999)
+org.jfree.data.time.Day.getLastMillisecond : virtualinvoke r1.<java.util.Calendar: void set(int,int)>(14, 999) >>>>>>>> org.jfree.data.time.Day.getLastMillisecond : $l4 = virtualinvoke r1.<java.util.Calendar: long getTimeInMillis()>()
+org.jfree.data.time.Day.getLastMillisecond : $l4 = virtualinvoke r1.<java.util.Calendar: long getTimeInMillis()>() >>>>>>>> org.jfree.data.time.Day.getLastMillisecond : return $l4
+org.jfree.data.time.Day.getLastMillisecond : return $l4 >>>>>>>> org.jfree.data.time.Day.peg : r0.<org.jfree.data.time.Day: long lastMillisecond> = $l1
+org.jfree.data.time.Day.peg : r0.<org.jfree.data.time.Day: long lastMillisecond> = $l1 >>>>>>>> org.jfree.chart.axis.PeriodAxisLabelInfo.createInstance : r4 = (org.jfree.data.time.RegularTimePeriod) $r9
+org.jfree.chart.axis.PeriodAxisLabelInfo.createInstance : r4 = (org.jfree.data.time.RegularTimePeriod) $r9 >>>>>>>> org.jfree.chart.axis.PeriodAxisLabelInfo.createInstance : goto [?= return r4]
+org.jfree.chart.axis.PeriodAxisLabelInfo.createInstance : goto [?= return r4] >>>>>>>> org.jfree.chart.axis.PeriodAxisLabelInfo.createInstance : return r4
+org.jfree.chart.axis.PeriodAxisLabelInfo.createInstance : return r4 >>>>>>>> org.jfree.data.time.Day.equals : if r1 != r0
+org.jfree.data.time.Day.equals : if r1 != r0 >>>>>>>> org.jfree.data.time.Day.equals : $z0 = r1 instanceof org.jfree.data.time.Day
+org.jfree.data.time.Day.equals : $z0 = r1 instanceof org.jfree.data.time.Day >>>>>>>> org.jfree.data.time.Day.equals : if $z0 != 0
+org.jfree.data.time.Day.equals : if $z0 != 0 >>>>>>>> org.jfree.data.time.Day.equals : r2 = (org.jfree.data.time.Day) r1
+org.jfree.data.time.Day.equals : r2 = (org.jfree.data.time.Day) r1 >>>>>>>> org.jfree.data.time.Day.equals : $r3 = r0.<org.jfree.data.time.Day: org.jfree.date.SerialDate serialDate>
+org.jfree.data.time.Day.equals : $r3 = r0.<org.jfree.data.time.Day: org.jfree.date.SerialDate serialDate> >>>>>>>> org.jfree.data.time.Day.equals : $r4 = virtualinvoke r2.<org.jfree.data.time.Day: org.jfree.date.SerialDate getSerialDate()>()
+org.jfree.data.time.Day.equals : $r4 = virtualinvoke r2.<org.jfree.data.time.Day: org.jfree.date.SerialDate getSerialDate()>() >>>>>>>> org.jfree.data.time.Day.getSerialDate : $r1 = r0.<org.jfree.data.time.Day: org.jfree.date.SerialDate serialDate>
+org.jfree.data.time.Day.getSerialDate : $r1 = r0.<org.jfree.data.time.Day: org.jfree.date.SerialDate serialDate> >>>>>>>> org.jfree.data.time.Day.getSerialDate : return $r1
+org.jfree.data.time.Day.getSerialDate : return $r1 >>>>>>>> org.jfree.data.time.Day.equals : $z1 = virtualinvoke $r3.<java.lang.Object: boolean equals(java.lang.Object)>($r4)
+org.jfree.data.time.Day.equals : $z1 = virtualinvoke $r3.<java.lang.Object: boolean equals(java.lang.Object)>($r4) >>>>>>>> org.jfree.data.time.Day.equals : if $z1 != 0
+org.jfree.data.time.Day.equals : if $z1 != 0 >>>>>>>> org.jfree.data.time.Day.equals : return 1
+org.jfree.data.time.Day.equals : return 1 >>>>>>>> org.jfree.data.time.Year.peg : $l0 = virtualinvoke r0.<org.jfree.data.time.Year: long getFirstMillisecond(java.util.Calendar)>(r1)
+org.jfree.data.time.Year.peg : $l0 = virtualinvoke r0.<org.jfree.data.time.Year: long getFirstMillisecond(java.util.Calendar)>(r1) >>>>>>>> org.jfree.data.time.Year.getFirstMillisecond : $s0 = r0.<org.jfree.data.time.Year: short year>
+org.jfree.data.time.Year.getFirstMillisecond : $s0 = r0.<org.jfree.data.time.Year: short year> >>>>>>>> org.jfree.data.time.Year.getFirstMillisecond : virtualinvoke r1.<java.util.Calendar: void set(int,int,int,int,int,int)>($s0, 0, 1, 0, 0, 0)
+org.jfree.data.time.Year.getFirstMillisecond : virtualinvoke r1.<java.util.Calendar: void set(int,int,int,int,int,int)>($s0, 0, 1, 0, 0, 0) >>>>>>>> org.jfree.data.time.Year.getFirstMillisecond : virtualinvoke r1.<java.util.Calendar: void set(int,int)>(14, 0)
+org.jfree.data.time.Year.getFirstMillisecond : virtualinvoke r1.<java.util.Calendar: void set(int,int)>(14, 0) >>>>>>>> org.jfree.data.time.Year.getFirstMillisecond : $l1 = virtualinvoke r1.<java.util.Calendar: long getTimeInMillis()>()
+org.jfree.data.time.Year.getFirstMillisecond : $l1 = virtualinvoke r1.<java.util.Calendar: long getTimeInMillis()>() >>>>>>>> org.jfree.data.time.Year.getFirstMillisecond : return $l1
+org.jfree.data.time.Year.getFirstMillisecond : return $l1 >>>>>>>> org.jfree.data.time.Year.peg : r0.<org.jfree.data.time.Year: long firstMillisecond> = $l0
+org.jfree.data.time.Year.peg : r0.<org.jfree.data.time.Year: long firstMillisecond> = $l0 >>>>>>>> org.jfree.data.time.Year.peg : $l1 = virtualinvoke r0.<org.jfree.data.time.Year: long getLastMillisecond(java.util.Calendar)>(r1)
+org.jfree.data.time.Year.peg : $l1 = virtualinvoke r0.<org.jfree.data.time.Year: long getLastMillisecond(java.util.Calendar)>(r1) >>>>>>>> org.jfree.data.time.Year.getLastMillisecond : $s0 = r0.<org.jfree.data.time.Year: short year>
+org.jfree.data.time.Year.getLastMillisecond : $s0 = r0.<org.jfree.data.time.Year: short year> >>>>>>>> org.jfree.data.time.Year.getLastMillisecond : virtualinvoke r1.<java.util.Calendar: void set(int,int,int,int,int,int)>($s0, 11, 31, 23, 59, 59)
+org.jfree.data.time.Year.getLastMillisecond : virtualinvoke r1.<java.util.Calendar: void set(int,int,int,int,int,int)>($s0, 11, 31, 23, 59, 59) >>>>>>>> org.jfree.data.time.Year.getLastMillisecond : virtualinvoke r1.<java.util.Calendar: void set(int,int)>(14, 999)
+org.jfree.data.time.Year.getLastMillisecond : virtualinvoke r1.<java.util.Calendar: void set(int,int)>(14, 999) >>>>>>>> org.jfree.data.time.Year.getLastMillisecond : $l1 = virtualinvoke r1.<java.util.Calendar: long getTimeInMillis()>()
+org.jfree.data.time.Year.getLastMillisecond : $l1 = virtualinvoke r1.<java.util.Calendar: long getTimeInMillis()>() >>>>>>>> org.jfree.data.time.Year.getLastMillisecond : return $l1
+org.jfree.data.time.Year.getLastMillisecond : return $l1 >>>>>>>> org.jfree.data.time.Year.peg : r0.<org.jfree.data.time.Year: long lastMillisecond> = $l1
+org.jfree.data.time.Year.peg : r0.<org.jfree.data.time.Year: long lastMillisecond> = $l1 >>>>>>>> org.jfree.data.time.Year.equals : if r1 != r0
+org.jfree.data.time.Year.equals : if r1 != r0 >>>>>>>> org.jfree.data.time.Year.equals : $z0 = r1 instanceof org.jfree.data.time.Year
+org.jfree.data.time.Year.equals : $z0 = r1 instanceof org.jfree.data.time.Year >>>>>>>> org.jfree.data.time.Year.equals : if $z0 != 0
+org.jfree.data.time.Year.equals : if $z0 != 0 >>>>>>>> org.jfree.data.time.Year.equals : r2 = (org.jfree.data.time.Year) r1
+org.jfree.data.time.Year.equals : r2 = (org.jfree.data.time.Year) r1 >>>>>>>> org.jfree.data.time.Year.equals : $s0 = r0.<org.jfree.data.time.Year: short year>
+org.jfree.data.time.Year.equals : $s0 = r0.<org.jfree.data.time.Year: short year> >>>>>>>> org.jfree.data.time.Year.equals : $s1 = r2.<org.jfree.data.time.Year: short year>
+org.jfree.data.time.Year.equals : $s1 = r2.<org.jfree.data.time.Year: short year> >>>>>>>> org.jfree.data.time.Year.equals : if $s0 != $s1
+org.jfree.data.time.Year.equals : if $s0 != $s1 >>>>>>>> org.jfree.data.time.Year.equals : $z1 = 1
+org.jfree.data.time.Year.equals : $z1 = 1 >>>>>>>> org.jfree.data.time.Year.equals : goto [?= return $z1]
+org.jfree.data.time.Year.equals : goto [?= return $z1] >>>>>>>> org.jfree.data.time.Year.equals : return $z1

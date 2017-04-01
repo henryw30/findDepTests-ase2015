@@ -1,0 +1,23 @@
+org.jfree.data.time.Hour.parseHour : r1 = null >>>>>>>> org.jfree.data.time.Hour.parseHour : r5 = virtualinvoke r0.<java.lang.String: java.lang.String trim()>()
+org.jfree.data.time.Hour.parseHour : r5 = virtualinvoke r0.<java.lang.String: java.lang.String trim()>() >>>>>>>> org.jfree.data.time.Hour.parseHour : $i1 = virtualinvoke r5.<java.lang.String: int length()>()
+org.jfree.data.time.Hour.parseHour : $i1 = virtualinvoke r5.<java.lang.String: int length()>() >>>>>>>> org.jfree.data.time.Hour.parseHour : $i2 = staticinvoke <java.lang.Math: int min(int,int)>(10, $i1)
+org.jfree.data.time.Hour.parseHour : $i2 = staticinvoke <java.lang.Math: int min(int,int)>(10, $i1) >>>>>>>> org.jfree.data.time.Hour.parseHour : r2 = virtualinvoke r5.<java.lang.String: java.lang.String substring(int,int)>(0, $i2)
+org.jfree.data.time.Hour.parseHour : r2 = virtualinvoke r5.<java.lang.String: java.lang.String substring(int,int)>(0, $i2) >>>>>>>> org.jfree.data.time.Hour.parseHour : r3 = staticinvoke <org.jfree.data.time.Day: org.jfree.data.time.Day parseDay(java.lang.String)>(r2)
+org.jfree.data.time.Hour.parseHour : r3 = staticinvoke <org.jfree.data.time.Day: org.jfree.data.time.Day parseDay(java.lang.String)>(r2) >>>>>>>> org.jfree.data.time.Hour.parseHour : if r3 == null
+org.jfree.data.time.Hour.parseHour : if r3 == null >>>>>>>> org.jfree.data.time.Hour.parseHour : $i3 = virtualinvoke r2.<java.lang.String: int length()>()
+org.jfree.data.time.Hour.parseHour : if r3 == null >>>>>>>> org.jfree.data.time.Hour.parseHour : return r1
+org.jfree.data.time.Hour.parseHour : $i3 = virtualinvoke r2.<java.lang.String: int length()>() >>>>>>>> org.jfree.data.time.Hour.parseHour : $i4 = $i3 + 1
+org.jfree.data.time.Hour.parseHour : $i4 = $i3 + 1 >>>>>>>> org.jfree.data.time.Hour.parseHour : $i5 = virtualinvoke r5.<java.lang.String: int length()>()
+org.jfree.data.time.Hour.parseHour : $i5 = virtualinvoke r5.<java.lang.String: int length()>() >>>>>>>> org.jfree.data.time.Hour.parseHour : $i6 = staticinvoke <java.lang.Math: int min(int,int)>($i4, $i5)
+org.jfree.data.time.Hour.parseHour : $i6 = staticinvoke <java.lang.Math: int min(int,int)>($i4, $i5) >>>>>>>> org.jfree.data.time.Hour.parseHour : $i7 = virtualinvoke r5.<java.lang.String: int length()>()
+org.jfree.data.time.Hour.parseHour : $i7 = virtualinvoke r5.<java.lang.String: int length()>() >>>>>>>> org.jfree.data.time.Hour.parseHour : r4 = virtualinvoke r5.<java.lang.String: java.lang.String substring(int,int)>($i6, $i7)
+org.jfree.data.time.Hour.parseHour : r4 = virtualinvoke r5.<java.lang.String: java.lang.String substring(int,int)>($i6, $i7) >>>>>>>> org.jfree.data.time.Hour.parseHour : r6 = virtualinvoke r4.<java.lang.String: java.lang.String trim()>()
+org.jfree.data.time.Hour.parseHour : r6 = virtualinvoke r4.<java.lang.String: java.lang.String trim()>() >>>>>>>> org.jfree.data.time.Hour.parseHour : i0 = staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>(r6)
+org.jfree.data.time.Hour.parseHour : i0 = staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>(r6) >>>>>>>> org.jfree.data.time.Hour.parseHour : if i0 < 0
+org.jfree.data.time.Hour.parseHour : if i0 < 0 >>>>>>>> org.jfree.data.time.Hour.parseHour : if i0 > 23
+org.jfree.data.time.Hour.parseHour : if i0 < 0 >>>>>>>> org.jfree.data.time.Hour.parseHour : return r1
+org.jfree.data.time.Hour.parseHour : if i0 > 23 >>>>>>>> org.jfree.data.time.Hour.parseHour : $r7 = new org.jfree.data.time.Hour
+org.jfree.data.time.Hour.parseHour : if i0 > 23 >>>>>>>> org.jfree.data.time.Hour.parseHour : return r1
+org.jfree.data.time.Hour.parseHour : $r7 = new org.jfree.data.time.Hour >>>>>>>> org.jfree.data.time.Hour.parseHour : specialinvoke $r7.<org.jfree.data.time.Hour: void <init>(int,org.jfree.data.time.Day)>(i0, r3)
+org.jfree.data.time.Hour.parseHour : specialinvoke $r7.<org.jfree.data.time.Hour: void <init>(int,org.jfree.data.time.Day)>(i0, r3) >>>>>>>> org.jfree.data.time.Hour.parseHour : r1 = $r7
+org.jfree.data.time.Hour.parseHour : r1 = $r7 >>>>>>>> org.jfree.data.time.Hour.parseHour : return r1

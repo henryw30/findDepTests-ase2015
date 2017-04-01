@@ -1,0 +1,16 @@
+org.jfree.data.time.TimeSeriesCollection.getSeries : r2 = null >>>>>>>> org.jfree.data.time.TimeSeriesCollection.getSeries : $r6 = r0.<org.jfree.data.time.TimeSeriesCollection: java.util.List data>
+org.jfree.data.time.TimeSeriesCollection.getSeries : $r6 = r0.<org.jfree.data.time.TimeSeriesCollection: java.util.List data> >>>>>>>> org.jfree.data.time.TimeSeriesCollection.getSeries : r3 = interfaceinvoke $r6.<java.util.List: java.util.Iterator iterator()>()
+org.jfree.data.time.TimeSeriesCollection.getSeries : r3 = interfaceinvoke $r6.<java.util.List: java.util.Iterator iterator()>() >>>>>>>> org.jfree.data.time.TimeSeriesCollection.getSeries : $z0 = interfaceinvoke r3.<java.util.Iterator: boolean hasNext()>()
+org.jfree.data.time.TimeSeriesCollection.getSeries : $z0 = interfaceinvoke r3.<java.util.Iterator: boolean hasNext()>() >>>>>>>> org.jfree.data.time.TimeSeriesCollection.getSeries : if $z0 == 0
+org.jfree.data.time.TimeSeriesCollection.getSeries : if $z0 == 0 >>>>>>>> org.jfree.data.time.TimeSeriesCollection.getSeries : $r7 = interfaceinvoke r3.<java.util.Iterator: java.lang.Object next()>()
+org.jfree.data.time.TimeSeriesCollection.getSeries : if $z0 == 0 >>>>>>>> org.jfree.data.time.TimeSeriesCollection.getSeries : return r2
+org.jfree.data.time.TimeSeriesCollection.getSeries : $r7 = interfaceinvoke r3.<java.util.Iterator: java.lang.Object next()>() >>>>>>>> org.jfree.data.time.TimeSeriesCollection.getSeries : r4 = (org.jfree.data.time.TimeSeries) $r7
+org.jfree.data.time.TimeSeriesCollection.getSeries : r4 = (org.jfree.data.time.TimeSeries) $r7 >>>>>>>> org.jfree.data.time.TimeSeriesCollection.getSeries : r5 = virtualinvoke r4.<org.jfree.data.time.TimeSeries: java.lang.Comparable getKey()>()
+org.jfree.data.time.TimeSeriesCollection.getSeries : r5 = virtualinvoke r4.<org.jfree.data.time.TimeSeries: java.lang.Comparable getKey()>() >>>>>>>> org.jfree.data.time.TimeSeriesCollection.getSeries : if r5 == null
+org.jfree.data.time.TimeSeriesCollection.getSeries : if r5 == null >>>>>>>> org.jfree.data.time.TimeSeriesCollection.getSeries : $z1 = virtualinvoke r5.<java.lang.Object: boolean equals(java.lang.Object)>(r1)
+org.jfree.data.time.TimeSeriesCollection.getSeries : if r5 == null >>>>>>>> org.jfree.data.time.TimeSeriesCollection.getSeries : goto [?= $z0 = interfaceinvoke r3.<java.util.Iterator: boolean hasNext()>()]
+org.jfree.data.time.TimeSeriesCollection.getSeries : goto [?= $z0 = interfaceinvoke r3.<java.util.Iterator: boolean hasNext()>()] >>>>>>>> org.jfree.data.time.TimeSeriesCollection.getSeries : $z0 = interfaceinvoke r3.<java.util.Iterator: boolean hasNext()>()
+org.jfree.data.time.TimeSeriesCollection.getSeries : $z1 = virtualinvoke r5.<java.lang.Object: boolean equals(java.lang.Object)>(r1) >>>>>>>> org.jfree.data.time.TimeSeriesCollection.getSeries : if $z1 == 0
+org.jfree.data.time.TimeSeriesCollection.getSeries : if $z1 == 0 >>>>>>>> org.jfree.data.time.TimeSeriesCollection.getSeries : r2 = r4
+org.jfree.data.time.TimeSeriesCollection.getSeries : if $z1 == 0 >>>>>>>> org.jfree.data.time.TimeSeriesCollection.getSeries : goto [?= $z0 = interfaceinvoke r3.<java.util.Iterator: boolean hasNext()>()]
+org.jfree.data.time.TimeSeriesCollection.getSeries : r2 = r4 >>>>>>>> org.jfree.data.time.TimeSeriesCollection.getSeries : goto [?= $z0 = interfaceinvoke r3.<java.util.Iterator: boolean hasNext()>()]

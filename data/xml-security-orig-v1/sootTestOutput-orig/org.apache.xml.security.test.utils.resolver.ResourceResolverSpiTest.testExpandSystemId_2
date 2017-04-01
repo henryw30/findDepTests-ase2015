@@ -1,0 +1,26 @@
+org.apache.xml.security.utils.resolver.ResourceResolverSpi.fixURI : c8 = virtualinvoke r1.<java.lang.String: char charAt(int)>(1)
+org.apache.xml.security.utils.resolver.ResourceResolverSpi.fixURI : $i7 = virtualinvoke r1.<java.lang.String: int length()>()
+org.apache.xml.security.utils.resolver.ResourceResolverSpi.fixURI : if z0 == 0 goto $i7 = virtualinvoke r1.<java.lang.String: int length()>()
+org.apache.xml.security.utils.resolver.ResourceResolverSpi.fixURI : $c6 = virtualinvoke r1.<java.lang.String: char charAt(int)>(0)
+org.apache.xml.security.utils.resolver.ResourceResolverSpi.fixURI : c3 = virtualinvoke r1.<java.lang.String: char charAt(int)>(2)
+org.apache.xml.security.utils.resolver.ResourceResolverSpi.fixURI : if 65 > c1 goto $z1 = 0
+org.apache.xml.security.utils.resolver.ResourceResolverSpi.fixURI : c2 = virtualinvoke r1.<java.lang.String: char charAt(int)>(1)
+org.apache.xml.security.utils.resolver.ResourceResolverSpi.fixURI : c4 = virtualinvoke r1.<java.lang.String: char charAt(int)>(3)
+org.apache.xml.security.utils.resolver.ResourceResolverSpi.fixURI : return r1
+org.apache.xml.security.utils.resolver.ResourceResolverSpi.fixURI : if c8 != 58 goto return r1
+org.apache.xml.security.utils.resolver.ResourceResolverSpi.fixURI : $i5 = virtualinvoke r1.<java.lang.String: int length()>()
+org.apache.xml.security.utils.resolver.ResourceResolverSpi.fixURI : $c0 = <java.io.File: char separatorChar>
+org.apache.xml.security.utils.resolver.ResourceResolverSpi.expandSystemId : n0 = null
+org.apache.xml.security.utils.resolver.ResourceResolverSpi.expandSystemId : $r8 = new org.apache.xml.utils.URI
+org.apache.xml.security.utils.resolver.ResourceResolverSpi.expandSystemId : r4 = null
+org.apache.xml.security.utils.resolver.ResourceResolverSpi.expandSystemId : r12 = staticinvoke <org.apache.xml.security.utils.resolver.ResourceResolverSpi: java.lang.String fixURI(java.lang.String)>(r2)
+org.apache.xml.security.utils.resolver.ResourceResolverSpi.expandSystemId : $r23 = new org.apache.xml.utils.URI
+org.apache.xml.security.utils.resolver.ResourceResolverSpi.expandSystemId : $r26 = virtualinvoke r4.<org.apache.xml.utils.URI: java.lang.String toString()>()
+org.apache.xml.security.utils.resolver.ResourceResolverSpi.expandSystemId : if r2 == null goto return r0
+org.apache.xml.security.utils.resolver.ResourceResolverSpi.expandSystemId : if r4 != null goto $r26 = virtualinvoke r4.<org.apache.xml.utils.URI: java.lang.String toString()>()
+org.apache.xml.security.utils.resolver.ResourceResolverSpi.expandSystemId : r21 = staticinvoke <org.apache.xml.security.utils.resolver.ResourceResolverSpi: java.lang.String fixURI(java.lang.String)>(r1)
+org.apache.xml.security.utils.resolver.ResourceResolverSpi.expandSystemId : r2 = r0
+org.apache.xml.security.utils.resolver.ResourceResolverSpi.expandSystemId : r11 = $r10
+org.apache.xml.security.utils.resolver.ResourceResolverSpi.expandSystemId : $r22 = new org.apache.xml.utils.URI
+org.apache.xml.security.utils.resolver.ResourceResolverSpi.expandSystemId : if r1 != null goto r21 = staticinvoke <org.apache.xml.security.utils.resolver.ResourceResolverSpi: java.lang.String fixURI(java.lang.String)>(r1)
+org.apache.xml.security.utils.resolver.ResourceResolverSpi.expandSystemId : goto [?= (branch)]

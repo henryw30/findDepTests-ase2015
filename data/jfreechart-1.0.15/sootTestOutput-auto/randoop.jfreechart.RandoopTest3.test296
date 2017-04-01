@@ -1,0 +1,20 @@
+org.jfree.chart.annotations.XYPointerAnnotation.getArrowLength : $d0 = r0.<org.jfree.chart.annotations.XYPointerAnnotation: double arrowLength>
+org.jfree.chart.annotations.XYTextAnnotation.setRotationAnchor : virtualinvoke r0.<org.jfree.chart.annotations.XYTextAnnotation: void fireAnnotationChanged()>()
+org.jfree.chart.annotations.XYTextAnnotation.setRotationAnchor : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "anchor")
+org.jfree.chart.annotations.XYTextAnnotation.setRotationAnchor : r0.<org.jfree.chart.annotations.XYTextAnnotation: org.jfree.ui.TextAnchor rotationAnchor> = r1
+org.jfree.chart.annotations.XYTextAnnotation.setOutlineVisible : virtualinvoke r0.<org.jfree.chart.annotations.XYTextAnnotation: void fireAnnotationChanged()>()
+org.jfree.chart.annotations.XYTextAnnotation.setOutlineVisible : r0.<org.jfree.chart.annotations.XYTextAnnotation: boolean outlineVisible> = z0
+org.jfree.chart.annotations.XYTextAnnotation.getRotationAnchor : $r1 = r0.<org.jfree.chart.annotations.XYTextAnnotation: org.jfree.ui.TextAnchor rotationAnchor>
+org.jfree.chart.annotations.AbstractAnnotation.clone : $r2 = new javax.swing.event.EventListenerList
+org.jfree.chart.annotations.AbstractAnnotation.clone : return r1
+org.jfree.chart.annotations.AbstractAnnotation.clone : $r3 = specialinvoke r0.<java.lang.Object: java.lang.Object clone()>()
+org.jfree.chart.annotations.XYTextAnnotation.getY : $d0 = r0.<org.jfree.chart.annotations.XYTextAnnotation: double y>
+org.jfree.chart.annotations.AbstractXYAnnotation.setToolTipText : r0.<org.jfree.chart.annotations.AbstractXYAnnotation: java.lang.String toolTipText> = r1
+org.jfree.chart.annotations.AbstractAnnotation.fireAnnotationChanged : $z0 = r0.<org.jfree.chart.annotations.AbstractAnnotation: boolean notify>
+org.jfree.chart.annotations.AbstractAnnotation.fireAnnotationChanged : $r1 = new org.jfree.chart.event.AnnotationChangeEvent
+org.jfree.chart.annotations.AbstractAnnotation.notifyListeners : $i1 = lengthof r2
+org.jfree.chart.annotations.AbstractAnnotation.notifyListeners : $r3 = r0.<org.jfree.chart.annotations.AbstractAnnotation: javax.swing.event.EventListenerList listenerList>
+org.jfree.chart.annotations.XYTextAnnotation.clone : $r1 = specialinvoke r0.<org.jfree.chart.annotations.AbstractXYAnnotation: java.lang.Object clone()>()
+org.jfree.chart.annotations.XYPointerAnnotation.clone : $r1 = specialinvoke r0.<org.jfree.chart.annotations.XYTextAnnotation: java.lang.Object clone()>()
+org.jfree.chart.annotations.XYPointerAnnotation.getLabelOffset : $d0 = r0.<org.jfree.chart.annotations.XYPointerAnnotation: double labelOffset>
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null goto return

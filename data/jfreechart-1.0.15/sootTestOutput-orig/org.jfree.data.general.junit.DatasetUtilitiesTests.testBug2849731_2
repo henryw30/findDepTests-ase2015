@@ -1,0 +1,99 @@
+org.jfree.data.xy.XYIntervalSeries.getXLowValue : $r2 = virtualinvoke r0.<org.jfree.data.xy.XYIntervalSeries: org.jfree.data.ComparableObjectItem getDataItem(int)>(i0)
+org.jfree.data.xy.XYIntervalSeries.getXLowValue : $d0 = virtualinvoke r1.<org.jfree.data.xy.XYIntervalDataItem: double getXLowValue()>()
+org.jfree.data.xy.AbstractXYDataset.getXValue : d0 = #NaN
+org.jfree.data.xy.AbstractXYDataset.getXValue : r1 = virtualinvoke r0.<org.jfree.data.xy.AbstractXYDataset: java.lang.Number getX(int,int)>(i0, i1)
+org.jfree.data.xy.AbstractXYDataset.getXValue : return d0
+org.jfree.data.xy.AbstractXYDataset.getXValue : d0 = virtualinvoke r1.<java.lang.Number: double doubleValue()>()
+org.jfree.data.xy.AbstractXYDataset.getXValue : if r1 == null goto return d0
+org.jfree.data.xy.XYIntervalSeries.getXHighValue : $r2 = virtualinvoke r0.<org.jfree.data.xy.XYIntervalSeries: org.jfree.data.ComparableObjectItem getDataItem(int)>(i0)
+org.jfree.data.xy.XYIntervalSeries.getXHighValue : $d0 = virtualinvoke r1.<org.jfree.data.xy.XYIntervalDataItem: double getXHighValue()>()
+org.jfree.data.xy.XYIntervalSeriesCollection.getX : $r2 = r0.<org.jfree.data.xy.XYIntervalSeriesCollection: java.util.List data>
+org.jfree.data.xy.XYIntervalSeriesCollection.getX : $r4 = virtualinvoke r1.<org.jfree.data.xy.XYIntervalSeries: java.lang.Number getX(int)>(i1)
+org.jfree.data.xy.XYInterval.getXLow : $d0 = r0.<org.jfree.data.xy.XYInterval: double xLow>
+org.jfree.data.ComparableObjectSeries.add : if i0 >= 0 goto $z2 = r0.<org.jfree.data.ComparableObjectSeries: boolean allowDuplicateXValues>
+org.jfree.data.ComparableObjectSeries.add : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "item")
+org.jfree.data.ComparableObjectSeries.add : $z2 = r0.<org.jfree.data.ComparableObjectSeries: boolean allowDuplicateXValues>
+org.jfree.data.ComparableObjectSeries.add : $r6 = interfaceinvoke $r5.<java.util.List: java.lang.Object get(int)>(i0)
+org.jfree.data.ComparableObjectSeries.add : $r7 = r0.<org.jfree.data.ComparableObjectSeries: java.util.List data>
+org.jfree.data.ComparableObjectSeries.add : $r4 = r0.<org.jfree.data.ComparableObjectSeries: java.util.List data>
+org.jfree.data.ComparableObjectSeries.add : $i7 = virtualinvoke r0.<org.jfree.data.ComparableObjectSeries: int getItemCount()>()
+org.jfree.data.ComparableObjectSeries.add : if z0 == 0 goto return
+org.jfree.data.ComparableObjectSeries.add : virtualinvoke r0.<org.jfree.data.ComparableObjectSeries: void fireSeriesChanged()>()
+org.jfree.data.ComparableObjectSeries.add : $r3 = r0.<org.jfree.data.ComparableObjectSeries: java.util.List data>
+org.jfree.data.ComparableObjectSeries.add : if i0 >= i1 goto $r7 = r0.<org.jfree.data.ComparableObjectSeries: java.util.List data>
+org.jfree.data.ComparableObjectSeries.add : i0 = i0 + 1
+org.jfree.data.ComparableObjectSeries.add : $r9 = r0.<org.jfree.data.ComparableObjectSeries: java.util.List data>
+org.jfree.data.ComparableObjectSeries.add : $r2 = r0.<org.jfree.data.ComparableObjectSeries: java.util.List data>
+org.jfree.data.ComparableObjectSeries.add : goto [?= (branch)]
+org.jfree.data.ComparableObjectSeries.add : goto [?= $i7 = virtualinvoke r0.<org.jfree.data.ComparableObjectSeries: int getItemCount()>()]
+org.jfree.data.ComparableObjectSeries.add : $z1 = r0.<org.jfree.data.ComparableObjectSeries: boolean autoSort>
+org.jfree.data.Range.getUpperBound : $d0 = r0.<org.jfree.data.Range: double upper>
+org.jfree.data.xy.XYIntervalSeriesCollection.getSeriesCount : $r1 = r0.<org.jfree.data.xy.XYIntervalSeriesCollection: java.util.List data>
+org.jfree.data.xy.XYIntervalDataItem.getXLowValue : if r1 == null goto return #NaN
+org.jfree.data.xy.XYIntervalDataItem.getXLowValue : $r2 = virtualinvoke r0.<org.jfree.data.xy.XYIntervalDataItem: java.lang.Object getObject()>()
+org.jfree.data.xy.XYIntervalDataItem.getXLowValue : $d0 = virtualinvoke r1.<org.jfree.data.xy.XYInterval: double getXLow()>()
+org.jfree.data.general.AbstractSeriesDataset.seriesChanged : virtualinvoke r0.<org.jfree.data.general.AbstractSeriesDataset: void fireDatasetChanged()>()
+org.jfree.data.xy.XYInterval.getXHigh : $d0 = r0.<org.jfree.data.xy.XYInterval: double xHigh>
+org.jfree.data.ComparableObjectItem.compareTo : $z0 = r1 instanceof org.jfree.data.ComparableObjectItem
+org.jfree.data.ComparableObjectItem.compareTo : $r3 = r0.<org.jfree.data.ComparableObjectItem: java.lang.Comparable x>
+org.jfree.data.ComparableObjectItem.compareTo : r2 = (org.jfree.data.ComparableObjectItem) r1
+org.jfree.data.xy.XYIntervalSeriesCollection.getEndXValue : $d0 = virtualinvoke r1.<org.jfree.data.xy.XYIntervalSeries: double getXHighValue(int)>(i1)
+org.jfree.data.xy.XYIntervalSeriesCollection.getEndXValue : $r2 = r0.<org.jfree.data.xy.XYIntervalSeriesCollection: java.util.List data>
+org.jfree.data.xy.XYIntervalSeries.getDataItem : $r1 = specialinvoke r0.<org.jfree.data.ComparableObjectSeries: org.jfree.data.ComparableObjectItem getDataItem(int)>(i0)
+org.jfree.data.general.AbstractDataset.notifyListeners : $r3 = r0.<org.jfree.data.general.AbstractDataset: javax.swing.event.EventListenerList listenerList>
+org.jfree.data.general.AbstractDataset.notifyListeners : $i1 = lengthof r2
+org.jfree.data.xy.XYIntervalSeriesCollection.getSeries : if i0 < 0 goto $r1 = new java.lang.IllegalArgumentException
+org.jfree.data.xy.XYIntervalSeriesCollection.getSeries : $r2 = r0.<org.jfree.data.xy.XYIntervalSeriesCollection: java.util.List data>
+org.jfree.data.xy.XYIntervalDataItem.getXHighValue : $d0 = virtualinvoke r1.<org.jfree.data.xy.XYInterval: double getXHigh()>()
+org.jfree.data.xy.XYIntervalDataItem.getXHighValue : if r1 == null goto return #NaN
+org.jfree.data.xy.XYIntervalDataItem.getXHighValue : $r2 = virtualinvoke r0.<org.jfree.data.xy.XYIntervalDataItem: java.lang.Object getObject()>()
+org.jfree.data.Range.getLowerBound : $d0 = r0.<org.jfree.data.Range: double lower>
+org.jfree.data.xy.XYIntervalSeries.add : $r1 = new org.jfree.data.xy.XYIntervalDataItem
+org.jfree.data.general.AbstractDataset.fireDatasetChanged : $r1 = new org.jfree.data.general.DatasetChangeEvent
+org.jfree.data.ComparableObjectItem.getObject : $r1 = r0.<org.jfree.data.ComparableObjectItem: java.lang.Object obj>
+org.jfree.data.xy.XYIntervalSeriesCollection.addSeries : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "series")
+org.jfree.data.xy.XYIntervalSeriesCollection.addSeries : virtualinvoke r0.<org.jfree.data.xy.XYIntervalSeriesCollection: void fireDatasetChanged()>()
+org.jfree.data.xy.XYIntervalSeriesCollection.addSeries : virtualinvoke r1.<org.jfree.data.xy.XYIntervalSeries: void addChangeListener(org.jfree.data.general.SeriesChangeListener)>(r0)
+org.jfree.data.xy.XYIntervalSeriesCollection.addSeries : $r2 = r0.<org.jfree.data.xy.XYIntervalSeriesCollection: java.util.List data>
+org.jfree.data.xy.XYIntervalDataItem.getX : $r1 = virtualinvoke r0.<org.jfree.data.xy.XYIntervalDataItem: java.lang.Comparable getComparable()>()
+org.jfree.data.general.Series.addChangeListener : $r2 = r0.<org.jfree.data.general.Series: javax.swing.event.EventListenerList listeners>
+org.jfree.data.general.Series.fireSeriesChanged : $z0 = r0.<org.jfree.data.general.Series: boolean notify>
+org.jfree.data.general.Series.fireSeriesChanged : $r1 = new org.jfree.data.general.SeriesChangeEvent
+org.jfree.data.xy.XYIntervalSeriesCollection.getItemCount : $r1 = virtualinvoke r0.<org.jfree.data.xy.XYIntervalSeriesCollection: org.jfree.data.xy.XYIntervalSeries getSeries(int)>(i0)
+org.jfree.data.xy.XYIntervalSeries.getX : $r2 = virtualinvoke r0.<org.jfree.data.xy.XYIntervalSeries: org.jfree.data.ComparableObjectItem getDataItem(int)>(i0)
+org.jfree.data.xy.XYIntervalSeries.getX : $r3 = virtualinvoke r1.<org.jfree.data.xy.XYIntervalDataItem: java.lang.Double getX()>()
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null goto return
+org.jfree.data.ComparableObjectItem.getComparable : $r1 = r0.<org.jfree.data.ComparableObjectItem: java.lang.Comparable x>
+org.jfree.data.ComparableObjectSeries.getDataItem : $r1 = r0.<org.jfree.data.ComparableObjectSeries: java.util.List data>
+org.jfree.data.xy.XYIntervalSeriesCollection.getStartXValue : $d0 = virtualinvoke r1.<org.jfree.data.xy.XYIntervalSeries: double getXLowValue(int)>(i1)
+org.jfree.data.xy.XYIntervalSeriesCollection.getStartXValue : $r2 = r0.<org.jfree.data.xy.XYIntervalSeriesCollection: java.util.List data>
+org.jfree.data.ComparableObjectSeries.getItemCount : $r1 = r0.<org.jfree.data.ComparableObjectSeries: java.util.List data>
+org.jfree.data.general.Series.notifyListeners : $r4 = r2[i0]
+org.jfree.data.general.Series.notifyListeners : $r3 = r0.<org.jfree.data.general.Series: javax.swing.event.EventListenerList listeners>
+org.jfree.data.general.Series.notifyListeners : $i2 = i0 + 1
+org.jfree.data.general.Series.notifyListeners : $i1 = lengthof r2
+org.jfree.data.general.DatasetUtilities.iterateDomainBounds : $r2 = new org.jfree.data.Range
+org.jfree.data.general.DatasetUtilities.iterateDomainBounds : $r1 = staticinvoke <org.jfree.data.general.DatasetUtilities: org.jfree.data.Range iterateDomainBounds(org.jfree.data.xy.XYDataset,boolean)>(r0, 1)
+org.jfree.data.general.DatasetUtilities.iterateDomainBounds : d1 = staticinvoke <java.lang.Math: double max(double,double)>(d1, d2)
+org.jfree.data.general.DatasetUtilities.iterateDomainBounds : d0 = #Infinity
+org.jfree.data.general.DatasetUtilities.iterateDomainBounds : d1 = staticinvoke <java.lang.Math: double max(double,double)>(d1, d4)
+org.jfree.data.general.DatasetUtilities.iterateDomainBounds : d1 = staticinvoke <java.lang.Math: double max(double,double)>(d1, d3)
+org.jfree.data.general.DatasetUtilities.iterateDomainBounds : d4 = interfaceinvoke r1.<org.jfree.data.xy.IntervalXYDataset: double getEndXValue(int,int)>(i1, i3)
+org.jfree.data.general.DatasetUtilities.iterateDomainBounds : i0 = interfaceinvoke r0.<org.jfree.data.xy.XYDataset: int getSeriesCount()>()
+org.jfree.data.general.DatasetUtilities.iterateDomainBounds : i3 = 0
+org.jfree.data.general.DatasetUtilities.iterateDomainBounds : d0 = staticinvoke <java.lang.Math: double min(double,double)>(d0, d3)
+org.jfree.data.general.DatasetUtilities.iterateDomainBounds : $z2 = staticinvoke <java.lang.Double: boolean isNaN(double)>(d2)
+org.jfree.data.general.DatasetUtilities.iterateDomainBounds : d0 = staticinvoke <java.lang.Math: double min(double,double)>(d0, d4)
+org.jfree.data.general.DatasetUtilities.iterateDomainBounds : if z0 == 0 goto i4 = 0
+org.jfree.data.general.DatasetUtilities.iterateDomainBounds : d0 = staticinvoke <java.lang.Math: double min(double,double)>(d0, d2)
+org.jfree.data.general.DatasetUtilities.iterateDomainBounds : d1 = #-Infinity
+org.jfree.data.general.DatasetUtilities.iterateDomainBounds : r1 = (org.jfree.data.xy.IntervalXYDataset) r0
+org.jfree.data.general.DatasetUtilities.iterateDomainBounds : i1 = 0
+org.jfree.data.general.DatasetUtilities.iterateDomainBounds : d2 = interfaceinvoke r1.<org.jfree.data.xy.IntervalXYDataset: double getXValue(int,int)>(i1, i3)
+org.jfree.data.general.DatasetUtilities.iterateDomainBounds : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r0, "dataset")
+org.jfree.data.general.DatasetUtilities.iterateDomainBounds : $z3 = staticinvoke <java.lang.Double: boolean isNaN(double)>(d3)
+org.jfree.data.general.DatasetUtilities.iterateDomainBounds : i2 = interfaceinvoke r0.<org.jfree.data.xy.XYDataset: int getItemCount(int)>(i1)
+org.jfree.data.general.DatasetUtilities.iterateDomainBounds : $b7 = d0 cmpl d1
+org.jfree.data.general.DatasetUtilities.iterateDomainBounds : $z4 = staticinvoke <java.lang.Double: boolean isNaN(double)>(d4)
+org.jfree.data.general.DatasetUtilities.iterateDomainBounds : d3 = interfaceinvoke r1.<org.jfree.data.xy.IntervalXYDataset: double getStartXValue(int,int)>(i1, i3)
+org.jfree.data.general.DatasetUtilities.iterateDomainBounds : goto [?= $b7 = d0 cmpl d1]

@@ -1,0 +1,30 @@
+org.jfree.chart.plot.dial.StandardDialFrame.setForegroundPaint : r0.<org.jfree.chart.plot.dial.StandardDialFrame: java.awt.Paint foregroundPaint> = r1
+org.jfree.chart.plot.dial.StandardDialFrame.setForegroundPaint : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "paint")
+org.jfree.chart.plot.dial.StandardDialFrame.setForegroundPaint : $r2 = new org.jfree.chart.plot.dial.DialLayerChangeEvent
+org.jfree.chart.plot.dial.AbstractDialLayer.notifyListeners : $r3 = r0.<org.jfree.chart.plot.dial.AbstractDialLayer: javax.swing.event.EventListenerList listenerList>
+org.jfree.chart.plot.dial.AbstractDialLayer.notifyListeners : $i1 = lengthof r2
+org.jfree.chart.plot.dial.AbstractDialLayer.equals : $z1 = r0.<org.jfree.chart.plot.dial.AbstractDialLayer: boolean visible>
+org.jfree.chart.plot.dial.AbstractDialLayer.equals : if r1 != r0 goto $z0 = r1 instanceof org.jfree.chart.plot.dial.AbstractDialLayer
+org.jfree.chart.plot.dial.AbstractDialLayer.equals : $z0 = r1 instanceof org.jfree.chart.plot.dial.AbstractDialLayer
+org.jfree.chart.plot.dial.AbstractDialLayer.equals : r2 = (org.jfree.chart.plot.dial.AbstractDialLayer) r1
+org.jfree.chart.plot.dial.StandardDialFrame.equals : $d0 = r0.<org.jfree.chart.plot.dial.StandardDialFrame: double radius>
+org.jfree.chart.plot.dial.StandardDialFrame.equals : r2 = (org.jfree.chart.plot.dial.StandardDialFrame) r1
+org.jfree.chart.plot.dial.StandardDialFrame.equals : if r1 != r0 goto $z0 = r1 instanceof org.jfree.chart.plot.dial.StandardDialFrame
+org.jfree.chart.plot.dial.StandardDialFrame.equals : $z4 = specialinvoke r0.<org.jfree.chart.plot.dial.AbstractDialLayer: boolean equals(java.lang.Object)>(r1)
+org.jfree.chart.plot.dial.StandardDialFrame.equals : $z0 = r1 instanceof org.jfree.chart.plot.dial.StandardDialFrame
+org.jfree.chart.plot.dial.StandardDialFrame.equals : $r5 = r0.<org.jfree.chart.plot.dial.StandardDialFrame: java.awt.Paint foregroundPaint>
+org.jfree.chart.plot.dial.StandardDialFrame.equals : $r3 = r0.<org.jfree.chart.plot.dial.StandardDialFrame: java.awt.Paint backgroundPaint>
+org.jfree.chart.plot.dial.StandardDialFrame.equals : return 0
+org.jfree.chart.plot.dial.StandardDialFrame.equals : $r7 = r0.<org.jfree.chart.plot.dial.StandardDialFrame: java.awt.Stroke stroke>
+org.jfree.chart.plot.dial.AbstractDialLayer.setVisible : r0.<org.jfree.chart.plot.dial.AbstractDialLayer: boolean visible> = z0
+org.jfree.chart.plot.dial.AbstractDialLayer.setVisible : $r1 = new org.jfree.chart.plot.dial.DialLayerChangeEvent
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null goto return
+org.jfree.chart.plot.dial.StandardDialFrame.setBackgroundPaint : r0.<org.jfree.chart.plot.dial.StandardDialFrame: java.awt.Paint backgroundPaint> = r1
+org.jfree.chart.plot.dial.StandardDialFrame.setBackgroundPaint : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "paint")
+org.jfree.chart.plot.dial.StandardDialFrame.setBackgroundPaint : $r2 = new org.jfree.chart.plot.dial.DialLayerChangeEvent
+org.jfree.chart.plot.dial.StandardDialFrame.setRadius : $b0 = d0 cmpg 0.0
+org.jfree.chart.plot.dial.StandardDialFrame.setRadius : $r2 = new org.jfree.chart.plot.dial.DialLayerChangeEvent
+org.jfree.chart.plot.dial.StandardDialFrame.setRadius : r0.<org.jfree.chart.plot.dial.StandardDialFrame: double radius> = d0
+org.jfree.chart.plot.dial.StandardDialFrame.setStroke : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "stroke")
+org.jfree.chart.plot.dial.StandardDialFrame.setStroke : r0.<org.jfree.chart.plot.dial.StandardDialFrame: java.awt.Stroke stroke> = r1
+org.jfree.chart.plot.dial.StandardDialFrame.setStroke : $r2 = new org.jfree.chart.plot.dial.DialLayerChangeEvent

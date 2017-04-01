@@ -1,0 +1,14 @@
+org.joda.time.format.PeriodFormat.getDefault : $r0 = <java.util.Locale: java.util.Locale ENGLISH> >>>>>>>> org.joda.time.format.PeriodFormat.getDefault : $r1 = staticinvoke <org.joda.time.format.PeriodFormat: org.joda.time.format.PeriodFormatter wordBased(java.util.Locale)>($r0)
+org.joda.time.format.PeriodFormat.getDefault : $r1 = staticinvoke <org.joda.time.format.PeriodFormat: org.joda.time.format.PeriodFormatter wordBased(java.util.Locale)>($r0) >>>>>>>> org.joda.time.format.PeriodFormat.wordBased : $r1 = <org.joda.time.format.PeriodFormat: java.util.concurrent.ConcurrentMap FORMATTERS>
+org.joda.time.format.PeriodFormat.wordBased : $r1 = <org.joda.time.format.PeriodFormat: java.util.concurrent.ConcurrentMap FORMATTERS> >>>>>>>> org.joda.time.format.PeriodFormat.wordBased : $r5 = interfaceinvoke $r1.<java.util.concurrent.ConcurrentMap: java.lang.Object get(java.lang.Object)>(r0)
+org.joda.time.format.PeriodFormat.wordBased : $r5 = interfaceinvoke $r1.<java.util.concurrent.ConcurrentMap: java.lang.Object get(java.lang.Object)>(r0) >>>>>>>> org.joda.time.format.PeriodFormat.wordBased : r2 = (org.joda.time.format.PeriodFormatter) $r5
+org.joda.time.format.PeriodFormat.wordBased : r2 = (org.joda.time.format.PeriodFormatter) $r5 >>>>>>>> org.joda.time.format.PeriodFormat.wordBased : if r2 != null
+org.joda.time.format.PeriodFormat.wordBased : if r2 != null >>>>>>>> org.joda.time.format.PeriodFormat.wordBased : return r2
+org.joda.time.format.PeriodFormat.wordBased : return r2 >>>>>>>> org.joda.time.format.PeriodFormat.getDefault : return $r1
+org.joda.time.format.PeriodFormat.getDefault : return $r1 >>>>>>>> org.joda.time.format.PeriodFormatter.getLocale : $r1 = r0.<org.joda.time.format.PeriodFormatter: java.util.Locale iLocale>
+org.joda.time.format.PeriodFormatter.getLocale : $r1 = r0.<org.joda.time.format.PeriodFormatter: java.util.Locale iLocale> >>>>>>>> org.joda.time.format.PeriodFormatter.getLocale : return $r1
+org.joda.time.format.PeriodFormatter.getLocale : return $r1 >>>>>>>> org.joda.time.format.PeriodFormatter.isPrinter : $r1 = r0.<org.joda.time.format.PeriodFormatter: org.joda.time.format.PeriodPrinter iPrinter>
+org.joda.time.format.PeriodFormatter.isPrinter : $r1 = r0.<org.joda.time.format.PeriodFormatter: org.joda.time.format.PeriodPrinter iPrinter> >>>>>>>> org.joda.time.format.PeriodFormatter.isPrinter : if $r1 == null
+org.joda.time.format.PeriodFormatter.isPrinter : if $r1 == null >>>>>>>> org.joda.time.format.PeriodFormatter.isPrinter : $z0 = 1
+org.joda.time.format.PeriodFormatter.isPrinter : $z0 = 1 >>>>>>>> org.joda.time.format.PeriodFormatter.isPrinter : goto [?= return $z0]
+org.joda.time.format.PeriodFormatter.isPrinter : goto [?= return $z0] >>>>>>>> org.joda.time.format.PeriodFormatter.isPrinter : return $z0

@@ -1,0 +1,60 @@
+org.jfree.chart.ChartPanel.mouseMoved : $r7 = virtualinvoke r0.<org.jfree.chart.ChartPanel: java.awt.Graphics getGraphics()>() >>>>>>>> org.jfree.chart.ChartPanel.mouseMoved : r2 = (java.awt.Graphics2D) $r7
+org.jfree.chart.ChartPanel.mouseMoved : r2 = (java.awt.Graphics2D) $r7 >>>>>>>> org.jfree.chart.ChartPanel.mouseMoved : $z0 = r0.<org.jfree.chart.ChartPanel: boolean horizontalAxisTrace>
+org.jfree.chart.ChartPanel.mouseMoved : $z0 = r0.<org.jfree.chart.ChartPanel: boolean horizontalAxisTrace> >>>>>>>> org.jfree.chart.ChartPanel.mouseMoved : if $z0 == 0
+org.jfree.chart.ChartPanel.mouseMoved : if $z0 == 0 >>>>>>>> org.jfree.chart.ChartPanel.mouseMoved : $i3 = virtualinvoke r1.<java.awt.event.MouseEvent: int getX()>()
+org.jfree.chart.ChartPanel.mouseMoved : if $z0 == 0 >>>>>>>> org.jfree.chart.ChartPanel.mouseMoved : $z1 = r0.<org.jfree.chart.ChartPanel: boolean verticalAxisTrace>
+org.jfree.chart.ChartPanel.mouseMoved : $z1 = r0.<org.jfree.chart.ChartPanel: boolean verticalAxisTrace> >>>>>>>> org.jfree.chart.ChartPanel.mouseMoved : if $z1 == 0
+org.jfree.chart.ChartPanel.mouseMoved : if $z1 == 0 >>>>>>>> org.jfree.chart.ChartPanel.mouseMoved : $i4 = virtualinvoke r1.<java.awt.event.MouseEvent: int getY()>()
+org.jfree.chart.ChartPanel.mouseMoved : if $z1 == 0 >>>>>>>> org.jfree.chart.ChartPanel.mouseMoved : virtualinvoke r2.<java.awt.Graphics2D: void dispose()>()
+org.jfree.chart.ChartPanel.mouseMoved : virtualinvoke r2.<java.awt.Graphics2D: void dispose()>() >>>>>>>> org.jfree.chart.ChartPanel.mouseMoved : $r8 = r0.<org.jfree.chart.ChartPanel: javax.swing.event.EventListenerList chartMouseListeners>
+org.jfree.chart.ChartPanel.mouseMoved : $r8 = r0.<org.jfree.chart.ChartPanel: javax.swing.event.EventListenerList chartMouseListeners> >>>>>>>> org.jfree.chart.ChartPanel.mouseMoved : r3 = virtualinvoke $r8.<javax.swing.event.EventListenerList: java.util.EventListener[] getListeners(java.lang.Class)>(class "org/jfree/chart/ChartMouseListener")
+org.jfree.chart.ChartPanel.mouseMoved : r3 = virtualinvoke $r8.<javax.swing.event.EventListenerList: java.util.EventListener[] getListeners(java.lang.Class)>(class "org/jfree/chart/ChartMouseListener") >>>>>>>> org.jfree.chart.ChartPanel.mouseMoved : $i5 = lengthof r3
+org.jfree.chart.ChartPanel.mouseMoved : $i5 = lengthof r3 >>>>>>>> org.jfree.chart.ChartPanel.mouseMoved : if $i5 != 0
+org.jfree.chart.ChartPanel.mouseMoved : if $i5 != 0 >>>>>>>> org.jfree.chart.ChartPanel.mouseMoved : return
+org.jfree.chart.ChartPanel.mouseMoved : if $i5 != 0 >>>>>>>> org.jfree.chart.ChartPanel.mouseMoved : r4 = virtualinvoke r0.<org.jfree.chart.ChartPanel: java.awt.Insets getInsets()>()
+org.jfree.chart.ChartPanel.mouseMoved : r4 = virtualinvoke r0.<org.jfree.chart.ChartPanel: java.awt.Insets getInsets()>() >>>>>>>> org.jfree.chart.ChartPanel.mouseMoved : $i6 = virtualinvoke r1.<java.awt.event.MouseEvent: int getX()>()
+org.jfree.chart.ChartPanel.mouseMoved : $i6 = virtualinvoke r1.<java.awt.event.MouseEvent: int getX()>() >>>>>>>> org.jfree.chart.ChartPanel.mouseMoved : $i7 = r4.<java.awt.Insets: int left>
+org.jfree.chart.ChartPanel.mouseMoved : $i7 = r4.<java.awt.Insets: int left> >>>>>>>> org.jfree.chart.ChartPanel.mouseMoved : $i8 = $i6 - $i7
+org.jfree.chart.ChartPanel.mouseMoved : $i8 = $i6 - $i7 >>>>>>>> org.jfree.chart.ChartPanel.mouseMoved : $d0 = (double) $i8
+org.jfree.chart.ChartPanel.mouseMoved : $d0 = (double) $i8 >>>>>>>> org.jfree.chart.ChartPanel.mouseMoved : $d1 = r0.<org.jfree.chart.ChartPanel: double scaleX>
+org.jfree.chart.ChartPanel.mouseMoved : $d1 = r0.<org.jfree.chart.ChartPanel: double scaleX> >>>>>>>> org.jfree.chart.ChartPanel.mouseMoved : $d2 = $d0 / $d1
+org.jfree.chart.ChartPanel.mouseMoved : $d2 = $d0 / $d1 >>>>>>>> org.jfree.chart.ChartPanel.mouseMoved : i0 = (int) $d2
+org.jfree.chart.ChartPanel.mouseMoved : i0 = (int) $d2 >>>>>>>> org.jfree.chart.ChartPanel.mouseMoved : $i9 = virtualinvoke r1.<java.awt.event.MouseEvent: int getY()>()
+org.jfree.chart.ChartPanel.mouseMoved : $i9 = virtualinvoke r1.<java.awt.event.MouseEvent: int getY()>() >>>>>>>> org.jfree.chart.ChartPanel.mouseMoved : $i10 = r4.<java.awt.Insets: int top>
+org.jfree.chart.ChartPanel.mouseMoved : $i10 = r4.<java.awt.Insets: int top> >>>>>>>> org.jfree.chart.ChartPanel.mouseMoved : $i11 = $i9 - $i10
+org.jfree.chart.ChartPanel.mouseMoved : $i11 = $i9 - $i10 >>>>>>>> org.jfree.chart.ChartPanel.mouseMoved : $d3 = (double) $i11
+org.jfree.chart.ChartPanel.mouseMoved : $d3 = (double) $i11 >>>>>>>> org.jfree.chart.ChartPanel.mouseMoved : $d4 = r0.<org.jfree.chart.ChartPanel: double scaleY>
+org.jfree.chart.ChartPanel.mouseMoved : $d4 = r0.<org.jfree.chart.ChartPanel: double scaleY> >>>>>>>> org.jfree.chart.ChartPanel.mouseMoved : $d5 = $d3 / $d4
+org.jfree.chart.ChartPanel.mouseMoved : $d5 = $d3 / $d4 >>>>>>>> org.jfree.chart.ChartPanel.mouseMoved : i1 = (int) $d5
+org.jfree.chart.ChartPanel.mouseMoved : i1 = (int) $d5 >>>>>>>> org.jfree.chart.ChartPanel.mouseMoved : r5 = null
+org.jfree.chart.ChartPanel.mouseMoved : r5 = null >>>>>>>> org.jfree.chart.ChartPanel.mouseMoved : $r9 = r0.<org.jfree.chart.ChartPanel: org.jfree.chart.ChartRenderingInfo info>
+org.jfree.chart.ChartPanel.mouseMoved : $r9 = r0.<org.jfree.chart.ChartPanel: org.jfree.chart.ChartRenderingInfo info> >>>>>>>> org.jfree.chart.ChartPanel.mouseMoved : if $r9 == null
+org.jfree.chart.ChartPanel.mouseMoved : if $r9 == null >>>>>>>> org.jfree.chart.ChartPanel.mouseMoved : $r10 = r0.<org.jfree.chart.ChartPanel: org.jfree.chart.ChartRenderingInfo info>
+org.jfree.chart.ChartPanel.mouseMoved : if $r9 == null >>>>>>>> org.jfree.chart.ChartPanel.mouseMoved : $r11 = r0.<org.jfree.chart.ChartPanel: org.jfree.chart.JFreeChart chart>
+org.jfree.chart.ChartPanel.mouseMoved : $r11 = r0.<org.jfree.chart.ChartPanel: org.jfree.chart.JFreeChart chart> >>>>>>>> org.jfree.chart.ChartPanel.mouseMoved : if $r11 == null
+org.jfree.chart.ChartPanel.mouseMoved : if $r11 == null >>>>>>>> org.jfree.chart.ChartPanel.mouseMoved : $r12 = new org.jfree.chart.ChartMouseEvent
+org.jfree.chart.ChartPanel.mouseMoved : if $r11 == null >>>>>>>> org.jfree.chart.ChartPanel.mouseMoved : return
+org.jfree.chart.ChartPanel.mouseMoved : $r12 = new org.jfree.chart.ChartMouseEvent >>>>>>>> org.jfree.chart.ChartPanel.mouseMoved : $r13 = virtualinvoke r0.<org.jfree.chart.ChartPanel: org.jfree.chart.JFreeChart getChart()>()
+org.jfree.chart.ChartPanel.mouseMoved : $r13 = virtualinvoke r0.<org.jfree.chart.ChartPanel: org.jfree.chart.JFreeChart getChart()>() >>>>>>>> org.jfree.chart.ChartPanel.mouseMoved : specialinvoke $r12.<org.jfree.chart.ChartMouseEvent: void <init>(org.jfree.chart.JFreeChart,java.awt.event.MouseEvent,org.jfree.chart.entity.ChartEntity)>($r13, r1, r5)
+org.jfree.chart.ChartPanel.mouseMoved : specialinvoke $r12.<org.jfree.chart.ChartMouseEvent: void <init>(org.jfree.chart.JFreeChart,java.awt.event.MouseEvent,org.jfree.chart.entity.ChartEntity)>($r13, r1, r5) >>>>>>>> org.jfree.chart.ChartPanel.mouseMoved : r14 = $r12
+org.jfree.chart.ChartPanel.mouseMoved : r14 = $r12 >>>>>>>> org.jfree.chart.ChartPanel.mouseMoved : $i12 = lengthof r3
+org.jfree.chart.ChartPanel.mouseMoved : $i12 = lengthof r3 >>>>>>>> org.jfree.chart.ChartPanel.mouseMoved : i2 = $i12 - 1
+org.jfree.chart.ChartPanel.mouseMoved : i2 = $i12 - 1 >>>>>>>> org.jfree.chart.ChartPanel.mouseMoved : if i2 < 0
+org.jfree.chart.ChartPanel.mouseMoved : if i2 < 0 >>>>>>>> org.jfree.chart.ChartPanel.mouseMoved : $r15 = r3[i2]
+org.jfree.chart.ChartPanel.mouseMoved : if i2 < 0 >>>>>>>> org.jfree.chart.ChartPanel.mouseMoved : return
+org.jfree.chart.ChartPanel.mouseMoved : $r15 = r3[i2] >>>>>>>> org.jfree.chart.ChartPanel.mouseMoved : $r16 = (org.jfree.chart.ChartMouseListener) $r15
+org.jfree.chart.ChartPanel.mouseMoved : $r16 = (org.jfree.chart.ChartMouseListener) $r15 >>>>>>>> org.jfree.chart.ChartPanel.mouseMoved : interfaceinvoke $r16.<org.jfree.chart.ChartMouseListener: void chartMouseMoved(org.jfree.chart.ChartMouseEvent)>(r14)
+org.jfree.chart.ChartPanel.mouseMoved : interfaceinvoke $r16.<org.jfree.chart.ChartMouseListener: void chartMouseMoved(org.jfree.chart.ChartMouseEvent)>(r14) >>>>>>>> org.jfree.chart.ChartPanel.mouseMoved : i2 = i2 + -1
+org.jfree.chart.ChartPanel.mouseMoved : i2 = i2 + -1 >>>>>>>> org.jfree.chart.ChartPanel.mouseMoved : goto [?= (branch)]
+org.jfree.chart.ChartPanel.mouseMoved : goto [?= (branch)] >>>>>>>> org.jfree.chart.ChartPanel.mouseMoved : if i2 < 0
+org.jfree.chart.ChartPanel.mouseMoved : $r10 = r0.<org.jfree.chart.ChartPanel: org.jfree.chart.ChartRenderingInfo info> >>>>>>>> org.jfree.chart.ChartPanel.mouseMoved : r6 = virtualinvoke $r10.<org.jfree.chart.ChartRenderingInfo: org.jfree.chart.entity.EntityCollection getEntityCollection()>()
+org.jfree.chart.ChartPanel.mouseMoved : r6 = virtualinvoke $r10.<org.jfree.chart.ChartRenderingInfo: org.jfree.chart.entity.EntityCollection getEntityCollection()>() >>>>>>>> org.jfree.chart.ChartPanel.mouseMoved : if r6 == null
+org.jfree.chart.ChartPanel.mouseMoved : if r6 == null >>>>>>>> org.jfree.chart.ChartPanel.mouseMoved : $d6 = (double) i0
+org.jfree.chart.ChartPanel.mouseMoved : if r6 == null >>>>>>>> org.jfree.chart.ChartPanel.mouseMoved : $r11 = r0.<org.jfree.chart.ChartPanel: org.jfree.chart.JFreeChart chart>
+org.jfree.chart.ChartPanel.mouseMoved : $d6 = (double) i0 >>>>>>>> org.jfree.chart.ChartPanel.mouseMoved : $d7 = (double) i1
+org.jfree.chart.ChartPanel.mouseMoved : $d7 = (double) i1 >>>>>>>> org.jfree.chart.ChartPanel.mouseMoved : r5 = interfaceinvoke r6.<org.jfree.chart.entity.EntityCollection: org.jfree.chart.entity.ChartEntity getEntity(double,double)>($d6, $d7)
+org.jfree.chart.ChartPanel.mouseMoved : r5 = interfaceinvoke r6.<org.jfree.chart.entity.EntityCollection: org.jfree.chart.entity.ChartEntity getEntity(double,double)>($d6, $d7) >>>>>>>> org.jfree.chart.ChartPanel.mouseMoved : $r11 = r0.<org.jfree.chart.ChartPanel: org.jfree.chart.JFreeChart chart>
+org.jfree.chart.ChartPanel.mouseMoved : $i4 = virtualinvoke r1.<java.awt.event.MouseEvent: int getY()>() >>>>>>>> org.jfree.chart.ChartPanel.mouseMoved : specialinvoke r0.<org.jfree.chart.ChartPanel: void drawVerticalAxisTrace(java.awt.Graphics2D,int)>(r2, $i4)
+org.jfree.chart.ChartPanel.mouseMoved : specialinvoke r0.<org.jfree.chart.ChartPanel: void drawVerticalAxisTrace(java.awt.Graphics2D,int)>(r2, $i4) >>>>>>>> org.jfree.chart.ChartPanel.mouseMoved : virtualinvoke r2.<java.awt.Graphics2D: void dispose()>()
+org.jfree.chart.ChartPanel.mouseMoved : $i3 = virtualinvoke r1.<java.awt.event.MouseEvent: int getX()>() >>>>>>>> org.jfree.chart.ChartPanel.mouseMoved : specialinvoke r0.<org.jfree.chart.ChartPanel: void drawHorizontalAxisTrace(java.awt.Graphics2D,int)>(r2, $i3)
+org.jfree.chart.ChartPanel.mouseMoved : specialinvoke r0.<org.jfree.chart.ChartPanel: void drawHorizontalAxisTrace(java.awt.Graphics2D,int)>(r2, $i3) >>>>>>>> org.jfree.chart.ChartPanel.mouseMoved : $z1 = r0.<org.jfree.chart.ChartPanel: boolean verticalAxisTrace>

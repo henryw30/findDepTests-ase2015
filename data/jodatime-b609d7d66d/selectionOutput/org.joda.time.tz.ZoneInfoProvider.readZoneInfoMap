@@ -1,0 +1,31 @@
+org.joda.time.tz.ZoneInfoProvider.readZoneInfoMap : i0 = virtualinvoke r0.<java.io.DataInputStream: int readUnsignedShort()>() >>>>>>>> org.joda.time.tz.ZoneInfoProvider.readZoneInfoMap : r2 = newarray (java.lang.String)[i0]
+org.joda.time.tz.ZoneInfoProvider.readZoneInfoMap : r2 = newarray (java.lang.String)[i0] >>>>>>>> org.joda.time.tz.ZoneInfoProvider.readZoneInfoMap : i1 = 0
+org.joda.time.tz.ZoneInfoProvider.readZoneInfoMap : i1 = 0 >>>>>>>> org.joda.time.tz.ZoneInfoProvider.readZoneInfoMap : if i1 >= i0
+org.joda.time.tz.ZoneInfoProvider.readZoneInfoMap : if i1 >= i0 >>>>>>>> org.joda.time.tz.ZoneInfoProvider.readZoneInfoMap : $r4 = virtualinvoke r0.<java.io.DataInputStream: java.lang.String readUTF()>()
+org.joda.time.tz.ZoneInfoProvider.readZoneInfoMap : if i1 >= i0 >>>>>>>> org.joda.time.tz.ZoneInfoProvider.readZoneInfoMap : i2 = virtualinvoke r0.<java.io.DataInputStream: int readUnsignedShort()>()
+org.joda.time.tz.ZoneInfoProvider.readZoneInfoMap : i2 = virtualinvoke r0.<java.io.DataInputStream: int readUnsignedShort()>() >>>>>>>> org.joda.time.tz.ZoneInfoProvider.readZoneInfoMap : i3 = 0
+org.joda.time.tz.ZoneInfoProvider.readZoneInfoMap : i3 = 0 >>>>>>>> org.joda.time.tz.ZoneInfoProvider.readZoneInfoMap : if i3 >= i2
+org.joda.time.tz.ZoneInfoProvider.readZoneInfoMap : if i3 >= i2 >>>>>>>> org.joda.time.tz.ZoneInfoProvider.readZoneInfoMap : $i4 = virtualinvoke r0.<java.io.DataInputStream: int readUnsignedShort()>()
+org.joda.time.tz.ZoneInfoProvider.readZoneInfoMap : if i3 >= i2 >>>>>>>> org.joda.time.tz.ZoneInfoProvider.readZoneInfoMap : return
+org.joda.time.tz.ZoneInfoProvider.readZoneInfoMap : if i3 >= i2 >>>>>>>> org.joda.time.tz.ZoneInfoProvider.readZoneInfoMap : $r9 := @caughtexception
+org.joda.time.tz.ZoneInfoProvider.readZoneInfoMap : r3 = $r9 >>>>>>>> org.joda.time.tz.ZoneInfoProvider.readZoneInfoMap : $r10 = new java.io.IOException
+org.joda.time.tz.ZoneInfoProvider.readZoneInfoMap : $r10 = new java.io.IOException >>>>>>>> org.joda.time.tz.ZoneInfoProvider.readZoneInfoMap : specialinvoke $r10.<java.io.IOException: void <init>(java.lang.String)>("Corrupt zone info map")
+org.joda.time.tz.ZoneInfoProvider.readZoneInfoMap : specialinvoke $r10.<java.io.IOException: void <init>(java.lang.String)>("Corrupt zone info map") >>>>>>>> org.joda.time.tz.ZoneInfoProvider.readZoneInfoMap : throw $r10
+org.joda.time.tz.ZoneInfoProvider.readZoneInfoMap : $i4 = virtualinvoke r0.<java.io.DataInputStream: int readUnsignedShort()>() >>>>>>>> org.joda.time.tz.ZoneInfoProvider.readZoneInfoMap : $r6 = r2[$i4]
+org.joda.time.tz.ZoneInfoProvider.readZoneInfoMap : $i4 = virtualinvoke r0.<java.io.DataInputStream: int readUnsignedShort()>() >>>>>>>> org.joda.time.tz.ZoneInfoProvider.readZoneInfoMap : $r9 := @caughtexception
+org.joda.time.tz.ZoneInfoProvider.readZoneInfoMap : $r6 = r2[$i4] >>>>>>>> org.joda.time.tz.ZoneInfoProvider.readZoneInfoMap : $i5 = virtualinvoke r0.<java.io.DataInputStream: int readUnsignedShort()>()
+org.joda.time.tz.ZoneInfoProvider.readZoneInfoMap : $r6 = r2[$i4] >>>>>>>> org.joda.time.tz.ZoneInfoProvider.readZoneInfoMap : $r9 := @caughtexception
+org.joda.time.tz.ZoneInfoProvider.readZoneInfoMap : $i5 = virtualinvoke r0.<java.io.DataInputStream: int readUnsignedShort()>() >>>>>>>> org.joda.time.tz.ZoneInfoProvider.readZoneInfoMap : $r7 = r2[$i5]
+org.joda.time.tz.ZoneInfoProvider.readZoneInfoMap : $i5 = virtualinvoke r0.<java.io.DataInputStream: int readUnsignedShort()>() >>>>>>>> org.joda.time.tz.ZoneInfoProvider.readZoneInfoMap : $r9 := @caughtexception
+org.joda.time.tz.ZoneInfoProvider.readZoneInfoMap : $r7 = r2[$i5] >>>>>>>> org.joda.time.tz.ZoneInfoProvider.readZoneInfoMap : interfaceinvoke r1.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>($r6, $r7)
+org.joda.time.tz.ZoneInfoProvider.readZoneInfoMap : $r7 = r2[$i5] >>>>>>>> org.joda.time.tz.ZoneInfoProvider.readZoneInfoMap : $r9 := @caughtexception
+org.joda.time.tz.ZoneInfoProvider.readZoneInfoMap : interfaceinvoke r1.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>($r6, $r7) >>>>>>>> org.joda.time.tz.ZoneInfoProvider.readZoneInfoMap : goto [?= i3 = i3 + 1]
+org.joda.time.tz.ZoneInfoProvider.readZoneInfoMap : interfaceinvoke r1.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>($r6, $r7) >>>>>>>> org.joda.time.tz.ZoneInfoProvider.readZoneInfoMap : $r9 := @caughtexception
+org.joda.time.tz.ZoneInfoProvider.readZoneInfoMap : goto [?= i3 = i3 + 1] >>>>>>>> org.joda.time.tz.ZoneInfoProvider.readZoneInfoMap : i3 = i3 + 1
+org.joda.time.tz.ZoneInfoProvider.readZoneInfoMap : i3 = i3 + 1 >>>>>>>> org.joda.time.tz.ZoneInfoProvider.readZoneInfoMap : goto [?= (branch)]
+org.joda.time.tz.ZoneInfoProvider.readZoneInfoMap : goto [?= (branch)] >>>>>>>> org.joda.time.tz.ZoneInfoProvider.readZoneInfoMap : if i3 >= i2
+org.joda.time.tz.ZoneInfoProvider.readZoneInfoMap : $r4 = virtualinvoke r0.<java.io.DataInputStream: java.lang.String readUTF()>() >>>>>>>> org.joda.time.tz.ZoneInfoProvider.readZoneInfoMap : $r5 = virtualinvoke $r4.<java.lang.String: java.lang.String intern()>()
+org.joda.time.tz.ZoneInfoProvider.readZoneInfoMap : $r5 = virtualinvoke $r4.<java.lang.String: java.lang.String intern()>() >>>>>>>> org.joda.time.tz.ZoneInfoProvider.readZoneInfoMap : r2[i1] = $r5
+org.joda.time.tz.ZoneInfoProvider.readZoneInfoMap : r2[i1] = $r5 >>>>>>>> org.joda.time.tz.ZoneInfoProvider.readZoneInfoMap : i1 = i1 + 1
+org.joda.time.tz.ZoneInfoProvider.readZoneInfoMap : i1 = i1 + 1 >>>>>>>> org.joda.time.tz.ZoneInfoProvider.readZoneInfoMap : goto [?= (branch)]
+org.joda.time.tz.ZoneInfoProvider.readZoneInfoMap : goto [?= (branch)] >>>>>>>> org.joda.time.tz.ZoneInfoProvider.readZoneInfoMap : if i1 >= i0

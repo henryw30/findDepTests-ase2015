@@ -1,0 +1,27 @@
+dynoptic.model.fifosys.AbsMultiFSMState.getStatesThatEvalToTrueWithPid : return r2
+dynoptic.model.fifosys.AbsMultiFSMState.getStatesThatEvalToTrueWithPid : r2 = staticinvoke <dynoptic.util.Util: java.util.Set newSet()>()
+dynoptic.model.fifosys.AbsMultiFSMState.getStatesThatEvalToTrueWithPid : r3 = interfaceinvoke r0.<java.util.Collection: java.util.Iterator iterator()>()
+dynoptic.model.fifosys.gfsm.GFSMState.isInitial : $r1 = r0.<dynoptic.model.fifosys.gfsm.GFSMState: java.util.Set observedStates>
+dynoptic.model.fifosys.gfsm.GFSMState.isInitial : i0 = 0
+dynoptic.model.fifosys.gfsm.GFSMState.isInitial : return 0
+dynoptic.model.fifosys.gfsm.GFSMState.getInitialObsForPid : $r2 = r0.<dynoptic.model.fifosys.gfsm.GFSMState: java.util.Set observedStates>
+dynoptic.model.AbsFSMState.getNextStates : r1 = staticinvoke <dynoptic.util.Util: java.util.Set newSet()>()
+dynoptic.model.AbsFSMState.getNextStates : $r4 = virtualinvoke r0.<dynoptic.model.AbsFSMState: java.util.Set getTransitioningEvents()>()
+dynoptic.model.AbsFSMState.getNextStates : return r1
+dynoptic.model.fifosys.gfsm.GFSMState.getTransitioningEvents : $r2 = r0.<dynoptic.model.fifosys.gfsm.GFSMState: java.util.Map transitions>
+dynoptic.model.fifosys.gfsm.GFSMState.getTransitioningEvents : $r1 = r0.<dynoptic.model.fifosys.gfsm.GFSMState: java.util.Map transitions>
+dynoptic.model.fifosys.gfsm.GFSMState.getTransitioningEvents : virtualinvoke r0.<dynoptic.model.fifosys.gfsm.GFSMState: void recreateCachedTransitions()>()
+dynoptic.model.fifosys.gfsm.GFSMState.removeAllObs : $z0 = <dynoptic.model.fifosys.gfsm.GFSMState: boolean $assertionsDisabled>
+dynoptic.model.fifosys.gfsm.GFSMState.removeAllObs : r2 = interfaceinvoke r1.<java.util.Set: java.util.Iterator iterator()>()
+dynoptic.model.fifosys.gfsm.GFSMState.getTerminalObs : $r2 = r0.<dynoptic.model.fifosys.gfsm.GFSMState: java.util.Set observedStates>
+dynoptic.model.AbsFSMState.getStatesThatEvalToTrue : return r2
+dynoptic.model.AbsFSMState.getStatesThatEvalToTrue : r3 = interfaceinvoke r0.<java.util.Set: java.util.Iterator iterator()>()
+dynoptic.model.AbsFSMState.getStatesThatEvalToTrue : r2 = staticinvoke <dynoptic.util.Util: java.util.Set newSet()>()
+dynoptic.util.Util.newSet : $r0 = new java.util.LinkedHashSet
+dynoptic.model.fifosys.gfsm.GFSMState.toString : $r1 = r0.<dynoptic.model.fifosys.gfsm.GFSMState: java.util.Set observedStates>
+dynoptic.model.fifosys.gfsm.GFSMState.toIntermediateString : $r1 = new java.lang.StringBuilder
+dynoptic.util.Util.newMap : $r0 = new java.util.LinkedHashMap
+dynoptic.model.fifosys.AbsMultiFSMState.atLeastOneStatePidEvalTrue : r2 = interfaceinvoke r0.<java.util.Collection: java.util.Iterator iterator()>()
+dynoptic.model.fifosys.AbsMultiFSMState.atLeastOneStatePidEvalTrue : return 0
+dynoptic.model.fifosys.gfsm.GFSMState.recreateCachedTransitions : $r4 = r0.<dynoptic.model.fifosys.gfsm.GFSMState: java.util.Set observedStates>
+dynoptic.model.fifosys.gfsm.GFSMState.recreateCachedTransitions : $r3 = r0.<dynoptic.model.fifosys.gfsm.GFSMState: java.util.Map transitions>

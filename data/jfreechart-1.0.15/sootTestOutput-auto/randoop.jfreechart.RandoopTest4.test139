@@ -1,0 +1,14 @@
+org.jfree.chart.renderer.xy.AbstractXYItemRenderer.setURLGenerator : virtualinvoke r0.<org.jfree.chart.renderer.xy.AbstractXYItemRenderer: void fireChangeEvent()>()
+org.jfree.chart.renderer.xy.AbstractXYItemRenderer.setURLGenerator : r0.<org.jfree.chart.renderer.xy.AbstractXYItemRenderer: org.jfree.chart.urls.XYURLGenerator urlGenerator> = r1
+org.jfree.chart.renderer.AbstractRenderer.fireChangeEvent : $r1 = new org.jfree.chart.event.RendererChangeEvent
+org.jfree.chart.renderer.xy.XYAreaRenderer2.getLegendItem : if r2 == null goto return r1
+org.jfree.chart.renderer.xy.XYAreaRenderer2.getLegendItem : r1 = null
+org.jfree.chart.renderer.xy.XYAreaRenderer2.getLegendItem : return r1
+org.jfree.chart.renderer.xy.XYAreaRenderer2.getLegendItem : r2 = virtualinvoke r0.<org.jfree.chart.renderer.xy.XYAreaRenderer2: org.jfree.chart.plot.XYPlot getPlot()>()
+org.jfree.chart.renderer.AbstractRenderer.notifyListeners : $r3 = r0.<org.jfree.chart.renderer.AbstractRenderer: javax.swing.event.EventListenerList listenerList>
+org.jfree.chart.renderer.AbstractRenderer.notifyListeners : $i1 = lengthof r2
+org.jfree.chart.renderer.xy.StackedXYAreaRenderer2.getPassCount : return 1
+org.jfree.chart.renderer.xy.AbstractXYItemRenderer.getPlot : $r1 = r0.<org.jfree.chart.renderer.xy.AbstractXYItemRenderer: org.jfree.chart.plot.XYPlot plot>
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null goto return
+org.jfree.chart.renderer.xy.AbstractXYItemRenderer.setBaseToolTipGenerator : r0.<org.jfree.chart.renderer.xy.AbstractXYItemRenderer: org.jfree.chart.labels.XYToolTipGenerator baseToolTipGenerator> = r1
+org.jfree.chart.renderer.xy.AbstractXYItemRenderer.setBaseToolTipGenerator : virtualinvoke r0.<org.jfree.chart.renderer.xy.AbstractXYItemRenderer: void fireChangeEvent()>()

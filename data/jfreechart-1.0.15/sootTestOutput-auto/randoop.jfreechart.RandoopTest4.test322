@@ -1,0 +1,48 @@
+org.jfree.chart.renderer.category.BarRenderer.getItemMargin : $d0 = r0.<org.jfree.chart.renderer.category.BarRenderer: double itemMargin>
+org.jfree.chart.plot.ContourPlot.setURLGenerator : r0.<org.jfree.chart.plot.ContourPlot: org.jfree.chart.urls.XYURLGenerator urlGenerator> = r1
+org.jfree.chart.plot.Plot.fireChangeEvent : $r1 = new org.jfree.chart.event.PlotChangeEvent
+org.jfree.chart.renderer.AbstractRenderer.getBaseLegendShape : $r1 = r0.<org.jfree.chart.renderer.AbstractRenderer: java.awt.Shape baseLegendShape>
+org.jfree.chart.plot.Plot.notifyListeners : $r3 = r0.<org.jfree.chart.plot.Plot: javax.swing.event.EventListenerList listenerList>
+org.jfree.chart.plot.Plot.notifyListeners : $i1 = lengthof r2
+org.jfree.chart.plot.Plot.notifyListeners : $z0 = r0.<org.jfree.chart.plot.Plot: boolean notify>
+org.jfree.chart.renderer.category.BarRenderer3D.equals : $z0 = r1 instanceof org.jfree.chart.renderer.category.BarRenderer3D
+org.jfree.chart.renderer.category.BarRenderer3D.equals : if r1 != r0 goto $z0 = r1 instanceof org.jfree.chart.renderer.category.BarRenderer3D
+org.jfree.chart.renderer.category.BarRenderer3D.equals : return 0
+org.jfree.chart.renderer.AbstractRenderer.fireChangeEvent : $r1 = new org.jfree.chart.event.RendererChangeEvent
+org.jfree.chart.renderer.AbstractRenderer.setBaseLegendShape : virtualinvoke r0.<org.jfree.chart.renderer.AbstractRenderer: void fireChangeEvent()>()
+org.jfree.chart.renderer.AbstractRenderer.setBaseLegendShape : r0.<org.jfree.chart.renderer.AbstractRenderer: java.awt.Shape baseLegendShape> = r1
+org.jfree.chart.renderer.AbstractRenderer.notifyListeners : $r3 = r0.<org.jfree.chart.renderer.AbstractRenderer: javax.swing.event.EventListenerList listenerList>
+org.jfree.chart.renderer.AbstractRenderer.notifyListeners : $i1 = lengthof r2
+org.jfree.data.general.AbstractDataset.notifyListeners : $r3 = r0.<org.jfree.data.general.AbstractDataset: javax.swing.event.EventListenerList listenerList>
+org.jfree.data.general.AbstractDataset.notifyListeners : $i1 = lengthof r2
+org.jfree.data.statistics.SimpleHistogramDataset.removeAllBins : $r2 = new org.jfree.data.general.DatasetChangeEvent
+org.jfree.data.statistics.SimpleHistogramDataset.removeAllBins : $r1 = new java.util.ArrayList
+org.jfree.chart.renderer.category.BarRenderer.getDefaultShadowsVisible : $z0 = <org.jfree.chart.renderer.category.BarRenderer: boolean defaultShadowsVisible>
+org.jfree.chart.plot.Marker.notifyListeners : $r3 = r0.<org.jfree.chart.plot.Marker: javax.swing.event.EventListenerList listenerList>
+org.jfree.chart.plot.Marker.notifyListeners : $i1 = lengthof r2
+org.jfree.chart.urls.StandardXYURLGenerator.generateURL : $r3 = new java.lang.StringBuilder
+org.jfree.chart.urls.StandardXYURLGenerator.generateURL : $i2 = virtualinvoke r2.<java.lang.String: int indexOf(java.lang.String)>("?")
+org.jfree.chart.urls.StandardXYURLGenerator.generateURL : return r19
+org.jfree.chart.urls.StandardXYURLGenerator.generateURL : $r8 = new java.lang.StringBuilder
+org.jfree.chart.urls.StandardXYURLGenerator.generateURL : r2 = r0.<org.jfree.chart.urls.StandardXYURLGenerator: java.lang.String prefix>
+org.jfree.chart.renderer.AbstractRenderer.setBaseNegativeItemLabelPosition : virtualinvoke r0.<org.jfree.chart.renderer.AbstractRenderer: void fireChangeEvent()>()
+org.jfree.chart.renderer.AbstractRenderer.setBaseNegativeItemLabelPosition : if z0 == 0 goto return
+org.jfree.chart.renderer.AbstractRenderer.setBaseNegativeItemLabelPosition : r0.<org.jfree.chart.renderer.AbstractRenderer: org.jfree.chart.labels.ItemLabelPosition baseNegativeItemLabelPosition> = r1
+org.jfree.chart.renderer.AbstractRenderer.setBaseNegativeItemLabelPosition : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "position")
+org.jfree.chart.renderer.AbstractRenderer.setBaseNegativeItemLabelPosition : virtualinvoke r0.<org.jfree.chart.renderer.AbstractRenderer: void setBaseNegativeItemLabelPosition(org.jfree.chart.labels.ItemLabelPosition,boolean)>(r1, 1)
+org.jfree.chart.renderer.AbstractRenderer.getItemLabelFont : $r1 = r0.<org.jfree.chart.renderer.AbstractRenderer: java.awt.Font itemLabelFont>
+org.jfree.chart.plot.Marker.setLabelOffsetType : r0.<org.jfree.chart.plot.Marker: org.jfree.ui.LengthAdjustmentType labelOffsetType> = r1
+org.jfree.chart.plot.Marker.setLabelOffsetType : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "adj")
+org.jfree.chart.plot.Marker.setLabelOffsetType : $r2 = new org.jfree.chart.event.MarkerChangeEvent
+org.jfree.chart.renderer.AbstractRenderer.setBasePositiveItemLabelPosition : virtualinvoke r0.<org.jfree.chart.renderer.AbstractRenderer: void fireChangeEvent()>()
+org.jfree.chart.renderer.AbstractRenderer.setBasePositiveItemLabelPosition : if z0 == 0 goto return
+org.jfree.chart.renderer.AbstractRenderer.setBasePositiveItemLabelPosition : virtualinvoke r0.<org.jfree.chart.renderer.AbstractRenderer: void setBasePositiveItemLabelPosition(org.jfree.chart.labels.ItemLabelPosition,boolean)>(r1, 1)
+org.jfree.chart.renderer.AbstractRenderer.setBasePositiveItemLabelPosition : r0.<org.jfree.chart.renderer.AbstractRenderer: org.jfree.chart.labels.ItemLabelPosition basePositiveItemLabelPosition> = r1
+org.jfree.chart.renderer.AbstractRenderer.setBasePositiveItemLabelPosition : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "position")
+org.jfree.chart.plot.ContourPlot.addRangeMarker : $r4 = r0.<org.jfree.chart.plot.ContourPlot: java.util.List rangeMarkers>
+org.jfree.chart.plot.ContourPlot.addRangeMarker : virtualinvoke r0.<org.jfree.chart.plot.ContourPlot: void fireChangeEvent()>()
+org.jfree.chart.plot.ContourPlot.addRangeMarker : $r3 = r0.<org.jfree.chart.plot.ContourPlot: java.util.List rangeMarkers>
+org.jfree.chart.plot.ContourPlot.addRangeMarker : $r2 = new java.util.ArrayList
+org.jfree.chart.renderer.category.BarRenderer.getDefaultBarPainter : $r0 = <org.jfree.chart.renderer.category.BarRenderer: org.jfree.chart.renderer.category.BarPainter defaultBarPainter>
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null goto return
+org.jfree.chart.plot.ContourPlot.zoom : $b0 = d0 cmpl 0.0

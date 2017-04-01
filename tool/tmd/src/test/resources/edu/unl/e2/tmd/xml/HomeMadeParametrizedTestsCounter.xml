@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<test-data>
+      <test-code>
+        <description><![CDATA[
+simple failure case
+     ]]></description>
+        <expected-problems>1</expected-problems>
+        <code><![CDATA[
+
+	class SomeTest{
+	
+		@Test
+		public void test(){
+			if (expectedDay == 31 && expectedMonth < 13) {
+                expectedDay = 1;
+                expectedMonth++;
+            } else if (expectedMonth == 13) {
+                if (expectedYear % 4 == 3 && expectedDay == 7) {
+                    expectedDay = 1;
+                    expectedMonth = 1;
+                    expectedYear++;
+                    expectedDOY = 1;
+                } else if (expectedYear % 4 != 3 && expectedDay == 6) {
+                    expectedDay = 1;
+                    expectedMonth = 1;
+                    expectedYear++;
+                    expectedDOY = 1;
+                }
+            }
+		}
+	}
+
+     ]]></code>
+    </test-code>
+    
+</test-data>

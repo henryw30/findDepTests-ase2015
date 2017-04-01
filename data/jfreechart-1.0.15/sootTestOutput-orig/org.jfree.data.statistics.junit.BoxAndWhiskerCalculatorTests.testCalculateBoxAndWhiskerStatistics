@@ -1,0 +1,96 @@
+org.jfree.data.statistics.BoxAndWhiskerCalculator.calculateQ1 : d0 = staticinvoke <org.jfree.data.statistics.Statistics: double calculateMedian(java.util.List,int,int)>(r0, 0, 0)
+org.jfree.data.statistics.BoxAndWhiskerCalculator.calculateQ1 : d0 = #NaN
+org.jfree.data.statistics.BoxAndWhiskerCalculator.calculateQ1 : return d0
+org.jfree.data.statistics.BoxAndWhiskerCalculator.calculateQ1 : if i0 <= 0 goto return d0
+org.jfree.data.statistics.BoxAndWhiskerCalculator.calculateQ1 : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r0, "values")
+org.jfree.data.statistics.BoxAndWhiskerCalculator.calculateQ1 : i0 = interfaceinvoke r0.<java.util.List: int size()>()
+org.jfree.data.statistics.BoxAndWhiskerCalculator.calculateQ1 : if i0 <= 1 goto d0 = staticinvoke <org.jfree.data.statistics.Statistics: double calculateMedian(java.util.List,int,int)>(r0, 0, 0)
+org.jfree.data.statistics.BoxAndWhiskerCalculator.calculateQ1 : $i1 = i0 % 2
+org.jfree.data.statistics.BoxAndWhiskerCalculator.calculateQ3 : d0 = staticinvoke <org.jfree.data.statistics.Statistics: double calculateMedian(java.util.List,int,int)>(r0, 0, 0)
+org.jfree.data.statistics.BoxAndWhiskerCalculator.calculateQ3 : d0 = #NaN
+org.jfree.data.statistics.BoxAndWhiskerCalculator.calculateQ3 : return d0
+org.jfree.data.statistics.BoxAndWhiskerCalculator.calculateQ3 : if i0 <= 0 goto return d0
+org.jfree.data.statistics.BoxAndWhiskerCalculator.calculateQ3 : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r0, "values")
+org.jfree.data.statistics.BoxAndWhiskerCalculator.calculateQ3 : i0 = interfaceinvoke r0.<java.util.List: int size()>()
+org.jfree.data.statistics.BoxAndWhiskerCalculator.calculateQ3 : if i0 <= 1 goto d0 = staticinvoke <org.jfree.data.statistics.Statistics: double calculateMedian(java.util.List,int,int)>(r0, 0, 0)
+org.jfree.data.statistics.BoxAndWhiskerCalculator.calculateQ3 : $i1 = i0 % 2
+org.jfree.data.statistics.BoxAndWhiskerItem.getMedian : $r1 = r0.<org.jfree.data.statistics.BoxAndWhiskerItem: java.lang.Number median>
+org.jfree.data.statistics.BoxAndWhiskerCalculator.calculateBoxAndWhiskerStatistics : goto [?= staticinvoke <edu.washington.cs.dt.impact.util.Tracer: void trace(java.lang.String,java.lang.String)>("$z1 = interfaceinvoke r2.<java.util.Iterator: boolean hasNext()>()", "org.jfree.data.statistics.BoxAndWhiskerCalculator.calculateBoxAndWhiskerStatistics")]
+org.jfree.data.statistics.BoxAndWhiskerCalculator.calculateBoxAndWhiskerStatistics : goto [?= staticinvoke <java.util.Collections: void sort(java.util.List)>(r1)]
+org.jfree.data.statistics.BoxAndWhiskerCalculator.calculateBoxAndWhiskerStatistics : d13 = staticinvoke <org.jfree.data.statistics.Statistics: double calculateMean(java.util.Collection,boolean)>(r1, 0)
+org.jfree.data.statistics.BoxAndWhiskerCalculator.calculateBoxAndWhiskerStatistics : $z2 = r3 instanceof java.lang.Number
+org.jfree.data.statistics.BoxAndWhiskerCalculator.calculateBoxAndWhiskerStatistics : $r11 = new org.jfree.data.statistics.BoxAndWhiskerItem
+org.jfree.data.statistics.BoxAndWhiskerCalculator.calculateBoxAndWhiskerStatistics : $r1 = staticinvoke <org.jfree.data.statistics.BoxAndWhiskerCalculator: org.jfree.data.statistics.BoxAndWhiskerItem calculateBoxAndWhiskerStatistics(java.util.List,boolean)>(r0, 1)
+org.jfree.data.statistics.BoxAndWhiskerCalculator.calculateBoxAndWhiskerStatistics : $d17 = d3 * 2.0
+org.jfree.data.statistics.BoxAndWhiskerCalculator.calculateBoxAndWhiskerStatistics : d9 = #-Infinity
+org.jfree.data.statistics.BoxAndWhiskerCalculator.calculateBoxAndWhiskerStatistics : goto [?= staticinvoke <edu.washington.cs.dt.impact.util.Tracer: void trace(java.lang.String,java.lang.String)>("$z5 = interfaceinvoke r6.<java.util.Iterator: boolean hasNext()>()", "org.jfree.data.statistics.BoxAndWhiskerCalculator.calculateBoxAndWhiskerStatistics")]
+org.jfree.data.statistics.BoxAndWhiskerCalculator.calculateBoxAndWhiskerStatistics : $r10 = interfaceinvoke r6.<java.util.Iterator: java.lang.Object next()>()
+org.jfree.data.statistics.BoxAndWhiskerCalculator.calculateBoxAndWhiskerStatistics : $z1 = interfaceinvoke r2.<java.util.Iterator: boolean hasNext()>()
+org.jfree.data.statistics.BoxAndWhiskerCalculator.calculateBoxAndWhiskerStatistics : $b1 = d12 cmpl d4
+org.jfree.data.statistics.BoxAndWhiskerCalculator.calculateBoxAndWhiskerStatistics : staticinvoke <java.util.Collections: void sort(java.util.List)>(r1)
+org.jfree.data.statistics.BoxAndWhiskerCalculator.calculateBoxAndWhiskerStatistics : d11 = #-Infinity
+org.jfree.data.statistics.BoxAndWhiskerCalculator.calculateBoxAndWhiskerStatistics : d8 = #Infinity
+org.jfree.data.statistics.BoxAndWhiskerCalculator.calculateBoxAndWhiskerStatistics : $z3 = staticinvoke <java.lang.Double: boolean isNaN(double)>(d0)
+org.jfree.data.statistics.BoxAndWhiskerCalculator.calculateBoxAndWhiskerStatistics : d10 = #Infinity
+org.jfree.data.statistics.BoxAndWhiskerCalculator.calculateBoxAndWhiskerStatistics : d9 = staticinvoke <java.lang.Math: double max(double,double)>(d9, d12)
+org.jfree.data.statistics.BoxAndWhiskerCalculator.calculateBoxAndWhiskerStatistics : d8 = staticinvoke <java.lang.Math: double min(double,double)>(d8, d12)
+org.jfree.data.statistics.BoxAndWhiskerCalculator.calculateBoxAndWhiskerStatistics : $r8 = new java.util.ArrayList
+org.jfree.data.statistics.BoxAndWhiskerCalculator.calculateBoxAndWhiskerStatistics : r3 = interfaceinvoke r2.<java.util.Iterator: java.lang.Object next()>()
+org.jfree.data.statistics.BoxAndWhiskerCalculator.calculateBoxAndWhiskerStatistics : r6 = interfaceinvoke r1.<java.util.List: java.util.Iterator iterator()>()
+org.jfree.data.statistics.BoxAndWhiskerCalculator.calculateBoxAndWhiskerStatistics : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r0, "values")
+org.jfree.data.statistics.BoxAndWhiskerCalculator.calculateBoxAndWhiskerStatistics : $r9 = new java.util.ArrayList
+org.jfree.data.statistics.BoxAndWhiskerCalculator.calculateBoxAndWhiskerStatistics : d14 = staticinvoke <org.jfree.data.statistics.Statistics: double calculateMedian(java.util.List,boolean)>(r1, 0)
+org.jfree.data.statistics.BoxAndWhiskerCalculator.calculateBoxAndWhiskerStatistics : d11 = staticinvoke <java.lang.Math: double max(double,double)>(d11, d9)
+org.jfree.data.statistics.BoxAndWhiskerCalculator.calculateBoxAndWhiskerStatistics : $d18 = d3 * 2.0
+org.jfree.data.statistics.BoxAndWhiskerCalculator.calculateBoxAndWhiskerStatistics : r2 = interfaceinvoke r0.<java.util.List: java.util.ListIterator listIterator()>()
+org.jfree.data.statistics.BoxAndWhiskerCalculator.calculateBoxAndWhiskerStatistics : d10 = staticinvoke <java.lang.Math: double min(double,double)>(d10, d8)
+org.jfree.data.statistics.BoxAndWhiskerCalculator.calculateBoxAndWhiskerStatistics : $b4 = d12 cmpg d5
+org.jfree.data.statistics.BoxAndWhiskerCalculator.calculateBoxAndWhiskerStatistics : $z5 = interfaceinvoke r6.<java.util.Iterator: boolean hasNext()>()
+org.jfree.data.statistics.BoxAndWhiskerCalculator.calculateBoxAndWhiskerStatistics : $d16 = d3 * 1.5
+org.jfree.data.statistics.BoxAndWhiskerCalculator.calculateBoxAndWhiskerStatistics : if z0 == 0 goto r1 = r0
+org.jfree.data.statistics.BoxAndWhiskerCalculator.calculateBoxAndWhiskerStatistics : interfaceinvoke r1.<java.util.List: boolean add(java.lang.Object)>(r4)
+org.jfree.data.statistics.BoxAndWhiskerCalculator.calculateBoxAndWhiskerStatistics : d2 = staticinvoke <org.jfree.data.statistics.BoxAndWhiskerCalculator: double calculateQ3(java.util.List)>(r1)
+org.jfree.data.statistics.BoxAndWhiskerCalculator.calculateBoxAndWhiskerStatistics : d3 = d2 - d1
+org.jfree.data.statistics.BoxAndWhiskerCalculator.calculateBoxAndWhiskerStatistics : r4 = (java.lang.Number) r3
+org.jfree.data.statistics.BoxAndWhiskerCalculator.calculateBoxAndWhiskerStatistics : d1 = staticinvoke <org.jfree.data.statistics.BoxAndWhiskerCalculator: double calculateQ1(java.util.List)>(r1)
+org.jfree.data.statistics.BoxAndWhiskerCalculator.calculateBoxAndWhiskerStatistics : $d15 = d3 * 1.5
+org.jfree.data.statistics.BoxAndWhiskerCalculator.calculateBoxAndWhiskerStatistics : d0 = virtualinvoke r4.<java.lang.Number: double doubleValue()>()
+org.jfree.data.statistics.BoxAndWhiskerCalculator.calculateBoxAndWhiskerStatistics : d12 = virtualinvoke r7.<java.lang.Number: double doubleValue()>()
+org.jfree.data.statistics.BoxAndWhiskerItem.getMean : $r1 = r0.<org.jfree.data.statistics.BoxAndWhiskerItem: java.lang.Number mean>
+org.jfree.data.statistics.Statistics.calculateMean : r2 = interfaceinvoke r1.<java.util.Iterator: java.lang.Object next()>()
+org.jfree.data.statistics.Statistics.calculateMean : $z1 = interfaceinvoke r1.<java.util.Iterator: boolean hasNext()>()
+org.jfree.data.statistics.Statistics.calculateMean : $d3 = (double) i0
+org.jfree.data.statistics.Statistics.calculateMean : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r0, "values")
+org.jfree.data.statistics.Statistics.calculateMean : if r2 != null goto $z2 = r2 instanceof java.lang.Number
+org.jfree.data.statistics.Statistics.calculateMean : $z2 = r2 instanceof java.lang.Number
+org.jfree.data.statistics.Statistics.calculateMean : d0 = 0.0
+org.jfree.data.statistics.Statistics.calculateMean : d1 = virtualinvoke r3.<java.lang.Number: double doubleValue()>()
+org.jfree.data.statistics.Statistics.calculateMean : r3 = (java.lang.Number) r2
+org.jfree.data.statistics.Statistics.calculateMean : $z3 = staticinvoke <java.lang.Double: boolean isNaN(double)>(d1)
+org.jfree.data.statistics.Statistics.calculateMean : r1 = interfaceinvoke r0.<java.util.Collection: java.util.Iterator iterator()>()
+org.jfree.data.statistics.Statistics.calculateMean : i0 = i0 + 1
+org.jfree.data.statistics.Statistics.calculateMean : i0 = 0
+org.jfree.data.statistics.Statistics.calculateMean : goto [?= staticinvoke <edu.washington.cs.dt.impact.util.Tracer: void trace(java.lang.String,java.lang.String)>("$z1 = interfaceinvoke r1.<java.util.Iterator: boolean hasNext()>()", "org.jfree.data.statistics.Statistics.calculateMean")]
+org.jfree.data.statistics.Statistics.calculateMean : $d2 = virtualinvoke r3.<java.lang.Number: double doubleValue()>()
+org.jfree.chart.util.ParamChecks.nullNotPermitted : $r3 = new java.lang.IllegalArgumentException
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null goto return
+org.jfree.data.statistics.BoxAndWhiskerItem.getQ3 : $r1 = r0.<org.jfree.data.statistics.BoxAndWhiskerItem: java.lang.Number q3>
+org.jfree.data.statistics.BoxAndWhiskerItem.getQ1 : $r1 = r0.<org.jfree.data.statistics.BoxAndWhiskerItem: java.lang.Number q1>
+org.jfree.data.statistics.Statistics.calculateMedian : if i2 <= 1 goto $r6 = interfaceinvoke r0.<java.util.List: java.lang.Object get(int)>(0)
+org.jfree.data.statistics.Statistics.calculateMedian : if z0 == 0 goto i2 = interfaceinvoke r0.<java.util.List: int size()>()
+org.jfree.data.statistics.Statistics.calculateMedian : d0 = #NaN
+org.jfree.data.statistics.Statistics.calculateMedian : $r4 = interfaceinvoke r0.<java.util.List: java.lang.Object get(int)>(i2)
+org.jfree.data.statistics.Statistics.calculateMedian : if i2 <= 0 goto return d0
+org.jfree.data.statistics.Statistics.calculateMedian : i2 = i0
+org.jfree.data.statistics.Statistics.calculateMedian : $d0 = staticinvoke <org.jfree.data.statistics.Statistics: double calculateMedian(java.util.List,int,int,boolean)>(r0, i0, i1, 1)
+org.jfree.data.statistics.Statistics.calculateMedian : $i3 = i2 % 2
+org.jfree.data.statistics.Statistics.calculateMedian : return d0
+org.jfree.data.statistics.Statistics.calculateMedian : if z0 == 0 goto $i5 = i1 - i0
+org.jfree.data.statistics.Statistics.calculateMedian : staticinvoke <java.util.Collections: void sort(java.util.List)>(r1)
+org.jfree.data.statistics.Statistics.calculateMedian : goto [?= return d0]
+org.jfree.data.statistics.Statistics.calculateMedian : d0 = staticinvoke <org.jfree.data.statistics.Statistics: double calculateMedian(java.util.List,boolean)>(r1, 0)
+org.jfree.data.statistics.Statistics.calculateMedian : $r3 = new java.util.ArrayList
+org.jfree.data.statistics.Statistics.calculateMedian : i2 = interfaceinvoke r0.<java.util.List: int size()>()
+org.jfree.data.statistics.Statistics.calculateMedian : if r0 == null goto return d0
+org.jfree.data.statistics.Statistics.calculateMedian : d0 = virtualinvoke r7.<java.lang.Number: double doubleValue()>()
+org.jfree.data.statistics.Statistics.calculateMedian : $r6 = interfaceinvoke r0.<java.util.List: java.lang.Object get(int)>(0)

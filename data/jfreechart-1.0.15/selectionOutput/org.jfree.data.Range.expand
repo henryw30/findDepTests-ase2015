@@ -1,0 +1,17 @@
+org.jfree.data.Range.expand : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r0, "range") >>>>>>>> org.jfree.data.Range.expand : d2 = virtualinvoke r0.<org.jfree.data.Range: double getLength()>()
+org.jfree.data.Range.expand : d2 = virtualinvoke r0.<org.jfree.data.Range: double getLength()>() >>>>>>>> org.jfree.data.Range.expand : $d5 = virtualinvoke r0.<org.jfree.data.Range: double getLowerBound()>()
+org.jfree.data.Range.expand : $d5 = virtualinvoke r0.<org.jfree.data.Range: double getLowerBound()>() >>>>>>>> org.jfree.data.Range.expand : $d6 = d2 * d0
+org.jfree.data.Range.expand : $d6 = d2 * d0 >>>>>>>> org.jfree.data.Range.expand : d3 = $d5 - $d6
+org.jfree.data.Range.expand : d3 = $d5 - $d6 >>>>>>>> org.jfree.data.Range.expand : $d7 = virtualinvoke r0.<org.jfree.data.Range: double getUpperBound()>()
+org.jfree.data.Range.expand : $d7 = virtualinvoke r0.<org.jfree.data.Range: double getUpperBound()>() >>>>>>>> org.jfree.data.Range.expand : $d8 = d2 * d1
+org.jfree.data.Range.expand : $d8 = d2 * d1 >>>>>>>> org.jfree.data.Range.expand : d4 = $d7 + $d8
+org.jfree.data.Range.expand : d4 = $d7 + $d8 >>>>>>>> org.jfree.data.Range.expand : $b0 = d3 cmpl d4
+org.jfree.data.Range.expand : $b0 = d3 cmpl d4 >>>>>>>> org.jfree.data.Range.expand : if $b0 <= 0
+org.jfree.data.Range.expand : if $b0 <= 0 >>>>>>>> org.jfree.data.Range.expand : $d9 = d3 / 2.0
+org.jfree.data.Range.expand : if $b0 <= 0 >>>>>>>> org.jfree.data.Range.expand : $r1 = new org.jfree.data.Range
+org.jfree.data.Range.expand : $r1 = new org.jfree.data.Range >>>>>>>> org.jfree.data.Range.expand : specialinvoke $r1.<org.jfree.data.Range: void <init>(double,double)>(d3, d4)
+org.jfree.data.Range.expand : specialinvoke $r1.<org.jfree.data.Range: void <init>(double,double)>(d3, d4) >>>>>>>> org.jfree.data.Range.expand : return $r1
+org.jfree.data.Range.expand : $d9 = d3 / 2.0 >>>>>>>> org.jfree.data.Range.expand : $d10 = d4 / 2.0
+org.jfree.data.Range.expand : $d10 = d4 / 2.0 >>>>>>>> org.jfree.data.Range.expand : d3 = $d9 + $d10
+org.jfree.data.Range.expand : d3 = $d9 + $d10 >>>>>>>> org.jfree.data.Range.expand : d4 = d3
+org.jfree.data.Range.expand : d4 = d3 >>>>>>>> org.jfree.data.Range.expand : $r1 = new org.jfree.data.Range

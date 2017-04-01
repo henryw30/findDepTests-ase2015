@@ -1,0 +1,41 @@
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null >>>>>>>> org.jfree.chart.urls.StandardXYURLGenerator.equals : if r1 != r0
+org.jfree.chart.urls.StandardXYURLGenerator.equals : if r1 != r0 >>>>>>>> org.jfree.chart.urls.StandardXYURLGenerator.equals : $z0 = r1 instanceof org.jfree.chart.urls.StandardXYURLGenerator
+org.jfree.chart.urls.StandardXYURLGenerator.equals : $z0 = r1 instanceof org.jfree.chart.urls.StandardXYURLGenerator >>>>>>>> org.jfree.chart.urls.StandardXYURLGenerator.equals : if $z0 != 0
+org.jfree.chart.urls.StandardXYURLGenerator.equals : if $z0 != 0 >>>>>>>> org.jfree.chart.urls.StandardXYURLGenerator.equals : return 0
+org.jfree.chart.urls.StandardXYURLGenerator.equals : return 0 >>>>>>>> org.jfree.chart.labels.StandardCrosshairLabelGenerator.getLabelTemplate : $r1 = r0.<org.jfree.chart.labels.StandardCrosshairLabelGenerator: java.lang.String labelTemplate>
+org.jfree.chart.labels.StandardCrosshairLabelGenerator.getLabelTemplate : $r1 = r0.<org.jfree.chart.labels.StandardCrosshairLabelGenerator: java.lang.String labelTemplate> >>>>>>>> org.jfree.chart.labels.StandardCrosshairLabelGenerator.getLabelTemplate : return $r1
+org.jfree.chart.labels.StandardCrosshairLabelGenerator.getLabelTemplate : return $r1 >>>>>>>> org.jfree.chart.plot.Crosshair.getLabelPaint : $r1 = r0.<org.jfree.chart.plot.Crosshair: java.awt.Paint labelPaint>
+org.jfree.chart.plot.Crosshair.getLabelPaint : $r1 = r0.<org.jfree.chart.plot.Crosshair: java.awt.Paint labelPaint> >>>>>>>> org.jfree.chart.plot.Crosshair.getLabelPaint : return $r1
+org.jfree.chart.plot.Crosshair.getLabelPaint : return $r1 >>>>>>>> org.jfree.chart.labels.StandardCrosshairLabelGenerator.generateLabel : $r4 = newarray (java.lang.Object)[1]
+org.jfree.chart.labels.StandardCrosshairLabelGenerator.generateLabel : $r4 = newarray (java.lang.Object)[1] >>>>>>>> org.jfree.chart.labels.StandardCrosshairLabelGenerator.generateLabel : $r5 = r0.<org.jfree.chart.labels.StandardCrosshairLabelGenerator: java.text.NumberFormat numberFormat>
+org.jfree.chart.labels.StandardCrosshairLabelGenerator.generateLabel : $r5 = r0.<org.jfree.chart.labels.StandardCrosshairLabelGenerator: java.text.NumberFormat numberFormat> >>>>>>>> org.jfree.chart.labels.StandardCrosshairLabelGenerator.generateLabel : $d0 = virtualinvoke r1.<org.jfree.chart.plot.Crosshair: double getValue()>()
+org.jfree.chart.labels.StandardCrosshairLabelGenerator.generateLabel : $d0 = virtualinvoke r1.<org.jfree.chart.plot.Crosshair: double getValue()>() >>>>>>>> org.jfree.chart.plot.Crosshair.getValue : $d0 = r0.<org.jfree.chart.plot.Crosshair: double value>
+org.jfree.chart.plot.Crosshair.getValue : $d0 = r0.<org.jfree.chart.plot.Crosshair: double value> >>>>>>>> org.jfree.chart.plot.Crosshair.getValue : return $d0
+org.jfree.chart.plot.Crosshair.getValue : return $d0 >>>>>>>> org.jfree.chart.labels.StandardCrosshairLabelGenerator.generateLabel : $r6 = virtualinvoke $r5.<java.text.NumberFormat: java.lang.String format(double)>($d0)
+org.jfree.chart.labels.StandardCrosshairLabelGenerator.generateLabel : $r6 = virtualinvoke $r5.<java.text.NumberFormat: java.lang.String format(double)>($d0) >>>>>>>> org.jfree.chart.util.HexNumberFormat.format : $l0 = (long) d0
+org.jfree.chart.util.HexNumberFormat.format : $l0 = (long) d0 >>>>>>>> org.jfree.chart.util.HexNumberFormat.format : $r3 = virtualinvoke r0.<org.jfree.chart.util.HexNumberFormat: java.lang.StringBuffer format(long,java.lang.StringBuffer,java.text.FieldPosition)>($l0, r1, r2)
+org.jfree.chart.util.HexNumberFormat.format : $r3 = virtualinvoke r0.<org.jfree.chart.util.HexNumberFormat: java.lang.StringBuffer format(long,java.lang.StringBuffer,java.text.FieldPosition)>($l0, r1, r2) >>>>>>>> org.jfree.chart.util.HexNumberFormat.format : $r5 = staticinvoke <java.lang.Long: java.lang.String toHexString(long)>(l0)
+org.jfree.chart.util.HexNumberFormat.format : $r5 = staticinvoke <java.lang.Long: java.lang.String toHexString(long)>(l0) >>>>>>>> org.jfree.chart.util.HexNumberFormat.format : r3 = virtualinvoke $r5.<java.lang.String: java.lang.String toUpperCase()>()
+org.jfree.chart.util.HexNumberFormat.format : r3 = virtualinvoke $r5.<java.lang.String: java.lang.String toUpperCase()>() >>>>>>>> org.jfree.chart.util.HexNumberFormat.format : $i3 = r0.<org.jfree.chart.util.HexNumberFormat: int m_numDigits>
+org.jfree.chart.util.HexNumberFormat.format : $i3 = r0.<org.jfree.chart.util.HexNumberFormat: int m_numDigits> >>>>>>>> org.jfree.chart.util.HexNumberFormat.format : $i4 = virtualinvoke r3.<java.lang.String: int length()>()
+org.jfree.chart.util.HexNumberFormat.format : $i4 = virtualinvoke r3.<java.lang.String: int length()>() >>>>>>>> org.jfree.chart.util.HexNumberFormat.format : i1 = $i3 - $i4
+org.jfree.chart.util.HexNumberFormat.format : i1 = $i3 - $i4 >>>>>>>> org.jfree.chart.util.HexNumberFormat.format : if 0 >= i1
+org.jfree.chart.util.HexNumberFormat.format : if 0 >= i1 >>>>>>>> org.jfree.chart.util.HexNumberFormat.format : $i5 = i1
+org.jfree.chart.util.HexNumberFormat.format : $i5 = i1 >>>>>>>> org.jfree.chart.util.HexNumberFormat.format : goto [?= i6 = $i5]
+org.jfree.chart.util.HexNumberFormat.format : goto [?= i6 = $i5] >>>>>>>> org.jfree.chart.util.HexNumberFormat.format : i6 = $i5
+org.jfree.chart.util.HexNumberFormat.format : i6 = $i5 >>>>>>>> org.jfree.chart.util.HexNumberFormat.format : $r6 = new java.lang.StringBuffer
+org.jfree.chart.util.HexNumberFormat.format : $r6 = new java.lang.StringBuffer >>>>>>>> org.jfree.chart.util.HexNumberFormat.format : specialinvoke $r6.<java.lang.StringBuffer: void <init>(java.lang.String)>("0x")
+org.jfree.chart.util.HexNumberFormat.format : specialinvoke $r6.<java.lang.StringBuffer: void <init>(java.lang.String)>("0x") >>>>>>>> org.jfree.chart.util.HexNumberFormat.format : r4 = $r6
+org.jfree.chart.util.HexNumberFormat.format : r4 = $r6 >>>>>>>> org.jfree.chart.util.HexNumberFormat.format : i2 = 0
+org.jfree.chart.util.HexNumberFormat.format : i2 = 0 >>>>>>>> org.jfree.chart.util.HexNumberFormat.format : if i2 >= i6
+org.jfree.chart.util.HexNumberFormat.format : if i2 >= i6 >>>>>>>> org.jfree.chart.util.HexNumberFormat.format : virtualinvoke r4.<java.lang.StringBuffer: java.lang.StringBuffer append(int)>(0)
+org.jfree.chart.util.HexNumberFormat.format : virtualinvoke r4.<java.lang.StringBuffer: java.lang.StringBuffer append(int)>(0) >>>>>>>> org.jfree.chart.util.HexNumberFormat.format : i2 = i2 + 1
+org.jfree.chart.util.HexNumberFormat.format : i2 = i2 + 1 >>>>>>>> org.jfree.chart.util.HexNumberFormat.format : goto [?= (branch)]
+org.jfree.chart.util.HexNumberFormat.format : goto [?= (branch)] >>>>>>>> org.jfree.chart.util.HexNumberFormat.format : virtualinvoke r4.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>(r3)
+org.jfree.chart.util.HexNumberFormat.format : virtualinvoke r4.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>(r3) >>>>>>>> org.jfree.chart.util.HexNumberFormat.format : return r4
+org.jfree.chart.util.HexNumberFormat.format : return r4 >>>>>>>> org.jfree.chart.util.HexNumberFormat.format : return $r3
+org.jfree.chart.util.HexNumberFormat.format : return $r3 >>>>>>>> org.jfree.chart.labels.StandardCrosshairLabelGenerator.generateLabel : $r4[0] = $r6
+org.jfree.chart.labels.StandardCrosshairLabelGenerator.generateLabel : $r4[0] = $r6 >>>>>>>> org.jfree.chart.labels.StandardCrosshairLabelGenerator.generateLabel : r2 = $r4
+org.jfree.chart.labels.StandardCrosshairLabelGenerator.generateLabel : r2 = $r4 >>>>>>>> org.jfree.chart.labels.StandardCrosshairLabelGenerator.generateLabel : $r7 = r0.<org.jfree.chart.labels.StandardCrosshairLabelGenerator: java.lang.String labelTemplate>
+org.jfree.chart.labels.StandardCrosshairLabelGenerator.generateLabel : $r7 = r0.<org.jfree.chart.labels.StandardCrosshairLabelGenerator: java.lang.String labelTemplate> >>>>>>>> org.jfree.chart.labels.StandardCrosshairLabelGenerator.generateLabel : r3 = staticinvoke <java.text.MessageFormat: java.lang.String format(java.lang.String,java.lang.Object[])>($r7, r2)
+org.jfree.chart.labels.StandardCrosshairLabelGenerator.generateLabel : r3 = staticinvoke <java.text.MessageFormat: java.lang.String format(java.lang.String,java.lang.Object[])>($r7, r2) >>>>>>>> org.jfree.chart.labels.StandardCrosshairLabelGenerator.generateLabel : return r3

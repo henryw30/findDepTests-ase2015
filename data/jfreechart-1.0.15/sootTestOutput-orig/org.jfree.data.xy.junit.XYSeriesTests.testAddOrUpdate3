@@ -1,0 +1,49 @@
+org.jfree.data.xy.XYSeries.maxIgnoreNaN : return d1
+org.jfree.data.xy.XYSeries.maxIgnoreNaN : $z0 = staticinvoke <java.lang.Double: boolean isNaN(double)>(d0)
+org.jfree.data.xy.XYSeries.maxIgnoreNaN : $z1 = staticinvoke <java.lang.Double: boolean isNaN(double)>(d1)
+org.jfree.data.xy.XYSeries.maxIgnoreNaN : $d2 = staticinvoke <java.lang.Math: double max(double,double)>(d0, d1)
+org.jfree.data.xy.XYDataItem.getXValue : $r1 = r0.<org.jfree.data.xy.XYDataItem: java.lang.Number x>
+org.jfree.data.xy.XYDataItem.getYValue : d0 = #NaN
+org.jfree.data.xy.XYDataItem.getYValue : $r1 = r0.<org.jfree.data.xy.XYDataItem: java.lang.Number y>
+org.jfree.data.xy.XYDataItem.getYValue : return d0
+org.jfree.data.xy.XYDataItem.getYValue : $r2 = r0.<org.jfree.data.xy.XYDataItem: java.lang.Number y>
+org.jfree.data.xy.XYSeries.getItemCount : $r1 = r0.<org.jfree.data.xy.XYSeries: java.util.List data>
+org.jfree.data.xy.XYSeries.minIgnoreNaN : return d1
+org.jfree.data.xy.XYSeries.minIgnoreNaN : $d2 = staticinvoke <java.lang.Math: double min(double,double)>(d0, d1)
+org.jfree.data.xy.XYSeries.minIgnoreNaN : $z0 = staticinvoke <java.lang.Double: boolean isNaN(double)>(d0)
+org.jfree.data.xy.XYSeries.minIgnoreNaN : $z1 = staticinvoke <java.lang.Double: boolean isNaN(double)>(d1)
+org.jfree.data.xy.XYDataItem.clone : goto [?= return r1]
+org.jfree.data.xy.XYDataItem.clone : r1 = null
+org.jfree.data.xy.XYDataItem.clone : return r1
+org.jfree.data.xy.XYDataItem.clone : r1 = specialinvoke r0.<java.lang.Object: java.lang.Object clone()>()
+org.jfree.data.xy.XYDataItem.getY : $r1 = r0.<org.jfree.data.xy.XYDataItem: java.lang.Number y>
+org.jfree.data.xy.XYSeries.addOrUpdate : return null
+org.jfree.data.xy.XYSeries.addOrUpdate : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "item")
+org.jfree.data.xy.XYSeries.addOrUpdate : $r3 = new org.jfree.data.xy.XYDataItem
+org.jfree.data.xy.XYSeries.addOrUpdate : virtualinvoke r0.<org.jfree.data.xy.XYSeries: void add(org.jfree.data.xy.XYDataItem)>(r1)
+org.jfree.data.xy.XYSeries.addOrUpdate : $r1 = new java.lang.Double
+org.jfree.data.xy.XYSeries.addOrUpdate : $z1 = r0.<org.jfree.data.xy.XYSeries: boolean allowDuplicateXValues>
+org.jfree.data.xy.XYSeries.add : if z0 == 0 goto return
+org.jfree.data.xy.XYSeries.add : $z4 = r0.<org.jfree.data.xy.XYSeries: boolean allowDuplicateXValues>
+org.jfree.data.xy.XYSeries.add : $i7 = virtualinvoke r0.<org.jfree.data.xy.XYSeries: int getItemCount()>()
+org.jfree.data.xy.XYSeries.add : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "item")
+org.jfree.data.xy.XYSeries.add : virtualinvoke r0.<org.jfree.data.xy.XYSeries: void add(org.jfree.data.xy.XYDataItem,boolean)>(r1, 1)
+org.jfree.data.xy.XYSeries.add : $z1 = r0.<org.jfree.data.xy.XYSeries: boolean autoSort>
+org.jfree.data.xy.XYSeries.add : $r15 = r0.<org.jfree.data.xy.XYSeries: java.util.List data>
+org.jfree.data.xy.XYSeries.add : specialinvoke r0.<org.jfree.data.xy.XYSeries: void updateBoundsForAddedItem(org.jfree.data.xy.XYDataItem)>(r3)
+org.jfree.data.xy.XYSeries.add : virtualinvoke r0.<org.jfree.data.xy.XYSeries: void fireSeriesChanged()>()
+org.jfree.data.xy.XYSeries.add : $r2 = virtualinvoke r1.<org.jfree.data.xy.XYDataItem: java.lang.Object clone()>()
+org.jfree.data.xy.XYSeries.getRawDataItem : $r1 = r0.<org.jfree.data.xy.XYSeries: java.util.List data>
+org.jfree.data.general.Series.fireSeriesChanged : $z0 = r0.<org.jfree.data.general.Series: boolean notify>
+org.jfree.data.general.Series.fireSeriesChanged : $r1 = new org.jfree.data.general.SeriesChangeEvent
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null goto return
+org.jfree.data.xy.XYSeries.getY : $r1 = virtualinvoke r0.<org.jfree.data.xy.XYSeries: org.jfree.data.xy.XYDataItem getRawDataItem(int)>(i0)
+org.jfree.data.xy.XYSeries.updateBoundsForAddedItem : $d2 = r0.<org.jfree.data.xy.XYSeries: double minX>
+org.jfree.data.xy.XYSeries.updateBoundsForAddedItem : d0 = virtualinvoke r1.<org.jfree.data.xy.XYDataItem: double getXValue()>()
+org.jfree.data.xy.XYSeries.updateBoundsForAddedItem : $d4 = r0.<org.jfree.data.xy.XYSeries: double maxX>
+org.jfree.data.xy.XYSeries.updateBoundsForAddedItem : $d6 = r0.<org.jfree.data.xy.XYSeries: double minY>
+org.jfree.data.xy.XYSeries.updateBoundsForAddedItem : $d8 = r0.<org.jfree.data.xy.XYSeries: double maxY>
+org.jfree.data.xy.XYSeries.updateBoundsForAddedItem : $r2 = virtualinvoke r1.<org.jfree.data.xy.XYDataItem: java.lang.Number getY()>()
+org.jfree.data.xy.XYSeries.updateBoundsForAddedItem : d1 = virtualinvoke r1.<org.jfree.data.xy.XYDataItem: double getYValue()>()
+org.jfree.data.general.Series.notifyListeners : $r3 = r0.<org.jfree.data.general.Series: javax.swing.event.EventListenerList listeners>
+org.jfree.data.general.Series.notifyListeners : $i1 = lengthof r2

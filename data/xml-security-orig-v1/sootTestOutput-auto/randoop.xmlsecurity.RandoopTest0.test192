@@ -1,0 +1,12 @@
+org.apache.xml.security.utils.I18n.getExceptionMessage : $z0 = staticinvoke <org.apache.xml.security.Init: boolean isInitialized()>()
+org.apache.xml.security.utils.I18n.getExceptionMessage : $r1 = <org.apache.xml.security.utils.I18n: java.util.ResourceBundle resourceBundle>
+org.apache.xml.security.utils.I18n.getExceptionMessage : r5 = $r4
+org.apache.xml.security.utils.I18n.getExceptionMessage : return "You must initialize the xml-security library correctly before you use it. Call the static method \"org.apache.xml.security.Init.init();\" to do that before you use any functionality from that library."
+org.apache.xml.security.c14n.Canonicalizer.getInstance : $r1 = new org.apache.xml.security.c14n.Canonicalizer
+org.apache.xml.security.c14n.Canonicalizer.getImplementingClass : return null
+org.apache.xml.security.c14n.Canonicalizer.getImplementingClass : $z1 = virtualinvoke r3.<java.lang.String: boolean equals(java.lang.Object)>(r0)
+org.apache.xml.security.c14n.Canonicalizer.getImplementingClass : $r5 = interfaceinvoke r2.<java.util.Iterator: java.lang.Object next()>()
+org.apache.xml.security.c14n.Canonicalizer.getImplementingClass : goto [?= staticinvoke <edu.washington.cs.dt.impact.util.Tracer: void trace(java.lang.String,java.lang.String)>("$z0 = interfaceinvoke r2.<java.util.Iterator: boolean hasNext()>()", "org.apache.xml.security.c14n.Canonicalizer.getImplementingClass")]
+org.apache.xml.security.c14n.Canonicalizer.getImplementingClass : $z0 = interfaceinvoke r2.<java.util.Iterator: boolean hasNext()>()
+org.apache.xml.security.c14n.Canonicalizer.getImplementingClass : $r1 = <org.apache.xml.security.c14n.Canonicalizer: java.util.Map _canonicalizerHash>
+org.apache.xml.security.Init.isInitialized : $z0 = <org.apache.xml.security.Init: boolean _alreadyInitialized>

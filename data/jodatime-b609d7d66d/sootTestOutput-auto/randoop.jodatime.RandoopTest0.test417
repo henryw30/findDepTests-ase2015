@@ -1,0 +1,69 @@
+org.joda.time.chrono.JulianChronology.getZone : $r1 = specialinvoke r0.<org.joda.time.chrono.BasicGJChronology: org.joda.time.DateTimeZone getZone()>()
+org.joda.time.chrono.BasicDayOfMonthDateTimeField.getMaximumValueForSet : $r1 = r0.<org.joda.time.chrono.BasicDayOfMonthDateTimeField: org.joda.time.chrono.BasicChronology iChronology>
+org.joda.time.field.PreciseDurationDateTimeField.set : $i2 = virtualinvoke r0.<org.joda.time.field.PreciseDurationDateTimeField: int getMinimumValue()>()
+org.joda.time.field.PreciseDurationDateTimeField.set : $i3 = virtualinvoke r0.<org.joda.time.field.PreciseDurationDateTimeField: int getMaximumValueForSet(long,int)>(l0, i1)
+org.joda.time.chrono.BasicChronology.getDaysInMonthMax : i1 = virtualinvoke r0.<org.joda.time.chrono.BasicChronology: int getYear(long)>(l0)
+org.joda.time.chrono.BasicChronology.getDaysInMonthMax : $i3 = virtualinvoke r0.<org.joda.time.chrono.BasicChronology: int getDaysInYearMonth(int,int)>(i1, i2)
+org.joda.time.chrono.BasicChronology.getDaysInMonthMax : i2 = virtualinvoke r0.<org.joda.time.chrono.BasicChronology: int getMonthOfYear(long,int)>(l0, i1)
+org.joda.time.IllegalFieldValueException.createMessage : $r17 = virtualinvoke $r16.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(r2)
+org.joda.time.IllegalFieldValueException.createMessage : if r3 != null goto $r16 = virtualinvoke r6.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>("must be in the range [")
+org.joda.time.IllegalFieldValueException.createMessage : $r19 = virtualinvoke $r18.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>(r3)
+org.joda.time.IllegalFieldValueException.createMessage : $r16 = virtualinvoke r6.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>("must be in the range [")
+org.joda.time.IllegalFieldValueException.createMessage : $r23 = virtualinvoke r6.<java.lang.StringBuffer: java.lang.String toString()>()
+org.joda.time.IllegalFieldValueException.createMessage : if r4 == null goto $r23 = virtualinvoke r6.<java.lang.StringBuffer: java.lang.String toString()>()
+org.joda.time.IllegalFieldValueException.createMessage : $r18 = virtualinvoke $r17.<java.lang.StringBuffer: java.lang.StringBuffer append(char)>(44)
+org.joda.time.IllegalFieldValueException.createMessage : $r7 = virtualinvoke $r5.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>("Value ")
+org.joda.time.IllegalFieldValueException.createMessage : $r5 = new java.lang.StringBuffer
+org.joda.time.IllegalFieldValueException.createMessage : virtualinvoke $r19.<java.lang.StringBuffer: java.lang.StringBuffer append(char)>(93)
+org.joda.time.IllegalFieldValueException.createMessage : if r2 != null goto (branch)
+org.joda.time.base.BaseDateTime.checkInstant : return l0
+org.joda.time.DateTimeFieldType.getName : $r1 = r0.<org.joda.time.DateTimeFieldType: java.lang.String iName>
+org.joda.time.chrono.BasicChronology.getZone : $r2 = virtualinvoke r0.<org.joda.time.chrono.BasicChronology: org.joda.time.Chronology getBase()>()
+org.joda.time.chrono.BasicChronology.getZone : $r4 = <org.joda.time.DateTimeZone: org.joda.time.DateTimeZone UTC>
+org.joda.time.chrono.AssembledChronology.dayOfMonth : $r1 = r0.<org.joda.time.chrono.AssembledChronology: org.joda.time.DateTimeField iDayOfMonth>
+org.joda.time.DateTimeUtils.getChronology : if r0 != null goto return r0
+org.joda.time.DateTimeUtils.getChronology : return r0
+org.joda.time.chrono.AssembledChronology.getBase : $r1 = r0.<org.joda.time.chrono.AssembledChronology: org.joda.time.Chronology iBase>
+org.joda.time.DateTimeZone.getMillisKeepLocal : return l0
+org.joda.time.DateTimeZone.getMillisKeepLocal : if r1 != null goto (branch)
+org.joda.time.DateTimeZone.getMillisKeepLocal : if r1 != r0 goto l1 = virtualinvoke r0.<org.joda.time.DateTimeZone: long convertUTCToLocal(long)>(l0)
+org.joda.time.chrono.JulianChronology.getInstanceUTC : $r0 = <org.joda.time.chrono.JulianChronology: org.joda.time.chrono.JulianChronology INSTANCE_UTC>
+org.joda.time.chrono.JulianChronology.getAverageMillisPerYearDividedByTwo : return 15778800000L
+org.joda.time.chrono.BasicChronology.getYearInfo : if r1 == null goto $r3 = new org.joda.time.chrono.BasicChronology$YearInfo
+org.joda.time.chrono.BasicChronology.getYearInfo : $r2 = r0.<org.joda.time.chrono.BasicChronology: org.joda.time.chrono.BasicChronology$YearInfo[] iYearInfoCache>
+org.joda.time.chrono.BasicChronology.getYearInfo : return r1
+org.joda.time.DateTimeUtils.currentTimeMillis : $r0 = <org.joda.time.DateTimeUtils: org.joda.time.DateTimeUtils$MillisProvider cMillisProvider>
+org.joda.time.DateTimeUtils$SystemMillisProvider.getMillis : $l0 = staticinvoke <java.lang.System: long currentTimeMillis()>()
+org.joda.time.chrono.BasicGJChronology.getMonthOfYear : $z0 = virtualinvoke r0.<org.joda.time.chrono.BasicGJChronology: boolean isLeapYear(int)>(i1)
+org.joda.time.chrono.BasicGJChronology.getMonthOfYear : return $b6
+org.joda.time.chrono.BasicGJChronology.getMonthOfYear : $l3 = virtualinvoke r0.<org.joda.time.chrono.BasicGJChronology: long getYearMillis(int)>(i1)
+org.joda.time.field.PreciseDurationDateTimeField.getUnitMillis : $l0 = r0.<org.joda.time.field.PreciseDurationDateTimeField: long iUnitMillis>
+org.joda.time.chrono.BasicDayOfMonthDateTimeField.getMinimumValue : return 1
+org.joda.time.chrono.JulianChronology.isLeapYear : $i1 = i0 & 3
+org.joda.time.base.BaseDateTime.checkChronology : $r2 = staticinvoke <org.joda.time.DateTimeUtils: org.joda.time.Chronology getChronology(org.joda.time.Chronology)>(r1)
+org.joda.time.field.BaseDateTimeField.getType : $r1 = r0.<org.joda.time.field.BaseDateTimeField: org.joda.time.DateTimeFieldType iType>
+org.joda.time.chrono.JulianChronology.withUTC : $r1 = <org.joda.time.chrono.JulianChronology: org.joda.time.chrono.JulianChronology INSTANCE_UTC>
+org.joda.time.base.BaseDateTime.getMillis : $l0 = r0.<org.joda.time.base.BaseDateTime: long iMillis>
+org.joda.time.chrono.AssembledChronology.millisOfDay : $r1 = r0.<org.joda.time.chrono.AssembledChronology: org.joda.time.DateTimeField iMillisOfDay>
+org.joda.time.base.BaseDateTime.getChronology : $r1 = r0.<org.joda.time.base.BaseDateTime: org.joda.time.Chronology iChronology>
+org.joda.time.chrono.BasicGJChronology.getDaysInYearMonth : $z0 = virtualinvoke r0.<org.joda.time.chrono.BasicGJChronology: boolean isLeapYear(int)>(i0)
+org.joda.time.chrono.BasicGJChronology.getDaysInYearMonth : $r1 = <org.joda.time.chrono.BasicGJChronology: int[] MAX_DAYS_PER_MONTH_ARRAY>
+org.joda.time.field.PreciseDateTimeField.get : $b1 = l0 cmp 0L
+org.joda.time.field.PreciseDateTimeField.get : $l2 = virtualinvoke r0.<org.joda.time.field.PreciseDateTimeField: long getUnitMillis()>()
+org.joda.time.chrono.BasicGJChronology.getDaysInMonthMaxForSet : if i1 <= 28 goto $i2 = 28
+org.joda.time.field.FieldUtils.verifyValueBounds : $r1 = new org.joda.time.IllegalFieldValueException
+org.joda.time.field.FieldUtils.verifyValueBounds : $r2 = virtualinvoke r0.<org.joda.time.DateTimeField: org.joda.time.DateTimeFieldType getType()>()
+org.joda.time.field.FieldUtils.verifyValueBounds : if i0 < i1 goto $r1 = new org.joda.time.IllegalFieldValueException
+org.joda.time.field.FieldUtils.verifyValueBounds : $r4 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>(i1)
+org.joda.time.chrono.BasicChronology.getYearMillis : $r1 = specialinvoke r0.<org.joda.time.chrono.BasicChronology: org.joda.time.chrono.BasicChronology$YearInfo getYearInfo(int)>(i0)
+org.joda.time.chrono.JulianChronology.getApproxMillisAtEpochDividedByTwo : return 31083663600000L
+org.joda.time.MutableDateTime.setDayOfMonth : $r1 = virtualinvoke r0.<org.joda.time.MutableDateTime: org.joda.time.Chronology getChronology()>()
+org.joda.time.chrono.BasicChronology.getYear : $b12 = l5 cmp 0L
+org.joda.time.chrono.BasicChronology.getYear : $b9 = l2 cmp 0L
+org.joda.time.chrono.BasicChronology.getYear : l4 = virtualinvoke r0.<org.joda.time.chrono.BasicChronology: long getYearMillis(int)>(i3)
+org.joda.time.chrono.BasicChronology.getYear : $l7 = l0 >> 1
+org.joda.time.chrono.BasicChronology.getYear : $b13 = l5 cmp 31536000000L
+org.joda.time.chrono.BasicChronology.getYear : l5 = l0 - l4
+org.joda.time.chrono.BasicChronology.getYear : return i3
+org.joda.time.chrono.BasicChronology.getYear : l1 = virtualinvoke r0.<org.joda.time.chrono.BasicChronology: long getAverageMillisPerYearDividedByTwo()>()
+org.joda.time.chrono.BasicChronology.getYear : $l11 = l2 / l1

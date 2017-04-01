@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<test-data>
+    <test-code>
+        <description><![CDATA[
+simple failure case
+     ]]></description>
+        <expected-problems>1</expected-problems>
+        <code><![CDATA[
+
+import java.io.FileReader;
+import java.io.FileWriter;
+
+public class BadTest {
+
+	
+	@Test()
+	public void testName() throws Exception {
+		
+		FileWriter writer= new FileWriter("file");
+		
+		writer.write(new char[]{'s'});
+	}
+	
+	@Test()
+	public void testName2() throws Exception {
+		
+		FileReader reader = new FileReader("file");
+		
+		int character=reader.read();
+		
+	}
+	
+
+}
+
+     ]]></code>
+    </test-code>
+    
+    
+    
+    
+      <test-code>
+        <description><![CDATA[
+simple failure case
+     ]]></description>
+        <expected-problems>1</expected-problems>
+        <code><![CDATA[
+
+import java.io.FileReader;
+import java.io.FileWriter;
+
+public class BadTest {
+
+
+	string file="file";
+	
+	@Test()
+	public void testName() throws Exception {
+		
+		FileWriter writer= new FileWriter(file);
+		
+		writer.write(new char[]{'s'});
+	}
+	
+	@Test()
+	public void testName2() throws Exception {
+		
+		FileReader reader = new FileReader(file);
+		
+		int character=reader.read();
+		
+	}
+	
+
+}
+
+     ]]></code>
+    </test-code>
+
+
+      <test-code>
+        <description><![CDATA[
+simple failure case
+     ]]></description>
+        <expected-problems>1</expected-problems>
+        <code><![CDATA[
+
+import java.io.FileReader;
+import java.io.FileWriter;
+
+public class BadTest {
+
+
+	File file=new File("file");
+	
+	@Test()
+	public void testName() throws Exception {
+		
+		FileWriter writer= new FileWriter(file);
+		
+		writer.write(new char[]{'s'});
+	}
+	
+	@Test()
+	public void testName2() throws Exception {
+		
+		FileReader reader = new FileReader(file);
+		
+		int character=reader.read();
+		
+	}
+	
+
+}
+
+     ]]></code>
+    </test-code>
+
+
+
+
+    
+        <test-code>
+        <description><![CDATA[
+simple failure case
+     ]]></description>
+        <expected-problems>2</expected-problems>
+        <code><![CDATA[
+
+import java.io.FileReader;
+import java.io.FileWriter;
+
+public class BadTest {
+
+	@BeforeClass
+	public static void setUpClass(){
+		FileWriter writer= new FileWriter("file");
+		
+		writer.write(new char[]{'s'});
+	}
+	
+	@Test()
+	public void testName() throws Exception {
+		
+		FileReader reader = new FileReader("file");
+		
+		int character=reader.read();
+		
+		if(character==23){
+			
+			FileWriter writer= new FileWriter("file");
+		
+			writer.write(new char[]{'n'});
+		}else{
+			fail();
+		}
+		
+	}
+	
+	@Test()
+	public void tesme2() throws Exception {
+		
+		
+		FileReader reader = new FileReader("file");
+		
+		int character=reader.read();
+		
+		if(character==23){
+			
+			FileWriter writer= new FileWriter("file");
+		
+			writer.write(new char[]{'t'});
+		}else{
+			fail();
+		}
+		
+	}
+	
+
+}
+
+     ]]></code>
+    </test-code>
+
+<!--test-code>
+        <description><![CDATA[
+simple failure case
+     ]]></description>
+        <expected-problems>0</expected-problems>
+        <code><![CDATA[
+
+     ]]></code>
+    </test-code-->  
+    
+</test-data>

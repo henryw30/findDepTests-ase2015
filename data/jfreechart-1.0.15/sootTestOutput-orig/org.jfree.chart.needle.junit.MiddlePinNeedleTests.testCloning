@@ -1,0 +1,16 @@
+org.jfree.chart.needle.MiddlePinNeedle.equals : if r1 != r0 goto $z0 = specialinvoke r0.<org.jfree.chart.needle.MeterNeedle: boolean equals(java.lang.Object)>(r1)
+org.jfree.chart.needle.MiddlePinNeedle.equals : $z0 = specialinvoke r0.<org.jfree.chart.needle.MeterNeedle: boolean equals(java.lang.Object)>(r1)
+org.jfree.chart.needle.MiddlePinNeedle.equals : return 1
+org.jfree.chart.needle.MiddlePinNeedle.equals : if r1 != null goto (branch)
+org.jfree.chart.needle.MeterNeedle.equals : $i0 = r0.<org.jfree.chart.needle.MeterNeedle: int size>
+org.jfree.chart.needle.MeterNeedle.equals : $d0 = r0.<org.jfree.chart.needle.MeterNeedle: double rotateX>
+org.jfree.chart.needle.MeterNeedle.equals : $r9 = r0.<org.jfree.chart.needle.MeterNeedle: java.awt.Paint highlightPaint>
+org.jfree.chart.needle.MeterNeedle.equals : if r1 != r0 goto $z0 = r1 instanceof org.jfree.chart.needle.MeterNeedle
+org.jfree.chart.needle.MeterNeedle.equals : $r3 = r0.<org.jfree.chart.needle.MeterNeedle: java.awt.Paint outlinePaint>
+org.jfree.chart.needle.MeterNeedle.equals : $r7 = r0.<org.jfree.chart.needle.MeterNeedle: java.awt.Paint fillPaint>
+org.jfree.chart.needle.MeterNeedle.equals : $r5 = r0.<org.jfree.chart.needle.MeterNeedle: java.awt.Stroke outlineStroke>
+org.jfree.chart.needle.MeterNeedle.equals : r2 = (org.jfree.chart.needle.MeterNeedle) r1
+org.jfree.chart.needle.MeterNeedle.equals : return 1
+org.jfree.chart.needle.MeterNeedle.equals : $d2 = r0.<org.jfree.chart.needle.MeterNeedle: double rotateY>
+org.jfree.chart.needle.MeterNeedle.equals : $z0 = r1 instanceof org.jfree.chart.needle.MeterNeedle
+org.jfree.chart.needle.MiddlePinNeedle.clone : $r1 = specialinvoke r0.<java.lang.Object: java.lang.Object clone()>()

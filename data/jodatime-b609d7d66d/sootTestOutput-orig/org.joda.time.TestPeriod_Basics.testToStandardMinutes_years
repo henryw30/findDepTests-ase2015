@@ -1,0 +1,52 @@
+org.joda.time.base.BasePeriod.getPeriodType : $r1 = r0.<org.joda.time.base.BasePeriod: org.joda.time.PeriodType iType>
+org.joda.time.Period.getWeeks : $r1 = virtualinvoke r0.<org.joda.time.Period: org.joda.time.PeriodType getPeriodType()>()
+org.joda.time.Period.getYears : $r1 = virtualinvoke r0.<org.joda.time.Period: org.joda.time.PeriodType getPeriodType()>()
+org.joda.time.Period.checkYearsAndMonths : $i0 = virtualinvoke r0.<org.joda.time.Period: int getMonths()>()
+org.joda.time.Period.checkYearsAndMonths : $r8 = new java.lang.UnsupportedOperationException
+org.joda.time.Period.checkYearsAndMonths : $i1 = virtualinvoke r0.<org.joda.time.Period: int getYears()>()
+org.joda.time.base.BasePeriod.getValue : $r1 = r0.<org.joda.time.base.BasePeriod: int[] iValues>
+org.joda.time.Period.getMinutes : $r1 = virtualinvoke r0.<org.joda.time.Period: org.joda.time.PeriodType getPeriodType()>()
+org.joda.time.Period.getMillis : $r1 = virtualinvoke r0.<org.joda.time.Period: org.joda.time.PeriodType getPeriodType()>()
+org.joda.time.DateTimeUtils.checkPermission : r0 = staticinvoke <java.lang.System: java.lang.SecurityManager getSecurityManager()>()
+org.joda.time.DateTimeUtils.checkPermission : if r0 == null goto return
+org.joda.time.Period.years : $r0 = new org.joda.time.Period
+org.joda.time.Minutes.getMinutes : $i0 = virtualinvoke r0.<org.joda.time.Minutes: int getValue()>()
+org.joda.time.PeriodType.getIndexedField : $r2 = r0.<org.joda.time.PeriodType: int[] iIndices>
+org.joda.time.PeriodType.getIndexedField : if i1 != -1 goto $i2 = interfaceinvoke r1.<org.joda.time.ReadablePeriod: int getValue(int)>(i1)
+org.joda.time.DateTimeZone.getDefault : if r0 != null goto return r0
+org.joda.time.DateTimeZone.getDefault : r0 = <org.joda.time.DateTimeZone: org.joda.time.DateTimeZone cDefault>
+org.joda.time.DateTimeZone.getDefault : return r0
+org.joda.time.Period.getHours : $r1 = virtualinvoke r0.<org.joda.time.Period: org.joda.time.PeriodType getPeriodType()>()
+org.joda.time.PeriodType.standard : if r0 != null goto return r0
+org.joda.time.PeriodType.standard : r0 = <org.joda.time.PeriodType: org.joda.time.PeriodType cStandard>
+org.joda.time.PeriodType.standard : return r0
+org.joda.time.Minutes.minutes : lookupswitch(i0) {     case -2147483648: goto $r5 = <org.joda.time.Minutes: org.joda.time.Minutes MIN_VALUE>;     case 0: goto $r0 = <org.joda.time.Minutes: org.joda.time.Minutes ZERO>;     case 1: goto $r1 = <org.joda.time.Minutes: org.joda.time.Minutes ONE>;     case 2: goto $r2 = <org.joda.time.Minutes: org.joda.time.Minutes TWO>;     case 3: goto $r3 = <org.joda.time.Minutes: org.joda.time.Minutes THREE>;     case 2147483647: goto $r4 = <org.joda.time.Minutes: org.joda.time.Minutes MAX_VALUE>;     default: goto $r6 = new org.joda.time.Minutes; }
+org.joda.time.Minutes.minutes : $r0 = <org.joda.time.Minutes: org.joda.time.Minutes ZERO>
+org.joda.time.Period.getDays : $r1 = virtualinvoke r0.<org.joda.time.Period: org.joda.time.PeriodType getPeriodType()>()
+org.joda.time.field.FieldUtils.safeAdd : l2 = l0 + l1
+org.joda.time.field.FieldUtils.safeAdd : $l3 = l0 ^ l2
+org.joda.time.field.FieldUtils.safeAdd : return l2
+org.joda.time.Period.getSeconds : $r1 = virtualinvoke r0.<org.joda.time.Period: org.joda.time.PeriodType getPeriodType()>()
+org.joda.time.DateTimeUtils.setCurrentMillisFixed : $r0 = new org.joda.time.DateTimeUtils$FixedMillisProvider
+org.joda.time.DateTimeUtils.setCurrentMillisFixed : staticinvoke <org.joda.time.DateTimeUtils: void checkPermission()>()
+org.joda.time.field.FieldUtils.safeToInt : $i3 = (int) l0
+org.joda.time.field.FieldUtils.safeToInt : $b1 = -2147483648L cmp l0
+org.joda.time.DateTimeZone.setDefault : exitmonitor r3
+org.joda.time.DateTimeZone.setDefault : $r6 = class "org/joda/time/DateTimeZone"
+org.joda.time.DateTimeZone.setDefault : <org.joda.time.DateTimeZone: org.joda.time.DateTimeZone cDefault> = r0
+org.joda.time.DateTimeZone.setDefault : if r1 == null goto (branch)
+org.joda.time.DateTimeZone.setDefault : if r0 != null goto $r6 = class "org/joda/time/DateTimeZone"
+org.joda.time.DateTimeZone.setDefault : r1 = staticinvoke <java.lang.System: java.lang.SecurityManager getSecurityManager()>()
+org.joda.time.DateTimeUtils.setCurrentMillisSystem : staticinvoke <org.joda.time.DateTimeUtils: void checkPermission()>()
+org.joda.time.DateTimeUtils.setCurrentMillisSystem : $r0 = <org.joda.time.DateTimeUtils: org.joda.time.DateTimeUtils$SystemMillisProvider SYSTEM_MILLIS_PROVIDER>
+org.joda.time.Period.toStandardMinutes : $i18 = virtualinvoke r0.<org.joda.time.Period: int getWeeks()>()
+org.joda.time.Period.toStandardMinutes : $i7 = virtualinvoke r0.<org.joda.time.Period: int getMinutes()>()
+org.joda.time.Period.toStandardMinutes : $i22 = staticinvoke <org.joda.time.field.FieldUtils: int safeToInt(long)>(l21)
+org.joda.time.Period.toStandardMinutes : $i3 = virtualinvoke r0.<org.joda.time.Period: int getSeconds()>()
+org.joda.time.Period.toStandardMinutes : specialinvoke r0.<org.joda.time.Period: void checkYearsAndMonths(java.lang.String)>("Minutes")
+org.joda.time.Period.toStandardMinutes : $i14 = virtualinvoke r0.<org.joda.time.Period: int getDays()>()
+org.joda.time.Period.toStandardMinutes : $i10 = virtualinvoke r0.<org.joda.time.Period: int getHours()>()
+org.joda.time.Period.toStandardMinutes : $i2 = virtualinvoke r0.<org.joda.time.Period: int getMillis()>()
+org.joda.time.Period.toStandardMinutes : l1 = l6 / 60000L
+org.joda.time.Period.getMonths : $r1 = virtualinvoke r0.<org.joda.time.Period: org.joda.time.PeriodType getPeriodType()>()
+org.joda.time.base.BaseSingleFieldPeriod.getValue : $i0 = r0.<org.joda.time.base.BaseSingleFieldPeriod: int iPeriod>

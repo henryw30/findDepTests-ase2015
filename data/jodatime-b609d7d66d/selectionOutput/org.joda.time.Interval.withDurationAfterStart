@@ -1,0 +1,10 @@
+org.joda.time.Interval.withDurationAfterStart : l0 = staticinvoke <org.joda.time.DateTimeUtils: long getDurationMillis(org.joda.time.ReadableDuration)>(r1) >>>>>>>> org.joda.time.Interval.withDurationAfterStart : $l3 = virtualinvoke r0.<org.joda.time.Interval: long toDurationMillis()>()
+org.joda.time.Interval.withDurationAfterStart : $l3 = virtualinvoke r0.<org.joda.time.Interval: long toDurationMillis()>() >>>>>>>> org.joda.time.Interval.withDurationAfterStart : $b4 = l0 cmp $l3
+org.joda.time.Interval.withDurationAfterStart : $b4 = l0 cmp $l3 >>>>>>>> org.joda.time.Interval.withDurationAfterStart : if $b4 != 0
+org.joda.time.Interval.withDurationAfterStart : if $b4 != 0 >>>>>>>> org.joda.time.Interval.withDurationAfterStart : return r0
+org.joda.time.Interval.withDurationAfterStart : if $b4 != 0 >>>>>>>> org.joda.time.Interval.withDurationAfterStart : r2 = virtualinvoke r0.<org.joda.time.Interval: org.joda.time.Chronology getChronology()>()
+org.joda.time.Interval.withDurationAfterStart : r2 = virtualinvoke r0.<org.joda.time.Interval: org.joda.time.Chronology getChronology()>() >>>>>>>> org.joda.time.Interval.withDurationAfterStart : l1 = virtualinvoke r0.<org.joda.time.Interval: long getStartMillis()>()
+org.joda.time.Interval.withDurationAfterStart : l1 = virtualinvoke r0.<org.joda.time.Interval: long getStartMillis()>() >>>>>>>> org.joda.time.Interval.withDurationAfterStart : l2 = virtualinvoke r2.<org.joda.time.Chronology: long add(long,long,int)>(l1, l0, 1)
+org.joda.time.Interval.withDurationAfterStart : l2 = virtualinvoke r2.<org.joda.time.Chronology: long add(long,long,int)>(l1, l0, 1) >>>>>>>> org.joda.time.Interval.withDurationAfterStart : $r3 = new org.joda.time.Interval
+org.joda.time.Interval.withDurationAfterStart : $r3 = new org.joda.time.Interval >>>>>>>> org.joda.time.Interval.withDurationAfterStart : specialinvoke $r3.<org.joda.time.Interval: void <init>(long,long,org.joda.time.Chronology)>(l1, l2, r2)
+org.joda.time.Interval.withDurationAfterStart : specialinvoke $r3.<org.joda.time.Interval: void <init>(long,long,org.joda.time.Chronology)>(l1, l2, r2) >>>>>>>> org.joda.time.Interval.withDurationAfterStart : return $r3

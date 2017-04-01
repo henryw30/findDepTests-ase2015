@@ -1,0 +1,33 @@
+org.joda.time.DateTimeZone.forID : if r0 != null >>>>>>>> org.joda.time.DateTimeZone.forID : $r2 = staticinvoke <org.joda.time.DateTimeZone: org.joda.time.DateTimeZone getDefault()>()
+org.joda.time.DateTimeZone.forID : if r0 != null >>>>>>>> org.joda.time.DateTimeZone.forID : $z0 = virtualinvoke r0.<java.lang.String: boolean equals(java.lang.Object)>("UTC")
+org.joda.time.DateTimeZone.forID : $z0 = virtualinvoke r0.<java.lang.String: boolean equals(java.lang.Object)>("UTC") >>>>>>>> org.joda.time.DateTimeZone.forID : if $z0 == 0
+org.joda.time.DateTimeZone.forID : if $z0 == 0 >>>>>>>> org.joda.time.DateTimeZone.forID : $r3 = <org.joda.time.DateTimeZone: org.joda.time.DateTimeZone UTC>
+org.joda.time.DateTimeZone.forID : if $z0 == 0 >>>>>>>> org.joda.time.DateTimeZone.forID : $r4 = <org.joda.time.DateTimeZone: org.joda.time.tz.Provider cProvider>
+org.joda.time.DateTimeZone.forID : $r4 = <org.joda.time.DateTimeZone: org.joda.time.tz.Provider cProvider> >>>>>>>> org.joda.time.DateTimeZone.forID : r1 = interfaceinvoke $r4.<org.joda.time.tz.Provider: org.joda.time.DateTimeZone getZone(java.lang.String)>(r0)
+org.joda.time.DateTimeZone.forID : r1 = interfaceinvoke $r4.<org.joda.time.tz.Provider: org.joda.time.DateTimeZone getZone(java.lang.String)>(r0) >>>>>>>> org.joda.time.DateTimeZone.forID : if r1 == null
+org.joda.time.DateTimeZone.forID : if r1 == null >>>>>>>> org.joda.time.DateTimeZone.forID : return r1
+org.joda.time.DateTimeZone.forID : if r1 == null >>>>>>>> org.joda.time.DateTimeZone.forID : $z1 = virtualinvoke r0.<java.lang.String: boolean startsWith(java.lang.String)>("+")
+org.joda.time.DateTimeZone.forID : $z1 = virtualinvoke r0.<java.lang.String: boolean startsWith(java.lang.String)>("+") >>>>>>>> org.joda.time.DateTimeZone.forID : if $z1 != 0
+org.joda.time.DateTimeZone.forID : if $z1 != 0 >>>>>>>> org.joda.time.DateTimeZone.forID : $z2 = virtualinvoke r0.<java.lang.String: boolean startsWith(java.lang.String)>("-")
+org.joda.time.DateTimeZone.forID : if $z1 != 0 >>>>>>>> org.joda.time.DateTimeZone.forID : i0 = staticinvoke <org.joda.time.DateTimeZone: int parseOffset(java.lang.String)>(r0)
+org.joda.time.DateTimeZone.forID : i0 = staticinvoke <org.joda.time.DateTimeZone: int parseOffset(java.lang.String)>(r0) >>>>>>>> org.joda.time.DateTimeZone.forID : $l1 = (long) i0
+org.joda.time.DateTimeZone.forID : $l1 = (long) i0 >>>>>>>> org.joda.time.DateTimeZone.forID : $b2 = $l1 cmp 0L
+org.joda.time.DateTimeZone.forID : $b2 = $l1 cmp 0L >>>>>>>> org.joda.time.DateTimeZone.forID : if $b2 != 0
+org.joda.time.DateTimeZone.forID : if $b2 != 0 >>>>>>>> org.joda.time.DateTimeZone.forID : $r5 = <org.joda.time.DateTimeZone: org.joda.time.DateTimeZone UTC>
+org.joda.time.DateTimeZone.forID : if $b2 != 0 >>>>>>>> org.joda.time.DateTimeZone.forID : r6 = staticinvoke <org.joda.time.DateTimeZone: java.lang.String printOffset(int)>(i0)
+org.joda.time.DateTimeZone.forID : r6 = staticinvoke <org.joda.time.DateTimeZone: java.lang.String printOffset(int)>(i0) >>>>>>>> org.joda.time.DateTimeZone.forID : $r7 = staticinvoke <org.joda.time.DateTimeZone: org.joda.time.DateTimeZone fixedOffsetZone(java.lang.String,int)>(r6, i0)
+org.joda.time.DateTimeZone.forID : $r7 = staticinvoke <org.joda.time.DateTimeZone: org.joda.time.DateTimeZone fixedOffsetZone(java.lang.String,int)>(r6, i0) >>>>>>>> org.joda.time.DateTimeZone.forID : return $r7
+org.joda.time.DateTimeZone.forID : $r5 = <org.joda.time.DateTimeZone: org.joda.time.DateTimeZone UTC> >>>>>>>> org.joda.time.DateTimeZone.forID : return $r5
+org.joda.time.DateTimeZone.forID : $z2 = virtualinvoke r0.<java.lang.String: boolean startsWith(java.lang.String)>("-") >>>>>>>> org.joda.time.DateTimeZone.forID : if $z2 == 0
+org.joda.time.DateTimeZone.forID : if $z2 == 0 >>>>>>>> org.joda.time.DateTimeZone.forID : i0 = staticinvoke <org.joda.time.DateTimeZone: int parseOffset(java.lang.String)>(r0)
+org.joda.time.DateTimeZone.forID : if $z2 == 0 >>>>>>>> org.joda.time.DateTimeZone.forID : $r8 = new java.lang.IllegalArgumentException
+org.joda.time.DateTimeZone.forID : $r8 = new java.lang.IllegalArgumentException >>>>>>>> org.joda.time.DateTimeZone.forID : $r9 = new java.lang.StringBuilder
+org.joda.time.DateTimeZone.forID : $r9 = new java.lang.StringBuilder >>>>>>>> org.joda.time.DateTimeZone.forID : specialinvoke $r9.<java.lang.StringBuilder: void <init>()>()
+org.joda.time.DateTimeZone.forID : specialinvoke $r9.<java.lang.StringBuilder: void <init>()>() >>>>>>>> org.joda.time.DateTimeZone.forID : $r10 = virtualinvoke $r9.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("The datetime zone id \'")
+org.joda.time.DateTimeZone.forID : $r10 = virtualinvoke $r9.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("The datetime zone id \'") >>>>>>>> org.joda.time.DateTimeZone.forID : $r11 = virtualinvoke $r10.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(r0)
+org.joda.time.DateTimeZone.forID : $r11 = virtualinvoke $r10.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(r0) >>>>>>>> org.joda.time.DateTimeZone.forID : $r12 = virtualinvoke $r11.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("\' is not recognised")
+org.joda.time.DateTimeZone.forID : $r12 = virtualinvoke $r11.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("\' is not recognised") >>>>>>>> org.joda.time.DateTimeZone.forID : $r13 = virtualinvoke $r12.<java.lang.StringBuilder: java.lang.String toString()>()
+org.joda.time.DateTimeZone.forID : $r13 = virtualinvoke $r12.<java.lang.StringBuilder: java.lang.String toString()>() >>>>>>>> org.joda.time.DateTimeZone.forID : specialinvoke $r8.<java.lang.IllegalArgumentException: void <init>(java.lang.String)>($r13)
+org.joda.time.DateTimeZone.forID : specialinvoke $r8.<java.lang.IllegalArgumentException: void <init>(java.lang.String)>($r13) >>>>>>>> org.joda.time.DateTimeZone.forID : throw $r8
+org.joda.time.DateTimeZone.forID : $r3 = <org.joda.time.DateTimeZone: org.joda.time.DateTimeZone UTC> >>>>>>>> org.joda.time.DateTimeZone.forID : return $r3
+org.joda.time.DateTimeZone.forID : $r2 = staticinvoke <org.joda.time.DateTimeZone: org.joda.time.DateTimeZone getDefault()>() >>>>>>>> org.joda.time.DateTimeZone.forID : return $r2

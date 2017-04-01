@@ -1,0 +1,43 @@
+crystal.util.RunIt.validHG : r2 = newarray (java.lang.String)[1] >>>>>>>> crystal.util.RunIt.validHG : r2[0] = "--version"
+crystal.util.RunIt.validHG : r2[0] = "--version" >>>>>>>> crystal.util.RunIt.validHG : $r5 = staticinvoke <crystal.util.RunIt: crystal.util.RunIt$Output execute(java.lang.String,java.lang.String[],java.lang.String,boolean)>(r0, r2, r1, 0)
+crystal.util.RunIt.validHG : $r5 = staticinvoke <crystal.util.RunIt: crystal.util.RunIt$Output execute(java.lang.String,java.lang.String[],java.lang.String,boolean)>(r0, r2, r1, 0) >>>>>>>> crystal.util.RunIt.validHG : r3 = virtualinvoke $r5.<crystal.util.RunIt$Output: java.lang.String getOutput()>()
+crystal.util.RunIt.validHG : r3 = virtualinvoke $r5.<crystal.util.RunIt$Output: java.lang.String getOutput()>() >>>>>>>> crystal.util.RunIt.validHG : $i0 = virtualinvoke r3.<java.lang.String: int indexOf(java.lang.String)>("version")
+crystal.util.RunIt.validHG : $i0 = virtualinvoke r3.<java.lang.String: int indexOf(java.lang.String)>("version") >>>>>>>> crystal.util.RunIt.validHG : $i1 = $i0 + 8
+crystal.util.RunIt.validHG : $i1 = $i0 + 8 >>>>>>>> crystal.util.RunIt.validHG : $i2 = virtualinvoke r3.<java.lang.String: int indexOf(java.lang.String)>(")")
+crystal.util.RunIt.validHG : $i2 = virtualinvoke r3.<java.lang.String: int indexOf(java.lang.String)>(")") >>>>>>>> crystal.util.RunIt.validHG : r4 = virtualinvoke r3.<java.lang.String: java.lang.String substring(int,int)>($i1, $i2)
+crystal.util.RunIt.validHG : r4 = virtualinvoke r3.<java.lang.String: java.lang.String substring(int,int)>($i1, $i2) >>>>>>>> crystal.util.RunIt.validHG : $i3 = virtualinvoke r4.<java.lang.String: int indexOf(java.lang.String)>(".")
+crystal.util.RunIt.validHG : $i3 = virtualinvoke r4.<java.lang.String: int indexOf(java.lang.String)>(".") >>>>>>>> crystal.util.RunIt.validHG : $i4 = $i3 + 1
+crystal.util.RunIt.validHG : $i4 = $i3 + 1 >>>>>>>> crystal.util.RunIt.validHG : $i5 = virtualinvoke r4.<java.lang.String: int indexOf(java.lang.String,int)>(".", $i4)
+crystal.util.RunIt.validHG : $i5 = virtualinvoke r4.<java.lang.String: int indexOf(java.lang.String,int)>(".", $i4) >>>>>>>> crystal.util.RunIt.validHG : $r6 = virtualinvoke r4.<java.lang.String: java.lang.String substring(int,int)>(0, $i5)
+crystal.util.RunIt.validHG : $r6 = virtualinvoke r4.<java.lang.String: java.lang.String substring(int,int)>(0, $i5) >>>>>>>> crystal.util.RunIt.validHG : d1 = staticinvoke <java.lang.Double: double parseDouble(java.lang.String)>($r6)
+crystal.util.RunIt.validHG : d1 = staticinvoke <java.lang.Double: double parseDouble(java.lang.String)>($r6) >>>>>>>> crystal.util.RunIt.validHG : $b6 = d0 cmpg d1
+crystal.util.RunIt.validHG : $b6 = d0 cmpg d1 >>>>>>>> crystal.util.RunIt.validHG : if $b6 > 0
+crystal.util.RunIt.validHG : if $b6 > 0 >>>>>>>> crystal.util.RunIt.validHG : $z1 = 1
+crystal.util.RunIt.validHG : if $b6 > 0 >>>>>>>> crystal.util.RunIt.validHG : $z1 = 0
+crystal.util.RunIt.validHG : $z1 = 0 >>>>>>>> crystal.util.RunIt.validHG : z0 = $z1
+crystal.util.RunIt.validHG : z0 = $z1 >>>>>>>> crystal.util.RunIt.validHG : if z0 == 0
+crystal.util.RunIt.validHG : if z0 == 0 >>>>>>>> crystal.util.RunIt.validHG : $r7 = <crystal.util.RunIt: org.apache.log4j.Logger _log>
+crystal.util.RunIt.validHG : if z0 == 0 >>>>>>>> crystal.util.RunIt.validHG : $r15 = <crystal.util.RunIt: org.apache.log4j.Logger _log>
+crystal.util.RunIt.validHG : $r15 = <crystal.util.RunIt: org.apache.log4j.Logger _log> >>>>>>>> crystal.util.RunIt.validHG : $r16 = new java.lang.StringBuilder
+crystal.util.RunIt.validHG : $r16 = new java.lang.StringBuilder >>>>>>>> crystal.util.RunIt.validHG : specialinvoke $r16.<java.lang.StringBuilder: void <init>()>()
+crystal.util.RunIt.validHG : specialinvoke $r16.<java.lang.StringBuilder: void <init>()>() >>>>>>>> crystal.util.RunIt.validHG : $r17 = virtualinvoke $r16.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("You are using an outdated hg.  (You are running ")
+crystal.util.RunIt.validHG : $r17 = virtualinvoke $r16.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("You are using an outdated hg.  (You are running ") >>>>>>>> crystal.util.RunIt.validHG : $r18 = virtualinvoke $r17.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(r4)
+crystal.util.RunIt.validHG : $r18 = virtualinvoke $r17.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(r4) >>>>>>>> crystal.util.RunIt.validHG : $r19 = virtualinvoke $r18.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(", which is older than the minimum required ")
+crystal.util.RunIt.validHG : $r19 = virtualinvoke $r18.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(", which is older than the minimum required ") >>>>>>>> crystal.util.RunIt.validHG : $r20 = virtualinvoke $r19.<java.lang.StringBuilder: java.lang.StringBuilder append(double)>(d0)
+crystal.util.RunIt.validHG : $r20 = virtualinvoke $r19.<java.lang.StringBuilder: java.lang.StringBuilder append(double)>(d0) >>>>>>>> crystal.util.RunIt.validHG : $r21 = virtualinvoke $r20.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(".)")
+crystal.util.RunIt.validHG : $r21 = virtualinvoke $r20.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(".)") >>>>>>>> crystal.util.RunIt.validHG : $r22 = virtualinvoke $r21.<java.lang.StringBuilder: java.lang.String toString()>()
+crystal.util.RunIt.validHG : $r22 = virtualinvoke $r21.<java.lang.StringBuilder: java.lang.String toString()>() >>>>>>>> crystal.util.RunIt.validHG : virtualinvoke $r15.<org.apache.log4j.Logger: void error(java.lang.Object)>($r22)
+crystal.util.RunIt.validHG : virtualinvoke $r15.<org.apache.log4j.Logger: void error(java.lang.Object)>($r22) >>>>>>>> crystal.util.RunIt.validHG : return z0
+crystal.util.RunIt.validHG : $r7 = <crystal.util.RunIt: org.apache.log4j.Logger _log> >>>>>>>> crystal.util.RunIt.validHG : $r8 = new java.lang.StringBuilder
+crystal.util.RunIt.validHG : $r8 = new java.lang.StringBuilder >>>>>>>> crystal.util.RunIt.validHG : specialinvoke $r8.<java.lang.StringBuilder: void <init>()>()
+crystal.util.RunIt.validHG : specialinvoke $r8.<java.lang.StringBuilder: void <init>()>() >>>>>>>> crystal.util.RunIt.validHG : $r9 = virtualinvoke $r8.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("The version of hg checks out.  (You are running ")
+crystal.util.RunIt.validHG : $r9 = virtualinvoke $r8.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("The version of hg checks out.  (You are running ") >>>>>>>> crystal.util.RunIt.validHG : $r10 = virtualinvoke $r9.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(r4)
+crystal.util.RunIt.validHG : $r10 = virtualinvoke $r9.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(r4) >>>>>>>> crystal.util.RunIt.validHG : $r11 = virtualinvoke $r10.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(", which is newer than the minimum required ")
+crystal.util.RunIt.validHG : $r11 = virtualinvoke $r10.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(", which is newer than the minimum required ") >>>>>>>> crystal.util.RunIt.validHG : $r12 = virtualinvoke $r11.<java.lang.StringBuilder: java.lang.StringBuilder append(double)>(d0)
+crystal.util.RunIt.validHG : $r12 = virtualinvoke $r11.<java.lang.StringBuilder: java.lang.StringBuilder append(double)>(d0) >>>>>>>> crystal.util.RunIt.validHG : $r13 = virtualinvoke $r12.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(".)")
+crystal.util.RunIt.validHG : $r13 = virtualinvoke $r12.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(".)") >>>>>>>> crystal.util.RunIt.validHG : $r14 = virtualinvoke $r13.<java.lang.StringBuilder: java.lang.String toString()>()
+crystal.util.RunIt.validHG : $r14 = virtualinvoke $r13.<java.lang.StringBuilder: java.lang.String toString()>() >>>>>>>> crystal.util.RunIt.validHG : virtualinvoke $r7.<org.apache.log4j.Logger: void info(java.lang.Object)>($r14)
+crystal.util.RunIt.validHG : virtualinvoke $r7.<org.apache.log4j.Logger: void info(java.lang.Object)>($r14) >>>>>>>> crystal.util.RunIt.validHG : goto [?= return z0]
+crystal.util.RunIt.validHG : goto [?= return z0] >>>>>>>> crystal.util.RunIt.validHG : return z0
+crystal.util.RunIt.validHG : $z1 = 1 >>>>>>>> crystal.util.RunIt.validHG : goto [?= z0 = $z1]
+crystal.util.RunIt.validHG : goto [?= z0 = $z1] >>>>>>>> crystal.util.RunIt.validHG : z0 = $z1

@@ -1,0 +1,10 @@
+org.jfree.data.general.AbstractDataset.addChangeListener : $r2 = r0.<org.jfree.data.general.AbstractDataset: javax.swing.event.EventListenerList listenerList>
+org.jfree.data.xy.XYBarDataset.datasetChanged : virtualinvoke r0.<org.jfree.data.xy.XYBarDataset: void notifyListeners(org.jfree.data.general.DatasetChangeEvent)>(r1)
+org.jfree.data.general.AbstractDataset.notifyListeners : $r4 = r2[i0]
+org.jfree.data.general.AbstractDataset.notifyListeners : $r3 = r0.<org.jfree.data.general.AbstractDataset: javax.swing.event.EventListenerList listenerList>
+org.jfree.data.general.AbstractDataset.notifyListeners : $i2 = i0 + 1
+org.jfree.data.general.AbstractDataset.notifyListeners : $i1 = lengthof r2
+org.jfree.data.xy.XYIntervalSeriesCollection.removeAllSeries : virtualinvoke r0.<org.jfree.data.xy.XYIntervalSeriesCollection: void fireDatasetChanged()>()
+org.jfree.data.xy.XYIntervalSeriesCollection.removeAllSeries : i0 = 0
+org.jfree.data.xy.XYIntervalSeriesCollection.removeAllSeries : $r5 = r0.<org.jfree.data.xy.XYIntervalSeriesCollection: java.util.List data>
+org.jfree.data.general.AbstractDataset.fireDatasetChanged : $r1 = new org.jfree.data.general.DatasetChangeEvent

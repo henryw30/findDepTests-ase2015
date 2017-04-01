@@ -1,0 +1,199 @@
+org.jfree.chart.axis.DateAxis.autoAdjustRange : r1 = virtualinvoke r0.<org.jfree.chart.axis.DateAxis: org.jfree.chart.plot.Plot getPlot()>()
+org.jfree.chart.axis.DateAxis.autoAdjustRange : if r1 != null goto $z0 = r1 instanceof org.jfree.chart.plot.ValueAxisPlot
+org.jfree.chart.axis.ValueAxis.setAutoRangeMinimumSize : if z0 == 0 goto return
+org.jfree.chart.axis.ValueAxis.setAutoRangeMinimumSize : virtualinvoke r0.<org.jfree.chart.axis.ValueAxis: void autoAdjustRange()>()
+org.jfree.chart.axis.ValueAxis.setAutoRangeMinimumSize : $b0 = d0 cmpg 0.0
+org.jfree.chart.axis.ValueAxis.setAutoRangeMinimumSize : virtualinvoke r0.<org.jfree.chart.axis.ValueAxis: void setAutoRangeMinimumSize(double,boolean)>(d0, 1)
+org.jfree.chart.axis.ValueAxis.setAutoRangeMinimumSize : $r2 = new org.jfree.chart.event.AxisChangeEvent
+org.jfree.chart.axis.ValueAxis.setAutoRangeMinimumSize : $d1 = r0.<org.jfree.chart.axis.ValueAxis: double autoRangeMinimumSize>
+org.jfree.chart.axis.ValueAxis.setAutoRangeMinimumSize : $z1 = r0.<org.jfree.chart.axis.ValueAxis: boolean autoRange>
+org.jfree.chart.axis.ValueAxis.setAutoRangeMinimumSize : r0.<org.jfree.chart.axis.ValueAxis: double autoRangeMinimumSize> = d0
+org.jfree.chart.axis.TickUnit.compareTo : $d0 = r0.<org.jfree.chart.axis.TickUnit: double size>
+org.jfree.chart.axis.TickUnit.compareTo : $z0 = r1 instanceof org.jfree.chart.axis.TickUnit
+org.jfree.chart.axis.TickUnit.compareTo : return 1
+org.jfree.chart.axis.TickUnit.compareTo : r2 = (org.jfree.chart.axis.TickUnit) r1
+org.jfree.chart.axis.TickUnit.getSize : $d0 = r0.<org.jfree.chart.axis.TickUnit: double size>
+org.jfree.chart.axis.Axis.notifyListeners : $i1 = lengthof r2
+org.jfree.chart.axis.Axis.notifyListeners : $r3 = r0.<org.jfree.chart.axis.Axis: javax.swing.event.EventListenerList listenerList>
+org.jfree.chart.axis.DateTickUnit.getMillisecondCount : $l7 = (long) i0
+org.jfree.chart.axis.DateTickUnit.getMillisecondCount : $l9 = (long) i0
+org.jfree.chart.axis.DateTickUnit.getMillisecondCount : $r7 = <org.jfree.chart.axis.DateTickUnitType: org.jfree.chart.axis.DateTickUnitType MILLISECOND>
+org.jfree.chart.axis.DateTickUnit.getMillisecondCount : $r2 = <org.jfree.chart.axis.DateTickUnitType: org.jfree.chart.axis.DateTickUnitType MONTH>
+org.jfree.chart.axis.DateTickUnit.getMillisecondCount : $r3 = <org.jfree.chart.axis.DateTickUnitType: org.jfree.chart.axis.DateTickUnitType DAY>
+org.jfree.chart.axis.DateTickUnit.getMillisecondCount : $r6 = <org.jfree.chart.axis.DateTickUnitType: org.jfree.chart.axis.DateTickUnitType SECOND>
+org.jfree.chart.axis.DateTickUnit.getMillisecondCount : $r1 = <org.jfree.chart.axis.DateTickUnitType: org.jfree.chart.axis.DateTickUnitType YEAR>
+org.jfree.chart.axis.DateTickUnit.getMillisecondCount : $r4 = <org.jfree.chart.axis.DateTickUnitType: org.jfree.chart.axis.DateTickUnitType HOUR>
+org.jfree.chart.axis.DateTickUnit.getMillisecondCount : $l13 = (long) i0
+org.jfree.chart.axis.DateTickUnit.getMillisecondCount : $l3 = (long) i0
+org.jfree.chart.axis.DateTickUnit.getMillisecondCount : $l5 = (long) i0
+org.jfree.chart.axis.DateTickUnit.getMillisecondCount : $l1 = (long) i0
+org.jfree.chart.axis.DateTickUnit.getMillisecondCount : $r5 = <org.jfree.chart.axis.DateTickUnitType: org.jfree.chart.axis.DateTickUnitType MINUTE>
+org.jfree.chart.axis.DateTickUnit.getMillisecondCount : $l11 = (long) i0
+org.jfree.chart.axis.DateAxis.previousStandardDate : b48 = 59
+org.jfree.chart.axis.DateAxis.previousStandardDate : $i11 = virtualinvoke r2.<org.jfree.chart.axis.DateTickUnit: int getCalendarField()>()
+org.jfree.chart.axis.DateAxis.previousStandardDate : i45 = virtualinvoke r3.<java.util.Calendar: int get(int)>(1)
+org.jfree.chart.axis.DateAxis.previousStandardDate : b49 = 59
+org.jfree.chart.axis.DateAxis.previousStandardDate : return r8
+org.jfree.chart.axis.DateAxis.previousStandardDate : r8 = virtualinvoke r3.<java.util.Calendar: java.util.Date getTime()>()
+org.jfree.chart.axis.DateAxis.previousStandardDate : z2 = 0
+org.jfree.chart.axis.DateAxis.previousStandardDate : virtualinvoke r3.<java.util.Calendar: void setTime(java.util.Date)>(r1)
+org.jfree.chart.axis.DateAxis.previousStandardDate : b47 = 12
+org.jfree.chart.axis.DateAxis.previousStandardDate : i0 = virtualinvoke r2.<org.jfree.chart.axis.DateTickUnit: int getCount()>()
+org.jfree.chart.axis.DateAxis.previousStandardDate : virtualinvoke r3.<java.util.Calendar: void set(int,int,int,int,int,int)>(i45, i46, i2, b47, 0, 0)
+org.jfree.chart.axis.DateAxis.previousStandardDate : b47 = 23
+org.jfree.chart.axis.DateAxis.previousStandardDate : z3 = 0
+org.jfree.chart.axis.DateAxis.previousStandardDate : $l50 = virtualinvoke r8.<java.util.Date: long getTime()>()
+org.jfree.chart.axis.DateAxis.previousStandardDate : virtualinvoke r3.<java.util.Calendar: void clear(int)>(14)
+org.jfree.chart.axis.DateAxis.previousStandardDate : $i13 = virtualinvoke r2.<org.jfree.chart.axis.DateTickUnit: int getUnit()>()
+org.jfree.chart.axis.DateAxis.previousStandardDate : b47 = 0
+org.jfree.chart.axis.DateAxis.previousStandardDate : i46 = virtualinvoke r3.<java.util.Calendar: int get(int)>(2)
+org.jfree.chart.axis.DateAxis.previousStandardDate : $i12 = i1 / i0
+org.jfree.chart.axis.DateAxis.previousStandardDate : z0 = 0
+org.jfree.chart.axis.DateAxis.previousStandardDate : $r12 = r0.<org.jfree.chart.axis.DateAxis: java.util.TimeZone timeZone>
+org.jfree.chart.axis.DateAxis.previousStandardDate : $r26 = r0.<org.jfree.chart.axis.DateAxis: org.jfree.chart.axis.DateTickMarkPosition tickMarkPosition>
+org.jfree.chart.axis.DateAxis.previousStandardDate : z1 = 0
+org.jfree.chart.axis.DateAxis.previousStandardDate : $r28 = r0.<org.jfree.chart.axis.DateAxis: org.jfree.chart.axis.DateTickMarkPosition tickMarkPosition>
+org.jfree.chart.axis.TickUnits.add : $r3 = r0.<org.jfree.chart.axis.TickUnits: java.util.List tickUnits>
+org.jfree.chart.axis.TickUnits.add : if r1 != null goto $r3 = r0.<org.jfree.chart.axis.TickUnits: java.util.List tickUnits>
+org.jfree.chart.axis.TickUnits.add : $r4 = r0.<org.jfree.chart.axis.TickUnits: java.util.List tickUnits>
+org.jfree.chart.axis.DateAxis.createStandardDateTickUnits : return r2
+org.jfree.chart.axis.DateAxis.createStandardDateTickUnits : $r62 = new org.jfree.chart.axis.DateTickUnit
+org.jfree.chart.axis.DateAxis.createStandardDateTickUnits : $r116 = new org.jfree.chart.axis.DateTickUnit
+org.jfree.chart.axis.DateAxis.createStandardDateTickUnits : $r125 = new org.jfree.chart.axis.DateTickUnit
+org.jfree.chart.axis.DateAxis.createStandardDateTickUnits : $r113 = new org.jfree.chart.axis.DateTickUnit
+org.jfree.chart.axis.DateAxis.createStandardDateTickUnits : $r50 = new org.jfree.chart.axis.DateTickUnit
+org.jfree.chart.axis.DateAxis.createStandardDateTickUnits : virtualinvoke r7.<java.text.DateFormat: void setTimeZone(java.util.TimeZone)>(r0)
+org.jfree.chart.axis.DateAxis.createStandardDateTickUnits : $r107 = new org.jfree.chart.axis.DateTickUnit
+org.jfree.chart.axis.DateAxis.createStandardDateTickUnits : $r15 = new java.text.SimpleDateFormat
+org.jfree.chart.axis.DateAxis.createStandardDateTickUnits : $r47 = new org.jfree.chart.axis.DateTickUnit
+org.jfree.chart.axis.DateAxis.createStandardDateTickUnits : $r98 = new org.jfree.chart.axis.DateTickUnit
+org.jfree.chart.axis.DateAxis.createStandardDateTickUnits : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "locale")
+org.jfree.chart.axis.DateAxis.createStandardDateTickUnits : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r0, "zone")
+org.jfree.chart.axis.DateAxis.createStandardDateTickUnits : $r53 = new org.jfree.chart.axis.DateTickUnit
+org.jfree.chart.axis.DateAxis.createStandardDateTickUnits : $r23 = new org.jfree.chart.axis.DateTickUnit
+org.jfree.chart.axis.DateAxis.createStandardDateTickUnits : $r77 = new org.jfree.chart.axis.DateTickUnit
+org.jfree.chart.axis.DateAxis.createStandardDateTickUnits : $r128 = new org.jfree.chart.axis.DateTickUnit
+org.jfree.chart.axis.DateAxis.createStandardDateTickUnits : virtualinvoke r5.<java.text.DateFormat: void setTimeZone(java.util.TimeZone)>(r0)
+org.jfree.chart.axis.DateAxis.createStandardDateTickUnits : $r41 = new org.jfree.chart.axis.DateTickUnit
+org.jfree.chart.axis.DateAxis.createStandardDateTickUnits : virtualinvoke r8.<java.text.DateFormat: void setTimeZone(java.util.TimeZone)>(r0)
+org.jfree.chart.axis.DateAxis.createStandardDateTickUnits : $r18 = new org.jfree.chart.axis.DateTickUnit
+org.jfree.chart.axis.DateAxis.createStandardDateTickUnits : $r122 = new org.jfree.chart.axis.DateTickUnit
+org.jfree.chart.axis.DateAxis.createStandardDateTickUnits : $r59 = new org.jfree.chart.axis.DateTickUnit
+org.jfree.chart.axis.DateAxis.createStandardDateTickUnits : $r74 = new org.jfree.chart.axis.DateTickUnit
+org.jfree.chart.axis.DateAxis.createStandardDateTickUnits : $r119 = new org.jfree.chart.axis.DateTickUnit
+org.jfree.chart.axis.DateAxis.createStandardDateTickUnits : $r29 = new org.jfree.chart.axis.DateTickUnit
+org.jfree.chart.axis.DateAxis.createStandardDateTickUnits : $r95 = new org.jfree.chart.axis.DateTickUnit
+org.jfree.chart.axis.DateAxis.createStandardDateTickUnits : $r11 = new java.text.SimpleDateFormat
+org.jfree.chart.axis.DateAxis.createStandardDateTickUnits : $r80 = new org.jfree.chart.axis.DateTickUnit
+org.jfree.chart.axis.DateAxis.createStandardDateTickUnits : $r12 = new java.text.SimpleDateFormat
+org.jfree.chart.axis.DateAxis.createStandardDateTickUnits : $r17 = new java.text.SimpleDateFormat
+org.jfree.chart.axis.DateAxis.createStandardDateTickUnits : virtualinvoke r4.<java.text.DateFormat: void setTimeZone(java.util.TimeZone)>(r0)
+org.jfree.chart.axis.DateAxis.createStandardDateTickUnits : $r14 = new java.text.SimpleDateFormat
+org.jfree.chart.axis.DateAxis.createStandardDateTickUnits : virtualinvoke r9.<java.text.DateFormat: void setTimeZone(java.util.TimeZone)>(r0)
+org.jfree.chart.axis.DateAxis.createStandardDateTickUnits : $r68 = new org.jfree.chart.axis.DateTickUnit
+org.jfree.chart.axis.DateAxis.createStandardDateTickUnits : $r101 = new org.jfree.chart.axis.DateTickUnit
+org.jfree.chart.axis.DateAxis.createStandardDateTickUnits : $r56 = new org.jfree.chart.axis.DateTickUnit
+org.jfree.chart.axis.DateAxis.createStandardDateTickUnits : $r35 = new org.jfree.chart.axis.DateTickUnit
+org.jfree.chart.axis.DateAxis.createStandardDateTickUnits : $r65 = new org.jfree.chart.axis.DateTickUnit
+org.jfree.chart.axis.DateAxis.createStandardDateTickUnits : $r26 = new org.jfree.chart.axis.DateTickUnit
+org.jfree.chart.axis.DateAxis.createStandardDateTickUnits : $r86 = new org.jfree.chart.axis.DateTickUnit
+org.jfree.chart.axis.DateAxis.createStandardDateTickUnits : $r16 = new java.text.SimpleDateFormat
+org.jfree.chart.axis.DateAxis.createStandardDateTickUnits : $r92 = new org.jfree.chart.axis.DateTickUnit
+org.jfree.chart.axis.DateAxis.createStandardDateTickUnits : $r104 = new org.jfree.chart.axis.DateTickUnit
+org.jfree.chart.axis.DateAxis.createStandardDateTickUnits : $r13 = new java.text.SimpleDateFormat
+org.jfree.chart.axis.DateAxis.createStandardDateTickUnits : $r20 = new org.jfree.chart.axis.DateTickUnit
+org.jfree.chart.axis.DateAxis.createStandardDateTickUnits : virtualinvoke r6.<java.text.DateFormat: void setTimeZone(java.util.TimeZone)>(r0)
+org.jfree.chart.axis.DateAxis.createStandardDateTickUnits : $r10 = new org.jfree.chart.axis.TickUnits
+org.jfree.chart.axis.DateAxis.createStandardDateTickUnits : $r38 = new org.jfree.chart.axis.DateTickUnit
+org.jfree.chart.axis.DateAxis.createStandardDateTickUnits : $r134 = new org.jfree.chart.axis.DateTickUnit
+org.jfree.chart.axis.DateAxis.createStandardDateTickUnits : $r131 = new org.jfree.chart.axis.DateTickUnit
+org.jfree.chart.axis.DateAxis.createStandardDateTickUnits : $r32 = new org.jfree.chart.axis.DateTickUnit
+org.jfree.chart.axis.DateAxis.createStandardDateTickUnits : $r83 = new org.jfree.chart.axis.DateTickUnit
+org.jfree.chart.axis.DateAxis.createStandardDateTickUnits : $r71 = new org.jfree.chart.axis.DateTickUnit
+org.jfree.chart.axis.DateAxis.createStandardDateTickUnits : $r89 = new org.jfree.chart.axis.DateTickUnit
+org.jfree.chart.axis.DateAxis.createStandardDateTickUnits : $r110 = new org.jfree.chart.axis.DateTickUnit
+org.jfree.chart.axis.DateAxis.createStandardDateTickUnits : $r44 = new org.jfree.chart.axis.DateTickUnit
+org.jfree.chart.axis.DateAxis.createStandardDateTickUnits : virtualinvoke r3.<java.text.DateFormat: void setTimeZone(java.util.TimeZone)>(r0)
+org.jfree.chart.axis.DateTickUnit.unitTypeToInt : return 3
+org.jfree.chart.axis.DateTickUnit.unitTypeToInt : return 2
+org.jfree.chart.axis.DateTickUnit.unitTypeToInt : $r7 = <org.jfree.chart.axis.DateTickUnitType: org.jfree.chart.axis.DateTickUnitType MILLISECOND>
+org.jfree.chart.axis.DateTickUnit.unitTypeToInt : return 1
+org.jfree.chart.axis.DateTickUnit.unitTypeToInt : $r2 = <org.jfree.chart.axis.DateTickUnitType: org.jfree.chart.axis.DateTickUnitType MONTH>
+org.jfree.chart.axis.DateTickUnit.unitTypeToInt : return 0
+org.jfree.chart.axis.DateTickUnit.unitTypeToInt : $r3 = <org.jfree.chart.axis.DateTickUnitType: org.jfree.chart.axis.DateTickUnitType DAY>
+org.jfree.chart.axis.DateTickUnit.unitTypeToInt : return 6
+org.jfree.chart.axis.DateTickUnit.unitTypeToInt : $r6 = <org.jfree.chart.axis.DateTickUnitType: org.jfree.chart.axis.DateTickUnitType SECOND>
+org.jfree.chart.axis.DateTickUnit.unitTypeToInt : return 5
+org.jfree.chart.axis.DateTickUnit.unitTypeToInt : $r1 = <org.jfree.chart.axis.DateTickUnitType: org.jfree.chart.axis.DateTickUnitType YEAR>
+org.jfree.chart.axis.DateTickUnit.unitTypeToInt : $r4 = <org.jfree.chart.axis.DateTickUnitType: org.jfree.chart.axis.DateTickUnitType HOUR>
+org.jfree.chart.axis.DateTickUnit.unitTypeToInt : return 4
+org.jfree.chart.axis.DateTickUnit.unitTypeToInt : $r5 = <org.jfree.chart.axis.DateTickUnitType: org.jfree.chart.axis.DateTickUnitType MINUTE>
+org.jfree.chart.axis.DateTickUnit.unitTypeToInt : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r0, "unitType")
+org.jfree.chart.axis.DateTickUnit.addToDate : r3 = staticinvoke <java.util.Calendar: java.util.Calendar getInstance(java.util.TimeZone)>(r2)
+org.jfree.chart.axis.DateTickUnit.addToDate : virtualinvoke r3.<java.util.Calendar: void setTime(java.util.Date)>(r1)
+org.jfree.chart.axis.DateTickUnit.addToDate : $r5 = virtualinvoke r3.<java.util.Calendar: java.util.Date getTime()>()
+org.jfree.chart.axis.DateTickUnit.addToDate : $r4 = r0.<org.jfree.chart.axis.DateTickUnit: org.jfree.chart.axis.DateTickUnitType unitType>
+org.jfree.chart.axis.DateTickUnit.addToDate : $r2 = staticinvoke <java.util.TimeZone: java.util.TimeZone getDefault()>()
+org.jfree.chart.axis.DateAxis.setRange : $z2 = r1 instanceof org.jfree.data.time.DateRange
+org.jfree.chart.axis.DateAxis.setRange : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "range")
+org.jfree.chart.axis.DateAxis.setRange : $l0 = virtualinvoke r1.<java.util.Date: long getTime()>()
+org.jfree.chart.axis.DateAxis.setRange : $r4 = new org.jfree.data.time.DateRange
+org.jfree.chart.axis.DateAxis.setRange : virtualinvoke r0.<org.jfree.chart.axis.DateAxis: void setRange(org.jfree.data.Range,boolean,boolean)>(r1, 1, 1)
+org.jfree.chart.axis.DateAxis.setRange : specialinvoke r0.<org.jfree.chart.axis.ValueAxis: void setRange(org.jfree.data.Range,boolean,boolean)>(r1, z0, z1)
+org.jfree.chart.axis.DateAxis.setTickUnit : virtualinvoke r0.<org.jfree.chart.axis.DateAxis: void setAutoTickUnitSelection(boolean,boolean)>(0, 0)
+org.jfree.chart.axis.DateAxis.setTickUnit : if z0 == 0 goto return
+org.jfree.chart.axis.DateAxis.setTickUnit : r0.<org.jfree.chart.axis.DateAxis: org.jfree.chart.axis.DateTickUnit tickUnit> = r1
+org.jfree.chart.axis.DateAxis.setTickUnit : virtualinvoke r0.<org.jfree.chart.axis.DateAxis: void setTickUnit(org.jfree.chart.axis.DateTickUnit,boolean,boolean)>(r1, 1, 1)
+org.jfree.chart.axis.DateAxis.setTickUnit : $r2 = new org.jfree.chart.event.AxisChangeEvent
+org.jfree.chart.axis.DateAxis.setTickUnit : if z1 == 0 goto (branch)
+org.jfree.chart.axis.Axis.getPlot : $r1 = r0.<org.jfree.chart.axis.Axis: org.jfree.chart.plot.Plot plot>
+org.jfree.data.time.Day.getLastMillisecond : virtualinvoke r1.<java.util.Calendar: void set(int,int)>(14, 999)
+org.jfree.data.time.Day.getLastMillisecond : $r2 = r0.<org.jfree.data.time.Day: org.jfree.date.SerialDate serialDate>
+org.jfree.data.time.Day.getLastMillisecond : $r3 = r0.<org.jfree.data.time.Day: org.jfree.date.SerialDate serialDate>
+org.jfree.data.time.Day.getLastMillisecond : $l0 = r0.<org.jfree.data.time.Day: long lastMillisecond>
+org.jfree.data.time.Day.getLastMillisecond : $i3 = i1 - 1
+org.jfree.data.time.Day.getLastMillisecond : virtualinvoke r1.<java.util.Calendar: void clear()>()
+org.jfree.data.time.Day.getLastMillisecond : $r4 = r0.<org.jfree.data.time.Day: org.jfree.date.SerialDate serialDate>
+org.jfree.data.time.Day.getLastMillisecond : $l4 = virtualinvoke r1.<java.util.Calendar: long getTimeInMillis()>()
+org.jfree.chart.axis.DateTickUnitType.toString : $r1 = r0.<org.jfree.chart.axis.DateTickUnitType: java.lang.String name>
+org.jfree.chart.axis.ValueAxis.setAutoTickUnitSelection : $z2 = r0.<org.jfree.chart.axis.ValueAxis: boolean autoTickUnitSelection>
+org.jfree.chart.axis.ValueAxis.setAutoTickUnitSelection : if z1 == 0 goto return
+org.jfree.chart.axis.ValueAxis.setAutoTickUnitSelection : r0.<org.jfree.chart.axis.ValueAxis: boolean autoTickUnitSelection> = z0
+org.jfree.chart.axis.ValueAxis.setRange : if z0 == 0 goto r0.<org.jfree.chart.axis.ValueAxis: org.jfree.data.Range range> = r1
+org.jfree.chart.axis.ValueAxis.setRange : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "range")
+org.jfree.chart.axis.ValueAxis.setRange : r0.<org.jfree.chart.axis.ValueAxis: org.jfree.data.Range range> = r1
+org.jfree.chart.axis.ValueAxis.setRange : if z1 == 0 goto return
+org.jfree.chart.axis.ValueAxis.setRange : $r2 = new org.jfree.chart.event.AxisChangeEvent
+org.jfree.chart.axis.ValueAxis.setRange : r0.<org.jfree.chart.axis.ValueAxis: boolean autoRange> = 0
+org.jfree.chart.axis.DateTickUnit.getUnit : $i0 = r0.<org.jfree.chart.axis.DateTickUnit: int unit>
+org.jfree.chart.axis.DateAxis.setTickMarkPosition : r0.<org.jfree.chart.axis.DateAxis: org.jfree.chart.axis.DateTickMarkPosition tickMarkPosition> = r1
+org.jfree.chart.axis.DateAxis.setTickMarkPosition : $r2 = new org.jfree.chart.event.AxisChangeEvent
+org.jfree.chart.axis.DateAxis.setTickMarkPosition : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "position")
+org.jfree.chart.axis.DateTickUnit.getCount : $i0 = r0.<org.jfree.chart.axis.DateTickUnit: int count>
+org.jfree.chart.axis.DateTickUnit.notNull : if r0 != null goto return r0
+org.jfree.chart.axis.DateTickUnit.notNull : $r1 = staticinvoke <java.text.DateFormat: java.text.DateFormat getDateInstance(int)>(3)
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null goto return
+org.jfree.data.time.Day.peg : $l1 = virtualinvoke r0.<org.jfree.data.time.Day: long getLastMillisecond(java.util.Calendar)>(r1)
+org.jfree.data.time.Day.peg : $l0 = virtualinvoke r0.<org.jfree.data.time.Day: long getFirstMillisecond(java.util.Calendar)>(r1)
+org.jfree.chart.axis.DateTickUnit.getCalendarField : $r1 = r0.<org.jfree.chart.axis.DateTickUnit: org.jfree.chart.axis.DateTickUnitType unitType>
+org.jfree.chart.axis.junit.DateAxisTests$MyDateAxis.previousStandardDate : $r3 = specialinvoke r0.<org.jfree.chart.axis.DateAxis: java.util.Date previousStandardDate(java.util.Date,org.jfree.chart.axis.DateTickUnit)>(r1, r2)
+org.jfree.chart.axis.DateTickUnitType.equals : $r3 = r0.<org.jfree.chart.axis.DateTickUnitType: java.lang.String name>
+org.jfree.chart.axis.DateTickUnitType.equals : $z0 = r1 instanceof org.jfree.chart.axis.DateTickUnitType
+org.jfree.chart.axis.DateTickUnitType.equals : r2 = (org.jfree.chart.axis.DateTickUnitType) r1
+org.jfree.chart.axis.DateTickUnitType.equals : return 1
+org.jfree.chart.axis.DateTickUnitType.equals : return 0
+org.jfree.chart.axis.DateTickUnitType.equals : if r0 != r1 goto $z0 = r1 instanceof org.jfree.chart.axis.DateTickUnitType
+org.jfree.chart.axis.DateTickUnitType.getCalendarField : $i0 = r0.<org.jfree.chart.axis.DateTickUnitType: int calendarField>
+org.jfree.data.time.RegularTimePeriod.getMiddleMillisecond : $l2 = l1 - l0
+org.jfree.data.time.RegularTimePeriod.getMiddleMillisecond : l1 = virtualinvoke r0.<org.jfree.data.time.RegularTimePeriod: long getLastMillisecond()>()
+org.jfree.data.time.RegularTimePeriod.getMiddleMillisecond : l0 = virtualinvoke r0.<org.jfree.data.time.RegularTimePeriod: long getFirstMillisecond()>()
+org.jfree.data.time.Day.getFirstMillisecond : $l0 = r0.<org.jfree.data.time.Day: long firstMillisecond>
+org.jfree.data.time.Day.getFirstMillisecond : $r2 = r0.<org.jfree.data.time.Day: org.jfree.date.SerialDate serialDate>
+org.jfree.data.time.Day.getFirstMillisecond : virtualinvoke r1.<java.util.Calendar: void set(int,int)>(14, 0)
+org.jfree.data.time.Day.getFirstMillisecond : $r3 = r0.<org.jfree.data.time.Day: org.jfree.date.SerialDate serialDate>
+org.jfree.data.time.Day.getFirstMillisecond : $i3 = i1 - 1
+org.jfree.data.time.Day.getFirstMillisecond : virtualinvoke r1.<java.util.Calendar: void clear()>()
+org.jfree.data.time.Day.getFirstMillisecond : $r4 = r0.<org.jfree.data.time.Day: org.jfree.date.SerialDate serialDate>
+org.jfree.data.time.Day.getFirstMillisecond : $l4 = virtualinvoke r1.<java.util.Calendar: long getTimeInMillis()>()
+org.jfree.chart.axis.DateTickUnit.intToUnitType : tableswitch(i0) {     case 0: goto $r1 = <org.jfree.chart.axis.DateTickUnitType: org.jfree.chart.axis.DateTickUnitType YEAR>;     case 1: goto $r2 = <org.jfree.chart.axis.DateTickUnitType: org.jfree.chart.axis.DateTickUnitType MONTH>;     case 2: goto $r3 = <org.jfree.chart.axis.DateTickUnitType: org.jfree.chart.axis.DateTickUnitType DAY>;     case 3: goto $r4 = <org.jfree.chart.axis.DateTickUnitType: org.jfree.chart.axis.DateTickUnitType HOUR>;     case 4: goto $r5 = <org.jfree.chart.axis.DateTickUnitType: org.jfree.chart.axis.DateTickUnitType MINUTE>;     case 5: goto $r6 = <org.jfree.chart.axis.DateTickUnitType: org.jfree.chart.axis.DateTickUnitType SECOND>;     case 6: goto $r7 = <org.jfree.chart.axis.DateTickUnitType: org.jfree.chart.axis.DateTickUnitType MILLISECOND>;     default: goto $r8 = new java.lang.IllegalArgumentException; }
+org.jfree.chart.axis.DateTickUnit.intToUnitType : $r3 = <org.jfree.chart.axis.DateTickUnitType: org.jfree.chart.axis.DateTickUnitType DAY>

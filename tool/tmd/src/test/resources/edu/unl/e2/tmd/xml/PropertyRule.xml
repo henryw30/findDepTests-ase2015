@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<test-data>
+    <test-code>
+        <description><![CDATA[
+simple failure case
+     ]]></description>
+        <expected-problems>2</expected-problems>
+        <code><![CDATA[
+
+public class BadTest {
+
+	@BeforeClass
+	public static void setUpClass(){
+		System.setProperty("queso", "12");
+	}
+	
+	
+	@Test()
+	public void testName() throws Exception {
+		
+		if(System.getProperty("queso").equals("12")){
+			System.setProperty("queso", "13");
+		}else{
+			fail();
+		}
+		
+	}
+	
+	@Test()
+	public void testName2() throws Exception {
+		
+		if(System.getProperty("queso").equals("12")){
+			System.setProperty("queso", "14");
+		}else{
+			fail();
+		}
+		
+	}
+	
+
+}
+
+     ]]></code>
+    </test-code>
+    
+        <test-code>
+        <description><![CDATA[
+simple failure case
+     ]]></description>
+        <expected-problems>2</expected-problems>
+        <code><![CDATA[
+
+public class BadTest {
+
+	string prop="queso";
+
+	@BeforeClass
+	public static void setUpClass(){
+		System.setProperty("queso", "12");
+	}
+	
+	
+	@Test()
+	public void testName() throws Exception {
+		
+		if(System.getProperty(prop).equals("12")){
+			System.setProperty(prop, "13");
+		}else{
+			fail();
+		}
+		
+	}
+	
+	@Test()
+	public void testName2() throws Exception {
+		
+		if(System.getProperty(prop).equals("12")){
+			System.setProperty(prop, "14");
+		}else{
+			fail();
+		}
+		
+	}
+	
+
+}
+
+     ]]></code>
+    </test-code>
+    
+        <test-code>
+        <description><![CDATA[
+simple failure case
+     ]]></description>
+        <expected-problems>0</expected-problems>
+        <code><![CDATA[
+
+public class BadTest {
+
+	string prop="queso";
+	
+	@Before
+	public void setUp(){
+		System.setProperty("queso", "12");
+	}
+	
+	
+	
+	@Test()
+	public void testName() throws Exception {
+		
+		if(System.getProperty(prop).equals("12")){
+			System.setProperty(prop, "13");
+		}else{
+			fail();
+		}
+		
+	}
+	
+	@Test()
+	public void testName2() throws Exception {
+		
+		if(System.getProperty(prop).equals("12")){
+			System.setProperty(prop, "14");
+		}else{
+			fail();
+		}
+		
+	}
+	
+
+}
+
+     ]]></code>
+    </test-code>
+    
+    
+      <test-code>
+        <description><![CDATA[
+simple failure case
+     ]]></description>
+        <expected-problems>0</expected-problems>
+        <code><![CDATA[
+
+public class BadTest {
+
+	@BeforeClass
+	public static void setUpClass(){
+		System.setProperty("queso", "12");
+	}
+	
+	@After
+	public void tearDown(){
+		System.setProperty("queso", "12");
+	}
+	
+	@Test()
+	public void testName() throws Exception {
+		
+		if(System.getProperty("queso").equals("12")){
+			System.setProperty("queso", "13");
+		}else{
+			fail();
+		}
+		
+	}
+	
+	@Test()
+	public void testName2() throws Exception {
+		
+		if(System.getProperty("queso").equals("12")){
+			System.setProperty("queso", "14");
+		}else{
+			fail();
+		}
+		
+	}
+	
+
+}
+
+     ]]></code>
+    </test-code>
+    
+    
+</test-data>

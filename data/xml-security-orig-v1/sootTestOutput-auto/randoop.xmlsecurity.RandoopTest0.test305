@@ -1,0 +1,25 @@
+org.apache.xml.security.signature.XMLSignatureInput.getOctetStream : $r5 = r0.<org.apache.xml.security.signature.XMLSignatureInput: java.io.InputStream _inputOctetStreamProxy>
+org.apache.xml.security.signature.XMLSignatureInput.getOctetStream : $r6 = r0.<org.apache.xml.security.signature.XMLSignatureInput: java.io.InputStream _inputOctetStreamProxy>
+org.apache.xml.security.signature.XMLSignatureInput.getOctetStream : $z0 = virtualinvoke r0.<org.apache.xml.security.signature.XMLSignatureInput: boolean isOctetStream()>()
+org.apache.xml.security.utils.I18n.getExceptionMessage : $z0 = staticinvoke <org.apache.xml.security.Init: boolean isInitialized()>()
+org.apache.xml.security.utils.I18n.getExceptionMessage : $r4 = newarray (java.lang.Object)[1]
+org.apache.xml.security.utils.I18n.getExceptionMessage : $r11 = new java.lang.StringBuilder
+org.apache.xml.security.utils.I18n.getExceptionMessage : r10 = $r9
+org.apache.xml.security.utils.I18n.getExceptionMessage : $r6 = <org.apache.xml.security.utils.I18n: java.util.ResourceBundle resourceBundle>
+org.apache.xml.security.utils.JavaUtils.getBytesFromStream : return r4
+org.apache.xml.security.utils.JavaUtils.getBytesFromStream : virtualinvoke r1.<java.io.ByteArrayOutputStream: void write(byte[],int,int)>(r2, 0, i0)
+org.apache.xml.security.utils.JavaUtils.getBytesFromStream : r2 = newarray (byte)[1024]
+org.apache.xml.security.utils.JavaUtils.getBytesFromStream : $i1 = virtualinvoke r0.<java.io.InputStream: int read(byte[])>(r2)
+org.apache.xml.security.utils.JavaUtils.getBytesFromStream : n0 = null
+org.apache.xml.security.utils.JavaUtils.getBytesFromStream : r4 = virtualinvoke r1.<java.io.ByteArrayOutputStream: byte[] toByteArray()>()
+org.apache.xml.security.utils.JavaUtils.getBytesFromStream : $r3 = new java.io.ByteArrayOutputStream
+org.apache.xml.security.Init.readUserConfiguration : virtualinvoke r1.<javax.xml.parsers.DocumentBuilderFactory: void setNamespaceAware(boolean)>(1)
+org.apache.xml.security.Init.readUserConfiguration : r14 = $r13
+org.apache.xml.security.Init.readUserConfiguration : $r15 = new org.apache.xml.security.exceptions.XMLSecurityException
+org.apache.xml.security.Init.readUserConfiguration : virtualinvoke r1.<javax.xml.parsers.DocumentBuilderFactory: void setValidating(boolean)>(0)
+org.apache.xml.security.Init.readUserConfiguration : r1 = staticinvoke <javax.xml.parsers.DocumentBuilderFactory: javax.xml.parsers.DocumentBuilderFactory newInstance()>()
+org.apache.xml.security.Init.readUserConfiguration : r2 = virtualinvoke r1.<javax.xml.parsers.DocumentBuilderFactory: javax.xml.parsers.DocumentBuilder newDocumentBuilder()>()
+org.apache.xml.security.Init.readUserConfiguration : r3 = virtualinvoke r2.<javax.xml.parsers.DocumentBuilder: org.w3c.dom.Document parse(java.io.InputStream)>(r0)
+org.apache.xml.security.Init.isInitialized : $z0 = <org.apache.xml.security.Init: boolean _alreadyInitialized>
+org.apache.xml.security.signature.XMLSignatureInput.getCachedXPathAPI : $r1 = r0.<org.apache.xml.security.signature.XMLSignatureInput: org.apache.xpath.CachedXPathAPI _cxpathAPI>
+org.apache.xml.security.signature.XMLSignatureInput.isOctetStream : $r1 = r0.<org.apache.xml.security.signature.XMLSignatureInput: java.io.InputStream _inputOctetStreamProxy>

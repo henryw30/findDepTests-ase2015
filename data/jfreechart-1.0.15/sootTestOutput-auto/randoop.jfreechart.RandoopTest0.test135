@@ -1,0 +1,7 @@
+org.jfree.data.general.Series.getDescription : $r1 = r0.<org.jfree.data.general.Series: java.lang.String description>
+org.jfree.data.xy.XYSeries.update : i0 = virtualinvoke r0.<org.jfree.data.xy.XYSeries: int indexOf(java.lang.Number)>(r1)
+org.jfree.data.xy.XYSeries.update : if i0 >= 0 goto virtualinvoke r0.<org.jfree.data.xy.XYSeries: void updateByIndex(int,java.lang.Number)>(i0, r2)
+org.jfree.data.xy.XYSeries.update : $r4 = new org.jfree.data.general.SeriesException
+org.jfree.data.xy.XYSeries.indexOf : $r4 = r0.<org.jfree.data.xy.XYSeries: java.util.List data>
+org.jfree.data.xy.XYSeries.indexOf : $z0 = r0.<org.jfree.data.xy.XYSeries: boolean autoSort>
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null goto return

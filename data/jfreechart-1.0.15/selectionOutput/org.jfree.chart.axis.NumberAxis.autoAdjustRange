@@ -1,0 +1,107 @@
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : r1 = virtualinvoke r0.<org.jfree.chart.axis.NumberAxis: org.jfree.chart.plot.Plot getPlot()>() >>>>>>>> org.jfree.chart.axis.NumberAxis.autoAdjustRange : if r1 != null
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : if r1 != null >>>>>>>> org.jfree.chart.axis.NumberAxis.autoAdjustRange : return
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : if r1 != null >>>>>>>> org.jfree.chart.axis.NumberAxis.autoAdjustRange : $z0 = r1 instanceof org.jfree.chart.plot.ValueAxisPlot
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : $z0 = r1 instanceof org.jfree.chart.plot.ValueAxisPlot >>>>>>>> org.jfree.chart.axis.NumberAxis.autoAdjustRange : if $z0 == 0
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : if $z0 == 0 >>>>>>>> org.jfree.chart.axis.NumberAxis.autoAdjustRange : r2 = (org.jfree.chart.plot.ValueAxisPlot) r1
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : if $z0 == 0 >>>>>>>> org.jfree.chart.axis.NumberAxis.autoAdjustRange : return
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : r2 = (org.jfree.chart.plot.ValueAxisPlot) r1 >>>>>>>> org.jfree.chart.axis.NumberAxis.autoAdjustRange : r3 = interfaceinvoke r2.<org.jfree.chart.plot.ValueAxisPlot: org.jfree.data.Range getDataRange(org.jfree.chart.axis.ValueAxis)>(r0)
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : r3 = interfaceinvoke r2.<org.jfree.chart.plot.ValueAxisPlot: org.jfree.data.Range getDataRange(org.jfree.chart.axis.ValueAxis)>(r0) >>>>>>>> org.jfree.chart.axis.NumberAxis.autoAdjustRange : if r3 != null
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : if r3 != null >>>>>>>> org.jfree.chart.axis.NumberAxis.autoAdjustRange : r3 = virtualinvoke r0.<org.jfree.chart.axis.NumberAxis: org.jfree.data.Range getDefaultAutoRange()>()
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : if r3 != null >>>>>>>> org.jfree.chart.axis.NumberAxis.autoAdjustRange : d0 = virtualinvoke r3.<org.jfree.data.Range: double getUpperBound()>()
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : d0 = virtualinvoke r3.<org.jfree.data.Range: double getUpperBound()>() >>>>>>>> org.jfree.chart.axis.NumberAxis.autoAdjustRange : d1 = virtualinvoke r3.<org.jfree.data.Range: double getLowerBound()>()
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : d1 = virtualinvoke r3.<org.jfree.data.Range: double getLowerBound()>() >>>>>>>> org.jfree.chart.axis.NumberAxis.autoAdjustRange : $r4 = r0.<org.jfree.chart.axis.NumberAxis: org.jfree.data.RangeType rangeType>
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : $r4 = r0.<org.jfree.chart.axis.NumberAxis: org.jfree.data.RangeType rangeType> >>>>>>>> org.jfree.chart.axis.NumberAxis.autoAdjustRange : $r5 = <org.jfree.data.RangeType: org.jfree.data.RangeType POSITIVE>
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : $r5 = <org.jfree.data.RangeType: org.jfree.data.RangeType POSITIVE> >>>>>>>> org.jfree.chart.axis.NumberAxis.autoAdjustRange : if $r4 != $r5
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : if $r4 != $r5 >>>>>>>> org.jfree.chart.axis.NumberAxis.autoAdjustRange : d1 = staticinvoke <java.lang.Math: double max(double,double)>(0.0, d1)
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : if $r4 != $r5 >>>>>>>> org.jfree.chart.axis.NumberAxis.autoAdjustRange : $r6 = r0.<org.jfree.chart.axis.NumberAxis: org.jfree.data.RangeType rangeType>
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : $r6 = r0.<org.jfree.chart.axis.NumberAxis: org.jfree.data.RangeType rangeType> >>>>>>>> org.jfree.chart.axis.NumberAxis.autoAdjustRange : $r7 = <org.jfree.data.RangeType: org.jfree.data.RangeType NEGATIVE>
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : $r7 = <org.jfree.data.RangeType: org.jfree.data.RangeType NEGATIVE> >>>>>>>> org.jfree.chart.axis.NumberAxis.autoAdjustRange : if $r6 != $r7
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : if $r6 != $r7 >>>>>>>> org.jfree.chart.axis.NumberAxis.autoAdjustRange : d1 = staticinvoke <java.lang.Math: double min(double,double)>(0.0, d1)
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : if $r6 != $r7 >>>>>>>> org.jfree.chart.axis.NumberAxis.autoAdjustRange : $z1 = virtualinvoke r0.<org.jfree.chart.axis.NumberAxis: boolean getAutoRangeIncludesZero()>()
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : $z1 = virtualinvoke r0.<org.jfree.chart.axis.NumberAxis: boolean getAutoRangeIncludesZero()>() >>>>>>>> org.jfree.chart.axis.NumberAxis.autoAdjustRange : if $z1 == 0
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : if $z1 == 0 >>>>>>>> org.jfree.chart.axis.NumberAxis.autoAdjustRange : d1 = staticinvoke <java.lang.Math: double min(double,double)>(d1, 0.0)
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : if $z1 == 0 >>>>>>>> org.jfree.chart.axis.NumberAxis.autoAdjustRange : d2 = d0 - d1
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : d2 = d0 - d1 >>>>>>>> org.jfree.chart.axis.NumberAxis.autoAdjustRange : d3 = virtualinvoke r0.<org.jfree.chart.axis.NumberAxis: double getFixedAutoRange()>()
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : d3 = virtualinvoke r0.<org.jfree.chart.axis.NumberAxis: double getFixedAutoRange()>() >>>>>>>> org.jfree.chart.axis.NumberAxis.autoAdjustRange : $b0 = d3 cmpl 0.0
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : $b0 = d3 cmpl 0.0 >>>>>>>> org.jfree.chart.axis.NumberAxis.autoAdjustRange : if $b0 <= 0
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : if $b0 <= 0 >>>>>>>> org.jfree.chart.axis.NumberAxis.autoAdjustRange : d7 = d0 - d3
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : if $b0 <= 0 >>>>>>>> org.jfree.chart.axis.NumberAxis.autoAdjustRange : d4 = virtualinvoke r0.<org.jfree.chart.axis.NumberAxis: double getAutoRangeMinimumSize()>()
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : d4 = virtualinvoke r0.<org.jfree.chart.axis.NumberAxis: double getAutoRangeMinimumSize()>() >>>>>>>> org.jfree.chart.axis.NumberAxis.autoAdjustRange : $b1 = d2 cmpg d4
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : $b1 = d2 cmpg d4 >>>>>>>> org.jfree.chart.axis.NumberAxis.autoAdjustRange : if $b1 >= 0
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : if $b1 >= 0 >>>>>>>> org.jfree.chart.axis.NumberAxis.autoAdjustRange : $d8 = d4 - d2
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : if $b1 >= 0 >>>>>>>> org.jfree.chart.axis.NumberAxis.autoAdjustRange : $z2 = virtualinvoke r0.<org.jfree.chart.axis.NumberAxis: boolean getAutoRangeStickyZero()>()
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : $z2 = virtualinvoke r0.<org.jfree.chart.axis.NumberAxis: boolean getAutoRangeStickyZero()>() >>>>>>>> org.jfree.chart.axis.NumberAxis.autoAdjustRange : if $z2 == 0
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : if $z2 == 0 >>>>>>>> org.jfree.chart.axis.NumberAxis.autoAdjustRange : $b5 = d0 cmpg 0.0
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : if $z2 == 0 >>>>>>>> org.jfree.chart.axis.NumberAxis.autoAdjustRange : $d20 = virtualinvoke r0.<org.jfree.chart.axis.NumberAxis: double getUpperMargin()>()
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : $d20 = virtualinvoke r0.<org.jfree.chart.axis.NumberAxis: double getUpperMargin()>() >>>>>>>> org.jfree.chart.axis.NumberAxis.autoAdjustRange : $d21 = $d20 * d2
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : $d21 = $d20 * d2 >>>>>>>> org.jfree.chart.axis.NumberAxis.autoAdjustRange : d0 = d0 + $d21
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : d0 = d0 + $d21 >>>>>>>> org.jfree.chart.axis.NumberAxis.autoAdjustRange : $d22 = virtualinvoke r0.<org.jfree.chart.axis.NumberAxis: double getLowerMargin()>()
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : $d22 = virtualinvoke r0.<org.jfree.chart.axis.NumberAxis: double getLowerMargin()>() >>>>>>>> org.jfree.chart.axis.NumberAxis.autoAdjustRange : $d23 = $d22 * d2
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : $d23 = $d22 * d2 >>>>>>>> org.jfree.chart.axis.NumberAxis.autoAdjustRange : d7 = d1 - $d23
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : d7 = d1 - $d23 >>>>>>>> org.jfree.chart.axis.NumberAxis.autoAdjustRange : $r12 = new org.jfree.data.Range
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : $r12 = new org.jfree.data.Range >>>>>>>> org.jfree.chart.axis.NumberAxis.autoAdjustRange : specialinvoke $r12.<org.jfree.data.Range: void <init>(double,double)>(d7, d0)
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : specialinvoke $r12.<org.jfree.data.Range: void <init>(double,double)>(d7, d0) >>>>>>>> org.jfree.chart.axis.NumberAxis.autoAdjustRange : virtualinvoke r0.<org.jfree.chart.axis.NumberAxis: void setRange(org.jfree.data.Range,boolean,boolean)>($r12, 0, 0)
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : virtualinvoke r0.<org.jfree.chart.axis.NumberAxis: void setRange(org.jfree.data.Range,boolean,boolean)>($r12, 0, 0) >>>>>>>> org.jfree.chart.axis.NumberAxis.autoAdjustRange : return
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : $b5 = d0 cmpg 0.0 >>>>>>>> org.jfree.chart.axis.NumberAxis.autoAdjustRange : if $b5 > 0
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : if $b5 > 0 >>>>>>>> org.jfree.chart.axis.NumberAxis.autoAdjustRange : $d10 = virtualinvoke r0.<org.jfree.chart.axis.NumberAxis: double getUpperMargin()>()
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : if $b5 > 0 >>>>>>>> org.jfree.chart.axis.NumberAxis.autoAdjustRange : $d13 = virtualinvoke r0.<org.jfree.chart.axis.NumberAxis: double getUpperMargin()>()
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : $d13 = virtualinvoke r0.<org.jfree.chart.axis.NumberAxis: double getUpperMargin()>() >>>>>>>> org.jfree.chart.axis.NumberAxis.autoAdjustRange : $d14 = $d13 * d2
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : $d14 = $d13 * d2 >>>>>>>> org.jfree.chart.axis.NumberAxis.autoAdjustRange : d0 = d0 + $d14
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : d0 = d0 + $d14 >>>>>>>> org.jfree.chart.axis.NumberAxis.autoAdjustRange : $b6 = d1 cmpl 0.0
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : $b6 = d1 cmpl 0.0 >>>>>>>> org.jfree.chart.axis.NumberAxis.autoAdjustRange : if $b6 < 0
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : if $b6 < 0 >>>>>>>> org.jfree.chart.axis.NumberAxis.autoAdjustRange : $d15 = virtualinvoke r0.<org.jfree.chart.axis.NumberAxis: double getLowerMargin()>()
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : if $b6 < 0 >>>>>>>> org.jfree.chart.axis.NumberAxis.autoAdjustRange : $d18 = virtualinvoke r0.<org.jfree.chart.axis.NumberAxis: double getLowerMargin()>()
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : $d18 = virtualinvoke r0.<org.jfree.chart.axis.NumberAxis: double getLowerMargin()>() >>>>>>>> org.jfree.chart.axis.NumberAxis.autoAdjustRange : $d19 = $d18 * d2
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : $d19 = $d18 * d2 >>>>>>>> org.jfree.chart.axis.NumberAxis.autoAdjustRange : d7 = d1 - $d19
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : d7 = d1 - $d19 >>>>>>>> org.jfree.chart.axis.NumberAxis.autoAdjustRange : goto [?= $r12 = new org.jfree.data.Range]
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : goto [?= $r12 = new org.jfree.data.Range] >>>>>>>> org.jfree.chart.axis.NumberAxis.autoAdjustRange : $r12 = new org.jfree.data.Range
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : $d15 = virtualinvoke r0.<org.jfree.chart.axis.NumberAxis: double getLowerMargin()>() >>>>>>>> org.jfree.chart.axis.NumberAxis.autoAdjustRange : $d16 = $d15 * d2
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : $d16 = $d15 * d2 >>>>>>>> org.jfree.chart.axis.NumberAxis.autoAdjustRange : $d17 = d1 - $d16
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : $d17 = d1 - $d16 >>>>>>>> org.jfree.chart.axis.NumberAxis.autoAdjustRange : d7 = staticinvoke <java.lang.Math: double max(double,double)>(0.0, $d17)
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : d7 = staticinvoke <java.lang.Math: double max(double,double)>(0.0, $d17) >>>>>>>> org.jfree.chart.axis.NumberAxis.autoAdjustRange : goto [?= $r12 = new org.jfree.data.Range]
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : goto [?= $r12 = new org.jfree.data.Range] >>>>>>>> org.jfree.chart.axis.NumberAxis.autoAdjustRange : $r12 = new org.jfree.data.Range
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : $d10 = virtualinvoke r0.<org.jfree.chart.axis.NumberAxis: double getUpperMargin()>() >>>>>>>> org.jfree.chart.axis.NumberAxis.autoAdjustRange : $d11 = $d10 * d2
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : $d11 = $d10 * d2 >>>>>>>> org.jfree.chart.axis.NumberAxis.autoAdjustRange : $d12 = d0 + $d11
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : $d12 = d0 + $d11 >>>>>>>> org.jfree.chart.axis.NumberAxis.autoAdjustRange : d0 = staticinvoke <java.lang.Math: double min(double,double)>(0.0, $d12)
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : d0 = staticinvoke <java.lang.Math: double min(double,double)>(0.0, $d12) >>>>>>>> org.jfree.chart.axis.NumberAxis.autoAdjustRange : goto [?= $b6 = d1 cmpl 0.0]
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : goto [?= $b6 = d1 cmpl 0.0] >>>>>>>> org.jfree.chart.axis.NumberAxis.autoAdjustRange : $b6 = d1 cmpl 0.0
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : $d8 = d4 - d2 >>>>>>>> org.jfree.chart.axis.NumberAxis.autoAdjustRange : d5 = $d8 / 2.0
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : d5 = $d8 / 2.0 >>>>>>>> org.jfree.chart.axis.NumberAxis.autoAdjustRange : d0 = d0 + d5
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : d0 = d0 + d5 >>>>>>>> org.jfree.chart.axis.NumberAxis.autoAdjustRange : d1 = d1 - d5
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : d1 = d1 - d5 >>>>>>>> org.jfree.chart.axis.NumberAxis.autoAdjustRange : $b2 = d1 cmpl d0
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : $b2 = d1 cmpl d0 >>>>>>>> org.jfree.chart.axis.NumberAxis.autoAdjustRange : if $b2 != 0
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : if $b2 != 0 >>>>>>>> org.jfree.chart.axis.NumberAxis.autoAdjustRange : $d9 = staticinvoke <java.lang.Math: double abs(double)>(d1)
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : if $b2 != 0 >>>>>>>> org.jfree.chart.axis.NumberAxis.autoAdjustRange : $r8 = r0.<org.jfree.chart.axis.NumberAxis: org.jfree.data.RangeType rangeType>
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : $r8 = r0.<org.jfree.chart.axis.NumberAxis: org.jfree.data.RangeType rangeType> >>>>>>>> org.jfree.chart.axis.NumberAxis.autoAdjustRange : $r9 = <org.jfree.data.RangeType: org.jfree.data.RangeType POSITIVE>
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : $r9 = <org.jfree.data.RangeType: org.jfree.data.RangeType POSITIVE> >>>>>>>> org.jfree.chart.axis.NumberAxis.autoAdjustRange : if $r8 != $r9
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : if $r8 != $r9 >>>>>>>> org.jfree.chart.axis.NumberAxis.autoAdjustRange : $b3 = d1 cmpg 0.0
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : if $r8 != $r9 >>>>>>>> org.jfree.chart.axis.NumberAxis.autoAdjustRange : $r10 = r0.<org.jfree.chart.axis.NumberAxis: org.jfree.data.RangeType rangeType>
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : $r10 = r0.<org.jfree.chart.axis.NumberAxis: org.jfree.data.RangeType rangeType> >>>>>>>> org.jfree.chart.axis.NumberAxis.autoAdjustRange : $r11 = <org.jfree.data.RangeType: org.jfree.data.RangeType NEGATIVE>
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : $r11 = <org.jfree.data.RangeType: org.jfree.data.RangeType NEGATIVE> >>>>>>>> org.jfree.chart.axis.NumberAxis.autoAdjustRange : if $r10 != $r11
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : if $r10 != $r11 >>>>>>>> org.jfree.chart.axis.NumberAxis.autoAdjustRange : $b4 = d0 cmpl 0.0
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : if $r10 != $r11 >>>>>>>> org.jfree.chart.axis.NumberAxis.autoAdjustRange : $z2 = virtualinvoke r0.<org.jfree.chart.axis.NumberAxis: boolean getAutoRangeStickyZero()>()
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : $b4 = d0 cmpl 0.0 >>>>>>>> org.jfree.chart.axis.NumberAxis.autoAdjustRange : if $b4 <= 0
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : if $b4 <= 0 >>>>>>>> org.jfree.chart.axis.NumberAxis.autoAdjustRange : d1 = d1 - d0
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : if $b4 <= 0 >>>>>>>> org.jfree.chart.axis.NumberAxis.autoAdjustRange : $z2 = virtualinvoke r0.<org.jfree.chart.axis.NumberAxis: boolean getAutoRangeStickyZero()>()
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : d1 = d1 - d0 >>>>>>>> org.jfree.chart.axis.NumberAxis.autoAdjustRange : d0 = 0.0
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : d0 = 0.0 >>>>>>>> org.jfree.chart.axis.NumberAxis.autoAdjustRange : $z2 = virtualinvoke r0.<org.jfree.chart.axis.NumberAxis: boolean getAutoRangeStickyZero()>()
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : $b3 = d1 cmpg 0.0 >>>>>>>> org.jfree.chart.axis.NumberAxis.autoAdjustRange : if $b3 >= 0
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : if $b3 >= 0 >>>>>>>> org.jfree.chart.axis.NumberAxis.autoAdjustRange : d0 = d0 - d1
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : if $b3 >= 0 >>>>>>>> org.jfree.chart.axis.NumberAxis.autoAdjustRange : $z2 = virtualinvoke r0.<org.jfree.chart.axis.NumberAxis: boolean getAutoRangeStickyZero()>()
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : d0 = d0 - d1 >>>>>>>> org.jfree.chart.axis.NumberAxis.autoAdjustRange : d1 = 0.0
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : d1 = 0.0 >>>>>>>> org.jfree.chart.axis.NumberAxis.autoAdjustRange : goto [?= $z2 = virtualinvoke r0.<org.jfree.chart.axis.NumberAxis: boolean getAutoRangeStickyZero()>()]
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : goto [?= $z2 = virtualinvoke r0.<org.jfree.chart.axis.NumberAxis: boolean getAutoRangeStickyZero()>()] >>>>>>>> org.jfree.chart.axis.NumberAxis.autoAdjustRange : $z2 = virtualinvoke r0.<org.jfree.chart.axis.NumberAxis: boolean getAutoRangeStickyZero()>()
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : $d9 = staticinvoke <java.lang.Math: double abs(double)>(d1) >>>>>>>> org.jfree.chart.axis.NumberAxis.autoAdjustRange : d6 = $d9 / 10.0
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : d6 = $d9 / 10.0 >>>>>>>> org.jfree.chart.axis.NumberAxis.autoAdjustRange : d1 = d1 - d6
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : d1 = d1 - d6 >>>>>>>> org.jfree.chart.axis.NumberAxis.autoAdjustRange : d0 = d0 + d6
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : d0 = d0 + d6 >>>>>>>> org.jfree.chart.axis.NumberAxis.autoAdjustRange : $r8 = r0.<org.jfree.chart.axis.NumberAxis: org.jfree.data.RangeType rangeType>
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : d7 = d0 - d3 >>>>>>>> org.jfree.chart.axis.NumberAxis.autoAdjustRange : goto [?= $r12 = new org.jfree.data.Range]
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : goto [?= $r12 = new org.jfree.data.Range] >>>>>>>> org.jfree.chart.axis.NumberAxis.autoAdjustRange : $r12 = new org.jfree.data.Range
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : d1 = staticinvoke <java.lang.Math: double min(double,double)>(d1, 0.0) >>>>>>>> org.jfree.chart.axis.NumberAxis.autoAdjustRange : d0 = staticinvoke <java.lang.Math: double max(double,double)>(d0, 0.0)
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : d0 = staticinvoke <java.lang.Math: double max(double,double)>(d0, 0.0) >>>>>>>> org.jfree.chart.axis.NumberAxis.autoAdjustRange : d2 = d0 - d1
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : d1 = staticinvoke <java.lang.Math: double min(double,double)>(0.0, d1) >>>>>>>> org.jfree.chart.axis.NumberAxis.autoAdjustRange : d0 = staticinvoke <java.lang.Math: double min(double,double)>(0.0, d0)
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : d0 = staticinvoke <java.lang.Math: double min(double,double)>(0.0, d0) >>>>>>>> org.jfree.chart.axis.NumberAxis.autoAdjustRange : $z1 = virtualinvoke r0.<org.jfree.chart.axis.NumberAxis: boolean getAutoRangeIncludesZero()>()
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : d1 = staticinvoke <java.lang.Math: double max(double,double)>(0.0, d1) >>>>>>>> org.jfree.chart.axis.NumberAxis.autoAdjustRange : d0 = staticinvoke <java.lang.Math: double max(double,double)>(0.0, d0)
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : d0 = staticinvoke <java.lang.Math: double max(double,double)>(0.0, d0) >>>>>>>> org.jfree.chart.axis.NumberAxis.autoAdjustRange : goto [?= $z1 = virtualinvoke r0.<org.jfree.chart.axis.NumberAxis: boolean getAutoRangeIncludesZero()>()]
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : goto [?= $z1 = virtualinvoke r0.<org.jfree.chart.axis.NumberAxis: boolean getAutoRangeIncludesZero()>()] >>>>>>>> org.jfree.chart.axis.NumberAxis.autoAdjustRange : $z1 = virtualinvoke r0.<org.jfree.chart.axis.NumberAxis: boolean getAutoRangeIncludesZero()>()
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : r3 = virtualinvoke r0.<org.jfree.chart.axis.NumberAxis: org.jfree.data.Range getDefaultAutoRange()>() >>>>>>>> org.jfree.chart.axis.NumberAxis.autoAdjustRange : d0 = virtualinvoke r3.<org.jfree.data.Range: double getUpperBound()>()

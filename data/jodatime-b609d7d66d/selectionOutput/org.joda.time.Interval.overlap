@@ -1,0 +1,13 @@
+org.joda.time.Interval.overlap : r2 = staticinvoke <org.joda.time.DateTimeUtils: org.joda.time.ReadableInterval getReadableInterval(org.joda.time.ReadableInterval)>(r1) >>>>>>>> org.joda.time.Interval.overlap : $z0 = virtualinvoke r0.<org.joda.time.Interval: boolean overlaps(org.joda.time.ReadableInterval)>(r2)
+org.joda.time.Interval.overlap : $z0 = virtualinvoke r0.<org.joda.time.Interval: boolean overlaps(org.joda.time.ReadableInterval)>(r2) >>>>>>>> org.joda.time.Interval.overlap : if $z0 != 0
+org.joda.time.Interval.overlap : if $z0 != 0 >>>>>>>> org.joda.time.Interval.overlap : return null
+org.joda.time.Interval.overlap : if $z0 != 0 >>>>>>>> org.joda.time.Interval.overlap : $l2 = virtualinvoke r0.<org.joda.time.Interval: long getStartMillis()>()
+org.joda.time.Interval.overlap : $l2 = virtualinvoke r0.<org.joda.time.Interval: long getStartMillis()>() >>>>>>>> org.joda.time.Interval.overlap : $l3 = interfaceinvoke r2.<org.joda.time.ReadableInterval: long getStartMillis()>()
+org.joda.time.Interval.overlap : $l3 = interfaceinvoke r2.<org.joda.time.ReadableInterval: long getStartMillis()>() >>>>>>>> org.joda.time.Interval.overlap : l0 = staticinvoke <java.lang.Math: long max(long,long)>($l2, $l3)
+org.joda.time.Interval.overlap : l0 = staticinvoke <java.lang.Math: long max(long,long)>($l2, $l3) >>>>>>>> org.joda.time.Interval.overlap : $l4 = virtualinvoke r0.<org.joda.time.Interval: long getEndMillis()>()
+org.joda.time.Interval.overlap : $l4 = virtualinvoke r0.<org.joda.time.Interval: long getEndMillis()>() >>>>>>>> org.joda.time.Interval.overlap : $l5 = interfaceinvoke r2.<org.joda.time.ReadableInterval: long getEndMillis()>()
+org.joda.time.Interval.overlap : $l5 = interfaceinvoke r2.<org.joda.time.ReadableInterval: long getEndMillis()>() >>>>>>>> org.joda.time.Interval.overlap : l1 = staticinvoke <java.lang.Math: long min(long,long)>($l4, $l5)
+org.joda.time.Interval.overlap : l1 = staticinvoke <java.lang.Math: long min(long,long)>($l4, $l5) >>>>>>>> org.joda.time.Interval.overlap : $r3 = new org.joda.time.Interval
+org.joda.time.Interval.overlap : $r3 = new org.joda.time.Interval >>>>>>>> org.joda.time.Interval.overlap : $r4 = virtualinvoke r0.<org.joda.time.Interval: org.joda.time.Chronology getChronology()>()
+org.joda.time.Interval.overlap : $r4 = virtualinvoke r0.<org.joda.time.Interval: org.joda.time.Chronology getChronology()>() >>>>>>>> org.joda.time.Interval.overlap : specialinvoke $r3.<org.joda.time.Interval: void <init>(long,long,org.joda.time.Chronology)>(l0, l1, $r4)
+org.joda.time.Interval.overlap : specialinvoke $r3.<org.joda.time.Interval: void <init>(long,long,org.joda.time.Chronology)>(l0, l1, $r4) >>>>>>>> org.joda.time.Interval.overlap : return $r3

@@ -1,0 +1,16 @@
+org.jfree.chart.imagemap.StandardToolTipTagFragmentGenerator.generateToolTipFragment : $r2 = new java.lang.StringBuilder
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null goto return
+org.jfree.chart.imagemap.ImageMapUtilities.htmlEscape : if c2 != 39 goto (branch)
+org.jfree.chart.imagemap.ImageMapUtilities.htmlEscape : i0 = virtualinvoke r0.<java.lang.String: int length()>()
+org.jfree.chart.imagemap.ImageMapUtilities.htmlEscape : c2 = virtualinvoke r0.<java.lang.String: char charAt(int)>(i1)
+org.jfree.chart.imagemap.ImageMapUtilities.htmlEscape : $r10 = virtualinvoke r1.<java.lang.StringBuffer: java.lang.String toString()>()
+org.jfree.chart.imagemap.ImageMapUtilities.htmlEscape : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r0, "input")
+org.jfree.chart.imagemap.ImageMapUtilities.htmlEscape : if c2 != 92 goto virtualinvoke r1.<java.lang.StringBuffer: java.lang.StringBuffer append(char)>(c2)
+org.jfree.chart.imagemap.ImageMapUtilities.htmlEscape : i1 = 0
+org.jfree.chart.imagemap.ImageMapUtilities.htmlEscape : virtualinvoke r1.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>("&quot;")
+org.jfree.chart.imagemap.ImageMapUtilities.htmlEscape : if c2 != 38 goto (branch)
+org.jfree.chart.imagemap.ImageMapUtilities.htmlEscape : if c2 != 62 goto (branch)
+org.jfree.chart.imagemap.ImageMapUtilities.htmlEscape : if c2 != 60 goto (branch)
+org.jfree.chart.imagemap.ImageMapUtilities.htmlEscape : $r2 = new java.lang.StringBuffer
+org.jfree.chart.imagemap.ImageMapUtilities.htmlEscape : if c2 != 34 goto (branch)
+org.jfree.chart.imagemap.ImageMapUtilities.htmlEscape : virtualinvoke r1.<java.lang.StringBuffer: java.lang.StringBuffer append(char)>(c2)

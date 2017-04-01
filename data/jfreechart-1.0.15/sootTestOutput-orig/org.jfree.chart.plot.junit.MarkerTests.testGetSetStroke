@@ -1,0 +1,14 @@
+org.jfree.chart.plot.Marker.addChangeListener : $r2 = r0.<org.jfree.chart.plot.Marker: javax.swing.event.EventListenerList listenerList>
+org.jfree.chart.plot.Marker.notifyListeners : $r4 = r2[i0]
+org.jfree.chart.plot.Marker.notifyListeners : $i2 = i0 + 1
+org.jfree.chart.plot.Marker.notifyListeners : $r3 = r0.<org.jfree.chart.plot.Marker: javax.swing.event.EventListenerList listenerList>
+org.jfree.chart.plot.Marker.notifyListeners : $i1 = lengthof r2
+org.jfree.chart.plot.Marker.setStroke : r0.<org.jfree.chart.plot.Marker: java.awt.Stroke stroke> = r1
+org.jfree.chart.plot.Marker.setStroke : $r2 = new org.jfree.chart.event.MarkerChangeEvent
+org.jfree.chart.plot.Marker.setStroke : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "stroke")
+org.jfree.chart.util.ParamChecks.nullNotPermitted : $r3 = new java.lang.IllegalArgumentException
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null goto return
+org.jfree.chart.event.MarkerChangeEvent.getMarker : $r1 = r0.<org.jfree.chart.event.MarkerChangeEvent: org.jfree.chart.plot.Marker marker>
+org.jfree.chart.plot.Marker.getStroke : $r1 = r0.<org.jfree.chart.plot.Marker: java.awt.Stroke stroke>
+org.jfree.chart.plot.ValueMarker.equals : if r1 != r0 goto $z0 = specialinvoke r0.<org.jfree.chart.plot.Marker: boolean equals(java.lang.Object)>(r1)
+org.jfree.chart.plot.ValueMarker.equals : return 1

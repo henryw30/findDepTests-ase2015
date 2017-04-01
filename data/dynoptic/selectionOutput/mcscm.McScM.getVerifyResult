@@ -1,0 +1,14 @@
+mcscm.McScM.getVerifyResult : $r5 = r0.<mcscm.McScM: java.lang.Process verifyProcess> >>>>>>>> mcscm.McScM.getVerifyResult : $r6 = virtualinvoke $r5.<java.lang.Process: java.io.InputStream getInputStream()>()
+mcscm.McScM.getVerifyResult : $r6 = virtualinvoke $r5.<java.lang.Process: java.io.InputStream getInputStream()>() >>>>>>>> mcscm.McScM.getVerifyResult : r2 = staticinvoke <mcscm.ProcessUtil: java.util.List getInputStreamContent(java.io.InputStream)>($r6)
+mcscm.McScM.getVerifyResult : r2 = staticinvoke <mcscm.ProcessUtil: java.util.List getInputStreamContent(java.io.InputStream)>($r6) >>>>>>>> mcscm.McScM.getVerifyResult : $r7 = <mcscm.McScM: java.util.logging.Logger logger>
+mcscm.McScM.getVerifyResult : $r7 = <mcscm.McScM: java.util.logging.Logger logger> >>>>>>>> mcscm.McScM.getVerifyResult : $r3 = new java.lang.StringBuilder
+mcscm.McScM.getVerifyResult : $r3 = new java.lang.StringBuilder >>>>>>>> mcscm.McScM.getVerifyResult : specialinvoke $r3.<java.lang.StringBuilder: void <init>()>()
+mcscm.McScM.getVerifyResult : specialinvoke $r3.<java.lang.StringBuilder: void <init>()>() >>>>>>>> mcscm.McScM.getVerifyResult : $r8 = virtualinvoke $r3.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("Verify returned: ")
+mcscm.McScM.getVerifyResult : $r8 = virtualinvoke $r3.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("Verify returned: ") >>>>>>>> mcscm.McScM.getVerifyResult : $r9 = virtualinvoke r2.<java.lang.Object: java.lang.String toString()>()
+mcscm.McScM.getVerifyResult : $r9 = virtualinvoke r2.<java.lang.Object: java.lang.String toString()>() >>>>>>>> mcscm.McScM.getVerifyResult : $r10 = virtualinvoke $r8.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($r9)
+mcscm.McScM.getVerifyResult : $r10 = virtualinvoke $r8.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($r9) >>>>>>>> mcscm.McScM.getVerifyResult : $r11 = virtualinvoke $r10.<java.lang.StringBuilder: java.lang.String toString()>()
+mcscm.McScM.getVerifyResult : $r11 = virtualinvoke $r10.<java.lang.StringBuilder: java.lang.String toString()>() >>>>>>>> mcscm.McScM.getVerifyResult : virtualinvoke $r7.<java.util.logging.Logger: void info(java.lang.String)>($r11)
+mcscm.McScM.getVerifyResult : virtualinvoke $r7.<java.util.logging.Logger: void info(java.lang.String)>($r11) >>>>>>>> mcscm.McScM.getVerifyResult : $r12 = new mcscm.VerifyResult
+mcscm.McScM.getVerifyResult : $r12 = new mcscm.VerifyResult >>>>>>>> mcscm.McScM.getVerifyResult : specialinvoke $r12.<mcscm.VerifyResult: void <init>(java.util.List,java.util.List)>(r2, r1)
+mcscm.McScM.getVerifyResult : specialinvoke $r12.<mcscm.VerifyResult: void <init>(java.util.List,java.util.List)>(r2, r1) >>>>>>>> mcscm.McScM.getVerifyResult : r4 = $r12
+mcscm.McScM.getVerifyResult : r4 = $r12 >>>>>>>> mcscm.McScM.getVerifyResult : return r4

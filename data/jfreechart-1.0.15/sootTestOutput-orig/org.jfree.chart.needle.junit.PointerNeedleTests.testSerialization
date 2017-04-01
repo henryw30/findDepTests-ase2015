@@ -1,0 +1,25 @@
+org.jfree.chart.needle.PointerNeedle.equals : $z1 = specialinvoke r0.<org.jfree.chart.needle.MeterNeedle: boolean equals(java.lang.Object)>(r1)
+org.jfree.chart.needle.PointerNeedle.equals : if r1 != r0 goto $z0 = r1 instanceof org.jfree.chart.needle.PointerNeedle
+org.jfree.chart.needle.PointerNeedle.equals : return 1
+org.jfree.chart.needle.PointerNeedle.equals : $z0 = r1 instanceof org.jfree.chart.needle.PointerNeedle
+org.jfree.chart.needle.MeterNeedle.readObject : $r5 = staticinvoke <org.jfree.io.SerialUtilities: java.awt.Paint readPaint(java.io.ObjectInputStream)>(r1)
+org.jfree.chart.needle.MeterNeedle.readObject : virtualinvoke r1.<java.io.ObjectInputStream: void defaultReadObject()>()
+org.jfree.chart.needle.MeterNeedle.readObject : $r2 = staticinvoke <org.jfree.io.SerialUtilities: java.awt.Stroke readStroke(java.io.ObjectInputStream)>(r1)
+org.jfree.chart.needle.MeterNeedle.readObject : $r4 = staticinvoke <org.jfree.io.SerialUtilities: java.awt.Paint readPaint(java.io.ObjectInputStream)>(r1)
+org.jfree.chart.needle.MeterNeedle.readObject : $r3 = staticinvoke <org.jfree.io.SerialUtilities: java.awt.Paint readPaint(java.io.ObjectInputStream)>(r1)
+org.jfree.chart.needle.MeterNeedle.equals : $i0 = r0.<org.jfree.chart.needle.MeterNeedle: int size>
+org.jfree.chart.needle.MeterNeedle.equals : $d0 = r0.<org.jfree.chart.needle.MeterNeedle: double rotateX>
+org.jfree.chart.needle.MeterNeedle.equals : $r9 = r0.<org.jfree.chart.needle.MeterNeedle: java.awt.Paint highlightPaint>
+org.jfree.chart.needle.MeterNeedle.equals : if r1 != r0 goto $z0 = r1 instanceof org.jfree.chart.needle.MeterNeedle
+org.jfree.chart.needle.MeterNeedle.equals : $r3 = r0.<org.jfree.chart.needle.MeterNeedle: java.awt.Paint outlinePaint>
+org.jfree.chart.needle.MeterNeedle.equals : $r7 = r0.<org.jfree.chart.needle.MeterNeedle: java.awt.Paint fillPaint>
+org.jfree.chart.needle.MeterNeedle.equals : $r5 = r0.<org.jfree.chart.needle.MeterNeedle: java.awt.Stroke outlineStroke>
+org.jfree.chart.needle.MeterNeedle.equals : r2 = (org.jfree.chart.needle.MeterNeedle) r1
+org.jfree.chart.needle.MeterNeedle.equals : return 1
+org.jfree.chart.needle.MeterNeedle.equals : $d2 = r0.<org.jfree.chart.needle.MeterNeedle: double rotateY>
+org.jfree.chart.needle.MeterNeedle.equals : $z0 = r1 instanceof org.jfree.chart.needle.MeterNeedle
+org.jfree.chart.needle.MeterNeedle.writeObject : $r4 = r0.<org.jfree.chart.needle.MeterNeedle: java.awt.Paint fillPaint>
+org.jfree.chart.needle.MeterNeedle.writeObject : $r3 = r0.<org.jfree.chart.needle.MeterNeedle: java.awt.Paint outlinePaint>
+org.jfree.chart.needle.MeterNeedle.writeObject : $r2 = r0.<org.jfree.chart.needle.MeterNeedle: java.awt.Stroke outlineStroke>
+org.jfree.chart.needle.MeterNeedle.writeObject : virtualinvoke r1.<java.io.ObjectOutputStream: void defaultWriteObject()>()
+org.jfree.chart.needle.MeterNeedle.writeObject : $r5 = r0.<org.jfree.chart.needle.MeterNeedle: java.awt.Paint highlightPaint>

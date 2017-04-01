@@ -1,0 +1,38 @@
+org.jfree.data.time.SimpleTimePeriod.getStart : $r1 = new java.util.Date
+org.jfree.data.general.Series.equals : $r3 = virtualinvoke r0.<org.jfree.data.general.Series: java.lang.Comparable getKey()>()
+org.jfree.data.general.Series.equals : $z0 = r1 instanceof org.jfree.data.general.Series
+org.jfree.data.general.Series.equals : if r1 != r0 goto $z0 = r1 instanceof org.jfree.data.general.Series
+org.jfree.data.general.Series.equals : r2 = (org.jfree.data.general.Series) r1
+org.jfree.data.general.Series.equals : return 1
+org.jfree.data.general.Series.equals : $r5 = virtualinvoke r0.<org.jfree.data.general.Series: java.lang.String getDescription()>()
+org.jfree.data.gantt.TaskSeries.add : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "task")
+org.jfree.data.gantt.TaskSeries.add : $r2 = r0.<org.jfree.data.gantt.TaskSeries: java.util.List tasks>
+org.jfree.data.gantt.TaskSeries.add : virtualinvoke r0.<org.jfree.data.gantt.TaskSeries: void fireSeriesChanged()>()
+org.jfree.data.general.Series.getKey : $r1 = r0.<org.jfree.data.general.Series: java.lang.Comparable key>
+org.jfree.data.general.Series.fireSeriesChanged : $z0 = r0.<org.jfree.data.general.Series: boolean notify>
+org.jfree.data.general.Series.fireSeriesChanged : $r1 = new org.jfree.data.general.SeriesChangeEvent
+org.jfree.data.time.SimpleTimePeriod.equals : $r5 = virtualinvoke r0.<org.jfree.data.time.SimpleTimePeriod: java.util.Date getEnd()>()
+org.jfree.data.time.SimpleTimePeriod.equals : r2 = (org.jfree.data.time.TimePeriod) r1
+org.jfree.data.time.SimpleTimePeriod.equals : $r3 = virtualinvoke r0.<org.jfree.data.time.SimpleTimePeriod: java.util.Date getStart()>()
+org.jfree.data.time.SimpleTimePeriod.equals : return 1
+org.jfree.data.time.SimpleTimePeriod.equals : if r1 != r0 goto $z0 = r1 instanceof org.jfree.data.time.TimePeriod
+org.jfree.data.time.SimpleTimePeriod.equals : $z0 = r1 instanceof org.jfree.data.time.TimePeriod
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null goto return
+org.jfree.data.general.Series.getDescription : $r1 = r0.<org.jfree.data.general.Series: java.lang.String description>
+org.jfree.data.gantt.TaskSeries.equals : $z1 = specialinvoke r0.<org.jfree.data.general.Series: boolean equals(java.lang.Object)>(r1)
+org.jfree.data.gantt.TaskSeries.equals : $r3 = r0.<org.jfree.data.gantt.TaskSeries: java.util.List tasks>
+org.jfree.data.gantt.TaskSeries.equals : r2 = (org.jfree.data.gantt.TaskSeries) r1
+org.jfree.data.gantt.TaskSeries.equals : $z0 = r1 instanceof org.jfree.data.gantt.TaskSeries
+org.jfree.data.gantt.TaskSeries.equals : return 1
+org.jfree.data.gantt.TaskSeries.equals : if r1 != r0 goto $z0 = r1 instanceof org.jfree.data.gantt.TaskSeries
+org.jfree.data.gantt.Task.equals : r2 = (org.jfree.data.gantt.Task) r1
+org.jfree.data.gantt.Task.equals : $r7 = r0.<org.jfree.data.gantt.Task: java.lang.Double percentComplete>
+org.jfree.data.gantt.Task.equals : $r3 = r0.<org.jfree.data.gantt.Task: java.lang.String description>
+org.jfree.data.gantt.Task.equals : $z0 = r1 instanceof org.jfree.data.gantt.Task
+org.jfree.data.gantt.Task.equals : $r9 = r0.<org.jfree.data.gantt.Task: java.util.List subtasks>
+org.jfree.data.gantt.Task.equals : if r1 != r0 goto $z0 = r1 instanceof org.jfree.data.gantt.Task
+org.jfree.data.gantt.Task.equals : return 1
+org.jfree.data.gantt.Task.equals : $r5 = r0.<org.jfree.data.gantt.Task: org.jfree.data.time.TimePeriod duration>
+org.jfree.data.general.Series.notifyListeners : $r3 = r0.<org.jfree.data.general.Series: javax.swing.event.EventListenerList listeners>
+org.jfree.data.general.Series.notifyListeners : $i1 = lengthof r2
+org.jfree.data.time.SimpleTimePeriod.getEnd : $r1 = new java.util.Date

@@ -1,0 +1,67 @@
+crystal.server.GitLogParser.parseLog : $r1 = <crystal.server.GitLogParser: java.util.Map gitCheckpoint>
+crystal.model.DataSource.getHistory : $r1 = r0.<crystal.model.DataSource: crystal.model.RevisionHistory _history>
+crystal.server.HgLogParser.parseLog : $r1 = <crystal.server.HgLogParser: java.util.Map hgCheckpoint>
+crystal.util.ValidInputChecker.checkNullInput : if r0 != null goto return
+crystal.model.RevisionHistory.equals : $r6 = r0.<crystal.model.RevisionHistory: java.util.HashMap _changesets>
+crystal.model.RevisionHistory.equals : r2 = (crystal.model.RevisionHistory) r1
+crystal.model.RevisionHistory.equals : if r1 != null goto $z0 = r1 instanceof crystal.model.RevisionHistory
+crystal.model.RevisionHistory.equals : $i0 = interfaceinvoke r4.<java.util.Set: int size()>()
+crystal.model.RevisionHistory.equals : return 0
+crystal.model.RevisionHistory.equals : $r5 = r2.<crystal.model.RevisionHistory: java.util.HashMap _changesets>
+crystal.model.RevisionHistory.equals : $z0 = r1 instanceof crystal.model.RevisionHistory
+crystal.server.AbstractLogParser.clipFront : $r5 = new java.lang.StringBuilder
+crystal.server.AbstractLogParser.clipFront : $r1 = new java.util.StringTokenizer
+crystal.server.AbstractLogParser.clipFront : $r10 = virtualinvoke r3.<java.lang.String: java.lang.String trim()>()
+crystal.server.AbstractLogParser.clipFront : r3 = ""
+crystal.server.AbstractLogParser.clipFront : $z0 = virtualinvoke r2.<java.util.StringTokenizer: boolean hasMoreTokens()>()
+crystal.server.AbstractLogParser.clipFront : virtualinvoke r2.<java.util.StringTokenizer: java.lang.String nextToken()>()
+crystal.server.AbstractLogParser.abstractParseLog : r8 = ""
+crystal.server.AbstractLogParser.abstractParseLog : $z1 = virtualinvoke r6.<java.util.StringTokenizer: boolean hasMoreTokens()>()
+crystal.server.AbstractLogParser.abstractParseLog : r7 = null
+crystal.server.AbstractLogParser.abstractParseLog : r10 = staticinvoke <crystal.server.AbstractLogParser: java.lang.String clipFront(java.lang.String)>(r12)
+crystal.server.AbstractLogParser.abstractParseLog : return r2
+crystal.server.AbstractLogParser.abstractParseLog : $r22 = virtualinvoke r5.<java.lang.String: java.lang.String trim()>()
+crystal.server.AbstractLogParser.abstractParseLog : $r32 = virtualinvoke r6.<java.util.StringTokenizer: java.lang.String nextToken()>()
+crystal.server.AbstractLogParser.abstractParseLog : $r39 = <crystal.server.AbstractLogParser$CheckpointLabels: crystal.server.AbstractLogParser$CheckpointLabels TAG>
+crystal.server.AbstractLogParser.abstractParseLog : $r57 = <crystal.server.AbstractLogParser$CheckpointLabels: crystal.server.AbstractLogParser$CheckpointLabels DATE>
+crystal.server.AbstractLogParser.abstractParseLog : $r30 = new java.util.StringTokenizer
+crystal.server.AbstractLogParser.abstractParseLog : interfaceinvoke r11.<java.util.List: boolean add(java.lang.Object)>(r14)
+crystal.server.AbstractLogParser.abstractParseLog : $z6 = virtualinvoke r13.<java.util.StringTokenizer: boolean hasMoreTokens()>()
+crystal.server.AbstractLogParser.abstractParseLog : r10 = r12
+crystal.server.AbstractLogParser.abstractParseLog : goto [?= staticinvoke <edu.washington.cs.dt.impact.util.Tracer: void trace(java.lang.String,java.lang.String)>("$z1 = virtualinvoke r6.<java.util.StringTokenizer: boolean hasMoreTokens()>()", "crystal.server.AbstractLogParser.abstractParseLog")]
+crystal.server.AbstractLogParser.abstractParseLog : r9 = staticinvoke <crystal.server.AbstractLogParser: java.lang.String clipFront(java.lang.String)>(r12)
+crystal.server.AbstractLogParser.abstractParseLog : $r70 = interfaceinvoke r1.<java.util.Map: java.lang.Object get(java.lang.Object)>($r69)
+crystal.server.AbstractLogParser.abstractParseLog : $r37 = staticinvoke <crystal.server.AbstractLogParser: java.lang.String clipFront(java.lang.String)>(r12)
+crystal.server.AbstractLogParser.abstractParseLog : r9 = ""
+crystal.server.AbstractLogParser.abstractParseLog : $r55 = interfaceinvoke r1.<java.util.Map: java.lang.Object get(java.lang.Object)>($r54)
+crystal.server.AbstractLogParser.abstractParseLog : if r10 != null goto $r72 = new java.lang.StringBuilder
+crystal.server.AbstractLogParser.abstractParseLog : goto [?= (branch)]
+crystal.server.AbstractLogParser.abstractParseLog : $r33 = <crystal.server.AbstractLogParser$CheckpointLabels: crystal.server.AbstractLogParser$CheckpointLabels CHANGESET>
+crystal.server.AbstractLogParser.abstractParseLog : $r42 = interfaceinvoke r1.<java.util.Map: java.lang.Object get(java.lang.Object)>($r41)
+crystal.server.AbstractLogParser.abstractParseLog : r8 = staticinvoke <crystal.server.AbstractLogParser: java.lang.String clipFront(java.lang.String)>(r12)
+crystal.server.AbstractLogParser.abstractParseLog : $r49 = new java.util.StringTokenizer
+crystal.server.AbstractLogParser.abstractParseLog : if r10 != null goto (branch)
+crystal.server.AbstractLogParser.abstractParseLog : $r44 = <crystal.server.AbstractLogParser$CheckpointLabels: crystal.server.AbstractLogParser$CheckpointLabels PARENT>
+crystal.server.AbstractLogParser.abstractParseLog : if r9 != null goto (branch)
+crystal.server.AbstractLogParser.abstractParseLog : $r16 = new java.lang.StringBuilder
+crystal.server.AbstractLogParser.abstractParseLog : $r31 = new java.util.ArrayList
+crystal.server.AbstractLogParser.abstractParseLog : if r7 == null goto $r96 = new java.lang.RuntimeException
+crystal.server.AbstractLogParser.abstractParseLog : $r67 = <crystal.server.AbstractLogParser$CheckpointLabels: crystal.server.AbstractLogParser$CheckpointLabels SUMMARY>
+crystal.server.AbstractLogParser.abstractParseLog : $r60 = interfaceinvoke r1.<java.util.Map: java.lang.Object get(java.lang.Object)>($r59)
+crystal.server.AbstractLogParser.abstractParseLog : staticinvoke <crystal.util.ValidInputChecker: void checkNullInput(java.lang.Object)>(r0)
+crystal.server.AbstractLogParser.abstractParseLog : $r65 = interfaceinvoke r1.<java.util.Map: java.lang.Object get(java.lang.Object)>($r64)
+crystal.server.AbstractLogParser.abstractParseLog : goto [?= staticinvoke <edu.washington.cs.dt.impact.util.Tracer: void trace(java.lang.String,java.lang.String)>("$z6 = virtualinvoke r13.<java.util.StringTokenizer: boolean hasMoreTokens()>()", "crystal.server.AbstractLogParser.abstractParseLog")]
+crystal.server.AbstractLogParser.abstractParseLog : $r62 = <crystal.server.AbstractLogParser$CheckpointLabels: crystal.server.AbstractLogParser$CheckpointLabels SUMMARY>
+crystal.server.AbstractLogParser.abstractParseLog : $r15 = new java.util.HashMap
+crystal.server.AbstractLogParser.abstractParseLog : $r72 = new java.lang.StringBuilder
+crystal.server.AbstractLogParser.abstractParseLog : $r36 = staticinvoke <crystal.server.AbstractLogParser: java.lang.String clipFront(java.lang.String)>(r12)
+crystal.server.AbstractLogParser.abstractParseLog : $r47 = interfaceinvoke r1.<java.util.Map: java.lang.Object get(java.lang.Object)>($r46)
+crystal.server.AbstractLogParser.abstractParseLog : r14 = virtualinvoke r13.<java.util.StringTokenizer: java.lang.String nextToken()>()
+crystal.server.AbstractLogParser.abstractParseLog : $r89 = virtualinvoke r7.<java.lang.String: java.lang.String intern()>()
+crystal.server.AbstractLogParser.abstractParseLog : if r8 != null goto (branch)
+crystal.server.AbstractLogParser.abstractParseLog : $r23 = new java.lang.StringBuilder
+crystal.model.DataSource.hasHistoryChanged : return 1
+crystal.model.DataSource.hasHistoryChanged : $r1 = r0.<crystal.model.DataSource: crystal.model.RevisionHistory _history>
+crystal.model.DataSource.hasHistoryChanged : $r2 = r0.<crystal.model.DataSource: crystal.model.RevisionHistory _history>
+crystal.model.DataSource.setHistory : r0.<crystal.model.DataSource: crystal.model.RevisionHistory _history> = r1
+crystal.model.DataSource.setHistory : $r2 = r0.<crystal.model.DataSource: crystal.model.RevisionHistory _history>

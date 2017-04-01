@@ -1,0 +1,71 @@
+dynoptic.model.alphabet.FSMAlphabet.clear : $r1 = r0.<dynoptic.model.alphabet.FSMAlphabet: java.util.Set events>
+dynoptic.model.fifosys.FifoSys.equals : $i0 = r2.<dynoptic.model.fifosys.FifoSys: int numProcesses>
+dynoptic.model.fifosys.FifoSys.equals : $z0 = r1 instanceof dynoptic.model.fifosys.FifoSys
+dynoptic.model.fifosys.FifoSys.equals : r2 = (dynoptic.model.fifosys.FifoSys) r1
+dynoptic.model.fifosys.FifoSys.equals : return 0
+dynoptic.model.fifosys.FifoSys.equals : if r0 != r1 goto $z0 = r1 instanceof dynoptic.model.fifosys.FifoSys
+dynoptic.model.fifosys.FifoSys.equals : if r1 != null goto (branch)
+dynoptic.model.automaton.EncodedAutomatonTests.getInitState : $r1 = new dynoptic.model.fifosys.cfsm.fsm.FSMState
+dynoptic.main.DynopticMain.setUpLogging : $r1 = <dynoptic.main.DynopticMain: java.util.logging.Logger logger>
+dynoptic.model.fifosys.cfsm.fsm.FSMState.equals : r2 = (dynoptic.model.fifosys.cfsm.fsm.FSMState) r1
+dynoptic.model.fifosys.cfsm.fsm.FSMState.equals : $z0 = r1 instanceof dynoptic.model.fifosys.cfsm.fsm.FSMState
+dynoptic.model.fifosys.cfsm.fsm.FSMState.equals : if r1 != r0 goto $z0 = r1 instanceof dynoptic.model.fifosys.cfsm.fsm.FSMState
+dynoptic.model.fifosys.cfsm.fsm.FSMState.equals : return 0
+dynoptic.model.fifosys.cfsm.fsm.FSMState.equals : $z1 = r2.<dynoptic.model.fifosys.cfsm.fsm.FSMState: boolean isAccept>
+dynoptic.model.AbsFSM.recomputeAlphabet : r3 = virtualinvoke r2.<dynoptic.model.AbsFSMState: java.util.Set getTransitioningEvents()>()
+dynoptic.model.AbsFSM.recomputeAlphabet : goto [?= $z0 = interfaceinvoke r1.<java.util.Iterator: boolean hasNext()>()]
+dynoptic.model.AbsFSM.recomputeAlphabet : $r5 = r0.<dynoptic.model.AbsFSM: java.util.Set states>
+dynoptic.model.AbsFSM.recomputeAlphabet : $r7 = r0.<dynoptic.model.AbsFSM: dynoptic.model.alphabet.FSMAlphabet alphabet>
+dynoptic.model.AbsFSM.recomputeAlphabet : $r4 = r0.<dynoptic.model.AbsFSM: dynoptic.model.alphabet.FSMAlphabet alphabet>
+dynoptic.model.automaton.EncodedAutomatonTests.toSet : return r2
+dynoptic.model.automaton.EncodedAutomatonTests.toSet : interfaceinvoke r2.<java.util.Set: boolean add(java.lang.Object)>(r4)
+dynoptic.model.automaton.EncodedAutomatonTests.toSet : r3 = r1
+dynoptic.model.automaton.EncodedAutomatonTests.toSet : r2 = staticinvoke <dynoptic.util.Util: java.util.Set newSet()>()
+dynoptic.model.fifosys.cfsm.fsm.FSMState.addTransitionNoChecks : r3 = staticinvoke <dynoptic.util.Util: java.util.Set newSet()>()
+dynoptic.model.fifosys.cfsm.fsm.FSMState.addTransitionNoChecks : interfaceinvoke r3.<java.util.Set: boolean add(java.lang.Object)>(r2)
+dynoptic.model.fifosys.cfsm.fsm.FSMState.addTransitionNoChecks : $r4 = r0.<dynoptic.model.fifosys.cfsm.fsm.FSMState: java.util.Map transitions>
+dynoptic.model.fifosys.cfsm.fsm.FSMState.addTransitionNoChecks : $r6 = r0.<dynoptic.model.fifosys.cfsm.fsm.FSMState: java.util.Map transitions>
+dynoptic.model.automaton.EncodedAutomatonTests.getTwoStateFSM : return r5
+dynoptic.model.automaton.EncodedAutomatonTests.getTwoStateFSM : r3 = specialinvoke r0.<dynoptic.model.automaton.EncodedAutomatonTests: dynoptic.model.fifosys.cfsm.fsm.FSMState getAcceptState(int)>(i0)
+dynoptic.model.automaton.EncodedAutomatonTests.getTwoStateFSM : virtualinvoke r2.<dynoptic.model.fifosys.cfsm.fsm.FSMState: void addTransition(synoptic.model.event.DistEventType,dynoptic.model.fifosys.cfsm.fsm.FSMState)>(r1, r3)
+dynoptic.model.automaton.EncodedAutomatonTests.getTwoStateFSM : $r6 = newarray (dynoptic.model.fifosys.cfsm.fsm.FSMState)[2]
+dynoptic.model.automaton.EncodedAutomatonTests.getTwoStateFSM : r2 = specialinvoke r0.<dynoptic.model.automaton.EncodedAutomatonTests: dynoptic.model.fifosys.cfsm.fsm.FSMState getInitState(int)>(i0)
+dynoptic.model.automaton.EncodedAutomatonTests.getTwoStateFSM : $r7 = new dynoptic.model.fifosys.cfsm.fsm.FSM
+dynoptic.model.automaton.EncodedAutomatonTests.getOneStateFSM : $r3 = new dynoptic.model.fifosys.cfsm.fsm.FSM
+dynoptic.model.automaton.EncodedAutomatonTests.getOneStateFSM : return r2
+dynoptic.model.automaton.EncodedAutomatonTests.getOneStateFSM : r1 = specialinvoke r0.<dynoptic.model.automaton.EncodedAutomatonTests: dynoptic.model.fifosys.cfsm.fsm.FSMState getInitAndAcceptState(int)>(i0)
+dynoptic.model.fifosys.cfsm.CFSM.equals : $z0 = specialinvoke r0.<dynoptic.model.fifosys.FifoSys: boolean equals(java.lang.Object)>(r1)
+dynoptic.model.fifosys.cfsm.CFSM.equals : return 0
+dynoptic.model.alphabet.FSMAlphabet.addAll : $r2 = r0.<dynoptic.model.alphabet.FSMAlphabet: java.util.Set events>
+dynoptic.util.Util.newSet : $r0 = new java.util.LinkedHashSet
+dynoptic.model.fifosys.gfsm.observed.fifosys.ObsFifoSysState.clearCache : $r0 = <dynoptic.model.fifosys.gfsm.observed.fifosys.ObsFifoSysState: java.util.Map fifoSysStatesMap>
+dynoptic.model.fifosys.cfsm.fsm.FSMState.hashCode : $i4 = i3 * 31
+dynoptic.model.fifosys.cfsm.fsm.FSMState.hashCode : $i7 = i6 * 31
+dynoptic.model.fifosys.cfsm.fsm.FSMState.hashCode : $i10 = i9 * 31
+dynoptic.model.fifosys.cfsm.fsm.FSMState.hashCode : b0 = 31
+dynoptic.model.fifosys.cfsm.fsm.FSMState.hashCode : return 1
+dynoptic.model.fifosys.cfsm.fsm.FSMState.hashCode : $i1 = b0 * 31
+dynoptic.model.fifosys.gfsm.observed.ObsFSMState.clearCache : $r1 = <dynoptic.model.fifosys.gfsm.observed.ObsFSMState: java.util.Map initialProcessStatesMap>
+dynoptic.model.fifosys.gfsm.observed.ObsFSMState.clearCache : <dynoptic.model.fifosys.gfsm.observed.ObsFSMState: int prevAnonId> = -1
+dynoptic.model.fifosys.gfsm.observed.ObsFSMState.clearCache : $r0 = <dynoptic.model.fifosys.gfsm.observed.ObsFSMState: java.util.Map prevStateAndEventMap>
+dynoptic.model.alphabet.FSMAlphabet.iterator : $r1 = r0.<dynoptic.model.alphabet.FSMAlphabet: java.util.Set events>
+dynoptic.model.automaton.EncodedAutomatonTests.getAcceptState : $r1 = new dynoptic.model.fifosys.cfsm.fsm.FSMState
+dynoptic.model.AbsFSM.getAlphabet : $r1 = r0.<dynoptic.model.AbsFSM: dynoptic.model.alphabet.FSMAlphabet alphabet>
+dynoptic.model.fifosys.cfsm.fsm.FSMState.addTransition : specialinvoke r0.<dynoptic.model.fifosys.cfsm.fsm.FSMState: void addTransitionNoChecks(synoptic.model.event.DistEventType,dynoptic.model.fifosys.cfsm.fsm.FSMState)>(r1, r2)
+dynoptic.model.fifosys.cfsm.fsm.FSMState.addTransition : $z1 = <dynoptic.model.fifosys.cfsm.fsm.FSMState: boolean $assertionsDisabled>
+dynoptic.model.fifosys.cfsm.fsm.FSMState.addTransition : $z0 = <dynoptic.model.fifosys.cfsm.fsm.FSMState: boolean $assertionsDisabled>
+dynoptic.model.fifosys.cfsm.fsm.FSMState.addTransition : $z2 = <dynoptic.model.fifosys.cfsm.fsm.FSMState: boolean $assertionsDisabled>
+dynoptic.model.fifosys.cfsm.CFSM.addFSM : $i9 = r0.<dynoptic.model.fifosys.cfsm.CFSM: int unSpecifiedPids>
+dynoptic.model.fifosys.cfsm.CFSM.addFSM : $z1 = <dynoptic.model.fifosys.cfsm.CFSM: boolean $assertionsDisabled>
+dynoptic.model.fifosys.cfsm.CFSM.addFSM : i0 = virtualinvoke r1.<dynoptic.model.fifosys.cfsm.fsm.FSM: int getPid()>()
+dynoptic.model.fifosys.cfsm.CFSM.addFSM : $r19 = r0.<dynoptic.model.fifosys.cfsm.CFSM: dynoptic.model.alphabet.FSMAlphabet alphabet>
+dynoptic.model.fifosys.cfsm.CFSM.addFSM : $r17 = r0.<dynoptic.model.fifosys.cfsm.CFSM: java.util.List fsms>
+dynoptic.model.fifosys.cfsm.CFSM.addFSM : $z0 = <dynoptic.model.fifosys.cfsm.CFSM: boolean $assertionsDisabled>
+dynoptic.model.fifosys.cfsm.CFSM.addFSM : $z2 = <dynoptic.main.DynopticMain: boolean assertsOn>
+dynoptic.util.Util.newMap : $r0 = new java.util.LinkedHashMap
+dynoptic.util.Util.newList : $r0 = new java.util.ArrayList
+dynoptic.util.Util.newList : $r1 = new java.util.ArrayList
+dynoptic.model.fifosys.gfsm.observed.ObsMultFSMState.clearCache : $r0 = <dynoptic.model.fifosys.gfsm.observed.ObsMultFSMState: java.util.Map cache>
+dynoptic.model.fifosys.cfsm.fsm.FSM.getPid : $i0 = r0.<dynoptic.model.fifosys.cfsm.fsm.FSM: int pid>
+dynoptic.model.automaton.EncodedAutomatonTests.getInitAndAcceptState : $r1 = new dynoptic.model.fifosys.cfsm.fsm.FSMState
+dynoptic.model.fifosys.cfsm.fsm.FSMState.getTransitioningEvents : $r1 = r0.<dynoptic.model.fifosys.cfsm.fsm.FSMState: java.util.Map transitions>

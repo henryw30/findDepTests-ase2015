@@ -1,0 +1,37 @@
+org.jfree.data.statistics.SimpleHistogramBin.getLowerBound : $d0 = r0.<org.jfree.data.statistics.SimpleHistogramBin: double lowerBound>
+org.jfree.data.statistics.SimpleHistogramDataset.addObservation : if z0 == 0 goto return
+org.jfree.data.statistics.SimpleHistogramDataset.addObservation : $r6 = new org.jfree.data.general.DatasetChangeEvent
+org.jfree.data.statistics.SimpleHistogramDataset.addObservation : $r4 = interfaceinvoke r1.<java.util.Iterator: java.lang.Object next()>()
+org.jfree.data.statistics.SimpleHistogramDataset.addObservation : virtualinvoke r0.<org.jfree.data.statistics.SimpleHistogramDataset: void addObservation(double,boolean)>(d0, 1)
+org.jfree.data.statistics.SimpleHistogramDataset.addObservation : goto [?= staticinvoke <edu.washington.cs.dt.impact.util.Tracer: void trace(java.lang.String,java.lang.String)>("$z2 = interfaceinvoke r1.<java.util.Iterator: boolean hasNext()>()", "org.jfree.data.statistics.SimpleHistogramDataset.addObservation")]
+org.jfree.data.statistics.SimpleHistogramDataset.addObservation : $z2 = interfaceinvoke r1.<java.util.Iterator: boolean hasNext()>()
+org.jfree.data.statistics.SimpleHistogramDataset.addObservation : z1 = 1
+org.jfree.data.statistics.SimpleHistogramDataset.addObservation : z1 = 0
+org.jfree.data.statistics.SimpleHistogramDataset.addObservation : if z1 != 0 goto (branch)
+org.jfree.data.statistics.SimpleHistogramDataset.addObservation : $r3 = r0.<org.jfree.data.statistics.SimpleHistogramDataset: java.util.List bins>
+org.jfree.data.statistics.SimpleHistogramDataset.addObservation : $i0 = virtualinvoke r2.<org.jfree.data.statistics.SimpleHistogramBin: int getItemCount()>()
+org.jfree.data.statistics.SimpleHistogramDataset.addObservation : $z3 = virtualinvoke r2.<org.jfree.data.statistics.SimpleHistogramBin: boolean accepts(double)>(d0)
+org.jfree.data.statistics.SimpleHistogramDataset.getYValue : $r2 = r0.<org.jfree.data.statistics.SimpleHistogramDataset: java.util.List bins>
+org.jfree.data.statistics.SimpleHistogramDataset.getYValue : $z0 = r0.<org.jfree.data.statistics.SimpleHistogramDataset: boolean adjustForBinSize>
+org.jfree.data.statistics.SimpleHistogramDataset.getYValue : $i2 = virtualinvoke r1.<org.jfree.data.statistics.SimpleHistogramBin: int getItemCount()>()
+org.jfree.data.statistics.SimpleHistogramDataset.getYValue : $d1 = virtualinvoke r1.<org.jfree.data.statistics.SimpleHistogramBin: double getUpperBound()>()
+org.jfree.data.general.AbstractDataset.notifyListeners : $r3 = r0.<org.jfree.data.general.AbstractDataset: javax.swing.event.EventListenerList listenerList>
+org.jfree.data.general.AbstractDataset.notifyListeners : $i1 = lengthof r2
+org.jfree.data.statistics.SimpleHistogramBin.getUpperBound : $d0 = r0.<org.jfree.data.statistics.SimpleHistogramBin: double upperBound>
+org.jfree.data.statistics.SimpleHistogramBin.accepts : $d1 = r0.<org.jfree.data.statistics.SimpleHistogramBin: double lowerBound>
+org.jfree.data.statistics.SimpleHistogramBin.accepts : $d3 = r0.<org.jfree.data.statistics.SimpleHistogramBin: double lowerBound>
+org.jfree.data.statistics.SimpleHistogramBin.accepts : $d4 = r0.<org.jfree.data.statistics.SimpleHistogramBin: double upperBound>
+org.jfree.data.statistics.SimpleHistogramBin.accepts : return 1
+org.jfree.data.statistics.SimpleHistogramBin.accepts : $z0 = staticinvoke <java.lang.Double: boolean isNaN(double)>(d0)
+org.jfree.data.statistics.SimpleHistogramBin.accepts : $d2 = r0.<org.jfree.data.statistics.SimpleHistogramBin: double upperBound>
+org.jfree.data.statistics.SimpleHistogramDataset.getItemCount : $r1 = r0.<org.jfree.data.statistics.SimpleHistogramDataset: java.util.List bins>
+org.jfree.data.statistics.SimpleHistogramDataset.clearObservations : $r5 = new org.jfree.data.general.DatasetChangeEvent
+org.jfree.data.statistics.SimpleHistogramDataset.clearObservations : $r3 = r0.<org.jfree.data.statistics.SimpleHistogramDataset: java.util.List bins>
+org.jfree.data.statistics.SimpleHistogramDataset.clearObservations : $z0 = interfaceinvoke r1.<java.util.Iterator: boolean hasNext()>()
+org.jfree.data.statistics.SimpleHistogramBin.setItemCount : r0.<org.jfree.data.statistics.SimpleHistogramBin: int itemCount> = i0
+org.jfree.data.statistics.SimpleHistogramBin.getItemCount : $i0 = r0.<org.jfree.data.statistics.SimpleHistogramBin: int itemCount>
+org.jfree.data.statistics.SimpleHistogramDataset.addBin : $r7 = r0.<org.jfree.data.statistics.SimpleHistogramDataset: java.util.List bins>
+org.jfree.data.statistics.SimpleHistogramDataset.addBin : $r8 = r0.<org.jfree.data.statistics.SimpleHistogramDataset: java.util.List bins>
+org.jfree.data.statistics.SimpleHistogramDataset.addBin : $z0 = interfaceinvoke r2.<java.util.Iterator: boolean hasNext()>()
+org.jfree.data.statistics.SimpleHistogramDataset.addBin : $r4 = r0.<org.jfree.data.statistics.SimpleHistogramDataset: java.util.List bins>
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null goto return

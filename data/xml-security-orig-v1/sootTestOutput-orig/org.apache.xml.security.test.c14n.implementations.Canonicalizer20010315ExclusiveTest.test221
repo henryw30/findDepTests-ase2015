@@ -1,0 +1,131 @@
+org.apache.xml.security.c14n.implementations.Canonicalizer20010315.engineCanonicalizeSubTree : r5 = virtualinvoke r2.<java.io.ByteArrayOutputStream: byte[] toByteArray()>()
+org.apache.xml.security.c14n.implementations.Canonicalizer20010315.engineCanonicalizeSubTree : r0.<org.apache.xml.security.c14n.implementations.Canonicalizer20010315: org.w3c.dom.Node _rootNodeOfC14n> = r1
+org.apache.xml.security.c14n.implementations.Canonicalizer20010315.engineCanonicalizeSubTree : $r7 = r0.<org.apache.xml.security.c14n.implementations.Canonicalizer20010315: org.w3c.dom.Node _rootNodeOfC14n>
+org.apache.xml.security.c14n.implementations.Canonicalizer20010315.engineCanonicalizeSubTree : $r17 = r0.<org.apache.xml.security.c14n.implementations.Canonicalizer20010315: java.io.Writer _writer>
+org.apache.xml.security.c14n.implementations.Canonicalizer20010315.engineCanonicalizeSubTree : $r14 = (org.w3c.dom.Element) r1
+org.apache.xml.security.c14n.implementations.Canonicalizer20010315.engineCanonicalizeSubTree : $r11 = new java.io.ByteArrayOutputStream
+org.apache.xml.security.c14n.implementations.Canonicalizer20010315.engineCanonicalizeSubTree : $r9 = r0.<org.apache.xml.security.c14n.implementations.Canonicalizer20010315: org.w3c.dom.Document _doc>
+org.apache.xml.security.c14n.implementations.Canonicalizer20010315.engineCanonicalizeSubTree : r0.<org.apache.xml.security.c14n.implementations.Canonicalizer20010315: org.w3c.dom.Node _rootNodeOfC14n> = null
+org.apache.xml.security.c14n.implementations.Canonicalizer20010315.engineCanonicalizeSubTree : r0.<org.apache.xml.security.c14n.implementations.Canonicalizer20010315: java.io.Writer _writer> = null
+org.apache.xml.security.c14n.implementations.Canonicalizer20010315.engineCanonicalizeSubTree : $r12 = new java.io.OutputStreamWriter
+org.apache.xml.security.c14n.implementations.Canonicalizer20010315.engineCanonicalizeSubTree : $s0 = interfaceinvoke r1.<org.w3c.dom.Node: short getNodeType()>()
+org.apache.xml.security.c14n.implementations.Canonicalizer20010315.engineCanonicalizeSubTree : r0.<org.apache.xml.security.c14n.implementations.Canonicalizer20010315: org.w3c.dom.Element _documentElement> = null
+org.apache.xml.security.c14n.implementations.Canonicalizer20010315.engineCanonicalizeSubTree : r0.<org.apache.xml.security.c14n.implementations.Canonicalizer20010315: org.w3c.dom.Document _doc> = null
+org.apache.xml.security.c14n.implementations.Canonicalizer20010315.engineCanonicalizeSubTree : $r16 = new java.util.HashMap
+org.apache.xml.security.c14n.implementations.Canonicalizer20010315.engineCanonicalizeSubTree : virtualinvoke r0.<org.apache.xml.security.c14n.implementations.Canonicalizer20010315: void canonicalizeSubTree(org.w3c.dom.Node,java.util.Map,java.util.Map)>(r1, r3, r4)
+org.apache.xml.security.c14n.helper.C14nHelper.namespaceIsAbsolute : if z0 != 0 goto i1 = i1 + 1
+org.apache.xml.security.c14n.helper.C14nHelper.namespaceIsAbsolute : i1 = 0
+org.apache.xml.security.c14n.helper.C14nHelper.namespaceIsAbsolute : z0 = 1
+org.apache.xml.security.c14n.helper.C14nHelper.namespaceIsAbsolute : i0 = virtualinvoke r0.<java.lang.String: int length()>()
+org.apache.xml.security.c14n.helper.C14nHelper.namespaceIsAbsolute : z0 = 0
+org.apache.xml.security.c14n.helper.C14nHelper.namespaceIsAbsolute : return z0
+org.apache.xml.security.c14n.helper.C14nHelper.namespaceIsAbsolute : if c2 != 58 goto (branch)
+org.apache.xml.security.c14n.helper.C14nHelper.namespaceIsAbsolute : c2 = virtualinvoke r0.<java.lang.String: char charAt(int)>(i1)
+org.apache.xml.security.c14n.helper.C14nHelper.namespaceIsAbsolute : $i3 = virtualinvoke r0.<java.lang.String: int length()>()
+org.apache.xml.security.c14n.implementations.Canonicalizer20010315.getinscopeNamespaces : return r2
+org.apache.xml.security.c14n.implementations.Canonicalizer20010315.getinscopeNamespaces : r7 = interfaceinvoke r5.<org.w3c.dom.Attr: java.lang.String getValue()>()
+org.apache.xml.security.c14n.implementations.Canonicalizer20010315.getinscopeNamespaces : i0 = interfaceinvoke r4.<org.w3c.dom.NamedNodeMap: int getLength()>()
+org.apache.xml.security.c14n.implementations.Canonicalizer20010315.getinscopeNamespaces : $z0 = virtualinvoke r6.<java.lang.String: boolean equals(java.lang.Object)>("xmlns")
+org.apache.xml.security.c14n.implementations.Canonicalizer20010315.getinscopeNamespaces : $z5 = interfaceinvoke r2.<java.util.Map: boolean containsKey(java.lang.Object)>(r6)
+org.apache.xml.security.c14n.implementations.Canonicalizer20010315.getinscopeNamespaces : r3 = interfaceinvoke r0.<org.w3c.dom.Element: org.w3c.dom.Node getParentNode()>()
+org.apache.xml.security.c14n.implementations.Canonicalizer20010315.getinscopeNamespaces : if r3 == null goto return r2
+org.apache.xml.security.c14n.implementations.Canonicalizer20010315.getinscopeNamespaces : r4 = interfaceinvoke r3.<org.w3c.dom.Node: org.w3c.dom.NamedNodeMap getAttributes()>()
+org.apache.xml.security.c14n.implementations.Canonicalizer20010315.getinscopeNamespaces : i1 = 0
+org.apache.xml.security.c14n.implementations.Canonicalizer20010315.getinscopeNamespaces : r3 = interfaceinvoke r3.<org.w3c.dom.Node: org.w3c.dom.Node getParentNode()>()
+org.apache.xml.security.c14n.implementations.Canonicalizer20010315.getinscopeNamespaces : $z2 = virtualinvoke r6.<java.lang.String: boolean startsWith(java.lang.String)>("xml:")
+org.apache.xml.security.c14n.implementations.Canonicalizer20010315.getinscopeNamespaces : r6 = interfaceinvoke r5.<org.w3c.dom.Attr: java.lang.String getNodeName()>()
+org.apache.xml.security.c14n.implementations.Canonicalizer20010315.getinscopeNamespaces : $r1 = new java.util.HashMap
+org.apache.xml.security.c14n.implementations.Canonicalizer20010315.getinscopeNamespaces : interfaceinvoke r2.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r6, r7)
+org.apache.xml.security.c14n.implementations.Canonicalizer20010315.getinscopeNamespaces : $r8 = interfaceinvoke r4.<org.w3c.dom.NamedNodeMap: org.w3c.dom.Node item(int)>(i1)
+org.apache.xml.security.utils.XMLUtils.getOwnerDocument : $r4 = interfaceinvoke r0.<org.w3c.dom.Node: org.w3c.dom.Document getOwnerDocument()>()
+org.apache.xml.security.utils.XMLUtils.getOwnerDocument : $s0 = interfaceinvoke r0.<org.w3c.dom.Node: short getNodeType()>()
+org.apache.xml.security.utils.JavaUtils.getBytesFromFile : $r5 = new java.io.ByteArrayOutputStream
+org.apache.xml.security.utils.JavaUtils.getBytesFromFile : $r4 = new java.io.FileInputStream
+org.apache.xml.security.utils.JavaUtils.getBytesFromFile : r3 = newarray (byte)[1024]
+org.apache.xml.security.utils.JavaUtils.getBytesFromFile : return r6
+org.apache.xml.security.utils.JavaUtils.getBytesFromFile : virtualinvoke r2.<java.io.ByteArrayOutputStream: void write(byte[],int,int)>(r3, 0, i0)
+org.apache.xml.security.utils.JavaUtils.getBytesFromFile : $i1 = virtualinvoke r1.<java.io.FileInputStream: int read(byte[])>(r3)
+org.apache.xml.security.utils.JavaUtils.getBytesFromFile : n0 = null
+org.apache.xml.security.utils.JavaUtils.getBytesFromFile : r6 = virtualinvoke r2.<java.io.ByteArrayOutputStream: byte[] toByteArray()>()
+org.apache.xml.security.c14n.implementations.Canonicalizer20010315.canonicalizeSubTree : $r15 = r0.<org.apache.xml.security.c14n.implementations.Canonicalizer20010315: java.io.Writer _writer>
+org.apache.xml.security.c14n.implementations.Canonicalizer20010315.canonicalizeSubTree : $r16 = r0.<org.apache.xml.security.c14n.implementations.Canonicalizer20010315: java.io.Writer _writer>
+org.apache.xml.security.c14n.implementations.Canonicalizer20010315.canonicalizeSubTree : r6 = virtualinvoke r0.<org.apache.xml.security.c14n.implementations.Canonicalizer20010315: java.util.List updateinscopeNamespacesAndReturnVisibleAttrs(org.w3c.dom.Element,java.util.Map,java.util.Map)>(r5, r2, r3)
+org.apache.xml.security.c14n.implementations.Canonicalizer20010315.canonicalizeSubTree : r25 = interfaceinvoke r1.<org.w3c.dom.Node: org.w3c.dom.Node getFirstChild()>()
+org.apache.xml.security.c14n.implementations.Canonicalizer20010315.canonicalizeSubTree : $r28 = r0.<org.apache.xml.security.c14n.implementations.Canonicalizer20010315: java.io.Writer _writer>
+org.apache.xml.security.c14n.implementations.Canonicalizer20010315.canonicalizeSubTree : $r18 = interfaceinvoke r6.<java.util.List: java.lang.Object get(int)>(i1)
+org.apache.xml.security.c14n.implementations.Canonicalizer20010315.canonicalizeSubTree : r5 = (org.w3c.dom.Element) r1
+org.apache.xml.security.c14n.implementations.Canonicalizer20010315.canonicalizeSubTree : $r14 = interfaceinvoke r1.<org.w3c.dom.Node: java.lang.String getNodeValue()>()
+org.apache.xml.security.c14n.implementations.Canonicalizer20010315.canonicalizeSubTree : tableswitch(s0) {     case 1: goto r5 = (org.w3c.dom.Element) r1;     case 2: goto $r7 = new org.apache.xml.security.c14n.CanonicalizationException;     case 3: goto $r14 = interfaceinvoke r1.<org.w3c.dom.Node: java.lang.String getNodeValue()>();     case 4: goto $r14 = interfaceinvoke r1.<org.w3c.dom.Node: java.lang.String getNodeValue()>();     case 5: goto goto [?= return];     case 6: goto $r7 = new org.apache.xml.security.c14n.CanonicalizationException;     case 7: goto i3 = staticinvoke <org.apache.xml.security.c14n.implementations.Canonicalizer20010315: int getPositionRelativeToDocumentElement(org.w3c.dom.Node)>(r1);     case 8: goto $z0 = r0.<org.apache.xml.security.c14n.implementations.Canonicalizer20010315: boolean _includeComments>;     case 9: goto r4 = interfaceinvoke r1.<org.w3c.dom.Node: org.w3c.dom.Node getFirstChild()>();     case 10: goto goto [?= return];     case 11: goto $r7 = new org.apache.xml.security.c14n.CanonicalizationException;     case 12: goto $r7 = new org.apache.xml.security.c14n.CanonicalizationException;     default: goto goto [?= return]; }
+org.apache.xml.security.c14n.implementations.Canonicalizer20010315.canonicalizeSubTree : virtualinvoke r0.<org.apache.xml.security.c14n.implementations.Canonicalizer20010315: void canonicalizeSubTree(org.w3c.dom.Node,java.util.Map,java.util.Map)>(r25, r2, r3)
+org.apache.xml.security.c14n.implementations.Canonicalizer20010315.canonicalizeSubTree : $r26 = new java.util.HashMap
+org.apache.xml.security.c14n.implementations.Canonicalizer20010315.canonicalizeSubTree : s0 = interfaceinvoke r1.<org.w3c.dom.Node: short getNodeType()>()
+org.apache.xml.security.c14n.implementations.Canonicalizer20010315.canonicalizeSubTree : if r25 == null goto $r28 = r0.<org.apache.xml.security.c14n.implementations.Canonicalizer20010315: java.io.Writer _writer>
+org.apache.xml.security.c14n.implementations.Canonicalizer20010315.canonicalizeSubTree : r25 = interfaceinvoke r25.<org.w3c.dom.Node: org.w3c.dom.Node getNextSibling()>()
+org.apache.xml.security.c14n.implementations.Canonicalizer20010315.canonicalizeSubTree : i1 = 0
+org.apache.xml.security.c14n.implementations.Canonicalizer20010315.canonicalizeSubTree : $s5 = interfaceinvoke r25.<org.w3c.dom.Node: short getNodeType()>()
+org.apache.xml.security.c14n.implementations.Canonicalizer20010315.canonicalizeSubTree : $r31 = r0.<org.apache.xml.security.c14n.implementations.Canonicalizer20010315: java.io.Writer _writer>
+org.apache.xml.security.c14n.implementations.Canonicalizer20010315.canonicalizeSubTree : $r24 = r0.<org.apache.xml.security.c14n.implementations.Canonicalizer20010315: java.io.Writer _writer>
+org.apache.xml.security.c14n.implementations.Canonicalizer20010315.canonicalizeSubTree : goto [?= return]
+org.apache.xml.security.c14n.implementations.Canonicalizer20010315.canonicalizeSubTree : $r29 = r0.<org.apache.xml.security.c14n.implementations.Canonicalizer20010315: java.io.Writer _writer>
+org.apache.xml.security.c14n.implementations.Canonicalizer20010315.outputAttrToWriter : $r12 = r0.<org.apache.xml.security.c14n.implementations.Canonicalizer20010315: java.io.Writer _writer>
+org.apache.xml.security.c14n.implementations.Canonicalizer20010315.outputAttrToWriter : $r4 = r0.<org.apache.xml.security.c14n.implementations.Canonicalizer20010315: java.io.Writer _writer>
+org.apache.xml.security.c14n.implementations.Canonicalizer20010315.outputAttrToWriter : i1 = 0
+org.apache.xml.security.c14n.implementations.Canonicalizer20010315.outputAttrToWriter : c2 = virtualinvoke r2.<java.lang.String: char charAt(int)>(i1)
+org.apache.xml.security.c14n.implementations.Canonicalizer20010315.outputAttrToWriter : i0 = virtualinvoke r2.<java.lang.String: int length()>()
+org.apache.xml.security.c14n.implementations.Canonicalizer20010315.outputAttrToWriter : lookupswitch(c2) {     case 9: goto $r9 = r0.<org.apache.xml.security.c14n.implementations.Canonicalizer20010315: java.io.Writer _writer>;     case 10: goto $r10 = r0.<org.apache.xml.security.c14n.implementations.Canonicalizer20010315: java.io.Writer _writer>;     case 13: goto $r11 = r0.<org.apache.xml.security.c14n.implementations.Canonicalizer20010315: java.io.Writer _writer>;     case 34: goto $r8 = r0.<org.apache.xml.security.c14n.implementations.Canonicalizer20010315: java.io.Writer _writer>;     case 38: goto $r6 = r0.<org.apache.xml.security.c14n.implementations.Canonicalizer20010315: java.io.Writer _writer>;     case 60: goto $r7 = r0.<org.apache.xml.security.c14n.implementations.Canonicalizer20010315: java.io.Writer _writer>;     default: goto $r12 = r0.<org.apache.xml.security.c14n.implementations.Canonicalizer20010315: java.io.Writer _writer>; }
+org.apache.xml.security.c14n.implementations.Canonicalizer20010315.outputAttrToWriter : $r13 = r0.<org.apache.xml.security.c14n.implementations.Canonicalizer20010315: java.io.Writer _writer>
+org.apache.xml.security.c14n.implementations.Canonicalizer20010315.outputAttrToWriter : $r3 = r0.<org.apache.xml.security.c14n.implementations.Canonicalizer20010315: java.io.Writer _writer>
+org.apache.xml.security.c14n.implementations.Canonicalizer20010315.outputAttrToWriter : $r5 = r0.<org.apache.xml.security.c14n.implementations.Canonicalizer20010315: java.io.Writer _writer>
+org.apache.xml.security.c14n.helper.C14nHelper.namespaceIsRelative : $z0 = staticinvoke <org.apache.xml.security.c14n.helper.C14nHelper: boolean namespaceIsAbsolute(java.lang.String)>(r0)
+org.apache.xml.security.utils.JavaUtils.binaryCompare : $z0 = staticinvoke <java.security.MessageDigest: boolean isEqual(byte[],byte[])>(r0, r1)
+org.apache.xml.security.c14n.implementations.Canonicalizer20010315.updateinscopeNamespacesAndReturnVisibleAttrs : $r25 = interfaceinvoke r2.<java.util.Map: java.lang.Object get(java.lang.Object)>(r24)
+org.apache.xml.security.c14n.implementations.Canonicalizer20010315.updateinscopeNamespacesAndReturnVisibleAttrs : return r5
+org.apache.xml.security.c14n.implementations.Canonicalizer20010315.updateinscopeNamespacesAndReturnVisibleAttrs : $r12 = new java.util.Vector
+org.apache.xml.security.c14n.implementations.Canonicalizer20010315.updateinscopeNamespacesAndReturnVisibleAttrs : $z19 = staticinvoke <org.apache.xml.security.c14n.helper.C14nHelper: boolean namespaceIsRelative(java.lang.String)>(r26)
+org.apache.xml.security.c14n.implementations.Canonicalizer20010315.updateinscopeNamespacesAndReturnVisibleAttrs : interfaceinvoke r2.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r9, r10)
+org.apache.xml.security.c14n.implementations.Canonicalizer20010315.updateinscopeNamespacesAndReturnVisibleAttrs : interfaceinvoke r11.<org.w3c.dom.Attr: void setValue(java.lang.String)>(r26)
+org.apache.xml.security.c14n.implementations.Canonicalizer20010315.updateinscopeNamespacesAndReturnVisibleAttrs : $r39 = new org.apache.xml.security.c14n.helper.NonNSAttrCompare
+org.apache.xml.security.c14n.implementations.Canonicalizer20010315.updateinscopeNamespacesAndReturnVisibleAttrs : r9 = interfaceinvoke r8.<org.w3c.dom.Attr: java.lang.String getNodeName()>()
+org.apache.xml.security.c14n.implementations.Canonicalizer20010315.updateinscopeNamespacesAndReturnVisibleAttrs : i1 = 0
+org.apache.xml.security.c14n.implementations.Canonicalizer20010315.updateinscopeNamespacesAndReturnVisibleAttrs : $r21 = interfaceinvoke r2.<java.util.Map: java.util.Set keySet()>()
+org.apache.xml.security.c14n.implementations.Canonicalizer20010315.updateinscopeNamespacesAndReturnVisibleAttrs : interfaceinvoke r3.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r24, r26)
+org.apache.xml.security.c14n.implementations.Canonicalizer20010315.updateinscopeNamespacesAndReturnVisibleAttrs : $z12 = virtualinvoke r24.<java.lang.String: boolean startsWith(java.lang.String)>("xml:")
+org.apache.xml.security.c14n.implementations.Canonicalizer20010315.updateinscopeNamespacesAndReturnVisibleAttrs : $z0 = virtualinvoke r9.<java.lang.String: boolean equals(java.lang.Object)>("xmlns")
+org.apache.xml.security.c14n.implementations.Canonicalizer20010315.updateinscopeNamespacesAndReturnVisibleAttrs : $r38 = new org.apache.xml.security.c14n.helper.NSAttrCompare
+org.apache.xml.security.c14n.implementations.Canonicalizer20010315.updateinscopeNamespacesAndReturnVisibleAttrs : goto [?= (branch)]
+org.apache.xml.security.c14n.implementations.Canonicalizer20010315.updateinscopeNamespacesAndReturnVisibleAttrs : $z4 = virtualinvoke r9.<java.lang.String: boolean startsWith(java.lang.String)>("xml:")
+org.apache.xml.security.c14n.implementations.Canonicalizer20010315.updateinscopeNamespacesAndReturnVisibleAttrs : $z3 = virtualinvoke r10.<java.lang.String: boolean equals(java.lang.Object)>("")
+org.apache.xml.security.c14n.implementations.Canonicalizer20010315.updateinscopeNamespacesAndReturnVisibleAttrs : goto [?= staticinvoke <edu.washington.cs.dt.impact.util.Tracer: void trace(java.lang.String,java.lang.String)>("$z11 = interfaceinvoke r22.<java.util.Iterator: boolean hasNext()>()", "org.apache.xml.security.c14n.implementations.Canonicalizer20010315.updateinscopeNamespacesAndReturnVisibleAttrs")]
+org.apache.xml.security.c14n.implementations.Canonicalizer20010315.updateinscopeNamespacesAndReturnVisibleAttrs : $z6 = interfaceinvoke r3.<java.util.Map: boolean containsKey(java.lang.Object)>("xmlns")
+org.apache.xml.security.c14n.implementations.Canonicalizer20010315.updateinscopeNamespacesAndReturnVisibleAttrs : r7 = interfaceinvoke r1.<org.w3c.dom.Element: org.w3c.dom.NamedNodeMap getAttributes()>()
+org.apache.xml.security.c14n.implementations.Canonicalizer20010315.updateinscopeNamespacesAndReturnVisibleAttrs : $z11 = interfaceinvoke r22.<java.util.Iterator: boolean hasNext()>()
+org.apache.xml.security.c14n.implementations.Canonicalizer20010315.updateinscopeNamespacesAndReturnVisibleAttrs : i0 = interfaceinvoke r7.<org.w3c.dom.NamedNodeMap: int getLength()>()
+org.apache.xml.security.c14n.implementations.Canonicalizer20010315.updateinscopeNamespacesAndReturnVisibleAttrs : $r20 = r0.<org.apache.xml.security.c14n.implementations.Canonicalizer20010315: org.w3c.dom.Node _rootNodeOfC14n>
+org.apache.xml.security.c14n.implementations.Canonicalizer20010315.updateinscopeNamespacesAndReturnVisibleAttrs : $r13 = interfaceinvoke r7.<org.w3c.dom.NamedNodeMap: org.w3c.dom.Node item(int)>(i1)
+org.apache.xml.security.c14n.implementations.Canonicalizer20010315.updateinscopeNamespacesAndReturnVisibleAttrs : r10 = interfaceinvoke r8.<org.w3c.dom.Attr: java.lang.String getValue()>()
+org.apache.xml.security.c14n.implementations.Canonicalizer20010315.updateinscopeNamespacesAndReturnVisibleAttrs : $z2 = virtualinvoke r9.<java.lang.String: boolean startsWith(java.lang.String)>("xmlns")
+org.apache.xml.security.c14n.implementations.Canonicalizer20010315.updateinscopeNamespacesAndReturnVisibleAttrs : virtualinvoke r5.<java.util.Vector: boolean addAll(java.util.Collection)>(r6)
+org.apache.xml.security.c14n.implementations.Canonicalizer20010315.updateinscopeNamespacesAndReturnVisibleAttrs : $r4 = new java.util.Vector
+org.apache.xml.security.c14n.implementations.Canonicalizer20010315.updateinscopeNamespacesAndReturnVisibleAttrs : interfaceinvoke r37.<org.w3c.dom.Attr: void setValue(java.lang.String)>(r26)
+org.apache.xml.security.c14n.implementations.Canonicalizer20010315.updateinscopeNamespacesAndReturnVisibleAttrs : $r29 = r0.<org.apache.xml.security.c14n.implementations.Canonicalizer20010315: org.w3c.dom.Document _doc>
+org.apache.xml.security.c14n.implementations.Canonicalizer20010315.updateinscopeNamespacesAndReturnVisibleAttrs : virtualinvoke r6.<java.util.Vector: boolean add(java.lang.Object)>(r11)
+org.apache.xml.security.c14n.implementations.Canonicalizer20010315.updateinscopeNamespacesAndReturnVisibleAttrs : virtualinvoke r5.<java.util.Vector: boolean add(java.lang.Object)>(r37)
+org.apache.xml.security.c14n.implementations.Canonicalizer20010315.updateinscopeNamespacesAndReturnVisibleAttrs : $r23 = interfaceinvoke r22.<java.util.Iterator: java.lang.Object next()>()
+org.apache.xml.security.c14n.implementations.Canonicalizer20010315.updateinscopeNamespacesAndReturnVisibleAttrs : $r36 = r0.<org.apache.xml.security.c14n.implementations.Canonicalizer20010315: org.w3c.dom.Document _doc>
+org.apache.xml.security.c14n.helper.NSAttrCompare.compare : r28 = interfaceinvoke r4.<org.w3c.dom.Attr: java.lang.String getLocalName()>()
+org.apache.xml.security.c14n.helper.NSAttrCompare.compare : $z2 = virtualinvoke r27.<java.lang.String: boolean equals(java.lang.Object)>("xmlns")
+org.apache.xml.security.c14n.helper.NSAttrCompare.compare : $z3 = virtualinvoke r28.<java.lang.String: boolean equals(java.lang.Object)>("xmlns")
+org.apache.xml.security.c14n.helper.NSAttrCompare.compare : r27 = interfaceinvoke r3.<org.w3c.dom.Attr: java.lang.String getLocalName()>()
+org.apache.xml.security.c14n.helper.NSAttrCompare.compare : r4 = (org.w3c.dom.Attr) r2
+org.apache.xml.security.c14n.helper.NSAttrCompare.compare : r5 = interfaceinvoke r3.<org.w3c.dom.Attr: java.lang.String getNamespaceURI()>()
+org.apache.xml.security.c14n.helper.NSAttrCompare.compare : r6 = interfaceinvoke r4.<org.w3c.dom.Attr: java.lang.String getNamespaceURI()>()
+org.apache.xml.security.c14n.helper.NSAttrCompare.compare : if r5 == null goto $r8 = new java.lang.IllegalArgumentException
+org.apache.xml.security.c14n.helper.NSAttrCompare.compare : r3 = (org.w3c.dom.Attr) r1
+org.apache.xml.security.c14n.helper.NSAttrCompare.compare : if r6 == null goto $r17 = new java.lang.IllegalArgumentException
+org.apache.xml.security.c14n.helper.NSAttrCompare.compare : $i0 = virtualinvoke r27.<java.lang.String: int compareTo(java.lang.String)>(r28)
+org.apache.xml.security.c14n.implementations.Canonicalizer20010315.outputTextToWriter : i1 = 0
+org.apache.xml.security.c14n.implementations.Canonicalizer20010315.outputTextToWriter : lookupswitch(c2) {     case 13: goto $r5 = r0.<org.apache.xml.security.c14n.implementations.Canonicalizer20010315: java.io.Writer _writer>;     case 38: goto $r2 = r0.<org.apache.xml.security.c14n.implementations.Canonicalizer20010315: java.io.Writer _writer>;     case 60: goto $r3 = r0.<org.apache.xml.security.c14n.implementations.Canonicalizer20010315: java.io.Writer _writer>;     case 62: goto $r4 = r0.<org.apache.xml.security.c14n.implementations.Canonicalizer20010315: java.io.Writer _writer>;     default: goto $r6 = r0.<org.apache.xml.security.c14n.implementations.Canonicalizer20010315: java.io.Writer _writer>; }
+org.apache.xml.security.c14n.implementations.Canonicalizer20010315.outputTextToWriter : c2 = virtualinvoke r1.<java.lang.String: char charAt(int)>(i1)
+org.apache.xml.security.c14n.implementations.Canonicalizer20010315.outputTextToWriter : i0 = virtualinvoke r1.<java.lang.String: int length()>()
+org.apache.xml.security.c14n.implementations.Canonicalizer20010315.outputTextToWriter : $r6 = r0.<org.apache.xml.security.c14n.implementations.Canonicalizer20010315: java.io.Writer _writer>
+org.apache.xml.security.c14n.implementations.Canonicalizer20010315.outputTextToWriter : if r1 != null goto i0 = virtualinvoke r1.<java.lang.String: int length()>()

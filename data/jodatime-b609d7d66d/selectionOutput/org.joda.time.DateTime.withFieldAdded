@@ -1,0 +1,11 @@
+org.joda.time.DateTime.withFieldAdded : if r1 != null >>>>>>>> org.joda.time.DateTime.withFieldAdded : $r2 = new java.lang.IllegalArgumentException
+org.joda.time.DateTime.withFieldAdded : if r1 != null >>>>>>>> org.joda.time.DateTime.withFieldAdded : if i0 != 0
+org.joda.time.DateTime.withFieldAdded : if i0 != 0 >>>>>>>> org.joda.time.DateTime.withFieldAdded : return r0
+org.joda.time.DateTime.withFieldAdded : if i0 != 0 >>>>>>>> org.joda.time.DateTime.withFieldAdded : $r3 = virtualinvoke r0.<org.joda.time.DateTime: org.joda.time.Chronology getChronology()>()
+org.joda.time.DateTime.withFieldAdded : $r3 = virtualinvoke r0.<org.joda.time.DateTime: org.joda.time.Chronology getChronology()>() >>>>>>>> org.joda.time.DateTime.withFieldAdded : $r4 = virtualinvoke r1.<org.joda.time.DurationFieldType: org.joda.time.DurationField getField(org.joda.time.Chronology)>($r3)
+org.joda.time.DateTime.withFieldAdded : $r4 = virtualinvoke r1.<org.joda.time.DurationFieldType: org.joda.time.DurationField getField(org.joda.time.Chronology)>($r3) >>>>>>>> org.joda.time.DateTime.withFieldAdded : $l2 = virtualinvoke r0.<org.joda.time.DateTime: long getMillis()>()
+org.joda.time.DateTime.withFieldAdded : $l2 = virtualinvoke r0.<org.joda.time.DateTime: long getMillis()>() >>>>>>>> org.joda.time.DateTime.withFieldAdded : l1 = virtualinvoke $r4.<org.joda.time.DurationField: long add(long,int)>($l2, i0)
+org.joda.time.DateTime.withFieldAdded : l1 = virtualinvoke $r4.<org.joda.time.DurationField: long add(long,int)>($l2, i0) >>>>>>>> org.joda.time.DateTime.withFieldAdded : $r5 = virtualinvoke r0.<org.joda.time.DateTime: org.joda.time.DateTime withMillis(long)>(l1)
+org.joda.time.DateTime.withFieldAdded : $r5 = virtualinvoke r0.<org.joda.time.DateTime: org.joda.time.DateTime withMillis(long)>(l1) >>>>>>>> org.joda.time.DateTime.withFieldAdded : return $r5
+org.joda.time.DateTime.withFieldAdded : $r2 = new java.lang.IllegalArgumentException >>>>>>>> org.joda.time.DateTime.withFieldAdded : specialinvoke $r2.<java.lang.IllegalArgumentException: void <init>(java.lang.String)>("Field must not be null")
+org.joda.time.DateTime.withFieldAdded : specialinvoke $r2.<java.lang.IllegalArgumentException: void <init>(java.lang.String)>("Field must not be null") >>>>>>>> org.joda.time.DateTime.withFieldAdded : throw $r2

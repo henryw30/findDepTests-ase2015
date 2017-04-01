@@ -1,0 +1,16 @@
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null >>>>>>>> org.jfree.chart.plot.PiePlot.setCircular : r0.<org.jfree.chart.plot.PiePlot: boolean circular> = z0
+org.jfree.chart.plot.PiePlot.setCircular : r0.<org.jfree.chart.plot.PiePlot: boolean circular> = z0 >>>>>>>> org.jfree.chart.plot.PiePlot.setCircular : if z1 == 0
+org.jfree.chart.plot.PiePlot.setCircular : if z1 == 0 >>>>>>>> org.jfree.chart.plot.PiePlot.setShadowXOffset : r0.<org.jfree.chart.plot.PiePlot: double shadowXOffset> = d0
+org.jfree.chart.plot.PiePlot.setShadowXOffset : r0.<org.jfree.chart.plot.PiePlot: double shadowXOffset> = d0 >>>>>>>> org.jfree.chart.plot.PiePlot.setShadowXOffset : virtualinvoke r0.<org.jfree.chart.plot.PiePlot: void fireChangeEvent()>()
+org.jfree.chart.plot.PiePlot.setShadowXOffset : virtualinvoke r0.<org.jfree.chart.plot.PiePlot: void fireChangeEvent()>() >>>>>>>> org.jfree.chart.plot.Plot.fireChangeEvent : $r1 = new org.jfree.chart.event.PlotChangeEvent
+org.jfree.chart.plot.Plot.fireChangeEvent : $r1 = new org.jfree.chart.event.PlotChangeEvent >>>>>>>> org.jfree.chart.plot.Plot.fireChangeEvent : specialinvoke $r1.<org.jfree.chart.event.PlotChangeEvent: void <init>(org.jfree.chart.plot.Plot)>(r0)
+org.jfree.chart.plot.Plot.fireChangeEvent : specialinvoke $r1.<org.jfree.chart.event.PlotChangeEvent: void <init>(org.jfree.chart.plot.Plot)>(r0) >>>>>>>> org.jfree.chart.plot.Plot.fireChangeEvent : virtualinvoke r0.<org.jfree.chart.plot.Plot: void notifyListeners(org.jfree.chart.event.PlotChangeEvent)>($r1)
+org.jfree.chart.plot.Plot.fireChangeEvent : virtualinvoke r0.<org.jfree.chart.plot.Plot: void notifyListeners(org.jfree.chart.event.PlotChangeEvent)>($r1) >>>>>>>> org.jfree.chart.plot.Plot.notifyListeners : $z0 = r0.<org.jfree.chart.plot.Plot: boolean notify>
+org.jfree.chart.plot.Plot.notifyListeners : $z0 = r0.<org.jfree.chart.plot.Plot: boolean notify> >>>>>>>> org.jfree.chart.plot.Plot.notifyListeners : if $z0 != 0
+org.jfree.chart.plot.Plot.notifyListeners : if $z0 != 0 >>>>>>>> org.jfree.chart.plot.Plot.notifyListeners : $r3 = r0.<org.jfree.chart.plot.Plot: javax.swing.event.EventListenerList listenerList>
+org.jfree.chart.plot.Plot.notifyListeners : $r3 = r0.<org.jfree.chart.plot.Plot: javax.swing.event.EventListenerList listenerList> >>>>>>>> org.jfree.chart.plot.Plot.notifyListeners : r2 = virtualinvoke $r3.<javax.swing.event.EventListenerList: java.lang.Object[] getListenerList()>()
+org.jfree.chart.plot.Plot.notifyListeners : r2 = virtualinvoke $r3.<javax.swing.event.EventListenerList: java.lang.Object[] getListenerList()>() >>>>>>>> org.jfree.chart.plot.Plot.notifyListeners : $i1 = lengthof r2
+org.jfree.chart.plot.Plot.notifyListeners : $i1 = lengthof r2 >>>>>>>> org.jfree.chart.plot.Plot.notifyListeners : i0 = $i1 - 2
+org.jfree.chart.plot.Plot.notifyListeners : i0 = $i1 - 2 >>>>>>>> org.jfree.chart.plot.Plot.notifyListeners : if i0 < 0
+org.jfree.chart.plot.Plot.notifyListeners : if i0 < 0 >>>>>>>> org.jfree.chart.plot.PiePlot.getSectionOutlineStroke : $r1 = r0.<org.jfree.chart.plot.PiePlot: java.awt.Stroke sectionOutlineStroke>
+org.jfree.chart.plot.PiePlot.getSectionOutlineStroke : $r1 = r0.<org.jfree.chart.plot.PiePlot: java.awt.Stroke sectionOutlineStroke> >>>>>>>> org.jfree.chart.plot.PiePlot.getSectionOutlineStroke : return $r1

@@ -1,0 +1,21 @@
+org.joda.time.MonthDay.withPeriodAdded : if r1 == null >>>>>>>> org.joda.time.MonthDay.withPeriodAdded : if i0 != 0
+org.joda.time.MonthDay.withPeriodAdded : if r1 == null >>>>>>>> org.joda.time.MonthDay.withPeriodAdded : return r0
+org.joda.time.MonthDay.withPeriodAdded : if i0 != 0 >>>>>>>> org.joda.time.MonthDay.withPeriodAdded : return r0
+org.joda.time.MonthDay.withPeriodAdded : if i0 != 0 >>>>>>>> org.joda.time.MonthDay.withPeriodAdded : r2 = virtualinvoke r0.<org.joda.time.MonthDay: int[] getValues()>()
+org.joda.time.MonthDay.withPeriodAdded : r2 = virtualinvoke r0.<org.joda.time.MonthDay: int[] getValues()>() >>>>>>>> org.joda.time.MonthDay.withPeriodAdded : i1 = 0
+org.joda.time.MonthDay.withPeriodAdded : i1 = 0 >>>>>>>> org.joda.time.MonthDay.withPeriodAdded : $i3 = interfaceinvoke r1.<org.joda.time.ReadablePeriod: int size()>()
+org.joda.time.MonthDay.withPeriodAdded : $i3 = interfaceinvoke r1.<org.joda.time.ReadablePeriod: int size()>() >>>>>>>> org.joda.time.MonthDay.withPeriodAdded : if i1 >= $i3
+org.joda.time.MonthDay.withPeriodAdded : if i1 >= $i3 >>>>>>>> org.joda.time.MonthDay.withPeriodAdded : r3 = interfaceinvoke r1.<org.joda.time.ReadablePeriod: org.joda.time.DurationFieldType getFieldType(int)>(i1)
+org.joda.time.MonthDay.withPeriodAdded : if i1 >= $i3 >>>>>>>> org.joda.time.MonthDay.withPeriodAdded : $r5 = new org.joda.time.MonthDay
+org.joda.time.MonthDay.withPeriodAdded : $r5 = new org.joda.time.MonthDay >>>>>>>> org.joda.time.MonthDay.withPeriodAdded : specialinvoke $r5.<org.joda.time.MonthDay: void <init>(org.joda.time.MonthDay,int[])>(r0, r2)
+org.joda.time.MonthDay.withPeriodAdded : specialinvoke $r5.<org.joda.time.MonthDay: void <init>(org.joda.time.MonthDay,int[])>(r0, r2) >>>>>>>> org.joda.time.MonthDay.withPeriodAdded : return $r5
+org.joda.time.MonthDay.withPeriodAdded : r3 = interfaceinvoke r1.<org.joda.time.ReadablePeriod: org.joda.time.DurationFieldType getFieldType(int)>(i1) >>>>>>>> org.joda.time.MonthDay.withPeriodAdded : i2 = virtualinvoke r0.<org.joda.time.MonthDay: int indexOf(org.joda.time.DurationFieldType)>(r3)
+org.joda.time.MonthDay.withPeriodAdded : i2 = virtualinvoke r0.<org.joda.time.MonthDay: int indexOf(org.joda.time.DurationFieldType)>(r3) >>>>>>>> org.joda.time.MonthDay.withPeriodAdded : if i2 < 0
+org.joda.time.MonthDay.withPeriodAdded : if i2 < 0 >>>>>>>> org.joda.time.MonthDay.withPeriodAdded : $r4 = virtualinvoke r0.<org.joda.time.MonthDay: org.joda.time.DateTimeField getField(int)>(i2)
+org.joda.time.MonthDay.withPeriodAdded : if i2 < 0 >>>>>>>> org.joda.time.MonthDay.withPeriodAdded : i1 = i1 + 1
+org.joda.time.MonthDay.withPeriodAdded : i1 = i1 + 1 >>>>>>>> org.joda.time.MonthDay.withPeriodAdded : goto [?= $i3 = interfaceinvoke r1.<org.joda.time.ReadablePeriod: int size()>()]
+org.joda.time.MonthDay.withPeriodAdded : goto [?= $i3 = interfaceinvoke r1.<org.joda.time.ReadablePeriod: int size()>()] >>>>>>>> org.joda.time.MonthDay.withPeriodAdded : $i3 = interfaceinvoke r1.<org.joda.time.ReadablePeriod: int size()>()
+org.joda.time.MonthDay.withPeriodAdded : $r4 = virtualinvoke r0.<org.joda.time.MonthDay: org.joda.time.DateTimeField getField(int)>(i2) >>>>>>>> org.joda.time.MonthDay.withPeriodAdded : $i4 = interfaceinvoke r1.<org.joda.time.ReadablePeriod: int getValue(int)>(i1)
+org.joda.time.MonthDay.withPeriodAdded : $i4 = interfaceinvoke r1.<org.joda.time.ReadablePeriod: int getValue(int)>(i1) >>>>>>>> org.joda.time.MonthDay.withPeriodAdded : $i5 = staticinvoke <org.joda.time.field.FieldUtils: int safeMultiply(int,int)>($i4, i0)
+org.joda.time.MonthDay.withPeriodAdded : $i5 = staticinvoke <org.joda.time.field.FieldUtils: int safeMultiply(int,int)>($i4, i0) >>>>>>>> org.joda.time.MonthDay.withPeriodAdded : r2 = virtualinvoke $r4.<org.joda.time.DateTimeField: int[] add(org.joda.time.ReadablePartial,int,int[],int)>(r0, i2, r2, $i5)
+org.joda.time.MonthDay.withPeriodAdded : r2 = virtualinvoke $r4.<org.joda.time.DateTimeField: int[] add(org.joda.time.ReadablePartial,int,int[],int)>(r0, i2, r2, $i5) >>>>>>>> org.joda.time.MonthDay.withPeriodAdded : i1 = i1 + 1

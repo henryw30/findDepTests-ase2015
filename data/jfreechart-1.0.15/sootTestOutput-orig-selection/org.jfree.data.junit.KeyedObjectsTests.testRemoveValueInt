@@ -1,0 +1,29 @@
+org.jfree.data.KeyedObjects.setObject : i0 = virtualinvoke r0.<org.jfree.data.KeyedObjects: int getIndex(java.lang.Comparable)>(r1) >>>>>>>> org.jfree.data.KeyedObjects.getIndex : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "key")
+org.jfree.data.KeyedObjects.getIndex : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "key") >>>>>>>> org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null >>>>>>>> org.jfree.data.KeyedObjects.getIndex : i0 = 0
+org.jfree.data.KeyedObjects.getIndex : i0 = 0 >>>>>>>> org.jfree.data.KeyedObjects.getIndex : $r4 = r0.<org.jfree.data.KeyedObjects: java.util.List data>
+org.jfree.data.KeyedObjects.getIndex : $r4 = r0.<org.jfree.data.KeyedObjects: java.util.List data> >>>>>>>> org.jfree.data.KeyedObjects.getIndex : r2 = interfaceinvoke $r4.<java.util.List: java.util.Iterator iterator()>()
+org.jfree.data.KeyedObjects.getIndex : r2 = interfaceinvoke $r4.<java.util.List: java.util.Iterator iterator()>() >>>>>>>> org.jfree.data.KeyedObjects.getIndex : $z0 = interfaceinvoke r2.<java.util.Iterator: boolean hasNext()>()
+org.jfree.data.KeyedObjects.getIndex : $z0 = interfaceinvoke r2.<java.util.Iterator: boolean hasNext()>() >>>>>>>> org.jfree.data.KeyedObjects.getIndex : if $z0 == 0
+org.jfree.data.KeyedObjects.getIndex : if $z0 == 0 >>>>>>>> org.jfree.data.KeyedObjects.getIndex : return -1
+org.jfree.data.KeyedObjects.getIndex : return -1 >>>>>>>> org.jfree.data.KeyedObjects.setObject : if i0 < 0
+org.jfree.data.KeyedObjects.setObject : if i0 < 0 >>>>>>>> org.jfree.data.KeyedObjects.setObject : $r6 = new org.jfree.data.KeyedObject
+org.jfree.data.KeyedObjects.setObject : $r6 = new org.jfree.data.KeyedObject >>>>>>>> org.jfree.data.KeyedObjects.setObject : specialinvoke $r6.<org.jfree.data.KeyedObject: void <init>(java.lang.Comparable,java.lang.Object)>(r1, r2)
+org.jfree.data.KeyedObjects.setObject : specialinvoke $r6.<org.jfree.data.KeyedObject: void <init>(java.lang.Comparable,java.lang.Object)>(r1, r2) >>>>>>>> org.jfree.data.KeyedObjects.setObject : r7 = $r6
+org.jfree.data.KeyedObjects.setObject : r7 = $r6 >>>>>>>> org.jfree.data.KeyedObjects.setObject : $r8 = r0.<org.jfree.data.KeyedObjects: java.util.List data>
+org.jfree.data.KeyedObjects.setObject : $r8 = r0.<org.jfree.data.KeyedObjects: java.util.List data> >>>>>>>> org.jfree.data.KeyedObjects.setObject : interfaceinvoke $r8.<java.util.List: boolean add(java.lang.Object)>(r7)
+org.jfree.data.KeyedObjects.setObject : interfaceinvoke $r8.<java.util.List: boolean add(java.lang.Object)>(r7) >>>>>>>> org.jfree.data.KeyedObjects.getIndex : $r5 = interfaceinvoke r2.<java.util.Iterator: java.lang.Object next()>()
+org.jfree.data.KeyedObjects.getIndex : $r5 = interfaceinvoke r2.<java.util.Iterator: java.lang.Object next()>() >>>>>>>> org.jfree.data.KeyedObjects.getIndex : r3 = (org.jfree.data.KeyedObject) $r5
+org.jfree.data.KeyedObjects.getIndex : r3 = (org.jfree.data.KeyedObject) $r5 >>>>>>>> org.jfree.data.KeyedObjects.getIndex : $r6 = virtualinvoke r3.<org.jfree.data.KeyedObject: java.lang.Comparable getKey()>()
+org.jfree.data.KeyedObjects.getIndex : $r6 = virtualinvoke r3.<org.jfree.data.KeyedObject: java.lang.Comparable getKey()>() >>>>>>>> org.jfree.data.KeyedObject.getKey : $r1 = r0.<org.jfree.data.KeyedObject: java.lang.Comparable key>
+org.jfree.data.KeyedObject.getKey : $r1 = r0.<org.jfree.data.KeyedObject: java.lang.Comparable key> >>>>>>>> org.jfree.data.KeyedObject.getKey : return $r1
+org.jfree.data.KeyedObject.getKey : return $r1 >>>>>>>> org.jfree.data.KeyedObjects.getIndex : $z1 = virtualinvoke $r6.<java.lang.Object: boolean equals(java.lang.Object)>(r1)
+org.jfree.data.KeyedObjects.getIndex : $z1 = virtualinvoke $r6.<java.lang.Object: boolean equals(java.lang.Object)>(r1) >>>>>>>> org.jfree.data.KeyedObjects.getIndex : if $z1 == 0
+org.jfree.data.KeyedObjects.getIndex : if $z1 == 0 >>>>>>>> org.jfree.data.KeyedObjects.getIndex : i0 = i0 + 1
+org.jfree.data.KeyedObjects.getIndex : i0 = i0 + 1 >>>>>>>> org.jfree.data.KeyedObjects.getIndex : goto [?= $z0 = interfaceinvoke r2.<java.util.Iterator: boolean hasNext()>()]
+org.jfree.data.KeyedObjects.getIndex : goto [?= $z0 = interfaceinvoke r2.<java.util.Iterator: boolean hasNext()>()] >>>>>>>> org.jfree.data.KeyedObjects.removeValue : $r1 = r0.<org.jfree.data.KeyedObjects: java.util.List data>
+org.jfree.data.KeyedObjects.removeValue : $r1 = r0.<org.jfree.data.KeyedObjects: java.util.List data> >>>>>>>> org.jfree.data.KeyedObjects.removeValue : interfaceinvoke $r1.<java.util.List: java.lang.Object remove(int)>(i0)
+org.jfree.data.KeyedObjects.removeValue : interfaceinvoke $r1.<java.util.List: java.lang.Object remove(int)>(i0) >>>>>>>> org.jfree.data.KeyedObjects.getItemCount : $r1 = r0.<org.jfree.data.KeyedObjects: java.util.List data>
+org.jfree.data.KeyedObjects.getItemCount : $r1 = r0.<org.jfree.data.KeyedObjects: java.util.List data> >>>>>>>> org.jfree.data.KeyedObjects.getItemCount : $i0 = interfaceinvoke $r1.<java.util.List: int size()>()
+org.jfree.data.KeyedObjects.getItemCount : $i0 = interfaceinvoke $r1.<java.util.List: int size()>() >>>>>>>> org.jfree.data.KeyedObjects.getItemCount : return $i0
+org.jfree.data.KeyedObjects.getItemCount : return $i0 >>>>>>>> org.jfree.data.KeyedObjects.getIndex : return i0

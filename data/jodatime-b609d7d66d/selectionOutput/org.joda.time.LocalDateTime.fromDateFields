@@ -1,0 +1,17 @@
+org.joda.time.LocalDateTime.fromDateFields : if r0 != null >>>>>>>> org.joda.time.LocalDateTime.fromDateFields : $r1 = new java.lang.IllegalArgumentException
+org.joda.time.LocalDateTime.fromDateFields : if r0 != null >>>>>>>> org.joda.time.LocalDateTime.fromDateFields : $r2 = new org.joda.time.LocalDateTime
+org.joda.time.LocalDateTime.fromDateFields : $r2 = new org.joda.time.LocalDateTime >>>>>>>> org.joda.time.LocalDateTime.fromDateFields : $i0 = virtualinvoke r0.<java.util.Date: int getYear()>()
+org.joda.time.LocalDateTime.fromDateFields : $i0 = virtualinvoke r0.<java.util.Date: int getYear()>() >>>>>>>> org.joda.time.LocalDateTime.fromDateFields : $i1 = $i0 + 1900
+org.joda.time.LocalDateTime.fromDateFields : $i1 = $i0 + 1900 >>>>>>>> org.joda.time.LocalDateTime.fromDateFields : $i2 = virtualinvoke r0.<java.util.Date: int getMonth()>()
+org.joda.time.LocalDateTime.fromDateFields : $i2 = virtualinvoke r0.<java.util.Date: int getMonth()>() >>>>>>>> org.joda.time.LocalDateTime.fromDateFields : $i3 = $i2 + 1
+org.joda.time.LocalDateTime.fromDateFields : $i3 = $i2 + 1 >>>>>>>> org.joda.time.LocalDateTime.fromDateFields : $i4 = virtualinvoke r0.<java.util.Date: int getDate()>()
+org.joda.time.LocalDateTime.fromDateFields : $i4 = virtualinvoke r0.<java.util.Date: int getDate()>() >>>>>>>> org.joda.time.LocalDateTime.fromDateFields : $i5 = virtualinvoke r0.<java.util.Date: int getHours()>()
+org.joda.time.LocalDateTime.fromDateFields : $i5 = virtualinvoke r0.<java.util.Date: int getHours()>() >>>>>>>> org.joda.time.LocalDateTime.fromDateFields : $i6 = virtualinvoke r0.<java.util.Date: int getMinutes()>()
+org.joda.time.LocalDateTime.fromDateFields : $i6 = virtualinvoke r0.<java.util.Date: int getMinutes()>() >>>>>>>> org.joda.time.LocalDateTime.fromDateFields : $i7 = virtualinvoke r0.<java.util.Date: int getSeconds()>()
+org.joda.time.LocalDateTime.fromDateFields : $i7 = virtualinvoke r0.<java.util.Date: int getSeconds()>() >>>>>>>> org.joda.time.LocalDateTime.fromDateFields : $l8 = virtualinvoke r0.<java.util.Date: long getTime()>()
+org.joda.time.LocalDateTime.fromDateFields : $l8 = virtualinvoke r0.<java.util.Date: long getTime()>() >>>>>>>> org.joda.time.LocalDateTime.fromDateFields : $l9 = $l8 % 1000L
+org.joda.time.LocalDateTime.fromDateFields : $l9 = $l8 % 1000L >>>>>>>> org.joda.time.LocalDateTime.fromDateFields : $i10 = (int) $l9
+org.joda.time.LocalDateTime.fromDateFields : $i10 = (int) $l9 >>>>>>>> org.joda.time.LocalDateTime.fromDateFields : specialinvoke $r2.<org.joda.time.LocalDateTime: void <init>(int,int,int,int,int,int,int)>($i1, $i3, $i4, $i5, $i6, $i7, $i10)
+org.joda.time.LocalDateTime.fromDateFields : specialinvoke $r2.<org.joda.time.LocalDateTime: void <init>(int,int,int,int,int,int,int)>($i1, $i3, $i4, $i5, $i6, $i7, $i10) >>>>>>>> org.joda.time.LocalDateTime.fromDateFields : return $r2
+org.joda.time.LocalDateTime.fromDateFields : $r1 = new java.lang.IllegalArgumentException >>>>>>>> org.joda.time.LocalDateTime.fromDateFields : specialinvoke $r1.<java.lang.IllegalArgumentException: void <init>(java.lang.String)>("The date must not be null")
+org.joda.time.LocalDateTime.fromDateFields : specialinvoke $r1.<java.lang.IllegalArgumentException: void <init>(java.lang.String)>("The date must not be null") >>>>>>>> org.joda.time.LocalDateTime.fromDateFields : throw $r1

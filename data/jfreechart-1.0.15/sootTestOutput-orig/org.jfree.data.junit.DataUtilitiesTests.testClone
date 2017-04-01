@@ -1,0 +1,16 @@
+org.jfree.data.DataUtilities.equal : if r1 != null goto $i1 = lengthof r0
+org.jfree.data.DataUtilities.equal : $r2 = r0[i0]
+org.jfree.data.DataUtilities.equal : i0 = 0
+org.jfree.data.DataUtilities.equal : return 1
+org.jfree.data.DataUtilities.equal : $i1 = lengthof r0
+org.jfree.data.DataUtilities.equal : return 0
+org.jfree.data.DataUtilities.equal : if r0 != null goto (branch)
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null goto return
+org.jfree.data.DataUtilities.clone : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r0, "source")
+org.jfree.data.DataUtilities.clone : r1[i0] = r2
+org.jfree.data.DataUtilities.clone : i0 = 0
+org.jfree.data.DataUtilities.clone : $i1 = lengthof r0
+org.jfree.data.DataUtilities.clone : $r5 = r0[i0]
+org.jfree.data.DataUtilities.clone : return r1
+org.jfree.data.DataUtilities.clone : $r3 = r0[i0]
+org.jfree.data.DataUtilities.clone : $r4 = r0[i0]

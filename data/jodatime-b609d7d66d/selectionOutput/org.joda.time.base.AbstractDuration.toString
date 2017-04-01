@@ -1,0 +1,42 @@
+org.joda.time.base.AbstractDuration.toString : l0 = virtualinvoke r0.<org.joda.time.base.AbstractDuration: long getMillis()>() >>>>>>>> org.joda.time.base.AbstractDuration.toString : $r2 = new java.lang.StringBuffer
+org.joda.time.base.AbstractDuration.toString : $r2 = new java.lang.StringBuffer >>>>>>>> org.joda.time.base.AbstractDuration.toString : specialinvoke $r2.<java.lang.StringBuffer: void <init>()>()
+org.joda.time.base.AbstractDuration.toString : specialinvoke $r2.<java.lang.StringBuffer: void <init>()>() >>>>>>>> org.joda.time.base.AbstractDuration.toString : r1 = $r2
+org.joda.time.base.AbstractDuration.toString : r1 = $r2 >>>>>>>> org.joda.time.base.AbstractDuration.toString : virtualinvoke r1.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>("PT")
+org.joda.time.base.AbstractDuration.toString : virtualinvoke r1.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>("PT") >>>>>>>> org.joda.time.base.AbstractDuration.toString : $b1 = l0 cmp 0L
+org.joda.time.base.AbstractDuration.toString : $b1 = l0 cmp 0L >>>>>>>> org.joda.time.base.AbstractDuration.toString : if $b1 >= 0
+org.joda.time.base.AbstractDuration.toString : if $b1 >= 0 >>>>>>>> org.joda.time.base.AbstractDuration.toString : $z1 = 1
+org.joda.time.base.AbstractDuration.toString : if $b1 >= 0 >>>>>>>> org.joda.time.base.AbstractDuration.toString : $z1 = 0
+org.joda.time.base.AbstractDuration.toString : $z1 = 0 >>>>>>>> org.joda.time.base.AbstractDuration.toString : z0 = $z1
+org.joda.time.base.AbstractDuration.toString : z0 = $z1 >>>>>>>> org.joda.time.base.AbstractDuration.toString : staticinvoke <org.joda.time.format.FormatUtils: void appendUnpaddedInteger(java.lang.StringBuffer,long)>(r1, l0)
+org.joda.time.base.AbstractDuration.toString : staticinvoke <org.joda.time.format.FormatUtils: void appendUnpaddedInteger(java.lang.StringBuffer,long)>(r1, l0) >>>>>>>> org.joda.time.base.AbstractDuration.toString : $i2 = virtualinvoke r1.<java.lang.StringBuffer: int length()>()
+org.joda.time.base.AbstractDuration.toString : $i2 = virtualinvoke r1.<java.lang.StringBuffer: int length()>() >>>>>>>> org.joda.time.base.AbstractDuration.toString : if z0 == 0
+org.joda.time.base.AbstractDuration.toString : if z0 == 0 >>>>>>>> org.joda.time.base.AbstractDuration.toString : $b3 = 7
+org.joda.time.base.AbstractDuration.toString : if z0 == 0 >>>>>>>> org.joda.time.base.AbstractDuration.toString : $b3 = 6
+org.joda.time.base.AbstractDuration.toString : $b3 = 6 >>>>>>>> org.joda.time.base.AbstractDuration.toString : if $i2 >= $b3
+org.joda.time.base.AbstractDuration.toString : if $i2 >= $b3 >>>>>>>> org.joda.time.base.AbstractDuration.toString : if z0 == 0
+org.joda.time.base.AbstractDuration.toString : if $i2 >= $b3 >>>>>>>> org.joda.time.base.AbstractDuration.toString : $l5 = l0 / 1000L
+org.joda.time.base.AbstractDuration.toString : $l5 = l0 / 1000L >>>>>>>> org.joda.time.base.AbstractDuration.toString : $l6 = $l5 * 1000L
+org.joda.time.base.AbstractDuration.toString : $l6 = $l5 * 1000L >>>>>>>> org.joda.time.base.AbstractDuration.toString : $b7 = $l6 cmp l0
+org.joda.time.base.AbstractDuration.toString : $b7 = $l6 cmp l0 >>>>>>>> org.joda.time.base.AbstractDuration.toString : if $b7 != 0
+org.joda.time.base.AbstractDuration.toString : if $b7 != 0 >>>>>>>> org.joda.time.base.AbstractDuration.toString : $i8 = virtualinvoke r1.<java.lang.StringBuffer: int length()>()
+org.joda.time.base.AbstractDuration.toString : if $b7 != 0 >>>>>>>> org.joda.time.base.AbstractDuration.toString : $i10 = virtualinvoke r1.<java.lang.StringBuffer: int length()>()
+org.joda.time.base.AbstractDuration.toString : $i10 = virtualinvoke r1.<java.lang.StringBuffer: int length()>() >>>>>>>> org.joda.time.base.AbstractDuration.toString : $i11 = $i10 - 3
+org.joda.time.base.AbstractDuration.toString : $i11 = $i10 - 3 >>>>>>>> org.joda.time.base.AbstractDuration.toString : virtualinvoke r1.<java.lang.StringBuffer: java.lang.StringBuffer insert(int,java.lang.String)>($i11, ".")
+org.joda.time.base.AbstractDuration.toString : virtualinvoke r1.<java.lang.StringBuffer: java.lang.StringBuffer insert(int,java.lang.String)>($i11, ".") >>>>>>>> org.joda.time.base.AbstractDuration.toString : virtualinvoke r1.<java.lang.StringBuffer: java.lang.StringBuffer append(char)>(83)
+org.joda.time.base.AbstractDuration.toString : virtualinvoke r1.<java.lang.StringBuffer: java.lang.StringBuffer append(char)>(83) >>>>>>>> org.joda.time.base.AbstractDuration.toString : $r8 = virtualinvoke r1.<java.lang.StringBuffer: java.lang.String toString()>()
+org.joda.time.base.AbstractDuration.toString : $r8 = virtualinvoke r1.<java.lang.StringBuffer: java.lang.String toString()>() >>>>>>>> org.joda.time.base.AbstractDuration.toString : return $r8
+org.joda.time.base.AbstractDuration.toString : $i8 = virtualinvoke r1.<java.lang.StringBuffer: int length()>() >>>>>>>> org.joda.time.base.AbstractDuration.toString : $i9 = $i8 - 3
+org.joda.time.base.AbstractDuration.toString : $i9 = $i8 - 3 >>>>>>>> org.joda.time.base.AbstractDuration.toString : virtualinvoke r1.<java.lang.StringBuffer: void setLength(int)>($i9)
+org.joda.time.base.AbstractDuration.toString : virtualinvoke r1.<java.lang.StringBuffer: void setLength(int)>($i9) >>>>>>>> org.joda.time.base.AbstractDuration.toString : goto [?= virtualinvoke r1.<java.lang.StringBuffer: java.lang.StringBuffer append(char)>(83)]
+org.joda.time.base.AbstractDuration.toString : goto [?= virtualinvoke r1.<java.lang.StringBuffer: java.lang.StringBuffer append(char)>(83)] >>>>>>>> org.joda.time.base.AbstractDuration.toString : virtualinvoke r1.<java.lang.StringBuffer: java.lang.StringBuffer append(char)>(83)
+org.joda.time.base.AbstractDuration.toString : if z0 == 0 >>>>>>>> org.joda.time.base.AbstractDuration.toString : $b4 = 3
+org.joda.time.base.AbstractDuration.toString : if z0 == 0 >>>>>>>> org.joda.time.base.AbstractDuration.toString : $b4 = 2
+org.joda.time.base.AbstractDuration.toString : $b4 = 2 >>>>>>>> org.joda.time.base.AbstractDuration.toString : virtualinvoke r1.<java.lang.StringBuffer: java.lang.StringBuffer insert(int,java.lang.String)>($b4, "0")
+org.joda.time.base.AbstractDuration.toString : virtualinvoke r1.<java.lang.StringBuffer: java.lang.StringBuffer insert(int,java.lang.String)>($b4, "0") >>>>>>>> org.joda.time.base.AbstractDuration.toString : goto [?= $i2 = virtualinvoke r1.<java.lang.StringBuffer: int length()>()]
+org.joda.time.base.AbstractDuration.toString : goto [?= $i2 = virtualinvoke r1.<java.lang.StringBuffer: int length()>()] >>>>>>>> org.joda.time.base.AbstractDuration.toString : $i2 = virtualinvoke r1.<java.lang.StringBuffer: int length()>()
+org.joda.time.base.AbstractDuration.toString : $b4 = 3 >>>>>>>> org.joda.time.base.AbstractDuration.toString : goto [?= virtualinvoke r1.<java.lang.StringBuffer: java.lang.StringBuffer insert(int,java.lang.String)>($b4, "0")]
+org.joda.time.base.AbstractDuration.toString : goto [?= virtualinvoke r1.<java.lang.StringBuffer: java.lang.StringBuffer insert(int,java.lang.String)>($b4, "0")] >>>>>>>> org.joda.time.base.AbstractDuration.toString : virtualinvoke r1.<java.lang.StringBuffer: java.lang.StringBuffer insert(int,java.lang.String)>($b4, "0")
+org.joda.time.base.AbstractDuration.toString : $b3 = 7 >>>>>>>> org.joda.time.base.AbstractDuration.toString : goto [?= (branch)]
+org.joda.time.base.AbstractDuration.toString : goto [?= (branch)] >>>>>>>> org.joda.time.base.AbstractDuration.toString : if $i2 >= $b3
+org.joda.time.base.AbstractDuration.toString : $z1 = 1 >>>>>>>> org.joda.time.base.AbstractDuration.toString : goto [?= z0 = $z1]
+org.joda.time.base.AbstractDuration.toString : goto [?= z0 = $z1] >>>>>>>> org.joda.time.base.AbstractDuration.toString : z0 = $z1

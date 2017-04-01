@@ -1,0 +1,21 @@
+org.jfree.data.xy.DefaultIntervalXYDataset.addSeries : $r14 = r0.<org.jfree.data.xy.DefaultIntervalXYDataset: java.util.List seriesList>
+org.jfree.data.xy.DefaultIntervalXYDataset.addSeries : if i1 != -1 goto $r15 = r0.<org.jfree.data.xy.DefaultIntervalXYDataset: java.util.List seriesList>
+org.jfree.data.xy.DefaultIntervalXYDataset.addSeries : $r18 = new org.jfree.data.general.DatasetChangeEvent
+org.jfree.data.xy.DefaultIntervalXYDataset.addSeries : $r6 = r2[0]
+org.jfree.data.xy.DefaultIntervalXYDataset.addSeries : $r13 = r0.<org.jfree.data.xy.DefaultIntervalXYDataset: java.util.List seriesKeys>
+org.jfree.data.xy.DefaultIntervalXYDataset.addSeries : i1 = virtualinvoke r0.<org.jfree.data.xy.DefaultIntervalXYDataset: int indexOf(java.lang.Comparable)>(r1)
+org.jfree.data.xy.DefaultIntervalXYDataset.addSeries : if r2 != null goto $i2 = lengthof r2
+org.jfree.data.xy.DefaultIntervalXYDataset.addSeries : $i2 = lengthof r2
+org.jfree.data.xy.DefaultIntervalXYDataset.addSeries : if r1 != null goto (branch)
+org.jfree.data.xy.DefaultIntervalXYDataset.addSeries : $r7 = r2[1]
+org.jfree.data.general.AbstractDataset.notifyListeners : $r3 = r0.<org.jfree.data.general.AbstractDataset: javax.swing.event.EventListenerList listenerList>
+org.jfree.data.general.AbstractDataset.notifyListeners : $i1 = lengthof r2
+org.jfree.data.general.AbstractSeriesDataset.indexOf : return -1
+org.jfree.data.general.AbstractSeriesDataset.indexOf : i1 = 0
+org.jfree.data.general.AbstractSeriesDataset.indexOf : i0 = virtualinvoke r0.<org.jfree.data.general.AbstractSeriesDataset: int getSeriesCount()>()
+org.jfree.data.general.AbstractSeriesDataset.indexOf : $r2 = virtualinvoke r0.<org.jfree.data.general.AbstractSeriesDataset: java.lang.Comparable getSeriesKey(int)>(i1)
+org.jfree.data.xy.DefaultIntervalXYDataset.getSeriesKey : if i0 < 0 goto $r1 = new java.lang.IllegalArgumentException
+org.jfree.data.xy.DefaultIntervalXYDataset.getSeriesKey : $r2 = r0.<org.jfree.data.xy.DefaultIntervalXYDataset: java.util.List seriesKeys>
+org.jfree.data.xy.DefaultIntervalXYDataset.getStartXValue : $r5 = r1[1]
+org.jfree.data.xy.DefaultIntervalXYDataset.getStartXValue : $r2 = r0.<org.jfree.data.xy.DefaultIntervalXYDataset: java.util.List seriesList>
+org.jfree.data.xy.DefaultIntervalXYDataset.getSeriesCount : $r1 = r0.<org.jfree.data.xy.DefaultIntervalXYDataset: java.util.List seriesList>

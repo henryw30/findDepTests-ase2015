@@ -1,0 +1,28 @@
+org.jfree.chart.util.RelativeDateFormat.getHourSuffix : $r1 = r0.<org.jfree.chart.util.RelativeDateFormat: java.lang.String hourSuffix>
+org.jfree.chart.util.RelativeDateFormat.setSecondFormatter : r0.<org.jfree.chart.util.RelativeDateFormat: java.text.NumberFormat secondFormatter> = r1
+org.jfree.chart.util.RelativeDateFormat.setSecondFormatter : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "formatter")
+org.jfree.chart.util.RelativeDateFormat.getMinuteSuffix : $r1 = r0.<org.jfree.chart.util.RelativeDateFormat: java.lang.String minuteSuffix>
+org.jfree.chart.util.RelativeDateFormat.getSecondSuffix : $r1 = r0.<org.jfree.chart.util.RelativeDateFormat: java.lang.String secondSuffix>
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null goto return
+org.jfree.chart.util.RelativeDateFormat.format : $l8 = <org.jfree.chart.util.RelativeDateFormat: long MILLISECONDS_IN_ONE_DAY>
+org.jfree.chart.util.RelativeDateFormat.format : $l3 = <org.jfree.chart.util.RelativeDateFormat: long MILLISECONDS_IN_ONE_DAY>
+org.jfree.chart.util.RelativeDateFormat.format : l1 = l1 * -1L
+org.jfree.chart.util.RelativeDateFormat.format : $l15 = l5 * 60000L
+org.jfree.chart.util.RelativeDateFormat.format : return r2
+org.jfree.chart.util.RelativeDateFormat.format : l0 = virtualinvoke r1.<java.util.Date: long getTime()>()
+org.jfree.chart.util.RelativeDateFormat.format : $l6 = r0.<org.jfree.chart.util.RelativeDateFormat: long baseMillis>
+org.jfree.chart.util.RelativeDateFormat.format : $r19 = virtualinvoke r0.<org.jfree.chart.util.RelativeDateFormat: java.lang.String getMinuteSuffix()>()
+org.jfree.chart.util.RelativeDateFormat.format : $d1 = (double) l16
+org.jfree.chart.util.RelativeDateFormat.format : $r21 = r0.<org.jfree.chart.util.RelativeDateFormat: java.text.NumberFormat secondFormatter>
+org.jfree.chart.util.RelativeDateFormat.format : $b18 = l4 cmp 0L
+org.jfree.chart.util.RelativeDateFormat.format : $b7 = l1 cmp 0L
+org.jfree.chart.util.RelativeDateFormat.format : $r24 = virtualinvoke r0.<org.jfree.chart.util.RelativeDateFormat: java.lang.String getSecondSuffix()>()
+org.jfree.chart.util.RelativeDateFormat.format : $r16 = r0.<org.jfree.chart.util.RelativeDateFormat: java.text.NumberFormat minuteFormatter>
+org.jfree.chart.util.RelativeDateFormat.format : $r14 = virtualinvoke r0.<org.jfree.chart.util.RelativeDateFormat: java.lang.String getHourSuffix()>()
+org.jfree.chart.util.RelativeDateFormat.format : $l12 = <org.jfree.chart.util.RelativeDateFormat: long MILLISECONDS_IN_ONE_HOUR>
+org.jfree.chart.util.RelativeDateFormat.format : virtualinvoke r2.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>(r4)
+org.jfree.chart.util.RelativeDateFormat.format : l5 = l14 / 60000L
+org.jfree.chart.util.RelativeDateFormat.format : $r11 = r0.<org.jfree.chart.util.RelativeDateFormat: java.text.NumberFormat hourFormatter>
+org.jfree.chart.util.RelativeDateFormat.format : r4 = "-"
+org.jfree.chart.util.RelativeDateFormat.format : $b17 = l2 cmp 0L
+org.jfree.chart.util.RelativeDateFormat.format : $l11 = <org.jfree.chart.util.RelativeDateFormat: long MILLISECONDS_IN_ONE_HOUR>

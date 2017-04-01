@@ -1,0 +1,107 @@
+org.joda.time.DateTimeUtils.setCurrentMillisSystem : staticinvoke <org.joda.time.DateTimeUtils: void checkPermission()>() >>>>>>>> org.joda.time.DateTimeUtils.checkPermission : r0 = staticinvoke <java.lang.System: java.lang.SecurityManager getSecurityManager()>()
+org.joda.time.DateTimeUtils.checkPermission : r0 = staticinvoke <java.lang.System: java.lang.SecurityManager getSecurityManager()>() >>>>>>>> org.joda.time.DateTimeUtils.checkPermission : if r0 == null
+org.joda.time.DateTimeUtils.checkPermission : if r0 == null >>>>>>>> org.joda.time.DateTimeUtils.setCurrentMillisSystem : $r0 = <org.joda.time.DateTimeUtils: org.joda.time.DateTimeUtils$SystemMillisProvider SYSTEM_MILLIS_PROVIDER>
+org.joda.time.DateTimeUtils.setCurrentMillisSystem : $r0 = <org.joda.time.DateTimeUtils: org.joda.time.DateTimeUtils$SystemMillisProvider SYSTEM_MILLIS_PROVIDER> >>>>>>>> org.joda.time.DateTimeUtils.setCurrentMillisSystem : <org.joda.time.DateTimeUtils: org.joda.time.DateTimeUtils$MillisProvider cMillisProvider> = $r0
+org.joda.time.DateTimeUtils.setCurrentMillisSystem : <org.joda.time.DateTimeUtils: org.joda.time.DateTimeUtils$MillisProvider cMillisProvider> = $r0 >>>>>>>> org.joda.time.DateTimeZone.setDefault : r1 = staticinvoke <java.lang.System: java.lang.SecurityManager getSecurityManager()>()
+org.joda.time.DateTimeZone.setDefault : r1 = staticinvoke <java.lang.System: java.lang.SecurityManager getSecurityManager()>() >>>>>>>> org.joda.time.DateTimeZone.setDefault : if r1 == null
+org.joda.time.DateTimeZone.setDefault : if r1 == null >>>>>>>> org.joda.time.DateTimeZone.setDefault : if r0 != null
+org.joda.time.DateTimeZone.setDefault : if r0 != null >>>>>>>> org.joda.time.DateTimeZone.setDefault : $r6 = class "org/joda/time/DateTimeZone"
+org.joda.time.DateTimeZone.setDefault : $r6 = class "org/joda/time/DateTimeZone" >>>>>>>> org.joda.time.DateTimeZone.setDefault : r3 = $r6
+org.joda.time.DateTimeZone.setDefault : r3 = $r6 >>>>>>>> org.joda.time.DateTimeZone.setDefault : entermonitor $r6
+org.joda.time.DateTimeZone.setDefault : entermonitor $r6 >>>>>>>> org.joda.time.DateTimeZone.setDefault : <org.joda.time.DateTimeZone: org.joda.time.DateTimeZone cDefault> = r0
+org.joda.time.DateTimeZone.setDefault : <org.joda.time.DateTimeZone: org.joda.time.DateTimeZone cDefault> = r0 >>>>>>>> org.joda.time.DateTimeZone.setDefault : exitmonitor r3
+org.joda.time.DateTimeZone.setDefault : exitmonitor r3 >>>>>>>> org.joda.time.DateTimeZone.setDefault : goto [?= return]
+org.joda.time.DateTimeZone.setDefault : goto [?= return] >>>>>>>> org.joda.time.DateTimeUtils.setCurrentMillisFixed : staticinvoke <org.joda.time.DateTimeUtils: void checkPermission()>()
+org.joda.time.DateTimeUtils.setCurrentMillisFixed : staticinvoke <org.joda.time.DateTimeUtils: void checkPermission()>() >>>>>>>> org.joda.time.DateTimeUtils.setCurrentMillisFixed : $r0 = new org.joda.time.DateTimeUtils$FixedMillisProvider
+org.joda.time.DateTimeUtils.setCurrentMillisFixed : $r0 = new org.joda.time.DateTimeUtils$FixedMillisProvider >>>>>>>> org.joda.time.DateTimeUtils.setCurrentMillisFixed : specialinvoke $r0.<org.joda.time.DateTimeUtils$FixedMillisProvider: void <init>(long)>(l0)
+org.joda.time.DateTimeUtils.setCurrentMillisFixed : specialinvoke $r0.<org.joda.time.DateTimeUtils$FixedMillisProvider: void <init>(long)>(l0) >>>>>>>> org.joda.time.DateTimeUtils.setCurrentMillisFixed : <org.joda.time.DateTimeUtils: org.joda.time.DateTimeUtils$MillisProvider cMillisProvider> = $r0
+org.joda.time.DateTimeUtils.setCurrentMillisFixed : <org.joda.time.DateTimeUtils: org.joda.time.DateTimeUtils$MillisProvider cMillisProvider> = $r0 >>>>>>>> org.joda.time.DateTimeZone.getDefault : r0 = <org.joda.time.DateTimeZone: org.joda.time.DateTimeZone cDefault>
+org.joda.time.DateTimeZone.getDefault : r0 = <org.joda.time.DateTimeZone: org.joda.time.DateTimeZone cDefault> >>>>>>>> org.joda.time.DateTimeZone.getDefault : if r0 != null
+org.joda.time.DateTimeZone.getDefault : if r0 != null >>>>>>>> org.joda.time.DateTimeZone.getDefault : return r0
+org.joda.time.DateTimeZone.getDefault : return r0 >>>>>>>> org.joda.time.convert.ConverterManager.getInstance : $r0 = <org.joda.time.convert.ConverterManager: org.joda.time.convert.ConverterManager INSTANCE>
+org.joda.time.convert.ConverterManager.getInstance : $r0 = <org.joda.time.convert.ConverterManager: org.joda.time.convert.ConverterManager INSTANCE> >>>>>>>> org.joda.time.convert.ConverterManager.getInstance : if $r0 != null
+org.joda.time.convert.ConverterManager.getInstance : if $r0 != null >>>>>>>> org.joda.time.convert.ConverterManager.getInstance : $r2 = <org.joda.time.convert.ConverterManager: org.joda.time.convert.ConverterManager INSTANCE>
+org.joda.time.convert.ConverterManager.getInstance : $r2 = <org.joda.time.convert.ConverterManager: org.joda.time.convert.ConverterManager INSTANCE> >>>>>>>> org.joda.time.convert.ConverterManager.getInstance : return $r2
+org.joda.time.convert.ConverterManager.getInstance : return $r2 >>>>>>>> org.joda.time.convert.ConverterManager.getDurationConverter : $r4 = r0.<org.joda.time.convert.ConverterManager: org.joda.time.convert.ConverterSet iDurationConverters>
+org.joda.time.convert.ConverterManager.getDurationConverter : $r4 = r0.<org.joda.time.convert.ConverterManager: org.joda.time.convert.ConverterSet iDurationConverters> >>>>>>>> org.joda.time.convert.ConverterManager.getDurationConverter : if r1 != null
+org.joda.time.convert.ConverterManager.getDurationConverter : if r1 != null >>>>>>>> org.joda.time.convert.ConverterManager.getDurationConverter : $r5 = virtualinvoke r1.<java.lang.Object: java.lang.Class getClass()>()
+org.joda.time.convert.ConverterManager.getDurationConverter : $r5 = virtualinvoke r1.<java.lang.Object: java.lang.Class getClass()>() >>>>>>>> org.joda.time.convert.ConverterManager.getDurationConverter : $r6 = virtualinvoke $r4.<org.joda.time.convert.ConverterSet: org.joda.time.convert.Converter select(java.lang.Class)>($r5)
+org.joda.time.convert.ConverterManager.getDurationConverter : $r6 = virtualinvoke $r4.<org.joda.time.convert.ConverterSet: org.joda.time.convert.Converter select(java.lang.Class)>($r5) >>>>>>>> org.joda.time.convert.ConverterSet.select : r2 = r0.<org.joda.time.convert.ConverterSet: org.joda.time.convert.ConverterSet$Entry[] iSelectEntries>
+org.joda.time.convert.ConverterSet.select : r2 = r0.<org.joda.time.convert.ConverterSet: org.joda.time.convert.ConverterSet$Entry[] iSelectEntries> >>>>>>>> org.joda.time.convert.ConverterSet.select : i0 = lengthof r2
+org.joda.time.convert.ConverterSet.select : i0 = lengthof r2 >>>>>>>> org.joda.time.convert.ConverterSet.select : if r1 != null
+org.joda.time.convert.ConverterSet.select : if r1 != null >>>>>>>> org.joda.time.convert.ConverterSet.select : $i5 = virtualinvoke r1.<java.lang.Object: int hashCode()>()
+org.joda.time.convert.ConverterSet.select : $i5 = virtualinvoke r1.<java.lang.Object: int hashCode()>() >>>>>>>> org.joda.time.convert.ConverterSet.select : $i6 = i0 - 1
+org.joda.time.convert.ConverterSet.select : $i6 = i0 - 1 >>>>>>>> org.joda.time.convert.ConverterSet.select : $i4 = $i5 & $i6
+org.joda.time.convert.ConverterSet.select : $i4 = $i5 & $i6 >>>>>>>> org.joda.time.convert.ConverterSet.select : i1 = $i4
+org.joda.time.convert.ConverterSet.select : i1 = $i4 >>>>>>>> org.joda.time.convert.ConverterSet.select : $r6 = r2[i1]
+org.joda.time.convert.ConverterSet.select : $r6 = r2[i1] >>>>>>>> org.joda.time.convert.ConverterSet.select : r3 = $r6
+org.joda.time.convert.ConverterSet.select : r3 = $r6 >>>>>>>> org.joda.time.convert.ConverterSet.select : if $r6 == null
+org.joda.time.convert.ConverterSet.select : if $r6 == null >>>>>>>> org.joda.time.convert.ConverterSet.select : $r7 = r3.<org.joda.time.convert.ConverterSet$Entry: java.lang.Class iType>
+org.joda.time.convert.ConverterSet.select : $r7 = r3.<org.joda.time.convert.ConverterSet$Entry: java.lang.Class iType> >>>>>>>> org.joda.time.convert.ConverterSet.select : if $r7 != r1
+org.joda.time.convert.ConverterSet.select : if $r7 != r1 >>>>>>>> org.joda.time.convert.ConverterSet.select : $r8 = r3.<org.joda.time.convert.ConverterSet$Entry: org.joda.time.convert.Converter iConverter>
+org.joda.time.convert.ConverterSet.select : $r8 = r3.<org.joda.time.convert.ConverterSet$Entry: org.joda.time.convert.Converter iConverter> >>>>>>>> org.joda.time.convert.ConverterSet.select : return $r8
+org.joda.time.convert.ConverterSet.select : return $r8 >>>>>>>> org.joda.time.convert.ConverterManager.getDurationConverter : r2 = (org.joda.time.convert.DurationConverter) $r6
+org.joda.time.convert.ConverterManager.getDurationConverter : r2 = (org.joda.time.convert.DurationConverter) $r6 >>>>>>>> org.joda.time.convert.ConverterManager.getDurationConverter : if r2 == null
+org.joda.time.convert.ConverterManager.getDurationConverter : if r2 == null >>>>>>>> org.joda.time.convert.ConverterManager.getDurationConverter : return r2
+org.joda.time.convert.ConverterManager.getDurationConverter : return r2 >>>>>>>> org.joda.time.convert.StringConverter.getDurationMillis : r2 = (java.lang.String) r1
+org.joda.time.convert.StringConverter.getDurationMillis : r2 = (java.lang.String) r1 >>>>>>>> org.joda.time.convert.StringConverter.getDurationMillis : r3 = r2
+org.joda.time.convert.StringConverter.getDurationMillis : r3 = r2 >>>>>>>> org.joda.time.convert.StringConverter.getDurationMillis : i0 = virtualinvoke r3.<java.lang.String: int length()>()
+org.joda.time.convert.StringConverter.getDurationMillis : i0 = virtualinvoke r3.<java.lang.String: int length()>() >>>>>>>> org.joda.time.convert.StringConverter.getDurationMillis : if i0 < 4
+org.joda.time.convert.StringConverter.getDurationMillis : if i0 < 4 >>>>>>>> org.joda.time.convert.StringConverter.getDurationMillis : $c4 = virtualinvoke r3.<java.lang.String: char charAt(int)>(0)
+org.joda.time.convert.StringConverter.getDurationMillis : $c4 = virtualinvoke r3.<java.lang.String: char charAt(int)>(0) >>>>>>>> org.joda.time.convert.StringConverter.getDurationMillis : if $c4 == 80
+org.joda.time.convert.StringConverter.getDurationMillis : if $c4 == 80 >>>>>>>> org.joda.time.convert.StringConverter.getDurationMillis : $c6 = virtualinvoke r3.<java.lang.String: char charAt(int)>(1)
+org.joda.time.convert.StringConverter.getDurationMillis : $c6 = virtualinvoke r3.<java.lang.String: char charAt(int)>(1) >>>>>>>> org.joda.time.convert.StringConverter.getDurationMillis : if $c6 == 84
+org.joda.time.convert.StringConverter.getDurationMillis : if $c6 == 84 >>>>>>>> org.joda.time.convert.StringConverter.getDurationMillis : $i8 = i0 - 1
+org.joda.time.convert.StringConverter.getDurationMillis : $i8 = i0 - 1 >>>>>>>> org.joda.time.convert.StringConverter.getDurationMillis : $c9 = virtualinvoke r3.<java.lang.String: char charAt(int)>($i8)
+org.joda.time.convert.StringConverter.getDurationMillis : $c9 = virtualinvoke r3.<java.lang.String: char charAt(int)>($i8) >>>>>>>> org.joda.time.convert.StringConverter.getDurationMillis : if $c9 == 83
+org.joda.time.convert.StringConverter.getDurationMillis : if $c9 == 83 >>>>>>>> org.joda.time.convert.StringConverter.getDurationMillis : $i12 = i0 - 1
+org.joda.time.convert.StringConverter.getDurationMillis : $i12 = i0 - 1 >>>>>>>> org.joda.time.convert.StringConverter.getDurationMillis : r10 = virtualinvoke r3.<java.lang.String: java.lang.String substring(int,int)>(2, $i12)
+org.joda.time.convert.StringConverter.getDurationMillis : r10 = virtualinvoke r3.<java.lang.String: java.lang.String substring(int,int)>(2, $i12) >>>>>>>> org.joda.time.convert.StringConverter.getDurationMillis : i1 = -1
+org.joda.time.convert.StringConverter.getDurationMillis : i1 = -1 >>>>>>>> org.joda.time.convert.StringConverter.getDurationMillis : i2 = 0
+org.joda.time.convert.StringConverter.getDurationMillis : i2 = 0 >>>>>>>> org.joda.time.convert.StringConverter.getDurationMillis : $i13 = virtualinvoke r10.<java.lang.String: int length()>()
+org.joda.time.convert.StringConverter.getDurationMillis : $i13 = virtualinvoke r10.<java.lang.String: int length()>() >>>>>>>> org.joda.time.convert.StringConverter.getDurationMillis : if i2 >= $i13
+org.joda.time.convert.StringConverter.getDurationMillis : if i2 >= $i13 >>>>>>>> org.joda.time.convert.StringConverter.getDurationMillis : $c14 = virtualinvoke r10.<java.lang.String: char charAt(int)>(i2)
+org.joda.time.convert.StringConverter.getDurationMillis : $c14 = virtualinvoke r10.<java.lang.String: char charAt(int)>(i2) >>>>>>>> org.joda.time.convert.StringConverter.getDurationMillis : if $c14 < 48
+org.joda.time.convert.StringConverter.getDurationMillis : if $c14 < 48 >>>>>>>> org.joda.time.convert.StringConverter.getDurationMillis : $c15 = virtualinvoke r10.<java.lang.String: char charAt(int)>(i2)
+org.joda.time.convert.StringConverter.getDurationMillis : $c15 = virtualinvoke r10.<java.lang.String: char charAt(int)>(i2) >>>>>>>> org.joda.time.convert.StringConverter.getDurationMillis : if $c15 <= 57
+org.joda.time.convert.StringConverter.getDurationMillis : if $c15 <= 57 >>>>>>>> org.joda.time.convert.StringConverter.getDurationMillis : i2 = i2 + 1
+org.joda.time.convert.StringConverter.getDurationMillis : i2 = i2 + 1 >>>>>>>> org.joda.time.convert.StringConverter.getDurationMillis : goto [?= $i13 = virtualinvoke r10.<java.lang.String: int length()>()]
+org.joda.time.convert.StringConverter.getDurationMillis : goto [?= $i13 = virtualinvoke r10.<java.lang.String: int length()>()] >>>>>>>> org.joda.time.convert.StringConverter.getDurationMillis : if i2 != 0
+org.joda.time.convert.StringConverter.getDurationMillis : if i2 != 0 >>>>>>>> org.joda.time.convert.StringConverter.getDurationMillis : if i2 <= 0
+org.joda.time.convert.StringConverter.getDurationMillis : if i2 <= 0 >>>>>>>> org.joda.time.convert.StringConverter.getDurationMillis : $c17 = virtualinvoke r10.<java.lang.String: char charAt(int)>(i2)
+org.joda.time.convert.StringConverter.getDurationMillis : $c17 = virtualinvoke r10.<java.lang.String: char charAt(int)>(i2) >>>>>>>> org.joda.time.convert.StringConverter.getDurationMillis : if $c17 != 46
+org.joda.time.convert.StringConverter.getDurationMillis : if $c17 != 46 >>>>>>>> org.joda.time.convert.StringConverter.getDurationMillis : if i1 != -1
+org.joda.time.convert.StringConverter.getDurationMillis : if i1 != -1 >>>>>>>> org.joda.time.convert.StringConverter.getDurationMillis : i1 = i2
+org.joda.time.convert.StringConverter.getDurationMillis : i1 = i2 >>>>>>>> org.joda.time.convert.StringConverter.getDurationMillis : goto [?= i2 = i2 + 1]
+org.joda.time.convert.StringConverter.getDurationMillis : goto [?= i2 = i2 + 1] >>>>>>>> org.joda.time.convert.StringConverter.getDurationMillis : l18 = 0L
+org.joda.time.convert.StringConverter.getDurationMillis : l18 = 0L >>>>>>>> org.joda.time.convert.StringConverter.getDurationMillis : l3 = 0L
+org.joda.time.convert.StringConverter.getDurationMillis : l3 = 0L >>>>>>>> org.joda.time.convert.StringConverter.getDurationMillis : if i1 <= 0
+org.joda.time.convert.StringConverter.getDurationMillis : if i1 <= 0 >>>>>>>> org.joda.time.convert.StringConverter.getDurationMillis : $r17 = virtualinvoke r10.<java.lang.String: java.lang.String substring(int,int)>(0, i1)
+org.joda.time.convert.StringConverter.getDurationMillis : $r17 = virtualinvoke r10.<java.lang.String: java.lang.String substring(int,int)>(0, i1) >>>>>>>> org.joda.time.convert.StringConverter.getDurationMillis : l19 = staticinvoke <java.lang.Long: long parseLong(java.lang.String)>($r17)
+org.joda.time.convert.StringConverter.getDurationMillis : l19 = staticinvoke <java.lang.Long: long parseLong(java.lang.String)>($r17) >>>>>>>> org.joda.time.convert.StringConverter.getDurationMillis : $i20 = i1 + 1
+org.joda.time.convert.StringConverter.getDurationMillis : $i20 = i1 + 1 >>>>>>>> org.joda.time.convert.StringConverter.getDurationMillis : r18 = virtualinvoke r10.<java.lang.String: java.lang.String substring(int)>($i20)
+org.joda.time.convert.StringConverter.getDurationMillis : r18 = virtualinvoke r10.<java.lang.String: java.lang.String substring(int)>($i20) >>>>>>>> org.joda.time.convert.StringConverter.getDurationMillis : $i21 = virtualinvoke r18.<java.lang.String: int length()>()
+org.joda.time.convert.StringConverter.getDurationMillis : $i21 = virtualinvoke r18.<java.lang.String: int length()>() >>>>>>>> org.joda.time.convert.StringConverter.getDurationMillis : if $i21 == 3
+org.joda.time.convert.StringConverter.getDurationMillis : if $i21 == 3 >>>>>>>> org.joda.time.convert.StringConverter.getDurationMillis : $i22 = staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>(r18)
+org.joda.time.convert.StringConverter.getDurationMillis : $i22 = staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>(r18) >>>>>>>> org.joda.time.convert.StringConverter.getDurationMillis : l18 = (long) $i22
+org.joda.time.convert.StringConverter.getDurationMillis : l18 = (long) $i22 >>>>>>>> org.joda.time.convert.StringConverter.getDurationMillis : goto [?= $b23 = l19 cmp 0L]
+org.joda.time.convert.StringConverter.getDurationMillis : goto [?= $b23 = l19 cmp 0L] >>>>>>>> org.joda.time.convert.StringConverter.getDurationMillis : $b23 = l19 cmp 0L
+org.joda.time.convert.StringConverter.getDurationMillis : $b23 = l19 cmp 0L >>>>>>>> org.joda.time.convert.StringConverter.getDurationMillis : if $b23 >= 0
+org.joda.time.convert.StringConverter.getDurationMillis : if $b23 >= 0 >>>>>>>> org.joda.time.convert.StringConverter.getDurationMillis : $l27 = staticinvoke <org.joda.time.field.FieldUtils: long safeMultiply(long,int)>(l19, 1000)
+org.joda.time.convert.StringConverter.getDurationMillis : $l27 = staticinvoke <org.joda.time.field.FieldUtils: long safeMultiply(long,int)>(l19, 1000) >>>>>>>> org.joda.time.field.FieldUtils.safeMultiply : tableswitch(i1) {     case -1:
+org.joda.time.field.FieldUtils.safeMultiply : tableswitch(i1) {     case -1: >>>>>>>> org.joda.time.field.FieldUtils.safeMultiply : $l4 = (long) i1
+org.joda.time.field.FieldUtils.safeMultiply : $l4 = (long) i1 >>>>>>>> org.joda.time.field.FieldUtils.safeMultiply : l2 = l0 * $l4
+org.joda.time.field.FieldUtils.safeMultiply : l2 = l0 * $l4 >>>>>>>> org.joda.time.field.FieldUtils.safeMultiply : $l5 = (long) i1
+org.joda.time.field.FieldUtils.safeMultiply : $l5 = (long) i1 >>>>>>>> org.joda.time.field.FieldUtils.safeMultiply : $l6 = l2 / $l5
+org.joda.time.field.FieldUtils.safeMultiply : $l6 = l2 / $l5 >>>>>>>> org.joda.time.field.FieldUtils.safeMultiply : $b7 = $l6 cmp l0
+org.joda.time.field.FieldUtils.safeMultiply : $b7 = $l6 cmp l0 >>>>>>>> org.joda.time.field.FieldUtils.safeMultiply : if $b7 == 0
+org.joda.time.field.FieldUtils.safeMultiply : if $b7 == 0 >>>>>>>> org.joda.time.field.FieldUtils.safeMultiply : return l2
+org.joda.time.field.FieldUtils.safeMultiply : return l2 >>>>>>>> org.joda.time.convert.StringConverter.getDurationMillis : $l28 = staticinvoke <org.joda.time.field.FieldUtils: long safeAdd(long,long)>($l27, l18)
+org.joda.time.convert.StringConverter.getDurationMillis : $l28 = staticinvoke <org.joda.time.field.FieldUtils: long safeAdd(long,long)>($l27, l18) >>>>>>>> org.joda.time.field.FieldUtils.safeAdd : l2 = l0 + l1
+org.joda.time.field.FieldUtils.safeAdd : l2 = l0 + l1 >>>>>>>> org.joda.time.field.FieldUtils.safeAdd : $l3 = l0 ^ l2
+org.joda.time.field.FieldUtils.safeAdd : $l3 = l0 ^ l2 >>>>>>>> org.joda.time.field.FieldUtils.safeAdd : $b4 = $l3 cmp 0L
+org.joda.time.field.FieldUtils.safeAdd : $b4 = $l3 cmp 0L >>>>>>>> org.joda.time.field.FieldUtils.safeAdd : if $b4 >= 0
+org.joda.time.field.FieldUtils.safeAdd : if $b4 >= 0 >>>>>>>> org.joda.time.field.FieldUtils.safeAdd : return l2
+org.joda.time.field.FieldUtils.safeAdd : return l2 >>>>>>>> org.joda.time.convert.StringConverter.getDurationMillis : return $l28
+org.joda.time.convert.StringConverter.getDurationMillis : return $l28 >>>>>>>> org.joda.time.base.BaseDuration.getMillis : $l0 = r0.<org.joda.time.base.BaseDuration: long iMillis>
+org.joda.time.base.BaseDuration.getMillis : $l0 = r0.<org.joda.time.base.BaseDuration: long iMillis> >>>>>>>> org.joda.time.base.BaseDuration.getMillis : return $l0

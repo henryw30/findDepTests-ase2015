@@ -1,0 +1,106 @@
+org.joda.time.chrono.ISOChronology.withUTC : $r1 = <org.joda.time.chrono.ISOChronology: org.joda.time.chrono.ISOChronology INSTANCE_UTC>
+org.joda.time.chrono.ISOChronology.getInstance : if r0 != null goto $i1 = staticinvoke <java.lang.System: int identityHashCode(java.lang.Object)>(r0)
+org.joda.time.chrono.ISOChronology.getInstance : $i1 = staticinvoke <java.lang.System: int identityHashCode(java.lang.Object)>(r0)
+org.joda.time.chrono.ISOChronology.getInstance : $r5 = <org.joda.time.chrono.ISOChronology: org.joda.time.chrono.ISOChronology[] cFastCache>
+org.joda.time.chrono.ISOChronology.getInstance : return r1
+org.joda.time.chrono.ISOChronology.getInstance : if r1 == null goto $r7 = <org.joda.time.chrono.ISOChronology: java.util.Map cCache>
+org.joda.time.chrono.ISOChronology.getInstance : $r0 = staticinvoke <org.joda.time.DateTimeZone: org.joda.time.DateTimeZone getDefault()>()
+org.joda.time.format.DateTimeFormatter.selectChronology : return r2
+org.joda.time.format.DateTimeFormatter.selectChronology : $r4 = r0.<org.joda.time.format.DateTimeFormatter: org.joda.time.DateTimeZone iZone>
+org.joda.time.format.DateTimeFormatter.selectChronology : $r3 = r0.<org.joda.time.format.DateTimeFormatter: org.joda.time.Chronology iChrono>
+org.joda.time.format.DateTimeFormatter.selectChronology : r2 = staticinvoke <org.joda.time.DateTimeUtils: org.joda.time.Chronology getChronology(org.joda.time.Chronology)>(r1)
+org.joda.time.format.DateTimeFormatterBuilder$CharacterLiteral.parseInto : c7 = staticinvoke <java.lang.Character: char toLowerCase(char)>(c5)
+org.joda.time.format.DateTimeFormatterBuilder$CharacterLiteral.parseInto : if c5 == c6 goto $i10 = i0 + 1
+org.joda.time.format.DateTimeFormatterBuilder$CharacterLiteral.parseInto : c6 = staticinvoke <java.lang.Character: char toUpperCase(char)>(c2)
+org.joda.time.format.DateTimeFormatterBuilder$CharacterLiteral.parseInto : c8 = staticinvoke <java.lang.Character: char toLowerCase(char)>(c6)
+org.joda.time.format.DateTimeFormatterBuilder$CharacterLiteral.parseInto : c2 = r0.<org.joda.time.format.DateTimeFormatterBuilder$CharacterLiteral: char iValue>
+org.joda.time.format.DateTimeFormatterBuilder$CharacterLiteral.parseInto : if c1 == c2 goto $i10 = i0 + 1
+org.joda.time.format.DateTimeFormatterBuilder$CharacterLiteral.parseInto : c1 = virtualinvoke r2.<java.lang.String: char charAt(int)>(i0)
+org.joda.time.format.DateTimeFormatterBuilder$CharacterLiteral.parseInto : $i3 = virtualinvoke r2.<java.lang.String: int length()>()
+org.joda.time.format.DateTimeFormatterBuilder$CharacterLiteral.parseInto : $i9 = i0 ^ -1
+org.joda.time.format.DateTimeFormatterBuilder$CharacterLiteral.parseInto : c5 = staticinvoke <java.lang.Character: char toUpperCase(char)>(c1)
+org.joda.time.format.DateTimeFormatterBuilder$CharacterLiteral.parseInto : if c7 == c8 goto $i10 = i0 + 1
+org.joda.time.format.DateTimeParserBucket.restoreState : $r2 = (org.joda.time.format.DateTimeParserBucket$SavedState) r1
+org.joda.time.format.DateTimeParserBucket.restoreState : r0.<org.joda.time.format.DateTimeParserBucket: java.lang.Object iSavedState> = r1
+org.joda.time.format.DateTimeParserBucket.restoreState : return 1
+org.joda.time.format.DateTimeParserBucket.restoreState : $z0 = r1 instanceof org.joda.time.format.DateTimeParserBucket$SavedState
+org.joda.time.chrono.ZonedChronology.getZone : $r1 = virtualinvoke r0.<org.joda.time.chrono.ZonedChronology: java.lang.Object getParam()>()
+org.joda.time.DateTimeUtils.getChronology : if r0 != null goto return r0
+org.joda.time.DateTimeUtils.getChronology : return r0
+org.joda.time.DateTimeUtils.getChronology : $r1 = staticinvoke <org.joda.time.chrono.ISOChronology: org.joda.time.chrono.ISOChronology getInstance()>()
+org.joda.time.format.FormatUtils.createErrorMessage : $r3 = new java.lang.StringBuilder
+org.joda.time.format.FormatUtils.createErrorMessage : i1 = i0 + 32
+org.joda.time.format.FormatUtils.createErrorMessage : $i2 = virtualinvoke r0.<java.lang.String: int length()>()
+org.joda.time.format.FormatUtils.createErrorMessage : r1 = r0
+org.joda.time.format.FormatUtils.createErrorMessage : if i0 > 0 goto $i4 = virtualinvoke r0.<java.lang.String: int length()>()
+org.joda.time.format.DateTimeParserBucket.access$102 : r0.<org.joda.time.format.DateTimeParserBucket: java.lang.Integer iOffset> = r1
+org.joda.time.format.DateTimeParserBucket.access$100 : $r1 = r0.<org.joda.time.format.DateTimeParserBucket: java.lang.Integer iOffset>
+org.joda.time.format.DateTimeParserBucket.access$202 : r0.<org.joda.time.format.DateTimeParserBucket: org.joda.time.format.DateTimeParserBucket$SavedField[] iSavedFields> = r1
+org.joda.time.format.DateTimeParserBucket.access$200 : $r1 = r0.<org.joda.time.format.DateTimeParserBucket: org.joda.time.format.DateTimeParserBucket$SavedField[] iSavedFields>
+org.joda.time.format.DateTimeParserBucket.access$000 : $r1 = r0.<org.joda.time.format.DateTimeParserBucket: org.joda.time.DateTimeZone iZone>
+org.joda.time.format.DateTimeParserBucket.access$002 : r0.<org.joda.time.format.DateTimeParserBucket: org.joda.time.DateTimeZone iZone> = r1
+org.joda.time.format.DateTimeParserBucket.access$302 : r0.<org.joda.time.format.DateTimeParserBucket: int iSavedFieldsCount> = i0
+org.joda.time.format.DateTimeParserBucket.access$300 : $i0 = r0.<org.joda.time.format.DateTimeParserBucket: int iSavedFieldsCount>
+org.joda.time.chrono.AssembledChronology.getZone : $r3 = virtualinvoke r1.<org.joda.time.Chronology: org.joda.time.DateTimeZone getZone()>()
+org.joda.time.chrono.AssembledChronology.getZone : $r2 = r0.<org.joda.time.chrono.AssembledChronology: org.joda.time.Chronology iBase>
+org.joda.time.format.DateTimeFormatter.requireParser : if r1 != null goto return r1
+org.joda.time.format.DateTimeFormatter.requireParser : r1 = r0.<org.joda.time.format.DateTimeFormatter: org.joda.time.format.DateTimeParser iParser>
+org.joda.time.format.DateTimeFormatter.requireParser : return r1
+org.joda.time.format.DateTimeParserBucket$SavedState.restoreState : $r3 = r0.<org.joda.time.format.DateTimeParserBucket$SavedState: org.joda.time.DateTimeZone iZone>
+org.joda.time.format.DateTimeParserBucket$SavedState.restoreState : $r2 = r0.<org.joda.time.format.DateTimeParserBucket$SavedState: org.joda.time.format.DateTimeParserBucket this$0>
+org.joda.time.format.DateTimeParserBucket$SavedState.restoreState : $r5 = r0.<org.joda.time.format.DateTimeParserBucket$SavedState: java.lang.Integer iOffset>
+org.joda.time.format.DateTimeParserBucket$SavedState.restoreState : $i2 = r0.<org.joda.time.format.DateTimeParserBucket$SavedState: int iSavedFieldsCount>
+org.joda.time.format.DateTimeParserBucket$SavedState.restoreState : return 1
+org.joda.time.format.DateTimeParserBucket$SavedState.restoreState : $i0 = r0.<org.joda.time.format.DateTimeParserBucket$SavedState: int iSavedFieldsCount>
+org.joda.time.format.DateTimeParserBucket$SavedState.restoreState : $r7 = r0.<org.joda.time.format.DateTimeParserBucket$SavedState: org.joda.time.format.DateTimeParserBucket$SavedField[] iSavedFields>
+org.joda.time.DateTimeZone.getDefault : if r0 != null goto return r0
+org.joda.time.DateTimeZone.getDefault : r0 = <org.joda.time.DateTimeZone: org.joda.time.DateTimeZone cDefault>
+org.joda.time.DateTimeZone.getDefault : return r0
+org.joda.time.format.DateTimeFormatter.parseDateTime : r3 = specialinvoke r0.<org.joda.time.format.DateTimeFormatter: org.joda.time.Chronology selectChronology(org.joda.time.Chronology)>(null)
+org.joda.time.format.DateTimeFormatter.parseDateTime : i0 = interfaceinvoke r2.<org.joda.time.format.DateTimeParser: int parseInto(org.joda.time.format.DateTimeParserBucket,java.lang.String,int)>(r4, r1, 0)
+org.joda.time.format.DateTimeFormatter.parseDateTime : i0 = i0 ^ -1
+org.joda.time.format.DateTimeFormatter.parseDateTime : $r6 = new org.joda.time.format.DateTimeParserBucket
+org.joda.time.format.DateTimeFormatter.parseDateTime : if i0 < 0 goto i0 = i0 ^ -1
+org.joda.time.format.DateTimeFormatter.parseDateTime : $r17 = new java.lang.IllegalArgumentException
+org.joda.time.format.DateTimeFormatter.parseDateTime : r2 = specialinvoke r0.<org.joda.time.format.DateTimeFormatter: org.joda.time.format.DateTimeParser requireParser()>()
+org.joda.time.format.ISODateTimeFormat.dateTimeParser : $r0 = <org.joda.time.format.ISODateTimeFormat: org.joda.time.format.DateTimeFormatter dtp>
+org.joda.time.format.ISODateTimeFormat.dateTimeParser : $r15 = <org.joda.time.format.ISODateTimeFormat: org.joda.time.format.DateTimeFormatter dtp>
+org.joda.time.Instant.parse : $r1 = staticinvoke <org.joda.time.format.ISODateTimeFormat: org.joda.time.format.DateTimeFormatter dateTimeParser()>()
+org.joda.time.Instant.parse : $r2 = virtualinvoke r1.<org.joda.time.format.DateTimeFormatter: org.joda.time.DateTime parseDateTime(java.lang.String)>(r0)
+org.joda.time.format.DateTimeParserBucket.saveState : $r2 = r0.<org.joda.time.format.DateTimeParserBucket: java.lang.Object iSavedState>
+org.joda.time.format.DateTimeParserBucket.saveState : $r1 = new org.joda.time.format.DateTimeParserBucket$SavedState
+org.joda.time.format.DateTimeParserBucket.saveState : $r3 = r0.<org.joda.time.format.DateTimeParserBucket: java.lang.Object iSavedState>
+org.joda.time.chrono.AssembledChronology.getParam : $r1 = r0.<org.joda.time.chrono.AssembledChronology: java.lang.Object iParam>
+org.joda.time.format.DateTimeFormatterBuilder$MatchingParser.parseInto : r3 = r0.<org.joda.time.format.DateTimeFormatterBuilder$MatchingParser: org.joda.time.format.DateTimeParser[] iParsers>
+org.joda.time.format.DateTimeFormatterBuilder$MatchingParser.parseInto : if i9 <= i3 goto virtualinvoke r1.<org.joda.time.format.DateTimeParserBucket: boolean restoreState(java.lang.Object)>(r4)
+org.joda.time.format.DateTimeFormatterBuilder$MatchingParser.parseInto : if r6 != null goto i5 = interfaceinvoke r6.<org.joda.time.format.DateTimeParser: int parseInto(org.joda.time.format.DateTimeParserBucket,java.lang.String,int)>(r1, r2, i0)
+org.joda.time.format.DateTimeFormatterBuilder$MatchingParser.parseInto : virtualinvoke r1.<org.joda.time.format.DateTimeParserBucket: boolean restoreState(java.lang.Object)>(r4)
+org.joda.time.format.DateTimeFormatterBuilder$MatchingParser.parseInto : i9 = i5 ^ -1
+org.joda.time.format.DateTimeFormatterBuilder$MatchingParser.parseInto : if i5 >= 0 goto virtualinvoke r1.<org.joda.time.format.DateTimeParserBucket: boolean restoreState(java.lang.Object)>(r4)
+org.joda.time.format.DateTimeFormatterBuilder$MatchingParser.parseInto : $i10 = i3 ^ -1
+org.joda.time.format.DateTimeFormatterBuilder$MatchingParser.parseInto : r4 = virtualinvoke r1.<org.joda.time.format.DateTimeParserBucket: java.lang.Object saveState()>()
+org.joda.time.format.DateTimeFormatterBuilder$MatchingParser.parseInto : i2 = i0
+org.joda.time.format.DateTimeFormatterBuilder$MatchingParser.parseInto : i3 = i0
+org.joda.time.format.DateTimeFormatterBuilder$MatchingParser.parseInto : z0 = 0
+org.joda.time.format.DateTimeFormatterBuilder$MatchingParser.parseInto : r6 = r3[i4]
+org.joda.time.format.DateTimeFormatterBuilder$MatchingParser.parseInto : if i5 < i0 goto (branch)
+org.joda.time.format.DateTimeFormatterBuilder$MatchingParser.parseInto : i5 = interfaceinvoke r6.<org.joda.time.format.DateTimeParser: int parseInto(org.joda.time.format.DateTimeParserBucket,java.lang.String,int)>(r1, r2, i0)
+org.joda.time.format.DateTimeFormatterBuilder$MatchingParser.parseInto : r5 = null
+org.joda.time.format.DateTimeFormatterBuilder$MatchingParser.parseInto : if i2 > i0 goto (branch)
+org.joda.time.format.DateTimeFormatterBuilder$MatchingParser.parseInto : i1 = lengthof r3
+org.joda.time.format.DateTimeFormatterBuilder$MatchingParser.parseInto : i4 = 0
+org.joda.time.format.DateTimeFormatterBuilder$Composite.parseInto : $r5 = r3[i2]
+org.joda.time.format.DateTimeFormatterBuilder$Composite.parseInto : r3 = r0.<org.joda.time.format.DateTimeFormatterBuilder$Composite: org.joda.time.format.DateTimeParser[] iParsers>
+org.joda.time.format.DateTimeFormatterBuilder$Composite.parseInto : return i0
+org.joda.time.format.DateTimeFormatterBuilder$Composite.parseInto : i2 = 0
+org.joda.time.format.DateTimeFormatterBuilder$Composite.parseInto : if r3 != null goto i1 = lengthof r3
+org.joda.time.format.DateTimeFormatterBuilder$Composite.parseInto : i1 = lengthof r3
+org.joda.time.format.DateTimeFormatterBuilder$NumberFormatter.parseInto : $i5 = r0.<org.joda.time.format.DateTimeFormatterBuilder$NumberFormatter: int iMaxParsedDigits>
+org.joda.time.format.DateTimeFormatterBuilder$NumberFormatter.parseInto : if i2 != 0 goto (branch)
+org.joda.time.format.DateTimeFormatterBuilder$NumberFormatter.parseInto : z0 = 0
+org.joda.time.format.DateTimeFormatterBuilder$NumberFormatter.parseInto : i2 = 0
+org.joda.time.format.DateTimeFormatterBuilder$NumberFormatter.parseInto : if c3 < 48 goto (branch)
+org.joda.time.format.DateTimeFormatterBuilder$NumberFormatter.parseInto : goto [?= (branch)]
+org.joda.time.format.DateTimeFormatterBuilder$NumberFormatter.parseInto : $i17 = i0 ^ -1
+org.joda.time.format.DateTimeFormatterBuilder$NumberFormatter.parseInto : $i8 = i0 + i2
+org.joda.time.format.DateTimeFormatterBuilder$NumberFormatter.parseInto : if i2 >= i1 goto (branch)

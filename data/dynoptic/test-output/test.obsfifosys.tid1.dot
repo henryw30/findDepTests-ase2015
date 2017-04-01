@@ -1,0 +1,38 @@
+digraph {
+  0 [label="9",shape=circle];
+  1 [label="10",shape=circle];
+  2 [label="11",shape=circle];
+  3 [label="12",shape=circle];
+  4 [label="13",shape=circle];
+  5 [label="14",shape=circle];
+  6 [label="15",shape=circle];
+  7 [label="16",shape=circle];
+  8 [label="8",shape=circle,shape=doublecircle];
+  9 [label="17",shape=circle];
+  10 [label="18",shape=circle];
+  11 [label="19",shape=circle];
+  12 [label="20",shape=circle];
+  13 [label="21",shape=circle];
+  14 [label="7",shape=circle];
+  start_0 [label="start",shape=plaintext];
+  start_0->14;
+title_node [label="ObsFifoSys [pnum=2]",shape=box, style=rounded];0->1 [label="ch0 ! m",];
+1->2 [label="ch0 ! m",];
+1->11 [label="ch0 ? m",];
+2->3 [label="ch0 ? m",];
+3->4 [label="recv_m",];
+4->5 [label="ch1 ! a",];
+5->6 [label="ch1 ? a",];
+5->10 [label="ch0 ? m",];
+6->7 [label="send_m",];
+6->9 [label="ch0 ? m",];
+7->8 [label="ch0 ? m",];
+9->8 [label="send_m",];
+10->9 [label="ch1 ? a",];
+11->3 [label="ch0 ! m",];
+11->12 [label="recv_m",];
+12->4 [label="ch0 ! m",];
+12->13 [label="ch1 ! a",];
+13->5 [label="ch0 ! m",];
+14->0 [label="send_m",];
+} // digraph {

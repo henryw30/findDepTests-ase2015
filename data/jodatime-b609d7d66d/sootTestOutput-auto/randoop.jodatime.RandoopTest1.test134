@@ -1,0 +1,34 @@
+org.joda.time.base.BaseInterval.getChronology : $r1 = r0.<org.joda.time.base.BaseInterval: org.joda.time.Chronology iChronology>
+org.joda.time.base.BaseInterval.setInterval : r0.<org.joda.time.base.BaseInterval: long iStartMillis> = l0
+org.joda.time.base.BaseInterval.setInterval : $r2 = staticinvoke <org.joda.time.DateTimeUtils: org.joda.time.Chronology getChronology(org.joda.time.Chronology)>(r1)
+org.joda.time.base.BaseInterval.setInterval : r0.<org.joda.time.base.BaseInterval: long iEndMillis> = l1
+org.joda.time.base.BaseInterval.setInterval : virtualinvoke r0.<org.joda.time.base.BaseInterval: void checkInterval(long,long)>(l0, l1)
+org.joda.time.base.AbstractInterval.checkInterval : $b2 = l1 cmp l0
+org.joda.time.chrono.ISOChronology.getInstance : if r0 != null goto $i1 = staticinvoke <java.lang.System: int identityHashCode(java.lang.Object)>(r0)
+org.joda.time.chrono.ISOChronology.getInstance : $i1 = staticinvoke <java.lang.System: int identityHashCode(java.lang.Object)>(r0)
+org.joda.time.chrono.ISOChronology.getInstance : $r5 = <org.joda.time.chrono.ISOChronology: org.joda.time.chrono.ISOChronology[] cFastCache>
+org.joda.time.chrono.ISOChronology.getInstance : return r1
+org.joda.time.chrono.ISOChronology.getInstance : if r1 == null goto $r7 = <org.joda.time.chrono.ISOChronology: java.util.Map cCache>
+org.joda.time.chrono.ISOChronology.getInstance : $r0 = staticinvoke <org.joda.time.DateTimeZone: org.joda.time.DateTimeZone getDefault()>()
+org.joda.time.chrono.ZonedChronology.getZone : $r1 = virtualinvoke r0.<org.joda.time.chrono.ZonedChronology: java.lang.Object getParam()>()
+org.joda.time.DateTimeUtils.getChronology : if r0 != null goto return r0
+org.joda.time.DateTimeUtils.getChronology : return r0
+org.joda.time.DateTimeUtils.getChronology : $r1 = staticinvoke <org.joda.time.chrono.ISOChronology: org.joda.time.chrono.ISOChronology getInstance()>()
+org.joda.time.base.AbstractInterval.toDurationMillis : $l0 = virtualinvoke r0.<org.joda.time.base.AbstractInterval: long getEndMillis()>()
+org.joda.time.base.BaseInterval.getEndMillis : $l0 = r0.<org.joda.time.base.BaseInterval: long iEndMillis>
+org.joda.time.MutableInterval.setStartMillis : $l1 = virtualinvoke r0.<org.joda.time.MutableInterval: long getEndMillis()>()
+org.joda.time.chrono.AssembledChronology.getZone : $r3 = virtualinvoke r1.<org.joda.time.Chronology: org.joda.time.DateTimeZone getZone()>()
+org.joda.time.chrono.AssembledChronology.getZone : $r2 = r0.<org.joda.time.chrono.AssembledChronology: org.joda.time.Chronology iBase>
+org.joda.time.DateTimeZone.getDefault : if r0 != null goto return r0
+org.joda.time.DateTimeZone.getDefault : r0 = <org.joda.time.DateTimeZone: org.joda.time.DateTimeZone cDefault>
+org.joda.time.DateTimeZone.getDefault : return r0
+org.joda.time.base.BaseInterval.getStartMillis : $l0 = r0.<org.joda.time.base.BaseInterval: long iStartMillis>
+org.joda.time.chrono.AssembledChronology.getParam : $r1 = r0.<org.joda.time.chrono.AssembledChronology: java.lang.Object iParam>
+org.joda.time.field.FieldUtils.safeAdd : l2 = l0 + l1
+org.joda.time.field.FieldUtils.safeAdd : $l3 = l0 ^ l2
+org.joda.time.field.FieldUtils.safeAdd : return l2
+org.joda.time.MutableInterval.setEndMillis : $l1 = virtualinvoke r0.<org.joda.time.MutableInterval: long getStartMillis()>()
+org.joda.time.MutableInterval.setDurationBeforeEnd : $l1 = virtualinvoke r0.<org.joda.time.MutableInterval: long getEndMillis()>()
+org.joda.time.base.AbstractInterval.isBefore : if r1 != null goto $l0 = interfaceinvoke r1.<org.joda.time.ReadableInterval: long getStartMillis()>()
+org.joda.time.base.AbstractInterval.isBefore : $l0 = interfaceinvoke r1.<org.joda.time.ReadableInterval: long getStartMillis()>()
+org.joda.time.base.AbstractInterval.isBefore : $l1 = virtualinvoke r0.<org.joda.time.base.AbstractInterval: long getEndMillis()>()

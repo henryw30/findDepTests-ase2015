@@ -1,0 +1,22 @@
+org.apache.xml.security.utils.XMLUtils.classForName : if r1 != null goto $r3 = virtualinvoke r1.<java.lang.ClassLoader: java.lang.Class loadClass(java.lang.String)>(r0)
+org.apache.xml.security.utils.XMLUtils.classForName : r1 = staticinvoke <org.apache.xml.security.utils.XMLUtils: java.lang.ClassLoader findClassLoader()>()
+org.apache.xml.security.utils.XMLUtils.classForName : $r3 = virtualinvoke r1.<java.lang.ClassLoader: java.lang.Class loadClass(java.lang.String)>(r0)
+org.apache.xml.security.utils.XMLUtils.getXerces2Version : r1 = staticinvoke <org.apache.xml.security.utils.XMLUtils: java.lang.Class classForName(java.lang.String)>("org.apache.xerces.impl.Version")
+org.apache.xml.security.utils.XMLUtils.getXerces2Version : $r4 = virtualinvoke r2.<java.lang.reflect.Field: java.lang.Object get(java.lang.Object)>(null)
+org.apache.xml.security.utils.XMLUtils.getXerces2Version : return r3
+org.apache.xml.security.utils.XMLUtils.getXerces2Version : r2 = virtualinvoke r1.<java.lang.Class: java.lang.reflect.Field getField(java.lang.String)>("fVersion")
+org.apache.xml.security.utils.XMLUtils.getXerces2Version : r0 = "org.apache.xerces.impl.Version"
+org.apache.xml.security.utils.XMLUtils.findClassLoader : goto [?= $r6 = staticinvoke <java.lang.Thread: java.lang.Thread currentThread()>()]
+org.apache.xml.security.utils.XMLUtils.findClassLoader : n1 = null
+org.apache.xml.security.utils.XMLUtils.findClassLoader : $r6 = staticinvoke <java.lang.Thread: java.lang.Thread currentThread()>()
+org.apache.xml.security.utils.XMLUtils.findClassLoader : n0 = null
+org.apache.xml.security.utils.XMLUtils.findClassLoader : $r1 = class "java/lang/Thread"
+org.apache.xml.security.utils.XMLUtils.getXercesVersion : if r1 == null goto return "Apache Xerces not installed"
+org.apache.xml.security.utils.XMLUtils.getXercesVersion : if r0 == null goto r1 = staticinvoke <org.apache.xml.security.utils.XMLUtils: java.lang.String getXerces2Version()>()
+org.apache.xml.security.utils.XMLUtils.getXercesVersion : r0 = staticinvoke <org.apache.xml.security.utils.XMLUtils: java.lang.String getXerces1Version()>()
+org.apache.xml.security.utils.XMLUtils.getXercesVersion : r1 = staticinvoke <org.apache.xml.security.utils.XMLUtils: java.lang.String getXerces2Version()>()
+org.apache.xml.security.utils.XMLUtils.getXercesVersion : return r1
+org.apache.xml.security.utils.XMLUtils.getXerces1Version : r7 = $r6
+org.apache.xml.security.utils.XMLUtils.getXerces1Version : return null
+org.apache.xml.security.utils.XMLUtils.getXerces1Version : r1 = staticinvoke <org.apache.xml.security.utils.XMLUtils: java.lang.Class classForName(java.lang.String)>("org.apache.xerces.framework.Version")
+org.apache.xml.security.utils.XMLUtils.getXerces1Version : r0 = "org.apache.xerces.framework.Version"

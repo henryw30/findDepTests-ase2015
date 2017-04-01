@@ -1,0 +1,25 @@
+org.joda.time.Period.toStandardDays : specialinvoke r0.<org.joda.time.Period: void checkYearsAndMonths(java.lang.String)>("Days") >>>>>>>> org.joda.time.Period.toStandardDays : $i2 = virtualinvoke r0.<org.joda.time.Period: int getMillis()>()
+org.joda.time.Period.toStandardDays : $i2 = virtualinvoke r0.<org.joda.time.Period: int getMillis()>() >>>>>>>> org.joda.time.Period.toStandardDays : l0 = (long) $i2
+org.joda.time.Period.toStandardDays : l0 = (long) $i2 >>>>>>>> org.joda.time.Period.toStandardDays : $i3 = virtualinvoke r0.<org.joda.time.Period: int getSeconds()>()
+org.joda.time.Period.toStandardDays : $i3 = virtualinvoke r0.<org.joda.time.Period: int getSeconds()>() >>>>>>>> org.joda.time.Period.toStandardDays : $l4 = (long) $i3
+org.joda.time.Period.toStandardDays : $l4 = (long) $i3 >>>>>>>> org.joda.time.Period.toStandardDays : $l5 = $l4 * 1000L
+org.joda.time.Period.toStandardDays : $l5 = $l4 * 1000L >>>>>>>> org.joda.time.Period.toStandardDays : l6 = l0 + $l5
+org.joda.time.Period.toStandardDays : l6 = l0 + $l5 >>>>>>>> org.joda.time.Period.toStandardDays : $i7 = virtualinvoke r0.<org.joda.time.Period: int getMinutes()>()
+org.joda.time.Period.toStandardDays : $i7 = virtualinvoke r0.<org.joda.time.Period: int getMinutes()>() >>>>>>>> org.joda.time.Period.toStandardDays : $l8 = (long) $i7
+org.joda.time.Period.toStandardDays : $l8 = (long) $i7 >>>>>>>> org.joda.time.Period.toStandardDays : $l9 = $l8 * 60000L
+org.joda.time.Period.toStandardDays : $l9 = $l8 * 60000L >>>>>>>> org.joda.time.Period.toStandardDays : l10 = l6 + $l9
+org.joda.time.Period.toStandardDays : l10 = l6 + $l9 >>>>>>>> org.joda.time.Period.toStandardDays : $i11 = virtualinvoke r0.<org.joda.time.Period: int getHours()>()
+org.joda.time.Period.toStandardDays : $i11 = virtualinvoke r0.<org.joda.time.Period: int getHours()>() >>>>>>>> org.joda.time.Period.toStandardDays : $l12 = (long) $i11
+org.joda.time.Period.toStandardDays : $l12 = (long) $i11 >>>>>>>> org.joda.time.Period.toStandardDays : $l13 = $l12 * 3600000L
+org.joda.time.Period.toStandardDays : $l13 = $l12 * 3600000L >>>>>>>> org.joda.time.Period.toStandardDays : l14 = l10 + $l13
+org.joda.time.Period.toStandardDays : l14 = l10 + $l13 >>>>>>>> org.joda.time.Period.toStandardDays : l1 = l14 / 86400000L
+org.joda.time.Period.toStandardDays : l1 = l14 / 86400000L >>>>>>>> org.joda.time.Period.toStandardDays : $i15 = virtualinvoke r0.<org.joda.time.Period: int getDays()>()
+org.joda.time.Period.toStandardDays : $i15 = virtualinvoke r0.<org.joda.time.Period: int getDays()>() >>>>>>>> org.joda.time.Period.toStandardDays : $l16 = (long) $i15
+org.joda.time.Period.toStandardDays : $l16 = (long) $i15 >>>>>>>> org.joda.time.Period.toStandardDays : l17 = staticinvoke <org.joda.time.field.FieldUtils: long safeAdd(long,long)>(l1, $l16)
+org.joda.time.Period.toStandardDays : l17 = staticinvoke <org.joda.time.field.FieldUtils: long safeAdd(long,long)>(l1, $l16) >>>>>>>> org.joda.time.Period.toStandardDays : $i18 = virtualinvoke r0.<org.joda.time.Period: int getWeeks()>()
+org.joda.time.Period.toStandardDays : $i18 = virtualinvoke r0.<org.joda.time.Period: int getWeeks()>() >>>>>>>> org.joda.time.Period.toStandardDays : $l19 = (long) $i18
+org.joda.time.Period.toStandardDays : $l19 = (long) $i18 >>>>>>>> org.joda.time.Period.toStandardDays : $l20 = $l19 * 7L
+org.joda.time.Period.toStandardDays : $l20 = $l19 * 7L >>>>>>>> org.joda.time.Period.toStandardDays : l21 = staticinvoke <org.joda.time.field.FieldUtils: long safeAdd(long,long)>(l17, $l20)
+org.joda.time.Period.toStandardDays : l21 = staticinvoke <org.joda.time.field.FieldUtils: long safeAdd(long,long)>(l17, $l20) >>>>>>>> org.joda.time.Period.toStandardDays : $i22 = staticinvoke <org.joda.time.field.FieldUtils: int safeToInt(long)>(l21)
+org.joda.time.Period.toStandardDays : $i22 = staticinvoke <org.joda.time.field.FieldUtils: int safeToInt(long)>(l21) >>>>>>>> org.joda.time.Period.toStandardDays : $r1 = staticinvoke <org.joda.time.Days: org.joda.time.Days days(int)>($i22)
+org.joda.time.Period.toStandardDays : $r1 = staticinvoke <org.joda.time.Days: org.joda.time.Days days(int)>($i22) >>>>>>>> org.joda.time.Period.toStandardDays : return $r1

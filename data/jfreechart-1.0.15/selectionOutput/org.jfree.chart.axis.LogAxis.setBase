@@ -1,0 +1,11 @@
+org.jfree.chart.axis.LogAxis.setBase : $b0 = d0 cmpg 1.0 >>>>>>>> org.jfree.chart.axis.LogAxis.setBase : if $b0 > 0
+org.jfree.chart.axis.LogAxis.setBase : if $b0 > 0 >>>>>>>> org.jfree.chart.axis.LogAxis.setBase : $r1 = new java.lang.IllegalArgumentException
+org.jfree.chart.axis.LogAxis.setBase : if $b0 > 0 >>>>>>>> org.jfree.chart.axis.LogAxis.setBase : r0.<org.jfree.chart.axis.LogAxis: double base> = d0
+org.jfree.chart.axis.LogAxis.setBase : r0.<org.jfree.chart.axis.LogAxis: double base> = d0 >>>>>>>> org.jfree.chart.axis.LogAxis.setBase : $d1 = staticinvoke <java.lang.Math: double log(double)>(d0)
+org.jfree.chart.axis.LogAxis.setBase : $d1 = staticinvoke <java.lang.Math: double log(double)>(d0) >>>>>>>> org.jfree.chart.axis.LogAxis.setBase : r0.<org.jfree.chart.axis.LogAxis: double baseLog> = $d1
+org.jfree.chart.axis.LogAxis.setBase : r0.<org.jfree.chart.axis.LogAxis: double baseLog> = $d1 >>>>>>>> org.jfree.chart.axis.LogAxis.setBase : $r2 = new org.jfree.chart.event.AxisChangeEvent
+org.jfree.chart.axis.LogAxis.setBase : $r2 = new org.jfree.chart.event.AxisChangeEvent >>>>>>>> org.jfree.chart.axis.LogAxis.setBase : specialinvoke $r2.<org.jfree.chart.event.AxisChangeEvent: void <init>(org.jfree.chart.axis.Axis)>(r0)
+org.jfree.chart.axis.LogAxis.setBase : specialinvoke $r2.<org.jfree.chart.event.AxisChangeEvent: void <init>(org.jfree.chart.axis.Axis)>(r0) >>>>>>>> org.jfree.chart.axis.LogAxis.setBase : virtualinvoke r0.<org.jfree.chart.axis.LogAxis: void notifyListeners(org.jfree.chart.event.AxisChangeEvent)>($r2)
+org.jfree.chart.axis.LogAxis.setBase : virtualinvoke r0.<org.jfree.chart.axis.LogAxis: void notifyListeners(org.jfree.chart.event.AxisChangeEvent)>($r2) >>>>>>>> org.jfree.chart.axis.LogAxis.setBase : return
+org.jfree.chart.axis.LogAxis.setBase : $r1 = new java.lang.IllegalArgumentException >>>>>>>> org.jfree.chart.axis.LogAxis.setBase : specialinvoke $r1.<java.lang.IllegalArgumentException: void <init>(java.lang.String)>("Requires \'base\' > 1.0.")
+org.jfree.chart.axis.LogAxis.setBase : specialinvoke $r1.<java.lang.IllegalArgumentException: void <init>(java.lang.String)>("Requires \'base\' > 1.0.") >>>>>>>> org.jfree.chart.axis.LogAxis.setBase : throw $r1

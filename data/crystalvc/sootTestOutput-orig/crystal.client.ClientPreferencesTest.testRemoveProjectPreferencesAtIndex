@@ -1,0 +1,16 @@
+crystal.client.ProjectPreferences.getEnvironment : $r1 = r0.<crystal.client.ProjectPreferences: crystal.model.DataSource _myEnvironment>
+crystal.client.ClientPreferences.addProjectPreferences : $r7 = virtualinvoke r3.<crystal.client.ProjectPreferences: crystal.model.DataSource getEnvironment()>()
+crystal.client.ClientPreferences.addProjectPreferences : $r17 = r0.<crystal.client.ClientPreferences: java.util.Vector _projectPreferences>
+crystal.client.ClientPreferences.addProjectPreferences : goto [?= $z0 = interfaceinvoke r2.<java.util.Iterator: boolean hasNext()>()]
+crystal.client.ClientPreferences.addProjectPreferences : $r5 = r0.<crystal.client.ClientPreferences: java.util.Vector _projectPreferences>
+crystal.client.ClientPreferences.getProjectPreference : $r1 = r0.<crystal.client.ClientPreferences: java.util.Vector _projectPreferences>
+crystal.model.DataSource.getShortName : $r1 = r0.<crystal.model.DataSource: java.lang.String _shortName>
+crystal.client.ClientPreferences.removeProjectPreferencesAtIndex : $r1 = r0.<crystal.client.ClientPreferences: java.util.Vector _projectPreferences>
+crystal.client.ClientPreferences.getProjectPreferences : $r7 = virtualinvoke r3.<crystal.client.ProjectPreferences: crystal.model.DataSource getEnvironment()>()
+crystal.client.ClientPreferences.getProjectPreferences : return r3
+crystal.client.ClientPreferences.getProjectPreferences : goto [?= $z0 = interfaceinvoke r2.<java.util.Iterator: boolean hasNext()>()]
+crystal.client.ClientPreferences.getProjectPreferences : $r5 = r0.<crystal.client.ClientPreferences: java.util.Vector _projectPreferences>
+crystal.client.ClientPreferences.getProjectPreferences : $r9 = new crystal.client.ClientPreferences$NonexistentProjectException
+crystal.model.DataSource.setParent : if r1 == null goto r0.<crystal.model.DataSource: java.lang.String _parent> = null
+crystal.model.DataSource.setParent : r0.<crystal.model.DataSource: java.lang.String _parent> = r1
+crystal.util.ValidInputChecker.checkValidStringInput : if r0 == null goto $r2 = new java.lang.IllegalArgumentException

@@ -1,0 +1,22 @@
+org.jfree.chart.plot.dial.AbstractDialLayer.notifyListeners : $r3 = r0.<org.jfree.chart.plot.dial.AbstractDialLayer: javax.swing.event.EventListenerList listenerList>
+org.jfree.chart.plot.dial.AbstractDialLayer.notifyListeners : $i1 = lengthof r2
+org.jfree.chart.plot.dial.AbstractDialLayer.equals : $z1 = r0.<org.jfree.chart.plot.dial.AbstractDialLayer: boolean visible>
+org.jfree.chart.plot.dial.AbstractDialLayer.equals : if r1 != r0 goto $z0 = r1 instanceof org.jfree.chart.plot.dial.AbstractDialLayer
+org.jfree.chart.plot.dial.AbstractDialLayer.equals : $z0 = r1 instanceof org.jfree.chart.plot.dial.AbstractDialLayer
+org.jfree.chart.plot.dial.AbstractDialLayer.equals : r2 = (org.jfree.chart.plot.dial.AbstractDialLayer) r1
+org.jfree.chart.plot.dial.DialBackground.setPaint : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "paint")
+org.jfree.chart.plot.dial.DialBackground.setPaint : r0.<org.jfree.chart.plot.dial.DialBackground: java.awt.Paint paint> = r1
+org.jfree.chart.plot.dial.DialBackground.setPaint : $r2 = new org.jfree.chart.plot.dial.DialLayerChangeEvent
+org.jfree.chart.plot.dial.DialBackground.setGradientPaintTransformer : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "t")
+org.jfree.chart.plot.dial.DialBackground.setGradientPaintTransformer : r0.<org.jfree.chart.plot.dial.DialBackground: org.jfree.ui.GradientPaintTransformer gradientPaintTransformer> = r1
+org.jfree.chart.plot.dial.DialBackground.setGradientPaintTransformer : $r2 = new org.jfree.chart.plot.dial.DialLayerChangeEvent
+org.jfree.chart.plot.dial.DialBackground.equals : if r1 != r0 goto $z0 = r1 instanceof org.jfree.chart.plot.dial.DialBackground
+org.jfree.chart.plot.dial.DialBackground.equals : $r3 = r0.<org.jfree.chart.plot.dial.DialBackground: java.awt.Paint paint>
+org.jfree.chart.plot.dial.DialBackground.equals : $z0 = r1 instanceof org.jfree.chart.plot.dial.DialBackground
+org.jfree.chart.plot.dial.DialBackground.equals : r2 = (org.jfree.chart.plot.dial.DialBackground) r1
+org.jfree.chart.plot.dial.DialBackground.equals : return 0
+org.jfree.chart.plot.dial.DialBackground.equals : $z3 = specialinvoke r0.<org.jfree.chart.plot.dial.AbstractDialLayer: boolean equals(java.lang.Object)>(r1)
+org.jfree.chart.plot.dial.DialBackground.equals : $r5 = r0.<org.jfree.chart.plot.dial.DialBackground: org.jfree.ui.GradientPaintTransformer gradientPaintTransformer>
+org.jfree.chart.plot.dial.AbstractDialLayer.setVisible : r0.<org.jfree.chart.plot.dial.AbstractDialLayer: boolean visible> = z0
+org.jfree.chart.plot.dial.AbstractDialLayer.setVisible : $r1 = new org.jfree.chart.plot.dial.DialLayerChangeEvent
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null goto return

@@ -1,0 +1,12 @@
+org.joda.time.LocalDate.withLocalMillis : $r1 = r0.<org.joda.time.LocalDate: org.joda.time.Chronology iChronology> >>>>>>>> org.joda.time.LocalDate.withLocalMillis : $r2 = virtualinvoke $r1.<org.joda.time.Chronology: org.joda.time.DateTimeField dayOfMonth()>()
+org.joda.time.LocalDate.withLocalMillis : $r2 = virtualinvoke $r1.<org.joda.time.Chronology: org.joda.time.DateTimeField dayOfMonth()>() >>>>>>>> org.joda.time.LocalDate.withLocalMillis : l1 = virtualinvoke $r2.<org.joda.time.DateTimeField: long roundFloor(long)>(l0)
+org.joda.time.LocalDate.withLocalMillis : l1 = virtualinvoke $r2.<org.joda.time.DateTimeField: long roundFloor(long)>(l0) >>>>>>>> org.joda.time.LocalDate.withLocalMillis : $l2 = virtualinvoke r0.<org.joda.time.LocalDate: long getLocalMillis()>()
+org.joda.time.LocalDate.withLocalMillis : $l2 = virtualinvoke r0.<org.joda.time.LocalDate: long getLocalMillis()>() >>>>>>>> org.joda.time.LocalDate.withLocalMillis : $b3 = l1 cmp $l2
+org.joda.time.LocalDate.withLocalMillis : $b3 = l1 cmp $l2 >>>>>>>> org.joda.time.LocalDate.withLocalMillis : if $b3 != 0
+org.joda.time.LocalDate.withLocalMillis : if $b3 != 0 >>>>>>>> org.joda.time.LocalDate.withLocalMillis : $r3 = r0
+org.joda.time.LocalDate.withLocalMillis : if $b3 != 0 >>>>>>>> org.joda.time.LocalDate.withLocalMillis : $r3 = new org.joda.time.LocalDate
+org.joda.time.LocalDate.withLocalMillis : $r3 = new org.joda.time.LocalDate >>>>>>>> org.joda.time.LocalDate.withLocalMillis : $r4 = virtualinvoke r0.<org.joda.time.LocalDate: org.joda.time.Chronology getChronology()>()
+org.joda.time.LocalDate.withLocalMillis : $r4 = virtualinvoke r0.<org.joda.time.LocalDate: org.joda.time.Chronology getChronology()>() >>>>>>>> org.joda.time.LocalDate.withLocalMillis : specialinvoke $r3.<org.joda.time.LocalDate: void <init>(long,org.joda.time.Chronology)>(l1, $r4)
+org.joda.time.LocalDate.withLocalMillis : specialinvoke $r3.<org.joda.time.LocalDate: void <init>(long,org.joda.time.Chronology)>(l1, $r4) >>>>>>>> org.joda.time.LocalDate.withLocalMillis : return $r3
+org.joda.time.LocalDate.withLocalMillis : $r3 = r0 >>>>>>>> org.joda.time.LocalDate.withLocalMillis : goto [?= return $r3]
+org.joda.time.LocalDate.withLocalMillis : goto [?= return $r3] >>>>>>>> org.joda.time.LocalDate.withLocalMillis : return $r3

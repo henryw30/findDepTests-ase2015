@@ -1,0 +1,34 @@
+org.apache.xml.security.algorithms.encryption.implementations.BC.BlockEncryptionImpl.engineGetBlockSize : r5 = $r4
+org.apache.xml.security.algorithms.encryption.implementations.BC.BlockEncryptionImpl.engineGetBlockSize : $r2 = virtualinvoke r0.<org.apache.xml.security.algorithms.encryption.implementations.BC.BlockEncryptionImpl: java.lang.String getImplementedAlgorithmJCE()>()
+org.apache.xml.security.algorithms.encryption.implementations.BC.BlockEncryptionImpl.engineGetBlockSize : return 0
+org.apache.xml.security.c14n.helper.NonNSAttrCompare.compare : r3 = (org.w3c.dom.Attr) r1
+org.apache.xml.security.algorithms.encryption.implementations.BC.BlockEncryptionImpl_AES128_BC.getImplementedAlgorithmURI : return "http://www.w3.org/2001/04/xmlenc#aes128-cbc"
+org.apache.xml.security.algorithms.JCEMapper.translateURItoJCEID : $r2 = <org.apache.xml.security.algorithms.JCEMapper: org.apache.log4j.Category cat>
+org.apache.xml.security.algorithms.JCEMapper.translateURItoJCEID : $z0 = staticinvoke <org.apache.xml.security.algorithms.JCEMapper: boolean getProviderIsInClassPath(java.lang.String)>(r1)
+org.apache.xml.security.algorithms.encryption.implementations.BC.BlockEncryptionImpl.getImplementedAlgorithmType : return 1
+org.apache.xml.security.utils.HexDump.byte2hex : b2 = b0 & 15
+org.apache.xml.security.utils.HexDump.byte2hex : $c5 = r1[b2]
+org.apache.xml.security.utils.HexDump.byte2hex : $r2 = newarray (char)[16]
+org.apache.xml.security.utils.HexDump.byte2hex : $s3 = b0 & 240
+org.apache.xml.security.utils.HexDump.byte2hex : $c4 = r1[s1]
+org.apache.xml.security.utils.HexDump.byteArrayToHexString : i1 = lengthof r0
+org.apache.xml.security.utils.HexDump.byteArrayToHexString : i3 = lengthof r0
+org.apache.xml.security.utils.HexDump.byteArrayToHexString : $i4 = i1 - 1
+org.apache.xml.security.utils.HexDump.byteArrayToHexString : $b3 = r0[i2]
+org.apache.xml.security.utils.HexDump.byteArrayToHexString : if i3 >= i5 goto i4 = 0 + i0
+org.apache.xml.security.utils.HexDump.byteArrayToHexString : $r4 = virtualinvoke r1.<java.lang.StringBuffer: java.lang.String toString()>()
+org.apache.xml.security.utils.HexDump.byteArrayToHexString : i2 = 0
+org.apache.xml.security.utils.HexDump.byteArrayToHexString : i4 = 0 + i0
+org.apache.xml.security.utils.HexDump.byteArrayToHexString : $r2 = new java.lang.StringBuffer
+org.apache.xml.security.utils.HexDump.byteArrayToHexString : i5 = i1 + i0
+org.apache.xml.security.utils.HexDump.byteArrayToHexString : staticinvoke <java.lang.System: long currentTimeMillis()>()
+org.apache.xml.security.keys.provider.KeyElement.PKCS12PasswordToBytes : i0 = 0
+org.apache.xml.security.keys.provider.KeyElement.PKCS12PasswordToBytes : $i5 = i0 * 2
+org.apache.xml.security.keys.provider.KeyElement.PKCS12PasswordToBytes : $i1 = lengthof r0
+org.apache.xml.security.keys.provider.KeyElement.PKCS12PasswordToBytes : $i9 = i0 * 2
+org.apache.xml.security.keys.provider.KeyElement.PKCS12PasswordToBytes : return r1
+org.apache.xml.security.algorithms.encryption.EncryptionMethodSpi.getImplementedAlgorithmJCE : $r2 = virtualinvoke r0.<org.apache.xml.security.algorithms.encryption.EncryptionMethodSpi: java.lang.String getImplementedAlgorithmURI()>()
+org.apache.xml.security.algorithms.JCEMapper.getProviderIsInClassPath : $r11 = staticinvoke <org.apache.xpath.XPathAPI: org.w3c.dom.Node selectSingleNode(org.w3c.dom.Node,java.lang.String,org.w3c.dom.Node)>($r5, $r9, $r10)
+org.apache.xml.security.algorithms.JCEMapper.getProviderIsInClassPath : $r5 = <org.apache.xml.security.algorithms.JCEMapper: org.w3c.dom.Element _providerList>
+org.apache.xml.security.algorithms.JCEMapper.getProviderIsInClassPath : z0 = 0
+org.apache.xml.security.algorithms.encryption.implementations.BC.BlockEncryptionImpl_AES128_BC.getRequiredProviderName : return "BC"

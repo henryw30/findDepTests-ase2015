@@ -1,0 +1,113 @@
+org.joda.time.format.DateTimeFormat.forPattern : $r1 = staticinvoke <org.joda.time.format.DateTimeFormat: org.joda.time.format.DateTimeFormatter createFormatterForPattern(java.lang.String)>(r0)
+org.joda.time.chrono.BaseChronology.get : return r2
+org.joda.time.chrono.BaseChronology.get : r2 = newarray (int)[i1]
+org.joda.time.chrono.BaseChronology.get : i1 = interfaceinvoke r1.<org.joda.time.ReadablePeriod: int size()>()
+org.joda.time.chrono.BaseChronology.get : $b5 = l0 cmp 0L
+org.joda.time.base.BasePeriod.getPeriodType : $r1 = r0.<org.joda.time.base.BasePeriod: org.joda.time.PeriodType iType>
+org.joda.time.chrono.ISOChronology.withUTC : $r1 = <org.joda.time.chrono.ISOChronology: org.joda.time.chrono.ISOChronology INSTANCE_UTC>
+org.joda.time.format.DateTimeFormatterBuilder.appendLiteral : if r1 != null goto $i0 = virtualinvoke r1.<java.lang.String: int length()>()
+org.joda.time.format.DateTimeFormatterBuilder.appendLiteral : $r5 = new org.joda.time.format.DateTimeFormatterBuilder$StringLiteral
+org.joda.time.format.DateTimeFormatterBuilder.appendLiteral : $i0 = virtualinvoke r1.<java.lang.String: int length()>()
+org.joda.time.chrono.ISOChronology.getInstance : if r0 != null goto $i1 = staticinvoke <java.lang.System: int identityHashCode(java.lang.Object)>(r0)
+org.joda.time.chrono.ISOChronology.getInstance : $i1 = staticinvoke <java.lang.System: int identityHashCode(java.lang.Object)>(r0)
+org.joda.time.chrono.ISOChronology.getInstance : $r5 = <org.joda.time.chrono.ISOChronology: org.joda.time.chrono.ISOChronology[] cFastCache>
+org.joda.time.chrono.ISOChronology.getInstance : return r1
+org.joda.time.chrono.ISOChronology.getInstance : if r1 == null goto $r7 = <org.joda.time.chrono.ISOChronology: java.util.Map cCache>
+org.joda.time.chrono.ISOChronology.getInstance : $r0 = staticinvoke <org.joda.time.DateTimeZone: org.joda.time.DateTimeZone getDefault()>()
+org.joda.time.base.AbstractPeriod.getFieldType : $r1 = virtualinvoke r0.<org.joda.time.base.AbstractPeriod: org.joda.time.PeriodType getPeriodType()>()
+org.joda.time.chrono.ZonedChronology.getZone : $r1 = virtualinvoke r0.<org.joda.time.chrono.ZonedChronology: java.lang.Object getParam()>()
+org.joda.time.DateTimeUtils.getChronology : if r0 != null goto return r0
+org.joda.time.DateTimeUtils.getChronology : $r1 = staticinvoke <org.joda.time.chrono.ISOChronology: org.joda.time.chrono.ISOChronology getInstance()>()
+org.joda.time.format.DateTimeFormat.parseToken : r1[0] = i0
+org.joda.time.format.DateTimeFormat.parseToken : goto [?= r1[0] = i0]
+org.joda.time.format.DateTimeFormat.parseToken : $i5 = i0 + 1
+org.joda.time.format.DateTimeFormat.parseToken : if c2 < 65 goto (branch)
+org.joda.time.format.DateTimeFormat.parseToken : virtualinvoke r3.<java.lang.StringBuffer: java.lang.StringBuffer append(char)>(c6)
+org.joda.time.format.DateTimeFormat.parseToken : c2 = virtualinvoke r0.<java.lang.String: char charAt(int)>(i0)
+org.joda.time.format.DateTimeFormat.parseToken : if z0 != 0 goto virtualinvoke r3.<java.lang.StringBuffer: java.lang.StringBuffer append(char)>(c6)
+org.joda.time.format.DateTimeFormat.parseToken : i0 = r1[0]
+org.joda.time.format.DateTimeFormat.parseToken : i0 = i0 + -1
+org.joda.time.format.DateTimeFormat.parseToken : i1 = virtualinvoke r0.<java.lang.String: int length()>()
+org.joda.time.format.DateTimeFormat.parseToken : virtualinvoke r3.<java.lang.StringBuffer: java.lang.StringBuffer append(char)>(39)
+org.joda.time.format.DateTimeFormat.parseToken : c6 = virtualinvoke r0.<java.lang.String: char charAt(int)>(i0)
+org.joda.time.format.DateTimeFormat.parseToken : $i4 = i0 + 1
+org.joda.time.format.DateTimeFormat.parseToken : if c3 != c2 goto r1[0] = i0
+org.joda.time.format.DateTimeFormat.parseToken : z0 = 0
+org.joda.time.format.DateTimeFormat.parseToken : if c6 != 39 goto (branch)
+org.joda.time.format.DateTimeFormat.parseToken : $r9 = virtualinvoke r3.<java.lang.StringBuffer: java.lang.String toString()>()
+org.joda.time.format.DateTimeFormat.parseToken : virtualinvoke r3.<java.lang.StringBuffer: java.lang.StringBuffer append(char)>(c2)
+org.joda.time.format.DateTimeFormat.parseToken : $r2 = new java.lang.StringBuffer
+org.joda.time.format.DateTimeFormat.parseToken : if i0 >= i1 goto r1[0] = i0
+org.joda.time.Partial.toString : if r1 != null goto r2 = r1[1]
+org.joda.time.Partial.toString : $r3 = staticinvoke <org.joda.time.format.DateTimeFormat: org.joda.time.format.DateTimeFormatter forPattern(java.lang.String)>(r1)
+org.joda.time.Partial.toString : virtualinvoke r0.<org.joda.time.Partial: org.joda.time.format.DateTimeFormatter getFormatter()>()
+org.joda.time.Partial.toString : r1 = r0.<org.joda.time.Partial: org.joda.time.format.DateTimeFormatter[] iFormatter>
+org.joda.time.Partial.toString : if r1 != null goto $r3 = staticinvoke <org.joda.time.format.DateTimeFormat: org.joda.time.format.DateTimeFormatter forPattern(java.lang.String)>(r1)
+org.joda.time.Partial.toString : $r4 = virtualinvoke r0.<org.joda.time.Partial: java.lang.String toStringList()>()
+org.joda.time.DateTimeUtils.getPeriodType : if r0 != null goto return r0
+org.joda.time.DateTimeUtils.getPeriodType : return r0
+org.joda.time.Partial.plus : $r2 = virtualinvoke r0.<org.joda.time.Partial: org.joda.time.Partial withPeriodAdded(org.joda.time.ReadablePeriod,int)>(r1, 1)
+org.joda.time.PeriodType.yearWeekDayTime : if r0 != null goto return r0
+org.joda.time.PeriodType.yearWeekDayTime : r0 = <org.joda.time.PeriodType: org.joda.time.PeriodType cYWDTime>
+org.joda.time.PeriodType.yearWeekDayTime : return r0
+org.joda.time.chrono.AssembledChronology.getZone : $r3 = virtualinvoke r1.<org.joda.time.Chronology: org.joda.time.DateTimeZone getZone()>()
+org.joda.time.chrono.AssembledChronology.getZone : $r2 = r0.<org.joda.time.chrono.AssembledChronology: org.joda.time.Chronology iBase>
+org.joda.time.Partial.getValues : $r1 = r0.<org.joda.time.Partial: int[] iValues>
+org.joda.time.base.AbstractPartial.indexOf : return -1
+org.joda.time.base.AbstractPartial.indexOf : i0 = 0
+org.joda.time.PeriodType.size : $r1 = r0.<org.joda.time.PeriodType: org.joda.time.DurationFieldType[] iTypes>
+org.joda.time.DateTimeZone.getDefault : if r0 != null goto return r0
+org.joda.time.DateTimeZone.getDefault : r0 = <org.joda.time.DateTimeZone: org.joda.time.DateTimeZone cDefault>
+org.joda.time.DateTimeZone.getDefault : return r0
+org.joda.time.format.DateTimeFormat.createFormatterForPattern : $r6 = <org.joda.time.format.DateTimeFormat: java.util.Map cPatternedCache>
+org.joda.time.format.DateTimeFormat.createFormatterForPattern : $r9 = new org.joda.time.format.DateTimeFormatterBuilder
+org.joda.time.format.DateTimeFormat.createFormatterForPattern : staticinvoke <org.joda.time.format.DateTimeFormat: void parsePatternTo(org.joda.time.format.DateTimeFormatterBuilder,java.lang.String)>(r2, r0)
+org.joda.time.format.DateTimeFormat.createFormatterForPattern : if r0 == null goto $r4 = new java.lang.IllegalArgumentException
+org.joda.time.format.DateTimeFormat.createFormatterForPattern : n0 = null
+org.joda.time.format.DateTimeFormat.createFormatterForPattern : $r5 = <org.joda.time.format.DateTimeFormat: java.util.Map cPatternedCache>
+org.joda.time.format.DateTimeFormat.createFormatterForPattern : if r8 != null goto exitmonitor r1
+org.joda.time.format.DateTimeFormatterBuilder.append0 : r0.<org.joda.time.format.DateTimeFormatterBuilder: java.lang.Object iFormatter> = null
+org.joda.time.format.DateTimeFormatterBuilder.append0 : $r3 = r0.<org.joda.time.format.DateTimeFormatterBuilder: java.util.ArrayList iElementPairs>
+org.joda.time.format.DateTimeFormatterBuilder.append0 : return r0
+org.joda.time.format.DateTimeFormatterBuilder.append0 : $r2 = r0.<org.joda.time.format.DateTimeFormatterBuilder: java.util.ArrayList iElementPairs>
+org.joda.time.format.DateTimeFormat.parsePatternTo : i4 = r2[0]
+org.joda.time.format.DateTimeFormat.parsePatternTo : i2 = virtualinvoke r3.<java.lang.String: int length()>()
+org.joda.time.format.DateTimeFormat.parsePatternTo : c3 = virtualinvoke r3.<java.lang.String: char charAt(int)>(0)
+org.joda.time.format.DateTimeFormat.parsePatternTo : r41 = virtualinvoke r3.<java.lang.String: java.lang.String substring(int)>(1)
+org.joda.time.format.DateTimeFormat.parsePatternTo : r2[0] = i1
+org.joda.time.format.DateTimeFormat.parsePatternTo : goto [?= i1 = i4 + 1]
+org.joda.time.format.DateTimeFormat.parsePatternTo : r2 = newarray (int)[1]
+org.joda.time.format.DateTimeFormat.parsePatternTo : r3 = staticinvoke <org.joda.time.format.DateTimeFormat: java.lang.String parseToken(java.lang.String,int[])>(r1, r2)
+org.joda.time.format.DateTimeFormat.parsePatternTo : i1 = 0
+org.joda.time.format.DateTimeFormat.parsePatternTo : i0 = virtualinvoke r1.<java.lang.String: int length()>()
+org.joda.time.format.DateTimeFormat.parsePatternTo : $i24 = virtualinvoke r41.<java.lang.String: int length()>()
+org.joda.time.format.DateTimeFormat.parsePatternTo : $r43 = new java.lang.String
+org.joda.time.format.DateTimeFormat.parsePatternTo : tableswitch(c3) {     case 39: goto r41 = virtualinvoke r3.<java.lang.String: java.lang.String substring(int)>(1);     case 40: goto $r45 = new java.lang.IllegalArgumentException;     case 41: goto $r45 = new java.lang.IllegalArgumentException;     case 42: goto $r45 = new java.lang.IllegalArgumentException;     case 43: goto $r45 = new java.lang.IllegalArgumentException;     case 44: goto $r45 = new java.lang.IllegalArgumentException;     case 45: goto $r45 = new java.lang.IllegalArgumentException;     case 46: goto $r45 = new java.lang.IllegalArgumentException;     case 47: goto $r45 = new java.lang.IllegalArgumentException;     case 48: goto $r45 = new java.lang.IllegalArgumentException;     case 49: goto $r45 = new java.lang.IllegalArgumentException;     case 50: goto $r45 = new java.lang.IllegalArgumentException;     case 51: goto $r45 = new java.lang.IllegalArgumentException;     case 52: goto $r45 = new java.lang.IllegalArgumentException;     case 53: goto $r45 = new java.lang.IllegalArgumentException;     case 54: goto $r45 = new java.lang.IllegalArgumentException;     case 55: goto $r45 = new java.lang.IllegalArgumentException;     case 56: goto $r45 = new java.lang.IllegalArgumentException;     case 57: goto $r45 = new java.lang.IllegalArgumentException;     case 58: goto $r45 = new java.lang.IllegalArgumentException;     case 59: goto $r45 = new java.lang.IllegalArgumentException;     case 60: goto $r45 = new java.lang.IllegalArgumentException;     case 61: goto $r45 = new java.lang.IllegalArgumentException;     case 62: goto $r45 = new java.lang.IllegalArgumentException;     case 63: goto $r45 = new java.lang.IllegalArgumentException;     case 64: goto $r45 = new java.lang.IllegalArgumentException;     case 65: goto $r45 = new java.lang.IllegalArgumentException;     case 66: goto $r45 = new java.lang.IllegalArgumentException;     case 67: goto virtualinvoke r0.<org.joda.time.format.DateTimeFormatterBuilder: org.joda.time.format.DateTimeFormatterBuilder appendCenturyOfEra(int,int)>(i2, i2);     case 68: goto virtualinvoke r0.<org.joda.time.format.DateTimeFormatterBuilder: org.joda.time.format.DateTimeFormatterBuilder appendDayOfYear(int)>(i2);     case 69: goto if i2 < 4 goto virtualinvoke r0.<org.joda.time.format.DateTimeFormatterBuilder: org.joda.time.format.DateTimeFormatterBuilder appendDayOfWeekShortText()>();     case 70: goto $r45 = new java.lang.IllegalArgumentException;     case 71: goto virtualinvoke r0.<org.joda.time.format.DateTimeFormatterBuilder: org.joda.time.format.DateTimeFormatterBuilder appendEraText()>();     case 72: goto virtualinvoke r0.<org.joda.time.format.DateTimeFormatterBuilder: org.joda.time.format.DateTimeFormatterBuilder appendHourOfDay(int)>(i2);     case 73: goto $r45 = new java.lang.IllegalArgumentException;     case 74: goto $r45 = new java.lang.IllegalArgumentException;     case 75: goto virtualinvoke r0.<org.joda.time.format.DateTimeFormatterBuilder: org.joda.time.format.DateTimeFormatterBuilder appendHourOfHalfday(int)>(i2);     case 76: goto $r45 = new java.lang.IllegalArgumentException;     case 77: goto if i2 < 3 goto virtualinvoke r0.<org.joda.time.format.DateTimeFormatterBuilder: org.joda.time.format.DateTimeFormatterBuilder appendMonthOfYear(int)>(i2);     case 78: goto $r45 = new java.lang.IllegalArgumentException;     case 79: goto $r45 = new java.lang.IllegalArgumentException;     case 80: goto $r45 = new java.lang.IllegalArgumentException;     case 81: goto $r45 = new java.lang.IllegalArgumentException;     case 82: goto $r45 = new java.lang.IllegalArgumentException;     case 83: goto virtualinvoke r0.<org.joda.time.format.DateTimeFormatterBuilder: org.joda.time.format.DateTimeFormatterBuilder appendFractionOfSecond(int,int)>(i2, i2);     case 84: goto $r45 = new java.lang.IllegalArgumentException;     case 85: goto $r45 = new java.lang.IllegalArgumentException;     case 86: goto $r45 = new java.lang.IllegalArgumentException;     case 87: goto $r45 = new java.lang.IllegalArgumentException;     case 88: goto $r45 = new java.lang.IllegalArgumentException;     case 89: goto if i2 != 2 goto i16 = 9;     case 90: goto if i2 != 1 goto (branch);     case 91: goto $r45 = new java.lang.IllegalArgumentException;     case 92: goto $r45 = new java.lang.IllegalArgumentException;     case 93: goto $r45 = new java.lang.IllegalArgumentException;     case 94: goto $r45 = new java.lang.IllegalArgumentException;     case 95: goto $r45 = new java.lang.IllegalArgumentException;     case 96: goto $r45 = new java.lang.IllegalArgumentException;     case 97: goto virtualinvoke r0.<org.joda.time.format.DateTimeFormatterBuilder: org.joda.time.format.DateTimeFormatterBuilder appendHalfdayOfDayText()>();     case 98: goto $r45 = new java.lang.IllegalArgumentException;     case 99: goto $r45 = new java.lang.IllegalArgumentException;     case 100: goto virtualinvoke r0.<org.joda.time.format.DateTimeFormatterBuilder: org.joda.time.format.DateTimeFormatterBuilder appendDayOfMonth(int)>(i2);     case 101: goto virtualinvoke r0.<org.joda.time.format.DateTimeFormatterBuilder: org.joda.time.format.DateTimeFormatterBuilder appendDayOfWeek(int)>(i2);     case 102: goto $r45 = new java.lang.IllegalArgumentException;     case 103: goto $r45 = new java.lang.IllegalArgumentException;     case 104: goto virtualinvoke r0.<org.joda.time.format.DateTimeFormatterBuilder: org.joda.time.format.DateTimeFormatterBuilder appendClockhourOfHalfday(int)>(i2);     case 105: goto $r45 = new java.lang.IllegalArgumentException;     case 106: goto $r45 = new java.lang.IllegalArgumentException;     case 107: goto virtualinvoke r0.<org.joda.time.format.DateTimeFormatterBuilder: org.joda.time.format.DateTimeFormatterBuilder appendClockhourOfDay(int)>(i2);     case 108: goto $r45 = new java.lang.IllegalArgumentException;     case 109: goto virtualinvoke r0.<org.joda.time.format.DateTimeFormatterBuilder: org.joda.time.format.DateTimeFormatterBuilder appendMinuteOfHour(int)>(i2);     case 110: goto $r45 = new java.lang.IllegalArgumentException;     case 111: goto $r45 = new java.lang.IllegalArgumentException;     case 112: goto $r45 = new java.lang.IllegalArgumentException;     case 113: goto $r45 = new java.lang.IllegalArgumentException;     case 114: goto $r45 = new java.lang.IllegalArgumentException;     case 115: goto virtualinvoke r0.<org.joda.time.format.DateTimeFormatterBuilder: org.joda.time.format.DateTimeFormatterBuilder appendSecondOfMinute(int)>(i2);     case 116: goto $r45 = new java.lang.IllegalArgumentException;     case 117: goto $r45 = new java.lang.IllegalArgumentException;     case 118: goto $r45 = new java.lang.IllegalArgumentException;     case 119: goto virtualinvoke r0.<org.joda.time.format.DateTimeFormatterBuilder: org.joda.time.format.DateTimeFormatterBuilder appendWeekOfWeekyear(int)>(i2);     case 120: goto if i2 != 2 goto i16 = 9;     case 121: goto if i2 != 2 goto i16 = 9;     case 122: goto if i2 < 4 goto virtualinvoke r0.<org.joda.time.format.DateTimeFormatterBuilder: org.joda.time.format.DateTimeFormatterBuilder appendTimeZoneShortName()>();     default: goto $r45 = new java.lang.IllegalArgumentException; }
+org.joda.time.format.DateTimeFormat.parsePatternTo : $r45 = new java.lang.IllegalArgumentException
+org.joda.time.format.DateTimeFormat.parsePatternTo : if i2 != 0 goto c3 = virtualinvoke r3.<java.lang.String: char charAt(int)>(0)
+org.joda.time.Partial.getFormatter : if r1 != null goto $r10 = r1[0]
+org.joda.time.Partial.getFormatter : return null
+org.joda.time.Partial.getFormatter : $i0 = virtualinvoke r0.<org.joda.time.Partial: int size()>()
+org.joda.time.Partial.getFormatter : r1 = r0.<org.joda.time.Partial: org.joda.time.format.DateTimeFormatter[] iFormatter>
+org.joda.time.chrono.AssembledChronology.getParam : $r1 = r0.<org.joda.time.chrono.AssembledChronology: java.lang.Object iParam>
+org.joda.time.base.BasePeriod.checkPeriodType : $r2 = staticinvoke <org.joda.time.DateTimeUtils: org.joda.time.PeriodType getPeriodType(org.joda.time.PeriodType)>(r1)
+org.joda.time.Partial.toStringList : virtualinvoke r1.<java.lang.StringBuffer: java.lang.StringBuffer append(char)>(93)
+org.joda.time.Partial.toStringList : i1 = 0
+org.joda.time.Partial.toStringList : virtualinvoke r1.<java.lang.StringBuffer: java.lang.StringBuffer append(char)>(91)
+org.joda.time.Partial.toStringList : i0 = virtualinvoke r0.<org.joda.time.Partial: int size()>()
+org.joda.time.Partial.toStringList : $r14 = virtualinvoke r1.<java.lang.StringBuffer: java.lang.String toString()>()
+org.joda.time.Partial.toStringList : $r2 = new java.lang.StringBuffer
+org.joda.time.Partial.withPeriodAdded : i2 = virtualinvoke r0.<org.joda.time.Partial: int indexOf(org.joda.time.DurationFieldType)>(r3)
+org.joda.time.Partial.withPeriodAdded : r2 = virtualinvoke r0.<org.joda.time.Partial: int[] getValues()>()
+org.joda.time.Partial.withPeriodAdded : i1 = 0
+org.joda.time.Partial.withPeriodAdded : $r5 = new org.joda.time.Partial
+org.joda.time.Partial.withPeriodAdded : r3 = interfaceinvoke r1.<org.joda.time.ReadablePeriod: org.joda.time.DurationFieldType getFieldType(int)>(i1)
+org.joda.time.Partial.withPeriodAdded : if r1 == null goto return r0
+org.joda.time.Partial.withPeriodAdded : if i2 < 0 goto i1 = i1 + 1
+org.joda.time.base.AbstractPeriod.size : $r1 = virtualinvoke r0.<org.joda.time.base.AbstractPeriod: org.joda.time.PeriodType getPeriodType()>()
+org.joda.time.PeriodType.getFieldType : $r1 = r0.<org.joda.time.PeriodType: org.joda.time.DurationFieldType[] iTypes>
+org.joda.time.base.AbstractPeriod.getFieldTypes : $r2 = virtualinvoke r0.<org.joda.time.base.AbstractPeriod: org.joda.time.DurationFieldType getFieldType(int)>(i0)
+org.joda.time.base.AbstractPeriod.getFieldTypes : i0 = 0
+org.joda.time.base.AbstractPeriod.getFieldTypes : $i1 = virtualinvoke r0.<org.joda.time.base.AbstractPeriod: int size()>()
+org.joda.time.base.AbstractPeriod.getFieldTypes : return r1
+org.joda.time.Partial.size : $r1 = r0.<org.joda.time.Partial: org.joda.time.DateTimeFieldType[] iTypes>

@@ -1,0 +1,40 @@
+org.jfree.chart.axis.DateTickUnit.hashCode : b0 = 19
+org.jfree.chart.axis.DateTickUnit.hashCode : return i9
+org.jfree.chart.axis.DateTickUnit.hashCode : $i1 = 37 * b0
+org.jfree.chart.axis.DateTickUnit.hashCode : $i7 = 37 * i6
+org.jfree.chart.axis.DateTickUnit.hashCode : $i4 = 37 * i3
+org.jfree.chart.axis.DateTickUnit.getMillisecondCount : $l5 = (long) i0
+org.jfree.chart.axis.DateTickUnit.getMillisecondCount : $r2 = <org.jfree.chart.axis.DateTickUnitType: org.jfree.chart.axis.DateTickUnitType MONTH>
+org.jfree.chart.axis.DateTickUnit.getMillisecondCount : $r3 = <org.jfree.chart.axis.DateTickUnitType: org.jfree.chart.axis.DateTickUnitType DAY>
+org.jfree.chart.axis.DateTickUnit.getMillisecondCount : $r1 = <org.jfree.chart.axis.DateTickUnitType: org.jfree.chart.axis.DateTickUnitType YEAR>
+org.jfree.chart.axis.DateTickUnit.unitTypeToInt : return 2
+org.jfree.chart.axis.DateTickUnit.unitTypeToInt : $r2 = <org.jfree.chart.axis.DateTickUnitType: org.jfree.chart.axis.DateTickUnitType MONTH>
+org.jfree.chart.axis.DateTickUnit.unitTypeToInt : $r3 = <org.jfree.chart.axis.DateTickUnitType: org.jfree.chart.axis.DateTickUnitType DAY>
+org.jfree.chart.axis.DateTickUnit.unitTypeToInt : $r1 = <org.jfree.chart.axis.DateTickUnitType: org.jfree.chart.axis.DateTickUnitType YEAR>
+org.jfree.chart.axis.DateTickUnit.unitTypeToInt : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r0, "unitType")
+org.jfree.chart.axis.TickUnit.equals : $i1 = r0.<org.jfree.chart.axis.TickUnit: int minorTickCount>
+org.jfree.chart.axis.TickUnit.equals : if r1 != r0 goto $z0 = r1 instanceof org.jfree.chart.axis.TickUnit
+org.jfree.chart.axis.TickUnit.equals : $d0 = r0.<org.jfree.chart.axis.TickUnit: double size>
+org.jfree.chart.axis.TickUnit.equals : $z0 = r1 instanceof org.jfree.chart.axis.TickUnit
+org.jfree.chart.axis.TickUnit.equals : return 1
+org.jfree.chart.axis.TickUnit.equals : r2 = (org.jfree.chart.axis.TickUnit) r1
+org.jfree.chart.axis.DateTickUnitType.toString : $r1 = r0.<org.jfree.chart.axis.DateTickUnitType: java.lang.String name>
+org.jfree.chart.axis.DateTickUnit.notNull : if r0 != null goto return r0
+org.jfree.chart.axis.DateTickUnit.notNull : $r1 = staticinvoke <java.text.DateFormat: java.text.DateFormat getDateInstance(int)>(3)
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null goto return
+org.jfree.chart.axis.DateTickUnitType.equals : $r3 = r0.<org.jfree.chart.axis.DateTickUnitType: java.lang.String name>
+org.jfree.chart.axis.DateTickUnitType.equals : $z0 = r1 instanceof org.jfree.chart.axis.DateTickUnitType
+org.jfree.chart.axis.DateTickUnitType.equals : r2 = (org.jfree.chart.axis.DateTickUnitType) r1
+org.jfree.chart.axis.DateTickUnitType.equals : return 1
+org.jfree.chart.axis.DateTickUnitType.equals : return 0
+org.jfree.chart.axis.DateTickUnitType.equals : if r0 != r1 goto $z0 = r1 instanceof org.jfree.chart.axis.DateTickUnitType
+org.jfree.chart.axis.DateTickUnit.equals : $i0 = r0.<org.jfree.chart.axis.DateTickUnit: int count>
+org.jfree.chart.axis.DateTickUnit.equals : $z0 = r1 instanceof org.jfree.chart.axis.DateTickUnit
+org.jfree.chart.axis.DateTickUnit.equals : if r1 != r0 goto $z0 = r1 instanceof org.jfree.chart.axis.DateTickUnit
+org.jfree.chart.axis.DateTickUnit.equals : return 1
+org.jfree.chart.axis.DateTickUnit.equals : r2 = (org.jfree.chart.axis.DateTickUnit) r1
+org.jfree.chart.axis.DateTickUnit.equals : $z1 = specialinvoke r0.<org.jfree.chart.axis.TickUnit: boolean equals(java.lang.Object)>(r1)
+org.jfree.chart.axis.DateTickUnit.equals : $r3 = r0.<org.jfree.chart.axis.DateTickUnit: org.jfree.chart.axis.DateTickUnitType unitType>
+org.jfree.chart.axis.DateTickUnit.equals : $r5 = r0.<org.jfree.chart.axis.DateTickUnit: java.text.DateFormat formatter>
+org.jfree.chart.axis.DateTickUnit.intToUnitType : tableswitch(i0) {     case 0: goto $r1 = <org.jfree.chart.axis.DateTickUnitType: org.jfree.chart.axis.DateTickUnitType YEAR>;     case 1: goto $r2 = <org.jfree.chart.axis.DateTickUnitType: org.jfree.chart.axis.DateTickUnitType MONTH>;     case 2: goto $r3 = <org.jfree.chart.axis.DateTickUnitType: org.jfree.chart.axis.DateTickUnitType DAY>;     case 3: goto $r4 = <org.jfree.chart.axis.DateTickUnitType: org.jfree.chart.axis.DateTickUnitType HOUR>;     case 4: goto $r5 = <org.jfree.chart.axis.DateTickUnitType: org.jfree.chart.axis.DateTickUnitType MINUTE>;     case 5: goto $r6 = <org.jfree.chart.axis.DateTickUnitType: org.jfree.chart.axis.DateTickUnitType SECOND>;     case 6: goto $r7 = <org.jfree.chart.axis.DateTickUnitType: org.jfree.chart.axis.DateTickUnitType MILLISECOND>;     default: goto $r8 = new java.lang.IllegalArgumentException; }
+org.jfree.chart.axis.DateTickUnit.intToUnitType : $r3 = <org.jfree.chart.axis.DateTickUnitType: org.jfree.chart.axis.DateTickUnitType DAY>

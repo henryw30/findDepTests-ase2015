@@ -1,0 +1,73 @@
+org.jfree.data.KeyedObjects2D.setObject : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r2, "rowKey") >>>>>>>> org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null >>>>>>>> org.jfree.data.KeyedObjects2D.setObject : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r3, "columnKey")
+org.jfree.data.KeyedObjects2D.setObject : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r3, "columnKey") >>>>>>>> org.jfree.data.KeyedObjects2D.setObject : $r5 = r0.<org.jfree.data.KeyedObjects2D: java.util.List rowKeys>
+org.jfree.data.KeyedObjects2D.setObject : $r5 = r0.<org.jfree.data.KeyedObjects2D: java.util.List rowKeys> >>>>>>>> org.jfree.data.KeyedObjects2D.setObject : i0 = interfaceinvoke $r5.<java.util.List: int indexOf(java.lang.Object)>(r2)
+org.jfree.data.KeyedObjects2D.setObject : i0 = interfaceinvoke $r5.<java.util.List: int indexOf(java.lang.Object)>(r2) >>>>>>>> org.jfree.data.KeyedObjects2D.setObject : if i0 < 0
+org.jfree.data.KeyedObjects2D.setObject : if i0 < 0 >>>>>>>> org.jfree.data.KeyedObjects2D.setObject : $r8 = r0.<org.jfree.data.KeyedObjects2D: java.util.List rowKeys>
+org.jfree.data.KeyedObjects2D.setObject : $r8 = r0.<org.jfree.data.KeyedObjects2D: java.util.List rowKeys> >>>>>>>> org.jfree.data.KeyedObjects2D.setObject : interfaceinvoke $r8.<java.util.List: boolean add(java.lang.Object)>(r2)
+org.jfree.data.KeyedObjects2D.setObject : interfaceinvoke $r8.<java.util.List: boolean add(java.lang.Object)>(r2) >>>>>>>> org.jfree.data.KeyedObjects2D.setObject : $r9 = new org.jfree.data.KeyedObjects
+org.jfree.data.KeyedObjects2D.setObject : $r9 = new org.jfree.data.KeyedObjects >>>>>>>> org.jfree.data.KeyedObjects2D.setObject : specialinvoke $r9.<org.jfree.data.KeyedObjects: void <init>()>()
+org.jfree.data.KeyedObjects2D.setObject : specialinvoke $r9.<org.jfree.data.KeyedObjects: void <init>()>() >>>>>>>> org.jfree.data.KeyedObjects2D.setObject : r4 = $r9
+org.jfree.data.KeyedObjects2D.setObject : r4 = $r9 >>>>>>>> org.jfree.data.KeyedObjects2D.setObject : $r10 = r0.<org.jfree.data.KeyedObjects2D: java.util.List rows>
+org.jfree.data.KeyedObjects2D.setObject : $r10 = r0.<org.jfree.data.KeyedObjects2D: java.util.List rows> >>>>>>>> org.jfree.data.KeyedObjects2D.setObject : interfaceinvoke $r10.<java.util.List: boolean add(java.lang.Object)>(r4)
+org.jfree.data.KeyedObjects2D.setObject : interfaceinvoke $r10.<java.util.List: boolean add(java.lang.Object)>(r4) >>>>>>>> org.jfree.data.KeyedObjects2D.setObject : virtualinvoke r4.<org.jfree.data.KeyedObjects: void setObject(java.lang.Comparable,java.lang.Object)>(r3, r1)
+org.jfree.data.KeyedObjects2D.setObject : virtualinvoke r4.<org.jfree.data.KeyedObjects: void setObject(java.lang.Comparable,java.lang.Object)>(r3, r1) >>>>>>>> org.jfree.data.KeyedObjects.setObject : i0 = virtualinvoke r0.<org.jfree.data.KeyedObjects: int getIndex(java.lang.Comparable)>(r1)
+org.jfree.data.KeyedObjects.setObject : i0 = virtualinvoke r0.<org.jfree.data.KeyedObjects: int getIndex(java.lang.Comparable)>(r1) >>>>>>>> org.jfree.data.KeyedObjects.getIndex : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "key")
+org.jfree.data.KeyedObjects.getIndex : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "key") >>>>>>>> org.jfree.data.KeyedObjects.getIndex : i0 = 0
+org.jfree.data.KeyedObjects.getIndex : i0 = 0 >>>>>>>> org.jfree.data.KeyedObjects.getIndex : $r4 = r0.<org.jfree.data.KeyedObjects: java.util.List data>
+org.jfree.data.KeyedObjects.getIndex : $r4 = r0.<org.jfree.data.KeyedObjects: java.util.List data> >>>>>>>> org.jfree.data.KeyedObjects.getIndex : r2 = interfaceinvoke $r4.<java.util.List: java.util.Iterator iterator()>()
+org.jfree.data.KeyedObjects.getIndex : r2 = interfaceinvoke $r4.<java.util.List: java.util.Iterator iterator()>() >>>>>>>> org.jfree.data.KeyedObjects.getIndex : $z0 = interfaceinvoke r2.<java.util.Iterator: boolean hasNext()>()
+org.jfree.data.KeyedObjects.getIndex : $z0 = interfaceinvoke r2.<java.util.Iterator: boolean hasNext()>() >>>>>>>> org.jfree.data.KeyedObjects.getIndex : if $z0 == 0
+org.jfree.data.KeyedObjects.getIndex : if $z0 == 0 >>>>>>>> org.jfree.data.KeyedObjects.getIndex : return -1
+org.jfree.data.KeyedObjects.getIndex : return -1 >>>>>>>> org.jfree.data.KeyedObjects.setObject : if i0 < 0
+org.jfree.data.KeyedObjects.setObject : if i0 < 0 >>>>>>>> org.jfree.data.KeyedObjects.setObject : $r6 = new org.jfree.data.KeyedObject
+org.jfree.data.KeyedObjects.setObject : $r6 = new org.jfree.data.KeyedObject >>>>>>>> org.jfree.data.KeyedObjects.setObject : specialinvoke $r6.<org.jfree.data.KeyedObject: void <init>(java.lang.Comparable,java.lang.Object)>(r1, r2)
+org.jfree.data.KeyedObjects.setObject : specialinvoke $r6.<org.jfree.data.KeyedObject: void <init>(java.lang.Comparable,java.lang.Object)>(r1, r2) >>>>>>>> org.jfree.data.KeyedObjects.setObject : r7 = $r6
+org.jfree.data.KeyedObjects.setObject : r7 = $r6 >>>>>>>> org.jfree.data.KeyedObjects.setObject : $r8 = r0.<org.jfree.data.KeyedObjects: java.util.List data>
+org.jfree.data.KeyedObjects.setObject : $r8 = r0.<org.jfree.data.KeyedObjects: java.util.List data> >>>>>>>> org.jfree.data.KeyedObjects.setObject : interfaceinvoke $r8.<java.util.List: boolean add(java.lang.Object)>(r7)
+org.jfree.data.KeyedObjects.setObject : interfaceinvoke $r8.<java.util.List: boolean add(java.lang.Object)>(r7) >>>>>>>> org.jfree.data.KeyedObjects2D.setObject : $r11 = r0.<org.jfree.data.KeyedObjects2D: java.util.List columnKeys>
+org.jfree.data.KeyedObjects2D.setObject : $r11 = r0.<org.jfree.data.KeyedObjects2D: java.util.List columnKeys> >>>>>>>> org.jfree.data.KeyedObjects2D.setObject : i1 = interfaceinvoke $r11.<java.util.List: int indexOf(java.lang.Object)>(r3)
+org.jfree.data.KeyedObjects2D.setObject : i1 = interfaceinvoke $r11.<java.util.List: int indexOf(java.lang.Object)>(r3) >>>>>>>> org.jfree.data.KeyedObjects2D.setObject : if i1 >= 0
+org.jfree.data.KeyedObjects2D.setObject : if i1 >= 0 >>>>>>>> org.jfree.data.KeyedObjects2D.setObject : $r12 = r0.<org.jfree.data.KeyedObjects2D: java.util.List columnKeys>
+org.jfree.data.KeyedObjects2D.setObject : $r12 = r0.<org.jfree.data.KeyedObjects2D: java.util.List columnKeys> >>>>>>>> org.jfree.data.KeyedObjects2D.setObject : interfaceinvoke $r12.<java.util.List: boolean add(java.lang.Object)>(r3)
+org.jfree.data.KeyedObjects2D.setObject : interfaceinvoke $r12.<java.util.List: boolean add(java.lang.Object)>(r3) >>>>>>>> org.jfree.data.KeyedObjects2D.removeRow : $r1 = r0.<org.jfree.data.KeyedObjects2D: java.util.List rowKeys>
+org.jfree.data.KeyedObjects2D.removeRow : $r1 = r0.<org.jfree.data.KeyedObjects2D: java.util.List rowKeys> >>>>>>>> org.jfree.data.KeyedObjects2D.removeRow : interfaceinvoke $r1.<java.util.List: java.lang.Object remove(int)>(i0)
+org.jfree.data.KeyedObjects2D.removeRow : interfaceinvoke $r1.<java.util.List: java.lang.Object remove(int)>(i0) >>>>>>>> org.jfree.data.KeyedObjects2D.removeRow : $r3 = r0.<org.jfree.data.KeyedObjects2D: java.util.List rows>
+org.jfree.data.KeyedObjects2D.removeRow : $r3 = r0.<org.jfree.data.KeyedObjects2D: java.util.List rows> >>>>>>>> org.jfree.data.KeyedObjects2D.removeRow : interfaceinvoke $r3.<java.util.List: java.lang.Object remove(int)>(i0)
+org.jfree.data.KeyedObjects2D.removeRow : interfaceinvoke $r3.<java.util.List: java.lang.Object remove(int)>(i0) >>>>>>>> org.jfree.data.KeyedObjects2D.getRowCount : $r1 = r0.<org.jfree.data.KeyedObjects2D: java.util.List rowKeys>
+org.jfree.data.KeyedObjects2D.getRowCount : $r1 = r0.<org.jfree.data.KeyedObjects2D: java.util.List rowKeys> >>>>>>>> org.jfree.data.KeyedObjects2D.getRowCount : $i0 = interfaceinvoke $r1.<java.util.List: int size()>()
+org.jfree.data.KeyedObjects2D.getRowCount : $i0 = interfaceinvoke $r1.<java.util.List: int size()>() >>>>>>>> org.jfree.data.KeyedObjects2D.getRowCount : return $i0
+org.jfree.data.KeyedObjects2D.getRowCount : return $i0 >>>>>>>> org.jfree.data.KeyedObjects2D.getObject : r1 = null
+org.jfree.data.KeyedObjects2D.getObject : r1 = null >>>>>>>> org.jfree.data.KeyedObjects2D.getObject : $r4 = r0.<org.jfree.data.KeyedObjects2D: java.util.List rows>
+org.jfree.data.KeyedObjects2D.getObject : $r4 = r0.<org.jfree.data.KeyedObjects2D: java.util.List rows> >>>>>>>> org.jfree.data.KeyedObjects2D.getObject : $r5 = interfaceinvoke $r4.<java.util.List: java.lang.Object get(int)>(i0)
+org.jfree.data.KeyedObjects2D.getObject : $r5 = interfaceinvoke $r4.<java.util.List: java.lang.Object get(int)>(i0) >>>>>>>> org.jfree.data.KeyedObjects2D.getObject : r2 = (org.jfree.data.KeyedObjects) $r5
+org.jfree.data.KeyedObjects2D.getObject : r2 = (org.jfree.data.KeyedObjects) $r5 >>>>>>>> org.jfree.data.KeyedObjects2D.getObject : if r2 == null
+org.jfree.data.KeyedObjects2D.getObject : if r2 == null >>>>>>>> org.jfree.data.KeyedObjects2D.getObject : $r6 = r0.<org.jfree.data.KeyedObjects2D: java.util.List columnKeys>
+org.jfree.data.KeyedObjects2D.getObject : $r6 = r0.<org.jfree.data.KeyedObjects2D: java.util.List columnKeys> >>>>>>>> org.jfree.data.KeyedObjects2D.getObject : $r7 = interfaceinvoke $r6.<java.util.List: java.lang.Object get(int)>(i1)
+org.jfree.data.KeyedObjects2D.getObject : $r7 = interfaceinvoke $r6.<java.util.List: java.lang.Object get(int)>(i1) >>>>>>>> org.jfree.data.KeyedObjects2D.getObject : r3 = (java.lang.Comparable) $r7
+org.jfree.data.KeyedObjects2D.getObject : r3 = (java.lang.Comparable) $r7 >>>>>>>> org.jfree.data.KeyedObjects2D.getObject : if r3 == null
+org.jfree.data.KeyedObjects2D.getObject : if r3 == null >>>>>>>> org.jfree.data.KeyedObjects2D.getObject : i2 = virtualinvoke r2.<org.jfree.data.KeyedObjects: int getIndex(java.lang.Comparable)>(r3)
+org.jfree.data.KeyedObjects2D.getObject : i2 = virtualinvoke r2.<org.jfree.data.KeyedObjects: int getIndex(java.lang.Comparable)>(r3) >>>>>>>> org.jfree.data.KeyedObjects.getIndex : $r5 = interfaceinvoke r2.<java.util.Iterator: java.lang.Object next()>()
+org.jfree.data.KeyedObjects.getIndex : $r5 = interfaceinvoke r2.<java.util.Iterator: java.lang.Object next()>() >>>>>>>> org.jfree.data.KeyedObjects.getIndex : r3 = (org.jfree.data.KeyedObject) $r5
+org.jfree.data.KeyedObjects.getIndex : r3 = (org.jfree.data.KeyedObject) $r5 >>>>>>>> org.jfree.data.KeyedObjects.getIndex : $r6 = virtualinvoke r3.<org.jfree.data.KeyedObject: java.lang.Comparable getKey()>()
+org.jfree.data.KeyedObjects.getIndex : $r6 = virtualinvoke r3.<org.jfree.data.KeyedObject: java.lang.Comparable getKey()>() >>>>>>>> org.jfree.data.KeyedObject.getKey : $r1 = r0.<org.jfree.data.KeyedObject: java.lang.Comparable key>
+org.jfree.data.KeyedObject.getKey : $r1 = r0.<org.jfree.data.KeyedObject: java.lang.Comparable key> >>>>>>>> org.jfree.data.KeyedObject.getKey : return $r1
+org.jfree.data.KeyedObject.getKey : return $r1 >>>>>>>> org.jfree.data.KeyedObjects.getIndex : $z1 = virtualinvoke $r6.<java.lang.Object: boolean equals(java.lang.Object)>(r1)
+org.jfree.data.KeyedObjects.getIndex : $z1 = virtualinvoke $r6.<java.lang.Object: boolean equals(java.lang.Object)>(r1) >>>>>>>> org.jfree.data.KeyedObjects.getIndex : if $z1 == 0
+org.jfree.data.KeyedObjects.getIndex : if $z1 == 0 >>>>>>>> org.jfree.data.KeyedObjects.getIndex : return i0
+org.jfree.data.KeyedObjects.getIndex : return i0 >>>>>>>> org.jfree.data.KeyedObjects2D.getObject : if i2 < 0
+org.jfree.data.KeyedObjects2D.getObject : if i2 < 0 >>>>>>>> org.jfree.data.KeyedObjects2D.getObject : r1 = virtualinvoke r2.<org.jfree.data.KeyedObjects: java.lang.Object getObject(java.lang.Comparable)>(r3)
+org.jfree.data.KeyedObjects2D.getObject : r1 = virtualinvoke r2.<org.jfree.data.KeyedObjects: java.lang.Object getObject(java.lang.Comparable)>(r3) >>>>>>>> org.jfree.data.KeyedObjects.getObject : i0 = virtualinvoke r0.<org.jfree.data.KeyedObjects: int getIndex(java.lang.Comparable)>(r1)
+org.jfree.data.KeyedObjects.getObject : i0 = virtualinvoke r0.<org.jfree.data.KeyedObjects: int getIndex(java.lang.Comparable)>(r1) >>>>>>>> org.jfree.data.KeyedObjects.getObject : if i0 >= 0
+org.jfree.data.KeyedObjects.getObject : if i0 >= 0 >>>>>>>> org.jfree.data.KeyedObjects.getObject : $r8 = virtualinvoke r0.<org.jfree.data.KeyedObjects: java.lang.Object getObject(int)>(i0)
+org.jfree.data.KeyedObjects.getObject : $r8 = virtualinvoke r0.<org.jfree.data.KeyedObjects: java.lang.Object getObject(int)>(i0) >>>>>>>> org.jfree.data.KeyedObjects.getObject : r1 = null
+org.jfree.data.KeyedObjects.getObject : r1 = null >>>>>>>> org.jfree.data.KeyedObjects.getObject : $r3 = r0.<org.jfree.data.KeyedObjects: java.util.List data>
+org.jfree.data.KeyedObjects.getObject : $r3 = r0.<org.jfree.data.KeyedObjects: java.util.List data> >>>>>>>> org.jfree.data.KeyedObjects.getObject : $r4 = interfaceinvoke $r3.<java.util.List: java.lang.Object get(int)>(i0)
+org.jfree.data.KeyedObjects.getObject : $r4 = interfaceinvoke $r3.<java.util.List: java.lang.Object get(int)>(i0) >>>>>>>> org.jfree.data.KeyedObjects.getObject : r2 = (org.jfree.data.KeyedObject) $r4
+org.jfree.data.KeyedObjects.getObject : r2 = (org.jfree.data.KeyedObject) $r4 >>>>>>>> org.jfree.data.KeyedObjects.getObject : if r2 == null
+org.jfree.data.KeyedObjects.getObject : if r2 == null >>>>>>>> org.jfree.data.KeyedObjects.getObject : r1 = virtualinvoke r2.<org.jfree.data.KeyedObject: java.lang.Object getObject()>()
+org.jfree.data.KeyedObjects.getObject : r1 = virtualinvoke r2.<org.jfree.data.KeyedObject: java.lang.Object getObject()>() >>>>>>>> org.jfree.data.KeyedObject.getObject : $r1 = r0.<org.jfree.data.KeyedObject: java.lang.Object object>
+org.jfree.data.KeyedObject.getObject : $r1 = r0.<org.jfree.data.KeyedObject: java.lang.Object object> >>>>>>>> org.jfree.data.KeyedObject.getObject : return $r1
+org.jfree.data.KeyedObject.getObject : return $r1 >>>>>>>> org.jfree.data.KeyedObjects.getObject : return r1
+org.jfree.data.KeyedObjects.getObject : return r1 >>>>>>>> org.jfree.data.KeyedObjects.getObject : return $r8
+org.jfree.data.KeyedObjects.getObject : return $r8 >>>>>>>> org.jfree.data.KeyedObjects2D.getObject : return r1

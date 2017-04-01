@@ -1,0 +1,37 @@
+org.jfree.data.time.TimeSeries.createCopy : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "start") >>>>>>>> org.jfree.data.time.TimeSeries.createCopy : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r2, "end")
+org.jfree.data.time.TimeSeries.createCopy : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r2, "end") >>>>>>>> org.jfree.data.time.TimeSeries.createCopy : $i2 = virtualinvoke r1.<org.jfree.data.time.RegularTimePeriod: int compareTo(java.lang.Object)>(r2)
+org.jfree.data.time.TimeSeries.createCopy : $i2 = virtualinvoke r1.<org.jfree.data.time.RegularTimePeriod: int compareTo(java.lang.Object)>(r2) >>>>>>>> org.jfree.data.time.TimeSeries.createCopy : if $i2 <= 0
+org.jfree.data.time.TimeSeries.createCopy : if $i2 <= 0 >>>>>>>> org.jfree.data.time.TimeSeries.createCopy : $r4 = new java.lang.IllegalArgumentException
+org.jfree.data.time.TimeSeries.createCopy : if $i2 <= 0 >>>>>>>> org.jfree.data.time.TimeSeries.createCopy : z0 = 0
+org.jfree.data.time.TimeSeries.createCopy : z0 = 0 >>>>>>>> org.jfree.data.time.TimeSeries.createCopy : i0 = virtualinvoke r0.<org.jfree.data.time.TimeSeries: int getIndex(org.jfree.data.time.RegularTimePeriod)>(r1)
+org.jfree.data.time.TimeSeries.createCopy : i0 = virtualinvoke r0.<org.jfree.data.time.TimeSeries: int getIndex(org.jfree.data.time.RegularTimePeriod)>(r1) >>>>>>>> org.jfree.data.time.TimeSeries.createCopy : if i0 >= 0
+org.jfree.data.time.TimeSeries.createCopy : if i0 >= 0 >>>>>>>> org.jfree.data.time.TimeSeries.createCopy : $i3 = i0 + 1
+org.jfree.data.time.TimeSeries.createCopy : if i0 >= 0 >>>>>>>> org.jfree.data.time.TimeSeries.createCopy : i1 = virtualinvoke r0.<org.jfree.data.time.TimeSeries: int getIndex(org.jfree.data.time.RegularTimePeriod)>(r2)
+org.jfree.data.time.TimeSeries.createCopy : i1 = virtualinvoke r0.<org.jfree.data.time.TimeSeries: int getIndex(org.jfree.data.time.RegularTimePeriod)>(r2) >>>>>>>> org.jfree.data.time.TimeSeries.createCopy : if i1 >= 0
+org.jfree.data.time.TimeSeries.createCopy : if i1 >= 0 >>>>>>>> org.jfree.data.time.TimeSeries.createCopy : $i5 = i1 + 1
+org.jfree.data.time.TimeSeries.createCopy : if i1 >= 0 >>>>>>>> org.jfree.data.time.TimeSeries.createCopy : if i1 < 0
+org.jfree.data.time.TimeSeries.createCopy : if i1 < 0 >>>>>>>> org.jfree.data.time.TimeSeries.createCopy : if i1 >= i0
+org.jfree.data.time.TimeSeries.createCopy : if i1 < 0 >>>>>>>> org.jfree.data.time.TimeSeries.createCopy : z0 = 1
+org.jfree.data.time.TimeSeries.createCopy : z0 = 1 >>>>>>>> org.jfree.data.time.TimeSeries.createCopy : if z0 == 0
+org.jfree.data.time.TimeSeries.createCopy : if z0 == 0 >>>>>>>> org.jfree.data.time.TimeSeries.createCopy : $r6 = specialinvoke r0.<org.jfree.data.general.Series: java.lang.Object clone()>()
+org.jfree.data.time.TimeSeries.createCopy : if z0 == 0 >>>>>>>> org.jfree.data.time.TimeSeries.createCopy : $r8 = virtualinvoke r0.<org.jfree.data.time.TimeSeries: org.jfree.data.time.TimeSeries createCopy(int,int)>(i0, i1)
+org.jfree.data.time.TimeSeries.createCopy : $r8 = virtualinvoke r0.<org.jfree.data.time.TimeSeries: org.jfree.data.time.TimeSeries createCopy(int,int)>(i0, i1) >>>>>>>> org.jfree.data.time.TimeSeries.createCopy : return $r8
+org.jfree.data.time.TimeSeries.createCopy : $r6 = specialinvoke r0.<org.jfree.data.general.Series: java.lang.Object clone()>() >>>>>>>> org.jfree.data.time.TimeSeries.createCopy : r3 = (org.jfree.data.time.TimeSeries) $r6
+org.jfree.data.time.TimeSeries.createCopy : r3 = (org.jfree.data.time.TimeSeries) $r6 >>>>>>>> org.jfree.data.time.TimeSeries.createCopy : $r7 = new java.util.ArrayList
+org.jfree.data.time.TimeSeries.createCopy : $r7 = new java.util.ArrayList >>>>>>>> org.jfree.data.time.TimeSeries.createCopy : specialinvoke $r7.<java.util.ArrayList: void <init>()>()
+org.jfree.data.time.TimeSeries.createCopy : specialinvoke $r7.<java.util.ArrayList: void <init>()>() >>>>>>>> org.jfree.data.time.TimeSeries.createCopy : r3.<org.jfree.data.time.TimeSeries: java.util.List data> = $r7
+org.jfree.data.time.TimeSeries.createCopy : r3.<org.jfree.data.time.TimeSeries: java.util.List data> = $r7 >>>>>>>> org.jfree.data.time.TimeSeries.createCopy : return r3
+org.jfree.data.time.TimeSeries.createCopy : if i1 >= i0 >>>>>>>> org.jfree.data.time.TimeSeries.createCopy : z0 = 1
+org.jfree.data.time.TimeSeries.createCopy : if i1 >= i0 >>>>>>>> org.jfree.data.time.TimeSeries.createCopy : if z0 == 0
+org.jfree.data.time.TimeSeries.createCopy : $i5 = i1 + 1 >>>>>>>> org.jfree.data.time.TimeSeries.createCopy : i6 = neg $i5
+org.jfree.data.time.TimeSeries.createCopy : i6 = neg $i5 >>>>>>>> org.jfree.data.time.TimeSeries.createCopy : i1 = i6 - 1
+org.jfree.data.time.TimeSeries.createCopy : i1 = i6 - 1 >>>>>>>> org.jfree.data.time.TimeSeries.createCopy : if i1 < 0
+org.jfree.data.time.TimeSeries.createCopy : $i3 = i0 + 1 >>>>>>>> org.jfree.data.time.TimeSeries.createCopy : i0 = neg $i3
+org.jfree.data.time.TimeSeries.createCopy : i0 = neg $i3 >>>>>>>> org.jfree.data.time.TimeSeries.createCopy : $r5 = r0.<org.jfree.data.time.TimeSeries: java.util.List data>
+org.jfree.data.time.TimeSeries.createCopy : $r5 = r0.<org.jfree.data.time.TimeSeries: java.util.List data> >>>>>>>> org.jfree.data.time.TimeSeries.createCopy : $i4 = interfaceinvoke $r5.<java.util.List: int size()>()
+org.jfree.data.time.TimeSeries.createCopy : $i4 = interfaceinvoke $r5.<java.util.List: int size()>() >>>>>>>> org.jfree.data.time.TimeSeries.createCopy : if i0 != $i4
+org.jfree.data.time.TimeSeries.createCopy : if i0 != $i4 >>>>>>>> org.jfree.data.time.TimeSeries.createCopy : z0 = 1
+org.jfree.data.time.TimeSeries.createCopy : if i0 != $i4 >>>>>>>> org.jfree.data.time.TimeSeries.createCopy : i1 = virtualinvoke r0.<org.jfree.data.time.TimeSeries: int getIndex(org.jfree.data.time.RegularTimePeriod)>(r2)
+org.jfree.data.time.TimeSeries.createCopy : z0 = 1 >>>>>>>> org.jfree.data.time.TimeSeries.createCopy : i1 = virtualinvoke r0.<org.jfree.data.time.TimeSeries: int getIndex(org.jfree.data.time.RegularTimePeriod)>(r2)
+org.jfree.data.time.TimeSeries.createCopy : $r4 = new java.lang.IllegalArgumentException >>>>>>>> org.jfree.data.time.TimeSeries.createCopy : specialinvoke $r4.<java.lang.IllegalArgumentException: void <init>(java.lang.String)>("Requires start on or before end.")
+org.jfree.data.time.TimeSeries.createCopy : specialinvoke $r4.<java.lang.IllegalArgumentException: void <init>(java.lang.String)>("Requires start on or before end.") >>>>>>>> org.jfree.data.time.TimeSeries.createCopy : throw $r4

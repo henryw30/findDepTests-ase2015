@@ -1,0 +1,27 @@
+org.jfree.data.general.AbstractDataset.validateObject : virtualinvoke r0.<org.jfree.data.general.AbstractDataset: void fireDatasetChanged()>()
+org.jfree.data.general.AbstractDataset.notifyListeners : $r3 = r0.<org.jfree.data.general.AbstractDataset: javax.swing.event.EventListenerList listenerList>
+org.jfree.data.general.AbstractDataset.notifyListeners : $i1 = lengthof r2
+org.jfree.data.statistics.DefaultMultiValueCategoryDataset.equals : if r1 != r0 goto $z0 = r1 instanceof org.jfree.data.statistics.DefaultMultiValueCategoryDataset
+org.jfree.data.statistics.DefaultMultiValueCategoryDataset.equals : $z0 = r1 instanceof org.jfree.data.statistics.DefaultMultiValueCategoryDataset
+org.jfree.data.statistics.DefaultMultiValueCategoryDataset.equals : r2 = (org.jfree.data.statistics.DefaultMultiValueCategoryDataset) r1
+org.jfree.data.statistics.DefaultMultiValueCategoryDataset.equals : $r3 = r0.<org.jfree.data.statistics.DefaultMultiValueCategoryDataset: org.jfree.data.KeyedObjects2D data>
+org.jfree.data.general.AbstractDataset.fireDatasetChanged : $r1 = new org.jfree.data.general.DatasetChangeEvent
+org.jfree.data.KeyedObjects2D.getRowCount : $r1 = r0.<org.jfree.data.KeyedObjects2D: java.util.List rowKeys>
+org.jfree.data.general.AbstractDataset.writeObject : virtualinvoke r1.<java.io.ObjectOutputStream: void defaultWriteObject()>()
+org.jfree.data.general.AbstractDataset.readObject : $r2 = new javax.swing.event.EventListenerList
+org.jfree.data.general.AbstractDataset.readObject : virtualinvoke r1.<java.io.ObjectInputStream: void defaultReadObject()>()
+org.jfree.data.general.AbstractDataset.readObject : virtualinvoke r1.<java.io.ObjectInputStream: void registerValidation(java.io.ObjectInputValidation,int)>(r0, 10)
+org.jfree.data.KeyedObjects2D.getRowKeys : $r1 = r0.<org.jfree.data.KeyedObjects2D: java.util.List rowKeys>
+org.jfree.data.KeyedObjects2D.equals : i0 = virtualinvoke r0.<org.jfree.data.KeyedObjects2D: int getRowCount()>()
+org.jfree.data.KeyedObjects2D.equals : $i4 = virtualinvoke r2.<org.jfree.data.KeyedObjects2D: int getRowCount()>()
+org.jfree.data.KeyedObjects2D.equals : $r7 = virtualinvoke r0.<org.jfree.data.KeyedObjects2D: java.util.List getColumnKeys()>()
+org.jfree.data.KeyedObjects2D.equals : $i5 = virtualinvoke r2.<org.jfree.data.KeyedObjects2D: int getColumnCount()>()
+org.jfree.data.KeyedObjects2D.equals : i2 = 0
+org.jfree.data.KeyedObjects2D.equals : if r1 != r0 goto $z0 = r1 instanceof org.jfree.data.KeyedObjects2D
+org.jfree.data.KeyedObjects2D.equals : return 1
+org.jfree.data.KeyedObjects2D.equals : i1 = virtualinvoke r0.<org.jfree.data.KeyedObjects2D: int getColumnCount()>()
+org.jfree.data.KeyedObjects2D.equals : $r5 = virtualinvoke r0.<org.jfree.data.KeyedObjects2D: java.util.List getRowKeys()>()
+org.jfree.data.KeyedObjects2D.equals : r2 = (org.jfree.data.KeyedObjects2D) r1
+org.jfree.data.KeyedObjects2D.equals : $z0 = r1 instanceof org.jfree.data.KeyedObjects2D
+org.jfree.data.KeyedObjects2D.getColumnKeys : $r1 = r0.<org.jfree.data.KeyedObjects2D: java.util.List columnKeys>
+org.jfree.data.KeyedObjects2D.getColumnCount : $r1 = r0.<org.jfree.data.KeyedObjects2D: java.util.List columnKeys>

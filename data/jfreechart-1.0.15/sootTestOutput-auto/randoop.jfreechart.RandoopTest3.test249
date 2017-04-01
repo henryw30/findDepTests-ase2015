@@ -1,0 +1,63 @@
+org.jfree.data.xy.XYDataItem.getY : $r1 = r0.<org.jfree.data.xy.XYDataItem: java.lang.Number y>
+org.jfree.data.general.AbstractDataset.addChangeListener : $r2 = r0.<org.jfree.data.general.AbstractDataset: javax.swing.event.EventListenerList listenerList>
+org.jfree.data.xy.XYSeries.maxIgnoreNaN : return d1
+org.jfree.data.xy.XYSeries.maxIgnoreNaN : $z0 = staticinvoke <java.lang.Double: boolean isNaN(double)>(d0)
+org.jfree.chart.renderer.xy.AbstractXYItemRenderer.setURLGenerator : virtualinvoke r0.<org.jfree.chart.renderer.xy.AbstractXYItemRenderer: void fireChangeEvent()>()
+org.jfree.chart.renderer.xy.AbstractXYItemRenderer.setURLGenerator : r0.<org.jfree.chart.renderer.xy.AbstractXYItemRenderer: org.jfree.chart.urls.XYURLGenerator urlGenerator> = r1
+org.jfree.chart.labels.StandardXYToolTipGenerator.clone : $r1 = specialinvoke r0.<org.jfree.chart.labels.AbstractXYItemLabelGenerator: java.lang.Object clone()>()
+org.jfree.chart.labels.AbstractXYItemLabelGenerator.clone : $r2 = specialinvoke r0.<java.lang.Object: java.lang.Object clone()>()
+org.jfree.chart.labels.AbstractXYItemLabelGenerator.clone : $r11 = r0.<org.jfree.chart.labels.AbstractXYItemLabelGenerator: java.text.DateFormat xDateFormat>
+org.jfree.chart.labels.AbstractXYItemLabelGenerator.clone : $r15 = r0.<org.jfree.chart.labels.AbstractXYItemLabelGenerator: java.text.DateFormat yDateFormat>
+org.jfree.chart.labels.AbstractXYItemLabelGenerator.clone : $r4 = r0.<org.jfree.chart.labels.AbstractXYItemLabelGenerator: java.text.NumberFormat xFormat>
+org.jfree.chart.labels.AbstractXYItemLabelGenerator.clone : $r8 = r0.<org.jfree.chart.labels.AbstractXYItemLabelGenerator: java.text.NumberFormat yFormat>
+org.jfree.chart.labels.AbstractXYItemLabelGenerator.clone : $r7 = r0.<org.jfree.chart.labels.AbstractXYItemLabelGenerator: java.text.NumberFormat yFormat>
+org.jfree.chart.labels.AbstractXYItemLabelGenerator.clone : return r1
+org.jfree.chart.labels.AbstractXYItemLabelGenerator.clone : $r3 = r0.<org.jfree.chart.labels.AbstractXYItemLabelGenerator: java.text.NumberFormat xFormat>
+org.jfree.data.xy.XYDataItem.getXValue : $r1 = r0.<org.jfree.data.xy.XYDataItem: java.lang.Number x>
+org.jfree.chart.renderer.AbstractRenderer.fireChangeEvent : $r1 = new org.jfree.chart.event.RendererChangeEvent
+org.jfree.data.xy.XYSeries.add : if z0 == 0 goto return
+org.jfree.data.xy.XYSeries.add : $i7 = virtualinvoke r0.<org.jfree.data.xy.XYSeries: int getItemCount()>()
+org.jfree.data.xy.XYSeries.add : goto [?= specialinvoke r0.<org.jfree.data.xy.XYSeries: void updateBoundsForAddedItem(org.jfree.data.xy.XYDataItem)>(r3)]
+org.jfree.data.xy.XYSeries.add : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "item")
+org.jfree.data.xy.XYSeries.add : virtualinvoke r0.<org.jfree.data.xy.XYSeries: void add(org.jfree.data.xy.XYDataItem,boolean)>(r4, z0)
+org.jfree.data.xy.XYSeries.add : $r3 = new org.jfree.data.xy.XYDataItem
+org.jfree.data.xy.XYSeries.add : $z1 = r0.<org.jfree.data.xy.XYSeries: boolean autoSort>
+org.jfree.data.xy.XYSeries.add : $r5 = r0.<org.jfree.data.xy.XYSeries: java.util.List data>
+org.jfree.data.xy.XYSeries.add : if i0 >= 0 goto $z2 = r0.<org.jfree.data.xy.XYSeries: boolean allowDuplicateXValues>
+org.jfree.data.xy.XYSeries.add : $r4 = r0.<org.jfree.data.xy.XYSeries: java.util.List data>
+org.jfree.data.xy.XYSeries.add : $r1 = new java.lang.Double
+org.jfree.data.xy.XYSeries.add : specialinvoke r0.<org.jfree.data.xy.XYSeries: void updateBoundsForAddedItem(org.jfree.data.xy.XYDataItem)>(r3)
+org.jfree.data.xy.XYSeries.add : $r2 = virtualinvoke r1.<org.jfree.data.xy.XYDataItem: java.lang.Object clone()>()
+org.jfree.data.xy.XYSeries.getItemCount : $r1 = r0.<org.jfree.data.xy.XYSeries: java.util.List data>
+org.jfree.chart.renderer.AbstractRenderer.notifyListeners : $r3 = r0.<org.jfree.chart.renderer.AbstractRenderer: javax.swing.event.EventListenerList listenerList>
+org.jfree.chart.renderer.AbstractRenderer.notifyListeners : $i1 = lengthof r2
+org.jfree.data.xy.XYSeries.minIgnoreNaN : return d1
+org.jfree.data.xy.XYSeries.minIgnoreNaN : $z0 = staticinvoke <java.lang.Double: boolean isNaN(double)>(d0)
+org.jfree.data.xy.XYSeries.clear : $r1 = r0.<org.jfree.data.xy.XYSeries: java.util.List data>
+org.jfree.data.xy.XYSeriesCollection.getEndY : $r1 = virtualinvoke r0.<org.jfree.data.xy.XYSeriesCollection: java.lang.Number getY(int,int)>(i0, i1)
+org.jfree.data.xy.XYDataItem.getYValue : d0 = #NaN
+org.jfree.data.xy.XYDataItem.getYValue : $r1 = r0.<org.jfree.data.xy.XYDataItem: java.lang.Number y>
+org.jfree.data.xy.XYDataItem.getYValue : return d0
+org.jfree.data.xy.XYDataItem.getYValue : $r2 = r0.<org.jfree.data.xy.XYDataItem: java.lang.Number y>
+org.jfree.chart.renderer.xy.XYStepAreaRenderer.getPlotArea : $z0 = r0.<org.jfree.chart.renderer.xy.XYStepAreaRenderer: boolean plotArea>
+org.jfree.data.general.Series.addChangeListener : $r2 = r0.<org.jfree.data.general.Series: javax.swing.event.EventListenerList listeners>
+org.jfree.data.xy.XYSeries.updateBoundsForAddedItem : $d2 = r0.<org.jfree.data.xy.XYSeries: double minX>
+org.jfree.data.xy.XYSeries.updateBoundsForAddedItem : d0 = virtualinvoke r1.<org.jfree.data.xy.XYDataItem: double getXValue()>()
+org.jfree.data.xy.XYSeries.updateBoundsForAddedItem : $d4 = r0.<org.jfree.data.xy.XYSeries: double maxX>
+org.jfree.data.xy.XYSeries.updateBoundsForAddedItem : $d6 = r0.<org.jfree.data.xy.XYSeries: double minY>
+org.jfree.data.xy.XYSeries.updateBoundsForAddedItem : $d8 = r0.<org.jfree.data.xy.XYSeries: double maxY>
+org.jfree.data.xy.XYSeries.updateBoundsForAddedItem : $r2 = virtualinvoke r1.<org.jfree.data.xy.XYDataItem: java.lang.Number getY()>()
+org.jfree.data.xy.XYSeries.updateBoundsForAddedItem : d1 = virtualinvoke r1.<org.jfree.data.xy.XYDataItem: double getYValue()>()
+org.jfree.data.xy.XYSeries.getMinX : $d0 = r0.<org.jfree.data.xy.XYSeries: double minX>
+org.jfree.data.xy.XYDataItem.clone : goto [?= return r1]
+org.jfree.data.xy.XYDataItem.clone : r1 = null
+org.jfree.data.xy.XYDataItem.clone : return r1
+org.jfree.data.xy.XYDataItem.clone : r1 = specialinvoke r0.<java.lang.Object: java.lang.Object clone()>()
+org.jfree.chart.renderer.xy.AbstractXYItemRenderer.setBaseItemLabelGenerator : virtualinvoke r0.<org.jfree.chart.renderer.xy.AbstractXYItemRenderer: void fireChangeEvent()>()
+org.jfree.chart.renderer.xy.AbstractXYItemRenderer.setBaseItemLabelGenerator : r0.<org.jfree.chart.renderer.xy.AbstractXYItemRenderer: org.jfree.chart.labels.XYItemLabelGenerator baseItemLabelGenerator> = r1
+org.jfree.data.xy.XYSeriesCollection.getY : $r2 = r0.<org.jfree.data.xy.XYSeriesCollection: java.util.List data>
+org.jfree.chart.labels.HighLowItemLabelGenerator.generateLabel : return null
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null goto return
+org.jfree.data.general.Series.addVetoableChangeListener : $r2 = r0.<org.jfree.data.general.Series: java.beans.VetoableChangeSupport vetoableChangeSupport>
+org.jfree.chart.renderer.xy.AbstractXYItemRenderer.setBaseToolTipGenerator : r0.<org.jfree.chart.renderer.xy.AbstractXYItemRenderer: org.jfree.chart.labels.XYToolTipGenerator baseToolTipGenerator> = r1
+org.jfree.chart.renderer.xy.AbstractXYItemRenderer.setBaseToolTipGenerator : virtualinvoke r0.<org.jfree.chart.renderer.xy.AbstractXYItemRenderer: void fireChangeEvent()>()

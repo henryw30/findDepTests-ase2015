@@ -1,0 +1,28 @@
+org.jfree.chart.block.AbstractBlock.setWidth : r0.<org.jfree.chart.block.AbstractBlock: double width> = d0
+org.jfree.chart.block.ColorBlock.equals : if r1 != r0 goto $z0 = r1 instanceof org.jfree.chart.block.ColorBlock
+org.jfree.chart.block.ColorBlock.equals : $z2 = specialinvoke r0.<org.jfree.chart.block.AbstractBlock: boolean equals(java.lang.Object)>(r1)
+org.jfree.chart.block.ColorBlock.equals : $z0 = r1 instanceof org.jfree.chart.block.ColorBlock
+org.jfree.chart.block.ColorBlock.equals : r2 = (org.jfree.chart.block.ColorBlock) r1
+org.jfree.chart.block.ColorBlock.equals : $r3 = r0.<org.jfree.chart.block.ColorBlock: java.awt.Paint paint>
+org.jfree.chart.block.BlockBorder.equals : if r1 != r0 goto $z0 = r1 instanceof org.jfree.chart.block.BlockBorder
+org.jfree.chart.block.BlockBorder.equals : return 1
+org.jfree.chart.block.AbstractBlock.equals : $r11 = r0.<org.jfree.chart.block.AbstractBlock: org.jfree.ui.RectangleInsets padding>
+org.jfree.chart.block.AbstractBlock.equals : $r9 = r0.<org.jfree.chart.block.AbstractBlock: org.jfree.ui.RectangleInsets margin>
+org.jfree.chart.block.AbstractBlock.equals : r2 = (org.jfree.chart.block.AbstractBlock) r1
+org.jfree.chart.block.AbstractBlock.equals : $d2 = r0.<org.jfree.chart.block.AbstractBlock: double width>
+org.jfree.chart.block.AbstractBlock.equals : $d0 = r0.<org.jfree.chart.block.AbstractBlock: double height>
+org.jfree.chart.block.AbstractBlock.equals : if r1 != r0 goto $z0 = r1 instanceof org.jfree.chart.block.AbstractBlock
+org.jfree.chart.block.AbstractBlock.equals : $r3 = r0.<org.jfree.chart.block.AbstractBlock: java.lang.String id>
+org.jfree.chart.block.AbstractBlock.equals : return 1
+org.jfree.chart.block.AbstractBlock.equals : $r5 = r0.<org.jfree.chart.block.AbstractBlock: org.jfree.chart.block.BlockFrame frame>
+org.jfree.chart.block.AbstractBlock.equals : return 0
+org.jfree.chart.block.AbstractBlock.equals : $z0 = r1 instanceof org.jfree.chart.block.AbstractBlock
+org.jfree.chart.block.AbstractBlock.equals : $r7 = r0.<org.jfree.chart.block.AbstractBlock: java.awt.geom.Rectangle2D bounds>
+org.jfree.chart.block.AbstractBlock.clone : return r1
+org.jfree.chart.block.AbstractBlock.clone : $r4 = r0.<org.jfree.chart.block.AbstractBlock: java.awt.geom.Rectangle2D bounds>
+org.jfree.chart.block.AbstractBlock.clone : $r7 = r0.<org.jfree.chart.block.AbstractBlock: org.jfree.chart.block.BlockFrame frame>
+org.jfree.chart.block.AbstractBlock.clone : $r3 = specialinvoke r0.<java.lang.Object: java.lang.Object clone()>()
+org.jfree.chart.block.AbstractBlock.setHeight : r0.<org.jfree.chart.block.AbstractBlock: double height> = d0
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null goto return
+org.jfree.chart.block.AbstractBlock.setBounds : r0.<org.jfree.chart.block.AbstractBlock: java.awt.geom.Rectangle2D bounds> = r1
+org.jfree.chart.block.AbstractBlock.setBounds : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "bounds")

@@ -1,0 +1,19 @@
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null >>>>>>>> org.jfree.data.general.Series.getDescription : $r1 = r0.<org.jfree.data.general.Series: java.lang.String description>
+org.jfree.data.general.Series.getDescription : $r1 = r0.<org.jfree.data.general.Series: java.lang.String description> >>>>>>>> org.jfree.data.general.Series.getDescription : return $r1
+org.jfree.data.general.Series.getDescription : return $r1 >>>>>>>> org.jfree.data.xy.XYSeries.update : i0 = virtualinvoke r0.<org.jfree.data.xy.XYSeries: int indexOf(java.lang.Number)>(r1)
+org.jfree.data.xy.XYSeries.update : i0 = virtualinvoke r0.<org.jfree.data.xy.XYSeries: int indexOf(java.lang.Number)>(r1) >>>>>>>> org.jfree.data.xy.XYSeries.indexOf : $z0 = r0.<org.jfree.data.xy.XYSeries: boolean autoSort>
+org.jfree.data.xy.XYSeries.indexOf : $z0 = r0.<org.jfree.data.xy.XYSeries: boolean autoSort> >>>>>>>> org.jfree.data.xy.XYSeries.indexOf : if $z0 == 0
+org.jfree.data.xy.XYSeries.indexOf : if $z0 == 0 >>>>>>>> org.jfree.data.xy.XYSeries.indexOf : $r4 = r0.<org.jfree.data.xy.XYSeries: java.util.List data>
+org.jfree.data.xy.XYSeries.indexOf : $r4 = r0.<org.jfree.data.xy.XYSeries: java.util.List data> >>>>>>>> org.jfree.data.xy.XYSeries.indexOf : $r2 = new org.jfree.data.xy.XYDataItem
+org.jfree.data.xy.XYSeries.indexOf : $r2 = new org.jfree.data.xy.XYDataItem >>>>>>>> org.jfree.data.xy.XYSeries.indexOf : specialinvoke $r2.<org.jfree.data.xy.XYDataItem: void <init>(java.lang.Number,java.lang.Number)>(r1, null)
+org.jfree.data.xy.XYSeries.indexOf : specialinvoke $r2.<org.jfree.data.xy.XYDataItem: void <init>(java.lang.Number,java.lang.Number)>(r1, null) >>>>>>>> org.jfree.data.xy.XYSeries.indexOf : $i1 = staticinvoke <java.util.Collections: int binarySearch(java.util.List,java.lang.Object)>($r4, $r2)
+org.jfree.data.xy.XYSeries.indexOf : $i1 = staticinvoke <java.util.Collections: int binarySearch(java.util.List,java.lang.Object)>($r4, $r2) >>>>>>>> org.jfree.data.xy.XYSeries.indexOf : return $i1
+org.jfree.data.xy.XYSeries.indexOf : return $i1 >>>>>>>> org.jfree.data.xy.XYSeries.update : if i0 >= 0
+org.jfree.data.xy.XYSeries.update : if i0 >= 0 >>>>>>>> org.jfree.data.xy.XYSeries.update : $r4 = new org.jfree.data.general.SeriesException
+org.jfree.data.xy.XYSeries.update : $r4 = new org.jfree.data.general.SeriesException >>>>>>>> org.jfree.data.xy.XYSeries.update : $r3 = new java.lang.StringBuilder
+org.jfree.data.xy.XYSeries.update : $r3 = new java.lang.StringBuilder >>>>>>>> org.jfree.data.xy.XYSeries.update : specialinvoke $r3.<java.lang.StringBuilder: void <init>()>()
+org.jfree.data.xy.XYSeries.update : specialinvoke $r3.<java.lang.StringBuilder: void <init>()>() >>>>>>>> org.jfree.data.xy.XYSeries.update : $r5 = virtualinvoke $r3.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("No observation for x = ")
+org.jfree.data.xy.XYSeries.update : $r5 = virtualinvoke $r3.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("No observation for x = ") >>>>>>>> org.jfree.data.xy.XYSeries.update : $r6 = virtualinvoke $r5.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.Object)>(r1)
+org.jfree.data.xy.XYSeries.update : $r6 = virtualinvoke $r5.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.Object)>(r1) >>>>>>>> org.jfree.data.xy.XYSeries.update : $r7 = virtualinvoke $r6.<java.lang.StringBuilder: java.lang.String toString()>()
+org.jfree.data.xy.XYSeries.update : $r7 = virtualinvoke $r6.<java.lang.StringBuilder: java.lang.String toString()>() >>>>>>>> org.jfree.data.xy.XYSeries.update : specialinvoke $r4.<org.jfree.data.general.SeriesException: void <init>(java.lang.String)>($r7)
+org.jfree.data.xy.XYSeries.update : specialinvoke $r4.<org.jfree.data.general.SeriesException: void <init>(java.lang.String)>($r7) >>>>>>>> org.jfree.data.xy.XYSeries.update : throw $r4

@@ -1,0 +1,29 @@
+org.apache.xml.security.utils.IgnoreAllErrorHandler.fatalError : $r2 = <org.apache.xml.security.utils.IgnoreAllErrorHandler: org.apache.log4j.Category cat>
+org.apache.xml.security.signature.XMLSignatureInput.getNodeSet : $r23 = "</container>"
+org.apache.xml.security.signature.XMLSignatureInput.getNodeSet : virtualinvoke r1.<javax.xml.parsers.DocumentBuilderFactory: void setValidating(boolean)>(0)
+org.apache.xml.security.signature.XMLSignatureInput.getNodeSet : $r25 = new java.io.ByteArrayInputStream
+org.apache.xml.security.signature.XMLSignatureInput.getNodeSet : r2 = virtualinvoke r1.<javax.xml.parsers.DocumentBuilderFactory: javax.xml.parsers.DocumentBuilder newDocumentBuilder()>()
+org.apache.xml.security.signature.XMLSignatureInput.getNodeSet : $r22 = virtualinvoke r0.<org.apache.xml.security.signature.XMLSignatureInput: byte[] getBytes()>()
+org.apache.xml.security.signature.XMLSignatureInput.getNodeSet : $r18 = new java.io.ByteArrayOutputStream
+org.apache.xml.security.signature.XMLSignatureInput.getNodeSet : r5 = virtualinvoke r19.<java.io.ByteArrayOutputStream: byte[] toByteArray()>()
+org.apache.xml.security.signature.XMLSignatureInput.getNodeSet : $z1 = virtualinvoke r0.<org.apache.xml.security.signature.XMLSignatureInput: boolean isOctetStream()>()
+org.apache.xml.security.signature.XMLSignatureInput.getNodeSet : virtualinvoke r1.<javax.xml.parsers.DocumentBuilderFactory: void setNamespaceAware(boolean)>(1)
+org.apache.xml.security.signature.XMLSignatureInput.getNodeSet : $r9 = new org.apache.xml.security.utils.IgnoreAllErrorHandler
+org.apache.xml.security.signature.XMLSignatureInput.getNodeSet : r1 = staticinvoke <javax.xml.parsers.DocumentBuilderFactory: javax.xml.parsers.DocumentBuilderFactory newInstance()>()
+org.apache.xml.security.signature.XMLSignatureInput.getNodeSet : $r20 = "<container>"
+org.apache.xml.security.signature.XMLSignatureInput.getNodeSet : $r10 = virtualinvoke r0.<org.apache.xml.security.signature.XMLSignatureInput: java.io.InputStream getOctetStream()>()
+org.apache.xml.security.signature.XMLSignatureInput.getNodeSet : r17 = $r16
+org.apache.xml.security.signature.XMLSignatureInput.getNodeSet : $z0 = virtualinvoke r0.<org.apache.xml.security.signature.XMLSignatureInput: boolean isNodeSet()>()
+org.apache.xml.security.signature.XMLSignatureInput.getOctetStream : $r5 = r0.<org.apache.xml.security.signature.XMLSignatureInput: java.io.InputStream _inputOctetStreamProxy>
+org.apache.xml.security.signature.XMLSignatureInput.getOctetStream : $r6 = r0.<org.apache.xml.security.signature.XMLSignatureInput: java.io.InputStream _inputOctetStreamProxy>
+org.apache.xml.security.signature.XMLSignatureInput.getOctetStream : $z0 = virtualinvoke r0.<org.apache.xml.security.signature.XMLSignatureInput: boolean isOctetStream()>()
+org.apache.xml.security.signature.XMLSignatureInput.isNodeSet : $r1 = r0.<org.apache.xml.security.signature.XMLSignatureInput: java.io.InputStream _inputOctetStreamProxy>
+org.apache.xml.security.signature.XMLSignatureInput.setSourceURI : r0.<org.apache.xml.security.signature.XMLSignatureInput: java.lang.String _SourceURI> = r1
+org.apache.xml.security.signature.XMLSignatureInput.getCachedXPathAPI : $r1 = r0.<org.apache.xml.security.signature.XMLSignatureInput: org.apache.xpath.CachedXPathAPI _cxpathAPI>
+org.apache.xml.security.signature.XMLSignatureInput.getBytes : return r2
+org.apache.xml.security.signature.XMLSignatureInput.getBytes : r1 = virtualinvoke r0.<org.apache.xml.security.signature.XMLSignatureInput: java.io.InputStream getOctetStream()>()
+org.apache.xml.security.signature.XMLSignatureInput.getBytes : virtualinvoke r1.<java.io.InputStream: int read(byte[])>(r2)
+org.apache.xml.security.signature.XMLSignatureInput.getBytes : r2 = newarray (byte)[i0]
+org.apache.xml.security.signature.XMLSignatureInput.getBytes : $i2 = lengthof r2
+org.apache.xml.security.signature.XMLSignatureInput.getBytes : i0 = virtualinvoke r1.<java.io.InputStream: int available()>()
+org.apache.xml.security.signature.XMLSignatureInput.isOctetStream : $r1 = r0.<org.apache.xml.security.signature.XMLSignatureInput: java.io.InputStream _inputOctetStreamProxy>

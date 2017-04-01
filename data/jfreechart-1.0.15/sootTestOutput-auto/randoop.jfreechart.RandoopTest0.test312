@@ -1,0 +1,11 @@
+org.jfree.chart.renderer.AbstractRenderer.setBaseShape : virtualinvoke r0.<org.jfree.chart.renderer.AbstractRenderer: void fireChangeEvent()>()
+org.jfree.chart.renderer.AbstractRenderer.setBaseShape : if z0 == 0 goto return
+org.jfree.chart.renderer.AbstractRenderer.setBaseShape : virtualinvoke r0.<org.jfree.chart.renderer.AbstractRenderer: void setBaseShape(java.awt.Shape,boolean)>(r1, 1)
+org.jfree.chart.renderer.AbstractRenderer.setBaseShape : r0.<org.jfree.chart.renderer.AbstractRenderer: java.awt.Shape baseShape> = r1
+org.jfree.chart.renderer.AbstractRenderer.setBaseShape : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "shape")
+org.jfree.chart.renderer.AbstractRenderer.fireChangeEvent : $r1 = new org.jfree.chart.event.RendererChangeEvent
+org.jfree.chart.renderer.AbstractRenderer.notifyListeners : $r3 = r0.<org.jfree.chart.renderer.AbstractRenderer: javax.swing.event.EventListenerList listenerList>
+org.jfree.chart.renderer.AbstractRenderer.notifyListeners : $i1 = lengthof r2
+org.jfree.chart.renderer.AbstractRenderer.setAutoPopulateSeriesShape : r0.<org.jfree.chart.renderer.AbstractRenderer: boolean autoPopulateSeriesShape> = z0
+org.jfree.chart.renderer.xy.XYShapeRenderer.getDrawOutlines : $z0 = r0.<org.jfree.chart.renderer.xy.XYShapeRenderer: boolean drawOutlines>
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null goto return

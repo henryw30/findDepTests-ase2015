@@ -1,0 +1,22 @@
+org.joda.time.field.FieldUtils.safeMultiplyToInt : l2 = staticinvoke <org.joda.time.field.FieldUtils: long safeMultiply(long,long)>(l0, l1) >>>>>>>> org.joda.time.field.FieldUtils.safeMultiply : $b3 = l1 cmp 1L
+org.joda.time.field.FieldUtils.safeMultiply : $b3 = l1 cmp 1L >>>>>>>> org.joda.time.field.FieldUtils.safeMultiply : if $b3 != 0
+org.joda.time.field.FieldUtils.safeMultiply : if $b3 != 0 >>>>>>>> org.joda.time.field.FieldUtils.safeMultiply : $b4 = l1 cmp 0L
+org.joda.time.field.FieldUtils.safeMultiply : $b4 = l1 cmp 0L >>>>>>>> org.joda.time.field.FieldUtils.safeMultiply : if $b4 != 0
+org.joda.time.field.FieldUtils.safeMultiply : if $b4 != 0 >>>>>>>> org.joda.time.field.FieldUtils.safeMultiply : l2 = l0 * l1
+org.joda.time.field.FieldUtils.safeMultiply : l2 = l0 * l1 >>>>>>>> org.joda.time.field.FieldUtils.safeMultiply : $l5 = l2 / l1
+org.joda.time.field.FieldUtils.safeMultiply : $l5 = l2 / l1 >>>>>>>> org.joda.time.field.FieldUtils.safeMultiply : $b6 = $l5 cmp l0
+org.joda.time.field.FieldUtils.safeMultiply : $b6 = $l5 cmp l0 >>>>>>>> org.joda.time.field.FieldUtils.safeMultiply : if $b6 == 0
+org.joda.time.field.FieldUtils.safeMultiply : if $b6 == 0 >>>>>>>> org.joda.time.field.FieldUtils.safeMultiply : return l2
+org.joda.time.field.FieldUtils.safeMultiply : return l2 >>>>>>>> org.joda.time.field.FieldUtils.safeMultiplyToInt : $i3 = staticinvoke <org.joda.time.field.FieldUtils: int safeToInt(long)>(l2)
+org.joda.time.field.FieldUtils.safeMultiplyToInt : $i3 = staticinvoke <org.joda.time.field.FieldUtils: int safeToInt(long)>(l2) >>>>>>>> org.joda.time.field.FieldUtils.safeToInt : $b1 = -2147483648L cmp l0
+org.joda.time.field.FieldUtils.safeToInt : $b1 = -2147483648L cmp l0 >>>>>>>> org.joda.time.field.FieldUtils.safeToInt : if $b1 > 0
+org.joda.time.field.FieldUtils.safeToInt : if $b1 > 0 >>>>>>>> org.joda.time.field.FieldUtils.safeToInt : $b2 = l0 cmp 2147483647L
+org.joda.time.field.FieldUtils.safeToInt : $b2 = l0 cmp 2147483647L >>>>>>>> org.joda.time.field.FieldUtils.safeToInt : if $b2 > 0
+org.joda.time.field.FieldUtils.safeToInt : if $b2 > 0 >>>>>>>> org.joda.time.field.FieldUtils.safeToInt : $r0 = new java.lang.ArithmeticException
+org.joda.time.field.FieldUtils.safeToInt : $r0 = new java.lang.ArithmeticException >>>>>>>> org.joda.time.field.FieldUtils.safeToInt : $r1 = new java.lang.StringBuilder
+org.joda.time.field.FieldUtils.safeToInt : $r1 = new java.lang.StringBuilder >>>>>>>> org.joda.time.field.FieldUtils.safeToInt : specialinvoke $r1.<java.lang.StringBuilder: void <init>()>()
+org.joda.time.field.FieldUtils.safeToInt : specialinvoke $r1.<java.lang.StringBuilder: void <init>()>() >>>>>>>> org.joda.time.field.FieldUtils.safeToInt : $r2 = virtualinvoke $r1.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("Value cannot fit in an int: ")
+org.joda.time.field.FieldUtils.safeToInt : $r2 = virtualinvoke $r1.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("Value cannot fit in an int: ") >>>>>>>> org.joda.time.field.FieldUtils.safeToInt : $r3 = virtualinvoke $r2.<java.lang.StringBuilder: java.lang.StringBuilder append(long)>(l0)
+org.joda.time.field.FieldUtils.safeToInt : $r3 = virtualinvoke $r2.<java.lang.StringBuilder: java.lang.StringBuilder append(long)>(l0) >>>>>>>> org.joda.time.field.FieldUtils.safeToInt : $r4 = virtualinvoke $r3.<java.lang.StringBuilder: java.lang.String toString()>()
+org.joda.time.field.FieldUtils.safeToInt : $r4 = virtualinvoke $r3.<java.lang.StringBuilder: java.lang.String toString()>() >>>>>>>> org.joda.time.field.FieldUtils.safeToInt : specialinvoke $r0.<java.lang.ArithmeticException: void <init>(java.lang.String)>($r4)
+org.joda.time.field.FieldUtils.safeToInt : specialinvoke $r0.<java.lang.ArithmeticException: void <init>(java.lang.String)>($r4) >>>>>>>> org.joda.time.field.FieldUtils.safeToInt : throw $r0

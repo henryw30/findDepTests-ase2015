@@ -1,0 +1,51 @@
+org.jfree.data.DefaultKeyedValues.getItemCount : $r1 = r0.<org.jfree.data.DefaultKeyedValues: java.util.HashMap indexMap>
+org.jfree.data.general.AbstractDataset.clone : $r2 = new javax.swing.event.EventListenerList
+org.jfree.data.general.AbstractDataset.clone : return r1
+org.jfree.data.general.AbstractDataset.clone : $r3 = specialinvoke r0.<java.lang.Object: java.lang.Object clone()>()
+org.jfree.data.DefaultKeyedValues.getIndex : return -1
+org.jfree.data.DefaultKeyedValues.getIndex : $r3 = r0.<org.jfree.data.DefaultKeyedValues: java.util.HashMap indexMap>
+org.jfree.data.DefaultKeyedValues.getIndex : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "key")
+org.jfree.data.DefaultKeyedValues.getIndex : if r2 != null goto $i0 = virtualinvoke r2.<java.lang.Integer: int intValue()>()
+org.jfree.data.general.DefaultPieDataset.equals : if r1 != r0 goto $z0 = r1 instanceof org.jfree.data.general.PieDataset
+org.jfree.data.general.DefaultPieDataset.equals : $z0 = r1 instanceof org.jfree.data.general.PieDataset
+org.jfree.data.general.DefaultPieDataset.equals : r3 = virtualinvoke r0.<org.jfree.data.general.DefaultPieDataset: java.lang.Comparable getKey(int)>(i1)
+org.jfree.data.general.DefaultPieDataset.equals : $i2 = interfaceinvoke r2.<org.jfree.data.general.PieDataset: int getItemCount()>()
+org.jfree.data.general.DefaultPieDataset.equals : r2 = (org.jfree.data.general.PieDataset) r1
+org.jfree.data.general.DefaultPieDataset.equals : return 1
+org.jfree.data.general.DefaultPieDataset.equals : r5 = virtualinvoke r0.<org.jfree.data.general.DefaultPieDataset: java.lang.Number getValue(int)>(i1)
+org.jfree.data.general.DefaultPieDataset.equals : if r6 == null goto i1 = i1 + 1
+org.jfree.data.general.DefaultPieDataset.equals : i1 = 0
+org.jfree.data.general.DefaultPieDataset.equals : r4 = interfaceinvoke r2.<org.jfree.data.general.PieDataset: java.lang.Comparable getKey(int)>(i1)
+org.jfree.data.general.DefaultPieDataset.equals : if r5 != null goto $z2 = virtualinvoke r5.<java.lang.Object: boolean equals(java.lang.Object)>(r6)
+org.jfree.data.general.DefaultPieDataset.equals : $z1 = virtualinvoke r3.<java.lang.Object: boolean equals(java.lang.Object)>(r4)
+org.jfree.data.general.DefaultPieDataset.equals : r6 = interfaceinvoke r2.<org.jfree.data.general.PieDataset: java.lang.Number getValue(int)>(i1)
+org.jfree.data.general.DefaultPieDataset.equals : $z2 = virtualinvoke r5.<java.lang.Object: boolean equals(java.lang.Object)>(r6)
+org.jfree.data.general.DefaultPieDataset.equals : i0 = virtualinvoke r0.<org.jfree.data.general.DefaultPieDataset: int getItemCount()>()
+org.jfree.data.general.DefaultPieDataset.getKey : $r1 = r0.<org.jfree.data.general.DefaultPieDataset: org.jfree.data.DefaultKeyedValues data>
+org.jfree.data.general.AbstractDataset.notifyListeners : $r3 = r0.<org.jfree.data.general.AbstractDataset: javax.swing.event.EventListenerList listenerList>
+org.jfree.data.general.AbstractDataset.notifyListeners : $i1 = lengthof r2
+org.jfree.data.general.DefaultPieDataset.getItemCount : $r1 = r0.<org.jfree.data.general.DefaultPieDataset: org.jfree.data.DefaultKeyedValues data>
+org.jfree.data.general.AbstractDataset.fireDatasetChanged : $r1 = new org.jfree.data.general.DatasetChangeEvent
+org.jfree.data.general.DefaultPieDataset.getValue : $r2 = r0.<org.jfree.data.general.DefaultPieDataset: org.jfree.data.DefaultKeyedValues data>
+org.jfree.data.general.DefaultPieDataset.getValue : $i1 = virtualinvoke r0.<org.jfree.data.general.DefaultPieDataset: int getItemCount()>()
+org.jfree.data.general.DefaultPieDataset.getValue : r1 = null
+org.jfree.data.general.DefaultPieDataset.getValue : return r1
+org.jfree.data.DefaultKeyedValues.setValue : i0 = virtualinvoke r0.<org.jfree.data.DefaultKeyedValues: int getIndex(java.lang.Comparable)>(r1)
+org.jfree.data.DefaultKeyedValues.setValue : $r8 = r0.<org.jfree.data.DefaultKeyedValues: java.util.ArrayList values>
+org.jfree.data.DefaultKeyedValues.setValue : $r9 = r0.<org.jfree.data.DefaultKeyedValues: java.util.HashMap indexMap>
+org.jfree.data.DefaultKeyedValues.setValue : $r7 = r0.<org.jfree.data.DefaultKeyedValues: java.util.ArrayList keys>
+org.jfree.data.DefaultKeyedValues.setValue : if i0 < 0 goto $r7 = r0.<org.jfree.data.DefaultKeyedValues: java.util.ArrayList keys>
+org.jfree.data.DefaultKeyedValues.setValue : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "key")
+org.jfree.data.DefaultKeyedValues.clone : $r2 = specialinvoke r0.<java.lang.Object: java.lang.Object clone()>()
+org.jfree.data.DefaultKeyedValues.clone : $r3 = r0.<org.jfree.data.DefaultKeyedValues: java.util.ArrayList keys>
+org.jfree.data.DefaultKeyedValues.clone : $r6 = r0.<org.jfree.data.DefaultKeyedValues: java.util.ArrayList values>
+org.jfree.data.DefaultKeyedValues.clone : $r9 = r0.<org.jfree.data.DefaultKeyedValues: java.util.HashMap indexMap>
+org.jfree.data.DefaultKeyedValues.clone : return r1
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null goto return
+org.jfree.data.general.DefaultPieDataset.clone : $r2 = specialinvoke r0.<org.jfree.data.general.AbstractDataset: java.lang.Object clone()>()
+org.jfree.data.general.DefaultPieDataset.clone : $r3 = r0.<org.jfree.data.general.DefaultPieDataset: org.jfree.data.DefaultKeyedValues data>
+org.jfree.data.general.DefaultPieDataset.clone : return r1
+org.jfree.data.DefaultKeyedValues.getKey : $r1 = r0.<org.jfree.data.DefaultKeyedValues: java.util.ArrayList keys>
+org.jfree.data.DefaultKeyedValues.getValue : $r1 = r0.<org.jfree.data.DefaultKeyedValues: java.util.ArrayList values>
+org.jfree.data.general.DefaultPieDataset.setValue : virtualinvoke r0.<org.jfree.data.general.DefaultPieDataset: void fireDatasetChanged()>()
+org.jfree.data.general.DefaultPieDataset.setValue : $r3 = r0.<org.jfree.data.general.DefaultPieDataset: org.jfree.data.DefaultKeyedValues data>

@@ -1,0 +1,23 @@
+org.jfree.data.time.Year.peg : $l0 = virtualinvoke r0.<org.jfree.data.time.Year: long getFirstMillisecond(java.util.Calendar)>(r1) >>>>>>>> org.jfree.data.time.Year.getFirstMillisecond : $s0 = r0.<org.jfree.data.time.Year: short year>
+org.jfree.data.time.Year.getFirstMillisecond : $s0 = r0.<org.jfree.data.time.Year: short year> >>>>>>>> org.jfree.data.time.Year.getFirstMillisecond : virtualinvoke r1.<java.util.Calendar: void set(int,int,int,int,int,int)>($s0, 0, 1, 0, 0, 0)
+org.jfree.data.time.Year.getFirstMillisecond : virtualinvoke r1.<java.util.Calendar: void set(int,int,int,int,int,int)>($s0, 0, 1, 0, 0, 0) >>>>>>>> org.jfree.data.time.Year.getFirstMillisecond : virtualinvoke r1.<java.util.Calendar: void set(int,int)>(14, 0)
+org.jfree.data.time.Year.getFirstMillisecond : virtualinvoke r1.<java.util.Calendar: void set(int,int)>(14, 0) >>>>>>>> org.jfree.data.time.Year.getFirstMillisecond : $l1 = virtualinvoke r1.<java.util.Calendar: long getTimeInMillis()>()
+org.jfree.data.time.Year.getFirstMillisecond : $l1 = virtualinvoke r1.<java.util.Calendar: long getTimeInMillis()>() >>>>>>>> org.jfree.data.time.Year.getFirstMillisecond : return $l1
+org.jfree.data.time.Year.getFirstMillisecond : return $l1 >>>>>>>> org.jfree.data.time.Year.peg : r0.<org.jfree.data.time.Year: long firstMillisecond> = $l0
+org.jfree.data.time.Year.peg : r0.<org.jfree.data.time.Year: long firstMillisecond> = $l0 >>>>>>>> org.jfree.data.time.Year.peg : $l1 = virtualinvoke r0.<org.jfree.data.time.Year: long getLastMillisecond(java.util.Calendar)>(r1)
+org.jfree.data.time.Year.peg : $l1 = virtualinvoke r0.<org.jfree.data.time.Year: long getLastMillisecond(java.util.Calendar)>(r1) >>>>>>>> org.jfree.data.time.Year.getLastMillisecond : $s0 = r0.<org.jfree.data.time.Year: short year>
+org.jfree.data.time.Year.getLastMillisecond : $s0 = r0.<org.jfree.data.time.Year: short year> >>>>>>>> org.jfree.data.time.Year.getLastMillisecond : virtualinvoke r1.<java.util.Calendar: void set(int,int,int,int,int,int)>($s0, 11, 31, 23, 59, 59)
+org.jfree.data.time.Year.getLastMillisecond : virtualinvoke r1.<java.util.Calendar: void set(int,int,int,int,int,int)>($s0, 11, 31, 23, 59, 59) >>>>>>>> org.jfree.data.time.Year.getLastMillisecond : virtualinvoke r1.<java.util.Calendar: void set(int,int)>(14, 999)
+org.jfree.data.time.Year.getLastMillisecond : virtualinvoke r1.<java.util.Calendar: void set(int,int)>(14, 999) >>>>>>>> org.jfree.data.time.Year.getLastMillisecond : $l1 = virtualinvoke r1.<java.util.Calendar: long getTimeInMillis()>()
+org.jfree.data.time.Year.getLastMillisecond : $l1 = virtualinvoke r1.<java.util.Calendar: long getTimeInMillis()>() >>>>>>>> org.jfree.data.time.Year.getLastMillisecond : return $l1
+org.jfree.data.time.Year.getLastMillisecond : return $l1 >>>>>>>> org.jfree.data.time.Year.peg : r0.<org.jfree.data.time.Year: long lastMillisecond> = $l1
+org.jfree.data.time.Year.peg : r0.<org.jfree.data.time.Year: long lastMillisecond> = $l1 >>>>>>>> org.jfree.data.time.Year.next : $s0 = r0.<org.jfree.data.time.Year: short year>
+org.jfree.data.time.Year.next : $s0 = r0.<org.jfree.data.time.Year: short year> >>>>>>>> org.jfree.data.time.Year.next : if $s0 >= 9999
+org.jfree.data.time.Year.next : if $s0 >= 9999 >>>>>>>> org.jfree.data.time.Year.next : $r1 = new org.jfree.data.time.Year
+org.jfree.data.time.Year.next : $r1 = new org.jfree.data.time.Year >>>>>>>> org.jfree.data.time.Year.next : $s1 = r0.<org.jfree.data.time.Year: short year>
+org.jfree.data.time.Year.next : $s1 = r0.<org.jfree.data.time.Year: short year> >>>>>>>> org.jfree.data.time.Year.next : $i2 = $s1 + 1
+org.jfree.data.time.Year.next : $i2 = $s1 + 1 >>>>>>>> org.jfree.data.time.Year.next : specialinvoke $r1.<org.jfree.data.time.Year: void <init>(int)>($i2)
+org.jfree.data.time.Year.next : specialinvoke $r1.<org.jfree.data.time.Year: void <init>(int)>($i2) >>>>>>>> org.jfree.data.time.Year.next : return $r1
+org.jfree.data.time.Year.next : return $r1 >>>>>>>> org.jfree.data.time.Year.getYear : $s0 = r0.<org.jfree.data.time.Year: short year>
+org.jfree.data.time.Year.getYear : $s0 = r0.<org.jfree.data.time.Year: short year> >>>>>>>> org.jfree.data.time.Year.getYear : return $s0
+org.jfree.data.time.Year.getYear : return $s0 >>>>>>>> org.jfree.data.time.Year.next : return null

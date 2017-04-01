@@ -1,0 +1,113 @@
+<?xml version="1.0"?>
+
+<ruleset name="private"
+    xmlns="http://pmd.sourceforge.net/ruleset/2.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://pmd.sourceforge.net/ruleset/2.0.0 http://pmd.sourceforge.net/ruleset_2_0_0.xsd">
+  <description>
+The Basic ruleset contains a collection of good practices which should be followed.
+  </description>
+
+<rule name="URLRule"
+    		 since="2.0"
+          message="URLRule"
+          class="edu.unl.e2.tmd.URLRule" >
+        <description>
+        </description>
+          <priority>3</priority>
+        <example>
+    <![CDATA[
+
+    ]]>
+        </example>
+</rule>
+
+
+<!--  rule name="AvoidUselessGetterCallsRule"
+    		 since="2.0"
+          message="getters"
+          class="edu.unl.e2.tmd.AvoidUselessGetterCallsRule">
+        <description>
+        </description>
+          <priority>3</priority>
+        <example>
+    <![CDATA[]]>
+        </example>
+</rule-->
+      
+      
+ <!-- rule name="StaticFieldsShouldBeSetUpOrTearedDown"
+      message="Static field should be set up or teared down in order to avoid test dependency issues."
+      class="edu.unl.e2.tmd.StaticFieldsShouldBeSetUpOrTearedDownRule"
+      language="java">
+     <description></description>
+     <priority>3</priority>
+     <example>
+     <![CDATA[
+        private static Option option;
+        
+        @Before public void setUp(){
+        	option=null;
+        }    
+     ]]>
+     </example>
+</rule-->
+
+
+<!--  rule name="JUnitTestsShouldIncludeAssert"
+    		 since="2.0"
+          message="MACertain"
+          class="edu.unl.e2.tmd.JUnitTestsShouldIncludeAssertRule">
+        <description>
+JUnit tests should include at least one assertion.  This makes the tests more robust, and using assert 
+with messages provide the developer a clearer idea of what the test does.
+        </description>
+          <priority>3</priority>
+        <example>
+    <![CDATA[
+
+    ]]>
+        </example>
+        
+      </rule>
+ <rule name="JUnitTestsShouldIncludeAssert_Maybe"
+    		 since="2.0"
+          message="MAMaybe"
+          class="edu.unl.e2.tmd.MaybeAssertRule">
+        <description>
+JUnit tests should include at least one assertion.  This makes the tests more robust, and using assert 
+with messages provide the developer a clearer idea of what the test does.
+        </description>
+          <priority>3</priority>
+        <example>
+    <![CDATA[
+
+    ]]>
+        </example>
+        
+      </rule-->
+      
+<!-- rule name="FileRelaxedRule"
+      message="fileRelaxed"
+      class="edu.unl.e2.tmd.FileRelaxedRule"
+      language="java">
+     <description></description>
+     <priority>3</priority>
+     <example>
+     <![CDATA[]]>
+     </example>
+</rule>
+
+      
+<rule name="FileCounter"
+      message="fileCounter"
+      class="edu.unl.e2.tmd.internal.FileCounter"
+      language="java">
+     <description></description>
+     <priority>3</priority>
+     <example>
+     <![CDATA[]]>
+     </example>
+</rule-->
+
+</ruleset>

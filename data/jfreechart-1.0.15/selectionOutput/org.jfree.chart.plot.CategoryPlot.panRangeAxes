@@ -1,0 +1,25 @@
+org.jfree.chart.plot.CategoryPlot.panRangeAxes : $z0 = virtualinvoke r0.<org.jfree.chart.plot.CategoryPlot: boolean isRangePannable()>() >>>>>>>> org.jfree.chart.plot.CategoryPlot.panRangeAxes : if $z0 != 0
+org.jfree.chart.plot.CategoryPlot.panRangeAxes : if $z0 != 0 >>>>>>>> org.jfree.chart.plot.CategoryPlot.panRangeAxes : return
+org.jfree.chart.plot.CategoryPlot.panRangeAxes : if $z0 != 0 >>>>>>>> org.jfree.chart.plot.CategoryPlot.panRangeAxes : i0 = virtualinvoke r0.<org.jfree.chart.plot.CategoryPlot: int getRangeAxisCount()>()
+org.jfree.chart.plot.CategoryPlot.panRangeAxes : i0 = virtualinvoke r0.<org.jfree.chart.plot.CategoryPlot: int getRangeAxisCount()>() >>>>>>>> org.jfree.chart.plot.CategoryPlot.panRangeAxes : i1 = 0
+org.jfree.chart.plot.CategoryPlot.panRangeAxes : i1 = 0 >>>>>>>> org.jfree.chart.plot.CategoryPlot.panRangeAxes : if i1 >= i0
+org.jfree.chart.plot.CategoryPlot.panRangeAxes : if i1 >= i0 >>>>>>>> org.jfree.chart.plot.CategoryPlot.panRangeAxes : r3 = virtualinvoke r0.<org.jfree.chart.plot.CategoryPlot: org.jfree.chart.axis.ValueAxis getRangeAxis(int)>(i1)
+org.jfree.chart.plot.CategoryPlot.panRangeAxes : if i1 >= i0 >>>>>>>> org.jfree.chart.plot.CategoryPlot.panRangeAxes : return
+org.jfree.chart.plot.CategoryPlot.panRangeAxes : r3 = virtualinvoke r0.<org.jfree.chart.plot.CategoryPlot: org.jfree.chart.axis.ValueAxis getRangeAxis(int)>(i1) >>>>>>>> org.jfree.chart.plot.CategoryPlot.panRangeAxes : if r3 != null
+org.jfree.chart.plot.CategoryPlot.panRangeAxes : if r3 != null >>>>>>>> org.jfree.chart.plot.CategoryPlot.panRangeAxes : goto [?= i1 = i1 + 1]
+org.jfree.chart.plot.CategoryPlot.panRangeAxes : if r3 != null >>>>>>>> org.jfree.chart.plot.CategoryPlot.panRangeAxes : $r4 = virtualinvoke r3.<org.jfree.chart.axis.ValueAxis: org.jfree.data.Range getRange()>()
+org.jfree.chart.plot.CategoryPlot.panRangeAxes : $r4 = virtualinvoke r3.<org.jfree.chart.axis.ValueAxis: org.jfree.data.Range getRange()>() >>>>>>>> org.jfree.chart.plot.CategoryPlot.panRangeAxes : d1 = virtualinvoke $r4.<org.jfree.data.Range: double getLength()>()
+org.jfree.chart.plot.CategoryPlot.panRangeAxes : d1 = virtualinvoke $r4.<org.jfree.data.Range: double getLength()>() >>>>>>>> org.jfree.chart.plot.CategoryPlot.panRangeAxes : d2 = d0 * d1
+org.jfree.chart.plot.CategoryPlot.panRangeAxes : d2 = d0 * d1 >>>>>>>> org.jfree.chart.plot.CategoryPlot.panRangeAxes : $z1 = virtualinvoke r3.<org.jfree.chart.axis.ValueAxis: boolean isInverted()>()
+org.jfree.chart.plot.CategoryPlot.panRangeAxes : $z1 = virtualinvoke r3.<org.jfree.chart.axis.ValueAxis: boolean isInverted()>() >>>>>>>> org.jfree.chart.plot.CategoryPlot.panRangeAxes : if $z1 == 0
+org.jfree.chart.plot.CategoryPlot.panRangeAxes : if $z1 == 0 >>>>>>>> org.jfree.chart.plot.CategoryPlot.panRangeAxes : d2 = neg d2
+org.jfree.chart.plot.CategoryPlot.panRangeAxes : if $z1 == 0 >>>>>>>> org.jfree.chart.plot.CategoryPlot.panRangeAxes : $d3 = virtualinvoke r3.<org.jfree.chart.axis.ValueAxis: double getLowerBound()>()
+org.jfree.chart.plot.CategoryPlot.panRangeAxes : $d3 = virtualinvoke r3.<org.jfree.chart.axis.ValueAxis: double getLowerBound()>() >>>>>>>> org.jfree.chart.plot.CategoryPlot.panRangeAxes : $d4 = $d3 + d2
+org.jfree.chart.plot.CategoryPlot.panRangeAxes : $d4 = $d3 + d2 >>>>>>>> org.jfree.chart.plot.CategoryPlot.panRangeAxes : $d5 = virtualinvoke r3.<org.jfree.chart.axis.ValueAxis: double getUpperBound()>()
+org.jfree.chart.plot.CategoryPlot.panRangeAxes : $d5 = virtualinvoke r3.<org.jfree.chart.axis.ValueAxis: double getUpperBound()>() >>>>>>>> org.jfree.chart.plot.CategoryPlot.panRangeAxes : $d6 = $d5 + d2
+org.jfree.chart.plot.CategoryPlot.panRangeAxes : $d6 = $d5 + d2 >>>>>>>> org.jfree.chart.plot.CategoryPlot.panRangeAxes : virtualinvoke r3.<org.jfree.chart.axis.ValueAxis: void setRange(double,double)>($d4, $d6)
+org.jfree.chart.plot.CategoryPlot.panRangeAxes : virtualinvoke r3.<org.jfree.chart.axis.ValueAxis: void setRange(double,double)>($d4, $d6) >>>>>>>> org.jfree.chart.plot.CategoryPlot.panRangeAxes : i1 = i1 + 1
+org.jfree.chart.plot.CategoryPlot.panRangeAxes : i1 = i1 + 1 >>>>>>>> org.jfree.chart.plot.CategoryPlot.panRangeAxes : goto [?= (branch)]
+org.jfree.chart.plot.CategoryPlot.panRangeAxes : goto [?= (branch)] >>>>>>>> org.jfree.chart.plot.CategoryPlot.panRangeAxes : if i1 >= i0
+org.jfree.chart.plot.CategoryPlot.panRangeAxes : d2 = neg d2 >>>>>>>> org.jfree.chart.plot.CategoryPlot.panRangeAxes : $d3 = virtualinvoke r3.<org.jfree.chart.axis.ValueAxis: double getLowerBound()>()
+org.jfree.chart.plot.CategoryPlot.panRangeAxes : goto [?= i1 = i1 + 1] >>>>>>>> org.jfree.chart.plot.CategoryPlot.panRangeAxes : i1 = i1 + 1

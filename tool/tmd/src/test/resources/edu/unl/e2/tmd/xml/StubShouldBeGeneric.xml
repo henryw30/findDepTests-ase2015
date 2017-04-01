@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<test-data>
+    <test-code>
+        <description><![CDATA[
+simple failure case
+     ]]></description>
+        <expected-problems>0</expected-problems>
+        <code><![CDATA[
+import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.when;
+
+@RunWith(MockitoJUnitRunner.class)
+public class StandardStreamTest
+{
+    private final ScheduledExecutorScheduler scheduler = new ScheduledExecutorScheduler();
+    @Mock
+    private ISession session;
+    @Mock
+    private SynStreamFrame synStreamFrame;
+
+    @Before
+    public void setUp() throws Exception
+    {
+        scheduler.start();
+    }
+
+    @After
+    public void tearDown() throws Exception
+    {
+        scheduler.stop();
+    }
+
+    @SuppressWarnings("unchecked")
+    @Test
+    public void testSyn()
+    {
+        Stream stream = new StandardStream(synStreamFrame.getStreamId(), synStreamFrame.getPriority(), session, null, null, null);
+        Set<Stream> streams = new HashSet<>();
+        streams.add(stream);
+        when(synStreamFrame.isClose()).thenReturn(false);
+        PushInfo pushInfo = new PushInfo(new Fields(), false);
+        when(session.getStreams()).thenReturn(streams);
+        stream.push(pushInfo, new Promise.Adapter<Stream>());
+        verify(session).syn(argThat(new PushSynInfoMatcher(stream.getId(), pushInfo)),
+                any(StreamFrameListener.class), any(Promise.class));
+    }
+
+
+}
+     ]]></code>
+    </test-code>
+ 
+</test-data>

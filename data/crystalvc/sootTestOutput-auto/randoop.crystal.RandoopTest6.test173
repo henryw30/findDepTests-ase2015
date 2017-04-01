@@ -1,0 +1,8 @@
+crystal.util.XMLTools.newXMLErrorDocument : return r2
+crystal.util.XMLTools.newXMLErrorDocument : virtualinvoke r2.<org.jdom.Document: org.jdom.Document addContent(org.jdom.Content)>(r3)
+crystal.util.XMLTools.newXMLErrorDocument : $r1 = new org.jdom.Document
+crystal.util.XMLTools.newXMLErrorDocument : virtualinvoke r3.<org.jdom.Element: org.jdom.Element setAttribute(java.lang.String,java.lang.String)>("target", r0)
+crystal.util.XMLTools.newXMLErrorDocument : $r4 = new org.jdom.Element
+crystal.util.XMLTools.writeXMLDocument : $r5 = new java.io.FileOutputStream
+crystal.util.XMLTools.writeXMLDocument : l0 = staticinvoke <java.lang.System: long currentTimeMillis()>()
+crystal.util.XMLTools.writeXMLDocument : if r0 != null goto l0 = staticinvoke <java.lang.System: long currentTimeMillis()>()

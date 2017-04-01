@@ -1,0 +1,11 @@
+crystal.client.ClientPreferences.getHgPath : $r1 = r0.<crystal.client.ClientPreferences: java.lang.String _hgPath>
+crystal.util.XMLTools.newXMLErrorDocument : return r2
+crystal.util.XMLTools.newXMLErrorDocument : virtualinvoke r2.<org.jdom.Document: org.jdom.Document addContent(org.jdom.Content)>(r3)
+crystal.util.XMLTools.newXMLErrorDocument : $r1 = new org.jdom.Document
+crystal.util.XMLTools.newXMLErrorDocument : virtualinvoke r3.<org.jdom.Element: org.jdom.Element setAttribute(java.lang.String,java.lang.String)>("target", r0)
+crystal.util.XMLTools.newXMLErrorDocument : $r4 = new org.jdom.Element
+crystal.client.ClientPreferences.setChanged : r0.<crystal.client.ClientPreferences: boolean _hasChanged> = z0
+crystal.client.ClientPreferences.hasChanged : $z0 = r0.<crystal.client.ClientPreferences: boolean _hasChanged>
+crystal.util.ValidInputChecker.checkValidStringInput : if r0 == null goto $r2 = new java.lang.IllegalArgumentException
+crystal.client.ClientPreferences.equals : return 0
+crystal.client.ClientPreferences.equals : if r1 == null goto return 0

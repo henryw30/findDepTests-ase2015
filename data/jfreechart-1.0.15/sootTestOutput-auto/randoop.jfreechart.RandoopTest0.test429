@@ -1,0 +1,32 @@
+org.jfree.chart.renderer.category.BarRenderer.getShadowXOffset : $d0 = r0.<org.jfree.chart.renderer.category.BarRenderer: double shadowXOffset>
+org.jfree.chart.renderer.category.BarRenderer.getBarPainter : $r1 = r0.<org.jfree.chart.renderer.category.BarRenderer: org.jfree.chart.renderer.category.BarPainter barPainter>
+org.jfree.chart.renderer.AbstractRenderer.getItemVisible : $z0 = virtualinvoke r0.<org.jfree.chart.renderer.AbstractRenderer: boolean isSeriesVisible(int)>(i0)
+org.jfree.chart.renderer.AbstractRenderer.fireChangeEvent : $r1 = new org.jfree.chart.event.RendererChangeEvent
+org.jfree.chart.renderer.AbstractRenderer.setBaseLegendShape : virtualinvoke r0.<org.jfree.chart.renderer.AbstractRenderer: void fireChangeEvent()>()
+org.jfree.chart.renderer.AbstractRenderer.setBaseLegendShape : r0.<org.jfree.chart.renderer.AbstractRenderer: java.awt.Shape baseLegendShape> = r1
+org.jfree.chart.renderer.AbstractRenderer.hasListener : $z0 = interfaceinvoke r2.<java.util.List: boolean contains(java.lang.Object)>(r1)
+org.jfree.chart.renderer.AbstractRenderer.hasListener : $r3 = r0.<org.jfree.chart.renderer.AbstractRenderer: javax.swing.event.EventListenerList listenerList>
+org.jfree.chart.renderer.AbstractRenderer.notifyListeners : $r3 = r0.<org.jfree.chart.renderer.AbstractRenderer: javax.swing.event.EventListenerList listenerList>
+org.jfree.chart.renderer.AbstractRenderer.notifyListeners : $i1 = lengthof r2
+org.jfree.chart.renderer.category.BarRenderer.getDefaultShadowsVisible : $z0 = <org.jfree.chart.renderer.category.BarRenderer: boolean defaultShadowsVisible>
+org.jfree.chart.renderer.xy.XYBarRenderer.getShadowsVisible : $z0 = r0.<org.jfree.chart.renderer.xy.XYBarRenderer: boolean shadowsVisible>
+org.jfree.chart.renderer.AbstractRenderer.isSeriesVisible : if r1 == null goto return z0
+org.jfree.chart.renderer.AbstractRenderer.isSeriesVisible : $r4 = r0.<org.jfree.chart.renderer.AbstractRenderer: org.jfree.util.BooleanList seriesVisibleList>
+org.jfree.chart.renderer.AbstractRenderer.isSeriesVisible : $r2 = r0.<org.jfree.chart.renderer.AbstractRenderer: java.lang.Boolean seriesVisible>
+org.jfree.chart.renderer.AbstractRenderer.isSeriesVisible : return z0
+org.jfree.chart.renderer.AbstractRenderer.isSeriesVisible : z0 = r0.<org.jfree.chart.renderer.AbstractRenderer: boolean baseSeriesVisible>
+org.jfree.chart.renderer.AbstractRenderer.setBaseNegativeItemLabelPosition : virtualinvoke r0.<org.jfree.chart.renderer.AbstractRenderer: void fireChangeEvent()>()
+org.jfree.chart.renderer.AbstractRenderer.setBaseNegativeItemLabelPosition : if z0 == 0 goto return
+org.jfree.chart.renderer.AbstractRenderer.setBaseNegativeItemLabelPosition : r0.<org.jfree.chart.renderer.AbstractRenderer: org.jfree.chart.labels.ItemLabelPosition baseNegativeItemLabelPosition> = r1
+org.jfree.chart.renderer.AbstractRenderer.setBaseNegativeItemLabelPosition : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "position")
+org.jfree.chart.renderer.AbstractRenderer.setBaseNegativeItemLabelPosition : virtualinvoke r0.<org.jfree.chart.renderer.AbstractRenderer: void setBaseNegativeItemLabelPosition(org.jfree.chart.labels.ItemLabelPosition,boolean)>(r1, 1)
+org.jfree.chart.renderer.AbstractRenderer.setBasePositiveItemLabelPosition : virtualinvoke r0.<org.jfree.chart.renderer.AbstractRenderer: void fireChangeEvent()>()
+org.jfree.chart.renderer.AbstractRenderer.setBasePositiveItemLabelPosition : if z0 == 0 goto return
+org.jfree.chart.renderer.AbstractRenderer.setBasePositiveItemLabelPosition : virtualinvoke r0.<org.jfree.chart.renderer.AbstractRenderer: void setBasePositiveItemLabelPosition(org.jfree.chart.labels.ItemLabelPosition,boolean)>(r1, 1)
+org.jfree.chart.renderer.AbstractRenderer.setBasePositiveItemLabelPosition : r0.<org.jfree.chart.renderer.AbstractRenderer: org.jfree.chart.labels.ItemLabelPosition basePositiveItemLabelPosition> = r1
+org.jfree.chart.renderer.AbstractRenderer.setBasePositiveItemLabelPosition : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "position")
+org.jfree.chart.renderer.xy.XYBarRenderer.getDefaultShadowsVisible : $z0 = <org.jfree.chart.renderer.xy.XYBarRenderer: boolean defaultShadowsVisible>
+org.jfree.chart.renderer.xy.XYBarRenderer.getDefaultBarPainter : $r0 = <org.jfree.chart.renderer.xy.XYBarRenderer: org.jfree.chart.renderer.xy.XYBarPainter defaultBarPainter>
+org.jfree.chart.renderer.xy.XYBarRenderer.getUseYInterval : $z0 = r0.<org.jfree.chart.renderer.xy.XYBarRenderer: boolean useYInterval>
+org.jfree.chart.renderer.category.BarRenderer.getDefaultBarPainter : $r0 = <org.jfree.chart.renderer.category.BarRenderer: org.jfree.chart.renderer.category.BarPainter defaultBarPainter>
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null goto return

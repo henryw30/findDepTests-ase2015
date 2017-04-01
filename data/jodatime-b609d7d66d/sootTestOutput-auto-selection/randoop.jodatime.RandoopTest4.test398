@@ -1,0 +1,144 @@
+org.joda.time.DateTimeZone.forOffsetMillis : r0 = staticinvoke <org.joda.time.DateTimeZone: java.lang.String printOffset(int)>(i0) >>>>>>>> org.joda.time.DateTimeZone.printOffset : $r0 = new java.lang.StringBuffer
+org.joda.time.DateTimeZone.printOffset : $r0 = new java.lang.StringBuffer >>>>>>>> org.joda.time.DateTimeZone.printOffset : specialinvoke $r0.<java.lang.StringBuffer: void <init>()>()
+org.joda.time.DateTimeZone.printOffset : specialinvoke $r0.<java.lang.StringBuffer: void <init>()>() >>>>>>>> org.joda.time.DateTimeZone.printOffset : r1 = $r0
+org.joda.time.DateTimeZone.printOffset : r1 = $r0 >>>>>>>> org.joda.time.DateTimeZone.printOffset : if i0 < 0
+org.joda.time.DateTimeZone.printOffset : if i0 < 0 >>>>>>>> org.joda.time.DateTimeZone.printOffset : virtualinvoke r1.<java.lang.StringBuffer: java.lang.StringBuffer append(char)>(43)
+org.joda.time.DateTimeZone.printOffset : virtualinvoke r1.<java.lang.StringBuffer: java.lang.StringBuffer append(char)>(43) >>>>>>>> org.joda.time.DateTimeZone.printOffset : goto [?= i1 = i0 / 3600000]
+org.joda.time.DateTimeZone.printOffset : goto [?= i1 = i0 / 3600000] >>>>>>>> org.joda.time.DateTimeZone.printOffset : i1 = i0 / 3600000
+org.joda.time.DateTimeZone.printOffset : i1 = i0 / 3600000 >>>>>>>> org.joda.time.DateTimeZone.printOffset : staticinvoke <org.joda.time.format.FormatUtils: void appendPaddedInteger(java.lang.StringBuffer,int,int)>(r1, i1, 2)
+org.joda.time.DateTimeZone.printOffset : staticinvoke <org.joda.time.format.FormatUtils: void appendPaddedInteger(java.lang.StringBuffer,int,int)>(r1, i1, 2) >>>>>>>> org.joda.time.format.FormatUtils.appendPaddedInteger : if i0 >= 0
+org.joda.time.format.FormatUtils.appendPaddedInteger : if i0 >= 0 >>>>>>>> org.joda.time.format.FormatUtils.appendPaddedInteger : if i0 >= 10
+org.joda.time.format.FormatUtils.appendPaddedInteger : if i0 >= 10 >>>>>>>> org.joda.time.format.FormatUtils.appendPaddedInteger : if i1 <= 1
+org.joda.time.format.FormatUtils.appendPaddedInteger : if i1 <= 1 >>>>>>>> org.joda.time.format.FormatUtils.appendPaddedInteger : virtualinvoke r0.<java.lang.StringBuffer: java.lang.StringBuffer append(char)>(48)
+org.joda.time.format.FormatUtils.appendPaddedInteger : virtualinvoke r0.<java.lang.StringBuffer: java.lang.StringBuffer append(char)>(48) >>>>>>>> org.joda.time.format.FormatUtils.appendPaddedInteger : i1 = i1 + -1
+org.joda.time.format.FormatUtils.appendPaddedInteger : i1 = i1 + -1 >>>>>>>> org.joda.time.format.FormatUtils.appendPaddedInteger : goto [?= (branch)]
+org.joda.time.format.FormatUtils.appendPaddedInteger : goto [?= (branch)] >>>>>>>> org.joda.time.format.FormatUtils.appendPaddedInteger : $i3 = i0 + 48
+org.joda.time.format.FormatUtils.appendPaddedInteger : $i3 = i0 + 48 >>>>>>>> org.joda.time.format.FormatUtils.appendPaddedInteger : $c4 = (char) $i3
+org.joda.time.format.FormatUtils.appendPaddedInteger : $c4 = (char) $i3 >>>>>>>> org.joda.time.format.FormatUtils.appendPaddedInteger : virtualinvoke r0.<java.lang.StringBuffer: java.lang.StringBuffer append(char)>($c4)
+org.joda.time.format.FormatUtils.appendPaddedInteger : virtualinvoke r0.<java.lang.StringBuffer: java.lang.StringBuffer append(char)>($c4) >>>>>>>> org.joda.time.format.FormatUtils.appendPaddedInteger : goto [?= return]
+org.joda.time.format.FormatUtils.appendPaddedInteger : goto [?= return] >>>>>>>> org.joda.time.DateTimeZone.printOffset : $i4 = i1 * 3600000
+org.joda.time.DateTimeZone.printOffset : $i4 = i1 * 3600000 >>>>>>>> org.joda.time.DateTimeZone.printOffset : i5 = i0 - $i4
+org.joda.time.DateTimeZone.printOffset : i5 = i0 - $i4 >>>>>>>> org.joda.time.DateTimeZone.printOffset : i2 = i5 / 60000
+org.joda.time.DateTimeZone.printOffset : i2 = i5 / 60000 >>>>>>>> org.joda.time.DateTimeZone.printOffset : virtualinvoke r1.<java.lang.StringBuffer: java.lang.StringBuffer append(char)>(58)
+org.joda.time.DateTimeZone.printOffset : virtualinvoke r1.<java.lang.StringBuffer: java.lang.StringBuffer append(char)>(58) >>>>>>>> org.joda.time.DateTimeZone.printOffset : staticinvoke <org.joda.time.format.FormatUtils: void appendPaddedInteger(java.lang.StringBuffer,int,int)>(r1, i2, 2)
+org.joda.time.DateTimeZone.printOffset : staticinvoke <org.joda.time.format.FormatUtils: void appendPaddedInteger(java.lang.StringBuffer,int,int)>(r1, i2, 2) >>>>>>>> org.joda.time.DateTimeZone.printOffset : $i6 = i2 * 60000
+org.joda.time.DateTimeZone.printOffset : $i6 = i2 * 60000 >>>>>>>> org.joda.time.DateTimeZone.printOffset : i7 = i5 - $i6
+org.joda.time.DateTimeZone.printOffset : i7 = i5 - $i6 >>>>>>>> org.joda.time.DateTimeZone.printOffset : if i7 != 0
+org.joda.time.DateTimeZone.printOffset : if i7 != 0 >>>>>>>> org.joda.time.DateTimeZone.printOffset : i3 = i7 / 1000
+org.joda.time.DateTimeZone.printOffset : i3 = i7 / 1000 >>>>>>>> org.joda.time.DateTimeZone.printOffset : staticinvoke <org.joda.time.format.FormatUtils: void appendPaddedInteger(java.lang.StringBuffer,int,int)>(r1, i3, 2)
+org.joda.time.DateTimeZone.printOffset : staticinvoke <org.joda.time.format.FormatUtils: void appendPaddedInteger(java.lang.StringBuffer,int,int)>(r1, i3, 2) >>>>>>>> org.joda.time.DateTimeZone.printOffset : $i8 = i3 * 1000
+org.joda.time.DateTimeZone.printOffset : $i8 = i3 * 1000 >>>>>>>> org.joda.time.DateTimeZone.printOffset : i9 = i7 - $i8
+org.joda.time.DateTimeZone.printOffset : i9 = i7 - $i8 >>>>>>>> org.joda.time.DateTimeZone.printOffset : if i9 != 0
+org.joda.time.DateTimeZone.printOffset : if i9 != 0 >>>>>>>> org.joda.time.DateTimeZone.printOffset : virtualinvoke r1.<java.lang.StringBuffer: java.lang.StringBuffer append(char)>(46)
+org.joda.time.DateTimeZone.printOffset : virtualinvoke r1.<java.lang.StringBuffer: java.lang.StringBuffer append(char)>(46) >>>>>>>> org.joda.time.DateTimeZone.printOffset : staticinvoke <org.joda.time.format.FormatUtils: void appendPaddedInteger(java.lang.StringBuffer,int,int)>(r1, i9, 3)
+org.joda.time.DateTimeZone.printOffset : staticinvoke <org.joda.time.format.FormatUtils: void appendPaddedInteger(java.lang.StringBuffer,int,int)>(r1, i9, 3) >>>>>>>> org.joda.time.format.FormatUtils.appendPaddedInteger : if i0 >= 100
+org.joda.time.format.FormatUtils.appendPaddedInteger : if i0 >= 100 >>>>>>>> org.joda.time.format.FormatUtils.appendPaddedInteger : if i0 >= 1000
+org.joda.time.format.FormatUtils.appendPaddedInteger : if i0 >= 1000 >>>>>>>> org.joda.time.format.FormatUtils.appendPaddedInteger : i15 = 3
+org.joda.time.format.FormatUtils.appendPaddedInteger : i15 = 3 >>>>>>>> org.joda.time.format.FormatUtils.appendPaddedInteger : if i1 <= i15
+org.joda.time.format.FormatUtils.appendPaddedInteger : if i1 <= i15 >>>>>>>> org.joda.time.format.FormatUtils.appendPaddedInteger : $r10 = staticinvoke <java.lang.Integer: java.lang.String toString(int)>(i0)
+org.joda.time.format.FormatUtils.appendPaddedInteger : $r10 = staticinvoke <java.lang.Integer: java.lang.String toString(int)>(i0) >>>>>>>> org.joda.time.format.FormatUtils.appendPaddedInteger : virtualinvoke r0.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>($r10)
+org.joda.time.format.FormatUtils.appendPaddedInteger : virtualinvoke r0.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>($r10) >>>>>>>> org.joda.time.DateTimeZone.printOffset : $r9 = virtualinvoke r1.<java.lang.StringBuffer: java.lang.String toString()>()
+org.joda.time.DateTimeZone.printOffset : $r9 = virtualinvoke r1.<java.lang.StringBuffer: java.lang.String toString()>() >>>>>>>> org.joda.time.DateTimeZone.printOffset : return $r9
+org.joda.time.DateTimeZone.printOffset : return $r9 >>>>>>>> org.joda.time.DateTimeZone.forOffsetMillis : $r1 = staticinvoke <org.joda.time.DateTimeZone: org.joda.time.DateTimeZone fixedOffsetZone(java.lang.String,int)>(r0, i0)
+org.joda.time.DateTimeZone.forOffsetMillis : $r1 = staticinvoke <org.joda.time.DateTimeZone: org.joda.time.DateTimeZone fixedOffsetZone(java.lang.String,int)>(r0, i0) >>>>>>>> org.joda.time.DateTimeZone.fixedOffsetZone : if i0 != 0
+org.joda.time.DateTimeZone.fixedOffsetZone : if i0 != 0 >>>>>>>> org.joda.time.DateTimeZone.fixedOffsetZone : $r4 = <org.joda.time.DateTimeZone: java.util.Map iFixedOffsetCache>
+org.joda.time.DateTimeZone.fixedOffsetZone : $r4 = <org.joda.time.DateTimeZone: java.util.Map iFixedOffsetCache> >>>>>>>> org.joda.time.DateTimeZone.fixedOffsetZone : if $r4 != null
+org.joda.time.DateTimeZone.fixedOffsetZone : if $r4 != null >>>>>>>> org.joda.time.DateTimeZone.fixedOffsetZone : $r6 = <org.joda.time.DateTimeZone: java.util.Map iFixedOffsetCache>
+org.joda.time.DateTimeZone.fixedOffsetZone : $r6 = <org.joda.time.DateTimeZone: java.util.Map iFixedOffsetCache> >>>>>>>> org.joda.time.DateTimeZone.fixedOffsetZone : $r7 = interfaceinvoke $r6.<java.util.Map: java.lang.Object get(java.lang.Object)>(r0)
+org.joda.time.DateTimeZone.fixedOffsetZone : $r7 = interfaceinvoke $r6.<java.util.Map: java.lang.Object get(java.lang.Object)>(r0) >>>>>>>> org.joda.time.DateTimeZone.fixedOffsetZone : r1 = (java.lang.ref.Reference) $r7
+org.joda.time.DateTimeZone.fixedOffsetZone : r1 = (java.lang.ref.Reference) $r7 >>>>>>>> org.joda.time.DateTimeZone.fixedOffsetZone : if r1 == null
+org.joda.time.DateTimeZone.fixedOffsetZone : if r1 == null >>>>>>>> org.joda.time.DateTimeZone.fixedOffsetZone : $r8 = virtualinvoke r1.<java.lang.ref.Reference: java.lang.Object get()>()
+org.joda.time.DateTimeZone.fixedOffsetZone : $r8 = virtualinvoke r1.<java.lang.ref.Reference: java.lang.Object get()>() >>>>>>>> org.joda.time.DateTimeZone.fixedOffsetZone : r2 = (org.joda.time.DateTimeZone) $r8
+org.joda.time.DateTimeZone.fixedOffsetZone : r2 = (org.joda.time.DateTimeZone) $r8 >>>>>>>> org.joda.time.DateTimeZone.fixedOffsetZone : if r2 == null
+org.joda.time.DateTimeZone.fixedOffsetZone : if r2 == null >>>>>>>> org.joda.time.DateTimeZone.fixedOffsetZone : return r2
+org.joda.time.DateTimeZone.fixedOffsetZone : return r2 >>>>>>>> org.joda.time.DateTimeZone.forOffsetMillis : return $r1
+org.joda.time.DateTimeZone.forOffsetMillis : return $r1 >>>>>>>> org.joda.time.format.ISODateTimeFormat.localDateParser : $r0 = <org.joda.time.format.ISODateTimeFormat: org.joda.time.format.DateTimeFormatter ldp>
+org.joda.time.format.ISODateTimeFormat.localDateParser : $r0 = <org.joda.time.format.ISODateTimeFormat: org.joda.time.format.DateTimeFormatter ldp> >>>>>>>> org.joda.time.format.ISODateTimeFormat.localDateParser : if $r0 != null
+org.joda.time.format.ISODateTimeFormat.localDateParser : if $r0 != null >>>>>>>> org.joda.time.format.ISODateTimeFormat.localDateParser : $r3 = <org.joda.time.format.ISODateTimeFormat: org.joda.time.format.DateTimeFormatter ldp>
+org.joda.time.format.ISODateTimeFormat.localDateParser : $r3 = <org.joda.time.format.ISODateTimeFormat: org.joda.time.format.DateTimeFormatter ldp> >>>>>>>> org.joda.time.format.ISODateTimeFormat.localDateParser : return $r3
+org.joda.time.format.ISODateTimeFormat.localDateParser : return $r3 >>>>>>>> org.joda.time.convert.ConverterManager.getInstance : $r0 = <org.joda.time.convert.ConverterManager: org.joda.time.convert.ConverterManager INSTANCE>
+org.joda.time.convert.ConverterManager.getInstance : $r0 = <org.joda.time.convert.ConverterManager: org.joda.time.convert.ConverterManager INSTANCE> >>>>>>>> org.joda.time.convert.ConverterManager.getInstance : if $r0 != null
+org.joda.time.convert.ConverterManager.getInstance : if $r0 != null >>>>>>>> org.joda.time.convert.ConverterManager.getInstance : $r2 = <org.joda.time.convert.ConverterManager: org.joda.time.convert.ConverterManager INSTANCE>
+org.joda.time.convert.ConverterManager.getInstance : $r2 = <org.joda.time.convert.ConverterManager: org.joda.time.convert.ConverterManager INSTANCE> >>>>>>>> org.joda.time.convert.ConverterManager.getInstance : return $r2
+org.joda.time.convert.ConverterManager.getInstance : return $r2 >>>>>>>> org.joda.time.convert.ConverterManager.getPartialConverter : $r4 = r0.<org.joda.time.convert.ConverterManager: org.joda.time.convert.ConverterSet iPartialConverters>
+org.joda.time.convert.ConverterManager.getPartialConverter : $r4 = r0.<org.joda.time.convert.ConverterManager: org.joda.time.convert.ConverterSet iPartialConverters> >>>>>>>> org.joda.time.convert.ConverterManager.getPartialConverter : if r1 != null
+org.joda.time.convert.ConverterManager.getPartialConverter : if r1 != null >>>>>>>> org.joda.time.convert.ConverterManager.getPartialConverter : $r5 = virtualinvoke r1.<java.lang.Object: java.lang.Class getClass()>()
+org.joda.time.convert.ConverterManager.getPartialConverter : $r5 = virtualinvoke r1.<java.lang.Object: java.lang.Class getClass()>() >>>>>>>> org.joda.time.convert.ConverterManager.getPartialConverter : $r6 = virtualinvoke $r4.<org.joda.time.convert.ConverterSet: org.joda.time.convert.Converter select(java.lang.Class)>($r5)
+org.joda.time.convert.ConverterManager.getPartialConverter : $r6 = virtualinvoke $r4.<org.joda.time.convert.ConverterSet: org.joda.time.convert.Converter select(java.lang.Class)>($r5) >>>>>>>> org.joda.time.convert.ConverterSet.select : r2 = r0.<org.joda.time.convert.ConverterSet: org.joda.time.convert.ConverterSet$Entry[] iSelectEntries>
+org.joda.time.convert.ConverterSet.select : r2 = r0.<org.joda.time.convert.ConverterSet: org.joda.time.convert.ConverterSet$Entry[] iSelectEntries> >>>>>>>> org.joda.time.convert.ConverterSet.select : i0 = lengthof r2
+org.joda.time.convert.ConverterSet.select : i0 = lengthof r2 >>>>>>>> org.joda.time.convert.ConverterSet.select : if r1 != null
+org.joda.time.convert.ConverterSet.select : if r1 != null >>>>>>>> org.joda.time.convert.ConverterSet.select : $i5 = virtualinvoke r1.<java.lang.Object: int hashCode()>()
+org.joda.time.convert.ConverterSet.select : $i5 = virtualinvoke r1.<java.lang.Object: int hashCode()>() >>>>>>>> org.joda.time.convert.ConverterSet.select : $i6 = i0 - 1
+org.joda.time.convert.ConverterSet.select : $i6 = i0 - 1 >>>>>>>> org.joda.time.convert.ConverterSet.select : $i4 = $i5 & $i6
+org.joda.time.convert.ConverterSet.select : $i4 = $i5 & $i6 >>>>>>>> org.joda.time.convert.ConverterSet.select : i1 = $i4
+org.joda.time.convert.ConverterSet.select : i1 = $i4 >>>>>>>> org.joda.time.convert.ConverterSet.select : $r6 = r2[i1]
+org.joda.time.convert.ConverterSet.select : $r6 = r2[i1] >>>>>>>> org.joda.time.convert.ConverterSet.select : r3 = $r6
+org.joda.time.convert.ConverterSet.select : r3 = $r6 >>>>>>>> org.joda.time.convert.ConverterSet.select : if $r6 == null
+org.joda.time.convert.ConverterSet.select : if $r6 == null >>>>>>>> org.joda.time.convert.ConverterSet.select : r4 = staticinvoke <org.joda.time.convert.ConverterSet: org.joda.time.convert.Converter selectSlow(org.joda.time.convert.ConverterSet,java.lang.Class)>(r0, r1)
+org.joda.time.convert.ConverterSet.select : r4 = staticinvoke <org.joda.time.convert.ConverterSet: org.joda.time.convert.Converter selectSlow(org.joda.time.convert.ConverterSet,java.lang.Class)>(r0, r1) >>>>>>>> org.joda.time.convert.ConverterSet.selectSlow : r2 = r0.<org.joda.time.convert.ConverterSet: org.joda.time.convert.Converter[] iConverters>
+org.joda.time.convert.ConverterSet.selectSlow : r2 = r0.<org.joda.time.convert.ConverterSet: org.joda.time.convert.Converter[] iConverters> >>>>>>>> org.joda.time.convert.ConverterSet.selectSlow : i0 = lengthof r2
+org.joda.time.convert.ConverterSet.selectSlow : i0 = lengthof r2 >>>>>>>> org.joda.time.convert.ConverterSet.selectSlow : i1 = i0
+org.joda.time.convert.ConverterSet.selectSlow : i1 = i0 >>>>>>>> org.joda.time.convert.ConverterSet.selectSlow : i1 = i1 + -1
+org.joda.time.convert.ConverterSet.selectSlow : i1 = i1 + -1 >>>>>>>> org.joda.time.convert.ConverterSet.selectSlow : if i1 < 0
+org.joda.time.convert.ConverterSet.selectSlow : if i1 < 0 >>>>>>>> org.joda.time.convert.ConverterSet.selectSlow : r3 = r2[i1]
+org.joda.time.convert.ConverterSet.selectSlow : r3 = r2[i1] >>>>>>>> org.joda.time.convert.ConverterSet.selectSlow : r4 = interfaceinvoke r3.<org.joda.time.convert.Converter: java.lang.Class getSupportedType()>()
+org.joda.time.convert.ConverterSet.selectSlow : r4 = interfaceinvoke r3.<org.joda.time.convert.Converter: java.lang.Class getSupportedType()>() >>>>>>>> org.joda.time.convert.NullConverter.getSupportedType : return null
+org.joda.time.convert.NullConverter.getSupportedType : return null >>>>>>>> org.joda.time.convert.ConverterSet.selectSlow : if r4 != r1
+org.joda.time.convert.ConverterSet.selectSlow : if r4 != r1 >>>>>>>> org.joda.time.convert.ConverterSet.selectSlow : if r4 == null
+org.joda.time.convert.ConverterSet.selectSlow : if r4 == null >>>>>>>> org.joda.time.convert.ConverterSet.selectSlow : r0 = virtualinvoke r0.<org.joda.time.convert.ConverterSet: org.joda.time.convert.ConverterSet remove(int,org.joda.time.convert.Converter[])>(i1, null)
+org.joda.time.convert.ConverterSet.selectSlow : r0 = virtualinvoke r0.<org.joda.time.convert.ConverterSet: org.joda.time.convert.ConverterSet remove(int,org.joda.time.convert.Converter[])>(i1, null) >>>>>>>> org.joda.time.convert.ConverterSet.remove : r2 = r0.<org.joda.time.convert.ConverterSet: org.joda.time.convert.Converter[] iConverters>
+org.joda.time.convert.ConverterSet.remove : r2 = r0.<org.joda.time.convert.ConverterSet: org.joda.time.convert.Converter[] iConverters> >>>>>>>> org.joda.time.convert.ConverterSet.remove : i1 = lengthof r2
+org.joda.time.convert.ConverterSet.remove : i1 = lengthof r2 >>>>>>>> org.joda.time.convert.ConverterSet.remove : if i0 < i1
+org.joda.time.convert.ConverterSet.remove : if i0 < i1 >>>>>>>> org.joda.time.convert.ConverterSet.remove : if r1 == null
+org.joda.time.convert.ConverterSet.remove : if r1 == null >>>>>>>> org.joda.time.convert.ConverterSet.remove : $i4 = i1 - 1
+org.joda.time.convert.ConverterSet.remove : $i4 = i1 - 1 >>>>>>>> org.joda.time.convert.ConverterSet.remove : r3 = newarray (org.joda.time.convert.Converter)[$i4]
+org.joda.time.convert.ConverterSet.remove : r3 = newarray (org.joda.time.convert.Converter)[$i4] >>>>>>>> org.joda.time.convert.ConverterSet.remove : i2 = 0
+org.joda.time.convert.ConverterSet.remove : i2 = 0 >>>>>>>> org.joda.time.convert.ConverterSet.remove : i3 = 0
+org.joda.time.convert.ConverterSet.remove : i3 = 0 >>>>>>>> org.joda.time.convert.ConverterSet.remove : if i3 >= i1
+org.joda.time.convert.ConverterSet.remove : if i3 >= i1 >>>>>>>> org.joda.time.convert.ConverterSet.remove : if i3 == i0
+org.joda.time.convert.ConverterSet.remove : if i3 == i0 >>>>>>>> org.joda.time.convert.ConverterSet.remove : $i5 = i2
+org.joda.time.convert.ConverterSet.remove : $i5 = i2 >>>>>>>> org.joda.time.convert.ConverterSet.remove : i2 = i2 + 1
+org.joda.time.convert.ConverterSet.remove : i2 = i2 + 1 >>>>>>>> org.joda.time.convert.ConverterSet.remove : $r6 = r2[i3]
+org.joda.time.convert.ConverterSet.remove : $r6 = r2[i3] >>>>>>>> org.joda.time.convert.ConverterSet.remove : r3[$i5] = $r6
+org.joda.time.convert.ConverterSet.remove : r3[$i5] = $r6 >>>>>>>> org.joda.time.convert.ConverterSet.remove : i3 = i3 + 1
+org.joda.time.convert.ConverterSet.remove : i3 = i3 + 1 >>>>>>>> org.joda.time.convert.ConverterSet.remove : goto [?= (branch)]
+org.joda.time.convert.ConverterSet.remove : goto [?= (branch)] >>>>>>>> org.joda.time.convert.ConverterSet.remove : $r7 = new org.joda.time.convert.ConverterSet
+org.joda.time.convert.ConverterSet.remove : $r7 = new org.joda.time.convert.ConverterSet >>>>>>>> org.joda.time.convert.ConverterSet.remove : specialinvoke $r7.<org.joda.time.convert.ConverterSet: void <init>(org.joda.time.convert.Converter[])>(r3)
+org.joda.time.convert.ConverterSet.remove : specialinvoke $r7.<org.joda.time.convert.ConverterSet: void <init>(org.joda.time.convert.Converter[])>(r3) >>>>>>>> org.joda.time.convert.ConverterSet.remove : return $r7
+org.joda.time.convert.ConverterSet.remove : return $r7 >>>>>>>> org.joda.time.convert.ConverterSet.selectSlow : goto [?= i1 = i1 + -1]
+org.joda.time.convert.ConverterSet.selectSlow : goto [?= i1 = i1 + -1] >>>>>>>> org.joda.time.convert.LongConverter.getSupportedType : return class "java/lang/Long"
+org.joda.time.convert.LongConverter.getSupportedType : return class "java/lang/Long" >>>>>>>> org.joda.time.convert.ConverterSet.selectSlow : if r1 == null
+org.joda.time.convert.ConverterSet.selectSlow : if r1 == null >>>>>>>> org.joda.time.convert.ConverterSet.selectSlow : $z0 = virtualinvoke r4.<java.lang.Class: boolean isAssignableFrom(java.lang.Class)>(r1)
+org.joda.time.convert.ConverterSet.selectSlow : $z0 = virtualinvoke r4.<java.lang.Class: boolean isAssignableFrom(java.lang.Class)>(r1) >>>>>>>> org.joda.time.convert.ConverterSet.selectSlow : if $z0 != 0
+org.joda.time.convert.ConverterSet.selectSlow : if $z0 != 0 >>>>>>>> org.joda.time.convert.DateConverter.getSupportedType : return class "java/util/Date"
+org.joda.time.convert.DateConverter.getSupportedType : return class "java/util/Date" >>>>>>>> org.joda.time.convert.CalendarConverter.getSupportedType : return class "java/util/Calendar"
+org.joda.time.convert.CalendarConverter.getSupportedType : return class "java/util/Calendar" >>>>>>>> org.joda.time.convert.StringConverter.getSupportedType : return class "java/lang/String"
+org.joda.time.convert.StringConverter.getSupportedType : return class "java/lang/String" >>>>>>>> org.joda.time.convert.ReadableInstantConverter.getSupportedType : return class "org/joda/time/ReadableInstant"
+org.joda.time.convert.ReadableInstantConverter.getSupportedType : return class "org/joda/time/ReadableInstant" >>>>>>>> org.joda.time.convert.ReadablePartialConverter.getSupportedType : return class "org/joda/time/ReadablePartial"
+org.joda.time.convert.ReadablePartialConverter.getSupportedType : return class "org/joda/time/ReadablePartial" >>>>>>>> org.joda.time.convert.ConverterSet.selectSlow : if i0 != 0
+org.joda.time.convert.ConverterSet.selectSlow : if i0 != 0 >>>>>>>> org.joda.time.convert.ConverterSet.selectSlow : return null
+org.joda.time.convert.ConverterSet.selectSlow : return null >>>>>>>> org.joda.time.convert.ConverterSet.select : $r9 = new org.joda.time.convert.ConverterSet$Entry
+org.joda.time.convert.ConverterSet.select : $r9 = new org.joda.time.convert.ConverterSet$Entry >>>>>>>> org.joda.time.convert.ConverterSet.select : specialinvoke $r9.<org.joda.time.convert.ConverterSet$Entry: void <init>(java.lang.Class,org.joda.time.convert.Converter)>(r1, r4)
+org.joda.time.convert.ConverterSet.select : specialinvoke $r9.<org.joda.time.convert.ConverterSet$Entry: void <init>(java.lang.Class,org.joda.time.convert.Converter)>(r1, r4) >>>>>>>> org.joda.time.convert.ConverterSet.select : r10 = $r9
+org.joda.time.convert.ConverterSet.select : r10 = $r9 >>>>>>>> org.joda.time.convert.ConverterSet.select : $r11 = virtualinvoke r2.<java.lang.Object: java.lang.Object clone()>()
+org.joda.time.convert.ConverterSet.select : $r11 = virtualinvoke r2.<java.lang.Object: java.lang.Object clone()>() >>>>>>>> org.joda.time.convert.ConverterSet.select : $r12 = (org.joda.time.convert.ConverterSet$Entry[]) $r11
+org.joda.time.convert.ConverterSet.select : $r12 = (org.joda.time.convert.ConverterSet$Entry[]) $r11 >>>>>>>> org.joda.time.convert.ConverterSet.select : r13 = (org.joda.time.convert.ConverterSet$Entry[]) $r12
+org.joda.time.convert.ConverterSet.select : r13 = (org.joda.time.convert.ConverterSet$Entry[]) $r12 >>>>>>>> org.joda.time.convert.ConverterSet.select : r13[i1] = r10
+org.joda.time.convert.ConverterSet.select : r13[i1] = r10 >>>>>>>> org.joda.time.convert.ConverterSet.select : i2 = 0
+org.joda.time.convert.ConverterSet.select : i2 = 0 >>>>>>>> org.joda.time.convert.ConverterSet.select : if i2 >= i0
+org.joda.time.convert.ConverterSet.select : if i2 >= i0 >>>>>>>> org.joda.time.convert.ConverterSet.select : $r14 = r13[i2]
+org.joda.time.convert.ConverterSet.select : $r14 = r13[i2] >>>>>>>> org.joda.time.convert.ConverterSet.select : if $r14 != null
+org.joda.time.convert.ConverterSet.select : if $r14 != null >>>>>>>> org.joda.time.convert.ConverterSet.select : r0.<org.joda.time.convert.ConverterSet: org.joda.time.convert.ConverterSet$Entry[] iSelectEntries> = r13
+org.joda.time.convert.ConverterSet.select : r0.<org.joda.time.convert.ConverterSet: org.joda.time.convert.ConverterSet$Entry[] iSelectEntries> = r13 >>>>>>>> org.joda.time.convert.ConverterSet.select : return r4
+org.joda.time.convert.ConverterSet.select : return r4 >>>>>>>> org.joda.time.convert.ConverterManager.getPartialConverter : r2 = (org.joda.time.convert.PartialConverter) $r6
+org.joda.time.convert.ConverterManager.getPartialConverter : r2 = (org.joda.time.convert.PartialConverter) $r6 >>>>>>>> org.joda.time.convert.ConverterManager.getPartialConverter : if r2 == null
+org.joda.time.convert.ConverterManager.getPartialConverter : if r2 == null >>>>>>>> org.joda.time.convert.ConverterManager.getPartialConverter : $r7 = new java.lang.IllegalArgumentException
+org.joda.time.convert.ConverterManager.getPartialConverter : $r7 = new java.lang.IllegalArgumentException >>>>>>>> org.joda.time.convert.ConverterManager.getPartialConverter : $r3 = new java.lang.StringBuilder
+org.joda.time.convert.ConverterManager.getPartialConverter : $r3 = new java.lang.StringBuilder >>>>>>>> org.joda.time.convert.ConverterManager.getPartialConverter : specialinvoke $r3.<java.lang.StringBuilder: void <init>()>()
+org.joda.time.convert.ConverterManager.getPartialConverter : specialinvoke $r3.<java.lang.StringBuilder: void <init>()>() >>>>>>>> org.joda.time.convert.ConverterManager.getPartialConverter : $r9 = virtualinvoke $r3.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("No partial converter found for type: ")
+org.joda.time.convert.ConverterManager.getPartialConverter : $r9 = virtualinvoke $r3.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("No partial converter found for type: ") >>>>>>>> org.joda.time.convert.ConverterManager.getPartialConverter : $r11 = virtualinvoke r1.<java.lang.Object: java.lang.Class getClass()>()
+org.joda.time.convert.ConverterManager.getPartialConverter : $r11 = virtualinvoke r1.<java.lang.Object: java.lang.Class getClass()>() >>>>>>>> org.joda.time.convert.ConverterManager.getPartialConverter : $r10 = virtualinvoke $r11.<java.lang.Class: java.lang.String getName()>()
+org.joda.time.convert.ConverterManager.getPartialConverter : $r10 = virtualinvoke $r11.<java.lang.Class: java.lang.String getName()>() >>>>>>>> org.joda.time.convert.ConverterManager.getPartialConverter : $r12 = virtualinvoke $r9.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($r10)
+org.joda.time.convert.ConverterManager.getPartialConverter : $r12 = virtualinvoke $r9.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($r10) >>>>>>>> org.joda.time.convert.ConverterManager.getPartialConverter : $r13 = virtualinvoke $r12.<java.lang.StringBuilder: java.lang.String toString()>()
+org.joda.time.convert.ConverterManager.getPartialConverter : $r13 = virtualinvoke $r12.<java.lang.StringBuilder: java.lang.String toString()>() >>>>>>>> org.joda.time.convert.ConverterManager.getPartialConverter : specialinvoke $r7.<java.lang.IllegalArgumentException: void <init>(java.lang.String)>($r13)
+org.joda.time.convert.ConverterManager.getPartialConverter : specialinvoke $r7.<java.lang.IllegalArgumentException: void <init>(java.lang.String)>($r13) >>>>>>>> org.joda.time.convert.ConverterManager.getPartialConverter : throw $r7

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<test-data>
+    <test-code>
+        <description><![CDATA[
+simple failure case
+     ]]></description>
+        <expected-problems>1</expected-problems>
+        <code><![CDATA[
+public class BadTest {
+
+	@Test
+	public void testName() throws Exception {
+		
+		Thread.sleep(2000);
+		
+	}
+	
+}
+     ]]></code>
+    </test-code>
+
+</test-data>

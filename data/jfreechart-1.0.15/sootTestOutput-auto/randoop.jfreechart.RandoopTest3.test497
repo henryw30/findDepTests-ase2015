@@ -1,0 +1,8 @@
+org.jfree.chart.axis.Axis.getTickLabelFont : $r1 = r0.<org.jfree.chart.axis.Axis: java.awt.Font tickLabelFont>
+org.jfree.chart.axis.CategoryAxis.getLowerMargin : $d0 = r0.<org.jfree.chart.axis.CategoryAxis: double lowerMargin>
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null goto return
+org.jfree.chart.axis.CategoryAxis.getTickLabelFont : return r2
+org.jfree.chart.axis.CategoryAxis.getTickLabelFont : $r3 = r0.<org.jfree.chart.axis.CategoryAxis: java.util.Map tickLabelFontMap>
+org.jfree.chart.axis.CategoryAxis.getTickLabelFont : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "category")
+org.jfree.chart.axis.CategoryAxis.getTickLabelFont : r2 = virtualinvoke r0.<org.jfree.chart.axis.CategoryAxis: java.awt.Font getTickLabelFont()>()
+org.jfree.chart.axis.CategoryAxis.getTickLabelFont : if r2 != null goto return r2

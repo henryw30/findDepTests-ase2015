@@ -1,0 +1,32 @@
+crystal.model.DataSource.setParent : if r1 == null >>>>>>>> crystal.model.DataSource.setParent : $r2 = virtualinvoke r1.<java.lang.String: java.lang.String trim()>()
+crystal.model.DataSource.setParent : $r2 = virtualinvoke r1.<java.lang.String: java.lang.String trim()>() >>>>>>>> crystal.model.DataSource.setParent : $z0 = virtualinvoke $r2.<java.lang.String: boolean equals(java.lang.Object)>("")
+crystal.model.DataSource.setParent : $z0 = virtualinvoke $r2.<java.lang.String: boolean equals(java.lang.Object)>("") >>>>>>>> crystal.model.DataSource.setParent : if $z0 == 0
+crystal.model.DataSource.setParent : if $z0 == 0 >>>>>>>> crystal.model.DataSource.setParent : r0.<crystal.model.DataSource: java.lang.String _parent> = r1
+crystal.model.DataSource.setParent : r0.<crystal.model.DataSource: java.lang.String _parent> = r1 >>>>>>>> crystal.util.ValidInputChecker.checkValidStringInput : if r0 == null
+crystal.util.ValidInputChecker.checkValidStringInput : if r0 == null >>>>>>>> crystal.util.ValidInputChecker.checkValidStringInput : $r1 = virtualinvoke r0.<java.lang.String: java.lang.String trim()>()
+crystal.util.ValidInputChecker.checkValidStringInput : $r1 = virtualinvoke r0.<java.lang.String: java.lang.String trim()>() >>>>>>>> crystal.util.ValidInputChecker.checkValidStringInput : $z0 = virtualinvoke $r1.<java.lang.String: boolean equals(java.lang.Object)>("")
+crystal.util.ValidInputChecker.checkValidStringInput : $z0 = virtualinvoke $r1.<java.lang.String: boolean equals(java.lang.Object)>("") >>>>>>>> crystal.util.ValidInputChecker.checkValidStringInput : if $z0 == 0
+crystal.util.ValidInputChecker.checkValidStringInput : if $z0 == 0 >>>>>>>> crystal.client.ProjectPreferences.removeDataSource : $r2 = r0.<crystal.client.ProjectPreferences: java.util.Vector _dataSources>
+crystal.client.ProjectPreferences.removeDataSource : $r2 = r0.<crystal.client.ProjectPreferences: java.util.Vector _dataSources> >>>>>>>> crystal.client.ProjectPreferences.removeDataSource : virtualinvoke $r2.<java.util.Vector: boolean remove(java.lang.Object)>(r1)
+crystal.client.ProjectPreferences.removeDataSource : virtualinvoke $r2.<java.util.Vector: boolean remove(java.lang.Object)>(r1) >>>>>>>> crystal.client.ProjectPreferences.addDataSource : $r5 = r0.<crystal.client.ProjectPreferences: java.util.Vector _dataSources>
+crystal.client.ProjectPreferences.addDataSource : $r5 = r0.<crystal.client.ProjectPreferences: java.util.Vector _dataSources> >>>>>>>> crystal.client.ProjectPreferences.addDataSource : r2 = virtualinvoke $r5.<java.util.Vector: java.util.Iterator iterator()>()
+crystal.client.ProjectPreferences.addDataSource : r2 = virtualinvoke $r5.<java.util.Vector: java.util.Iterator iterator()>() >>>>>>>> crystal.client.ProjectPreferences.addDataSource : $z0 = interfaceinvoke r2.<java.util.Iterator: boolean hasNext()>()
+crystal.client.ProjectPreferences.addDataSource : $z0 = interfaceinvoke r2.<java.util.Iterator: boolean hasNext()>() >>>>>>>> crystal.client.ProjectPreferences.addDataSource : if $z0 == 0
+crystal.client.ProjectPreferences.addDataSource : if $z0 == 0 >>>>>>>> crystal.client.ProjectPreferences.addDataSource : $r18 = r0.<crystal.client.ProjectPreferences: java.util.Vector _dataSources>
+crystal.client.ProjectPreferences.addDataSource : $r18 = r0.<crystal.client.ProjectPreferences: java.util.Vector _dataSources> >>>>>>>> crystal.client.ProjectPreferences.addDataSource : virtualinvoke $r18.<java.util.Vector: boolean add(java.lang.Object)>(r1)
+crystal.client.ProjectPreferences.addDataSource : virtualinvoke $r18.<java.util.Vector: boolean add(java.lang.Object)>(r1) >>>>>>>> crystal.model.DataSource.equals : if r1 == null
+crystal.model.DataSource.equals : if r1 == null >>>>>>>> crystal.model.DataSource.equals : $r3 = virtualinvoke r0.<java.lang.Object: java.lang.Class getClass()>()
+crystal.model.DataSource.equals : $r3 = virtualinvoke r0.<java.lang.Object: java.lang.Class getClass()>() >>>>>>>> crystal.model.DataSource.equals : $r4 = virtualinvoke r1.<java.lang.Object: java.lang.Class getClass()>()
+crystal.model.DataSource.equals : $r4 = virtualinvoke r1.<java.lang.Object: java.lang.Class getClass()>() >>>>>>>> crystal.model.DataSource.equals : if $r3 != $r4
+crystal.model.DataSource.equals : if $r3 != $r4 >>>>>>>> crystal.model.DataSource.equals : r2 = (crystal.model.DataSource) r1
+crystal.model.DataSource.equals : r2 = (crystal.model.DataSource) r1 >>>>>>>> crystal.model.DataSource.equals : $r5 = r0.<crystal.model.DataSource: java.lang.String _shortName>
+crystal.model.DataSource.equals : $r5 = r0.<crystal.model.DataSource: java.lang.String _shortName> >>>>>>>> crystal.model.DataSource.equals : if $r5 != null
+crystal.model.DataSource.equals : if $r5 != null >>>>>>>> crystal.model.DataSource.equals : $r7 = r0.<crystal.model.DataSource: java.lang.String _shortName>
+crystal.model.DataSource.equals : $r7 = r0.<crystal.model.DataSource: java.lang.String _shortName> >>>>>>>> crystal.model.DataSource.equals : $r8 = r2.<crystal.model.DataSource: java.lang.String _shortName>
+crystal.model.DataSource.equals : $r8 = r2.<crystal.model.DataSource: java.lang.String _shortName> >>>>>>>> crystal.model.DataSource.equals : $z0 = virtualinvoke $r7.<java.lang.String: boolean equals(java.lang.Object)>($r8)
+crystal.model.DataSource.equals : $z0 = virtualinvoke $r7.<java.lang.String: boolean equals(java.lang.Object)>($r8) >>>>>>>> crystal.model.DataSource.equals : if $z0 == 0
+crystal.model.DataSource.equals : if $z0 == 0 >>>>>>>> crystal.model.DataSource.equals : $z1 = 1
+crystal.model.DataSource.equals : $z1 = 1 >>>>>>>> crystal.model.DataSource.equals : goto [?= return $z1]
+crystal.model.DataSource.equals : goto [?= return $z1] >>>>>>>> crystal.model.DataSource.equals : return $z1
+crystal.model.DataSource.equals : return $z1 >>>>>>>> crystal.client.ProjectPreferences.getDataSources : $r1 = r0.<crystal.client.ProjectPreferences: java.util.Vector _dataSources>
+crystal.client.ProjectPreferences.getDataSources : $r1 = r0.<crystal.client.ProjectPreferences: java.util.Vector _dataSources> >>>>>>>> crystal.client.ProjectPreferences.getDataSources : return $r1

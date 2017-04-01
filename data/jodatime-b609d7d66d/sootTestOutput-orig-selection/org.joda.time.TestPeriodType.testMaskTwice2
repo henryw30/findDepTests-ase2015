@@ -1,0 +1,44 @@
+org.joda.time.DateTimeUtils.setCurrentMillisSystem : staticinvoke <org.joda.time.DateTimeUtils: void checkPermission()>() >>>>>>>> org.joda.time.DateTimeUtils.checkPermission : r0 = staticinvoke <java.lang.System: java.lang.SecurityManager getSecurityManager()>()
+org.joda.time.DateTimeUtils.checkPermission : r0 = staticinvoke <java.lang.System: java.lang.SecurityManager getSecurityManager()>() >>>>>>>> org.joda.time.DateTimeUtils.checkPermission : if r0 == null
+org.joda.time.DateTimeUtils.checkPermission : if r0 == null >>>>>>>> org.joda.time.DateTimeUtils.setCurrentMillisSystem : $r0 = <org.joda.time.DateTimeUtils: org.joda.time.DateTimeUtils$SystemMillisProvider SYSTEM_MILLIS_PROVIDER>
+org.joda.time.DateTimeUtils.setCurrentMillisSystem : $r0 = <org.joda.time.DateTimeUtils: org.joda.time.DateTimeUtils$SystemMillisProvider SYSTEM_MILLIS_PROVIDER> >>>>>>>> org.joda.time.DateTimeUtils.setCurrentMillisSystem : <org.joda.time.DateTimeUtils: org.joda.time.DateTimeUtils$MillisProvider cMillisProvider> = $r0
+org.joda.time.DateTimeUtils.setCurrentMillisSystem : <org.joda.time.DateTimeUtils: org.joda.time.DateTimeUtils$MillisProvider cMillisProvider> = $r0 >>>>>>>> org.joda.time.DateTimeZone.setDefault : r1 = staticinvoke <java.lang.System: java.lang.SecurityManager getSecurityManager()>()
+org.joda.time.DateTimeZone.setDefault : r1 = staticinvoke <java.lang.System: java.lang.SecurityManager getSecurityManager()>() >>>>>>>> org.joda.time.DateTimeZone.setDefault : if r1 == null
+org.joda.time.DateTimeZone.setDefault : if r1 == null >>>>>>>> org.joda.time.DateTimeZone.setDefault : if r0 != null
+org.joda.time.DateTimeZone.setDefault : if r0 != null >>>>>>>> org.joda.time.DateTimeZone.setDefault : $r6 = class "org/joda/time/DateTimeZone"
+org.joda.time.DateTimeZone.setDefault : $r6 = class "org/joda/time/DateTimeZone" >>>>>>>> org.joda.time.DateTimeZone.setDefault : r3 = $r6
+org.joda.time.DateTimeZone.setDefault : r3 = $r6 >>>>>>>> org.joda.time.DateTimeZone.setDefault : entermonitor $r6
+org.joda.time.DateTimeZone.setDefault : entermonitor $r6 >>>>>>>> org.joda.time.DateTimeZone.setDefault : <org.joda.time.DateTimeZone: org.joda.time.DateTimeZone cDefault> = r0
+org.joda.time.DateTimeZone.setDefault : <org.joda.time.DateTimeZone: org.joda.time.DateTimeZone cDefault> = r0 >>>>>>>> org.joda.time.DateTimeZone.setDefault : exitmonitor r3
+org.joda.time.DateTimeZone.setDefault : exitmonitor r3 >>>>>>>> org.joda.time.DateTimeZone.setDefault : goto [?= return]
+org.joda.time.DateTimeZone.setDefault : goto [?= return] >>>>>>>> org.joda.time.DateTimeUtils.setCurrentMillisFixed : staticinvoke <org.joda.time.DateTimeUtils: void checkPermission()>()
+org.joda.time.DateTimeUtils.setCurrentMillisFixed : staticinvoke <org.joda.time.DateTimeUtils: void checkPermission()>() >>>>>>>> org.joda.time.DateTimeUtils.setCurrentMillisFixed : $r0 = new org.joda.time.DateTimeUtils$FixedMillisProvider
+org.joda.time.DateTimeUtils.setCurrentMillisFixed : $r0 = new org.joda.time.DateTimeUtils$FixedMillisProvider >>>>>>>> org.joda.time.DateTimeUtils.setCurrentMillisFixed : specialinvoke $r0.<org.joda.time.DateTimeUtils$FixedMillisProvider: void <init>(long)>(l0)
+org.joda.time.DateTimeUtils.setCurrentMillisFixed : specialinvoke $r0.<org.joda.time.DateTimeUtils$FixedMillisProvider: void <init>(long)>(l0) >>>>>>>> org.joda.time.DateTimeUtils.setCurrentMillisFixed : <org.joda.time.DateTimeUtils: org.joda.time.DateTimeUtils$MillisProvider cMillisProvider> = $r0
+org.joda.time.DateTimeUtils.setCurrentMillisFixed : <org.joda.time.DateTimeUtils: org.joda.time.DateTimeUtils$MillisProvider cMillisProvider> = $r0 >>>>>>>> org.joda.time.DateTimeZone.getDefault : r0 = <org.joda.time.DateTimeZone: org.joda.time.DateTimeZone cDefault>
+org.joda.time.DateTimeZone.getDefault : r0 = <org.joda.time.DateTimeZone: org.joda.time.DateTimeZone cDefault> >>>>>>>> org.joda.time.DateTimeZone.getDefault : if r0 != null
+org.joda.time.DateTimeZone.getDefault : if r0 != null >>>>>>>> org.joda.time.DateTimeZone.getDefault : return r0
+org.joda.time.DateTimeZone.getDefault : return r0 >>>>>>>> org.joda.time.PeriodType.dayTime : r0 = <org.joda.time.PeriodType: org.joda.time.PeriodType cDTime>
+org.joda.time.PeriodType.dayTime : r0 = <org.joda.time.PeriodType: org.joda.time.PeriodType cDTime> >>>>>>>> org.joda.time.PeriodType.dayTime : if r0 != null
+org.joda.time.PeriodType.dayTime : if r0 != null >>>>>>>> org.joda.time.PeriodType.dayTime : return r0
+org.joda.time.PeriodType.dayTime : return r0 >>>>>>>> org.joda.time.PeriodType.withYearsRemoved : $r1 = specialinvoke r0.<org.joda.time.PeriodType: org.joda.time.PeriodType withFieldRemoved(int,java.lang.String)>(0, "NoYears")
+org.joda.time.PeriodType.withYearsRemoved : $r1 = specialinvoke r0.<org.joda.time.PeriodType: org.joda.time.PeriodType withFieldRemoved(int,java.lang.String)>(0, "NoYears") >>>>>>>> org.joda.time.PeriodType.withFieldRemoved : $r3 = r0.<org.joda.time.PeriodType: int[] iIndices>
+org.joda.time.PeriodType.withFieldRemoved : $r3 = r0.<org.joda.time.PeriodType: int[] iIndices> >>>>>>>> org.joda.time.PeriodType.withFieldRemoved : i1 = $r3[i0]
+org.joda.time.PeriodType.withFieldRemoved : i1 = $r3[i0] >>>>>>>> org.joda.time.PeriodType.withFieldRemoved : if i1 != -1
+org.joda.time.PeriodType.withFieldRemoved : if i1 != -1 >>>>>>>> org.joda.time.PeriodType.withFieldRemoved : return r0
+org.joda.time.PeriodType.withFieldRemoved : return r0 >>>>>>>> org.joda.time.PeriodType.withYearsRemoved : return $r1
+org.joda.time.PeriodType.withYearsRemoved : return $r1 >>>>>>>> org.joda.time.PeriodType.withMonthsRemoved : $r1 = specialinvoke r0.<org.joda.time.PeriodType: org.joda.time.PeriodType withFieldRemoved(int,java.lang.String)>(1, "NoMonths")
+org.joda.time.PeriodType.withMonthsRemoved : $r1 = specialinvoke r0.<org.joda.time.PeriodType: org.joda.time.PeriodType withFieldRemoved(int,java.lang.String)>(1, "NoMonths") >>>>>>>> org.joda.time.PeriodType.withMonthsRemoved : return $r1
+org.joda.time.PeriodType.withMonthsRemoved : return $r1 >>>>>>>> org.joda.time.PeriodType.withWeeksRemoved : $r1 = specialinvoke r0.<org.joda.time.PeriodType: org.joda.time.PeriodType withFieldRemoved(int,java.lang.String)>(2, "NoWeeks")
+org.joda.time.PeriodType.withWeeksRemoved : $r1 = specialinvoke r0.<org.joda.time.PeriodType: org.joda.time.PeriodType withFieldRemoved(int,java.lang.String)>(2, "NoWeeks") >>>>>>>> org.joda.time.PeriodType.withWeeksRemoved : return $r1
+org.joda.time.PeriodType.withWeeksRemoved : return $r1 >>>>>>>> org.joda.time.PeriodType.millis : r0 = <org.joda.time.PeriodType: org.joda.time.PeriodType cMillis>
+org.joda.time.PeriodType.millis : r0 = <org.joda.time.PeriodType: org.joda.time.PeriodType cMillis> >>>>>>>> org.joda.time.PeriodType.millis : if r0 != null
+org.joda.time.PeriodType.millis : if r0 != null >>>>>>>> org.joda.time.PeriodType.millis : return r0
+org.joda.time.PeriodType.millis : return r0 >>>>>>>> org.joda.time.PeriodType.withDaysRemoved : $r1 = specialinvoke r0.<org.joda.time.PeriodType: org.joda.time.PeriodType withFieldRemoved(int,java.lang.String)>(3, "NoDays")
+org.joda.time.PeriodType.withDaysRemoved : $r1 = specialinvoke r0.<org.joda.time.PeriodType: org.joda.time.PeriodType withFieldRemoved(int,java.lang.String)>(3, "NoDays") >>>>>>>> org.joda.time.PeriodType.withDaysRemoved : return $r1
+org.joda.time.PeriodType.withDaysRemoved : return $r1 >>>>>>>> org.joda.time.PeriodType.withHoursRemoved : $r1 = specialinvoke r0.<org.joda.time.PeriodType: org.joda.time.PeriodType withFieldRemoved(int,java.lang.String)>(4, "NoHours")
+org.joda.time.PeriodType.withHoursRemoved : $r1 = specialinvoke r0.<org.joda.time.PeriodType: org.joda.time.PeriodType withFieldRemoved(int,java.lang.String)>(4, "NoHours") >>>>>>>> org.joda.time.PeriodType.withHoursRemoved : return $r1
+org.joda.time.PeriodType.withHoursRemoved : return $r1 >>>>>>>> org.joda.time.PeriodType.withMinutesRemoved : $r1 = specialinvoke r0.<org.joda.time.PeriodType: org.joda.time.PeriodType withFieldRemoved(int,java.lang.String)>(5, "NoMinutes")
+org.joda.time.PeriodType.withMinutesRemoved : $r1 = specialinvoke r0.<org.joda.time.PeriodType: org.joda.time.PeriodType withFieldRemoved(int,java.lang.String)>(5, "NoMinutes") >>>>>>>> org.joda.time.PeriodType.withMinutesRemoved : return $r1
+org.joda.time.PeriodType.withMinutesRemoved : return $r1 >>>>>>>> org.joda.time.PeriodType.withSecondsRemoved : $r1 = specialinvoke r0.<org.joda.time.PeriodType: org.joda.time.PeriodType withFieldRemoved(int,java.lang.String)>(6, "NoSeconds")
+org.joda.time.PeriodType.withSecondsRemoved : $r1 = specialinvoke r0.<org.joda.time.PeriodType: org.joda.time.PeriodType withFieldRemoved(int,java.lang.String)>(6, "NoSeconds") >>>>>>>> org.joda.time.PeriodType.withSecondsRemoved : return $r1

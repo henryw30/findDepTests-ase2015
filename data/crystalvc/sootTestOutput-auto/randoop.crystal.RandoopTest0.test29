@@ -1,0 +1,17 @@
+crystal.util.RunIt.validHG : $r5 = staticinvoke <crystal.util.RunIt: crystal.util.RunIt$Output execute(java.lang.String,java.lang.String[],java.lang.String,boolean)>(r0, r2, r1, 0)
+crystal.util.RunIt.validHG : r2[0] = "--version"
+crystal.util.RunIt.validHG : r2 = newarray (java.lang.String)[1]
+crystal.util.RunIt.execute : if r1 == null goto $r20 = newarray (java.lang.String)[1]
+crystal.util.RunIt.execute : $r18 = new java.io.File
+crystal.util.RunIt.execute : $z1 = <crystal.util.RunIt: boolean $assertionsDisabled>
+crystal.util.RunIt.execute : $r22 = new java.util.Vector
+crystal.util.RunIt.execute : $r13 = new java.lang.ProcessBuilder
+crystal.util.RunIt.execute : r6 = r1
+crystal.util.RunIt.execute : r34 = virtualinvoke r3.<java.lang.ProcessBuilder: java.lang.Process start()>()
+crystal.util.RunIt.execute : virtualinvoke r3.<java.lang.ProcessBuilder: java.lang.ProcessBuilder command(java.util.List)>(r5)
+crystal.util.RunIt.execute : $z3 = <crystal.util.RunIt: boolean $assertionsDisabled>
+crystal.util.RunIt.execute : l0 = staticinvoke <java.lang.System: long currentTimeMillis()>()
+crystal.util.RunIt.execute : interfaceinvoke r5.<java.util.List: boolean add(java.lang.Object)>(r7)
+crystal.util.RunIt.execute : $r24 = <crystal.util.RunIt: org.apache.log4j.Logger _log>
+crystal.util.RunIt.execute : interfaceinvoke r5.<java.util.List: boolean add(java.lang.Object)>(r0)
+crystal.util.RunIt.execute : $r15 = new java.io.File

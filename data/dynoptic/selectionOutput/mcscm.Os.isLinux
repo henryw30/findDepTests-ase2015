@@ -1,0 +1,8 @@
+mcscm.Os.isLinux : $r0 = staticinvoke <mcscm.Os: java.lang.String getOsName()>() >>>>>>>> mcscm.Os.isLinux : $r1 = virtualinvoke $r0.<java.lang.String: java.lang.String toLowerCase()>()
+mcscm.Os.isLinux : $r1 = virtualinvoke $r0.<java.lang.String: java.lang.String toLowerCase()>() >>>>>>>> mcscm.Os.isLinux : $i0 = virtualinvoke $r1.<java.lang.String: int indexOf(java.lang.String)>("linux")
+mcscm.Os.isLinux : $i0 = virtualinvoke $r1.<java.lang.String: int indexOf(java.lang.String)>("linux") >>>>>>>> mcscm.Os.isLinux : if $i0 < 0
+mcscm.Os.isLinux : if $i0 < 0 >>>>>>>> mcscm.Os.isLinux : $z0 = 1
+mcscm.Os.isLinux : if $i0 < 0 >>>>>>>> mcscm.Os.isLinux : $z0 = 0
+mcscm.Os.isLinux : $z0 = 0 >>>>>>>> mcscm.Os.isLinux : return $z0
+mcscm.Os.isLinux : $z0 = 1 >>>>>>>> mcscm.Os.isLinux : goto [?= return $z0]
+mcscm.Os.isLinux : goto [?= return $z0] >>>>>>>> mcscm.Os.isLinux : return $z0

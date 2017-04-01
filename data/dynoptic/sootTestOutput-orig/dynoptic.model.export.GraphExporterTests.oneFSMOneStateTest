@@ -1,0 +1,105 @@
+dynoptic.model.alphabet.FSMAlphabet.clear : $r1 = r0.<dynoptic.model.alphabet.FSMAlphabet: java.util.Set events>
+dynoptic.model.export.DotExportFormatter.nodeToString : if z1 == 0 goto $r30 = new java.lang.StringBuilder
+dynoptic.model.export.DotExportFormatter.nodeToString : $r19 = new java.lang.StringBuilder
+dynoptic.model.export.DotExportFormatter.nodeToString : if z0 == 0 goto (branch)
+dynoptic.model.export.DotExportFormatter.nodeToString : $r11 = new java.lang.StringBuilder
+dynoptic.model.export.DotExportFormatter.nodeToString : $r30 = new java.lang.StringBuilder
+dynoptic.model.export.DotExportFormatter.nodeToString : $r14 = new java.lang.StringBuilder
+dynoptic.model.export.DotExportFormatter.nodeToString : r4 = ""
+dynoptic.model.export.DotExportFormatter.nodeToString : $r27 = new java.lang.StringBuilder
+dynoptic.model.export.DotExportFormatter.nodeToString : $i2 = r0.<dynoptic.model.export.DotExportFormatter: int startStateCount>
+dynoptic.model.export.DotExportFormatter.nodeToString : $r2 = new java.lang.StringBuilder
+dynoptic.model.export.GraphExporter.generatePngFileFromDotFile : r3 = staticinvoke <dynoptic.model.export.GraphExporter: java.lang.String getDotCommand()>()
+dynoptic.model.export.GraphExporter.generatePngFileFromDotFile : $r1 = new java.io.File
+dynoptic.model.export.GraphExporter.exportAbsFSM : $r19 = virtualinvoke r4.<dynoptic.model.export.GraphExportFormatter: java.lang.String nodeToString(int,dynoptic.model.AbsFSMState,boolean,boolean)>(i0, r8, $z1, $z2)
+dynoptic.model.export.GraphExporter.exportAbsFSM : $r20 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>(i0)
+dynoptic.model.export.GraphExporter.exportAbsFSM : r10 = interfaceinvoke r9.<java.util.Set: java.util.Iterator iterator()>()
+dynoptic.model.export.GraphExporter.exportAbsFSM : goto [?= $z0 = interfaceinvoke r7.<java.util.Iterator: boolean hasNext()>()]
+dynoptic.model.export.GraphExporter.exportAbsFSM : $r37 = virtualinvoke r4.<dynoptic.model.export.GraphExportFormatter: java.lang.String endGraphString()>()
+dynoptic.model.export.GraphExporter.exportAbsFSM : $r16 = virtualinvoke r4.<dynoptic.model.export.GraphExportFormatter: java.lang.String beginGraphString()>()
+dynoptic.model.export.GraphExporter.exportAbsFSM : r9 = virtualinvoke r29.<dynoptic.model.AbsFSMState: java.util.Set getTransitioningEvents()>()
+dynoptic.model.export.GraphExporter.exportAbsFSM : $r30 = interfaceinvoke r5.<java.util.Map: java.lang.Object get(java.lang.Object)>(r29)
+dynoptic.model.export.GraphExporter.exportAbsFSM : r7 = interfaceinvoke r6.<java.util.Set: java.util.Iterator iterator()>()
+dynoptic.model.export.GraphExporter.exportAbsFSM : goto [?= $z3 = interfaceinvoke r27.<java.util.Iterator: boolean hasNext()>()]
+dynoptic.model.export.GraphExporter.exportAbsFSM : i0 = 0
+dynoptic.model.export.GraphExporter.exportAbsFSM : i0 = i0 + 1
+dynoptic.model.export.GraphExporter.exportAbsFSM : $r3 = new dynoptic.model.export.DotExportFormatter
+dynoptic.model.export.GraphExporter.exportAbsFSM : $r17 = virtualinvoke r1.<dynoptic.model.AbsFSM: java.util.Set getStates()>()
+dynoptic.model.export.GraphExporter.exportAbsFSM : goto [?= return]
+dynoptic.model.export.GraphExporter.exportAbsFSM : $z1 = virtualinvoke r8.<dynoptic.model.AbsFSMState: boolean isInitial()>()
+dynoptic.model.export.GraphExporter.exportAbsFSM : $r22 = new java.lang.StringBuilder
+dynoptic.model.export.GraphExporter.exportAbsFSM : r5 = staticinvoke <dynoptic.util.Util: java.util.Map newMap()>()
+dynoptic.model.export.GraphExporter.exportAbsFSM : r27 = interfaceinvoke r6.<java.util.Set: java.util.Iterator iterator()>()
+dynoptic.model.export.GraphExportFormatter.quote : lookupswitch(c1) {     case 34: goto virtualinvoke r2.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("\\\"");     case 92: goto virtualinvoke r2.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("\\\\");     default: goto virtualinvoke r2.<java.lang.StringBuilder: java.lang.StringBuilder append(char)>(c1); }
+dynoptic.model.export.GraphExportFormatter.quote : i0 = 0
+dynoptic.model.export.GraphExportFormatter.quote : $r1 = new java.lang.StringBuilder
+dynoptic.model.export.GraphExportFormatter.quote : c1 = virtualinvoke r0.<java.lang.String: char charAt(int)>(i0)
+dynoptic.model.export.GraphExportFormatter.quote : $r6 = virtualinvoke r2.<java.lang.StringBuilder: java.lang.String toString()>()
+dynoptic.model.export.GraphExportFormatter.quote : virtualinvoke r2.<java.lang.StringBuilder: java.lang.StringBuilder append(char)>(c1)
+dynoptic.model.AbsFSM.recomputeAlphabet : r3 = virtualinvoke r2.<dynoptic.model.AbsFSMState: java.util.Set getTransitioningEvents()>()
+dynoptic.model.AbsFSM.recomputeAlphabet : goto [?= $z0 = interfaceinvoke r1.<java.util.Iterator: boolean hasNext()>()]
+dynoptic.model.AbsFSM.recomputeAlphabet : $r5 = r0.<dynoptic.model.AbsFSM: java.util.Set states>
+dynoptic.model.AbsFSM.recomputeAlphabet : $r7 = r0.<dynoptic.model.AbsFSM: dynoptic.model.alphabet.FSMAlphabet alphabet>
+dynoptic.model.AbsFSM.recomputeAlphabet : $r4 = r0.<dynoptic.model.AbsFSM: dynoptic.model.alphabet.FSMAlphabet alphabet>
+dynoptic.model.fifosys.cfsm.fsm.FSMState.toString : $r1 = virtualinvoke r0.<dynoptic.model.fifosys.cfsm.fsm.FSMState: java.lang.String toShortIntString()>()
+dynoptic.model.fifosys.cfsm.fsm.FSM.getStates : $r1 = r0.<dynoptic.model.fifosys.cfsm.fsm.FSM: java.util.Set states>
+dynoptic.model.fifosys.cfsm.fsm.FSMState.toShortIntString : $i0 = r0.<dynoptic.model.fifosys.cfsm.fsm.FSMState: int scmId>
+dynoptic.DynopticTest.cleanDotOutputs : r4 = virtualinvoke r2.<java.io.File: java.io.File[] listFiles(java.io.FileFilter)>(r3)
+dynoptic.DynopticTest.cleanDotOutputs : $r7 = new org.apache.commons.io.filefilter.WildcardFileFilter
+dynoptic.DynopticTest.cleanDotOutputs : r5 = r4
+dynoptic.DynopticTest.cleanDotOutputs : virtualinvoke r6.<java.io.File: boolean delete()>()
+dynoptic.DynopticTest.cleanDotOutputs : $r1 = new java.io.File
+dynoptic.model.fifosys.cfsm.CFSM.getFSMs : $r1 = r0.<dynoptic.model.fifosys.cfsm.CFSM: java.util.List fsms>
+dynoptic.model.alphabet.FSMAlphabet.addAll : $r2 = r0.<dynoptic.model.alphabet.FSMAlphabet: java.util.Set events>
+dynoptic.util.Util.newSet : $r1 = new java.util.LinkedHashSet
+dynoptic.util.Util.newSet : $r0 = new java.util.LinkedHashSet
+dynoptic.model.fifosys.cfsm.fsm.FSMState.hashCode : $i4 = i3 * 31
+dynoptic.model.fifosys.cfsm.fsm.FSMState.hashCode : $i7 = i6 * 31
+dynoptic.model.fifosys.cfsm.fsm.FSMState.hashCode : $i10 = i9 * 31
+dynoptic.model.fifosys.cfsm.fsm.FSMState.hashCode : b0 = 31
+dynoptic.model.fifosys.cfsm.fsm.FSMState.hashCode : return 1
+dynoptic.model.fifosys.cfsm.fsm.FSMState.hashCode : $i1 = b0 * 31
+dynoptic.model.fifosys.cfsm.fsm.FSMState.isAccept : $z0 = r0.<dynoptic.model.fifosys.cfsm.fsm.FSMState: boolean isAccept>
+dynoptic.model.alphabet.FSMAlphabet.iterator : $r1 = r0.<dynoptic.model.alphabet.FSMAlphabet: java.util.Set events>
+dynoptic.model.export.DotExportFormatter.endGraphString : return "} // digraph {\n"
+dynoptic.model.export.GraphExporter.exportCFSM : $r5 = virtualinvoke r1.<dynoptic.model.fifosys.cfsm.CFSM: java.util.List getFSMs()>()
+dynoptic.model.export.GraphExporter.exportCFSM : staticinvoke <dynoptic.model.export.GraphExporter: void exportCFSM(java.io.Writer,dynoptic.model.fifosys.cfsm.CFSM)>(r4, r1)
+dynoptic.model.export.GraphExporter.exportCFSM : $r11 = new java.io.PrintWriter
+dynoptic.model.export.GraphExporter.exportCFSM : goto [?= $z0 = interfaceinvoke r2.<java.util.Iterator: boolean hasNext()>()]
+dynoptic.model.export.GraphExporter.exportCFSM : $r6 = <dynoptic.model.export.GraphExporter: java.util.logging.Logger logger>
+dynoptic.model.export.GraphExporter.exportCFSM : virtualinvoke r4.<java.io.PrintWriter: void close()>()
+dynoptic.model.export.GraphExporter.exportCFSM : goto [?= staticinvoke <dynoptic.model.export.GraphExporter: void exportCFSM(java.io.Writer,dynoptic.model.fifosys.cfsm.CFSM)>(r4, r1)]
+dynoptic.model.export.GraphExporter.exportCFSM : $r4 = new java.lang.StringBuilder
+dynoptic.model.export.GraphExporter.exportCFSM : $r2 = new java.io.File
+dynoptic.model.fifosys.cfsm.fsm.FSMState.isInitial : $z0 = r0.<dynoptic.model.fifosys.cfsm.fsm.FSMState: boolean isInitial>
+dynoptic.model.AbsFSM.getAlphabet : $r1 = r0.<dynoptic.model.AbsFSM: dynoptic.model.alphabet.FSMAlphabet alphabet>
+dynoptic.model.export.GraphExporter.getDotCommand : $z0 = virtualinvoke r2.<java.io.File: boolean exists()>()
+dynoptic.model.export.GraphExporter.getDotCommand : r0 = <dynoptic.model.export.GraphExporter: java.lang.String[] dotCommands>
+dynoptic.model.export.GraphExporter.getDotCommand : $r3 = new java.io.File
+dynoptic.model.export.GraphExporter.getDotCommand : $r5 = r4.<synoptic.main.SynopticMain: synoptic.main.options.SynopticOptions options>
+dynoptic.model.export.GraphExporter.getDotCommand : r4 = staticinvoke <synoptic.main.SynopticMain: synoptic.main.SynopticMain getInstanceWithExistenceCheck()>()
+dynoptic.model.export.DotExportFormatter.beginGraphString : return "digraph {\n"
+dynoptic.model.fifosys.cfsm.CFSM.addFSM : $i9 = r0.<dynoptic.model.fifosys.cfsm.CFSM: int unSpecifiedPids>
+dynoptic.model.fifosys.cfsm.CFSM.addFSM : $z1 = <dynoptic.model.fifosys.cfsm.CFSM: boolean $assertionsDisabled>
+dynoptic.model.fifosys.cfsm.CFSM.addFSM : i0 = virtualinvoke r1.<dynoptic.model.fifosys.cfsm.fsm.FSM: int getPid()>()
+dynoptic.model.fifosys.cfsm.CFSM.addFSM : $r19 = r0.<dynoptic.model.fifosys.cfsm.CFSM: dynoptic.model.alphabet.FSMAlphabet alphabet>
+dynoptic.model.fifosys.cfsm.CFSM.addFSM : $r17 = r0.<dynoptic.model.fifosys.cfsm.CFSM: java.util.List fsms>
+dynoptic.model.fifosys.cfsm.CFSM.addFSM : $z0 = <dynoptic.model.fifosys.cfsm.CFSM: boolean $assertionsDisabled>
+dynoptic.model.fifosys.cfsm.CFSM.addFSM : $z2 = <dynoptic.main.DynopticMain: boolean assertsOn>
+dynoptic.util.Util.newList : $r0 = new java.util.ArrayList
+dynoptic.util.Util.newList : $r1 = new java.util.ArrayList
+dynoptic.util.Util.newMap : $r0 = new java.util.LinkedHashMap
+dynoptic.model.fifosys.cfsm.fsm.FSM.getPid : $i0 = r0.<dynoptic.model.fifosys.cfsm.fsm.FSM: int pid>
+dynoptic.model.export.GraphExporterTests.setUp : $r4 = new dynoptic.model.fifosys.cfsm.fsm.FSMState
+dynoptic.model.export.GraphExporterTests.setUp : $r1 = new dynoptic.model.fifosys.cfsm.fsm.FSMState
+dynoptic.model.export.GraphExporterTests.setUp : $r6 = new dynoptic.model.fifosys.cfsm.fsm.FSMState
+dynoptic.model.export.GraphExporterTests.setUp : $r3 = new dynoptic.model.fifosys.cfsm.fsm.FSMState
+dynoptic.model.export.GraphExporterTests.setUp : $r8 = staticinvoke <dynoptic.util.Util: java.util.List newList(int)>(1)
+dynoptic.model.export.GraphExporterTests.setUp : $r5 = new dynoptic.model.fifosys.cfsm.fsm.FSMState
+dynoptic.model.export.GraphExporterTests.setUp : $r9 = r0.<dynoptic.model.export.GraphExporterTests: java.util.List channels>
+dynoptic.model.export.GraphExporterTests.setUp : $r7 = new synoptic.model.channelid.ChannelId
+dynoptic.model.export.GraphExporterTests.generateOutput : virtualinvoke r0.<dynoptic.model.export.GraphExporterTests: void cleanDotOutputs()>()
+dynoptic.model.export.GraphExporterTests.generateOutput : $r2 = new java.io.File
+dynoptic.model.export.GraphExporterTests.generateOutput : staticinvoke <dynoptic.model.export.GraphExporter: void generatePngFileFromDotFile(java.lang.String)>("./test.dot")
+dynoptic.model.export.GraphExporterTests.generateOutput : staticinvoke <dynoptic.model.export.GraphExporter: void exportCFSM(java.lang.String,dynoptic.model.fifosys.cfsm.CFSM)>("./test.dot", r1)
+dynoptic.model.fifosys.cfsm.fsm.FSMState.getTransitioningEvents : $r1 = r0.<dynoptic.model.fifosys.cfsm.fsm.FSMState: java.util.Map transitions>

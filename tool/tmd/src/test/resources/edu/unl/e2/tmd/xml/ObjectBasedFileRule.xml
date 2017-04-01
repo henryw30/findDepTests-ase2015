@@ -1,0 +1,1427 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<test-data>
+    <test-code>
+        <description><![CDATA[
+simple failure case 1
+     ]]></description>
+        <expected-problems>1</expected-problems>
+        <code><![CDATA[
+
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.File;
+
+public class BadTest {
+
+	
+	@Test()
+	public void testName() throws Exception {
+		
+		FileWriter writer= new FileWriter(new File("file"));
+		
+		writer.write(new char[]{'s'});
+	}
+	
+	@Test()
+	public void testName2() throws Exception {
+		
+		FileReader reader = new FileReader(new File("file"));
+		
+		int character=reader.read();
+		
+	}
+	
+
+}
+
+     ]]></code>
+    </test-code>
+    
+    <test-code>
+        <description><![CDATA[
+simple failure case 2
+     ]]></description>
+        <expected-problems>1</expected-problems>
+        <code><![CDATA[
+
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.File;
+
+public class BadTest {
+
+	
+	@Test()
+	public void testName() throws Exception {
+		
+		File f=new File("file");
+		
+		FileWriter writer= new FileWriter(f);
+		
+		writer.write(new char[]{'s'});
+	}
+	
+	@Test()
+	public void testName2() throws Exception {
+		
+		File f=new File("file");
+		
+		FileReader reader = new FileReader(f);
+		
+		int character=reader.read();
+		
+	}
+	
+
+}
+
+     ]]></code>
+    </test-code>    
+ 
+    <test-code>
+        <description><![CDATA[
+simple failure case 2.1
+     ]]></description>
+        <expected-problems>1</expected-problems>
+        <code><![CDATA[
+
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.File;
+
+public class BadTest {
+
+	
+	@Test()
+	public void testName() throws Exception {
+		
+		File f;
+		
+		f=new File("file");
+		
+		FileWriter writer= new FileWriter(f);
+		
+		writer.write(new char[]{'s'});
+	}
+	
+	@Test()
+	public void testName2() throws Exception {
+		
+		File f;
+		
+		f=new File("file");
+		
+		FileReader reader = new FileReader(f);
+		
+		int character=reader.read();
+		
+	}
+	
+
+}
+
+     ]]></code>
+    </test-code>  
+ 
+ 
+     <test-code>
+        <description><![CDATA[
+simple failure case 3
+     ]]></description>
+        <expected-problems>1</expected-problems>
+        <code><![CDATA[
+
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.File;
+
+public class BadTest {
+
+	private File  f;
+	
+	@Test()
+	public void testName() throws Exception {
+		
+		f=new File("file");
+		
+		FileWriter writer= new FileWriter(f);
+		
+		writer.write(new char[]{'s'});
+	}
+	
+	@Test()
+	public void testName2() throws Exception {
+		
+		f=new File("file");
+		
+		FileReader reader = new FileReader(f);
+		
+		int character=reader.read();
+		
+	}
+	
+
+}
+
+     ]]></code>
+    </test-code>
+ 
+      <test-code>
+        <description><![CDATA[
+simple failure case 1.1
+     ]]></description>
+        <expected-problems>1</expected-problems>
+        <code><![CDATA[
+
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.File;
+
+public class BadTest {
+
+	
+	@Test()
+	public void testName() throws Exception {
+		
+		FileWriter writer= new FileWriter(new File("file"));
+		
+		writer.write(new char[]{'s'});
+	}
+	
+	@Test()
+	public void testName2() throws Exception {
+		
+		FileReader reader = new FileReader(new File("file"));
+		FileWriter writer= new FileWriter(new File("file"));
+		
+		int character=reader.read();
+		
+	}
+	
+
+}
+
+     ]]></code>
+    </test-code>
+    
+ 
+ 
+     <test-code>
+        <description><![CDATA[
+simple ok case 0
+     ]]></description>
+        <expected-problems>0</expected-problems>
+        <code><![CDATA[
+
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.File;
+
+public class BadTest {
+
+	
+	@Test()
+	public void testName() throws Exception {
+		
+		FileWriter writer= new FileWriter(new File("file"));
+		
+		writer.write(new char[]{'s'});
+	}
+	
+	@Test()
+	public void testName2() throws Exception {
+		
+		FileWriter writer= new FileWriter(new File("file"));
+		FileReader reader = new FileReader(new File("file"));
+		
+		int character=reader.read();
+		
+	}
+	
+
+}
+
+     ]]></code>
+    </test-code>
+    
+         <test-code>
+        <description><![CDATA[
+simple ok case 0.1
+     ]]></description>
+        <expected-problems>0</expected-problems>
+        <code><![CDATA[
+
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.File;
+
+public class BadTest {
+
+	@Before
+	public void setUp(){
+		FileWriter writer= new FileWriter(new File("file"));
+	}
+	
+	@Test()
+	public void testName() throws Exception {
+		
+		FileWriter writer= new FileWriter(new File("file"));
+		
+		writer.write(new char[]{'s'});
+	}
+	
+	@Test()
+	public void testName2() throws Exception {
+		
+		FileReader reader = new FileReader(new File("file"));
+		
+		int character=reader.read();
+		
+	}
+	
+
+}
+
+     ]]></code>
+    </test-code>
+    
+             <test-code>
+        <description><![CDATA[
+simple ok case 0.2
+     ]]></description>
+        <expected-problems>0</expected-problems>
+        <code><![CDATA[
+
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.File;
+
+public class BadTest {
+
+	@After
+	public void tearDown(){
+		FileWriter writer= new FileWriter(new File("file"));
+	}
+	
+	@Test()
+	public void testName() throws Exception {
+		
+		FileWriter writer= new FileWriter(new File("file"));
+		
+		writer.write(new char[]{'s'});
+	}
+	
+	@Test()
+	public void testName2() throws Exception {
+		
+		FileReader reader = new FileReader(new File("file"));
+		
+		int character=reader.read();
+		
+	}
+	
+
+}
+
+     ]]></code>
+    </test-code>
+    
+     <test-code>
+        <description><![CDATA[
+simple ok case
+     ]]></description>
+        <expected-problems>0</expected-problems>
+        <code><![CDATA[
+
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.File;
+
+public class BadTest {
+
+	
+	@Test()
+	public void testName() throws Exception {
+		
+		FileWriter writer= new FileWriter(new File("file2"));
+		
+		writer.write(new char[]{'s'});
+	}
+	
+	@Test()
+	public void testName2() throws Exception {
+		
+		FileReader reader = new FileReader(new File("file"));
+		
+		int character=reader.read();
+		
+	}
+	
+
+}
+
+     ]]></code>
+    </test-code>   
+    
+  
+     <test-code>
+        <description><![CDATA[
+simple failure case 4
+     ]]></description>
+        <expected-problems>1</expected-problems>
+        <code><![CDATA[
+
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.File;
+
+public class BadTest {
+
+	private File  f=new File("file");
+	
+	@Test()
+	public void testName() throws Exception {
+		
+		FileWriter writer= new FileWriter(f);
+		
+		writer.write(new char[]{'s'});
+	}
+	
+	@Test()
+	public void testName2() throws Exception {
+				
+		FileReader reader = new FileReader(f);
+		
+		int character=reader.read();
+		
+	}
+	
+
+}
+
+     ]]></code>
+    </test-code>  
+    
+     
+     <test-code>
+        <description><![CDATA[
+simple failure case 5
+     ]]></description>
+        <expected-problems>1</expected-problems>
+        <code><![CDATA[
+
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.File;
+
+public class BadTest {
+
+	private File  f;
+	
+	@Before
+	public void setUp(){
+		f=new File("file");
+	}
+	
+	@Test()
+	public void testName() throws Exception {
+		
+		FileWriter writer= new FileWriter(f);
+		
+		writer.write(new char[]{'s'});
+	}
+	
+	@Test()
+	public void testName2() throws Exception {
+				
+		FileReader reader = new FileReader(f);
+		
+		int character=reader.read();
+		
+	}
+	
+
+}
+
+     ]]></code>
+    </test-code>  
+
+     <test-code>
+        <description><![CDATA[
+simple failure case 6
+     ]]></description>
+        <expected-problems>1</expected-problems>
+        <code><![CDATA[
+
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.File;
+
+public class BadTest {
+	
+	@Test()
+	public void testName() throws Exception {
+		
+		FileWriter writer= new FileWriter(new File("el","queso"));
+		
+		writer.write(new char[]{'s'});
+	}
+	
+	@Test()
+	public void testName2() throws Exception {
+				
+		FileReader reader = new FileReader(new File("el","queso"));
+		
+		int character=reader.read();
+		
+	}
+	
+
+}
+
+     ]]></code>
+    </test-code>
+ 
+     <test-code>
+        <description><![CDATA[
+simple failure case 7
+     ]]></description>
+        <expected-problems>1</expected-problems>
+        <code><![CDATA[
+
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.File;
+
+public class BadTest {
+	
+	private File f=new File("el");
+	
+	@Test()
+	public void testName() throws Exception {
+		
+		FileWriter writer= new FileWriter(new File(f,"queso"));
+		
+		writer.write(new char[]{'s'});
+	}
+	
+	@Test()
+	public void testName2() throws Exception {
+				
+		FileReader reader = new FileReader(new File(f,"queso"));
+		
+		int character=reader.read();
+		
+	}
+	
+
+}
+
+     ]]></code>
+    </test-code> 
+
+     <test-code>
+        <description><![CDATA[
+simple failure case 8
+     ]]></description>
+        <expected-problems>1</expected-problems>
+        <code><![CDATA[
+
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.File;
+
+public class BadTest {
+		
+	@Test()
+	public void testName() throws Exception {
+		
+		FileWriter writer= new FileWriter(new File(new File("el"),"queso"));
+		
+		writer.write(new char[]{'s'});
+	}
+	
+	@Test()
+	public void testName2() throws Exception {
+				
+		FileReader reader = new FileReader(new File(new File("el"),"queso"));
+		
+		int character=reader.read();
+		
+	}
+	
+
+}
+
+     ]]></code>
+    </test-code> 
+
+     <test-code>
+        <description><![CDATA[
+simple failure case 9
+     ]]></description>
+        <expected-problems>1</expected-problems>
+        <code><![CDATA[
+
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.File;
+
+public class BadTest {
+		
+	private File one=new File("one");
+		
+	@Test()
+	public void testName() throws Exception {
+		
+		FileWriter writer= new FileWriter(new File(new File(new File(one,"piece"),"of"),"cheese"));
+		
+		writer.write(new char[]{'s'});
+	}
+	
+	@Test()
+	public void testName2() throws Exception {
+				
+		FileReader reader = new FileReader(new File(new File(new File(one,"piece"),"of"),"cheese"));
+		
+		int character=reader.read();
+		
+	}
+	
+
+}
+
+     ]]></code>
+    </test-code> 
+     <test-code>
+        <description><![CDATA[
+simple failure case 10
+     ]]></description>
+        <expected-problems>1</expected-problems>
+        <code><![CDATA[
+
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.File;
+
+public class BadTest {
+	
+	private File f=new File("hello"+"world");
+	
+	@Test()
+	public void testName() throws Exception {
+		
+		FileWriter writer= new FileWriter(new File(f,"!"));
+		
+		writer.write(new char[]{'s'});
+	}
+	
+	@Test()
+	public void testName2() throws Exception {
+				
+		FileReader reader = new FileReader(new File(f,"!"));
+		
+		int character=reader.read();
+		
+	}
+	
+
+}
+
+     ]]></code>
+    </test-code> 
+
+     <test-code>
+        <description><![CDATA[
+simple failure case 11
+     ]]></description>
+        <expected-problems>1</expected-problems>
+        <code><![CDATA[
+
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.File;
+
+public class BadTest {
+	
+	private File f=new File("hello world");
+	
+	@Test()
+	public void testName() throws Exception {
+		String path="!";
+		
+		FileWriter writer= new FileWriter(new File(f,path));
+		
+		writer.write(new char[]{'s'});
+	}
+	
+	@Test()
+	public void testName2() throws Exception {
+		String path="!";
+				
+		FileReader reader = new FileReader(new File(f,path));
+		
+		int character=reader.read();
+		
+	}
+	
+
+}
+
+     ]]></code>
+    </test-code> 
+     <test-code>
+        <description><![CDATA[
+simple failure case 12
+     ]]></description>
+        <expected-problems>1</expected-problems>
+        <code><![CDATA[
+
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.File;
+
+public class BadTest {
+	
+		String path="!";
+	private File f=new File("hello world");
+	
+	@Test()
+	public void testName() throws Exception {
+		
+		FileWriter writer= new FileWriter(new File(f,path));
+		
+		writer.write(new char[]{'s'});
+	}
+	
+	@Test()
+	public void testName2() throws Exception {
+				
+		FileReader reader = new FileReader(new File(f,path));
+		
+		int character=reader.read();
+		
+	}
+	
+
+}
+
+     ]]></code>
+    </test-code>
+
+     <test-code>
+        <description><![CDATA[
+simple failure case 13
+     ]]></description>
+        <expected-problems>1</expected-problems>
+        <code><![CDATA[
+
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.File;
+
+public class BadTest {
+	
+		String path="!";
+	private File f=new File(path);
+	
+	@Test()
+	public void testName() throws Exception {
+		
+		FileWriter writer= new FileWriter(f);
+		
+		writer.write(new char[]{'s'});
+	}
+	
+	@Test()
+	public void testName2() throws Exception {
+				
+		FileReader reader = new FileReader(f);
+		
+		int character=reader.read();
+		
+	}
+	
+
+}
+
+     ]]></code>
+    </test-code>
+
+
+     <test-code>
+        <description><![CDATA[
+simple failure case 14
+     ]]></description>
+        <expected-problems>1</expected-problems>
+        <code><![CDATA[
+
+
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.File;
+
+public class BadTest {
+	
+		String path="!";
+	private File f=new File("hello world");
+	
+	@Test()
+	public void testName() throws Exception {
+		
+		FileWriter writer= new FileWriter(new File(f,this.path));
+		
+		writer.write(new char[]{'s'});
+	}
+	
+	@Test()
+	public void testName2() throws Exception {
+				
+		FileReader reader = new FileReader(new File(f,this.path));
+		
+		int character=reader.read();
+		
+	}
+	
+
+}
+
+     ]]></code>
+    </test-code>
+
+     <test-code>
+        <description><![CDATA[
+simple failure case 15
+     ]]></description>
+        <expected-problems>1</expected-problems>
+        <code><![CDATA[
+
+
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.File;
+
+public class BadTest {
+	
+	private String f="hello world";
+	
+	@Test()
+	public void testName() throws Exception {
+		
+		FileWriter writer= new FileWriter(new File(f));
+		
+		writer.write(new char[]{'s'});
+	}
+	
+	@Test()
+	public void testName2() throws Exception {
+				
+		FileReader reader = new FileReader(new File(f));
+		
+		int character=reader.read();
+		
+	}
+	
+
+}
+
+     ]]></code>
+    </test-code>
+
+     <test-code>
+        <description><![CDATA[
+simple failure case 16
+     ]]></description>
+        <expected-problems>1</expected-problems>
+        <code><![CDATA[
+
+
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.File;
+
+public class BadTest {
+	
+	private String f="hello world";
+	
+	@Test()
+	public void testName() throws Exception {
+		
+		FileWriter writer= new FileWriter(new File(this.f));
+		
+		writer.write(new char[]{'s'});
+	}
+	
+	@Test()
+	public void testName2() throws Exception {
+				
+		FileReader reader = new FileReader(new File(this.f));
+		
+		int character=reader.read();
+		
+	}
+	
+
+}
+
+     ]]></code>
+    </test-code>
+
+     <test-code>
+        <description><![CDATA[
+simple failure case 17
+     ]]></description>
+        <expected-problems>1</expected-problems>
+        <code><![CDATA[
+
+
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.File;
+
+public class BadTest {
+	
+	private String f;
+	
+	@Before
+	public void setUp(){
+		f="hello world";
+	}
+	
+	@Test()
+	public void testName() throws Exception {
+		
+		FileWriter writer= new FileWriter(new File(f));
+		
+		writer.write(new char[]{'s'});
+	}
+	
+	@Test()
+	public void testName2() throws Exception {
+				
+		FileReader reader = new FileReader(new File(f));
+		
+		int character=reader.read();
+		
+	}
+	
+
+}
+
+     ]]></code>
+    </test-code>
+
+     <test-code>
+        <description><![CDATA[
+simple failure case 17
+     ]]></description>
+        <expected-problems>1</expected-problems>
+        <code><![CDATA[
+
+
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.File;
+
+public class BadTest {
+	
+	private String f=super.getSOmething();
+	
+	@Test()
+	public void testName() throws Exception {
+		
+		FileWriter writer= new FileWriter(new File(f));
+		
+		writer.write(new char[]{'s'});
+	}
+	
+	@Test()
+	public void testName2() throws Exception {
+				
+		FileReader reader = new FileReader(new File(f));
+		
+		int character=reader.read();
+		
+	}
+	
+
+}
+
+     ]]></code>
+    </test-code>
+    
+    
+         <test-code>
+        <description><![CDATA[
+simple failure case 17
+     ]]></description>
+        <expected-problems>1</expected-problems>
+        <code><![CDATA[
+
+
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.File;
+
+public class BadTest {
+	
+	private String f=super.getSomething("hola");
+	
+	@Test()
+	public void testName() throws Exception {
+		
+		FileWriter writer= new FileWriter(new File(f));
+		
+		writer.write(new char[]{'s'});
+	}
+	
+	@Test()
+	public void testName2() throws Exception {
+				
+		FileReader reader = new FileReader(new File(f));
+		
+		int character=reader.read();
+		
+	}
+	
+
+}
+
+     ]]></code>
+    </test-code>
+    
+         <test-code>
+        <description><![CDATA[
+ok case
+     ]]></description>
+        <expected-problems>0</expected-problems>
+        <code><![CDATA[
+
+
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.File;
+
+public class BadTest {
+	
+	private String f=super.getSomething("hola");
+	
+	@Test()
+	public void testName() throws Exception {
+		
+		FileWriter writer= new FileWriter(new File(f));
+		
+		writer.write(new char[]{'s'});
+	}
+	
+	@Test()
+	public void testName2() throws Exception {
+				
+		FileReader reader = new FileReader(new File("hola"));
+		
+		int character=reader.read();
+		
+	}
+	
+
+}
+
+     ]]></code>
+    </test-code>
+
+     <test-code>
+        <description><![CDATA[
+ok case because out of scope
+     ]]></description>
+        <expected-problems>0</expected-problems>
+        <code><![CDATA[
+
+
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.File;
+
+public class BadTest {
+	
+	private File f=new File("hello world");
+	
+	@Test()
+	public void testName() throws Exception {
+		
+		FileWriter writer= new FileWriter(new File(f,this.getPath()));
+		
+		writer.write(new char[]{'s'});
+	}
+	
+	@Test()
+	public void testName2() throws Exception {
+				
+		FileReader reader = new FileReader(new File(f,this.getPath()));
+		
+		int character=reader.read();
+		
+	}
+	
+
+}
+
+     ]]></code>
+    </test-code>
+    
+       <test-code>
+        <description><![CDATA[
+ok case because out of scope 1.2
+     ]]></description>
+        <expected-problems>0</expected-problems>
+        <code><![CDATA[
+
+
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.File;
+
+public class BadTest {
+	
+	private File f=new File("hello world");
+	
+	@Test()
+	public void testName() throws Exception {
+		
+		FileWriter writer= new FileWriter(new File(f,this.getPath("hola")));
+		
+		writer.write(new char[]{'s'});
+	}
+	
+	@Test()
+	public void testName2() throws Exception {
+				
+		FileReader reader = new FileReader(new File(f,this.getPath("hola")));
+		
+		int character=reader.read();
+		
+	}
+	
+
+}
+
+     ]]></code>
+    </test-code>  
+    
+         <test-code>
+        <description><![CDATA[
+ok case because out of scope 1.1
+     ]]></description>
+        <expected-problems>0</expected-problems>
+        <code><![CDATA[
+
+
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.File;
+
+public class BadTest {
+	
+	private File f=new File("hello world");
+	
+	@Test()
+	public void testName() throws Exception {
+		
+		FileWriter writer= new FileWriter(new File(f,super.getPath()));
+		
+		writer.write(new char[]{'s'});
+	}
+	
+	@Test()
+	public void testName2() throws Exception {
+				
+		FileReader reader = new FileReader(new File(f,super.getPath()));
+		
+		int character=reader.read();
+		
+	}
+	
+
+}
+
+     ]]></code>
+    </test-code>
+     <test-code>
+        <description><![CDATA[
+ok case because out of scope 2
+     ]]></description>
+        <expected-problems>0</expected-problems>
+        <code><![CDATA[
+
+
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.File;
+
+public class BadTest {
+	
+	private File f=new File("hello world");
+	
+	@Test()
+	public void testName() throws Exception {
+		
+		FileWriter writer= new FileWriter(new File(f,getPath()));
+		
+		writer.write(new char[]{'s'});
+	}
+	
+	@Test()
+	public void testName2() throws Exception {
+				
+		FileReader reader = new FileReader(new File(f,getPath()));
+		
+		int character=reader.read();
+		
+	}
+	
+
+}
+
+     ]]></code>
+    </test-code>
+
+     <test-code>
+        <description><![CDATA[
+ok case because out of scope 4
+     ]]></description>
+        <expected-problems>0</expected-problems>
+        <code><![CDATA[
+
+
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.File;
+
+public class BadTest {
+	
+	
+	@Test()
+	public void testName() throws Exception {
+		File f=new File("hello world");
+		
+		FileWriter writer= new FileWriter(new File(f,f.toString()));
+		
+		writer.write(new char[]{'s'});
+	}
+	
+	@Test()
+	public void testName2() throws Exception {
+		File f=new File("hello world");
+				
+		FileReader reader = new FileReader(new File(f,f.toString()));
+		
+		int character=reader.read();
+		
+	}
+	
+
+}
+
+     ]]></code>
+    </test-code>
+
+
+ <test-code>
+<description><![CDATA[
+simple ok case 2
+     ]]></description>
+        <expected-problems>0</expected-problems>
+        <code><![CDATA[
+
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.File;
+
+public class BadTest {
+	
+	@Test()
+	public void testName() throws Exception {
+		
+		FileWriter writer= new FileWriter(new File("file2","queso"));
+		
+		writer.write(new char[]{'s'});
+	}
+	
+	@Test()
+	public void testName2() throws Exception {
+				
+		FileReader reader = new FileReader(new File("file1","queso"));
+		
+		int character=reader.read();
+		
+	}
+	
+
+}
+
+     ]]></code>
+    </test-code>
+    
+         <test-code>
+        <description><![CDATA[
+simple ok case 3
+     ]]></description>
+        <expected-problems>0</expected-problems>
+        <code><![CDATA[
+
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.File;
+
+public class BadTest {
+	
+	private File f1=new File("file1");
+	private File f2=new File("file2");
+	
+	@Test()
+	public void testName() throws Exception {
+		
+		FileWriter writer= new FileWriter(new File(f1,"queso"));
+		
+		writer.write(new char[]{'s'});
+	}
+	
+	@Test()
+	public void testName2() throws Exception {
+				
+		FileReader reader = new FileReader(new File(f2,"queso"));
+		
+		int character=reader.read();
+		
+	}
+	
+
+}
+
+     ]]></code>
+    </test-code>    
+    
+     <test-code>
+        <description><![CDATA[
+simple ok case 4
+     ]]></description>
+        <expected-problems>0</expected-problems>
+        <code><![CDATA[
+
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.File;
+
+public class BadTest {
+		
+	@Test()
+	public void testName() throws Exception {
+		
+		FileWriter writer= new FileWriter(new File(new File("el1"),"queso"));
+		
+		writer.write(new char[]{'s'});
+	}
+	
+	@Test()
+	public void testName2() throws Exception {
+				
+		FileReader reader = new FileReader(new File(new File("el2"),"queso"));
+		
+		int character=reader.read();
+		
+	}
+	
+
+}
+
+     ]]></code>
+    </test-code>     
+     <test-code>
+        <description><![CDATA[
+simple ok case 0.b
+     ]]></description>
+        <expected-problems>0</expected-problems>
+        <code><![CDATA[
+
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.File;
+
+public class BadTest {
+
+	
+	@Test()
+	public void testName() throws Exception {
+		File f=new File("file");
+		
+		FileWriter writer= new FileWriter(f);
+		
+		writer.write(new char[]{'s'});
+	}
+	
+	@Test()
+	public void testName2() throws Exception {
+		File f=new File("file");
+		
+		FileWriter writer= new FileWriter(f);
+		FileReader reader = new FileReader(f);
+		
+		int character=reader.read();
+		
+	}
+	
+
+}
+
+     ]]></code>
+    </test-code>    
+     <test-code>
+        <description><![CDATA[
+simple ok case 0.c
+     ]]></description>
+        <expected-problems>0</expected-problems>
+        <code><![CDATA[
+
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.File;
+
+public class BadTest {
+
+		File f=new File("file");
+	
+	@Test()
+	public void testName() throws Exception {
+		
+		FileWriter writer= new FileWriter(f);
+		
+		writer.write(new char[]{'s'});
+	}
+	
+	@Test()
+	public void testName2() throws Exception {
+		
+		FileWriter writer= new FileWriter(f);
+		FileReader reader = new FileReader(f);
+		
+		int character=reader.read();
+		
+	}
+	
+
+}
+
+     ]]></code>
+    </test-code>     
+<!-- 
+<test-code>
+        <description><![CDATA[
+simple failure case
+     ]]></description>
+        <expected-problems>0</expected-problems>
+        <code><![CDATA[
+
+     ]]></code>
+    </test-code>  
+ -->
+    
+</test-data>

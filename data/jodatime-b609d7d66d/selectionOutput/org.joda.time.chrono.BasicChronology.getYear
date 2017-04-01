@@ -1,0 +1,32 @@
+org.joda.time.chrono.BasicChronology.getYear : l1 = virtualinvoke r0.<org.joda.time.chrono.BasicChronology: long getAverageMillisPerYearDividedByTwo()>() >>>>>>>> org.joda.time.chrono.BasicChronology.getYear : $l7 = l0 >> 1
+org.joda.time.chrono.BasicChronology.getYear : $l7 = l0 >> 1 >>>>>>>> org.joda.time.chrono.BasicChronology.getYear : $l8 = virtualinvoke r0.<org.joda.time.chrono.BasicChronology: long getApproxMillisAtEpochDividedByTwo()>()
+org.joda.time.chrono.BasicChronology.getYear : $l8 = virtualinvoke r0.<org.joda.time.chrono.BasicChronology: long getApproxMillisAtEpochDividedByTwo()>() >>>>>>>> org.joda.time.chrono.BasicChronology.getYear : l2 = $l7 + $l8
+org.joda.time.chrono.BasicChronology.getYear : l2 = $l7 + $l8 >>>>>>>> org.joda.time.chrono.BasicChronology.getYear : $b9 = l2 cmp 0L
+org.joda.time.chrono.BasicChronology.getYear : $b9 = l2 cmp 0L >>>>>>>> org.joda.time.chrono.BasicChronology.getYear : if $b9 >= 0
+org.joda.time.chrono.BasicChronology.getYear : if $b9 >= 0 >>>>>>>> org.joda.time.chrono.BasicChronology.getYear : $l10 = l2 - l1
+org.joda.time.chrono.BasicChronology.getYear : if $b9 >= 0 >>>>>>>> org.joda.time.chrono.BasicChronology.getYear : $l11 = l2 / l1
+org.joda.time.chrono.BasicChronology.getYear : $l11 = l2 / l1 >>>>>>>> org.joda.time.chrono.BasicChronology.getYear : i3 = (int) $l11
+org.joda.time.chrono.BasicChronology.getYear : i3 = (int) $l11 >>>>>>>> org.joda.time.chrono.BasicChronology.getYear : l4 = virtualinvoke r0.<org.joda.time.chrono.BasicChronology: long getYearMillis(int)>(i3)
+org.joda.time.chrono.BasicChronology.getYear : l4 = virtualinvoke r0.<org.joda.time.chrono.BasicChronology: long getYearMillis(int)>(i3) >>>>>>>> org.joda.time.chrono.BasicChronology.getYear : l5 = l0 - l4
+org.joda.time.chrono.BasicChronology.getYear : l5 = l0 - l4 >>>>>>>> org.joda.time.chrono.BasicChronology.getYear : $b12 = l5 cmp 0L
+org.joda.time.chrono.BasicChronology.getYear : $b12 = l5 cmp 0L >>>>>>>> org.joda.time.chrono.BasicChronology.getYear : if $b12 >= 0
+org.joda.time.chrono.BasicChronology.getYear : if $b12 >= 0 >>>>>>>> org.joda.time.chrono.BasicChronology.getYear : i3 = i3 + -1
+org.joda.time.chrono.BasicChronology.getYear : if $b12 >= 0 >>>>>>>> org.joda.time.chrono.BasicChronology.getYear : $b13 = l5 cmp 31536000000L
+org.joda.time.chrono.BasicChronology.getYear : $b13 = l5 cmp 31536000000L >>>>>>>> org.joda.time.chrono.BasicChronology.getYear : if $b13 < 0
+org.joda.time.chrono.BasicChronology.getYear : if $b13 < 0 >>>>>>>> org.joda.time.chrono.BasicChronology.getYear : $z0 = virtualinvoke r0.<org.joda.time.chrono.BasicChronology: boolean isLeapYear(int)>(i3)
+org.joda.time.chrono.BasicChronology.getYear : if $b13 < 0 >>>>>>>> org.joda.time.chrono.BasicChronology.getYear : return i3
+org.joda.time.chrono.BasicChronology.getYear : $z0 = virtualinvoke r0.<org.joda.time.chrono.BasicChronology: boolean isLeapYear(int)>(i3) >>>>>>>> org.joda.time.chrono.BasicChronology.getYear : if $z0 == 0
+org.joda.time.chrono.BasicChronology.getYear : if $z0 == 0 >>>>>>>> org.joda.time.chrono.BasicChronology.getYear : l6 = 31622400000L
+org.joda.time.chrono.BasicChronology.getYear : if $z0 == 0 >>>>>>>> org.joda.time.chrono.BasicChronology.getYear : l6 = 31536000000L
+org.joda.time.chrono.BasicChronology.getYear : l6 = 31536000000L >>>>>>>> org.joda.time.chrono.BasicChronology.getYear : l14 = l4 + l6
+org.joda.time.chrono.BasicChronology.getYear : l14 = l4 + l6 >>>>>>>> org.joda.time.chrono.BasicChronology.getYear : $b15 = l14 cmp l0
+org.joda.time.chrono.BasicChronology.getYear : $b15 = l14 cmp l0 >>>>>>>> org.joda.time.chrono.BasicChronology.getYear : if $b15 > 0
+org.joda.time.chrono.BasicChronology.getYear : if $b15 > 0 >>>>>>>> org.joda.time.chrono.BasicChronology.getYear : i3 = i3 + 1
+org.joda.time.chrono.BasicChronology.getYear : if $b15 > 0 >>>>>>>> org.joda.time.chrono.BasicChronology.getYear : return i3
+org.joda.time.chrono.BasicChronology.getYear : i3 = i3 + 1 >>>>>>>> org.joda.time.chrono.BasicChronology.getYear : return i3
+org.joda.time.chrono.BasicChronology.getYear : l6 = 31622400000L >>>>>>>> org.joda.time.chrono.BasicChronology.getYear : goto [?= l14 = l4 + l6]
+org.joda.time.chrono.BasicChronology.getYear : goto [?= l14 = l4 + l6] >>>>>>>> org.joda.time.chrono.BasicChronology.getYear : l14 = l4 + l6
+org.joda.time.chrono.BasicChronology.getYear : i3 = i3 + -1 >>>>>>>> org.joda.time.chrono.BasicChronology.getYear : goto [?= return i3]
+org.joda.time.chrono.BasicChronology.getYear : goto [?= return i3] >>>>>>>> org.joda.time.chrono.BasicChronology.getYear : return i3
+org.joda.time.chrono.BasicChronology.getYear : $l10 = l2 - l1 >>>>>>>> org.joda.time.chrono.BasicChronology.getYear : l2 = $l10 + 1L
+org.joda.time.chrono.BasicChronology.getYear : l2 = $l10 + 1L >>>>>>>> org.joda.time.chrono.BasicChronology.getYear : $l11 = l2 / l1

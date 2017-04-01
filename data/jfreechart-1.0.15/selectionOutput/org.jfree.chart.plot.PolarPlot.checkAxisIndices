@@ -1,0 +1,27 @@
+org.jfree.chart.plot.PolarPlot.checkAxisIndices : if r1 != null >>>>>>>> org.jfree.chart.plot.PolarPlot.checkAxisIndices : return
+org.jfree.chart.plot.PolarPlot.checkAxisIndices : if r1 != null >>>>>>>> org.jfree.chart.plot.PolarPlot.checkAxisIndices : i0 = interfaceinvoke r1.<java.util.List: int size()>()
+org.jfree.chart.plot.PolarPlot.checkAxisIndices : i0 = interfaceinvoke r1.<java.util.List: int size()>() >>>>>>>> org.jfree.chart.plot.PolarPlot.checkAxisIndices : if i0 != 0
+org.jfree.chart.plot.PolarPlot.checkAxisIndices : if i0 != 0 >>>>>>>> org.jfree.chart.plot.PolarPlot.checkAxisIndices : $r4 = new java.lang.IllegalArgumentException
+org.jfree.chart.plot.PolarPlot.checkAxisIndices : if i0 != 0 >>>>>>>> org.jfree.chart.plot.PolarPlot.checkAxisIndices : $r5 = new java.util.HashSet
+org.jfree.chart.plot.PolarPlot.checkAxisIndices : $r5 = new java.util.HashSet >>>>>>>> org.jfree.chart.plot.PolarPlot.checkAxisIndices : specialinvoke $r5.<java.util.HashSet: void <init>()>()
+org.jfree.chart.plot.PolarPlot.checkAxisIndices : specialinvoke $r5.<java.util.HashSet: void <init>()>() >>>>>>>> org.jfree.chart.plot.PolarPlot.checkAxisIndices : r2 = $r5
+org.jfree.chart.plot.PolarPlot.checkAxisIndices : r2 = $r5 >>>>>>>> org.jfree.chart.plot.PolarPlot.checkAxisIndices : i1 = 0
+org.jfree.chart.plot.PolarPlot.checkAxisIndices : i1 = 0 >>>>>>>> org.jfree.chart.plot.PolarPlot.checkAxisIndices : if i1 >= i0
+org.jfree.chart.plot.PolarPlot.checkAxisIndices : if i1 >= i0 >>>>>>>> org.jfree.chart.plot.PolarPlot.checkAxisIndices : r3 = interfaceinvoke r1.<java.util.List: java.lang.Object get(int)>(i1)
+org.jfree.chart.plot.PolarPlot.checkAxisIndices : if i1 >= i0 >>>>>>>> org.jfree.chart.plot.PolarPlot.checkAxisIndices : return
+org.jfree.chart.plot.PolarPlot.checkAxisIndices : r3 = interfaceinvoke r1.<java.util.List: java.lang.Object get(int)>(i1) >>>>>>>> org.jfree.chart.plot.PolarPlot.checkAxisIndices : $z0 = r3 instanceof java.lang.Integer
+org.jfree.chart.plot.PolarPlot.checkAxisIndices : $z0 = r3 instanceof java.lang.Integer >>>>>>>> org.jfree.chart.plot.PolarPlot.checkAxisIndices : if $z0 != 0
+org.jfree.chart.plot.PolarPlot.checkAxisIndices : if $z0 != 0 >>>>>>>> org.jfree.chart.plot.PolarPlot.checkAxisIndices : $r6 = new java.lang.IllegalArgumentException
+org.jfree.chart.plot.PolarPlot.checkAxisIndices : if $z0 != 0 >>>>>>>> org.jfree.chart.plot.PolarPlot.checkAxisIndices : $z1 = virtualinvoke r2.<java.util.HashSet: boolean contains(java.lang.Object)>(r3)
+org.jfree.chart.plot.PolarPlot.checkAxisIndices : $z1 = virtualinvoke r2.<java.util.HashSet: boolean contains(java.lang.Object)>(r3) >>>>>>>> org.jfree.chart.plot.PolarPlot.checkAxisIndices : if $z1 == 0
+org.jfree.chart.plot.PolarPlot.checkAxisIndices : if $z1 == 0 >>>>>>>> org.jfree.chart.plot.PolarPlot.checkAxisIndices : $r7 = new java.lang.IllegalArgumentException
+org.jfree.chart.plot.PolarPlot.checkAxisIndices : if $z1 == 0 >>>>>>>> org.jfree.chart.plot.PolarPlot.checkAxisIndices : virtualinvoke r2.<java.util.HashSet: boolean add(java.lang.Object)>(r3)
+org.jfree.chart.plot.PolarPlot.checkAxisIndices : virtualinvoke r2.<java.util.HashSet: boolean add(java.lang.Object)>(r3) >>>>>>>> org.jfree.chart.plot.PolarPlot.checkAxisIndices : i1 = i1 + 1
+org.jfree.chart.plot.PolarPlot.checkAxisIndices : i1 = i1 + 1 >>>>>>>> org.jfree.chart.plot.PolarPlot.checkAxisIndices : goto [?= (branch)]
+org.jfree.chart.plot.PolarPlot.checkAxisIndices : goto [?= (branch)] >>>>>>>> org.jfree.chart.plot.PolarPlot.checkAxisIndices : if i1 >= i0
+org.jfree.chart.plot.PolarPlot.checkAxisIndices : $r7 = new java.lang.IllegalArgumentException >>>>>>>> org.jfree.chart.plot.PolarPlot.checkAxisIndices : specialinvoke $r7.<java.lang.IllegalArgumentException: void <init>(java.lang.String)>("Indices must be unique.")
+org.jfree.chart.plot.PolarPlot.checkAxisIndices : specialinvoke $r7.<java.lang.IllegalArgumentException: void <init>(java.lang.String)>("Indices must be unique.") >>>>>>>> org.jfree.chart.plot.PolarPlot.checkAxisIndices : throw $r7
+org.jfree.chart.plot.PolarPlot.checkAxisIndices : $r6 = new java.lang.IllegalArgumentException >>>>>>>> org.jfree.chart.plot.PolarPlot.checkAxisIndices : specialinvoke $r6.<java.lang.IllegalArgumentException: void <init>(java.lang.String)>("Indices must be Integer instances.")
+org.jfree.chart.plot.PolarPlot.checkAxisIndices : specialinvoke $r6.<java.lang.IllegalArgumentException: void <init>(java.lang.String)>("Indices must be Integer instances.") >>>>>>>> org.jfree.chart.plot.PolarPlot.checkAxisIndices : throw $r6
+org.jfree.chart.plot.PolarPlot.checkAxisIndices : $r4 = new java.lang.IllegalArgumentException >>>>>>>> org.jfree.chart.plot.PolarPlot.checkAxisIndices : specialinvoke $r4.<java.lang.IllegalArgumentException: void <init>(java.lang.String)>("Empty list not permitted.")
+org.jfree.chart.plot.PolarPlot.checkAxisIndices : specialinvoke $r4.<java.lang.IllegalArgumentException: void <init>(java.lang.String)>("Empty list not permitted.") >>>>>>>> org.jfree.chart.plot.PolarPlot.checkAxisIndices : throw $r4

@@ -1,0 +1,9 @@
+org.apache.xml.security.signature.XMLSignatureInput.getNodeSet : $r8 = r0.<org.apache.xml.security.signature.XMLSignatureInput: java.util.Set _inputNodeSet>
+org.apache.xml.security.signature.XMLSignatureInput.getNodeSet : $z0 = virtualinvoke r0.<org.apache.xml.security.signature.XMLSignatureInput: boolean isNodeSet()>()
+org.apache.xml.security.signature.XMLSignatureInput.isNodeSet : $r1 = r0.<org.apache.xml.security.signature.XMLSignatureInput: java.io.InputStream _inputOctetStreamProxy>
+org.apache.xml.security.utils.XMLUtils.convertNodelistToSet : i0 = interfaceinvoke r0.<org.w3c.dom.NodeList: int getLength()>()
+org.apache.xml.security.utils.XMLUtils.convertNodelistToSet : i1 = 0
+org.apache.xml.security.utils.XMLUtils.convertNodelistToSet : $r4 = interfaceinvoke r0.<org.w3c.dom.NodeList: org.w3c.dom.Node item(int)>(i1)
+org.apache.xml.security.utils.XMLUtils.convertNodelistToSet : if r0 != null goto i0 = interfaceinvoke r0.<org.w3c.dom.NodeList: int getLength()>()
+org.apache.xml.security.utils.XMLUtils.convertNodelistToSet : $r3 = new java.util.HashSet
+org.apache.xml.security.utils.XMLUtils.convertNodelistToSet : return r1

@@ -1,0 +1,25 @@
+org.jfree.data.Range.equals : $d2 = r0.<org.jfree.data.Range: double upper>
+org.jfree.data.Range.equals : $z0 = r1 instanceof org.jfree.data.Range
+org.jfree.data.Range.equals : $d0 = r0.<org.jfree.data.Range: double lower>
+org.jfree.data.Range.equals : return 1
+org.jfree.data.Range.equals : r2 = (org.jfree.data.Range) r1
+org.jfree.data.statistics.DefaultBoxAndWhiskerXYDataset.getRangeBounds : $r1 = r0.<org.jfree.data.statistics.DefaultBoxAndWhiskerXYDataset: org.jfree.data.Range rangeBounds>
+org.jfree.data.general.AbstractDataset.notifyListeners : $r3 = r0.<org.jfree.data.general.AbstractDataset: javax.swing.event.EventListenerList listenerList>
+org.jfree.data.general.AbstractDataset.notifyListeners : $i1 = lengthof r2
+org.jfree.data.statistics.BoxAndWhiskerItem.getMinRegularValue : $r1 = r0.<org.jfree.data.statistics.BoxAndWhiskerItem: java.lang.Number minRegularValue>
+org.jfree.data.general.AbstractDataset.fireDatasetChanged : $r1 = new org.jfree.data.general.DatasetChangeEvent
+org.jfree.data.statistics.BoxAndWhiskerItem.getMaxRegularValue : $r1 = r0.<org.jfree.data.statistics.BoxAndWhiskerItem: java.lang.Number maxRegularValue>
+org.jfree.data.statistics.DefaultBoxAndWhiskerXYDataset.add : $r6 = virtualinvoke r2.<org.jfree.data.statistics.BoxAndWhiskerItem: java.lang.Number getMinRegularValue()>()
+org.jfree.data.statistics.DefaultBoxAndWhiskerXYDataset.add : $r4 = r0.<org.jfree.data.statistics.DefaultBoxAndWhiskerXYDataset: java.util.List items>
+org.jfree.data.statistics.DefaultBoxAndWhiskerXYDataset.add : $d1 = virtualinvoke $r8.<java.lang.Number: double doubleValue()>()
+org.jfree.data.statistics.DefaultBoxAndWhiskerXYDataset.add : $r10 = r0.<org.jfree.data.statistics.DefaultBoxAndWhiskerXYDataset: java.lang.Number maximumRangeValue>
+org.jfree.data.statistics.DefaultBoxAndWhiskerXYDataset.add : $d3 = virtualinvoke $r13.<java.lang.Number: double doubleValue()>()
+org.jfree.data.statistics.DefaultBoxAndWhiskerXYDataset.add : $d5 = virtualinvoke $r17.<java.lang.Number: double doubleValue()>()
+org.jfree.data.statistics.DefaultBoxAndWhiskerXYDataset.add : $r15 = new org.jfree.data.Range
+org.jfree.data.statistics.DefaultBoxAndWhiskerXYDataset.add : $r7 = virtualinvoke r2.<org.jfree.data.statistics.BoxAndWhiskerItem: java.lang.Number getMinRegularValue()>()
+org.jfree.data.statistics.DefaultBoxAndWhiskerXYDataset.add : virtualinvoke r0.<org.jfree.data.statistics.DefaultBoxAndWhiskerXYDataset: void fireDatasetChanged()>()
+org.jfree.data.statistics.DefaultBoxAndWhiskerXYDataset.add : $r14 = virtualinvoke r2.<org.jfree.data.statistics.BoxAndWhiskerItem: java.lang.Number getMaxRegularValue()>()
+org.jfree.data.statistics.DefaultBoxAndWhiskerXYDataset.add : $r12 = virtualinvoke r2.<org.jfree.data.statistics.BoxAndWhiskerItem: java.lang.Number getMaxRegularValue()>()
+org.jfree.data.statistics.DefaultBoxAndWhiskerXYDataset.add : $r5 = r0.<org.jfree.data.statistics.DefaultBoxAndWhiskerXYDataset: java.lang.Number minimumRangeValue>
+org.jfree.data.statistics.DefaultBoxAndWhiskerXYDataset.add : $r11 = virtualinvoke r2.<org.jfree.data.statistics.BoxAndWhiskerItem: java.lang.Number getMaxRegularValue()>()
+org.jfree.data.statistics.DefaultBoxAndWhiskerXYDataset.add : $r3 = r0.<org.jfree.data.statistics.DefaultBoxAndWhiskerXYDataset: java.util.List dates>

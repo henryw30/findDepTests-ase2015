@@ -1,0 +1,37 @@
+mcscm.VerifyResult.parseVerifyOutput : z0 = 0 >>>>>>>> mcscm.VerifyResult.parseVerifyOutput : i0 = 0
+mcscm.VerifyResult.parseVerifyOutput : i0 = 0 >>>>>>>> mcscm.VerifyResult.parseVerifyOutput : r2 = interfaceinvoke r1.<java.util.List: java.util.Iterator iterator()>()
+mcscm.VerifyResult.parseVerifyOutput : r2 = interfaceinvoke r1.<java.util.List: java.util.Iterator iterator()>() >>>>>>>> mcscm.VerifyResult.parseVerifyOutput : $z1 = interfaceinvoke r2.<java.util.Iterator: boolean hasNext()>()
+mcscm.VerifyResult.parseVerifyOutput : $z1 = interfaceinvoke r2.<java.util.Iterator: boolean hasNext()>() >>>>>>>> mcscm.VerifyResult.parseVerifyOutput : if $z1 == 0
+mcscm.VerifyResult.parseVerifyOutput : if $z1 == 0 >>>>>>>> mcscm.VerifyResult.parseVerifyOutput : $r5 = interfaceinvoke r2.<java.util.Iterator: java.lang.Object next()>()
+mcscm.VerifyResult.parseVerifyOutput : if $z1 == 0 >>>>>>>> mcscm.VerifyResult.parseVerifyOutput : if z0 != 0
+mcscm.VerifyResult.parseVerifyOutput : if z0 != 0 >>>>>>>> mcscm.VerifyResult.parseVerifyOutput : $r10 = new mcscm.VerifyOutputParseException
+mcscm.VerifyResult.parseVerifyOutput : if z0 != 0 >>>>>>>> mcscm.VerifyResult.parseVerifyOutput : return
+mcscm.VerifyResult.parseVerifyOutput : $r10 = new mcscm.VerifyOutputParseException >>>>>>>> mcscm.VerifyResult.parseVerifyOutput : specialinvoke $r10.<mcscm.VerifyOutputParseException: void <init>(java.lang.String)>("Unable to parse verify result: cannot determine model safety")
+mcscm.VerifyResult.parseVerifyOutput : specialinvoke $r10.<mcscm.VerifyOutputParseException: void <init>(java.lang.String)>("Unable to parse verify result: cannot determine model safety") >>>>>>>> mcscm.VerifyResult.parseVerifyOutput : throw $r10
+mcscm.VerifyResult.parseVerifyOutput : $r5 = interfaceinvoke r2.<java.util.Iterator: java.lang.Object next()>() >>>>>>>> mcscm.VerifyResult.parseVerifyOutput : r3 = (java.lang.String) $r5
+mcscm.VerifyResult.parseVerifyOutput : r3 = (java.lang.String) $r5 >>>>>>>> mcscm.VerifyResult.parseVerifyOutput : $r4 = <mcscm.VerifyResult: java.lang.String syntaxErrRe>
+mcscm.VerifyResult.parseVerifyOutput : $r4 = <mcscm.VerifyResult: java.lang.String syntaxErrRe> >>>>>>>> mcscm.VerifyResult.parseVerifyOutput : $z2 = virtualinvoke r3.<java.lang.String: boolean matches(java.lang.String)>($r4)
+mcscm.VerifyResult.parseVerifyOutput : $z2 = virtualinvoke r3.<java.lang.String: boolean matches(java.lang.String)>($r4) >>>>>>>> mcscm.VerifyResult.parseVerifyOutput : if $z2 == 0
+mcscm.VerifyResult.parseVerifyOutput : if $z2 == 0 >>>>>>>> mcscm.VerifyResult.parseVerifyOutput : $r6 = new mcscm.ScmSyntaxException
+mcscm.VerifyResult.parseVerifyOutput : if $z2 == 0 >>>>>>>> mcscm.VerifyResult.parseVerifyOutput : $r7 = <mcscm.VerifyResult: java.lang.String safeRe>
+mcscm.VerifyResult.parseVerifyOutput : $r7 = <mcscm.VerifyResult: java.lang.String safeRe> >>>>>>>> mcscm.VerifyResult.parseVerifyOutput : $z3 = virtualinvoke r3.<java.lang.String: boolean matches(java.lang.String)>($r7)
+mcscm.VerifyResult.parseVerifyOutput : $z3 = virtualinvoke r3.<java.lang.String: boolean matches(java.lang.String)>($r7) >>>>>>>> mcscm.VerifyResult.parseVerifyOutput : if $z3 == 0
+mcscm.VerifyResult.parseVerifyOutput : if $z3 == 0 >>>>>>>> mcscm.VerifyResult.parseVerifyOutput : r0.<mcscm.VerifyResult: boolean modelIsSafe> = 1
+mcscm.VerifyResult.parseVerifyOutput : if $z3 == 0 >>>>>>>> mcscm.VerifyResult.parseVerifyOutput : $r8 = <mcscm.VerifyResult: java.lang.String unsafeRe>
+mcscm.VerifyResult.parseVerifyOutput : $r8 = <mcscm.VerifyResult: java.lang.String unsafeRe> >>>>>>>> mcscm.VerifyResult.parseVerifyOutput : $z4 = virtualinvoke r3.<java.lang.String: boolean matches(java.lang.String)>($r8)
+mcscm.VerifyResult.parseVerifyOutput : $z4 = virtualinvoke r3.<java.lang.String: boolean matches(java.lang.String)>($r8) >>>>>>>> mcscm.VerifyResult.parseVerifyOutput : if $z4 == 0
+mcscm.VerifyResult.parseVerifyOutput : if $z4 == 0 >>>>>>>> mcscm.VerifyResult.parseVerifyOutput : r0.<mcscm.VerifyResult: boolean modelIsSafe> = 0
+mcscm.VerifyResult.parseVerifyOutput : if $z4 == 0 >>>>>>>> mcscm.VerifyResult.parseVerifyOutput : $r9 = <mcscm.VerifyResult: java.lang.String counterExRe>
+mcscm.VerifyResult.parseVerifyOutput : $r9 = <mcscm.VerifyResult: java.lang.String counterExRe> >>>>>>>> mcscm.VerifyResult.parseVerifyOutput : $z5 = virtualinvoke r3.<java.lang.String: boolean matches(java.lang.String)>($r9)
+mcscm.VerifyResult.parseVerifyOutput : $z5 = virtualinvoke r3.<java.lang.String: boolean matches(java.lang.String)>($r9) >>>>>>>> mcscm.VerifyResult.parseVerifyOutput : if $z5 == 0
+mcscm.VerifyResult.parseVerifyOutput : if $z5 == 0 >>>>>>>> mcscm.VerifyResult.parseVerifyOutput : specialinvoke r0.<mcscm.VerifyResult: void parseCounterExample(java.util.List,int)>(r1, i0)
+mcscm.VerifyResult.parseVerifyOutput : if $z5 == 0 >>>>>>>> mcscm.VerifyResult.parseVerifyOutput : i0 = i0 + 1
+mcscm.VerifyResult.parseVerifyOutput : i0 = i0 + 1 >>>>>>>> mcscm.VerifyResult.parseVerifyOutput : goto [?= $z1 = interfaceinvoke r2.<java.util.Iterator: boolean hasNext()>()]
+mcscm.VerifyResult.parseVerifyOutput : goto [?= $z1 = interfaceinvoke r2.<java.util.Iterator: boolean hasNext()>()] >>>>>>>> mcscm.VerifyResult.parseVerifyOutput : $z1 = interfaceinvoke r2.<java.util.Iterator: boolean hasNext()>()
+mcscm.VerifyResult.parseVerifyOutput : specialinvoke r0.<mcscm.VerifyResult: void parseCounterExample(java.util.List,int)>(r1, i0) >>>>>>>> mcscm.VerifyResult.parseVerifyOutput : i0 = i0 + 1
+mcscm.VerifyResult.parseVerifyOutput : r0.<mcscm.VerifyResult: boolean modelIsSafe> = 0 >>>>>>>> mcscm.VerifyResult.parseVerifyOutput : z0 = 1
+mcscm.VerifyResult.parseVerifyOutput : z0 = 1 >>>>>>>> mcscm.VerifyResult.parseVerifyOutput : $r9 = <mcscm.VerifyResult: java.lang.String counterExRe>
+mcscm.VerifyResult.parseVerifyOutput : r0.<mcscm.VerifyResult: boolean modelIsSafe> = 1 >>>>>>>> mcscm.VerifyResult.parseVerifyOutput : z0 = 1
+mcscm.VerifyResult.parseVerifyOutput : z0 = 1 >>>>>>>> mcscm.VerifyResult.parseVerifyOutput : $r8 = <mcscm.VerifyResult: java.lang.String unsafeRe>
+mcscm.VerifyResult.parseVerifyOutput : $r6 = new mcscm.ScmSyntaxException >>>>>>>> mcscm.VerifyResult.parseVerifyOutput : specialinvoke $r6.<mcscm.ScmSyntaxException: void <init>(java.lang.String)>(r3)
+mcscm.VerifyResult.parseVerifyOutput : specialinvoke $r6.<mcscm.ScmSyntaxException: void <init>(java.lang.String)>(r3) >>>>>>>> mcscm.VerifyResult.parseVerifyOutput : throw $r6

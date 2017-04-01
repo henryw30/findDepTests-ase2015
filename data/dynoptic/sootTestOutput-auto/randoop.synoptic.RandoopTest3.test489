@@ -1,0 +1,9 @@
+dynoptic.util.Util.newSet : $r0 = new java.util.LinkedHashSet
+dynoptic.model.fifosys.cfsm.CFSMState.getTransitioningEvents : r1 = staticinvoke <dynoptic.util.Util: java.util.Set newSet()>()
+dynoptic.model.fifosys.cfsm.CFSMState.getTransitioningEvents : goto [?= $z0 = interfaceinvoke r2.<java.util.Iterator: boolean hasNext()>()]
+dynoptic.model.fifosys.cfsm.CFSMState.getTransitioningEvents : $r6 = virtualinvoke r3.<dynoptic.model.fifosys.cfsm.fsm.FSMState: java.util.Set getTransitioningEvents()>()
+dynoptic.model.fifosys.cfsm.CFSMState.getTransitioningEvents : $r4 = r0.<dynoptic.model.fifosys.cfsm.CFSMState: java.util.List fsmStates>
+dynoptic.model.fifosys.cfsm.CFSMState.getTransitioningEvents : return r1
+dynoptic.util.Util.newList : $r0 = new java.util.ArrayList
+dynoptic.util.Util.newMap : $r0 = new java.util.LinkedHashMap
+dynoptic.model.fifosys.cfsm.fsm.FSMState.getTransitioningEvents : $r1 = r0.<dynoptic.model.fifosys.cfsm.fsm.FSMState: java.util.Map transitions>

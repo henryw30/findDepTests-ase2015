@@ -1,0 +1,20 @@
+mcscm.McScMTests.readScmFile : $r13 = virtualinvoke r5.<java.io.BufferedReader: java.lang.String readLine()>()
+mcscm.McScMTests.readScmFile : virtualinvoke r6.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(r7)
+mcscm.McScMTests.readScmFile : $r11 = new java.io.BufferedReader
+mcscm.McScMTests.readScmFile : virtualinvoke r6.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("\n")
+mcscm.McScMTests.readScmFile : $r16 = virtualinvoke r6.<java.lang.StringBuilder: java.lang.String toString()>()
+mcscm.McScMTests.readScmFile : $r12 = new java.lang.StringBuilder
+mcscm.McScMTests.readScmFile : $r2 = new java.lang.StringBuilder
+mcscm.ProcessUtil.runVerifyProcess : r9 = virtualinvoke r4.<java.lang.ProcessBuilder: java.lang.Process start()>()
+mcscm.ProcessUtil.runVerifyProcess : virtualinvoke r4.<java.lang.ProcessBuilder: java.lang.ProcessBuilder directory(java.io.File)>(r2)
+mcscm.ProcessUtil.runVerifyProcess : $r3 = new java.lang.ProcessBuilder
+mcscm.ProcessUtil.runVerifyProcess : n0 = null
+dynoptic.DynopticTest.getMcPath : r0 = "linux.static"
+dynoptic.DynopticTest.getMcPath : r0 = null
+dynoptic.DynopticTest.getMcPath : $z0 = staticinvoke <mcscm.Os: boolean isLinux()>()
+dynoptic.DynopticTest.getMcPath : $r9 = new java.lang.StringBuilder
+mcscm.Os.isLinux : $r0 = staticinvoke <mcscm.Os: java.lang.String getOsName()>()
+mcscm.Os.getOsName : $r0 = staticinvoke <java.lang.System: java.lang.String getProperty(java.lang.String,java.lang.String)>("os.name", "unknown")
+mcscm.McScM.verify : $r2 = new java.io.File
+mcscm.McScM.verify : $r4 = newarray (java.lang.String)[3]
+dynoptic.util.Util.newList : $r0 = new java.util.ArrayList

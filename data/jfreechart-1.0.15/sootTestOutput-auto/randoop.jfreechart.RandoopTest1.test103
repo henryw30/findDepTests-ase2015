@@ -1,0 +1,8 @@
+org.jfree.chart.axis.CategoryLabelPositions.createDownRotationLabelPositions : $r0 = new org.jfree.chart.axis.CategoryLabelPositions
+org.jfree.chart.axis.Axis.notifyListeners : $i1 = lengthof r2
+org.jfree.chart.axis.Axis.notifyListeners : $r3 = r0.<org.jfree.chart.axis.Axis: javax.swing.event.EventListenerList listenerList>
+org.jfree.chart.axis.CategoryAxis.getLowerMargin : $d0 = r0.<org.jfree.chart.axis.CategoryAxis: double lowerMargin>
+org.jfree.chart.axis.CategoryAxis.setCategoryLabelPositions : r0.<org.jfree.chart.axis.CategoryAxis: org.jfree.chart.axis.CategoryLabelPositions categoryLabelPositions> = r1
+org.jfree.chart.axis.CategoryAxis.setCategoryLabelPositions : $r2 = new org.jfree.chart.event.AxisChangeEvent
+org.jfree.chart.axis.CategoryAxis.setCategoryLabelPositions : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "positions")
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null goto return

@@ -1,0 +1,29 @@
+org.jfree.chart.axis.DateTick.equals : $r3 = r0.<org.jfree.chart.axis.DateTick: java.util.Date date>
+org.jfree.chart.axis.DateTick.equals : $z2 = specialinvoke r0.<org.jfree.chart.axis.ValueTick: boolean equals(java.lang.Object)>(r1)
+org.jfree.chart.axis.DateTick.equals : r2 = (org.jfree.chart.axis.DateTick) r1
+org.jfree.chart.axis.DateTick.equals : if r1 != r0 goto $z0 = r1 instanceof org.jfree.chart.axis.DateTick
+org.jfree.chart.axis.DateTick.equals : return 0
+org.jfree.chart.axis.DateTick.equals : $z0 = r1 instanceof org.jfree.chart.axis.DateTick
+org.jfree.chart.axis.Tick.equals : $d0 = r0.<org.jfree.chart.axis.Tick: double angle>
+org.jfree.chart.axis.Tick.equals : $r3 = r0.<org.jfree.chart.axis.Tick: java.lang.String text>
+org.jfree.chart.axis.Tick.equals : r2 = (org.jfree.chart.axis.Tick) r1
+org.jfree.chart.axis.Tick.equals : $z0 = r1 instanceof org.jfree.chart.axis.Tick
+org.jfree.chart.axis.Tick.equals : if r0 != r1 goto $z0 = r1 instanceof org.jfree.chart.axis.Tick
+org.jfree.chart.axis.Tick.equals : return 1
+org.jfree.chart.axis.Tick.equals : return 0
+org.jfree.chart.axis.Tick.equals : $r7 = r0.<org.jfree.chart.axis.Tick: org.jfree.ui.TextAnchor rotationAnchor>
+org.jfree.chart.axis.Tick.equals : $r5 = r0.<org.jfree.chart.axis.Tick: org.jfree.ui.TextAnchor textAnchor>
+org.jfree.chart.axis.TickType.equals : r2 = (org.jfree.chart.axis.TickType) r1
+org.jfree.chart.axis.TickType.equals : if r0 != r1 goto $z0 = r1 instanceof org.jfree.chart.axis.TickType
+org.jfree.chart.axis.TickType.equals : $r3 = r0.<org.jfree.chart.axis.TickType: java.lang.String name>
+org.jfree.chart.axis.TickType.equals : return 1
+org.jfree.chart.axis.TickType.equals : return 0
+org.jfree.chart.axis.TickType.equals : $z0 = r1 instanceof org.jfree.chart.axis.TickType
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null goto return
+org.jfree.chart.axis.ValueTick.equals : $z2 = specialinvoke r0.<org.jfree.chart.axis.Tick: boolean equals(java.lang.Object)>(r1)
+org.jfree.chart.axis.ValueTick.equals : $r3 = r0.<org.jfree.chart.axis.ValueTick: org.jfree.chart.axis.TickType tickType>
+org.jfree.chart.axis.ValueTick.equals : $z0 = r1 instanceof org.jfree.chart.axis.ValueTick
+org.jfree.chart.axis.ValueTick.equals : return 0
+org.jfree.chart.axis.ValueTick.equals : $d0 = r0.<org.jfree.chart.axis.ValueTick: double value>
+org.jfree.chart.axis.ValueTick.equals : r2 = (org.jfree.chart.axis.ValueTick) r1
+org.jfree.chart.axis.ValueTick.equals : if r1 != r0 goto $z0 = r1 instanceof org.jfree.chart.axis.ValueTick

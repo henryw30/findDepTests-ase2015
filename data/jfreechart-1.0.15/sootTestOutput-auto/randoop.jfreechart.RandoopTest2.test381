@@ -1,0 +1,15 @@
+org.jfree.chart.renderer.AbstractRenderer.lookupSeriesFillPaint : r1 = r0.<org.jfree.chart.renderer.AbstractRenderer: java.awt.Paint baseFillPaint>
+org.jfree.chart.renderer.AbstractRenderer.lookupSeriesFillPaint : if r1 != null goto return r1
+org.jfree.chart.renderer.AbstractRenderer.lookupSeriesFillPaint : r1 = virtualinvoke r0.<org.jfree.chart.renderer.AbstractRenderer: java.awt.Paint getSeriesFillPaint(int)>(i0)
+org.jfree.chart.renderer.AbstractRenderer.lookupSeriesFillPaint : if r1 != null goto (branch)
+org.jfree.chart.renderer.AbstractRenderer.lookupSeriesFillPaint : return r1
+org.jfree.chart.renderer.AbstractRenderer.lookupSeriesFillPaint : $r3 = r0.<org.jfree.chart.renderer.AbstractRenderer: java.awt.Paint fillPaint>
+org.jfree.chart.axis.CategoryAxis.setTickLabelPaint : $r7 = new org.jfree.chart.event.AxisChangeEvent
+org.jfree.chart.axis.CategoryAxis.setTickLabelPaint : $r5 = r0.<org.jfree.chart.axis.CategoryAxis: java.util.Map tickLabelPaintMap>
+org.jfree.chart.axis.CategoryAxis.setTickLabelPaint : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "category")
+org.jfree.chart.axis.CategoryAxis.setTickLabelPaint : if r2 != null goto $r5 = r0.<org.jfree.chart.axis.CategoryAxis: java.util.Map tickLabelPaintMap>
+org.jfree.chart.renderer.AbstractRenderer.getItemFillPaint : $r1 = virtualinvoke r0.<org.jfree.chart.renderer.AbstractRenderer: java.awt.Paint lookupSeriesFillPaint(int)>(i0)
+org.jfree.chart.renderer.AbstractRenderer.getSeriesFillPaint : $r1 = r0.<org.jfree.chart.renderer.AbstractRenderer: org.jfree.util.PaintList fillPaintList>
+org.jfree.chart.axis.Axis.notifyListeners : $i1 = lengthof r2
+org.jfree.chart.axis.Axis.notifyListeners : $r3 = r0.<org.jfree.chart.axis.Axis: javax.swing.event.EventListenerList listenerList>
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null goto return

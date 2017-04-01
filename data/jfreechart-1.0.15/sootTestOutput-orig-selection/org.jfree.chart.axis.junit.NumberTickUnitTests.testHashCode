@@ -1,0 +1,20 @@
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null >>>>>>>> org.jfree.chart.axis.NumberTickUnit.hashCode : i0 = specialinvoke r0.<org.jfree.chart.axis.TickUnit: int hashCode()>()
+org.jfree.chart.axis.NumberTickUnit.hashCode : i0 = specialinvoke r0.<org.jfree.chart.axis.TickUnit: int hashCode()>() >>>>>>>> org.jfree.chart.axis.TickUnit.hashCode : $d0 = r0.<org.jfree.chart.axis.TickUnit: double size>
+org.jfree.chart.axis.TickUnit.hashCode : $d0 = r0.<org.jfree.chart.axis.TickUnit: double size> >>>>>>>> org.jfree.chart.axis.TickUnit.hashCode : $b1 = $d0 cmpl 0.0
+org.jfree.chart.axis.TickUnit.hashCode : $b1 = $d0 cmpl 0.0 >>>>>>>> org.jfree.chart.axis.TickUnit.hashCode : if $b1 == 0
+org.jfree.chart.axis.TickUnit.hashCode : if $b1 == 0 >>>>>>>> org.jfree.chart.axis.TickUnit.hashCode : $d1 = r0.<org.jfree.chart.axis.TickUnit: double size>
+org.jfree.chart.axis.TickUnit.hashCode : $d1 = r0.<org.jfree.chart.axis.TickUnit: double size> >>>>>>>> org.jfree.chart.axis.TickUnit.hashCode : $l2 = staticinvoke <java.lang.Double: long doubleToLongBits(double)>($d1)
+org.jfree.chart.axis.TickUnit.hashCode : $l2 = staticinvoke <java.lang.Double: long doubleToLongBits(double)>($d1) >>>>>>>> org.jfree.chart.axis.TickUnit.hashCode : goto [?= l0 = $l2]
+org.jfree.chart.axis.TickUnit.hashCode : goto [?= l0 = $l2] >>>>>>>> org.jfree.chart.axis.TickUnit.hashCode : l0 = $l2
+org.jfree.chart.axis.TickUnit.hashCode : l0 = $l2 >>>>>>>> org.jfree.chart.axis.TickUnit.hashCode : $l3 = l0 >>> 32
+org.jfree.chart.axis.TickUnit.hashCode : $l3 = l0 >>> 32 >>>>>>>> org.jfree.chart.axis.TickUnit.hashCode : $l4 = l0 ^ $l3
+org.jfree.chart.axis.TickUnit.hashCode : $l4 = l0 ^ $l3 >>>>>>>> org.jfree.chart.axis.TickUnit.hashCode : $i5 = (int) $l4
+org.jfree.chart.axis.TickUnit.hashCode : $i5 = (int) $l4 >>>>>>>> org.jfree.chart.axis.TickUnit.hashCode : return $i5
+org.jfree.chart.axis.TickUnit.hashCode : return $i5 >>>>>>>> org.jfree.chart.axis.NumberTickUnit.hashCode : $i1 = 29 * i0
+org.jfree.chart.axis.NumberTickUnit.hashCode : $i1 = 29 * i0 >>>>>>>> org.jfree.chart.axis.NumberTickUnit.hashCode : $r1 = r0.<org.jfree.chart.axis.NumberTickUnit: java.text.NumberFormat formatter>
+org.jfree.chart.axis.NumberTickUnit.hashCode : $r1 = r0.<org.jfree.chart.axis.NumberTickUnit: java.text.NumberFormat formatter> >>>>>>>> org.jfree.chart.axis.NumberTickUnit.hashCode : if $r1 == null
+org.jfree.chart.axis.NumberTickUnit.hashCode : if $r1 == null >>>>>>>> org.jfree.chart.axis.NumberTickUnit.hashCode : $r2 = r0.<org.jfree.chart.axis.NumberTickUnit: java.text.NumberFormat formatter>
+org.jfree.chart.axis.NumberTickUnit.hashCode : $r2 = r0.<org.jfree.chart.axis.NumberTickUnit: java.text.NumberFormat formatter> >>>>>>>> org.jfree.chart.axis.NumberTickUnit.hashCode : $i2 = virtualinvoke $r2.<java.text.NumberFormat: int hashCode()>()
+org.jfree.chart.axis.NumberTickUnit.hashCode : $i2 = virtualinvoke $r2.<java.text.NumberFormat: int hashCode()>() >>>>>>>> org.jfree.chart.axis.NumberTickUnit.hashCode : goto [?= i3 = $i1 + $i2]
+org.jfree.chart.axis.NumberTickUnit.hashCode : goto [?= i3 = $i1 + $i2] >>>>>>>> org.jfree.chart.axis.NumberTickUnit.hashCode : i3 = $i1 + $i2
+org.jfree.chart.axis.NumberTickUnit.hashCode : i3 = $i1 + $i2 >>>>>>>> org.jfree.chart.axis.NumberTickUnit.hashCode : return i3

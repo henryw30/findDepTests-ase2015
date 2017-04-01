@@ -1,0 +1,12 @@
+org.jfree.data.general.AbstractDataset.notifyListeners : $r3 = r0.<org.jfree.data.general.AbstractDataset: javax.swing.event.EventListenerList listenerList>
+org.jfree.data.general.AbstractDataset.notifyListeners : $i1 = lengthof r2
+org.jfree.data.time.TimeSeriesCollection.getSeriesCount : $r1 = r0.<org.jfree.data.time.TimeSeriesCollection: java.util.List data>
+org.jfree.data.general.AbstractDataset.fireDatasetChanged : $r1 = new org.jfree.data.general.DatasetChangeEvent
+org.jfree.data.general.Series.addChangeListener : $r2 = r0.<org.jfree.data.general.Series: javax.swing.event.EventListenerList listeners>
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null goto return
+org.jfree.data.time.TimeSeriesCollection.getSeries : if i0 < 0 goto $r2 = new java.lang.IllegalArgumentException
+org.jfree.data.time.TimeSeriesCollection.getSeries : $r2 = new java.lang.IllegalArgumentException
+org.jfree.data.time.TimeSeriesCollection.addSeries : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "series")
+org.jfree.data.time.TimeSeriesCollection.addSeries : virtualinvoke r0.<org.jfree.data.time.TimeSeriesCollection: void fireDatasetChanged()>()
+org.jfree.data.time.TimeSeriesCollection.addSeries : virtualinvoke r1.<org.jfree.data.time.TimeSeries: void addChangeListener(org.jfree.data.general.SeriesChangeListener)>(r0)
+org.jfree.data.time.TimeSeriesCollection.addSeries : $r2 = r0.<org.jfree.data.time.TimeSeriesCollection: java.util.List data>

@@ -1,0 +1,54 @@
+org.jfree.data.xy.XYSeries.equals : $z4 = r0.<org.jfree.data.xy.XYSeries: boolean allowDuplicateXValues>
+org.jfree.data.xy.XYSeries.equals : $z1 = specialinvoke r0.<org.jfree.data.general.Series: boolean equals(java.lang.Object)>(r1)
+org.jfree.data.xy.XYSeries.equals : r2 = (org.jfree.data.xy.XYSeries) r1
+org.jfree.data.xy.XYSeries.equals : $i0 = r0.<org.jfree.data.xy.XYSeries: int maximumItemCount>
+org.jfree.data.xy.XYSeries.equals : $z0 = r1 instanceof org.jfree.data.xy.XYSeries
+org.jfree.data.xy.XYSeries.equals : $r3 = r0.<org.jfree.data.xy.XYSeries: java.util.List data>
+org.jfree.data.xy.XYSeries.equals : if r1 != r0 goto $z0 = r1 instanceof org.jfree.data.xy.XYSeries
+org.jfree.data.xy.XYSeries.equals : return 1
+org.jfree.data.xy.XYSeries.equals : $z2 = r0.<org.jfree.data.xy.XYSeries: boolean autoSort>
+org.jfree.data.xy.XYSeries.equals : return 0
+org.jfree.data.xy.XYSeriesCollection.getSeriesIndex : return -1
+org.jfree.data.xy.XYSeriesCollection.getSeriesIndex : i1 = 0
+org.jfree.data.xy.XYSeriesCollection.getSeriesIndex : $r3 = r0.<org.jfree.data.xy.XYSeriesCollection: java.util.List data>
+org.jfree.data.xy.XYSeriesCollection.getSeriesIndex : i0 = virtualinvoke r0.<org.jfree.data.xy.XYSeriesCollection: int getSeriesCount()>()
+org.jfree.data.xy.XYSeriesCollection.getSeriesIndex : $r5 = virtualinvoke r2.<org.jfree.data.xy.XYSeries: java.lang.Comparable getKey()>()
+org.jfree.data.xy.XYSeriesCollection.getSeriesIndex : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "key")
+org.jfree.data.general.Series.removeVetoableChangeListener : $r2 = r0.<org.jfree.data.general.Series: java.beans.VetoableChangeSupport vetoableChangeSupport>
+org.jfree.data.xy.IntervalXYDelegate.datasetChanged : $z0 = r0.<org.jfree.data.xy.IntervalXYDelegate: boolean autoWidth>
+org.jfree.data.general.AbstractDataset.addChangeListener : $r2 = r0.<org.jfree.data.general.AbstractDataset: javax.swing.event.EventListenerList listenerList>
+org.jfree.data.general.Series.removeChangeListener : $r2 = r0.<org.jfree.data.general.Series: javax.swing.event.EventListenerList listeners>
+org.jfree.data.xy.XYSeriesCollection.removeSeries : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "series")
+org.jfree.data.xy.XYSeriesCollection.removeSeries : $r3 = r0.<org.jfree.data.xy.XYSeriesCollection: java.util.List data>
+org.jfree.data.xy.XYSeriesCollection.removeSeries : $r2 = r0.<org.jfree.data.xy.XYSeriesCollection: java.util.List data>
+org.jfree.data.xy.XYSeriesCollection.removeSeries : virtualinvoke r0.<org.jfree.data.xy.XYSeriesCollection: void fireDatasetChanged()>()
+org.jfree.data.xy.XYSeriesCollection.removeSeries : virtualinvoke r1.<org.jfree.data.xy.XYSeries: void removeChangeListener(org.jfree.data.general.SeriesChangeListener)>(r0)
+org.jfree.data.xy.XYSeriesCollection.removeSeries : virtualinvoke r1.<org.jfree.data.xy.XYSeries: void removeVetoableChangeListener(java.beans.VetoableChangeListener)>(r0)
+org.jfree.data.xy.XYSeriesCollection.equals : if r1 != r0 goto $z0 = r1 instanceof org.jfree.data.xy.XYSeriesCollection
+org.jfree.data.xy.XYSeriesCollection.equals : return 1
+org.jfree.data.general.AbstractDataset.notifyListeners : $r4 = r2[i0]
+org.jfree.data.general.AbstractDataset.notifyListeners : $r3 = r0.<org.jfree.data.general.AbstractDataset: javax.swing.event.EventListenerList listenerList>
+org.jfree.data.general.AbstractDataset.notifyListeners : $i2 = i0 + 1
+org.jfree.data.general.AbstractDataset.notifyListeners : $i1 = lengthof r2
+org.jfree.data.xy.XYSeriesCollection.addSeries : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "series")
+org.jfree.data.xy.XYSeriesCollection.addSeries : $r3 = virtualinvoke r1.<org.jfree.data.xy.XYSeries: java.lang.Comparable getKey()>()
+org.jfree.data.xy.XYSeriesCollection.addSeries : virtualinvoke r0.<org.jfree.data.xy.XYSeriesCollection: void fireDatasetChanged()>()
+org.jfree.data.xy.XYSeriesCollection.addSeries : virtualinvoke r1.<org.jfree.data.xy.XYSeries: void addChangeListener(org.jfree.data.general.SeriesChangeListener)>(r0)
+org.jfree.data.xy.XYSeriesCollection.addSeries : virtualinvoke r1.<org.jfree.data.xy.XYSeries: void addVetoableChangeListener(java.beans.VetoableChangeListener)>(r0)
+org.jfree.data.xy.XYSeriesCollection.addSeries : $r9 = r0.<org.jfree.data.xy.XYSeriesCollection: java.util.List data>
+org.jfree.data.general.Series.equals : $r3 = virtualinvoke r0.<org.jfree.data.general.Series: java.lang.Comparable getKey()>()
+org.jfree.data.general.Series.equals : $z0 = r1 instanceof org.jfree.data.general.Series
+org.jfree.data.general.Series.equals : if r1 != r0 goto $z0 = r1 instanceof org.jfree.data.general.Series
+org.jfree.data.general.Series.equals : r2 = (org.jfree.data.general.Series) r1
+org.jfree.data.general.Series.equals : return 1
+org.jfree.data.general.Series.equals : $r5 = virtualinvoke r0.<org.jfree.data.general.Series: java.lang.String getDescription()>()
+org.jfree.data.general.Series.equals : return 0
+org.jfree.data.general.AbstractDataset.fireDatasetChanged : $r1 = new org.jfree.data.general.DatasetChangeEvent
+org.jfree.data.general.Series.getKey : $r1 = r0.<org.jfree.data.general.Series: java.lang.Comparable key>
+org.jfree.data.general.Series.addChangeListener : $r2 = r0.<org.jfree.data.general.Series: javax.swing.event.EventListenerList listeners>
+org.jfree.data.xy.XYSeriesCollection.getSeriesCount : $r1 = r0.<org.jfree.data.xy.XYSeriesCollection: java.util.List data>
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null goto return
+org.jfree.data.general.Series.addVetoableChangeListener : $r2 = r0.<org.jfree.data.general.Series: java.beans.VetoableChangeSupport vetoableChangeSupport>
+org.jfree.data.general.Series.getDescription : $r1 = r0.<org.jfree.data.general.Series: java.lang.String description>
+org.jfree.data.xy.XYSeriesCollection.indexOf : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "series")
+org.jfree.data.xy.XYSeriesCollection.indexOf : $r2 = r0.<org.jfree.data.xy.XYSeriesCollection: java.util.List data>

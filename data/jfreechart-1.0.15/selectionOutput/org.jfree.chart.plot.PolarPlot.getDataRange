@@ -1,0 +1,23 @@
+org.jfree.chart.plot.PolarPlot.getDataRange : r2 = null >>>>>>>> org.jfree.chart.plot.PolarPlot.getDataRange : i0 = virtualinvoke r0.<org.jfree.chart.plot.PolarPlot: int getAxisIndex(org.jfree.chart.axis.ValueAxis)>(r1)
+org.jfree.chart.plot.PolarPlot.getDataRange : i0 = virtualinvoke r0.<org.jfree.chart.plot.PolarPlot: int getAxisIndex(org.jfree.chart.axis.ValueAxis)>(r1) >>>>>>>> org.jfree.chart.plot.PolarPlot.getDataRange : $r6 = new java.util.ArrayList
+org.jfree.chart.plot.PolarPlot.getDataRange : $r6 = new java.util.ArrayList >>>>>>>> org.jfree.chart.plot.PolarPlot.getDataRange : specialinvoke $r6.<java.util.ArrayList: void <init>()>()
+org.jfree.chart.plot.PolarPlot.getDataRange : specialinvoke $r6.<java.util.ArrayList: void <init>()>() >>>>>>>> org.jfree.chart.plot.PolarPlot.getDataRange : r3 = $r6
+org.jfree.chart.plot.PolarPlot.getDataRange : r3 = $r6 >>>>>>>> org.jfree.chart.plot.PolarPlot.getDataRange : if i0 < 0
+org.jfree.chart.plot.PolarPlot.getDataRange : if i0 < 0 >>>>>>>> org.jfree.chart.plot.PolarPlot.getDataRange : $r7 = new java.lang.Integer
+org.jfree.chart.plot.PolarPlot.getDataRange : if i0 < 0 >>>>>>>> org.jfree.chart.plot.PolarPlot.getDataRange : r4 = interfaceinvoke r3.<java.util.List: java.util.Iterator iterator()>()
+org.jfree.chart.plot.PolarPlot.getDataRange : r4 = interfaceinvoke r3.<java.util.List: java.util.Iterator iterator()>() >>>>>>>> org.jfree.chart.plot.PolarPlot.getDataRange : i1 = -1
+org.jfree.chart.plot.PolarPlot.getDataRange : i1 = -1 >>>>>>>> org.jfree.chart.plot.PolarPlot.getDataRange : $z0 = interfaceinvoke r4.<java.util.Iterator: boolean hasNext()>()
+org.jfree.chart.plot.PolarPlot.getDataRange : $z0 = interfaceinvoke r4.<java.util.Iterator: boolean hasNext()>() >>>>>>>> org.jfree.chart.plot.PolarPlot.getDataRange : if $z0 == 0
+org.jfree.chart.plot.PolarPlot.getDataRange : if $z0 == 0 >>>>>>>> org.jfree.chart.plot.PolarPlot.getDataRange : i1 = i1 + 1
+org.jfree.chart.plot.PolarPlot.getDataRange : if $z0 == 0 >>>>>>>> org.jfree.chart.plot.PolarPlot.getDataRange : return r2
+org.jfree.chart.plot.PolarPlot.getDataRange : i1 = i1 + 1 >>>>>>>> org.jfree.chart.plot.PolarPlot.getDataRange : $r8 = interfaceinvoke r4.<java.util.Iterator: java.lang.Object next()>()
+org.jfree.chart.plot.PolarPlot.getDataRange : $r8 = interfaceinvoke r4.<java.util.Iterator: java.lang.Object next()>() >>>>>>>> org.jfree.chart.plot.PolarPlot.getDataRange : r5 = (org.jfree.data.xy.XYDataset) $r8
+org.jfree.chart.plot.PolarPlot.getDataRange : r5 = (org.jfree.data.xy.XYDataset) $r8 >>>>>>>> org.jfree.chart.plot.PolarPlot.getDataRange : if r5 == null
+org.jfree.chart.plot.PolarPlot.getDataRange : if r5 == null >>>>>>>> org.jfree.chart.plot.PolarPlot.getDataRange : $r9 = staticinvoke <org.jfree.data.general.DatasetUtilities: org.jfree.data.Range findRangeBounds(org.jfree.data.xy.XYDataset)>(r5)
+org.jfree.chart.plot.PolarPlot.getDataRange : if r5 == null >>>>>>>> org.jfree.chart.plot.PolarPlot.getDataRange : goto [?= $z0 = interfaceinvoke r4.<java.util.Iterator: boolean hasNext()>()]
+org.jfree.chart.plot.PolarPlot.getDataRange : goto [?= $z0 = interfaceinvoke r4.<java.util.Iterator: boolean hasNext()>()] >>>>>>>> org.jfree.chart.plot.PolarPlot.getDataRange : $z0 = interfaceinvoke r4.<java.util.Iterator: boolean hasNext()>()
+org.jfree.chart.plot.PolarPlot.getDataRange : $r9 = staticinvoke <org.jfree.data.general.DatasetUtilities: org.jfree.data.Range findRangeBounds(org.jfree.data.xy.XYDataset)>(r5) >>>>>>>> org.jfree.chart.plot.PolarPlot.getDataRange : r2 = staticinvoke <org.jfree.data.Range: org.jfree.data.Range combine(org.jfree.data.Range,org.jfree.data.Range)>(r2, $r9)
+org.jfree.chart.plot.PolarPlot.getDataRange : r2 = staticinvoke <org.jfree.data.Range: org.jfree.data.Range combine(org.jfree.data.Range,org.jfree.data.Range)>(r2, $r9) >>>>>>>> org.jfree.chart.plot.PolarPlot.getDataRange : goto [?= $z0 = interfaceinvoke r4.<java.util.Iterator: boolean hasNext()>()]
+org.jfree.chart.plot.PolarPlot.getDataRange : $r7 = new java.lang.Integer >>>>>>>> org.jfree.chart.plot.PolarPlot.getDataRange : specialinvoke $r7.<java.lang.Integer: void <init>(int)>(i0)
+org.jfree.chart.plot.PolarPlot.getDataRange : specialinvoke $r7.<java.lang.Integer: void <init>(int)>(i0) >>>>>>>> org.jfree.chart.plot.PolarPlot.getDataRange : r3 = specialinvoke r0.<org.jfree.chart.plot.PolarPlot: java.util.List getDatasetsMappedToAxis(java.lang.Integer)>($r7)
+org.jfree.chart.plot.PolarPlot.getDataRange : r3 = specialinvoke r0.<org.jfree.chart.plot.PolarPlot: java.util.List getDatasetsMappedToAxis(java.lang.Integer)>($r7) >>>>>>>> org.jfree.chart.plot.PolarPlot.getDataRange : r4 = interfaceinvoke r3.<java.util.List: java.util.Iterator iterator()>()

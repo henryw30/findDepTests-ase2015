@@ -1,0 +1,24 @@
+dynoptic.model.fifosys.gfsm.observed.dag.ObsDAGNode.getPid : $r1 = r0.<dynoptic.model.fifosys.gfsm.observed.dag.ObsDAGNode: dynoptic.model.fifosys.gfsm.observed.ObsFSMState obsState>
+dynoptic.model.fifosys.gfsm.observed.ObsFSMState.namedObsFSMState : $r1 = new dynoptic.model.fifosys.gfsm.observed.ObsFSMState
+dynoptic.model.fifosys.gfsm.observed.dag.ObsDAGNode.addRemoteDependency : $z0 = <dynoptic.model.fifosys.gfsm.observed.dag.ObsDAGNode: boolean $assertionsDisabled>
+dynoptic.model.fifosys.gfsm.observed.dag.ObsDAGNode.addRemoteDependency : $z2 = <dynoptic.model.fifosys.gfsm.observed.dag.ObsDAGNode: boolean $assertionsDisabled>
+dynoptic.model.fifosys.gfsm.observed.dag.ObsDAGNode.addRemoteDependency : $r5 = r0.<dynoptic.model.fifosys.gfsm.observed.dag.ObsDAGNode: java.util.Set remoteDependencies>
+dynoptic.model.fifosys.gfsm.observed.ObsFSMState.getPid : $i0 = r0.<dynoptic.model.fifosys.gfsm.observed.ObsFSMState: int pid>
+dynoptic.model.fifosys.gfsm.observed.ObsFSMState.equals : return 0
+dynoptic.model.fifosys.gfsm.observed.ObsFSMState.equals : if r1 != null goto (branch)
+dynoptic.model.fifosys.gfsm.observed.ObsFSMState.equals : $z0 = r1 instanceof dynoptic.model.fifosys.gfsm.observed.ObsFSMState
+dynoptic.model.fifosys.gfsm.observed.ObsFSMState.equals : if r0 != r1 goto $z0 = r1 instanceof dynoptic.model.fifosys.gfsm.observed.ObsFSMState
+dynoptic.util.Util.newSet : $r0 = new java.util.LinkedHashSet
+dynoptic.model.fifosys.gfsm.observed.dag.ObsDAGNode.isEnabled : $r6 = r0.<dynoptic.model.fifosys.gfsm.observed.dag.ObsDAGNode: java.util.Set remoteDependencies>
+dynoptic.model.fifosys.gfsm.observed.dag.ObsDAGNode.isEnabled : $z0 = <dynoptic.model.fifosys.gfsm.observed.dag.ObsDAGNode: boolean $assertionsDisabled>
+dynoptic.model.fifosys.gfsm.observed.dag.ObsDAGNode.isEnabled : return 1
+dynoptic.model.fifosys.gfsm.observed.dag.ObsDAGNode.isEnabled : return 0
+dynoptic.model.fifosys.gfsm.observed.dag.ObsDAGNode.isEnabled : $r4 = r0.<dynoptic.model.fifosys.gfsm.observed.dag.ObsDAGNode: dynoptic.model.fifosys.gfsm.observed.dag.ObsDAGNode prevState>
+dynoptic.model.fifosys.gfsm.observed.dag.ObsDAGNode.isEnabled : $z2 = virtualinvoke r0.<dynoptic.model.fifosys.gfsm.observed.dag.ObsDAGNode: boolean hasOccurred()>()
+dynoptic.model.fifosys.gfsm.observed.dag.ObsDAGNode.setOccurred : r0.<dynoptic.model.fifosys.gfsm.observed.dag.ObsDAGNode: boolean occurredInSym> = z0
+dynoptic.model.fifosys.gfsm.observed.dag.ObsDAGNode.setOccurred : $z1 = <dynoptic.model.fifosys.gfsm.observed.dag.ObsDAGNode: boolean $assertionsDisabled>
+dynoptic.model.fifosys.gfsm.observed.dag.ObsDAGNode.hasOccurred : $z0 = <dynoptic.model.fifosys.gfsm.observed.dag.ObsDAGNode: boolean $assertionsDisabled>
+dynoptic.model.fifosys.gfsm.observed.dag.ObsDAGNode.hasOccurred : $z2 = r0.<dynoptic.model.fifosys.gfsm.observed.dag.ObsDAGNode: boolean occurredInSym>
+dynoptic.util.Util.newList : $r0 = new java.util.ArrayList
+dynoptic.util.Util.newList : $r1 = new java.util.ArrayList
+dynoptic.model.fifosys.gfsm.observed.dag.ObsDAGNode.getObsState : $r1 = r0.<dynoptic.model.fifosys.gfsm.observed.dag.ObsDAGNode: dynoptic.model.fifosys.gfsm.observed.ObsFSMState obsState>

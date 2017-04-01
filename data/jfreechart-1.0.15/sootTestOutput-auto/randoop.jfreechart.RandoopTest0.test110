@@ -1,0 +1,16 @@
+org.jfree.data.ComparableObjectItem.equals : $z0 = r1 instanceof org.jfree.data.ComparableObjectItem
+org.jfree.data.ComparableObjectItem.equals : if r1 != r0 goto $z0 = r1 instanceof org.jfree.data.ComparableObjectItem
+org.jfree.data.ComparableObjectItem.equals : return 0
+org.jfree.chart.renderer.xy.XYBarRenderer.getLegendBar : $r1 = r0.<org.jfree.chart.renderer.xy.XYBarRenderer: java.awt.Shape legendBar>
+org.jfree.chart.renderer.AbstractRenderer.setBaseShape : virtualinvoke r0.<org.jfree.chart.renderer.AbstractRenderer: void fireChangeEvent()>()
+org.jfree.chart.renderer.AbstractRenderer.setBaseShape : if z0 == 0 goto return
+org.jfree.chart.renderer.AbstractRenderer.setBaseShape : virtualinvoke r0.<org.jfree.chart.renderer.AbstractRenderer: void setBaseShape(java.awt.Shape,boolean)>(r1, 1)
+org.jfree.chart.renderer.AbstractRenderer.setBaseShape : r0.<org.jfree.chart.renderer.AbstractRenderer: java.awt.Shape baseShape> = r1
+org.jfree.chart.renderer.AbstractRenderer.setBaseShape : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "shape")
+org.jfree.chart.renderer.xy.XYBarRenderer.getDefaultShadowsVisible : $z0 = <org.jfree.chart.renderer.xy.XYBarRenderer: boolean defaultShadowsVisible>
+org.jfree.chart.renderer.xy.XYBarRenderer.getDefaultBarPainter : $r0 = <org.jfree.chart.renderer.xy.XYBarRenderer: org.jfree.chart.renderer.xy.XYBarPainter defaultBarPainter>
+org.jfree.chart.renderer.AbstractRenderer.fireChangeEvent : $r1 = new org.jfree.chart.event.RendererChangeEvent
+org.jfree.chart.renderer.AbstractRenderer.getBaseNegativeItemLabelPosition : $r1 = r0.<org.jfree.chart.renderer.AbstractRenderer: org.jfree.chart.labels.ItemLabelPosition baseNegativeItemLabelPosition>
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null goto return
+org.jfree.chart.renderer.AbstractRenderer.notifyListeners : $r3 = r0.<org.jfree.chart.renderer.AbstractRenderer: javax.swing.event.EventListenerList listenerList>
+org.jfree.chart.renderer.AbstractRenderer.notifyListeners : $i1 = lengthof r2

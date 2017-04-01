@@ -1,0 +1,13 @@
+org.jfree.chart.plot.Marker.addChangeListener : $r2 = r0.<org.jfree.chart.plot.Marker: javax.swing.event.EventListenerList listenerList>
+org.jfree.chart.plot.Marker.setAlpha : $r2 = new org.jfree.chart.event.MarkerChangeEvent
+org.jfree.chart.plot.Marker.setAlpha : $b0 = f0 cmpg 0.0F
+org.jfree.chart.plot.Marker.setAlpha : r0.<org.jfree.chart.plot.Marker: float alpha> = f0
+org.jfree.chart.plot.Marker.notifyListeners : $r4 = r2[i0]
+org.jfree.chart.plot.Marker.notifyListeners : $i2 = i0 + 1
+org.jfree.chart.plot.Marker.notifyListeners : $r3 = r0.<org.jfree.chart.plot.Marker: javax.swing.event.EventListenerList listenerList>
+org.jfree.chart.plot.Marker.notifyListeners : $i1 = lengthof r2
+org.jfree.chart.plot.Marker.getAlpha : $f0 = r0.<org.jfree.chart.plot.Marker: float alpha>
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null goto return
+org.jfree.chart.event.MarkerChangeEvent.getMarker : $r1 = r0.<org.jfree.chart.event.MarkerChangeEvent: org.jfree.chart.plot.Marker marker>
+org.jfree.chart.plot.ValueMarker.equals : if r1 != r0 goto $z0 = specialinvoke r0.<org.jfree.chart.plot.Marker: boolean equals(java.lang.Object)>(r1)
+org.jfree.chart.plot.ValueMarker.equals : return 1

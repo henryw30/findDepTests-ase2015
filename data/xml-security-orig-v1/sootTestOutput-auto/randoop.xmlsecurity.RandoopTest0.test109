@@ -1,0 +1,7 @@
+org.apache.xml.security.algorithms.encryption.EncryptionMethod.register : if r3 != null goto r4 = staticinvoke <java.lang.Class: java.lang.Class forName(java.lang.String)>(r1)
+org.apache.xml.security.algorithms.encryption.EncryptionMethod.register : $r8 = <org.apache.xml.security.algorithms.encryption.EncryptionMethod: java.util.HashMap _algorithmHash>
+org.apache.xml.security.algorithms.encryption.EncryptionMethod.register : r4 = staticinvoke <java.lang.Class: java.lang.Class forName(java.lang.String)>(r1)
+org.apache.xml.security.algorithms.encryption.EncryptionMethod.register : $r2 = <org.apache.xml.security.algorithms.encryption.EncryptionMethod: java.util.HashMap _algorithmHash>
+org.apache.xml.security.algorithms.encryption.EncryptionMethod.register : $r10 = virtualinvoke r4.<java.lang.Class: java.lang.Object newInstance()>()
+org.apache.xml.security.algorithms.encryption.EncryptionMethod.register : if r4 == null goto $r20 = <org.apache.xml.security.algorithms.encryption.EncryptionMethod: org.apache.log4j.Category cat>
+org.apache.xml.security.algorithms.encryption.EncryptionMethod.register : $r7 = new java.util.Vector

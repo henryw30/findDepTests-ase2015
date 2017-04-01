@@ -1,0 +1,15 @@
+org.jfree.chart.ChartPanel.createChartPrintJob : r1 = staticinvoke <java.awt.print.PrinterJob: java.awt.print.PrinterJob getPrinterJob()>() >>>>>>>> org.jfree.chart.ChartPanel.createChartPrintJob : r2 = virtualinvoke r1.<java.awt.print.PrinterJob: java.awt.print.PageFormat defaultPage()>()
+org.jfree.chart.ChartPanel.createChartPrintJob : r2 = virtualinvoke r1.<java.awt.print.PrinterJob: java.awt.print.PageFormat defaultPage()>() >>>>>>>> org.jfree.chart.ChartPanel.createChartPrintJob : r3 = virtualinvoke r1.<java.awt.print.PrinterJob: java.awt.print.PageFormat pageDialog(java.awt.print.PageFormat)>(r2)
+org.jfree.chart.ChartPanel.createChartPrintJob : r3 = virtualinvoke r1.<java.awt.print.PrinterJob: java.awt.print.PageFormat pageDialog(java.awt.print.PageFormat)>(r2) >>>>>>>> org.jfree.chart.ChartPanel.createChartPrintJob : if r3 == r2
+org.jfree.chart.ChartPanel.createChartPrintJob : if r3 == r2 >>>>>>>> org.jfree.chart.ChartPanel.createChartPrintJob : virtualinvoke r1.<java.awt.print.PrinterJob: void setPrintable(java.awt.print.Printable,java.awt.print.PageFormat)>(r0, r3)
+org.jfree.chart.ChartPanel.createChartPrintJob : if r3 == r2 >>>>>>>> org.jfree.chart.ChartPanel.createChartPrintJob : return
+org.jfree.chart.ChartPanel.createChartPrintJob : virtualinvoke r1.<java.awt.print.PrinterJob: void setPrintable(java.awt.print.Printable,java.awt.print.PageFormat)>(r0, r3) >>>>>>>> org.jfree.chart.ChartPanel.createChartPrintJob : $z0 = virtualinvoke r1.<java.awt.print.PrinterJob: boolean printDialog()>()
+org.jfree.chart.ChartPanel.createChartPrintJob : $z0 = virtualinvoke r1.<java.awt.print.PrinterJob: boolean printDialog()>() >>>>>>>> org.jfree.chart.ChartPanel.createChartPrintJob : if $z0 == 0
+org.jfree.chart.ChartPanel.createChartPrintJob : if $z0 == 0 >>>>>>>> org.jfree.chart.ChartPanel.createChartPrintJob : virtualinvoke r1.<java.awt.print.PrinterJob: void print()>()
+org.jfree.chart.ChartPanel.createChartPrintJob : if $z0 == 0 >>>>>>>> org.jfree.chart.ChartPanel.createChartPrintJob : return
+org.jfree.chart.ChartPanel.createChartPrintJob : if $z0 == 0 >>>>>>>> org.jfree.chart.ChartPanel.createChartPrintJob : $r5 := @caughtexception
+org.jfree.chart.ChartPanel.createChartPrintJob : r4 = $r5 >>>>>>>> org.jfree.chart.ChartPanel.createChartPrintJob : staticinvoke <javax.swing.JOptionPane: void showMessageDialog(java.awt.Component,java.lang.Object)>(r0, r4)
+org.jfree.chart.ChartPanel.createChartPrintJob : staticinvoke <javax.swing.JOptionPane: void showMessageDialog(java.awt.Component,java.lang.Object)>(r0, r4) >>>>>>>> org.jfree.chart.ChartPanel.createChartPrintJob : return
+org.jfree.chart.ChartPanel.createChartPrintJob : virtualinvoke r1.<java.awt.print.PrinterJob: void print()>() >>>>>>>> org.jfree.chart.ChartPanel.createChartPrintJob : goto [?= return]
+org.jfree.chart.ChartPanel.createChartPrintJob : virtualinvoke r1.<java.awt.print.PrinterJob: void print()>() >>>>>>>> org.jfree.chart.ChartPanel.createChartPrintJob : $r5 := @caughtexception
+org.jfree.chart.ChartPanel.createChartPrintJob : goto [?= return] >>>>>>>> org.jfree.chart.ChartPanel.createChartPrintJob : return

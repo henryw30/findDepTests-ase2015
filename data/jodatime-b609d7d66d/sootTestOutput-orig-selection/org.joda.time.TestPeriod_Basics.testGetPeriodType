@@ -1,0 +1,45 @@
+org.joda.time.DateTimeUtils.setCurrentMillisSystem : staticinvoke <org.joda.time.DateTimeUtils: void checkPermission()>() >>>>>>>> org.joda.time.DateTimeUtils.checkPermission : r0 = staticinvoke <java.lang.System: java.lang.SecurityManager getSecurityManager()>()
+org.joda.time.DateTimeUtils.checkPermission : r0 = staticinvoke <java.lang.System: java.lang.SecurityManager getSecurityManager()>() >>>>>>>> org.joda.time.DateTimeUtils.checkPermission : if r0 == null
+org.joda.time.DateTimeUtils.checkPermission : if r0 == null >>>>>>>> org.joda.time.DateTimeUtils.setCurrentMillisSystem : $r0 = <org.joda.time.DateTimeUtils: org.joda.time.DateTimeUtils$SystemMillisProvider SYSTEM_MILLIS_PROVIDER>
+org.joda.time.DateTimeUtils.setCurrentMillisSystem : $r0 = <org.joda.time.DateTimeUtils: org.joda.time.DateTimeUtils$SystemMillisProvider SYSTEM_MILLIS_PROVIDER> >>>>>>>> org.joda.time.DateTimeUtils.setCurrentMillisSystem : <org.joda.time.DateTimeUtils: org.joda.time.DateTimeUtils$MillisProvider cMillisProvider> = $r0
+org.joda.time.DateTimeUtils.setCurrentMillisSystem : <org.joda.time.DateTimeUtils: org.joda.time.DateTimeUtils$MillisProvider cMillisProvider> = $r0 >>>>>>>> org.joda.time.DateTimeZone.setDefault : r1 = staticinvoke <java.lang.System: java.lang.SecurityManager getSecurityManager()>()
+org.joda.time.DateTimeZone.setDefault : r1 = staticinvoke <java.lang.System: java.lang.SecurityManager getSecurityManager()>() >>>>>>>> org.joda.time.DateTimeZone.setDefault : if r1 == null
+org.joda.time.DateTimeZone.setDefault : if r1 == null >>>>>>>> org.joda.time.DateTimeZone.setDefault : if r0 != null
+org.joda.time.DateTimeZone.setDefault : if r0 != null >>>>>>>> org.joda.time.DateTimeZone.setDefault : $r6 = class "org/joda/time/DateTimeZone"
+org.joda.time.DateTimeZone.setDefault : $r6 = class "org/joda/time/DateTimeZone" >>>>>>>> org.joda.time.DateTimeZone.setDefault : r3 = $r6
+org.joda.time.DateTimeZone.setDefault : r3 = $r6 >>>>>>>> org.joda.time.DateTimeZone.setDefault : entermonitor $r6
+org.joda.time.DateTimeZone.setDefault : entermonitor $r6 >>>>>>>> org.joda.time.DateTimeZone.setDefault : <org.joda.time.DateTimeZone: org.joda.time.DateTimeZone cDefault> = r0
+org.joda.time.DateTimeZone.setDefault : <org.joda.time.DateTimeZone: org.joda.time.DateTimeZone cDefault> = r0 >>>>>>>> org.joda.time.DateTimeZone.setDefault : exitmonitor r3
+org.joda.time.DateTimeZone.setDefault : exitmonitor r3 >>>>>>>> org.joda.time.DateTimeZone.setDefault : goto [?= return]
+org.joda.time.DateTimeZone.setDefault : goto [?= return] >>>>>>>> org.joda.time.DateTimeUtils.setCurrentMillisFixed : staticinvoke <org.joda.time.DateTimeUtils: void checkPermission()>()
+org.joda.time.DateTimeUtils.setCurrentMillisFixed : staticinvoke <org.joda.time.DateTimeUtils: void checkPermission()>() >>>>>>>> org.joda.time.DateTimeUtils.setCurrentMillisFixed : $r0 = new org.joda.time.DateTimeUtils$FixedMillisProvider
+org.joda.time.DateTimeUtils.setCurrentMillisFixed : $r0 = new org.joda.time.DateTimeUtils$FixedMillisProvider >>>>>>>> org.joda.time.DateTimeUtils.setCurrentMillisFixed : specialinvoke $r0.<org.joda.time.DateTimeUtils$FixedMillisProvider: void <init>(long)>(l0)
+org.joda.time.DateTimeUtils.setCurrentMillisFixed : specialinvoke $r0.<org.joda.time.DateTimeUtils$FixedMillisProvider: void <init>(long)>(l0) >>>>>>>> org.joda.time.DateTimeUtils.setCurrentMillisFixed : <org.joda.time.DateTimeUtils: org.joda.time.DateTimeUtils$MillisProvider cMillisProvider> = $r0
+org.joda.time.DateTimeUtils.setCurrentMillisFixed : <org.joda.time.DateTimeUtils: org.joda.time.DateTimeUtils$MillisProvider cMillisProvider> = $r0 >>>>>>>> org.joda.time.DateTimeZone.getDefault : r0 = <org.joda.time.DateTimeZone: org.joda.time.DateTimeZone cDefault>
+org.joda.time.DateTimeZone.getDefault : r0 = <org.joda.time.DateTimeZone: org.joda.time.DateTimeZone cDefault> >>>>>>>> org.joda.time.DateTimeZone.getDefault : if r0 != null
+org.joda.time.DateTimeZone.getDefault : if r0 != null >>>>>>>> org.joda.time.DateTimeZone.getDefault : return r0
+org.joda.time.DateTimeZone.getDefault : return r0 >>>>>>>> org.joda.time.PeriodType.standard : r0 = <org.joda.time.PeriodType: org.joda.time.PeriodType cStandard>
+org.joda.time.PeriodType.standard : r0 = <org.joda.time.PeriodType: org.joda.time.PeriodType cStandard> >>>>>>>> org.joda.time.PeriodType.standard : if r0 != null
+org.joda.time.PeriodType.standard : if r0 != null >>>>>>>> org.joda.time.PeriodType.standard : return r0
+org.joda.time.PeriodType.standard : return r0 >>>>>>>> org.joda.time.chrono.ISOChronology.getInstanceUTC : $r0 = <org.joda.time.chrono.ISOChronology: org.joda.time.chrono.ISOChronology INSTANCE_UTC>
+org.joda.time.chrono.ISOChronology.getInstanceUTC : $r0 = <org.joda.time.chrono.ISOChronology: org.joda.time.chrono.ISOChronology INSTANCE_UTC> >>>>>>>> org.joda.time.chrono.ISOChronology.getInstanceUTC : return $r0
+org.joda.time.chrono.ISOChronology.getInstanceUTC : return $r0 >>>>>>>> org.joda.time.chrono.BaseChronology.get : i1 = interfaceinvoke r1.<org.joda.time.ReadablePeriod: int size()>()
+org.joda.time.chrono.BaseChronology.get : i1 = interfaceinvoke r1.<org.joda.time.ReadablePeriod: int size()>() >>>>>>>> org.joda.time.base.AbstractPeriod.size : $r1 = virtualinvoke r0.<org.joda.time.base.AbstractPeriod: org.joda.time.PeriodType getPeriodType()>()
+org.joda.time.base.AbstractPeriod.size : $r1 = virtualinvoke r0.<org.joda.time.base.AbstractPeriod: org.joda.time.PeriodType getPeriodType()>() >>>>>>>> org.joda.time.base.BasePeriod$1.getPeriodType : $r1 = staticinvoke <org.joda.time.PeriodType: org.joda.time.PeriodType time()>()
+org.joda.time.base.BasePeriod$1.getPeriodType : $r1 = staticinvoke <org.joda.time.PeriodType: org.joda.time.PeriodType time()>() >>>>>>>> org.joda.time.PeriodType.time : r0 = <org.joda.time.PeriodType: org.joda.time.PeriodType cTime>
+org.joda.time.PeriodType.time : r0 = <org.joda.time.PeriodType: org.joda.time.PeriodType cTime> >>>>>>>> org.joda.time.PeriodType.time : if r0 != null
+org.joda.time.PeriodType.time : if r0 != null >>>>>>>> org.joda.time.PeriodType.time : return r0
+org.joda.time.PeriodType.time : return r0 >>>>>>>> org.joda.time.base.BasePeriod$1.getPeriodType : return $r1
+org.joda.time.base.BasePeriod$1.getPeriodType : return $r1 >>>>>>>> org.joda.time.base.AbstractPeriod.size : $i0 = virtualinvoke $r1.<org.joda.time.PeriodType: int size()>()
+org.joda.time.base.AbstractPeriod.size : $i0 = virtualinvoke $r1.<org.joda.time.PeriodType: int size()>() >>>>>>>> org.joda.time.PeriodType.size : $r1 = r0.<org.joda.time.PeriodType: org.joda.time.DurationFieldType[] iTypes>
+org.joda.time.PeriodType.size : $r1 = r0.<org.joda.time.PeriodType: org.joda.time.DurationFieldType[] iTypes> >>>>>>>> org.joda.time.PeriodType.size : $i0 = lengthof $r1
+org.joda.time.PeriodType.size : $i0 = lengthof $r1 >>>>>>>> org.joda.time.PeriodType.size : return $i0
+org.joda.time.PeriodType.size : return $i0 >>>>>>>> org.joda.time.base.AbstractPeriod.size : return $i0
+org.joda.time.base.AbstractPeriod.size : return $i0 >>>>>>>> org.joda.time.chrono.BaseChronology.get : r2 = newarray (int)[i1]
+org.joda.time.chrono.BaseChronology.get : r2 = newarray (int)[i1] >>>>>>>> org.joda.time.chrono.BaseChronology.get : $b5 = l0 cmp 0L
+org.joda.time.chrono.BaseChronology.get : $b5 = l0 cmp 0L >>>>>>>> org.joda.time.chrono.BaseChronology.get : if $b5 == 0
+org.joda.time.chrono.BaseChronology.get : if $b5 == 0 >>>>>>>> org.joda.time.chrono.BaseChronology.get : return r2
+org.joda.time.chrono.BaseChronology.get : return r2 >>>>>>>> org.joda.time.base.BasePeriod.getPeriodType : $r1 = r0.<org.joda.time.base.BasePeriod: org.joda.time.PeriodType iType>
+org.joda.time.base.BasePeriod.getPeriodType : $r1 = r0.<org.joda.time.base.BasePeriod: org.joda.time.PeriodType iType> >>>>>>>> org.joda.time.base.BasePeriod.getPeriodType : return $r1
+org.joda.time.base.BasePeriod.getPeriodType : return $r1 >>>>>>>> org.joda.time.PeriodType.equals : if r0 != r1
+org.joda.time.PeriodType.equals : if r0 != r1 >>>>>>>> org.joda.time.PeriodType.equals : return 1

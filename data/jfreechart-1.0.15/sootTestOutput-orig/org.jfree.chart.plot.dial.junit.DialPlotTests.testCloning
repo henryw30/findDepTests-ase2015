@@ -1,0 +1,62 @@
+org.jfree.chart.plot.DefaultDrawingSupplier.equalShapes : $r3 = r1[i0]
+org.jfree.chart.plot.DefaultDrawingSupplier.equalShapes : i0 = 0
+org.jfree.chart.plot.DefaultDrawingSupplier.equalShapes : return 1
+org.jfree.chart.plot.DefaultDrawingSupplier.equalShapes : $i1 = lengthof r1
+org.jfree.chart.plot.DefaultDrawingSupplier.equalShapes : if r1 != null goto (branch)
+org.jfree.chart.plot.DefaultDrawingSupplier.equalShapes : if r2 != null goto $i1 = lengthof r1
+org.jfree.chart.plot.Plot.equals : $r15 = r0.<org.jfree.chart.plot.Plot: java.awt.Paint backgroundPaint>
+org.jfree.chart.plot.Plot.equals : $f4 = r0.<org.jfree.chart.plot.Plot: float backgroundAlpha>
+org.jfree.chart.plot.Plot.equals : $r7 = r0.<org.jfree.chart.plot.Plot: java.awt.Paint noDataMessagePaint>
+org.jfree.chart.plot.Plot.equals : $f2 = r0.<org.jfree.chart.plot.Plot: float foregroundAlpha>
+org.jfree.chart.plot.Plot.equals : if r1 != r0 goto $z0 = r1 instanceof org.jfree.chart.plot.Plot
+org.jfree.chart.plot.Plot.equals : $r3 = r0.<org.jfree.chart.plot.Plot: java.lang.String noDataMessage>
+org.jfree.chart.plot.Plot.equals : $z12 = r0.<org.jfree.chart.plot.Plot: boolean notify>
+org.jfree.chart.plot.Plot.equals : return 1
+org.jfree.chart.plot.Plot.equals : $r19 = r0.<org.jfree.chart.plot.Plot: org.jfree.chart.plot.DrawingSupplier drawingSupplier>
+org.jfree.chart.plot.Plot.equals : $r9 = r0.<org.jfree.chart.plot.Plot: org.jfree.ui.RectangleInsets insets>
+org.jfree.chart.plot.Plot.equals : $r17 = r0.<org.jfree.chart.plot.Plot: java.awt.Image backgroundImage>
+org.jfree.chart.plot.Plot.equals : $z0 = r1 instanceof org.jfree.chart.plot.Plot
+org.jfree.chart.plot.Plot.equals : $r5 = r0.<org.jfree.chart.plot.Plot: java.awt.Font noDataMessageFont>
+org.jfree.chart.plot.Plot.equals : $r11 = r0.<org.jfree.chart.plot.Plot: java.awt.Stroke outlineStroke>
+org.jfree.chart.plot.Plot.equals : r2 = (org.jfree.chart.plot.Plot) r1
+org.jfree.chart.plot.Plot.equals : $i0 = r0.<org.jfree.chart.plot.Plot: int backgroundImageAlignment>
+org.jfree.chart.plot.Plot.equals : $r13 = r0.<org.jfree.chart.plot.Plot: java.awt.Paint outlinePaint>
+org.jfree.chart.plot.Plot.equals : $f0 = r0.<org.jfree.chart.plot.Plot: float backgroundImageAlpha>
+org.jfree.chart.plot.Plot.equals : $z5 = r0.<org.jfree.chart.plot.Plot: boolean outlineVisible>
+org.jfree.chart.plot.dial.ArcDialFrame.equals : if r1 != r0 goto $z0 = r1 instanceof org.jfree.chart.plot.dial.ArcDialFrame
+org.jfree.chart.plot.dial.ArcDialFrame.equals : return 1
+org.jfree.chart.plot.Plot.clone : $r10 = new javax.swing.event.EventListenerList
+org.jfree.chart.plot.Plot.clone : $r2 = specialinvoke r0.<java.lang.Object: java.lang.Object clone()>()
+org.jfree.chart.plot.Plot.clone : $r3 = r0.<org.jfree.chart.plot.Plot: org.jfree.data.general.DatasetGroup datasetGroup>
+org.jfree.chart.plot.Plot.clone : $r7 = r0.<org.jfree.chart.plot.Plot: org.jfree.chart.plot.DrawingSupplier drawingSupplier>
+org.jfree.chart.plot.Plot.clone : $r8 = staticinvoke <org.jfree.util.ObjectUtilities: java.lang.Object clone(java.lang.Object)>($r7)
+org.jfree.chart.plot.Plot.clone : return r1
+org.jfree.chart.plot.dial.DialPlot.equals : $d6 = r0.<org.jfree.chart.plot.dial.DialPlot: double viewH>
+org.jfree.chart.plot.dial.DialPlot.equals : r2 = (org.jfree.chart.plot.dial.DialPlot) r1
+org.jfree.chart.plot.dial.DialPlot.equals : if r1 != r0 goto $z0 = r1 instanceof org.jfree.chart.plot.dial.DialPlot
+org.jfree.chart.plot.dial.DialPlot.equals : $z0 = r1 instanceof org.jfree.chart.plot.dial.DialPlot
+org.jfree.chart.plot.dial.DialPlot.equals : $d4 = r0.<org.jfree.chart.plot.dial.DialPlot: double viewW>
+org.jfree.chart.plot.dial.DialPlot.equals : $r3 = r0.<org.jfree.chart.plot.dial.DialPlot: org.jfree.chart.plot.dial.DialLayer background>
+org.jfree.chart.plot.dial.DialPlot.equals : $d0 = r0.<org.jfree.chart.plot.dial.DialPlot: double viewX>
+org.jfree.chart.plot.dial.DialPlot.equals : $r11 = r0.<org.jfree.chart.plot.dial.DialPlot: java.util.List pointers>
+org.jfree.chart.plot.dial.DialPlot.equals : $d2 = r0.<org.jfree.chart.plot.dial.DialPlot: double viewY>
+org.jfree.chart.plot.dial.DialPlot.equals : $r9 = r0.<org.jfree.chart.plot.dial.DialPlot: java.util.List layers>
+org.jfree.chart.plot.dial.DialPlot.equals : $r5 = r0.<org.jfree.chart.plot.dial.DialPlot: org.jfree.chart.plot.dial.DialLayer cap>
+org.jfree.chart.plot.dial.DialPlot.equals : $r7 = r0.<org.jfree.chart.plot.dial.DialPlot: org.jfree.chart.plot.dial.DialFrame dialFrame>
+org.jfree.chart.plot.dial.DialPlot.equals : $z6 = specialinvoke r0.<org.jfree.chart.plot.Plot: boolean equals(java.lang.Object)>(r1)
+org.jfree.chart.plot.DefaultDrawingSupplier.equals : $r7 = r0.<org.jfree.chart.plot.DefaultDrawingSupplier: java.awt.Stroke[] strokeSequence>
+org.jfree.chart.plot.DefaultDrawingSupplier.equals : $i8 = r0.<org.jfree.chart.plot.DefaultDrawingSupplier: int shapeIndex>
+org.jfree.chart.plot.DefaultDrawingSupplier.equals : $i6 = r0.<org.jfree.chart.plot.DefaultDrawingSupplier: int outlineStrokeIndex>
+org.jfree.chart.plot.DefaultDrawingSupplier.equals : $r11 = r0.<org.jfree.chart.plot.DefaultDrawingSupplier: java.awt.Shape[] shapeSequence>
+org.jfree.chart.plot.DefaultDrawingSupplier.equals : $r9 = r0.<org.jfree.chart.plot.DefaultDrawingSupplier: java.awt.Stroke[] outlineStrokeSequence>
+org.jfree.chart.plot.DefaultDrawingSupplier.equals : $i2 = r0.<org.jfree.chart.plot.DefaultDrawingSupplier: int outlinePaintIndex>
+org.jfree.chart.plot.DefaultDrawingSupplier.equals : r2 = (org.jfree.chart.plot.DefaultDrawingSupplier) r1
+org.jfree.chart.plot.DefaultDrawingSupplier.equals : return 1
+org.jfree.chart.plot.DefaultDrawingSupplier.equals : $z0 = r1 instanceof org.jfree.chart.plot.DefaultDrawingSupplier
+org.jfree.chart.plot.DefaultDrawingSupplier.equals : if r1 != r0 goto $z0 = r1 instanceof org.jfree.chart.plot.DefaultDrawingSupplier
+org.jfree.chart.plot.DefaultDrawingSupplier.equals : $r5 = r0.<org.jfree.chart.plot.DefaultDrawingSupplier: java.awt.Paint[] outlinePaintSequence>
+org.jfree.chart.plot.DefaultDrawingSupplier.equals : $i4 = r0.<org.jfree.chart.plot.DefaultDrawingSupplier: int strokeIndex>
+org.jfree.chart.plot.DefaultDrawingSupplier.equals : $i0 = r0.<org.jfree.chart.plot.DefaultDrawingSupplier: int paintIndex>
+org.jfree.chart.plot.DefaultDrawingSupplier.equals : $r3 = r0.<org.jfree.chart.plot.DefaultDrawingSupplier: java.awt.Paint[] paintSequence>
+org.jfree.chart.plot.DefaultDrawingSupplier.clone : $r2 = specialinvoke r0.<java.lang.Object: java.lang.Object clone()>()
+org.jfree.chart.plot.DefaultDrawingSupplier.clone : return r1

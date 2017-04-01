@@ -1,0 +1,27 @@
+org.jfree.chart.annotations.XYLineAnnotation.readObject : $r2 = staticinvoke <org.jfree.io.SerialUtilities: java.awt.Paint readPaint(java.io.ObjectInputStream)>(r1)
+org.jfree.chart.annotations.XYLineAnnotation.readObject : virtualinvoke r1.<java.io.ObjectInputStream: void defaultReadObject()>()
+org.jfree.chart.annotations.XYLineAnnotation.readObject : $r3 = staticinvoke <org.jfree.io.SerialUtilities: java.awt.Stroke readStroke(java.io.ObjectInputStream)>(r1)
+org.jfree.chart.annotations.AbstractXYAnnotation.equals : $r5 = r0.<org.jfree.chart.annotations.AbstractXYAnnotation: java.lang.String url>
+org.jfree.chart.annotations.AbstractXYAnnotation.equals : if r1 != r0 goto $z0 = r1 instanceof org.jfree.chart.annotations.AbstractXYAnnotation
+org.jfree.chart.annotations.AbstractXYAnnotation.equals : r2 = (org.jfree.chart.annotations.AbstractXYAnnotation) r1
+org.jfree.chart.annotations.AbstractXYAnnotation.equals : return 1
+org.jfree.chart.annotations.AbstractXYAnnotation.equals : $z0 = r1 instanceof org.jfree.chart.annotations.AbstractXYAnnotation
+org.jfree.chart.annotations.AbstractXYAnnotation.equals : $r3 = r0.<org.jfree.chart.annotations.AbstractXYAnnotation: java.lang.String toolTipText>
+org.jfree.chart.annotations.AbstractAnnotation.writeObject : virtualinvoke r1.<java.io.ObjectOutputStream: void defaultWriteObject()>()
+org.jfree.chart.annotations.XYLineAnnotation.writeObject : $r3 = r0.<org.jfree.chart.annotations.XYLineAnnotation: java.awt.Stroke stroke>
+org.jfree.chart.annotations.XYLineAnnotation.writeObject : $r2 = r0.<org.jfree.chart.annotations.XYLineAnnotation: java.awt.Paint paint>
+org.jfree.chart.annotations.XYLineAnnotation.writeObject : virtualinvoke r1.<java.io.ObjectOutputStream: void defaultWriteObject()>()
+org.jfree.chart.annotations.XYLineAnnotation.equals : $r5 = r0.<org.jfree.chart.annotations.XYLineAnnotation: java.awt.Stroke stroke>
+org.jfree.chart.annotations.XYLineAnnotation.equals : $d2 = r0.<org.jfree.chart.annotations.XYLineAnnotation: double y1>
+org.jfree.chart.annotations.XYLineAnnotation.equals : r2 = (org.jfree.chart.annotations.XYLineAnnotation) r1
+org.jfree.chart.annotations.XYLineAnnotation.equals : $z0 = specialinvoke r0.<org.jfree.chart.annotations.AbstractXYAnnotation: boolean equals(java.lang.Object)>(r1)
+org.jfree.chart.annotations.XYLineAnnotation.equals : $d0 = r0.<org.jfree.chart.annotations.XYLineAnnotation: double x1>
+org.jfree.chart.annotations.XYLineAnnotation.equals : $z1 = r1 instanceof org.jfree.chart.annotations.XYLineAnnotation
+org.jfree.chart.annotations.XYLineAnnotation.equals : if r1 != r0 goto $z0 = specialinvoke r0.<org.jfree.chart.annotations.AbstractXYAnnotation: boolean equals(java.lang.Object)>(r1)
+org.jfree.chart.annotations.XYLineAnnotation.equals : return 1
+org.jfree.chart.annotations.XYLineAnnotation.equals : $r3 = r0.<org.jfree.chart.annotations.XYLineAnnotation: java.awt.Paint paint>
+org.jfree.chart.annotations.XYLineAnnotation.equals : $d6 = r0.<org.jfree.chart.annotations.XYLineAnnotation: double y2>
+org.jfree.chart.annotations.XYLineAnnotation.equals : $d4 = r0.<org.jfree.chart.annotations.XYLineAnnotation: double x2>
+org.jfree.chart.annotations.AbstractAnnotation.readObject : $r2 = new javax.swing.event.EventListenerList
+org.jfree.chart.annotations.AbstractAnnotation.readObject : virtualinvoke r1.<java.io.ObjectInputStream: void defaultReadObject()>()
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null goto return

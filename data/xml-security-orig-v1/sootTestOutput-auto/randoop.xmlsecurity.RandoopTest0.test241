@@ -1,0 +1,23 @@
+org.apache.xml.security.utils.HexDump.toHexString : i3 = i0
+org.apache.xml.security.utils.HexDump.toHexString : $i9 = i3
+org.apache.xml.security.utils.HexDump.toHexString : $z0 = <org.apache.xml.security.utils.HexDump: boolean WITH_BYTE_SEPARATOR>
+org.apache.xml.security.utils.HexDump.toHexString : $i7 = i1 * 2
+org.apache.xml.security.utils.HexDump.toHexString : staticinvoke <java.lang.System: long currentTimeMillis()>()
+org.apache.xml.security.utils.HexDump.prettyPrintHex : $r3 = virtualinvoke r2.<sun.misc.HexDumpEncoder: java.lang.String encodeBuffer(byte[])>(r0)
+org.apache.xml.security.utils.HexDump.prettyPrintHex : $r1 = new sun.misc.HexDumpEncoder
+org.apache.xml.security.utils.HexDump.byteArrayToBinaryString : i1 = 0
+org.apache.xml.security.utils.HexDump.byteArrayToBinaryString : $i3 = i0 - 1
+org.apache.xml.security.utils.HexDump.byteArrayToBinaryString : $b2 = r0[i1]
+org.apache.xml.security.utils.HexDump.byteArrayToBinaryString : i0 = lengthof r0
+org.apache.xml.security.utils.HexDump.byteArrayToBinaryString : $r1 = new java.lang.StringBuffer
+org.apache.xml.security.utils.HexDump.byteArrayToBinaryString : $r4 = virtualinvoke r2.<java.lang.StringBuffer: java.lang.String toString()>()
+org.apache.xml.security.algorithms.MessageDigestAlgorithm.isEqual : $z0 = staticinvoke <java.security.MessageDigest: boolean isEqual(byte[],byte[])>(r0, r1)
+org.apache.xml.security.utils.HexDump.byte2bin : i1 = 0
+org.apache.xml.security.utils.HexDump.byte2bin : $r2 = <org.apache.xml.security.utils.HexDump: char[] BIT_DIGIT>
+org.apache.xml.security.utils.HexDump.byte2bin : $r1 = <org.apache.xml.security.utils.HexDump: byte[] COMPARE_BITS>
+org.apache.xml.security.utils.HexDump.toByteArray : $b1 = (byte) i0
+org.apache.xml.security.utils.HexDump.toByteArray : r0 = newarray (byte)[4]
+org.apache.xml.security.utils.HexDump.toByteArray : $i4 = i0 >> 16
+org.apache.xml.security.utils.HexDump.toByteArray : $i6 = i0 >> 24
+org.apache.xml.security.utils.HexDump.toByteArray : $i2 = i0 >> 8
+org.apache.xml.security.utils.HexDump.toByteArray : return r0

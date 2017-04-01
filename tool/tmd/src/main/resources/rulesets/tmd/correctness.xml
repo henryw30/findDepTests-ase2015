@@ -1,0 +1,401 @@
+<?xml version="1.0"?>
+
+<ruleset name="basic"
+    xmlns="http://pmd.sourceforge.net/ruleset/2.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://pmd.sourceforge.net/ruleset/2.0.0 http://pmd.sourceforge.net/ruleset_2_0_0.xsd">
+  <description>
+The Basic ruleset contains a collection of good practices which should be followed.
+  </description>
+
+
+
+
+<rule name="StaticFieldsShouldBeSetUpOrTearedDown"
+      message="Static field should be set up or teared down in order to avoid test dependency issues."
+      class="edu.unl.e2.tmd.StaticFieldsShouldBeSetUpOrTearedDownRule"
+      language="java">
+     <description></description>
+     <priority>3</priority>
+     <example>
+     <![CDATA[
+        private static Option option;
+        
+        @Before public void setUp(){
+        	option=null;
+        }    
+     ]]>
+     </example>
+</rule>
+
+<rule name="ThreadSleepCallRule"
+      message="Calls to Thread.sleep should be avoided."
+      class="edu.unl.e2.tmd.ThreadSleepCallRule"
+      language="java">
+     <description></description>
+     <priority>3</priority>
+     <example>
+     <![CDATA[
+  
+     ]]>
+     </example>
+</rule>
+
+
+<rule name="TestsShouldNotCallOtherTests"
+    		 since="2.0"
+          message="Tests should not call other tests."
+          class="edu.unl.e2.tmd.TestsShouldNotCallOtherTestsRule">
+        <description>
+        </description>
+          <priority>3</priority>
+        <example>
+    <![CDATA[]]>
+        </example>
+      </rule>
+      
+      
+<rule name="RuntimeExecRule"
+      message="OS-dependent call should be avoided."
+      class="edu.unl.e2.tmd.RuntimeExecRule"
+      language="java">
+     <description>To Do.</description>
+     <priority>3</priority>
+     <example>
+     <![CDATA[
+  
+     ]]>
+     </example>
+</rule>
+
+
+<rule name="PropertyRule"
+      message="System.setProperty dependency detected."
+      class="edu.unl.e2.tmd.PropertyRule"
+      language="java">
+     <description></description>
+     <priority>3</priority>
+     <example>
+     <![CDATA[]]>
+     </example>
+</rule>
+
+<rule name="AvoidUselessGetterCallsRule"
+    		 since="2.0"
+          message="Ignored getter detected."
+          class="edu.unl.e2.tmd.AvoidUselessGetterCallsRule">
+        <description>
+        </description>
+          <priority>3</priority>
+        <example>
+    <![CDATA[]]>
+        </example>
+      </rule>
+
+<rule name="ExpetedExceptionShouldNotBeGeneric4"
+    		 since="2.0"
+          message="Expected exception should no be a specific type other than Exception and RuntimeException."
+          class="edu.unl.e2.tmd.ExceptionRule">
+        <description>
+        </description>
+          <priority>3</priority>
+        <example>
+    <![CDATA[]]>
+        </example>
+      </rule>
+
+<rule name="StringBasedFileRule"
+      message="Incorrect file dependencies detected."
+      class="edu.unl.e2.tmd.StringPathFileRule"
+      language="java">
+     <description></description>
+     <priority>3</priority>
+     <example>
+     <![CDATA[]]>
+     </example>
+</rule>
+
+<rule name="ObjectBasedFileRule"
+      message="Incorrect file dependencies detected."
+      class="edu.unl.e2.tmd.ObjectFileRule"
+      language="java">
+     <description></description>
+     <priority>3</priority>
+     <example>
+     <![CDATA[]]>
+     </example>
+</rule>
+
+
+
+<rule name="JUnitTestsShouldIncludeAssert"
+    		 since="2.0"
+          message="JUnit tests should include assert() or fail()"
+          class="edu.unl.e2.tmd.JUnitTestsShouldIncludeAssertRule">
+        <description>
+        </description>
+          <priority>3</priority>
+        <example>
+    <![CDATA[
+    ]]>
+        </example>
+      </rule>
+      
+      <rule name="SetUpShouldBeDeclaredBeforeTests"
+      message="Set Up method should be declared before tests."
+      class="edu.unl.e2.tmd.SetUpShouldBeDeclaredBeforeTestsRule"
+      language="java">
+     <description></description>
+     <priority>3</priority>
+     <example>
+     <![CDATA[
+  
+     ]]>
+     </example>
+</rule>
+
+<rule name="BeforeClassShouldBeDeclaredBeforeTests"
+      message="BeforeClass method should be declared before tests."
+      class="edu.unl.e2.tmd.BeforeClassShouldBeDeclaredBeforeTestsRule"
+      language="java">
+     <description></description>
+     <priority>3</priority>
+     <example>
+     <![CDATA[
+  
+     ]]>
+     </example>
+</rule>
+
+<rule name="TearDownShouldBeDeclaredBeforeTests"
+      message="Tear Down method should be declared before tests."
+      class="edu.unl.e2.tmd.TearDownShouldBeDeclaredBeforeTestsRule"
+      language="java">
+     <description></description>
+     <priority>3</priority>
+     <example>
+     <![CDATA[
+  
+     ]]>
+     </example>
+</rule>
+
+<rule name="AfterClassShouldBeDeclaredBeforeTests"
+      message="AfterClass method should be declared before tests."
+      class="edu.unl.e2.tmd.AfterClassShouldBeDeclaredBeforeTestsRule"
+      language="java">
+     <description></description>
+     <priority>3</priority>
+     <example>
+     <![CDATA[
+  
+     ]]>
+     </example>
+</rule>
+
+<rule name="TestsShouldBeDeclaredBeforeHelperMethods"
+      message="Tests should be declared before helper methods."
+      class="edu.unl.e2.tmd.TestsShouldBeDeclaredBeforeHelperMethodsRule"
+      language="java">
+     <description></description>
+     <priority>3</priority>
+     <example>
+     <![CDATA[
+  
+     ]]>
+     </example>
+</rule>
+
+<rule name="StubShouldBeGeneric"
+      message="Stub declaration should be not fixed to a literal."
+      class="edu.unl.e2.tmd.StubShouldBeGenericRule"
+      language="java">
+     <description></description>
+     <priority>3</priority>
+     <example>
+     <![CDATA[
+  
+     ]]>
+     </example>
+</rule>
+
+<rule name="MocksShouldBeMinimized"
+      message="It is better to use a stub and check the state instead of verifying the interaction with a dependency."
+      class="edu.unl.e2.tmd.MocksShouldBeMinimizedRule"
+      language="java">
+     <description></description>
+     <priority>3</priority>
+     <example>
+     <![CDATA[
+  
+     ]]>
+     </example>
+</rule>
+
+<rule name="ShouldNotUseReflection"
+      message="SUT should be test through its public API."
+      class="edu.unl.e2.tmd.ShouldNotUseReflectionRule"
+      language="java">
+     <description></description>
+     <priority>3</priority>
+     <example>
+     <![CDATA[
+    
+     ]]>
+     </example>
+</rule>
+      
+
+<rule name="RefactorNewCalls"
+      message="It is better to extract call to new in their own methods."
+      class="edu.unl.e2.tmd.RefactorNewCallsRule"
+      language="java">
+     <description>To Do.</description>
+     <priority>3</priority>
+     <example>
+     <![CDATA[
+    
+     ]]>
+     </example>
+</rule>
+      
+
+<rule name="AssertToStringRule"
+    		 since="2.0"
+          message="toString used in assertion."
+          class="edu.unl.e2.tmd.AssertToStringRule" >
+        <description>
+        </description>
+          <priority>3</priority>
+        <example>
+    <![CDATA[
+
+    ]]>
+        </example>
+</rule>
+<rule name="ConsoleOutputsRule"
+      message="System.out.print* found on test."
+      class="edu.unl.e2.tmd.ConsoleOutputsRule"
+      language="java">
+     <description>To Do.</description>
+     <priority>3</priority>
+     <example>
+     <![CDATA[
+  
+     ]]>
+     </example>
+</rule>
+
+
+<rule name="LoggerRule"
+      message="Logger used on test."
+      class="edu.unl.e2.tmd.LoggerRule"
+      language="java">
+     <description>To Do.</description>
+     <priority>3</priority>
+     <example>
+     <![CDATA[
+  
+     ]]>
+     </example>
+</rule>
+
+<rule name="FileReaderRule"
+      message="file reader"
+      class="edu.unl.e2.tmd.FileReaderRule"
+      dfa="true"
+      language="java">
+     <description></description>
+     <priority>3</priority>
+     <example>
+     <![CDATA[]]>
+     </example>
+</rule>
+
+<rule name="FinallyBlocksShouldBeAvoidedRule"
+    		 since="2.0"
+          message="finally"
+          class="edu.unl.e2.tmd.FinallyBlocksShouldBeAvoidedRule">
+        <description>
+        </description>
+          <priority>3</priority>
+        <example>
+    <![CDATA[]]>
+        </example>
+      </rule>
+      
+ <rule name="NamingRule"
+      message="test with bad name detected."
+      class="edu.unl.e2.tmd.NamingRule"
+      language="java">
+     <description></description>
+     <priority>3</priority>
+     <example>
+     <![CDATA[]]>
+     </example>
+      </rule>
+      
+   <rule name="OneLineTestsRule"
+      message="one line test"
+      class="edu.unl.e2.tmd.OneLineTestsRule"
+      language="java">
+     <description></description>
+     <priority>3</priority>
+     <example>
+     <![CDATA[]]>
+     </example>
+</rule>
+
+
+<rule name="HomeMadeParametrizedTestsRule"
+      message="possible paramametrized test"
+      class="edu.unl.e2.tmd.HomeMadeParametrizedTestsRule"
+      language="java">
+     <description></description>
+     <priority>3</priority>
+     <example>
+     <![CDATA[]]>
+     </example>
+</rule>
+
+<rule name="StaticInitializerShouldBeAvoidedRule"
+    		 since="2.0"
+          message="BeforeClass method should be used instead of static initializers."
+          class="edu.unl.e2.tmd.StaticInitializerShouldBeAvoidedRule">
+        <description>
+        </description>
+          <priority>3</priority>
+        <example>
+    <![CDATA[]]>
+        </example>
+      </rule>
+      
+      
+<rule name="EmptyTestsRule"
+      message="Empty test"
+      class="edu.unl.e2.tmd.EmptyTestsRule"
+      language="java">
+     <description>To Do.</description>
+     <priority>3</priority>
+     <example>
+     <![CDATA[
+  
+     ]]>
+     </example>
+</rule>
+
+<rule name="URLRule"
+    		 since="2.0"
+          message="Network dependency detected."
+          class="edu.unl.e2.tmd.URLRule" >
+        <description>
+        </description>
+          <priority>3</priority>
+        <example>
+    <![CDATA[
+
+    ]]>
+        </example>
+</rule>
+
+</ruleset>

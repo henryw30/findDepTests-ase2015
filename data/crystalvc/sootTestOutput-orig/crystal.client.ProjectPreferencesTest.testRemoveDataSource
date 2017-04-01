@@ -1,0 +1,11 @@
+crystal.client.ProjectPreferences.getDataSources : $r1 = r0.<crystal.client.ProjectPreferences: java.util.Vector _dataSources>
+crystal.model.DataSource.setParent : if r1 == null goto r0.<crystal.model.DataSource: java.lang.String _parent> = null
+crystal.model.DataSource.setParent : r0.<crystal.model.DataSource: java.lang.String _parent> = r1
+crystal.util.ValidInputChecker.checkValidStringInput : if r0 == null goto $r2 = new java.lang.IllegalArgumentException
+crystal.model.DataSource.equals : $z0 = virtualinvoke $r7.<java.lang.String: boolean equals(java.lang.Object)>($r8)
+crystal.model.DataSource.equals : if r1 == null goto return 0
+crystal.model.DataSource.equals : r2 = (crystal.model.DataSource) r1
+crystal.model.DataSource.equals : $r5 = r0.<crystal.model.DataSource: java.lang.String _shortName>
+crystal.client.ProjectPreferences.removeDataSource : $r2 = r0.<crystal.client.ProjectPreferences: java.util.Vector _dataSources>
+crystal.client.ProjectPreferences.addDataSource : $r5 = r0.<crystal.client.ProjectPreferences: java.util.Vector _dataSources>
+crystal.client.ProjectPreferences.addDataSource : $r18 = r0.<crystal.client.ProjectPreferences: java.util.Vector _dataSources>

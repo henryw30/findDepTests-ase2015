@@ -1,0 +1,14 @@
+org.joda.time.DurationFieldType.seconds : $r0 = <org.joda.time.DurationFieldType: org.joda.time.DurationFieldType SECONDS_TYPE>
+org.joda.time.DurationFieldType.millis : $r0 = <org.joda.time.DurationFieldType: org.joda.time.DurationFieldType MILLIS_TYPE>
+org.joda.time.DurationFieldType.hours : $r0 = <org.joda.time.DurationFieldType: org.joda.time.DurationFieldType HOURS_TYPE>
+org.joda.time.DurationFieldType.days : $r0 = <org.joda.time.DurationFieldType: org.joda.time.DurationFieldType DAYS_TYPE>
+org.joda.time.DurationFieldType.minutes : $r0 = <org.joda.time.DurationFieldType: org.joda.time.DurationFieldType MINUTES_TYPE>
+org.joda.time.PeriodType.yearDayTime : if r0 != null goto return r0
+org.joda.time.PeriodType.yearDayTime : <org.joda.time.PeriodType: org.joda.time.PeriodType cYDTime> = r0
+org.joda.time.PeriodType.yearDayTime : $r2 = new org.joda.time.PeriodType
+org.joda.time.PeriodType.yearDayTime : $r7 = staticinvoke <org.joda.time.DurationFieldType: org.joda.time.DurationFieldType seconds()>()
+org.joda.time.PeriodType.yearDayTime : $r5 = staticinvoke <org.joda.time.DurationFieldType: org.joda.time.DurationFieldType hours()>()
+org.joda.time.PeriodType.yearDayTime : r0 = <org.joda.time.PeriodType: org.joda.time.PeriodType cYDTime>
+org.joda.time.PeriodType.yearDayTime : $r1 = staticinvoke <org.joda.time.DurationFieldType: org.joda.time.DurationFieldType years()>()
+org.joda.time.PeriodType.yearDayTime : return r0
+org.joda.time.DurationFieldType.years : $r0 = <org.joda.time.DurationFieldType: org.joda.time.DurationFieldType YEARS_TYPE>

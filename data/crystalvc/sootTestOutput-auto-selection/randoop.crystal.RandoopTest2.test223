@@ -1,0 +1,42 @@
+crystal.util.ValidInputChecker.checkValidStringInput : if r0 == null >>>>>>>> crystal.util.ValidInputChecker.checkValidStringInput : $r1 = virtualinvoke r0.<java.lang.String: java.lang.String trim()>()
+crystal.util.ValidInputChecker.checkValidStringInput : $r1 = virtualinvoke r0.<java.lang.String: java.lang.String trim()>() >>>>>>>> crystal.util.ValidInputChecker.checkValidStringInput : $z0 = virtualinvoke $r1.<java.lang.String: boolean equals(java.lang.Object)>("")
+crystal.util.ValidInputChecker.checkValidStringInput : $z0 = virtualinvoke $r1.<java.lang.String: boolean equals(java.lang.Object)>("") >>>>>>>> crystal.util.ValidInputChecker.checkValidStringInput : if $z0 == 0
+crystal.util.ValidInputChecker.checkValidStringInput : if $z0 == 0 >>>>>>>> crystal.client.ClientPreferences.setChanged : r0.<crystal.client.ClientPreferences: boolean _hasChanged> = z0
+crystal.client.ClientPreferences.setChanged : r0.<crystal.client.ClientPreferences: boolean _hasChanged> = z0 >>>>>>>> crystal.client.ClientPreferences.setHgPath : r0.<crystal.client.ClientPreferences: java.lang.String _hgPath> = r1
+crystal.client.ClientPreferences.setHgPath : r0.<crystal.client.ClientPreferences: java.lang.String _hgPath> = r1 >>>>>>>> crystal.client.ClientPreferences.getRefresh : $l0 = r0.<crystal.client.ClientPreferences: long _refresh>
+crystal.client.ClientPreferences.getRefresh : $l0 = r0.<crystal.client.ClientPreferences: long _refresh> >>>>>>>> crystal.client.ClientPreferences.getRefresh : return $l0
+crystal.client.ClientPreferences.getRefresh : return $l0 >>>>>>>> crystal.client.ClientPreferences.clone : $r5 = specialinvoke r0.<java.lang.Object: java.lang.Object clone()>()
+crystal.client.ClientPreferences.clone : $r5 = specialinvoke r0.<java.lang.Object: java.lang.Object clone()>() >>>>>>>> crystal.client.ClientPreferences.clone : r1 = (crystal.client.ClientPreferences) $r5
+crystal.client.ClientPreferences.clone : r1 = (crystal.client.ClientPreferences) $r5 >>>>>>>> crystal.client.ClientPreferences.clone : $r6 = new java.util.Vector
+crystal.client.ClientPreferences.clone : $r6 = new java.util.Vector >>>>>>>> crystal.client.ClientPreferences.clone : specialinvoke $r6.<java.util.Vector: void <init>()>()
+crystal.client.ClientPreferences.clone : specialinvoke $r6.<java.util.Vector: void <init>()>() >>>>>>>> crystal.client.ClientPreferences.clone : r2 = $r6
+crystal.client.ClientPreferences.clone : r2 = $r6 >>>>>>>> crystal.client.ClientPreferences.clone : $r7 = r0.<crystal.client.ClientPreferences: java.util.Vector _projectPreferences>
+crystal.client.ClientPreferences.clone : $r7 = r0.<crystal.client.ClientPreferences: java.util.Vector _projectPreferences> >>>>>>>> crystal.client.ClientPreferences.clone : r3 = virtualinvoke $r7.<java.util.Vector: java.util.Iterator iterator()>()
+crystal.client.ClientPreferences.clone : r3 = virtualinvoke $r7.<java.util.Vector: java.util.Iterator iterator()>() >>>>>>>> crystal.client.ClientPreferences.clone : $z0 = interfaceinvoke r3.<java.util.Iterator: boolean hasNext()>()
+crystal.client.ClientPreferences.clone : $z0 = interfaceinvoke r3.<java.util.Iterator: boolean hasNext()>() >>>>>>>> crystal.client.ClientPreferences.clone : if $z0 == 0
+crystal.client.ClientPreferences.clone : if $z0 == 0 >>>>>>>> crystal.client.ClientPreferences.clone : r1.<crystal.client.ClientPreferences: java.util.Vector _projectPreferences> = r2
+crystal.client.ClientPreferences.clone : r1.<crystal.client.ClientPreferences: java.util.Vector _projectPreferences> = r2 >>>>>>>> crystal.client.ClientPreferences.clone : return r1
+crystal.client.ClientPreferences.clone : return r1 >>>>>>>> crystal.client.ClientPreferences.equals : if r1 == null
+crystal.client.ClientPreferences.equals : if r1 == null >>>>>>>> crystal.client.ClientPreferences.equals : $r3 = virtualinvoke r0.<java.lang.Object: java.lang.Class getClass()>()
+crystal.client.ClientPreferences.equals : $r3 = virtualinvoke r0.<java.lang.Object: java.lang.Class getClass()>() >>>>>>>> crystal.client.ClientPreferences.equals : $r4 = virtualinvoke r1.<java.lang.Object: java.lang.Class getClass()>()
+crystal.client.ClientPreferences.equals : $r4 = virtualinvoke r1.<java.lang.Object: java.lang.Class getClass()>() >>>>>>>> crystal.client.ClientPreferences.equals : if $r3 != $r4
+crystal.client.ClientPreferences.equals : if $r3 != $r4 >>>>>>>> crystal.client.ClientPreferences.equals : r2 = (crystal.client.ClientPreferences) r1
+crystal.client.ClientPreferences.equals : r2 = (crystal.client.ClientPreferences) r1 >>>>>>>> crystal.client.ClientPreferences.equals : $r5 = r0.<crystal.client.ClientPreferences: java.lang.String _tempDirectory>
+crystal.client.ClientPreferences.equals : $r5 = r0.<crystal.client.ClientPreferences: java.lang.String _tempDirectory> >>>>>>>> crystal.client.ClientPreferences.equals : $r6 = r2.<crystal.client.ClientPreferences: java.lang.String _tempDirectory>
+crystal.client.ClientPreferences.equals : $r6 = r2.<crystal.client.ClientPreferences: java.lang.String _tempDirectory> >>>>>>>> crystal.client.ClientPreferences.equals : $z0 = virtualinvoke $r5.<java.lang.String: boolean equals(java.lang.Object)>($r6)
+crystal.client.ClientPreferences.equals : $z0 = virtualinvoke $r5.<java.lang.String: boolean equals(java.lang.Object)>($r6) >>>>>>>> crystal.client.ClientPreferences.equals : if $z0 == 0
+crystal.client.ClientPreferences.equals : if $z0 == 0 >>>>>>>> crystal.client.ClientPreferences.equals : $r7 = r0.<crystal.client.ClientPreferences: java.lang.String _hgPath>
+crystal.client.ClientPreferences.equals : $r7 = r0.<crystal.client.ClientPreferences: java.lang.String _hgPath> >>>>>>>> crystal.client.ClientPreferences.equals : $r8 = r2.<crystal.client.ClientPreferences: java.lang.String _hgPath>
+crystal.client.ClientPreferences.equals : $r8 = r2.<crystal.client.ClientPreferences: java.lang.String _hgPath> >>>>>>>> crystal.client.ClientPreferences.equals : $z1 = virtualinvoke $r7.<java.lang.String: boolean equals(java.lang.Object)>($r8)
+crystal.client.ClientPreferences.equals : $z1 = virtualinvoke $r7.<java.lang.String: boolean equals(java.lang.Object)>($r8) >>>>>>>> crystal.client.ClientPreferences.equals : if $z1 == 0
+crystal.client.ClientPreferences.equals : if $z1 == 0 >>>>>>>> crystal.client.ClientPreferences.equals : $l0 = r0.<crystal.client.ClientPreferences: long _refresh>
+crystal.client.ClientPreferences.equals : $l0 = r0.<crystal.client.ClientPreferences: long _refresh> >>>>>>>> crystal.client.ClientPreferences.equals : $l1 = r2.<crystal.client.ClientPreferences: long _refresh>
+crystal.client.ClientPreferences.equals : $l1 = r2.<crystal.client.ClientPreferences: long _refresh> >>>>>>>> crystal.client.ClientPreferences.equals : $b2 = $l0 cmp $l1
+crystal.client.ClientPreferences.equals : $b2 = $l0 cmp $l1 >>>>>>>> crystal.client.ClientPreferences.equals : if $b2 != 0
+crystal.client.ClientPreferences.equals : if $b2 != 0 >>>>>>>> crystal.client.ClientPreferences.equals : $r9 = r0.<crystal.client.ClientPreferences: java.util.Vector _projectPreferences>
+crystal.client.ClientPreferences.equals : $r9 = r0.<crystal.client.ClientPreferences: java.util.Vector _projectPreferences> >>>>>>>> crystal.client.ClientPreferences.equals : $r10 = r2.<crystal.client.ClientPreferences: java.util.Vector _projectPreferences>
+crystal.client.ClientPreferences.equals : $r10 = r2.<crystal.client.ClientPreferences: java.util.Vector _projectPreferences> >>>>>>>> crystal.client.ClientPreferences.equals : $z2 = virtualinvoke $r9.<java.util.Vector: boolean equals(java.lang.Object)>($r10)
+crystal.client.ClientPreferences.equals : $z2 = virtualinvoke $r9.<java.util.Vector: boolean equals(java.lang.Object)>($r10) >>>>>>>> crystal.client.ClientPreferences.equals : if $z2 == 0
+crystal.client.ClientPreferences.equals : if $z2 == 0 >>>>>>>> crystal.client.ClientPreferences.equals : $z3 = 1
+crystal.client.ClientPreferences.equals : $z3 = 1 >>>>>>>> crystal.client.ClientPreferences.equals : goto [?= return $z3]
+crystal.client.ClientPreferences.equals : goto [?= return $z3] >>>>>>>> crystal.client.ClientPreferences.equals : return $z3

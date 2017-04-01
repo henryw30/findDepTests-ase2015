@@ -1,0 +1,25 @@
+mcscm.ProcessUtil.runVerifyProcess : $r3 = new java.lang.ProcessBuilder >>>>>>>> mcscm.ProcessUtil.runVerifyProcess : specialinvoke $r3.<java.lang.ProcessBuilder: void <init>(java.lang.String[])>(r0)
+mcscm.ProcessUtil.runVerifyProcess : specialinvoke $r3.<java.lang.ProcessBuilder: void <init>(java.lang.String[])>(r0) >>>>>>>> mcscm.ProcessUtil.runVerifyProcess : r4 = $r3
+mcscm.ProcessUtil.runVerifyProcess : r4 = $r3 >>>>>>>> mcscm.ProcessUtil.runVerifyProcess : virtualinvoke r4.<java.lang.ProcessBuilder: java.lang.ProcessBuilder directory(java.io.File)>(r2)
+mcscm.ProcessUtil.runVerifyProcess : virtualinvoke r4.<java.lang.ProcessBuilder: java.lang.ProcessBuilder directory(java.io.File)>(r2) >>>>>>>> mcscm.ProcessUtil.runVerifyProcess : n0 = null
+mcscm.ProcessUtil.runVerifyProcess : n0 = null >>>>>>>> mcscm.ProcessUtil.runVerifyProcess : r9 = virtualinvoke r4.<java.lang.ProcessBuilder: java.lang.Process start()>()
+mcscm.ProcessUtil.runVerifyProcess : r9 = virtualinvoke r4.<java.lang.ProcessBuilder: java.lang.Process start()>() >>>>>>>> mcscm.ProcessUtil.runVerifyProcess : r5 = virtualinvoke r9.<java.lang.Process: java.io.OutputStream getOutputStream()>()
+mcscm.ProcessUtil.runVerifyProcess : r5 = virtualinvoke r9.<java.lang.Process: java.io.OutputStream getOutputStream()>() >>>>>>>> mcscm.ProcessUtil.runVerifyProcess : $r10 = virtualinvoke r1.<java.lang.String: byte[] getBytes()>()
+mcscm.ProcessUtil.runVerifyProcess : $r10 = virtualinvoke r1.<java.lang.String: byte[] getBytes()>() >>>>>>>> mcscm.ProcessUtil.runVerifyProcess : virtualinvoke r5.<java.io.OutputStream: void write(byte[])>($r10)
+mcscm.ProcessUtil.runVerifyProcess : virtualinvoke r5.<java.io.OutputStream: void write(byte[])>($r10) >>>>>>>> mcscm.ProcessUtil.runVerifyProcess : virtualinvoke r5.<java.io.OutputStream: void close()>()
+mcscm.ProcessUtil.runVerifyProcess : virtualinvoke r5.<java.io.OutputStream: void close()>() >>>>>>>> mcscm.ProcessUtil.runVerifyProcess : $r11 = new mcscm.ProcessKillTimer
+mcscm.ProcessUtil.runVerifyProcess : $r11 = new mcscm.ProcessKillTimer >>>>>>>> mcscm.ProcessUtil.runVerifyProcess : specialinvoke $r11.<mcscm.ProcessKillTimer: void <init>(java.lang.Process,int)>(r9, i0)
+mcscm.ProcessUtil.runVerifyProcess : specialinvoke $r11.<mcscm.ProcessKillTimer: void <init>(java.lang.Process,int)>(r9, i0) >>>>>>>> mcscm.ProcessUtil.runVerifyProcess : r6 = $r11
+mcscm.ProcessUtil.runVerifyProcess : r6 = $r11 >>>>>>>> mcscm.ProcessUtil.runVerifyProcess : $r12 = new java.lang.Thread
+mcscm.ProcessUtil.runVerifyProcess : $r12 = new java.lang.Thread >>>>>>>> mcscm.ProcessUtil.runVerifyProcess : specialinvoke $r12.<java.lang.Thread: void <init>(java.lang.Runnable)>(r6)
+mcscm.ProcessUtil.runVerifyProcess : specialinvoke $r12.<java.lang.Thread: void <init>(java.lang.Runnable)>(r6) >>>>>>>> mcscm.ProcessUtil.runVerifyProcess : r7 = $r12
+mcscm.ProcessUtil.runVerifyProcess : r7 = $r12 >>>>>>>> mcscm.ProcessUtil.runVerifyProcess : virtualinvoke r7.<java.lang.Thread: void start()>()
+mcscm.ProcessUtil.runVerifyProcess : virtualinvoke r7.<java.lang.Thread: void start()>() >>>>>>>> mcscm.ProcessUtil.runVerifyProcess : virtualinvoke r9.<java.lang.Process: int waitFor()>()
+mcscm.ProcessUtil.runVerifyProcess : virtualinvoke r9.<java.lang.Process: int waitFor()>() >>>>>>>> mcscm.ProcessUtil.runVerifyProcess : $z0 = r6.<mcscm.ProcessKillTimer: boolean killed>
+mcscm.ProcessUtil.runVerifyProcess : $z0 = r6.<mcscm.ProcessKillTimer: boolean killed> >>>>>>>> mcscm.ProcessUtil.runVerifyProcess : if $z0 != 0
+mcscm.ProcessUtil.runVerifyProcess : if $z0 != 0 >>>>>>>> mcscm.ProcessUtil.runVerifyProcess : virtualinvoke r7.<java.lang.Thread: void interrupt()>()
+mcscm.ProcessUtil.runVerifyProcess : if $z0 != 0 >>>>>>>> mcscm.ProcessUtil.runVerifyProcess : $r13 = new java.lang.InterruptedException
+mcscm.ProcessUtil.runVerifyProcess : $r13 = new java.lang.InterruptedException >>>>>>>> mcscm.ProcessUtil.runVerifyProcess : specialinvoke $r13.<java.lang.InterruptedException: void <init>(java.lang.String)>("Verify process killed.")
+mcscm.ProcessUtil.runVerifyProcess : specialinvoke $r13.<java.lang.InterruptedException: void <init>(java.lang.String)>("Verify process killed.") >>>>>>>> mcscm.ProcessUtil.runVerifyProcess : throw $r13
+mcscm.ProcessUtil.runVerifyProcess : virtualinvoke r7.<java.lang.Thread: void interrupt()>() >>>>>>>> mcscm.ProcessUtil.runVerifyProcess : goto [?= return r9]
+mcscm.ProcessUtil.runVerifyProcess : goto [?= return r9] >>>>>>>> mcscm.ProcessUtil.runVerifyProcess : return r9

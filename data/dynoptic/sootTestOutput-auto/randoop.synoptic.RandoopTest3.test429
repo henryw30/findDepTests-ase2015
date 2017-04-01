@@ -1,0 +1,46 @@
+dynoptic.model.fifosys.AbsMultiFSMState.getStatesThatEvalToTrueWithPid : return r2
+dynoptic.model.fifosys.AbsMultiFSMState.getStatesThatEvalToTrueWithPid : r2 = staticinvoke <dynoptic.util.Util: java.util.Set newSet()>()
+dynoptic.model.fifosys.AbsMultiFSMState.getStatesThatEvalToTrueWithPid : r3 = interfaceinvoke r0.<java.util.Collection: java.util.Iterator iterator()>()
+dynoptic.model.export.DotExportFormatter.nodeToString : $r19 = new java.lang.StringBuilder
+dynoptic.model.export.DotExportFormatter.nodeToString : if z1 == 0 goto $r30 = new java.lang.StringBuilder
+dynoptic.model.export.DotExportFormatter.nodeToString : if z0 == 0 goto (branch)
+dynoptic.model.export.DotExportFormatter.nodeToString : $r11 = new java.lang.StringBuilder
+dynoptic.model.export.DotExportFormatter.nodeToString : $r14 = new java.lang.StringBuilder
+dynoptic.model.export.DotExportFormatter.nodeToString : $r30 = new java.lang.StringBuilder
+dynoptic.model.export.DotExportFormatter.nodeToString : r4 = ""
+dynoptic.model.export.DotExportFormatter.nodeToString : $r27 = new java.lang.StringBuilder
+dynoptic.model.export.DotExportFormatter.nodeToString : $i2 = r0.<dynoptic.model.export.DotExportFormatter: int startStateCount>
+dynoptic.model.export.DotExportFormatter.nodeToString : $r2 = new java.lang.StringBuilder
+dynoptic.model.fifosys.gfsm.GFSMState.isInitial : $r1 = r0.<dynoptic.model.fifosys.gfsm.GFSMState: java.util.Set observedStates>
+dynoptic.model.fifosys.gfsm.GFSMState.isInitial : i0 = 0
+dynoptic.model.fifosys.gfsm.GFSMState.isInitial : return 0
+dynoptic.model.fifosys.gfsm.GFSMState.getInitialObsForPid : $r2 = r0.<dynoptic.model.fifosys.gfsm.GFSMState: java.util.Set observedStates>
+dynoptic.model.fifosys.cfsm.fsm.FSMState.toLongString : $r1 = new java.lang.StringBuilder
+dynoptic.model.export.GraphExportFormatter.quote : lookupswitch(c1) {     case 34: goto virtualinvoke r2.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("\\\"");     case 92: goto virtualinvoke r2.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("\\\\");     default: goto virtualinvoke r2.<java.lang.StringBuilder: java.lang.StringBuilder append(char)>(c1); }
+dynoptic.model.export.GraphExportFormatter.quote : i0 = 0
+dynoptic.model.export.GraphExportFormatter.quote : $r1 = new java.lang.StringBuilder
+dynoptic.model.export.GraphExportFormatter.quote : c1 = virtualinvoke r0.<java.lang.String: char charAt(int)>(i0)
+dynoptic.model.export.GraphExportFormatter.quote : $r6 = virtualinvoke r2.<java.lang.StringBuilder: java.lang.String toString()>()
+dynoptic.model.export.GraphExportFormatter.quote : virtualinvoke r2.<java.lang.StringBuilder: java.lang.StringBuilder append(char)>(c1)
+dynoptic.model.fifosys.cfsm.fsm.FSMState.toString : $r1 = virtualinvoke r0.<dynoptic.model.fifosys.cfsm.fsm.FSMState: java.lang.String toShortIntString()>()
+dynoptic.model.fifosys.gfsm.GFSMState.getTransitioningEvents : $r2 = r0.<dynoptic.model.fifosys.gfsm.GFSMState: java.util.Map transitions>
+dynoptic.model.fifosys.gfsm.GFSMState.getTransitioningEvents : $r1 = r0.<dynoptic.model.fifosys.gfsm.GFSMState: java.util.Map transitions>
+dynoptic.model.fifosys.gfsm.GFSMState.getTransitioningEvents : virtualinvoke r0.<dynoptic.model.fifosys.gfsm.GFSMState: void recreateCachedTransitions()>()
+dynoptic.model.fifosys.cfsm.fsm.FSMState.toShortIntString : $i0 = r0.<dynoptic.model.fifosys.cfsm.fsm.FSMState: int scmId>
+dynoptic.model.fifosys.gfsm.GFSMState.removeAllObs : $z0 = <dynoptic.model.fifosys.gfsm.GFSMState: boolean $assertionsDisabled>
+dynoptic.model.fifosys.gfsm.GFSMState.removeAllObs : r2 = interfaceinvoke r1.<java.util.Set: java.util.Iterator iterator()>()
+dynoptic.util.Util.newSet : $r0 = new java.util.LinkedHashSet
+dynoptic.model.fifosys.AbsMultiFSMState.getNumProcesses : $i0 = r0.<dynoptic.model.fifosys.AbsMultiFSMState: int numProcesses>
+dynoptic.model.fifosys.gfsm.GFSMState.toString : $r1 = r0.<dynoptic.model.fifosys.gfsm.GFSMState: java.util.Set observedStates>
+dynoptic.model.fifosys.cfsm.fsm.FSMState.getPid : $i0 = r0.<dynoptic.model.fifosys.cfsm.fsm.FSMState: int pid>
+dynoptic.model.export.DotExportFormatter.endGraphString : return "} // digraph {\n"
+dynoptic.util.Util.newList : $r0 = new java.util.ArrayList
+dynoptic.util.Util.newList : $r1 = new java.util.ArrayList
+dynoptic.util.Util.newMap : $r0 = new java.util.LinkedHashMap
+dynoptic.model.export.DotExportFormatter.beginGraphString : return "digraph {\n"
+dynoptic.model.fifosys.AbsMultiFSMState.atLeastOneStatePidEvalTrue : r2 = interfaceinvoke r0.<java.util.Collection: java.util.Iterator iterator()>()
+dynoptic.model.fifosys.AbsMultiFSMState.atLeastOneStatePidEvalTrue : return 0
+dynoptic.model.fifosys.gfsm.GFSMState.recreateCachedTransitions : $r4 = r0.<dynoptic.model.fifosys.gfsm.GFSMState: java.util.Set observedStates>
+dynoptic.model.fifosys.gfsm.GFSMState.recreateCachedTransitions : $r3 = r0.<dynoptic.model.fifosys.gfsm.GFSMState: java.util.Map transitions>
+dynoptic.model.fifosys.gfsm.GFSMState.isAcceptForPid : $r2 = r0.<dynoptic.model.fifosys.gfsm.GFSMState: java.util.Set observedStates>
+dynoptic.model.fifosys.gfsm.GFSMState.isAcceptForPid : $z0 = <dynoptic.model.fifosys.gfsm.GFSMState: boolean $assertionsDisabled>

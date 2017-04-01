@@ -1,0 +1,21 @@
+org.jfree.data.general.DatasetUtilities.iterateDomainBounds : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r0, "dataset") >>>>>>>> org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null >>>>>>>> org.jfree.data.general.DatasetUtilities.iterateDomainBounds : d0 = #Infinity
+org.jfree.data.general.DatasetUtilities.iterateDomainBounds : d0 = #Infinity >>>>>>>> org.jfree.data.general.DatasetUtilities.iterateDomainBounds : d1 = #-Infinity
+org.jfree.data.general.DatasetUtilities.iterateDomainBounds : d1 = #-Infinity >>>>>>>> org.jfree.data.general.DatasetUtilities.iterateDomainBounds : i0 = interfaceinvoke r0.<org.jfree.data.xy.XYDataset: int getSeriesCount()>()
+org.jfree.data.general.DatasetUtilities.iterateDomainBounds : i0 = interfaceinvoke r0.<org.jfree.data.xy.XYDataset: int getSeriesCount()>() >>>>>>>> org.jfree.data.xy.DefaultOHLCDataset.getSeriesCount : return 1
+org.jfree.data.xy.DefaultOHLCDataset.getSeriesCount : return 1 >>>>>>>> org.jfree.data.general.DatasetUtilities.iterateDomainBounds : if z0 == 0
+org.jfree.data.general.DatasetUtilities.iterateDomainBounds : if z0 == 0 >>>>>>>> org.jfree.data.general.DatasetUtilities.iterateDomainBounds : $z1 = r0 instanceof org.jfree.data.xy.IntervalXYDataset
+org.jfree.data.general.DatasetUtilities.iterateDomainBounds : $z1 = r0 instanceof org.jfree.data.xy.IntervalXYDataset >>>>>>>> org.jfree.data.general.DatasetUtilities.iterateDomainBounds : if $z1 == 0
+org.jfree.data.general.DatasetUtilities.iterateDomainBounds : if $z1 == 0 >>>>>>>> org.jfree.data.general.DatasetUtilities.iterateDomainBounds : i4 = 0
+org.jfree.data.general.DatasetUtilities.iterateDomainBounds : i4 = 0 >>>>>>>> org.jfree.data.general.DatasetUtilities.iterateDomainBounds : if i4 >= i0
+org.jfree.data.general.DatasetUtilities.iterateDomainBounds : if i4 >= i0 >>>>>>>> org.jfree.data.general.DatasetUtilities.iterateDomainBounds : i5 = interfaceinvoke r0.<org.jfree.data.xy.XYDataset: int getItemCount(int)>(i4)
+org.jfree.data.general.DatasetUtilities.iterateDomainBounds : i5 = interfaceinvoke r0.<org.jfree.data.xy.XYDataset: int getItemCount(int)>(i4) >>>>>>>> org.jfree.data.xy.DefaultOHLCDataset.getItemCount : $r1 = r0.<org.jfree.data.xy.DefaultOHLCDataset: org.jfree.data.xy.OHLCDataItem[] data>
+org.jfree.data.xy.DefaultOHLCDataset.getItemCount : $r1 = r0.<org.jfree.data.xy.DefaultOHLCDataset: org.jfree.data.xy.OHLCDataItem[] data> >>>>>>>> org.jfree.data.xy.DefaultOHLCDataset.getItemCount : $i1 = lengthof $r1
+org.jfree.data.xy.DefaultOHLCDataset.getItemCount : $i1 = lengthof $r1 >>>>>>>> org.jfree.data.xy.DefaultOHLCDataset.getItemCount : return $i1
+org.jfree.data.xy.DefaultOHLCDataset.getItemCount : return $i1 >>>>>>>> org.jfree.data.general.DatasetUtilities.iterateDomainBounds : i6 = 0
+org.jfree.data.general.DatasetUtilities.iterateDomainBounds : i6 = 0 >>>>>>>> org.jfree.data.general.DatasetUtilities.iterateDomainBounds : if i6 >= i5
+org.jfree.data.general.DatasetUtilities.iterateDomainBounds : if i6 >= i5 >>>>>>>> org.jfree.data.general.DatasetUtilities.iterateDomainBounds : i4 = i4 + 1
+org.jfree.data.general.DatasetUtilities.iterateDomainBounds : i4 = i4 + 1 >>>>>>>> org.jfree.data.general.DatasetUtilities.iterateDomainBounds : goto [?= (branch)]
+org.jfree.data.general.DatasetUtilities.iterateDomainBounds : goto [?= (branch)] >>>>>>>> org.jfree.data.general.DatasetUtilities.iterateDomainBounds : $b7 = d0 cmpl d1
+org.jfree.data.general.DatasetUtilities.iterateDomainBounds : $b7 = d0 cmpl d1 >>>>>>>> org.jfree.data.general.DatasetUtilities.iterateDomainBounds : if $b7 <= 0
+org.jfree.data.general.DatasetUtilities.iterateDomainBounds : if $b7 <= 0 >>>>>>>> org.jfree.data.general.DatasetUtilities.iterateDomainBounds : return null

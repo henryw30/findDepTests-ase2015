@@ -1,0 +1,110 @@
+org.jfree.data.xy.CategoryTableXYDataset.getX : $r1 = r0.<org.jfree.data.xy.CategoryTableXYDataset: org.jfree.data.DefaultKeyedValues2D values>
+org.jfree.data.xy.AbstractXYDataset.getXValue : d0 = #NaN
+org.jfree.data.xy.AbstractXYDataset.getXValue : r1 = virtualinvoke r0.<org.jfree.data.xy.AbstractXYDataset: java.lang.Number getX(int,int)>(i0, i1)
+org.jfree.data.xy.AbstractXYDataset.getXValue : return d0
+org.jfree.data.xy.AbstractXYDataset.getXValue : d0 = virtualinvoke r1.<java.lang.Number: double doubleValue()>()
+org.jfree.data.xy.AbstractXYDataset.getXValue : if r1 == null goto return d0
+org.jfree.data.DefaultKeyedValues2D.getRowKey : $r1 = r0.<org.jfree.data.DefaultKeyedValues2D: java.util.List rowKeys>
+org.jfree.data.DefaultKeyedValues2D.getRowIndex : $r2 = r0.<org.jfree.data.DefaultKeyedValues2D: java.util.List rowKeys>
+org.jfree.data.DefaultKeyedValues2D.getRowIndex : $z0 = r0.<org.jfree.data.DefaultKeyedValues2D: boolean sortRowKeys>
+org.jfree.data.DefaultKeyedValues2D.getRowIndex : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "key")
+org.jfree.data.DefaultKeyedValues2D.setValue : if i0 < 0 goto $r7 = new org.jfree.data.DefaultKeyedValues
+org.jfree.data.DefaultKeyedValues2D.setValue : $r13 = r0.<org.jfree.data.DefaultKeyedValues2D: java.util.List columnKeys>
+org.jfree.data.DefaultKeyedValues2D.setValue : if i1 >= 0 goto return
+org.jfree.data.DefaultKeyedValues2D.setValue : $z0 = r0.<org.jfree.data.DefaultKeyedValues2D: boolean sortRowKeys>
+org.jfree.data.DefaultKeyedValues2D.setValue : $r7 = new org.jfree.data.DefaultKeyedValues
+org.jfree.data.DefaultKeyedValues2D.setValue : $r8 = r0.<org.jfree.data.DefaultKeyedValues2D: java.util.List rowKeys>
+org.jfree.data.DefaultKeyedValues2D.setValue : $r9 = r0.<org.jfree.data.DefaultKeyedValues2D: java.util.List rows>
+org.jfree.data.DefaultKeyedValues2D.setValue : $i2 = neg i0
+org.jfree.data.DefaultKeyedValues2D.setValue : i0 = virtualinvoke r0.<org.jfree.data.DefaultKeyedValues2D: int getRowIndex(java.lang.Comparable)>(r2)
+org.jfree.data.DefaultKeyedValues2D.setValue : $r12 = r0.<org.jfree.data.DefaultKeyedValues2D: java.util.List columnKeys>
+org.jfree.data.DefaultKeyedValues2D.setValue : virtualinvoke r4.<org.jfree.data.DefaultKeyedValues: void setValue(java.lang.Comparable,java.lang.Number)>(r3, r1)
+org.jfree.data.DefaultKeyedValues2D.getColumnCount : $r1 = r0.<org.jfree.data.DefaultKeyedValues2D: java.util.List columnKeys>
+org.jfree.data.xy.IntervalXYDelegate.datasetChanged : $d0 = specialinvoke r0.<org.jfree.data.xy.IntervalXYDelegate: double recalculateInterval()>()
+org.jfree.data.xy.IntervalXYDelegate.datasetChanged : $z0 = r0.<org.jfree.data.xy.IntervalXYDelegate: boolean autoWidth>
+org.jfree.data.general.AbstractDataset.addChangeListener : $r2 = r0.<org.jfree.data.general.AbstractDataset: javax.swing.event.EventListenerList listenerList>
+org.jfree.data.general.AbstractDataset.validateObject : virtualinvoke r0.<org.jfree.data.general.AbstractDataset: void fireDatasetChanged()>()
+org.jfree.data.DefaultKeyedValues2D.addValue : virtualinvoke r0.<org.jfree.data.DefaultKeyedValues2D: void setValue(java.lang.Number,java.lang.Comparable,java.lang.Comparable)>(r1, r2, r3)
+org.jfree.data.xy.CategoryTableXYDataset.getSeriesCount : $r1 = r0.<org.jfree.data.xy.CategoryTableXYDataset: org.jfree.data.DefaultKeyedValues2D values>
+org.jfree.data.DefaultKeyedValues.getIndex : return -1
+org.jfree.data.DefaultKeyedValues.getIndex : $r3 = r0.<org.jfree.data.DefaultKeyedValues: java.util.HashMap indexMap>
+org.jfree.data.DefaultKeyedValues.getIndex : $i0 = virtualinvoke r2.<java.lang.Integer: int intValue()>()
+org.jfree.data.DefaultKeyedValues.getIndex : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "key")
+org.jfree.data.DefaultKeyedValues.getIndex : if r2 != null goto $i0 = virtualinvoke r2.<java.lang.Integer: int intValue()>()
+org.jfree.data.xy.IntervalXYDelegate.recalculateInterval : i1 = 0
+org.jfree.data.xy.IntervalXYDelegate.recalculateInterval : d0 = #Infinity
+org.jfree.data.xy.IntervalXYDelegate.recalculateInterval : $r1 = r0.<org.jfree.data.xy.IntervalXYDelegate: org.jfree.data.xy.XYDataset dataset>
+org.jfree.data.xy.IntervalXYDelegate.recalculateInterval : return d0
+org.jfree.data.xy.IntervalXYDelegate.recalculateInterval : $d1 = specialinvoke r0.<org.jfree.data.xy.IntervalXYDelegate: double calculateIntervalForSeries(int)>(i1)
+org.jfree.data.DefaultKeyedValues2D.getRowCount : $r1 = r0.<org.jfree.data.DefaultKeyedValues2D: java.util.List rowKeys>
+org.jfree.data.DefaultKeyedValues2D.equals : if r1 != r0 goto $z0 = r1 instanceof org.jfree.data.KeyedValues2D
+org.jfree.data.DefaultKeyedValues2D.equals : r3 = virtualinvoke r0.<org.jfree.data.DefaultKeyedValues2D: java.lang.Number getValue(int,int)>(i2, i3)
+org.jfree.data.DefaultKeyedValues2D.equals : i3 = 0
+org.jfree.data.DefaultKeyedValues2D.equals : if r3 != null goto $z3 = virtualinvoke r3.<java.lang.Object: boolean equals(java.lang.Object)>(r4)
+org.jfree.data.DefaultKeyedValues2D.equals : r4 = interfaceinvoke r2.<org.jfree.data.KeyedValues2D: java.lang.Number getValue(int,int)>(i2, i3)
+org.jfree.data.DefaultKeyedValues2D.equals : $z0 = r1 instanceof org.jfree.data.KeyedValues2D
+org.jfree.data.DefaultKeyedValues2D.equals : r2 = (org.jfree.data.KeyedValues2D) r1
+org.jfree.data.DefaultKeyedValues2D.equals : return 1
+org.jfree.data.DefaultKeyedValues2D.equals : if r1 != null goto (branch)
+org.jfree.data.DefaultKeyedValues2D.equals : $r5 = virtualinvoke r0.<org.jfree.data.DefaultKeyedValues2D: java.util.List getRowKeys()>()
+org.jfree.data.DefaultKeyedValues2D.equals : i0 = virtualinvoke r0.<org.jfree.data.DefaultKeyedValues2D: int getRowCount()>()
+org.jfree.data.DefaultKeyedValues2D.equals : $r7 = virtualinvoke r0.<org.jfree.data.DefaultKeyedValues2D: java.util.List getColumnKeys()>()
+org.jfree.data.DefaultKeyedValues2D.equals : i2 = 0
+org.jfree.data.DefaultKeyedValues2D.equals : $z3 = virtualinvoke r3.<java.lang.Object: boolean equals(java.lang.Object)>(r4)
+org.jfree.data.DefaultKeyedValues2D.equals : i1 = virtualinvoke r0.<org.jfree.data.DefaultKeyedValues2D: int getColumnCount()>()
+org.jfree.data.DefaultKeyedValues2D.equals : $i5 = interfaceinvoke r2.<org.jfree.data.KeyedValues2D: int getColumnCount()>()
+org.jfree.data.DefaultKeyedValues2D.equals : $i4 = interfaceinvoke r2.<org.jfree.data.KeyedValues2D: int getRowCount()>()
+org.jfree.data.xy.IntervalXYDelegate.equals : $d0 = r0.<org.jfree.data.xy.IntervalXYDelegate: double intervalPositionFactor>
+org.jfree.data.xy.IntervalXYDelegate.equals : $d2 = r0.<org.jfree.data.xy.IntervalXYDelegate: double fixedIntervalWidth>
+org.jfree.data.xy.IntervalXYDelegate.equals : $z1 = r0.<org.jfree.data.xy.IntervalXYDelegate: boolean autoWidth>
+org.jfree.data.xy.IntervalXYDelegate.equals : return 1
+org.jfree.data.xy.IntervalXYDelegate.equals : if r1 != r0 goto $z0 = r1 instanceof org.jfree.data.xy.IntervalXYDelegate
+org.jfree.data.xy.IntervalXYDelegate.equals : r2 = (org.jfree.data.xy.IntervalXYDelegate) r1
+org.jfree.data.xy.IntervalXYDelegate.equals : $z0 = r1 instanceof org.jfree.data.xy.IntervalXYDelegate
+org.jfree.data.general.AbstractDataset.notifyListeners : $r4 = r2[i0]
+org.jfree.data.general.AbstractDataset.notifyListeners : $r3 = r0.<org.jfree.data.general.AbstractDataset: javax.swing.event.EventListenerList listenerList>
+org.jfree.data.general.AbstractDataset.notifyListeners : $i2 = i0 + 1
+org.jfree.data.general.AbstractDataset.notifyListeners : $i1 = lengthof r2
+org.jfree.data.general.AbstractDataset.fireDatasetChanged : $r1 = new org.jfree.data.general.DatasetChangeEvent
+org.jfree.data.DefaultKeyedValues2D.getColumnKeys : $r1 = r0.<org.jfree.data.DefaultKeyedValues2D: java.util.List columnKeys>
+org.jfree.data.general.AbstractDataset.writeObject : virtualinvoke r1.<java.io.ObjectOutputStream: void defaultWriteObject()>()
+org.jfree.data.xy.CategoryTableXYDataset.getItemCount : $r1 = r0.<org.jfree.data.xy.CategoryTableXYDataset: org.jfree.data.DefaultKeyedValues2D values>
+org.jfree.data.xy.CategoryTableXYDataset.getItemCount : $i1 = virtualinvoke r0.<org.jfree.data.xy.CategoryTableXYDataset: int getItemCount()>()
+org.jfree.data.DefaultKeyedValues2D.getRowKeys : $r1 = r0.<org.jfree.data.DefaultKeyedValues2D: java.util.List rowKeys>
+org.jfree.data.general.AbstractDataset.readObject : $r2 = new javax.swing.event.EventListenerList
+org.jfree.data.general.AbstractDataset.readObject : virtualinvoke r1.<java.io.ObjectInputStream: void defaultReadObject()>()
+org.jfree.data.general.AbstractDataset.readObject : virtualinvoke r1.<java.io.ObjectInputStream: void registerValidation(java.io.ObjectInputValidation,int)>(r0, 10)
+org.jfree.data.DefaultKeyedValues.setValue : i0 = virtualinvoke r0.<org.jfree.data.DefaultKeyedValues: int getIndex(java.lang.Comparable)>(r1)
+org.jfree.data.DefaultKeyedValues.setValue : $r8 = r0.<org.jfree.data.DefaultKeyedValues: java.util.ArrayList values>
+org.jfree.data.DefaultKeyedValues.setValue : $r9 = r0.<org.jfree.data.DefaultKeyedValues: java.util.HashMap indexMap>
+org.jfree.data.DefaultKeyedValues.setValue : $r7 = r0.<org.jfree.data.DefaultKeyedValues: java.util.ArrayList keys>
+org.jfree.data.DefaultKeyedValues.setValue : if i0 < 0 goto $r7 = r0.<org.jfree.data.DefaultKeyedValues: java.util.ArrayList keys>
+org.jfree.data.DefaultKeyedValues.setValue : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "key")
+org.jfree.data.xy.IntervalXYDelegate.calculateIntervalForSeries : $d3 = d2 - d1
+org.jfree.data.xy.IntervalXYDelegate.calculateIntervalForSeries : $r3 = r0.<org.jfree.data.xy.IntervalXYDelegate: org.jfree.data.xy.XYDataset dataset>
+org.jfree.data.xy.IntervalXYDelegate.calculateIntervalForSeries : d0 = #Infinity
+org.jfree.data.xy.IntervalXYDelegate.calculateIntervalForSeries : $r1 = r0.<org.jfree.data.xy.IntervalXYDelegate: org.jfree.data.xy.XYDataset dataset>
+org.jfree.data.xy.IntervalXYDelegate.calculateIntervalForSeries : return d0
+org.jfree.data.xy.IntervalXYDelegate.calculateIntervalForSeries : i2 = 1
+org.jfree.data.xy.IntervalXYDelegate.calculateIntervalForSeries : $r2 = r0.<org.jfree.data.xy.IntervalXYDelegate: org.jfree.data.xy.XYDataset dataset>
+org.jfree.data.xy.IntervalXYDelegate.calculateIntervalForSeries : if i1 <= 1 goto return d0
+org.jfree.data.xy.IntervalXYDelegate.calculateIntervalForSeries : d1 = d2
+org.jfree.data.xy.CategoryTableXYDataset.add : if z0 == 0 goto return
+org.jfree.data.xy.CategoryTableXYDataset.add : virtualinvoke r0.<org.jfree.data.xy.CategoryTableXYDataset: void fireDatasetChanged()>()
+org.jfree.data.xy.CategoryTableXYDataset.add : $r2 = new java.lang.Double
+org.jfree.data.xy.CategoryTableXYDataset.add : $r4 = r0.<org.jfree.data.xy.CategoryTableXYDataset: org.jfree.data.DefaultKeyedValues2D values>
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null goto return
+org.jfree.data.DefaultKeyedValues2D.getValue : $r4 = r0.<org.jfree.data.DefaultKeyedValues2D: java.util.List rows>
+org.jfree.data.DefaultKeyedValues2D.getValue : $r6 = r0.<org.jfree.data.DefaultKeyedValues2D: java.util.List columnKeys>
+org.jfree.data.DefaultKeyedValues2D.getValue : if r2 == null goto return r1
+org.jfree.data.DefaultKeyedValues2D.getValue : if i2 < 0 goto return r1
+org.jfree.data.DefaultKeyedValues2D.getValue : r1 = virtualinvoke r2.<org.jfree.data.DefaultKeyedValues: java.lang.Number getValue(int)>(i2)
+org.jfree.data.DefaultKeyedValues2D.getValue : i2 = virtualinvoke r2.<org.jfree.data.DefaultKeyedValues: int getIndex(java.lang.Comparable)>(r3)
+org.jfree.data.DefaultKeyedValues2D.getValue : r1 = null
+org.jfree.data.DefaultKeyedValues2D.getValue : return r1
+org.jfree.data.xy.CategoryTableXYDataset.equals : $r5 = r0.<org.jfree.data.xy.CategoryTableXYDataset: org.jfree.data.DefaultKeyedValues2D values>
+org.jfree.data.xy.CategoryTableXYDataset.equals : return 1
+org.jfree.data.xy.CategoryTableXYDataset.equals : $z0 = r1 instanceof org.jfree.data.xy.CategoryTableXYDataset
+org.jfree.data.xy.CategoryTableXYDataset.equals : $r3 = r0.<org.jfree.data.xy.CategoryTableXYDataset: org.jfree.data.xy.IntervalXYDelegate intervalDelegate>
+org.jfree.data.xy.CategoryTableXYDataset.equals : r2 = (org.jfree.data.xy.CategoryTableXYDataset) r1
+org.jfree.data.DefaultKeyedValues.getValue : $r1 = r0.<org.jfree.data.DefaultKeyedValues: java.util.ArrayList values>

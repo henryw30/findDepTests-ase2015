@@ -1,0 +1,37 @@
+dynoptic.DynopticTest.getMcPath : r0 = null >>>>>>>> dynoptic.DynopticTest.getMcPath : $z0 = staticinvoke <mcscm.Os: boolean isLinux()>()
+dynoptic.DynopticTest.getMcPath : $z0 = staticinvoke <mcscm.Os: boolean isLinux()>() >>>>>>>> mcscm.Os.isLinux : $r0 = staticinvoke <mcscm.Os: java.lang.String getOsName()>()
+mcscm.Os.isLinux : $r0 = staticinvoke <mcscm.Os: java.lang.String getOsName()>() >>>>>>>> mcscm.Os.getOsName : $r0 = staticinvoke <java.lang.System: java.lang.String getProperty(java.lang.String,java.lang.String)>("os.name", "unknown")
+mcscm.Os.getOsName : $r0 = staticinvoke <java.lang.System: java.lang.String getProperty(java.lang.String,java.lang.String)>("os.name", "unknown") >>>>>>>> mcscm.Os.getOsName : return $r0
+mcscm.Os.getOsName : return $r0 >>>>>>>> mcscm.Os.isLinux : $r1 = virtualinvoke $r0.<java.lang.String: java.lang.String toLowerCase()>()
+mcscm.Os.isLinux : $r1 = virtualinvoke $r0.<java.lang.String: java.lang.String toLowerCase()>() >>>>>>>> mcscm.Os.isLinux : $i0 = virtualinvoke $r1.<java.lang.String: int indexOf(java.lang.String)>("linux")
+mcscm.Os.isLinux : $i0 = virtualinvoke $r1.<java.lang.String: int indexOf(java.lang.String)>("linux") >>>>>>>> mcscm.Os.isLinux : if $i0 < 0
+mcscm.Os.isLinux : if $i0 < 0 >>>>>>>> mcscm.Os.isLinux : $z0 = 1
+mcscm.Os.isLinux : $z0 = 1 >>>>>>>> mcscm.Os.isLinux : goto [?= return $z0]
+mcscm.Os.isLinux : goto [?= return $z0] >>>>>>>> mcscm.Os.isLinux : return $z0
+mcscm.Os.isLinux : return $z0 >>>>>>>> dynoptic.DynopticTest.getMcPath : if $z0 == 0
+dynoptic.DynopticTest.getMcPath : if $z0 == 0 >>>>>>>> dynoptic.DynopticTest.getMcPath : r0 = "linux.static"
+dynoptic.DynopticTest.getMcPath : r0 = "linux.static" >>>>>>>> dynoptic.DynopticTest.getMcPath : goto [?= $r9 = new java.lang.StringBuilder]
+dynoptic.DynopticTest.getMcPath : goto [?= $r9 = new java.lang.StringBuilder] >>>>>>>> dynoptic.DynopticTest.getMcPath : $r9 = new java.lang.StringBuilder
+dynoptic.DynopticTest.getMcPath : $r9 = new java.lang.StringBuilder >>>>>>>> dynoptic.DynopticTest.getMcPath : specialinvoke $r9.<java.lang.StringBuilder: void <init>()>()
+dynoptic.DynopticTest.getMcPath : specialinvoke $r9.<java.lang.StringBuilder: void <init>()>() >>>>>>>> dynoptic.DynopticTest.getMcPath : $r10 = virtualinvoke $r9.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("../bin/mcscm/verify.native.")
+dynoptic.DynopticTest.getMcPath : $r10 = virtualinvoke $r9.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("../bin/mcscm/verify.native.") >>>>>>>> dynoptic.DynopticTest.getMcPath : $r11 = virtualinvoke $r10.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(r0)
+dynoptic.DynopticTest.getMcPath : $r11 = virtualinvoke $r10.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(r0) >>>>>>>> dynoptic.DynopticTest.getMcPath : $r12 = virtualinvoke $r11.<java.lang.StringBuilder: java.lang.String toString()>()
+dynoptic.DynopticTest.getMcPath : $r12 = virtualinvoke $r11.<java.lang.StringBuilder: java.lang.String toString()>() >>>>>>>> dynoptic.DynopticTest.getMcPath : return $r12
+dynoptic.DynopticTest.getMcPath : return $r12 >>>>>>>> dynoptic.util.Util.newList : $r0 = new java.util.ArrayList
+dynoptic.util.Util.newList : $r0 = new java.util.ArrayList >>>>>>>> dynoptic.util.Util.newList : specialinvoke $r0.<java.util.ArrayList: void <init>()>()
+dynoptic.util.Util.newList : specialinvoke $r0.<java.util.ArrayList: void <init>()>() >>>>>>>> dynoptic.util.Util.newList : return $r0
+dynoptic.util.Util.newList : return $r0 >>>>>>>> mcscm.McScM.verify : $r2 = new java.io.File
+mcscm.McScM.verify : $r2 = new java.io.File >>>>>>>> mcscm.McScM.verify : specialinvoke $r2.<java.io.File: void <init>(java.lang.String)>(".")
+mcscm.McScM.verify : specialinvoke $r2.<java.io.File: void <init>(java.lang.String)>(".") >>>>>>>> mcscm.McScM.verify : r3 = $r2
+mcscm.McScM.verify : r3 = $r2 >>>>>>>> mcscm.McScM.verify : $r4 = newarray (java.lang.String)[3]
+mcscm.McScM.verify : $r4 = newarray (java.lang.String)[3] >>>>>>>> mcscm.McScM.verify : $r5 = r0.<mcscm.McScM: java.lang.String verifyPath>
+mcscm.McScM.verify : $r5 = r0.<mcscm.McScM: java.lang.String verifyPath> >>>>>>>> mcscm.McScM.verify : $r4[0] = $r5
+mcscm.McScM.verify : $r4[0] = $r5 >>>>>>>> mcscm.McScM.verify : $r4[1] = "-no-validation"
+mcscm.McScM.verify : $r4[1] = "-no-validation" >>>>>>>> mcscm.McScM.verify : $r4[2] = "-quiet"
+mcscm.McScM.verify : $r4[2] = "-quiet" >>>>>>>> mcscm.McScM.verify : $r6 = staticinvoke <mcscm.ProcessUtil: java.lang.Process runVerifyProcess(java.lang.String[],java.lang.String,java.io.File,int)>($r4, r1, r3, i0)
+mcscm.McScM.verify : $r6 = staticinvoke <mcscm.ProcessUtil: java.lang.Process runVerifyProcess(java.lang.String[],java.lang.String,java.io.File,int)>($r4, r1, r3, i0) >>>>>>>> mcscm.ProcessUtil.runVerifyProcess : $r3 = new java.lang.ProcessBuilder
+mcscm.ProcessUtil.runVerifyProcess : $r3 = new java.lang.ProcessBuilder >>>>>>>> mcscm.ProcessUtil.runVerifyProcess : specialinvoke $r3.<java.lang.ProcessBuilder: void <init>(java.lang.String[])>(r0)
+mcscm.ProcessUtil.runVerifyProcess : specialinvoke $r3.<java.lang.ProcessBuilder: void <init>(java.lang.String[])>(r0) >>>>>>>> mcscm.ProcessUtil.runVerifyProcess : r4 = $r3
+mcscm.ProcessUtil.runVerifyProcess : r4 = $r3 >>>>>>>> mcscm.ProcessUtil.runVerifyProcess : virtualinvoke r4.<java.lang.ProcessBuilder: java.lang.ProcessBuilder directory(java.io.File)>(r2)
+mcscm.ProcessUtil.runVerifyProcess : virtualinvoke r4.<java.lang.ProcessBuilder: java.lang.ProcessBuilder directory(java.io.File)>(r2) >>>>>>>> mcscm.ProcessUtil.runVerifyProcess : n0 = null
+mcscm.ProcessUtil.runVerifyProcess : n0 = null >>>>>>>> mcscm.ProcessUtil.runVerifyProcess : r9 = virtualinvoke r4.<java.lang.ProcessBuilder: java.lang.Process start()>()

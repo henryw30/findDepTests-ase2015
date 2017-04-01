@@ -1,0 +1,16 @@
+org.jfree.data.general.AbstractDataset.validateObject : virtualinvoke r0.<org.jfree.data.general.AbstractDataset: void fireDatasetChanged()>()
+org.jfree.data.general.AbstractDataset.notifyListeners : $r3 = r0.<org.jfree.data.general.AbstractDataset: javax.swing.event.EventListenerList listenerList>
+org.jfree.data.general.AbstractDataset.notifyListeners : $i1 = lengthof r2
+org.jfree.data.general.AbstractDataset.fireDatasetChanged : $r1 = new org.jfree.data.general.DatasetChangeEvent
+org.jfree.data.general.AbstractDataset.writeObject : virtualinvoke r1.<java.io.ObjectOutputStream: void defaultWriteObject()>()
+org.jfree.data.statistics.SimpleHistogramDataset.equals : $r3 = r0.<org.jfree.data.statistics.SimpleHistogramDataset: java.lang.Comparable key>
+org.jfree.data.statistics.SimpleHistogramDataset.equals : if r1 != r0 goto $z0 = r1 instanceof org.jfree.data.statistics.SimpleHistogramDataset
+org.jfree.data.statistics.SimpleHistogramDataset.equals : $r5 = r0.<org.jfree.data.statistics.SimpleHistogramDataset: java.util.List bins>
+org.jfree.data.statistics.SimpleHistogramDataset.equals : $z0 = r1 instanceof org.jfree.data.statistics.SimpleHistogramDataset
+org.jfree.data.statistics.SimpleHistogramDataset.equals : r2 = (org.jfree.data.statistics.SimpleHistogramDataset) r1
+org.jfree.data.statistics.SimpleHistogramDataset.equals : return 1
+org.jfree.data.statistics.SimpleHistogramDataset.equals : $z2 = r0.<org.jfree.data.statistics.SimpleHistogramDataset: boolean adjustForBinSize>
+org.jfree.data.general.AbstractDataset.readObject : $r2 = new javax.swing.event.EventListenerList
+org.jfree.data.general.AbstractDataset.readObject : virtualinvoke r1.<java.io.ObjectInputStream: void defaultReadObject()>()
+org.jfree.data.general.AbstractDataset.readObject : virtualinvoke r1.<java.io.ObjectInputStream: void registerValidation(java.io.ObjectInputValidation,int)>(r0, 10)
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null goto return

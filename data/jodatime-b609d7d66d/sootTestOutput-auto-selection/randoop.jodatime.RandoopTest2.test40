@@ -1,0 +1,24 @@
+org.joda.time.tz.UTCProvider.getAvailableIDs : $r1 = staticinvoke <java.util.Collections: java.util.Set singleton(java.lang.Object)>("UTC") >>>>>>>> org.joda.time.tz.UTCProvider.getAvailableIDs : return $r1
+org.joda.time.tz.UTCProvider.getAvailableIDs : return $r1 >>>>>>>> org.joda.time.DateTimeZone.setProvider : r1 = staticinvoke <java.lang.System: java.lang.SecurityManager getSecurityManager()>()
+org.joda.time.DateTimeZone.setProvider : r1 = staticinvoke <java.lang.System: java.lang.SecurityManager getSecurityManager()>() >>>>>>>> org.joda.time.DateTimeZone.setProvider : if r1 == null
+org.joda.time.DateTimeZone.setProvider : if r1 == null >>>>>>>> org.joda.time.DateTimeZone.setProvider : staticinvoke <org.joda.time.DateTimeZone: void setProvider0(org.joda.time.tz.Provider)>(r0)
+org.joda.time.DateTimeZone.setProvider : staticinvoke <org.joda.time.DateTimeZone: void setProvider0(org.joda.time.tz.Provider)>(r0) >>>>>>>> org.joda.time.DateTimeZone.setProvider0 : if r0 != null
+org.joda.time.DateTimeZone.setProvider0 : if r0 != null >>>>>>>> org.joda.time.DateTimeZone.setProvider0 : r1 = interfaceinvoke r0.<org.joda.time.tz.Provider: java.util.Set getAvailableIDs()>()
+org.joda.time.DateTimeZone.setProvider0 : r1 = interfaceinvoke r0.<org.joda.time.tz.Provider: java.util.Set getAvailableIDs()>() >>>>>>>> org.joda.time.DateTimeZone.setProvider0 : if r1 == null
+org.joda.time.DateTimeZone.setProvider0 : if r1 == null >>>>>>>> org.joda.time.DateTimeZone.setProvider0 : $i0 = interfaceinvoke r1.<java.util.Set: int size()>()
+org.joda.time.DateTimeZone.setProvider0 : $i0 = interfaceinvoke r1.<java.util.Set: int size()>() >>>>>>>> org.joda.time.DateTimeZone.setProvider0 : if $i0 != 0
+org.joda.time.DateTimeZone.setProvider0 : if $i0 != 0 >>>>>>>> org.joda.time.DateTimeZone.setProvider0 : $z0 = interfaceinvoke r1.<java.util.Set: boolean contains(java.lang.Object)>("UTC")
+org.joda.time.DateTimeZone.setProvider0 : $z0 = interfaceinvoke r1.<java.util.Set: boolean contains(java.lang.Object)>("UTC") >>>>>>>> org.joda.time.DateTimeZone.setProvider0 : if $z0 != 0
+org.joda.time.DateTimeZone.setProvider0 : if $z0 != 0 >>>>>>>> org.joda.time.DateTimeZone.setProvider0 : $r4 = <org.joda.time.DateTimeZone: org.joda.time.DateTimeZone UTC>
+org.joda.time.DateTimeZone.setProvider0 : $r4 = <org.joda.time.DateTimeZone: org.joda.time.DateTimeZone UTC> >>>>>>>> org.joda.time.DateTimeZone.setProvider0 : $r5 = interfaceinvoke r0.<org.joda.time.tz.Provider: org.joda.time.DateTimeZone getZone(java.lang.String)>("UTC")
+org.joda.time.DateTimeZone.setProvider0 : $r5 = interfaceinvoke r0.<org.joda.time.tz.Provider: org.joda.time.DateTimeZone getZone(java.lang.String)>("UTC") >>>>>>>> org.joda.time.tz.UTCProvider.getZone : $r2 = "UTC"
+org.joda.time.tz.UTCProvider.getZone : $r2 = "UTC" >>>>>>>> org.joda.time.tz.UTCProvider.getZone : $z0 = virtualinvoke $r2.<java.lang.String: boolean equalsIgnoreCase(java.lang.String)>(r1)
+org.joda.time.tz.UTCProvider.getZone : $z0 = virtualinvoke $r2.<java.lang.String: boolean equalsIgnoreCase(java.lang.String)>(r1) >>>>>>>> org.joda.time.tz.UTCProvider.getZone : if $z0 == 0
+org.joda.time.tz.UTCProvider.getZone : if $z0 == 0 >>>>>>>> org.joda.time.tz.UTCProvider.getZone : $r3 = <org.joda.time.DateTimeZone: org.joda.time.DateTimeZone UTC>
+org.joda.time.tz.UTCProvider.getZone : $r3 = <org.joda.time.DateTimeZone: org.joda.time.DateTimeZone UTC> >>>>>>>> org.joda.time.tz.UTCProvider.getZone : return $r3
+org.joda.time.tz.UTCProvider.getZone : return $r3 >>>>>>>> org.joda.time.DateTimeZone.setProvider0 : $z1 = virtualinvoke $r4.<org.joda.time.DateTimeZone: boolean equals(java.lang.Object)>($r5)
+org.joda.time.DateTimeZone.setProvider0 : $z1 = virtualinvoke $r4.<org.joda.time.DateTimeZone: boolean equals(java.lang.Object)>($r5) >>>>>>>> org.joda.time.tz.FixedDateTimeZone.equals : if r0 != r1
+org.joda.time.tz.FixedDateTimeZone.equals : if r0 != r1 >>>>>>>> org.joda.time.tz.FixedDateTimeZone.equals : return 1
+org.joda.time.tz.FixedDateTimeZone.equals : return 1 >>>>>>>> org.joda.time.DateTimeZone.setProvider0 : if $z1 != 0
+org.joda.time.DateTimeZone.setProvider0 : if $z1 != 0 >>>>>>>> org.joda.time.DateTimeZone.setProvider0 : <org.joda.time.DateTimeZone: org.joda.time.tz.Provider cProvider> = r0
+org.joda.time.DateTimeZone.setProvider0 : <org.joda.time.DateTimeZone: org.joda.time.tz.Provider cProvider> = r0 >>>>>>>> org.joda.time.DateTimeZone.setProvider0 : <org.joda.time.DateTimeZone: java.util.Set cAvailableIDs> = r1

@@ -1,0 +1,22 @@
+org.jfree.chart.util.ResourceBundleWrapper.getBundle : $r1 = <org.jfree.chart.util.ResourceBundleWrapper: java.net.URLClassLoader noCodeBaseClassLoader>
+org.jfree.chart.util.ResourceBundleWrapper.getBundle : $r5 = staticinvoke <java.util.ResourceBundle: java.util.ResourceBundle getBundle(java.lang.String)>(r0)
+org.jfree.data.category.DefaultIntervalCategoryDataset.getRowIndex : $i0 = virtualinvoke r0.<org.jfree.data.category.DefaultIntervalCategoryDataset: int getSeriesIndex(java.lang.Comparable)>(r1)
+org.jfree.chart.renderer.AbstractRenderer.fireChangeEvent : $r1 = new org.jfree.chart.event.RendererChangeEvent
+org.jfree.chart.renderer.xy.XYLineAndShapeRenderer.getUseOutlinePaint : $z0 = r0.<org.jfree.chart.renderer.xy.XYLineAndShapeRenderer: boolean useOutlinePaint>
+org.jfree.chart.renderer.xy.XYBoxAndWhiskerRenderer.equals : if r1 != r0 goto $z0 = r1 instanceof org.jfree.chart.renderer.xy.XYBoxAndWhiskerRenderer
+org.jfree.chart.renderer.xy.XYBoxAndWhiskerRenderer.equals : $z0 = r1 instanceof org.jfree.chart.renderer.xy.XYBoxAndWhiskerRenderer
+org.jfree.chart.renderer.xy.XYBoxAndWhiskerRenderer.equals : return 0
+org.jfree.chart.StandardChartTheme.getLegendItemPaint : $r1 = r0.<org.jfree.chart.StandardChartTheme: java.awt.Paint legendItemPaint>
+org.jfree.chart.renderer.AbstractRenderer.notifyListeners : $r3 = r0.<org.jfree.chart.renderer.AbstractRenderer: javax.swing.event.EventListenerList listenerList>
+org.jfree.chart.renderer.AbstractRenderer.notifyListeners : $i1 = lengthof r2
+org.jfree.data.category.DefaultIntervalCategoryDataset.getSeriesIndex : return i0
+org.jfree.data.category.DefaultIntervalCategoryDataset.getSeriesIndex : i1 = 0
+org.jfree.data.category.DefaultIntervalCategoryDataset.getSeriesIndex : i0 = -1
+org.jfree.chart.renderer.xy.XYSplineRenderer.equals : $z0 = r1 instanceof org.jfree.chart.renderer.xy.XYSplineRenderer
+org.jfree.chart.renderer.xy.XYSplineRenderer.equals : if r1 != r0 goto $z0 = r1 instanceof org.jfree.chart.renderer.xy.XYSplineRenderer
+org.jfree.chart.renderer.xy.XYSplineRenderer.equals : return 0
+org.jfree.chart.renderer.xy.XYBoxAndWhiskerRenderer.setBoxPaint : virtualinvoke r0.<org.jfree.chart.renderer.xy.XYBoxAndWhiskerRenderer: void fireChangeEvent()>()
+org.jfree.chart.renderer.xy.XYBoxAndWhiskerRenderer.setBoxPaint : r0.<org.jfree.chart.renderer.xy.XYBoxAndWhiskerRenderer: java.awt.Paint boxPaint> = r1
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null goto return
+org.jfree.chart.renderer.xy.AbstractXYItemRenderer.setBaseToolTipGenerator : r0.<org.jfree.chart.renderer.xy.AbstractXYItemRenderer: org.jfree.chart.labels.XYToolTipGenerator baseToolTipGenerator> = r1
+org.jfree.chart.renderer.xy.AbstractXYItemRenderer.setBaseToolTipGenerator : virtualinvoke r0.<org.jfree.chart.renderer.xy.AbstractXYItemRenderer: void fireChangeEvent()>()

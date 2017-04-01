@@ -1,0 +1,14 @@
+org.joda.time.DateTimeZone.convertUTCToLocal : i1 = virtualinvoke r0.<org.joda.time.DateTimeZone: int getOffset(long)>(l0) >>>>>>>> org.joda.time.DateTimeZone.convertUTCToLocal : $l3 = (long) i1
+org.joda.time.DateTimeZone.convertUTCToLocal : $l3 = (long) i1 >>>>>>>> org.joda.time.DateTimeZone.convertUTCToLocal : l2 = l0 + $l3
+org.joda.time.DateTimeZone.convertUTCToLocal : l2 = l0 + $l3 >>>>>>>> org.joda.time.DateTimeZone.convertUTCToLocal : $l4 = l0 ^ l2
+org.joda.time.DateTimeZone.convertUTCToLocal : $l4 = l0 ^ l2 >>>>>>>> org.joda.time.DateTimeZone.convertUTCToLocal : $b5 = $l4 cmp 0L
+org.joda.time.DateTimeZone.convertUTCToLocal : $b5 = $l4 cmp 0L >>>>>>>> org.joda.time.DateTimeZone.convertUTCToLocal : if $b5 >= 0
+org.joda.time.DateTimeZone.convertUTCToLocal : if $b5 >= 0 >>>>>>>> org.joda.time.DateTimeZone.convertUTCToLocal : $l6 = (long) i1
+org.joda.time.DateTimeZone.convertUTCToLocal : if $b5 >= 0 >>>>>>>> org.joda.time.DateTimeZone.convertUTCToLocal : return l2
+org.joda.time.DateTimeZone.convertUTCToLocal : $l6 = (long) i1 >>>>>>>> org.joda.time.DateTimeZone.convertUTCToLocal : $l7 = l0 ^ $l6
+org.joda.time.DateTimeZone.convertUTCToLocal : $l7 = l0 ^ $l6 >>>>>>>> org.joda.time.DateTimeZone.convertUTCToLocal : $b8 = $l7 cmp 0L
+org.joda.time.DateTimeZone.convertUTCToLocal : $b8 = $l7 cmp 0L >>>>>>>> org.joda.time.DateTimeZone.convertUTCToLocal : if $b8 < 0
+org.joda.time.DateTimeZone.convertUTCToLocal : if $b8 < 0 >>>>>>>> org.joda.time.DateTimeZone.convertUTCToLocal : $r1 = new java.lang.ArithmeticException
+org.joda.time.DateTimeZone.convertUTCToLocal : if $b8 < 0 >>>>>>>> org.joda.time.DateTimeZone.convertUTCToLocal : return l2
+org.joda.time.DateTimeZone.convertUTCToLocal : $r1 = new java.lang.ArithmeticException >>>>>>>> org.joda.time.DateTimeZone.convertUTCToLocal : specialinvoke $r1.<java.lang.ArithmeticException: void <init>(java.lang.String)>("Adding time zone offset caused overflow")
+org.joda.time.DateTimeZone.convertUTCToLocal : specialinvoke $r1.<java.lang.ArithmeticException: void <init>(java.lang.String)>("Adding time zone offset caused overflow") >>>>>>>> org.joda.time.DateTimeZone.convertUTCToLocal : throw $r1

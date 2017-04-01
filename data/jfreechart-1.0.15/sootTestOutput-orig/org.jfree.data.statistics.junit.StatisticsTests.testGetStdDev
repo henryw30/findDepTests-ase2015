@@ -1,0 +1,23 @@
+org.jfree.data.statistics.Statistics.getStdDev : d1 = 0.0
+org.jfree.data.statistics.Statistics.getStdDev : $r2 = r0[i0]
+org.jfree.data.statistics.Statistics.getStdDev : i0 = 0
+org.jfree.data.statistics.Statistics.getStdDev : d0 = staticinvoke <org.jfree.data.statistics.Statistics: double calculateMean(java.lang.Number[])>(r0)
+org.jfree.data.statistics.Statistics.getStdDev : $r1 = new java.lang.IllegalArgumentException
+org.jfree.data.statistics.Statistics.getStdDev : $d4 = d2 * d2
+org.jfree.data.statistics.Statistics.getStdDev : $i1 = lengthof r0
+org.jfree.data.statistics.Statistics.getStdDev : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r0, "data")
+org.jfree.data.statistics.Statistics.getStdDev : $i3 = lengthof r0
+org.jfree.data.statistics.Statistics.calculateMean : $d2 = (double) i0
+org.jfree.data.statistics.Statistics.calculateMean : if z0 != 0 goto d0 = d0 + d1
+org.jfree.data.statistics.Statistics.calculateMean : d0 = d0 + d1
+org.jfree.data.statistics.Statistics.calculateMean : i1 = 0
+org.jfree.data.statistics.Statistics.calculateMean : $d0 = staticinvoke <org.jfree.data.statistics.Statistics: double calculateMean(java.lang.Number[],boolean)>(r0, 1)
+org.jfree.data.statistics.Statistics.calculateMean : return d3
+org.jfree.data.statistics.Statistics.calculateMean : i0 = i0 + 1
+org.jfree.data.statistics.Statistics.calculateMean : i0 = 0
+org.jfree.data.statistics.Statistics.calculateMean : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r0, "values")
+org.jfree.data.statistics.Statistics.calculateMean : $r1 = r0[i1]
+org.jfree.data.statistics.Statistics.calculateMean : d0 = 0.0
+org.jfree.data.statistics.Statistics.calculateMean : $r2 = r0[i1]
+org.jfree.chart.util.ParamChecks.nullNotPermitted : $r3 = new java.lang.IllegalArgumentException
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null goto return

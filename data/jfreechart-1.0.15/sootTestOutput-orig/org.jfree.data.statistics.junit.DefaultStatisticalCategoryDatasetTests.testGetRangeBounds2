@@ -1,0 +1,154 @@
+org.jfree.data.KeyedObjects2D.getColumnIndex : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "key")
+org.jfree.data.KeyedObjects2D.getColumnIndex : $r2 = r0.<org.jfree.data.KeyedObjects2D: java.util.List columnKeys>
+org.jfree.data.KeyedObjects.getObject : r1 = virtualinvoke r2.<org.jfree.data.KeyedObject: java.lang.Object getObject()>()
+org.jfree.data.KeyedObjects.getObject : if r2 == null goto return r1
+org.jfree.data.KeyedObjects.getObject : if i0 >= 0 goto $r8 = virtualinvoke r0.<org.jfree.data.KeyedObjects: java.lang.Object getObject(int)>(i0)
+org.jfree.data.KeyedObjects.getObject : i0 = virtualinvoke r0.<org.jfree.data.KeyedObjects: int getIndex(java.lang.Comparable)>(r1)
+org.jfree.data.KeyedObjects.getObject : $r3 = r0.<org.jfree.data.KeyedObjects: java.util.List data>
+org.jfree.data.KeyedObjects.getObject : r1 = null
+org.jfree.data.KeyedObjects.getObject : $r8 = virtualinvoke r0.<org.jfree.data.KeyedObjects: java.lang.Object getObject(int)>(i0)
+org.jfree.data.KeyedObjects.getObject : return r1
+org.jfree.data.KeyedObjects2D.getRowIndex : $r2 = r0.<org.jfree.data.KeyedObjects2D: java.util.List rowKeys>
+org.jfree.data.KeyedObjects2D.getRowIndex : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "key")
+org.jfree.data.statistics.DefaultStatisticalCategoryDataset.updateBounds : r0.<org.jfree.data.statistics.DefaultStatisticalCategoryDataset: int minimumRangeValueColumn> = i3
+org.jfree.data.statistics.DefaultStatisticalCategoryDataset.updateBounds : $r3 = r0.<org.jfree.data.statistics.DefaultStatisticalCategoryDataset: org.jfree.data.KeyedObjects2D data>
+org.jfree.data.statistics.DefaultStatisticalCategoryDataset.updateBounds : r0.<org.jfree.data.statistics.DefaultStatisticalCategoryDataset: int maximumRangeValueIncStdDevColumn> = i3
+org.jfree.data.statistics.DefaultStatisticalCategoryDataset.updateBounds : r0.<org.jfree.data.statistics.DefaultStatisticalCategoryDataset: int maximumRangeValueColumn> = i3
+org.jfree.data.statistics.DefaultStatisticalCategoryDataset.updateBounds : i3 = 0
+org.jfree.data.statistics.DefaultStatisticalCategoryDataset.updateBounds : r0.<org.jfree.data.statistics.DefaultStatisticalCategoryDataset: int maximumRangeValueRow> = i2
+org.jfree.data.statistics.DefaultStatisticalCategoryDataset.updateBounds : r0.<org.jfree.data.statistics.DefaultStatisticalCategoryDataset: int maximumRangeValueIncStdDevRow> = i2
+org.jfree.data.statistics.DefaultStatisticalCategoryDataset.updateBounds : r0.<org.jfree.data.statistics.DefaultStatisticalCategoryDataset: double minimumRangeValueIncStdDev> = #NaN
+org.jfree.data.statistics.DefaultStatisticalCategoryDataset.updateBounds : $d6 = r0.<org.jfree.data.statistics.DefaultStatisticalCategoryDataset: double maximumRangeValueIncStdDev>
+org.jfree.data.statistics.DefaultStatisticalCategoryDataset.updateBounds : r0.<org.jfree.data.statistics.DefaultStatisticalCategoryDataset: int minimumRangeValueIncStdDevColumn> = i3
+org.jfree.data.statistics.DefaultStatisticalCategoryDataset.updateBounds : r0.<org.jfree.data.statistics.DefaultStatisticalCategoryDataset: int maximumRangeValueColumn> = -1
+org.jfree.data.statistics.DefaultStatisticalCategoryDataset.updateBounds : $r5 = virtualinvoke $r4.<org.jfree.data.KeyedObjects2D: java.lang.Object getObject(int,int)>(i2, i3)
+org.jfree.data.statistics.DefaultStatisticalCategoryDataset.updateBounds : $r4 = r0.<org.jfree.data.statistics.DefaultStatisticalCategoryDataset: org.jfree.data.KeyedObjects2D data>
+org.jfree.data.statistics.DefaultStatisticalCategoryDataset.updateBounds : r0.<org.jfree.data.statistics.DefaultStatisticalCategoryDataset: int minimumRangeValueIncStdDevColumn> = -1
+org.jfree.data.statistics.DefaultStatisticalCategoryDataset.updateBounds : $d7 = d0 + d1
+org.jfree.data.statistics.DefaultStatisticalCategoryDataset.updateBounds : r0.<org.jfree.data.statistics.DefaultStatisticalCategoryDataset: int minimumRangeValueIncStdDevRow> = -1
+org.jfree.data.statistics.DefaultStatisticalCategoryDataset.updateBounds : r0.<org.jfree.data.statistics.DefaultStatisticalCategoryDataset: int maximumRangeValueIncStdDevColumn> = -1
+org.jfree.data.statistics.DefaultStatisticalCategoryDataset.updateBounds : r0.<org.jfree.data.statistics.DefaultStatisticalCategoryDataset: double minimumRangeValue> = #NaN
+org.jfree.data.statistics.DefaultStatisticalCategoryDataset.updateBounds : r0.<org.jfree.data.statistics.DefaultStatisticalCategoryDataset: int minimumRangeValueIncStdDevRow> = i2
+org.jfree.data.statistics.DefaultStatisticalCategoryDataset.updateBounds : $r2 = r0.<org.jfree.data.statistics.DefaultStatisticalCategoryDataset: org.jfree.data.KeyedObjects2D data>
+org.jfree.data.statistics.DefaultStatisticalCategoryDataset.updateBounds : r0.<org.jfree.data.statistics.DefaultStatisticalCategoryDataset: double maximumRangeValue> = d0
+org.jfree.data.statistics.DefaultStatisticalCategoryDataset.updateBounds : $z0 = staticinvoke <java.lang.Double: boolean isNaN(double)>(d0)
+org.jfree.data.statistics.DefaultStatisticalCategoryDataset.updateBounds : d1 = virtualinvoke r1.<org.jfree.data.statistics.MeanAndStandardDeviation: double getStandardDeviationValue()>()
+org.jfree.data.statistics.DefaultStatisticalCategoryDataset.updateBounds : r0.<org.jfree.data.statistics.DefaultStatisticalCategoryDataset: double minimumRangeValue> = d0
+org.jfree.data.statistics.DefaultStatisticalCategoryDataset.updateBounds : r0.<org.jfree.data.statistics.DefaultStatisticalCategoryDataset: int minimumRangeValueColumn> = -1
+org.jfree.data.statistics.DefaultStatisticalCategoryDataset.updateBounds : r0.<org.jfree.data.statistics.DefaultStatisticalCategoryDataset: int minimumRangeValueRow> = i2
+org.jfree.data.statistics.DefaultStatisticalCategoryDataset.updateBounds : d0 = virtualinvoke r1.<org.jfree.data.statistics.MeanAndStandardDeviation: double getMeanValue()>()
+org.jfree.data.statistics.DefaultStatisticalCategoryDataset.updateBounds : $d2 = r0.<org.jfree.data.statistics.DefaultStatisticalCategoryDataset: double maximumRangeValue>
+org.jfree.data.statistics.DefaultStatisticalCategoryDataset.updateBounds : r0.<org.jfree.data.statistics.DefaultStatisticalCategoryDataset: int maximumRangeValueRow> = -1
+org.jfree.data.statistics.DefaultStatisticalCategoryDataset.updateBounds : $d11 = r0.<org.jfree.data.statistics.DefaultStatisticalCategoryDataset: double minimumRangeValueIncStdDev>
+org.jfree.data.statistics.DefaultStatisticalCategoryDataset.updateBounds : $d4 = r0.<org.jfree.data.statistics.DefaultStatisticalCategoryDataset: double minimumRangeValue>
+org.jfree.data.statistics.DefaultStatisticalCategoryDataset.updateBounds : r0.<org.jfree.data.statistics.DefaultStatisticalCategoryDataset: int minimumRangeValueRow> = -1
+org.jfree.data.statistics.DefaultStatisticalCategoryDataset.updateBounds : r0.<org.jfree.data.statistics.DefaultStatisticalCategoryDataset: double maximumRangeValueIncStdDev> = #NaN
+org.jfree.data.statistics.DefaultStatisticalCategoryDataset.updateBounds : $z3 = staticinvoke <java.lang.Double: boolean isNaN(double)>(d1)
+org.jfree.data.statistics.DefaultStatisticalCategoryDataset.updateBounds : $d12 = d0 - d1
+org.jfree.data.statistics.DefaultStatisticalCategoryDataset.updateBounds : i2 = 0
+org.jfree.data.statistics.DefaultStatisticalCategoryDataset.updateBounds : if r1 != null goto d0 = virtualinvoke r1.<org.jfree.data.statistics.MeanAndStandardDeviation: double getMeanValue()>()
+org.jfree.data.statistics.DefaultStatisticalCategoryDataset.updateBounds : r0.<org.jfree.data.statistics.DefaultStatisticalCategoryDataset: double maximumRangeValue> = #NaN
+org.jfree.data.statistics.DefaultStatisticalCategoryDataset.updateBounds : r0.<org.jfree.data.statistics.DefaultStatisticalCategoryDataset: int maximumRangeValueIncStdDevRow> = -1
+org.jfree.data.KeyedObjects2D.setObject : $r6 = r0.<org.jfree.data.KeyedObjects2D: java.util.List rows>
+org.jfree.data.KeyedObjects2D.setObject : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r3, "columnKey")
+org.jfree.data.KeyedObjects2D.setObject : $r10 = r0.<org.jfree.data.KeyedObjects2D: java.util.List rows>
+org.jfree.data.KeyedObjects2D.setObject : if i1 >= 0 goto return
+org.jfree.data.KeyedObjects2D.setObject : $r9 = new org.jfree.data.KeyedObjects
+org.jfree.data.KeyedObjects2D.setObject : $r5 = r0.<org.jfree.data.KeyedObjects2D: java.util.List rowKeys>
+org.jfree.data.KeyedObjects2D.setObject : virtualinvoke r4.<org.jfree.data.KeyedObjects: void setObject(java.lang.Comparable,java.lang.Object)>(r3, r1)
+org.jfree.data.KeyedObjects2D.setObject : if i0 < 0 goto $r8 = r0.<org.jfree.data.KeyedObjects2D: java.util.List rowKeys>
+org.jfree.data.KeyedObjects2D.setObject : $r11 = r0.<org.jfree.data.KeyedObjects2D: java.util.List columnKeys>
+org.jfree.data.KeyedObjects2D.setObject : $r12 = r0.<org.jfree.data.KeyedObjects2D: java.util.List columnKeys>
+org.jfree.data.KeyedObjects2D.setObject : $r8 = r0.<org.jfree.data.KeyedObjects2D: java.util.List rowKeys>
+org.jfree.data.KeyedObjects2D.setObject : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r2, "rowKey")
+org.jfree.data.Range.equals : $d2 = r0.<org.jfree.data.Range: double upper>
+org.jfree.data.Range.equals : $z0 = r1 instanceof org.jfree.data.Range
+org.jfree.data.Range.equals : $d0 = r0.<org.jfree.data.Range: double lower>
+org.jfree.data.Range.equals : return 1
+org.jfree.data.Range.equals : r2 = (org.jfree.data.Range) r1
+org.jfree.data.general.AbstractDataset.notifyListeners : $r3 = r0.<org.jfree.data.general.AbstractDataset: javax.swing.event.EventListenerList listenerList>
+org.jfree.data.general.AbstractDataset.notifyListeners : $i1 = lengthof r2
+org.jfree.data.general.AbstractDataset.fireDatasetChanged : $r1 = new org.jfree.data.general.DatasetChangeEvent
+org.jfree.data.KeyedObjects2D.getRowCount : $r1 = r0.<org.jfree.data.KeyedObjects2D: java.util.List rowKeys>
+org.jfree.data.statistics.MeanAndStandardDeviation.getStandardDeviationValue : d0 = #NaN
+org.jfree.data.statistics.MeanAndStandardDeviation.getStandardDeviationValue : return d0
+org.jfree.data.statistics.MeanAndStandardDeviation.getStandardDeviationValue : $r1 = r0.<org.jfree.data.statistics.MeanAndStandardDeviation: java.lang.Number standardDeviation>
+org.jfree.data.statistics.MeanAndStandardDeviation.getStandardDeviationValue : $r2 = r0.<org.jfree.data.statistics.MeanAndStandardDeviation: java.lang.Number standardDeviation>
+org.jfree.data.statistics.MeanAndStandardDeviation.getMeanValue : d0 = #NaN
+org.jfree.data.statistics.MeanAndStandardDeviation.getMeanValue : return d0
+org.jfree.data.statistics.MeanAndStandardDeviation.getMeanValue : $r1 = r0.<org.jfree.data.statistics.MeanAndStandardDeviation: java.lang.Number mean>
+org.jfree.data.statistics.MeanAndStandardDeviation.getMeanValue : $r2 = r0.<org.jfree.data.statistics.MeanAndStandardDeviation: java.lang.Number mean>
+org.jfree.data.KeyedObjects.setObject : if i0 < 0 goto $r6 = new org.jfree.data.KeyedObject
+org.jfree.data.KeyedObjects.setObject : $r4 = r0.<org.jfree.data.KeyedObjects: java.util.List data>
+org.jfree.data.KeyedObjects.setObject : virtualinvoke r3.<org.jfree.data.KeyedObject: void setObject(java.lang.Object)>(r2)
+org.jfree.data.KeyedObjects.setObject : $r6 = new org.jfree.data.KeyedObject
+org.jfree.data.KeyedObjects.setObject : i0 = virtualinvoke r0.<org.jfree.data.KeyedObjects: int getIndex(java.lang.Comparable)>(r1)
+org.jfree.data.KeyedObjects.setObject : $r8 = r0.<org.jfree.data.KeyedObjects: java.util.List data>
+org.jfree.data.KeyedObjects.setObject : goto [?= return]
+org.jfree.data.KeyedObjects2D.getObject : $r4 = r0.<org.jfree.data.KeyedObjects2D: java.util.List rows>
+org.jfree.data.KeyedObjects2D.getObject : if r2 == null goto return r1
+org.jfree.data.KeyedObjects2D.getObject : i2 = virtualinvoke r2.<org.jfree.data.KeyedObjects: int getIndex(java.lang.Comparable)>(r3)
+org.jfree.data.KeyedObjects2D.getObject : if i2 < 0 goto return r1
+org.jfree.data.KeyedObjects2D.getObject : $r6 = r0.<org.jfree.data.KeyedObjects2D: java.util.List columnKeys>
+org.jfree.data.KeyedObjects2D.getObject : if r3 == null goto return r1
+org.jfree.data.KeyedObjects2D.getObject : r1 = virtualinvoke r2.<org.jfree.data.KeyedObjects: java.lang.Object getObject(java.lang.Comparable)>(r3)
+org.jfree.data.KeyedObjects2D.getObject : r1 = null
+org.jfree.data.KeyedObjects2D.getObject : return r1
+org.jfree.data.KeyedObject.getObject : $r1 = r0.<org.jfree.data.KeyedObject: java.lang.Object object>
+org.jfree.data.statistics.DefaultStatisticalCategoryDataset.getRangeBounds : d1 = virtualinvoke r0.<org.jfree.data.statistics.DefaultStatisticalCategoryDataset: double getRangeUpperBound(boolean)>(z0)
+org.jfree.data.statistics.DefaultStatisticalCategoryDataset.getRangeBounds : $r1 = new org.jfree.data.Range
+org.jfree.data.statistics.DefaultStatisticalCategoryDataset.getRangeBounds : $z1 = staticinvoke <java.lang.Double: boolean isNaN(double)>(d0)
+org.jfree.data.statistics.DefaultStatisticalCategoryDataset.getRangeBounds : d0 = virtualinvoke r0.<org.jfree.data.statistics.DefaultStatisticalCategoryDataset: double getRangeLowerBound(boolean)>(z0)
+org.jfree.data.statistics.DefaultStatisticalCategoryDataset.add : r0.<org.jfree.data.statistics.DefaultStatisticalCategoryDataset: int maximumRangeValueIncStdDevColumn> = i1
+org.jfree.data.statistics.DefaultStatisticalCategoryDataset.add : d0 = #NaN
+org.jfree.data.statistics.DefaultStatisticalCategoryDataset.add : $d4 = d0 + d1
+org.jfree.data.statistics.DefaultStatisticalCategoryDataset.add : r0.<org.jfree.data.statistics.DefaultStatisticalCategoryDataset: int maximumRangeValueColumn> = i1
+org.jfree.data.statistics.DefaultStatisticalCategoryDataset.add : r0.<org.jfree.data.statistics.DefaultStatisticalCategoryDataset: int minimumRangeValueColumn> = i1
+org.jfree.data.statistics.DefaultStatisticalCategoryDataset.add : specialinvoke r0.<org.jfree.data.statistics.DefaultStatisticalCategoryDataset: void updateBounds()>()
+org.jfree.data.statistics.DefaultStatisticalCategoryDataset.add : $d15 = d0 - d1
+org.jfree.data.statistics.DefaultStatisticalCategoryDataset.add : $r5 = new org.jfree.data.statistics.MeanAndStandardDeviation
+org.jfree.data.statistics.DefaultStatisticalCategoryDataset.add : r0.<org.jfree.data.statistics.DefaultStatisticalCategoryDataset: int minimumRangeValueIncStdDevColumn> = i1
+org.jfree.data.statistics.DefaultStatisticalCategoryDataset.add : r0.<org.jfree.data.statistics.DefaultStatisticalCategoryDataset: int maximumRangeValueIncStdDevRow> = i0
+org.jfree.data.statistics.DefaultStatisticalCategoryDataset.add : r0.<org.jfree.data.statistics.DefaultStatisticalCategoryDataset: int maximumRangeValueRow> = i0
+org.jfree.data.statistics.DefaultStatisticalCategoryDataset.add : $d9 = r0.<org.jfree.data.statistics.DefaultStatisticalCategoryDataset: double minimumRangeValue>
+org.jfree.data.statistics.DefaultStatisticalCategoryDataset.add : $r8 = r0.<org.jfree.data.statistics.DefaultStatisticalCategoryDataset: org.jfree.data.KeyedObjects2D data>
+org.jfree.data.statistics.DefaultStatisticalCategoryDataset.add : d1 = virtualinvoke r2.<java.lang.Number: double doubleValue()>()
+org.jfree.data.statistics.DefaultStatisticalCategoryDataset.add : r0.<org.jfree.data.statistics.DefaultStatisticalCategoryDataset: int minimumRangeValueIncStdDevRow> = i0
+org.jfree.data.statistics.DefaultStatisticalCategoryDataset.add : $d12 = r0.<org.jfree.data.statistics.DefaultStatisticalCategoryDataset: double minimumRangeValueIncStdDev>
+org.jfree.data.statistics.DefaultStatisticalCategoryDataset.add : r0.<org.jfree.data.statistics.DefaultStatisticalCategoryDataset: double maximumRangeValue> = d0
+org.jfree.data.statistics.DefaultStatisticalCategoryDataset.add : $z0 = staticinvoke <java.lang.Double: boolean isNaN(double)>(d0)
+org.jfree.data.statistics.DefaultStatisticalCategoryDataset.add : $i2 = r0.<org.jfree.data.statistics.DefaultStatisticalCategoryDataset: int maximumRangeValueRow>
+org.jfree.data.statistics.DefaultStatisticalCategoryDataset.add : virtualinvoke r0.<org.jfree.data.statistics.DefaultStatisticalCategoryDataset: void fireDatasetChanged()>()
+org.jfree.data.statistics.DefaultStatisticalCategoryDataset.add : r0.<org.jfree.data.statistics.DefaultStatisticalCategoryDataset: double minimumRangeValue> = d0
+org.jfree.data.statistics.DefaultStatisticalCategoryDataset.add : d0 = virtualinvoke r1.<java.lang.Number: double doubleValue()>()
+org.jfree.data.statistics.DefaultStatisticalCategoryDataset.add : $d2 = r0.<org.jfree.data.statistics.DefaultStatisticalCategoryDataset: double maximumRangeValue>
+org.jfree.data.statistics.DefaultStatisticalCategoryDataset.add : $r3 = new java.lang.Double
+org.jfree.data.statistics.DefaultStatisticalCategoryDataset.add : $d8 = d0 + d1
+org.jfree.data.statistics.DefaultStatisticalCategoryDataset.add : r0.<org.jfree.data.statistics.DefaultStatisticalCategoryDataset: int minimumRangeValueRow> = i0
+org.jfree.data.statistics.DefaultStatisticalCategoryDataset.add : $r9 = r0.<org.jfree.data.statistics.DefaultStatisticalCategoryDataset: org.jfree.data.KeyedObjects2D data>
+org.jfree.data.statistics.DefaultStatisticalCategoryDataset.add : d1 = #NaN
+org.jfree.data.statistics.DefaultStatisticalCategoryDataset.add : $z4 = staticinvoke <java.lang.Double: boolean isNaN(double)>(d0)
+org.jfree.data.statistics.DefaultStatisticalCategoryDataset.add : $d5 = r0.<org.jfree.data.statistics.DefaultStatisticalCategoryDataset: double maximumRangeValueIncStdDev>
+org.jfree.data.statistics.DefaultStatisticalCategoryDataset.add : if r2 == null goto $r8 = r0.<org.jfree.data.statistics.DefaultStatisticalCategoryDataset: org.jfree.data.KeyedObjects2D data>
+org.jfree.data.statistics.DefaultStatisticalCategoryDataset.add : $r7 = r0.<org.jfree.data.statistics.DefaultStatisticalCategoryDataset: org.jfree.data.KeyedObjects2D data>
+org.jfree.data.statistics.DefaultStatisticalCategoryDataset.add : if r1 == null goto (branch)
+org.jfree.data.statistics.DefaultStatisticalCategoryDataset.add : $d11 = d0 - d1
+org.jfree.data.statistics.DefaultStatisticalCategoryDataset.getRangeLowerBound : $d1 = r0.<org.jfree.data.statistics.DefaultStatisticalCategoryDataset: double minimumRangeValueIncStdDev>
+org.jfree.data.statistics.DefaultStatisticalCategoryDataset.getRangeLowerBound : $d2 = r0.<org.jfree.data.statistics.DefaultStatisticalCategoryDataset: double minimumRangeValue>
+org.jfree.data.statistics.DefaultStatisticalCategoryDataset.getRangeLowerBound : if z0 == 0 goto $d2 = r0.<org.jfree.data.statistics.DefaultStatisticalCategoryDataset: double minimumRangeValue>
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null goto return
+org.jfree.data.KeyedObjects.getIndex : return -1
+org.jfree.data.KeyedObjects.getIndex : return i0
+org.jfree.data.KeyedObjects.getIndex : $r5 = interfaceinvoke r2.<java.util.Iterator: java.lang.Object next()>()
+org.jfree.data.KeyedObjects.getIndex : $r4 = r0.<org.jfree.data.KeyedObjects: java.util.List data>
+org.jfree.data.KeyedObjects.getIndex : i0 = 0
+org.jfree.data.KeyedObjects.getIndex : $z0 = interfaceinvoke r2.<java.util.Iterator: boolean hasNext()>()
+org.jfree.data.KeyedObjects.getIndex : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "key")
+org.jfree.data.KeyedObjects.getIndex : $r6 = virtualinvoke r3.<org.jfree.data.KeyedObject: java.lang.Comparable getKey()>()
+org.jfree.data.KeyedObject.getKey : $r1 = r0.<org.jfree.data.KeyedObject: java.lang.Comparable key>
+org.jfree.data.statistics.DefaultStatisticalCategoryDataset.getRangeUpperBound : $d1 = r0.<org.jfree.data.statistics.DefaultStatisticalCategoryDataset: double maximumRangeValueIncStdDev>
+org.jfree.data.statistics.DefaultStatisticalCategoryDataset.getRangeUpperBound : $d2 = r0.<org.jfree.data.statistics.DefaultStatisticalCategoryDataset: double maximumRangeValue>
+org.jfree.data.statistics.DefaultStatisticalCategoryDataset.getRangeUpperBound : if z0 == 0 goto $d2 = r0.<org.jfree.data.statistics.DefaultStatisticalCategoryDataset: double maximumRangeValue>
+org.jfree.data.KeyedObject.setObject : r0.<org.jfree.data.KeyedObject: java.lang.Object object> = r1
+org.jfree.data.KeyedObjects2D.addObject : virtualinvoke r0.<org.jfree.data.KeyedObjects2D: void setObject(java.lang.Object,java.lang.Comparable,java.lang.Comparable)>(r1, r2, r3)
+org.jfree.data.KeyedObjects2D.getColumnCount : $r1 = r0.<org.jfree.data.KeyedObjects2D: java.util.List columnKeys>

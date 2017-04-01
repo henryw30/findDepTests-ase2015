@@ -1,0 +1,41 @@
+org.jfree.data.DefaultKeyedValues.getKeys : $r1 = r0.<org.jfree.data.DefaultKeyedValues: java.util.ArrayList keys>
+org.jfree.data.DefaultKeyedValues.getIndex : return -1
+org.jfree.data.DefaultKeyedValues.getIndex : $r3 = r0.<org.jfree.data.DefaultKeyedValues: java.util.HashMap indexMap>
+org.jfree.data.DefaultKeyedValues.getIndex : $i0 = virtualinvoke r2.<java.lang.Integer: int intValue()>()
+org.jfree.data.DefaultKeyedValues.getIndex : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "key")
+org.jfree.data.DefaultKeyedValues.getIndex : if r2 != null goto $i0 = virtualinvoke r2.<java.lang.Integer: int intValue()>()
+org.jfree.data.general.DatasetUtilities.calculatePieDatasetTotal : d1 = virtualinvoke r4.<java.lang.Number: double doubleValue()>()
+org.jfree.data.general.DatasetUtilities.calculatePieDatasetTotal : if r3 == null goto (branch)
+org.jfree.data.general.DatasetUtilities.calculatePieDatasetTotal : $r5 = interfaceinvoke r2.<java.util.Iterator: java.lang.Object next()>()
+org.jfree.data.general.DatasetUtilities.calculatePieDatasetTotal : if r4 == null goto $b0 = d1 cmpl 0.0
+org.jfree.data.general.DatasetUtilities.calculatePieDatasetTotal : r2 = interfaceinvoke r1.<java.util.List: java.util.Iterator iterator()>()
+org.jfree.data.general.DatasetUtilities.calculatePieDatasetTotal : $z0 = interfaceinvoke r2.<java.util.Iterator: boolean hasNext()>()
+org.jfree.data.general.DatasetUtilities.calculatePieDatasetTotal : d0 = 0.0
+org.jfree.data.general.DatasetUtilities.calculatePieDatasetTotal : r1 = interfaceinvoke r0.<org.jfree.data.general.PieDataset: java.util.List getKeys()>()
+org.jfree.data.general.DatasetUtilities.calculatePieDatasetTotal : d0 = d0 + d1
+org.jfree.data.general.DatasetUtilities.calculatePieDatasetTotal : d1 = 0.0
+org.jfree.data.general.DatasetUtilities.calculatePieDatasetTotal : return d0
+org.jfree.data.general.DatasetUtilities.calculatePieDatasetTotal : $b0 = d1 cmpl 0.0
+org.jfree.data.general.DatasetUtilities.calculatePieDatasetTotal : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r0, "dataset")
+org.jfree.data.general.DatasetUtilities.calculatePieDatasetTotal : r4 = interfaceinvoke r0.<org.jfree.data.general.PieDataset: java.lang.Number getValue(java.lang.Comparable)>(r3)
+org.jfree.data.general.DatasetUtilities.calculatePieDatasetTotal : goto [?= staticinvoke <edu.washington.cs.dt.impact.util.Tracer: void trace(java.lang.String,java.lang.String)>("$z0 = interfaceinvoke r2.<java.util.Iterator: boolean hasNext()>()", "org.jfree.data.general.DatasetUtilities.calculatePieDatasetTotal")]
+org.jfree.data.general.AbstractDataset.notifyListeners : $r3 = r0.<org.jfree.data.general.AbstractDataset: javax.swing.event.EventListenerList listenerList>
+org.jfree.data.general.AbstractDataset.notifyListeners : $i1 = lengthof r2
+org.jfree.data.general.AbstractDataset.fireDatasetChanged : $r1 = new org.jfree.data.general.DatasetChangeEvent
+org.jfree.data.general.DefaultPieDataset.getValue : $r2 = r0.<org.jfree.data.general.DefaultPieDataset: org.jfree.data.DefaultKeyedValues data>
+org.jfree.data.general.DefaultPieDataset.getValue : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "key")
+org.jfree.data.DefaultKeyedValues.setValue : i0 = virtualinvoke r0.<org.jfree.data.DefaultKeyedValues: int getIndex(java.lang.Comparable)>(r1)
+org.jfree.data.DefaultKeyedValues.setValue : $r8 = r0.<org.jfree.data.DefaultKeyedValues: java.util.ArrayList values>
+org.jfree.data.DefaultKeyedValues.setValue : $r9 = r0.<org.jfree.data.DefaultKeyedValues: java.util.HashMap indexMap>
+org.jfree.data.DefaultKeyedValues.setValue : $r7 = r0.<org.jfree.data.DefaultKeyedValues: java.util.ArrayList keys>
+org.jfree.data.DefaultKeyedValues.setValue : if i0 < 0 goto $r7 = r0.<org.jfree.data.DefaultKeyedValues: java.util.ArrayList keys>
+org.jfree.data.DefaultKeyedValues.setValue : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "key")
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null goto return
+org.jfree.data.general.DefaultPieDataset.getKeys : $r1 = r0.<org.jfree.data.general.DefaultPieDataset: org.jfree.data.DefaultKeyedValues data>
+org.jfree.data.DefaultKeyedValues.getValue : $r1 = r0.<org.jfree.data.DefaultKeyedValues: java.util.ArrayList values>
+org.jfree.data.DefaultKeyedValues.getValue : $r7 = virtualinvoke r0.<org.jfree.data.DefaultKeyedValues: java.lang.Number getValue(int)>(i0)
+org.jfree.data.DefaultKeyedValues.getValue : i0 = virtualinvoke r0.<org.jfree.data.DefaultKeyedValues: int getIndex(java.lang.Comparable)>(r1)
+org.jfree.data.DefaultKeyedValues.getValue : if i0 >= 0 goto $r7 = virtualinvoke r0.<org.jfree.data.DefaultKeyedValues: java.lang.Number getValue(int)>(i0)
+org.jfree.data.general.DefaultPieDataset.setValue : virtualinvoke r0.<org.jfree.data.general.DefaultPieDataset: void fireDatasetChanged()>()
+org.jfree.data.general.DefaultPieDataset.setValue : $r3 = r0.<org.jfree.data.general.DefaultPieDataset: org.jfree.data.DefaultKeyedValues data>
+org.jfree.data.general.DefaultPieDataset.setValue : $r2 = new java.lang.Double

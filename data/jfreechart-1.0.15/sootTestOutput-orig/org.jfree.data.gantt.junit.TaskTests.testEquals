@@ -1,0 +1,26 @@
+org.jfree.data.gantt.Task.setDescription : r0.<org.jfree.data.gantt.Task: java.lang.String description> = r1
+org.jfree.data.gantt.Task.setDescription : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "description")
+org.jfree.data.gantt.Task.setPercentComplete : r0.<org.jfree.data.gantt.Task: java.lang.Double percentComplete> = r1
+org.jfree.data.gantt.Task.setPercentComplete : $r1 = new java.lang.Double
+org.jfree.data.gantt.Task.setDuration : r0.<org.jfree.data.gantt.Task: org.jfree.data.time.TimePeriod duration> = r1
+org.jfree.data.time.SimpleTimePeriod.getStart : $r1 = new java.util.Date
+org.jfree.data.gantt.Task.addSubtask : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "subtask")
+org.jfree.data.gantt.Task.addSubtask : $r2 = r0.<org.jfree.data.gantt.Task: java.util.List subtasks>
+org.jfree.data.time.SimpleTimePeriod.equals : $r5 = virtualinvoke r0.<org.jfree.data.time.SimpleTimePeriod: java.util.Date getEnd()>()
+org.jfree.data.time.SimpleTimePeriod.equals : r2 = (org.jfree.data.time.TimePeriod) r1
+org.jfree.data.time.SimpleTimePeriod.equals : $r3 = virtualinvoke r0.<org.jfree.data.time.SimpleTimePeriod: java.util.Date getStart()>()
+org.jfree.data.time.SimpleTimePeriod.equals : return 1
+org.jfree.data.time.SimpleTimePeriod.equals : return 0
+org.jfree.data.time.SimpleTimePeriod.equals : if r1 != r0 goto $z0 = r1 instanceof org.jfree.data.time.TimePeriod
+org.jfree.data.time.SimpleTimePeriod.equals : $z0 = r1 instanceof org.jfree.data.time.TimePeriod
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null goto return
+org.jfree.data.gantt.Task.equals : r2 = (org.jfree.data.gantt.Task) r1
+org.jfree.data.gantt.Task.equals : $r7 = r0.<org.jfree.data.gantt.Task: java.lang.Double percentComplete>
+org.jfree.data.gantt.Task.equals : $r3 = r0.<org.jfree.data.gantt.Task: java.lang.String description>
+org.jfree.data.gantt.Task.equals : $z0 = r1 instanceof org.jfree.data.gantt.Task
+org.jfree.data.gantt.Task.equals : $r9 = r0.<org.jfree.data.gantt.Task: java.util.List subtasks>
+org.jfree.data.gantt.Task.equals : if r1 != r0 goto $z0 = r1 instanceof org.jfree.data.gantt.Task
+org.jfree.data.gantt.Task.equals : return 1
+org.jfree.data.gantt.Task.equals : return 0
+org.jfree.data.gantt.Task.equals : $r5 = r0.<org.jfree.data.gantt.Task: org.jfree.data.time.TimePeriod duration>
+org.jfree.data.time.SimpleTimePeriod.getEnd : $r1 = new java.util.Date

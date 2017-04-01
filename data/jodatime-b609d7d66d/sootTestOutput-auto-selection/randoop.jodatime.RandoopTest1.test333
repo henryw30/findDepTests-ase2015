@@ -1,0 +1,28 @@
+org.joda.time.Duration.standardHours : $b1 = l0 cmp 0L >>>>>>>> org.joda.time.Duration.standardHours : if $b1 != 0
+org.joda.time.Duration.standardHours : if $b1 != 0 >>>>>>>> org.joda.time.Duration.standardHours : $r1 = new org.joda.time.Duration
+org.joda.time.Duration.standardHours : $r1 = new org.joda.time.Duration >>>>>>>> org.joda.time.Duration.standardHours : $l2 = staticinvoke <org.joda.time.field.FieldUtils: long safeMultiply(long,int)>(l0, 3600000)
+org.joda.time.Duration.standardHours : $l2 = staticinvoke <org.joda.time.field.FieldUtils: long safeMultiply(long,int)>(l0, 3600000) >>>>>>>> org.joda.time.field.FieldUtils.safeMultiply : tableswitch(i1) {     case -1:
+org.joda.time.field.FieldUtils.safeMultiply : tableswitch(i1) {     case -1: >>>>>>>> org.joda.time.field.FieldUtils.safeMultiply : $l4 = (long) i1
+org.joda.time.field.FieldUtils.safeMultiply : $l4 = (long) i1 >>>>>>>> org.joda.time.field.FieldUtils.safeMultiply : l2 = l0 * $l4
+org.joda.time.field.FieldUtils.safeMultiply : l2 = l0 * $l4 >>>>>>>> org.joda.time.field.FieldUtils.safeMultiply : $l5 = (long) i1
+org.joda.time.field.FieldUtils.safeMultiply : $l5 = (long) i1 >>>>>>>> org.joda.time.field.FieldUtils.safeMultiply : $l6 = l2 / $l5
+org.joda.time.field.FieldUtils.safeMultiply : $l6 = l2 / $l5 >>>>>>>> org.joda.time.field.FieldUtils.safeMultiply : $b7 = $l6 cmp l0
+org.joda.time.field.FieldUtils.safeMultiply : $b7 = $l6 cmp l0 >>>>>>>> org.joda.time.field.FieldUtils.safeMultiply : if $b7 == 0
+org.joda.time.field.FieldUtils.safeMultiply : if $b7 == 0 >>>>>>>> org.joda.time.field.FieldUtils.safeMultiply : return l2
+org.joda.time.field.FieldUtils.safeMultiply : return l2 >>>>>>>> org.joda.time.Duration.standardHours : specialinvoke $r1.<org.joda.time.Duration: void <init>(long)>($l2)
+org.joda.time.Duration.standardHours : specialinvoke $r1.<org.joda.time.Duration: void <init>(long)>($l2) >>>>>>>> org.joda.time.Duration.standardHours : return $r1
+org.joda.time.Duration.standardHours : return $r1 >>>>>>>> org.joda.time.base.AbstractDuration.isShorterThan : if r1 != null
+org.joda.time.base.AbstractDuration.isShorterThan : if r1 != null >>>>>>>> org.joda.time.base.AbstractDuration.isShorterThan : $i0 = virtualinvoke r0.<org.joda.time.base.AbstractDuration: int compareTo(org.joda.time.ReadableDuration)>(r1)
+org.joda.time.base.AbstractDuration.isShorterThan : $i0 = virtualinvoke r0.<org.joda.time.base.AbstractDuration: int compareTo(org.joda.time.ReadableDuration)>(r1) >>>>>>>> org.joda.time.base.AbstractDuration.compareTo : l0 = virtualinvoke r0.<org.joda.time.base.AbstractDuration: long getMillis()>()
+org.joda.time.base.AbstractDuration.compareTo : l0 = virtualinvoke r0.<org.joda.time.base.AbstractDuration: long getMillis()>() >>>>>>>> org.joda.time.base.BaseDuration.getMillis : $l0 = r0.<org.joda.time.base.BaseDuration: long iMillis>
+org.joda.time.base.BaseDuration.getMillis : $l0 = r0.<org.joda.time.base.BaseDuration: long iMillis> >>>>>>>> org.joda.time.base.BaseDuration.getMillis : return $l0
+org.joda.time.base.BaseDuration.getMillis : return $l0 >>>>>>>> org.joda.time.base.AbstractDuration.compareTo : l1 = interfaceinvoke r1.<org.joda.time.ReadableDuration: long getMillis()>()
+org.joda.time.base.AbstractDuration.compareTo : l1 = interfaceinvoke r1.<org.joda.time.ReadableDuration: long getMillis()>() >>>>>>>> org.joda.time.base.AbstractDuration.compareTo : $b2 = l0 cmp l1
+org.joda.time.base.AbstractDuration.compareTo : $b2 = l0 cmp l1 >>>>>>>> org.joda.time.base.AbstractDuration.compareTo : if $b2 >= 0
+org.joda.time.base.AbstractDuration.compareTo : if $b2 >= 0 >>>>>>>> org.joda.time.base.AbstractDuration.compareTo : $b3 = l0 cmp l1
+org.joda.time.base.AbstractDuration.compareTo : $b3 = l0 cmp l1 >>>>>>>> org.joda.time.base.AbstractDuration.compareTo : if $b3 <= 0
+org.joda.time.base.AbstractDuration.compareTo : if $b3 <= 0 >>>>>>>> org.joda.time.base.AbstractDuration.compareTo : return 0
+org.joda.time.base.AbstractDuration.compareTo : return 0 >>>>>>>> org.joda.time.base.AbstractDuration.isShorterThan : if $i0 >= 0
+org.joda.time.base.AbstractDuration.isShorterThan : if $i0 >= 0 >>>>>>>> org.joda.time.base.AbstractDuration.isShorterThan : $z0 = 0
+org.joda.time.base.AbstractDuration.isShorterThan : $z0 = 0 >>>>>>>> org.joda.time.base.AbstractDuration.isShorterThan : return $z0
+org.joda.time.base.AbstractDuration.isShorterThan : return $z0 >>>>>>>> org.joda.time.Duration.toDuration : return r0

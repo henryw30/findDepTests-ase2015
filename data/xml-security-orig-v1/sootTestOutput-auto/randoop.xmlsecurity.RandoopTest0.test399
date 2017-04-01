@@ -1,0 +1,21 @@
+org.apache.xml.security.signature.XMLSignatureInput.getNodeSet : $z1 = virtualinvoke r0.<org.apache.xml.security.signature.XMLSignatureInput: boolean isOctetStream()>()
+org.apache.xml.security.signature.XMLSignatureInput.getNodeSet : $r9 = new org.apache.xml.security.utils.IgnoreAllErrorHandler
+org.apache.xml.security.signature.XMLSignatureInput.getNodeSet : virtualinvoke r1.<javax.xml.parsers.DocumentBuilderFactory: void setNamespaceAware(boolean)>(1)
+org.apache.xml.security.signature.XMLSignatureInput.getNodeSet : virtualinvoke r1.<javax.xml.parsers.DocumentBuilderFactory: void setValidating(boolean)>(0)
+org.apache.xml.security.signature.XMLSignatureInput.getNodeSet : r1 = staticinvoke <javax.xml.parsers.DocumentBuilderFactory: javax.xml.parsers.DocumentBuilderFactory newInstance()>()
+org.apache.xml.security.signature.XMLSignatureInput.getNodeSet : r2 = virtualinvoke r1.<javax.xml.parsers.DocumentBuilderFactory: javax.xml.parsers.DocumentBuilder newDocumentBuilder()>()
+org.apache.xml.security.signature.XMLSignatureInput.getNodeSet : $r10 = virtualinvoke r0.<org.apache.xml.security.signature.XMLSignatureInput: java.io.InputStream getOctetStream()>()
+org.apache.xml.security.signature.XMLSignatureInput.getNodeSet : $z0 = virtualinvoke r0.<org.apache.xml.security.signature.XMLSignatureInput: boolean isNodeSet()>()
+org.apache.xml.security.utils.HexDump.prettyPrintHex : $r3 = virtualinvoke r2.<sun.misc.HexDumpEncoder: java.lang.String encodeBuffer(byte[])>(r0)
+org.apache.xml.security.utils.HexDump.prettyPrintHex : $r1 = new sun.misc.HexDumpEncoder
+org.apache.xml.security.signature.XMLSignatureInput.getOctetStream : $r5 = r0.<org.apache.xml.security.signature.XMLSignatureInput: java.io.InputStream _inputOctetStreamProxy>
+org.apache.xml.security.signature.XMLSignatureInput.getOctetStream : $r6 = r0.<org.apache.xml.security.signature.XMLSignatureInput: java.io.InputStream _inputOctetStreamProxy>
+org.apache.xml.security.signature.XMLSignatureInput.getOctetStream : $z0 = virtualinvoke r0.<org.apache.xml.security.signature.XMLSignatureInput: boolean isOctetStream()>()
+org.apache.xml.security.signature.XMLSignatureInput.isNodeSet : $r1 = r0.<org.apache.xml.security.signature.XMLSignatureInput: java.io.InputStream _inputOctetStreamProxy>
+org.apache.xml.security.utils.HexDump.toByteArray : $b1 = (byte) i0
+org.apache.xml.security.utils.HexDump.toByteArray : r0 = newarray (byte)[4]
+org.apache.xml.security.utils.HexDump.toByteArray : $i4 = i0 >> 16
+org.apache.xml.security.utils.HexDump.toByteArray : $i6 = i0 >> 24
+org.apache.xml.security.utils.HexDump.toByteArray : $i2 = i0 >> 8
+org.apache.xml.security.utils.HexDump.toByteArray : return r0
+org.apache.xml.security.signature.XMLSignatureInput.isOctetStream : $r1 = r0.<org.apache.xml.security.signature.XMLSignatureInput: java.io.InputStream _inputOctetStreamProxy>

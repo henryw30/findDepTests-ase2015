@@ -1,0 +1,216 @@
+org.jfree.data.xy.IntervalXYDelegate.datasetChanged : $d0 = specialinvoke r0.<org.jfree.data.xy.IntervalXYDelegate: double recalculateInterval()>()
+org.jfree.data.xy.IntervalXYDelegate.datasetChanged : $z0 = r0.<org.jfree.data.xy.IntervalXYDelegate: boolean autoWidth>
+org.jfree.data.general.AbstractDataset.addChangeListener : $r2 = r0.<org.jfree.data.general.AbstractDataset: javax.swing.event.EventListenerList listenerList>
+org.jfree.chart.plot.XYPlot.mapDatasetToRangeAxes : $r8 = new org.jfree.data.general.DatasetChangeEvent
+org.jfree.chart.plot.XYPlot.mapDatasetToRangeAxes : $r5 = r0.<org.jfree.chart.plot.XYPlot: java.util.Map datasetToRangeAxesMap>
+org.jfree.chart.plot.XYPlot.mapDatasetToRangeAxes : $r4 = new java.lang.Integer
+org.jfree.chart.plot.XYPlot.mapDatasetToRangeAxes : specialinvoke r0.<org.jfree.chart.plot.XYPlot: void checkAxisIndices(java.util.List)>(r1)
+org.jfree.chart.plot.XYPlot.mapDatasetToRangeAxes : if i0 >= 0 goto specialinvoke r0.<org.jfree.chart.plot.XYPlot: void checkAxisIndices(java.util.List)>(r1)
+org.jfree.data.time.Week.peg : $l1 = virtualinvoke r0.<org.jfree.data.time.Week: long getLastMillisecond(java.util.Calendar)>(r1)
+org.jfree.data.time.Week.peg : $l0 = virtualinvoke r0.<org.jfree.data.time.Week: long getFirstMillisecond(java.util.Calendar)>(r1)
+org.jfree.data.time.Week.getFirstMillisecond : $s0 = r0.<org.jfree.data.time.Week: short year>
+org.jfree.data.time.Week.getFirstMillisecond : virtualinvoke r2.<java.util.Calendar: void clear()>()
+org.jfree.data.time.Week.getFirstMillisecond : $b1 = r0.<org.jfree.data.time.Week: byte week>
+org.jfree.data.time.Week.getFirstMillisecond : $r3 = virtualinvoke r1.<java.util.Calendar: java.lang.Object clone()>()
+org.jfree.data.time.Week.getFirstMillisecond : virtualinvoke r2.<java.util.Calendar: void set(int,int)>(10, 0)
+org.jfree.data.time.Week.getFirstMillisecond : $l3 = virtualinvoke r2.<java.util.Calendar: long getTimeInMillis()>()
+org.jfree.data.time.Week.getFirstMillisecond : virtualinvoke r2.<java.util.Calendar: void set(int,int)>(12, 0)
+org.jfree.data.time.Week.getFirstMillisecond : virtualinvoke r2.<java.util.Calendar: void set(int,int)>(14, 0)
+org.jfree.data.time.Week.getFirstMillisecond : virtualinvoke r2.<java.util.Calendar: void set(int,int)>(13, 0)
+org.jfree.data.time.Week.getFirstMillisecond : $i2 = virtualinvoke r2.<java.util.Calendar: int getFirstDayOfWeek()>()
+org.jfree.data.DefaultKeyedValues2D.addValue : virtualinvoke r0.<org.jfree.data.DefaultKeyedValues2D: void setValue(java.lang.Number,java.lang.Comparable,java.lang.Comparable)>(r1, r2, r3)
+org.jfree.chart.plot.Plot.notifyListeners : $r3 = r0.<org.jfree.chart.plot.Plot: javax.swing.event.EventListenerList listenerList>
+org.jfree.chart.plot.Plot.notifyListeners : $i1 = lengthof r2
+org.jfree.chart.plot.Plot.notifyListeners : $z0 = r0.<org.jfree.chart.plot.Plot: boolean notify>
+org.jfree.data.xy.CategoryTableXYDataset.getSeriesCount : $r1 = r0.<org.jfree.data.xy.CategoryTableXYDataset: org.jfree.data.DefaultKeyedValues2D values>
+org.jfree.data.DefaultKeyedValues.getIndex : return -1
+org.jfree.data.DefaultKeyedValues.getIndex : $r3 = r0.<org.jfree.data.DefaultKeyedValues: java.util.HashMap indexMap>
+org.jfree.data.DefaultKeyedValues.getIndex : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "key")
+org.jfree.data.DefaultKeyedValues.getIndex : if r2 != null goto $i0 = virtualinvoke r2.<java.lang.Integer: int intValue()>()
+org.jfree.data.xy.CategoryTableXYDataset.getDomainBounds : $r3 = staticinvoke <org.jfree.data.general.DatasetUtilities: org.jfree.data.Range iterateDomainBounds(org.jfree.data.xy.XYDataset,boolean)>(r0, z0)
+org.jfree.data.xy.CategoryTableXYDataset.getDomainBounds : if z0 == 0 goto $r3 = staticinvoke <org.jfree.data.general.DatasetUtilities: org.jfree.data.Range iterateDomainBounds(org.jfree.data.xy.XYDataset,boolean)>(r0, z0)
+org.jfree.data.xy.IntervalXYDelegate.isAutoWidth : $z0 = r0.<org.jfree.data.xy.IntervalXYDelegate: boolean autoWidth>
+org.jfree.chart.renderer.xy.XYBlockRenderer.findDomainBounds : if r1 != null goto r2 = staticinvoke <org.jfree.data.general.DatasetUtilities: org.jfree.data.Range findDomainBounds(org.jfree.data.xy.XYDataset,boolean)>(r1, 0)
+org.jfree.chart.renderer.xy.XYBlockRenderer.findDomainBounds : if r2 != null goto $r3 = new org.jfree.data.Range
+org.jfree.chart.renderer.xy.XYBlockRenderer.findDomainBounds : return null
+org.jfree.chart.renderer.xy.XYBlockRenderer.findDomainBounds : r2 = staticinvoke <org.jfree.data.general.DatasetUtilities: org.jfree.data.Range findDomainBounds(org.jfree.data.xy.XYDataset,boolean)>(r1, 0)
+org.jfree.data.xy.IntervalXYDelegate.recalculateInterval : i1 = 0
+org.jfree.data.xy.IntervalXYDelegate.recalculateInterval : d0 = #Infinity
+org.jfree.data.xy.IntervalXYDelegate.recalculateInterval : $r1 = r0.<org.jfree.data.xy.IntervalXYDelegate: org.jfree.data.xy.XYDataset dataset>
+org.jfree.data.xy.IntervalXYDelegate.recalculateInterval : return d0
+org.jfree.data.xy.IntervalXYDelegate.recalculateInterval : $d1 = specialinvoke r0.<org.jfree.data.xy.IntervalXYDelegate: double calculateIntervalForSeries(int)>(i1)
+org.jfree.data.xy.CategoryTableXYDataset.getDomainUpperBound : $r1 = r0.<org.jfree.data.xy.CategoryTableXYDataset: org.jfree.data.xy.IntervalXYDelegate intervalDelegate>
+org.jfree.chart.plot.DefaultDrawingSupplier.clone : $r2 = specialinvoke r0.<java.lang.Object: java.lang.Object clone()>()
+org.jfree.chart.plot.DefaultDrawingSupplier.clone : return r1
+org.jfree.data.DefaultKeyedValues2D.getRowCount : $r1 = r0.<org.jfree.data.DefaultKeyedValues2D: java.util.List rowKeys>
+org.jfree.chart.plot.Plot.getParent : $r1 = r0.<org.jfree.chart.plot.Plot: org.jfree.chart.plot.Plot parent>
+org.jfree.data.xy.CategoryTableXYDataset.isAutoWidth : $r1 = r0.<org.jfree.data.xy.CategoryTableXYDataset: org.jfree.data.xy.IntervalXYDelegate intervalDelegate>
+org.jfree.data.xy.CategoryTableXYDataset.clear : $r1 = r0.<org.jfree.data.xy.CategoryTableXYDataset: org.jfree.data.DefaultKeyedValues2D values>
+org.jfree.data.xy.CategoryTableXYDataset.clear : virtualinvoke r0.<org.jfree.data.xy.CategoryTableXYDataset: void fireDatasetChanged()>()
+org.jfree.data.general.AbstractDataset.notifyListeners : $r4 = r2[i0]
+org.jfree.data.general.AbstractDataset.notifyListeners : $r3 = r0.<org.jfree.data.general.AbstractDataset: javax.swing.event.EventListenerList listenerList>
+org.jfree.data.general.AbstractDataset.notifyListeners : $i2 = i0 + 1
+org.jfree.data.general.AbstractDataset.notifyListeners : $i1 = lengthof r2
+org.jfree.chart.plot.XYPlot.mapDatasetToDomainAxes : $r5 = r0.<org.jfree.chart.plot.XYPlot: java.util.Map datasetToDomainAxesMap>
+org.jfree.chart.plot.XYPlot.mapDatasetToDomainAxes : $r8 = new org.jfree.data.general.DatasetChangeEvent
+org.jfree.chart.plot.XYPlot.mapDatasetToDomainAxes : $r4 = new java.lang.Integer
+org.jfree.chart.plot.XYPlot.mapDatasetToDomainAxes : specialinvoke r0.<org.jfree.chart.plot.XYPlot: void checkAxisIndices(java.util.List)>(r1)
+org.jfree.chart.plot.XYPlot.mapDatasetToDomainAxes : if i0 >= 0 goto specialinvoke r0.<org.jfree.chart.plot.XYPlot: void checkAxisIndices(java.util.List)>(r1)
+org.jfree.chart.event.ChartChangeEvent.setType : r0.<org.jfree.chart.event.ChartChangeEvent: org.jfree.chart.event.ChartChangeEventType type> = r1
+org.jfree.chart.plot.Plot.clone : $r10 = new javax.swing.event.EventListenerList
+org.jfree.chart.plot.Plot.clone : $r2 = specialinvoke r0.<java.lang.Object: java.lang.Object clone()>()
+org.jfree.chart.plot.Plot.clone : $r3 = r0.<org.jfree.chart.plot.Plot: org.jfree.data.general.DatasetGroup datasetGroup>
+org.jfree.chart.plot.Plot.clone : $r7 = r0.<org.jfree.chart.plot.Plot: org.jfree.chart.plot.DrawingSupplier drawingSupplier>
+org.jfree.chart.plot.Plot.clone : $r8 = staticinvoke <org.jfree.util.ObjectUtilities: java.lang.Object clone(java.lang.Object)>($r7)
+org.jfree.chart.plot.Plot.clone : return r1
+org.jfree.chart.renderer.RendererUtilities.findLiveItemsLowerBound : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r0, "dataset")
+org.jfree.chart.renderer.RendererUtilities.findLiveItemsLowerBound : $b5 = d0 cmpl d1
+org.jfree.chart.renderer.RendererUtilities.findLiveItemsLowerBound : return 0
+org.jfree.chart.renderer.RendererUtilities.findLiveItemsLowerBound : if i1 > 1 goto $r2 = interfaceinvoke r0.<org.jfree.data.xy.XYDataset: org.jfree.data.DomainOrder getDomainOrder()>()
+org.jfree.chart.renderer.RendererUtilities.findLiveItemsLowerBound : i1 = interfaceinvoke r0.<org.jfree.data.xy.XYDataset: int getItemCount(int)>(i0)
+org.jfree.chart.plot.XYPlot.clone : $r6 = r0.<org.jfree.chart.plot.XYPlot: org.jfree.util.ObjectList domainAxes>
+org.jfree.chart.plot.XYPlot.clone : $r30 = r0.<org.jfree.chart.plot.XYPlot: org.jfree.util.ObjectList datasets>
+org.jfree.chart.plot.XYPlot.clone : $r14 = r0.<org.jfree.chart.plot.XYPlot: org.jfree.util.ObjectList domainAxisLocations>
+org.jfree.chart.plot.XYPlot.clone : $r54 = r0.<org.jfree.chart.plot.XYPlot: java.util.Map backgroundDomainMarkers>
+org.jfree.chart.plot.XYPlot.clone : i6 = 0
+org.jfree.chart.plot.XYPlot.clone : $r27 = r0.<org.jfree.chart.plot.XYPlot: org.jfree.util.ObjectList rangeAxisLocations>
+org.jfree.chart.plot.XYPlot.clone : r34 = virtualinvoke r0.<org.jfree.chart.plot.XYPlot: org.jfree.data.xy.XYDataset getDataset(int)>(i4)
+org.jfree.chart.plot.XYPlot.clone : $r70 = r0.<org.jfree.chart.plot.XYPlot: org.jfree.chart.axis.AxisSpace fixedRangeAxisSpace>
+org.jfree.chart.plot.XYPlot.clone : $r15 = virtualinvoke $r14.<org.jfree.util.ObjectList: java.lang.Object clone()>()
+org.jfree.chart.plot.XYPlot.clone : $r81 = r0.<org.jfree.chart.plot.XYPlot: java.awt.Paint[] quadrantPaint>
+org.jfree.chart.plot.XYPlot.clone : if r34 == null goto i4 = i4 + 1
+org.jfree.chart.plot.XYPlot.clone : $r51 = r0.<org.jfree.chart.plot.XYPlot: java.util.Map foregroundDomainMarkers>
+org.jfree.chart.plot.XYPlot.clone : return r1
+org.jfree.chart.plot.XYPlot.clone : if r23 == null goto i2 = i2 + 1
+org.jfree.chart.plot.XYPlot.clone : $r21 = r0.<org.jfree.chart.plot.XYPlot: org.jfree.util.ObjectList rangeAxes>
+org.jfree.chart.plot.XYPlot.clone : $r38 = new java.util.TreeMap
+org.jfree.chart.plot.XYPlot.clone : $r78 = r0.<org.jfree.chart.plot.XYPlot: java.awt.geom.Point2D quadrantOrigin>
+org.jfree.chart.plot.XYPlot.clone : $r63 = r0.<org.jfree.chart.plot.XYPlot: java.util.List annotations>
+org.jfree.chart.plot.XYPlot.clone : if r2 == null goto i0 = i0 + 1
+org.jfree.chart.plot.XYPlot.clone : $r45 = r0.<org.jfree.chart.plot.XYPlot: org.jfree.util.ObjectList renderers>
+org.jfree.chart.plot.XYPlot.clone : $r74 = r0.<org.jfree.chart.plot.XYPlot: org.jfree.chart.LegendItemCollection fixedLegendItems>
+org.jfree.chart.plot.XYPlot.clone : $r5 = specialinvoke r0.<org.jfree.chart.plot.Plot: java.lang.Object clone()>()
+org.jfree.chart.plot.XYPlot.clone : $r36 = r1.<org.jfree.chart.plot.XYPlot: java.util.Map datasetToDomainAxesMap>
+org.jfree.chart.plot.XYPlot.clone : $r60 = r0.<org.jfree.chart.plot.XYPlot: java.util.Map backgroundRangeMarkers>
+org.jfree.chart.plot.XYPlot.clone : $r57 = r0.<org.jfree.chart.plot.XYPlot: java.util.Map foregroundRangeMarkers>
+org.jfree.chart.plot.XYPlot.clone : i0 = 0
+org.jfree.chart.plot.XYPlot.clone : i2 = 0
+org.jfree.chart.plot.XYPlot.clone : $r35 = new java.util.TreeMap
+org.jfree.chart.plot.XYPlot.clone : $r10 = r0.<org.jfree.chart.plot.XYPlot: org.jfree.util.ObjectList domainAxes>
+org.jfree.chart.plot.XYPlot.clone : $z0 = r47 instanceof org.jfree.util.PublicCloneable
+org.jfree.chart.plot.XYPlot.clone : $r17 = r0.<org.jfree.chart.plot.XYPlot: org.jfree.util.ObjectList rangeAxes>
+org.jfree.chart.plot.XYPlot.clone : $r41 = r0.<org.jfree.chart.plot.XYPlot: org.jfree.util.ObjectList renderers>
+org.jfree.chart.plot.XYPlot.clone : $r66 = r0.<org.jfree.chart.plot.XYPlot: org.jfree.chart.axis.AxisSpace fixedDomainAxisSpace>
+org.jfree.chart.plot.XYPlot.clone : i4 = 0
+org.jfree.chart.plot.XYPlot.clone : $r39 = r1.<org.jfree.chart.plot.XYPlot: java.util.Map datasetToRangeAxesMap>
+org.jfree.chart.plot.XYPlot.mapDatasetToRangeAxis : $r3 = new java.lang.Integer
+org.jfree.chart.plot.XYPlot.mapDatasetToRangeAxis : $r1 = new java.util.ArrayList
+org.jfree.chart.plot.XYPlot.mapDatasetToRangeAxis : virtualinvoke r0.<org.jfree.chart.plot.XYPlot: void mapDatasetToRangeAxes(int,java.util.List)>(i0, r2)
+org.jfree.data.time.Week.getLastMillisecond : $s0 = r0.<org.jfree.data.time.Week: short year>
+org.jfree.data.time.Week.getLastMillisecond : virtualinvoke r2.<java.util.Calendar: void clear()>()
+org.jfree.data.time.Week.getLastMillisecond : $b1 = r0.<org.jfree.data.time.Week: byte week>
+org.jfree.data.time.Week.getLastMillisecond : $r3 = virtualinvoke r1.<java.util.Calendar: java.lang.Object clone()>()
+org.jfree.data.time.Week.getLastMillisecond : virtualinvoke r2.<java.util.Calendar: void set(int,int)>(10, 0)
+org.jfree.data.time.Week.getLastMillisecond : virtualinvoke r2.<java.util.Calendar: void set(int,int)>(12, 0)
+org.jfree.data.time.Week.getLastMillisecond : $l4 = virtualinvoke r2.<java.util.Calendar: long getTimeInMillis()>()
+org.jfree.data.time.Week.getLastMillisecond : virtualinvoke r2.<java.util.Calendar: void set(int,int)>(14, 0)
+org.jfree.data.time.Week.getLastMillisecond : virtualinvoke r2.<java.util.Calendar: void set(int,int)>(13, 0)
+org.jfree.data.time.Week.getLastMillisecond : $i3 = virtualinvoke r2.<java.util.Calendar: int getFirstDayOfWeek()>()
+org.jfree.data.general.Series.addChangeListener : $r2 = r0.<org.jfree.data.general.Series: javax.swing.event.EventListenerList listeners>
+org.jfree.data.xy.CategoryTableXYDataset.getItemCount : $r1 = r0.<org.jfree.data.xy.CategoryTableXYDataset: org.jfree.data.DefaultKeyedValues2D values>
+org.jfree.data.xy.CategoryTableXYDataset.getItemCount : $i1 = virtualinvoke r0.<org.jfree.data.xy.CategoryTableXYDataset: int getItemCount()>()
+org.jfree.data.ComparableObjectSeries.getAllowDuplicateXValues : $z0 = r0.<org.jfree.data.ComparableObjectSeries: boolean allowDuplicateXValues>
+org.jfree.data.DefaultKeyedValues2D.getRowIndex : $r2 = r0.<org.jfree.data.DefaultKeyedValues2D: java.util.List rowKeys>
+org.jfree.data.DefaultKeyedValues2D.getRowIndex : $z0 = r0.<org.jfree.data.DefaultKeyedValues2D: boolean sortRowKeys>
+org.jfree.data.DefaultKeyedValues2D.getRowIndex : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "key")
+org.jfree.chart.plot.XYPlot.configureDomainAxes : if r1 == null goto i0 = i0 + 1
+org.jfree.chart.plot.XYPlot.configureDomainAxes : i0 = 0
+org.jfree.chart.plot.XYPlot.configureDomainAxes : $r3 = r0.<org.jfree.chart.plot.XYPlot: org.jfree.util.ObjectList domainAxes>
+org.jfree.chart.plot.XYPlot.configureRangeAxes : $r3 = r0.<org.jfree.chart.plot.XYPlot: org.jfree.util.ObjectList rangeAxes>
+org.jfree.chart.plot.XYPlot.configureRangeAxes : if r1 == null goto i0 = i0 + 1
+org.jfree.chart.plot.XYPlot.configureRangeAxes : i0 = 0
+org.jfree.data.DefaultKeyedValues2D.setValue : if i0 < 0 goto $r7 = new org.jfree.data.DefaultKeyedValues
+org.jfree.data.DefaultKeyedValues2D.setValue : $r13 = r0.<org.jfree.data.DefaultKeyedValues2D: java.util.List columnKeys>
+org.jfree.data.DefaultKeyedValues2D.setValue : if i1 >= 0 goto return
+org.jfree.data.DefaultKeyedValues2D.setValue : $z0 = r0.<org.jfree.data.DefaultKeyedValues2D: boolean sortRowKeys>
+org.jfree.data.DefaultKeyedValues2D.setValue : $r7 = new org.jfree.data.DefaultKeyedValues
+org.jfree.data.DefaultKeyedValues2D.setValue : $r8 = r0.<org.jfree.data.DefaultKeyedValues2D: java.util.List rowKeys>
+org.jfree.data.DefaultKeyedValues2D.setValue : $r9 = r0.<org.jfree.data.DefaultKeyedValues2D: java.util.List rows>
+org.jfree.data.DefaultKeyedValues2D.setValue : $i2 = neg i0
+org.jfree.data.DefaultKeyedValues2D.setValue : i0 = virtualinvoke r0.<org.jfree.data.DefaultKeyedValues2D: int getRowIndex(java.lang.Comparable)>(r2)
+org.jfree.data.DefaultKeyedValues2D.setValue : $r12 = r0.<org.jfree.data.DefaultKeyedValues2D: java.util.List columnKeys>
+org.jfree.data.DefaultKeyedValues2D.setValue : virtualinvoke r4.<org.jfree.data.DefaultKeyedValues: void setValue(java.lang.Comparable,java.lang.Number)>(r3, r1)
+org.jfree.data.xy.IntervalXYDelegate.getDomainUpperBound : d0 = #NaN
+org.jfree.data.xy.IntervalXYDelegate.getDomainUpperBound : return d0
+org.jfree.data.xy.IntervalXYDelegate.getDomainUpperBound : if r1 == null goto return d0
+org.jfree.data.xy.IntervalXYDelegate.getDomainUpperBound : r1 = virtualinvoke r0.<org.jfree.data.xy.IntervalXYDelegate: org.jfree.data.Range getDomainBounds(boolean)>(z0)
+org.jfree.chart.plot.XYPlot.datasetChanged : $r5 = new org.jfree.chart.event.PlotChangeEvent
+org.jfree.chart.plot.XYPlot.datasetChanged : $r3 = virtualinvoke r0.<org.jfree.chart.plot.XYPlot: org.jfree.chart.plot.Plot getParent()>()
+org.jfree.chart.plot.XYPlot.datasetChanged : virtualinvoke r0.<org.jfree.chart.plot.XYPlot: void configureRangeAxes()>()
+org.jfree.chart.plot.XYPlot.datasetChanged : virtualinvoke r0.<org.jfree.chart.plot.XYPlot: void notifyListeners(org.jfree.chart.event.PlotChangeEvent)>(r2)
+org.jfree.chart.plot.XYPlot.datasetChanged : virtualinvoke r0.<org.jfree.chart.plot.XYPlot: void configureDomainAxes()>()
+org.jfree.chart.plot.XYPlot.datasetChanged : $r6 = <org.jfree.chart.event.ChartChangeEventType: org.jfree.chart.event.ChartChangeEventType DATASET_UPDATED>
+org.jfree.data.DefaultKeyedValues.setValue : i0 = virtualinvoke r0.<org.jfree.data.DefaultKeyedValues: int getIndex(java.lang.Comparable)>(r1)
+org.jfree.data.DefaultKeyedValues.setValue : $r8 = r0.<org.jfree.data.DefaultKeyedValues: java.util.ArrayList values>
+org.jfree.data.DefaultKeyedValues.setValue : $r9 = r0.<org.jfree.data.DefaultKeyedValues: java.util.HashMap indexMap>
+org.jfree.data.DefaultKeyedValues.setValue : $r7 = r0.<org.jfree.data.DefaultKeyedValues: java.util.ArrayList keys>
+org.jfree.data.DefaultKeyedValues.setValue : if i0 < 0 goto $r7 = r0.<org.jfree.data.DefaultKeyedValues: java.util.ArrayList keys>
+org.jfree.data.DefaultKeyedValues.setValue : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "key")
+org.jfree.data.xy.IntervalXYDelegate.calculateIntervalForSeries : d0 = #Infinity
+org.jfree.data.xy.IntervalXYDelegate.calculateIntervalForSeries : $r1 = r0.<org.jfree.data.xy.IntervalXYDelegate: org.jfree.data.xy.XYDataset dataset>
+org.jfree.data.xy.IntervalXYDelegate.calculateIntervalForSeries : return d0
+org.jfree.data.xy.IntervalXYDelegate.calculateIntervalForSeries : if i1 <= 1 goto return d0
+org.jfree.chart.plot.XYPlot.checkAxisIndices : if i0 != 0 goto $r5 = new java.util.HashSet
+org.jfree.chart.plot.XYPlot.checkAxisIndices : i1 = 0
+org.jfree.chart.plot.XYPlot.checkAxisIndices : r3 = interfaceinvoke r1.<java.util.List: java.lang.Object get(int)>(i1)
+org.jfree.chart.plot.XYPlot.checkAxisIndices : i0 = interfaceinvoke r1.<java.util.List: int size()>()
+org.jfree.chart.plot.XYPlot.checkAxisIndices : if r1 != null goto i0 = interfaceinvoke r1.<java.util.List: int size()>()
+org.jfree.chart.plot.XYPlot.checkAxisIndices : virtualinvoke r2.<java.util.HashSet: boolean add(java.lang.Object)>(r3)
+org.jfree.chart.plot.XYPlot.checkAxisIndices : $r5 = new java.util.HashSet
+org.jfree.chart.plot.XYPlot.checkAxisIndices : $z0 = r3 instanceof java.lang.Integer
+org.jfree.chart.plot.XYPlot.checkAxisIndices : $z1 = virtualinvoke r2.<java.util.HashSet: boolean contains(java.lang.Object)>(r3)
+org.jfree.chart.renderer.xy.XYBlockRenderer.updateOffsets : $r2 = r0.<org.jfree.chart.renderer.xy.XYBlockRenderer: org.jfree.ui.RectangleAnchor blockAnchor>
+org.jfree.chart.renderer.xy.XYBlockRenderer.updateOffsets : $r5 = r0.<org.jfree.chart.renderer.xy.XYBlockRenderer: org.jfree.ui.RectangleAnchor blockAnchor>
+org.jfree.chart.renderer.xy.XYBlockRenderer.updateOffsets : $r3 = r0.<org.jfree.chart.renderer.xy.XYBlockRenderer: org.jfree.ui.RectangleAnchor blockAnchor>
+org.jfree.chart.renderer.xy.XYBlockRenderer.updateOffsets : $r7 = r0.<org.jfree.chart.renderer.xy.XYBlockRenderer: org.jfree.ui.RectangleAnchor blockAnchor>
+org.jfree.chart.renderer.xy.XYBlockRenderer.updateOffsets : $d11 = r0.<org.jfree.chart.renderer.xy.XYBlockRenderer: double blockHeight>
+org.jfree.chart.renderer.xy.XYBlockRenderer.updateOffsets : $r9 = r0.<org.jfree.chart.renderer.xy.XYBlockRenderer: org.jfree.ui.RectangleAnchor blockAnchor>
+org.jfree.chart.renderer.xy.XYBlockRenderer.updateOffsets : $d8 = r0.<org.jfree.chart.renderer.xy.XYBlockRenderer: double blockWidth>
+org.jfree.data.general.DatasetUtilities.findDomainBounds : goto [?= return r2]
+org.jfree.data.general.DatasetUtilities.findDomainBounds : return r2
+org.jfree.data.general.DatasetUtilities.findDomainBounds : $z1 = r0 instanceof org.jfree.data.DomainInfo
+org.jfree.data.general.DatasetUtilities.findDomainBounds : r1 = (org.jfree.data.DomainInfo) r0
+org.jfree.data.general.DatasetUtilities.findDomainBounds : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r0, "dataset")
+org.jfree.data.general.DatasetUtilities.findDomainBounds : r2 = interfaceinvoke r1.<org.jfree.data.DomainInfo: org.jfree.data.Range getDomainBounds(boolean)>(z0)
+org.jfree.data.xy.CategoryTableXYDataset.add : if z0 == 0 goto return
+org.jfree.data.xy.CategoryTableXYDataset.add : virtualinvoke r0.<org.jfree.data.xy.CategoryTableXYDataset: void fireDatasetChanged()>()
+org.jfree.data.xy.CategoryTableXYDataset.add : $r2 = new java.lang.Double
+org.jfree.data.xy.CategoryTableXYDataset.add : $r4 = r0.<org.jfree.data.xy.CategoryTableXYDataset: org.jfree.data.DefaultKeyedValues2D values>
+org.jfree.chart.plot.XYPlot.mapDatasetToDomainAxis : $r3 = new java.lang.Integer
+org.jfree.chart.plot.XYPlot.mapDatasetToDomainAxis : virtualinvoke r0.<org.jfree.chart.plot.XYPlot: void mapDatasetToDomainAxes(int,java.util.List)>(i0, r2)
+org.jfree.chart.plot.XYPlot.mapDatasetToDomainAxis : $r1 = new java.util.ArrayList
+org.jfree.data.general.DatasetUtilities.iterateDomainBounds : d0 = #Infinity
+org.jfree.data.general.DatasetUtilities.iterateDomainBounds : return null
+org.jfree.data.general.DatasetUtilities.iterateDomainBounds : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r0, "dataset")
+org.jfree.data.general.DatasetUtilities.iterateDomainBounds : i0 = interfaceinvoke r0.<org.jfree.data.xy.XYDataset: int getSeriesCount()>()
+org.jfree.data.general.DatasetUtilities.iterateDomainBounds : if z0 == 0 goto i4 = 0
+org.jfree.data.general.DatasetUtilities.iterateDomainBounds : $b7 = d0 cmpl d1
+org.jfree.data.general.DatasetUtilities.iterateDomainBounds : d1 = #-Infinity
+org.jfree.data.general.DatasetUtilities.iterateDomainBounds : i4 = 0
+org.jfree.data.xy.IntervalXYDelegate.getDomainBounds : if z0 == 0 goto return r1
+org.jfree.data.xy.IntervalXYDelegate.getDomainBounds : $r2 = r0.<org.jfree.data.xy.IntervalXYDelegate: org.jfree.data.xy.XYDataset dataset>
+org.jfree.data.xy.IntervalXYDelegate.getDomainBounds : return r1
+org.jfree.chart.plot.XYPlot.getDataset : $r3 = r0.<org.jfree.chart.plot.XYPlot: org.jfree.util.ObjectList datasets>
+org.jfree.chart.plot.XYPlot.getDataset : $r2 = r0.<org.jfree.chart.plot.XYPlot: org.jfree.util.ObjectList datasets>
+org.jfree.chart.plot.XYPlot.getDataset : r1 = null
+org.jfree.chart.plot.XYPlot.getDataset : return r1
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null goto return
+org.jfree.data.general.AbstractDataset.fireDatasetChanged : $r1 = new org.jfree.data.general.DatasetChangeEvent
+org.jfree.data.general.DatasetUtilities.findMaximumDomainValue : r1 = (org.jfree.data.DomainInfo) r0
+org.jfree.data.general.DatasetUtilities.findMaximumDomainValue : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r0, "dataset")
+org.jfree.data.general.DatasetUtilities.findMaximumDomainValue : $r4 = new java.lang.Double
+org.jfree.data.general.DatasetUtilities.findMaximumDomainValue : $z0 = r0 instanceof org.jfree.data.DomainInfo
+org.jfree.data.DefaultKeyedValues2D.clear : $r2 = r0.<org.jfree.data.DefaultKeyedValues2D: java.util.List columnKeys>
+org.jfree.data.DefaultKeyedValues2D.clear : $r3 = r0.<org.jfree.data.DefaultKeyedValues2D: java.util.List rows>
+org.jfree.data.DefaultKeyedValues2D.clear : $r1 = r0.<org.jfree.data.DefaultKeyedValues2D: java.util.List rowKeys>
+org.jfree.data.DefaultKeyedValues2D.getColumnCount : $r1 = r0.<org.jfree.data.DefaultKeyedValues2D: java.util.List columnKeys>

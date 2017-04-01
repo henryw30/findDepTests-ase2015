@@ -1,0 +1,20 @@
+org.joda.time.LocalTime.equals : if r0 != r1 >>>>>>>> org.joda.time.LocalTime.equals : return 1
+org.joda.time.LocalTime.equals : if r0 != r1 >>>>>>>> org.joda.time.LocalTime.equals : $z0 = r1 instanceof org.joda.time.LocalTime
+org.joda.time.LocalTime.equals : $z0 = r1 instanceof org.joda.time.LocalTime >>>>>>>> org.joda.time.LocalTime.equals : if $z0 == 0
+org.joda.time.LocalTime.equals : if $z0 == 0 >>>>>>>> org.joda.time.LocalTime.equals : r2 = (org.joda.time.LocalTime) r1
+org.joda.time.LocalTime.equals : if $z0 == 0 >>>>>>>> org.joda.time.LocalTime.equals : $z3 = specialinvoke r0.<org.joda.time.base.BaseLocal: boolean equals(java.lang.Object)>(r1)
+org.joda.time.LocalTime.equals : $z3 = specialinvoke r0.<org.joda.time.base.BaseLocal: boolean equals(java.lang.Object)>(r1) >>>>>>>> org.joda.time.LocalTime.equals : return $z3
+org.joda.time.LocalTime.equals : r2 = (org.joda.time.LocalTime) r1 >>>>>>>> org.joda.time.LocalTime.equals : $r3 = r0.<org.joda.time.LocalTime: org.joda.time.Chronology iChronology>
+org.joda.time.LocalTime.equals : $r3 = r0.<org.joda.time.LocalTime: org.joda.time.Chronology iChronology> >>>>>>>> org.joda.time.LocalTime.equals : $r4 = r2.<org.joda.time.LocalTime: org.joda.time.Chronology iChronology>
+org.joda.time.LocalTime.equals : $r4 = r2.<org.joda.time.LocalTime: org.joda.time.Chronology iChronology> >>>>>>>> org.joda.time.LocalTime.equals : $z1 = virtualinvoke $r3.<java.lang.Object: boolean equals(java.lang.Object)>($r4)
+org.joda.time.LocalTime.equals : $z1 = virtualinvoke $r3.<java.lang.Object: boolean equals(java.lang.Object)>($r4) >>>>>>>> org.joda.time.LocalTime.equals : if $z1 == 0
+org.joda.time.LocalTime.equals : if $z1 == 0 >>>>>>>> org.joda.time.LocalTime.equals : $l0 = r0.<org.joda.time.LocalTime: long iLocalMillis>
+org.joda.time.LocalTime.equals : if $z1 == 0 >>>>>>>> org.joda.time.LocalTime.equals : $z3 = specialinvoke r0.<org.joda.time.base.BaseLocal: boolean equals(java.lang.Object)>(r1)
+org.joda.time.LocalTime.equals : $l0 = r0.<org.joda.time.LocalTime: long iLocalMillis> >>>>>>>> org.joda.time.LocalTime.equals : $l1 = r2.<org.joda.time.LocalTime: long iLocalMillis>
+org.joda.time.LocalTime.equals : $l1 = r2.<org.joda.time.LocalTime: long iLocalMillis> >>>>>>>> org.joda.time.LocalTime.equals : $b2 = $l0 cmp $l1
+org.joda.time.LocalTime.equals : $b2 = $l0 cmp $l1 >>>>>>>> org.joda.time.LocalTime.equals : if $b2 != 0
+org.joda.time.LocalTime.equals : if $b2 != 0 >>>>>>>> org.joda.time.LocalTime.equals : $z2 = 1
+org.joda.time.LocalTime.equals : if $b2 != 0 >>>>>>>> org.joda.time.LocalTime.equals : $z2 = 0
+org.joda.time.LocalTime.equals : $z2 = 0 >>>>>>>> org.joda.time.LocalTime.equals : return $z2
+org.joda.time.LocalTime.equals : $z2 = 1 >>>>>>>> org.joda.time.LocalTime.equals : goto [?= return $z2]
+org.joda.time.LocalTime.equals : goto [?= return $z2] >>>>>>>> org.joda.time.LocalTime.equals : return $z2

@@ -1,0 +1,13 @@
+org.joda.time.Duration.standardDays : $b1 = l0 cmp 0L >>>>>>>> org.joda.time.Duration.standardDays : if $b1 != 0
+org.joda.time.Duration.standardDays : if $b1 != 0 >>>>>>>> org.joda.time.Duration.standardDays : $r1 = new org.joda.time.Duration
+org.joda.time.Duration.standardDays : $r1 = new org.joda.time.Duration >>>>>>>> org.joda.time.Duration.standardDays : $l2 = staticinvoke <org.joda.time.field.FieldUtils: long safeMultiply(long,int)>(l0, 86400000)
+org.joda.time.Duration.standardDays : $l2 = staticinvoke <org.joda.time.field.FieldUtils: long safeMultiply(long,int)>(l0, 86400000) >>>>>>>> org.joda.time.field.FieldUtils.safeMultiply : tableswitch(i1) {     case -1:
+org.joda.time.field.FieldUtils.safeMultiply : tableswitch(i1) {     case -1: >>>>>>>> org.joda.time.field.FieldUtils.safeMultiply : $l4 = (long) i1
+org.joda.time.field.FieldUtils.safeMultiply : $l4 = (long) i1 >>>>>>>> org.joda.time.field.FieldUtils.safeMultiply : l2 = l0 * $l4
+org.joda.time.field.FieldUtils.safeMultiply : l2 = l0 * $l4 >>>>>>>> org.joda.time.field.FieldUtils.safeMultiply : $l5 = (long) i1
+org.joda.time.field.FieldUtils.safeMultiply : $l5 = (long) i1 >>>>>>>> org.joda.time.field.FieldUtils.safeMultiply : $l6 = l2 / $l5
+org.joda.time.field.FieldUtils.safeMultiply : $l6 = l2 / $l5 >>>>>>>> org.joda.time.field.FieldUtils.safeMultiply : $b7 = $l6 cmp l0
+org.joda.time.field.FieldUtils.safeMultiply : $b7 = $l6 cmp l0 >>>>>>>> org.joda.time.field.FieldUtils.safeMultiply : if $b7 == 0
+org.joda.time.field.FieldUtils.safeMultiply : if $b7 == 0 >>>>>>>> org.joda.time.field.FieldUtils.safeMultiply : return l2
+org.joda.time.field.FieldUtils.safeMultiply : return l2 >>>>>>>> org.joda.time.Duration.standardDays : specialinvoke $r1.<org.joda.time.Duration: void <init>(long)>($l2)
+org.joda.time.Duration.standardDays : specialinvoke $r1.<org.joda.time.Duration: void <init>(long)>($l2) >>>>>>>> org.joda.time.Duration.standardDays : return $r1

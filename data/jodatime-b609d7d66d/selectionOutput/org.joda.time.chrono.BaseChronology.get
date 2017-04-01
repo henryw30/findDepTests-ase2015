@@ -1,0 +1,19 @@
+org.joda.time.chrono.BaseChronology.get : i1 = interfaceinvoke r1.<org.joda.time.ReadablePeriod: int size()>() >>>>>>>> org.joda.time.chrono.BaseChronology.get : r2 = newarray (int)[i1]
+org.joda.time.chrono.BaseChronology.get : r2 = newarray (int)[i1] >>>>>>>> org.joda.time.chrono.BaseChronology.get : $b5 = l0 cmp 0L
+org.joda.time.chrono.BaseChronology.get : $b5 = l0 cmp 0L >>>>>>>> org.joda.time.chrono.BaseChronology.get : if $b5 == 0
+org.joda.time.chrono.BaseChronology.get : if $b5 == 0 >>>>>>>> org.joda.time.chrono.BaseChronology.get : l2 = 0L
+org.joda.time.chrono.BaseChronology.get : if $b5 == 0 >>>>>>>> org.joda.time.chrono.BaseChronology.get : return r2
+org.joda.time.chrono.BaseChronology.get : l2 = 0L >>>>>>>> org.joda.time.chrono.BaseChronology.get : i3 = 0
+org.joda.time.chrono.BaseChronology.get : i3 = 0 >>>>>>>> org.joda.time.chrono.BaseChronology.get : if i3 >= i1
+org.joda.time.chrono.BaseChronology.get : if i3 >= i1 >>>>>>>> org.joda.time.chrono.BaseChronology.get : $r4 = interfaceinvoke r1.<org.joda.time.ReadablePeriod: org.joda.time.DurationFieldType getFieldType(int)>(i3)
+org.joda.time.chrono.BaseChronology.get : if i3 >= i1 >>>>>>>> org.joda.time.chrono.BaseChronology.get : return r2
+org.joda.time.chrono.BaseChronology.get : $r4 = interfaceinvoke r1.<org.joda.time.ReadablePeriod: org.joda.time.DurationFieldType getFieldType(int)>(i3) >>>>>>>> org.joda.time.chrono.BaseChronology.get : r3 = virtualinvoke $r4.<org.joda.time.DurationFieldType: org.joda.time.DurationField getField(org.joda.time.Chronology)>(r0)
+org.joda.time.chrono.BaseChronology.get : r3 = virtualinvoke $r4.<org.joda.time.DurationFieldType: org.joda.time.DurationField getField(org.joda.time.Chronology)>(r0) >>>>>>>> org.joda.time.chrono.BaseChronology.get : $z0 = virtualinvoke r3.<org.joda.time.DurationField: boolean isPrecise()>()
+org.joda.time.chrono.BaseChronology.get : $z0 = virtualinvoke r3.<org.joda.time.DurationField: boolean isPrecise()>() >>>>>>>> org.joda.time.chrono.BaseChronology.get : if $z0 == 0
+org.joda.time.chrono.BaseChronology.get : if $z0 == 0 >>>>>>>> org.joda.time.chrono.BaseChronology.get : i4 = virtualinvoke r3.<org.joda.time.DurationField: int getDifference(long,long)>(l0, l2)
+org.joda.time.chrono.BaseChronology.get : if $z0 == 0 >>>>>>>> org.joda.time.chrono.BaseChronology.get : i3 = i3 + 1
+org.joda.time.chrono.BaseChronology.get : i3 = i3 + 1 >>>>>>>> org.joda.time.chrono.BaseChronology.get : goto [?= (branch)]
+org.joda.time.chrono.BaseChronology.get : goto [?= (branch)] >>>>>>>> org.joda.time.chrono.BaseChronology.get : if i3 >= i1
+org.joda.time.chrono.BaseChronology.get : i4 = virtualinvoke r3.<org.joda.time.DurationField: int getDifference(long,long)>(l0, l2) >>>>>>>> org.joda.time.chrono.BaseChronology.get : l2 = virtualinvoke r3.<org.joda.time.DurationField: long add(long,int)>(l2, i4)
+org.joda.time.chrono.BaseChronology.get : l2 = virtualinvoke r3.<org.joda.time.DurationField: long add(long,int)>(l2, i4) >>>>>>>> org.joda.time.chrono.BaseChronology.get : r2[i3] = i4
+org.joda.time.chrono.BaseChronology.get : r2[i3] = i4 >>>>>>>> org.joda.time.chrono.BaseChronology.get : i3 = i3 + 1

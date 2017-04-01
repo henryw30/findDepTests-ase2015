@@ -1,0 +1,25 @@
+org.joda.time.Period.toStandardDuration : specialinvoke r0.<org.joda.time.Period: void checkYearsAndMonths(java.lang.String)>("Duration") >>>>>>>> org.joda.time.Period.toStandardDuration : $i1 = virtualinvoke r0.<org.joda.time.Period: int getMillis()>()
+org.joda.time.Period.toStandardDuration : $i1 = virtualinvoke r0.<org.joda.time.Period: int getMillis()>() >>>>>>>> org.joda.time.Period.toStandardDuration : l0 = (long) $i1
+org.joda.time.Period.toStandardDuration : l0 = (long) $i1 >>>>>>>> org.joda.time.Period.toStandardDuration : $i2 = virtualinvoke r0.<org.joda.time.Period: int getSeconds()>()
+org.joda.time.Period.toStandardDuration : $i2 = virtualinvoke r0.<org.joda.time.Period: int getSeconds()>() >>>>>>>> org.joda.time.Period.toStandardDuration : $l3 = (long) $i2
+org.joda.time.Period.toStandardDuration : $l3 = (long) $i2 >>>>>>>> org.joda.time.Period.toStandardDuration : $l4 = $l3 * 1000L
+org.joda.time.Period.toStandardDuration : $l4 = $l3 * 1000L >>>>>>>> org.joda.time.Period.toStandardDuration : l5 = l0 + $l4
+org.joda.time.Period.toStandardDuration : l5 = l0 + $l4 >>>>>>>> org.joda.time.Period.toStandardDuration : $i6 = virtualinvoke r0.<org.joda.time.Period: int getMinutes()>()
+org.joda.time.Period.toStandardDuration : $i6 = virtualinvoke r0.<org.joda.time.Period: int getMinutes()>() >>>>>>>> org.joda.time.Period.toStandardDuration : $l7 = (long) $i6
+org.joda.time.Period.toStandardDuration : $l7 = (long) $i6 >>>>>>>> org.joda.time.Period.toStandardDuration : $l8 = $l7 * 60000L
+org.joda.time.Period.toStandardDuration : $l8 = $l7 * 60000L >>>>>>>> org.joda.time.Period.toStandardDuration : l9 = l5 + $l8
+org.joda.time.Period.toStandardDuration : l9 = l5 + $l8 >>>>>>>> org.joda.time.Period.toStandardDuration : $i10 = virtualinvoke r0.<org.joda.time.Period: int getHours()>()
+org.joda.time.Period.toStandardDuration : $i10 = virtualinvoke r0.<org.joda.time.Period: int getHours()>() >>>>>>>> org.joda.time.Period.toStandardDuration : $l11 = (long) $i10
+org.joda.time.Period.toStandardDuration : $l11 = (long) $i10 >>>>>>>> org.joda.time.Period.toStandardDuration : $l12 = $l11 * 3600000L
+org.joda.time.Period.toStandardDuration : $l12 = $l11 * 3600000L >>>>>>>> org.joda.time.Period.toStandardDuration : l13 = l9 + $l12
+org.joda.time.Period.toStandardDuration : l13 = l9 + $l12 >>>>>>>> org.joda.time.Period.toStandardDuration : $i14 = virtualinvoke r0.<org.joda.time.Period: int getDays()>()
+org.joda.time.Period.toStandardDuration : $i14 = virtualinvoke r0.<org.joda.time.Period: int getDays()>() >>>>>>>> org.joda.time.Period.toStandardDuration : $l15 = (long) $i14
+org.joda.time.Period.toStandardDuration : $l15 = (long) $i14 >>>>>>>> org.joda.time.Period.toStandardDuration : $l16 = $l15 * 86400000L
+org.joda.time.Period.toStandardDuration : $l16 = $l15 * 86400000L >>>>>>>> org.joda.time.Period.toStandardDuration : l17 = l13 + $l16
+org.joda.time.Period.toStandardDuration : l17 = l13 + $l16 >>>>>>>> org.joda.time.Period.toStandardDuration : $i18 = virtualinvoke r0.<org.joda.time.Period: int getWeeks()>()
+org.joda.time.Period.toStandardDuration : $i18 = virtualinvoke r0.<org.joda.time.Period: int getWeeks()>() >>>>>>>> org.joda.time.Period.toStandardDuration : $l19 = (long) $i18
+org.joda.time.Period.toStandardDuration : $l19 = (long) $i18 >>>>>>>> org.joda.time.Period.toStandardDuration : $l20 = $l19 * 604800000L
+org.joda.time.Period.toStandardDuration : $l20 = $l19 * 604800000L >>>>>>>> org.joda.time.Period.toStandardDuration : l21 = l17 + $l20
+org.joda.time.Period.toStandardDuration : l21 = l17 + $l20 >>>>>>>> org.joda.time.Period.toStandardDuration : $r1 = new org.joda.time.Duration
+org.joda.time.Period.toStandardDuration : $r1 = new org.joda.time.Duration >>>>>>>> org.joda.time.Period.toStandardDuration : specialinvoke $r1.<org.joda.time.Duration: void <init>(long)>(l21)
+org.joda.time.Period.toStandardDuration : specialinvoke $r1.<org.joda.time.Duration: void <init>(long)>(l21) >>>>>>>> org.joda.time.Period.toStandardDuration : return $r1

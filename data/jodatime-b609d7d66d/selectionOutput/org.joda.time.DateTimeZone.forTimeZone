@@ -1,0 +1,46 @@
+org.joda.time.DateTimeZone.forTimeZone : if r0 != null >>>>>>>> org.joda.time.DateTimeZone.forTimeZone : $r4 = staticinvoke <org.joda.time.DateTimeZone: org.joda.time.DateTimeZone getDefault()>()
+org.joda.time.DateTimeZone.forTimeZone : if r0 != null >>>>>>>> org.joda.time.DateTimeZone.forTimeZone : r1 = virtualinvoke r0.<java.util.TimeZone: java.lang.String getID()>()
+org.joda.time.DateTimeZone.forTimeZone : r1 = virtualinvoke r0.<java.util.TimeZone: java.lang.String getID()>() >>>>>>>> org.joda.time.DateTimeZone.forTimeZone : $z0 = virtualinvoke r1.<java.lang.String: boolean equals(java.lang.Object)>("UTC")
+org.joda.time.DateTimeZone.forTimeZone : $z0 = virtualinvoke r1.<java.lang.String: boolean equals(java.lang.Object)>("UTC") >>>>>>>> org.joda.time.DateTimeZone.forTimeZone : if $z0 == 0
+org.joda.time.DateTimeZone.forTimeZone : if $z0 == 0 >>>>>>>> org.joda.time.DateTimeZone.forTimeZone : $r5 = <org.joda.time.DateTimeZone: org.joda.time.DateTimeZone UTC>
+org.joda.time.DateTimeZone.forTimeZone : if $z0 == 0 >>>>>>>> org.joda.time.DateTimeZone.forTimeZone : r2 = null
+org.joda.time.DateTimeZone.forTimeZone : r2 = null >>>>>>>> org.joda.time.DateTimeZone.forTimeZone : r3 = staticinvoke <org.joda.time.DateTimeZone: java.lang.String getConvertedId(java.lang.String)>(r1)
+org.joda.time.DateTimeZone.forTimeZone : r3 = staticinvoke <org.joda.time.DateTimeZone: java.lang.String getConvertedId(java.lang.String)>(r1) >>>>>>>> org.joda.time.DateTimeZone.forTimeZone : if r3 == null
+org.joda.time.DateTimeZone.forTimeZone : if r3 == null >>>>>>>> org.joda.time.DateTimeZone.forTimeZone : $r6 = <org.joda.time.DateTimeZone: org.joda.time.tz.Provider cProvider>
+org.joda.time.DateTimeZone.forTimeZone : if r3 == null >>>>>>>> org.joda.time.DateTimeZone.forTimeZone : if r2 != null
+org.joda.time.DateTimeZone.forTimeZone : if r2 != null >>>>>>>> org.joda.time.DateTimeZone.forTimeZone : $r7 = <org.joda.time.DateTimeZone: org.joda.time.tz.Provider cProvider>
+org.joda.time.DateTimeZone.forTimeZone : if r2 != null >>>>>>>> org.joda.time.DateTimeZone.forTimeZone : if r2 == null
+org.joda.time.DateTimeZone.forTimeZone : if r2 == null >>>>>>>> org.joda.time.DateTimeZone.forTimeZone : return r2
+org.joda.time.DateTimeZone.forTimeZone : if r2 == null >>>>>>>> org.joda.time.DateTimeZone.forTimeZone : if r3 != null
+org.joda.time.DateTimeZone.forTimeZone : if r3 != null >>>>>>>> org.joda.time.DateTimeZone.forTimeZone : r8 = virtualinvoke r0.<java.util.TimeZone: java.lang.String getDisplayName()>()
+org.joda.time.DateTimeZone.forTimeZone : if r3 != null >>>>>>>> org.joda.time.DateTimeZone.forTimeZone : $r13 = new java.lang.IllegalArgumentException
+org.joda.time.DateTimeZone.forTimeZone : $r13 = new java.lang.IllegalArgumentException >>>>>>>> org.joda.time.DateTimeZone.forTimeZone : $r14 = new java.lang.StringBuilder
+org.joda.time.DateTimeZone.forTimeZone : $r14 = new java.lang.StringBuilder >>>>>>>> org.joda.time.DateTimeZone.forTimeZone : specialinvoke $r14.<java.lang.StringBuilder: void <init>()>()
+org.joda.time.DateTimeZone.forTimeZone : specialinvoke $r14.<java.lang.StringBuilder: void <init>()>() >>>>>>>> org.joda.time.DateTimeZone.forTimeZone : $r15 = virtualinvoke $r14.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("The datetime zone id \'")
+org.joda.time.DateTimeZone.forTimeZone : $r15 = virtualinvoke $r14.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("The datetime zone id \'") >>>>>>>> org.joda.time.DateTimeZone.forTimeZone : $r16 = virtualinvoke $r15.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(r1)
+org.joda.time.DateTimeZone.forTimeZone : $r16 = virtualinvoke $r15.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(r1) >>>>>>>> org.joda.time.DateTimeZone.forTimeZone : $r17 = virtualinvoke $r16.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("\' is not recognised")
+org.joda.time.DateTimeZone.forTimeZone : $r17 = virtualinvoke $r16.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("\' is not recognised") >>>>>>>> org.joda.time.DateTimeZone.forTimeZone : $r18 = virtualinvoke $r17.<java.lang.StringBuilder: java.lang.String toString()>()
+org.joda.time.DateTimeZone.forTimeZone : $r18 = virtualinvoke $r17.<java.lang.StringBuilder: java.lang.String toString()>() >>>>>>>> org.joda.time.DateTimeZone.forTimeZone : specialinvoke $r13.<java.lang.IllegalArgumentException: void <init>(java.lang.String)>($r18)
+org.joda.time.DateTimeZone.forTimeZone : specialinvoke $r13.<java.lang.IllegalArgumentException: void <init>(java.lang.String)>($r18) >>>>>>>> org.joda.time.DateTimeZone.forTimeZone : throw $r13
+org.joda.time.DateTimeZone.forTimeZone : r8 = virtualinvoke r0.<java.util.TimeZone: java.lang.String getDisplayName()>() >>>>>>>> org.joda.time.DateTimeZone.forTimeZone : $z1 = virtualinvoke r8.<java.lang.String: boolean startsWith(java.lang.String)>("GMT+")
+org.joda.time.DateTimeZone.forTimeZone : $z1 = virtualinvoke r8.<java.lang.String: boolean startsWith(java.lang.String)>("GMT+") >>>>>>>> org.joda.time.DateTimeZone.forTimeZone : if $z1 != 0
+org.joda.time.DateTimeZone.forTimeZone : if $z1 != 0 >>>>>>>> org.joda.time.DateTimeZone.forTimeZone : $z2 = virtualinvoke r8.<java.lang.String: boolean startsWith(java.lang.String)>("GMT-")
+org.joda.time.DateTimeZone.forTimeZone : if $z1 != 0 >>>>>>>> org.joda.time.DateTimeZone.forTimeZone : r9 = virtualinvoke r8.<java.lang.String: java.lang.String substring(int)>(3)
+org.joda.time.DateTimeZone.forTimeZone : r9 = virtualinvoke r8.<java.lang.String: java.lang.String substring(int)>(3) >>>>>>>> org.joda.time.DateTimeZone.forTimeZone : i0 = staticinvoke <org.joda.time.DateTimeZone: int parseOffset(java.lang.String)>(r9)
+org.joda.time.DateTimeZone.forTimeZone : i0 = staticinvoke <org.joda.time.DateTimeZone: int parseOffset(java.lang.String)>(r9) >>>>>>>> org.joda.time.DateTimeZone.forTimeZone : $l1 = (long) i0
+org.joda.time.DateTimeZone.forTimeZone : $l1 = (long) i0 >>>>>>>> org.joda.time.DateTimeZone.forTimeZone : $b2 = $l1 cmp 0L
+org.joda.time.DateTimeZone.forTimeZone : $b2 = $l1 cmp 0L >>>>>>>> org.joda.time.DateTimeZone.forTimeZone : if $b2 != 0
+org.joda.time.DateTimeZone.forTimeZone : if $b2 != 0 >>>>>>>> org.joda.time.DateTimeZone.forTimeZone : $r10 = <org.joda.time.DateTimeZone: org.joda.time.DateTimeZone UTC>
+org.joda.time.DateTimeZone.forTimeZone : if $b2 != 0 >>>>>>>> org.joda.time.DateTimeZone.forTimeZone : r11 = staticinvoke <org.joda.time.DateTimeZone: java.lang.String printOffset(int)>(i0)
+org.joda.time.DateTimeZone.forTimeZone : r11 = staticinvoke <org.joda.time.DateTimeZone: java.lang.String printOffset(int)>(i0) >>>>>>>> org.joda.time.DateTimeZone.forTimeZone : $r12 = staticinvoke <org.joda.time.DateTimeZone: org.joda.time.DateTimeZone fixedOffsetZone(java.lang.String,int)>(r11, i0)
+org.joda.time.DateTimeZone.forTimeZone : $r12 = staticinvoke <org.joda.time.DateTimeZone: org.joda.time.DateTimeZone fixedOffsetZone(java.lang.String,int)>(r11, i0) >>>>>>>> org.joda.time.DateTimeZone.forTimeZone : return $r12
+org.joda.time.DateTimeZone.forTimeZone : $r10 = <org.joda.time.DateTimeZone: org.joda.time.DateTimeZone UTC> >>>>>>>> org.joda.time.DateTimeZone.forTimeZone : return $r10
+org.joda.time.DateTimeZone.forTimeZone : $z2 = virtualinvoke r8.<java.lang.String: boolean startsWith(java.lang.String)>("GMT-") >>>>>>>> org.joda.time.DateTimeZone.forTimeZone : if $z2 == 0
+org.joda.time.DateTimeZone.forTimeZone : if $z2 == 0 >>>>>>>> org.joda.time.DateTimeZone.forTimeZone : r9 = virtualinvoke r8.<java.lang.String: java.lang.String substring(int)>(3)
+org.joda.time.DateTimeZone.forTimeZone : if $z2 == 0 >>>>>>>> org.joda.time.DateTimeZone.forTimeZone : $r13 = new java.lang.IllegalArgumentException
+org.joda.time.DateTimeZone.forTimeZone : $r7 = <org.joda.time.DateTimeZone: org.joda.time.tz.Provider cProvider> >>>>>>>> org.joda.time.DateTimeZone.forTimeZone : r2 = interfaceinvoke $r7.<org.joda.time.tz.Provider: org.joda.time.DateTimeZone getZone(java.lang.String)>(r1)
+org.joda.time.DateTimeZone.forTimeZone : r2 = interfaceinvoke $r7.<org.joda.time.tz.Provider: org.joda.time.DateTimeZone getZone(java.lang.String)>(r1) >>>>>>>> org.joda.time.DateTimeZone.forTimeZone : if r2 == null
+org.joda.time.DateTimeZone.forTimeZone : $r6 = <org.joda.time.DateTimeZone: org.joda.time.tz.Provider cProvider> >>>>>>>> org.joda.time.DateTimeZone.forTimeZone : r2 = interfaceinvoke $r6.<org.joda.time.tz.Provider: org.joda.time.DateTimeZone getZone(java.lang.String)>(r3)
+org.joda.time.DateTimeZone.forTimeZone : r2 = interfaceinvoke $r6.<org.joda.time.tz.Provider: org.joda.time.DateTimeZone getZone(java.lang.String)>(r3) >>>>>>>> org.joda.time.DateTimeZone.forTimeZone : if r2 != null
+org.joda.time.DateTimeZone.forTimeZone : $r5 = <org.joda.time.DateTimeZone: org.joda.time.DateTimeZone UTC> >>>>>>>> org.joda.time.DateTimeZone.forTimeZone : return $r5
+org.joda.time.DateTimeZone.forTimeZone : $r4 = staticinvoke <org.joda.time.DateTimeZone: org.joda.time.DateTimeZone getDefault()>() >>>>>>>> org.joda.time.DateTimeZone.forTimeZone : return $r4

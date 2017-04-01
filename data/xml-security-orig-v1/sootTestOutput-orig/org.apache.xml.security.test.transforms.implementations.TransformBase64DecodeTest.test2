@@ -1,0 +1,21 @@
+org.apache.xml.security.transforms.Transform.getBaseLocalName : return "Transform"
+org.apache.xml.security.transforms.Transforms.getBaseLocalName : return "Transforms"
+org.apache.xml.security.utils.XMLUtils.addReturnToElement : $r2 = interfaceinvoke r1.<org.w3c.dom.Document: org.w3c.dom.Text createTextNode(java.lang.String)>("\n")
+org.apache.xml.security.utils.XMLUtils.addReturnToElement : r1 = interfaceinvoke r0.<org.w3c.dom.Element: org.w3c.dom.Document getOwnerDocument()>()
+org.apache.xml.security.utils.ElementProxy.getElement : $r1 = r0.<org.apache.xml.security.utils.ElementProxy: org.w3c.dom.Element _constructionElement>
+org.apache.xml.security.utils.SignatureElementProxy.getBaseNamespace : return "http://www.w3.org/2000/09/xmldsig#"
+org.apache.xml.security.transforms.Transforms.addTransform : $r9 = r0.<org.apache.xml.security.transforms.Transforms: org.w3c.dom.Document _doc>
+org.apache.xml.security.transforms.Transforms.addTransform : $r2 = <org.apache.xml.security.transforms.Transforms: org.apache.log4j.Category cat>
+org.apache.xml.security.transforms.Transform.getInstance : $r3 = new org.apache.xml.security.transforms.Transform
+org.apache.xml.security.transforms.Transform.getInstance : $r2 = (org.w3c.dom.NodeList) null
+org.apache.xml.security.transforms.Transform.getImplementingClass : return null
+org.apache.xml.security.transforms.Transform.getImplementingClass : $r1 = <org.apache.xml.security.transforms.Transform: java.util.HashMap _transformHash>
+org.apache.xml.security.utils.ElementProxy.getDefaultPrefix : return r2
+org.apache.xml.security.utils.ElementProxy.getDefaultPrefix : $r1 = <org.apache.xml.security.utils.ElementProxy: java.util.HashMap _prefixMappings>
+org.apache.xml.security.utils.ElementProxy.createElementForFamily : return r4
+org.apache.xml.security.utils.ElementProxy.createElementForFamily : if r3 == null goto r4 = interfaceinvoke r0.<org.w3c.dom.Document: org.w3c.dom.Element createElementNS(java.lang.String,java.lang.String)>(r1, r2)
+org.apache.xml.security.utils.ElementProxy.createElementForFamily : r4 = interfaceinvoke r0.<org.w3c.dom.Document: org.w3c.dom.Element createElementNS(java.lang.String,java.lang.String)>(r1, r2)
+org.apache.xml.security.utils.ElementProxy.createElementForFamily : r3 = staticinvoke <org.apache.xml.security.utils.ElementProxy: java.lang.String getDefaultPrefix(java.lang.String)>(r1)
+org.apache.xml.security.utils.ElementProxy.createElementForFamily : n0 = null
+org.apache.xml.security.utils.ElementProxy.createElementForFamily : if r1 != null goto (branch)
+org.apache.xml.security.utils.ElementProxy.createElementForFamily : interfaceinvoke r4.<org.w3c.dom.Element: void setAttributeNS(java.lang.String,java.lang.String,java.lang.String)>("http://www.w3.org/2000/xmlns/", "xmlns", r1)

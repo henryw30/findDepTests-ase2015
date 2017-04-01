@@ -1,0 +1,6 @@
+org.joda.time.base.AbstractInstant.get : if r1 != null >>>>>>>> org.joda.time.base.AbstractInstant.get : $r2 = new java.lang.IllegalArgumentException
+org.joda.time.base.AbstractInstant.get : if r1 != null >>>>>>>> org.joda.time.base.AbstractInstant.get : $l0 = virtualinvoke r0.<org.joda.time.base.AbstractInstant: long getMillis()>()
+org.joda.time.base.AbstractInstant.get : $l0 = virtualinvoke r0.<org.joda.time.base.AbstractInstant: long getMillis()>() >>>>>>>> org.joda.time.base.AbstractInstant.get : $i1 = virtualinvoke r1.<org.joda.time.DateTimeField: int get(long)>($l0)
+org.joda.time.base.AbstractInstant.get : $i1 = virtualinvoke r1.<org.joda.time.DateTimeField: int get(long)>($l0) >>>>>>>> org.joda.time.base.AbstractInstant.get : return $i1
+org.joda.time.base.AbstractInstant.get : $r2 = new java.lang.IllegalArgumentException >>>>>>>> org.joda.time.base.AbstractInstant.get : specialinvoke $r2.<java.lang.IllegalArgumentException: void <init>(java.lang.String)>("The DateTimeField must not be null")
+org.joda.time.base.AbstractInstant.get : specialinvoke $r2.<java.lang.IllegalArgumentException: void <init>(java.lang.String)>("The DateTimeField must not be null") >>>>>>>> org.joda.time.base.AbstractInstant.get : throw $r2

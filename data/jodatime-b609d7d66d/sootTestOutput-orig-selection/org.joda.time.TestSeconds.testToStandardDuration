@@ -1,0 +1,24 @@
+org.joda.time.Seconds.seconds : lookupswitch(i0) {     case -2147483648: >>>>>>>> org.joda.time.Seconds.seconds : $r6 = new org.joda.time.Seconds
+org.joda.time.Seconds.seconds : $r6 = new org.joda.time.Seconds >>>>>>>> org.joda.time.Seconds.seconds : specialinvoke $r6.<org.joda.time.Seconds: void <init>(int)>(i0)
+org.joda.time.Seconds.seconds : specialinvoke $r6.<org.joda.time.Seconds: void <init>(int)>(i0) >>>>>>>> org.joda.time.Seconds.seconds : return $r6
+org.joda.time.Seconds.seconds : return $r6 >>>>>>>> org.joda.time.Seconds.toStandardDuration : $i1 = virtualinvoke r0.<org.joda.time.Seconds: int getValue()>()
+org.joda.time.Seconds.toStandardDuration : $i1 = virtualinvoke r0.<org.joda.time.Seconds: int getValue()>() >>>>>>>> org.joda.time.base.BaseSingleFieldPeriod.getValue : $i0 = r0.<org.joda.time.base.BaseSingleFieldPeriod: int iPeriod>
+org.joda.time.base.BaseSingleFieldPeriod.getValue : $i0 = r0.<org.joda.time.base.BaseSingleFieldPeriod: int iPeriod> >>>>>>>> org.joda.time.base.BaseSingleFieldPeriod.getValue : return $i0
+org.joda.time.base.BaseSingleFieldPeriod.getValue : return $i0 >>>>>>>> org.joda.time.Seconds.toStandardDuration : l0 = (long) $i1
+org.joda.time.Seconds.toStandardDuration : l0 = (long) $i1 >>>>>>>> org.joda.time.Seconds.toStandardDuration : $r1 = new org.joda.time.Duration
+org.joda.time.Seconds.toStandardDuration : $r1 = new org.joda.time.Duration >>>>>>>> org.joda.time.Seconds.toStandardDuration : $l2 = l0 * 1000L
+org.joda.time.Seconds.toStandardDuration : $l2 = l0 * 1000L >>>>>>>> org.joda.time.Seconds.toStandardDuration : specialinvoke $r1.<org.joda.time.Duration: void <init>(long)>($l2)
+org.joda.time.Seconds.toStandardDuration : specialinvoke $r1.<org.joda.time.Duration: void <init>(long)>($l2) >>>>>>>> org.joda.time.Seconds.toStandardDuration : return $r1
+org.joda.time.Seconds.toStandardDuration : return $r1 >>>>>>>> org.joda.time.base.AbstractDuration.equals : if r0 != r1
+org.joda.time.base.AbstractDuration.equals : if r0 != r1 >>>>>>>> org.joda.time.base.AbstractDuration.equals : $z0 = r1 instanceof org.joda.time.ReadableDuration
+org.joda.time.base.AbstractDuration.equals : $z0 = r1 instanceof org.joda.time.ReadableDuration >>>>>>>> org.joda.time.base.AbstractDuration.equals : if $z0 != 0
+org.joda.time.base.AbstractDuration.equals : if $z0 != 0 >>>>>>>> org.joda.time.base.AbstractDuration.equals : r2 = (org.joda.time.ReadableDuration) r1
+org.joda.time.base.AbstractDuration.equals : r2 = (org.joda.time.ReadableDuration) r1 >>>>>>>> org.joda.time.base.AbstractDuration.equals : $l0 = virtualinvoke r0.<org.joda.time.base.AbstractDuration: long getMillis()>()
+org.joda.time.base.AbstractDuration.equals : $l0 = virtualinvoke r0.<org.joda.time.base.AbstractDuration: long getMillis()>() >>>>>>>> org.joda.time.base.BaseDuration.getMillis : $l0 = r0.<org.joda.time.base.BaseDuration: long iMillis>
+org.joda.time.base.BaseDuration.getMillis : $l0 = r0.<org.joda.time.base.BaseDuration: long iMillis> >>>>>>>> org.joda.time.base.BaseDuration.getMillis : return $l0
+org.joda.time.base.BaseDuration.getMillis : return $l0 >>>>>>>> org.joda.time.base.AbstractDuration.equals : $l1 = interfaceinvoke r2.<org.joda.time.ReadableDuration: long getMillis()>()
+org.joda.time.base.AbstractDuration.equals : $l1 = interfaceinvoke r2.<org.joda.time.ReadableDuration: long getMillis()>() >>>>>>>> org.joda.time.base.AbstractDuration.equals : $b2 = $l0 cmp $l1
+org.joda.time.base.AbstractDuration.equals : $b2 = $l0 cmp $l1 >>>>>>>> org.joda.time.base.AbstractDuration.equals : if $b2 != 0
+org.joda.time.base.AbstractDuration.equals : if $b2 != 0 >>>>>>>> org.joda.time.base.AbstractDuration.equals : $z1 = 1
+org.joda.time.base.AbstractDuration.equals : $z1 = 1 >>>>>>>> org.joda.time.base.AbstractDuration.equals : goto [?= return $z1]
+org.joda.time.base.AbstractDuration.equals : goto [?= return $z1] >>>>>>>> org.joda.time.base.AbstractDuration.equals : return $z1

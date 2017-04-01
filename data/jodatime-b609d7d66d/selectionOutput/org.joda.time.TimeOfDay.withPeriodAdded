@@ -1,0 +1,21 @@
+org.joda.time.TimeOfDay.withPeriodAdded : if r1 == null >>>>>>>> org.joda.time.TimeOfDay.withPeriodAdded : if i0 != 0
+org.joda.time.TimeOfDay.withPeriodAdded : if r1 == null >>>>>>>> org.joda.time.TimeOfDay.withPeriodAdded : return r0
+org.joda.time.TimeOfDay.withPeriodAdded : if i0 != 0 >>>>>>>> org.joda.time.TimeOfDay.withPeriodAdded : return r0
+org.joda.time.TimeOfDay.withPeriodAdded : if i0 != 0 >>>>>>>> org.joda.time.TimeOfDay.withPeriodAdded : r2 = virtualinvoke r0.<org.joda.time.TimeOfDay: int[] getValues()>()
+org.joda.time.TimeOfDay.withPeriodAdded : r2 = virtualinvoke r0.<org.joda.time.TimeOfDay: int[] getValues()>() >>>>>>>> org.joda.time.TimeOfDay.withPeriodAdded : i1 = 0
+org.joda.time.TimeOfDay.withPeriodAdded : i1 = 0 >>>>>>>> org.joda.time.TimeOfDay.withPeriodAdded : $i3 = interfaceinvoke r1.<org.joda.time.ReadablePeriod: int size()>()
+org.joda.time.TimeOfDay.withPeriodAdded : $i3 = interfaceinvoke r1.<org.joda.time.ReadablePeriod: int size()>() >>>>>>>> org.joda.time.TimeOfDay.withPeriodAdded : if i1 >= $i3
+org.joda.time.TimeOfDay.withPeriodAdded : if i1 >= $i3 >>>>>>>> org.joda.time.TimeOfDay.withPeriodAdded : r3 = interfaceinvoke r1.<org.joda.time.ReadablePeriod: org.joda.time.DurationFieldType getFieldType(int)>(i1)
+org.joda.time.TimeOfDay.withPeriodAdded : if i1 >= $i3 >>>>>>>> org.joda.time.TimeOfDay.withPeriodAdded : $r5 = new org.joda.time.TimeOfDay
+org.joda.time.TimeOfDay.withPeriodAdded : $r5 = new org.joda.time.TimeOfDay >>>>>>>> org.joda.time.TimeOfDay.withPeriodAdded : specialinvoke $r5.<org.joda.time.TimeOfDay: void <init>(org.joda.time.TimeOfDay,int[])>(r0, r2)
+org.joda.time.TimeOfDay.withPeriodAdded : specialinvoke $r5.<org.joda.time.TimeOfDay: void <init>(org.joda.time.TimeOfDay,int[])>(r0, r2) >>>>>>>> org.joda.time.TimeOfDay.withPeriodAdded : return $r5
+org.joda.time.TimeOfDay.withPeriodAdded : r3 = interfaceinvoke r1.<org.joda.time.ReadablePeriod: org.joda.time.DurationFieldType getFieldType(int)>(i1) >>>>>>>> org.joda.time.TimeOfDay.withPeriodAdded : i2 = virtualinvoke r0.<org.joda.time.TimeOfDay: int indexOf(org.joda.time.DurationFieldType)>(r3)
+org.joda.time.TimeOfDay.withPeriodAdded : i2 = virtualinvoke r0.<org.joda.time.TimeOfDay: int indexOf(org.joda.time.DurationFieldType)>(r3) >>>>>>>> org.joda.time.TimeOfDay.withPeriodAdded : if i2 < 0
+org.joda.time.TimeOfDay.withPeriodAdded : if i2 < 0 >>>>>>>> org.joda.time.TimeOfDay.withPeriodAdded : $r4 = virtualinvoke r0.<org.joda.time.TimeOfDay: org.joda.time.DateTimeField getField(int)>(i2)
+org.joda.time.TimeOfDay.withPeriodAdded : if i2 < 0 >>>>>>>> org.joda.time.TimeOfDay.withPeriodAdded : i1 = i1 + 1
+org.joda.time.TimeOfDay.withPeriodAdded : i1 = i1 + 1 >>>>>>>> org.joda.time.TimeOfDay.withPeriodAdded : goto [?= $i3 = interfaceinvoke r1.<org.joda.time.ReadablePeriod: int size()>()]
+org.joda.time.TimeOfDay.withPeriodAdded : goto [?= $i3 = interfaceinvoke r1.<org.joda.time.ReadablePeriod: int size()>()] >>>>>>>> org.joda.time.TimeOfDay.withPeriodAdded : $i3 = interfaceinvoke r1.<org.joda.time.ReadablePeriod: int size()>()
+org.joda.time.TimeOfDay.withPeriodAdded : $r4 = virtualinvoke r0.<org.joda.time.TimeOfDay: org.joda.time.DateTimeField getField(int)>(i2) >>>>>>>> org.joda.time.TimeOfDay.withPeriodAdded : $i4 = interfaceinvoke r1.<org.joda.time.ReadablePeriod: int getValue(int)>(i1)
+org.joda.time.TimeOfDay.withPeriodAdded : $i4 = interfaceinvoke r1.<org.joda.time.ReadablePeriod: int getValue(int)>(i1) >>>>>>>> org.joda.time.TimeOfDay.withPeriodAdded : $i5 = staticinvoke <org.joda.time.field.FieldUtils: int safeMultiply(int,int)>($i4, i0)
+org.joda.time.TimeOfDay.withPeriodAdded : $i5 = staticinvoke <org.joda.time.field.FieldUtils: int safeMultiply(int,int)>($i4, i0) >>>>>>>> org.joda.time.TimeOfDay.withPeriodAdded : r2 = virtualinvoke $r4.<org.joda.time.DateTimeField: int[] addWrapPartial(org.joda.time.ReadablePartial,int,int[],int)>(r0, i2, r2, $i5)
+org.joda.time.TimeOfDay.withPeriodAdded : r2 = virtualinvoke $r4.<org.joda.time.DateTimeField: int[] addWrapPartial(org.joda.time.ReadablePartial,int,int[],int)>(r0, i2, r2, $i5) >>>>>>>> org.joda.time.TimeOfDay.withPeriodAdded : i1 = i1 + 1

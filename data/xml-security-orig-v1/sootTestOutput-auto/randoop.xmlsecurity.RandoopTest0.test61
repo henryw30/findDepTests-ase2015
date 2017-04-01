@@ -1,0 +1,15 @@
+org.apache.xml.security.utils.I18n.getExceptionMessage : $z0 = staticinvoke <org.apache.xml.security.Init: boolean isInitialized()>()
+org.apache.xml.security.utils.I18n.getExceptionMessage : $r1 = <org.apache.xml.security.utils.I18n: java.util.ResourceBundle resourceBundle>
+org.apache.xml.security.utils.I18n.getExceptionMessage : r5 = $r4
+org.apache.xml.security.utils.I18n.getExceptionMessage : return "You must initialize the xml-security library correctly before you use it. Call the static method \"org.apache.xml.security.Init.init();\" to do that before you use any functionality from that library."
+org.apache.xml.security.Init.isInitialized : $z0 = <org.apache.xml.security.Init: boolean _alreadyInitialized>
+org.apache.xml.security.utils.ElementProxy.setDefaultPrefix : $r8 = interfaceinvoke r3.<java.util.Iterator: java.lang.Object next()>()
+org.apache.xml.security.utils.ElementProxy.setDefaultPrefix : $z0 = interfaceinvoke r3.<java.util.Iterator: boolean hasNext()>()
+org.apache.xml.security.utils.ElementProxy.setDefaultPrefix : $r9 = <org.apache.xml.security.utils.ElementProxy: java.util.HashMap _prefixMappings>
+org.apache.xml.security.utils.ElementProxy.setDefaultPrefix : $r11 = newarray (java.lang.Object)[3]
+org.apache.xml.security.utils.ElementProxy.setDefaultPrefix : $z1 = virtualinvoke r5.<java.lang.String: boolean equals(java.lang.Object)>(r1)
+org.apache.xml.security.utils.ElementProxy.setDefaultPrefix : goto [?= staticinvoke <edu.washington.cs.dt.impact.util.Tracer: void trace(java.lang.String,java.lang.String)>("$z0 = interfaceinvoke r3.<java.util.Iterator: boolean hasNext()>()", "org.apache.xml.security.utils.ElementProxy.setDefaultPrefix")]
+org.apache.xml.security.utils.ElementProxy.setDefaultPrefix : $r10 = virtualinvoke $r9.<java.util.HashMap: java.lang.Object get(java.lang.Object)>(r4)
+org.apache.xml.security.utils.ElementProxy.setDefaultPrefix : $r2 = <org.apache.xml.security.utils.ElementProxy: java.util.HashMap _prefixMappings>
+org.apache.xml.security.utils.ElementProxy.setDefaultPrefix : $r12 = new org.apache.xml.security.exceptions.XMLSecurityException
+org.apache.xml.security.utils.Constants.setSignatureSpecNSprefix : staticinvoke <org.apache.xml.security.utils.ElementProxy: void setDefaultPrefix(java.lang.String,java.lang.String)>("http://www.w3.org/2000/09/xmldsig#", r0)

@@ -1,0 +1,33 @@
+org.apache.xml.security.utils.Base64.getBytes : $i4 = i0 + 7 >>>>>>>> org.apache.xml.security.utils.Base64.getBytes : $i5 = $i4 >> 3
+org.apache.xml.security.utils.Base64.getBytes : $i5 = $i4 >> 3 >>>>>>>> org.apache.xml.security.utils.Base64.getBytes : i6 = $i5 << 3
+org.apache.xml.security.utils.Base64.getBytes : i6 = $i5 << 3 >>>>>>>> org.apache.xml.security.utils.Base64.getBytes : $i7 = virtualinvoke r0.<java.math.BigInteger: int bitLength()>()
+org.apache.xml.security.utils.Base64.getBytes : $i7 = virtualinvoke r0.<java.math.BigInteger: int bitLength()>() >>>>>>>> org.apache.xml.security.utils.Base64.getBytes : if i6 >= $i7
+org.apache.xml.security.utils.Base64.getBytes : if i6 >= $i7 >>>>>>>> org.apache.xml.security.utils.Base64.getBytes : $r3 = new java.lang.IllegalArgumentException
+org.apache.xml.security.utils.Base64.getBytes : if i6 >= $i7 >>>>>>>> org.apache.xml.security.utils.Base64.getBytes : r1 = virtualinvoke r0.<java.math.BigInteger: byte[] toByteArray()>()
+org.apache.xml.security.utils.Base64.getBytes : r1 = virtualinvoke r0.<java.math.BigInteger: byte[] toByteArray()>() >>>>>>>> org.apache.xml.security.utils.Base64.getBytes : $i8 = virtualinvoke r0.<java.math.BigInteger: int bitLength()>()
+org.apache.xml.security.utils.Base64.getBytes : $i8 = virtualinvoke r0.<java.math.BigInteger: int bitLength()>() >>>>>>>> org.apache.xml.security.utils.Base64.getBytes : $i9 = $i8 % 8
+org.apache.xml.security.utils.Base64.getBytes : $i9 = $i8 % 8 >>>>>>>> org.apache.xml.security.utils.Base64.getBytes : if $i9 == 0
+org.apache.xml.security.utils.Base64.getBytes : if $i9 == 0 >>>>>>>> org.apache.xml.security.utils.Base64.getBytes : $i10 = virtualinvoke r0.<java.math.BigInteger: int bitLength()>()
+org.apache.xml.security.utils.Base64.getBytes : if $i9 == 0 >>>>>>>> org.apache.xml.security.utils.Base64.getBytes : b1 = 0
+org.apache.xml.security.utils.Base64.getBytes : b1 = 0 >>>>>>>> org.apache.xml.security.utils.Base64.getBytes : i2 = lengthof r1
+org.apache.xml.security.utils.Base64.getBytes : i2 = lengthof r1 >>>>>>>> org.apache.xml.security.utils.Base64.getBytes : $i14 = virtualinvoke r0.<java.math.BigInteger: int bitLength()>()
+org.apache.xml.security.utils.Base64.getBytes : $i14 = virtualinvoke r0.<java.math.BigInteger: int bitLength()>() >>>>>>>> org.apache.xml.security.utils.Base64.getBytes : $i15 = $i14 % 8
+org.apache.xml.security.utils.Base64.getBytes : $i15 = $i14 % 8 >>>>>>>> org.apache.xml.security.utils.Base64.getBytes : if $i15 != 0
+org.apache.xml.security.utils.Base64.getBytes : if $i15 != 0 >>>>>>>> org.apache.xml.security.utils.Base64.getBytes : b1 = 1
+org.apache.xml.security.utils.Base64.getBytes : if $i15 != 0 >>>>>>>> org.apache.xml.security.utils.Base64.getBytes : $i16 = i6 / 8
+org.apache.xml.security.utils.Base64.getBytes : $i16 = i6 / 8 >>>>>>>> org.apache.xml.security.utils.Base64.getBytes : i3 = $i16 - i2
+org.apache.xml.security.utils.Base64.getBytes : i3 = $i16 - i2 >>>>>>>> org.apache.xml.security.utils.Base64.getBytes : $i17 = i6 / 8
+org.apache.xml.security.utils.Base64.getBytes : $i17 = i6 / 8 >>>>>>>> org.apache.xml.security.utils.Base64.getBytes : r2 = newarray (byte)[$i17]
+org.apache.xml.security.utils.Base64.getBytes : r2 = newarray (byte)[$i17] >>>>>>>> org.apache.xml.security.utils.Base64.getBytes : staticinvoke <java.lang.System: void arraycopy(java.lang.Object,int,java.lang.Object,int,int)>(r1, b1, r2, i3, i2)
+org.apache.xml.security.utils.Base64.getBytes : staticinvoke <java.lang.System: void arraycopy(java.lang.Object,int,java.lang.Object,int,int)>(r1, b1, r2, i3, i2) >>>>>>>> org.apache.xml.security.utils.Base64.getBytes : return r2
+org.apache.xml.security.utils.Base64.getBytes : b1 = 1 >>>>>>>> org.apache.xml.security.utils.Base64.getBytes : i2 = i2 + -1
+org.apache.xml.security.utils.Base64.getBytes : i2 = i2 + -1 >>>>>>>> org.apache.xml.security.utils.Base64.getBytes : $i16 = i6 / 8
+org.apache.xml.security.utils.Base64.getBytes : $i10 = virtualinvoke r0.<java.math.BigInteger: int bitLength()>() >>>>>>>> org.apache.xml.security.utils.Base64.getBytes : $i11 = $i10 / 8
+org.apache.xml.security.utils.Base64.getBytes : $i11 = $i10 / 8 >>>>>>>> org.apache.xml.security.utils.Base64.getBytes : $i12 = $i11 + 1
+org.apache.xml.security.utils.Base64.getBytes : $i12 = $i11 + 1 >>>>>>>> org.apache.xml.security.utils.Base64.getBytes : $i13 = i6 / 8
+org.apache.xml.security.utils.Base64.getBytes : $i13 = i6 / 8 >>>>>>>> org.apache.xml.security.utils.Base64.getBytes : if $i12 != $i13
+org.apache.xml.security.utils.Base64.getBytes : if $i12 != $i13 >>>>>>>> org.apache.xml.security.utils.Base64.getBytes : return r1
+org.apache.xml.security.utils.Base64.getBytes : if $i12 != $i13 >>>>>>>> org.apache.xml.security.utils.Base64.getBytes : b1 = 0
+org.apache.xml.security.utils.Base64.getBytes : $r3 = new java.lang.IllegalArgumentException >>>>>>>> org.apache.xml.security.utils.Base64.getBytes : $r4 = staticinvoke <org.apache.xml.security.utils.I18n: java.lang.String translate(java.lang.String)>("utils.Base64.IllegalBitlength")
+org.apache.xml.security.utils.Base64.getBytes : $r4 = staticinvoke <org.apache.xml.security.utils.I18n: java.lang.String translate(java.lang.String)>("utils.Base64.IllegalBitlength") >>>>>>>> org.apache.xml.security.utils.Base64.getBytes : specialinvoke $r3.<java.lang.IllegalArgumentException: void <init>(java.lang.String)>($r4)
+org.apache.xml.security.utils.Base64.getBytes : specialinvoke $r3.<java.lang.IllegalArgumentException: void <init>(java.lang.String)>($r4) >>>>>>>> org.apache.xml.security.utils.Base64.getBytes : throw $r3

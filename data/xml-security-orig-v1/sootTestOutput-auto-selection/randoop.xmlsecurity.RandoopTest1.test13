@@ -1,0 +1,54 @@
+org.apache.xml.security.utils.HexDump.hexStringToByteArray : $r1 = new java.io.ByteArrayOutputStream >>>>>>>> org.apache.xml.security.utils.HexDump.hexStringToByteArray : specialinvoke $r1.<java.io.ByteArrayOutputStream: void <init>()>()
+org.apache.xml.security.utils.HexDump.hexStringToByteArray : specialinvoke $r1.<java.io.ByteArrayOutputStream: void <init>()>() >>>>>>>> org.apache.xml.security.utils.HexDump.hexStringToByteArray : r2 = $r1
+org.apache.xml.security.utils.HexDump.hexStringToByteArray : r2 = $r1 >>>>>>>> org.apache.xml.security.utils.HexDump.hexStringToByteArray : b0 = 0
+org.apache.xml.security.utils.HexDump.hexStringToByteArray : b0 = 0 >>>>>>>> org.apache.xml.security.utils.HexDump.hexStringToByteArray : z0 = 1
+org.apache.xml.security.utils.HexDump.hexStringToByteArray : z0 = 1 >>>>>>>> org.apache.xml.security.utils.HexDump.hexStringToByteArray : i1 = 0
+org.apache.xml.security.utils.HexDump.hexStringToByteArray : i1 = 0 >>>>>>>> org.apache.xml.security.utils.HexDump.hexStringToByteArray : $i3 = virtualinvoke r0.<java.lang.String: int length()>()
+org.apache.xml.security.utils.HexDump.hexStringToByteArray : $i3 = virtualinvoke r0.<java.lang.String: int length()>() >>>>>>>> org.apache.xml.security.utils.HexDump.hexStringToByteArray : if i1 >= $i3
+org.apache.xml.security.utils.HexDump.hexStringToByteArray : if i1 >= $i3 >>>>>>>> org.apache.xml.security.utils.HexDump.hexStringToByteArray : c2 = virtualinvoke r0.<java.lang.String: char charAt(int)>(i1)
+org.apache.xml.security.utils.HexDump.hexStringToByteArray : c2 = virtualinvoke r0.<java.lang.String: char charAt(int)>(i1) >>>>>>>> org.apache.xml.security.utils.HexDump.hexStringToByteArray : $c4 = staticinvoke <java.lang.Character: char toUpperCase(char)>(c2)
+org.apache.xml.security.utils.HexDump.hexStringToByteArray : $c4 = staticinvoke <java.lang.Character: char toUpperCase(char)>(c2) >>>>>>>> org.apache.xml.security.utils.HexDump.hexStringToByteArray : tableswitch($c4) {     case 48:
+org.apache.xml.security.utils.HexDump.hexStringToByteArray : tableswitch($c4) {     case 48: >>>>>>>> org.apache.xml.security.utils.HexDump.hexStringToByteArray : if z0 == 0
+org.apache.xml.security.utils.HexDump.hexStringToByteArray : if z0 == 0 >>>>>>>> org.apache.xml.security.utils.HexDump.hexStringToByteArray : z0 = 0
+org.apache.xml.security.utils.HexDump.hexStringToByteArray : z0 = 0 >>>>>>>> org.apache.xml.security.utils.HexDump.hexStringToByteArray : goto [?= i1 = i1 + 1]
+org.apache.xml.security.utils.HexDump.hexStringToByteArray : goto [?= i1 = i1 + 1] >>>>>>>> org.apache.xml.security.utils.HexDump.hexStringToByteArray : i1 = i1 + 1
+org.apache.xml.security.utils.HexDump.hexStringToByteArray : i1 = i1 + 1 >>>>>>>> org.apache.xml.security.utils.HexDump.hexStringToByteArray : goto [?= $i3 = virtualinvoke r0.<java.lang.String: int length()>()]
+org.apache.xml.security.utils.HexDump.hexStringToByteArray : goto [?= $i3 = virtualinvoke r0.<java.lang.String: int length()>()] >>>>>>>> org.apache.xml.security.utils.HexDump.hexStringToByteArray : $b5 = b0 | 0
+org.apache.xml.security.utils.HexDump.hexStringToByteArray : $b5 = b0 | 0 >>>>>>>> org.apache.xml.security.utils.HexDump.hexStringToByteArray : b0 = (byte) $b5
+org.apache.xml.security.utils.HexDump.hexStringToByteArray : b0 = (byte) $b5 >>>>>>>> org.apache.xml.security.utils.HexDump.hexStringToByteArray : virtualinvoke r2.<java.io.ByteArrayOutputStream: void write(int)>(b0)
+org.apache.xml.security.utils.HexDump.hexStringToByteArray : virtualinvoke r2.<java.io.ByteArrayOutputStream: void write(int)>(b0) >>>>>>>> org.apache.xml.security.utils.HexDump.hexStringToByteArray : $b6 = b0 | 1
+org.apache.xml.security.utils.HexDump.hexStringToByteArray : $b6 = b0 | 1 >>>>>>>> org.apache.xml.security.utils.HexDump.hexStringToByteArray : b0 = (byte) $b6
+org.apache.xml.security.utils.HexDump.hexStringToByteArray : b0 = (byte) $b6 >>>>>>>> org.apache.xml.security.utils.HexDump.hexStringToByteArray : if z0 != 0
+org.apache.xml.security.utils.HexDump.hexStringToByteArray : if z0 != 0 >>>>>>>> org.apache.xml.security.utils.HexDump.hexStringToByteArray : $r4 = virtualinvoke r2.<java.io.ByteArrayOutputStream: byte[] toByteArray()>()
+org.apache.xml.security.utils.HexDump.hexStringToByteArray : $r4 = virtualinvoke r2.<java.io.ByteArrayOutputStream: byte[] toByteArray()>() >>>>>>>> org.apache.xml.security.utils.HexDump.hexStringToByteArray : return $r4
+org.apache.xml.security.utils.HexDump.hexStringToByteArray : return $r4 >>>>>>>> org.apache.xml.security.utils.HexDump.toHexString : $i0 = lengthof r0
+org.apache.xml.security.utils.HexDump.toHexString : $i0 = lengthof r0 >>>>>>>> org.apache.xml.security.utils.HexDump.toHexString : $r1 = staticinvoke <org.apache.xml.security.utils.HexDump: java.lang.String toHexString(byte[],int,int)>(r0, 0, $i0)
+org.apache.xml.security.utils.HexDump.toHexString : $r1 = staticinvoke <org.apache.xml.security.utils.HexDump: java.lang.String toHexString(byte[],int,int)>(r0, 0, $i0) >>>>>>>> org.apache.xml.security.utils.HexDump.toHexString : staticinvoke <java.lang.System: long currentTimeMillis()>()
+org.apache.xml.security.utils.HexDump.toHexString : staticinvoke <java.lang.System: long currentTimeMillis()>() >>>>>>>> org.apache.xml.security.utils.HexDump.toHexString : $z0 = <org.apache.xml.security.utils.HexDump: boolean WITH_BYTE_SEPARATOR>
+org.apache.xml.security.utils.HexDump.toHexString : $z0 = <org.apache.xml.security.utils.HexDump: boolean WITH_BYTE_SEPARATOR> >>>>>>>> org.apache.xml.security.utils.HexDump.toHexString : if $z0 == 0
+org.apache.xml.security.utils.HexDump.toHexString : if $z0 == 0 >>>>>>>> org.apache.xml.security.utils.HexDump.toHexString : $i7 = i1 * 2
+org.apache.xml.security.utils.HexDump.toHexString : $i7 = i1 * 2 >>>>>>>> org.apache.xml.security.utils.HexDump.toHexString : r1 = newarray (char)[$i7]
+org.apache.xml.security.utils.HexDump.toHexString : r1 = newarray (char)[$i7] >>>>>>>> org.apache.xml.security.utils.HexDump.toHexString : i3 = i0
+org.apache.xml.security.utils.HexDump.toHexString : i3 = i0 >>>>>>>> org.apache.xml.security.utils.HexDump.toHexString : i4 = 0
+org.apache.xml.security.utils.HexDump.toHexString : i4 = 0 >>>>>>>> org.apache.xml.security.utils.HexDump.toHexString : $i8 = i0 + i1
+org.apache.xml.security.utils.HexDump.toHexString : $i8 = i0 + i1 >>>>>>>> org.apache.xml.security.utils.HexDump.toHexString : if i3 >= $i8
+org.apache.xml.security.utils.HexDump.toHexString : if i3 >= $i8 >>>>>>>> org.apache.xml.security.utils.HexDump.toHexString : $i9 = i3
+org.apache.xml.security.utils.HexDump.toHexString : $i9 = i3 >>>>>>>> org.apache.xml.security.utils.HexDump.toHexString : i3 = i3 + 1
+org.apache.xml.security.utils.HexDump.toHexString : i3 = i3 + 1 >>>>>>>> org.apache.xml.security.utils.HexDump.toHexString : b5 = r0[$i9]
+org.apache.xml.security.utils.HexDump.toHexString : b5 = r0[$i9] >>>>>>>> org.apache.xml.security.utils.HexDump.toHexString : i10 = i4 + 1
+org.apache.xml.security.utils.HexDump.toHexString : i10 = i4 + 1 >>>>>>>> org.apache.xml.security.utils.HexDump.toHexString : $r2 = <org.apache.xml.security.utils.HexDump: char[] HEX_DIGITS>
+org.apache.xml.security.utils.HexDump.toHexString : $r2 = <org.apache.xml.security.utils.HexDump: char[] HEX_DIGITS> >>>>>>>> org.apache.xml.security.utils.HexDump.toHexString : $b11 = b5 >>> 4
+org.apache.xml.security.utils.HexDump.toHexString : $b11 = b5 >>> 4 >>>>>>>> org.apache.xml.security.utils.HexDump.toHexString : $b12 = $b11 & 15
+org.apache.xml.security.utils.HexDump.toHexString : $b12 = $b11 & 15 >>>>>>>> org.apache.xml.security.utils.HexDump.toHexString : $c13 = $r2[$b12]
+org.apache.xml.security.utils.HexDump.toHexString : $c13 = $r2[$b12] >>>>>>>> org.apache.xml.security.utils.HexDump.toHexString : r1[i4] = $c13
+org.apache.xml.security.utils.HexDump.toHexString : r1[i4] = $c13 >>>>>>>> org.apache.xml.security.utils.HexDump.toHexString : i4 = i10 + 1
+org.apache.xml.security.utils.HexDump.toHexString : i4 = i10 + 1 >>>>>>>> org.apache.xml.security.utils.HexDump.toHexString : $r3 = <org.apache.xml.security.utils.HexDump: char[] HEX_DIGITS>
+org.apache.xml.security.utils.HexDump.toHexString : $r3 = <org.apache.xml.security.utils.HexDump: char[] HEX_DIGITS> >>>>>>>> org.apache.xml.security.utils.HexDump.toHexString : $b14 = b5 & 15
+org.apache.xml.security.utils.HexDump.toHexString : $b14 = b5 & 15 >>>>>>>> org.apache.xml.security.utils.HexDump.toHexString : $c15 = $r3[$b14]
+org.apache.xml.security.utils.HexDump.toHexString : $c15 = $r3[$b14] >>>>>>>> org.apache.xml.security.utils.HexDump.toHexString : r1[i10] = $c15
+org.apache.xml.security.utils.HexDump.toHexString : r1[i10] = $c15 >>>>>>>> org.apache.xml.security.utils.HexDump.toHexString : $z1 = <org.apache.xml.security.utils.HexDump: boolean WITH_BYTE_SEPARATOR>
+org.apache.xml.security.utils.HexDump.toHexString : $z1 = <org.apache.xml.security.utils.HexDump: boolean WITH_BYTE_SEPARATOR> >>>>>>>> org.apache.xml.security.utils.HexDump.toHexString : if $z1 == 0
+org.apache.xml.security.utils.HexDump.toHexString : if $z1 == 0 >>>>>>>> org.apache.xml.security.utils.HexDump.toHexString : $r4 = new java.lang.String
+org.apache.xml.security.utils.HexDump.toHexString : $r4 = new java.lang.String >>>>>>>> org.apache.xml.security.utils.HexDump.toHexString : specialinvoke $r4.<java.lang.String: void <init>(char[])>(r1)
+org.apache.xml.security.utils.HexDump.toHexString : specialinvoke $r4.<java.lang.String: void <init>(char[])>(r1) >>>>>>>> org.apache.xml.security.utils.HexDump.toHexString : return $r4
+org.apache.xml.security.utils.HexDump.toHexString : return $r4 >>>>>>>> org.apache.xml.security.utils.HexDump.toHexString : return $r1

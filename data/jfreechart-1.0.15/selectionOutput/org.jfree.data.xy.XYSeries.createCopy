@@ -1,0 +1,26 @@
+org.jfree.data.xy.XYSeries.createCopy : $r6 = specialinvoke r0.<org.jfree.data.general.Series: java.lang.Object clone()>() >>>>>>>> org.jfree.data.xy.XYSeries.createCopy : r1 = (org.jfree.data.xy.XYSeries) $r6
+org.jfree.data.xy.XYSeries.createCopy : r1 = (org.jfree.data.xy.XYSeries) $r6 >>>>>>>> org.jfree.data.xy.XYSeries.createCopy : $r2 = new java.util.ArrayList
+org.jfree.data.xy.XYSeries.createCopy : $r2 = new java.util.ArrayList >>>>>>>> org.jfree.data.xy.XYSeries.createCopy : specialinvoke $r2.<java.util.ArrayList: void <init>()>()
+org.jfree.data.xy.XYSeries.createCopy : specialinvoke $r2.<java.util.ArrayList: void <init>()>() >>>>>>>> org.jfree.data.xy.XYSeries.createCopy : r1.<org.jfree.data.xy.XYSeries: java.util.List data> = $r2
+org.jfree.data.xy.XYSeries.createCopy : r1.<org.jfree.data.xy.XYSeries: java.util.List data> = $r2 >>>>>>>> org.jfree.data.xy.XYSeries.createCopy : $r7 = r0.<org.jfree.data.xy.XYSeries: java.util.List data>
+org.jfree.data.xy.XYSeries.createCopy : $r7 = r0.<org.jfree.data.xy.XYSeries: java.util.List data> >>>>>>>> org.jfree.data.xy.XYSeries.createCopy : $i3 = interfaceinvoke $r7.<java.util.List: int size()>()
+org.jfree.data.xy.XYSeries.createCopy : $i3 = interfaceinvoke $r7.<java.util.List: int size()>() >>>>>>>> org.jfree.data.xy.XYSeries.createCopy : if $i3 <= 0
+org.jfree.data.xy.XYSeries.createCopy : if $i3 <= 0 >>>>>>>> org.jfree.data.xy.XYSeries.createCopy : i2 = i0
+org.jfree.data.xy.XYSeries.createCopy : if $i3 <= 0 >>>>>>>> org.jfree.data.xy.XYSeries.createCopy : return r1
+org.jfree.data.xy.XYSeries.createCopy : i2 = i0 >>>>>>>> org.jfree.data.xy.XYSeries.createCopy : if i2 > i1
+org.jfree.data.xy.XYSeries.createCopy : if i2 > i1 >>>>>>>> org.jfree.data.xy.XYSeries.createCopy : $r8 = r0.<org.jfree.data.xy.XYSeries: java.util.List data>
+org.jfree.data.xy.XYSeries.createCopy : if i2 > i1 >>>>>>>> org.jfree.data.xy.XYSeries.createCopy : return r1
+org.jfree.data.xy.XYSeries.createCopy : $r8 = r0.<org.jfree.data.xy.XYSeries: java.util.List data> >>>>>>>> org.jfree.data.xy.XYSeries.createCopy : $r9 = interfaceinvoke $r8.<java.util.List: java.lang.Object get(int)>(i2)
+org.jfree.data.xy.XYSeries.createCopy : $r9 = interfaceinvoke $r8.<java.util.List: java.lang.Object get(int)>(i2) >>>>>>>> org.jfree.data.xy.XYSeries.createCopy : r3 = (org.jfree.data.xy.XYDataItem) $r9
+org.jfree.data.xy.XYSeries.createCopy : r3 = (org.jfree.data.xy.XYDataItem) $r9 >>>>>>>> org.jfree.data.xy.XYSeries.createCopy : $r10 = virtualinvoke r3.<org.jfree.data.xy.XYDataItem: java.lang.Object clone()>()
+org.jfree.data.xy.XYSeries.createCopy : $r10 = virtualinvoke r3.<org.jfree.data.xy.XYDataItem: java.lang.Object clone()>() >>>>>>>> org.jfree.data.xy.XYSeries.createCopy : r4 = (org.jfree.data.xy.XYDataItem) $r10
+org.jfree.data.xy.XYSeries.createCopy : r4 = (org.jfree.data.xy.XYDataItem) $r10 >>>>>>>> org.jfree.data.xy.XYSeries.createCopy : virtualinvoke r1.<org.jfree.data.xy.XYSeries: void add(org.jfree.data.xy.XYDataItem)>(r4)
+org.jfree.data.xy.XYSeries.createCopy : r4 = (org.jfree.data.xy.XYDataItem) $r10 >>>>>>>> org.jfree.data.xy.XYSeries.createCopy : $r11 := @caughtexception
+org.jfree.data.xy.XYSeries.createCopy : r5 = $r11 >>>>>>>> org.jfree.data.xy.XYSeries.createCopy : $r12 = <java.lang.System: java.io.PrintStream err>
+org.jfree.data.xy.XYSeries.createCopy : $r12 = <java.lang.System: java.io.PrintStream err> >>>>>>>> org.jfree.data.xy.XYSeries.createCopy : virtualinvoke $r12.<java.io.PrintStream: void println(java.lang.String)>("Unable to add cloned data item.")
+org.jfree.data.xy.XYSeries.createCopy : virtualinvoke $r12.<java.io.PrintStream: void println(java.lang.String)>("Unable to add cloned data item.") >>>>>>>> org.jfree.data.xy.XYSeries.createCopy : i2 = i2 + 1
+org.jfree.data.xy.XYSeries.createCopy : i2 = i2 + 1 >>>>>>>> org.jfree.data.xy.XYSeries.createCopy : goto [?= (branch)]
+org.jfree.data.xy.XYSeries.createCopy : goto [?= (branch)] >>>>>>>> org.jfree.data.xy.XYSeries.createCopy : if i2 > i1
+org.jfree.data.xy.XYSeries.createCopy : virtualinvoke r1.<org.jfree.data.xy.XYSeries: void add(org.jfree.data.xy.XYDataItem)>(r4) >>>>>>>> org.jfree.data.xy.XYSeries.createCopy : goto [?= i2 = i2 + 1]
+org.jfree.data.xy.XYSeries.createCopy : virtualinvoke r1.<org.jfree.data.xy.XYSeries: void add(org.jfree.data.xy.XYDataItem)>(r4) >>>>>>>> org.jfree.data.xy.XYSeries.createCopy : $r11 := @caughtexception
+org.jfree.data.xy.XYSeries.createCopy : goto [?= i2 = i2 + 1] >>>>>>>> org.jfree.data.xy.XYSeries.createCopy : i2 = i2 + 1

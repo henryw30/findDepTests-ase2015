@@ -1,0 +1,11 @@
+org.apache.xml.security.exceptions.XMLSecurityException.toString : return r8
+org.apache.xml.security.exceptions.XMLSecurityException.toString : $r9 = r0.<org.apache.xml.security.exceptions.XMLSecurityException: java.lang.Exception originalException>
+org.apache.xml.security.exceptions.XMLSecurityException.toString : if r2 == null goto r8 = r1
+org.apache.xml.security.exceptions.XMLSecurityException.toString : r2 = specialinvoke r0.<java.lang.Exception: java.lang.String getLocalizedMessage()>()
+org.apache.xml.security.exceptions.XMLSecurityException.toString : $r4 = new java.lang.StringBuilder
+org.apache.xml.security.exceptions.XMLSecurityException.toString : $r3 = virtualinvoke r0.<java.lang.Object: java.lang.Class getClass()>()
+org.apache.xml.security.utils.I18n.getExceptionMessage : $z0 = staticinvoke <org.apache.xml.security.Init: boolean isInitialized()>()
+org.apache.xml.security.utils.I18n.getExceptionMessage : $r1 = <org.apache.xml.security.utils.I18n: java.util.ResourceBundle resourceBundle>
+org.apache.xml.security.utils.I18n.getExceptionMessage : r5 = $r4
+org.apache.xml.security.utils.I18n.getExceptionMessage : $r6 = new java.lang.StringBuilder
+org.apache.xml.security.Init.isInitialized : $z0 = <org.apache.xml.security.Init: boolean _alreadyInitialized>

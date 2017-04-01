@@ -1,0 +1,8 @@
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null goto return
+org.jfree.chart.axis.TickUnits.getCeilingTickUnit : $r2 = r0.<org.jfree.chart.axis.TickUnits: java.util.List tickUnits>
+org.jfree.chart.axis.TickUnits.getCeilingTickUnit : if i0 < 0 goto $i1 = i0 + 1
+org.jfree.chart.axis.TickUnits.getCeilingTickUnit : $r6 = r0.<org.jfree.chart.axis.TickUnits: java.util.List tickUnits>
+org.jfree.chart.axis.TickUnits.getCeilingTickUnit : $r1 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.TickUnits.getCeilingTickUnit : $r2 = staticinvoke <java.text.NumberFormat: java.text.NumberFormat getInstance()>()
+org.jfree.chart.axis.TickUnits.getCeilingTickUnit : $i3 = interfaceinvoke $r7.<java.util.List: int size()>()
+org.jfree.chart.axis.TickUnits.getCeilingTickUnit : $i1 = i0 + 1

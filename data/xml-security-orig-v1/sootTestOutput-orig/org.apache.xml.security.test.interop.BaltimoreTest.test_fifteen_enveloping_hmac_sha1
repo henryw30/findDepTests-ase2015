@@ -1,0 +1,62 @@
+org.apache.xml.security.Init.init : $z0 = <org.apache.xml.security.Init: boolean _alreadyInitialized>
+org.apache.xml.security.utils.I18n.getExceptionMessage : $z0 = staticinvoke <org.apache.xml.security.Init: boolean isInitialized()>()
+org.apache.xml.security.utils.I18n.getExceptionMessage : $r1 = <org.apache.xml.security.utils.I18n: java.util.ResourceBundle resourceBundle>
+org.apache.xml.security.utils.I18n.getExceptionMessage : r5 = $r4
+org.apache.xml.security.utils.I18n.getExceptionMessage : $r6 = new java.lang.StringBuilder
+org.apache.xml.security.c14n.Canonicalizer.getInstance : $r1 = new org.apache.xml.security.c14n.Canonicalizer
+org.apache.xml.security.utils.SignatureElementProxy.getBaseNamespace : return "http://www.w3.org/2000/09/xmldsig#"
+org.apache.xml.security.signature.SignedInfo.getBaseLocalName : return "SignedInfo"
+org.apache.xml.security.utils.ElementProxy.getChildElementLocalName : $s4 = interfaceinvoke r4.<org.w3c.dom.Node: short getNodeType()>()
+org.apache.xml.security.utils.ElementProxy.getChildElementLocalName : r4 = interfaceinvoke r3.<org.w3c.dom.NodeList: org.w3c.dom.Node item(int)>(i3)
+org.apache.xml.security.utils.ElementProxy.getChildElementLocalName : i2 = -1
+org.apache.xml.security.utils.ElementProxy.getChildElementLocalName : i3 = 0
+org.apache.xml.security.utils.ElementProxy.getChildElementLocalName : if i2 != i0 goto i3 = i3 + 1
+org.apache.xml.security.utils.ElementProxy.getChildElementLocalName : i1 = interfaceinvoke r3.<org.w3c.dom.NodeList: int getLength()>()
+org.apache.xml.security.utils.ElementProxy.getChildElementLocalName : r6 = interfaceinvoke r4.<org.w3c.dom.Node: java.lang.String getLocalName()>()
+org.apache.xml.security.utils.ElementProxy.getChildElementLocalName : $z1 = virtualinvoke r2.<java.lang.String: boolean equals(java.lang.Object)>(r6)
+org.apache.xml.security.utils.ElementProxy.getChildElementLocalName : $r7 = r0.<org.apache.xml.security.utils.ElementProxy: org.w3c.dom.Element _constructionElement>
+org.apache.xml.security.utils.ElementProxy.getChildElementLocalName : $r8 = (org.w3c.dom.Element) r4
+org.apache.xml.security.utils.ElementProxy.getChildElementLocalName : i2 = i2 + 1
+org.apache.xml.security.utils.ElementProxy.getChildElementLocalName : if r1 == null goto (branch)
+org.apache.xml.security.utils.ElementProxy.getChildElementLocalName : r5 = interfaceinvoke r4.<org.w3c.dom.Node: java.lang.String getNamespaceURI()>()
+org.apache.xml.security.utils.XMLUtils.guaranteeThatElementInSignatureSpace : if r1 == null goto $r5 = newarray (java.lang.Object)[2]
+org.apache.xml.security.utils.XMLUtils.guaranteeThatElementInSignatureSpace : if r0 != null goto (branch)
+org.apache.xml.security.signature.SignedInfo.getCanonicalizationMethodURI : $r7 = (org.w3c.dom.Element) r2
+org.apache.xml.security.signature.SignedInfo.getCanonicalizationMethodURI : if z0 == 0 goto i0 = i0 + 1
+org.apache.xml.security.signature.SignedInfo.getCanonicalizationMethodURI : z0 = 1
+org.apache.xml.security.signature.SignedInfo.getCanonicalizationMethodURI : $r5 = (org.w3c.dom.Element) r2
+org.apache.xml.security.signature.SignedInfo.getCanonicalizationMethodURI : $s2 = interfaceinvoke r2.<org.w3c.dom.Node: short getNodeType()>()
+org.apache.xml.security.signature.SignedInfo.getCanonicalizationMethodURI : r2 = interfaceinvoke r1.<org.w3c.dom.NodeList: org.w3c.dom.Node item(int)>(i0)
+org.apache.xml.security.signature.SignedInfo.getCanonicalizationMethodURI : i0 = 0
+org.apache.xml.security.signature.SignedInfo.getCanonicalizationMethodURI : $r4 = r0.<org.apache.xml.security.signature.SignedInfo: org.w3c.dom.Element _constructionElement>
+org.apache.xml.security.signature.SignedInfo.getCanonicalizationMethodURI : goto [?= (branch)]
+org.apache.xml.security.utils.XMLUtils.elementIsInSignatureSpace : $r3 = interfaceinvoke r0.<org.w3c.dom.Element: java.lang.String getNamespaceURI()>()
+org.apache.xml.security.utils.XMLUtils.elementIsInSignatureSpace : if r0 != null goto $r2 = interfaceinvoke r0.<org.w3c.dom.Element: java.lang.String getNamespaceURI()>()
+org.apache.xml.security.utils.XMLUtils.elementIsInSignatureSpace : $r4 = interfaceinvoke r0.<org.w3c.dom.Element: java.lang.String getLocalName()>()
+org.apache.xml.security.utils.XMLUtils.elementIsInSignatureSpace : return 1
+org.apache.xml.security.utils.XMLUtils.elementIsInSignatureSpace : $r2 = interfaceinvoke r0.<org.w3c.dom.Element: java.lang.String getNamespaceURI()>()
+org.apache.xml.security.utils.XMLUtils.createDSctx : return r3
+org.apache.xml.security.utils.XMLUtils.createDSctx : $r4 = new java.lang.StringBuilder
+org.apache.xml.security.utils.XMLUtils.createDSctx : r3 = interfaceinvoke r0.<org.w3c.dom.Document: org.w3c.dom.Element createElementNS(java.lang.String,java.lang.String)>(null, "namespaceContext")
+org.apache.xml.security.utils.ElementProxy.length : r6 = interfaceinvoke r4.<org.w3c.dom.Node: java.lang.String getLocalName()>()
+org.apache.xml.security.utils.ElementProxy.length : i1 = 0
+org.apache.xml.security.utils.ElementProxy.length : $z1 = virtualinvoke r2.<java.lang.String: boolean equals(java.lang.Object)>(r6)
+org.apache.xml.security.utils.ElementProxy.length : i1 = i1 + 1
+org.apache.xml.security.utils.ElementProxy.length : $r7 = r0.<org.apache.xml.security.utils.ElementProxy: org.w3c.dom.Element _constructionElement>
+org.apache.xml.security.utils.ElementProxy.length : r4 = interfaceinvoke r3.<org.w3c.dom.NodeList: org.w3c.dom.Node item(int)>(i2)
+org.apache.xml.security.utils.ElementProxy.length : i2 = 0
+org.apache.xml.security.utils.ElementProxy.length : i0 = interfaceinvoke r3.<org.w3c.dom.NodeList: int getLength()>()
+org.apache.xml.security.utils.ElementProxy.length : if r1 == null goto (branch)
+org.apache.xml.security.utils.ElementProxy.length : $s3 = interfaceinvoke r4.<org.w3c.dom.Node: short getNodeType()>()
+org.apache.xml.security.utils.ElementProxy.length : return i1
+org.apache.xml.security.utils.ElementProxy.length : r5 = interfaceinvoke r4.<org.w3c.dom.Node: java.lang.String getNamespaceURI()>()
+org.apache.xml.security.c14n.Canonicalizer.getImplementingClass : $r1 = <org.apache.xml.security.c14n.Canonicalizer: java.util.Map _canonicalizerHash>
+org.apache.xml.security.test.utils.resolver.OfflineResolver.register : $r5 = <org.apache.xml.security.test.utils.resolver.OfflineResolver: java.util.Map _mimeMap>
+org.apache.xml.security.test.utils.resolver.OfflineResolver.register : $r3 = <org.apache.xml.security.test.utils.resolver.OfflineResolver: java.util.Map _uriMap>
+org.apache.xml.security.Init.isInitialized : $z0 = <org.apache.xml.security.Init: boolean _alreadyInitialized>
+org.apache.xml.security.signature.XMLSignature.getBaseLocalName : return "Signature"
+org.apache.xml.security.utils.ElementProxy.guaranteeThatElementInCorrectSpace : $r5 = interfaceinvoke $r4.<org.w3c.dom.Element: java.lang.String getNamespaceURI()>()
+org.apache.xml.security.utils.ElementProxy.guaranteeThatElementInCorrectSpace : if r1 == null goto $r11 = newarray (java.lang.Object)[2]
+org.apache.xml.security.utils.ElementProxy.guaranteeThatElementInCorrectSpace : $r7 = interfaceinvoke $r6.<org.w3c.dom.Element: java.lang.String getLocalName()>()
+org.apache.xml.security.utils.ElementProxy.guaranteeThatElementInCorrectSpace : $r10 = virtualinvoke r0.<org.apache.xml.security.utils.ElementProxy: java.lang.String getBaseNamespace()>()
+org.apache.xml.security.utils.ElementProxy.guaranteeThatElementInCorrectSpace : $r9 = interfaceinvoke $r8.<org.w3c.dom.Element: java.lang.String getNamespaceURI()>()

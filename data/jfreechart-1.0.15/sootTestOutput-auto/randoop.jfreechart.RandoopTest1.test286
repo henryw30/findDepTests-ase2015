@@ -1,0 +1,22 @@
+org.jfree.chart.renderer.category.BarRenderer.setIncludeBaseInRange : virtualinvoke r0.<org.jfree.chart.renderer.category.BarRenderer: void fireChangeEvent()>()
+org.jfree.chart.renderer.category.BarRenderer.setIncludeBaseInRange : $z1 = r0.<org.jfree.chart.renderer.category.BarRenderer: boolean includeBaseInRange>
+org.jfree.chart.renderer.category.BarRenderer.setIncludeBaseInRange : r0.<org.jfree.chart.renderer.category.BarRenderer: boolean includeBaseInRange> = z0
+org.jfree.chart.renderer.category.LineAndShapeRenderer.setUseOutlinePaint : r0.<org.jfree.chart.renderer.category.LineAndShapeRenderer: boolean useOutlinePaint> = z0
+org.jfree.chart.renderer.category.LineAndShapeRenderer.setUseOutlinePaint : virtualinvoke r0.<org.jfree.chart.renderer.category.LineAndShapeRenderer: void fireChangeEvent()>()
+org.jfree.chart.plot.Crosshair.equals : if r1 != r0 goto $z0 = r1 instanceof org.jfree.chart.plot.Crosshair
+org.jfree.chart.plot.Crosshair.equals : return 0
+org.jfree.chart.plot.Crosshair.equals : $z0 = r1 instanceof org.jfree.chart.plot.Crosshair
+org.jfree.chart.renderer.AbstractRenderer.fireChangeEvent : $r1 = new org.jfree.chart.event.RendererChangeEvent
+org.jfree.chart.renderer.AbstractRenderer.setBaseLegendShape : virtualinvoke r0.<org.jfree.chart.renderer.AbstractRenderer: void fireChangeEvent()>()
+org.jfree.chart.renderer.AbstractRenderer.setBaseLegendShape : r0.<org.jfree.chart.renderer.AbstractRenderer: java.awt.Shape baseLegendShape> = r1
+org.jfree.chart.renderer.category.LineAndShapeRenderer.getSeriesLinesVisible : $r1 = r0.<org.jfree.chart.renderer.category.LineAndShapeRenderer: org.jfree.util.BooleanList seriesLinesVisible>
+org.jfree.chart.renderer.AbstractRenderer.notifyListeners : $r3 = r0.<org.jfree.chart.renderer.AbstractRenderer: javax.swing.event.EventListenerList listenerList>
+org.jfree.chart.renderer.AbstractRenderer.notifyListeners : $i1 = lengthof r2
+org.jfree.chart.renderer.category.BarRenderer.getDefaultShadowsVisible : $z0 = <org.jfree.chart.renderer.category.BarRenderer: boolean defaultShadowsVisible>
+org.jfree.chart.renderer.category.GanttRenderer.getCompletePaint : $r1 = r0.<org.jfree.chart.renderer.category.GanttRenderer: java.awt.Paint completePaint>
+org.jfree.chart.plot.Crosshair.setLabelOutlinePaint : r2 = r0.<org.jfree.chart.plot.Crosshair: java.awt.Paint labelOutlinePaint>
+org.jfree.chart.plot.Crosshair.setLabelOutlinePaint : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "paint")
+org.jfree.chart.plot.Crosshair.setLabelOutlinePaint : r0.<org.jfree.chart.plot.Crosshair: java.awt.Paint labelOutlinePaint> = r1
+org.jfree.chart.plot.Crosshair.setLabelOutlinePaint : $r3 = r0.<org.jfree.chart.plot.Crosshair: java.beans.PropertyChangeSupport pcs>
+org.jfree.chart.renderer.category.BarRenderer.getDefaultBarPainter : $r0 = <org.jfree.chart.renderer.category.BarRenderer: org.jfree.chart.renderer.category.BarPainter defaultBarPainter>
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null goto return

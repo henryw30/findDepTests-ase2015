@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<test-data>
+    <test-code>
+        <description><![CDATA[
+1
+     ]]></description>
+        <expected-problems>1</expected-problems>
+        <code><![CDATA[
+public class BadTest {
+
+	@Test
+	public void testSomething() throws Exception {
+		
+		Person a= new Person(1);
+		
+		assertNotNull(a);
+	}
+
+}
+     ]]></code>
+    </test-code>
+    
+    <test-code>
+        <description><![CDATA[
+2
+     ]]></description>
+        <expected-problems>0</expected-problems>
+        <code><![CDATA[
+public class BadTest {
+
+	@Test
+	public void testSomething() throws Exception {
+		
+		Integer a= new Integer(1);
+		
+		assertNotNull(a);
+	}
+
+}
+     ]]></code>
+    </test-code>
+
+    <test-code>
+        <description><![CDATA[
+No error.
+     ]]></description>
+        <expected-problems>0</expected-problems>
+        <code><![CDATA[
+public class BadTest {
+
+	@Test
+	public void testSomething() throws Exception {
+		
+		Person a= onePerson();
+		
+		assertNotNull(a);
+	}
+	
+	public Person onePerson(){
+		return new Person("aPersonName");
+	}
+
+}
+     ]]></code>
+    </test-code>
+
+</test-data>

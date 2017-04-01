@@ -1,0 +1,25 @@
+org.apache.xml.security.utils.HelperNodeList.getLength : $r1 = r0.<org.apache.xml.security.utils.HelperNodeList: java.util.ArrayList nodes>
+org.apache.xml.security.utils.HelperNodeList.getOwnerDocument : return null
+org.apache.xml.security.utils.HelperNodeList.getOwnerDocument : $i0 = virtualinvoke r0.<org.apache.xml.security.utils.HelperNodeList: int getLength()>()
+org.apache.xml.security.c14n.CanonicalizerSpi.engineCanonicalizeXPathNodeSet : $r2 = staticinvoke <org.apache.xml.security.utils.XMLUtils: java.util.Set convertNodelistToSet(org.w3c.dom.NodeList)>(r1)
+org.apache.xml.security.c14n.CanonicalizerSpi.engineCanonicalizeXPathNodeSet : $r3 = staticinvoke <org.apache.xml.security.utils.XMLUtils: java.util.Set convertNodelistToSet(org.w3c.dom.NodeList)>(r1)
+org.apache.xml.security.c14n.implementations.Canonicalizer20010315ExclWithComments.engineGetIncludeComments : return 1
+org.apache.xml.security.utils.XMLUtils.convertNodelistToSet : i0 = interfaceinvoke r0.<org.w3c.dom.NodeList: int getLength()>()
+org.apache.xml.security.utils.XMLUtils.convertNodelistToSet : i1 = 0
+org.apache.xml.security.utils.XMLUtils.convertNodelistToSet : if r0 != null goto i0 = interfaceinvoke r0.<org.w3c.dom.NodeList: int getLength()>()
+org.apache.xml.security.utils.XMLUtils.convertNodelistToSet : $r3 = new java.util.HashSet
+org.apache.xml.security.utils.XMLUtils.convertNodelistToSet : return r1
+org.apache.xml.security.c14n.implementations.Canonicalizer20010315Excl.engineCanonicalizeXPathNodeSet : $r2 = virtualinvoke r0.<org.apache.xml.security.c14n.implementations.Canonicalizer20010315Excl: byte[] engineCanonicalizeXPathNodeSet(java.util.Set,java.lang.String)>(r1, "")
+org.apache.xml.security.c14n.implementations.Canonicalizer20010315Excl.engineCanonicalizeXPathNodeSet : $r6 = r0.<org.apache.xml.security.c14n.implementations.Canonicalizer20010315Excl: java.util.Set _xpathNodeSet>
+org.apache.xml.security.c14n.implementations.Canonicalizer20010315Excl.engineCanonicalizeXPathNodeSet : r0.<org.apache.xml.security.c14n.implementations.Canonicalizer20010315Excl: java.util.Set _xpathNodeSet> = r1
+org.apache.xml.security.c14n.implementations.Canonicalizer20010315Excl.engineCanonicalizeXPathNodeSet : $r8 = r0.<org.apache.xml.security.c14n.implementations.Canonicalizer20010315Excl: java.util.Set _xpathNodeSet>
+org.apache.xml.security.c14n.implementations.Canonicalizer20010315Excl.engineCanonicalizeXPathNodeSet : $r7 = newarray (byte)[0]
+org.apache.xml.security.transforms.params.InclusiveNamespaces.prefixStr2Set : $z1 = virtualinvoke r4.<java.lang.String: boolean equals(java.lang.Object)>("#default")
+org.apache.xml.security.transforms.params.InclusiveNamespaces.prefixStr2Set : $r5 = new java.util.StringTokenizer
+org.apache.xml.security.transforms.params.InclusiveNamespaces.prefixStr2Set : return r2
+org.apache.xml.security.transforms.params.InclusiveNamespaces.prefixStr2Set : $r1 = new java.util.HashSet
+org.apache.xml.security.transforms.params.InclusiveNamespaces.prefixStr2Set : if r0 == null goto return r2
+org.apache.xml.security.transforms.params.InclusiveNamespaces.prefixStr2Set : goto [?= staticinvoke <edu.washington.cs.dt.impact.util.Tracer: void trace(java.lang.String,java.lang.String)>("$z0 = virtualinvoke r3.<java.util.StringTokenizer: boolean hasMoreTokens()>()", "org.apache.xml.security.transforms.params.InclusiveNamespaces.prefixStr2Set")]
+org.apache.xml.security.transforms.params.InclusiveNamespaces.prefixStr2Set : r4 = virtualinvoke r3.<java.util.StringTokenizer: java.lang.String nextToken()>()
+org.apache.xml.security.transforms.params.InclusiveNamespaces.prefixStr2Set : $z0 = virtualinvoke r3.<java.util.StringTokenizer: boolean hasMoreTokens()>()
+org.apache.xml.security.transforms.params.InclusiveNamespaces.prefixStr2Set : $r6 = new java.lang.StringBuilder

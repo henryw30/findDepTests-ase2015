@@ -1,0 +1,104 @@
+org.jfree.data.general.AbstractDataset.addChangeListener : $r2 = r0.<org.jfree.data.general.AbstractDataset: javax.swing.event.EventListenerList listenerList>
+org.jfree.chart.renderer.xy.XYBarRenderer.setLegendBar : virtualinvoke r0.<org.jfree.chart.renderer.xy.XYBarRenderer: void fireChangeEvent()>()
+org.jfree.chart.renderer.xy.XYBarRenderer.setLegendBar : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "bar")
+org.jfree.chart.renderer.xy.XYBarRenderer.setLegendBar : r0.<org.jfree.chart.renderer.xy.XYBarRenderer: java.awt.Shape legendBar> = r1
+org.jfree.data.xy.IntervalXYDelegate.setIntervalPositionFactor : $b0 = d0 cmpg 0.0
+org.jfree.data.xy.IntervalXYDelegate.setIntervalPositionFactor : r0.<org.jfree.data.xy.IntervalXYDelegate: double intervalPositionFactor> = d0
+org.jfree.chart.renderer.AbstractRenderer.getBaseLegendShape : $r1 = r0.<org.jfree.chart.renderer.AbstractRenderer: java.awt.Shape baseLegendShape>
+org.jfree.data.xy.CategoryTableXYDataset.getSeriesCount : $r1 = r0.<org.jfree.data.xy.CategoryTableXYDataset: org.jfree.data.DefaultKeyedValues2D values>
+org.jfree.data.general.DatasetUtilities.findStackedRangeBounds : d2 = d0
+org.jfree.data.general.DatasetUtilities.findStackedRangeBounds : $b7 = d1 cmpg d2
+org.jfree.data.general.DatasetUtilities.findStackedRangeBounds : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r0, "dataset")
+org.jfree.data.general.DatasetUtilities.findStackedRangeBounds : i0 = 0
+org.jfree.data.general.DatasetUtilities.findStackedRangeBounds : d1 = d0
+org.jfree.data.general.DatasetUtilities.findStackedRangeBounds : $r1 = new org.jfree.data.Range
+org.jfree.chart.renderer.xy.XYBarRenderer.setDrawBarOutline : virtualinvoke r0.<org.jfree.chart.renderer.xy.XYBarRenderer: void fireChangeEvent()>()
+org.jfree.chart.renderer.xy.XYBarRenderer.setDrawBarOutline : r0.<org.jfree.chart.renderer.xy.XYBarRenderer: boolean drawBarOutline> = z0
+org.jfree.data.xy.IntervalXYDelegate.isAutoWidth : $z0 = r0.<org.jfree.data.xy.IntervalXYDelegate: boolean autoWidth>
+org.jfree.data.xy.IntervalXYDelegate.recalculateInterval : i1 = 0
+org.jfree.data.xy.IntervalXYDelegate.recalculateInterval : d0 = #Infinity
+org.jfree.data.xy.IntervalXYDelegate.recalculateInterval : $r1 = r0.<org.jfree.data.xy.IntervalXYDelegate: org.jfree.data.xy.XYDataset dataset>
+org.jfree.data.xy.IntervalXYDelegate.recalculateInterval : return d0
+org.jfree.data.xy.IntervalXYDelegate.getIntervalWidth : $z0 = virtualinvoke r0.<org.jfree.data.xy.IntervalXYDelegate: boolean isAutoWidth()>()
+org.jfree.data.xy.IntervalXYDelegate.getIntervalWidth : $d2 = r0.<org.jfree.data.xy.IntervalXYDelegate: double fixedIntervalWidth>
+org.jfree.data.DefaultKeyedValues2D.clone : $r7 = r0.<org.jfree.data.DefaultKeyedValues2D: java.util.List rows>
+org.jfree.data.DefaultKeyedValues2D.clone : $r5 = new java.util.ArrayList
+org.jfree.data.DefaultKeyedValues2D.clone : return r1
+org.jfree.data.DefaultKeyedValues2D.clone : $r2 = new java.util.ArrayList
+org.jfree.data.DefaultKeyedValues2D.clone : $r3 = specialinvoke r0.<java.lang.Object: java.lang.Object clone()>()
+org.jfree.data.DefaultKeyedValues2D.getRowCount : $r1 = r0.<org.jfree.data.DefaultKeyedValues2D: java.util.List rowKeys>
+org.jfree.chart.renderer.xy.AbstractXYItemRenderer.findDomainBounds : $z1 = virtualinvoke r0.<org.jfree.chart.renderer.xy.AbstractXYItemRenderer: boolean getDataBoundsIncludesVisibleSeriesOnly()>()
+org.jfree.chart.renderer.xy.AbstractXYItemRenderer.findDomainBounds : i1 = 0
+org.jfree.chart.renderer.xy.AbstractXYItemRenderer.findDomainBounds : if r1 != null goto $z1 = virtualinvoke r0.<org.jfree.chart.renderer.xy.AbstractXYItemRenderer: boolean getDataBoundsIncludesVisibleSeriesOnly()>()
+org.jfree.chart.renderer.xy.AbstractXYItemRenderer.findDomainBounds : $r5 = staticinvoke <org.jfree.data.general.DatasetUtilities: org.jfree.data.Range findDomainBounds(org.jfree.data.xy.XYDataset,java.util.List,boolean)>(r1, r2, z0)
+org.jfree.chart.renderer.xy.AbstractXYItemRenderer.findDomainBounds : $r3 = new java.util.ArrayList
+org.jfree.chart.renderer.xy.AbstractXYItemRenderer.findDomainBounds : i0 = interfaceinvoke r1.<org.jfree.data.xy.XYDataset: int getSeriesCount()>()
+org.jfree.chart.renderer.AbstractRenderer.fireChangeEvent : $r1 = new org.jfree.chart.event.RendererChangeEvent
+org.jfree.chart.renderer.AbstractRenderer.setShape : virtualinvoke r0.<org.jfree.chart.renderer.AbstractRenderer: void fireChangeEvent()>()
+org.jfree.chart.renderer.AbstractRenderer.setShape : if z0 == 0 goto return
+org.jfree.chart.renderer.AbstractRenderer.setShape : r0.<org.jfree.chart.renderer.AbstractRenderer: java.awt.Shape shape> = r1
+org.jfree.chart.renderer.AbstractRenderer.setShape : virtualinvoke r0.<org.jfree.chart.renderer.AbstractRenderer: void setShape(java.awt.Shape,boolean)>(r1, 1)
+org.jfree.chart.renderer.AbstractRenderer.setBaseLegendShape : virtualinvoke r0.<org.jfree.chart.renderer.AbstractRenderer: void fireChangeEvent()>()
+org.jfree.chart.renderer.AbstractRenderer.setBaseLegendShape : r0.<org.jfree.chart.renderer.AbstractRenderer: java.awt.Shape baseLegendShape> = r1
+org.jfree.data.xy.IntervalXYDelegate.getIntervalPositionFactor : $d0 = r0.<org.jfree.data.xy.IntervalXYDelegate: double intervalPositionFactor>
+org.jfree.data.xy.CategoryTableXYDataset.isAutoWidth : $r1 = r0.<org.jfree.data.xy.CategoryTableXYDataset: org.jfree.data.xy.IntervalXYDelegate intervalDelegate>
+org.jfree.chart.renderer.xy.XYBarRenderer.findDomainBounds : $r2 = virtualinvoke r0.<org.jfree.chart.renderer.xy.XYBarRenderer: org.jfree.data.Range findDomainBounds(org.jfree.data.xy.XYDataset,boolean)>(r1, 1)
+org.jfree.chart.renderer.AbstractRenderer.notifyListeners : $r3 = r0.<org.jfree.chart.renderer.AbstractRenderer: javax.swing.event.EventListenerList listenerList>
+org.jfree.chart.renderer.AbstractRenderer.notifyListeners : $i1 = lengthof r2
+org.jfree.data.xy.CategoryTableXYDataset.getIntervalPositionFactor : $r1 = r0.<org.jfree.data.xy.CategoryTableXYDataset: org.jfree.data.xy.IntervalXYDelegate intervalDelegate>
+org.jfree.chart.renderer.category.BarRenderer.getDefaultShadowsVisible : $z0 = <org.jfree.chart.renderer.category.BarRenderer: boolean defaultShadowsVisible>
+org.jfree.chart.renderer.AbstractRenderer.setBaseNegativeItemLabelPosition : virtualinvoke r0.<org.jfree.chart.renderer.AbstractRenderer: void fireChangeEvent()>()
+org.jfree.chart.renderer.AbstractRenderer.setBaseNegativeItemLabelPosition : if z0 == 0 goto return
+org.jfree.chart.renderer.AbstractRenderer.setBaseNegativeItemLabelPosition : r0.<org.jfree.chart.renderer.AbstractRenderer: org.jfree.chart.labels.ItemLabelPosition baseNegativeItemLabelPosition> = r1
+org.jfree.chart.renderer.AbstractRenderer.setBaseNegativeItemLabelPosition : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "position")
+org.jfree.chart.renderer.AbstractRenderer.setBaseNegativeItemLabelPosition : virtualinvoke r0.<org.jfree.chart.renderer.AbstractRenderer: void setBaseNegativeItemLabelPosition(org.jfree.chart.labels.ItemLabelPosition,boolean)>(r1, 1)
+org.jfree.chart.renderer.AbstractRenderer.getItemLabelFont : $r1 = r0.<org.jfree.chart.renderer.AbstractRenderer: java.awt.Font itemLabelFont>
+org.jfree.data.xy.CategoryTableXYDataset.getItemCount : $r1 = r0.<org.jfree.data.xy.CategoryTableXYDataset: org.jfree.data.DefaultKeyedValues2D values>
+org.jfree.data.xy.CategoryTableXYDataset.getIntervalWidth : $r1 = r0.<org.jfree.data.xy.CategoryTableXYDataset: org.jfree.data.xy.IntervalXYDelegate intervalDelegate>
+org.jfree.data.general.AbstractDataset.clone : $r2 = new javax.swing.event.EventListenerList
+org.jfree.data.general.AbstractDataset.clone : return r1
+org.jfree.data.general.AbstractDataset.clone : $r3 = specialinvoke r0.<java.lang.Object: java.lang.Object clone()>()
+org.jfree.data.xy.CategoryTableXYDataset.clone : $r2 = specialinvoke r0.<org.jfree.data.xy.AbstractIntervalXYDataset: java.lang.Object clone()>()
+org.jfree.data.xy.CategoryTableXYDataset.clone : $d1 = virtualinvoke r0.<org.jfree.data.xy.CategoryTableXYDataset: double getIntervalPositionFactor()>()
+org.jfree.data.xy.CategoryTableXYDataset.clone : $r7 = r1.<org.jfree.data.xy.CategoryTableXYDataset: org.jfree.data.xy.IntervalXYDelegate intervalDelegate>
+org.jfree.data.xy.CategoryTableXYDataset.clone : $r6 = new org.jfree.data.xy.IntervalXYDelegate
+org.jfree.data.xy.CategoryTableXYDataset.clone : return r1
+org.jfree.data.xy.CategoryTableXYDataset.clone : $r3 = r0.<org.jfree.data.xy.CategoryTableXYDataset: org.jfree.data.DefaultKeyedValues2D values>
+org.jfree.data.xy.CategoryTableXYDataset.clone : $r9 = r1.<org.jfree.data.xy.CategoryTableXYDataset: org.jfree.data.xy.IntervalXYDelegate intervalDelegate>
+org.jfree.data.xy.CategoryTableXYDataset.clone : $r8 = r1.<org.jfree.data.xy.CategoryTableXYDataset: org.jfree.data.xy.IntervalXYDelegate intervalDelegate>
+org.jfree.chart.renderer.AbstractRenderer.setBasePositiveItemLabelPosition : virtualinvoke r0.<org.jfree.chart.renderer.AbstractRenderer: void fireChangeEvent()>()
+org.jfree.chart.renderer.AbstractRenderer.setBasePositiveItemLabelPosition : if z0 == 0 goto return
+org.jfree.chart.renderer.AbstractRenderer.setBasePositiveItemLabelPosition : virtualinvoke r0.<org.jfree.chart.renderer.AbstractRenderer: void setBasePositiveItemLabelPosition(org.jfree.chart.labels.ItemLabelPosition,boolean)>(r1, 1)
+org.jfree.chart.renderer.AbstractRenderer.setBasePositiveItemLabelPosition : r0.<org.jfree.chart.renderer.AbstractRenderer: org.jfree.chart.labels.ItemLabelPosition basePositiveItemLabelPosition> = r1
+org.jfree.chart.renderer.AbstractRenderer.setBasePositiveItemLabelPosition : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "position")
+org.jfree.chart.renderer.xy.XYBarRenderer.getDefaultShadowsVisible : $z0 = <org.jfree.chart.renderer.xy.XYBarRenderer: boolean defaultShadowsVisible>
+org.jfree.data.xy.IntervalXYDelegate.setAutoWidth : if z0 == 0 goto return
+org.jfree.data.xy.IntervalXYDelegate.setAutoWidth : $d0 = specialinvoke r0.<org.jfree.data.xy.IntervalXYDelegate: double recalculateInterval()>()
+org.jfree.data.xy.IntervalXYDelegate.setAutoWidth : r0.<org.jfree.data.xy.IntervalXYDelegate: boolean autoWidth> = z0
+org.jfree.data.xy.IntervalXYDelegate.setFixedIntervalWidth : $b0 = d0 cmpg 0.0
+org.jfree.data.xy.IntervalXYDelegate.setFixedIntervalWidth : r0.<org.jfree.data.xy.IntervalXYDelegate: double fixedIntervalWidth> = d0
+org.jfree.data.xy.IntervalXYDelegate.setFixedIntervalWidth : r0.<org.jfree.data.xy.IntervalXYDelegate: boolean autoWidth> = 0
+org.jfree.chart.renderer.xy.XYBarRenderer.getDefaultBarPainter : $r0 = <org.jfree.chart.renderer.xy.XYBarRenderer: org.jfree.chart.renderer.xy.XYBarPainter defaultBarPainter>
+org.jfree.chart.renderer.AbstractRenderer.getDataBoundsIncludesVisibleSeriesOnly : $z0 = r0.<org.jfree.chart.renderer.AbstractRenderer: boolean dataBoundsIncludesVisibleSeriesOnly>
+org.jfree.data.general.DatasetUtilities.iterateToFindDomainBounds : goto [?= $b6 = d0 cmpl #Infinity]
+org.jfree.data.general.DatasetUtilities.iterateToFindDomainBounds : d0 = #Infinity
+org.jfree.data.general.DatasetUtilities.iterateToFindDomainBounds : return null
+org.jfree.data.general.DatasetUtilities.iterateToFindDomainBounds : r2 = (org.jfree.data.xy.IntervalXYDataset) r0
+org.jfree.data.general.DatasetUtilities.iterateToFindDomainBounds : $b6 = d0 cmpl #Infinity
+org.jfree.data.general.DatasetUtilities.iterateToFindDomainBounds : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r0, "dataset")
+org.jfree.data.general.DatasetUtilities.iterateToFindDomainBounds : $z2 = interfaceinvoke r3.<java.util.Iterator: boolean hasNext()>()
+org.jfree.data.general.DatasetUtilities.iterateToFindDomainBounds : r3 = interfaceinvoke r1.<java.util.List: java.util.Iterator iterator()>()
+org.jfree.data.general.DatasetUtilities.iterateToFindDomainBounds : d1 = #-Infinity
+org.jfree.data.general.DatasetUtilities.iterateToFindDomainBounds : if z0 == 0 goto r6 = interfaceinvoke r1.<java.util.List: java.util.Iterator iterator()>()
+org.jfree.data.general.DatasetUtilities.iterateToFindDomainBounds : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "visibleSeriesKeys")
+org.jfree.data.general.DatasetUtilities.findDomainBounds : $z1 = r0 instanceof org.jfree.data.xy.XYDomainInfo
+org.jfree.data.general.DatasetUtilities.findDomainBounds : return r3
+org.jfree.data.general.DatasetUtilities.findDomainBounds : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r0, "dataset")
+org.jfree.data.general.DatasetUtilities.findDomainBounds : r3 = staticinvoke <org.jfree.data.general.DatasetUtilities: org.jfree.data.Range iterateToFindDomainBounds(org.jfree.data.xy.XYDataset,java.util.List,boolean)>(r0, r1, z0)
+org.jfree.chart.renderer.category.BarRenderer.getDefaultBarPainter : $r0 = <org.jfree.chart.renderer.category.BarRenderer: org.jfree.chart.renderer.category.BarPainter defaultBarPainter>
+org.jfree.chart.renderer.AbstractRenderer.getItemLabelAnchorOffset : $d0 = r0.<org.jfree.chart.renderer.AbstractRenderer: double itemLabelAnchorOffset>
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null goto return
+org.jfree.data.DefaultKeyedValues2D.getColumnCount : $r1 = r0.<org.jfree.data.DefaultKeyedValues2D: java.util.List columnKeys>
+org.jfree.chart.renderer.xy.ClusteredXYBarRenderer.findDomainBounds : $r4 = specialinvoke r0.<org.jfree.chart.renderer.xy.XYBarRenderer: org.jfree.data.Range findDomainBounds(org.jfree.data.xy.XYDataset)>(r1)
+org.jfree.chart.renderer.xy.ClusteredXYBarRenderer.findDomainBounds : if r1 != null goto $z0 = r0.<org.jfree.chart.renderer.xy.ClusteredXYBarRenderer: boolean centerBarAtStartValue>
+org.jfree.chart.renderer.xy.ClusteredXYBarRenderer.findDomainBounds : $z0 = r0.<org.jfree.chart.renderer.xy.ClusteredXYBarRenderer: boolean centerBarAtStartValue>

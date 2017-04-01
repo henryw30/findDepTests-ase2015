@@ -1,0 +1,110 @@
+org.jfree.chart.ChartPanel.setDisplayToolTips : if z0 == 0 goto $r2 = staticinvoke <javax.swing.ToolTipManager: javax.swing.ToolTipManager sharedInstance()>()
+org.jfree.chart.ChartPanel.setDisplayToolTips : $r1 = staticinvoke <javax.swing.ToolTipManager: javax.swing.ToolTipManager sharedInstance()>()
+org.jfree.chart.ChartPanel.updateUI : specialinvoke r0.<javax.swing.JPanel: void updateUI()>()
+org.jfree.chart.ChartPanel.updateUI : $r1 = r0.<org.jfree.chart.ChartPanel: javax.swing.JPopupMenu popup>
+org.jfree.chart.ChartPanel.setChart : virtualinvoke r0.<org.jfree.chart.ChartPanel: void repaint()>()
+org.jfree.chart.ChartPanel.setChart : r0.<org.jfree.chart.ChartPanel: boolean domainZoomable> = 0
+org.jfree.chart.ChartPanel.setChart : $z3 = r0.<org.jfree.chart.ChartPanel: boolean useBuffer>
+org.jfree.chart.ChartPanel.setChart : r0.<org.jfree.chart.ChartPanel: org.jfree.chart.JFreeChart chart> = r1
+org.jfree.chart.ChartPanel.setChart : $r4 = r0.<org.jfree.chart.ChartPanel: org.jfree.chart.JFreeChart chart>
+org.jfree.chart.ChartPanel.setChart : r0.<org.jfree.chart.ChartPanel: boolean rangeZoomable> = 0
+org.jfree.chart.ChartPanel.setChart : if r1 == null goto r0.<org.jfree.chart.ChartPanel: boolean domainZoomable> = 0
+org.jfree.chart.ChartPanel.removeChartMouseListener : $r2 = r0.<org.jfree.chart.ChartPanel: javax.swing.event.EventListenerList chartMouseListeners>
+org.jfree.chart.ChartPanel.addChartMouseListener : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "listener")
+org.jfree.chart.ChartPanel.addChartMouseListener : $r2 = r0.<org.jfree.chart.ChartPanel: javax.swing.event.EventListenerList chartMouseListeners>
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null goto return
+org.jfree.chart.ChartPanel.getListeners : $r4 = specialinvoke r0.<javax.swing.JPanel: java.util.EventListener[] getListeners(java.lang.Class)>(r1)
+org.jfree.chart.ChartPanel.getListeners : $r2 = r0.<org.jfree.chart.ChartPanel: javax.swing.event.EventListenerList chartMouseListeners>
+org.jfree.chart.ChartPanel.getListeners : if r1 != class "org/jfree/chart/ChartMouseListener" goto $r4 = specialinvoke r0.<javax.swing.JPanel: java.util.EventListener[] getListeners(java.lang.Class)>(r1)
+org.jfree.chart.ChartPanel.createPopupMenu : $r37 = virtualinvoke $r36.<java.util.ResourceBundle: java.lang.String getString(java.lang.String)>("All_Axes")
+org.jfree.chart.ChartPanel.createPopupMenu : $r38 = r0.<org.jfree.chart.ChartPanel: javax.swing.JMenuItem zoomInBothMenuItem>
+org.jfree.chart.ChartPanel.createPopupMenu : return r3
+org.jfree.chart.ChartPanel.createPopupMenu : $r21 = new javax.swing.JMenuItem
+org.jfree.chart.ChartPanel.createPopupMenu : $r78 = r0.<org.jfree.chart.ChartPanel: javax.swing.JMenuItem zoomOutRangeMenuItem>
+org.jfree.chart.ChartPanel.createPopupMenu : if z3 == 0 goto (branch)
+org.jfree.chart.ChartPanel.createPopupMenu : $r49 = new javax.swing.JMenuItem
+org.jfree.chart.ChartPanel.createPopupMenu : $r18 = virtualinvoke $r17.<java.util.ResourceBundle: java.lang.String getString(java.lang.String)>("Copy")
+org.jfree.chart.ChartPanel.createPopupMenu : if z4 == 0 goto return r3
+org.jfree.chart.ChartPanel.createPopupMenu : $r71 = r0.<org.jfree.chart.ChartPanel: javax.swing.JMenuItem zoomOutDomainMenuItem>
+org.jfree.chart.ChartPanel.createPopupMenu : $r92 = new javax.swing.JMenuItem
+org.jfree.chart.ChartPanel.createPopupMenu : $r89 = r0.<org.jfree.chart.ChartPanel: javax.swing.JMenuItem zoomResetBothMenuItem>
+org.jfree.chart.ChartPanel.createPopupMenu : virtualinvoke r3.<javax.swing.JPopupMenu: javax.swing.JMenuItem add(javax.swing.JMenuItem)>(r6)
+org.jfree.chart.ChartPanel.createPopupMenu : $r72 = r0.<org.jfree.chart.ChartPanel: javax.swing.JMenuItem zoomOutDomainMenuItem>
+org.jfree.chart.ChartPanel.createPopupMenu : $r12 = new javax.swing.JMenuItem
+org.jfree.chart.ChartPanel.createPopupMenu : virtualinvoke r4.<javax.swing.JMenuItem: void setActionCommand(java.lang.String)>("PROPERTIES")
+org.jfree.chart.ChartPanel.createPopupMenu : $r31 = new javax.swing.JMenu
+org.jfree.chart.ChartPanel.createPopupMenu : $r84 = virtualinvoke $r83.<java.util.ResourceBundle: java.lang.String getString(java.lang.String)>("Auto_Range")
+org.jfree.chart.ChartPanel.createPopupMenu : $r62 = virtualinvoke $r61.<java.util.ResourceBundle: java.lang.String getString(java.lang.String)>("All_Axes")
+org.jfree.chart.ChartPanel.createPopupMenu : virtualinvoke r24.<javax.swing.JMenuItem: void setActionCommand(java.lang.String)>("SAVE")
+org.jfree.chart.ChartPanel.createPopupMenu : $r70 = r0.<org.jfree.chart.ChartPanel: javax.swing.JMenuItem zoomOutDomainMenuItem>
+org.jfree.chart.ChartPanel.createPopupMenu : $r74 = new javax.swing.JMenuItem
+org.jfree.chart.ChartPanel.createPopupMenu : $r77 = r0.<org.jfree.chart.ChartPanel: javax.swing.JMenuItem zoomOutRangeMenuItem>
+org.jfree.chart.ChartPanel.createPopupMenu : $r69 = virtualinvoke $r68.<java.util.ResourceBundle: java.lang.String getString(java.lang.String)>("Domain_Axis")
+org.jfree.chart.ChartPanel.createPopupMenu : $r99 = new javax.swing.JMenuItem
+org.jfree.chart.ChartPanel.createPopupMenu : $r65 = r0.<org.jfree.chart.ChartPanel: javax.swing.JMenuItem zoomOutBothMenuItem>
+org.jfree.chart.ChartPanel.createPopupMenu : if z5 == 0 goto $r21 = new javax.swing.JMenuItem
+org.jfree.chart.ChartPanel.createPopupMenu : $r87 = virtualinvoke $r86.<java.util.ResourceBundle: java.lang.String getString(java.lang.String)>("All_Axes")
+org.jfree.chart.ChartPanel.createPopupMenu : $r44 = virtualinvoke $r43.<java.util.ResourceBundle: java.lang.String getString(java.lang.String)>("Domain_Axis")
+org.jfree.chart.ChartPanel.createPopupMenu : $r76 = virtualinvoke $r75.<java.util.ResourceBundle: java.lang.String getString(java.lang.String)>("Range_Axis")
+org.jfree.chart.ChartPanel.createPopupMenu : virtualinvoke r3.<javax.swing.JPopupMenu: void addSeparator()>()
+org.jfree.chart.ChartPanel.createPopupMenu : $r39 = r0.<org.jfree.chart.ChartPanel: javax.swing.JMenuItem zoomInBothMenuItem>
+org.jfree.chart.ChartPanel.createPopupMenu : $r1 = new javax.swing.JPopupMenu
+org.jfree.chart.ChartPanel.createPopupMenu : virtualinvoke r3.<javax.swing.JPopupMenu: javax.swing.JMenuItem add(javax.swing.JMenuItem)>(r24)
+org.jfree.chart.ChartPanel.createPopupMenu : virtualinvoke r19.<javax.swing.JMenuItem: void setActionCommand(java.lang.String)>("COPY")
+org.jfree.chart.ChartPanel.createPopupMenu : $r33 = virtualinvoke $r32.<java.util.ResourceBundle: java.lang.String getString(java.lang.String)>("Zoom_In")
+org.jfree.chart.ChartPanel.createPopupMenu : virtualinvoke r6.<javax.swing.JMenu: void addSeparator()>()
+org.jfree.chart.ChartPanel.createPopupMenu : virtualinvoke r3.<javax.swing.JPopupMenu: javax.swing.JMenuItem add(javax.swing.JMenuItem)>(r34)
+org.jfree.chart.ChartPanel.createPopupMenu : $r54 = r0.<org.jfree.chart.ChartPanel: javax.swing.JMenuItem zoomInRangeMenuItem>
+org.jfree.chart.ChartPanel.createPopupMenu : virtualinvoke r3.<javax.swing.JPopupMenu: javax.swing.JMenuItem add(javax.swing.JMenuItem)>(r29)
+org.jfree.chart.ChartPanel.createPopupMenu : virtualinvoke r3.<javax.swing.JPopupMenu: javax.swing.JMenuItem add(javax.swing.JMenuItem)>(r19)
+org.jfree.chart.ChartPanel.createPopupMenu : virtualinvoke r5.<javax.swing.JMenu: void addSeparator()>()
+org.jfree.chart.ChartPanel.createPopupMenu : virtualinvoke r24.<javax.swing.JMenuItem: void addActionListener(java.awt.event.ActionListener)>(r0)
+org.jfree.chart.ChartPanel.createPopupMenu : $r35 = new javax.swing.JMenuItem
+org.jfree.chart.ChartPanel.createPopupMenu : $r97 = r0.<org.jfree.chart.ChartPanel: javax.swing.JMenuItem zoomResetDomainMenuItem>
+org.jfree.chart.ChartPanel.createPopupMenu : if z1 == 0 goto (branch)
+org.jfree.chart.ChartPanel.createPopupMenu : $r59 = virtualinvoke $r58.<java.util.ResourceBundle: java.lang.String getString(java.lang.String)>("Zoom_Out")
+org.jfree.chart.ChartPanel.createPopupMenu : virtualinvoke r4.<javax.swing.JMenuItem: void addActionListener(java.awt.event.ActionListener)>(r0)
+org.jfree.chart.ChartPanel.createPopupMenu : $r63 = r0.<org.jfree.chart.ChartPanel: javax.swing.JMenuItem zoomOutBothMenuItem>
+org.jfree.chart.ChartPanel.createPopupMenu : z5 = 1
+org.jfree.chart.ChartPanel.createPopupMenu : z5 = 0
+org.jfree.chart.ChartPanel.createPopupMenu : $r28 = virtualinvoke $r27.<java.util.ResourceBundle: java.lang.String getString(java.lang.String)>("Print...")
+org.jfree.chart.ChartPanel.createPopupMenu : $r47 = r0.<org.jfree.chart.ChartPanel: javax.swing.JMenuItem zoomInDomainMenuItem>
+org.jfree.chart.ChartPanel.createPopupMenu : $r96 = r0.<org.jfree.chart.ChartPanel: javax.swing.JMenuItem zoomResetDomainMenuItem>
+org.jfree.chart.ChartPanel.createPopupMenu : $r26 = new javax.swing.JMenuItem
+org.jfree.chart.ChartPanel.createPopupMenu : virtualinvoke r3.<javax.swing.JPopupMenu: javax.swing.JMenuItem add(javax.swing.JMenuItem)>(r4)
+org.jfree.chart.ChartPanel.createPopupMenu : $r90 = r0.<org.jfree.chart.ChartPanel: javax.swing.JMenuItem zoomResetBothMenuItem>
+org.jfree.chart.ChartPanel.createPopupMenu : $r79 = r0.<org.jfree.chart.ChartPanel: javax.swing.JMenuItem zoomOutRangeMenuItem>
+org.jfree.chart.ChartPanel.createPopupMenu : $r60 = new javax.swing.JMenuItem
+org.jfree.chart.ChartPanel.createPopupMenu : $r85 = new javax.swing.JMenuItem
+org.jfree.chart.ChartPanel.createPopupMenu : if z5 == 0 goto $r16 = new javax.swing.JMenuItem
+org.jfree.chart.ChartPanel.createPopupMenu : $r51 = virtualinvoke $r50.<java.util.ResourceBundle: java.lang.String getString(java.lang.String)>("Range_Axis")
+org.jfree.chart.ChartPanel.createPopupMenu : virtualinvoke r29.<javax.swing.JMenuItem: void setActionCommand(java.lang.String)>("PRINT")
+org.jfree.chart.ChartPanel.createPopupMenu : $r82 = new javax.swing.JMenu
+org.jfree.chart.ChartPanel.createPopupMenu : $r67 = new javax.swing.JMenuItem
+org.jfree.chart.ChartPanel.createPopupMenu : $r46 = r0.<org.jfree.chart.ChartPanel: javax.swing.JMenuItem zoomInDomainMenuItem>
+org.jfree.chart.ChartPanel.createPopupMenu : virtualinvoke r19.<javax.swing.JMenuItem: void addActionListener(java.awt.event.ActionListener)>(r0)
+org.jfree.chart.ChartPanel.createPopupMenu : if z2 == 0 goto (branch)
+org.jfree.chart.ChartPanel.createPopupMenu : $r45 = r0.<org.jfree.chart.ChartPanel: javax.swing.JMenuItem zoomInDomainMenuItem>
+org.jfree.chart.ChartPanel.createPopupMenu : virtualinvoke r34.<javax.swing.JMenu: void addSeparator()>()
+org.jfree.chart.ChartPanel.createPopupMenu : $r103 = r0.<org.jfree.chart.ChartPanel: javax.swing.JMenuItem zoomResetRangeMenuItem>
+org.jfree.chart.ChartPanel.createPopupMenu : $r40 = r0.<org.jfree.chart.ChartPanel: javax.swing.JMenuItem zoomInBothMenuItem>
+org.jfree.chart.ChartPanel.createPopupMenu : $r23 = virtualinvoke $r22.<java.util.ResourceBundle: java.lang.String getString(java.lang.String)>("Save_as...")
+org.jfree.chart.ChartPanel.createPopupMenu : if z2 != 0 goto $z6 = 0
+org.jfree.chart.ChartPanel.createPopupMenu : $r14 = virtualinvoke $r13.<java.util.ResourceBundle: java.lang.String getString(java.lang.String)>("Properties...")
+org.jfree.chart.ChartPanel.createPopupMenu : virtualinvoke r29.<javax.swing.JMenuItem: void addActionListener(java.awt.event.ActionListener)>(r0)
+org.jfree.chart.ChartPanel.createPopupMenu : virtualinvoke r3.<javax.swing.JPopupMenu: javax.swing.JMenuItem add(javax.swing.JMenuItem)>(r5)
+org.jfree.chart.ChartPanel.createPopupMenu : $r52 = r0.<org.jfree.chart.ChartPanel: javax.swing.JMenuItem zoomInRangeMenuItem>
+org.jfree.chart.ChartPanel.createPopupMenu : if z5 == 0 goto $r26 = new javax.swing.JMenuItem
+org.jfree.chart.ChartPanel.createPopupMenu : $r94 = virtualinvoke $r93.<java.util.ResourceBundle: java.lang.String getString(java.lang.String)>("Domain_Axis")
+org.jfree.chart.ChartPanel.createPopupMenu : $r57 = new javax.swing.JMenu
+org.jfree.chart.ChartPanel.createPopupMenu : $r42 = new javax.swing.JMenuItem
+org.jfree.chart.ChartPanel.createPopupMenu : if z0 == 0 goto (branch)
+org.jfree.chart.ChartPanel.createPopupMenu : if z5 == 0 goto $r31 = new javax.swing.JMenu
+org.jfree.chart.ChartPanel.createPopupMenu : $r95 = r0.<org.jfree.chart.ChartPanel: javax.swing.JMenuItem zoomResetDomainMenuItem>
+org.jfree.chart.ChartPanel.createPopupMenu : $r16 = new javax.swing.JMenuItem
+org.jfree.chart.ChartPanel.createPopupMenu : $r104 = r0.<org.jfree.chart.ChartPanel: javax.swing.JMenuItem zoomResetRangeMenuItem>
+org.jfree.chart.ChartPanel.createPopupMenu : $r53 = r0.<org.jfree.chart.ChartPanel: javax.swing.JMenuItem zoomInRangeMenuItem>
+org.jfree.chart.ChartPanel.createPopupMenu : $r101 = virtualinvoke $r100.<java.util.ResourceBundle: java.lang.String getString(java.lang.String)>("Range_Axis")
+org.jfree.chart.ChartPanel.createPopupMenu : $r102 = r0.<org.jfree.chart.ChartPanel: javax.swing.JMenuItem zoomResetRangeMenuItem>
+org.jfree.chart.ChartPanel.createPopupMenu : $r88 = r0.<org.jfree.chart.ChartPanel: javax.swing.JMenuItem zoomResetBothMenuItem>
+org.jfree.chart.ChartPanel.createPopupMenu : $r64 = r0.<org.jfree.chart.ChartPanel: javax.swing.JMenuItem zoomOutBothMenuItem>

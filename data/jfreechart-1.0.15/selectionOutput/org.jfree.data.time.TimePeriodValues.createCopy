@@ -1,0 +1,26 @@
+org.jfree.data.time.TimePeriodValues.createCopy : $r6 = specialinvoke r0.<org.jfree.data.general.Series: java.lang.Object clone()>() >>>>>>>> org.jfree.data.time.TimePeriodValues.createCopy : r1 = (org.jfree.data.time.TimePeriodValues) $r6
+org.jfree.data.time.TimePeriodValues.createCopy : r1 = (org.jfree.data.time.TimePeriodValues) $r6 >>>>>>>> org.jfree.data.time.TimePeriodValues.createCopy : $r2 = new java.util.ArrayList
+org.jfree.data.time.TimePeriodValues.createCopy : $r2 = new java.util.ArrayList >>>>>>>> org.jfree.data.time.TimePeriodValues.createCopy : specialinvoke $r2.<java.util.ArrayList: void <init>()>()
+org.jfree.data.time.TimePeriodValues.createCopy : specialinvoke $r2.<java.util.ArrayList: void <init>()>() >>>>>>>> org.jfree.data.time.TimePeriodValues.createCopy : r1.<org.jfree.data.time.TimePeriodValues: java.util.List data> = $r2
+org.jfree.data.time.TimePeriodValues.createCopy : r1.<org.jfree.data.time.TimePeriodValues: java.util.List data> = $r2 >>>>>>>> org.jfree.data.time.TimePeriodValues.createCopy : $r7 = r0.<org.jfree.data.time.TimePeriodValues: java.util.List data>
+org.jfree.data.time.TimePeriodValues.createCopy : $r7 = r0.<org.jfree.data.time.TimePeriodValues: java.util.List data> >>>>>>>> org.jfree.data.time.TimePeriodValues.createCopy : $i3 = interfaceinvoke $r7.<java.util.List: int size()>()
+org.jfree.data.time.TimePeriodValues.createCopy : $i3 = interfaceinvoke $r7.<java.util.List: int size()>() >>>>>>>> org.jfree.data.time.TimePeriodValues.createCopy : if $i3 <= 0
+org.jfree.data.time.TimePeriodValues.createCopy : if $i3 <= 0 >>>>>>>> org.jfree.data.time.TimePeriodValues.createCopy : i2 = i0
+org.jfree.data.time.TimePeriodValues.createCopy : if $i3 <= 0 >>>>>>>> org.jfree.data.time.TimePeriodValues.createCopy : return r1
+org.jfree.data.time.TimePeriodValues.createCopy : i2 = i0 >>>>>>>> org.jfree.data.time.TimePeriodValues.createCopy : if i2 > i1
+org.jfree.data.time.TimePeriodValues.createCopy : if i2 > i1 >>>>>>>> org.jfree.data.time.TimePeriodValues.createCopy : $r8 = r0.<org.jfree.data.time.TimePeriodValues: java.util.List data>
+org.jfree.data.time.TimePeriodValues.createCopy : if i2 > i1 >>>>>>>> org.jfree.data.time.TimePeriodValues.createCopy : return r1
+org.jfree.data.time.TimePeriodValues.createCopy : $r8 = r0.<org.jfree.data.time.TimePeriodValues: java.util.List data> >>>>>>>> org.jfree.data.time.TimePeriodValues.createCopy : $r9 = interfaceinvoke $r8.<java.util.List: java.lang.Object get(int)>(i2)
+org.jfree.data.time.TimePeriodValues.createCopy : $r9 = interfaceinvoke $r8.<java.util.List: java.lang.Object get(int)>(i2) >>>>>>>> org.jfree.data.time.TimePeriodValues.createCopy : r3 = (org.jfree.data.time.TimePeriodValue) $r9
+org.jfree.data.time.TimePeriodValues.createCopy : r3 = (org.jfree.data.time.TimePeriodValue) $r9 >>>>>>>> org.jfree.data.time.TimePeriodValues.createCopy : $r10 = virtualinvoke r3.<org.jfree.data.time.TimePeriodValue: java.lang.Object clone()>()
+org.jfree.data.time.TimePeriodValues.createCopy : $r10 = virtualinvoke r3.<org.jfree.data.time.TimePeriodValue: java.lang.Object clone()>() >>>>>>>> org.jfree.data.time.TimePeriodValues.createCopy : r4 = (org.jfree.data.time.TimePeriodValue) $r10
+org.jfree.data.time.TimePeriodValues.createCopy : r4 = (org.jfree.data.time.TimePeriodValue) $r10 >>>>>>>> org.jfree.data.time.TimePeriodValues.createCopy : virtualinvoke r1.<org.jfree.data.time.TimePeriodValues: void add(org.jfree.data.time.TimePeriodValue)>(r4)
+org.jfree.data.time.TimePeriodValues.createCopy : r4 = (org.jfree.data.time.TimePeriodValue) $r10 >>>>>>>> org.jfree.data.time.TimePeriodValues.createCopy : $r11 := @caughtexception
+org.jfree.data.time.TimePeriodValues.createCopy : r5 = $r11 >>>>>>>> org.jfree.data.time.TimePeriodValues.createCopy : $r12 = <java.lang.System: java.io.PrintStream err>
+org.jfree.data.time.TimePeriodValues.createCopy : $r12 = <java.lang.System: java.io.PrintStream err> >>>>>>>> org.jfree.data.time.TimePeriodValues.createCopy : virtualinvoke $r12.<java.io.PrintStream: void println(java.lang.String)>("Failed to add cloned item.")
+org.jfree.data.time.TimePeriodValues.createCopy : virtualinvoke $r12.<java.io.PrintStream: void println(java.lang.String)>("Failed to add cloned item.") >>>>>>>> org.jfree.data.time.TimePeriodValues.createCopy : i2 = i2 + 1
+org.jfree.data.time.TimePeriodValues.createCopy : i2 = i2 + 1 >>>>>>>> org.jfree.data.time.TimePeriodValues.createCopy : goto [?= (branch)]
+org.jfree.data.time.TimePeriodValues.createCopy : goto [?= (branch)] >>>>>>>> org.jfree.data.time.TimePeriodValues.createCopy : if i2 > i1
+org.jfree.data.time.TimePeriodValues.createCopy : virtualinvoke r1.<org.jfree.data.time.TimePeriodValues: void add(org.jfree.data.time.TimePeriodValue)>(r4) >>>>>>>> org.jfree.data.time.TimePeriodValues.createCopy : goto [?= i2 = i2 + 1]
+org.jfree.data.time.TimePeriodValues.createCopy : virtualinvoke r1.<org.jfree.data.time.TimePeriodValues: void add(org.jfree.data.time.TimePeriodValue)>(r4) >>>>>>>> org.jfree.data.time.TimePeriodValues.createCopy : $r11 := @caughtexception
+org.jfree.data.time.TimePeriodValues.createCopy : goto [?= i2 = i2 + 1] >>>>>>>> org.jfree.data.time.TimePeriodValues.createCopy : i2 = i2 + 1

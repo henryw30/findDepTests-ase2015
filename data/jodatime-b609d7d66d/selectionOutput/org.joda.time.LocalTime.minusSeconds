@@ -1,0 +1,7 @@
+org.joda.time.LocalTime.minusSeconds : if i0 != 0 >>>>>>>> org.joda.time.LocalTime.minusSeconds : return r0
+org.joda.time.LocalTime.minusSeconds : if i0 != 0 >>>>>>>> org.joda.time.LocalTime.minusSeconds : $r1 = virtualinvoke r0.<org.joda.time.LocalTime: org.joda.time.Chronology getChronology()>()
+org.joda.time.LocalTime.minusSeconds : $r1 = virtualinvoke r0.<org.joda.time.LocalTime: org.joda.time.Chronology getChronology()>() >>>>>>>> org.joda.time.LocalTime.minusSeconds : $r2 = virtualinvoke $r1.<org.joda.time.Chronology: org.joda.time.DurationField seconds()>()
+org.joda.time.LocalTime.minusSeconds : $r2 = virtualinvoke $r1.<org.joda.time.Chronology: org.joda.time.DurationField seconds()>() >>>>>>>> org.joda.time.LocalTime.minusSeconds : $l2 = virtualinvoke r0.<org.joda.time.LocalTime: long getLocalMillis()>()
+org.joda.time.LocalTime.minusSeconds : $l2 = virtualinvoke r0.<org.joda.time.LocalTime: long getLocalMillis()>() >>>>>>>> org.joda.time.LocalTime.minusSeconds : l1 = virtualinvoke $r2.<org.joda.time.DurationField: long subtract(long,int)>($l2, i0)
+org.joda.time.LocalTime.minusSeconds : l1 = virtualinvoke $r2.<org.joda.time.DurationField: long subtract(long,int)>($l2, i0) >>>>>>>> org.joda.time.LocalTime.minusSeconds : $r3 = virtualinvoke r0.<org.joda.time.LocalTime: org.joda.time.LocalTime withLocalMillis(long)>(l1)
+org.joda.time.LocalTime.minusSeconds : $r3 = virtualinvoke r0.<org.joda.time.LocalTime: org.joda.time.LocalTime withLocalMillis(long)>(l1) >>>>>>>> org.joda.time.LocalTime.minusSeconds : return $r3

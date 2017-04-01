@@ -1,0 +1,118 @@
+dynoptic.main.DynopticMain.synInvsToDynInvs : r1 = staticinvoke <dynoptic.util.Util: java.util.List newList()>() >>>>>>>> dynoptic.main.DynopticMain.synInvsToDynInvs : r2 = null
+dynoptic.main.DynopticMain.synInvsToDynInvs : r2 = null >>>>>>>> dynoptic.main.DynopticMain.synInvsToDynInvs : r3 = virtualinvoke r0.<synoptic.invariants.TemporalInvariantSet: java.util.Iterator iterator()>()
+dynoptic.main.DynopticMain.synInvsToDynInvs : r3 = virtualinvoke r0.<synoptic.invariants.TemporalInvariantSet: java.util.Iterator iterator()>() >>>>>>>> dynoptic.main.DynopticMain.synInvsToDynInvs : $z0 = interfaceinvoke r3.<java.util.Iterator: boolean hasNext()>()
+dynoptic.main.DynopticMain.synInvsToDynInvs : $z0 = interfaceinvoke r3.<java.util.Iterator: boolean hasNext()>() >>>>>>>> dynoptic.main.DynopticMain.synInvsToDynInvs : if $z0 == 0
+dynoptic.main.DynopticMain.synInvsToDynInvs : if $z0 == 0 >>>>>>>> dynoptic.main.DynopticMain.synInvsToDynInvs : $r8 = interfaceinvoke r3.<java.util.Iterator: java.lang.Object next()>()
+dynoptic.main.DynopticMain.synInvsToDynInvs : if $z0 == 0 >>>>>>>> dynoptic.main.DynopticMain.synInvsToDynInvs : return r1
+dynoptic.main.DynopticMain.synInvsToDynInvs : $r8 = interfaceinvoke r3.<java.util.Iterator: java.lang.Object next()>() >>>>>>>> dynoptic.main.DynopticMain.synInvsToDynInvs : r4 = (synoptic.invariants.ITemporalInvariant) $r8
+dynoptic.main.DynopticMain.synInvsToDynInvs : r4 = (synoptic.invariants.ITemporalInvariant) $r8 >>>>>>>> dynoptic.main.DynopticMain.synInvsToDynInvs : $z1 = <dynoptic.main.DynopticMain: boolean $assertionsDisabled>
+dynoptic.main.DynopticMain.synInvsToDynInvs : $z1 = <dynoptic.main.DynopticMain: boolean $assertionsDisabled> >>>>>>>> dynoptic.main.DynopticMain.synInvsToDynInvs : if $z1 != 0
+dynoptic.main.DynopticMain.synInvsToDynInvs : if $z1 != 0 >>>>>>>> dynoptic.main.DynopticMain.synInvsToDynInvs : $z2 = r4 instanceof synoptic.invariants.BinaryInvariant
+dynoptic.main.DynopticMain.synInvsToDynInvs : if $z1 != 0 >>>>>>>> dynoptic.main.DynopticMain.synInvsToDynInvs : r5 = (synoptic.invariants.BinaryInvariant) r4
+dynoptic.main.DynopticMain.synInvsToDynInvs : r5 = (synoptic.invariants.BinaryInvariant) r4 >>>>>>>> dynoptic.main.DynopticMain.synInvsToDynInvs : $r10 = virtualinvoke r5.<synoptic.invariants.BinaryInvariant: synoptic.model.event.EventType getFirst()>()
+dynoptic.main.DynopticMain.synInvsToDynInvs : $r10 = virtualinvoke r5.<synoptic.invariants.BinaryInvariant: synoptic.model.event.EventType getFirst()>() >>>>>>>> dynoptic.main.DynopticMain.synInvsToDynInvs : $z3 = $r10 instanceof synoptic.model.event.DistEventType
+dynoptic.main.DynopticMain.synInvsToDynInvs : $z3 = $r10 instanceof synoptic.model.event.DistEventType >>>>>>>> dynoptic.main.DynopticMain.synInvsToDynInvs : if $z3 != 0
+dynoptic.main.DynopticMain.synInvsToDynInvs : if $z3 != 0 >>>>>>>> dynoptic.main.DynopticMain.synInvsToDynInvs : $z4 = <dynoptic.main.DynopticMain: boolean $assertionsDisabled>
+dynoptic.main.DynopticMain.synInvsToDynInvs : if $z3 != 0 >>>>>>>> dynoptic.main.DynopticMain.synInvsToDynInvs : $z10 = <dynoptic.main.DynopticMain: boolean $assertionsDisabled>
+dynoptic.main.DynopticMain.synInvsToDynInvs : $z10 = <dynoptic.main.DynopticMain: boolean $assertionsDisabled> >>>>>>>> dynoptic.main.DynopticMain.synInvsToDynInvs : if $z10 != 0
+dynoptic.main.DynopticMain.synInvsToDynInvs : if $z10 != 0 >>>>>>>> dynoptic.main.DynopticMain.synInvsToDynInvs : $r16 = virtualinvoke r5.<synoptic.invariants.BinaryInvariant: synoptic.model.event.EventType getSecond()>()
+dynoptic.main.DynopticMain.synInvsToDynInvs : if $z10 != 0 >>>>>>>> dynoptic.main.DynopticMain.synInvsToDynInvs : $r18 = virtualinvoke r5.<synoptic.invariants.BinaryInvariant: synoptic.model.event.EventType getFirst()>()
+dynoptic.main.DynopticMain.synInvsToDynInvs : $r18 = virtualinvoke r5.<synoptic.invariants.BinaryInvariant: synoptic.model.event.EventType getFirst()>() >>>>>>>> dynoptic.main.DynopticMain.synInvsToDynInvs : $z12 = virtualinvoke $r18.<synoptic.model.event.EventType: boolean isInitialEventType()>()
+dynoptic.main.DynopticMain.synInvsToDynInvs : $z12 = virtualinvoke $r18.<synoptic.model.event.EventType: boolean isInitialEventType()>() >>>>>>>> dynoptic.main.DynopticMain.synInvsToDynInvs : if $z12 == 0
+dynoptic.main.DynopticMain.synInvsToDynInvs : if $z12 == 0 >>>>>>>> dynoptic.main.DynopticMain.synInvsToDynInvs : r6 = <synoptic.model.event.DistEventType: synoptic.model.event.DistEventType INITIALEventType>
+dynoptic.main.DynopticMain.synInvsToDynInvs : if $z12 == 0 >>>>>>>> dynoptic.main.DynopticMain.synInvsToDynInvs : $r19 = virtualinvoke r5.<synoptic.invariants.BinaryInvariant: synoptic.model.event.EventType getFirst()>()
+dynoptic.main.DynopticMain.synInvsToDynInvs : $r19 = virtualinvoke r5.<synoptic.invariants.BinaryInvariant: synoptic.model.event.EventType getFirst()>() >>>>>>>> dynoptic.main.DynopticMain.synInvsToDynInvs : r6 = (synoptic.model.event.DistEventType) $r19
+dynoptic.main.DynopticMain.synInvsToDynInvs : r6 = (synoptic.model.event.DistEventType) $r19 >>>>>>>> dynoptic.main.DynopticMain.synInvsToDynInvs : $r20 = virtualinvoke r5.<synoptic.invariants.BinaryInvariant: synoptic.model.event.EventType getSecond()>()
+dynoptic.main.DynopticMain.synInvsToDynInvs : $r20 = virtualinvoke r5.<synoptic.invariants.BinaryInvariant: synoptic.model.event.EventType getSecond()>() >>>>>>>> dynoptic.main.DynopticMain.synInvsToDynInvs : r7 = (synoptic.model.event.DistEventType) $r20
+dynoptic.main.DynopticMain.synInvsToDynInvs : r7 = (synoptic.model.event.DistEventType) $r20 >>>>>>>> dynoptic.main.DynopticMain.synInvsToDynInvs : $z13 = r4 instanceof synoptic.invariants.AlwaysFollowedInvariant
+dynoptic.main.DynopticMain.synInvsToDynInvs : $z13 = r4 instanceof synoptic.invariants.AlwaysFollowedInvariant >>>>>>>> dynoptic.main.DynopticMain.synInvsToDynInvs : if $z13 == 0
+dynoptic.main.DynopticMain.synInvsToDynInvs : if $z13 == 0 >>>>>>>> dynoptic.main.DynopticMain.synInvsToDynInvs : $r21 = <synoptic.model.event.DistEventType: synoptic.model.event.DistEventType INITIALEventType>
+dynoptic.main.DynopticMain.synInvsToDynInvs : if $z13 == 0 >>>>>>>> dynoptic.main.DynopticMain.synInvsToDynInvs : $z14 = r4 instanceof synoptic.invariants.NeverFollowedInvariant
+dynoptic.main.DynopticMain.synInvsToDynInvs : $z14 = r4 instanceof synoptic.invariants.NeverFollowedInvariant >>>>>>>> dynoptic.main.DynopticMain.synInvsToDynInvs : if $z14 == 0
+dynoptic.main.DynopticMain.synInvsToDynInvs : if $z14 == 0 >>>>>>>> dynoptic.main.DynopticMain.synInvsToDynInvs : $z15 = <dynoptic.main.DynopticMain: boolean $assertionsDisabled>
+dynoptic.main.DynopticMain.synInvsToDynInvs : if $z14 == 0 >>>>>>>> dynoptic.main.DynopticMain.synInvsToDynInvs : $z16 = r4 instanceof synoptic.invariants.AlwaysPrecedesInvariant
+dynoptic.main.DynopticMain.synInvsToDynInvs : $z16 = r4 instanceof synoptic.invariants.AlwaysPrecedesInvariant >>>>>>>> dynoptic.main.DynopticMain.synInvsToDynInvs : if $z16 == 0
+dynoptic.main.DynopticMain.synInvsToDynInvs : if $z16 == 0 >>>>>>>> dynoptic.main.DynopticMain.synInvsToDynInvs : $z17 = <dynoptic.main.DynopticMain: boolean $assertionsDisabled>
+dynoptic.main.DynopticMain.synInvsToDynInvs : if $z16 == 0 >>>>>>>> dynoptic.main.DynopticMain.synInvsToDynInvs : if r2 == null
+dynoptic.main.DynopticMain.synInvsToDynInvs : if r2 == null >>>>>>>> dynoptic.main.DynopticMain.synInvsToDynInvs : interfaceinvoke r1.<java.util.List: boolean add(java.lang.Object)>(r2)
+dynoptic.main.DynopticMain.synInvsToDynInvs : if r2 == null >>>>>>>> dynoptic.main.DynopticMain.synInvsToDynInvs : goto [?= $z0 = interfaceinvoke r3.<java.util.Iterator: boolean hasNext()>()]
+dynoptic.main.DynopticMain.synInvsToDynInvs : goto [?= $z0 = interfaceinvoke r3.<java.util.Iterator: boolean hasNext()>()] >>>>>>>> dynoptic.main.DynopticMain.synInvsToDynInvs : $z0 = interfaceinvoke r3.<java.util.Iterator: boolean hasNext()>()
+dynoptic.main.DynopticMain.synInvsToDynInvs : interfaceinvoke r1.<java.util.List: boolean add(java.lang.Object)>(r2) >>>>>>>> dynoptic.main.DynopticMain.synInvsToDynInvs : r2 = null
+dynoptic.main.DynopticMain.synInvsToDynInvs : r2 = null >>>>>>>> dynoptic.main.DynopticMain.synInvsToDynInvs : goto [?= $z0 = interfaceinvoke r3.<java.util.Iterator: boolean hasNext()>()]
+dynoptic.main.DynopticMain.synInvsToDynInvs : $z17 = <dynoptic.main.DynopticMain: boolean $assertionsDisabled> >>>>>>>> dynoptic.main.DynopticMain.synInvsToDynInvs : if $z17 != 0
+dynoptic.main.DynopticMain.synInvsToDynInvs : if $z17 != 0 >>>>>>>> dynoptic.main.DynopticMain.synInvsToDynInvs : $r27 = <synoptic.model.event.DistEventType: synoptic.model.event.DistEventType INITIALEventType>
+dynoptic.main.DynopticMain.synInvsToDynInvs : if $z17 != 0 >>>>>>>> dynoptic.main.DynopticMain.synInvsToDynInvs : $r29 = new dynoptic.invariants.AlwaysPrecedes
+dynoptic.main.DynopticMain.synInvsToDynInvs : $r29 = new dynoptic.invariants.AlwaysPrecedes >>>>>>>> dynoptic.main.DynopticMain.synInvsToDynInvs : specialinvoke $r29.<dynoptic.invariants.AlwaysPrecedes: void <init>(synoptic.model.event.DistEventType,synoptic.model.event.DistEventType)>(r6, r7)
+dynoptic.main.DynopticMain.synInvsToDynInvs : specialinvoke $r29.<dynoptic.invariants.AlwaysPrecedes: void <init>(synoptic.model.event.DistEventType,synoptic.model.event.DistEventType)>(r6, r7) >>>>>>>> dynoptic.main.DynopticMain.synInvsToDynInvs : r2 = $r29
+dynoptic.main.DynopticMain.synInvsToDynInvs : r2 = $r29 >>>>>>>> dynoptic.main.DynopticMain.synInvsToDynInvs : if r2 == null
+dynoptic.main.DynopticMain.synInvsToDynInvs : $r27 = <synoptic.model.event.DistEventType: synoptic.model.event.DistEventType INITIALEventType> >>>>>>>> dynoptic.main.DynopticMain.synInvsToDynInvs : if r6 != $r27
+dynoptic.main.DynopticMain.synInvsToDynInvs : if r6 != $r27 >>>>>>>> dynoptic.main.DynopticMain.synInvsToDynInvs : $r28 = new java.lang.AssertionError
+dynoptic.main.DynopticMain.synInvsToDynInvs : if r6 != $r27 >>>>>>>> dynoptic.main.DynopticMain.synInvsToDynInvs : $r29 = new dynoptic.invariants.AlwaysPrecedes
+dynoptic.main.DynopticMain.synInvsToDynInvs : $r28 = new java.lang.AssertionError >>>>>>>> dynoptic.main.DynopticMain.synInvsToDynInvs : specialinvoke $r28.<java.lang.AssertionError: void <init>()>()
+dynoptic.main.DynopticMain.synInvsToDynInvs : specialinvoke $r28.<java.lang.AssertionError: void <init>()>() >>>>>>>> dynoptic.main.DynopticMain.synInvsToDynInvs : throw $r28
+dynoptic.main.DynopticMain.synInvsToDynInvs : $z15 = <dynoptic.main.DynopticMain: boolean $assertionsDisabled> >>>>>>>> dynoptic.main.DynopticMain.synInvsToDynInvs : if $z15 != 0
+dynoptic.main.DynopticMain.synInvsToDynInvs : if $z15 != 0 >>>>>>>> dynoptic.main.DynopticMain.synInvsToDynInvs : $r24 = <synoptic.model.event.DistEventType: synoptic.model.event.DistEventType INITIALEventType>
+dynoptic.main.DynopticMain.synInvsToDynInvs : if $z15 != 0 >>>>>>>> dynoptic.main.DynopticMain.synInvsToDynInvs : $i0 = virtualinvoke r6.<synoptic.model.event.DistEventType: int getPid()>()
+dynoptic.main.DynopticMain.synInvsToDynInvs : $i0 = virtualinvoke r6.<synoptic.model.event.DistEventType: int getPid()>() >>>>>>>> dynoptic.main.DynopticMain.synInvsToDynInvs : $i1 = virtualinvoke r7.<synoptic.model.event.DistEventType: int getPid()>()
+dynoptic.main.DynopticMain.synInvsToDynInvs : $i1 = virtualinvoke r7.<synoptic.model.event.DistEventType: int getPid()>() >>>>>>>> dynoptic.main.DynopticMain.synInvsToDynInvs : if $i0 != $i1
+dynoptic.main.DynopticMain.synInvsToDynInvs : if $i0 != $i1 >>>>>>>> dynoptic.main.DynopticMain.synInvsToDynInvs : $r26 = new dynoptic.invariants.NeverFollowedBy
+dynoptic.main.DynopticMain.synInvsToDynInvs : if $i0 != $i1 >>>>>>>> dynoptic.main.DynopticMain.synInvsToDynInvs : if r2 == null
+dynoptic.main.DynopticMain.synInvsToDynInvs : $r26 = new dynoptic.invariants.NeverFollowedBy >>>>>>>> dynoptic.main.DynopticMain.synInvsToDynInvs : specialinvoke $r26.<dynoptic.invariants.NeverFollowedBy: void <init>(synoptic.model.event.DistEventType,synoptic.model.event.DistEventType)>(r6, r7)
+dynoptic.main.DynopticMain.synInvsToDynInvs : specialinvoke $r26.<dynoptic.invariants.NeverFollowedBy: void <init>(synoptic.model.event.DistEventType,synoptic.model.event.DistEventType)>(r6, r7) >>>>>>>> dynoptic.main.DynopticMain.synInvsToDynInvs : r2 = $r26
+dynoptic.main.DynopticMain.synInvsToDynInvs : r2 = $r26 >>>>>>>> dynoptic.main.DynopticMain.synInvsToDynInvs : goto [?= (branch)]
+dynoptic.main.DynopticMain.synInvsToDynInvs : goto [?= (branch)] >>>>>>>> dynoptic.main.DynopticMain.synInvsToDynInvs : if r2 == null
+dynoptic.main.DynopticMain.synInvsToDynInvs : $r24 = <synoptic.model.event.DistEventType: synoptic.model.event.DistEventType INITIALEventType> >>>>>>>> dynoptic.main.DynopticMain.synInvsToDynInvs : if r6 != $r24
+dynoptic.main.DynopticMain.synInvsToDynInvs : if r6 != $r24 >>>>>>>> dynoptic.main.DynopticMain.synInvsToDynInvs : $r25 = new java.lang.AssertionError
+dynoptic.main.DynopticMain.synInvsToDynInvs : if r6 != $r24 >>>>>>>> dynoptic.main.DynopticMain.synInvsToDynInvs : $i0 = virtualinvoke r6.<synoptic.model.event.DistEventType: int getPid()>()
+dynoptic.main.DynopticMain.synInvsToDynInvs : $r25 = new java.lang.AssertionError >>>>>>>> dynoptic.main.DynopticMain.synInvsToDynInvs : specialinvoke $r25.<java.lang.AssertionError: void <init>()>()
+dynoptic.main.DynopticMain.synInvsToDynInvs : specialinvoke $r25.<java.lang.AssertionError: void <init>()>() >>>>>>>> dynoptic.main.DynopticMain.synInvsToDynInvs : throw $r25
+dynoptic.main.DynopticMain.synInvsToDynInvs : $r21 = <synoptic.model.event.DistEventType: synoptic.model.event.DistEventType INITIALEventType> >>>>>>>> dynoptic.main.DynopticMain.synInvsToDynInvs : if r6 != $r21
+dynoptic.main.DynopticMain.synInvsToDynInvs : if r6 != $r21 >>>>>>>> dynoptic.main.DynopticMain.synInvsToDynInvs : $r22 = new dynoptic.invariants.EventuallyHappens
+dynoptic.main.DynopticMain.synInvsToDynInvs : if r6 != $r21 >>>>>>>> dynoptic.main.DynopticMain.synInvsToDynInvs : $r23 = new dynoptic.invariants.AlwaysFollowedBy
+dynoptic.main.DynopticMain.synInvsToDynInvs : $r23 = new dynoptic.invariants.AlwaysFollowedBy >>>>>>>> dynoptic.main.DynopticMain.synInvsToDynInvs : specialinvoke $r23.<dynoptic.invariants.AlwaysFollowedBy: void <init>(synoptic.model.event.DistEventType,synoptic.model.event.DistEventType)>(r6, r7)
+dynoptic.main.DynopticMain.synInvsToDynInvs : specialinvoke $r23.<dynoptic.invariants.AlwaysFollowedBy: void <init>(synoptic.model.event.DistEventType,synoptic.model.event.DistEventType)>(r6, r7) >>>>>>>> dynoptic.main.DynopticMain.synInvsToDynInvs : r2 = $r23
+dynoptic.main.DynopticMain.synInvsToDynInvs : r2 = $r23 >>>>>>>> dynoptic.main.DynopticMain.synInvsToDynInvs : goto [?= (branch)]
+dynoptic.main.DynopticMain.synInvsToDynInvs : goto [?= (branch)] >>>>>>>> dynoptic.main.DynopticMain.synInvsToDynInvs : if r2 == null
+dynoptic.main.DynopticMain.synInvsToDynInvs : $r22 = new dynoptic.invariants.EventuallyHappens >>>>>>>> dynoptic.main.DynopticMain.synInvsToDynInvs : specialinvoke $r22.<dynoptic.invariants.EventuallyHappens: void <init>(synoptic.model.event.DistEventType)>(r7)
+dynoptic.main.DynopticMain.synInvsToDynInvs : specialinvoke $r22.<dynoptic.invariants.EventuallyHappens: void <init>(synoptic.model.event.DistEventType)>(r7) >>>>>>>> dynoptic.main.DynopticMain.synInvsToDynInvs : r2 = $r22
+dynoptic.main.DynopticMain.synInvsToDynInvs : r2 = $r22 >>>>>>>> dynoptic.main.DynopticMain.synInvsToDynInvs : goto [?= (branch)]
+dynoptic.main.DynopticMain.synInvsToDynInvs : goto [?= (branch)] >>>>>>>> dynoptic.main.DynopticMain.synInvsToDynInvs : if r2 == null
+dynoptic.main.DynopticMain.synInvsToDynInvs : r6 = <synoptic.model.event.DistEventType: synoptic.model.event.DistEventType INITIALEventType> >>>>>>>> dynoptic.main.DynopticMain.synInvsToDynInvs : goto [?= $r20 = virtualinvoke r5.<synoptic.invariants.BinaryInvariant: synoptic.model.event.EventType getSecond()>()]
+dynoptic.main.DynopticMain.synInvsToDynInvs : goto [?= $r20 = virtualinvoke r5.<synoptic.invariants.BinaryInvariant: synoptic.model.event.EventType getSecond()>()] >>>>>>>> dynoptic.main.DynopticMain.synInvsToDynInvs : $r20 = virtualinvoke r5.<synoptic.invariants.BinaryInvariant: synoptic.model.event.EventType getSecond()>()
+dynoptic.main.DynopticMain.synInvsToDynInvs : $r16 = virtualinvoke r5.<synoptic.invariants.BinaryInvariant: synoptic.model.event.EventType getSecond()>() >>>>>>>> dynoptic.main.DynopticMain.synInvsToDynInvs : $z11 = $r16 instanceof synoptic.model.event.DistEventType
+dynoptic.main.DynopticMain.synInvsToDynInvs : $z11 = $r16 instanceof synoptic.model.event.DistEventType >>>>>>>> dynoptic.main.DynopticMain.synInvsToDynInvs : if $z11 != 0
+dynoptic.main.DynopticMain.synInvsToDynInvs : if $z11 != 0 >>>>>>>> dynoptic.main.DynopticMain.synInvsToDynInvs : $r17 = new java.lang.AssertionError
+dynoptic.main.DynopticMain.synInvsToDynInvs : if $z11 != 0 >>>>>>>> dynoptic.main.DynopticMain.synInvsToDynInvs : $r18 = virtualinvoke r5.<synoptic.invariants.BinaryInvariant: synoptic.model.event.EventType getFirst()>()
+dynoptic.main.DynopticMain.synInvsToDynInvs : $r17 = new java.lang.AssertionError >>>>>>>> dynoptic.main.DynopticMain.synInvsToDynInvs : specialinvoke $r17.<java.lang.AssertionError: void <init>()>()
+dynoptic.main.DynopticMain.synInvsToDynInvs : specialinvoke $r17.<java.lang.AssertionError: void <init>()>() >>>>>>>> dynoptic.main.DynopticMain.synInvsToDynInvs : throw $r17
+dynoptic.main.DynopticMain.synInvsToDynInvs : $z4 = <dynoptic.main.DynopticMain: boolean $assertionsDisabled> >>>>>>>> dynoptic.main.DynopticMain.synInvsToDynInvs : if $z4 != 0
+dynoptic.main.DynopticMain.synInvsToDynInvs : if $z4 != 0 >>>>>>>> dynoptic.main.DynopticMain.synInvsToDynInvs : $r11 = virtualinvoke r5.<synoptic.invariants.BinaryInvariant: synoptic.model.event.EventType getFirst()>()
+dynoptic.main.DynopticMain.synInvsToDynInvs : if $z4 != 0 >>>>>>>> dynoptic.main.DynopticMain.synInvsToDynInvs : $z6 = <dynoptic.main.DynopticMain: boolean $assertionsDisabled>
+dynoptic.main.DynopticMain.synInvsToDynInvs : $z6 = <dynoptic.main.DynopticMain: boolean $assertionsDisabled> >>>>>>>> dynoptic.main.DynopticMain.synInvsToDynInvs : if $z6 != 0
+dynoptic.main.DynopticMain.synInvsToDynInvs : if $z6 != 0 >>>>>>>> dynoptic.main.DynopticMain.synInvsToDynInvs : $z7 = r4 instanceof synoptic.invariants.AlwaysFollowedInvariant
+dynoptic.main.DynopticMain.synInvsToDynInvs : if $z6 != 0 >>>>>>>> dynoptic.main.DynopticMain.synInvsToDynInvs : $z8 = <dynoptic.main.DynopticMain: boolean $assertionsDisabled>
+dynoptic.main.DynopticMain.synInvsToDynInvs : $z8 = <dynoptic.main.DynopticMain: boolean $assertionsDisabled> >>>>>>>> dynoptic.main.DynopticMain.synInvsToDynInvs : if $z8 != 0
+dynoptic.main.DynopticMain.synInvsToDynInvs : if $z8 != 0 >>>>>>>> dynoptic.main.DynopticMain.synInvsToDynInvs : $r14 = virtualinvoke r5.<synoptic.invariants.BinaryInvariant: synoptic.model.event.EventType getFirst()>()
+dynoptic.main.DynopticMain.synInvsToDynInvs : if $z8 != 0 >>>>>>>> dynoptic.main.DynopticMain.synInvsToDynInvs : $z10 = <dynoptic.main.DynopticMain: boolean $assertionsDisabled>
+dynoptic.main.DynopticMain.synInvsToDynInvs : $r14 = virtualinvoke r5.<synoptic.invariants.BinaryInvariant: synoptic.model.event.EventType getFirst()>() >>>>>>>> dynoptic.main.DynopticMain.synInvsToDynInvs : $z9 = virtualinvoke $r14.<synoptic.model.event.EventType: boolean isInitialEventType()>()
+dynoptic.main.DynopticMain.synInvsToDynInvs : $z9 = virtualinvoke $r14.<synoptic.model.event.EventType: boolean isInitialEventType()>() >>>>>>>> dynoptic.main.DynopticMain.synInvsToDynInvs : if $z9 != 0
+dynoptic.main.DynopticMain.synInvsToDynInvs : if $z9 != 0 >>>>>>>> dynoptic.main.DynopticMain.synInvsToDynInvs : $r15 = new java.lang.AssertionError
+dynoptic.main.DynopticMain.synInvsToDynInvs : if $z9 != 0 >>>>>>>> dynoptic.main.DynopticMain.synInvsToDynInvs : $z10 = <dynoptic.main.DynopticMain: boolean $assertionsDisabled>
+dynoptic.main.DynopticMain.synInvsToDynInvs : $r15 = new java.lang.AssertionError >>>>>>>> dynoptic.main.DynopticMain.synInvsToDynInvs : specialinvoke $r15.<java.lang.AssertionError: void <init>()>()
+dynoptic.main.DynopticMain.synInvsToDynInvs : specialinvoke $r15.<java.lang.AssertionError: void <init>()>() >>>>>>>> dynoptic.main.DynopticMain.synInvsToDynInvs : throw $r15
+dynoptic.main.DynopticMain.synInvsToDynInvs : $z7 = r4 instanceof synoptic.invariants.AlwaysFollowedInvariant >>>>>>>> dynoptic.main.DynopticMain.synInvsToDynInvs : if $z7 != 0
+dynoptic.main.DynopticMain.synInvsToDynInvs : if $z7 != 0 >>>>>>>> dynoptic.main.DynopticMain.synInvsToDynInvs : $r13 = new java.lang.AssertionError
+dynoptic.main.DynopticMain.synInvsToDynInvs : if $z7 != 0 >>>>>>>> dynoptic.main.DynopticMain.synInvsToDynInvs : $z8 = <dynoptic.main.DynopticMain: boolean $assertionsDisabled>
+dynoptic.main.DynopticMain.synInvsToDynInvs : $r13 = new java.lang.AssertionError >>>>>>>> dynoptic.main.DynopticMain.synInvsToDynInvs : specialinvoke $r13.<java.lang.AssertionError: void <init>()>()
+dynoptic.main.DynopticMain.synInvsToDynInvs : specialinvoke $r13.<java.lang.AssertionError: void <init>()>() >>>>>>>> dynoptic.main.DynopticMain.synInvsToDynInvs : throw $r13
+dynoptic.main.DynopticMain.synInvsToDynInvs : $r11 = virtualinvoke r5.<synoptic.invariants.BinaryInvariant: synoptic.model.event.EventType getFirst()>() >>>>>>>> dynoptic.main.DynopticMain.synInvsToDynInvs : $z5 = $r11 instanceof synoptic.model.event.StringEventType
+dynoptic.main.DynopticMain.synInvsToDynInvs : $z5 = $r11 instanceof synoptic.model.event.StringEventType >>>>>>>> dynoptic.main.DynopticMain.synInvsToDynInvs : if $z5 != 0
+dynoptic.main.DynopticMain.synInvsToDynInvs : if $z5 != 0 >>>>>>>> dynoptic.main.DynopticMain.synInvsToDynInvs : $r12 = new java.lang.AssertionError
+dynoptic.main.DynopticMain.synInvsToDynInvs : if $z5 != 0 >>>>>>>> dynoptic.main.DynopticMain.synInvsToDynInvs : $z6 = <dynoptic.main.DynopticMain: boolean $assertionsDisabled>
+dynoptic.main.DynopticMain.synInvsToDynInvs : $r12 = new java.lang.AssertionError >>>>>>>> dynoptic.main.DynopticMain.synInvsToDynInvs : specialinvoke $r12.<java.lang.AssertionError: void <init>()>()
+dynoptic.main.DynopticMain.synInvsToDynInvs : specialinvoke $r12.<java.lang.AssertionError: void <init>()>() >>>>>>>> dynoptic.main.DynopticMain.synInvsToDynInvs : throw $r12
+dynoptic.main.DynopticMain.synInvsToDynInvs : $z2 = r4 instanceof synoptic.invariants.BinaryInvariant >>>>>>>> dynoptic.main.DynopticMain.synInvsToDynInvs : if $z2 != 0
+dynoptic.main.DynopticMain.synInvsToDynInvs : if $z2 != 0 >>>>>>>> dynoptic.main.DynopticMain.synInvsToDynInvs : $r9 = new java.lang.AssertionError
+dynoptic.main.DynopticMain.synInvsToDynInvs : if $z2 != 0 >>>>>>>> dynoptic.main.DynopticMain.synInvsToDynInvs : r5 = (synoptic.invariants.BinaryInvariant) r4
+dynoptic.main.DynopticMain.synInvsToDynInvs : $r9 = new java.lang.AssertionError >>>>>>>> dynoptic.main.DynopticMain.synInvsToDynInvs : specialinvoke $r9.<java.lang.AssertionError: void <init>()>()
+dynoptic.main.DynopticMain.synInvsToDynInvs : specialinvoke $r9.<java.lang.AssertionError: void <init>()>() >>>>>>>> dynoptic.main.DynopticMain.synInvsToDynInvs : throw $r9

@@ -1,0 +1,24 @@
+org.jfree.chart.renderer.category.LineAndShapeRenderer.setSeriesShapesFilled : $r2 = r0.<org.jfree.chart.renderer.category.LineAndShapeRenderer: org.jfree.util.BooleanList seriesShapesFilled>
+org.jfree.chart.renderer.category.LineAndShapeRenderer.setSeriesShapesFilled : virtualinvoke r0.<org.jfree.chart.renderer.category.LineAndShapeRenderer: void fireChangeEvent()>()
+org.jfree.chart.renderer.category.LineAndShapeRenderer.getItemLineVisible : r1 = virtualinvoke r0.<org.jfree.chart.renderer.category.LineAndShapeRenderer: java.lang.Boolean getSeriesLinesVisible(int)>(i0)
+org.jfree.chart.renderer.category.LineAndShapeRenderer.getItemLineVisible : if r1 != null goto (branch)
+org.jfree.chart.renderer.category.LineAndShapeRenderer.getItemLineVisible : if r1 == null goto $z1 = r0.<org.jfree.chart.renderer.category.LineAndShapeRenderer: boolean baseLinesVisible>
+org.jfree.chart.renderer.category.LineAndShapeRenderer.getItemLineVisible : $z1 = r0.<org.jfree.chart.renderer.category.LineAndShapeRenderer: boolean baseLinesVisible>
+org.jfree.chart.renderer.category.LineAndShapeRenderer.getItemLineVisible : r1 = r0.<org.jfree.chart.renderer.category.LineAndShapeRenderer: java.lang.Boolean linesVisible>
+org.jfree.chart.renderer.category.LineAndShapeRenderer.setSeriesShapesVisible : virtualinvoke r0.<org.jfree.chart.renderer.category.LineAndShapeRenderer: void fireChangeEvent()>()
+org.jfree.chart.renderer.category.LineAndShapeRenderer.setSeriesShapesVisible : $r2 = r0.<org.jfree.chart.renderer.category.LineAndShapeRenderer: org.jfree.util.BooleanList seriesShapesVisible>
+org.jfree.chart.renderer.category.LineAndShapeRenderer.getShapesFilled : $r1 = r0.<org.jfree.chart.renderer.category.LineAndShapeRenderer: java.lang.Boolean shapesFilled>
+org.jfree.chart.renderer.category.LineAndShapeRenderer.getSeriesShapesVisible : $r1 = r0.<org.jfree.chart.renderer.category.LineAndShapeRenderer: org.jfree.util.BooleanList seriesShapesVisible>
+org.jfree.chart.renderer.category.LineAndShapeRenderer.getItemShapeVisible : if r1 == null goto $z1 = r0.<org.jfree.chart.renderer.category.LineAndShapeRenderer: boolean baseShapesVisible>
+org.jfree.chart.renderer.category.LineAndShapeRenderer.getItemShapeVisible : r1 = r0.<org.jfree.chart.renderer.category.LineAndShapeRenderer: java.lang.Boolean shapesVisible>
+org.jfree.chart.renderer.category.LineAndShapeRenderer.getItemShapeVisible : $z1 = r0.<org.jfree.chart.renderer.category.LineAndShapeRenderer: boolean baseShapesVisible>
+org.jfree.chart.renderer.category.LineAndShapeRenderer.getItemShapeVisible : if r1 != null goto (branch)
+org.jfree.chart.renderer.category.LineAndShapeRenderer.getItemShapeVisible : r1 = virtualinvoke r0.<org.jfree.chart.renderer.category.LineAndShapeRenderer: java.lang.Boolean getSeriesShapesVisible(int)>(i0)
+org.jfree.chart.renderer.AbstractRenderer.fireChangeEvent : $r1 = new org.jfree.chart.event.RendererChangeEvent
+org.jfree.chart.renderer.category.LineAndShapeRenderer.getSeriesLinesVisible : $r1 = r0.<org.jfree.chart.renderer.category.LineAndShapeRenderer: org.jfree.util.BooleanList seriesLinesVisible>
+org.jfree.chart.renderer.AbstractRenderer.notifyListeners : $r3 = r0.<org.jfree.chart.renderer.AbstractRenderer: javax.swing.event.EventListenerList listenerList>
+org.jfree.chart.renderer.AbstractRenderer.notifyListeners : $i1 = lengthof r2
+org.jfree.chart.renderer.category.LineAndShapeRenderer.setDrawOutlines : r0.<org.jfree.chart.renderer.category.LineAndShapeRenderer: boolean drawOutlines> = z0
+org.jfree.chart.renderer.category.LineAndShapeRenderer.setDrawOutlines : virtualinvoke r0.<org.jfree.chart.renderer.category.LineAndShapeRenderer: void fireChangeEvent()>()
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null goto return
+org.jfree.chart.renderer.AbstractRenderer.getBaseItemLabelsVisible : $r1 = r0.<org.jfree.chart.renderer.AbstractRenderer: java.lang.Boolean baseItemLabelsVisible>

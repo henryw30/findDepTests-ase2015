@@ -1,0 +1,11 @@
+org.joda.time.YearMonthDay.fromDateFields : if r0 != null >>>>>>>> org.joda.time.YearMonthDay.fromDateFields : $r1 = new java.lang.IllegalArgumentException
+org.joda.time.YearMonthDay.fromDateFields : if r0 != null >>>>>>>> org.joda.time.YearMonthDay.fromDateFields : $r2 = new org.joda.time.YearMonthDay
+org.joda.time.YearMonthDay.fromDateFields : $r2 = new org.joda.time.YearMonthDay >>>>>>>> org.joda.time.YearMonthDay.fromDateFields : $i0 = virtualinvoke r0.<java.util.Date: int getYear()>()
+org.joda.time.YearMonthDay.fromDateFields : $i0 = virtualinvoke r0.<java.util.Date: int getYear()>() >>>>>>>> org.joda.time.YearMonthDay.fromDateFields : $i1 = $i0 + 1900
+org.joda.time.YearMonthDay.fromDateFields : $i1 = $i0 + 1900 >>>>>>>> org.joda.time.YearMonthDay.fromDateFields : $i2 = virtualinvoke r0.<java.util.Date: int getMonth()>()
+org.joda.time.YearMonthDay.fromDateFields : $i2 = virtualinvoke r0.<java.util.Date: int getMonth()>() >>>>>>>> org.joda.time.YearMonthDay.fromDateFields : $i3 = $i2 + 1
+org.joda.time.YearMonthDay.fromDateFields : $i3 = $i2 + 1 >>>>>>>> org.joda.time.YearMonthDay.fromDateFields : $i4 = virtualinvoke r0.<java.util.Date: int getDate()>()
+org.joda.time.YearMonthDay.fromDateFields : $i4 = virtualinvoke r0.<java.util.Date: int getDate()>() >>>>>>>> org.joda.time.YearMonthDay.fromDateFields : specialinvoke $r2.<org.joda.time.YearMonthDay: void <init>(int,int,int)>($i1, $i3, $i4)
+org.joda.time.YearMonthDay.fromDateFields : specialinvoke $r2.<org.joda.time.YearMonthDay: void <init>(int,int,int)>($i1, $i3, $i4) >>>>>>>> org.joda.time.YearMonthDay.fromDateFields : return $r2
+org.joda.time.YearMonthDay.fromDateFields : $r1 = new java.lang.IllegalArgumentException >>>>>>>> org.joda.time.YearMonthDay.fromDateFields : specialinvoke $r1.<java.lang.IllegalArgumentException: void <init>(java.lang.String)>("The date must not be null")
+org.joda.time.YearMonthDay.fromDateFields : specialinvoke $r1.<java.lang.IllegalArgumentException: void <init>(java.lang.String)>("The date must not be null") >>>>>>>> org.joda.time.YearMonthDay.fromDateFields : throw $r1

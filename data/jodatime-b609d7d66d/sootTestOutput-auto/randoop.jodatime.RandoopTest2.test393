@@ -1,0 +1,24 @@
+org.joda.time.format.DateTimeFormatterBuilder.appendYear : $r1 = staticinvoke <org.joda.time.DateTimeFieldType: org.joda.time.DateTimeFieldType year()>()
+org.joda.time.DateTimeFieldType.clockhourOfHalfday : $r0 = <org.joda.time.DateTimeFieldType: org.joda.time.DateTimeFieldType CLOCKHOUR_OF_HALFDAY_TYPE>
+org.joda.time.format.DateTimeFormatterBuilder.appendMillisOfDay : $r1 = staticinvoke <org.joda.time.DateTimeFieldType: org.joda.time.DateTimeFieldType millisOfDay()>()
+org.joda.time.format.DateTimeFormatterBuilder.appendDecimal : if i0 < 0 goto $r3 = new java.lang.IllegalArgumentException
+org.joda.time.format.DateTimeFormatterBuilder.appendDecimal : $r6 = new org.joda.time.format.DateTimeFormatterBuilder$PaddedNumber
+org.joda.time.format.DateTimeFormatterBuilder.appendDecimal : i1 = i0
+org.joda.time.format.DateTimeFormatterBuilder.appendDecimal : if i0 > 1 goto $r6 = new org.joda.time.format.DateTimeFormatterBuilder$PaddedNumber
+org.joda.time.format.DateTimeFormatterBuilder.appendDecimal : if r1 != null goto (branch)
+org.joda.time.format.DateTimeFormatterBuilder.appendDecimal : if i1 >= i0 goto (branch)
+org.joda.time.format.DateTimeFormatterBuilder.appendClockhourOfHalfday : $r1 = staticinvoke <org.joda.time.DateTimeFieldType: org.joda.time.DateTimeFieldType clockhourOfHalfday()>()
+org.joda.time.DateTimeFieldType.year : $r0 = <org.joda.time.DateTimeFieldType: org.joda.time.DateTimeFieldType YEAR_TYPE>
+org.joda.time.DateTimeFieldType.millisOfDay : $r0 = <org.joda.time.DateTimeFieldType: org.joda.time.DateTimeFieldType MILLIS_OF_DAY_TYPE>
+org.joda.time.format.DateTimeFormatterBuilder.appendTimeZoneId : $r1 = <org.joda.time.format.DateTimeFormatterBuilder$TimeZoneId: org.joda.time.format.DateTimeFormatterBuilder$TimeZoneId INSTANCE>
+org.joda.time.format.DateTimeFormatterBuilder.append0 : r0.<org.joda.time.format.DateTimeFormatterBuilder: java.lang.Object iFormatter> = null
+org.joda.time.format.DateTimeFormatterBuilder.append0 : $r3 = r0.<org.joda.time.format.DateTimeFormatterBuilder: java.util.ArrayList iElementPairs>
+org.joda.time.format.DateTimeFormatterBuilder.append0 : $r4 = r0.<org.joda.time.format.DateTimeFormatterBuilder: java.util.ArrayList iElementPairs>
+org.joda.time.format.DateTimeFormatterBuilder.append0 : return r0
+org.joda.time.format.DateTimeFormatterBuilder.append0 : $r2 = r0.<org.joda.time.format.DateTimeFormatterBuilder: java.util.ArrayList iElementPairs>
+org.joda.time.format.DateTimeFormatterBuilder.appendSignedDecimal : if i0 < 0 goto $r3 = new java.lang.IllegalArgumentException
+org.joda.time.format.DateTimeFormatterBuilder.appendSignedDecimal : $r6 = new org.joda.time.format.DateTimeFormatterBuilder$PaddedNumber
+org.joda.time.format.DateTimeFormatterBuilder.appendSignedDecimal : i1 = i0
+org.joda.time.format.DateTimeFormatterBuilder.appendSignedDecimal : if i0 > 1 goto $r6 = new org.joda.time.format.DateTimeFormatterBuilder$PaddedNumber
+org.joda.time.format.DateTimeFormatterBuilder.appendSignedDecimal : if r1 != null goto (branch)
+org.joda.time.format.DateTimeFormatterBuilder.appendSignedDecimal : if i1 >= i0 goto (branch)

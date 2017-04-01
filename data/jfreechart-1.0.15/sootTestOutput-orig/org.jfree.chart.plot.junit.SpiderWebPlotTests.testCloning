@@ -1,0 +1,103 @@
+org.jfree.chart.plot.DefaultDrawingSupplier.equalShapes : $r3 = r1[i0]
+org.jfree.chart.plot.DefaultDrawingSupplier.equalShapes : i0 = 0
+org.jfree.chart.plot.DefaultDrawingSupplier.equalShapes : return 1
+org.jfree.chart.plot.DefaultDrawingSupplier.equalShapes : $i1 = lengthof r1
+org.jfree.chart.plot.DefaultDrawingSupplier.equalShapes : if r1 != null goto (branch)
+org.jfree.chart.plot.DefaultDrawingSupplier.equalShapes : if r2 != null goto $i1 = lengthof r1
+org.jfree.chart.plot.Plot.notifyListeners : $r3 = r0.<org.jfree.chart.plot.Plot: javax.swing.event.EventListenerList listenerList>
+org.jfree.chart.plot.Plot.notifyListeners : $i1 = lengthof r2
+org.jfree.chart.plot.Plot.notifyListeners : $z0 = r0.<org.jfree.chart.plot.Plot: boolean notify>
+org.jfree.chart.plot.Plot.equals : $r15 = r0.<org.jfree.chart.plot.Plot: java.awt.Paint backgroundPaint>
+org.jfree.chart.plot.Plot.equals : $f4 = r0.<org.jfree.chart.plot.Plot: float backgroundAlpha>
+org.jfree.chart.plot.Plot.equals : $r7 = r0.<org.jfree.chart.plot.Plot: java.awt.Paint noDataMessagePaint>
+org.jfree.chart.plot.Plot.equals : $f2 = r0.<org.jfree.chart.plot.Plot: float foregroundAlpha>
+org.jfree.chart.plot.Plot.equals : if r1 != r0 goto $z0 = r1 instanceof org.jfree.chart.plot.Plot
+org.jfree.chart.plot.Plot.equals : $r3 = r0.<org.jfree.chart.plot.Plot: java.lang.String noDataMessage>
+org.jfree.chart.plot.Plot.equals : $z12 = r0.<org.jfree.chart.plot.Plot: boolean notify>
+org.jfree.chart.plot.Plot.equals : return 1
+org.jfree.chart.plot.Plot.equals : $r19 = r0.<org.jfree.chart.plot.Plot: org.jfree.chart.plot.DrawingSupplier drawingSupplier>
+org.jfree.chart.plot.Plot.equals : $r9 = r0.<org.jfree.chart.plot.Plot: org.jfree.ui.RectangleInsets insets>
+org.jfree.chart.plot.Plot.equals : $r17 = r0.<org.jfree.chart.plot.Plot: java.awt.Image backgroundImage>
+org.jfree.chart.plot.Plot.equals : $z0 = r1 instanceof org.jfree.chart.plot.Plot
+org.jfree.chart.plot.Plot.equals : $r5 = r0.<org.jfree.chart.plot.Plot: java.awt.Font noDataMessageFont>
+org.jfree.chart.plot.Plot.equals : $r11 = r0.<org.jfree.chart.plot.Plot: java.awt.Stroke outlineStroke>
+org.jfree.chart.plot.Plot.equals : r2 = (org.jfree.chart.plot.Plot) r1
+org.jfree.chart.plot.Plot.equals : $i0 = r0.<org.jfree.chart.plot.Plot: int backgroundImageAlignment>
+org.jfree.chart.plot.Plot.equals : $r13 = r0.<org.jfree.chart.plot.Plot: java.awt.Paint outlinePaint>
+org.jfree.chart.plot.Plot.equals : $f0 = r0.<org.jfree.chart.plot.Plot: float backgroundImageAlpha>
+org.jfree.chart.plot.Plot.equals : $z5 = r0.<org.jfree.chart.plot.Plot: boolean outlineVisible>
+org.jfree.chart.plot.SpiderWebPlot.setLegendItemShape : r0.<org.jfree.chart.plot.SpiderWebPlot: java.awt.Shape legendItemShape> = r1
+org.jfree.chart.plot.SpiderWebPlot.setLegendItemShape : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "shape")
+org.jfree.chart.plot.SpiderWebPlot.setLegendItemShape : virtualinvoke r0.<org.jfree.chart.plot.SpiderWebPlot: void fireChangeEvent()>()
+org.jfree.data.general.AbstractDataset.addChangeListener : $r2 = r0.<org.jfree.data.general.AbstractDataset: javax.swing.event.EventListenerList listenerList>
+org.jfree.chart.plot.Plot.clone : $r10 = new javax.swing.event.EventListenerList
+org.jfree.chart.plot.Plot.clone : $r2 = specialinvoke r0.<java.lang.Object: java.lang.Object clone()>()
+org.jfree.chart.plot.Plot.clone : $r3 = r0.<org.jfree.chart.plot.Plot: org.jfree.data.general.DatasetGroup datasetGroup>
+org.jfree.chart.plot.Plot.clone : $r7 = r0.<org.jfree.chart.plot.Plot: org.jfree.chart.plot.DrawingSupplier drawingSupplier>
+org.jfree.chart.plot.Plot.clone : $r8 = staticinvoke <org.jfree.util.ObjectUtilities: java.lang.Object clone(java.lang.Object)>($r7)
+org.jfree.chart.plot.Plot.clone : return r1
+org.jfree.chart.plot.SpiderWebPlot.clone : $r2 = specialinvoke r0.<org.jfree.chart.plot.Plot: java.lang.Object clone()>()
+org.jfree.chart.plot.SpiderWebPlot.clone : $r9 = virtualinvoke $r8.<org.jfree.util.PaintList: java.lang.Object clone()>()
+org.jfree.chart.plot.SpiderWebPlot.clone : $r5 = r0.<org.jfree.chart.plot.SpiderWebPlot: org.jfree.util.PaintList seriesPaintList>
+org.jfree.chart.plot.SpiderWebPlot.clone : $r11 = r0.<org.jfree.chart.plot.SpiderWebPlot: org.jfree.util.StrokeList seriesOutlineStrokeList>
+org.jfree.chart.plot.SpiderWebPlot.clone : $r3 = r0.<org.jfree.chart.plot.SpiderWebPlot: java.awt.Shape legendItemShape>
+org.jfree.chart.plot.SpiderWebPlot.clone : return r1
+org.jfree.chart.plot.SpiderWebPlot.clone : $r8 = r0.<org.jfree.chart.plot.SpiderWebPlot: org.jfree.util.PaintList seriesOutlinePaintList>
+org.jfree.chart.plot.SpiderWebPlot.clone : $r12 = virtualinvoke $r11.<org.jfree.util.StrokeList: java.lang.Object clone()>()
+org.jfree.chart.plot.Plot.fireChangeEvent : $r1 = new org.jfree.chart.event.PlotChangeEvent
+org.jfree.chart.plot.SpiderWebPlot.setSeriesPaint : $r2 = r0.<org.jfree.chart.plot.SpiderWebPlot: org.jfree.util.PaintList seriesPaintList>
+org.jfree.chart.plot.SpiderWebPlot.setSeriesPaint : virtualinvoke r0.<org.jfree.chart.plot.SpiderWebPlot: void fireChangeEvent()>()
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null goto return
+org.jfree.chart.plot.SpiderWebPlot.setSeriesOutlinePaint : $r2 = r0.<org.jfree.chart.plot.SpiderWebPlot: org.jfree.util.PaintList seriesOutlinePaintList>
+org.jfree.chart.plot.SpiderWebPlot.setSeriesOutlinePaint : virtualinvoke r0.<org.jfree.chart.plot.SpiderWebPlot: void fireChangeEvent()>()
+org.jfree.chart.plot.SpiderWebPlot.equals : $r35 = r0.<org.jfree.chart.plot.SpiderWebPlot: org.jfree.chart.labels.CategoryItemLabelGenerator labelGenerator>
+org.jfree.chart.plot.SpiderWebPlot.equals : $z1 = specialinvoke r0.<org.jfree.chart.plot.Plot: boolean equals(java.lang.Object)>(r1)
+org.jfree.chart.plot.SpiderWebPlot.equals : $r9 = r0.<org.jfree.chart.plot.SpiderWebPlot: java.awt.Stroke axisLineStroke>
+org.jfree.chart.plot.SpiderWebPlot.equals : $r15 = r0.<org.jfree.chart.plot.SpiderWebPlot: org.jfree.util.PaintList seriesPaintList>
+org.jfree.chart.plot.SpiderWebPlot.equals : $d0 = r0.<org.jfree.chart.plot.SpiderWebPlot: double headPercent>
+org.jfree.chart.plot.SpiderWebPlot.equals : $d6 = r0.<org.jfree.chart.plot.SpiderWebPlot: double maxValue>
+org.jfree.chart.plot.SpiderWebPlot.equals : $r7 = r0.<org.jfree.chart.plot.SpiderWebPlot: java.awt.Paint axisLinePaint>
+org.jfree.chart.plot.SpiderWebPlot.equals : $r39 = r0.<org.jfree.chart.plot.SpiderWebPlot: org.jfree.chart.urls.CategoryURLGenerator urlGenerator>
+org.jfree.chart.plot.SpiderWebPlot.equals : $d2 = r0.<org.jfree.chart.plot.SpiderWebPlot: double interiorGap>
+org.jfree.chart.plot.SpiderWebPlot.equals : $r19 = r0.<org.jfree.chart.plot.SpiderWebPlot: java.awt.Paint seriesOutlinePaint>
+org.jfree.chart.plot.SpiderWebPlot.equals : $z4 = r0.<org.jfree.chart.plot.SpiderWebPlot: boolean webFilled>
+org.jfree.chart.plot.SpiderWebPlot.equals : $r11 = r0.<org.jfree.chart.plot.SpiderWebPlot: java.awt.Shape legendItemShape>
+org.jfree.chart.plot.SpiderWebPlot.equals : $r37 = r0.<org.jfree.chart.plot.SpiderWebPlot: org.jfree.chart.labels.CategoryToolTipGenerator toolTipGenerator>
+org.jfree.chart.plot.SpiderWebPlot.equals : r2 = (org.jfree.chart.plot.SpiderWebPlot) r1
+org.jfree.chart.plot.SpiderWebPlot.equals : if r1 != r0 goto $z0 = r1 instanceof org.jfree.chart.plot.SpiderWebPlot
+org.jfree.chart.plot.SpiderWebPlot.equals : $r21 = r0.<org.jfree.chart.plot.SpiderWebPlot: org.jfree.util.PaintList seriesOutlinePaintList>
+org.jfree.chart.plot.SpiderWebPlot.equals : return 1
+org.jfree.chart.plot.SpiderWebPlot.equals : $r13 = r0.<org.jfree.chart.plot.SpiderWebPlot: java.awt.Paint seriesPaint>
+org.jfree.chart.plot.SpiderWebPlot.equals : return 0
+org.jfree.chart.plot.SpiderWebPlot.equals : $r29 = r0.<org.jfree.chart.plot.SpiderWebPlot: java.awt.Stroke baseSeriesOutlineStroke>
+org.jfree.chart.plot.SpiderWebPlot.equals : $r3 = r0.<org.jfree.chart.plot.SpiderWebPlot: org.jfree.util.TableOrder dataExtractOrder>
+org.jfree.chart.plot.SpiderWebPlot.equals : $z0 = r1 instanceof org.jfree.chart.plot.SpiderWebPlot
+org.jfree.chart.plot.SpiderWebPlot.equals : $d8 = r0.<org.jfree.chart.plot.SpiderWebPlot: double axisLabelGap>
+org.jfree.chart.plot.SpiderWebPlot.equals : $r17 = r0.<org.jfree.chart.plot.SpiderWebPlot: java.awt.Paint baseSeriesPaint>
+org.jfree.chart.plot.SpiderWebPlot.equals : $r23 = r0.<org.jfree.chart.plot.SpiderWebPlot: java.awt.Paint baseSeriesOutlinePaint>
+org.jfree.chart.plot.SpiderWebPlot.equals : $d4 = r0.<org.jfree.chart.plot.SpiderWebPlot: double startAngle>
+org.jfree.chart.plot.SpiderWebPlot.equals : $r25 = r0.<org.jfree.chart.plot.SpiderWebPlot: java.awt.Stroke seriesOutlineStroke>
+org.jfree.chart.plot.SpiderWebPlot.equals : $r5 = r0.<org.jfree.chart.plot.SpiderWebPlot: org.jfree.util.Rotation direction>
+org.jfree.chart.plot.SpiderWebPlot.equals : $r33 = r0.<org.jfree.chart.plot.SpiderWebPlot: java.awt.Paint labelPaint>
+org.jfree.chart.plot.SpiderWebPlot.equals : $r31 = r0.<org.jfree.chart.plot.SpiderWebPlot: java.awt.Font labelFont>
+org.jfree.chart.plot.SpiderWebPlot.equals : $r27 = r0.<org.jfree.chart.plot.SpiderWebPlot: org.jfree.util.StrokeList seriesOutlineStrokeList>
+org.jfree.chart.plot.DefaultDrawingSupplier.equals : $r7 = r0.<org.jfree.chart.plot.DefaultDrawingSupplier: java.awt.Stroke[] strokeSequence>
+org.jfree.chart.plot.DefaultDrawingSupplier.equals : $i8 = r0.<org.jfree.chart.plot.DefaultDrawingSupplier: int shapeIndex>
+org.jfree.chart.plot.DefaultDrawingSupplier.equals : $i6 = r0.<org.jfree.chart.plot.DefaultDrawingSupplier: int outlineStrokeIndex>
+org.jfree.chart.plot.DefaultDrawingSupplier.equals : $r11 = r0.<org.jfree.chart.plot.DefaultDrawingSupplier: java.awt.Shape[] shapeSequence>
+org.jfree.chart.plot.DefaultDrawingSupplier.equals : $r9 = r0.<org.jfree.chart.plot.DefaultDrawingSupplier: java.awt.Stroke[] outlineStrokeSequence>
+org.jfree.chart.plot.DefaultDrawingSupplier.equals : $i2 = r0.<org.jfree.chart.plot.DefaultDrawingSupplier: int outlinePaintIndex>
+org.jfree.chart.plot.DefaultDrawingSupplier.equals : r2 = (org.jfree.chart.plot.DefaultDrawingSupplier) r1
+org.jfree.chart.plot.DefaultDrawingSupplier.equals : return 1
+org.jfree.chart.plot.DefaultDrawingSupplier.equals : $z0 = r1 instanceof org.jfree.chart.plot.DefaultDrawingSupplier
+org.jfree.chart.plot.DefaultDrawingSupplier.equals : if r1 != r0 goto $z0 = r1 instanceof org.jfree.chart.plot.DefaultDrawingSupplier
+org.jfree.chart.plot.DefaultDrawingSupplier.equals : $r5 = r0.<org.jfree.chart.plot.DefaultDrawingSupplier: java.awt.Paint[] outlinePaintSequence>
+org.jfree.chart.plot.DefaultDrawingSupplier.equals : $i4 = r0.<org.jfree.chart.plot.DefaultDrawingSupplier: int strokeIndex>
+org.jfree.chart.plot.DefaultDrawingSupplier.equals : $i0 = r0.<org.jfree.chart.plot.DefaultDrawingSupplier: int paintIndex>
+org.jfree.chart.plot.DefaultDrawingSupplier.equals : $r3 = r0.<org.jfree.chart.plot.DefaultDrawingSupplier: java.awt.Paint[] paintSequence>
+org.jfree.chart.plot.DefaultDrawingSupplier.clone : $r2 = specialinvoke r0.<java.lang.Object: java.lang.Object clone()>()
+org.jfree.chart.plot.DefaultDrawingSupplier.clone : return r1
+org.jfree.chart.labels.StandardCategoryItemLabelGenerator.equals : if r1 != r0 goto $z0 = r1 instanceof org.jfree.chart.labels.StandardCategoryItemLabelGenerator
+org.jfree.chart.labels.StandardCategoryItemLabelGenerator.equals : return 1
+org.jfree.chart.plot.SpiderWebPlot.setSeriesOutlineStroke : virtualinvoke r0.<org.jfree.chart.plot.SpiderWebPlot: void fireChangeEvent()>()
+org.jfree.chart.plot.SpiderWebPlot.setSeriesOutlineStroke : $r2 = r0.<org.jfree.chart.plot.SpiderWebPlot: org.jfree.util.StrokeList seriesOutlineStrokeList>

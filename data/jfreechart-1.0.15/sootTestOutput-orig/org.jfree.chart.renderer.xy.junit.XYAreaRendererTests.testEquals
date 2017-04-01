@@ -1,0 +1,30 @@
+org.jfree.chart.renderer.xy.AbstractXYItemRenderer.setURLGenerator : virtualinvoke r0.<org.jfree.chart.renderer.xy.AbstractXYItemRenderer: void fireChangeEvent()>()
+org.jfree.chart.renderer.xy.AbstractXYItemRenderer.setURLGenerator : r0.<org.jfree.chart.renderer.xy.AbstractXYItemRenderer: org.jfree.chart.urls.XYURLGenerator urlGenerator> = r1
+org.jfree.chart.renderer.xy.XYAreaRenderer.setLegendArea : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "area")
+org.jfree.chart.renderer.xy.XYAreaRenderer.setLegendArea : r0.<org.jfree.chart.renderer.xy.XYAreaRenderer: java.awt.Shape legendArea> = r1
+org.jfree.chart.renderer.xy.XYAreaRenderer.setLegendArea : virtualinvoke r0.<org.jfree.chart.renderer.xy.XYAreaRenderer: void fireChangeEvent()>()
+org.jfree.chart.renderer.xy.AbstractXYItemRenderer.setBaseToolTipGenerator : r0.<org.jfree.chart.renderer.xy.AbstractXYItemRenderer: org.jfree.chart.labels.XYToolTipGenerator baseToolTipGenerator> = r1
+org.jfree.chart.renderer.xy.AbstractXYItemRenderer.setBaseToolTipGenerator : virtualinvoke r0.<org.jfree.chart.renderer.xy.AbstractXYItemRenderer: void fireChangeEvent()>()
+org.jfree.chart.renderer.xy.XYAreaRenderer.setGradientTransformer : r0.<org.jfree.chart.renderer.xy.XYAreaRenderer: org.jfree.ui.GradientPaintTransformer gradientTransformer> = r1
+org.jfree.chart.renderer.xy.XYAreaRenderer.setGradientTransformer : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "transformer")
+org.jfree.chart.renderer.xy.XYAreaRenderer.setGradientTransformer : virtualinvoke r0.<org.jfree.chart.renderer.xy.XYAreaRenderer: void fireChangeEvent()>()
+org.jfree.chart.renderer.AbstractRenderer.fireChangeEvent : $r1 = new org.jfree.chart.event.RendererChangeEvent
+org.jfree.chart.renderer.AbstractRenderer.notifyListeners : $r3 = r0.<org.jfree.chart.renderer.AbstractRenderer: javax.swing.event.EventListenerList listenerList>
+org.jfree.chart.renderer.AbstractRenderer.notifyListeners : $i1 = lengthof r2
+org.jfree.chart.renderer.xy.XYAreaRenderer.setOutline : virtualinvoke r0.<org.jfree.chart.renderer.xy.XYAreaRenderer: void fireChangeEvent()>()
+org.jfree.chart.renderer.xy.XYAreaRenderer.setOutline : r0.<org.jfree.chart.renderer.xy.XYAreaRenderer: boolean showOutline> = z0
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null goto return
+org.jfree.chart.renderer.xy.XYAreaRenderer.equals : $r3 = r0.<org.jfree.chart.renderer.xy.XYAreaRenderer: org.jfree.ui.GradientPaintTransformer gradientTransformer>
+org.jfree.chart.renderer.xy.XYAreaRenderer.equals : $z0 = r1 instanceof org.jfree.chart.renderer.xy.XYAreaRenderer
+org.jfree.chart.renderer.xy.XYAreaRenderer.equals : $z1 = r0.<org.jfree.chart.renderer.xy.XYAreaRenderer: boolean plotArea>
+org.jfree.chart.renderer.xy.XYAreaRenderer.equals : if r1 != r0 goto $z0 = r1 instanceof org.jfree.chart.renderer.xy.XYAreaRenderer
+org.jfree.chart.renderer.xy.XYAreaRenderer.equals : $z9 = r0.<org.jfree.chart.renderer.xy.XYAreaRenderer: boolean useFillPaint>
+org.jfree.chart.renderer.xy.XYAreaRenderer.equals : $r5 = r0.<org.jfree.chart.renderer.xy.XYAreaRenderer: java.awt.Shape legendArea>
+org.jfree.chart.renderer.xy.XYAreaRenderer.equals : r2 = (org.jfree.chart.renderer.xy.XYAreaRenderer) r1
+org.jfree.chart.renderer.xy.XYAreaRenderer.equals : $z3 = r0.<org.jfree.chart.renderer.xy.XYAreaRenderer: boolean plotLines>
+org.jfree.chart.renderer.xy.XYAreaRenderer.equals : return 1
+org.jfree.chart.renderer.xy.XYAreaRenderer.equals : $z7 = r0.<org.jfree.chart.renderer.xy.XYAreaRenderer: boolean showOutline>
+org.jfree.chart.renderer.xy.XYAreaRenderer.equals : return 0
+org.jfree.chart.renderer.xy.XYAreaRenderer.equals : $z5 = r0.<org.jfree.chart.renderer.xy.XYAreaRenderer: boolean plotShapes>
+org.jfree.chart.renderer.xy.XYAreaRenderer.setUseFillPaint : r0.<org.jfree.chart.renderer.xy.XYAreaRenderer: boolean useFillPaint> = z0
+org.jfree.chart.renderer.xy.XYAreaRenderer.setUseFillPaint : virtualinvoke r0.<org.jfree.chart.renderer.xy.XYAreaRenderer: void fireChangeEvent()>()

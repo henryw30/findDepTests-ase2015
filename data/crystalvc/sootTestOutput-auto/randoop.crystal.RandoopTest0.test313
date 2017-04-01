@@ -1,0 +1,12 @@
+crystal.client.ClientPreferences.setRefresh : r0.<crystal.client.ClientPreferences: long _refresh> = l0
+crystal.client.ClientPreferences.clone : $r7 = r0.<crystal.client.ClientPreferences: java.util.Vector _projectPreferences>
+crystal.client.ClientPreferences.clone : r1.<crystal.client.ClientPreferences: java.util.Vector _projectPreferences> = r2
+crystal.client.ClientPreferences.clone : $r5 = specialinvoke r0.<java.lang.Object: java.lang.Object clone()>()
+crystal.client.ClientPreferences.clone : $r6 = new java.util.Vector
+crystal.client.ClientPreferences.clone : return r1
+crystal.util.ValidInputChecker.checkValidStringInput : if r0 == null goto $r2 = new java.lang.IllegalArgumentException
+crystal.client.ClientPreferences.setHgPath : r0.<crystal.client.ClientPreferences: java.lang.String _hgPath> = r1
+crystal.client.ClientPreferences.equals : $z2 = virtualinvoke $r9.<java.util.Vector: boolean equals(java.lang.Object)>($r10)
+crystal.client.ClientPreferences.equals : r2 = (crystal.client.ClientPreferences) r1
+crystal.client.ClientPreferences.equals : if r1 == null goto return 0
+crystal.client.ClientPreferences.equals : $r5 = r0.<crystal.client.ClientPreferences: java.lang.String _tempDirectory>

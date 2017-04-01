@@ -1,0 +1,50 @@
+org.joda.time.chrono.JulianChronology.getInstanceUTC : $r0 = <org.joda.time.chrono.JulianChronology: org.joda.time.chrono.JulianChronology INSTANCE_UTC> >>>>>>>> org.joda.time.chrono.JulianChronology.getInstanceUTC : return $r0
+org.joda.time.chrono.JulianChronology.getInstanceUTC : return $r0 >>>>>>>> org.joda.time.DateMidnight.now : if r0 != null
+org.joda.time.DateMidnight.now : if r0 != null >>>>>>>> org.joda.time.DateMidnight.now : $r2 = new org.joda.time.DateMidnight
+org.joda.time.DateMidnight.now : $r2 = new org.joda.time.DateMidnight >>>>>>>> org.joda.time.DateMidnight.now : specialinvoke $r2.<org.joda.time.DateMidnight: void <init>(org.joda.time.Chronology)>(r0)
+org.joda.time.DateMidnight.now : specialinvoke $r2.<org.joda.time.DateMidnight: void <init>(org.joda.time.Chronology)>(r0) >>>>>>>> org.joda.time.DateTimeUtils.currentTimeMillis : $r0 = <org.joda.time.DateTimeUtils: org.joda.time.DateTimeUtils$MillisProvider cMillisProvider>
+org.joda.time.DateTimeUtils.currentTimeMillis : $r0 = <org.joda.time.DateTimeUtils: org.joda.time.DateTimeUtils$MillisProvider cMillisProvider> >>>>>>>> org.joda.time.DateTimeUtils.currentTimeMillis : $l0 = interfaceinvoke $r0.<org.joda.time.DateTimeUtils$MillisProvider: long getMillis()>()
+org.joda.time.DateTimeUtils.currentTimeMillis : $l0 = interfaceinvoke $r0.<org.joda.time.DateTimeUtils$MillisProvider: long getMillis()>() >>>>>>>> org.joda.time.DateTimeUtils$FixedMillisProvider.getMillis : $l0 = r0.<org.joda.time.DateTimeUtils$FixedMillisProvider: long iMillis>
+org.joda.time.DateTimeUtils$FixedMillisProvider.getMillis : $l0 = r0.<org.joda.time.DateTimeUtils$FixedMillisProvider: long iMillis> >>>>>>>> org.joda.time.DateTimeUtils$FixedMillisProvider.getMillis : return $l0
+org.joda.time.DateTimeUtils$FixedMillisProvider.getMillis : return $l0 >>>>>>>> org.joda.time.DateTimeUtils.currentTimeMillis : return $l0
+org.joda.time.DateTimeUtils.currentTimeMillis : return $l0 >>>>>>>> org.joda.time.base.BaseDateTime.checkChronology : $r2 = staticinvoke <org.joda.time.DateTimeUtils: org.joda.time.Chronology getChronology(org.joda.time.Chronology)>(r1)
+org.joda.time.base.BaseDateTime.checkChronology : $r2 = staticinvoke <org.joda.time.DateTimeUtils: org.joda.time.Chronology getChronology(org.joda.time.Chronology)>(r1) >>>>>>>> org.joda.time.DateTimeUtils.getChronology : if r0 != null
+org.joda.time.DateTimeUtils.getChronology : if r0 != null >>>>>>>> org.joda.time.DateTimeUtils.getChronology : return r0
+org.joda.time.DateTimeUtils.getChronology : return r0 >>>>>>>> org.joda.time.base.BaseDateTime.checkChronology : return $r2
+org.joda.time.base.BaseDateTime.checkChronology : return $r2 >>>>>>>> org.joda.time.DateMidnight.checkInstant : $r2 = virtualinvoke r1.<org.joda.time.Chronology: org.joda.time.DateTimeField dayOfMonth()>()
+org.joda.time.DateMidnight.checkInstant : $r2 = virtualinvoke r1.<org.joda.time.Chronology: org.joda.time.DateTimeField dayOfMonth()>() >>>>>>>> org.joda.time.chrono.AssembledChronology.dayOfMonth : $r1 = r0.<org.joda.time.chrono.AssembledChronology: org.joda.time.DateTimeField iDayOfMonth>
+org.joda.time.chrono.AssembledChronology.dayOfMonth : $r1 = r0.<org.joda.time.chrono.AssembledChronology: org.joda.time.DateTimeField iDayOfMonth> >>>>>>>> org.joda.time.chrono.AssembledChronology.dayOfMonth : return $r1
+org.joda.time.chrono.AssembledChronology.dayOfMonth : return $r1 >>>>>>>> org.joda.time.DateMidnight.checkInstant : $l1 = virtualinvoke $r2.<org.joda.time.DateTimeField: long roundFloor(long)>(l0)
+org.joda.time.DateMidnight.checkInstant : $l1 = virtualinvoke $r2.<org.joda.time.DateTimeField: long roundFloor(long)>(l0) >>>>>>>> org.joda.time.field.PreciseDurationDateTimeField.roundFloor : $b1 = l0 cmp 0L
+org.joda.time.field.PreciseDurationDateTimeField.roundFloor : $b1 = l0 cmp 0L >>>>>>>> org.joda.time.field.PreciseDurationDateTimeField.roundFloor : if $b1 < 0
+org.joda.time.field.PreciseDurationDateTimeField.roundFloor : if $b1 < 0 >>>>>>>> org.joda.time.field.PreciseDurationDateTimeField.roundFloor : $l2 = r0.<org.joda.time.field.PreciseDurationDateTimeField: long iUnitMillis>
+org.joda.time.field.PreciseDurationDateTimeField.roundFloor : $l2 = r0.<org.joda.time.field.PreciseDurationDateTimeField: long iUnitMillis> >>>>>>>> org.joda.time.field.PreciseDurationDateTimeField.roundFloor : $l3 = l0 % $l2
+org.joda.time.field.PreciseDurationDateTimeField.roundFloor : $l3 = l0 % $l2 >>>>>>>> org.joda.time.field.PreciseDurationDateTimeField.roundFloor : $l4 = l0 - $l3
+org.joda.time.field.PreciseDurationDateTimeField.roundFloor : $l4 = l0 - $l3 >>>>>>>> org.joda.time.field.PreciseDurationDateTimeField.roundFloor : return $l4
+org.joda.time.field.PreciseDurationDateTimeField.roundFloor : return $l4 >>>>>>>> org.joda.time.DateMidnight.checkInstant : return $l1
+org.joda.time.DateMidnight.checkInstant : return $l1 >>>>>>>> org.joda.time.DateMidnight.now : return $r2
+org.joda.time.DateMidnight.now : return $r2 >>>>>>>> org.joda.time.LocalDate.now : if r0 != null
+org.joda.time.LocalDate.now : if r0 != null >>>>>>>> org.joda.time.LocalDate.now : $r2 = new org.joda.time.LocalDate
+org.joda.time.LocalDate.now : $r2 = new org.joda.time.LocalDate >>>>>>>> org.joda.time.LocalDate.now : specialinvoke $r2.<org.joda.time.LocalDate: void <init>(org.joda.time.Chronology)>(r0)
+org.joda.time.LocalDate.now : specialinvoke $r2.<org.joda.time.LocalDate: void <init>(org.joda.time.Chronology)>(r0) >>>>>>>> org.joda.time.chrono.JulianChronology.getZone : $r1 = specialinvoke r0.<org.joda.time.chrono.BasicGJChronology: org.joda.time.DateTimeZone getZone()>()
+org.joda.time.chrono.JulianChronology.getZone : $r1 = specialinvoke r0.<org.joda.time.chrono.BasicGJChronology: org.joda.time.DateTimeZone getZone()>() >>>>>>>> org.joda.time.chrono.BasicChronology.getZone : $r2 = virtualinvoke r0.<org.joda.time.chrono.BasicChronology: org.joda.time.Chronology getBase()>()
+org.joda.time.chrono.BasicChronology.getZone : $r2 = virtualinvoke r0.<org.joda.time.chrono.BasicChronology: org.joda.time.Chronology getBase()>() >>>>>>>> org.joda.time.chrono.AssembledChronology.getBase : $r1 = r0.<org.joda.time.chrono.AssembledChronology: org.joda.time.Chronology iBase>
+org.joda.time.chrono.AssembledChronology.getBase : $r1 = r0.<org.joda.time.chrono.AssembledChronology: org.joda.time.Chronology iBase> >>>>>>>> org.joda.time.chrono.AssembledChronology.getBase : return $r1
+org.joda.time.chrono.AssembledChronology.getBase : return $r1 >>>>>>>> org.joda.time.chrono.BasicChronology.getZone : r1 = $r2
+org.joda.time.chrono.BasicChronology.getZone : r1 = $r2 >>>>>>>> org.joda.time.chrono.BasicChronology.getZone : if $r2 == null
+org.joda.time.chrono.BasicChronology.getZone : if $r2 == null >>>>>>>> org.joda.time.chrono.BasicChronology.getZone : $r4 = <org.joda.time.DateTimeZone: org.joda.time.DateTimeZone UTC>
+org.joda.time.chrono.BasicChronology.getZone : $r4 = <org.joda.time.DateTimeZone: org.joda.time.DateTimeZone UTC> >>>>>>>> org.joda.time.chrono.BasicChronology.getZone : return $r4
+org.joda.time.chrono.BasicChronology.getZone : return $r4 >>>>>>>> org.joda.time.chrono.JulianChronology.getZone : return $r1
+org.joda.time.chrono.JulianChronology.getZone : return $r1 >>>>>>>> org.joda.time.DateTimeZone.getMillisKeepLocal : if r1 != null
+org.joda.time.DateTimeZone.getMillisKeepLocal : if r1 != null >>>>>>>> org.joda.time.DateTimeZone.getMillisKeepLocal : if r1 != r0
+org.joda.time.DateTimeZone.getMillisKeepLocal : if r1 != r0 >>>>>>>> org.joda.time.DateTimeZone.getMillisKeepLocal : return l0
+org.joda.time.DateTimeZone.getMillisKeepLocal : return l0 >>>>>>>> org.joda.time.chrono.JulianChronology.withUTC : $r1 = <org.joda.time.chrono.JulianChronology: org.joda.time.chrono.JulianChronology INSTANCE_UTC>
+org.joda.time.chrono.JulianChronology.withUTC : $r1 = <org.joda.time.chrono.JulianChronology: org.joda.time.chrono.JulianChronology INSTANCE_UTC> >>>>>>>> org.joda.time.chrono.JulianChronology.withUTC : return $r1
+org.joda.time.chrono.JulianChronology.withUTC : return $r1 >>>>>>>> org.joda.time.LocalDate.now : return $r2
+org.joda.time.LocalDate.now : return $r2 >>>>>>>> org.joda.time.chrono.AssembledChronology.hours : $r1 = r0.<org.joda.time.chrono.AssembledChronology: org.joda.time.DurationField iHours>
+org.joda.time.chrono.AssembledChronology.hours : $r1 = r0.<org.joda.time.chrono.AssembledChronology: org.joda.time.DurationField iHours> >>>>>>>> org.joda.time.chrono.AssembledChronology.hours : return $r1
+org.joda.time.chrono.AssembledChronology.hours : return $r1 >>>>>>>> org.joda.time.base.AbstractInterval.checkInterval : $b2 = l1 cmp l0
+org.joda.time.base.AbstractInterval.checkInterval : $b2 = l1 cmp l0 >>>>>>>> org.joda.time.base.AbstractInterval.checkInterval : if $b2 >= 0
+org.joda.time.base.AbstractInterval.checkInterval : if $b2 >= 0 >>>>>>>> org.joda.time.base.AbstractInterval.checkInterval : $r1 = new java.lang.IllegalArgumentException
+org.joda.time.base.AbstractInterval.checkInterval : $r1 = new java.lang.IllegalArgumentException >>>>>>>> org.joda.time.base.AbstractInterval.checkInterval : specialinvoke $r1.<java.lang.IllegalArgumentException: void <init>(java.lang.String)>("The end instant must be greater or equal to the start")
+org.joda.time.base.AbstractInterval.checkInterval : specialinvoke $r1.<java.lang.IllegalArgumentException: void <init>(java.lang.String)>("The end instant must be greater or equal to the start") >>>>>>>> org.joda.time.base.AbstractInterval.checkInterval : throw $r1

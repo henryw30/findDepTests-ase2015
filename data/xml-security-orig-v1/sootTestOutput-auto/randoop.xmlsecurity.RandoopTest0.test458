@@ -1,0 +1,18 @@
+org.apache.xml.security.utils.HexDump.byteArrayToBinaryString : i1 = 0
+org.apache.xml.security.utils.HexDump.byteArrayToBinaryString : $i3 = i0 - 1
+org.apache.xml.security.utils.HexDump.byteArrayToBinaryString : $b2 = r0[i1]
+org.apache.xml.security.utils.HexDump.byteArrayToBinaryString : i0 = lengthof r0
+org.apache.xml.security.utils.HexDump.byteArrayToBinaryString : $r1 = new java.lang.StringBuffer
+org.apache.xml.security.utils.HexDump.byteArrayToBinaryString : $r4 = virtualinvoke r2.<java.lang.StringBuffer: java.lang.String toString()>()
+org.apache.xml.security.utils.HexDump.toBinaryString : $r1 = staticinvoke <org.apache.xml.security.utils.HexDump: java.lang.String byteArrayToBinaryString(byte[])>(r0)
+org.apache.xml.security.utils.HexDump.toBinaryString : $r0 = staticinvoke <org.apache.xml.security.utils.HexDump: byte[] toByteArray(int)>(i0)
+org.apache.xml.security.utils.HexDump.byte2bin : i1 = 0
+org.apache.xml.security.utils.HexDump.byte2bin : $r2 = <org.apache.xml.security.utils.HexDump: char[] BIT_DIGIT>
+org.apache.xml.security.utils.HexDump.byte2bin : $r4 = <org.apache.xml.security.utils.HexDump: char[] BIT_DIGIT>
+org.apache.xml.security.utils.HexDump.byte2bin : $r1 = <org.apache.xml.security.utils.HexDump: byte[] COMPARE_BITS>
+org.apache.xml.security.utils.HexDump.toByteArray : $b1 = (byte) i0
+org.apache.xml.security.utils.HexDump.toByteArray : r0 = newarray (byte)[4]
+org.apache.xml.security.utils.HexDump.toByteArray : $i4 = i0 >> 16
+org.apache.xml.security.utils.HexDump.toByteArray : $i6 = i0 >> 24
+org.apache.xml.security.utils.HexDump.toByteArray : $i2 = i0 >> 8
+org.apache.xml.security.utils.HexDump.toByteArray : return r0

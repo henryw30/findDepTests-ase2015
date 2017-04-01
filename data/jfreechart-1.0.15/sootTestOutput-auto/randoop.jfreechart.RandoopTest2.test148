@@ -1,0 +1,142 @@
+org.jfree.data.time.Day.peg : $l1 = virtualinvoke r0.<org.jfree.data.time.Day: long getLastMillisecond(java.util.Calendar)>(r1)
+org.jfree.data.time.Day.peg : $l0 = virtualinvoke r0.<org.jfree.data.time.Day: long getFirstMillisecond(java.util.Calendar)>(r1)
+org.jfree.data.time.Year.getFirstMillisecond : $l1 = virtualinvoke r1.<java.util.Calendar: long getTimeInMillis()>()
+org.jfree.data.time.Year.getFirstMillisecond : virtualinvoke r1.<java.util.Calendar: void set(int,int)>(14, 0)
+org.jfree.data.time.Year.getFirstMillisecond : $s0 = r0.<org.jfree.data.time.Year: short year>
+org.jfree.data.DefaultKeyedValues2D.removeValue : $r4 = r0.<org.jfree.data.DefaultKeyedValues2D: java.util.List rows>
+org.jfree.data.DefaultKeyedValues2D.removeValue : $r6 = virtualinvoke r3.<org.jfree.data.DefaultKeyedValues: java.lang.Number getValue(int)>(i1)
+org.jfree.data.DefaultKeyedValues2D.removeValue : i0 = virtualinvoke r0.<org.jfree.data.DefaultKeyedValues2D: int getRowIndex(java.lang.Comparable)>(r1)
+org.jfree.data.DefaultKeyedValues2D.removeValue : i1 = i1 + 1
+org.jfree.data.DefaultKeyedValues2D.removeValue : if z1 == 0 goto return
+org.jfree.data.DefaultKeyedValues2D.removeValue : $r20 = r0.<org.jfree.data.DefaultKeyedValues2D: java.util.List columnKeys>
+org.jfree.data.DefaultKeyedValues2D.removeValue : $r9 = r0.<org.jfree.data.DefaultKeyedValues2D: java.util.List rows>
+org.jfree.data.DefaultKeyedValues2D.removeValue : i6 = 0
+org.jfree.data.DefaultKeyedValues2D.removeValue : i1 = 0
+org.jfree.data.DefaultKeyedValues2D.removeValue : virtualinvoke r0.<org.jfree.data.DefaultKeyedValues2D: void setValue(java.lang.Number,java.lang.Comparable,java.lang.Comparable)>(null, r1, r2)
+org.jfree.data.DefaultKeyedValues2D.removeValue : z0 = 1
+org.jfree.data.DefaultKeyedValues2D.removeValue : $r7 = r0.<org.jfree.data.DefaultKeyedValues2D: java.util.List rowKeys>
+org.jfree.data.DefaultKeyedValues2D.removeValue : z1 = 1
+org.jfree.data.DefaultKeyedValues2D.removeValue : if z0 == 0 goto z1 = 1
+org.jfree.data.DefaultKeyedValues2D.removeValue : i4 = 0
+org.jfree.data.time.Week.peg : $l1 = virtualinvoke r0.<org.jfree.data.time.Week: long getLastMillisecond(java.util.Calendar)>(r1)
+org.jfree.data.time.Week.peg : $l0 = virtualinvoke r0.<org.jfree.data.time.Week: long getFirstMillisecond(java.util.Calendar)>(r1)
+org.jfree.data.time.Week.getFirstMillisecond : $s0 = r0.<org.jfree.data.time.Week: short year>
+org.jfree.data.time.Week.getFirstMillisecond : virtualinvoke r2.<java.util.Calendar: void clear()>()
+org.jfree.data.time.Week.getFirstMillisecond : $b1 = r0.<org.jfree.data.time.Week: byte week>
+org.jfree.data.time.Week.getFirstMillisecond : $r3 = virtualinvoke r1.<java.util.Calendar: java.lang.Object clone()>()
+org.jfree.data.time.Week.getFirstMillisecond : virtualinvoke r2.<java.util.Calendar: void set(int,int)>(10, 0)
+org.jfree.data.time.Week.getFirstMillisecond : $l3 = virtualinvoke r2.<java.util.Calendar: long getTimeInMillis()>()
+org.jfree.data.time.Week.getFirstMillisecond : virtualinvoke r2.<java.util.Calendar: void set(int,int)>(12, 0)
+org.jfree.data.time.Week.getFirstMillisecond : virtualinvoke r2.<java.util.Calendar: void set(int,int)>(14, 0)
+org.jfree.data.time.Week.getFirstMillisecond : virtualinvoke r2.<java.util.Calendar: void set(int,int)>(13, 0)
+org.jfree.data.time.Week.getFirstMillisecond : $i2 = virtualinvoke r2.<java.util.Calendar: int getFirstDayOfWeek()>()
+org.jfree.data.time.Day.getMonth : $r1 = r0.<org.jfree.data.time.Day: org.jfree.date.SerialDate serialDate>
+org.jfree.data.DefaultKeyedValues.getIndex : return -1
+org.jfree.data.DefaultKeyedValues.getIndex : $r3 = r0.<org.jfree.data.DefaultKeyedValues: java.util.HashMap indexMap>
+org.jfree.data.DefaultKeyedValues.getIndex : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "key")
+org.jfree.data.DefaultKeyedValues.getIndex : if r2 != null goto $i0 = virtualinvoke r2.<java.lang.Integer: int intValue()>()
+org.jfree.data.time.Year.getLastMillisecond : virtualinvoke r1.<java.util.Calendar: void set(int,int)>(14, 999)
+org.jfree.data.time.Year.getLastMillisecond : $l1 = virtualinvoke r1.<java.util.Calendar: long getTimeInMillis()>()
+org.jfree.data.time.Year.getLastMillisecond : $s0 = r0.<org.jfree.data.time.Year: short year>
+org.jfree.data.time.Month.getLastMillisecond : $l6 = virtualinvoke r1.<java.util.Calendar: long getTimeInMillis()>()
+org.jfree.data.time.Month.getLastMillisecond : virtualinvoke r1.<java.util.Calendar: void set(int,int)>(14, 999)
+org.jfree.data.time.Month.getLastMillisecond : $i1 = r0.<org.jfree.data.time.Month: int month>
+org.jfree.data.time.Month.getLastMillisecond : $i3 = r0.<org.jfree.data.time.Month: int year>
+org.jfree.data.time.Week.getWeek : $b0 = r0.<org.jfree.data.time.Week: byte week>
+org.jfree.data.time.Day.getYear : $r1 = r0.<org.jfree.data.time.Day: org.jfree.date.SerialDate serialDate>
+org.jfree.data.time.TimeTableXYDataset.remove : if z0 == 0 goto return
+org.jfree.data.time.TimeTableXYDataset.remove : $r3 = r0.<org.jfree.data.time.TimeTableXYDataset: org.jfree.data.DefaultKeyedValues2D values>
+org.jfree.data.DefaultKeyedValues.getItemCount : $r1 = r0.<org.jfree.data.DefaultKeyedValues: java.util.HashMap indexMap>
+org.jfree.data.time.Millisecond.getLastMillisecond : $l0 = r0.<org.jfree.data.time.Millisecond: long firstMillisecond>
+org.jfree.data.time.RegularTimePeriod.getEnd : $r1 = new java.util.Date
+org.jfree.data.time.Month.getSerialIndex : $i0 = r0.<org.jfree.data.time.Month: int year>
+org.jfree.data.time.Month.peg : $l0 = virtualinvoke r0.<org.jfree.data.time.Month: long getFirstMillisecond(java.util.Calendar)>(r1)
+org.jfree.data.time.Month.peg : $l1 = virtualinvoke r0.<org.jfree.data.time.Month: long getLastMillisecond(java.util.Calendar)>(r1)
+org.jfree.data.DefaultKeyedValues.getValue : $r1 = r0.<org.jfree.data.DefaultKeyedValues: java.util.ArrayList values>
+org.jfree.data.time.Week.getLastMillisecond : $s0 = r0.<org.jfree.data.time.Week: short year>
+org.jfree.data.time.Week.getLastMillisecond : virtualinvoke r2.<java.util.Calendar: void clear()>()
+org.jfree.data.time.Week.getLastMillisecond : $l0 = r0.<org.jfree.data.time.Week: long lastMillisecond>
+org.jfree.data.time.Week.getLastMillisecond : $b1 = r0.<org.jfree.data.time.Week: byte week>
+org.jfree.data.time.Week.getLastMillisecond : $r3 = virtualinvoke r1.<java.util.Calendar: java.lang.Object clone()>()
+org.jfree.data.time.Week.getLastMillisecond : virtualinvoke r2.<java.util.Calendar: void set(int,int)>(10, 0)
+org.jfree.data.time.Week.getLastMillisecond : virtualinvoke r2.<java.util.Calendar: void set(int,int)>(12, 0)
+org.jfree.data.time.Week.getLastMillisecond : $l4 = virtualinvoke r2.<java.util.Calendar: long getTimeInMillis()>()
+org.jfree.data.time.Week.getLastMillisecond : virtualinvoke r2.<java.util.Calendar: void set(int,int)>(14, 0)
+org.jfree.data.time.Week.getLastMillisecond : virtualinvoke r2.<java.util.Calendar: void set(int,int)>(13, 0)
+org.jfree.data.time.Week.getLastMillisecond : $i3 = virtualinvoke r2.<java.util.Calendar: int getFirstDayOfWeek()>()
+org.jfree.chart.axis.ValueAxis.setAutoRange : $z2 = r0.<org.jfree.chart.axis.ValueAxis: boolean autoRange>
+org.jfree.chart.axis.ValueAxis.setAutoRange : virtualinvoke r0.<org.jfree.chart.axis.ValueAxis: void setAutoRange(boolean,boolean)>(z0, 1)
+org.jfree.data.time.Millisecond.peg : $l0 = virtualinvoke r0.<org.jfree.data.time.Millisecond: long getFirstMillisecond(java.util.Calendar)>(r1)
+org.jfree.data.time.Week.getYear : $r1 = new org.jfree.data.time.Year
+org.jfree.data.DefaultKeyedValues2D.getRowIndex : $r2 = r0.<org.jfree.data.DefaultKeyedValues2D: java.util.List rowKeys>
+org.jfree.data.DefaultKeyedValues2D.getRowIndex : $z0 = r0.<org.jfree.data.DefaultKeyedValues2D: boolean sortRowKeys>
+org.jfree.data.DefaultKeyedValues2D.getRowIndex : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "key")
+org.jfree.data.time.RegularTimePeriod.downsize : $z1 = virtualinvoke r0.<java.lang.Object: boolean equals(java.lang.Object)>(class "org/jfree/data/time/Quarter")
+org.jfree.data.time.RegularTimePeriod.downsize : $z0 = virtualinvoke r0.<java.lang.Object: boolean equals(java.lang.Object)>(class "org/jfree/data/time/Year")
+org.jfree.data.time.RegularTimePeriod.downsize : return class "org/jfree/data/time/Day"
+org.jfree.data.time.RegularTimePeriod.downsize : $z2 = virtualinvoke r0.<java.lang.Object: boolean equals(java.lang.Object)>(class "org/jfree/data/time/Month")
+org.jfree.data.time.Month.getFirstMillisecond : virtualinvoke r1.<java.util.Calendar: void set(int,int)>(14, 0)
+org.jfree.data.time.Month.getFirstMillisecond : $l3 = virtualinvoke r1.<java.util.Calendar: long getTimeInMillis()>()
+org.jfree.data.time.Month.getFirstMillisecond : $i0 = r0.<org.jfree.data.time.Month: int year>
+org.jfree.data.DefaultKeyedValues2D.setValue : if i0 < 0 goto $r7 = new org.jfree.data.DefaultKeyedValues
+org.jfree.data.DefaultKeyedValues2D.setValue : $r13 = r0.<org.jfree.data.DefaultKeyedValues2D: java.util.List columnKeys>
+org.jfree.data.DefaultKeyedValues2D.setValue : if i1 >= 0 goto return
+org.jfree.data.DefaultKeyedValues2D.setValue : $z0 = r0.<org.jfree.data.DefaultKeyedValues2D: boolean sortRowKeys>
+org.jfree.data.DefaultKeyedValues2D.setValue : $r7 = new org.jfree.data.DefaultKeyedValues
+org.jfree.data.DefaultKeyedValues2D.setValue : $r8 = r0.<org.jfree.data.DefaultKeyedValues2D: java.util.List rowKeys>
+org.jfree.data.DefaultKeyedValues2D.setValue : $r9 = r0.<org.jfree.data.DefaultKeyedValues2D: java.util.List rows>
+org.jfree.data.DefaultKeyedValues2D.setValue : $i2 = neg i0
+org.jfree.data.DefaultKeyedValues2D.setValue : i0 = virtualinvoke r0.<org.jfree.data.DefaultKeyedValues2D: int getRowIndex(java.lang.Comparable)>(r2)
+org.jfree.data.DefaultKeyedValues2D.setValue : $r12 = r0.<org.jfree.data.DefaultKeyedValues2D: java.util.List columnKeys>
+org.jfree.data.DefaultKeyedValues2D.setValue : virtualinvoke r4.<org.jfree.data.DefaultKeyedValues: void setValue(java.lang.Comparable,java.lang.Number)>(r3, r1)
+org.jfree.data.time.Second.getFirstMillisecond : $b4 = r0.<org.jfree.data.time.Second: byte hour>
+org.jfree.data.time.Second.getFirstMillisecond : $r2 = r0.<org.jfree.data.time.Second: org.jfree.data.time.Day day>
+org.jfree.data.time.Second.getFirstMillisecond : $r3 = r0.<org.jfree.data.time.Second: org.jfree.data.time.Day day>
+org.jfree.data.time.Second.getFirstMillisecond : $r4 = r0.<org.jfree.data.time.Second: org.jfree.data.time.Day day>
+org.jfree.data.time.Second.getFirstMillisecond : $l7 = virtualinvoke r1.<java.util.Calendar: long getTimeInMillis()>()
+org.jfree.data.time.Second.getFirstMillisecond : virtualinvoke r1.<java.util.Calendar: void set(int,int)>(14, 0)
+org.jfree.data.time.Second.getFirstMillisecond : virtualinvoke r1.<java.util.Calendar: void clear()>()
+org.jfree.data.DefaultKeyedValues.setValue : i0 = virtualinvoke r0.<org.jfree.data.DefaultKeyedValues: int getIndex(java.lang.Comparable)>(r1)
+org.jfree.data.DefaultKeyedValues.setValue : $r8 = r0.<org.jfree.data.DefaultKeyedValues: java.util.ArrayList values>
+org.jfree.data.DefaultKeyedValues.setValue : $r9 = r0.<org.jfree.data.DefaultKeyedValues: java.util.HashMap indexMap>
+org.jfree.data.DefaultKeyedValues.setValue : $r7 = r0.<org.jfree.data.DefaultKeyedValues: java.util.ArrayList keys>
+org.jfree.data.DefaultKeyedValues.setValue : if i0 < 0 goto $r7 = r0.<org.jfree.data.DefaultKeyedValues: java.util.ArrayList keys>
+org.jfree.data.DefaultKeyedValues.setValue : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "key")
+org.jfree.data.time.Year.peg : $l1 = virtualinvoke r0.<org.jfree.data.time.Year: long getLastMillisecond(java.util.Calendar)>(r1)
+org.jfree.data.time.Year.peg : $l0 = virtualinvoke r0.<org.jfree.data.time.Year: long getFirstMillisecond(java.util.Calendar)>(r1)
+org.jfree.data.time.Day.getDayOfMonth : $r1 = r0.<org.jfree.data.time.Day: org.jfree.date.SerialDate serialDate>
+org.jfree.data.time.Millisecond.getFirstMillisecond : $l8 = virtualinvoke r1.<java.util.Calendar: long getTimeInMillis()>()
+org.jfree.data.time.Millisecond.getFirstMillisecond : $i7 = r0.<org.jfree.data.time.Millisecond: int millisecond>
+org.jfree.data.time.Millisecond.getFirstMillisecond : $b4 = r0.<org.jfree.data.time.Millisecond: byte hour>
+org.jfree.data.time.Millisecond.getFirstMillisecond : $r3 = r0.<org.jfree.data.time.Millisecond: org.jfree.data.time.Day day>
+org.jfree.data.time.Millisecond.getFirstMillisecond : virtualinvoke r1.<java.util.Calendar: void clear()>()
+org.jfree.data.time.Millisecond.getFirstMillisecond : $r2 = r0.<org.jfree.data.time.Millisecond: org.jfree.data.time.Day day>
+org.jfree.data.time.Millisecond.getFirstMillisecond : $r4 = r0.<org.jfree.data.time.Millisecond: org.jfree.data.time.Day day>
+org.jfree.data.time.Month.previous : $i0 = r0.<org.jfree.data.time.Month: int month>
+org.jfree.data.time.Month.previous : $i4 = r0.<org.jfree.data.time.Month: int year>
+org.jfree.data.time.Month.previous : r1 = null
+org.jfree.data.time.Month.previous : return r1
+org.jfree.data.time.Week.compareTo : goto [?= return i0]
+org.jfree.data.time.Week.compareTo : if i0 != 0 goto (branch)
+org.jfree.data.time.Week.compareTo : return i0
+org.jfree.data.time.Week.compareTo : r2 = (org.jfree.data.time.Week) r1
+org.jfree.data.time.Week.compareTo : $b3 = r0.<org.jfree.data.time.Week: byte week>
+org.jfree.data.time.Week.compareTo : $z0 = r1 instanceof org.jfree.data.time.Week
+org.jfree.data.time.Week.compareTo : $s1 = r0.<org.jfree.data.time.Week: short year>
+org.jfree.data.time.Year.getYear : $s0 = r0.<org.jfree.data.time.Year: short year>
+org.jfree.data.time.Second.peg : $l0 = virtualinvoke r0.<org.jfree.data.time.Second: long getFirstMillisecond(java.util.Calendar)>(r1)
+org.jfree.data.time.Day.getFirstMillisecond : $r2 = r0.<org.jfree.data.time.Day: org.jfree.date.SerialDate serialDate>
+org.jfree.data.time.Day.getFirstMillisecond : virtualinvoke r1.<java.util.Calendar: void set(int,int)>(14, 0)
+org.jfree.data.time.Day.getFirstMillisecond : $r3 = r0.<org.jfree.data.time.Day: org.jfree.date.SerialDate serialDate>
+org.jfree.data.time.Day.getFirstMillisecond : $i3 = i1 - 1
+org.jfree.data.time.Day.getFirstMillisecond : virtualinvoke r1.<java.util.Calendar: void clear()>()
+org.jfree.data.time.Day.getFirstMillisecond : $r4 = r0.<org.jfree.data.time.Day: org.jfree.date.SerialDate serialDate>
+org.jfree.data.time.Day.getFirstMillisecond : $l4 = virtualinvoke r1.<java.util.Calendar: long getTimeInMillis()>()
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null goto return
+org.jfree.data.time.Day.getLastMillisecond : virtualinvoke r1.<java.util.Calendar: void set(int,int)>(14, 999)
+org.jfree.data.time.Day.getLastMillisecond : $r2 = r0.<org.jfree.data.time.Day: org.jfree.date.SerialDate serialDate>
+org.jfree.data.time.Day.getLastMillisecond : $r3 = r0.<org.jfree.data.time.Day: org.jfree.date.SerialDate serialDate>
+org.jfree.data.time.Day.getLastMillisecond : $i3 = i1 - 1
+org.jfree.data.time.Day.getLastMillisecond : virtualinvoke r1.<java.util.Calendar: void clear()>()
+org.jfree.data.time.Day.getLastMillisecond : $r4 = r0.<org.jfree.data.time.Day: org.jfree.date.SerialDate serialDate>
+org.jfree.data.time.Day.getLastMillisecond : $l4 = virtualinvoke r1.<java.util.Calendar: long getTimeInMillis()>()

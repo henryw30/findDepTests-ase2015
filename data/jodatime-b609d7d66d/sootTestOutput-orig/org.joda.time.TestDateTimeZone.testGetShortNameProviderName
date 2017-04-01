@@ -1,0 +1,14 @@
+org.joda.time.tz.DefaultNameProvider.getShortName : r4 = specialinvoke r0.<org.joda.time.tz.DefaultNameProvider: java.lang.String[] getNameSet(java.util.Locale,java.lang.String,java.lang.String)>(r1, r2, r3)
+org.joda.time.tz.DefaultNameProvider.getShortName : if r4 != null goto $r5 = r4[0]
+org.joda.time.DateTimeZone.getDefault : if r0 != null goto return r0
+org.joda.time.DateTimeZone.getDefault : r0 = <org.joda.time.DateTimeZone: org.joda.time.DateTimeZone cDefault>
+org.joda.time.DateTimeZone.getDefault : return r0
+org.joda.time.DateTimeZone.setDefault : exitmonitor r3
+org.joda.time.DateTimeZone.setDefault : $r6 = class "org/joda/time/DateTimeZone"
+org.joda.time.DateTimeZone.setDefault : <org.joda.time.DateTimeZone: org.joda.time.DateTimeZone cDefault> = r0
+org.joda.time.DateTimeZone.setDefault : if r1 == null goto (branch)
+org.joda.time.DateTimeZone.setDefault : if r0 != null goto $r6 = class "org/joda/time/DateTimeZone"
+org.joda.time.DateTimeZone.setDefault : r1 = staticinvoke <java.lang.System: java.lang.SecurityManager getSecurityManager()>()
+org.joda.time.DateTimeZone.getNameProvider : $r0 = <org.joda.time.DateTimeZone: org.joda.time.tz.NameProvider cNameProvider>
+org.joda.time.tz.DefaultNameProvider.getNameSet : return null
+org.joda.time.tz.DefaultNameProvider.getNameSet : if r1 == null goto return null

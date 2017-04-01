@@ -1,0 +1,78 @@
+org.joda.time.DateTimeZone.setDefault : r1 = staticinvoke <java.lang.System: java.lang.SecurityManager getSecurityManager()>() >>>>>>>> org.joda.time.DateTimeZone.setDefault : if r1 == null
+org.joda.time.DateTimeZone.setDefault : if r1 == null >>>>>>>> org.joda.time.DateTimeZone.setDefault : if r0 != null
+org.joda.time.DateTimeZone.setDefault : if r0 != null >>>>>>>> org.joda.time.DateTimeZone.setDefault : $r6 = class "org/joda/time/DateTimeZone"
+org.joda.time.DateTimeZone.setDefault : $r6 = class "org/joda/time/DateTimeZone" >>>>>>>> org.joda.time.DateTimeZone.setDefault : r3 = $r6
+org.joda.time.DateTimeZone.setDefault : r3 = $r6 >>>>>>>> org.joda.time.DateTimeZone.setDefault : entermonitor $r6
+org.joda.time.DateTimeZone.setDefault : entermonitor $r6 >>>>>>>> org.joda.time.DateTimeZone.setDefault : <org.joda.time.DateTimeZone: org.joda.time.DateTimeZone cDefault> = r0
+org.joda.time.DateTimeZone.setDefault : <org.joda.time.DateTimeZone: org.joda.time.DateTimeZone cDefault> = r0 >>>>>>>> org.joda.time.DateTimeZone.setDefault : exitmonitor r3
+org.joda.time.DateTimeZone.setDefault : exitmonitor r3 >>>>>>>> org.joda.time.DateTimeZone.setDefault : goto [?= return]
+org.joda.time.DateTimeZone.setDefault : goto [?= return] >>>>>>>> org.joda.time.DateTimeZone.getDefault : r0 = <org.joda.time.DateTimeZone: org.joda.time.DateTimeZone cDefault>
+org.joda.time.DateTimeZone.getDefault : r0 = <org.joda.time.DateTimeZone: org.joda.time.DateTimeZone cDefault> >>>>>>>> org.joda.time.DateTimeZone.getDefault : if r0 != null
+org.joda.time.DateTimeZone.getDefault : if r0 != null >>>>>>>> org.joda.time.DateTimeZone.getDefault : return r0
+org.joda.time.DateTimeZone.getDefault : return r0 >>>>>>>> org.joda.time.DateTimeZone.forID : if r0 != null
+org.joda.time.DateTimeZone.forID : if r0 != null >>>>>>>> org.joda.time.DateTimeZone.forID : $z0 = virtualinvoke r0.<java.lang.String: boolean equals(java.lang.Object)>("UTC")
+org.joda.time.DateTimeZone.forID : $z0 = virtualinvoke r0.<java.lang.String: boolean equals(java.lang.Object)>("UTC") >>>>>>>> org.joda.time.DateTimeZone.forID : if $z0 == 0
+org.joda.time.DateTimeZone.forID : if $z0 == 0 >>>>>>>> org.joda.time.DateTimeZone.forID : $r4 = <org.joda.time.DateTimeZone: org.joda.time.tz.Provider cProvider>
+org.joda.time.DateTimeZone.forID : $r4 = <org.joda.time.DateTimeZone: org.joda.time.tz.Provider cProvider> >>>>>>>> org.joda.time.DateTimeZone.forID : r1 = interfaceinvoke $r4.<org.joda.time.tz.Provider: org.joda.time.DateTimeZone getZone(java.lang.String)>(r0)
+org.joda.time.DateTimeZone.forID : r1 = interfaceinvoke $r4.<org.joda.time.tz.Provider: org.joda.time.DateTimeZone getZone(java.lang.String)>(r0) >>>>>>>> org.joda.time.tz.ZoneInfoProvider.getZone : if r1 != null
+org.joda.time.tz.ZoneInfoProvider.getZone : if r1 != null >>>>>>>> org.joda.time.tz.ZoneInfoProvider.getZone : $r5 = r0.<org.joda.time.tz.ZoneInfoProvider: java.util.Map iZoneInfoMap>
+org.joda.time.tz.ZoneInfoProvider.getZone : $r5 = r0.<org.joda.time.tz.ZoneInfoProvider: java.util.Map iZoneInfoMap> >>>>>>>> org.joda.time.tz.ZoneInfoProvider.getZone : r2 = interfaceinvoke $r5.<java.util.Map: java.lang.Object get(java.lang.Object)>(r1)
+org.joda.time.tz.ZoneInfoProvider.getZone : r2 = interfaceinvoke $r5.<java.util.Map: java.lang.Object get(java.lang.Object)>(r1) >>>>>>>> org.joda.time.tz.ZoneInfoProvider.getZone : if r2 != null
+org.joda.time.tz.ZoneInfoProvider.getZone : if r2 != null >>>>>>>> org.joda.time.tz.ZoneInfoProvider.getZone : $z0 = virtualinvoke r1.<java.lang.String: boolean equals(java.lang.Object)>(r2)
+org.joda.time.tz.ZoneInfoProvider.getZone : $z0 = virtualinvoke r1.<java.lang.String: boolean equals(java.lang.Object)>(r2) >>>>>>>> org.joda.time.tz.ZoneInfoProvider.getZone : if $z0 == 0
+org.joda.time.tz.ZoneInfoProvider.getZone : if $z0 == 0 >>>>>>>> org.joda.time.tz.ZoneInfoProvider.getZone : $z1 = r2 instanceof java.lang.ref.SoftReference
+org.joda.time.tz.ZoneInfoProvider.getZone : $z1 = r2 instanceof java.lang.ref.SoftReference >>>>>>>> org.joda.time.tz.ZoneInfoProvider.getZone : if $z1 == 0
+org.joda.time.tz.ZoneInfoProvider.getZone : if $z1 == 0 >>>>>>>> org.joda.time.tz.ZoneInfoProvider.getZone : r3 = (java.lang.ref.SoftReference) r2
+org.joda.time.tz.ZoneInfoProvider.getZone : r3 = (java.lang.ref.SoftReference) r2 >>>>>>>> org.joda.time.tz.ZoneInfoProvider.getZone : $r7 = virtualinvoke r3.<java.lang.ref.SoftReference: java.lang.Object get()>()
+org.joda.time.tz.ZoneInfoProvider.getZone : $r7 = virtualinvoke r3.<java.lang.ref.SoftReference: java.lang.Object get()>() >>>>>>>> org.joda.time.tz.ZoneInfoProvider.getZone : r4 = (org.joda.time.DateTimeZone) $r7
+org.joda.time.tz.ZoneInfoProvider.getZone : r4 = (org.joda.time.DateTimeZone) $r7 >>>>>>>> org.joda.time.tz.ZoneInfoProvider.getZone : if r4 == null
+org.joda.time.tz.ZoneInfoProvider.getZone : if r4 == null >>>>>>>> org.joda.time.tz.ZoneInfoProvider.getZone : return r4
+org.joda.time.tz.ZoneInfoProvider.getZone : return r4 >>>>>>>> org.joda.time.DateTimeZone.forID : if r1 == null
+org.joda.time.DateTimeZone.forID : if r1 == null >>>>>>>> org.joda.time.DateTimeZone.forID : return r1
+org.joda.time.DateTimeZone.forID : return r1 >>>>>>>> org.joda.time.DateTimeZone.getName : if r1 != null
+org.joda.time.DateTimeZone.getName : if r1 != null >>>>>>>> org.joda.time.DateTimeZone.getName : r2 = virtualinvoke r0.<org.joda.time.DateTimeZone: java.lang.String getNameKey(long)>(l0)
+org.joda.time.DateTimeZone.getName : r2 = virtualinvoke r0.<org.joda.time.DateTimeZone: java.lang.String getNameKey(long)>(l0) >>>>>>>> org.joda.time.tz.CachedDateTimeZone.getNameKey : $r1 = specialinvoke r0.<org.joda.time.tz.CachedDateTimeZone: org.joda.time.tz.CachedDateTimeZone$Info getInfo(long)>(l0)
+org.joda.time.tz.CachedDateTimeZone.getNameKey : $r1 = specialinvoke r0.<org.joda.time.tz.CachedDateTimeZone: org.joda.time.tz.CachedDateTimeZone$Info getInfo(long)>(l0) >>>>>>>> org.joda.time.tz.CachedDateTimeZone.getInfo : $l4 = l0 >> 32
+org.joda.time.tz.CachedDateTimeZone.getInfo : $l4 = l0 >> 32 >>>>>>>> org.joda.time.tz.CachedDateTimeZone.getInfo : i1 = (int) $l4
+org.joda.time.tz.CachedDateTimeZone.getInfo : i1 = (int) $l4 >>>>>>>> org.joda.time.tz.CachedDateTimeZone.getInfo : r1 = r0.<org.joda.time.tz.CachedDateTimeZone: org.joda.time.tz.CachedDateTimeZone$Info[] iInfoCache>
+org.joda.time.tz.CachedDateTimeZone.getInfo : r1 = r0.<org.joda.time.tz.CachedDateTimeZone: org.joda.time.tz.CachedDateTimeZone$Info[] iInfoCache> >>>>>>>> org.joda.time.tz.CachedDateTimeZone.getInfo : $i2 = <org.joda.time.tz.CachedDateTimeZone: int cInfoCacheMask>
+org.joda.time.tz.CachedDateTimeZone.getInfo : $i2 = <org.joda.time.tz.CachedDateTimeZone: int cInfoCacheMask> >>>>>>>> org.joda.time.tz.CachedDateTimeZone.getInfo : i3 = i1 & $i2
+org.joda.time.tz.CachedDateTimeZone.getInfo : i3 = i1 & $i2 >>>>>>>> org.joda.time.tz.CachedDateTimeZone.getInfo : r2 = r1[i3]
+org.joda.time.tz.CachedDateTimeZone.getInfo : r2 = r1[i3] >>>>>>>> org.joda.time.tz.CachedDateTimeZone.getInfo : if r2 == null
+org.joda.time.tz.CachedDateTimeZone.getInfo : if r2 == null >>>>>>>> org.joda.time.tz.CachedDateTimeZone.getInfo : $l5 = r2.<org.joda.time.tz.CachedDateTimeZone$Info: long iPeriodStart>
+org.joda.time.tz.CachedDateTimeZone.getInfo : $l5 = r2.<org.joda.time.tz.CachedDateTimeZone$Info: long iPeriodStart> >>>>>>>> org.joda.time.tz.CachedDateTimeZone.getInfo : $l6 = $l5 >> 32
+org.joda.time.tz.CachedDateTimeZone.getInfo : $l6 = $l5 >> 32 >>>>>>>> org.joda.time.tz.CachedDateTimeZone.getInfo : $i7 = (int) $l6
+org.joda.time.tz.CachedDateTimeZone.getInfo : $i7 = (int) $l6 >>>>>>>> org.joda.time.tz.CachedDateTimeZone.getInfo : if $i7 == i1
+org.joda.time.tz.CachedDateTimeZone.getInfo : if $i7 == i1 >>>>>>>> org.joda.time.tz.CachedDateTimeZone.getInfo : return r2
+org.joda.time.tz.CachedDateTimeZone.getInfo : return r2 >>>>>>>> org.joda.time.tz.CachedDateTimeZone.getNameKey : $r2 = virtualinvoke $r1.<org.joda.time.tz.CachedDateTimeZone$Info: java.lang.String getNameKey(long)>(l0)
+org.joda.time.tz.CachedDateTimeZone.getNameKey : $r2 = virtualinvoke $r1.<org.joda.time.tz.CachedDateTimeZone$Info: java.lang.String getNameKey(long)>(l0) >>>>>>>> org.joda.time.tz.CachedDateTimeZone$Info.getNameKey : $r1 = r0.<org.joda.time.tz.CachedDateTimeZone$Info: org.joda.time.tz.CachedDateTimeZone$Info iNextInfo>
+org.joda.time.tz.CachedDateTimeZone$Info.getNameKey : $r1 = r0.<org.joda.time.tz.CachedDateTimeZone$Info: org.joda.time.tz.CachedDateTimeZone$Info iNextInfo> >>>>>>>> org.joda.time.tz.CachedDateTimeZone$Info.getNameKey : if $r1 == null
+org.joda.time.tz.CachedDateTimeZone$Info.getNameKey : if $r1 == null >>>>>>>> org.joda.time.tz.CachedDateTimeZone$Info.getNameKey : $r3 = r0.<org.joda.time.tz.CachedDateTimeZone$Info: java.lang.String iNameKey>
+org.joda.time.tz.CachedDateTimeZone$Info.getNameKey : $r3 = r0.<org.joda.time.tz.CachedDateTimeZone$Info: java.lang.String iNameKey> >>>>>>>> org.joda.time.tz.CachedDateTimeZone$Info.getNameKey : if $r3 != null
+org.joda.time.tz.CachedDateTimeZone$Info.getNameKey : if $r3 != null >>>>>>>> org.joda.time.tz.CachedDateTimeZone$Info.getNameKey : $r6 = r0.<org.joda.time.tz.CachedDateTimeZone$Info: java.lang.String iNameKey>
+org.joda.time.tz.CachedDateTimeZone$Info.getNameKey : $r6 = r0.<org.joda.time.tz.CachedDateTimeZone$Info: java.lang.String iNameKey> >>>>>>>> org.joda.time.tz.CachedDateTimeZone$Info.getNameKey : return $r6
+org.joda.time.tz.CachedDateTimeZone$Info.getNameKey : return $r6 >>>>>>>> org.joda.time.tz.CachedDateTimeZone.getNameKey : return $r2
+org.joda.time.tz.CachedDateTimeZone.getNameKey : return $r2 >>>>>>>> org.joda.time.DateTimeZone.getName : if r2 != null
+org.joda.time.DateTimeZone.getName : if r2 != null >>>>>>>> org.joda.time.DateTimeZone.getName : $r5 = <org.joda.time.DateTimeZone: org.joda.time.tz.NameProvider cNameProvider>
+org.joda.time.DateTimeZone.getName : $r5 = <org.joda.time.DateTimeZone: org.joda.time.tz.NameProvider cNameProvider> >>>>>>>> org.joda.time.DateTimeZone.getName : $r6 = r0.<org.joda.time.DateTimeZone: java.lang.String iID>
+org.joda.time.DateTimeZone.getName : $r6 = r0.<org.joda.time.DateTimeZone: java.lang.String iID> >>>>>>>> org.joda.time.DateTimeZone.getName : r3 = interfaceinvoke $r5.<org.joda.time.tz.NameProvider: java.lang.String getName(java.util.Locale,java.lang.String,java.lang.String)>(r1, $r6, r2)
+org.joda.time.DateTimeZone.getName : r3 = interfaceinvoke $r5.<org.joda.time.tz.NameProvider: java.lang.String getName(java.util.Locale,java.lang.String,java.lang.String)>(r1, $r6, r2) >>>>>>>> org.joda.time.tz.DefaultNameProvider.getName : r4 = specialinvoke r0.<org.joda.time.tz.DefaultNameProvider: java.lang.String[] getNameSet(java.util.Locale,java.lang.String,java.lang.String)>(r1, r2, r3)
+org.joda.time.tz.DefaultNameProvider.getName : r4 = specialinvoke r0.<org.joda.time.tz.DefaultNameProvider: java.lang.String[] getNameSet(java.util.Locale,java.lang.String,java.lang.String)>(r1, r2, r3) >>>>>>>> org.joda.time.tz.DefaultNameProvider.getNameSet : if r1 == null
+org.joda.time.tz.DefaultNameProvider.getNameSet : if r1 == null >>>>>>>> org.joda.time.tz.DefaultNameProvider.getNameSet : if r2 == null
+org.joda.time.tz.DefaultNameProvider.getNameSet : if r2 == null >>>>>>>> org.joda.time.tz.DefaultNameProvider.getNameSet : if r3 != null
+org.joda.time.tz.DefaultNameProvider.getNameSet : if r3 != null >>>>>>>> org.joda.time.tz.DefaultNameProvider.getNameSet : $r11 = r0.<org.joda.time.tz.DefaultNameProvider: java.util.HashMap iByLocaleCache>
+org.joda.time.tz.DefaultNameProvider.getNameSet : $r11 = r0.<org.joda.time.tz.DefaultNameProvider: java.util.HashMap iByLocaleCache> >>>>>>>> org.joda.time.tz.DefaultNameProvider.getNameSet : $r12 = virtualinvoke $r11.<java.util.HashMap: java.lang.Object get(java.lang.Object)>(r1)
+org.joda.time.tz.DefaultNameProvider.getNameSet : $r12 = virtualinvoke $r11.<java.util.HashMap: java.lang.Object get(java.lang.Object)>(r1) >>>>>>>> org.joda.time.tz.DefaultNameProvider.getNameSet : r4 = (java.util.Map) $r12
+org.joda.time.tz.DefaultNameProvider.getNameSet : r4 = (java.util.Map) $r12 >>>>>>>> org.joda.time.tz.DefaultNameProvider.getNameSet : if r4 != null
+org.joda.time.tz.DefaultNameProvider.getNameSet : if r4 != null >>>>>>>> org.joda.time.tz.DefaultNameProvider.getNameSet : $r16 = interfaceinvoke r4.<java.util.Map: java.lang.Object get(java.lang.Object)>(r2)
+org.joda.time.tz.DefaultNameProvider.getNameSet : $r16 = interfaceinvoke r4.<java.util.Map: java.lang.Object get(java.lang.Object)>(r2) >>>>>>>> org.joda.time.tz.DefaultNameProvider.getNameSet : r5 = (java.util.Map) $r16
+org.joda.time.tz.DefaultNameProvider.getNameSet : r5 = (java.util.Map) $r16 >>>>>>>> org.joda.time.tz.DefaultNameProvider.getNameSet : if r5 != null
+org.joda.time.tz.DefaultNameProvider.getNameSet : if r5 != null >>>>>>>> org.joda.time.tz.DefaultNameProvider.getNameSet : $r48 = interfaceinvoke r5.<java.util.Map: java.lang.Object get(java.lang.Object)>(r3)
+org.joda.time.tz.DefaultNameProvider.getNameSet : $r48 = interfaceinvoke r5.<java.util.Map: java.lang.Object get(java.lang.Object)>(r3) >>>>>>>> org.joda.time.tz.DefaultNameProvider.getNameSet : $r49 = (java.lang.String[]) $r48
+org.joda.time.tz.DefaultNameProvider.getNameSet : $r49 = (java.lang.String[]) $r48 >>>>>>>> org.joda.time.tz.DefaultNameProvider.getNameSet : $r50 = (java.lang.String[]) $r49
+org.joda.time.tz.DefaultNameProvider.getNameSet : $r50 = (java.lang.String[]) $r49 >>>>>>>> org.joda.time.tz.DefaultNameProvider.getNameSet : return $r50
+org.joda.time.tz.DefaultNameProvider.getNameSet : return $r50 >>>>>>>> org.joda.time.tz.DefaultNameProvider.getName : if r4 != null
+org.joda.time.tz.DefaultNameProvider.getName : if r4 != null >>>>>>>> org.joda.time.tz.DefaultNameProvider.getName : $r5 = r4[1]
+org.joda.time.tz.DefaultNameProvider.getName : $r5 = r4[1] >>>>>>>> org.joda.time.tz.DefaultNameProvider.getName : return $r5
+org.joda.time.tz.DefaultNameProvider.getName : return $r5 >>>>>>>> org.joda.time.DateTimeZone.getName : if r3 == null
+org.joda.time.DateTimeZone.getName : if r3 == null >>>>>>>> org.joda.time.DateTimeZone.getName : return r3

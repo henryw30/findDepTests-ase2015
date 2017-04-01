@@ -1,0 +1,18 @@
+org.joda.time.field.FieldUtils.safeAdd : l2 = l0 + l1 >>>>>>>> org.joda.time.field.FieldUtils.safeAdd : $l3 = l0 ^ l2
+org.joda.time.field.FieldUtils.safeAdd : $l3 = l0 ^ l2 >>>>>>>> org.joda.time.field.FieldUtils.safeAdd : $b4 = $l3 cmp 0L
+org.joda.time.field.FieldUtils.safeAdd : $b4 = $l3 cmp 0L >>>>>>>> org.joda.time.field.FieldUtils.safeAdd : if $b4 >= 0
+org.joda.time.field.FieldUtils.safeAdd : if $b4 >= 0 >>>>>>>> org.joda.time.field.FieldUtils.safeAdd : $l5 = l0 ^ l1
+org.joda.time.field.FieldUtils.safeAdd : if $b4 >= 0 >>>>>>>> org.joda.time.field.FieldUtils.safeAdd : return l2
+org.joda.time.field.FieldUtils.safeAdd : $l5 = l0 ^ l1 >>>>>>>> org.joda.time.field.FieldUtils.safeAdd : $b6 = $l5 cmp 0L
+org.joda.time.field.FieldUtils.safeAdd : $b6 = $l5 cmp 0L >>>>>>>> org.joda.time.field.FieldUtils.safeAdd : if $b6 < 0
+org.joda.time.field.FieldUtils.safeAdd : if $b6 < 0 >>>>>>>> org.joda.time.field.FieldUtils.safeAdd : $r0 = new java.lang.ArithmeticException
+org.joda.time.field.FieldUtils.safeAdd : if $b6 < 0 >>>>>>>> org.joda.time.field.FieldUtils.safeAdd : return l2
+org.joda.time.field.FieldUtils.safeAdd : $r0 = new java.lang.ArithmeticException >>>>>>>> org.joda.time.field.FieldUtils.safeAdd : $r1 = new java.lang.StringBuilder
+org.joda.time.field.FieldUtils.safeAdd : $r1 = new java.lang.StringBuilder >>>>>>>> org.joda.time.field.FieldUtils.safeAdd : specialinvoke $r1.<java.lang.StringBuilder: void <init>()>()
+org.joda.time.field.FieldUtils.safeAdd : specialinvoke $r1.<java.lang.StringBuilder: void <init>()>() >>>>>>>> org.joda.time.field.FieldUtils.safeAdd : $r2 = virtualinvoke $r1.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("The calculation caused an overflow: ")
+org.joda.time.field.FieldUtils.safeAdd : $r2 = virtualinvoke $r1.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("The calculation caused an overflow: ") >>>>>>>> org.joda.time.field.FieldUtils.safeAdd : $r3 = virtualinvoke $r2.<java.lang.StringBuilder: java.lang.StringBuilder append(long)>(l0)
+org.joda.time.field.FieldUtils.safeAdd : $r3 = virtualinvoke $r2.<java.lang.StringBuilder: java.lang.StringBuilder append(long)>(l0) >>>>>>>> org.joda.time.field.FieldUtils.safeAdd : $r4 = virtualinvoke $r3.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(" + ")
+org.joda.time.field.FieldUtils.safeAdd : $r4 = virtualinvoke $r3.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(" + ") >>>>>>>> org.joda.time.field.FieldUtils.safeAdd : $r5 = virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(long)>(l1)
+org.joda.time.field.FieldUtils.safeAdd : $r5 = virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(long)>(l1) >>>>>>>> org.joda.time.field.FieldUtils.safeAdd : $r6 = virtualinvoke $r5.<java.lang.StringBuilder: java.lang.String toString()>()
+org.joda.time.field.FieldUtils.safeAdd : $r6 = virtualinvoke $r5.<java.lang.StringBuilder: java.lang.String toString()>() >>>>>>>> org.joda.time.field.FieldUtils.safeAdd : specialinvoke $r0.<java.lang.ArithmeticException: void <init>(java.lang.String)>($r6)
+org.joda.time.field.FieldUtils.safeAdd : specialinvoke $r0.<java.lang.ArithmeticException: void <init>(java.lang.String)>($r6) >>>>>>>> org.joda.time.field.FieldUtils.safeAdd : throw $r0

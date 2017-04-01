@@ -1,0 +1,26 @@
+org.jfree.data.general.AbstractDataset.addChangeListener : $r2 = r0.<org.jfree.data.general.AbstractDataset: javax.swing.event.EventListenerList listenerList>
+org.jfree.chart.renderer.AbstractRenderer.addChangeListener : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "listener")
+org.jfree.chart.renderer.AbstractRenderer.addChangeListener : $r2 = r0.<org.jfree.chart.renderer.AbstractRenderer: javax.swing.event.EventListenerList listenerList>
+org.jfree.chart.renderer.WaferMapRenderer.setPlot : specialinvoke r0.<org.jfree.chart.renderer.WaferMapRenderer: void makePaintIndex()>()
+org.jfree.chart.renderer.WaferMapRenderer.setPlot : r0.<org.jfree.chart.renderer.WaferMapRenderer: org.jfree.chart.plot.WaferMapPlot plot> = r1
+org.jfree.data.general.WaferMapDataset.getUniqueValues : return r2
+org.jfree.data.general.WaferMapDataset.getUniqueValues : i0 = 0
+org.jfree.data.general.WaferMapDataset.getUniqueValues : $r1 = new java.util.TreeSet
+org.jfree.data.DefaultKeyedValues2D.getRowCount : $r1 = r0.<org.jfree.data.DefaultKeyedValues2D: java.util.List rowKeys>
+org.jfree.chart.renderer.WaferMapRenderer.makePaintIndex : r5 = interfaceinvoke r4.<java.util.Set: java.util.Iterator iterator()>()
+org.jfree.chart.renderer.WaferMapRenderer.makePaintIndex : r2 = virtualinvoke r1.<org.jfree.data.general.WaferMapDataset: java.lang.Number getMinValue()>()
+org.jfree.chart.renderer.WaferMapRenderer.makePaintIndex : r3 = virtualinvoke r1.<org.jfree.data.general.WaferMapDataset: java.lang.Number getMaxValue()>()
+org.jfree.chart.renderer.WaferMapRenderer.makePaintIndex : i0 = 0
+org.jfree.chart.renderer.WaferMapRenderer.makePaintIndex : r4 = virtualinvoke r1.<org.jfree.data.general.WaferMapDataset: java.util.Set getUniqueValues()>()
+org.jfree.chart.renderer.WaferMapRenderer.makePaintIndex : $r7 = r0.<org.jfree.chart.renderer.WaferMapRenderer: org.jfree.chart.plot.WaferMapPlot plot>
+org.jfree.chart.renderer.WaferMapRenderer.makePaintIndex : goto [?= return]
+org.jfree.chart.renderer.WaferMapRenderer.makePaintIndex : $r8 = r0.<org.jfree.chart.renderer.WaferMapRenderer: org.jfree.chart.plot.WaferMapPlot plot>
+org.jfree.chart.renderer.WaferMapRenderer.makePaintIndex : $i2 = interfaceinvoke r4.<java.util.Set: int size()>()
+org.jfree.data.general.WaferMapDataset.getMinValue : $r1 = r0.<org.jfree.data.general.WaferMapDataset: java.lang.Double minValue>
+org.jfree.data.general.WaferMapDataset.getMaxValue : $r1 = r0.<org.jfree.data.general.WaferMapDataset: java.lang.Double maxValue>
+org.jfree.chart.plot.WaferMapPlot.getDataset : $r1 = r0.<org.jfree.chart.plot.WaferMapPlot: org.jfree.data.general.WaferMapDataset dataset>
+org.jfree.chart.renderer.WaferMapRenderer.isMethodValid : lookupswitch(i0) {     case 0: goto return 1;     case 1: goto return 1;     default: goto return 0; }
+org.jfree.chart.renderer.WaferMapRenderer.isMethodValid : return 0
+org.jfree.chart.renderer.AbstractRenderer.clearSeriesPaints : if z0 == 0 goto return
+org.jfree.chart.renderer.AbstractRenderer.clearSeriesPaints : $r1 = r0.<org.jfree.chart.renderer.AbstractRenderer: org.jfree.util.PaintList paintList>
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null goto return

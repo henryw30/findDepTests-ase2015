@@ -1,0 +1,112 @@
+org.jfree.chart.renderer.xy.XYBarRenderer.setLegendBar : virtualinvoke r0.<org.jfree.chart.renderer.xy.XYBarRenderer: void fireChangeEvent()>()
+org.jfree.chart.renderer.xy.XYBarRenderer.setLegendBar : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "bar")
+org.jfree.chart.renderer.xy.XYBarRenderer.setLegendBar : r0.<org.jfree.chart.renderer.xy.XYBarRenderer: java.awt.Shape legendBar> = r1
+org.jfree.chart.renderer.xy.XYBarRenderer.setBase : virtualinvoke r0.<org.jfree.chart.renderer.xy.XYBarRenderer: void fireChangeEvent()>()
+org.jfree.chart.renderer.xy.XYBarRenderer.setBase : r0.<org.jfree.chart.renderer.xy.XYBarRenderer: double base> = d0
+org.jfree.chart.renderer.xy.AbstractXYItemRenderer.clone : $r37 = r0.<org.jfree.chart.renderer.xy.AbstractXYItemRenderer: org.jfree.chart.labels.XYSeriesLabelGenerator legendItemToolTipGenerator>
+org.jfree.chart.renderer.xy.AbstractXYItemRenderer.clone : $r18 = r0.<org.jfree.chart.renderer.xy.AbstractXYItemRenderer: org.jfree.chart.labels.XYToolTipGenerator toolTipGenerator>
+org.jfree.chart.renderer.xy.AbstractXYItemRenderer.clone : $r25 = virtualinvoke $r24.<org.jfree.util.ObjectList: java.lang.Object clone()>()
+org.jfree.chart.renderer.xy.AbstractXYItemRenderer.clone : $r48 = r0.<org.jfree.chart.renderer.xy.AbstractXYItemRenderer: java.util.List backgroundAnnotations>
+org.jfree.chart.renderer.xy.AbstractXYItemRenderer.clone : $r34 = r0.<org.jfree.chart.renderer.xy.AbstractXYItemRenderer: org.jfree.chart.labels.XYSeriesLabelGenerator legendItemLabelGenerator>
+org.jfree.chart.renderer.xy.AbstractXYItemRenderer.clone : $r4 = r0.<org.jfree.chart.renderer.xy.AbstractXYItemRenderer: org.jfree.chart.labels.XYItemLabelGenerator itemLabelGenerator>
+org.jfree.chart.renderer.xy.AbstractXYItemRenderer.clone : $r9 = r0.<org.jfree.chart.renderer.xy.AbstractXYItemRenderer: org.jfree.util.ObjectList itemLabelGeneratorList>
+org.jfree.chart.renderer.xy.AbstractXYItemRenderer.clone : $r35 = staticinvoke <org.jfree.util.ObjectUtilities: java.lang.Object clone(java.lang.Object)>($r34)
+org.jfree.chart.renderer.xy.AbstractXYItemRenderer.clone : $r3 = specialinvoke r0.<org.jfree.chart.renderer.AbstractRenderer: java.lang.Object clone()>()
+org.jfree.chart.renderer.xy.AbstractXYItemRenderer.clone : $r12 = r0.<org.jfree.chart.renderer.xy.AbstractXYItemRenderer: org.jfree.chart.labels.XYItemLabelGenerator baseItemLabelGenerator>
+org.jfree.chart.renderer.xy.AbstractXYItemRenderer.clone : $r45 = r0.<org.jfree.chart.renderer.xy.AbstractXYItemRenderer: java.util.List foregroundAnnotations>
+org.jfree.chart.renderer.xy.AbstractXYItemRenderer.clone : $r24 = r0.<org.jfree.chart.renderer.xy.AbstractXYItemRenderer: org.jfree.util.ObjectList toolTipGeneratorList>
+org.jfree.chart.renderer.xy.AbstractXYItemRenderer.clone : $r27 = r0.<org.jfree.chart.renderer.xy.AbstractXYItemRenderer: org.jfree.chart.labels.XYToolTipGenerator baseToolTipGenerator>
+org.jfree.chart.renderer.xy.AbstractXYItemRenderer.clone : $r41 = r0.<org.jfree.chart.renderer.xy.AbstractXYItemRenderer: org.jfree.chart.labels.XYSeriesLabelGenerator legendItemURLGenerator>
+org.jfree.chart.renderer.xy.AbstractXYItemRenderer.clone : $r10 = virtualinvoke $r9.<org.jfree.util.ObjectList: java.lang.Object clone()>()
+org.jfree.chart.renderer.xy.AbstractXYItemRenderer.clone : return r1
+org.jfree.chart.renderer.xy.AbstractXYItemRenderer.clone : $r33 = r0.<org.jfree.chart.renderer.xy.AbstractXYItemRenderer: org.jfree.chart.labels.XYSeriesLabelGenerator legendItemLabelGenerator>
+org.jfree.chart.renderer.AbstractRenderer.getBaseLegendShape : $r1 = r0.<org.jfree.chart.renderer.AbstractRenderer: java.awt.Shape baseLegendShape>
+org.jfree.chart.renderer.xy.XYBarRenderer.setDrawBarOutline : virtualinvoke r0.<org.jfree.chart.renderer.xy.XYBarRenderer: void fireChangeEvent()>()
+org.jfree.chart.renderer.xy.XYBarRenderer.setDrawBarOutline : r0.<org.jfree.chart.renderer.xy.XYBarRenderer: boolean drawBarOutline> = z0
+org.jfree.chart.labels.StandardXYSeriesLabelGenerator.clone : $r1 = specialinvoke r0.<java.lang.Object: java.lang.Object clone()>()
+org.jfree.chart.renderer.AbstractRenderer.fireChangeEvent : $r1 = new org.jfree.chart.event.RendererChangeEvent
+org.jfree.chart.renderer.AbstractRenderer.setShape : virtualinvoke r0.<org.jfree.chart.renderer.AbstractRenderer: void fireChangeEvent()>()
+org.jfree.chart.renderer.AbstractRenderer.setShape : if z0 == 0 goto return
+org.jfree.chart.renderer.AbstractRenderer.setShape : r0.<org.jfree.chart.renderer.AbstractRenderer: java.awt.Shape shape> = r1
+org.jfree.chart.renderer.AbstractRenderer.setShape : virtualinvoke r0.<org.jfree.chart.renderer.AbstractRenderer: void setShape(java.awt.Shape,boolean)>(r1, 1)
+org.jfree.chart.renderer.AbstractRenderer.setBaseLegendShape : virtualinvoke r0.<org.jfree.chart.renderer.AbstractRenderer: void fireChangeEvent()>()
+org.jfree.chart.renderer.AbstractRenderer.setBaseLegendShape : r0.<org.jfree.chart.renderer.AbstractRenderer: java.awt.Shape baseLegendShape> = r1
+org.jfree.chart.renderer.AbstractRenderer.notifyListeners : $r3 = r0.<org.jfree.chart.renderer.AbstractRenderer: javax.swing.event.EventListenerList listenerList>
+org.jfree.chart.renderer.AbstractRenderer.notifyListeners : $i1 = lengthof r2
+org.jfree.chart.renderer.xy.ClusteredXYBarRenderer.clone : $r1 = specialinvoke r0.<org.jfree.chart.renderer.xy.XYBarRenderer: java.lang.Object clone()>()
+org.jfree.chart.renderer.category.BarRenderer.getDefaultShadowsVisible : $z0 = <org.jfree.chart.renderer.category.BarRenderer: boolean defaultShadowsVisible>
+org.jfree.chart.renderer.AbstractRenderer.setBaseNegativeItemLabelPosition : virtualinvoke r0.<org.jfree.chart.renderer.AbstractRenderer: void fireChangeEvent()>()
+org.jfree.chart.renderer.AbstractRenderer.setBaseNegativeItemLabelPosition : if z0 == 0 goto return
+org.jfree.chart.renderer.AbstractRenderer.setBaseNegativeItemLabelPosition : r0.<org.jfree.chart.renderer.AbstractRenderer: org.jfree.chart.labels.ItemLabelPosition baseNegativeItemLabelPosition> = r1
+org.jfree.chart.renderer.AbstractRenderer.setBaseNegativeItemLabelPosition : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "position")
+org.jfree.chart.renderer.AbstractRenderer.setBaseNegativeItemLabelPosition : virtualinvoke r0.<org.jfree.chart.renderer.AbstractRenderer: void setBaseNegativeItemLabelPosition(org.jfree.chart.labels.ItemLabelPosition,boolean)>(r1, 1)
+org.jfree.chart.renderer.AbstractRenderer.getItemLabelFont : $r1 = r0.<org.jfree.chart.renderer.AbstractRenderer: java.awt.Font itemLabelFont>
+org.jfree.chart.renderer.xy.GradientXYBarPainter.equals : $z0 = r1 instanceof org.jfree.chart.renderer.xy.GradientXYBarPainter
+org.jfree.chart.renderer.xy.GradientXYBarPainter.equals : if r1 != r0 goto $z0 = r1 instanceof org.jfree.chart.renderer.xy.GradientXYBarPainter
+org.jfree.chart.renderer.xy.GradientXYBarPainter.equals : return 0
+org.jfree.chart.renderer.AbstractRenderer.setBasePositiveItemLabelPosition : virtualinvoke r0.<org.jfree.chart.renderer.AbstractRenderer: void fireChangeEvent()>()
+org.jfree.chart.renderer.AbstractRenderer.setBasePositiveItemLabelPosition : if z0 == 0 goto return
+org.jfree.chart.renderer.AbstractRenderer.setBasePositiveItemLabelPosition : virtualinvoke r0.<org.jfree.chart.renderer.AbstractRenderer: void setBasePositiveItemLabelPosition(org.jfree.chart.labels.ItemLabelPosition,boolean)>(r1, 1)
+org.jfree.chart.renderer.AbstractRenderer.setBasePositiveItemLabelPosition : r0.<org.jfree.chart.renderer.AbstractRenderer: org.jfree.chart.labels.ItemLabelPosition basePositiveItemLabelPosition> = r1
+org.jfree.chart.renderer.AbstractRenderer.setBasePositiveItemLabelPosition : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "position")
+org.jfree.chart.renderer.xy.XYBarRenderer.getDefaultShadowsVisible : $z0 = <org.jfree.chart.renderer.xy.XYBarRenderer: boolean defaultShadowsVisible>
+org.jfree.chart.renderer.xy.XYBarRenderer.clone : $r4 = r0.<org.jfree.chart.renderer.xy.XYBarRenderer: org.jfree.ui.GradientPaintTransformer gradientPaintTransformer>
+org.jfree.chart.renderer.xy.XYBarRenderer.clone : $r5 = staticinvoke <org.jfree.util.ObjectUtilities: java.lang.Object clone(java.lang.Object)>($r4)
+org.jfree.chart.renderer.xy.XYBarRenderer.clone : $r2 = specialinvoke r0.<org.jfree.chart.renderer.xy.AbstractXYItemRenderer: java.lang.Object clone()>()
+org.jfree.chart.renderer.xy.XYBarRenderer.clone : $r3 = r0.<org.jfree.chart.renderer.xy.XYBarRenderer: org.jfree.ui.GradientPaintTransformer gradientPaintTransformer>
+org.jfree.chart.renderer.xy.XYBarRenderer.clone : return r1
+org.jfree.chart.renderer.xy.XYBarRenderer.clone : $r7 = r0.<org.jfree.chart.renderer.xy.XYBarRenderer: java.awt.Shape legendBar>
+org.jfree.chart.renderer.xy.XYBarRenderer.getDefaultBarPainter : $r0 = <org.jfree.chart.renderer.xy.XYBarRenderer: org.jfree.chart.renderer.xy.XYBarPainter defaultBarPainter>
+org.jfree.chart.renderer.category.BarRenderer.getDefaultBarPainter : $r0 = <org.jfree.chart.renderer.category.BarRenderer: org.jfree.chart.renderer.category.BarPainter defaultBarPainter>
+org.jfree.chart.renderer.AbstractRenderer.getItemLabelAnchorOffset : $d0 = r0.<org.jfree.chart.renderer.AbstractRenderer: double itemLabelAnchorOffset>
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null goto return
+org.jfree.chart.renderer.AbstractRenderer.clone : $r47 = virtualinvoke $r46.<org.jfree.util.ObjectList: java.lang.Object clone()>()
+org.jfree.chart.renderer.AbstractRenderer.clone : $r73 = r0.<org.jfree.chart.renderer.AbstractRenderer: org.jfree.util.PaintList legendTextPaint>
+org.jfree.chart.renderer.AbstractRenderer.clone : r1.<org.jfree.chart.renderer.AbstractRenderer: org.jfree.chart.event.RendererChangeEvent event> = null
+org.jfree.chart.renderer.AbstractRenderer.clone : $r39 = r0.<org.jfree.chart.renderer.AbstractRenderer: java.awt.Shape baseShape>
+org.jfree.chart.renderer.AbstractRenderer.clone : $r42 = r0.<org.jfree.chart.renderer.AbstractRenderer: org.jfree.util.BooleanList itemLabelsVisibleList>
+org.jfree.chart.renderer.AbstractRenderer.clone : $r11 = r0.<org.jfree.chart.renderer.AbstractRenderer: org.jfree.util.PaintList paintList>
+org.jfree.chart.renderer.AbstractRenderer.clone : $r34 = r0.<org.jfree.chart.renderer.AbstractRenderer: org.jfree.util.ShapeList shapeList>
+org.jfree.chart.renderer.AbstractRenderer.clone : $r65 = r0.<org.jfree.chart.renderer.AbstractRenderer: org.jfree.util.ShapeList legendShapeList>
+org.jfree.chart.renderer.AbstractRenderer.clone : $r5 = virtualinvoke $r4.<org.jfree.util.BooleanList: java.lang.Object clone()>()
+org.jfree.chart.renderer.AbstractRenderer.clone : $r66 = r0.<org.jfree.chart.renderer.AbstractRenderer: org.jfree.util.ShapeList legendShapeList>
+org.jfree.chart.renderer.AbstractRenderer.clone : $r62 = r0.<org.jfree.chart.renderer.AbstractRenderer: org.jfree.util.BooleanList createEntitiesList>
+org.jfree.chart.renderer.AbstractRenderer.clone : $r55 = virtualinvoke $r54.<org.jfree.util.ObjectList: java.lang.Object clone()>()
+org.jfree.chart.renderer.AbstractRenderer.clone : $r43 = virtualinvoke $r42.<org.jfree.util.BooleanList: java.lang.Object clone()>()
+org.jfree.chart.renderer.AbstractRenderer.clone : $r38 = r0.<org.jfree.chart.renderer.AbstractRenderer: java.awt.Shape baseShape>
+org.jfree.chart.renderer.AbstractRenderer.clone : $r20 = r0.<org.jfree.chart.renderer.AbstractRenderer: org.jfree.util.PaintList outlinePaintList>
+org.jfree.chart.renderer.AbstractRenderer.clone : $r59 = virtualinvoke $r58.<org.jfree.util.ObjectList: java.lang.Object clone()>()
+org.jfree.chart.renderer.AbstractRenderer.clone : $r49 = r0.<org.jfree.chart.renderer.AbstractRenderer: org.jfree.util.PaintList itemLabelPaintList>
+org.jfree.chart.renderer.AbstractRenderer.clone : $r41 = r0.<org.jfree.chart.renderer.AbstractRenderer: org.jfree.util.BooleanList itemLabelsVisibleList>
+org.jfree.chart.renderer.AbstractRenderer.clone : $r45 = r0.<org.jfree.chart.renderer.AbstractRenderer: org.jfree.util.ObjectList itemLabelFontList>
+org.jfree.chart.renderer.AbstractRenderer.clone : $r58 = r0.<org.jfree.chart.renderer.AbstractRenderer: org.jfree.util.ObjectList negativeItemLabelPositionList>
+org.jfree.chart.renderer.AbstractRenderer.clone : $r28 = r0.<org.jfree.chart.renderer.AbstractRenderer: org.jfree.util.StrokeList outlineStrokeList>
+org.jfree.chart.renderer.AbstractRenderer.clone : $r24 = r0.<org.jfree.chart.renderer.AbstractRenderer: org.jfree.util.StrokeList strokeList>
+org.jfree.chart.renderer.AbstractRenderer.clone : $r54 = r0.<org.jfree.chart.renderer.AbstractRenderer: org.jfree.util.ObjectList positiveItemLabelPositionList>
+org.jfree.chart.renderer.AbstractRenderer.clone : $r53 = r0.<org.jfree.chart.renderer.AbstractRenderer: org.jfree.util.ObjectList positiveItemLabelPositionList>
+org.jfree.chart.renderer.AbstractRenderer.clone : return r1
+org.jfree.chart.renderer.AbstractRenderer.clone : $r9 = virtualinvoke $r8.<org.jfree.util.BooleanList: java.lang.Object clone()>()
+org.jfree.chart.renderer.AbstractRenderer.clone : $r50 = r0.<org.jfree.chart.renderer.AbstractRenderer: org.jfree.util.PaintList itemLabelPaintList>
+org.jfree.chart.renderer.AbstractRenderer.clone : $r31 = r0.<org.jfree.chart.renderer.AbstractRenderer: java.awt.Shape shape>
+org.jfree.chart.renderer.AbstractRenderer.clone : $r74 = r0.<org.jfree.chart.renderer.AbstractRenderer: org.jfree.util.PaintList legendTextPaint>
+org.jfree.chart.renderer.AbstractRenderer.clone : $r16 = r0.<org.jfree.chart.renderer.AbstractRenderer: org.jfree.util.PaintList fillPaintList>
+org.jfree.chart.renderer.AbstractRenderer.clone : $r2 = specialinvoke r0.<java.lang.Object: java.lang.Object clone()>()
+org.jfree.chart.renderer.AbstractRenderer.clone : $r12 = r0.<org.jfree.chart.renderer.AbstractRenderer: org.jfree.util.PaintList paintList>
+org.jfree.chart.renderer.AbstractRenderer.clone : $r61 = r0.<org.jfree.chart.renderer.AbstractRenderer: org.jfree.util.BooleanList createEntitiesList>
+org.jfree.chart.renderer.AbstractRenderer.clone : $r27 = r0.<org.jfree.chart.renderer.AbstractRenderer: org.jfree.util.StrokeList outlineStrokeList>
+org.jfree.chart.renderer.AbstractRenderer.clone : $r69 = r0.<org.jfree.chart.renderer.AbstractRenderer: org.jfree.util.ObjectList legendTextFont>
+org.jfree.chart.renderer.AbstractRenderer.clone : $r3 = r0.<org.jfree.chart.renderer.AbstractRenderer: org.jfree.util.BooleanList seriesVisibleList>
+org.jfree.chart.renderer.AbstractRenderer.clone : $r29 = virtualinvoke $r28.<org.jfree.util.StrokeList: java.lang.Object clone()>()
+org.jfree.chart.renderer.AbstractRenderer.clone : $r70 = r0.<org.jfree.chart.renderer.AbstractRenderer: org.jfree.util.ObjectList legendTextFont>
+org.jfree.chart.renderer.AbstractRenderer.clone : $r51 = virtualinvoke $r50.<org.jfree.util.PaintList: java.lang.Object clone()>()
+org.jfree.chart.renderer.AbstractRenderer.clone : $r46 = r0.<org.jfree.chart.renderer.AbstractRenderer: org.jfree.util.ObjectList itemLabelFontList>
+org.jfree.chart.renderer.AbstractRenderer.clone : $r15 = r0.<org.jfree.chart.renderer.AbstractRenderer: org.jfree.util.PaintList fillPaintList>
+org.jfree.chart.renderer.AbstractRenderer.clone : $r8 = r0.<org.jfree.chart.renderer.AbstractRenderer: org.jfree.util.BooleanList seriesVisibleInLegendList>
+org.jfree.chart.renderer.AbstractRenderer.clone : $r35 = r0.<org.jfree.chart.renderer.AbstractRenderer: org.jfree.util.ShapeList shapeList>
+org.jfree.chart.renderer.AbstractRenderer.clone : $r7 = r0.<org.jfree.chart.renderer.AbstractRenderer: org.jfree.util.BooleanList seriesVisibleInLegendList>
+org.jfree.chart.renderer.AbstractRenderer.clone : $r4 = r0.<org.jfree.chart.renderer.AbstractRenderer: org.jfree.util.BooleanList seriesVisibleList>
+org.jfree.chart.renderer.AbstractRenderer.clone : $r77 = new javax.swing.event.EventListenerList
+org.jfree.chart.renderer.AbstractRenderer.clone : $r63 = virtualinvoke $r62.<org.jfree.util.BooleanList: java.lang.Object clone()>()
+org.jfree.chart.renderer.AbstractRenderer.clone : $r23 = r0.<org.jfree.chart.renderer.AbstractRenderer: org.jfree.util.StrokeList strokeList>
+org.jfree.chart.renderer.AbstractRenderer.clone : $r57 = r0.<org.jfree.chart.renderer.AbstractRenderer: org.jfree.util.ObjectList negativeItemLabelPositionList>
+org.jfree.chart.renderer.AbstractRenderer.clone : $r19 = r0.<org.jfree.chart.renderer.AbstractRenderer: org.jfree.util.PaintList outlinePaintList>

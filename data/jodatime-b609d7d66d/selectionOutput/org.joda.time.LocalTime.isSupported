@@ -1,0 +1,16 @@
+org.joda.time.LocalTime.isSupported : if r1 != null >>>>>>>> org.joda.time.LocalTime.isSupported : return 0
+org.joda.time.LocalTime.isSupported : if r1 != null >>>>>>>> org.joda.time.LocalTime.isSupported : $r3 = virtualinvoke r0.<org.joda.time.LocalTime: org.joda.time.Chronology getChronology()>()
+org.joda.time.LocalTime.isSupported : $r3 = virtualinvoke r0.<org.joda.time.LocalTime: org.joda.time.Chronology getChronology()>() >>>>>>>> org.joda.time.LocalTime.isSupported : r2 = virtualinvoke r1.<org.joda.time.DurationFieldType: org.joda.time.DurationField getField(org.joda.time.Chronology)>($r3)
+org.joda.time.LocalTime.isSupported : r2 = virtualinvoke r1.<org.joda.time.DurationFieldType: org.joda.time.DurationField getField(org.joda.time.Chronology)>($r3) >>>>>>>> org.joda.time.LocalTime.isSupported : $r4 = <org.joda.time.LocalTime: java.util.Set TIME_DURATION_TYPES>
+org.joda.time.LocalTime.isSupported : $r4 = <org.joda.time.LocalTime: java.util.Set TIME_DURATION_TYPES> >>>>>>>> org.joda.time.LocalTime.isSupported : $z0 = interfaceinvoke $r4.<java.util.Set: boolean contains(java.lang.Object)>(r1)
+org.joda.time.LocalTime.isSupported : $z0 = interfaceinvoke $r4.<java.util.Set: boolean contains(java.lang.Object)>(r1) >>>>>>>> org.joda.time.LocalTime.isSupported : if $z0 != 0
+org.joda.time.LocalTime.isSupported : if $z0 != 0 >>>>>>>> org.joda.time.LocalTime.isSupported : $l0 = virtualinvoke r2.<org.joda.time.DurationField: long getUnitMillis()>()
+org.joda.time.LocalTime.isSupported : if $z0 != 0 >>>>>>>> org.joda.time.LocalTime.isSupported : $z1 = virtualinvoke r2.<org.joda.time.DurationField: boolean isSupported()>()
+org.joda.time.LocalTime.isSupported : $z1 = virtualinvoke r2.<org.joda.time.DurationField: boolean isSupported()>() >>>>>>>> org.joda.time.LocalTime.isSupported : return $z1
+org.joda.time.LocalTime.isSupported : $l0 = virtualinvoke r2.<org.joda.time.DurationField: long getUnitMillis()>() >>>>>>>> org.joda.time.LocalTime.isSupported : $r5 = virtualinvoke r0.<org.joda.time.LocalTime: org.joda.time.Chronology getChronology()>()
+org.joda.time.LocalTime.isSupported : $r5 = virtualinvoke r0.<org.joda.time.LocalTime: org.joda.time.Chronology getChronology()>() >>>>>>>> org.joda.time.LocalTime.isSupported : $r6 = virtualinvoke $r5.<org.joda.time.Chronology: org.joda.time.DurationField days()>()
+org.joda.time.LocalTime.isSupported : $r6 = virtualinvoke $r5.<org.joda.time.Chronology: org.joda.time.DurationField days()>() >>>>>>>> org.joda.time.LocalTime.isSupported : $l1 = virtualinvoke $r6.<org.joda.time.DurationField: long getUnitMillis()>()
+org.joda.time.LocalTime.isSupported : $l1 = virtualinvoke $r6.<org.joda.time.DurationField: long getUnitMillis()>() >>>>>>>> org.joda.time.LocalTime.isSupported : $b2 = $l0 cmp $l1
+org.joda.time.LocalTime.isSupported : $b2 = $l0 cmp $l1 >>>>>>>> org.joda.time.LocalTime.isSupported : if $b2 >= 0
+org.joda.time.LocalTime.isSupported : if $b2 >= 0 >>>>>>>> org.joda.time.LocalTime.isSupported : $z1 = virtualinvoke r2.<org.joda.time.DurationField: boolean isSupported()>()
+org.joda.time.LocalTime.isSupported : if $b2 >= 0 >>>>>>>> org.joda.time.LocalTime.isSupported : return 0

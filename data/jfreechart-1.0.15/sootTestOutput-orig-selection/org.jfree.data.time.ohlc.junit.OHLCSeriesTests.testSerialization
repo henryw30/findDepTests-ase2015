@@ -1,0 +1,130 @@
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null >>>>>>>> org.jfree.data.time.Year.peg : $l0 = virtualinvoke r0.<org.jfree.data.time.Year: long getFirstMillisecond(java.util.Calendar)>(r1)
+org.jfree.data.time.Year.peg : $l0 = virtualinvoke r0.<org.jfree.data.time.Year: long getFirstMillisecond(java.util.Calendar)>(r1) >>>>>>>> org.jfree.data.time.Year.getFirstMillisecond : $s0 = r0.<org.jfree.data.time.Year: short year>
+org.jfree.data.time.Year.getFirstMillisecond : $s0 = r0.<org.jfree.data.time.Year: short year> >>>>>>>> org.jfree.data.time.Year.getFirstMillisecond : virtualinvoke r1.<java.util.Calendar: void set(int,int,int,int,int,int)>($s0, 0, 1, 0, 0, 0)
+org.jfree.data.time.Year.getFirstMillisecond : virtualinvoke r1.<java.util.Calendar: void set(int,int,int,int,int,int)>($s0, 0, 1, 0, 0, 0) >>>>>>>> org.jfree.data.time.Year.getFirstMillisecond : virtualinvoke r1.<java.util.Calendar: void set(int,int)>(14, 0)
+org.jfree.data.time.Year.getFirstMillisecond : virtualinvoke r1.<java.util.Calendar: void set(int,int)>(14, 0) >>>>>>>> org.jfree.data.time.Year.getFirstMillisecond : $l1 = virtualinvoke r1.<java.util.Calendar: long getTimeInMillis()>()
+org.jfree.data.time.Year.getFirstMillisecond : $l1 = virtualinvoke r1.<java.util.Calendar: long getTimeInMillis()>() >>>>>>>> org.jfree.data.time.Year.getFirstMillisecond : return $l1
+org.jfree.data.time.Year.getFirstMillisecond : return $l1 >>>>>>>> org.jfree.data.time.Year.peg : r0.<org.jfree.data.time.Year: long firstMillisecond> = $l0
+org.jfree.data.time.Year.peg : r0.<org.jfree.data.time.Year: long firstMillisecond> = $l0 >>>>>>>> org.jfree.data.time.Year.peg : $l1 = virtualinvoke r0.<org.jfree.data.time.Year: long getLastMillisecond(java.util.Calendar)>(r1)
+org.jfree.data.time.Year.peg : $l1 = virtualinvoke r0.<org.jfree.data.time.Year: long getLastMillisecond(java.util.Calendar)>(r1) >>>>>>>> org.jfree.data.time.Year.getLastMillisecond : $s0 = r0.<org.jfree.data.time.Year: short year>
+org.jfree.data.time.Year.getLastMillisecond : $s0 = r0.<org.jfree.data.time.Year: short year> >>>>>>>> org.jfree.data.time.Year.getLastMillisecond : virtualinvoke r1.<java.util.Calendar: void set(int,int,int,int,int,int)>($s0, 11, 31, 23, 59, 59)
+org.jfree.data.time.Year.getLastMillisecond : virtualinvoke r1.<java.util.Calendar: void set(int,int,int,int,int,int)>($s0, 11, 31, 23, 59, 59) >>>>>>>> org.jfree.data.time.Year.getLastMillisecond : virtualinvoke r1.<java.util.Calendar: void set(int,int)>(14, 999)
+org.jfree.data.time.Year.getLastMillisecond : virtualinvoke r1.<java.util.Calendar: void set(int,int)>(14, 999) >>>>>>>> org.jfree.data.time.Year.getLastMillisecond : $l1 = virtualinvoke r1.<java.util.Calendar: long getTimeInMillis()>()
+org.jfree.data.time.Year.getLastMillisecond : $l1 = virtualinvoke r1.<java.util.Calendar: long getTimeInMillis()>() >>>>>>>> org.jfree.data.time.Year.getLastMillisecond : return $l1
+org.jfree.data.time.Year.getLastMillisecond : return $l1 >>>>>>>> org.jfree.data.time.Year.peg : r0.<org.jfree.data.time.Year: long lastMillisecond> = $l1
+org.jfree.data.time.Year.peg : r0.<org.jfree.data.time.Year: long lastMillisecond> = $l1 >>>>>>>> org.jfree.data.time.ohlc.OHLCSeries.add : $i0 = virtualinvoke r0.<org.jfree.data.time.ohlc.OHLCSeries: int getItemCount()>()
+org.jfree.data.time.ohlc.OHLCSeries.add : $i0 = virtualinvoke r0.<org.jfree.data.time.ohlc.OHLCSeries: int getItemCount()>() >>>>>>>> org.jfree.data.ComparableObjectSeries.getItemCount : $r1 = r0.<org.jfree.data.ComparableObjectSeries: java.util.List data>
+org.jfree.data.ComparableObjectSeries.getItemCount : $r1 = r0.<org.jfree.data.ComparableObjectSeries: java.util.List data> >>>>>>>> org.jfree.data.ComparableObjectSeries.getItemCount : $i0 = interfaceinvoke $r1.<java.util.List: int size()>()
+org.jfree.data.ComparableObjectSeries.getItemCount : $i0 = interfaceinvoke $r1.<java.util.List: int size()>() >>>>>>>> org.jfree.data.ComparableObjectSeries.getItemCount : return $i0
+org.jfree.data.ComparableObjectSeries.getItemCount : return $i0 >>>>>>>> org.jfree.data.time.ohlc.OHLCSeries.add : if $i0 <= 0
+org.jfree.data.time.ohlc.OHLCSeries.add : if $i0 <= 0 >>>>>>>> org.jfree.data.time.ohlc.OHLCSeries.add : $r8 = new org.jfree.data.time.ohlc.OHLCItem
+org.jfree.data.time.ohlc.OHLCSeries.add : $r8 = new org.jfree.data.time.ohlc.OHLCItem >>>>>>>> org.jfree.data.time.ohlc.OHLCSeries.add : specialinvoke $r8.<org.jfree.data.time.ohlc.OHLCItem: void <init>(org.jfree.data.time.RegularTimePeriod,double,double,double,double)>(r1, d0, d1, d2, d3)
+org.jfree.data.time.ohlc.OHLCSeries.add : specialinvoke $r8.<org.jfree.data.time.ohlc.OHLCItem: void <init>(org.jfree.data.time.RegularTimePeriod,double,double,double,double)>(r1, d0, d1, d2, d3) >>>>>>>> org.jfree.data.time.ohlc.OHLCSeries.add : specialinvoke r0.<org.jfree.data.ComparableObjectSeries: void add(org.jfree.data.ComparableObjectItem,boolean)>($r8, 1)
+org.jfree.data.time.ohlc.OHLCSeries.add : specialinvoke r0.<org.jfree.data.ComparableObjectSeries: void add(org.jfree.data.ComparableObjectItem,boolean)>($r8, 1) >>>>>>>> org.jfree.data.ComparableObjectSeries.add : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "item")
+org.jfree.data.ComparableObjectSeries.add : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "item") >>>>>>>> org.jfree.data.ComparableObjectSeries.add : $z1 = r0.<org.jfree.data.ComparableObjectSeries: boolean autoSort>
+org.jfree.data.ComparableObjectSeries.add : $z1 = r0.<org.jfree.data.ComparableObjectSeries: boolean autoSort> >>>>>>>> org.jfree.data.ComparableObjectSeries.add : if $z1 == 0
+org.jfree.data.ComparableObjectSeries.add : if $z1 == 0 >>>>>>>> org.jfree.data.ComparableObjectSeries.add : $r2 = r0.<org.jfree.data.ComparableObjectSeries: java.util.List data>
+org.jfree.data.ComparableObjectSeries.add : $r2 = r0.<org.jfree.data.ComparableObjectSeries: java.util.List data> >>>>>>>> org.jfree.data.ComparableObjectSeries.add : i0 = staticinvoke <java.util.Collections: int binarySearch(java.util.List,java.lang.Object)>($r2, r1)
+org.jfree.data.ComparableObjectSeries.add : i0 = staticinvoke <java.util.Collections: int binarySearch(java.util.List,java.lang.Object)>($r2, r1) >>>>>>>> org.jfree.data.ComparableObjectSeries.add : if i0 >= 0
+org.jfree.data.ComparableObjectSeries.add : if i0 >= 0 >>>>>>>> org.jfree.data.ComparableObjectSeries.add : $r3 = r0.<org.jfree.data.ComparableObjectSeries: java.util.List data>
+org.jfree.data.ComparableObjectSeries.add : $r3 = r0.<org.jfree.data.ComparableObjectSeries: java.util.List data> >>>>>>>> org.jfree.data.ComparableObjectSeries.add : $i2 = neg i0
+org.jfree.data.ComparableObjectSeries.add : $i2 = neg i0 >>>>>>>> org.jfree.data.ComparableObjectSeries.add : $i3 = $i2 - 1
+org.jfree.data.ComparableObjectSeries.add : $i3 = $i2 - 1 >>>>>>>> org.jfree.data.ComparableObjectSeries.add : interfaceinvoke $r3.<java.util.List: void add(int,java.lang.Object)>($i3, r1)
+org.jfree.data.ComparableObjectSeries.add : interfaceinvoke $r3.<java.util.List: void add(int,java.lang.Object)>($i3, r1) >>>>>>>> org.jfree.data.ComparableObjectSeries.add : goto [?= (branch)]
+org.jfree.data.ComparableObjectSeries.add : goto [?= (branch)] >>>>>>>> org.jfree.data.ComparableObjectSeries.add : goto [?= $i7 = virtualinvoke r0.<org.jfree.data.ComparableObjectSeries: int getItemCount()>()]
+org.jfree.data.ComparableObjectSeries.add : goto [?= $i7 = virtualinvoke r0.<org.jfree.data.ComparableObjectSeries: int getItemCount()>()] >>>>>>>> org.jfree.data.ComparableObjectSeries.add : $i7 = virtualinvoke r0.<org.jfree.data.ComparableObjectSeries: int getItemCount()>()
+org.jfree.data.ComparableObjectSeries.add : $i7 = virtualinvoke r0.<org.jfree.data.ComparableObjectSeries: int getItemCount()>() >>>>>>>> org.jfree.data.ComparableObjectSeries.add : $i8 = r0.<org.jfree.data.ComparableObjectSeries: int maximumItemCount>
+org.jfree.data.ComparableObjectSeries.add : $i8 = r0.<org.jfree.data.ComparableObjectSeries: int maximumItemCount> >>>>>>>> org.jfree.data.ComparableObjectSeries.add : if $i7 <= $i8
+org.jfree.data.ComparableObjectSeries.add : if $i7 <= $i8 >>>>>>>> org.jfree.data.ComparableObjectSeries.add : if z0 == 0
+org.jfree.data.ComparableObjectSeries.add : if z0 == 0 >>>>>>>> org.jfree.data.ComparableObjectSeries.add : virtualinvoke r0.<org.jfree.data.ComparableObjectSeries: void fireSeriesChanged()>()
+org.jfree.data.ComparableObjectSeries.add : virtualinvoke r0.<org.jfree.data.ComparableObjectSeries: void fireSeriesChanged()>() >>>>>>>> org.jfree.data.general.Series.fireSeriesChanged : $z0 = r0.<org.jfree.data.general.Series: boolean notify>
+org.jfree.data.general.Series.fireSeriesChanged : $z0 = r0.<org.jfree.data.general.Series: boolean notify> >>>>>>>> org.jfree.data.general.Series.fireSeriesChanged : if $z0 == 0
+org.jfree.data.general.Series.fireSeriesChanged : if $z0 == 0 >>>>>>>> org.jfree.data.general.Series.fireSeriesChanged : $r1 = new org.jfree.data.general.SeriesChangeEvent
+org.jfree.data.general.Series.fireSeriesChanged : $r1 = new org.jfree.data.general.SeriesChangeEvent >>>>>>>> org.jfree.data.general.Series.fireSeriesChanged : specialinvoke $r1.<org.jfree.data.general.SeriesChangeEvent: void <init>(java.lang.Object)>(r0)
+org.jfree.data.general.Series.fireSeriesChanged : specialinvoke $r1.<org.jfree.data.general.SeriesChangeEvent: void <init>(java.lang.Object)>(r0) >>>>>>>> org.jfree.data.general.Series.fireSeriesChanged : virtualinvoke r0.<org.jfree.data.general.Series: void notifyListeners(org.jfree.data.general.SeriesChangeEvent)>($r1)
+org.jfree.data.general.Series.fireSeriesChanged : virtualinvoke r0.<org.jfree.data.general.Series: void notifyListeners(org.jfree.data.general.SeriesChangeEvent)>($r1) >>>>>>>> org.jfree.data.general.Series.notifyListeners : $r3 = r0.<org.jfree.data.general.Series: javax.swing.event.EventListenerList listeners>
+org.jfree.data.general.Series.notifyListeners : $r3 = r0.<org.jfree.data.general.Series: javax.swing.event.EventListenerList listeners> >>>>>>>> org.jfree.data.general.Series.notifyListeners : r2 = virtualinvoke $r3.<javax.swing.event.EventListenerList: java.lang.Object[] getListenerList()>()
+org.jfree.data.general.Series.notifyListeners : r2 = virtualinvoke $r3.<javax.swing.event.EventListenerList: java.lang.Object[] getListenerList()>() >>>>>>>> org.jfree.data.general.Series.notifyListeners : $i1 = lengthof r2
+org.jfree.data.general.Series.notifyListeners : $i1 = lengthof r2 >>>>>>>> org.jfree.data.general.Series.notifyListeners : i0 = $i1 - 2
+org.jfree.data.general.Series.notifyListeners : i0 = $i1 - 2 >>>>>>>> org.jfree.data.general.Series.notifyListeners : if i0 < 0
+org.jfree.data.general.Series.notifyListeners : if i0 < 0 >>>>>>>> org.jfree.data.ComparableObjectSeries.equals : if r1 != r0
+org.jfree.data.ComparableObjectSeries.equals : if r1 != r0 >>>>>>>> org.jfree.data.ComparableObjectSeries.equals : $z0 = r1 instanceof org.jfree.data.ComparableObjectSeries
+org.jfree.data.ComparableObjectSeries.equals : $z0 = r1 instanceof org.jfree.data.ComparableObjectSeries >>>>>>>> org.jfree.data.ComparableObjectSeries.equals : if $z0 != 0
+org.jfree.data.ComparableObjectSeries.equals : if $z0 != 0 >>>>>>>> org.jfree.data.ComparableObjectSeries.equals : $z1 = specialinvoke r0.<org.jfree.data.general.Series: boolean equals(java.lang.Object)>(r1)
+org.jfree.data.ComparableObjectSeries.equals : $z1 = specialinvoke r0.<org.jfree.data.general.Series: boolean equals(java.lang.Object)>(r1) >>>>>>>> org.jfree.data.general.Series.equals : if r1 != r0
+org.jfree.data.general.Series.equals : if r1 != r0 >>>>>>>> org.jfree.data.general.Series.equals : $z0 = r1 instanceof org.jfree.data.general.Series
+org.jfree.data.general.Series.equals : $z0 = r1 instanceof org.jfree.data.general.Series >>>>>>>> org.jfree.data.general.Series.equals : if $z0 != 0
+org.jfree.data.general.Series.equals : if $z0 != 0 >>>>>>>> org.jfree.data.general.Series.equals : r2 = (org.jfree.data.general.Series) r1
+org.jfree.data.general.Series.equals : r2 = (org.jfree.data.general.Series) r1 >>>>>>>> org.jfree.data.general.Series.equals : $r3 = virtualinvoke r0.<org.jfree.data.general.Series: java.lang.Comparable getKey()>()
+org.jfree.data.general.Series.equals : $r3 = virtualinvoke r0.<org.jfree.data.general.Series: java.lang.Comparable getKey()>() >>>>>>>> org.jfree.data.general.Series.getKey : $r1 = r0.<org.jfree.data.general.Series: java.lang.Comparable key>
+org.jfree.data.general.Series.getKey : $r1 = r0.<org.jfree.data.general.Series: java.lang.Comparable key> >>>>>>>> org.jfree.data.general.Series.getKey : return $r1
+org.jfree.data.general.Series.getKey : return $r1 >>>>>>>> org.jfree.data.general.Series.equals : $r4 = virtualinvoke r2.<org.jfree.data.general.Series: java.lang.Comparable getKey()>()
+org.jfree.data.general.Series.equals : $r4 = virtualinvoke r2.<org.jfree.data.general.Series: java.lang.Comparable getKey()>() >>>>>>>> org.jfree.data.general.Series.equals : $z1 = virtualinvoke $r3.<java.lang.Object: boolean equals(java.lang.Object)>($r4)
+org.jfree.data.general.Series.equals : $z1 = virtualinvoke $r3.<java.lang.Object: boolean equals(java.lang.Object)>($r4) >>>>>>>> org.jfree.data.general.Series.equals : if $z1 != 0
+org.jfree.data.general.Series.equals : if $z1 != 0 >>>>>>>> org.jfree.data.general.Series.equals : $r5 = virtualinvoke r0.<org.jfree.data.general.Series: java.lang.String getDescription()>()
+org.jfree.data.general.Series.equals : $r5 = virtualinvoke r0.<org.jfree.data.general.Series: java.lang.String getDescription()>() >>>>>>>> org.jfree.data.general.Series.getDescription : $r1 = r0.<org.jfree.data.general.Series: java.lang.String description>
+org.jfree.data.general.Series.getDescription : $r1 = r0.<org.jfree.data.general.Series: java.lang.String description> >>>>>>>> org.jfree.data.general.Series.getDescription : return $r1
+org.jfree.data.general.Series.getDescription : return $r1 >>>>>>>> org.jfree.data.general.Series.equals : $r6 = virtualinvoke r2.<org.jfree.data.general.Series: java.lang.String getDescription()>()
+org.jfree.data.general.Series.equals : $r6 = virtualinvoke r2.<org.jfree.data.general.Series: java.lang.String getDescription()>() >>>>>>>> org.jfree.data.general.Series.equals : $z2 = staticinvoke <org.jfree.util.ObjectUtilities: boolean equal(java.lang.Object,java.lang.Object)>($r5, $r6)
+org.jfree.data.general.Series.equals : $z2 = staticinvoke <org.jfree.util.ObjectUtilities: boolean equal(java.lang.Object,java.lang.Object)>($r5, $r6) >>>>>>>> org.jfree.data.general.Series.equals : if $z2 != 0
+org.jfree.data.general.Series.equals : if $z2 != 0 >>>>>>>> org.jfree.data.general.Series.equals : return 1
+org.jfree.data.general.Series.equals : return 1 >>>>>>>> org.jfree.data.ComparableObjectSeries.equals : if $z1 != 0
+org.jfree.data.ComparableObjectSeries.equals : if $z1 != 0 >>>>>>>> org.jfree.data.ComparableObjectSeries.equals : r2 = (org.jfree.data.ComparableObjectSeries) r1
+org.jfree.data.ComparableObjectSeries.equals : r2 = (org.jfree.data.ComparableObjectSeries) r1 >>>>>>>> org.jfree.data.ComparableObjectSeries.equals : $i0 = r0.<org.jfree.data.ComparableObjectSeries: int maximumItemCount>
+org.jfree.data.ComparableObjectSeries.equals : $i0 = r0.<org.jfree.data.ComparableObjectSeries: int maximumItemCount> >>>>>>>> org.jfree.data.ComparableObjectSeries.equals : $i1 = r2.<org.jfree.data.ComparableObjectSeries: int maximumItemCount>
+org.jfree.data.ComparableObjectSeries.equals : $i1 = r2.<org.jfree.data.ComparableObjectSeries: int maximumItemCount> >>>>>>>> org.jfree.data.ComparableObjectSeries.equals : if $i0 == $i1
+org.jfree.data.ComparableObjectSeries.equals : if $i0 == $i1 >>>>>>>> org.jfree.data.ComparableObjectSeries.equals : $z2 = r0.<org.jfree.data.ComparableObjectSeries: boolean autoSort>
+org.jfree.data.ComparableObjectSeries.equals : $z2 = r0.<org.jfree.data.ComparableObjectSeries: boolean autoSort> >>>>>>>> org.jfree.data.ComparableObjectSeries.equals : $z3 = r2.<org.jfree.data.ComparableObjectSeries: boolean autoSort>
+org.jfree.data.ComparableObjectSeries.equals : $z3 = r2.<org.jfree.data.ComparableObjectSeries: boolean autoSort> >>>>>>>> org.jfree.data.ComparableObjectSeries.equals : if $z2 == $z3
+org.jfree.data.ComparableObjectSeries.equals : if $z2 == $z3 >>>>>>>> org.jfree.data.ComparableObjectSeries.equals : $z4 = r0.<org.jfree.data.ComparableObjectSeries: boolean allowDuplicateXValues>
+org.jfree.data.ComparableObjectSeries.equals : $z4 = r0.<org.jfree.data.ComparableObjectSeries: boolean allowDuplicateXValues> >>>>>>>> org.jfree.data.ComparableObjectSeries.equals : $z5 = r2.<org.jfree.data.ComparableObjectSeries: boolean allowDuplicateXValues>
+org.jfree.data.ComparableObjectSeries.equals : $z5 = r2.<org.jfree.data.ComparableObjectSeries: boolean allowDuplicateXValues> >>>>>>>> org.jfree.data.ComparableObjectSeries.equals : if $z4 == $z5
+org.jfree.data.ComparableObjectSeries.equals : if $z4 == $z5 >>>>>>>> org.jfree.data.ComparableObjectSeries.equals : $r3 = r0.<org.jfree.data.ComparableObjectSeries: java.util.List data>
+org.jfree.data.ComparableObjectSeries.equals : $r3 = r0.<org.jfree.data.ComparableObjectSeries: java.util.List data> >>>>>>>> org.jfree.data.ComparableObjectSeries.equals : $r4 = r2.<org.jfree.data.ComparableObjectSeries: java.util.List data>
+org.jfree.data.ComparableObjectSeries.equals : $r4 = r2.<org.jfree.data.ComparableObjectSeries: java.util.List data> >>>>>>>> org.jfree.data.ComparableObjectSeries.equals : $z6 = staticinvoke <org.jfree.util.ObjectUtilities: boolean equal(java.lang.Object,java.lang.Object)>($r3, $r4)
+org.jfree.data.ComparableObjectSeries.equals : $z6 = staticinvoke <org.jfree.util.ObjectUtilities: boolean equal(java.lang.Object,java.lang.Object)>($r3, $r4) >>>>>>>> org.jfree.data.ComparableObjectItem.equals : if r1 != r0
+org.jfree.data.ComparableObjectItem.equals : if r1 != r0 >>>>>>>> org.jfree.data.ComparableObjectItem.equals : $z0 = r1 instanceof org.jfree.data.ComparableObjectItem
+org.jfree.data.ComparableObjectItem.equals : $z0 = r1 instanceof org.jfree.data.ComparableObjectItem >>>>>>>> org.jfree.data.ComparableObjectItem.equals : if $z0 != 0
+org.jfree.data.ComparableObjectItem.equals : if $z0 != 0 >>>>>>>> org.jfree.data.ComparableObjectItem.equals : r2 = (org.jfree.data.ComparableObjectItem) r1
+org.jfree.data.ComparableObjectItem.equals : r2 = (org.jfree.data.ComparableObjectItem) r1 >>>>>>>> org.jfree.data.ComparableObjectItem.equals : $r3 = r0.<org.jfree.data.ComparableObjectItem: java.lang.Comparable x>
+org.jfree.data.ComparableObjectItem.equals : $r3 = r0.<org.jfree.data.ComparableObjectItem: java.lang.Comparable x> >>>>>>>> org.jfree.data.ComparableObjectItem.equals : $r4 = r2.<org.jfree.data.ComparableObjectItem: java.lang.Comparable x>
+org.jfree.data.ComparableObjectItem.equals : $r4 = r2.<org.jfree.data.ComparableObjectItem: java.lang.Comparable x> >>>>>>>> org.jfree.data.ComparableObjectItem.equals : $z1 = virtualinvoke $r3.<java.lang.Object: boolean equals(java.lang.Object)>($r4)
+org.jfree.data.ComparableObjectItem.equals : $z1 = virtualinvoke $r3.<java.lang.Object: boolean equals(java.lang.Object)>($r4) >>>>>>>> org.jfree.data.time.Year.equals : if r1 != r0
+org.jfree.data.time.Year.equals : if r1 != r0 >>>>>>>> org.jfree.data.time.Year.equals : $z0 = r1 instanceof org.jfree.data.time.Year
+org.jfree.data.time.Year.equals : $z0 = r1 instanceof org.jfree.data.time.Year >>>>>>>> org.jfree.data.time.Year.equals : if $z0 != 0
+org.jfree.data.time.Year.equals : if $z0 != 0 >>>>>>>> org.jfree.data.time.Year.equals : r2 = (org.jfree.data.time.Year) r1
+org.jfree.data.time.Year.equals : r2 = (org.jfree.data.time.Year) r1 >>>>>>>> org.jfree.data.time.Year.equals : $s0 = r0.<org.jfree.data.time.Year: short year>
+org.jfree.data.time.Year.equals : $s0 = r0.<org.jfree.data.time.Year: short year> >>>>>>>> org.jfree.data.time.Year.equals : $s1 = r2.<org.jfree.data.time.Year: short year>
+org.jfree.data.time.Year.equals : $s1 = r2.<org.jfree.data.time.Year: short year> >>>>>>>> org.jfree.data.time.Year.equals : if $s0 != $s1
+org.jfree.data.time.Year.equals : if $s0 != $s1 >>>>>>>> org.jfree.data.time.Year.equals : $z1 = 1
+org.jfree.data.time.Year.equals : $z1 = 1 >>>>>>>> org.jfree.data.time.Year.equals : goto [?= return $z1]
+org.jfree.data.time.Year.equals : goto [?= return $z1] >>>>>>>> org.jfree.data.time.Year.equals : return $z1
+org.jfree.data.time.Year.equals : return $z1 >>>>>>>> org.jfree.data.ComparableObjectItem.equals : if $z1 != 0
+org.jfree.data.ComparableObjectItem.equals : if $z1 != 0 >>>>>>>> org.jfree.data.ComparableObjectItem.equals : $r5 = r0.<org.jfree.data.ComparableObjectItem: java.lang.Object obj>
+org.jfree.data.ComparableObjectItem.equals : $r5 = r0.<org.jfree.data.ComparableObjectItem: java.lang.Object obj> >>>>>>>> org.jfree.data.ComparableObjectItem.equals : $r6 = r2.<org.jfree.data.ComparableObjectItem: java.lang.Object obj>
+org.jfree.data.ComparableObjectItem.equals : $r6 = r2.<org.jfree.data.ComparableObjectItem: java.lang.Object obj> >>>>>>>> org.jfree.data.ComparableObjectItem.equals : $z2 = staticinvoke <org.jfree.util.ObjectUtilities: boolean equal(java.lang.Object,java.lang.Object)>($r5, $r6)
+org.jfree.data.ComparableObjectItem.equals : $z2 = staticinvoke <org.jfree.util.ObjectUtilities: boolean equal(java.lang.Object,java.lang.Object)>($r5, $r6) >>>>>>>> org.jfree.data.time.ohlc.OHLC.equals : if r1 != r0
+org.jfree.data.time.ohlc.OHLC.equals : if r1 != r0 >>>>>>>> org.jfree.data.time.ohlc.OHLC.equals : $z0 = r1 instanceof org.jfree.data.time.ohlc.OHLC
+org.jfree.data.time.ohlc.OHLC.equals : $z0 = r1 instanceof org.jfree.data.time.ohlc.OHLC >>>>>>>> org.jfree.data.time.ohlc.OHLC.equals : if $z0 != 0
+org.jfree.data.time.ohlc.OHLC.equals : if $z0 != 0 >>>>>>>> org.jfree.data.time.ohlc.OHLC.equals : r2 = (org.jfree.data.time.ohlc.OHLC) r1
+org.jfree.data.time.ohlc.OHLC.equals : r2 = (org.jfree.data.time.ohlc.OHLC) r1 >>>>>>>> org.jfree.data.time.ohlc.OHLC.equals : $d0 = r0.<org.jfree.data.time.ohlc.OHLC: double open>
+org.jfree.data.time.ohlc.OHLC.equals : $d0 = r0.<org.jfree.data.time.ohlc.OHLC: double open> >>>>>>>> org.jfree.data.time.ohlc.OHLC.equals : $d1 = r2.<org.jfree.data.time.ohlc.OHLC: double open>
+org.jfree.data.time.ohlc.OHLC.equals : $d1 = r2.<org.jfree.data.time.ohlc.OHLC: double open> >>>>>>>> org.jfree.data.time.ohlc.OHLC.equals : $b0 = $d0 cmpl $d1
+org.jfree.data.time.ohlc.OHLC.equals : $b0 = $d0 cmpl $d1 >>>>>>>> org.jfree.data.time.ohlc.OHLC.equals : if $b0 == 0
+org.jfree.data.time.ohlc.OHLC.equals : if $b0 == 0 >>>>>>>> org.jfree.data.time.ohlc.OHLC.equals : $d2 = r0.<org.jfree.data.time.ohlc.OHLC: double close>
+org.jfree.data.time.ohlc.OHLC.equals : $d2 = r0.<org.jfree.data.time.ohlc.OHLC: double close> >>>>>>>> org.jfree.data.time.ohlc.OHLC.equals : $d3 = r2.<org.jfree.data.time.ohlc.OHLC: double close>
+org.jfree.data.time.ohlc.OHLC.equals : $d3 = r2.<org.jfree.data.time.ohlc.OHLC: double close> >>>>>>>> org.jfree.data.time.ohlc.OHLC.equals : $b1 = $d2 cmpl $d3
+org.jfree.data.time.ohlc.OHLC.equals : $b1 = $d2 cmpl $d3 >>>>>>>> org.jfree.data.time.ohlc.OHLC.equals : if $b1 == 0
+org.jfree.data.time.ohlc.OHLC.equals : if $b1 == 0 >>>>>>>> org.jfree.data.time.ohlc.OHLC.equals : $d4 = r0.<org.jfree.data.time.ohlc.OHLC: double high>
+org.jfree.data.time.ohlc.OHLC.equals : $d4 = r0.<org.jfree.data.time.ohlc.OHLC: double high> >>>>>>>> org.jfree.data.time.ohlc.OHLC.equals : $d5 = r2.<org.jfree.data.time.ohlc.OHLC: double high>
+org.jfree.data.time.ohlc.OHLC.equals : $d5 = r2.<org.jfree.data.time.ohlc.OHLC: double high> >>>>>>>> org.jfree.data.time.ohlc.OHLC.equals : $b2 = $d4 cmpl $d5
+org.jfree.data.time.ohlc.OHLC.equals : $b2 = $d4 cmpl $d5 >>>>>>>> org.jfree.data.time.ohlc.OHLC.equals : if $b2 == 0
+org.jfree.data.time.ohlc.OHLC.equals : if $b2 == 0 >>>>>>>> org.jfree.data.time.ohlc.OHLC.equals : $d6 = r0.<org.jfree.data.time.ohlc.OHLC: double low>
+org.jfree.data.time.ohlc.OHLC.equals : $d6 = r0.<org.jfree.data.time.ohlc.OHLC: double low> >>>>>>>> org.jfree.data.time.ohlc.OHLC.equals : $d7 = r2.<org.jfree.data.time.ohlc.OHLC: double low>
+org.jfree.data.time.ohlc.OHLC.equals : $d7 = r2.<org.jfree.data.time.ohlc.OHLC: double low> >>>>>>>> org.jfree.data.time.ohlc.OHLC.equals : $b3 = $d6 cmpl $d7
+org.jfree.data.time.ohlc.OHLC.equals : $b3 = $d6 cmpl $d7 >>>>>>>> org.jfree.data.time.ohlc.OHLC.equals : if $b3 == 0
+org.jfree.data.time.ohlc.OHLC.equals : if $b3 == 0 >>>>>>>> org.jfree.data.time.ohlc.OHLC.equals : return 1
+org.jfree.data.time.ohlc.OHLC.equals : return 1 >>>>>>>> org.jfree.data.ComparableObjectItem.equals : if $z2 != 0
+org.jfree.data.ComparableObjectItem.equals : if $z2 != 0 >>>>>>>> org.jfree.data.ComparableObjectItem.equals : return 1
+org.jfree.data.ComparableObjectItem.equals : return 1 >>>>>>>> org.jfree.data.ComparableObjectSeries.equals : if $z6 != 0
+org.jfree.data.ComparableObjectSeries.equals : if $z6 != 0 >>>>>>>> org.jfree.data.ComparableObjectSeries.equals : return 1

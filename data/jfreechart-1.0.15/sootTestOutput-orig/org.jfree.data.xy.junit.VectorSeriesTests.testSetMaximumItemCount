@@ -1,0 +1,28 @@
+org.jfree.data.ComparableObjectSeries.setMaximumItemCount : if z0 == 0 goto return
+org.jfree.data.ComparableObjectSeries.setMaximumItemCount : r0.<org.jfree.data.ComparableObjectSeries: int maximumItemCount> = i0
+org.jfree.data.ComparableObjectSeries.setMaximumItemCount : z0 = 0
+org.jfree.data.ComparableObjectSeries.setMaximumItemCount : $r1 = r0.<org.jfree.data.ComparableObjectSeries: java.util.List data>
+org.jfree.data.xy.VectorSeries.getXValue : $r2 = virtualinvoke r0.<org.jfree.data.xy.VectorSeries: org.jfree.data.ComparableObjectItem getDataItem(int)>(i0)
+org.jfree.data.xy.VectorSeries.getXValue : $d0 = virtualinvoke r1.<org.jfree.data.xy.VectorDataItem: double getXValue()>()
+org.jfree.data.ComparableObjectSeries.add : virtualinvoke r0.<org.jfree.data.ComparableObjectSeries: void fireSeriesChanged()>()
+org.jfree.data.ComparableObjectSeries.add : if z0 == 0 goto return
+org.jfree.data.ComparableObjectSeries.add : $i7 = virtualinvoke r0.<org.jfree.data.ComparableObjectSeries: int getItemCount()>()
+org.jfree.data.ComparableObjectSeries.add : $r14 = r0.<org.jfree.data.ComparableObjectSeries: java.util.List data>
+org.jfree.data.ComparableObjectSeries.add : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "item")
+org.jfree.data.ComparableObjectSeries.add : $r13 = r0.<org.jfree.data.ComparableObjectSeries: java.util.List data>
+org.jfree.data.ComparableObjectSeries.add : $z4 = r0.<org.jfree.data.ComparableObjectSeries: boolean allowDuplicateXValues>
+org.jfree.data.ComparableObjectSeries.add : $z1 = r0.<org.jfree.data.ComparableObjectSeries: boolean autoSort>
+org.jfree.data.xy.XYCoordinate.getX : $d0 = r0.<org.jfree.data.xy.XYCoordinate: double x>
+org.jfree.data.ComparableObjectSeries.getMaximumItemCount : $i0 = r0.<org.jfree.data.ComparableObjectSeries: int maximumItemCount>
+org.jfree.data.xy.VectorSeries.add : $r1 = new org.jfree.data.xy.VectorDataItem
+org.jfree.data.xy.VectorDataItem.getXValue : $r2 = virtualinvoke r0.<org.jfree.data.xy.VectorDataItem: java.lang.Comparable getComparable()>()
+org.jfree.data.xy.VectorDataItem.getXValue : $d0 = virtualinvoke r1.<org.jfree.data.xy.XYCoordinate: double getX()>()
+org.jfree.data.xy.VectorSeries.getDataItem : $r1 = specialinvoke r0.<org.jfree.data.ComparableObjectSeries: org.jfree.data.ComparableObjectItem getDataItem(int)>(i0)
+org.jfree.data.general.Series.fireSeriesChanged : $z0 = r0.<org.jfree.data.general.Series: boolean notify>
+org.jfree.data.general.Series.fireSeriesChanged : $r1 = new org.jfree.data.general.SeriesChangeEvent
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null goto return
+org.jfree.data.ComparableObjectItem.getComparable : $r1 = r0.<org.jfree.data.ComparableObjectItem: java.lang.Comparable x>
+org.jfree.data.ComparableObjectSeries.getDataItem : $r1 = r0.<org.jfree.data.ComparableObjectSeries: java.util.List data>
+org.jfree.data.ComparableObjectSeries.getItemCount : $r1 = r0.<org.jfree.data.ComparableObjectSeries: java.util.List data>
+org.jfree.data.general.Series.notifyListeners : $r3 = r0.<org.jfree.data.general.Series: javax.swing.event.EventListenerList listeners>
+org.jfree.data.general.Series.notifyListeners : $i1 = lengthof r2

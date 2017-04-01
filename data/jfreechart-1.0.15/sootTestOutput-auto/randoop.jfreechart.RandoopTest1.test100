@@ -1,0 +1,23 @@
+org.jfree.chart.plot.Plot.fireChangeEvent : $r1 = new org.jfree.chart.event.PlotChangeEvent
+org.jfree.chart.plot.Plot.notifyListeners : $r3 = r0.<org.jfree.chart.plot.Plot: javax.swing.event.EventListenerList listenerList>
+org.jfree.chart.plot.Plot.notifyListeners : $i1 = lengthof r2
+org.jfree.chart.plot.Plot.notifyListeners : $z0 = r0.<org.jfree.chart.plot.Plot: boolean notify>
+org.jfree.chart.plot.dial.AbstractDialLayer.addChangeListener : $r2 = r0.<org.jfree.chart.plot.dial.AbstractDialLayer: javax.swing.event.EventListenerList listenerList>
+org.jfree.chart.plot.dial.DialValueIndicator.setTemplateValue : r0.<org.jfree.chart.plot.dial.DialValueIndicator: java.lang.Number templateValue> = r1
+org.jfree.chart.plot.dial.DialValueIndicator.setTemplateValue : $r2 = new org.jfree.chart.plot.dial.DialLayerChangeEvent
+org.jfree.chart.plot.dial.DialValueIndicator.setTemplateValue : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "value")
+org.jfree.chart.plot.dial.DialPlot.dialLayerChanged : virtualinvoke r0.<org.jfree.chart.plot.dial.DialPlot: void fireChangeEvent()>()
+org.jfree.chart.plot.dial.DialPlot.setCap : if r1 == null goto virtualinvoke r0.<org.jfree.chart.plot.dial.DialPlot: void fireChangeEvent()>()
+org.jfree.chart.plot.dial.DialPlot.setCap : virtualinvoke r0.<org.jfree.chart.plot.dial.DialPlot: void fireChangeEvent()>()
+org.jfree.chart.plot.dial.DialPlot.setCap : interfaceinvoke r1.<org.jfree.chart.plot.dial.DialLayer: void addChangeListener(org.jfree.chart.plot.dial.DialLayerChangeListener)>(r0)
+org.jfree.chart.plot.dial.DialPlot.setCap : r0.<org.jfree.chart.plot.dial.DialPlot: org.jfree.chart.plot.dial.DialLayer cap> = r1
+org.jfree.chart.plot.dial.DialPlot.setCap : $r2 = r0.<org.jfree.chart.plot.dial.DialPlot: org.jfree.chart.plot.dial.DialLayer cap>
+org.jfree.chart.plot.dial.DialPlot.getLayerIndex : $r2 = r0.<org.jfree.chart.plot.dial.DialPlot: java.util.List layers>
+org.jfree.chart.plot.dial.DialPlot.getLayerIndex : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "layer")
+org.jfree.chart.plot.dial.AbstractDialLayer.notifyListeners : $r4 = r2[i0]
+org.jfree.chart.plot.dial.AbstractDialLayer.notifyListeners : $r3 = r0.<org.jfree.chart.plot.dial.AbstractDialLayer: javax.swing.event.EventListenerList listenerList>
+org.jfree.chart.plot.dial.AbstractDialLayer.notifyListeners : $i2 = i0 + 1
+org.jfree.chart.plot.dial.AbstractDialLayer.notifyListeners : $i1 = lengthof r2
+org.jfree.chart.plot.dial.DialValueIndicator.getOutlineStroke : $r1 = r0.<org.jfree.chart.plot.dial.DialValueIndicator: java.awt.Stroke outlineStroke>
+org.jfree.chart.plot.dial.DialValueIndicator.getInsets : $r1 = r0.<org.jfree.chart.plot.dial.DialValueIndicator: org.jfree.ui.RectangleInsets insets>
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null goto return

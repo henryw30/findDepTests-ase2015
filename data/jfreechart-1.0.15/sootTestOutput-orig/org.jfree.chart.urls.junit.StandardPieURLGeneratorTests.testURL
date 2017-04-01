@@ -1,0 +1,31 @@
+org.jfree.data.DefaultKeyedValues.getIndex : return -1
+org.jfree.data.DefaultKeyedValues.getIndex : $r3 = r0.<org.jfree.data.DefaultKeyedValues: java.util.HashMap indexMap>
+org.jfree.data.DefaultKeyedValues.getIndex : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "key")
+org.jfree.data.DefaultKeyedValues.getIndex : if r2 != null goto $i0 = virtualinvoke r2.<java.lang.Integer: int intValue()>()
+org.jfree.data.general.AbstractDataset.notifyListeners : $r3 = r0.<org.jfree.data.general.AbstractDataset: javax.swing.event.EventListenerList listenerList>
+org.jfree.data.general.AbstractDataset.notifyListeners : $i1 = lengthof r2
+org.jfree.chart.urls.URLUtilities.encode : r3 = null
+org.jfree.chart.urls.URLUtilities.encode : r2 = class "java/net/URLEncoder"
+org.jfree.chart.urls.URLUtilities.encode : return r3
+org.jfree.chart.urls.URLUtilities.encode : goto [?= return r3]
+org.jfree.chart.urls.URLUtilities.encode : $r4 = <org.jfree.chart.urls.URLUtilities: java.lang.Class[] STRING_ARGS_2>
+org.jfree.chart.urls.URLUtilities.encode : goto [?= (branch)]
+org.jfree.chart.urls.URLUtilities.encode : $r7 = newarray (java.lang.Object)[2]
+org.jfree.data.general.AbstractDataset.fireDatasetChanged : $r1 = new org.jfree.data.general.DatasetChangeEvent
+org.jfree.chart.urls.StandardPieURLGenerator.generateURL : $r20 = virtualinvoke r2.<java.lang.Object: java.lang.String toString()>()
+org.jfree.chart.urls.StandardPieURLGenerator.generateURL : $r24 = new java.lang.StringBuilder
+org.jfree.chart.urls.StandardPieURLGenerator.generateURL : $i1 = virtualinvoke r3.<java.lang.String: int indexOf(java.lang.String)>("?")
+org.jfree.chart.urls.StandardPieURLGenerator.generateURL : return r13
+org.jfree.chart.urls.StandardPieURLGenerator.generateURL : $r23 = r0.<org.jfree.chart.urls.StandardPieURLGenerator: java.lang.String indexParameterName>
+org.jfree.chart.urls.StandardPieURLGenerator.generateURL : $r14 = new java.lang.StringBuilder
+org.jfree.chart.urls.StandardPieURLGenerator.generateURL : $r30 = staticinvoke <java.lang.String: java.lang.String valueOf(int)>(i0)
+org.jfree.chart.urls.StandardPieURLGenerator.generateURL : r3 = r0.<org.jfree.chart.urls.StandardPieURLGenerator: java.lang.String prefix>
+org.jfree.data.DefaultKeyedValues.setValue : i0 = virtualinvoke r0.<org.jfree.data.DefaultKeyedValues: int getIndex(java.lang.Comparable)>(r1)
+org.jfree.data.DefaultKeyedValues.setValue : $r8 = r0.<org.jfree.data.DefaultKeyedValues: java.util.ArrayList values>
+org.jfree.data.DefaultKeyedValues.setValue : $r9 = r0.<org.jfree.data.DefaultKeyedValues: java.util.HashMap indexMap>
+org.jfree.data.DefaultKeyedValues.setValue : $r7 = r0.<org.jfree.data.DefaultKeyedValues: java.util.ArrayList keys>
+org.jfree.data.DefaultKeyedValues.setValue : if i0 < 0 goto $r7 = r0.<org.jfree.data.DefaultKeyedValues: java.util.ArrayList keys>
+org.jfree.data.DefaultKeyedValues.setValue : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "key")
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null goto return
+org.jfree.data.general.DefaultPieDataset.setValue : virtualinvoke r0.<org.jfree.data.general.DefaultPieDataset: void fireDatasetChanged()>()
+org.jfree.data.general.DefaultPieDataset.setValue : $r3 = r0.<org.jfree.data.general.DefaultPieDataset: org.jfree.data.DefaultKeyedValues data>

@@ -1,0 +1,96 @@
+org.jfree.chart.plot.XYPlot.render : z0 = 0 >>>>>>>> org.jfree.chart.plot.XYPlot.render : r5 = virtualinvoke r0.<org.jfree.chart.plot.XYPlot: org.jfree.data.xy.XYDataset getDataset(int)>(i0)
+org.jfree.chart.plot.XYPlot.render : r5 = virtualinvoke r0.<org.jfree.chart.plot.XYPlot: org.jfree.data.xy.XYDataset getDataset(int)>(i0) >>>>>>>> org.jfree.chart.plot.XYPlot.render : $z1 = staticinvoke <org.jfree.data.general.DatasetUtilities: boolean isEmptyOrNull(org.jfree.data.xy.XYDataset)>(r5)
+org.jfree.chart.plot.XYPlot.render : $z1 = staticinvoke <org.jfree.data.general.DatasetUtilities: boolean isEmptyOrNull(org.jfree.data.xy.XYDataset)>(r5) >>>>>>>> org.jfree.chart.plot.XYPlot.render : if $z1 != 0
+org.jfree.chart.plot.XYPlot.render : if $z1 != 0 >>>>>>>> org.jfree.chart.plot.XYPlot.render : z0 = 1
+org.jfree.chart.plot.XYPlot.render : if $z1 != 0 >>>>>>>> org.jfree.chart.plot.XYPlot.render : return z0
+org.jfree.chart.plot.XYPlot.render : z0 = 1 >>>>>>>> org.jfree.chart.plot.XYPlot.render : r6 = virtualinvoke r0.<org.jfree.chart.plot.XYPlot: org.jfree.chart.axis.ValueAxis getDomainAxisForDataset(int)>(i0)
+org.jfree.chart.plot.XYPlot.render : r6 = virtualinvoke r0.<org.jfree.chart.plot.XYPlot: org.jfree.chart.axis.ValueAxis getDomainAxisForDataset(int)>(i0) >>>>>>>> org.jfree.chart.plot.XYPlot.render : r7 = virtualinvoke r0.<org.jfree.chart.plot.XYPlot: org.jfree.chart.axis.ValueAxis getRangeAxisForDataset(int)>(i0)
+org.jfree.chart.plot.XYPlot.render : r7 = virtualinvoke r0.<org.jfree.chart.plot.XYPlot: org.jfree.chart.axis.ValueAxis getRangeAxisForDataset(int)>(i0) >>>>>>>> org.jfree.chart.plot.XYPlot.render : if r6 == null
+org.jfree.chart.plot.XYPlot.render : if r6 == null >>>>>>>> org.jfree.chart.plot.XYPlot.render : if r7 != null
+org.jfree.chart.plot.XYPlot.render : if r6 == null >>>>>>>> org.jfree.chart.plot.XYPlot.render : return z0
+org.jfree.chart.plot.XYPlot.render : if r7 != null >>>>>>>> org.jfree.chart.plot.XYPlot.render : return z0
+org.jfree.chart.plot.XYPlot.render : if r7 != null >>>>>>>> org.jfree.chart.plot.XYPlot.render : r8 = virtualinvoke r0.<org.jfree.chart.plot.XYPlot: org.jfree.chart.renderer.xy.XYItemRenderer getRenderer(int)>(i0)
+org.jfree.chart.plot.XYPlot.render : r8 = virtualinvoke r0.<org.jfree.chart.plot.XYPlot: org.jfree.chart.renderer.xy.XYItemRenderer getRenderer(int)>(i0) >>>>>>>> org.jfree.chart.plot.XYPlot.render : if r8 != null
+org.jfree.chart.plot.XYPlot.render : if r8 != null >>>>>>>> org.jfree.chart.plot.XYPlot.render : r8 = virtualinvoke r0.<org.jfree.chart.plot.XYPlot: org.jfree.chart.renderer.xy.XYItemRenderer getRenderer()>()
+org.jfree.chart.plot.XYPlot.render : if r8 != null >>>>>>>> org.jfree.chart.plot.XYPlot.render : r9 = interfaceinvoke r8.<org.jfree.chart.renderer.xy.XYItemRenderer: org.jfree.chart.renderer.xy.XYItemRendererState initialise(java.awt.Graphics2D,java.awt.geom.Rectangle2D,org.jfree.chart.plot.XYPlot,org.jfree.data.xy.XYDataset,org.jfree.chart.plot.PlotRenderingInfo)>(r1, r2, r0, r5, r3)
+org.jfree.chart.plot.XYPlot.render : r9 = interfaceinvoke r8.<org.jfree.chart.renderer.xy.XYItemRenderer: org.jfree.chart.renderer.xy.XYItemRendererState initialise(java.awt.Graphics2D,java.awt.geom.Rectangle2D,org.jfree.chart.plot.XYPlot,org.jfree.data.xy.XYDataset,org.jfree.chart.plot.PlotRenderingInfo)>(r1, r2, r0, r5, r3) >>>>>>>> org.jfree.chart.plot.XYPlot.render : i1 = interfaceinvoke r8.<org.jfree.chart.renderer.xy.XYItemRenderer: int getPassCount()>()
+org.jfree.chart.plot.XYPlot.render : i1 = interfaceinvoke r8.<org.jfree.chart.renderer.xy.XYItemRenderer: int getPassCount()>() >>>>>>>> org.jfree.chart.plot.XYPlot.render : r10 = virtualinvoke r0.<org.jfree.chart.plot.XYPlot: org.jfree.chart.plot.SeriesRenderingOrder getSeriesRenderingOrder()>()
+org.jfree.chart.plot.XYPlot.render : r10 = virtualinvoke r0.<org.jfree.chart.plot.XYPlot: org.jfree.chart.plot.SeriesRenderingOrder getSeriesRenderingOrder()>() >>>>>>>> org.jfree.chart.plot.XYPlot.render : $r12 = <org.jfree.chart.plot.SeriesRenderingOrder: org.jfree.chart.plot.SeriesRenderingOrder REVERSE>
+org.jfree.chart.plot.XYPlot.render : $r12 = <org.jfree.chart.plot.SeriesRenderingOrder: org.jfree.chart.plot.SeriesRenderingOrder REVERSE> >>>>>>>> org.jfree.chart.plot.XYPlot.render : if r10 != $r12
+org.jfree.chart.plot.XYPlot.render : if r10 != $r12 >>>>>>>> org.jfree.chart.plot.XYPlot.render : i2 = 0
+org.jfree.chart.plot.XYPlot.render : if r10 != $r12 >>>>>>>> org.jfree.chart.plot.XYPlot.render : i13 = 0
+org.jfree.chart.plot.XYPlot.render : i13 = 0 >>>>>>>> org.jfree.chart.plot.XYPlot.render : if i13 >= i1
+org.jfree.chart.plot.XYPlot.render : if i13 >= i1 >>>>>>>> org.jfree.chart.plot.XYPlot.render : i14 = interfaceinvoke r5.<org.jfree.data.xy.XYDataset: int getSeriesCount()>()
+org.jfree.chart.plot.XYPlot.render : if i13 >= i1 >>>>>>>> org.jfree.chart.plot.XYPlot.render : return z0
+org.jfree.chart.plot.XYPlot.render : i14 = interfaceinvoke r5.<org.jfree.data.xy.XYDataset: int getSeriesCount()>() >>>>>>>> org.jfree.chart.plot.XYPlot.render : i15 = 0
+org.jfree.chart.plot.XYPlot.render : i15 = 0 >>>>>>>> org.jfree.chart.plot.XYPlot.render : if i15 >= i14
+org.jfree.chart.plot.XYPlot.render : if i15 >= i14 >>>>>>>> org.jfree.chart.plot.XYPlot.render : i16 = 0
+org.jfree.chart.plot.XYPlot.render : if i15 >= i14 >>>>>>>> org.jfree.chart.plot.XYPlot.render : i13 = i13 + 1
+org.jfree.chart.plot.XYPlot.render : i13 = i13 + 1 >>>>>>>> org.jfree.chart.plot.XYPlot.render : goto [?= (branch)]
+org.jfree.chart.plot.XYPlot.render : goto [?= (branch)] >>>>>>>> org.jfree.chart.plot.XYPlot.render : if i13 >= i1
+org.jfree.chart.plot.XYPlot.render : i16 = 0 >>>>>>>> org.jfree.chart.plot.XYPlot.render : $i17 = interfaceinvoke r5.<org.jfree.data.xy.XYDataset: int getItemCount(int)>(i15)
+org.jfree.chart.plot.XYPlot.render : $i17 = interfaceinvoke r5.<org.jfree.data.xy.XYDataset: int getItemCount(int)>(i15) >>>>>>>> org.jfree.chart.plot.XYPlot.render : i18 = $i17 - 1
+org.jfree.chart.plot.XYPlot.render : i18 = $i17 - 1 >>>>>>>> org.jfree.chart.plot.XYPlot.render : $z3 = virtualinvoke r9.<org.jfree.chart.renderer.xy.XYItemRendererState: boolean getProcessVisibleItemsOnly()>()
+org.jfree.chart.plot.XYPlot.render : $z3 = virtualinvoke r9.<org.jfree.chart.renderer.xy.XYItemRendererState: boolean getProcessVisibleItemsOnly()>() >>>>>>>> org.jfree.chart.plot.XYPlot.render : if $z3 == 0
+org.jfree.chart.plot.XYPlot.render : if $z3 == 0 >>>>>>>> org.jfree.chart.plot.XYPlot.render : $d2 = virtualinvoke r6.<org.jfree.chart.axis.ValueAxis: double getLowerBound()>()
+org.jfree.chart.plot.XYPlot.render : if $z3 == 0 >>>>>>>> org.jfree.chart.plot.XYPlot.render : virtualinvoke r9.<org.jfree.chart.renderer.xy.XYItemRendererState: void startSeriesPass(org.jfree.data.xy.XYDataset,int,int,int,int,int)>(r5, i15, i16, i18, i13, i1)
+org.jfree.chart.plot.XYPlot.render : virtualinvoke r9.<org.jfree.chart.renderer.xy.XYItemRendererState: void startSeriesPass(org.jfree.data.xy.XYDataset,int,int,int,int,int)>(r5, i15, i16, i18, i13, i1) >>>>>>>> org.jfree.chart.plot.XYPlot.render : i23 = i16
+org.jfree.chart.plot.XYPlot.render : i23 = i16 >>>>>>>> org.jfree.chart.plot.XYPlot.render : if i23 > i18
+org.jfree.chart.plot.XYPlot.render : if i23 > i18 >>>>>>>> org.jfree.chart.plot.XYPlot.render : interfaceinvoke r8.<org.jfree.chart.renderer.xy.XYItemRenderer: void drawItem(java.awt.Graphics2D,org.jfree.chart.renderer.xy.XYItemRendererState,java.awt.geom.Rectangle2D,org.jfree.chart.plot.PlotRenderingInfo,org.jfree.chart.plot.XYPlot,org.jfree.chart.axis.ValueAxis,org.jfree.chart.axis.ValueAxis,org.jfree.data.xy.XYDataset,int,int,org.jfree.chart.plot.CrosshairState,int)>(r1, r9, r2, r3, r0, r6, r7, r5, i15, i23, r4, i13)
+org.jfree.chart.plot.XYPlot.render : if i23 > i18 >>>>>>>> org.jfree.chart.plot.XYPlot.render : virtualinvoke r9.<org.jfree.chart.renderer.xy.XYItemRendererState: void endSeriesPass(org.jfree.data.xy.XYDataset,int,int,int,int,int)>(r5, i15, i16, i18, i13, i1)
+org.jfree.chart.plot.XYPlot.render : virtualinvoke r9.<org.jfree.chart.renderer.xy.XYItemRendererState: void endSeriesPass(org.jfree.data.xy.XYDataset,int,int,int,int,int)>(r5, i15, i16, i18, i13, i1) >>>>>>>> org.jfree.chart.plot.XYPlot.render : i15 = i15 + 1
+org.jfree.chart.plot.XYPlot.render : i15 = i15 + 1 >>>>>>>> org.jfree.chart.plot.XYPlot.render : goto [?= (branch)]
+org.jfree.chart.plot.XYPlot.render : goto [?= (branch)] >>>>>>>> org.jfree.chart.plot.XYPlot.render : if i15 >= i14
+org.jfree.chart.plot.XYPlot.render : interfaceinvoke r8.<org.jfree.chart.renderer.xy.XYItemRenderer: void drawItem(java.awt.Graphics2D,org.jfree.chart.renderer.xy.XYItemRendererState,java.awt.geom.Rectangle2D,org.jfree.chart.plot.PlotRenderingInfo,org.jfree.chart.plot.XYPlot,org.jfree.chart.axis.ValueAxis,org.jfree.chart.axis.ValueAxis,org.jfree.data.xy.XYDataset,int,int,org.jfree.chart.plot.CrosshairState,int)>(r1, r9, r2, r3, r0, r6, r7, r5, i15, i23, r4, i13) >>>>>>>> org.jfree.chart.plot.XYPlot.render : i23 = i23 + 1
+org.jfree.chart.plot.XYPlot.render : i23 = i23 + 1 >>>>>>>> org.jfree.chart.plot.XYPlot.render : goto [?= (branch)]
+org.jfree.chart.plot.XYPlot.render : goto [?= (branch)] >>>>>>>> org.jfree.chart.plot.XYPlot.render : if i23 > i18
+org.jfree.chart.plot.XYPlot.render : $d2 = virtualinvoke r6.<org.jfree.chart.axis.ValueAxis: double getLowerBound()>() >>>>>>>> org.jfree.chart.plot.XYPlot.render : $d3 = virtualinvoke r6.<org.jfree.chart.axis.ValueAxis: double getUpperBound()>()
+org.jfree.chart.plot.XYPlot.render : $d3 = virtualinvoke r6.<org.jfree.chart.axis.ValueAxis: double getUpperBound()>() >>>>>>>> org.jfree.chart.plot.XYPlot.render : r13 = staticinvoke <org.jfree.chart.renderer.RendererUtilities: int[] findLiveItems(org.jfree.data.xy.XYDataset,int,double,double)>(r5, i15, $d2, $d3)
+org.jfree.chart.plot.XYPlot.render : r13 = staticinvoke <org.jfree.chart.renderer.RendererUtilities: int[] findLiveItems(org.jfree.data.xy.XYDataset,int,double,double)>(r5, i15, $d2, $d3) >>>>>>>> org.jfree.chart.plot.XYPlot.render : $i19 = r13[0]
+org.jfree.chart.plot.XYPlot.render : $i19 = r13[0] >>>>>>>> org.jfree.chart.plot.XYPlot.render : $i20 = $i19 - 1
+org.jfree.chart.plot.XYPlot.render : $i20 = $i19 - 1 >>>>>>>> org.jfree.chart.plot.XYPlot.render : i16 = staticinvoke <java.lang.Math: int max(int,int)>($i20, 0)
+org.jfree.chart.plot.XYPlot.render : i16 = staticinvoke <java.lang.Math: int max(int,int)>($i20, 0) >>>>>>>> org.jfree.chart.plot.XYPlot.render : $i21 = r13[1]
+org.jfree.chart.plot.XYPlot.render : $i21 = r13[1] >>>>>>>> org.jfree.chart.plot.XYPlot.render : $i22 = $i21 + 1
+org.jfree.chart.plot.XYPlot.render : $i22 = $i21 + 1 >>>>>>>> org.jfree.chart.plot.XYPlot.render : i18 = staticinvoke <java.lang.Math: int min(int,int)>($i22, i18)
+org.jfree.chart.plot.XYPlot.render : i18 = staticinvoke <java.lang.Math: int min(int,int)>($i22, i18) >>>>>>>> org.jfree.chart.plot.XYPlot.render : virtualinvoke r9.<org.jfree.chart.renderer.xy.XYItemRendererState: void startSeriesPass(org.jfree.data.xy.XYDataset,int,int,int,int,int)>(r5, i15, i16, i18, i13, i1)
+org.jfree.chart.plot.XYPlot.render : i2 = 0 >>>>>>>> org.jfree.chart.plot.XYPlot.render : if i2 >= i1
+org.jfree.chart.plot.XYPlot.render : if i2 >= i1 >>>>>>>> org.jfree.chart.plot.XYPlot.render : i3 = interfaceinvoke r5.<org.jfree.data.xy.XYDataset: int getSeriesCount()>()
+org.jfree.chart.plot.XYPlot.render : if i2 >= i1 >>>>>>>> org.jfree.chart.plot.XYPlot.render : goto [?= return z0]
+org.jfree.chart.plot.XYPlot.render : goto [?= return z0] >>>>>>>> org.jfree.chart.plot.XYPlot.render : return z0
+org.jfree.chart.plot.XYPlot.render : i3 = interfaceinvoke r5.<org.jfree.data.xy.XYDataset: int getSeriesCount()>() >>>>>>>> org.jfree.chart.plot.XYPlot.render : i4 = i3 - 1
+org.jfree.chart.plot.XYPlot.render : i4 = i3 - 1 >>>>>>>> org.jfree.chart.plot.XYPlot.render : if i4 < 0
+org.jfree.chart.plot.XYPlot.render : if i4 < 0 >>>>>>>> org.jfree.chart.plot.XYPlot.render : i5 = 0
+org.jfree.chart.plot.XYPlot.render : if i4 < 0 >>>>>>>> org.jfree.chart.plot.XYPlot.render : i2 = i2 + 1
+org.jfree.chart.plot.XYPlot.render : i2 = i2 + 1 >>>>>>>> org.jfree.chart.plot.XYPlot.render : goto [?= (branch)]
+org.jfree.chart.plot.XYPlot.render : goto [?= (branch)] >>>>>>>> org.jfree.chart.plot.XYPlot.render : if i2 >= i1
+org.jfree.chart.plot.XYPlot.render : i5 = 0 >>>>>>>> org.jfree.chart.plot.XYPlot.render : $i7 = interfaceinvoke r5.<org.jfree.data.xy.XYDataset: int getItemCount(int)>(i4)
+org.jfree.chart.plot.XYPlot.render : $i7 = interfaceinvoke r5.<org.jfree.data.xy.XYDataset: int getItemCount(int)>(i4) >>>>>>>> org.jfree.chart.plot.XYPlot.render : i6 = $i7 - 1
+org.jfree.chart.plot.XYPlot.render : i6 = $i7 - 1 >>>>>>>> org.jfree.chart.plot.XYPlot.render : if i6 != -1
+org.jfree.chart.plot.XYPlot.render : if i6 != -1 >>>>>>>> org.jfree.chart.plot.XYPlot.render : goto [?= i4 = i4 + -1]
+org.jfree.chart.plot.XYPlot.render : if i6 != -1 >>>>>>>> org.jfree.chart.plot.XYPlot.render : $z2 = virtualinvoke r9.<org.jfree.chart.renderer.xy.XYItemRendererState: boolean getProcessVisibleItemsOnly()>()
+org.jfree.chart.plot.XYPlot.render : $z2 = virtualinvoke r9.<org.jfree.chart.renderer.xy.XYItemRendererState: boolean getProcessVisibleItemsOnly()>() >>>>>>>> org.jfree.chart.plot.XYPlot.render : if $z2 == 0
+org.jfree.chart.plot.XYPlot.render : if $z2 == 0 >>>>>>>> org.jfree.chart.plot.XYPlot.render : $d0 = virtualinvoke r6.<org.jfree.chart.axis.ValueAxis: double getLowerBound()>()
+org.jfree.chart.plot.XYPlot.render : if $z2 == 0 >>>>>>>> org.jfree.chart.plot.XYPlot.render : virtualinvoke r9.<org.jfree.chart.renderer.xy.XYItemRendererState: void startSeriesPass(org.jfree.data.xy.XYDataset,int,int,int,int,int)>(r5, i4, i5, i6, i2, i1)
+org.jfree.chart.plot.XYPlot.render : virtualinvoke r9.<org.jfree.chart.renderer.xy.XYItemRendererState: void startSeriesPass(org.jfree.data.xy.XYDataset,int,int,int,int,int)>(r5, i4, i5, i6, i2, i1) >>>>>>>> org.jfree.chart.plot.XYPlot.render : i12 = i5
+org.jfree.chart.plot.XYPlot.render : i12 = i5 >>>>>>>> org.jfree.chart.plot.XYPlot.render : if i12 > i6
+org.jfree.chart.plot.XYPlot.render : if i12 > i6 >>>>>>>> org.jfree.chart.plot.XYPlot.render : interfaceinvoke r8.<org.jfree.chart.renderer.xy.XYItemRenderer: void drawItem(java.awt.Graphics2D,org.jfree.chart.renderer.xy.XYItemRendererState,java.awt.geom.Rectangle2D,org.jfree.chart.plot.PlotRenderingInfo,org.jfree.chart.plot.XYPlot,org.jfree.chart.axis.ValueAxis,org.jfree.chart.axis.ValueAxis,org.jfree.data.xy.XYDataset,int,int,org.jfree.chart.plot.CrosshairState,int)>(r1, r9, r2, r3, r0, r6, r7, r5, i4, i12, r4, i2)
+org.jfree.chart.plot.XYPlot.render : if i12 > i6 >>>>>>>> org.jfree.chart.plot.XYPlot.render : virtualinvoke r9.<org.jfree.chart.renderer.xy.XYItemRendererState: void endSeriesPass(org.jfree.data.xy.XYDataset,int,int,int,int,int)>(r5, i4, i5, i6, i2, i1)
+org.jfree.chart.plot.XYPlot.render : virtualinvoke r9.<org.jfree.chart.renderer.xy.XYItemRendererState: void endSeriesPass(org.jfree.data.xy.XYDataset,int,int,int,int,int)>(r5, i4, i5, i6, i2, i1) >>>>>>>> org.jfree.chart.plot.XYPlot.render : i4 = i4 + -1
+org.jfree.chart.plot.XYPlot.render : i4 = i4 + -1 >>>>>>>> org.jfree.chart.plot.XYPlot.render : goto [?= (branch)]
+org.jfree.chart.plot.XYPlot.render : goto [?= (branch)] >>>>>>>> org.jfree.chart.plot.XYPlot.render : if i4 < 0
+org.jfree.chart.plot.XYPlot.render : interfaceinvoke r8.<org.jfree.chart.renderer.xy.XYItemRenderer: void drawItem(java.awt.Graphics2D,org.jfree.chart.renderer.xy.XYItemRendererState,java.awt.geom.Rectangle2D,org.jfree.chart.plot.PlotRenderingInfo,org.jfree.chart.plot.XYPlot,org.jfree.chart.axis.ValueAxis,org.jfree.chart.axis.ValueAxis,org.jfree.data.xy.XYDataset,int,int,org.jfree.chart.plot.CrosshairState,int)>(r1, r9, r2, r3, r0, r6, r7, r5, i4, i12, r4, i2) >>>>>>>> org.jfree.chart.plot.XYPlot.render : i12 = i12 + 1
+org.jfree.chart.plot.XYPlot.render : i12 = i12 + 1 >>>>>>>> org.jfree.chart.plot.XYPlot.render : goto [?= (branch)]
+org.jfree.chart.plot.XYPlot.render : goto [?= (branch)] >>>>>>>> org.jfree.chart.plot.XYPlot.render : if i12 > i6
+org.jfree.chart.plot.XYPlot.render : $d0 = virtualinvoke r6.<org.jfree.chart.axis.ValueAxis: double getLowerBound()>() >>>>>>>> org.jfree.chart.plot.XYPlot.render : $d1 = virtualinvoke r6.<org.jfree.chart.axis.ValueAxis: double getUpperBound()>()
+org.jfree.chart.plot.XYPlot.render : $d1 = virtualinvoke r6.<org.jfree.chart.axis.ValueAxis: double getUpperBound()>() >>>>>>>> org.jfree.chart.plot.XYPlot.render : r11 = staticinvoke <org.jfree.chart.renderer.RendererUtilities: int[] findLiveItems(org.jfree.data.xy.XYDataset,int,double,double)>(r5, i4, $d0, $d1)
+org.jfree.chart.plot.XYPlot.render : r11 = staticinvoke <org.jfree.chart.renderer.RendererUtilities: int[] findLiveItems(org.jfree.data.xy.XYDataset,int,double,double)>(r5, i4, $d0, $d1) >>>>>>>> org.jfree.chart.plot.XYPlot.render : $i8 = r11[0]
+org.jfree.chart.plot.XYPlot.render : $i8 = r11[0] >>>>>>>> org.jfree.chart.plot.XYPlot.render : $i9 = $i8 - 1
+org.jfree.chart.plot.XYPlot.render : $i9 = $i8 - 1 >>>>>>>> org.jfree.chart.plot.XYPlot.render : i5 = staticinvoke <java.lang.Math: int max(int,int)>($i9, 0)
+org.jfree.chart.plot.XYPlot.render : i5 = staticinvoke <java.lang.Math: int max(int,int)>($i9, 0) >>>>>>>> org.jfree.chart.plot.XYPlot.render : $i10 = r11[1]
+org.jfree.chart.plot.XYPlot.render : $i10 = r11[1] >>>>>>>> org.jfree.chart.plot.XYPlot.render : $i11 = $i10 + 1
+org.jfree.chart.plot.XYPlot.render : $i11 = $i10 + 1 >>>>>>>> org.jfree.chart.plot.XYPlot.render : i6 = staticinvoke <java.lang.Math: int min(int,int)>($i11, i6)
+org.jfree.chart.plot.XYPlot.render : i6 = staticinvoke <java.lang.Math: int min(int,int)>($i11, i6) >>>>>>>> org.jfree.chart.plot.XYPlot.render : virtualinvoke r9.<org.jfree.chart.renderer.xy.XYItemRendererState: void startSeriesPass(org.jfree.data.xy.XYDataset,int,int,int,int,int)>(r5, i4, i5, i6, i2, i1)
+org.jfree.chart.plot.XYPlot.render : goto [?= i4 = i4 + -1] >>>>>>>> org.jfree.chart.plot.XYPlot.render : i4 = i4 + -1
+org.jfree.chart.plot.XYPlot.render : r8 = virtualinvoke r0.<org.jfree.chart.plot.XYPlot: org.jfree.chart.renderer.xy.XYItemRenderer getRenderer()>() >>>>>>>> org.jfree.chart.plot.XYPlot.render : if r8 != null
+org.jfree.chart.plot.XYPlot.render : if r8 != null >>>>>>>> org.jfree.chart.plot.XYPlot.render : return z0
+org.jfree.chart.plot.XYPlot.render : if r8 != null >>>>>>>> org.jfree.chart.plot.XYPlot.render : r9 = interfaceinvoke r8.<org.jfree.chart.renderer.xy.XYItemRenderer: org.jfree.chart.renderer.xy.XYItemRendererState initialise(java.awt.Graphics2D,java.awt.geom.Rectangle2D,org.jfree.chart.plot.XYPlot,org.jfree.data.xy.XYDataset,org.jfree.chart.plot.PlotRenderingInfo)>(r1, r2, r0, r5, r3)

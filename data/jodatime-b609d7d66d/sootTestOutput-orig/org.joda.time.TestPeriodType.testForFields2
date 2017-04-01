@@ -1,0 +1,104 @@
+org.joda.time.PeriodType.millis : if r0 != null goto return r0
+org.joda.time.PeriodType.millis : r0 = <org.joda.time.PeriodType: org.joda.time.PeriodType cMillis>
+org.joda.time.PeriodType.millis : return r0
+org.joda.time.PeriodType.withMinutesRemoved : $r1 = specialinvoke r0.<org.joda.time.PeriodType: org.joda.time.PeriodType withFieldRemoved(int,java.lang.String)>(5, "NoMinutes")
+org.joda.time.DurationFieldType$StandardDurationFieldType.readResolve : $r9 = <org.joda.time.DurationFieldType$StandardDurationFieldType: org.joda.time.DurationFieldType HOURS_TYPE>
+org.joda.time.DurationFieldType$StandardDurationFieldType.readResolve : $b0 = r0.<org.joda.time.DurationFieldType$StandardDurationFieldType: byte iOrdinal>
+org.joda.time.DurationFieldType$StandardDurationFieldType.readResolve : $r4 = <org.joda.time.DurationFieldType$StandardDurationFieldType: org.joda.time.DurationFieldType YEARS_TYPE>
+org.joda.time.PeriodType.hashCode : return i0
+org.joda.time.PeriodType.hashCode : i1 = 0
+org.joda.time.PeriodType.hashCode : $r2 = r0.<org.joda.time.PeriodType: org.joda.time.DurationFieldType[] iTypes>
+org.joda.time.PeriodType.hashCode : i0 = 0
+org.joda.time.DurationFieldType.seconds : $r0 = <org.joda.time.DurationFieldType: org.joda.time.DurationFieldType SECONDS_TYPE>
+org.joda.time.DurationFieldType.millis : $r0 = <org.joda.time.DurationFieldType: org.joda.time.DurationFieldType MILLIS_TYPE>
+org.joda.time.PeriodType.withFieldRemoved : if i2 <= i1 goto i2 = i2 + 1
+org.joda.time.PeriodType.withFieldRemoved : $i7 = i2 - 1
+org.joda.time.PeriodType.withFieldRemoved : $r14 = new org.joda.time.PeriodType
+org.joda.time.PeriodType.withFieldRemoved : $i10 = i3
+org.joda.time.PeriodType.withFieldRemoved : i3 = 0
+org.joda.time.PeriodType.withFieldRemoved : if i3 <= i0 goto r9[i3] = -1
+org.joda.time.PeriodType.withFieldRemoved : if i3 >= i0 goto (branch)
+org.joda.time.PeriodType.withFieldRemoved : r9[i3] = -1
+org.joda.time.PeriodType.withFieldRemoved : if i1 != -1 goto $i4 = virtualinvoke r0.<org.joda.time.PeriodType: int size()>()
+org.joda.time.PeriodType.withFieldRemoved : r9 = newarray (int)[8]
+org.joda.time.PeriodType.withFieldRemoved : $i4 = virtualinvoke r0.<org.joda.time.PeriodType: int size()>()
+org.joda.time.PeriodType.withFieldRemoved : $r10 = r0.<org.joda.time.PeriodType: int[] iIndices>
+org.joda.time.PeriodType.withFieldRemoved : $r5 = r0.<org.joda.time.PeriodType: org.joda.time.DurationFieldType[] iTypes>
+org.joda.time.PeriodType.withFieldRemoved : i2 = 0
+org.joda.time.PeriodType.withFieldRemoved : $r3 = r0.<org.joda.time.PeriodType: int[] iIndices>
+org.joda.time.PeriodType.withFieldRemoved : if i2 >= i1 goto (branch)
+org.joda.time.DurationFieldType.hours : $r0 = <org.joda.time.DurationFieldType: org.joda.time.DurationFieldType HOURS_TYPE>
+org.joda.time.PeriodType.withSecondsRemoved : $r1 = specialinvoke r0.<org.joda.time.PeriodType: org.joda.time.PeriodType withFieldRemoved(int,java.lang.String)>(6, "NoSeconds")
+org.joda.time.DateTimeUtils.checkPermission : r0 = staticinvoke <java.lang.System: java.lang.SecurityManager getSecurityManager()>()
+org.joda.time.DateTimeUtils.checkPermission : if r0 == null goto return
+org.joda.time.DurationFieldType.days : $r0 = <org.joda.time.DurationFieldType: org.joda.time.DurationFieldType DAYS_TYPE>
+org.joda.time.PeriodType.size : $r1 = r0.<org.joda.time.PeriodType: org.joda.time.DurationFieldType[] iTypes>
+org.joda.time.PeriodType.forFields : $r63 = (org.joda.time.PeriodType) r2
+org.joda.time.PeriodType.forFields : r3 = virtualinvoke r3.<org.joda.time.PeriodType: org.joda.time.PeriodType withSecondsRemoved()>()
+org.joda.time.PeriodType.forFields : return r3
+org.joda.time.PeriodType.forFields : $r71 = staticinvoke <org.joda.time.DurationFieldType: org.joda.time.DurationFieldType years()>()
+org.joda.time.PeriodType.forFields : if r2 == null goto r3 = staticinvoke <org.joda.time.PeriodType: org.joda.time.PeriodType standard()>()
+org.joda.time.PeriodType.forFields : $r85 = new org.joda.time.PeriodType
+org.joda.time.PeriodType.forFields : r3 = virtualinvoke r3.<org.joda.time.PeriodType: org.joda.time.PeriodType withMonthsRemoved()>()
+org.joda.time.PeriodType.forFields : r3 = virtualinvoke r3.<org.joda.time.PeriodType: org.joda.time.PeriodType withMinutesRemoved()>()
+org.joda.time.PeriodType.forFields : $r78 = staticinvoke <org.joda.time.DurationFieldType: org.joda.time.DurationFieldType millis()>()
+org.joda.time.PeriodType.forFields : r3 = staticinvoke <org.joda.time.PeriodType: org.joda.time.PeriodType standard()>()
+org.joda.time.PeriodType.forFields : $z1 = r2 instanceof org.joda.time.PeriodType
+org.joda.time.PeriodType.forFields : r3 = virtualinvoke r3.<org.joda.time.PeriodType: org.joda.time.PeriodType withWeeksRemoved()>()
+org.joda.time.PeriodType.forFields : $r75 = staticinvoke <org.joda.time.DurationFieldType: org.joda.time.DurationFieldType hours()>()
+org.joda.time.PeriodType.forFields : $r77 = staticinvoke <org.joda.time.DurationFieldType: org.joda.time.DurationFieldType seconds()>()
+org.joda.time.PeriodType.forFields : $i3 = interfaceinvoke r4.<java.util.List: int size()>()
+org.joda.time.PeriodType.forFields : $r69 = new java.util.ArrayList
+org.joda.time.PeriodType.forFields : r3 = virtualinvoke r3.<org.joda.time.PeriodType: org.joda.time.PeriodType withDaysRemoved()>()
+org.joda.time.PeriodType.forFields : $r73 = staticinvoke <org.joda.time.DurationFieldType: org.joda.time.DurationFieldType weeks()>()
+org.joda.time.PeriodType.forFields : r3 = virtualinvoke r3.<org.joda.time.PeriodType: org.joda.time.PeriodType withMillisRemoved()>()
+org.joda.time.PeriodType.forFields : $r87 = interfaceinvoke r10.<java.util.Map: java.lang.Object get(java.lang.Object)>(r5)
+org.joda.time.PeriodType.forFields : r10 = <org.joda.time.PeriodType: java.util.Map cTypes>
+org.joda.time.PeriodType.forFields : $r8 = r0[i0]
+org.joda.time.PeriodType.forFields : $r72 = staticinvoke <org.joda.time.DurationFieldType: org.joda.time.DurationFieldType months()>()
+org.joda.time.PeriodType.forFields : $r74 = staticinvoke <org.joda.time.DurationFieldType: org.joda.time.DurationFieldType days()>()
+org.joda.time.PeriodType.forFields : i0 = 0
+org.joda.time.PeriodType.forFields : r2 = interfaceinvoke r10.<java.util.Map: java.lang.Object get(java.lang.Object)>(r1)
+org.joda.time.PeriodType.forFields : $r62 = new org.joda.time.PeriodType
+org.joda.time.PeriodType.forFields : if r0 == null goto $r7 = new java.lang.IllegalArgumentException
+org.joda.time.PeriodType.forFields : $r76 = staticinvoke <org.joda.time.DurationFieldType: org.joda.time.DurationFieldType minutes()>()
+org.joda.time.PeriodType.forFields : $z0 = interfaceinvoke r10.<java.util.Map: boolean isEmpty()>()
+org.joda.time.PeriodType.forFields : if r6 == null goto interfaceinvoke r10.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r1, r3)
+org.joda.time.PeriodType.forFields : interfaceinvoke r10.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r1, r3)
+org.joda.time.DateTimeZone.getDefault : if r0 != null goto return r0
+org.joda.time.DateTimeZone.getDefault : r0 = <org.joda.time.DateTimeZone: org.joda.time.DateTimeZone cDefault>
+org.joda.time.DateTimeZone.getDefault : return r0
+org.joda.time.DurationFieldType$StandardDurationFieldType.equals : if r0 != r1 goto $z0 = r1 instanceof org.joda.time.DurationFieldType$StandardDurationFieldType
+org.joda.time.DurationFieldType$StandardDurationFieldType.equals : $b0 = r0.<org.joda.time.DurationFieldType$StandardDurationFieldType: byte iOrdinal>
+org.joda.time.DurationFieldType$StandardDurationFieldType.equals : return 1
+org.joda.time.DurationFieldType$StandardDurationFieldType.equals : $z0 = r1 instanceof org.joda.time.DurationFieldType$StandardDurationFieldType
+org.joda.time.PeriodType.toString : $r1 = new java.lang.StringBuilder
+org.joda.time.PeriodType.withWeeksRemoved : $r1 = specialinvoke r0.<org.joda.time.PeriodType: org.joda.time.PeriodType withFieldRemoved(int,java.lang.String)>(2, "NoWeeks")
+org.joda.time.PeriodType.withMonthsRemoved : $r1 = specialinvoke r0.<org.joda.time.PeriodType: org.joda.time.PeriodType withFieldRemoved(int,java.lang.String)>(1, "NoMonths")
+org.joda.time.DurationFieldType.minutes : $r0 = <org.joda.time.DurationFieldType: org.joda.time.DurationFieldType MINUTES_TYPE>
+org.joda.time.PeriodType.standard : if r0 != null goto return r0
+org.joda.time.PeriodType.standard : r0 = <org.joda.time.PeriodType: org.joda.time.PeriodType cStandard>
+org.joda.time.PeriodType.standard : return r0
+org.joda.time.PeriodType.withDaysRemoved : $r1 = specialinvoke r0.<org.joda.time.PeriodType: org.joda.time.PeriodType withFieldRemoved(int,java.lang.String)>(3, "NoDays")
+org.joda.time.DurationFieldType.months : $r0 = <org.joda.time.DurationFieldType: org.joda.time.DurationFieldType MONTHS_TYPE>
+org.joda.time.PeriodType.withMillisRemoved : $r1 = specialinvoke r0.<org.joda.time.PeriodType: org.joda.time.PeriodType withFieldRemoved(int,java.lang.String)>(7, "NoMillis")
+org.joda.time.PeriodType.getName : $r1 = r0.<org.joda.time.PeriodType: java.lang.String iName>
+org.joda.time.DateTimeUtils.setCurrentMillisFixed : $r0 = new org.joda.time.DateTimeUtils$FixedMillisProvider
+org.joda.time.DateTimeUtils.setCurrentMillisFixed : staticinvoke <org.joda.time.DateTimeUtils: void checkPermission()>()
+org.joda.time.PeriodType.equals : $z0 = r1 instanceof org.joda.time.PeriodType
+org.joda.time.PeriodType.equals : if r0 != r1 goto $z0 = r1 instanceof org.joda.time.PeriodType
+org.joda.time.PeriodType.equals : r2 = (org.joda.time.PeriodType) r1
+org.joda.time.PeriodType.equals : $r3 = r0.<org.joda.time.PeriodType: org.joda.time.DurationFieldType[] iTypes>
+org.joda.time.PeriodType.equals : return 1
+org.joda.time.DurationFieldType$StandardDurationFieldType.hashCode : $b0 = r0.<org.joda.time.DurationFieldType$StandardDurationFieldType: byte iOrdinal>
+org.joda.time.DateTimeZone.setDefault : exitmonitor r3
+org.joda.time.DateTimeZone.setDefault : $r6 = class "org/joda/time/DateTimeZone"
+org.joda.time.DateTimeZone.setDefault : <org.joda.time.DateTimeZone: org.joda.time.DateTimeZone cDefault> = r0
+org.joda.time.DateTimeZone.setDefault : if r1 == null goto (branch)
+org.joda.time.DateTimeZone.setDefault : if r0 != null goto $r6 = class "org/joda/time/DateTimeZone"
+org.joda.time.DateTimeZone.setDefault : r1 = staticinvoke <java.lang.System: java.lang.SecurityManager getSecurityManager()>()
+org.joda.time.DurationFieldType.years : $r0 = <org.joda.time.DurationFieldType: org.joda.time.DurationFieldType YEARS_TYPE>
+org.joda.time.DurationFieldType.weeks : $r0 = <org.joda.time.DurationFieldType: org.joda.time.DurationFieldType WEEKS_TYPE>
+org.joda.time.DateTimeUtils.setCurrentMillisSystem : staticinvoke <org.joda.time.DateTimeUtils: void checkPermission()>()
+org.joda.time.DateTimeUtils.setCurrentMillisSystem : $r0 = <org.joda.time.DateTimeUtils: org.joda.time.DateTimeUtils$SystemMillisProvider SYSTEM_MILLIS_PROVIDER>
+org.joda.time.PeriodType.getFieldType : $r1 = r0.<org.joda.time.PeriodType: org.joda.time.DurationFieldType[] iTypes>

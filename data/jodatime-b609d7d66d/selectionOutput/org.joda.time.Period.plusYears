@@ -1,0 +1,9 @@
+org.joda.time.Period.plusYears : if i0 != 0 >>>>>>>> org.joda.time.Period.plusYears : return r0
+org.joda.time.Period.plusYears : if i0 != 0 >>>>>>>> org.joda.time.Period.plusYears : r1 = virtualinvoke r0.<org.joda.time.Period: int[] getValues()>()
+org.joda.time.Period.plusYears : r1 = virtualinvoke r0.<org.joda.time.Period: int[] getValues()>() >>>>>>>> org.joda.time.Period.plusYears : $r2 = virtualinvoke r0.<org.joda.time.Period: org.joda.time.PeriodType getPeriodType()>()
+org.joda.time.Period.plusYears : $r2 = virtualinvoke r0.<org.joda.time.Period: org.joda.time.PeriodType getPeriodType()>() >>>>>>>> org.joda.time.Period.plusYears : $i1 = <org.joda.time.PeriodType: int YEAR_INDEX>
+org.joda.time.Period.plusYears : $i1 = <org.joda.time.PeriodType: int YEAR_INDEX> >>>>>>>> org.joda.time.Period.plusYears : virtualinvoke $r2.<org.joda.time.PeriodType: boolean addIndexedField(org.joda.time.ReadablePeriod,int,int[],int)>(r0, $i1, r1, i0)
+org.joda.time.Period.plusYears : virtualinvoke $r2.<org.joda.time.PeriodType: boolean addIndexedField(org.joda.time.ReadablePeriod,int,int[],int)>(r0, $i1, r1, i0) >>>>>>>> org.joda.time.Period.plusYears : $r3 = new org.joda.time.Period
+org.joda.time.Period.plusYears : $r3 = new org.joda.time.Period >>>>>>>> org.joda.time.Period.plusYears : $r4 = virtualinvoke r0.<org.joda.time.Period: org.joda.time.PeriodType getPeriodType()>()
+org.joda.time.Period.plusYears : $r4 = virtualinvoke r0.<org.joda.time.Period: org.joda.time.PeriodType getPeriodType()>() >>>>>>>> org.joda.time.Period.plusYears : specialinvoke $r3.<org.joda.time.Period: void <init>(int[],org.joda.time.PeriodType)>(r1, $r4)
+org.joda.time.Period.plusYears : specialinvoke $r3.<org.joda.time.Period: void <init>(int[],org.joda.time.PeriodType)>(r1, $r4) >>>>>>>> org.joda.time.Period.plusYears : return $r3

@@ -1,0 +1,7 @@
+org.joda.time.Hours.readResolve : $i0 = virtualinvoke r0.<org.joda.time.Hours: int getValue()>() >>>>>>>> org.joda.time.base.BaseSingleFieldPeriod.getValue : $i0 = r0.<org.joda.time.base.BaseSingleFieldPeriod: int iPeriod>
+org.joda.time.base.BaseSingleFieldPeriod.getValue : $i0 = r0.<org.joda.time.base.BaseSingleFieldPeriod: int iPeriod> >>>>>>>> org.joda.time.base.BaseSingleFieldPeriod.getValue : return $i0
+org.joda.time.base.BaseSingleFieldPeriod.getValue : return $i0 >>>>>>>> org.joda.time.Hours.readResolve : $r1 = staticinvoke <org.joda.time.Hours: org.joda.time.Hours hours(int)>($i0)
+org.joda.time.Hours.readResolve : $r1 = staticinvoke <org.joda.time.Hours: org.joda.time.Hours hours(int)>($i0) >>>>>>>> org.joda.time.Hours.hours : lookupswitch(i0) {     case -2147483648:
+org.joda.time.Hours.hours : lookupswitch(i0) {     case -2147483648: >>>>>>>> org.joda.time.Hours.hours : $r7 = <org.joda.time.Hours: org.joda.time.Hours SEVEN>
+org.joda.time.Hours.hours : $r7 = <org.joda.time.Hours: org.joda.time.Hours SEVEN> >>>>>>>> org.joda.time.Hours.hours : return $r7
+org.joda.time.Hours.hours : return $r7 >>>>>>>> org.joda.time.Hours.readResolve : return $r1

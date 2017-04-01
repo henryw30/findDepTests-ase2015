@@ -1,0 +1,13 @@
+org.jfree.chart.renderer.AbstractRenderer.lookupSeriesFillPaint : r1 = r0.<org.jfree.chart.renderer.AbstractRenderer: java.awt.Paint baseFillPaint>
+org.jfree.chart.renderer.AbstractRenderer.lookupSeriesFillPaint : if r1 != null goto return r1
+org.jfree.chart.renderer.AbstractRenderer.lookupSeriesFillPaint : r1 = virtualinvoke r0.<org.jfree.chart.renderer.AbstractRenderer: java.awt.Paint getSeriesFillPaint(int)>(i0)
+org.jfree.chart.renderer.AbstractRenderer.lookupSeriesFillPaint : if r1 != null goto (branch)
+org.jfree.chart.renderer.AbstractRenderer.lookupSeriesFillPaint : return r1
+org.jfree.chart.renderer.AbstractRenderer.lookupSeriesFillPaint : $r3 = r0.<org.jfree.chart.renderer.AbstractRenderer: java.awt.Paint fillPaint>
+org.jfree.chart.renderer.AbstractRenderer.getItemFillPaint : $r1 = virtualinvoke r0.<org.jfree.chart.renderer.AbstractRenderer: java.awt.Paint lookupSeriesFillPaint(int)>(i0)
+org.jfree.chart.renderer.AbstractRenderer.getSeriesFillPaint : $r1 = r0.<org.jfree.chart.renderer.AbstractRenderer: org.jfree.util.PaintList fillPaintList>
+org.jfree.chart.renderer.xy.XYLineAndShapeRenderer.getShapesVisible : $r1 = r0.<org.jfree.chart.renderer.xy.XYLineAndShapeRenderer: java.lang.Boolean shapesVisible>
+org.jfree.chart.renderer.xy.XYLineAndShapeRenderer.getLegendLine : $r1 = r0.<org.jfree.chart.renderer.xy.XYLineAndShapeRenderer: java.awt.Shape legendLine>
+org.jfree.chart.renderer.AbstractRenderer.clearSeriesPaints : if z0 == 0 goto return
+org.jfree.chart.renderer.AbstractRenderer.clearSeriesPaints : $r1 = r0.<org.jfree.chart.renderer.AbstractRenderer: org.jfree.util.PaintList paintList>
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null goto return

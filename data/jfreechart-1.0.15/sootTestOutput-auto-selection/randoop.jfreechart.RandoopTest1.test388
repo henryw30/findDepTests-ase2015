@@ -1,0 +1,22 @@
+org.jfree.chart.StrokeMap.clone : $r1 = specialinvoke r0.<java.lang.Object: java.lang.Object clone()>() >>>>>>>> org.jfree.chart.StrokeMap.clone : return $r1
+org.jfree.chart.StrokeMap.clone : return $r1 >>>>>>>> org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null >>>>>>>> org.jfree.chart.StrokeMap.getStroke : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "key")
+org.jfree.chart.StrokeMap.getStroke : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "key") >>>>>>>> org.jfree.chart.StrokeMap.getStroke : $r2 = r0.<org.jfree.chart.StrokeMap: java.util.Map store>
+org.jfree.chart.StrokeMap.getStroke : $r2 = r0.<org.jfree.chart.StrokeMap: java.util.Map store> >>>>>>>> org.jfree.chart.StrokeMap.getStroke : $r3 = interfaceinvoke $r2.<java.util.Map: java.lang.Object get(java.lang.Object)>(r1)
+org.jfree.chart.StrokeMap.getStroke : $r3 = interfaceinvoke $r2.<java.util.Map: java.lang.Object get(java.lang.Object)>(r1) >>>>>>>> org.jfree.chart.StrokeMap.getStroke : $r4 = (java.awt.Stroke) $r3
+org.jfree.chart.StrokeMap.getStroke : $r4 = (java.awt.Stroke) $r3 >>>>>>>> org.jfree.chart.StrokeMap.getStroke : return $r4
+org.jfree.chart.StrokeMap.getStroke : return $r4 >>>>>>>> org.jfree.chart.StrokeMap.equals : if r1 != r0
+org.jfree.chart.StrokeMap.equals : if r1 != r0 >>>>>>>> org.jfree.chart.StrokeMap.equals : $z0 = r1 instanceof org.jfree.chart.StrokeMap
+org.jfree.chart.StrokeMap.equals : $z0 = r1 instanceof org.jfree.chart.StrokeMap >>>>>>>> org.jfree.chart.StrokeMap.equals : if $z0 != 0
+org.jfree.chart.StrokeMap.equals : if $z0 != 0 >>>>>>>> org.jfree.chart.StrokeMap.equals : r2 = (org.jfree.chart.StrokeMap) r1
+org.jfree.chart.StrokeMap.equals : r2 = (org.jfree.chart.StrokeMap) r1 >>>>>>>> org.jfree.chart.StrokeMap.equals : $r8 = r0.<org.jfree.chart.StrokeMap: java.util.Map store>
+org.jfree.chart.StrokeMap.equals : $r8 = r0.<org.jfree.chart.StrokeMap: java.util.Map store> >>>>>>>> org.jfree.chart.StrokeMap.equals : $i0 = interfaceinvoke $r8.<java.util.Map: int size()>()
+org.jfree.chart.StrokeMap.equals : $i0 = interfaceinvoke $r8.<java.util.Map: int size()>() >>>>>>>> org.jfree.chart.StrokeMap.equals : $r9 = r2.<org.jfree.chart.StrokeMap: java.util.Map store>
+org.jfree.chart.StrokeMap.equals : $r9 = r2.<org.jfree.chart.StrokeMap: java.util.Map store> >>>>>>>> org.jfree.chart.StrokeMap.equals : $i1 = interfaceinvoke $r9.<java.util.Map: int size()>()
+org.jfree.chart.StrokeMap.equals : $i1 = interfaceinvoke $r9.<java.util.Map: int size()>() >>>>>>>> org.jfree.chart.StrokeMap.equals : if $i0 == $i1
+org.jfree.chart.StrokeMap.equals : if $i0 == $i1 >>>>>>>> org.jfree.chart.StrokeMap.equals : $r10 = r0.<org.jfree.chart.StrokeMap: java.util.Map store>
+org.jfree.chart.StrokeMap.equals : $r10 = r0.<org.jfree.chart.StrokeMap: java.util.Map store> >>>>>>>> org.jfree.chart.StrokeMap.equals : r3 = interfaceinvoke $r10.<java.util.Map: java.util.Set keySet()>()
+org.jfree.chart.StrokeMap.equals : r3 = interfaceinvoke $r10.<java.util.Map: java.util.Set keySet()>() >>>>>>>> org.jfree.chart.StrokeMap.equals : r4 = interfaceinvoke r3.<java.util.Set: java.util.Iterator iterator()>()
+org.jfree.chart.StrokeMap.equals : r4 = interfaceinvoke r3.<java.util.Set: java.util.Iterator iterator()>() >>>>>>>> org.jfree.chart.StrokeMap.equals : $z1 = interfaceinvoke r4.<java.util.Iterator: boolean hasNext()>()
+org.jfree.chart.StrokeMap.equals : $z1 = interfaceinvoke r4.<java.util.Iterator: boolean hasNext()>() >>>>>>>> org.jfree.chart.StrokeMap.equals : if $z1 == 0
+org.jfree.chart.StrokeMap.equals : if $z1 == 0 >>>>>>>> org.jfree.chart.StrokeMap.equals : return 1

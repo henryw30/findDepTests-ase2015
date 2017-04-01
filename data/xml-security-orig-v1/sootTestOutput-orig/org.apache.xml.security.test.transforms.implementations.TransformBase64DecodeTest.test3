@@ -1,0 +1,55 @@
+org.apache.xml.security.utils.XMLUtils.circumventBug2650recurse : if z0 == 0 goto i3 = i3 + 1
+org.apache.xml.security.utils.XMLUtils.circumventBug2650recurse : interfaceinvoke r5.<org.w3c.dom.Element: void setAttributeNS(java.lang.String,java.lang.String,java.lang.String)>("http://www.w3.org/2000/xmlns/", r7, r8)
+org.apache.xml.security.utils.XMLUtils.circumventBug2650recurse : r7 = interfaceinvoke r6.<org.w3c.dom.Attr: java.lang.String getNodeName()>()
+org.apache.xml.security.utils.XMLUtils.circumventBug2650recurse : i3 = 0
+org.apache.xml.security.utils.XMLUtils.circumventBug2650recurse : r2 = interfaceinvoke r1.<org.w3c.dom.Element: org.w3c.dom.NamedNodeMap getAttributes()>()
+org.apache.xml.security.utils.XMLUtils.circumventBug2650recurse : $s6 = interfaceinvoke r10.<org.w3c.dom.Node: short getNodeType()>()
+org.apache.xml.security.utils.XMLUtils.circumventBug2650recurse : r1 = (org.w3c.dom.Element) r0
+org.apache.xml.security.utils.XMLUtils.circumventBug2650recurse : i0 = interfaceinvoke r2.<org.w3c.dom.NamedNodeMap: int getLength()>()
+org.apache.xml.security.utils.XMLUtils.circumventBug2650recurse : $s4 = interfaceinvoke r0.<org.w3c.dom.Node: short getNodeType()>()
+org.apache.xml.security.utils.XMLUtils.circumventBug2650recurse : i1 = interfaceinvoke r3.<org.w3c.dom.NodeList: int getLength()>()
+org.apache.xml.security.utils.XMLUtils.circumventBug2650recurse : r10 = interfaceinvoke r10.<org.w3c.dom.Node: org.w3c.dom.Node getNextSibling()>()
+org.apache.xml.security.utils.XMLUtils.circumventBug2650recurse : r8 = interfaceinvoke r6.<org.w3c.dom.Attr: java.lang.String getNodeValue()>()
+org.apache.xml.security.utils.XMLUtils.circumventBug2650recurse : staticinvoke <org.apache.xml.security.utils.XMLUtils: void circumventBug2650recurse(org.w3c.dom.Node)>(r10)
+org.apache.xml.security.utils.XMLUtils.circumventBug2650recurse : $r9 = interfaceinvoke r2.<org.w3c.dom.NamedNodeMap: org.w3c.dom.Node item(int)>(i3)
+org.apache.xml.security.utils.XMLUtils.circumventBug2650recurse : r10 = interfaceinvoke r0.<org.w3c.dom.Node: org.w3c.dom.Node getFirstChild()>()
+org.apache.xml.security.utils.XMLUtils.circumventBug2650recurse : r3 = interfaceinvoke r1.<org.w3c.dom.Element: org.w3c.dom.NodeList getChildNodes()>()
+org.apache.xml.security.utils.XMLUtils.circumventBug2650recurse : r4 = interfaceinvoke r3.<org.w3c.dom.NodeList: org.w3c.dom.Node item(int)>(i2)
+org.apache.xml.security.utils.XMLUtils.circumventBug2650recurse : i2 = 0
+org.apache.xml.security.utils.XMLUtils.circumventBug2650recurse : r5 = (org.w3c.dom.Element) r4
+org.apache.xml.security.utils.XMLUtils.circumventBug2650recurse : $s5 = interfaceinvoke r4.<org.w3c.dom.Node: short getNodeType()>()
+org.apache.xml.security.utils.XMLUtils.circumventBug2650recurse : $z1 = virtualinvoke r7.<java.lang.String: boolean startsWith(java.lang.String)>("xmlns")
+org.apache.xml.security.utils.XMLUtils.circumventBug2650recurse : $z2 = interfaceinvoke r5.<org.w3c.dom.Element: boolean hasAttribute(java.lang.String)>(r7)
+org.apache.xml.security.transforms.Transform.getBaseLocalName : return "Transform"
+org.apache.xml.security.transforms.Transforms.getBaseLocalName : return "Transforms"
+org.apache.xml.security.utils.XMLUtils.addReturnToElement : $r2 = interfaceinvoke r1.<org.w3c.dom.Document: org.w3c.dom.Text createTextNode(java.lang.String)>("\n")
+org.apache.xml.security.utils.XMLUtils.addReturnToElement : r1 = interfaceinvoke r0.<org.w3c.dom.Element: org.w3c.dom.Document getOwnerDocument()>()
+org.apache.xml.security.utils.XMLUtils.getOwnerDocument : $r4 = interfaceinvoke r0.<org.w3c.dom.Node: org.w3c.dom.Document getOwnerDocument()>()
+org.apache.xml.security.utils.XMLUtils.getOwnerDocument : $s0 = interfaceinvoke r0.<org.w3c.dom.Node: short getNodeType()>()
+org.apache.xml.security.utils.ElementProxy.getElement : $r1 = r0.<org.apache.xml.security.utils.ElementProxy: org.w3c.dom.Element _constructionElement>
+org.apache.xml.security.utils.XMLUtils.circumventBug2650 : staticinvoke <org.apache.xml.security.utils.XMLUtils: void circumventBug2650recurse(org.w3c.dom.Node)>(r0)
+org.apache.xml.security.utils.SignatureElementProxy.getBaseNamespace : return "http://www.w3.org/2000/09/xmldsig#"
+org.apache.xml.security.transforms.Transforms.addTransform : $r9 = r0.<org.apache.xml.security.transforms.Transforms: org.w3c.dom.Document _doc>
+org.apache.xml.security.transforms.Transforms.addTransform : $r2 = <org.apache.xml.security.transforms.Transforms: org.apache.log4j.Category cat>
+org.apache.xml.security.transforms.Transform.getInstance : $r3 = new org.apache.xml.security.transforms.Transform
+org.apache.xml.security.transforms.Transform.getInstance : $r2 = (org.w3c.dom.NodeList) null
+org.apache.xml.security.utils.XMLUtils.createDSctx : return r3
+org.apache.xml.security.utils.XMLUtils.createDSctx : $r4 = new java.lang.StringBuilder
+org.apache.xml.security.utils.XMLUtils.createDSctx : r3 = interfaceinvoke r0.<org.w3c.dom.Document: org.w3c.dom.Element createElementNS(java.lang.String,java.lang.String)>(null, "namespaceContext")
+org.apache.xml.security.utils.XMLUtils.convertNodelistToSet : i0 = interfaceinvoke r0.<org.w3c.dom.NodeList: int getLength()>()
+org.apache.xml.security.utils.XMLUtils.convertNodelistToSet : i1 = 0
+org.apache.xml.security.utils.XMLUtils.convertNodelistToSet : $r4 = interfaceinvoke r0.<org.w3c.dom.NodeList: org.w3c.dom.Node item(int)>(i1)
+org.apache.xml.security.utils.XMLUtils.convertNodelistToSet : if r0 != null goto i0 = interfaceinvoke r0.<org.w3c.dom.NodeList: int getLength()>()
+org.apache.xml.security.utils.XMLUtils.convertNodelistToSet : $r3 = new java.util.HashSet
+org.apache.xml.security.utils.XMLUtils.convertNodelistToSet : return r1
+org.apache.xml.security.transforms.Transform.getImplementingClass : return null
+org.apache.xml.security.transforms.Transform.getImplementingClass : $r1 = <org.apache.xml.security.transforms.Transform: java.util.HashMap _transformHash>
+org.apache.xml.security.utils.ElementProxy.getDefaultPrefix : return r2
+org.apache.xml.security.utils.ElementProxy.getDefaultPrefix : $r1 = <org.apache.xml.security.utils.ElementProxy: java.util.HashMap _prefixMappings>
+org.apache.xml.security.utils.ElementProxy.createElementForFamily : return r4
+org.apache.xml.security.utils.ElementProxy.createElementForFamily : if r3 == null goto r4 = interfaceinvoke r0.<org.w3c.dom.Document: org.w3c.dom.Element createElementNS(java.lang.String,java.lang.String)>(r1, r2)
+org.apache.xml.security.utils.ElementProxy.createElementForFamily : r4 = interfaceinvoke r0.<org.w3c.dom.Document: org.w3c.dom.Element createElementNS(java.lang.String,java.lang.String)>(r1, r2)
+org.apache.xml.security.utils.ElementProxy.createElementForFamily : r3 = staticinvoke <org.apache.xml.security.utils.ElementProxy: java.lang.String getDefaultPrefix(java.lang.String)>(r1)
+org.apache.xml.security.utils.ElementProxy.createElementForFamily : n0 = null
+org.apache.xml.security.utils.ElementProxy.createElementForFamily : if r1 != null goto (branch)
+org.apache.xml.security.utils.ElementProxy.createElementForFamily : interfaceinvoke r4.<org.w3c.dom.Element: void setAttributeNS(java.lang.String,java.lang.String,java.lang.String)>("http://www.w3.org/2000/xmlns/", "xmlns", r1)

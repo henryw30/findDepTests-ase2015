@@ -1,0 +1,42 @@
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null >>>>>>>> org.jfree.data.gantt.Task.equals : if r1 != r0
+org.jfree.data.gantt.Task.equals : if r1 != r0 >>>>>>>> org.jfree.data.gantt.Task.equals : $z0 = r1 instanceof org.jfree.data.gantt.Task
+org.jfree.data.gantt.Task.equals : $z0 = r1 instanceof org.jfree.data.gantt.Task >>>>>>>> org.jfree.data.gantt.Task.equals : if $z0 != 0
+org.jfree.data.gantt.Task.equals : if $z0 != 0 >>>>>>>> org.jfree.data.gantt.Task.equals : r2 = (org.jfree.data.gantt.Task) r1
+org.jfree.data.gantt.Task.equals : r2 = (org.jfree.data.gantt.Task) r1 >>>>>>>> org.jfree.data.gantt.Task.equals : $r3 = r0.<org.jfree.data.gantt.Task: java.lang.String description>
+org.jfree.data.gantt.Task.equals : $r3 = r0.<org.jfree.data.gantt.Task: java.lang.String description> >>>>>>>> org.jfree.data.gantt.Task.equals : $r4 = r2.<org.jfree.data.gantt.Task: java.lang.String description>
+org.jfree.data.gantt.Task.equals : $r4 = r2.<org.jfree.data.gantt.Task: java.lang.String description> >>>>>>>> org.jfree.data.gantt.Task.equals : $z1 = staticinvoke <org.jfree.util.ObjectUtilities: boolean equal(java.lang.Object,java.lang.Object)>($r3, $r4)
+org.jfree.data.gantt.Task.equals : $z1 = staticinvoke <org.jfree.util.ObjectUtilities: boolean equal(java.lang.Object,java.lang.Object)>($r3, $r4) >>>>>>>> org.jfree.data.gantt.Task.equals : if $z1 != 0
+org.jfree.data.gantt.Task.equals : if $z1 != 0 >>>>>>>> org.jfree.data.gantt.Task.equals : $r5 = r0.<org.jfree.data.gantt.Task: org.jfree.data.time.TimePeriod duration>
+org.jfree.data.gantt.Task.equals : $r5 = r0.<org.jfree.data.gantt.Task: org.jfree.data.time.TimePeriod duration> >>>>>>>> org.jfree.data.gantt.Task.equals : $r6 = r2.<org.jfree.data.gantt.Task: org.jfree.data.time.TimePeriod duration>
+org.jfree.data.gantt.Task.equals : $r6 = r2.<org.jfree.data.gantt.Task: org.jfree.data.time.TimePeriod duration> >>>>>>>> org.jfree.data.gantt.Task.equals : $z2 = staticinvoke <org.jfree.util.ObjectUtilities: boolean equal(java.lang.Object,java.lang.Object)>($r5, $r6)
+org.jfree.data.gantt.Task.equals : $z2 = staticinvoke <org.jfree.util.ObjectUtilities: boolean equal(java.lang.Object,java.lang.Object)>($r5, $r6) >>>>>>>> org.jfree.data.time.SimpleTimePeriod.equals : if r1 != r0
+org.jfree.data.time.SimpleTimePeriod.equals : if r1 != r0 >>>>>>>> org.jfree.data.time.SimpleTimePeriod.equals : $z0 = r1 instanceof org.jfree.data.time.TimePeriod
+org.jfree.data.time.SimpleTimePeriod.equals : $z0 = r1 instanceof org.jfree.data.time.TimePeriod >>>>>>>> org.jfree.data.time.SimpleTimePeriod.equals : if $z0 != 0
+org.jfree.data.time.SimpleTimePeriod.equals : if $z0 != 0 >>>>>>>> org.jfree.data.time.SimpleTimePeriod.equals : r2 = (org.jfree.data.time.TimePeriod) r1
+org.jfree.data.time.SimpleTimePeriod.equals : r2 = (org.jfree.data.time.TimePeriod) r1 >>>>>>>> org.jfree.data.time.SimpleTimePeriod.equals : $r3 = virtualinvoke r0.<org.jfree.data.time.SimpleTimePeriod: java.util.Date getStart()>()
+org.jfree.data.time.SimpleTimePeriod.equals : $r3 = virtualinvoke r0.<org.jfree.data.time.SimpleTimePeriod: java.util.Date getStart()>() >>>>>>>> org.jfree.data.time.SimpleTimePeriod.getStart : $r1 = new java.util.Date
+org.jfree.data.time.SimpleTimePeriod.getStart : $r1 = new java.util.Date >>>>>>>> org.jfree.data.time.SimpleTimePeriod.getStart : $l0 = r0.<org.jfree.data.time.SimpleTimePeriod: long start>
+org.jfree.data.time.SimpleTimePeriod.getStart : $l0 = r0.<org.jfree.data.time.SimpleTimePeriod: long start> >>>>>>>> org.jfree.data.time.SimpleTimePeriod.getStart : specialinvoke $r1.<java.util.Date: void <init>(long)>($l0)
+org.jfree.data.time.SimpleTimePeriod.getStart : specialinvoke $r1.<java.util.Date: void <init>(long)>($l0) >>>>>>>> org.jfree.data.time.SimpleTimePeriod.getStart : return $r1
+org.jfree.data.time.SimpleTimePeriod.getStart : return $r1 >>>>>>>> org.jfree.data.time.SimpleTimePeriod.equals : $r4 = interfaceinvoke r2.<org.jfree.data.time.TimePeriod: java.util.Date getStart()>()
+org.jfree.data.time.SimpleTimePeriod.equals : $r4 = interfaceinvoke r2.<org.jfree.data.time.TimePeriod: java.util.Date getStart()>() >>>>>>>> org.jfree.data.time.SimpleTimePeriod.equals : $z1 = virtualinvoke $r3.<java.util.Date: boolean equals(java.lang.Object)>($r4)
+org.jfree.data.time.SimpleTimePeriod.equals : $z1 = virtualinvoke $r3.<java.util.Date: boolean equals(java.lang.Object)>($r4) >>>>>>>> org.jfree.data.time.SimpleTimePeriod.equals : if $z1 != 0
+org.jfree.data.time.SimpleTimePeriod.equals : if $z1 != 0 >>>>>>>> org.jfree.data.time.SimpleTimePeriod.equals : $r5 = virtualinvoke r0.<org.jfree.data.time.SimpleTimePeriod: java.util.Date getEnd()>()
+org.jfree.data.time.SimpleTimePeriod.equals : $r5 = virtualinvoke r0.<org.jfree.data.time.SimpleTimePeriod: java.util.Date getEnd()>() >>>>>>>> org.jfree.data.time.SimpleTimePeriod.getEnd : $r1 = new java.util.Date
+org.jfree.data.time.SimpleTimePeriod.getEnd : $r1 = new java.util.Date >>>>>>>> org.jfree.data.time.SimpleTimePeriod.getEnd : $l0 = r0.<org.jfree.data.time.SimpleTimePeriod: long end>
+org.jfree.data.time.SimpleTimePeriod.getEnd : $l0 = r0.<org.jfree.data.time.SimpleTimePeriod: long end> >>>>>>>> org.jfree.data.time.SimpleTimePeriod.getEnd : specialinvoke $r1.<java.util.Date: void <init>(long)>($l0)
+org.jfree.data.time.SimpleTimePeriod.getEnd : specialinvoke $r1.<java.util.Date: void <init>(long)>($l0) >>>>>>>> org.jfree.data.time.SimpleTimePeriod.getEnd : return $r1
+org.jfree.data.time.SimpleTimePeriod.getEnd : return $r1 >>>>>>>> org.jfree.data.time.SimpleTimePeriod.equals : $r6 = interfaceinvoke r2.<org.jfree.data.time.TimePeriod: java.util.Date getEnd()>()
+org.jfree.data.time.SimpleTimePeriod.equals : $r6 = interfaceinvoke r2.<org.jfree.data.time.TimePeriod: java.util.Date getEnd()>() >>>>>>>> org.jfree.data.time.SimpleTimePeriod.equals : $z2 = virtualinvoke $r5.<java.util.Date: boolean equals(java.lang.Object)>($r6)
+org.jfree.data.time.SimpleTimePeriod.equals : $z2 = virtualinvoke $r5.<java.util.Date: boolean equals(java.lang.Object)>($r6) >>>>>>>> org.jfree.data.time.SimpleTimePeriod.equals : if $z2 != 0
+org.jfree.data.time.SimpleTimePeriod.equals : if $z2 != 0 >>>>>>>> org.jfree.data.time.SimpleTimePeriod.equals : return 1
+org.jfree.data.time.SimpleTimePeriod.equals : return 1 >>>>>>>> org.jfree.data.gantt.Task.equals : if $z2 != 0
+org.jfree.data.gantt.Task.equals : if $z2 != 0 >>>>>>>> org.jfree.data.gantt.Task.equals : $r7 = r0.<org.jfree.data.gantt.Task: java.lang.Double percentComplete>
+org.jfree.data.gantt.Task.equals : $r7 = r0.<org.jfree.data.gantt.Task: java.lang.Double percentComplete> >>>>>>>> org.jfree.data.gantt.Task.equals : $r8 = r2.<org.jfree.data.gantt.Task: java.lang.Double percentComplete>
+org.jfree.data.gantt.Task.equals : $r8 = r2.<org.jfree.data.gantt.Task: java.lang.Double percentComplete> >>>>>>>> org.jfree.data.gantt.Task.equals : $z3 = staticinvoke <org.jfree.util.ObjectUtilities: boolean equal(java.lang.Object,java.lang.Object)>($r7, $r8)
+org.jfree.data.gantt.Task.equals : $z3 = staticinvoke <org.jfree.util.ObjectUtilities: boolean equal(java.lang.Object,java.lang.Object)>($r7, $r8) >>>>>>>> org.jfree.data.gantt.Task.equals : if $z3 != 0
+org.jfree.data.gantt.Task.equals : if $z3 != 0 >>>>>>>> org.jfree.data.gantt.Task.equals : $r9 = r0.<org.jfree.data.gantt.Task: java.util.List subtasks>
+org.jfree.data.gantt.Task.equals : $r9 = r0.<org.jfree.data.gantt.Task: java.util.List subtasks> >>>>>>>> org.jfree.data.gantt.Task.equals : $r10 = r2.<org.jfree.data.gantt.Task: java.util.List subtasks>
+org.jfree.data.gantt.Task.equals : $r10 = r2.<org.jfree.data.gantt.Task: java.util.List subtasks> >>>>>>>> org.jfree.data.gantt.Task.equals : $z4 = staticinvoke <org.jfree.util.ObjectUtilities: boolean equal(java.lang.Object,java.lang.Object)>($r9, $r10)
+org.jfree.data.gantt.Task.equals : $z4 = staticinvoke <org.jfree.util.ObjectUtilities: boolean equal(java.lang.Object,java.lang.Object)>($r9, $r10) >>>>>>>> org.jfree.data.gantt.Task.equals : if $z4 != 0
+org.jfree.data.gantt.Task.equals : if $z4 != 0 >>>>>>>> org.jfree.data.gantt.Task.equals : return 1

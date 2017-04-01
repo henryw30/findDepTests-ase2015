@@ -1,0 +1,83 @@
+org.jfree.data.KeyedObjects2D.getColumnIndex : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "key")
+org.jfree.data.KeyedObjects2D.getColumnIndex : $r2 = r0.<org.jfree.data.KeyedObjects2D: java.util.List columnKeys>
+org.jfree.data.KeyedObjects.getObject : r1 = virtualinvoke r2.<org.jfree.data.KeyedObject: java.lang.Object getObject()>()
+org.jfree.data.KeyedObjects.getObject : if r2 == null goto return r1
+org.jfree.data.KeyedObjects.getObject : if i0 >= 0 goto $r8 = virtualinvoke r0.<org.jfree.data.KeyedObjects: java.lang.Object getObject(int)>(i0)
+org.jfree.data.KeyedObjects.getObject : i0 = virtualinvoke r0.<org.jfree.data.KeyedObjects: int getIndex(java.lang.Comparable)>(r1)
+org.jfree.data.KeyedObjects.getObject : $r3 = r0.<org.jfree.data.KeyedObjects: java.util.List data>
+org.jfree.data.KeyedObjects.getObject : $r8 = virtualinvoke r0.<org.jfree.data.KeyedObjects: java.lang.Object getObject(int)>(i0)
+org.jfree.data.KeyedObjects.getObject : r1 = null
+org.jfree.data.KeyedObjects.getObject : return r1
+org.jfree.data.KeyedObjects2D.getRowIndex : $r2 = r0.<org.jfree.data.KeyedObjects2D: java.util.List rowKeys>
+org.jfree.data.KeyedObjects2D.getRowIndex : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "key")
+org.jfree.data.KeyedObjects2D.removeObject : $r21 = r0.<org.jfree.data.KeyedObjects2D: java.util.List rows>
+org.jfree.data.KeyedObjects2D.removeObject : i7 = i7 + 1
+org.jfree.data.KeyedObjects2D.removeObject : if i4 < 0 goto i5 = i5 + 1
+org.jfree.data.KeyedObjects2D.removeObject : if i1 >= 0 goto virtualinvoke r0.<org.jfree.data.KeyedObjects2D: void setObject(java.lang.Object,java.lang.Comparable,java.lang.Comparable)>(null, r1, r2)
+org.jfree.data.KeyedObjects2D.removeObject : if z1 == 0 goto return
+org.jfree.data.KeyedObjects2D.removeObject : if i9 < 0 goto i7 = i7 + 1
+org.jfree.data.KeyedObjects2D.removeObject : virtualinvoke r0.<org.jfree.data.KeyedObjects2D: void setObject(java.lang.Object,java.lang.Comparable,java.lang.Comparable)>(null, r1, r2)
+org.jfree.data.KeyedObjects2D.removeObject : $r19 = r0.<org.jfree.data.KeyedObjects2D: java.util.List rowKeys>
+org.jfree.data.KeyedObjects2D.removeObject : $r16 = r0.<org.jfree.data.KeyedObjects2D: java.util.List rows>
+org.jfree.data.KeyedObjects2D.removeObject : i2 = i2 + 1
+org.jfree.data.KeyedObjects2D.removeObject : i0 = virtualinvoke r0.<org.jfree.data.KeyedObjects2D: int getRowIndex(java.lang.Comparable)>(r1)
+org.jfree.data.KeyedObjects2D.removeObject : z1 = 1
+org.jfree.data.KeyedObjects2D.removeObject : if z0 == 0 goto z1 = 1
+org.jfree.data.KeyedObjects2D.removeObject : i4 = virtualinvoke r26.<org.jfree.data.KeyedObjects: int getIndex(java.lang.Comparable)>(r2)
+org.jfree.data.KeyedObjects2D.removeObject : $r18 = virtualinvoke r4.<org.jfree.data.KeyedObjects: java.lang.Object getObject(int)>(i2)
+org.jfree.data.KeyedObjects2D.removeObject : i5 = 0
+org.jfree.data.KeyedObjects2D.removeObject : i5 = i5 + 1
+org.jfree.data.KeyedObjects2D.removeObject : i1 = virtualinvoke r0.<org.jfree.data.KeyedObjects2D: int getColumnIndex(java.lang.Comparable)>(r2)
+org.jfree.data.KeyedObjects2D.removeObject : i9 = virtualinvoke r31.<org.jfree.data.KeyedObjects: int getIndex(java.lang.Comparable)>(r2)
+org.jfree.data.KeyedObjects2D.removeObject : z0 = 1
+org.jfree.data.KeyedObjects2D.removeObject : if i0 >= 0 goto i1 = virtualinvoke r0.<org.jfree.data.KeyedObjects2D: int getColumnIndex(java.lang.Comparable)>(r2)
+org.jfree.data.KeyedObjects2D.removeObject : $r32 = r0.<org.jfree.data.KeyedObjects2D: java.util.List columnKeys>
+org.jfree.data.KeyedObjects2D.removeObject : i2 = 0
+org.jfree.data.KeyedObjects2D.removeObject : i7 = 0
+org.jfree.data.KeyedObjects2D.removeObject : $r24 = r0.<org.jfree.data.KeyedObjects2D: java.util.List rows>
+org.jfree.data.KeyedObjects2D.removeObject : $r29 = r0.<org.jfree.data.KeyedObjects2D: java.util.List rows>
+org.jfree.data.KeyedObjects2D.setObject : $r6 = r0.<org.jfree.data.KeyedObjects2D: java.util.List rows>
+org.jfree.data.KeyedObjects2D.setObject : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r3, "columnKey")
+org.jfree.data.KeyedObjects2D.setObject : $r10 = r0.<org.jfree.data.KeyedObjects2D: java.util.List rows>
+org.jfree.data.KeyedObjects2D.setObject : if i1 >= 0 goto return
+org.jfree.data.KeyedObjects2D.setObject : $r9 = new org.jfree.data.KeyedObjects
+org.jfree.data.KeyedObjects2D.setObject : $r5 = r0.<org.jfree.data.KeyedObjects2D: java.util.List rowKeys>
+org.jfree.data.KeyedObjects2D.setObject : virtualinvoke r4.<org.jfree.data.KeyedObjects: void setObject(java.lang.Comparable,java.lang.Object)>(r3, r1)
+org.jfree.data.KeyedObjects2D.setObject : if i0 < 0 goto $r8 = r0.<org.jfree.data.KeyedObjects2D: java.util.List rowKeys>
+org.jfree.data.KeyedObjects2D.setObject : $r11 = r0.<org.jfree.data.KeyedObjects2D: java.util.List columnKeys>
+org.jfree.data.KeyedObjects2D.setObject : $r12 = r0.<org.jfree.data.KeyedObjects2D: java.util.List columnKeys>
+org.jfree.data.KeyedObjects2D.setObject : $r8 = r0.<org.jfree.data.KeyedObjects2D: java.util.List rowKeys>
+org.jfree.data.KeyedObjects2D.setObject : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r2, "rowKey")
+org.jfree.data.KeyedObjects2D.getRowCount : $r1 = r0.<org.jfree.data.KeyedObjects2D: java.util.List rowKeys>
+org.jfree.data.KeyedObjects.setObject : if i0 < 0 goto $r6 = new org.jfree.data.KeyedObject
+org.jfree.data.KeyedObjects.setObject : $r4 = r0.<org.jfree.data.KeyedObjects: java.util.List data>
+org.jfree.data.KeyedObjects.setObject : virtualinvoke r3.<org.jfree.data.KeyedObject: void setObject(java.lang.Object)>(r2)
+org.jfree.data.KeyedObjects.setObject : $r6 = new org.jfree.data.KeyedObject
+org.jfree.data.KeyedObjects.setObject : i0 = virtualinvoke r0.<org.jfree.data.KeyedObjects: int getIndex(java.lang.Comparable)>(r1)
+org.jfree.data.KeyedObjects.setObject : $r8 = r0.<org.jfree.data.KeyedObjects: java.util.List data>
+org.jfree.data.KeyedObjects.setObject : goto [?= return]
+org.jfree.data.KeyedObjects2D.getObject : $r4 = r0.<org.jfree.data.KeyedObjects2D: java.util.List rows>
+org.jfree.data.KeyedObjects2D.getObject : if r2 == null goto return r1
+org.jfree.data.KeyedObjects2D.getObject : i2 = virtualinvoke r2.<org.jfree.data.KeyedObjects: int getIndex(java.lang.Comparable)>(r3)
+org.jfree.data.KeyedObjects2D.getObject : if i2 < 0 goto return r1
+org.jfree.data.KeyedObjects2D.getObject : $r6 = r0.<org.jfree.data.KeyedObjects2D: java.util.List columnKeys>
+org.jfree.data.KeyedObjects2D.getObject : if r3 == null goto return r1
+org.jfree.data.KeyedObjects2D.getObject : r1 = virtualinvoke r2.<org.jfree.data.KeyedObjects: java.lang.Object getObject(java.lang.Comparable)>(r3)
+org.jfree.data.KeyedObjects2D.getObject : r1 = null
+org.jfree.data.KeyedObjects2D.getObject : return r1
+org.jfree.data.KeyedObject.getObject : $r1 = r0.<org.jfree.data.KeyedObject: java.lang.Object object>
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null goto return
+org.jfree.data.KeyedObjects.getIndex : return -1
+org.jfree.data.KeyedObjects.getIndex : return i0
+org.jfree.data.KeyedObjects.getIndex : $r5 = interfaceinvoke r2.<java.util.Iterator: java.lang.Object next()>()
+org.jfree.data.KeyedObjects.getIndex : $r4 = r0.<org.jfree.data.KeyedObjects: java.util.List data>
+org.jfree.data.KeyedObjects.getIndex : i0 = i0 + 1
+org.jfree.data.KeyedObjects.getIndex : i0 = 0
+org.jfree.data.KeyedObjects.getIndex : goto [?= staticinvoke <edu.washington.cs.dt.impact.util.Tracer: void trace(java.lang.String,java.lang.String)>("$z0 = interfaceinvoke r2.<java.util.Iterator: boolean hasNext()>()", "org.jfree.data.KeyedObjects.getIndex")]
+org.jfree.data.KeyedObjects.getIndex : $z0 = interfaceinvoke r2.<java.util.Iterator: boolean hasNext()>()
+org.jfree.data.KeyedObjects.getIndex : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "key")
+org.jfree.data.KeyedObjects.getIndex : $r6 = virtualinvoke r3.<org.jfree.data.KeyedObject: java.lang.Comparable getKey()>()
+org.jfree.data.KeyedObjects.getItemCount : $r1 = r0.<org.jfree.data.KeyedObjects: java.util.List data>
+org.jfree.data.KeyedObject.getKey : $r1 = r0.<org.jfree.data.KeyedObject: java.lang.Comparable key>
+org.jfree.data.KeyedObject.setObject : r0.<org.jfree.data.KeyedObject: java.lang.Object object> = r1
+org.jfree.data.KeyedObjects2D.getColumnCount : $r1 = r0.<org.jfree.data.KeyedObjects2D: java.util.List columnKeys>

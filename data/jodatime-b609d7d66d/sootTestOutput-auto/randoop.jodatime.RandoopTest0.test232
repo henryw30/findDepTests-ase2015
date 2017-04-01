@@ -1,0 +1,115 @@
+org.joda.time.format.PeriodFormatterBuilder.clearPrefix : r0.<org.joda.time.format.PeriodFormatterBuilder: org.joda.time.format.PeriodFormatterBuilder$PeriodFieldAffix iPrefix> = null
+org.joda.time.format.PeriodFormatterBuilder.clearPrefix : $r1 = r0.<org.joda.time.format.PeriodFormatterBuilder: org.joda.time.format.PeriodFormatterBuilder$PeriodFieldAffix iPrefix>
+org.joda.time.format.PeriodFormatterBuilder.toFormatter : if z0 == 0 goto (branch)
+org.joda.time.format.PeriodFormatterBuilder.toFormatter : $r3 = r0.<org.joda.time.format.PeriodFormatterBuilder: org.joda.time.format.PeriodFormatterBuilder$FieldFormatter[] iFieldFormatters>
+org.joda.time.format.PeriodFormatterBuilder.toFormatter : $r2 = r0.<org.joda.time.format.PeriodFormatterBuilder: java.util.List iElementPairs>
+org.joda.time.format.PeriodFormatterBuilder.toFormatter : $r9 = virtualinvoke r2.<org.joda.time.format.PeriodFormatter: org.joda.time.format.PeriodPrinter getPrinter()>()
+org.joda.time.format.PeriodFormatterBuilder.toFormatter : $r12 = new org.joda.time.format.PeriodFormatter
+org.joda.time.format.PeriodFormatterBuilder.toFormatter : $r20 = new org.joda.time.format.PeriodFormatter
+org.joda.time.format.PeriodFormatterBuilder.toFormatter : $r8 = interfaceinvoke r0.<java.util.List: java.util.List subList(int,int)>(2, i0)
+org.joda.time.format.PeriodFormatterBuilder.toFormatter : if z0 == 0 goto i0 = interfaceinvoke r0.<java.util.List: int size()>()
+org.joda.time.format.PeriodFormatterBuilder.toFormatter : if z1 == 0 goto $r20 = new org.joda.time.format.PeriodFormatter
+org.joda.time.format.PeriodFormatterBuilder.toFormatter : $r6 = staticinvoke <org.joda.time.format.PeriodFormatterBuilder$Separator: org.joda.time.format.PeriodParser access$000(org.joda.time.format.PeriodFormatterBuilder$Separator)>(r1)
+org.joda.time.format.PeriodFormatterBuilder.toFormatter : $r5 = interfaceinvoke r0.<java.util.List: java.lang.Object get(int)>(0)
+org.joda.time.format.PeriodFormatterBuilder.toFormatter : i0 = interfaceinvoke r0.<java.util.List: int size()>()
+org.joda.time.format.PeriodFormatterBuilder.toFormatter : return r1
+org.joda.time.format.PeriodFormatterBuilder.toFormatter : r13 = staticinvoke <org.joda.time.format.PeriodFormatterBuilder: java.lang.Object[] createComposite(java.util.List)>(r0)
+org.joda.time.format.PeriodFormatterBuilder.toFormatter : if i0 < 2 goto r13 = staticinvoke <org.joda.time.format.PeriodFormatterBuilder: java.lang.Object[] createComposite(java.util.List)>(r0)
+org.joda.time.format.PeriodFormatterBuilder$Separator.finish : r0.<org.joda.time.format.PeriodFormatterBuilder$Separator: org.joda.time.format.PeriodPrinter iAfterPrinter> = r1
+org.joda.time.format.PeriodFormatterBuilder$Separator.finish : return r0
+org.joda.time.format.PeriodFormatterBuilder$Separator.finish : r0.<org.joda.time.format.PeriodFormatterBuilder$Separator: org.joda.time.format.PeriodParser iAfterParser> = r2
+org.joda.time.format.ISOPeriodFormat.alternateWithWeeks : $r7 = virtualinvoke $r6.<org.joda.time.format.PeriodFormatterBuilder: org.joda.time.format.PeriodFormatterBuilder appendPrefix(java.lang.String)>("W")
+org.joda.time.format.ISOPeriodFormat.alternateWithWeeks : $r10 = virtualinvoke $r9.<org.joda.time.format.PeriodFormatterBuilder: org.joda.time.format.PeriodFormatterBuilder appendSeparatorIfFieldsAfter(java.lang.String)>("T")
+org.joda.time.format.ISOPeriodFormat.alternateWithWeeks : $r11 = virtualinvoke $r10.<org.joda.time.format.PeriodFormatterBuilder: org.joda.time.format.PeriodFormatterBuilder appendHours()>()
+org.joda.time.format.ISOPeriodFormat.alternateWithWeeks : $r1 = new org.joda.time.format.PeriodFormatterBuilder
+org.joda.time.format.ISOPeriodFormat.alternateWithWeeks : $r6 = virtualinvoke $r5.<org.joda.time.format.PeriodFormatterBuilder: org.joda.time.format.PeriodFormatterBuilder minimumPrintedDigits(int)>(2)
+org.joda.time.format.ISOPeriodFormat.alternateWithWeeks : $r9 = virtualinvoke $r8.<org.joda.time.format.PeriodFormatterBuilder: org.joda.time.format.PeriodFormatterBuilder appendDays()>()
+org.joda.time.format.ISOPeriodFormat.alternateWithWeeks : $r2 = virtualinvoke $r1.<org.joda.time.format.PeriodFormatterBuilder: org.joda.time.format.PeriodFormatterBuilder appendLiteral(java.lang.String)>("P")
+org.joda.time.format.ISOPeriodFormat.alternateWithWeeks : $r15 = <org.joda.time.format.ISOPeriodFormat: org.joda.time.format.PeriodFormatter cAlternateWithWeeks>
+org.joda.time.format.ISOPeriodFormat.alternateWithWeeks : $r8 = virtualinvoke $r7.<org.joda.time.format.PeriodFormatterBuilder: org.joda.time.format.PeriodFormatterBuilder appendWeeks()>()
+org.joda.time.format.ISOPeriodFormat.alternateWithWeeks : $r4 = virtualinvoke $r3.<org.joda.time.format.PeriodFormatterBuilder: org.joda.time.format.PeriodFormatterBuilder minimumPrintedDigits(int)>(4)
+org.joda.time.format.ISOPeriodFormat.alternateWithWeeks : $r0 = <org.joda.time.format.ISOPeriodFormat: org.joda.time.format.PeriodFormatter cAlternateWithWeeks>
+org.joda.time.format.ISOPeriodFormat.alternateWithWeeks : $r3 = virtualinvoke $r2.<org.joda.time.format.PeriodFormatterBuilder: org.joda.time.format.PeriodFormatterBuilder printZeroAlways()>()
+org.joda.time.format.ISOPeriodFormat.alternateWithWeeks : $r12 = virtualinvoke $r11.<org.joda.time.format.PeriodFormatterBuilder: org.joda.time.format.PeriodFormatterBuilder appendMinutes()>()
+org.joda.time.format.ISOPeriodFormat.alternateWithWeeks : $r13 = virtualinvoke $r12.<org.joda.time.format.PeriodFormatterBuilder: org.joda.time.format.PeriodFormatterBuilder appendSecondsWithOptionalMillis()>()
+org.joda.time.format.ISOPeriodFormat.alternateWithWeeks : $r14 = virtualinvoke $r13.<org.joda.time.format.PeriodFormatterBuilder: org.joda.time.format.PeriodFormatter toFormatter()>()
+org.joda.time.format.ISOPeriodFormat.alternateWithWeeks : $r5 = virtualinvoke $r4.<org.joda.time.format.PeriodFormatterBuilder: org.joda.time.format.PeriodFormatterBuilder appendYears()>()
+org.joda.time.format.PeriodFormatterBuilder.appendMinutes : specialinvoke r0.<org.joda.time.format.PeriodFormatterBuilder: void appendField(int)>(5)
+org.joda.time.format.PeriodFormatterBuilder.appendMinutes : return r0
+org.joda.time.format.PeriodFormatterBuilder.createComposite : $r8 = new org.joda.time.format.PeriodFormatterBuilder$Composite
+org.joda.time.format.PeriodFormatterBuilder.createComposite : $r9 = newarray (java.lang.Object)[2]
+org.joda.time.format.PeriodFormatterBuilder.createComposite : $i0 = interfaceinvoke r0.<java.util.List: int size()>()
+org.joda.time.format.PeriodFormatterBuilder$Composite.decompose : i1 = 0
+org.joda.time.format.PeriodFormatterBuilder$Composite.decompose : i0 = interfaceinvoke r1.<java.util.List: int size()>()
+org.joda.time.format.PeriodFormatterBuilder$Composite.decompose : $z1 = r4 instanceof org.joda.time.format.PeriodFormatterBuilder$Composite
+org.joda.time.format.PeriodFormatterBuilder$Composite.decompose : r4 = interfaceinvoke r1.<java.util.List: java.lang.Object get(int)>(i1)
+org.joda.time.format.PeriodFormatterBuilder$Composite.decompose : $z0 = r4 instanceof org.joda.time.format.PeriodPrinter
+org.joda.time.format.PeriodFormatterBuilder$Composite.decompose : $z3 = r7 instanceof org.joda.time.format.PeriodParser
+org.joda.time.format.PeriodFormatterBuilder$Composite.decompose : interfaceinvoke r2.<java.util.List: boolean add(java.lang.Object)>(r4)
+org.joda.time.format.PeriodFormatterBuilder$Composite.decompose : $i2 = i1 + 1
+org.joda.time.format.PeriodFormatterBuilder$Composite.decompose : $z4 = r7 instanceof org.joda.time.format.PeriodFormatterBuilder$Composite
+org.joda.time.format.PeriodFormatterBuilder$Composite.decompose : interfaceinvoke r3.<java.util.List: boolean add(java.lang.Object)>(r7)
+org.joda.time.format.PeriodFormatterBuilder.clear : r0.<org.joda.time.format.PeriodFormatterBuilder: boolean iRejectSignedValues> = 0
+org.joda.time.format.PeriodFormatterBuilder.clear : r0.<org.joda.time.format.PeriodFormatterBuilder: int iMaxParsedDigits> = 10
+org.joda.time.format.PeriodFormatterBuilder.clear : $r4 = newarray (org.joda.time.format.PeriodFormatterBuilder$FieldFormatter)[10]
+org.joda.time.format.PeriodFormatterBuilder.clear : r0.<org.joda.time.format.PeriodFormatterBuilder: boolean iNotParser> = 0
+org.joda.time.format.PeriodFormatterBuilder.clear : r0.<org.joda.time.format.PeriodFormatterBuilder: boolean iNotPrinter> = 0
+org.joda.time.format.PeriodFormatterBuilder.clear : r0.<org.joda.time.format.PeriodFormatterBuilder: org.joda.time.format.PeriodFormatterBuilder$PeriodFieldAffix iPrefix> = null
+org.joda.time.format.PeriodFormatterBuilder.clear : r0.<org.joda.time.format.PeriodFormatterBuilder: int iMinPrintedDigits> = 1
+org.joda.time.format.PeriodFormatterBuilder.clear : r0.<org.joda.time.format.PeriodFormatterBuilder: int iPrintZeroSetting> = 2
+org.joda.time.format.PeriodFormatterBuilder.clear : $r2 = new java.util.ArrayList
+org.joda.time.format.PeriodFormatterBuilder.clear : $r1 = r0.<org.joda.time.format.PeriodFormatterBuilder: java.util.List iElementPairs>
+org.joda.time.format.PeriodFormatterBuilder.append0 : $r4 = r0.<org.joda.time.format.PeriodFormatterBuilder: java.util.List iElementPairs>
+org.joda.time.format.PeriodFormatterBuilder.append0 : $z5 = r0.<org.joda.time.format.PeriodFormatterBuilder: boolean iNotParser>
+org.joda.time.format.PeriodFormatterBuilder.append0 : $r3 = r0.<org.joda.time.format.PeriodFormatterBuilder: java.util.List iElementPairs>
+org.joda.time.format.PeriodFormatterBuilder.append0 : return r0
+org.joda.time.format.PeriodFormatterBuilder.append0 : $z2 = r0.<org.joda.time.format.PeriodFormatterBuilder: boolean iNotPrinter>
+org.joda.time.format.PeriodFormatterBuilder.appendWeeks : specialinvoke r0.<org.joda.time.format.PeriodFormatterBuilder: void appendField(int)>(2)
+org.joda.time.format.PeriodFormatterBuilder.appendWeeks : return r0
+org.joda.time.format.PeriodFormatterBuilder.appendYears : specialinvoke r0.<org.joda.time.format.PeriodFormatterBuilder: void appendField(int)>(0)
+org.joda.time.format.PeriodFormatterBuilder.appendYears : return r0
+org.joda.time.format.PeriodFormatterBuilder$Separator.access$000 : $r1 = r0.<org.joda.time.format.PeriodFormatterBuilder$Separator: org.joda.time.format.PeriodParser iAfterParser>
+org.joda.time.format.PeriodFormatterBuilder.appendSeparatorIfFieldsAfter : $r2 = specialinvoke r0.<org.joda.time.format.PeriodFormatterBuilder: org.joda.time.format.PeriodFormatterBuilder appendSeparator(java.lang.String,java.lang.String,java.lang.String[],boolean,boolean)>(r1, r1, null, 0, 1)
+org.joda.time.format.PeriodFormatterBuilder$Separator.access$100 : $r1 = r0.<org.joda.time.format.PeriodFormatterBuilder$Separator: org.joda.time.format.PeriodPrinter iAfterPrinter>
+org.joda.time.format.PeriodFormatterBuilder.appendPrefix : if r1 != null goto $r3 = r0.<org.joda.time.format.PeriodFormatterBuilder: org.joda.time.format.PeriodFormatterBuilder$PeriodFieldAffix iPrefix>
+org.joda.time.format.PeriodFormatterBuilder.appendPrefix : if r1 != null goto $r3 = new org.joda.time.format.PeriodFormatterBuilder$SimpleAffix
+org.joda.time.format.PeriodFormatterBuilder.appendPrefix : $r3 = r0.<org.joda.time.format.PeriodFormatterBuilder: org.joda.time.format.PeriodFormatterBuilder$PeriodFieldAffix iPrefix>
+org.joda.time.format.PeriodFormatterBuilder.appendPrefix : $r3 = new org.joda.time.format.PeriodFormatterBuilder$SimpleAffix
+org.joda.time.format.PeriodFormatterBuilder.appendPrefix : return r0
+org.joda.time.format.PeriodFormatterBuilder.appendPrefix : r0.<org.joda.time.format.PeriodFormatterBuilder: org.joda.time.format.PeriodFormatterBuilder$PeriodFieldAffix iPrefix> = r1
+org.joda.time.format.PeriodFormatter.getParser : $r1 = r0.<org.joda.time.format.PeriodFormatter: org.joda.time.format.PeriodParser iParser>
+org.joda.time.format.PeriodFormatterBuilder.appendDays : specialinvoke r0.<org.joda.time.format.PeriodFormatterBuilder: void appendField(int)>(3)
+org.joda.time.format.PeriodFormatterBuilder.appendDays : return r0
+org.joda.time.format.PeriodFormatterBuilder.printZeroAlways : r0.<org.joda.time.format.PeriodFormatterBuilder: int iPrintZeroSetting> = 4
+org.joda.time.format.PeriodFormatterBuilder.printZeroAlways : return r0
+org.joda.time.format.PeriodFormatterBuilder.appendHours : specialinvoke r0.<org.joda.time.format.PeriodFormatterBuilder: void appendField(int)>(4)
+org.joda.time.format.PeriodFormatterBuilder.appendHours : return r0
+org.joda.time.format.PeriodFormatterBuilder.minimumPrintedDigits : r0.<org.joda.time.format.PeriodFormatterBuilder: int iMinPrintedDigits> = i0
+org.joda.time.format.PeriodFormatterBuilder.minimumPrintedDigits : return r0
+org.joda.time.format.PeriodFormatterBuilder.appendLiteral : if r1 != null goto specialinvoke r0.<org.joda.time.format.PeriodFormatterBuilder: void clearPrefix()>()
+org.joda.time.format.PeriodFormatterBuilder.appendLiteral : $r4 = new org.joda.time.format.PeriodFormatterBuilder$Literal
+org.joda.time.format.PeriodFormatterBuilder.appendLiteral : specialinvoke r0.<org.joda.time.format.PeriodFormatterBuilder: void clearPrefix()>()
+org.joda.time.format.PeriodFormatterBuilder.appendLiteral : return r0
+org.joda.time.format.PeriodFormatterBuilder.appendLiteral : specialinvoke r0.<org.joda.time.format.PeriodFormatterBuilder: org.joda.time.format.PeriodFormatterBuilder append0(org.joda.time.format.PeriodPrinter,org.joda.time.format.PeriodParser)>(r2, r2)
+org.joda.time.format.PeriodFormatterBuilder.appendSeparator : interfaceinvoke r4.<java.util.List: boolean add(java.lang.Object)>(r10)
+org.joda.time.format.PeriodFormatterBuilder.appendSeparator : $r14 = interfaceinvoke r4.<java.util.List: java.lang.Object get(int)>(i2)
+org.joda.time.format.PeriodFormatterBuilder.appendSeparator : $r17 = new org.joda.time.format.PeriodFormatterBuilder$Separator
+org.joda.time.format.PeriodFormatterBuilder.appendSeparator : r4 = r0.<org.joda.time.format.PeriodFormatterBuilder: java.util.List iElementPairs>
+org.joda.time.format.PeriodFormatterBuilder.appendSeparator : i1 = interfaceinvoke r4.<java.util.List: int size()>()
+org.joda.time.format.PeriodFormatterBuilder.appendSeparator : r8 = null
+org.joda.time.format.PeriodFormatterBuilder.appendSeparator : i1 = i2 + -1
+org.joda.time.format.PeriodFormatterBuilder.appendSeparator : if r1 == null goto $r11 = new java.lang.IllegalArgumentException
+org.joda.time.format.PeriodFormatterBuilder.appendSeparator : $i0 = interfaceinvoke r4.<java.util.List: int size()>()
+org.joda.time.format.PeriodFormatterBuilder.appendSeparator : specialinvoke r0.<org.joda.time.format.PeriodFormatterBuilder: void clearPrefix()>()
+org.joda.time.format.PeriodFormatterBuilder.appendSeparator : interfaceinvoke r4.<java.util.List: void clear()>()
+org.joda.time.format.PeriodFormatterBuilder.appendSeparator : return r0
+org.joda.time.format.PeriodFormatterBuilder.appendSeparator : if r8 == null goto r9 = staticinvoke <org.joda.time.format.PeriodFormatterBuilder: java.lang.Object[] createComposite(java.util.List)>(r4)
+org.joda.time.format.PeriodFormatterBuilder.appendSeparator : r9 = staticinvoke <org.joda.time.format.PeriodFormatterBuilder: java.lang.Object[] createComposite(java.util.List)>(r4)
+org.joda.time.format.PeriodFormatterBuilder.appendSecondsWithOptionalMillis : specialinvoke r0.<org.joda.time.format.PeriodFormatterBuilder: void appendField(int)>(9)
+org.joda.time.format.PeriodFormatterBuilder.appendSecondsWithOptionalMillis : return r0
+org.joda.time.format.PeriodFormatterBuilder.appendField : r0.<org.joda.time.format.PeriodFormatterBuilder: org.joda.time.format.PeriodFormatterBuilder$PeriodFieldAffix iPrefix> = null
+org.joda.time.format.PeriodFormatterBuilder.appendField : $r1 = new org.joda.time.format.PeriodFormatterBuilder$FieldFormatter
+org.joda.time.format.PeriodFormatterBuilder.appendField : $r6 = r0.<org.joda.time.format.PeriodFormatterBuilder: org.joda.time.format.PeriodFormatterBuilder$FieldFormatter[] iFieldFormatters>
+org.joda.time.format.PeriodFormatterBuilder.appendField : specialinvoke r0.<org.joda.time.format.PeriodFormatterBuilder: org.joda.time.format.PeriodFormatterBuilder append0(org.joda.time.format.PeriodPrinter,org.joda.time.format.PeriodParser)>(r2, r2)
+org.joda.time.format.PeriodFormatterBuilder.appendField : $i1 = r0.<org.joda.time.format.PeriodFormatterBuilder: int iMinPrintedDigits>
+org.joda.time.format.PeriodFormatter.getPrinter : $r1 = r0.<org.joda.time.format.PeriodFormatter: org.joda.time.format.PeriodPrinter iPrinter>

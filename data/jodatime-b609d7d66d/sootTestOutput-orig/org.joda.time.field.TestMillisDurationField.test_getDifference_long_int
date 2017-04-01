@@ -1,0 +1,7 @@
+org.joda.time.field.MillisDurationField.getDifference : $l2 = staticinvoke <org.joda.time.field.FieldUtils: long safeSubtract(long,long)>(l0, l1)
+org.joda.time.field.FieldUtils.safeSubtract : $l3 = l0 ^ l2
+org.joda.time.field.FieldUtils.safeSubtract : return l2
+org.joda.time.field.FieldUtils.safeSubtract : l2 = l0 - l1
+org.joda.time.field.FieldUtils.safeToInt : $r0 = new java.lang.ArithmeticException
+org.joda.time.field.FieldUtils.safeToInt : $i3 = (int) l0
+org.joda.time.field.FieldUtils.safeToInt : $b1 = -2147483648L cmp l0

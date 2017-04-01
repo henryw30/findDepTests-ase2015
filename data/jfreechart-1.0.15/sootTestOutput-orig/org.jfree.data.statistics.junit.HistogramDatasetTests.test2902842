@@ -1,0 +1,52 @@
+org.jfree.data.general.AbstractDataset.addChangeListener : $r2 = r0.<org.jfree.data.general.AbstractDataset: javax.swing.event.EventListenerList listenerList>
+org.jfree.data.statistics.HistogramDataset.addSeries : virtualinvoke r0.<org.jfree.data.statistics.HistogramDataset: void addSeries(java.lang.Comparable,double[],int,double,double)>(r1, r2, i0, d0, d1)
+org.jfree.data.statistics.HistogramDataset.addSeries : $i3 = i1 + 1
+org.jfree.data.statistics.HistogramDataset.addSeries : $b8 = d5 cmpg 0.0
+org.jfree.data.statistics.HistogramDataset.addSeries : d1 = specialinvoke r0.<org.jfree.data.statistics.HistogramDataset: double getMaximum(double[])>(r2)
+org.jfree.data.statistics.HistogramDataset.addSeries : $r17 = new java.lang.Double
+org.jfree.data.statistics.HistogramDataset.addSeries : virtualinvoke r10.<org.jfree.data.statistics.HistogramBin: void incrementCount()>()
+org.jfree.data.statistics.HistogramDataset.addSeries : $r15 = new java.lang.Integer
+org.jfree.data.statistics.HistogramDataset.addSeries : $d6 = d1 - d0
+org.jfree.data.statistics.HistogramDataset.addSeries : d3 = d0
+org.jfree.data.statistics.HistogramDataset.addSeries : d3 = d4
+org.jfree.data.statistics.HistogramDataset.addSeries : $r11 = new java.util.HashMap
+org.jfree.data.statistics.HistogramDataset.addSeries : i1 = 0
+org.jfree.data.statistics.HistogramDataset.addSeries : $r9 = interfaceinvoke r3.<java.util.List: java.lang.Object get(int)>(i6)
+org.jfree.data.statistics.HistogramDataset.addSeries : if i6 < i0 goto $r9 = interfaceinvoke r3.<java.util.List: java.lang.Object get(int)>(i6)
+org.jfree.data.statistics.HistogramDataset.addSeries : if i0 >= 1 goto $d6 = d1 - d0
+org.jfree.data.statistics.HistogramDataset.addSeries : $i2 = i0 - 1
+org.jfree.data.statistics.HistogramDataset.addSeries : $r6 = new java.util.ArrayList
+org.jfree.data.statistics.HistogramDataset.addSeries : $d11 = r2[i4]
+org.jfree.data.statistics.HistogramDataset.addSeries : interfaceinvoke r3.<java.util.List: boolean add(java.lang.Object)>(r4)
+org.jfree.data.statistics.HistogramDataset.addSeries : $d14 = (double) i0
+org.jfree.data.statistics.HistogramDataset.addSeries : virtualinvoke r0.<org.jfree.data.statistics.HistogramDataset: void fireDatasetChanged()>()
+org.jfree.data.statistics.HistogramDataset.addSeries : i6 = i0 - 1
+org.jfree.data.statistics.HistogramDataset.addSeries : interfaceinvoke r12.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>("bins", r3)
+org.jfree.data.statistics.HistogramDataset.addSeries : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "key")
+org.jfree.data.statistics.HistogramDataset.addSeries : interfaceinvoke r12.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>("key", r1)
+org.jfree.data.statistics.HistogramDataset.addSeries : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r2, "values")
+org.jfree.data.statistics.HistogramDataset.addSeries : $r7 = new org.jfree.data.statistics.HistogramBin
+org.jfree.data.statistics.HistogramDataset.addSeries : $r19 = r0.<org.jfree.data.statistics.HistogramDataset: java.util.List list>
+org.jfree.data.statistics.HistogramDataset.addSeries : d0 = specialinvoke r0.<org.jfree.data.statistics.HistogramDataset: double getMinimum(double[])>(r2)
+org.jfree.data.statistics.HistogramDataset.addSeries : $r8 = new org.jfree.data.statistics.HistogramBin
+org.jfree.data.statistics.HistogramDataset.addSeries : $d10 = r2[i4]
+org.jfree.data.statistics.HistogramDataset.addSeries : i4 = 0
+org.jfree.data.general.AbstractDataset.notifyListeners : $r4 = r2[i0]
+org.jfree.data.general.AbstractDataset.notifyListeners : $r3 = r0.<org.jfree.data.general.AbstractDataset: javax.swing.event.EventListenerList listenerList>
+org.jfree.data.general.AbstractDataset.notifyListeners : $i2 = i0 + 1
+org.jfree.data.general.AbstractDataset.notifyListeners : $i1 = lengthof r2
+org.jfree.data.statistics.HistogramBin.incrementCount : $i0 = r0.<org.jfree.data.statistics.HistogramBin: int count>
+org.jfree.data.statistics.HistogramDataset.getMaximum : d0 = r1[i0]
+org.jfree.data.statistics.HistogramDataset.getMaximum : $d1 = r1[i0]
+org.jfree.data.statistics.HistogramDataset.getMaximum : return d0
+org.jfree.data.statistics.HistogramDataset.getMaximum : i0 = 0
+org.jfree.data.statistics.HistogramDataset.getMaximum : d0 = -1.7976931348623157E308
+org.jfree.data.statistics.HistogramDataset.getMaximum : if r1 == null goto $r2 = new java.lang.IllegalArgumentException
+org.jfree.data.general.AbstractDataset.fireDatasetChanged : $r1 = new org.jfree.data.general.DatasetChangeEvent
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null goto return
+org.jfree.data.statistics.HistogramDataset.getMinimum : d0 = r1[i0]
+org.jfree.data.statistics.HistogramDataset.getMinimum : d0 = 1.7976931348623157E308
+org.jfree.data.statistics.HistogramDataset.getMinimum : $d1 = r1[i0]
+org.jfree.data.statistics.HistogramDataset.getMinimum : return d0
+org.jfree.data.statistics.HistogramDataset.getMinimum : i0 = 0
+org.jfree.data.statistics.HistogramDataset.getMinimum : if r1 == null goto $r2 = new java.lang.IllegalArgumentException

@@ -1,0 +1,7 @@
+crystal.client.ClientPreferences.setRefresh : r0.<crystal.client.ClientPreferences: long _refresh> = l0
+crystal.client.ClientPreferences.getTempDirectory : $r1 = r0.<crystal.client.ClientPreferences: java.lang.String _tempDirectory>
+crystal.util.ValidInputChecker.checkNullInput : if r0 != null goto return
+crystal.client.ClientPreferences.setChanged : r0.<crystal.client.ClientPreferences: boolean _hasChanged> = z0
+crystal.client.ClientPreferences.setGitPath : r0.<crystal.client.ClientPreferences: java.lang.String _gitPath> = r1
+crystal.util.ValidInputChecker.checkValidStringInput : if r0 == null goto $r2 = new java.lang.IllegalArgumentException
+crystal.client.ClientPreferences.setHgPath : r0.<crystal.client.ClientPreferences: java.lang.String _hgPath> = r1

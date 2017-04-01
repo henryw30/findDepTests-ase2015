@@ -1,0 +1,13 @@
+org.jfree.chart.axis.TickUnit.equals : $i1 = r0.<org.jfree.chart.axis.TickUnit: int minorTickCount>
+org.jfree.chart.axis.TickUnit.equals : if r1 != r0 goto $z0 = r1 instanceof org.jfree.chart.axis.TickUnit
+org.jfree.chart.axis.TickUnit.equals : $d0 = r0.<org.jfree.chart.axis.TickUnit: double size>
+org.jfree.chart.axis.TickUnit.equals : $z0 = r1 instanceof org.jfree.chart.axis.TickUnit
+org.jfree.chart.axis.TickUnit.equals : return 1
+org.jfree.chart.axis.TickUnit.equals : r2 = (org.jfree.chart.axis.TickUnit) r1
+org.jfree.chart.axis.NumberTickUnit.equals : if r1 != r0 goto $z0 = r1 instanceof org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.NumberTickUnit.equals : $r3 = r0.<org.jfree.chart.axis.NumberTickUnit: java.text.NumberFormat formatter>
+org.jfree.chart.axis.NumberTickUnit.equals : r2 = (org.jfree.chart.axis.NumberTickUnit) r1
+org.jfree.chart.axis.NumberTickUnit.equals : return 1
+org.jfree.chart.axis.NumberTickUnit.equals : $z1 = specialinvoke r0.<org.jfree.chart.axis.TickUnit: boolean equals(java.lang.Object)>(r1)
+org.jfree.chart.axis.NumberTickUnit.equals : $z0 = r1 instanceof org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null goto return

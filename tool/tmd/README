@@ -1,0 +1,30 @@
+Installation:
+1) run mvn clean install
+2) copy the jar located in target/tmd.jar to pmd-bin-5.2.0/lib
+
+To run:
+1) Go to pmd-bin-5.2.0/bin
+2) Run the following command:
+
+$ ./run.sh pmd -d PATH -R RULESET
+
+where
+
+PATH is a path to a file or directory that you want to analyze.
+
+RULESET are the following:
+tmd-basic       - All the rules together.
+tmd-exceptions  - Vague Exception rule.
+tmd-file        - Stream dependency rule.
+tmd-sf          - Shared Static field rule.
+tmd-sleep       - Timing dependency rule.
+tmd-systemCalls - System dependency rule.
+tmd-testsCall   - Test calling tests rule.
+tmd-asserts     - Under checked rule.
+tmd-toString    - Over checked rule.
+tmd-url         - Network dependency rule.
+
+
+Example:
+
+$ ./run.sh pmd -d org.eclipse.jetty.project/  -R tmd-correctness

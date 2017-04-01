@@ -1,0 +1,195 @@
+org.jfree.chart.LegendItem.getLabel : $r1 = r0.<org.jfree.chart.LegendItem: java.lang.String label>
+org.jfree.chart.plot.Plot.notifyListeners : $r3 = r0.<org.jfree.chart.plot.Plot: javax.swing.event.EventListenerList listenerList>
+org.jfree.chart.plot.Plot.notifyListeners : $i1 = lengthof r2
+org.jfree.chart.plot.Plot.notifyListeners : $z0 = r0.<org.jfree.chart.plot.Plot: boolean notify>
+org.jfree.chart.LegendItem.setSeriesKey : r0.<org.jfree.chart.LegendItem: java.lang.Comparable seriesKey> = r1
+org.jfree.chart.LegendItemCollection.get : $r1 = r0.<org.jfree.chart.LegendItemCollection: java.util.List items>
+org.jfree.chart.plot.PolarPlot.getDataset : $r3 = r0.<org.jfree.chart.plot.PolarPlot: org.jfree.util.ObjectList datasets>
+org.jfree.chart.plot.PolarPlot.getDataset : $r2 = r0.<org.jfree.chart.plot.PolarPlot: org.jfree.util.ObjectList datasets>
+org.jfree.chart.plot.PolarPlot.getDataset : r1 = null
+org.jfree.chart.plot.PolarPlot.getDataset : return r1
+org.jfree.chart.LegendItem.setDataset : r0.<org.jfree.chart.LegendItem: org.jfree.data.general.Dataset dataset> = r1
+org.jfree.chart.plot.PolarPlot.getRenderer : $r2 = r0.<org.jfree.chart.plot.PolarPlot: org.jfree.util.ObjectList renderers>
+org.jfree.chart.plot.PolarPlot.getRenderer : r1 = null
+org.jfree.chart.plot.PolarPlot.getRenderer : return r1
+org.jfree.chart.plot.PolarPlot.getRenderer : $r3 = r0.<org.jfree.chart.plot.PolarPlot: org.jfree.util.ObjectList renderers>
+org.jfree.chart.LegendItemCollection.getItemCount : $r1 = r0.<org.jfree.chart.LegendItemCollection: java.util.List items>
+org.jfree.chart.renderer.DefaultPolarItemRenderer.setPlot : r0.<org.jfree.chart.renderer.DefaultPolarItemRenderer: org.jfree.chart.plot.PolarPlot plot> = r1
+org.jfree.chart.renderer.AbstractRenderer.lookupSeriesShape : r1 = virtualinvoke r0.<org.jfree.chart.renderer.AbstractRenderer: java.awt.Shape getSeriesShape(int)>(i0)
+org.jfree.chart.renderer.AbstractRenderer.lookupSeriesShape : $r3 = r0.<org.jfree.chart.renderer.AbstractRenderer: java.awt.Shape shape>
+org.jfree.chart.renderer.AbstractRenderer.lookupSeriesShape : if r2 == null goto (branch)
+org.jfree.chart.renderer.AbstractRenderer.lookupSeriesShape : r1 = interfaceinvoke r2.<org.jfree.chart.plot.DrawingSupplier: java.awt.Shape getNextShape()>()
+org.jfree.chart.renderer.AbstractRenderer.lookupSeriesShape : r2 = virtualinvoke r0.<org.jfree.chart.renderer.AbstractRenderer: org.jfree.chart.plot.DrawingSupplier getDrawingSupplier()>()
+org.jfree.chart.renderer.AbstractRenderer.lookupSeriesShape : if r1 != null goto return r1
+org.jfree.chart.renderer.AbstractRenderer.lookupSeriesShape : if r1 != null goto (branch)
+org.jfree.chart.renderer.AbstractRenderer.lookupSeriesShape : return r1
+org.jfree.chart.renderer.AbstractRenderer.lookupSeriesShape : virtualinvoke r0.<org.jfree.chart.renderer.AbstractRenderer: void setSeriesShape(int,java.awt.Shape,boolean)>(i0, r1, 0)
+org.jfree.chart.renderer.AbstractRenderer.getSeriesPaint : $r1 = r0.<org.jfree.chart.renderer.AbstractRenderer: org.jfree.util.PaintList paintList>
+org.jfree.chart.LegendItemCollection.add : $r2 = r0.<org.jfree.chart.LegendItemCollection: java.util.List items>
+org.jfree.chart.plot.Plot.getDrawingSupplier : return r2
+org.jfree.chart.plot.Plot.getDrawingSupplier : if r1 == null goto r2 = r0.<org.jfree.chart.plot.Plot: org.jfree.chart.plot.DrawingSupplier drawingSupplier>
+org.jfree.chart.plot.Plot.getDrawingSupplier : r2 = r0.<org.jfree.chart.plot.Plot: org.jfree.chart.plot.DrawingSupplier drawingSupplier>
+org.jfree.chart.plot.Plot.getDrawingSupplier : r1 = virtualinvoke r0.<org.jfree.chart.plot.Plot: org.jfree.chart.plot.Plot getParent()>()
+org.jfree.chart.plot.Plot.getDrawingSupplier : n0 = null
+org.jfree.chart.event.ChartChangeEvent.setType : r0.<org.jfree.chart.event.ChartChangeEvent: org.jfree.chart.event.ChartChangeEventType type> = r1
+org.jfree.chart.LegendItem.setToolTipText : r0.<org.jfree.chart.LegendItem: java.lang.String toolTipText> = r1
+org.jfree.chart.renderer.DefaultPolarItemRenderer.getLegendItemURLGenerator : $r1 = r0.<org.jfree.chart.renderer.DefaultPolarItemRenderer: org.jfree.chart.labels.XYSeriesLabelGenerator legendItemURLGenerator>
+org.jfree.chart.renderer.AbstractRenderer.getSeriesOutlinePaint : $r1 = r0.<org.jfree.chart.renderer.AbstractRenderer: org.jfree.util.PaintList outlinePaintList>
+org.jfree.chart.renderer.AbstractRenderer.lookupSeriesOutlinePaint : r1 = r0.<org.jfree.chart.renderer.AbstractRenderer: java.awt.Paint baseOutlinePaint>
+org.jfree.chart.renderer.AbstractRenderer.lookupSeriesOutlinePaint : r1 = virtualinvoke r0.<org.jfree.chart.renderer.AbstractRenderer: java.awt.Paint getSeriesOutlinePaint(int)>(i0)
+org.jfree.chart.renderer.AbstractRenderer.lookupSeriesOutlinePaint : if r1 != null goto return r1
+org.jfree.chart.renderer.AbstractRenderer.lookupSeriesOutlinePaint : if r1 != null goto (branch)
+org.jfree.chart.renderer.AbstractRenderer.lookupSeriesOutlinePaint : return r1
+org.jfree.chart.renderer.AbstractRenderer.lookupSeriesOutlinePaint : $r3 = r0.<org.jfree.chart.renderer.AbstractRenderer: java.awt.Paint outlinePaint>
+org.jfree.chart.renderer.AbstractRenderer.setSeriesPaint : if z0 == 0 goto return
+org.jfree.chart.renderer.AbstractRenderer.setSeriesPaint : $r2 = r0.<org.jfree.chart.renderer.AbstractRenderer: org.jfree.util.PaintList paintList>
+org.jfree.chart.renderer.DefaultPolarItemRenderer.getShapesVisible : $z0 = r0.<org.jfree.chart.renderer.DefaultPolarItemRenderer: boolean shapesVisible>
+org.jfree.data.xy.XYSeriesCollection.getSeriesIndex : return -1
+org.jfree.data.xy.XYSeriesCollection.getSeriesIndex : i1 = 0
+org.jfree.data.xy.XYSeriesCollection.getSeriesIndex : $r3 = r0.<org.jfree.data.xy.XYSeriesCollection: java.util.List data>
+org.jfree.data.xy.XYSeriesCollection.getSeriesIndex : i0 = virtualinvoke r0.<org.jfree.data.xy.XYSeriesCollection: int getSeriesCount()>()
+org.jfree.data.xy.XYSeriesCollection.getSeriesIndex : $r5 = virtualinvoke r2.<org.jfree.data.xy.XYSeries: java.lang.Comparable getKey()>()
+org.jfree.data.xy.XYSeriesCollection.getSeriesIndex : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "key")
+org.jfree.data.xy.XYSeriesCollection.getSeriesKey : $r1 = virtualinvoke r0.<org.jfree.data.xy.XYSeriesCollection: org.jfree.data.xy.XYSeries getSeries(int)>(i0)
+org.jfree.chart.plot.PolarPlot.setDataset : if r2 == null goto $r4 = r0.<org.jfree.chart.plot.PolarPlot: org.jfree.util.ObjectList datasets>
+org.jfree.chart.plot.PolarPlot.setDataset : virtualinvoke r0.<org.jfree.chart.plot.PolarPlot: void setDataset(int,org.jfree.data.xy.XYDataset)>(0, r1)
+org.jfree.chart.plot.PolarPlot.setDataset : $r5 = new org.jfree.data.general.DatasetChangeEvent
+org.jfree.chart.plot.PolarPlot.setDataset : r2 = virtualinvoke r0.<org.jfree.chart.plot.PolarPlot: org.jfree.data.xy.XYDataset getDataset(int)>(i0)
+org.jfree.chart.plot.PolarPlot.setDataset : if r1 == null goto $r5 = new org.jfree.data.general.DatasetChangeEvent
+org.jfree.chart.plot.PolarPlot.setDataset : virtualinvoke r0.<org.jfree.chart.plot.PolarPlot: void datasetChanged(org.jfree.data.general.DatasetChangeEvent)>(r3)
+org.jfree.chart.plot.PolarPlot.setDataset : $r4 = r0.<org.jfree.chart.plot.PolarPlot: org.jfree.util.ObjectList datasets>
+org.jfree.chart.plot.PolarPlot.setDataset : interfaceinvoke r1.<org.jfree.data.xy.XYDataset: void addChangeListener(org.jfree.data.general.DatasetChangeListener)>(r0)
+org.jfree.data.xy.IntervalXYDelegate.datasetChanged : $z0 = r0.<org.jfree.data.xy.IntervalXYDelegate: boolean autoWidth>
+org.jfree.data.general.AbstractDataset.addChangeListener : $r2 = r0.<org.jfree.data.general.AbstractDataset: javax.swing.event.EventListenerList listenerList>
+org.jfree.chart.plot.DefaultDrawingSupplier.getNextStroke : $r2 = r0.<org.jfree.chart.plot.DefaultDrawingSupplier: java.awt.Stroke[] strokeSequence>
+org.jfree.chart.plot.DefaultDrawingSupplier.getNextStroke : $i3 = r0.<org.jfree.chart.plot.DefaultDrawingSupplier: int strokeIndex>
+org.jfree.chart.plot.DefaultDrawingSupplier.getNextStroke : return r1
+org.jfree.chart.plot.DefaultDrawingSupplier.getNextPaint : $i3 = r0.<org.jfree.chart.plot.DefaultDrawingSupplier: int paintIndex>
+org.jfree.chart.plot.DefaultDrawingSupplier.getNextPaint : return r1
+org.jfree.chart.plot.DefaultDrawingSupplier.getNextPaint : $r2 = r0.<org.jfree.chart.plot.DefaultDrawingSupplier: java.awt.Paint[] paintSequence>
+org.jfree.data.general.AbstractDataset.notifyListeners : $r4 = r2[i0]
+org.jfree.data.general.AbstractDataset.notifyListeners : $r3 = r0.<org.jfree.data.general.AbstractDataset: javax.swing.event.EventListenerList listenerList>
+org.jfree.data.general.AbstractDataset.notifyListeners : $i2 = i0 + 1
+org.jfree.data.general.AbstractDataset.notifyListeners : $i1 = lengthof r2
+org.jfree.chart.plot.PolarPlot.getIndexOf : $r2 = r0.<org.jfree.chart.plot.PolarPlot: org.jfree.util.ObjectList renderers>
+org.jfree.data.xy.XYSeriesCollection.addSeries : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "series")
+org.jfree.data.xy.XYSeriesCollection.addSeries : $r3 = virtualinvoke r1.<org.jfree.data.xy.XYSeries: java.lang.Comparable getKey()>()
+org.jfree.data.xy.XYSeriesCollection.addSeries : virtualinvoke r0.<org.jfree.data.xy.XYSeriesCollection: void fireDatasetChanged()>()
+org.jfree.data.xy.XYSeriesCollection.addSeries : virtualinvoke r1.<org.jfree.data.xy.XYSeries: void addChangeListener(org.jfree.data.general.SeriesChangeListener)>(r0)
+org.jfree.data.xy.XYSeriesCollection.addSeries : virtualinvoke r1.<org.jfree.data.xy.XYSeries: void addVetoableChangeListener(java.beans.VetoableChangeListener)>(r0)
+org.jfree.data.xy.XYSeriesCollection.addSeries : $r9 = r0.<org.jfree.data.xy.XYSeriesCollection: java.util.List data>
+org.jfree.chart.LegendItem.setURLText : r0.<org.jfree.chart.LegendItem: java.lang.String urlText> = r1
+org.jfree.chart.plot.Plot.datasetChanged : virtualinvoke r0.<org.jfree.chart.plot.Plot: void notifyListeners(org.jfree.chart.event.PlotChangeEvent)>(r3)
+org.jfree.chart.plot.Plot.datasetChanged : $r2 = new org.jfree.chart.event.PlotChangeEvent
+org.jfree.chart.plot.Plot.datasetChanged : $r4 = <org.jfree.chart.event.ChartChangeEventType: org.jfree.chart.event.ChartChangeEventType DATASET_UPDATED>
+org.jfree.data.general.AbstractDataset.fireDatasetChanged : $r1 = new org.jfree.data.general.DatasetChangeEvent
+org.jfree.chart.plot.PolarPlot.setRenderer : if z0 == 0 goto return
+org.jfree.chart.plot.PolarPlot.setRenderer : r2 = virtualinvoke r0.<org.jfree.chart.plot.PolarPlot: org.jfree.chart.renderer.PolarItemRenderer getRenderer(int)>(i0)
+org.jfree.chart.plot.PolarPlot.setRenderer : virtualinvoke r0.<org.jfree.chart.plot.PolarPlot: void fireChangeEvent()>()
+org.jfree.chart.plot.PolarPlot.setRenderer : virtualinvoke r0.<org.jfree.chart.plot.PolarPlot: void setRenderer(int,org.jfree.chart.renderer.PolarItemRenderer,boolean)>(i0, r1, 1)
+org.jfree.chart.plot.PolarPlot.setRenderer : interfaceinvoke r1.<org.jfree.chart.renderer.PolarItemRenderer: void setPlot(org.jfree.chart.plot.PolarPlot)>(r0)
+org.jfree.chart.plot.PolarPlot.setRenderer : virtualinvoke r0.<org.jfree.chart.plot.PolarPlot: void setRenderer(int,org.jfree.chart.renderer.PolarItemRenderer)>(0, r1)
+org.jfree.chart.plot.PolarPlot.setRenderer : if r1 == null goto (branch)
+org.jfree.chart.plot.PolarPlot.setRenderer : interfaceinvoke r1.<org.jfree.chart.renderer.PolarItemRenderer: void addChangeListener(org.jfree.chart.event.RendererChangeListener)>(r0)
+org.jfree.chart.plot.PolarPlot.setRenderer : $r3 = r0.<org.jfree.chart.plot.PolarPlot: org.jfree.util.ObjectList renderers>
+org.jfree.chart.plot.PolarPlot.setRenderer : if r2 == null goto $r3 = r0.<org.jfree.chart.plot.PolarPlot: org.jfree.util.ObjectList renderers>
+org.jfree.data.general.Series.getKey : $r1 = r0.<org.jfree.data.general.Series: java.lang.Comparable key>
+org.jfree.chart.plot.Plot.fireChangeEvent : $r1 = new org.jfree.chart.event.PlotChangeEvent
+org.jfree.chart.renderer.DefaultPolarItemRenderer.getLegendItem : r7 = r6
+org.jfree.chart.renderer.DefaultPolarItemRenderer.getLegendItem : virtualinvoke r13.<org.jfree.chart.LegendItem: void setToolTipText(java.lang.String)>(r3)
+org.jfree.chart.renderer.DefaultPolarItemRenderer.getLegendItem : return r13
+org.jfree.chart.renderer.DefaultPolarItemRenderer.getLegendItem : virtualinvoke r13.<org.jfree.chart.LegendItem: void setSeriesIndex(int)>(i0)
+org.jfree.chart.renderer.DefaultPolarItemRenderer.getLegendItem : $i1 = virtualinvoke r1.<org.jfree.chart.plot.PolarPlot: int getIndexOf(org.jfree.chart.renderer.PolarItemRenderer)>(r0)
+org.jfree.chart.renderer.DefaultPolarItemRenderer.getLegendItem : $z2 = virtualinvoke r0.<org.jfree.chart.renderer.DefaultPolarItemRenderer: boolean isSeriesFilled(int)>(i0)
+org.jfree.chart.renderer.DefaultPolarItemRenderer.getLegendItem : virtualinvoke r13.<org.jfree.chart.LegendItem: void setDataset(org.jfree.data.general.Dataset)>(r2)
+org.jfree.chart.renderer.DefaultPolarItemRenderer.getLegendItem : r6 = virtualinvoke r5.<java.lang.Object: java.lang.String toString()>()
+org.jfree.chart.renderer.DefaultPolarItemRenderer.getLegendItem : $r16 = virtualinvoke r0.<org.jfree.chart.renderer.DefaultPolarItemRenderer: org.jfree.chart.labels.XYSeriesLabelGenerator getLegendItemURLGenerator()>()
+org.jfree.chart.renderer.DefaultPolarItemRenderer.getLegendItem : r12 = virtualinvoke r0.<org.jfree.chart.renderer.DefaultPolarItemRenderer: java.awt.Stroke lookupSeriesOutlineStroke(int)>(i0)
+org.jfree.chart.renderer.DefaultPolarItemRenderer.getLegendItem : r8 = virtualinvoke r0.<org.jfree.chart.renderer.DefaultPolarItemRenderer: java.awt.Shape lookupSeriesShape(int)>(i0)
+org.jfree.chart.renderer.DefaultPolarItemRenderer.getLegendItem : virtualinvoke r13.<org.jfree.chart.LegendItem: void setSeriesKey(java.lang.Comparable)>(r5)
+org.jfree.chart.renderer.DefaultPolarItemRenderer.getLegendItem : $z1 = r0.<org.jfree.chart.renderer.DefaultPolarItemRenderer: boolean useFillPaint>
+org.jfree.chart.renderer.DefaultPolarItemRenderer.getLegendItem : r10 = virtualinvoke r0.<org.jfree.chart.renderer.DefaultPolarItemRenderer: java.awt.Stroke lookupSeriesStroke(int)>(i0)
+org.jfree.chart.renderer.DefaultPolarItemRenderer.getLegendItem : if r1 != null goto $i1 = virtualinvoke r1.<org.jfree.chart.plot.PolarPlot: int getIndexOf(org.jfree.chart.renderer.PolarItemRenderer)>(r0)
+org.jfree.chart.renderer.DefaultPolarItemRenderer.getLegendItem : $r18 = new org.jfree.chart.LegendItem
+org.jfree.chart.renderer.DefaultPolarItemRenderer.getLegendItem : r5 = interfaceinvoke r2.<org.jfree.data.xy.XYDataset: java.lang.Comparable getSeriesKey(int)>(i0)
+org.jfree.chart.renderer.DefaultPolarItemRenderer.getLegendItem : $r14 = virtualinvoke r0.<org.jfree.chart.renderer.DefaultPolarItemRenderer: org.jfree.chart.labels.XYSeriesLabelGenerator getLegendItemToolTipGenerator()>()
+org.jfree.chart.renderer.DefaultPolarItemRenderer.getLegendItem : if r2 != null goto r3 = null
+org.jfree.chart.renderer.DefaultPolarItemRenderer.getLegendItem : virtualinvoke r13.<org.jfree.chart.LegendItem: void setURLText(java.lang.String)>(r4)
+org.jfree.chart.renderer.DefaultPolarItemRenderer.getLegendItem : r4 = null
+org.jfree.chart.renderer.DefaultPolarItemRenderer.getLegendItem : $z5 = virtualinvoke r0.<org.jfree.chart.renderer.DefaultPolarItemRenderer: boolean getShapesVisible()>()
+org.jfree.chart.renderer.DefaultPolarItemRenderer.getLegendItem : r3 = null
+org.jfree.chart.renderer.DefaultPolarItemRenderer.getLegendItem : r1 = virtualinvoke r0.<org.jfree.chart.renderer.DefaultPolarItemRenderer: org.jfree.chart.plot.PolarPlot getPlot()>()
+org.jfree.chart.renderer.DefaultPolarItemRenderer.getLegendItem : r9 = virtualinvoke r0.<org.jfree.chart.renderer.DefaultPolarItemRenderer: java.awt.Paint lookupSeriesPaint(int)>(i0)
+org.jfree.chart.renderer.DefaultPolarItemRenderer.getLegendItem : r11 = virtualinvoke r0.<org.jfree.chart.renderer.DefaultPolarItemRenderer: java.awt.Paint lookupSeriesOutlinePaint(int)>(i0)
+org.jfree.chart.plot.DefaultDrawingSupplier.getNextShape : $r2 = r0.<org.jfree.chart.plot.DefaultDrawingSupplier: java.awt.Shape[] shapeSequence>
+org.jfree.chart.plot.DefaultDrawingSupplier.getNextShape : return r1
+org.jfree.chart.plot.DefaultDrawingSupplier.getNextShape : $i3 = r0.<org.jfree.chart.plot.DefaultDrawingSupplier: int shapeIndex>
+org.jfree.data.general.Series.addChangeListener : $r2 = r0.<org.jfree.data.general.Series: javax.swing.event.EventListenerList listeners>
+org.jfree.chart.renderer.AbstractRenderer.setSeriesStroke : if z0 == 0 goto return
+org.jfree.chart.renderer.AbstractRenderer.setSeriesStroke : $r2 = r0.<org.jfree.chart.renderer.AbstractRenderer: org.jfree.util.StrokeList strokeList>
+org.jfree.chart.LegendItem.setSeriesIndex : r0.<org.jfree.chart.LegendItem: int series> = i0
+org.jfree.data.xy.XYSeriesCollection.getSeriesCount : $r1 = r0.<org.jfree.data.xy.XYSeriesCollection: java.util.List data>
+org.jfree.chart.renderer.AbstractRenderer.getSeriesStroke : $r1 = r0.<org.jfree.chart.renderer.AbstractRenderer: org.jfree.util.StrokeList strokeList>
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null goto return
+org.jfree.data.general.Series.addVetoableChangeListener : $r2 = r0.<org.jfree.data.general.Series: java.beans.VetoableChangeSupport vetoableChangeSupport>
+org.jfree.chart.renderer.AbstractRenderer.lookupSeriesOutlineStroke : r1 = virtualinvoke r0.<org.jfree.chart.renderer.AbstractRenderer: java.awt.Stroke getSeriesOutlineStroke(int)>(i0)
+org.jfree.chart.renderer.AbstractRenderer.lookupSeriesOutlineStroke : if r1 != null goto return r1
+org.jfree.chart.renderer.AbstractRenderer.lookupSeriesOutlineStroke : if r1 != null goto (branch)
+org.jfree.chart.renderer.AbstractRenderer.lookupSeriesOutlineStroke : $r3 = r0.<org.jfree.chart.renderer.AbstractRenderer: java.awt.Stroke outlineStroke>
+org.jfree.chart.renderer.AbstractRenderer.lookupSeriesOutlineStroke : return r1
+org.jfree.chart.renderer.AbstractRenderer.lookupSeriesOutlineStroke : r1 = r0.<org.jfree.chart.renderer.AbstractRenderer: java.awt.Stroke baseOutlineStroke>
+org.jfree.chart.plot.PolarPlot.datasetChanged : i0 = 0
+org.jfree.chart.plot.PolarPlot.datasetChanged : if r2 == null goto i0 = i0 + 1
+org.jfree.chart.plot.PolarPlot.datasetChanged : $r6 = virtualinvoke r0.<org.jfree.chart.plot.PolarPlot: org.jfree.chart.plot.Plot getParent()>()
+org.jfree.chart.plot.PolarPlot.datasetChanged : $r4 = r0.<org.jfree.chart.plot.PolarPlot: org.jfree.util.ObjectList axes>
+org.jfree.chart.plot.PolarPlot.datasetChanged : specialinvoke r0.<org.jfree.chart.plot.Plot: void datasetChanged(org.jfree.data.general.DatasetChangeEvent)>(r1)
+org.jfree.chart.renderer.AbstractRenderer.addChangeListener : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "listener")
+org.jfree.chart.renderer.AbstractRenderer.addChangeListener : $r2 = r0.<org.jfree.chart.renderer.AbstractRenderer: javax.swing.event.EventListenerList listenerList>
+org.jfree.data.xy.XYSeriesCollection.getSeries : if i0 < 0 goto $r1 = new java.lang.IllegalArgumentException
+org.jfree.data.xy.XYSeriesCollection.getSeries : $r2 = r0.<org.jfree.data.xy.XYSeriesCollection: java.util.List data>
+org.jfree.chart.renderer.AbstractRenderer.getSeriesShape : $r1 = r0.<org.jfree.chart.renderer.AbstractRenderer: org.jfree.util.ShapeList shapeList>
+org.jfree.chart.renderer.DefaultPolarItemRenderer.getLegendItemToolTipGenerator : $r1 = r0.<org.jfree.chart.renderer.DefaultPolarItemRenderer: org.jfree.chart.labels.XYSeriesLabelGenerator legendItemToolTipGenerator>
+org.jfree.chart.renderer.AbstractRenderer.lookupSeriesStroke : if r2 == null goto (branch)
+org.jfree.chart.renderer.AbstractRenderer.lookupSeriesStroke : r2 = virtualinvoke r0.<org.jfree.chart.renderer.AbstractRenderer: org.jfree.chart.plot.DrawingSupplier getDrawingSupplier()>()
+org.jfree.chart.renderer.AbstractRenderer.lookupSeriesStroke : if r1 != null goto return r1
+org.jfree.chart.renderer.AbstractRenderer.lookupSeriesStroke : $r3 = r0.<org.jfree.chart.renderer.AbstractRenderer: java.awt.Stroke stroke>
+org.jfree.chart.renderer.AbstractRenderer.lookupSeriesStroke : virtualinvoke r0.<org.jfree.chart.renderer.AbstractRenderer: void setSeriesStroke(int,java.awt.Stroke,boolean)>(i0, r1, 0)
+org.jfree.chart.renderer.AbstractRenderer.lookupSeriesStroke : r1 = interfaceinvoke r2.<org.jfree.chart.plot.DrawingSupplier: java.awt.Stroke getNextStroke()>()
+org.jfree.chart.renderer.AbstractRenderer.lookupSeriesStroke : if r1 != null goto (branch)
+org.jfree.chart.renderer.AbstractRenderer.lookupSeriesStroke : return r1
+org.jfree.chart.renderer.AbstractRenderer.lookupSeriesStroke : r1 = virtualinvoke r0.<org.jfree.chart.renderer.AbstractRenderer: java.awt.Stroke getSeriesStroke(int)>(i0)
+org.jfree.chart.plot.PolarPlot.getLegendItems : i1 = 0
+org.jfree.chart.plot.PolarPlot.getLegendItems : $r7 = new org.jfree.chart.LegendItemCollection
+org.jfree.chart.plot.PolarPlot.getLegendItems : i3 = 0
+org.jfree.chart.plot.PolarPlot.getLegendItems : if r2 == null goto i1 = i1 + 1
+org.jfree.chart.plot.PolarPlot.getLegendItems : i2 = interfaceinvoke r2.<org.jfree.data.xy.XYDataset: int getSeriesCount()>()
+org.jfree.chart.plot.PolarPlot.getLegendItems : $r5 = r0.<org.jfree.chart.plot.PolarPlot: org.jfree.chart.LegendItemCollection fixedLegendItems>
+org.jfree.chart.plot.PolarPlot.getLegendItems : r2 = virtualinvoke r0.<org.jfree.chart.plot.PolarPlot: org.jfree.data.xy.XYDataset getDataset(int)>(i1)
+org.jfree.chart.plot.PolarPlot.getLegendItems : return r1
+org.jfree.chart.plot.PolarPlot.getLegendItems : r3 = virtualinvoke r0.<org.jfree.chart.plot.PolarPlot: org.jfree.chart.renderer.PolarItemRenderer getRenderer(int)>(i1)
+org.jfree.chart.plot.PolarPlot.getLegendItems : $r8 = r0.<org.jfree.chart.plot.PolarPlot: org.jfree.util.ObjectList datasets>
+org.jfree.chart.plot.PolarPlot.getLegendItems : virtualinvoke r1.<org.jfree.chart.LegendItemCollection: void add(org.jfree.chart.LegendItem)>(r4)
+org.jfree.chart.plot.PolarPlot.getLegendItems : r4 = interfaceinvoke r3.<org.jfree.chart.renderer.PolarItemRenderer: org.jfree.chart.LegendItem getLegendItem(int)>(i3)
+org.jfree.chart.renderer.AbstractRenderer.lookupSeriesPaint : if r2 == null goto (branch)
+org.jfree.chart.renderer.AbstractRenderer.lookupSeriesPaint : $r3 = r0.<org.jfree.chart.renderer.AbstractRenderer: java.awt.Paint paint>
+org.jfree.chart.renderer.AbstractRenderer.lookupSeriesPaint : r2 = virtualinvoke r0.<org.jfree.chart.renderer.AbstractRenderer: org.jfree.chart.plot.DrawingSupplier getDrawingSupplier()>()
+org.jfree.chart.renderer.AbstractRenderer.lookupSeriesPaint : virtualinvoke r0.<org.jfree.chart.renderer.AbstractRenderer: void setSeriesPaint(int,java.awt.Paint,boolean)>(i0, r1, 0)
+org.jfree.chart.renderer.AbstractRenderer.lookupSeriesPaint : if r1 != null goto return r1
+org.jfree.chart.renderer.AbstractRenderer.lookupSeriesPaint : if r1 != null goto (branch)
+org.jfree.chart.renderer.AbstractRenderer.lookupSeriesPaint : r1 = virtualinvoke r0.<org.jfree.chart.renderer.AbstractRenderer: java.awt.Paint getSeriesPaint(int)>(i0)
+org.jfree.chart.renderer.AbstractRenderer.lookupSeriesPaint : return r1
+org.jfree.chart.renderer.AbstractRenderer.lookupSeriesPaint : r1 = interfaceinvoke r2.<org.jfree.chart.plot.DrawingSupplier: java.awt.Paint getNextPaint()>()
+org.jfree.chart.renderer.DefaultPolarItemRenderer.isSeriesFilled : if r1 == null goto return z0
+org.jfree.chart.renderer.DefaultPolarItemRenderer.isSeriesFilled : $r2 = r0.<org.jfree.chart.renderer.DefaultPolarItemRenderer: org.jfree.util.BooleanList seriesFilled>
+org.jfree.chart.renderer.DefaultPolarItemRenderer.isSeriesFilled : z0 = 0
+org.jfree.chart.renderer.DefaultPolarItemRenderer.isSeriesFilled : return z0
+org.jfree.chart.plot.Plot.getParent : $r1 = r0.<org.jfree.chart.plot.Plot: org.jfree.chart.plot.Plot parent>
+org.jfree.chart.renderer.AbstractRenderer.getSeriesOutlineStroke : $r1 = r0.<org.jfree.chart.renderer.AbstractRenderer: org.jfree.util.StrokeList outlineStrokeList>
+org.jfree.chart.renderer.DefaultPolarItemRenderer.getDrawingSupplier : if r2 == null goto return r1
+org.jfree.chart.renderer.DefaultPolarItemRenderer.getDrawingSupplier : r2 = virtualinvoke r0.<org.jfree.chart.renderer.DefaultPolarItemRenderer: org.jfree.chart.plot.PolarPlot getPlot()>()
+org.jfree.chart.renderer.DefaultPolarItemRenderer.getDrawingSupplier : r1 = null
+org.jfree.chart.renderer.DefaultPolarItemRenderer.getDrawingSupplier : return r1
+org.jfree.chart.renderer.DefaultPolarItemRenderer.getDrawingSupplier : r1 = virtualinvoke r2.<org.jfree.chart.plot.PolarPlot: org.jfree.chart.plot.DrawingSupplier getDrawingSupplier()>()
+org.jfree.chart.renderer.AbstractRenderer.setSeriesShape : if z0 == 0 goto return
+org.jfree.chart.renderer.AbstractRenderer.setSeriesShape : $r2 = r0.<org.jfree.chart.renderer.AbstractRenderer: org.jfree.util.ShapeList shapeList>
+org.jfree.chart.renderer.DefaultPolarItemRenderer.getPlot : $r1 = r0.<org.jfree.chart.renderer.DefaultPolarItemRenderer: org.jfree.chart.plot.PolarPlot plot>

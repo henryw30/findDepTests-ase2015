@@ -1,0 +1,42 @@
+org.jfree.data.DefaultKeyedValues2D.getColumnCount : $r1 = r0.<org.jfree.data.DefaultKeyedValues2D: java.util.List columnKeys>
+org.jfree.chart.entity.LegendItemEntity.setDataset : r0.<org.jfree.chart.entity.LegendItemEntity: org.jfree.data.general.Dataset dataset> = r1
+org.jfree.data.category.DefaultCategoryDataset.getColumnKeys : $r1 = r0.<org.jfree.data.category.DefaultCategoryDataset: org.jfree.data.DefaultKeyedValues2D data>
+org.jfree.data.category.DefaultCategoryDataset.getRowCount : $r1 = r0.<org.jfree.data.category.DefaultCategoryDataset: org.jfree.data.DefaultKeyedValues2D data>
+org.jfree.data.DefaultKeyedValues2D.getRowCount : $r1 = r0.<org.jfree.data.DefaultKeyedValues2D: java.util.List rowKeys>
+org.jfree.data.DefaultKeyedValues2D.getColumnKeys : $r1 = r0.<org.jfree.data.DefaultKeyedValues2D: java.util.List columnKeys>
+org.jfree.data.category.DefaultCategoryDataset.getColumnCount : $r1 = r0.<org.jfree.data.category.DefaultCategoryDataset: org.jfree.data.DefaultKeyedValues2D data>
+org.jfree.chart.entity.LegendItemEntity.setSeriesIndex : r0.<org.jfree.chart.entity.LegendItemEntity: int seriesIndex> = i0
+org.jfree.chart.entity.LegendItemEntity.equals : $r3 = r0.<org.jfree.chart.entity.LegendItemEntity: java.lang.Comparable seriesKey>
+org.jfree.chart.entity.LegendItemEntity.equals : $r5 = r0.<org.jfree.chart.entity.LegendItemEntity: org.jfree.data.general.Dataset dataset>
+org.jfree.chart.entity.LegendItemEntity.equals : $z3 = specialinvoke r0.<org.jfree.chart.entity.ChartEntity: boolean equals(java.lang.Object)>(r1)
+org.jfree.chart.entity.LegendItemEntity.equals : $i0 = r0.<org.jfree.chart.entity.LegendItemEntity: int seriesIndex>
+org.jfree.chart.entity.LegendItemEntity.equals : return 0
+org.jfree.chart.entity.LegendItemEntity.equals : $z0 = r1 instanceof org.jfree.chart.entity.LegendItemEntity
+org.jfree.chart.entity.LegendItemEntity.equals : if r1 != r0 goto $z0 = r1 instanceof org.jfree.chart.entity.LegendItemEntity
+org.jfree.chart.entity.LegendItemEntity.equals : r2 = (org.jfree.chart.entity.LegendItemEntity) r1
+org.jfree.chart.entity.LegendItemEntity.setSeriesKey : r0.<org.jfree.chart.entity.LegendItemEntity: java.lang.Comparable seriesKey> = r1
+org.jfree.data.DefaultKeyedValues2D.getRowKeys : $r1 = r0.<org.jfree.data.DefaultKeyedValues2D: java.util.List rowKeys>
+org.jfree.chart.entity.ChartEntity.setArea : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "area")
+org.jfree.chart.entity.ChartEntity.setArea : r0.<org.jfree.chart.entity.ChartEntity: java.awt.Shape area> = r1
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null goto return
+org.jfree.data.category.DefaultCategoryDataset.getRowKeys : $r1 = r0.<org.jfree.data.category.DefaultCategoryDataset: org.jfree.data.DefaultKeyedValues2D data>
+org.jfree.chart.entity.ChartEntity.equals : $r7 = r0.<org.jfree.chart.entity.ChartEntity: java.lang.String urlText>
+org.jfree.chart.entity.ChartEntity.equals : return 1
+org.jfree.chart.entity.ChartEntity.equals : return 0
+org.jfree.chart.entity.ChartEntity.equals : $r3 = r0.<org.jfree.chart.entity.ChartEntity: java.awt.Shape area>
+org.jfree.chart.entity.ChartEntity.equals : r2 = (org.jfree.chart.entity.ChartEntity) r1
+org.jfree.chart.entity.ChartEntity.equals : $z0 = r1 instanceof org.jfree.chart.entity.ChartEntity
+org.jfree.chart.entity.ChartEntity.equals : if r1 != r0 goto $z0 = r1 instanceof org.jfree.chart.entity.ChartEntity
+org.jfree.chart.entity.ChartEntity.equals : $r5 = r0.<org.jfree.chart.entity.ChartEntity: java.lang.String toolTipText>
+org.jfree.chart.entity.ChartEntity.setToolTipText : r0.<org.jfree.chart.entity.ChartEntity: java.lang.String toolTipText> = r1
+org.jfree.chart.entity.ChartEntity.setURLText : r0.<org.jfree.chart.entity.ChartEntity: java.lang.String urlText> = r1
+org.jfree.data.category.DefaultCategoryDataset.equals : i0 = virtualinvoke r0.<org.jfree.data.category.DefaultCategoryDataset: int getRowCount()>()
+org.jfree.data.category.DefaultCategoryDataset.equals : $z0 = r1 instanceof org.jfree.data.category.CategoryDataset
+org.jfree.data.category.DefaultCategoryDataset.equals : i1 = virtualinvoke r0.<org.jfree.data.category.DefaultCategoryDataset: int getColumnCount()>()
+org.jfree.data.category.DefaultCategoryDataset.equals : i2 = 0
+org.jfree.data.category.DefaultCategoryDataset.equals : r2 = (org.jfree.data.category.CategoryDataset) r1
+org.jfree.data.category.DefaultCategoryDataset.equals : return 1
+org.jfree.data.category.DefaultCategoryDataset.equals : $r7 = virtualinvoke r0.<org.jfree.data.category.DefaultCategoryDataset: java.util.List getColumnKeys()>()
+org.jfree.data.category.DefaultCategoryDataset.equals : return 0
+org.jfree.data.category.DefaultCategoryDataset.equals : if r1 != r0 goto $z0 = r1 instanceof org.jfree.data.category.CategoryDataset
+org.jfree.data.category.DefaultCategoryDataset.equals : $r5 = virtualinvoke r0.<org.jfree.data.category.DefaultCategoryDataset: java.util.List getRowKeys()>()

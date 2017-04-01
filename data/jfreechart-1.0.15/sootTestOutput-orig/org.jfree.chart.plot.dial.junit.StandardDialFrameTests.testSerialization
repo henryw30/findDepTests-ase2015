@@ -1,0 +1,20 @@
+org.jfree.chart.plot.dial.AbstractDialLayer.equals : $z1 = r0.<org.jfree.chart.plot.dial.AbstractDialLayer: boolean visible>
+org.jfree.chart.plot.dial.AbstractDialLayer.equals : if r1 != r0 goto $z0 = r1 instanceof org.jfree.chart.plot.dial.AbstractDialLayer
+org.jfree.chart.plot.dial.AbstractDialLayer.equals : $z0 = r1 instanceof org.jfree.chart.plot.dial.AbstractDialLayer
+org.jfree.chart.plot.dial.AbstractDialLayer.equals : r2 = (org.jfree.chart.plot.dial.AbstractDialLayer) r1
+org.jfree.chart.plot.dial.StandardDialFrame.writeObject : $r3 = r0.<org.jfree.chart.plot.dial.StandardDialFrame: java.awt.Paint foregroundPaint>
+org.jfree.chart.plot.dial.StandardDialFrame.writeObject : $r2 = r0.<org.jfree.chart.plot.dial.StandardDialFrame: java.awt.Paint backgroundPaint>
+org.jfree.chart.plot.dial.StandardDialFrame.writeObject : $r4 = r0.<org.jfree.chart.plot.dial.StandardDialFrame: java.awt.Stroke stroke>
+org.jfree.chart.plot.dial.StandardDialFrame.writeObject : virtualinvoke r1.<java.io.ObjectOutputStream: void defaultWriteObject()>()
+org.jfree.chart.plot.dial.StandardDialFrame.equals : $d0 = r0.<org.jfree.chart.plot.dial.StandardDialFrame: double radius>
+org.jfree.chart.plot.dial.StandardDialFrame.equals : r2 = (org.jfree.chart.plot.dial.StandardDialFrame) r1
+org.jfree.chart.plot.dial.StandardDialFrame.equals : if r1 != r0 goto $z0 = r1 instanceof org.jfree.chart.plot.dial.StandardDialFrame
+org.jfree.chart.plot.dial.StandardDialFrame.equals : $z4 = specialinvoke r0.<org.jfree.chart.plot.dial.AbstractDialLayer: boolean equals(java.lang.Object)>(r1)
+org.jfree.chart.plot.dial.StandardDialFrame.equals : $z0 = r1 instanceof org.jfree.chart.plot.dial.StandardDialFrame
+org.jfree.chart.plot.dial.StandardDialFrame.equals : $r5 = r0.<org.jfree.chart.plot.dial.StandardDialFrame: java.awt.Paint foregroundPaint>
+org.jfree.chart.plot.dial.StandardDialFrame.equals : $r3 = r0.<org.jfree.chart.plot.dial.StandardDialFrame: java.awt.Paint backgroundPaint>
+org.jfree.chart.plot.dial.StandardDialFrame.equals : $r7 = r0.<org.jfree.chart.plot.dial.StandardDialFrame: java.awt.Stroke stroke>
+org.jfree.chart.plot.dial.StandardDialFrame.readObject : $r2 = staticinvoke <org.jfree.io.SerialUtilities: java.awt.Paint readPaint(java.io.ObjectInputStream)>(r1)
+org.jfree.chart.plot.dial.StandardDialFrame.readObject : $r4 = staticinvoke <org.jfree.io.SerialUtilities: java.awt.Stroke readStroke(java.io.ObjectInputStream)>(r1)
+org.jfree.chart.plot.dial.StandardDialFrame.readObject : virtualinvoke r1.<java.io.ObjectInputStream: void defaultReadObject()>()
+org.jfree.chart.plot.dial.StandardDialFrame.readObject : $r3 = staticinvoke <org.jfree.io.SerialUtilities: java.awt.Paint readPaint(java.io.ObjectInputStream)>(r1)

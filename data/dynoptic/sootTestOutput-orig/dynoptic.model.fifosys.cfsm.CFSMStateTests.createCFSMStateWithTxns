@@ -1,0 +1,27 @@
+dynoptic.model.fifosys.cfsm.fsm.FSMState.addTransitionNoChecks : r3 = staticinvoke <dynoptic.util.Util: java.util.Set newSet()>()
+dynoptic.model.fifosys.cfsm.fsm.FSMState.addTransitionNoChecks : interfaceinvoke r3.<java.util.Set: boolean add(java.lang.Object)>(r2)
+dynoptic.model.fifosys.cfsm.fsm.FSMState.addTransitionNoChecks : $r4 = r0.<dynoptic.model.fifosys.cfsm.fsm.FSMState: java.util.Map transitions>
+dynoptic.model.fifosys.cfsm.fsm.FSMState.addTransitionNoChecks : $r6 = r0.<dynoptic.model.fifosys.cfsm.fsm.FSMState: java.util.Map transitions>
+dynoptic.model.fifosys.cfsm.CFSMStateTests.setUp : $r1 = new dynoptic.model.fifosys.cfsm.fsm.FSMState
+dynoptic.model.fifosys.cfsm.CFSMStateTests.setUp : $r3 = new dynoptic.model.fifosys.cfsm.fsm.FSMState
+dynoptic.model.fifosys.cfsm.CFSMStateTests.setUp : $r4 = staticinvoke <synoptic.model.event.DistEventType: synoptic.model.event.DistEventType LocalEvent(java.lang.String,int)>("e", 0)
+dynoptic.model.fifosys.cfsm.CFSMStateTests.setUp : $r2 = new dynoptic.model.fifosys.cfsm.fsm.FSMState
+dynoptic.util.Util.newSet : $r0 = new java.util.LinkedHashSet
+dynoptic.model.fifosys.cfsm.fsm.FSMState.hashCode : $i4 = i3 * 31
+dynoptic.model.fifosys.cfsm.fsm.FSMState.hashCode : $i7 = i6 * 31
+dynoptic.model.fifosys.cfsm.fsm.FSMState.hashCode : $i10 = i9 * 31
+dynoptic.model.fifosys.cfsm.fsm.FSMState.hashCode : b0 = 31
+dynoptic.model.fifosys.cfsm.fsm.FSMState.hashCode : return 1
+dynoptic.model.fifosys.cfsm.fsm.FSMState.hashCode : $i1 = b0 * 31
+dynoptic.model.fifosys.cfsm.CFSMState.getTransitioningEvents : r1 = staticinvoke <dynoptic.util.Util: java.util.Set newSet()>()
+dynoptic.model.fifosys.cfsm.CFSMState.getTransitioningEvents : goto [?= $z0 = interfaceinvoke r2.<java.util.Iterator: boolean hasNext()>()]
+dynoptic.model.fifosys.cfsm.CFSMState.getTransitioningEvents : $r6 = virtualinvoke r3.<dynoptic.model.fifosys.cfsm.fsm.FSMState: java.util.Set getTransitioningEvents()>()
+dynoptic.model.fifosys.cfsm.CFSMState.getTransitioningEvents : $r4 = r0.<dynoptic.model.fifosys.cfsm.CFSMState: java.util.List fsmStates>
+dynoptic.model.fifosys.cfsm.CFSMState.getTransitioningEvents : return r1
+dynoptic.model.fifosys.cfsm.fsm.FSMState.addTransition : specialinvoke r0.<dynoptic.model.fifosys.cfsm.fsm.FSMState: void addTransitionNoChecks(synoptic.model.event.DistEventType,dynoptic.model.fifosys.cfsm.fsm.FSMState)>(r1, r2)
+dynoptic.model.fifosys.cfsm.fsm.FSMState.addTransition : $z1 = <dynoptic.model.fifosys.cfsm.fsm.FSMState: boolean $assertionsDisabled>
+dynoptic.model.fifosys.cfsm.fsm.FSMState.addTransition : $z0 = <dynoptic.model.fifosys.cfsm.fsm.FSMState: boolean $assertionsDisabled>
+dynoptic.model.fifosys.cfsm.fsm.FSMState.addTransition : $z2 = <dynoptic.model.fifosys.cfsm.fsm.FSMState: boolean $assertionsDisabled>
+dynoptic.util.Util.newList : $r0 = new java.util.ArrayList
+dynoptic.util.Util.newMap : $r0 = new java.util.LinkedHashMap
+dynoptic.model.fifosys.cfsm.fsm.FSMState.getTransitioningEvents : $r1 = r0.<dynoptic.model.fifosys.cfsm.fsm.FSMState: java.util.Map transitions>

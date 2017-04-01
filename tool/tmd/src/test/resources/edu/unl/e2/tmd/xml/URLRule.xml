@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<test-data>
+    <test-code>
+        <description><![CDATA[
+simple failure case 1
+     ]]></description>
+        <expected-problems>1</expected-problems>
+        <code><![CDATA[
+        
+        import java.net.URL;
+        
+        class BadTest{
+        
+        	@Test public void test(){
+				URL cssUrl = new URL(baseUrl, "/static/test.css");
+    			URLConnection conn = cssUrl.openConnection();     
+    			
+    			doSomething();   	
+        	}
+        }
+             ]]></code>
+    </test-code>
+    
+        <test-code>
+        <description><![CDATA[
+simple failure case 2
+     ]]></description>
+        <expected-problems>1</expected-problems>
+        <code><![CDATA[
+        
+        import java.net.URL;
+        
+        class BadTest{
+        
+        	@Test public void test(){
+				URL cssUrl = new URL(baseUrl, "/static/test.css");
+    			URLConnection conn = cssUrl.openConnection();     
+    			
+    			doSomething(conn);   	
+        	}
+        }
+             ]]></code>
+    </test-code>
+    
+            <test-code>
+        <description><![CDATA[
+simple failure case 3
+     ]]></description>
+        <expected-problems>1</expected-problems>
+        <code><![CDATA[
+        
+        import java.net.URL;
+        
+        class BadTest{
+        
+        	@Test public void test(){
+				URL cssUrl = new URL(baseUrl, "/static/test.css");
+    			URLConnection conn = cssUrl.openConnection();     
+    			
+    			if(true){
+    				doSomething(conn);
+    			}   	
+        	}
+        }
+             ]]></code>
+    </test-code>
+                 <test-code>
+        <description><![CDATA[
+simple failure case 4
+     ]]></description>
+        <expected-problems>1</expected-problems>
+        <code><![CDATA[
+        
+        import java.net.URL;
+        
+        class BadTest{
+        
+        	@Test public void test(){
+				URL cssUrl = new URL(baseUrl, "/static/test.css");
+    			URLConnection conn = cssUrl.openConnection();     
+    			
+    			
+    			doSomething(conn);
+    			
+    			
+    			URL cssUrl2 = new URL(baseUrl, "/static/test2.css");
+    			conn = cssUrl2.openConnection(); 
+    			
+    			if(conn!=null){
+    				doSomething(conn);
+    			} 
+    		
+        	}
+        }
+             ]]></code>
+    </test-code>
+    
+                     <test-code>
+        <description><![CDATA[
+simple failure case 5
+     ]]></description>
+        <expected-problems>1</expected-problems>
+        <code><![CDATA[
+        
+        import java.net.URL;
+        
+        class BadTest{
+        
+        	@Test public void test(){
+				URL cssUrl = new URL(baseUrl, "/static/test.css");
+    			URLConnection conn = cssUrl.openConnection();     
+    			
+    			
+    			if(conn!=null){
+    				doSomething(conn);
+    			}
+    			
+    			
+    			URL cssUrl2 = new URL(baseUrl, "/static/test2.css");
+    			conn = cssUrl2.openConnection(); 
+    			
+   				doSomething(conn);
+    		
+        	}
+        }
+             ]]></code>
+    </test-code>
+  
+  
+                       <test-code>
+        <description><![CDATA[
+simple failure case 6
+     ]]></description>
+        <expected-problems>1</expected-problems>
+        <code><![CDATA[
+        
+        import java.net.URL;
+        
+        class BadTest{
+        
+        	@Test public void test(){
+				URL cssUrl = new URL(baseUrl, "/static/test.css");
+    			URLConnection conn = cssUrl.openConnection();     
+    			
+    			
+    			if(conn!=null){
+    				doSomething(conn);
+    			}
+    			
+    			
+    			URL cssUrl2 = new URL(baseUrl, "/static/test2.css");
+    			conn = cssUrl2.openConnection(); 
+    			
+   				doSomething(conn);
+   				
+   				URL cssUrl3 = new URL(baseUrl, "/static/test3.css");
+    			conn = cssUrl3.openConnection(); 
+    			
+    			if(conn!=null){
+    				doSomething(conn);
+    			}
+    		
+    		
+        	}
+        }
+             ]]></code>
+    </test-code>
+    
+ 
+                        <test-code>
+        <description><![CDATA[
+simple failure case 7
+     ]]></description>
+        <expected-problems>1</expected-problems>
+        <code><![CDATA[
+        
+        import java.net.URL;
+        
+        class BadTest{
+        
+        	URLConnection conn;
+        
+        	@Test public void test(){
+    			URL cssUrl2 = new URL(baseUrl, "/static/test2.css");
+    			conn = cssUrl2.openConnection(); 
+    			
+   				doSomething(conn);
+   				
+        	}
+        	
+        	@Test public void test(){
+
+   				URL cssUrl3 = new URL(baseUrl, "/static/test3.css");
+    			//conn = cssUrl3.openConnection(); 
+    			
+    			if(conn!=null){
+    				doSomething(conn);
+    			}
+    		
+        	}
+        	
+        	
+        }
+             ]]></code>
+    </test-code>
+ 
+    
+            <test-code>
+        <description><![CDATA[
+simple ok case 1
+     ]]></description>
+        <expected-problems>0</expected-problems>
+        <code><![CDATA[
+        
+        import java.net.URL;
+        
+        class BadTest{
+        
+        	@Test public void test(){
+				URL cssUrl = new URL(baseUrl, "/static/test.css");
+    			URLConnection conn = cssUrl.openConnection();     
+    			
+    			assertNotNull(conn);
+    			
+    			doSomething(conn);   	
+        	}
+        }
+             ]]></code>
+    </test-code>
+    
+        
+            <test-code>
+        <description><![CDATA[
+simple ok case 2
+     ]]></description>
+        <expected-problems>0</expected-problems>
+        <code><![CDATA[
+        
+        import java.net.URL;
+        
+        class BadTest{
+        
+        	@Test public void test(){
+				URL cssUrl = new URL(baseUrl, "/static/test.css");
+    			URLConnection conn = cssUrl.openConnection();     
+    			
+    			if(conn!=null){
+    				doSomething(conn);
+    			}   	
+        	}
+        }
+             ]]></code>
+    </test-code>
+ 
+
+ 
+ 
+</test-data>

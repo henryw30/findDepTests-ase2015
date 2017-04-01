@@ -1,0 +1,14 @@
+org.jfree.chart.block.LineBorder.equals : $z0 = r1 instanceof org.jfree.chart.block.LineBorder
+org.jfree.chart.block.LineBorder.equals : r2 = (org.jfree.chart.block.LineBorder) r1
+org.jfree.chart.block.LineBorder.equals : $r5 = r0.<org.jfree.chart.block.LineBorder: java.awt.Stroke stroke>
+org.jfree.chart.block.LineBorder.equals : return 1
+org.jfree.chart.block.LineBorder.equals : if r1 != r0 goto $z0 = r1 instanceof org.jfree.chart.block.LineBorder
+org.jfree.chart.block.LineBorder.equals : $r7 = r0.<org.jfree.chart.block.LineBorder: org.jfree.ui.RectangleInsets insets>
+org.jfree.chart.block.LineBorder.equals : $r3 = r0.<org.jfree.chart.block.LineBorder: java.awt.Paint paint>
+org.jfree.chart.block.LineBorder.writeObject : $r3 = r0.<org.jfree.chart.block.LineBorder: java.awt.Stroke stroke>
+org.jfree.chart.block.LineBorder.writeObject : $r2 = r0.<org.jfree.chart.block.LineBorder: java.awt.Paint paint>
+org.jfree.chart.block.LineBorder.writeObject : virtualinvoke r1.<java.io.ObjectOutputStream: void defaultWriteObject()>()
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null goto return
+org.jfree.chart.block.LineBorder.readObject : $r2 = staticinvoke <org.jfree.io.SerialUtilities: java.awt.Paint readPaint(java.io.ObjectInputStream)>(r1)
+org.jfree.chart.block.LineBorder.readObject : virtualinvoke r1.<java.io.ObjectInputStream: void defaultReadObject()>()
+org.jfree.chart.block.LineBorder.readObject : $r3 = staticinvoke <org.jfree.io.SerialUtilities: java.awt.Stroke readStroke(java.io.ObjectInputStream)>(r1)

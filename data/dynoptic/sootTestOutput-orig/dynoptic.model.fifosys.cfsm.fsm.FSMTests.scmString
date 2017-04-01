@@ -1,0 +1,69 @@
+dynoptic.model.alphabet.FSMAlphabet.clear : $r1 = r0.<dynoptic.model.alphabet.FSMAlphabet: java.util.Set events>
+dynoptic.model.fifosys.cfsm.fsm.FSMState.addTransitionNoChecks : r3 = staticinvoke <dynoptic.util.Util: java.util.Set newSet()>()
+dynoptic.model.fifosys.cfsm.fsm.FSMState.addTransitionNoChecks : interfaceinvoke r3.<java.util.Set: boolean add(java.lang.Object)>(r2)
+dynoptic.model.fifosys.cfsm.fsm.FSMState.addTransitionNoChecks : $r4 = r0.<dynoptic.model.fifosys.cfsm.fsm.FSMState: java.util.Map transitions>
+dynoptic.model.fifosys.cfsm.fsm.FSMState.addTransitionNoChecks : $r6 = r0.<dynoptic.model.fifosys.cfsm.fsm.FSMState: java.util.Map transitions>
+dynoptic.model.fifosys.cfsm.fsm.FSMState.toScmString : $r21 = r0.<dynoptic.model.fifosys.cfsm.fsm.FSMState: java.util.Map transitions>
+dynoptic.model.fifosys.cfsm.fsm.FSMState.toScmString : return r3
+dynoptic.model.fifosys.cfsm.fsm.FSMState.toScmString : $r26 = new java.lang.StringBuilder
+dynoptic.model.fifosys.cfsm.fsm.FSMState.toScmString : virtualinvoke r1.<dynoptic.model.fifosys.channel.channelid.LocalEventsChannelId: void addLocalEventString(synoptic.model.event.DistEventType,java.lang.String)>(r5, r7)
+dynoptic.model.fifosys.cfsm.fsm.FSMState.toScmString : goto [?= $z0 = interfaceinvoke r4.<java.util.Iterator: boolean hasNext()>()]
+dynoptic.model.fifosys.cfsm.fsm.FSMState.toScmString : r7 = virtualinvoke r5.<synoptic.model.event.DistEventType: java.lang.String getScmEventFullString()>()
+dynoptic.model.fifosys.cfsm.fsm.FSMState.toScmString : r6 = virtualinvoke r5.<synoptic.model.event.DistEventType: java.lang.String toString(java.lang.String,char)>($r16, 32)
+dynoptic.model.fifosys.cfsm.fsm.FSMState.toScmString : $r17 = new java.lang.StringBuilder
+dynoptic.model.fifosys.cfsm.fsm.FSMState.toScmString : $r15 = virtualinvoke r5.<synoptic.model.event.DistEventType: synoptic.model.channelid.ChannelId getChannelId()>()
+dynoptic.model.fifosys.cfsm.fsm.FSMState.toScmString : $z1 = virtualinvoke r5.<synoptic.model.event.DistEventType: boolean isCommEvent()>()
+dynoptic.model.fifosys.cfsm.fsm.FSMState.toScmString : goto [?= $z2 = interfaceinvoke r24.<java.util.Iterator: boolean hasNext()>()]
+dynoptic.model.fifosys.cfsm.fsm.FSMState.toScmString : $r12 = r0.<dynoptic.model.fifosys.cfsm.fsm.FSMState: java.util.Map transitions>
+dynoptic.model.fifosys.cfsm.fsm.FSMState.toScmString : $r2 = new java.lang.StringBuilder
+dynoptic.model.fifosys.cfsm.fsm.FSM.toScmString : $r29 = new java.lang.StringBuilder
+dynoptic.model.fifosys.cfsm.fsm.FSM.toScmString : $r20 = r0.<dynoptic.model.fifosys.cfsm.fsm.FSM: java.util.Set states>
+dynoptic.model.fifosys.cfsm.fsm.FSM.toScmString : $r16 = new java.lang.StringBuilder
+dynoptic.model.fifosys.cfsm.fsm.FSM.toScmString : if r2 != null goto $r12 = new java.lang.StringBuilder
+dynoptic.model.fifosys.cfsm.fsm.FSM.toScmString : $r7 = r0.<dynoptic.model.fifosys.cfsm.fsm.FSM: java.util.Set initStates>
+dynoptic.model.fifosys.cfsm.fsm.FSM.toScmString : $r24 = new java.lang.StringBuilder
+dynoptic.model.fifosys.cfsm.fsm.FSM.toScmString : goto [?= $z2 = interfaceinvoke r3.<java.util.Iterator: boolean hasNext()>()]
+dynoptic.model.fifosys.cfsm.fsm.FSM.toScmString : goto [?= $z3 = interfaceinvoke r21.<java.util.Iterator: boolean hasNext()>()]
+dynoptic.model.fifosys.cfsm.fsm.FSM.toScmString : return r19
+dynoptic.model.fifosys.cfsm.fsm.FSM.toScmString : $r9 = new java.lang.StringBuilder
+dynoptic.model.fifosys.cfsm.fsm.FSM.toScmString : r2 = null
+dynoptic.model.fifosys.cfsm.fsm.FSM.toScmString : $z0 = <dynoptic.model.fifosys.cfsm.fsm.FSM: boolean $assertionsDisabled>
+dynoptic.model.fifosys.cfsm.fsm.FSMState.hashCode : $i4 = i3 * 31
+dynoptic.model.fifosys.cfsm.fsm.FSMState.hashCode : $i7 = i6 * 31
+dynoptic.model.fifosys.cfsm.fsm.FSMState.hashCode : $i10 = i9 * 31
+dynoptic.model.fifosys.cfsm.fsm.FSMState.hashCode : b0 = 31
+dynoptic.model.fifosys.cfsm.fsm.FSMState.hashCode : return 1
+dynoptic.model.fifosys.cfsm.fsm.FSMState.hashCode : $i1 = b0 * 31
+dynoptic.model.fifosys.cfsm.fsm.FSMTests.setUp : $r13 = staticinvoke <synoptic.model.event.DistEventType: synoptic.model.event.DistEventType LocalEvent(java.lang.String,int)>("e", 1)
+dynoptic.model.fifosys.cfsm.fsm.FSMTests.setUp : $r3 = r0.<dynoptic.model.fifosys.cfsm.fsm.FSMTests: java.util.Set listInit_1>
+dynoptic.model.fifosys.cfsm.fsm.FSMTests.setUp : $r1 = new dynoptic.model.fifosys.cfsm.fsm.FSMState
+dynoptic.model.fifosys.cfsm.fsm.FSMTests.setUp : $r7 = r0.<dynoptic.model.fifosys.cfsm.fsm.FSMTests: java.util.Set listAccepting_1>
+dynoptic.model.fifosys.cfsm.fsm.FSMTests.setUp : $r6 = staticinvoke <dynoptic.util.Util: java.util.Set newSet()>()
+dynoptic.model.fifosys.cfsm.fsm.FSMTests.setUp : $r11 = r0.<dynoptic.model.fifosys.cfsm.fsm.FSMTests: synoptic.model.channelid.ChannelId cid>
+dynoptic.model.fifosys.cfsm.fsm.FSMTests.setUp : $r5 = new dynoptic.model.fifosys.cfsm.fsm.FSMState
+dynoptic.model.fifosys.cfsm.fsm.FSMTests.setUp : $r14 = staticinvoke <dynoptic.util.Util: java.util.Set newSet()>()
+dynoptic.model.fifosys.cfsm.fsm.FSMTests.setUp : $r2 = staticinvoke <dynoptic.util.Util: java.util.Set newSet()>()
+dynoptic.model.fifosys.cfsm.fsm.FSMTests.setUp : $r9 = new dynoptic.model.fifosys.cfsm.fsm.FSMState
+dynoptic.model.fifosys.cfsm.fsm.FSMTests.setUp : $r10 = new synoptic.model.channelid.ChannelId
+dynoptic.model.fifosys.channel.channelid.LocalEventsChannelId.addLocalEventString : $r9 = r0.<dynoptic.model.fifosys.channel.channelid.LocalEventsChannelId: java.util.Map eventStrToDistEventType>
+dynoptic.model.fifosys.channel.channelid.LocalEventsChannelId.addLocalEventString : $r4 = r0.<dynoptic.model.fifosys.channel.channelid.LocalEventsChannelId: java.util.Map eventStrToDistEventType>
+dynoptic.model.fifosys.channel.channelid.LocalEventsChannelId.addLocalEventString : $z0 = <dynoptic.model.fifosys.channel.channelid.LocalEventsChannelId: boolean $assertionsDisabled>
+dynoptic.model.fifosys.cfsm.fsm.FSMState.equals : r2 = (dynoptic.model.fifosys.cfsm.fsm.FSMState) r1
+dynoptic.model.fifosys.cfsm.fsm.FSMState.equals : $z0 = r1 instanceof dynoptic.model.fifosys.cfsm.fsm.FSMState
+dynoptic.model.fifosys.cfsm.fsm.FSMState.equals : if r1 != r0 goto $z0 = r1 instanceof dynoptic.model.fifosys.cfsm.fsm.FSMState
+dynoptic.model.fifosys.cfsm.fsm.FSMState.equals : return 0
+dynoptic.model.fifosys.cfsm.fsm.FSMState.equals : $z1 = r2.<dynoptic.model.fifosys.cfsm.fsm.FSMState: boolean isAccept>
+dynoptic.model.AbsFSM.recomputeAlphabet : r3 = virtualinvoke r2.<dynoptic.model.AbsFSMState: java.util.Set getTransitioningEvents()>()
+dynoptic.model.AbsFSM.recomputeAlphabet : goto [?= $z0 = interfaceinvoke r1.<java.util.Iterator: boolean hasNext()>()]
+dynoptic.model.AbsFSM.recomputeAlphabet : $r5 = r0.<dynoptic.model.AbsFSM: java.util.Set states>
+dynoptic.model.AbsFSM.recomputeAlphabet : $r7 = r0.<dynoptic.model.AbsFSM: dynoptic.model.alphabet.FSMAlphabet alphabet>
+dynoptic.model.AbsFSM.recomputeAlphabet : $r4 = r0.<dynoptic.model.AbsFSM: dynoptic.model.alphabet.FSMAlphabet alphabet>
+dynoptic.model.fifosys.cfsm.fsm.FSMState.getScmId : $i0 = r0.<dynoptic.model.fifosys.cfsm.fsm.FSMState: int scmId>
+dynoptic.model.alphabet.FSMAlphabet.addAll : $r2 = r0.<dynoptic.model.alphabet.FSMAlphabet: java.util.Set events>
+dynoptic.util.Util.newSet : $r0 = new java.util.LinkedHashSet
+dynoptic.model.fifosys.cfsm.fsm.FSMState.addTransition : specialinvoke r0.<dynoptic.model.fifosys.cfsm.fsm.FSMState: void addTransitionNoChecks(synoptic.model.event.DistEventType,dynoptic.model.fifosys.cfsm.fsm.FSMState)>(r1, r2)
+dynoptic.model.fifosys.cfsm.fsm.FSMState.addTransition : $z1 = <dynoptic.model.fifosys.cfsm.fsm.FSMState: boolean $assertionsDisabled>
+dynoptic.model.fifosys.cfsm.fsm.FSMState.addTransition : $z0 = <dynoptic.model.fifosys.cfsm.fsm.FSMState: boolean $assertionsDisabled>
+dynoptic.model.fifosys.cfsm.fsm.FSMState.addTransition : $z2 = <dynoptic.model.fifosys.cfsm.fsm.FSMState: boolean $assertionsDisabled>
+dynoptic.util.Util.newMap : $r0 = new java.util.LinkedHashMap
+dynoptic.model.fifosys.cfsm.fsm.FSMState.getTransitioningEvents : $r1 = r0.<dynoptic.model.fifosys.cfsm.fsm.FSMState: java.util.Map transitions>

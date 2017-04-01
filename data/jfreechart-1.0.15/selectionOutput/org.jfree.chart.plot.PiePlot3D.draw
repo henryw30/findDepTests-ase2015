@@ -1,0 +1,518 @@
+org.jfree.chart.plot.PiePlot3D.draw : r6 = virtualinvoke r0.<org.jfree.chart.plot.PiePlot3D: org.jfree.ui.RectangleInsets getInsets()>() >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : virtualinvoke r6.<org.jfree.ui.RectangleInsets: void trim(java.awt.geom.Rectangle2D)>(r2)
+org.jfree.chart.plot.PiePlot3D.draw : virtualinvoke r6.<org.jfree.ui.RectangleInsets: void trim(java.awt.geom.Rectangle2D)>(r2) >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $r41 = virtualinvoke r2.<java.awt.geom.Rectangle2D: java.lang.Object clone()>()
+org.jfree.chart.plot.PiePlot3D.draw : $r41 = virtualinvoke r2.<java.awt.geom.Rectangle2D: java.lang.Object clone()>() >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : r7 = (java.awt.geom.Rectangle2D) $r41
+org.jfree.chart.plot.PiePlot3D.draw : r7 = (java.awt.geom.Rectangle2D) $r41 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : if r5 == null
+org.jfree.chart.plot.PiePlot3D.draw : if r5 == null >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : virtualinvoke r5.<org.jfree.chart.plot.PlotRenderingInfo: void setPlotArea(java.awt.geom.Rectangle2D)>(r2)
+org.jfree.chart.plot.PiePlot3D.draw : if r5 == null >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : virtualinvoke r0.<org.jfree.chart.plot.PiePlot3D: void drawBackground(java.awt.Graphics2D,java.awt.geom.Rectangle2D)>(r1, r2)
+org.jfree.chart.plot.PiePlot3D.draw : virtualinvoke r0.<org.jfree.chart.plot.PiePlot3D: void drawBackground(java.awt.Graphics2D,java.awt.geom.Rectangle2D)>(r1, r2) >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : r8 = virtualinvoke r1.<java.awt.Graphics2D: java.awt.Shape getClip()>()
+org.jfree.chart.plot.PiePlot3D.draw : r8 = virtualinvoke r1.<java.awt.Graphics2D: java.awt.Shape getClip()>() >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : virtualinvoke r1.<java.awt.Graphics2D: void clip(java.awt.Shape)>(r2)
+org.jfree.chart.plot.PiePlot3D.draw : virtualinvoke r1.<java.awt.Graphics2D: void clip(java.awt.Shape)>(r2) >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : r9 = r1
+org.jfree.chart.plot.PiePlot3D.draw : r9 = r1 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : r10 = null
+org.jfree.chart.plot.PiePlot3D.draw : r10 = null >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $r42 = virtualinvoke r0.<org.jfree.chart.plot.PiePlot3D: org.jfree.chart.util.ShadowGenerator getShadowGenerator()>()
+org.jfree.chart.plot.PiePlot3D.draw : $r42 = virtualinvoke r0.<org.jfree.chart.plot.PiePlot3D: org.jfree.chart.util.ShadowGenerator getShadowGenerator()>() >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : if $r42 == null
+org.jfree.chart.plot.PiePlot3D.draw : if $r42 == null >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $r43 = new java.awt.image.BufferedImage
+org.jfree.chart.plot.PiePlot3D.draw : if $r42 == null >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : d0 = virtualinvoke r0.<org.jfree.chart.plot.PiePlot3D: double getInteriorGap()>()
+org.jfree.chart.plot.PiePlot3D.draw : d0 = virtualinvoke r0.<org.jfree.chart.plot.PiePlot3D: double getInteriorGap()>() >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : d1 = 0.0
+org.jfree.chart.plot.PiePlot3D.draw : d1 = 0.0 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $r46 = virtualinvoke r0.<org.jfree.chart.plot.PiePlot3D: org.jfree.chart.labels.PieSectionLabelGenerator getLabelGenerator()>()
+org.jfree.chart.plot.PiePlot3D.draw : $r46 = virtualinvoke r0.<org.jfree.chart.plot.PiePlot3D: org.jfree.chart.labels.PieSectionLabelGenerator getLabelGenerator()>() >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : if $r46 == null
+org.jfree.chart.plot.PiePlot3D.draw : if $r46 == null >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d28 = virtualinvoke r0.<org.jfree.chart.plot.PiePlot3D: double getLabelGap()>()
+org.jfree.chart.plot.PiePlot3D.draw : if $r46 == null >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d30 = virtualinvoke r2.<java.awt.geom.Rectangle2D: double getWidth()>()
+org.jfree.chart.plot.PiePlot3D.draw : $d30 = virtualinvoke r2.<java.awt.geom.Rectangle2D: double getWidth()>() >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d31 = d0 + d1
+org.jfree.chart.plot.PiePlot3D.draw : $d31 = d0 + d1 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d32 = $d30 * $d31
+org.jfree.chart.plot.PiePlot3D.draw : $d32 = $d30 * $d31 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : d2 = $d32 * 2.0
+org.jfree.chart.plot.PiePlot3D.draw : d2 = $d32 * 2.0 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d33 = virtualinvoke r2.<java.awt.geom.Rectangle2D: double getHeight()>()
+org.jfree.chart.plot.PiePlot3D.draw : $d33 = virtualinvoke r2.<java.awt.geom.Rectangle2D: double getHeight()>() >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d34 = $d33 * d0
+org.jfree.chart.plot.PiePlot3D.draw : $d34 = $d33 * d0 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : d3 = $d34 * 2.0
+org.jfree.chart.plot.PiePlot3D.draw : d3 = $d34 * 2.0 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d35 = virtualinvoke r2.<java.awt.geom.Rectangle2D: double getX()>()
+org.jfree.chart.plot.PiePlot3D.draw : $d35 = virtualinvoke r2.<java.awt.geom.Rectangle2D: double getX()>() >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d36 = d2 / 2.0
+org.jfree.chart.plot.PiePlot3D.draw : $d36 = d2 / 2.0 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : d4 = $d35 + $d36
+org.jfree.chart.plot.PiePlot3D.draw : d4 = $d35 + $d36 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d37 = virtualinvoke r2.<java.awt.geom.Rectangle2D: double getY()>()
+org.jfree.chart.plot.PiePlot3D.draw : $d37 = virtualinvoke r2.<java.awt.geom.Rectangle2D: double getY()>() >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d38 = d3 / 2.0
+org.jfree.chart.plot.PiePlot3D.draw : $d38 = d3 / 2.0 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : d5 = $d37 + $d38
+org.jfree.chart.plot.PiePlot3D.draw : d5 = $d37 + $d38 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d39 = virtualinvoke r2.<java.awt.geom.Rectangle2D: double getWidth()>()
+org.jfree.chart.plot.PiePlot3D.draw : $d39 = virtualinvoke r2.<java.awt.geom.Rectangle2D: double getWidth()>() >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : d6 = $d39 - d2
+org.jfree.chart.plot.PiePlot3D.draw : d6 = $d39 - d2 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d40 = virtualinvoke r2.<java.awt.geom.Rectangle2D: double getHeight()>()
+org.jfree.chart.plot.PiePlot3D.draw : $d40 = virtualinvoke r2.<java.awt.geom.Rectangle2D: double getHeight()>() >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : d7 = $d40 - d3
+org.jfree.chart.plot.PiePlot3D.draw : d7 = $d40 - d3 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $z0 = virtualinvoke r0.<org.jfree.chart.plot.PiePlot3D: boolean isCircular()>()
+org.jfree.chart.plot.PiePlot3D.draw : $z0 = virtualinvoke r0.<org.jfree.chart.plot.PiePlot3D: boolean isCircular()>() >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : if $z0 == 0
+org.jfree.chart.plot.PiePlot3D.draw : if $z0 == 0 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d41 = staticinvoke <java.lang.Math: double min(double,double)>(d6, d7)
+org.jfree.chart.plot.PiePlot3D.draw : if $z0 == 0 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : r47 = virtualinvoke r0.<org.jfree.chart.plot.PiePlot3D: org.jfree.chart.plot.PiePlotState initialise(java.awt.Graphics2D,java.awt.geom.Rectangle2D,org.jfree.chart.plot.PiePlot,java.lang.Integer,org.jfree.chart.plot.PlotRenderingInfo)>(r1, r2, r0, null, r5)
+org.jfree.chart.plot.PiePlot3D.draw : r47 = virtualinvoke r0.<org.jfree.chart.plot.PiePlot3D: org.jfree.chart.plot.PiePlotState initialise(java.awt.Graphics2D,java.awt.geom.Rectangle2D,org.jfree.chart.plot.PiePlot,java.lang.Integer,org.jfree.chart.plot.PlotRenderingInfo)>(r1, r2, r0, null, r5) >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $r48 = new java.awt.geom.Rectangle2D$Double
+org.jfree.chart.plot.PiePlot3D.draw : $r48 = new java.awt.geom.Rectangle2D$Double >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d48 = r0.<org.jfree.chart.plot.PiePlot3D: double depthFactor>
+org.jfree.chart.plot.PiePlot3D.draw : $d48 = r0.<org.jfree.chart.plot.PiePlot3D: double depthFactor> >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d49 = 1.0 - $d48
+org.jfree.chart.plot.PiePlot3D.draw : $d49 = 1.0 - $d48 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d50 = d7 * $d49
+org.jfree.chart.plot.PiePlot3D.draw : $d50 = d7 * $d49 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : specialinvoke $r48.<java.awt.geom.Rectangle2D$Double: void <init>(double,double,double,double)>(d4, d5, d6, $d50)
+org.jfree.chart.plot.PiePlot3D.draw : specialinvoke $r48.<java.awt.geom.Rectangle2D$Double: void <init>(double,double,double,double)>(d4, d5, d6, $d50) >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : r11 = $r48
+org.jfree.chart.plot.PiePlot3D.draw : r11 = $r48 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : virtualinvoke r47.<org.jfree.chart.plot.PiePlotState: void setLinkArea(java.awt.geom.Rectangle2D)>(r11)
+org.jfree.chart.plot.PiePlot3D.draw : virtualinvoke r47.<org.jfree.chart.plot.PiePlotState: void setLinkArea(java.awt.geom.Rectangle2D)>(r11) >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d51 = virtualinvoke r0.<org.jfree.chart.plot.PiePlot3D: double getLabelLinkMargin()>()
+org.jfree.chart.plot.PiePlot3D.draw : $d51 = virtualinvoke r0.<org.jfree.chart.plot.PiePlot3D: double getLabelLinkMargin()>() >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : d9 = d6 * $d51
+org.jfree.chart.plot.PiePlot3D.draw : d9 = d6 * $d51 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d52 = virtualinvoke r0.<org.jfree.chart.plot.PiePlot3D: double getLabelLinkMargin()>()
+org.jfree.chart.plot.PiePlot3D.draw : $d52 = virtualinvoke r0.<org.jfree.chart.plot.PiePlot3D: double getLabelLinkMargin()>() >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : d10 = d7 * $d52
+org.jfree.chart.plot.PiePlot3D.draw : d10 = d7 * $d52 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $r49 = new java.awt.geom.Rectangle2D$Double
+org.jfree.chart.plot.PiePlot3D.draw : $r49 = new java.awt.geom.Rectangle2D$Double >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d53 = d9 / 2.0
+org.jfree.chart.plot.PiePlot3D.draw : $d53 = d9 / 2.0 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d54 = d4 + $d53
+org.jfree.chart.plot.PiePlot3D.draw : $d54 = d4 + $d53 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d55 = d10 / 2.0
+org.jfree.chart.plot.PiePlot3D.draw : $d55 = d10 / 2.0 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d56 = d5 + $d55
+org.jfree.chart.plot.PiePlot3D.draw : $d56 = d5 + $d55 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d57 = d6 - d9
+org.jfree.chart.plot.PiePlot3D.draw : $d57 = d6 - d9 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d58 = d7 - d10
+org.jfree.chart.plot.PiePlot3D.draw : $d58 = d7 - d10 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : specialinvoke $r49.<java.awt.geom.Rectangle2D$Double: void <init>(double,double,double,double)>($d54, $d56, $d57, $d58)
+org.jfree.chart.plot.PiePlot3D.draw : specialinvoke $r49.<java.awt.geom.Rectangle2D$Double: void <init>(double,double,double,double)>($d54, $d56, $d57, $d58) >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : r12 = $r49
+org.jfree.chart.plot.PiePlot3D.draw : r12 = $r49 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : virtualinvoke r47.<org.jfree.chart.plot.PiePlotState: void setExplodedPieArea(java.awt.geom.Rectangle2D)>(r12)
+org.jfree.chart.plot.PiePlot3D.draw : virtualinvoke r47.<org.jfree.chart.plot.PiePlotState: void setExplodedPieArea(java.awt.geom.Rectangle2D)>(r12) >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : d11 = virtualinvoke r0.<org.jfree.chart.plot.PiePlot3D: double getMaximumExplodePercent()>()
+org.jfree.chart.plot.PiePlot3D.draw : d11 = virtualinvoke r0.<org.jfree.chart.plot.PiePlot3D: double getMaximumExplodePercent()>() >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d59 = 1.0 + d11
+org.jfree.chart.plot.PiePlot3D.draw : $d59 = 1.0 + d11 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : d12 = d11 / $d59
+org.jfree.chart.plot.PiePlot3D.draw : d12 = d11 / $d59 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d60 = virtualinvoke r12.<java.awt.geom.Rectangle2D: double getWidth()>()
+org.jfree.chart.plot.PiePlot3D.draw : $d60 = virtualinvoke r12.<java.awt.geom.Rectangle2D: double getWidth()>() >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : d13 = $d60 * d12
+org.jfree.chart.plot.PiePlot3D.draw : d13 = $d60 * d12 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d61 = virtualinvoke r12.<java.awt.geom.Rectangle2D: double getHeight()>()
+org.jfree.chart.plot.PiePlot3D.draw : $d61 = virtualinvoke r12.<java.awt.geom.Rectangle2D: double getHeight()>() >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : d14 = $d61 * d12
+org.jfree.chart.plot.PiePlot3D.draw : d14 = $d61 * d12 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $r50 = new java.awt.geom.Rectangle2D$Double
+org.jfree.chart.plot.PiePlot3D.draw : $r50 = new java.awt.geom.Rectangle2D$Double >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d62 = virtualinvoke r12.<java.awt.geom.Rectangle2D: double getX()>()
+org.jfree.chart.plot.PiePlot3D.draw : $d62 = virtualinvoke r12.<java.awt.geom.Rectangle2D: double getX()>() >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d63 = d13 / 2.0
+org.jfree.chart.plot.PiePlot3D.draw : $d63 = d13 / 2.0 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d64 = $d62 + $d63
+org.jfree.chart.plot.PiePlot3D.draw : $d64 = $d62 + $d63 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d65 = virtualinvoke r12.<java.awt.geom.Rectangle2D: double getY()>()
+org.jfree.chart.plot.PiePlot3D.draw : $d65 = virtualinvoke r12.<java.awt.geom.Rectangle2D: double getY()>() >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d66 = d14 / 2.0
+org.jfree.chart.plot.PiePlot3D.draw : $d66 = d14 / 2.0 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d67 = $d65 + $d66
+org.jfree.chart.plot.PiePlot3D.draw : $d67 = $d65 + $d66 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d68 = virtualinvoke r12.<java.awt.geom.Rectangle2D: double getWidth()>()
+org.jfree.chart.plot.PiePlot3D.draw : $d68 = virtualinvoke r12.<java.awt.geom.Rectangle2D: double getWidth()>() >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d69 = $d68 - d13
+org.jfree.chart.plot.PiePlot3D.draw : $d69 = $d68 - d13 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d70 = virtualinvoke r12.<java.awt.geom.Rectangle2D: double getHeight()>()
+org.jfree.chart.plot.PiePlot3D.draw : $d70 = virtualinvoke r12.<java.awt.geom.Rectangle2D: double getHeight()>() >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d71 = $d70 - d14
+org.jfree.chart.plot.PiePlot3D.draw : $d71 = $d70 - d14 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : specialinvoke $r50.<java.awt.geom.Rectangle2D$Double: void <init>(double,double,double,double)>($d64, $d67, $d69, $d71)
+org.jfree.chart.plot.PiePlot3D.draw : specialinvoke $r50.<java.awt.geom.Rectangle2D$Double: void <init>(double,double,double,double)>($d64, $d67, $d69, $d71) >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : r13 = $r50
+org.jfree.chart.plot.PiePlot3D.draw : r13 = $r50 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d72 = virtualinvoke r13.<java.awt.geom.Rectangle2D: double getHeight()>()
+org.jfree.chart.plot.PiePlot3D.draw : $d72 = virtualinvoke r13.<java.awt.geom.Rectangle2D: double getHeight()>() >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d73 = r0.<org.jfree.chart.plot.PiePlot3D: double depthFactor>
+org.jfree.chart.plot.PiePlot3D.draw : $d73 = r0.<org.jfree.chart.plot.PiePlot3D: double depthFactor> >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d74 = $d72 * $d73
+org.jfree.chart.plot.PiePlot3D.draw : $d74 = $d72 * $d73 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : i0 = (int) $d74
+org.jfree.chart.plot.PiePlot3D.draw : i0 = (int) $d74 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $r51 = new java.awt.geom.Rectangle2D$Double
+org.jfree.chart.plot.PiePlot3D.draw : $r51 = new java.awt.geom.Rectangle2D$Double >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d75 = (double) i0
+org.jfree.chart.plot.PiePlot3D.draw : $d75 = (double) i0 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d76 = d7 - $d75
+org.jfree.chart.plot.PiePlot3D.draw : $d76 = d7 - $d75 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : specialinvoke $r51.<java.awt.geom.Rectangle2D$Double: void <init>(double,double,double,double)>(d4, d5, d6, $d76)
+org.jfree.chart.plot.PiePlot3D.draw : specialinvoke $r51.<java.awt.geom.Rectangle2D$Double: void <init>(double,double,double,double)>(d4, d5, d6, $d76) >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : r14 = $r51
+org.jfree.chart.plot.PiePlot3D.draw : r14 = $r51 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : virtualinvoke r47.<org.jfree.chart.plot.PiePlotState: void setLinkArea(java.awt.geom.Rectangle2D)>(r14)
+org.jfree.chart.plot.PiePlot3D.draw : virtualinvoke r47.<org.jfree.chart.plot.PiePlotState: void setLinkArea(java.awt.geom.Rectangle2D)>(r14) >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : virtualinvoke r47.<org.jfree.chart.plot.PiePlotState: void setPieArea(java.awt.geom.Rectangle2D)>(r13)
+org.jfree.chart.plot.PiePlot3D.draw : virtualinvoke r47.<org.jfree.chart.plot.PiePlotState: void setPieArea(java.awt.geom.Rectangle2D)>(r13) >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d77 = virtualinvoke r13.<java.awt.geom.Rectangle2D: double getCenterX()>()
+org.jfree.chart.plot.PiePlot3D.draw : $d77 = virtualinvoke r13.<java.awt.geom.Rectangle2D: double getCenterX()>() >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : virtualinvoke r47.<org.jfree.chart.plot.PiePlotState: void setPieCenterX(double)>($d77)
+org.jfree.chart.plot.PiePlot3D.draw : virtualinvoke r47.<org.jfree.chart.plot.PiePlotState: void setPieCenterX(double)>($d77) >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d78 = virtualinvoke r13.<java.awt.geom.Rectangle2D: double getCenterY()>()
+org.jfree.chart.plot.PiePlot3D.draw : $d78 = virtualinvoke r13.<java.awt.geom.Rectangle2D: double getCenterY()>() >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d79 = (double) i0
+org.jfree.chart.plot.PiePlot3D.draw : $d79 = (double) i0 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d80 = $d79 / 2.0
+org.jfree.chart.plot.PiePlot3D.draw : $d80 = $d79 / 2.0 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d81 = $d78 - $d80
+org.jfree.chart.plot.PiePlot3D.draw : $d81 = $d78 - $d80 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : virtualinvoke r47.<org.jfree.chart.plot.PiePlotState: void setPieCenterY(double)>($d81)
+org.jfree.chart.plot.PiePlot3D.draw : virtualinvoke r47.<org.jfree.chart.plot.PiePlotState: void setPieCenterY(double)>($d81) >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d82 = virtualinvoke r13.<java.awt.geom.Rectangle2D: double getWidth()>()
+org.jfree.chart.plot.PiePlot3D.draw : $d82 = virtualinvoke r13.<java.awt.geom.Rectangle2D: double getWidth()>() >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d83 = $d82 / 2.0
+org.jfree.chart.plot.PiePlot3D.draw : $d83 = $d82 / 2.0 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : virtualinvoke r47.<org.jfree.chart.plot.PiePlotState: void setPieWRadius(double)>($d83)
+org.jfree.chart.plot.PiePlot3D.draw : virtualinvoke r47.<org.jfree.chart.plot.PiePlotState: void setPieWRadius(double)>($d83) >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d84 = virtualinvoke r13.<java.awt.geom.Rectangle2D: double getHeight()>()
+org.jfree.chart.plot.PiePlot3D.draw : $d84 = virtualinvoke r13.<java.awt.geom.Rectangle2D: double getHeight()>() >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d85 = (double) i0
+org.jfree.chart.plot.PiePlot3D.draw : $d85 = (double) i0 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d86 = $d84 - $d85
+org.jfree.chart.plot.PiePlot3D.draw : $d86 = $d84 - $d85 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d87 = $d86 / 2.0
+org.jfree.chart.plot.PiePlot3D.draw : $d87 = $d86 / 2.0 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : virtualinvoke r47.<org.jfree.chart.plot.PiePlotState: void setPieHRadius(double)>($d87)
+org.jfree.chart.plot.PiePlot3D.draw : virtualinvoke r47.<org.jfree.chart.plot.PiePlotState: void setPieHRadius(double)>($d87) >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : r15 = virtualinvoke r0.<org.jfree.chart.plot.PiePlot3D: org.jfree.data.general.PieDataset getDataset()>()
+org.jfree.chart.plot.PiePlot3D.draw : r15 = virtualinvoke r0.<org.jfree.chart.plot.PiePlot3D: org.jfree.data.general.PieDataset getDataset()>() >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $r52 = virtualinvoke r0.<org.jfree.chart.plot.PiePlot3D: org.jfree.data.general.PieDataset getDataset()>()
+org.jfree.chart.plot.PiePlot3D.draw : $r52 = virtualinvoke r0.<org.jfree.chart.plot.PiePlot3D: org.jfree.data.general.PieDataset getDataset()>() >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $z1 = staticinvoke <org.jfree.data.general.DatasetUtilities: boolean isEmptyOrNull(org.jfree.data.general.PieDataset)>($r52)
+org.jfree.chart.plot.PiePlot3D.draw : $z1 = staticinvoke <org.jfree.data.general.DatasetUtilities: boolean isEmptyOrNull(org.jfree.data.general.PieDataset)>($r52) >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : if $z1 == 0
+org.jfree.chart.plot.PiePlot3D.draw : if $z1 == 0 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : virtualinvoke r0.<org.jfree.chart.plot.PiePlot3D: void drawNoDataMessage(java.awt.Graphics2D,java.awt.geom.Rectangle2D)>(r1, r2)
+org.jfree.chart.plot.PiePlot3D.draw : if $z1 == 0 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $r53 = interfaceinvoke r15.<org.jfree.data.general.PieDataset: java.util.List getKeys()>()
+org.jfree.chart.plot.PiePlot3D.draw : $r53 = interfaceinvoke r15.<org.jfree.data.general.PieDataset: java.util.List getKeys()>() >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $i6 = interfaceinvoke $r53.<java.util.List: int size()>()
+org.jfree.chart.plot.PiePlot3D.draw : $i6 = interfaceinvoke $r53.<java.util.List: int size()>() >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d88 = (double) $i6
+org.jfree.chart.plot.PiePlot3D.draw : $d88 = (double) $i6 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d89 = virtualinvoke r2.<java.awt.geom.Rectangle2D: double getWidth()>()
+org.jfree.chart.plot.PiePlot3D.draw : $d89 = virtualinvoke r2.<java.awt.geom.Rectangle2D: double getWidth()>() >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $b7 = $d88 cmpl $d89
+org.jfree.chart.plot.PiePlot3D.draw : $b7 = $d88 cmpl $d89 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : if $b7 <= 0
+org.jfree.chart.plot.PiePlot3D.draw : if $b7 <= 0 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $r54 = <org.jfree.chart.plot.PiePlot3D: java.util.ResourceBundle localizationResources>
+org.jfree.chart.plot.PiePlot3D.draw : if $b7 <= 0 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $z2 = virtualinvoke r0.<org.jfree.chart.plot.PiePlot3D: boolean isCircular()>()
+org.jfree.chart.plot.PiePlot3D.draw : $z2 = virtualinvoke r0.<org.jfree.chart.plot.PiePlot3D: boolean isCircular()>() >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : if $z2 == 0
+org.jfree.chart.plot.PiePlot3D.draw : if $z2 == 0 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d100 = virtualinvoke r2.<java.awt.geom.Rectangle2D: double getWidth()>()
+org.jfree.chart.plot.PiePlot3D.draw : if $z2 == 0 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : r57 = interfaceinvoke r15.<org.jfree.data.general.PieDataset: java.util.List getKeys()>()
+org.jfree.chart.plot.PiePlot3D.draw : r57 = interfaceinvoke r15.<org.jfree.data.general.PieDataset: java.util.List getKeys()>() >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $z3 = interfaceinvoke r57.<java.util.List: boolean isEmpty()>()
+org.jfree.chart.plot.PiePlot3D.draw : $z3 = interfaceinvoke r57.<java.util.List: boolean isEmpty()>() >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : if $z3 == 0
+org.jfree.chart.plot.PiePlot3D.draw : if $z3 == 0 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : return
+org.jfree.chart.plot.PiePlot3D.draw : if $z3 == 0 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : d110 = virtualinvoke r13.<java.awt.geom.Rectangle2D: double getX()>()
+org.jfree.chart.plot.PiePlot3D.draw : d110 = virtualinvoke r13.<java.awt.geom.Rectangle2D: double getX()>() >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : d111 = virtualinvoke r13.<java.awt.geom.Rectangle2D: double getY()>()
+org.jfree.chart.plot.PiePlot3D.draw : d111 = virtualinvoke r13.<java.awt.geom.Rectangle2D: double getY()>() >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : r19 = virtualinvoke r1.<java.awt.Graphics2D: java.awt.Composite getComposite()>()
+org.jfree.chart.plot.PiePlot3D.draw : r19 = virtualinvoke r1.<java.awt.Graphics2D: java.awt.Composite getComposite()>() >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $f0 = virtualinvoke r0.<org.jfree.chart.plot.PiePlot3D: float getForegroundAlpha()>()
+org.jfree.chart.plot.PiePlot3D.draw : $f0 = virtualinvoke r0.<org.jfree.chart.plot.PiePlot3D: float getForegroundAlpha()>() >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $r58 = staticinvoke <java.awt.AlphaComposite: java.awt.AlphaComposite getInstance(int,float)>(3, $f0)
+org.jfree.chart.plot.PiePlot3D.draw : $r58 = staticinvoke <java.awt.AlphaComposite: java.awt.AlphaComposite getInstance(int,float)>(3, $f0) >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : virtualinvoke r1.<java.awt.Graphics2D: void setComposite(java.awt.Composite)>($r58)
+org.jfree.chart.plot.PiePlot3D.draw : virtualinvoke r1.<java.awt.Graphics2D: void setComposite(java.awt.Composite)>($r58) >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : d15 = staticinvoke <org.jfree.data.general.DatasetUtilities: double calculatePieDatasetTotal(org.jfree.data.general.PieDataset)>(r15)
+org.jfree.chart.plot.PiePlot3D.draw : d15 = staticinvoke <org.jfree.data.general.DatasetUtilities: double calculatePieDatasetTotal(org.jfree.data.general.PieDataset)>(r15) >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : d16 = 0.0
+org.jfree.chart.plot.PiePlot3D.draw : d16 = 0.0 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : if i0 >= 0
+org.jfree.chart.plot.PiePlot3D.draw : if i0 >= 0 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : return
+org.jfree.chart.plot.PiePlot3D.draw : if i0 >= 0 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $r59 = new java.util.ArrayList
+org.jfree.chart.plot.PiePlot3D.draw : $r59 = new java.util.ArrayList >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : specialinvoke $r59.<java.util.ArrayList: void <init>()>()
+org.jfree.chart.plot.PiePlot3D.draw : specialinvoke $r59.<java.util.ArrayList: void <init>()>() >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : r20 = $r59
+org.jfree.chart.plot.PiePlot3D.draw : r20 = $r59 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : r21 = interfaceinvoke r57.<java.util.List: java.util.Iterator iterator()>()
+org.jfree.chart.plot.PiePlot3D.draw : r21 = interfaceinvoke r57.<java.util.List: java.util.Iterator iterator()>() >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $z4 = interfaceinvoke r21.<java.util.Iterator: boolean hasNext()>()
+org.jfree.chart.plot.PiePlot3D.draw : $z4 = interfaceinvoke r21.<java.util.Iterator: boolean hasNext()>() >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : if $z4 == 0
+org.jfree.chart.plot.PiePlot3D.draw : if $z4 == 0 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $r60 = interfaceinvoke r21.<java.util.Iterator: java.lang.Object next()>()
+org.jfree.chart.plot.PiePlot3D.draw : if $z4 == 0 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : r63 = virtualinvoke r1.<java.awt.Graphics2D: java.awt.Shape getClip()>()
+org.jfree.chart.plot.PiePlot3D.draw : r63 = virtualinvoke r1.<java.awt.Graphics2D: java.awt.Shape getClip()>() >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $r64 = new java.awt.geom.Ellipse2D$Double
+org.jfree.chart.plot.PiePlot3D.draw : $r64 = new java.awt.geom.Ellipse2D$Double >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d129 = virtualinvoke r13.<java.awt.geom.Rectangle2D: double getX()>()
+org.jfree.chart.plot.PiePlot3D.draw : $d129 = virtualinvoke r13.<java.awt.geom.Rectangle2D: double getX()>() >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d130 = virtualinvoke r13.<java.awt.geom.Rectangle2D: double getY()>()
+org.jfree.chart.plot.PiePlot3D.draw : $d130 = virtualinvoke r13.<java.awt.geom.Rectangle2D: double getY()>() >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d131 = virtualinvoke r13.<java.awt.geom.Rectangle2D: double getWidth()>()
+org.jfree.chart.plot.PiePlot3D.draw : $d131 = virtualinvoke r13.<java.awt.geom.Rectangle2D: double getWidth()>() >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d132 = virtualinvoke r13.<java.awt.geom.Rectangle2D: double getHeight()>()
+org.jfree.chart.plot.PiePlot3D.draw : $d132 = virtualinvoke r13.<java.awt.geom.Rectangle2D: double getHeight()>() >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d133 = (double) i0
+org.jfree.chart.plot.PiePlot3D.draw : $d133 = (double) i0 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d134 = $d132 - $d133
+org.jfree.chart.plot.PiePlot3D.draw : $d134 = $d132 - $d133 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : specialinvoke $r64.<java.awt.geom.Ellipse2D$Double: void <init>(double,double,double,double)>($d129, $d130, $d131, $d134)
+org.jfree.chart.plot.PiePlot3D.draw : specialinvoke $r64.<java.awt.geom.Ellipse2D$Double: void <init>(double,double,double,double)>($d129, $d130, $d131, $d134) >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : r65 = $r64
+org.jfree.chart.plot.PiePlot3D.draw : r65 = $r64 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $r66 = new java.awt.geom.Ellipse2D$Double
+org.jfree.chart.plot.PiePlot3D.draw : $r66 = new java.awt.geom.Ellipse2D$Double >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d135 = virtualinvoke r13.<java.awt.geom.Rectangle2D: double getX()>()
+org.jfree.chart.plot.PiePlot3D.draw : $d135 = virtualinvoke r13.<java.awt.geom.Rectangle2D: double getX()>() >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d136 = virtualinvoke r13.<java.awt.geom.Rectangle2D: double getY()>()
+org.jfree.chart.plot.PiePlot3D.draw : $d136 = virtualinvoke r13.<java.awt.geom.Rectangle2D: double getY()>() >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d137 = (double) i0
+org.jfree.chart.plot.PiePlot3D.draw : $d137 = (double) i0 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d138 = $d136 + $d137
+org.jfree.chart.plot.PiePlot3D.draw : $d138 = $d136 + $d137 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d139 = virtualinvoke r13.<java.awt.geom.Rectangle2D: double getWidth()>()
+org.jfree.chart.plot.PiePlot3D.draw : $d139 = virtualinvoke r13.<java.awt.geom.Rectangle2D: double getWidth()>() >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d140 = virtualinvoke r13.<java.awt.geom.Rectangle2D: double getHeight()>()
+org.jfree.chart.plot.PiePlot3D.draw : $d140 = virtualinvoke r13.<java.awt.geom.Rectangle2D: double getHeight()>() >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d141 = (double) i0
+org.jfree.chart.plot.PiePlot3D.draw : $d141 = (double) i0 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d142 = $d140 - $d141
+org.jfree.chart.plot.PiePlot3D.draw : $d142 = $d140 - $d141 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : specialinvoke $r66.<java.awt.geom.Ellipse2D$Double: void <init>(double,double,double,double)>($d135, $d138, $d139, $d142)
+org.jfree.chart.plot.PiePlot3D.draw : specialinvoke $r66.<java.awt.geom.Ellipse2D$Double: void <init>(double,double,double,double)>($d135, $d138, $d139, $d142) >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : r67 = $r66
+org.jfree.chart.plot.PiePlot3D.draw : r67 = $r66 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $r68 = new java.awt.geom.Rectangle2D$Double
+org.jfree.chart.plot.PiePlot3D.draw : $r68 = new java.awt.geom.Rectangle2D$Double >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d143 = virtualinvoke r65.<java.awt.geom.Ellipse2D: double getX()>()
+org.jfree.chart.plot.PiePlot3D.draw : $d143 = virtualinvoke r65.<java.awt.geom.Ellipse2D: double getX()>() >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d144 = virtualinvoke r65.<java.awt.geom.Ellipse2D: double getCenterY()>()
+org.jfree.chart.plot.PiePlot3D.draw : $d144 = virtualinvoke r65.<java.awt.geom.Ellipse2D: double getCenterY()>() >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d145 = virtualinvoke r13.<java.awt.geom.Rectangle2D: double getWidth()>()
+org.jfree.chart.plot.PiePlot3D.draw : $d145 = virtualinvoke r13.<java.awt.geom.Rectangle2D: double getWidth()>() >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d146 = virtualinvoke r67.<java.awt.geom.Ellipse2D: double getMaxY()>()
+org.jfree.chart.plot.PiePlot3D.draw : $d146 = virtualinvoke r67.<java.awt.geom.Ellipse2D: double getMaxY()>() >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d147 = virtualinvoke r65.<java.awt.geom.Ellipse2D: double getCenterY()>()
+org.jfree.chart.plot.PiePlot3D.draw : $d147 = virtualinvoke r65.<java.awt.geom.Ellipse2D: double getCenterY()>() >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d148 = $d146 - $d147
+org.jfree.chart.plot.PiePlot3D.draw : $d148 = $d146 - $d147 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : specialinvoke $r68.<java.awt.geom.Rectangle2D$Double: void <init>(double,double,double,double)>($d143, $d144, $d145, $d148)
+org.jfree.chart.plot.PiePlot3D.draw : specialinvoke $r68.<java.awt.geom.Rectangle2D$Double: void <init>(double,double,double,double)>($d143, $d144, $d145, $d148) >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : r24 = $r68
+org.jfree.chart.plot.PiePlot3D.draw : r24 = $r68 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $r69 = new java.awt.geom.Rectangle2D$Double
+org.jfree.chart.plot.PiePlot3D.draw : $r69 = new java.awt.geom.Rectangle2D$Double >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d149 = virtualinvoke r13.<java.awt.geom.Rectangle2D: double getX()>()
+org.jfree.chart.plot.PiePlot3D.draw : $d149 = virtualinvoke r13.<java.awt.geom.Rectangle2D: double getX()>() >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d150 = virtualinvoke r65.<java.awt.geom.Ellipse2D: double getY()>()
+org.jfree.chart.plot.PiePlot3D.draw : $d150 = virtualinvoke r65.<java.awt.geom.Ellipse2D: double getY()>() >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d151 = virtualinvoke r13.<java.awt.geom.Rectangle2D: double getWidth()>()
+org.jfree.chart.plot.PiePlot3D.draw : $d151 = virtualinvoke r13.<java.awt.geom.Rectangle2D: double getWidth()>() >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d152 = virtualinvoke r67.<java.awt.geom.Ellipse2D: double getCenterY()>()
+org.jfree.chart.plot.PiePlot3D.draw : $d152 = virtualinvoke r67.<java.awt.geom.Ellipse2D: double getCenterY()>() >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d153 = virtualinvoke r65.<java.awt.geom.Ellipse2D: double getY()>()
+org.jfree.chart.plot.PiePlot3D.draw : $d153 = virtualinvoke r65.<java.awt.geom.Ellipse2D: double getY()>() >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d154 = $d152 - $d153
+org.jfree.chart.plot.PiePlot3D.draw : $d154 = $d152 - $d153 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : specialinvoke $r69.<java.awt.geom.Rectangle2D$Double: void <init>(double,double,double,double)>($d149, $d150, $d151, $d154)
+org.jfree.chart.plot.PiePlot3D.draw : specialinvoke $r69.<java.awt.geom.Rectangle2D$Double: void <init>(double,double,double,double)>($d149, $d150, $d151, $d154) >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : r70 = $r69
+org.jfree.chart.plot.PiePlot3D.draw : r70 = $r69 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $r71 = new java.awt.geom.Area
+org.jfree.chart.plot.PiePlot3D.draw : $r71 = new java.awt.geom.Area >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : specialinvoke $r71.<java.awt.geom.Area: void <init>(java.awt.Shape)>(r65)
+org.jfree.chart.plot.PiePlot3D.draw : specialinvoke $r71.<java.awt.geom.Area: void <init>(java.awt.Shape)>(r65) >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : r25 = $r71
+org.jfree.chart.plot.PiePlot3D.draw : r25 = $r71 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $r72 = new java.awt.geom.Area
+org.jfree.chart.plot.PiePlot3D.draw : $r72 = new java.awt.geom.Area >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : specialinvoke $r72.<java.awt.geom.Area: void <init>(java.awt.Shape)>(r24)
+org.jfree.chart.plot.PiePlot3D.draw : specialinvoke $r72.<java.awt.geom.Area: void <init>(java.awt.Shape)>(r24) >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : virtualinvoke r25.<java.awt.geom.Area: void add(java.awt.geom.Area)>($r72)
+org.jfree.chart.plot.PiePlot3D.draw : virtualinvoke r25.<java.awt.geom.Area: void add(java.awt.geom.Area)>($r72) >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $r73 = new java.awt.geom.Area
+org.jfree.chart.plot.PiePlot3D.draw : $r73 = new java.awt.geom.Area >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : specialinvoke $r73.<java.awt.geom.Area: void <init>(java.awt.Shape)>(r67)
+org.jfree.chart.plot.PiePlot3D.draw : specialinvoke $r73.<java.awt.geom.Area: void <init>(java.awt.Shape)>(r67) >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : r74 = $r73
+org.jfree.chart.plot.PiePlot3D.draw : r74 = $r73 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $r75 = new java.awt.geom.Area
+org.jfree.chart.plot.PiePlot3D.draw : $r75 = new java.awt.geom.Area >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : specialinvoke $r75.<java.awt.geom.Area: void <init>(java.awt.Shape)>(r70)
+org.jfree.chart.plot.PiePlot3D.draw : specialinvoke $r75.<java.awt.geom.Area: void <init>(java.awt.Shape)>(r70) >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : virtualinvoke r74.<java.awt.geom.Area: void add(java.awt.geom.Area)>($r75)
+org.jfree.chart.plot.PiePlot3D.draw : virtualinvoke r74.<java.awt.geom.Area: void add(java.awt.geom.Area)>($r75) >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $r76 = new java.awt.geom.Area
+org.jfree.chart.plot.PiePlot3D.draw : $r76 = new java.awt.geom.Area >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : specialinvoke $r76.<java.awt.geom.Area: void <init>(java.awt.Shape)>(r25)
+org.jfree.chart.plot.PiePlot3D.draw : specialinvoke $r76.<java.awt.geom.Area: void <init>(java.awt.Shape)>(r25) >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : r26 = $r76
+org.jfree.chart.plot.PiePlot3D.draw : r26 = $r76 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : virtualinvoke r26.<java.awt.geom.Area: void intersect(java.awt.geom.Area)>(r74)
+org.jfree.chart.plot.PiePlot3D.draw : virtualinvoke r26.<java.awt.geom.Area: void intersect(java.awt.geom.Area)>(r74) >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $r77 = new java.awt.geom.Area
+org.jfree.chart.plot.PiePlot3D.draw : $r77 = new java.awt.geom.Area >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : specialinvoke $r77.<java.awt.geom.Area: void <init>(java.awt.Shape)>(r26)
+org.jfree.chart.plot.PiePlot3D.draw : specialinvoke $r77.<java.awt.geom.Area: void <init>(java.awt.Shape)>(r26) >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : r78 = $r77
+org.jfree.chart.plot.PiePlot3D.draw : r78 = $r77 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $r79 = new java.awt.geom.Area
+org.jfree.chart.plot.PiePlot3D.draw : $r79 = new java.awt.geom.Area >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : specialinvoke $r79.<java.awt.geom.Area: void <init>(java.awt.Shape)>(r65)
+org.jfree.chart.plot.PiePlot3D.draw : specialinvoke $r79.<java.awt.geom.Area: void <init>(java.awt.Shape)>(r65) >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : virtualinvoke r78.<java.awt.geom.Area: void subtract(java.awt.geom.Area)>($r79)
+org.jfree.chart.plot.PiePlot3D.draw : virtualinvoke r78.<java.awt.geom.Area: void subtract(java.awt.geom.Area)>($r79) >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $r80 = new java.awt.geom.Area
+org.jfree.chart.plot.PiePlot3D.draw : $r80 = new java.awt.geom.Area >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : specialinvoke $r80.<java.awt.geom.Area: void <init>(java.awt.Shape)>(r26)
+org.jfree.chart.plot.PiePlot3D.draw : specialinvoke $r80.<java.awt.geom.Area: void <init>(java.awt.Shape)>(r26) >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : r27 = $r80
+org.jfree.chart.plot.PiePlot3D.draw : r27 = $r80 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $r81 = new java.awt.geom.Area
+org.jfree.chart.plot.PiePlot3D.draw : $r81 = new java.awt.geom.Area >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : specialinvoke $r81.<java.awt.geom.Area: void <init>(java.awt.Shape)>(r67)
+org.jfree.chart.plot.PiePlot3D.draw : specialinvoke $r81.<java.awt.geom.Area: void <init>(java.awt.Shape)>(r67) >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : virtualinvoke r27.<java.awt.geom.Area: void subtract(java.awt.geom.Area)>($r81)
+org.jfree.chart.plot.PiePlot3D.draw : virtualinvoke r27.<java.awt.geom.Area: void subtract(java.awt.geom.Area)>($r81) >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : i2 = virtualinvoke r20.<java.util.ArrayList: int size()>()
+org.jfree.chart.plot.PiePlot3D.draw : i2 = virtualinvoke r20.<java.util.ArrayList: int size()>() >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : i3 = 0
+org.jfree.chart.plot.PiePlot3D.draw : i3 = 0 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : if i3 >= i2
+org.jfree.chart.plot.PiePlot3D.draw : if i3 >= i2 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $r82 = virtualinvoke r20.<java.util.ArrayList: java.lang.Object get(int)>(i3)
+org.jfree.chart.plot.PiePlot3D.draw : if i3 >= i2 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $r88 = <java.awt.Color: java.awt.Color gray>
+org.jfree.chart.plot.PiePlot3D.draw : $r88 = <java.awt.Color: java.awt.Color gray> >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : virtualinvoke r1.<java.awt.Graphics2D: void setPaint(java.awt.Paint)>($r88)
+org.jfree.chart.plot.PiePlot3D.draw : virtualinvoke r1.<java.awt.Graphics2D: void setPaint(java.awt.Paint)>($r88) >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : virtualinvoke r1.<java.awt.Graphics2D: void fill(java.awt.Shape)>(r27)
+org.jfree.chart.plot.PiePlot3D.draw : virtualinvoke r1.<java.awt.Graphics2D: void fill(java.awt.Shape)>(r27) >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : virtualinvoke r1.<java.awt.Graphics2D: void fill(java.awt.Shape)>(r78)
+org.jfree.chart.plot.PiePlot3D.draw : virtualinvoke r1.<java.awt.Graphics2D: void fill(java.awt.Shape)>(r78) >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : i22 = 0
+org.jfree.chart.plot.PiePlot3D.draw : i22 = 0 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : r89 = virtualinvoke r20.<java.util.ArrayList: java.util.Iterator iterator()>()
+org.jfree.chart.plot.PiePlot3D.draw : r89 = virtualinvoke r20.<java.util.ArrayList: java.util.Iterator iterator()>() >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $z9 = interfaceinvoke r89.<java.util.Iterator: boolean hasNext()>()
+org.jfree.chart.plot.PiePlot3D.draw : $z9 = interfaceinvoke r89.<java.util.Iterator: boolean hasNext()>() >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : if $z9 == 0
+org.jfree.chart.plot.PiePlot3D.draw : if $z9 == 0 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $r90 = interfaceinvoke r89.<java.util.Iterator: java.lang.Object next()>()
+org.jfree.chart.plot.PiePlot3D.draw : if $z9 == 0 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : i23 = 0
+org.jfree.chart.plot.PiePlot3D.draw : i23 = 0 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : r96 = virtualinvoke r20.<java.util.ArrayList: java.util.Iterator iterator()>()
+org.jfree.chart.plot.PiePlot3D.draw : r96 = virtualinvoke r20.<java.util.ArrayList: java.util.Iterator iterator()>() >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $z10 = interfaceinvoke r96.<java.util.Iterator: boolean hasNext()>()
+org.jfree.chart.plot.PiePlot3D.draw : $z10 = interfaceinvoke r96.<java.util.Iterator: boolean hasNext()>() >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : if $z10 == 0
+org.jfree.chart.plot.PiePlot3D.draw : if $z10 == 0 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $r97 = interfaceinvoke r96.<java.util.Iterator: java.lang.Object next()>()
+org.jfree.chart.plot.PiePlot3D.draw : if $z10 == 0 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : virtualinvoke r1.<java.awt.Graphics2D: void setClip(java.awt.Shape)>(r63)
+org.jfree.chart.plot.PiePlot3D.draw : virtualinvoke r1.<java.awt.Graphics2D: void setClip(java.awt.Shape)>(r63) >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : i24 = 0
+org.jfree.chart.plot.PiePlot3D.draw : i24 = 0 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : if i24 >= i2
+org.jfree.chart.plot.PiePlot3D.draw : if i24 >= i2 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $r103 = virtualinvoke r20.<java.util.ArrayList: java.lang.Object get(int)>(i24)
+org.jfree.chart.plot.PiePlot3D.draw : if i24 >= i2 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : r116 = interfaceinvoke r15.<org.jfree.data.general.PieDataset: java.util.List getKeys()>()
+org.jfree.chart.plot.PiePlot3D.draw : r116 = interfaceinvoke r15.<org.jfree.data.general.PieDataset: java.util.List getKeys()>() >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $r117 = new java.awt.geom.Rectangle2D$Double
+org.jfree.chart.plot.PiePlot3D.draw : $r117 = new java.awt.geom.Rectangle2D$Double >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d169 = virtualinvoke r7.<java.awt.geom.Rectangle2D: double getX()>()
+org.jfree.chart.plot.PiePlot3D.draw : $d169 = virtualinvoke r7.<java.awt.geom.Rectangle2D: double getX()>() >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d170 = virtualinvoke r7.<java.awt.geom.Rectangle2D: double getY()>()
+org.jfree.chart.plot.PiePlot3D.draw : $d170 = virtualinvoke r7.<java.awt.geom.Rectangle2D: double getY()>() >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d171 = virtualinvoke r7.<java.awt.geom.Rectangle2D: double getWidth()>()
+org.jfree.chart.plot.PiePlot3D.draw : $d171 = virtualinvoke r7.<java.awt.geom.Rectangle2D: double getWidth()>() >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d172 = virtualinvoke r7.<java.awt.geom.Rectangle2D: double getHeight()>()
+org.jfree.chart.plot.PiePlot3D.draw : $d172 = virtualinvoke r7.<java.awt.geom.Rectangle2D: double getHeight()>() >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d173 = (double) i0
+org.jfree.chart.plot.PiePlot3D.draw : $d173 = (double) i0 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d174 = $d172 - $d173
+org.jfree.chart.plot.PiePlot3D.draw : $d174 = $d172 - $d173 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : specialinvoke $r117.<java.awt.geom.Rectangle2D$Double: void <init>(double,double,double,double)>($d169, $d170, $d171, $d174)
+org.jfree.chart.plot.PiePlot3D.draw : specialinvoke $r117.<java.awt.geom.Rectangle2D$Double: void <init>(double,double,double,double)>($d169, $d170, $d171, $d174) >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : r118 = $r117
+org.jfree.chart.plot.PiePlot3D.draw : r118 = $r117 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $z11 = virtualinvoke r0.<org.jfree.chart.plot.PiePlot3D: boolean getSimpleLabels()>()
+org.jfree.chart.plot.PiePlot3D.draw : $z11 = virtualinvoke r0.<org.jfree.chart.plot.PiePlot3D: boolean getSimpleLabels()>() >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : if $z11 == 0
+org.jfree.chart.plot.PiePlot3D.draw : if $z11 == 0 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : virtualinvoke r0.<org.jfree.chart.plot.PiePlot3D: void drawSimpleLabels(java.awt.Graphics2D,java.util.List,double,java.awt.geom.Rectangle2D,java.awt.geom.Rectangle2D,org.jfree.chart.plot.PiePlotState)>(r1, r116, d15, r118, r14, r47)
+org.jfree.chart.plot.PiePlot3D.draw : if $z11 == 0 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : virtualinvoke r0.<org.jfree.chart.plot.PiePlot3D: void drawLabels(java.awt.Graphics2D,java.util.List,double,java.awt.geom.Rectangle2D,java.awt.geom.Rectangle2D,org.jfree.chart.plot.PiePlotState)>(r1, r116, d15, r118, r14, r47)
+org.jfree.chart.plot.PiePlot3D.draw : virtualinvoke r0.<org.jfree.chart.plot.PiePlot3D: void drawLabels(java.awt.Graphics2D,java.util.List,double,java.awt.geom.Rectangle2D,java.awt.geom.Rectangle2D,org.jfree.chart.plot.PiePlotState)>(r1, r116, d15, r118, r14, r47) >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $r119 = virtualinvoke r0.<org.jfree.chart.plot.PiePlot3D: org.jfree.chart.util.ShadowGenerator getShadowGenerator()>()
+org.jfree.chart.plot.PiePlot3D.draw : $r119 = virtualinvoke r0.<org.jfree.chart.plot.PiePlot3D: org.jfree.chart.util.ShadowGenerator getShadowGenerator()>() >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : if $r119 == null
+org.jfree.chart.plot.PiePlot3D.draw : if $r119 == null >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $r120 = virtualinvoke r0.<org.jfree.chart.plot.PiePlot3D: org.jfree.chart.util.ShadowGenerator getShadowGenerator()>()
+org.jfree.chart.plot.PiePlot3D.draw : if $r119 == null >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : virtualinvoke r1.<java.awt.Graphics2D: void setClip(java.awt.Shape)>(r8)
+org.jfree.chart.plot.PiePlot3D.draw : virtualinvoke r1.<java.awt.Graphics2D: void setClip(java.awt.Shape)>(r8) >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : virtualinvoke r1.<java.awt.Graphics2D: void setComposite(java.awt.Composite)>(r19)
+org.jfree.chart.plot.PiePlot3D.draw : virtualinvoke r1.<java.awt.Graphics2D: void setComposite(java.awt.Composite)>(r19) >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : virtualinvoke r0.<org.jfree.chart.plot.PiePlot3D: void drawOutline(java.awt.Graphics2D,java.awt.geom.Rectangle2D)>(r1, r7)
+org.jfree.chart.plot.PiePlot3D.draw : virtualinvoke r0.<org.jfree.chart.plot.PiePlot3D: void drawOutline(java.awt.Graphics2D,java.awt.geom.Rectangle2D)>(r1, r7) >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : return
+org.jfree.chart.plot.PiePlot3D.draw : $r120 = virtualinvoke r0.<org.jfree.chart.plot.PiePlot3D: org.jfree.chart.util.ShadowGenerator getShadowGenerator()>() >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : r121 = interfaceinvoke $r120.<org.jfree.chart.util.ShadowGenerator: java.awt.image.BufferedImage createDropShadow(java.awt.image.BufferedImage)>(r10)
+org.jfree.chart.plot.PiePlot3D.draw : r121 = interfaceinvoke $r120.<org.jfree.chart.util.ShadowGenerator: java.awt.image.BufferedImage createDropShadow(java.awt.image.BufferedImage)>(r10) >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : r1 = r9
+org.jfree.chart.plot.PiePlot3D.draw : r1 = r9 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d175 = virtualinvoke r2.<java.awt.geom.Rectangle2D: double getX()>()
+org.jfree.chart.plot.PiePlot3D.draw : $d175 = virtualinvoke r2.<java.awt.geom.Rectangle2D: double getX()>() >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $i27 = (int) $d175
+org.jfree.chart.plot.PiePlot3D.draw : $i27 = (int) $d175 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $r122 = virtualinvoke r0.<org.jfree.chart.plot.PiePlot3D: org.jfree.chart.util.ShadowGenerator getShadowGenerator()>()
+org.jfree.chart.plot.PiePlot3D.draw : $r122 = virtualinvoke r0.<org.jfree.chart.plot.PiePlot3D: org.jfree.chart.util.ShadowGenerator getShadowGenerator()>() >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $i28 = interfaceinvoke $r122.<org.jfree.chart.util.ShadowGenerator: int calculateOffsetX()>()
+org.jfree.chart.plot.PiePlot3D.draw : $i28 = interfaceinvoke $r122.<org.jfree.chart.util.ShadowGenerator: int calculateOffsetX()>() >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $i29 = $i27 + $i28
+org.jfree.chart.plot.PiePlot3D.draw : $i29 = $i27 + $i28 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d176 = virtualinvoke r2.<java.awt.geom.Rectangle2D: double getY()>()
+org.jfree.chart.plot.PiePlot3D.draw : $d176 = virtualinvoke r2.<java.awt.geom.Rectangle2D: double getY()>() >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $i30 = (int) $d176
+org.jfree.chart.plot.PiePlot3D.draw : $i30 = (int) $d176 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $r123 = virtualinvoke r0.<org.jfree.chart.plot.PiePlot3D: org.jfree.chart.util.ShadowGenerator getShadowGenerator()>()
+org.jfree.chart.plot.PiePlot3D.draw : $r123 = virtualinvoke r0.<org.jfree.chart.plot.PiePlot3D: org.jfree.chart.util.ShadowGenerator getShadowGenerator()>() >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $i31 = interfaceinvoke $r123.<org.jfree.chart.util.ShadowGenerator: int calculateOffsetY()>()
+org.jfree.chart.plot.PiePlot3D.draw : $i31 = interfaceinvoke $r123.<org.jfree.chart.util.ShadowGenerator: int calculateOffsetY()>() >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $i32 = $i30 + $i31
+org.jfree.chart.plot.PiePlot3D.draw : $i32 = $i30 + $i31 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : virtualinvoke r1.<java.awt.Graphics2D: boolean drawImage(java.awt.Image,int,int,java.awt.image.ImageObserver)>(r121, $i29, $i32, null)
+org.jfree.chart.plot.PiePlot3D.draw : virtualinvoke r1.<java.awt.Graphics2D: boolean drawImage(java.awt.Image,int,int,java.awt.image.ImageObserver)>(r121, $i29, $i32, null) >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d177 = virtualinvoke r2.<java.awt.geom.Rectangle2D: double getX()>()
+org.jfree.chart.plot.PiePlot3D.draw : $d177 = virtualinvoke r2.<java.awt.geom.Rectangle2D: double getX()>() >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $i33 = (int) $d177
+org.jfree.chart.plot.PiePlot3D.draw : $i33 = (int) $d177 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d178 = virtualinvoke r2.<java.awt.geom.Rectangle2D: double getY()>()
+org.jfree.chart.plot.PiePlot3D.draw : $d178 = virtualinvoke r2.<java.awt.geom.Rectangle2D: double getY()>() >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $i34 = (int) $d178
+org.jfree.chart.plot.PiePlot3D.draw : $i34 = (int) $d178 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : virtualinvoke r1.<java.awt.Graphics2D: boolean drawImage(java.awt.Image,int,int,java.awt.image.ImageObserver)>(r10, $i33, $i34, null)
+org.jfree.chart.plot.PiePlot3D.draw : virtualinvoke r1.<java.awt.Graphics2D: boolean drawImage(java.awt.Image,int,int,java.awt.image.ImageObserver)>(r10, $i33, $i34, null) >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : virtualinvoke r1.<java.awt.Graphics2D: void setClip(java.awt.Shape)>(r8)
+org.jfree.chart.plot.PiePlot3D.draw : virtualinvoke r0.<org.jfree.chart.plot.PiePlot3D: void drawSimpleLabels(java.awt.Graphics2D,java.util.List,double,java.awt.geom.Rectangle2D,java.awt.geom.Rectangle2D,org.jfree.chart.plot.PiePlotState)>(r1, r116, d15, r118, r14, r47) >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : goto [?= $r119 = virtualinvoke r0.<org.jfree.chart.plot.PiePlot3D: org.jfree.chart.util.ShadowGenerator getShadowGenerator()>()]
+org.jfree.chart.plot.PiePlot3D.draw : goto [?= $r119 = virtualinvoke r0.<org.jfree.chart.plot.PiePlot3D: org.jfree.chart.util.ShadowGenerator getShadowGenerator()>()] >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $r119 = virtualinvoke r0.<org.jfree.chart.plot.PiePlot3D: org.jfree.chart.util.ShadowGenerator getShadowGenerator()>()
+org.jfree.chart.plot.PiePlot3D.draw : $r103 = virtualinvoke r20.<java.util.ArrayList: java.lang.Object get(int)>(i24) >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : r104 = (java.awt.geom.Arc2D$Double) $r103
+org.jfree.chart.plot.PiePlot3D.draw : r104 = (java.awt.geom.Arc2D$Double) $r103 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : if r104 != null
+org.jfree.chart.plot.PiePlot3D.draw : if r104 != null >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : goto [?= i24 = i24 + 1]
+org.jfree.chart.plot.PiePlot3D.draw : if r104 != null >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $r105 = new java.awt.geom.Arc2D$Double
+org.jfree.chart.plot.PiePlot3D.draw : $r105 = new java.awt.geom.Arc2D$Double >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d163 = virtualinvoke r13.<java.awt.geom.Rectangle2D: double getWidth()>()
+org.jfree.chart.plot.PiePlot3D.draw : $d163 = virtualinvoke r13.<java.awt.geom.Rectangle2D: double getWidth()>() >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d164 = virtualinvoke r13.<java.awt.geom.Rectangle2D: double getHeight()>()
+org.jfree.chart.plot.PiePlot3D.draw : $d164 = virtualinvoke r13.<java.awt.geom.Rectangle2D: double getHeight()>() >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d165 = (double) i0
+org.jfree.chart.plot.PiePlot3D.draw : $d165 = (double) i0 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d166 = $d164 - $d165
+org.jfree.chart.plot.PiePlot3D.draw : $d166 = $d164 - $d165 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d167 = virtualinvoke r104.<java.awt.geom.Arc2D$Double: double getAngleStart()>()
+org.jfree.chart.plot.PiePlot3D.draw : $d167 = virtualinvoke r104.<java.awt.geom.Arc2D$Double: double getAngleStart()>() >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d168 = virtualinvoke r104.<java.awt.geom.Arc2D$Double: double getAngleExtent()>()
+org.jfree.chart.plot.PiePlot3D.draw : $d168 = virtualinvoke r104.<java.awt.geom.Arc2D$Double: double getAngleExtent()>() >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : specialinvoke $r105.<java.awt.geom.Arc2D$Double: void <init>(double,double,double,double,double,double,int)>(d110, d111, $d163, $d166, $d167, $d168, 2)
+org.jfree.chart.plot.PiePlot3D.draw : specialinvoke $r105.<java.awt.geom.Arc2D$Double: void <init>(double,double,double,double,double,double,int)>(d110, d111, $d163, $d166, $d167, $d168, 2) >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : r106 = $r105
+org.jfree.chart.plot.PiePlot3D.draw : r106 = $r105 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $r107 = interfaceinvoke r57.<java.util.List: java.lang.Object get(int)>(i24)
+org.jfree.chart.plot.PiePlot3D.draw : $r107 = interfaceinvoke r57.<java.util.List: java.lang.Object get(int)>(i24) >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : r108 = (java.lang.Comparable) $r107
+org.jfree.chart.plot.PiePlot3D.draw : r108 = (java.lang.Comparable) $r107 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : r109 = virtualinvoke r0.<org.jfree.chart.plot.PiePlot3D: java.awt.Paint lookupSectionPaint(java.lang.Comparable,boolean)>(r108, 1)
+org.jfree.chart.plot.PiePlot3D.draw : r109 = virtualinvoke r0.<org.jfree.chart.plot.PiePlot3D: java.awt.Paint lookupSectionPaint(java.lang.Comparable,boolean)>(r108, 1) >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : r110 = virtualinvoke r0.<org.jfree.chart.plot.PiePlot3D: java.awt.Paint lookupSectionOutlinePaint(java.lang.Comparable)>(r108)
+org.jfree.chart.plot.PiePlot3D.draw : r110 = virtualinvoke r0.<org.jfree.chart.plot.PiePlot3D: java.awt.Paint lookupSectionOutlinePaint(java.lang.Comparable)>(r108) >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : r111 = virtualinvoke r0.<org.jfree.chart.plot.PiePlot3D: java.awt.Stroke lookupSectionOutlineStroke(java.lang.Comparable)>(r108)
+org.jfree.chart.plot.PiePlot3D.draw : r111 = virtualinvoke r0.<org.jfree.chart.plot.PiePlot3D: java.awt.Stroke lookupSectionOutlineStroke(java.lang.Comparable)>(r108) >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : virtualinvoke r1.<java.awt.Graphics2D: void setPaint(java.awt.Paint)>(r109)
+org.jfree.chart.plot.PiePlot3D.draw : virtualinvoke r1.<java.awt.Graphics2D: void setPaint(java.awt.Paint)>(r109) >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : virtualinvoke r1.<java.awt.Graphics2D: void fill(java.awt.Shape)>(r106)
+org.jfree.chart.plot.PiePlot3D.draw : virtualinvoke r1.<java.awt.Graphics2D: void fill(java.awt.Shape)>(r106) >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : virtualinvoke r1.<java.awt.Graphics2D: void setStroke(java.awt.Stroke)>(r111)
+org.jfree.chart.plot.PiePlot3D.draw : virtualinvoke r1.<java.awt.Graphics2D: void setStroke(java.awt.Stroke)>(r111) >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : virtualinvoke r1.<java.awt.Graphics2D: void setPaint(java.awt.Paint)>(r110)
+org.jfree.chart.plot.PiePlot3D.draw : virtualinvoke r1.<java.awt.Graphics2D: void setPaint(java.awt.Paint)>(r110) >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : virtualinvoke r1.<java.awt.Graphics2D: void draw(java.awt.Shape)>(r106)
+org.jfree.chart.plot.PiePlot3D.draw : virtualinvoke r1.<java.awt.Graphics2D: void draw(java.awt.Shape)>(r106) >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : if r5 == null
+org.jfree.chart.plot.PiePlot3D.draw : if r5 == null >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $r112 = virtualinvoke r5.<org.jfree.chart.plot.PlotRenderingInfo: org.jfree.chart.ChartRenderingInfo getOwner()>()
+org.jfree.chart.plot.PiePlot3D.draw : if r5 == null >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : i24 = i24 + 1
+org.jfree.chart.plot.PiePlot3D.draw : i24 = i24 + 1 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : goto [?= (branch)]
+org.jfree.chart.plot.PiePlot3D.draw : goto [?= (branch)] >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : if i24 >= i2
+org.jfree.chart.plot.PiePlot3D.draw : $r112 = virtualinvoke r5.<org.jfree.chart.plot.PlotRenderingInfo: org.jfree.chart.ChartRenderingInfo getOwner()>() >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : r36 = virtualinvoke $r112.<org.jfree.chart.ChartRenderingInfo: org.jfree.chart.entity.EntityCollection getEntityCollection()>()
+org.jfree.chart.plot.PiePlot3D.draw : r36 = virtualinvoke $r112.<org.jfree.chart.ChartRenderingInfo: org.jfree.chart.entity.EntityCollection getEntityCollection()>() >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : if r36 == null
+org.jfree.chart.plot.PiePlot3D.draw : if r36 == null >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : r37 = null
+org.jfree.chart.plot.PiePlot3D.draw : if r36 == null >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : i24 = i24 + 1
+org.jfree.chart.plot.PiePlot3D.draw : r37 = null >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : r38 = virtualinvoke r0.<org.jfree.chart.plot.PiePlot3D: org.jfree.chart.labels.PieToolTipGenerator getToolTipGenerator()>()
+org.jfree.chart.plot.PiePlot3D.draw : r38 = virtualinvoke r0.<org.jfree.chart.plot.PiePlot3D: org.jfree.chart.labels.PieToolTipGenerator getToolTipGenerator()>() >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : if r38 == null
+org.jfree.chart.plot.PiePlot3D.draw : if r38 == null >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : r37 = interfaceinvoke r38.<org.jfree.chart.labels.PieToolTipGenerator: java.lang.String generateToolTip(org.jfree.data.general.PieDataset,java.lang.Comparable)>(r15, r108)
+org.jfree.chart.plot.PiePlot3D.draw : if r38 == null >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : r39 = null
+org.jfree.chart.plot.PiePlot3D.draw : r39 = null >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $r113 = virtualinvoke r0.<org.jfree.chart.plot.PiePlot3D: org.jfree.chart.urls.PieURLGenerator getURLGenerator()>()
+org.jfree.chart.plot.PiePlot3D.draw : $r113 = virtualinvoke r0.<org.jfree.chart.plot.PiePlot3D: org.jfree.chart.urls.PieURLGenerator getURLGenerator()>() >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : if $r113 == null
+org.jfree.chart.plot.PiePlot3D.draw : if $r113 == null >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $r114 = virtualinvoke r0.<org.jfree.chart.plot.PiePlot3D: org.jfree.chart.urls.PieURLGenerator getURLGenerator()>()
+org.jfree.chart.plot.PiePlot3D.draw : if $r113 == null >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $r115 = new org.jfree.chart.entity.PieSectionEntity
+org.jfree.chart.plot.PiePlot3D.draw : $r115 = new org.jfree.chart.entity.PieSectionEntity >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $i26 = virtualinvoke r0.<org.jfree.chart.plot.PiePlot3D: int getPieIndex()>()
+org.jfree.chart.plot.PiePlot3D.draw : $i26 = virtualinvoke r0.<org.jfree.chart.plot.PiePlot3D: int getPieIndex()>() >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : specialinvoke $r115.<org.jfree.chart.entity.PieSectionEntity: void <init>(java.awt.Shape,org.jfree.data.general.PieDataset,int,int,java.lang.Comparable,java.lang.String,java.lang.String)>(r106, r15, $i26, i24, r108, r37, r39)
+org.jfree.chart.plot.PiePlot3D.draw : specialinvoke $r115.<org.jfree.chart.entity.PieSectionEntity: void <init>(java.awt.Shape,org.jfree.data.general.PieDataset,int,int,java.lang.Comparable,java.lang.String,java.lang.String)>(r106, r15, $i26, i24, r108, r37, r39) >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : r40 = $r115
+org.jfree.chart.plot.PiePlot3D.draw : r40 = $r115 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : interfaceinvoke r36.<org.jfree.chart.entity.EntityCollection: void add(org.jfree.chart.entity.ChartEntity)>(r40)
+org.jfree.chart.plot.PiePlot3D.draw : interfaceinvoke r36.<org.jfree.chart.entity.EntityCollection: void add(org.jfree.chart.entity.ChartEntity)>(r40) >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : i24 = i24 + 1
+org.jfree.chart.plot.PiePlot3D.draw : $r114 = virtualinvoke r0.<org.jfree.chart.plot.PiePlot3D: org.jfree.chart.urls.PieURLGenerator getURLGenerator()>() >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $i25 = virtualinvoke r0.<org.jfree.chart.plot.PiePlot3D: int getPieIndex()>()
+org.jfree.chart.plot.PiePlot3D.draw : $i25 = virtualinvoke r0.<org.jfree.chart.plot.PiePlot3D: int getPieIndex()>() >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : r39 = interfaceinvoke $r114.<org.jfree.chart.urls.PieURLGenerator: java.lang.String generateURL(org.jfree.data.general.PieDataset,java.lang.Comparable,int)>(r15, r108, $i25)
+org.jfree.chart.plot.PiePlot3D.draw : r39 = interfaceinvoke $r114.<org.jfree.chart.urls.PieURLGenerator: java.lang.String generateURL(org.jfree.data.general.PieDataset,java.lang.Comparable,int)>(r15, r108, $i25) >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $r115 = new org.jfree.chart.entity.PieSectionEntity
+org.jfree.chart.plot.PiePlot3D.draw : r37 = interfaceinvoke r38.<org.jfree.chart.labels.PieToolTipGenerator: java.lang.String generateToolTip(org.jfree.data.general.PieDataset,java.lang.Comparable)>(r15, r108) >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : r39 = null
+org.jfree.chart.plot.PiePlot3D.draw : goto [?= i24 = i24 + 1] >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : i24 = i24 + 1
+org.jfree.chart.plot.PiePlot3D.draw : $r97 = interfaceinvoke r96.<java.util.Iterator: java.lang.Object next()>() >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : r98 = (java.awt.geom.Arc2D) $r97
+org.jfree.chart.plot.PiePlot3D.draw : r98 = (java.awt.geom.Arc2D) $r97 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : if r98 == null
+org.jfree.chart.plot.PiePlot3D.draw : if r98 == null >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : r99 = virtualinvoke r0.<org.jfree.chart.plot.PiePlot3D: java.lang.Comparable getSectionKey(int)>(i23)
+org.jfree.chart.plot.PiePlot3D.draw : if r98 == null >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : i23 = i23 + 1
+org.jfree.chart.plot.PiePlot3D.draw : i23 = i23 + 1 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : goto [?= $z10 = interfaceinvoke r96.<java.util.Iterator: boolean hasNext()>()]
+org.jfree.chart.plot.PiePlot3D.draw : goto [?= $z10 = interfaceinvoke r96.<java.util.Iterator: boolean hasNext()>()] >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $z10 = interfaceinvoke r96.<java.util.Iterator: boolean hasNext()>()
+org.jfree.chart.plot.PiePlot3D.draw : r99 = virtualinvoke r0.<org.jfree.chart.plot.PiePlot3D: java.lang.Comparable getSectionKey(int)>(i23) >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : r100 = virtualinvoke r0.<org.jfree.chart.plot.PiePlot3D: java.awt.Paint lookupSectionPaint(java.lang.Comparable)>(r99)
+org.jfree.chart.plot.PiePlot3D.draw : r100 = virtualinvoke r0.<org.jfree.chart.plot.PiePlot3D: java.awt.Paint lookupSectionPaint(java.lang.Comparable)>(r99) >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : r101 = virtualinvoke r0.<org.jfree.chart.plot.PiePlot3D: java.awt.Paint lookupSectionOutlinePaint(java.lang.Comparable)>(r99)
+org.jfree.chart.plot.PiePlot3D.draw : r101 = virtualinvoke r0.<org.jfree.chart.plot.PiePlot3D: java.awt.Paint lookupSectionOutlinePaint(java.lang.Comparable)>(r99) >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : r102 = virtualinvoke r0.<org.jfree.chart.plot.PiePlot3D: java.awt.Stroke lookupSectionOutlineStroke(java.lang.Comparable)>(r99)
+org.jfree.chart.plot.PiePlot3D.draw : r102 = virtualinvoke r0.<org.jfree.chart.plot.PiePlot3D: java.awt.Stroke lookupSectionOutlineStroke(java.lang.Comparable)>(r99) >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : virtualinvoke r0.<org.jfree.chart.plot.PiePlot3D: void drawSide(java.awt.Graphics2D,java.awt.geom.Rectangle2D,java.awt.geom.Arc2D,java.awt.geom.Area,java.awt.geom.Area,java.awt.Paint,java.awt.Paint,java.awt.Stroke,boolean,boolean)>(r1, r13, r98, r78, r27, r100, r101, r102, 1, 0)
+org.jfree.chart.plot.PiePlot3D.draw : virtualinvoke r0.<org.jfree.chart.plot.PiePlot3D: void drawSide(java.awt.Graphics2D,java.awt.geom.Rectangle2D,java.awt.geom.Arc2D,java.awt.geom.Area,java.awt.geom.Area,java.awt.Paint,java.awt.Paint,java.awt.Stroke,boolean,boolean)>(r1, r13, r98, r78, r27, r100, r101, r102, 1, 0) >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : i23 = i23 + 1
+org.jfree.chart.plot.PiePlot3D.draw : $r90 = interfaceinvoke r89.<java.util.Iterator: java.lang.Object next()>() >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : r91 = (java.awt.geom.Arc2D) $r90
+org.jfree.chart.plot.PiePlot3D.draw : r91 = (java.awt.geom.Arc2D) $r90 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : if r91 == null
+org.jfree.chart.plot.PiePlot3D.draw : if r91 == null >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : r92 = virtualinvoke r0.<org.jfree.chart.plot.PiePlot3D: java.lang.Comparable getSectionKey(int)>(i22)
+org.jfree.chart.plot.PiePlot3D.draw : if r91 == null >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : i22 = i22 + 1
+org.jfree.chart.plot.PiePlot3D.draw : i22 = i22 + 1 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : goto [?= $z9 = interfaceinvoke r89.<java.util.Iterator: boolean hasNext()>()]
+org.jfree.chart.plot.PiePlot3D.draw : goto [?= $z9 = interfaceinvoke r89.<java.util.Iterator: boolean hasNext()>()] >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $z9 = interfaceinvoke r89.<java.util.Iterator: boolean hasNext()>()
+org.jfree.chart.plot.PiePlot3D.draw : r92 = virtualinvoke r0.<org.jfree.chart.plot.PiePlot3D: java.lang.Comparable getSectionKey(int)>(i22) >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : r93 = virtualinvoke r0.<org.jfree.chart.plot.PiePlot3D: java.awt.Paint lookupSectionPaint(java.lang.Comparable)>(r92)
+org.jfree.chart.plot.PiePlot3D.draw : r93 = virtualinvoke r0.<org.jfree.chart.plot.PiePlot3D: java.awt.Paint lookupSectionPaint(java.lang.Comparable)>(r92) >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : r94 = virtualinvoke r0.<org.jfree.chart.plot.PiePlot3D: java.awt.Paint lookupSectionOutlinePaint(java.lang.Comparable)>(r92)
+org.jfree.chart.plot.PiePlot3D.draw : r94 = virtualinvoke r0.<org.jfree.chart.plot.PiePlot3D: java.awt.Paint lookupSectionOutlinePaint(java.lang.Comparable)>(r92) >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : r95 = virtualinvoke r0.<org.jfree.chart.plot.PiePlot3D: java.awt.Stroke lookupSectionOutlineStroke(java.lang.Comparable)>(r92)
+org.jfree.chart.plot.PiePlot3D.draw : r95 = virtualinvoke r0.<org.jfree.chart.plot.PiePlot3D: java.awt.Stroke lookupSectionOutlineStroke(java.lang.Comparable)>(r92) >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : virtualinvoke r0.<org.jfree.chart.plot.PiePlot3D: void drawSide(java.awt.Graphics2D,java.awt.geom.Rectangle2D,java.awt.geom.Arc2D,java.awt.geom.Area,java.awt.geom.Area,java.awt.Paint,java.awt.Paint,java.awt.Stroke,boolean,boolean)>(r1, r13, r91, r78, r27, r93, r94, r95, 0, 1)
+org.jfree.chart.plot.PiePlot3D.draw : virtualinvoke r0.<org.jfree.chart.plot.PiePlot3D: void drawSide(java.awt.Graphics2D,java.awt.geom.Rectangle2D,java.awt.geom.Arc2D,java.awt.geom.Area,java.awt.geom.Area,java.awt.Paint,java.awt.Paint,java.awt.Stroke,boolean,boolean)>(r1, r13, r91, r78, r27, r93, r94, r95, 0, 1) >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : i22 = i22 + 1
+org.jfree.chart.plot.PiePlot3D.draw : $r82 = virtualinvoke r20.<java.util.ArrayList: java.lang.Object get(int)>(i3) >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : r28 = (java.awt.geom.Arc2D$Double) $r82
+org.jfree.chart.plot.PiePlot3D.draw : r28 = (java.awt.geom.Arc2D$Double) $r82 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : if r28 != null
+org.jfree.chart.plot.PiePlot3D.draw : if r28 != null >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : goto [?= i3 = i3 + 1]
+org.jfree.chart.plot.PiePlot3D.draw : if r28 != null >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : r29 = virtualinvoke r0.<org.jfree.chart.plot.PiePlot3D: java.lang.Comparable getSectionKey(int)>(i3)
+org.jfree.chart.plot.PiePlot3D.draw : r29 = virtualinvoke r0.<org.jfree.chart.plot.PiePlot3D: java.lang.Comparable getSectionKey(int)>(i3) >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : r30 = virtualinvoke r0.<org.jfree.chart.plot.PiePlot3D: java.awt.Paint lookupSectionPaint(java.lang.Comparable)>(r29)
+org.jfree.chart.plot.PiePlot3D.draw : r30 = virtualinvoke r0.<org.jfree.chart.plot.PiePlot3D: java.awt.Paint lookupSectionPaint(java.lang.Comparable)>(r29) >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : r31 = virtualinvoke r0.<org.jfree.chart.plot.PiePlot3D: java.awt.Paint lookupSectionOutlinePaint(java.lang.Comparable)>(r29)
+org.jfree.chart.plot.PiePlot3D.draw : r31 = virtualinvoke r0.<org.jfree.chart.plot.PiePlot3D: java.awt.Paint lookupSectionOutlinePaint(java.lang.Comparable)>(r29) >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : r32 = virtualinvoke r0.<org.jfree.chart.plot.PiePlot3D: java.awt.Stroke lookupSectionOutlineStroke(java.lang.Comparable)>(r29)
+org.jfree.chart.plot.PiePlot3D.draw : r32 = virtualinvoke r0.<org.jfree.chart.plot.PiePlot3D: java.awt.Stroke lookupSectionOutlineStroke(java.lang.Comparable)>(r29) >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : virtualinvoke r1.<java.awt.Graphics2D: void setPaint(java.awt.Paint)>(r30)
+org.jfree.chart.plot.PiePlot3D.draw : virtualinvoke r1.<java.awt.Graphics2D: void setPaint(java.awt.Paint)>(r30) >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : virtualinvoke r1.<java.awt.Graphics2D: void fill(java.awt.Shape)>(r28)
+org.jfree.chart.plot.PiePlot3D.draw : virtualinvoke r1.<java.awt.Graphics2D: void fill(java.awt.Shape)>(r28) >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : virtualinvoke r1.<java.awt.Graphics2D: void setPaint(java.awt.Paint)>(r31)
+org.jfree.chart.plot.PiePlot3D.draw : virtualinvoke r1.<java.awt.Graphics2D: void setPaint(java.awt.Paint)>(r31) >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : virtualinvoke r1.<java.awt.Graphics2D: void setStroke(java.awt.Stroke)>(r32)
+org.jfree.chart.plot.PiePlot3D.draw : virtualinvoke r1.<java.awt.Graphics2D: void setStroke(java.awt.Stroke)>(r32) >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : virtualinvoke r1.<java.awt.Graphics2D: void draw(java.awt.Shape)>(r28)
+org.jfree.chart.plot.PiePlot3D.draw : virtualinvoke r1.<java.awt.Graphics2D: void draw(java.awt.Shape)>(r28) >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : virtualinvoke r1.<java.awt.Graphics2D: void setPaint(java.awt.Paint)>(r30)
+org.jfree.chart.plot.PiePlot3D.draw : virtualinvoke r1.<java.awt.Graphics2D: void setPaint(java.awt.Paint)>(r30) >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : r33 = virtualinvoke r28.<java.awt.geom.Arc2D$Double: java.awt.geom.Point2D getStartPoint()>()
+org.jfree.chart.plot.PiePlot3D.draw : r33 = virtualinvoke r28.<java.awt.geom.Arc2D$Double: java.awt.geom.Point2D getStartPoint()>() >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $r83 = newarray (int)[4]
+org.jfree.chart.plot.PiePlot3D.draw : $r83 = newarray (int)[4] >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d155 = virtualinvoke r28.<java.awt.geom.Arc2D$Double: double getCenterX()>()
+org.jfree.chart.plot.PiePlot3D.draw : $d155 = virtualinvoke r28.<java.awt.geom.Arc2D$Double: double getCenterX()>() >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $i12 = (int) $d155
+org.jfree.chart.plot.PiePlot3D.draw : $i12 = (int) $d155 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $r83[0] = $i12
+org.jfree.chart.plot.PiePlot3D.draw : $r83[0] = $i12 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d156 = virtualinvoke r28.<java.awt.geom.Arc2D$Double: double getCenterX()>()
+org.jfree.chart.plot.PiePlot3D.draw : $d156 = virtualinvoke r28.<java.awt.geom.Arc2D$Double: double getCenterX()>() >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $i13 = (int) $d156
+org.jfree.chart.plot.PiePlot3D.draw : $i13 = (int) $d156 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $r83[1] = $i13
+org.jfree.chart.plot.PiePlot3D.draw : $r83[1] = $i13 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d157 = virtualinvoke r33.<java.awt.geom.Point2D: double getX()>()
+org.jfree.chart.plot.PiePlot3D.draw : $d157 = virtualinvoke r33.<java.awt.geom.Point2D: double getX()>() >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $i14 = (int) $d157
+org.jfree.chart.plot.PiePlot3D.draw : $i14 = (int) $d157 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $r83[2] = $i14
+org.jfree.chart.plot.PiePlot3D.draw : $r83[2] = $i14 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d158 = virtualinvoke r33.<java.awt.geom.Point2D: double getX()>()
+org.jfree.chart.plot.PiePlot3D.draw : $d158 = virtualinvoke r33.<java.awt.geom.Point2D: double getX()>() >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $i15 = (int) $d158
+org.jfree.chart.plot.PiePlot3D.draw : $i15 = (int) $d158 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $r83[3] = $i15
+org.jfree.chart.plot.PiePlot3D.draw : $r83[3] = $i15 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : r84 = $r83
+org.jfree.chart.plot.PiePlot3D.draw : r84 = $r83 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $r85 = newarray (int)[4]
+org.jfree.chart.plot.PiePlot3D.draw : $r85 = newarray (int)[4] >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d159 = virtualinvoke r28.<java.awt.geom.Arc2D$Double: double getCenterY()>()
+org.jfree.chart.plot.PiePlot3D.draw : $d159 = virtualinvoke r28.<java.awt.geom.Arc2D$Double: double getCenterY()>() >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $i16 = (int) $d159
+org.jfree.chart.plot.PiePlot3D.draw : $i16 = (int) $d159 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $r85[0] = $i16
+org.jfree.chart.plot.PiePlot3D.draw : $r85[0] = $i16 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d160 = virtualinvoke r28.<java.awt.geom.Arc2D$Double: double getCenterY()>()
+org.jfree.chart.plot.PiePlot3D.draw : $d160 = virtualinvoke r28.<java.awt.geom.Arc2D$Double: double getCenterY()>() >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $i17 = (int) $d160
+org.jfree.chart.plot.PiePlot3D.draw : $i17 = (int) $d160 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $i18 = $i17 - i0
+org.jfree.chart.plot.PiePlot3D.draw : $i18 = $i17 - i0 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $r85[1] = $i18
+org.jfree.chart.plot.PiePlot3D.draw : $r85[1] = $i18 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d161 = virtualinvoke r33.<java.awt.geom.Point2D: double getY()>()
+org.jfree.chart.plot.PiePlot3D.draw : $d161 = virtualinvoke r33.<java.awt.geom.Point2D: double getY()>() >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $i19 = (int) $d161
+org.jfree.chart.plot.PiePlot3D.draw : $i19 = (int) $d161 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $i20 = $i19 - i0
+org.jfree.chart.plot.PiePlot3D.draw : $i20 = $i19 - i0 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $r85[2] = $i20
+org.jfree.chart.plot.PiePlot3D.draw : $r85[2] = $i20 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d162 = virtualinvoke r33.<java.awt.geom.Point2D: double getY()>()
+org.jfree.chart.plot.PiePlot3D.draw : $d162 = virtualinvoke r33.<java.awt.geom.Point2D: double getY()>() >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $i21 = (int) $d162
+org.jfree.chart.plot.PiePlot3D.draw : $i21 = (int) $d162 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $r85[3] = $i21
+org.jfree.chart.plot.PiePlot3D.draw : $r85[3] = $i21 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : r34 = $r85
+org.jfree.chart.plot.PiePlot3D.draw : r34 = $r85 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $r86 = new java.awt.Polygon
+org.jfree.chart.plot.PiePlot3D.draw : $r86 = new java.awt.Polygon >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : specialinvoke $r86.<java.awt.Polygon: void <init>(int[],int[],int)>(r84, r34, 4)
+org.jfree.chart.plot.PiePlot3D.draw : specialinvoke $r86.<java.awt.Polygon: void <init>(int[],int[],int)>(r84, r34, 4) >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : r35 = $r86
+org.jfree.chart.plot.PiePlot3D.draw : r35 = $r86 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $r87 = <java.awt.Color: java.awt.Color lightGray>
+org.jfree.chart.plot.PiePlot3D.draw : $r87 = <java.awt.Color: java.awt.Color lightGray> >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : virtualinvoke r1.<java.awt.Graphics2D: void setPaint(java.awt.Paint)>($r87)
+org.jfree.chart.plot.PiePlot3D.draw : virtualinvoke r1.<java.awt.Graphics2D: void setPaint(java.awt.Paint)>($r87) >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : virtualinvoke r1.<java.awt.Graphics2D: void fill(java.awt.Shape)>(r35)
+org.jfree.chart.plot.PiePlot3D.draw : virtualinvoke r1.<java.awt.Graphics2D: void fill(java.awt.Shape)>(r35) >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : virtualinvoke r1.<java.awt.Graphics2D: void setPaint(java.awt.Paint)>(r31)
+org.jfree.chart.plot.PiePlot3D.draw : virtualinvoke r1.<java.awt.Graphics2D: void setPaint(java.awt.Paint)>(r31) >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : virtualinvoke r1.<java.awt.Graphics2D: void setStroke(java.awt.Stroke)>(r32)
+org.jfree.chart.plot.PiePlot3D.draw : virtualinvoke r1.<java.awt.Graphics2D: void setStroke(java.awt.Stroke)>(r32) >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : virtualinvoke r1.<java.awt.Graphics2D: void draw(java.awt.Shape)>(r35)
+org.jfree.chart.plot.PiePlot3D.draw : virtualinvoke r1.<java.awt.Graphics2D: void draw(java.awt.Shape)>(r35) >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : virtualinvoke r1.<java.awt.Graphics2D: void setPaint(java.awt.Paint)>(r30)
+org.jfree.chart.plot.PiePlot3D.draw : virtualinvoke r1.<java.awt.Graphics2D: void setPaint(java.awt.Paint)>(r30) >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : i3 = i3 + 1
+org.jfree.chart.plot.PiePlot3D.draw : i3 = i3 + 1 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : goto [?= (branch)]
+org.jfree.chart.plot.PiePlot3D.draw : goto [?= (branch)] >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : if i3 >= i2
+org.jfree.chart.plot.PiePlot3D.draw : goto [?= i3 = i3 + 1] >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : i3 = i3 + 1
+org.jfree.chart.plot.PiePlot3D.draw : $r60 = interfaceinvoke r21.<java.util.Iterator: java.lang.Object next()>() >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : r22 = (java.lang.Comparable) $r60
+org.jfree.chart.plot.PiePlot3D.draw : r22 = (java.lang.Comparable) $r60 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : r23 = interfaceinvoke r15.<org.jfree.data.general.PieDataset: java.lang.Number getValue(java.lang.Comparable)>(r22)
+org.jfree.chart.plot.PiePlot3D.draw : r23 = interfaceinvoke r15.<org.jfree.data.general.PieDataset: java.lang.Number getValue(java.lang.Comparable)>(r22) >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : if r23 != null
+org.jfree.chart.plot.PiePlot3D.draw : if r23 != null >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : virtualinvoke r20.<java.util.ArrayList: boolean add(java.lang.Object)>(null)
+org.jfree.chart.plot.PiePlot3D.draw : if r23 != null >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : d17 = virtualinvoke r23.<java.lang.Number: double doubleValue()>()
+org.jfree.chart.plot.PiePlot3D.draw : d17 = virtualinvoke r23.<java.lang.Number: double doubleValue()>() >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $b10 = d17 cmpg 0.0
+org.jfree.chart.plot.PiePlot3D.draw : $b10 = d17 cmpg 0.0 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : if $b10 > 0
+org.jfree.chart.plot.PiePlot3D.draw : if $b10 > 0 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : virtualinvoke r20.<java.util.ArrayList: boolean add(java.lang.Object)>(null)
+org.jfree.chart.plot.PiePlot3D.draw : if $b10 > 0 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : d18 = virtualinvoke r0.<org.jfree.chart.plot.PiePlot3D: double getStartAngle()>()
+org.jfree.chart.plot.PiePlot3D.draw : d18 = virtualinvoke r0.<org.jfree.chart.plot.PiePlot3D: double getStartAngle()>() >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $r61 = virtualinvoke r0.<org.jfree.chart.plot.PiePlot3D: org.jfree.util.Rotation getDirection()>()
+org.jfree.chart.plot.PiePlot3D.draw : $r61 = virtualinvoke r0.<org.jfree.chart.plot.PiePlot3D: org.jfree.util.Rotation getDirection()>() >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : d19 = virtualinvoke $r61.<org.jfree.util.Rotation: double getFactor()>()
+org.jfree.chart.plot.PiePlot3D.draw : d19 = virtualinvoke $r61.<org.jfree.util.Rotation: double getFactor()>() >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d112 = d16 * 360.0
+org.jfree.chart.plot.PiePlot3D.draw : $d112 = d16 * 360.0 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d113 = d19 * $d112
+org.jfree.chart.plot.PiePlot3D.draw : $d113 = d19 * $d112 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d114 = $d113 / d15
+org.jfree.chart.plot.PiePlot3D.draw : $d114 = $d113 / d15 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : d20 = d18 + $d114
+org.jfree.chart.plot.PiePlot3D.draw : d20 = d18 + $d114 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d115 = d16 + d17
+org.jfree.chart.plot.PiePlot3D.draw : $d115 = d16 + d17 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d116 = d19 * $d115
+org.jfree.chart.plot.PiePlot3D.draw : $d116 = d19 * $d115 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d117 = $d116 * 360.0
+org.jfree.chart.plot.PiePlot3D.draw : $d117 = $d116 * 360.0 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d118 = $d117 / d15
+org.jfree.chart.plot.PiePlot3D.draw : $d118 = $d117 / d15 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : d21 = d18 + $d118
+org.jfree.chart.plot.PiePlot3D.draw : d21 = d18 + $d118 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d119 = d21 - d20
+org.jfree.chart.plot.PiePlot3D.draw : $d119 = d21 - d20 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d120 = staticinvoke <java.lang.Math: double abs(double)>($d119)
+org.jfree.chart.plot.PiePlot3D.draw : $d120 = staticinvoke <java.lang.Math: double abs(double)>($d119) >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d121 = virtualinvoke r0.<org.jfree.chart.plot.PiePlot3D: double getMinimumArcAngleToDraw()>()
+org.jfree.chart.plot.PiePlot3D.draw : $d121 = virtualinvoke r0.<org.jfree.chart.plot.PiePlot3D: double getMinimumArcAngleToDraw()>() >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $b11 = $d120 cmpl $d121
+org.jfree.chart.plot.PiePlot3D.draw : $b11 = $d120 cmpl $d121 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : if $b11 <= 0
+org.jfree.chart.plot.PiePlot3D.draw : if $b11 <= 0 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $r62 = new java.awt.geom.Arc2D$Double
+org.jfree.chart.plot.PiePlot3D.draw : if $b11 <= 0 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : virtualinvoke r20.<java.util.ArrayList: boolean add(java.lang.Object)>(null)
+org.jfree.chart.plot.PiePlot3D.draw : virtualinvoke r20.<java.util.ArrayList: boolean add(java.lang.Object)>(null) >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : d16 = d16 + d17
+org.jfree.chart.plot.PiePlot3D.draw : d16 = d16 + d17 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : goto [?= $z4 = interfaceinvoke r21.<java.util.Iterator: boolean hasNext()>()]
+org.jfree.chart.plot.PiePlot3D.draw : goto [?= $z4 = interfaceinvoke r21.<java.util.Iterator: boolean hasNext()>()] >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $z4 = interfaceinvoke r21.<java.util.Iterator: boolean hasNext()>()
+org.jfree.chart.plot.PiePlot3D.draw : $r62 = new java.awt.geom.Arc2D$Double >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d122 = (double) i0
+org.jfree.chart.plot.PiePlot3D.draw : $d122 = (double) i0 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d123 = d111 + $d122
+org.jfree.chart.plot.PiePlot3D.draw : $d123 = d111 + $d122 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d124 = virtualinvoke r13.<java.awt.geom.Rectangle2D: double getWidth()>()
+org.jfree.chart.plot.PiePlot3D.draw : $d124 = virtualinvoke r13.<java.awt.geom.Rectangle2D: double getWidth()>() >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d125 = virtualinvoke r13.<java.awt.geom.Rectangle2D: double getHeight()>()
+org.jfree.chart.plot.PiePlot3D.draw : $d125 = virtualinvoke r13.<java.awt.geom.Rectangle2D: double getHeight()>() >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d126 = (double) i0
+org.jfree.chart.plot.PiePlot3D.draw : $d126 = (double) i0 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d127 = $d125 - $d126
+org.jfree.chart.plot.PiePlot3D.draw : $d127 = $d125 - $d126 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d128 = d21 - d20
+org.jfree.chart.plot.PiePlot3D.draw : $d128 = d21 - d20 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : specialinvoke $r62.<java.awt.geom.Arc2D$Double: void <init>(double,double,double,double,double,double,int)>(d110, $d123, $d124, $d127, d20, $d128, 2)
+org.jfree.chart.plot.PiePlot3D.draw : specialinvoke $r62.<java.awt.geom.Arc2D$Double: void <init>(double,double,double,double,double,double,int)>(d110, $d123, $d124, $d127, d20, $d128, 2) >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : virtualinvoke r20.<java.util.ArrayList: boolean add(java.lang.Object)>($r62)
+org.jfree.chart.plot.PiePlot3D.draw : virtualinvoke r20.<java.util.ArrayList: boolean add(java.lang.Object)>($r62) >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : goto [?= d16 = d16 + d17]
+org.jfree.chart.plot.PiePlot3D.draw : goto [?= d16 = d16 + d17] >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : d16 = d16 + d17
+org.jfree.chart.plot.PiePlot3D.draw : virtualinvoke r20.<java.util.ArrayList: boolean add(java.lang.Object)>(null) >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : goto [?= $z4 = interfaceinvoke r21.<java.util.Iterator: boolean hasNext()>()]
+org.jfree.chart.plot.PiePlot3D.draw : goto [?= $z4 = interfaceinvoke r21.<java.util.Iterator: boolean hasNext()>()] >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $z4 = interfaceinvoke r21.<java.util.Iterator: boolean hasNext()>()
+org.jfree.chart.plot.PiePlot3D.draw : virtualinvoke r20.<java.util.ArrayList: boolean add(java.lang.Object)>(null) >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : goto [?= $z4 = interfaceinvoke r21.<java.util.Iterator: boolean hasNext()>()]
+org.jfree.chart.plot.PiePlot3D.draw : goto [?= $z4 = interfaceinvoke r21.<java.util.Iterator: boolean hasNext()>()] >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $z4 = interfaceinvoke r21.<java.util.Iterator: boolean hasNext()>()
+org.jfree.chart.plot.PiePlot3D.draw : $d100 = virtualinvoke r2.<java.awt.geom.Rectangle2D: double getWidth()>() >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d101 = virtualinvoke r2.<java.awt.geom.Rectangle2D: double getHeight()>()
+org.jfree.chart.plot.PiePlot3D.draw : $d101 = virtualinvoke r2.<java.awt.geom.Rectangle2D: double getHeight()>() >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d102 = staticinvoke <java.lang.Math: double min(double,double)>($d100, $d101)
+org.jfree.chart.plot.PiePlot3D.draw : $d102 = staticinvoke <java.lang.Math: double min(double,double)>($d100, $d101) >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : d103 = $d102 / 2.0
+org.jfree.chart.plot.PiePlot3D.draw : d103 = $d102 / 2.0 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $r56 = new java.awt.geom.Rectangle2D$Double
+org.jfree.chart.plot.PiePlot3D.draw : $r56 = new java.awt.geom.Rectangle2D$Double >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d104 = virtualinvoke r2.<java.awt.geom.Rectangle2D: double getCenterX()>()
+org.jfree.chart.plot.PiePlot3D.draw : $d104 = virtualinvoke r2.<java.awt.geom.Rectangle2D: double getCenterX()>() >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d105 = $d104 - d103
+org.jfree.chart.plot.PiePlot3D.draw : $d105 = $d104 - d103 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d106 = virtualinvoke r2.<java.awt.geom.Rectangle2D: double getCenterY()>()
+org.jfree.chart.plot.PiePlot3D.draw : $d106 = virtualinvoke r2.<java.awt.geom.Rectangle2D: double getCenterY()>() >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d107 = $d106 - d103
+org.jfree.chart.plot.PiePlot3D.draw : $d107 = $d106 - d103 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d108 = 2.0 * d103
+org.jfree.chart.plot.PiePlot3D.draw : $d108 = 2.0 * d103 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d109 = 2.0 * d103
+org.jfree.chart.plot.PiePlot3D.draw : $d109 = 2.0 * d103 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : specialinvoke $r56.<java.awt.geom.Rectangle2D$Double: void <init>(double,double,double,double)>($d105, $d107, $d108, $d109)
+org.jfree.chart.plot.PiePlot3D.draw : specialinvoke $r56.<java.awt.geom.Rectangle2D$Double: void <init>(double,double,double,double)>($d105, $d107, $d108, $d109) >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : r2 = $r56
+org.jfree.chart.plot.PiePlot3D.draw : r2 = $r56 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : r57 = interfaceinvoke r15.<org.jfree.data.general.PieDataset: java.util.List getKeys()>()
+org.jfree.chart.plot.PiePlot3D.draw : $r54 = <org.jfree.chart.plot.PiePlot3D: java.util.ResourceBundle localizationResources> >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : r16 = virtualinvoke $r54.<java.util.ResourceBundle: java.lang.String getString(java.lang.String)>("Too_many_elements")
+org.jfree.chart.plot.PiePlot3D.draw : r16 = virtualinvoke $r54.<java.util.ResourceBundle: java.lang.String getString(java.lang.String)>("Too_many_elements") >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $r55 = new java.awt.Font
+org.jfree.chart.plot.PiePlot3D.draw : $r55 = new java.awt.Font >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : specialinvoke $r55.<java.awt.Font: void <init>(java.lang.String,int,int)>("dialog", 1, 10)
+org.jfree.chart.plot.PiePlot3D.draw : specialinvoke $r55.<java.awt.Font: void <init>(java.lang.String,int,int)>("dialog", 1, 10) >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : r17 = $r55
+org.jfree.chart.plot.PiePlot3D.draw : r17 = $r55 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : virtualinvoke r1.<java.awt.Graphics2D: void setFont(java.awt.Font)>(r17)
+org.jfree.chart.plot.PiePlot3D.draw : virtualinvoke r1.<java.awt.Graphics2D: void setFont(java.awt.Font)>(r17) >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : r18 = virtualinvoke r1.<java.awt.Graphics2D: java.awt.FontMetrics getFontMetrics(java.awt.Font)>(r17)
+org.jfree.chart.plot.PiePlot3D.draw : r18 = virtualinvoke r1.<java.awt.Graphics2D: java.awt.FontMetrics getFontMetrics(java.awt.Font)>(r17) >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : i1 = virtualinvoke r18.<java.awt.FontMetrics: int stringWidth(java.lang.String)>(r16)
+org.jfree.chart.plot.PiePlot3D.draw : i1 = virtualinvoke r18.<java.awt.FontMetrics: int stringWidth(java.lang.String)>(r16) >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d90 = virtualinvoke r2.<java.awt.geom.Rectangle2D: double getX()>()
+org.jfree.chart.plot.PiePlot3D.draw : $d90 = virtualinvoke r2.<java.awt.geom.Rectangle2D: double getX()>() >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d91 = virtualinvoke r2.<java.awt.geom.Rectangle2D: double getWidth()>()
+org.jfree.chart.plot.PiePlot3D.draw : $d91 = virtualinvoke r2.<java.awt.geom.Rectangle2D: double getWidth()>() >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d92 = (double) i1
+org.jfree.chart.plot.PiePlot3D.draw : $d92 = (double) i1 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d93 = $d91 - $d92
+org.jfree.chart.plot.PiePlot3D.draw : $d93 = $d91 - $d92 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d94 = $d93 / 2.0
+org.jfree.chart.plot.PiePlot3D.draw : $d94 = $d93 / 2.0 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d95 = $d90 + $d94
+org.jfree.chart.plot.PiePlot3D.draw : $d95 = $d90 + $d94 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $i8 = (int) $d95
+org.jfree.chart.plot.PiePlot3D.draw : $i8 = (int) $d95 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d96 = virtualinvoke r2.<java.awt.geom.Rectangle2D: double getY()>()
+org.jfree.chart.plot.PiePlot3D.draw : $d96 = virtualinvoke r2.<java.awt.geom.Rectangle2D: double getY()>() >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d97 = virtualinvoke r2.<java.awt.geom.Rectangle2D: double getHeight()>()
+org.jfree.chart.plot.PiePlot3D.draw : $d97 = virtualinvoke r2.<java.awt.geom.Rectangle2D: double getHeight()>() >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d98 = $d97 / 2.0
+org.jfree.chart.plot.PiePlot3D.draw : $d98 = $d97 / 2.0 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d99 = $d96 + $d98
+org.jfree.chart.plot.PiePlot3D.draw : $d99 = $d96 + $d98 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $i9 = (int) $d99
+org.jfree.chart.plot.PiePlot3D.draw : $i9 = (int) $d99 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : virtualinvoke r1.<java.awt.Graphics2D: void drawString(java.lang.String,int,int)>(r16, $i8, $i9)
+org.jfree.chart.plot.PiePlot3D.draw : virtualinvoke r1.<java.awt.Graphics2D: void drawString(java.lang.String,int,int)>(r16, $i8, $i9) >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : return
+org.jfree.chart.plot.PiePlot3D.draw : virtualinvoke r0.<org.jfree.chart.plot.PiePlot3D: void drawNoDataMessage(java.awt.Graphics2D,java.awt.geom.Rectangle2D)>(r1, r2) >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : virtualinvoke r1.<java.awt.Graphics2D: void setClip(java.awt.Shape)>(r8)
+org.jfree.chart.plot.PiePlot3D.draw : virtualinvoke r1.<java.awt.Graphics2D: void setClip(java.awt.Shape)>(r8) >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : virtualinvoke r0.<org.jfree.chart.plot.PiePlot3D: void drawOutline(java.awt.Graphics2D,java.awt.geom.Rectangle2D)>(r1, r2)
+org.jfree.chart.plot.PiePlot3D.draw : virtualinvoke r0.<org.jfree.chart.plot.PiePlot3D: void drawOutline(java.awt.Graphics2D,java.awt.geom.Rectangle2D)>(r1, r2) >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : return
+org.jfree.chart.plot.PiePlot3D.draw : $d41 = staticinvoke <java.lang.Math: double min(double,double)>(d6, d7) >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : d8 = $d41 / 2.0
+org.jfree.chart.plot.PiePlot3D.draw : d8 = $d41 / 2.0 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d42 = d4 + d4
+org.jfree.chart.plot.PiePlot3D.draw : $d42 = d4 + d4 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d43 = $d42 + d6
+org.jfree.chart.plot.PiePlot3D.draw : $d43 = $d42 + d6 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d44 = $d43 / 2.0
+org.jfree.chart.plot.PiePlot3D.draw : $d44 = $d43 / 2.0 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : d4 = $d44 - d8
+org.jfree.chart.plot.PiePlot3D.draw : d4 = $d44 - d8 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d45 = d5 + d5
+org.jfree.chart.plot.PiePlot3D.draw : $d45 = d5 + d5 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d46 = $d45 + d7
+org.jfree.chart.plot.PiePlot3D.draw : $d46 = $d45 + d7 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d47 = $d46 / 2.0
+org.jfree.chart.plot.PiePlot3D.draw : $d47 = $d46 / 2.0 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : d5 = $d47 - d8
+org.jfree.chart.plot.PiePlot3D.draw : d5 = $d47 - d8 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : d6 = 2.0 * d8
+org.jfree.chart.plot.PiePlot3D.draw : d6 = 2.0 * d8 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : d7 = 2.0 * d8
+org.jfree.chart.plot.PiePlot3D.draw : d7 = 2.0 * d8 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : r47 = virtualinvoke r0.<org.jfree.chart.plot.PiePlot3D: org.jfree.chart.plot.PiePlotState initialise(java.awt.Graphics2D,java.awt.geom.Rectangle2D,org.jfree.chart.plot.PiePlot,java.lang.Integer,org.jfree.chart.plot.PlotRenderingInfo)>(r1, r2, r0, null, r5)
+org.jfree.chart.plot.PiePlot3D.draw : $d28 = virtualinvoke r0.<org.jfree.chart.plot.PiePlot3D: double getLabelGap()>() >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d29 = virtualinvoke r0.<org.jfree.chart.plot.PiePlot3D: double getMaximumLabelWidth()>()
+org.jfree.chart.plot.PiePlot3D.draw : $d29 = virtualinvoke r0.<org.jfree.chart.plot.PiePlot3D: double getMaximumLabelWidth()>() >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : d1 = $d28 + $d29
+org.jfree.chart.plot.PiePlot3D.draw : d1 = $d28 + $d29 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d30 = virtualinvoke r2.<java.awt.geom.Rectangle2D: double getWidth()>()
+org.jfree.chart.plot.PiePlot3D.draw : $r43 = new java.awt.image.BufferedImage >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d22 = virtualinvoke r2.<java.awt.geom.Rectangle2D: double getWidth()>()
+org.jfree.chart.plot.PiePlot3D.draw : $d22 = virtualinvoke r2.<java.awt.geom.Rectangle2D: double getWidth()>() >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $i4 = (int) $d22
+org.jfree.chart.plot.PiePlot3D.draw : $i4 = (int) $d22 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d23 = virtualinvoke r2.<java.awt.geom.Rectangle2D: double getHeight()>()
+org.jfree.chart.plot.PiePlot3D.draw : $d23 = virtualinvoke r2.<java.awt.geom.Rectangle2D: double getHeight()>() >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $i5 = (int) $d23
+org.jfree.chart.plot.PiePlot3D.draw : $i5 = (int) $d23 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : specialinvoke $r43.<java.awt.image.BufferedImage: void <init>(int,int,int)>($i4, $i5, 2)
+org.jfree.chart.plot.PiePlot3D.draw : specialinvoke $r43.<java.awt.image.BufferedImage: void <init>(int,int,int)>($i4, $i5, 2) >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : r10 = $r43
+org.jfree.chart.plot.PiePlot3D.draw : r10 = $r43 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : r1 = virtualinvoke r10.<java.awt.image.BufferedImage: java.awt.Graphics2D createGraphics()>()
+org.jfree.chart.plot.PiePlot3D.draw : r1 = virtualinvoke r10.<java.awt.image.BufferedImage: java.awt.Graphics2D createGraphics()>() >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d24 = virtualinvoke r2.<java.awt.geom.Rectangle2D: double getX()>()
+org.jfree.chart.plot.PiePlot3D.draw : $d24 = virtualinvoke r2.<java.awt.geom.Rectangle2D: double getX()>() >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d25 = neg $d24
+org.jfree.chart.plot.PiePlot3D.draw : $d25 = neg $d24 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d26 = virtualinvoke r2.<java.awt.geom.Rectangle2D: double getY()>()
+org.jfree.chart.plot.PiePlot3D.draw : $d26 = virtualinvoke r2.<java.awt.geom.Rectangle2D: double getY()>() >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $d27 = neg $d26
+org.jfree.chart.plot.PiePlot3D.draw : $d27 = neg $d26 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : virtualinvoke r1.<java.awt.Graphics2D: void translate(double,double)>($d25, $d27)
+org.jfree.chart.plot.PiePlot3D.draw : virtualinvoke r1.<java.awt.Graphics2D: void translate(double,double)>($d25, $d27) >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $r44 = virtualinvoke r9.<java.awt.Graphics2D: java.awt.RenderingHints getRenderingHints()>()
+org.jfree.chart.plot.PiePlot3D.draw : $r44 = virtualinvoke r9.<java.awt.Graphics2D: java.awt.RenderingHints getRenderingHints()>() >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : virtualinvoke r1.<java.awt.Graphics2D: void setRenderingHints(java.util.Map)>($r44)
+org.jfree.chart.plot.PiePlot3D.draw : virtualinvoke r1.<java.awt.Graphics2D: void setRenderingHints(java.util.Map)>($r44) >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : $r45 = virtualinvoke r2.<java.awt.geom.Rectangle2D: java.lang.Object clone()>()
+org.jfree.chart.plot.PiePlot3D.draw : $r45 = virtualinvoke r2.<java.awt.geom.Rectangle2D: java.lang.Object clone()>() >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : r7 = (java.awt.geom.Rectangle2D) $r45
+org.jfree.chart.plot.PiePlot3D.draw : r7 = (java.awt.geom.Rectangle2D) $r45 >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : d0 = virtualinvoke r0.<org.jfree.chart.plot.PiePlot3D: double getInteriorGap()>()
+org.jfree.chart.plot.PiePlot3D.draw : virtualinvoke r5.<org.jfree.chart.plot.PlotRenderingInfo: void setPlotArea(java.awt.geom.Rectangle2D)>(r2) >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : virtualinvoke r5.<org.jfree.chart.plot.PlotRenderingInfo: void setDataArea(java.awt.geom.Rectangle2D)>(r2)
+org.jfree.chart.plot.PiePlot3D.draw : virtualinvoke r5.<org.jfree.chart.plot.PlotRenderingInfo: void setDataArea(java.awt.geom.Rectangle2D)>(r2) >>>>>>>> org.jfree.chart.plot.PiePlot3D.draw : virtualinvoke r0.<org.jfree.chart.plot.PiePlot3D: void drawBackground(java.awt.Graphics2D,java.awt.geom.Rectangle2D)>(r1, r2)

@@ -1,0 +1,13 @@
+org.jfree.data.statistics.SimpleHistogramBin.setItemCount : r0.<org.jfree.data.statistics.SimpleHistogramBin: int itemCount> = i0
+org.jfree.data.DefaultKeyedValues.getIndex : return -1
+org.jfree.data.DefaultKeyedValues.getIndex : $r3 = r0.<org.jfree.data.DefaultKeyedValues: java.util.HashMap indexMap>
+org.jfree.data.DefaultKeyedValues.getIndex : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "key")
+org.jfree.data.DefaultKeyedValues.getIndex : if r2 != null goto $i0 = virtualinvoke r2.<java.lang.Integer: int intValue()>()
+org.jfree.data.DefaultKeyedValues.removeValue : i0 = virtualinvoke r0.<org.jfree.data.DefaultKeyedValues: int getIndex(java.lang.Comparable)>(r1)
+org.jfree.data.DefaultKeyedValues.removeValue : $r3 = new org.jfree.data.UnknownKeyException
+org.jfree.data.DefaultKeyedValues.removeValue : if i0 >= 0 goto virtualinvoke r0.<org.jfree.data.DefaultKeyedValues: void removeValue(int)>(i0)
+org.jfree.data.DefaultKeyedValues.getItemCount : $r1 = r0.<org.jfree.data.DefaultKeyedValues: java.util.HashMap indexMap>
+org.jfree.data.statistics.SimpleHistogramBin.getUpperBound : $d0 = r0.<org.jfree.data.statistics.SimpleHistogramBin: double upperBound>
+org.jfree.data.statistics.SimpleHistogramBin.getItemCount : $i0 = r0.<org.jfree.data.statistics.SimpleHistogramBin: int itemCount>
+org.jfree.data.general.DefaultPieDataset.remove : $r2 = r0.<org.jfree.data.general.DefaultPieDataset: org.jfree.data.DefaultKeyedValues data>
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null goto return

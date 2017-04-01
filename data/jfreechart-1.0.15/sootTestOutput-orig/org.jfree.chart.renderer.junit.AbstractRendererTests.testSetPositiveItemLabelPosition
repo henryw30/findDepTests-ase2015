@@ -1,0 +1,25 @@
+org.jfree.chart.renderer.AbstractRenderer.getPositiveItemLabelPosition : $r1 = virtualinvoke r0.<org.jfree.chart.renderer.AbstractRenderer: org.jfree.chart.labels.ItemLabelPosition getSeriesPositiveItemLabelPosition(int)>(i0)
+org.jfree.chart.labels.ItemLabelAnchor.equals : if r0 != r1 goto $z0 = r1 instanceof org.jfree.chart.labels.ItemLabelAnchor
+org.jfree.chart.labels.ItemLabelAnchor.equals : return 1
+org.jfree.chart.renderer.AbstractRenderer.setPositiveItemLabelPosition : virtualinvoke r0.<org.jfree.chart.renderer.AbstractRenderer: void fireChangeEvent()>()
+org.jfree.chart.renderer.AbstractRenderer.setPositiveItemLabelPosition : if z0 == 0 goto return
+org.jfree.chart.renderer.AbstractRenderer.setPositiveItemLabelPosition : r0.<org.jfree.chart.renderer.AbstractRenderer: org.jfree.chart.labels.ItemLabelPosition positiveItemLabelPosition> = r1
+org.jfree.chart.renderer.AbstractRenderer.setPositiveItemLabelPosition : virtualinvoke r0.<org.jfree.chart.renderer.AbstractRenderer: void setPositiveItemLabelPosition(org.jfree.chart.labels.ItemLabelPosition,boolean)>(r1, 1)
+org.jfree.chart.renderer.AbstractRenderer.getSeriesPositiveItemLabelPosition : $r2 = r0.<org.jfree.chart.renderer.AbstractRenderer: org.jfree.chart.labels.ItemLabelPosition positiveItemLabelPosition>
+org.jfree.chart.renderer.AbstractRenderer.getSeriesPositiveItemLabelPosition : $r3 = r0.<org.jfree.chart.renderer.AbstractRenderer: org.jfree.chart.labels.ItemLabelPosition positiveItemLabelPosition>
+org.jfree.chart.labels.ItemLabelPosition.equals : $r5 = r0.<org.jfree.chart.labels.ItemLabelPosition: org.jfree.ui.TextAnchor textAnchor>
+org.jfree.chart.labels.ItemLabelPosition.equals : if r1 != r0 goto $z0 = r1 instanceof org.jfree.chart.labels.ItemLabelPosition
+org.jfree.chart.labels.ItemLabelPosition.equals : $d0 = r0.<org.jfree.chart.labels.ItemLabelPosition: double angle>
+org.jfree.chart.labels.ItemLabelPosition.equals : $z0 = r1 instanceof org.jfree.chart.labels.ItemLabelPosition
+org.jfree.chart.labels.ItemLabelPosition.equals : $r3 = r0.<org.jfree.chart.labels.ItemLabelPosition: org.jfree.chart.labels.ItemLabelAnchor itemLabelAnchor>
+org.jfree.chart.labels.ItemLabelPosition.equals : $r7 = r0.<org.jfree.chart.labels.ItemLabelPosition: org.jfree.ui.TextAnchor rotationAnchor>
+org.jfree.chart.labels.ItemLabelPosition.equals : return 1
+org.jfree.chart.labels.ItemLabelPosition.equals : r2 = (org.jfree.chart.labels.ItemLabelPosition) r1
+org.jfree.chart.renderer.AbstractRenderer.fireChangeEvent : $r1 = new org.jfree.chart.event.RendererChangeEvent
+org.jfree.chart.renderer.AbstractRenderer.notifyListeners : $r3 = r0.<org.jfree.chart.renderer.AbstractRenderer: javax.swing.event.EventListenerList listenerList>
+org.jfree.chart.renderer.AbstractRenderer.notifyListeners : $i1 = lengthof r2
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null goto return
+org.jfree.chart.renderer.AbstractRenderer.setBaseLegendShape : virtualinvoke r0.<org.jfree.chart.renderer.AbstractRenderer: void fireChangeEvent()>()
+org.jfree.chart.renderer.AbstractRenderer.setBaseLegendShape : r0.<org.jfree.chart.renderer.AbstractRenderer: java.awt.Shape baseLegendShape> = r1
+org.jfree.chart.renderer.category.BarRenderer.getDefaultShadowsVisible : $z0 = <org.jfree.chart.renderer.category.BarRenderer: boolean defaultShadowsVisible>
+org.jfree.chart.renderer.category.BarRenderer.getDefaultBarPainter : $r0 = <org.jfree.chart.renderer.category.BarRenderer: org.jfree.chart.renderer.category.BarPainter defaultBarPainter>

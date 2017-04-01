@@ -1,0 +1,123 @@
+org.jfree.chart.axis.ExtendedCategoryAxis.setSubLabelPaint : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "paint")
+org.jfree.chart.axis.ExtendedCategoryAxis.setSubLabelPaint : $r2 = new org.jfree.chart.event.AxisChangeEvent
+org.jfree.chart.axis.ExtendedCategoryAxis.setSubLabelPaint : r0.<org.jfree.chart.axis.ExtendedCategoryAxis: java.awt.Paint sublabelPaint> = r1
+org.jfree.chart.axis.CategoryAxis.readObject : $r2 = specialinvoke r0.<org.jfree.chart.axis.CategoryAxis: java.util.Map readPaintMap(java.io.ObjectInputStream)>(r1)
+org.jfree.chart.axis.CategoryAxis.readObject : virtualinvoke r1.<java.io.ObjectInputStream: void defaultReadObject()>()
+org.jfree.chart.axis.ExtendedCategoryAxis.equals : $r5 = r0.<org.jfree.chart.axis.ExtendedCategoryAxis: java.awt.Paint sublabelPaint>
+org.jfree.chart.axis.ExtendedCategoryAxis.equals : $r3 = r0.<org.jfree.chart.axis.ExtendedCategoryAxis: java.awt.Font sublabelFont>
+org.jfree.chart.axis.ExtendedCategoryAxis.equals : if r1 != r0 goto $z0 = r1 instanceof org.jfree.chart.axis.ExtendedCategoryAxis
+org.jfree.chart.axis.ExtendedCategoryAxis.equals : $r7 = r0.<org.jfree.chart.axis.ExtendedCategoryAxis: java.util.Map sublabels>
+org.jfree.chart.axis.ExtendedCategoryAxis.equals : $z0 = r1 instanceof org.jfree.chart.axis.ExtendedCategoryAxis
+org.jfree.chart.axis.ExtendedCategoryAxis.equals : $z4 = specialinvoke r0.<org.jfree.chart.axis.CategoryAxis: boolean equals(java.lang.Object)>(r1)
+org.jfree.chart.axis.ExtendedCategoryAxis.equals : r2 = (org.jfree.chart.axis.ExtendedCategoryAxis) r1
+org.jfree.chart.axis.CategoryLabelWidthType.readResolve : $r1 = <org.jfree.chart.axis.CategoryLabelWidthType: org.jfree.chart.axis.CategoryLabelWidthType CATEGORY>
+org.jfree.chart.axis.CategoryLabelWidthType.readResolve : $r3 = <org.jfree.chart.axis.CategoryLabelWidthType: org.jfree.chart.axis.CategoryLabelWidthType RANGE>
+org.jfree.chart.axis.CategoryLabelWidthType.readResolve : $r2 = <org.jfree.chart.axis.CategoryLabelWidthType: org.jfree.chart.axis.CategoryLabelWidthType CATEGORY>
+org.jfree.chart.axis.CategoryLabelWidthType.readResolve : $r4 = <org.jfree.chart.axis.CategoryLabelWidthType: org.jfree.chart.axis.CategoryLabelWidthType RANGE>
+org.jfree.chart.axis.CategoryAxis.writePaintMap : r4 = interfaceinvoke r3.<java.util.Set: java.util.Iterator iterator()>()
+org.jfree.chart.axis.CategoryAxis.writePaintMap : r3 = interfaceinvoke r1.<java.util.Map: java.util.Set keySet()>()
+org.jfree.chart.axis.CategoryAxis.writePaintMap : virtualinvoke r2.<java.io.ObjectOutputStream: void writeBoolean(boolean)>(0)
+org.jfree.chart.axis.CategoryAxis.writePaintMap : $z0 = interfaceinvoke r4.<java.util.Iterator: boolean hasNext()>()
+org.jfree.chart.axis.CategoryAxis.writePaintMap : virtualinvoke r2.<java.io.ObjectOutputStream: void writeInt(int)>(i0)
+org.jfree.chart.axis.CategoryAxis.writePaintMap : i0 = interfaceinvoke r3.<java.util.Set: int size()>()
+org.jfree.chart.axis.CategoryAxis.writePaintMap : if r1 != null goto virtualinvoke r2.<java.io.ObjectOutputStream: void writeBoolean(boolean)>(0)
+org.jfree.chart.axis.CategoryLabelPosition.equals : $r9 = r0.<org.jfree.chart.axis.CategoryLabelPosition: org.jfree.chart.axis.CategoryLabelWidthType widthType>
+org.jfree.chart.axis.CategoryLabelPosition.equals : $d0 = r0.<org.jfree.chart.axis.CategoryLabelPosition: double angle>
+org.jfree.chart.axis.CategoryLabelPosition.equals : $r3 = r0.<org.jfree.chart.axis.CategoryLabelPosition: org.jfree.ui.RectangleAnchor categoryAnchor>
+org.jfree.chart.axis.CategoryLabelPosition.equals : if r1 != r0 goto $z0 = r1 instanceof org.jfree.chart.axis.CategoryLabelPosition
+org.jfree.chart.axis.CategoryLabelPosition.equals : $r7 = r0.<org.jfree.chart.axis.CategoryLabelPosition: org.jfree.ui.TextAnchor rotationAnchor>
+org.jfree.chart.axis.CategoryLabelPosition.equals : $f0 = r0.<org.jfree.chart.axis.CategoryLabelPosition: float widthRatio>
+org.jfree.chart.axis.CategoryLabelPosition.equals : r2 = (org.jfree.chart.axis.CategoryLabelPosition) r1
+org.jfree.chart.axis.CategoryLabelPosition.equals : $r5 = r0.<org.jfree.chart.axis.CategoryLabelPosition: org.jfree.text.TextBlockAnchor labelAnchor>
+org.jfree.chart.axis.CategoryLabelPosition.equals : return 1
+org.jfree.chart.axis.CategoryLabelPosition.equals : $z0 = r1 instanceof org.jfree.chart.axis.CategoryLabelPosition
+org.jfree.chart.axis.Axis.notifyListeners : $i1 = lengthof r2
+org.jfree.chart.axis.Axis.notifyListeners : $r3 = r0.<org.jfree.chart.axis.Axis: javax.swing.event.EventListenerList listenerList>
+org.jfree.chart.axis.ExtendedCategoryAxis.writeObject : $r2 = r0.<org.jfree.chart.axis.ExtendedCategoryAxis: java.awt.Paint sublabelPaint>
+org.jfree.chart.axis.ExtendedCategoryAxis.writeObject : virtualinvoke r1.<java.io.ObjectOutputStream: void defaultWriteObject()>()
+org.jfree.chart.axis.CategoryAxis.equalPaintMaps : r4 = interfaceinvoke r3.<java.util.Set: java.util.Iterator iterator()>()
+org.jfree.chart.axis.CategoryAxis.equalPaintMaps : return 1
+org.jfree.chart.axis.CategoryAxis.equalPaintMaps : $z0 = interfaceinvoke r4.<java.util.Iterator: boolean hasNext()>()
+org.jfree.chart.axis.CategoryAxis.equalPaintMaps : r3 = interfaceinvoke r1.<java.util.Map: java.util.Set entrySet()>()
+org.jfree.chart.axis.CategoryAxis.equalPaintMaps : $i0 = interfaceinvoke r1.<java.util.Map: int size()>()
+org.jfree.chart.axis.CategoryLabelWidthType.toString : $r1 = r0.<org.jfree.chart.axis.CategoryLabelWidthType: java.lang.String name>
+org.jfree.chart.axis.Axis.writeObject : $r3 = r0.<org.jfree.chart.axis.Axis: java.awt.Paint tickLabelPaint>
+org.jfree.chart.axis.Axis.writeObject : $r6 = r0.<org.jfree.chart.axis.Axis: java.awt.Stroke tickMarkStroke>
+org.jfree.chart.axis.Axis.writeObject : $r7 = r0.<org.jfree.chart.axis.Axis: java.awt.Paint tickMarkPaint>
+org.jfree.chart.axis.Axis.writeObject : $r2 = r0.<org.jfree.chart.axis.Axis: java.awt.Paint labelPaint>
+org.jfree.chart.axis.Axis.writeObject : virtualinvoke r1.<java.io.ObjectOutputStream: void defaultWriteObject()>()
+org.jfree.chart.axis.Axis.writeObject : $r4 = r0.<org.jfree.chart.axis.Axis: java.awt.Stroke axisLineStroke>
+org.jfree.chart.axis.Axis.writeObject : $r5 = r0.<org.jfree.chart.axis.Axis: java.awt.Paint axisLinePaint>
+org.jfree.chart.axis.CategoryAxis.readPaintMap : i0 = virtualinvoke r1.<java.io.ObjectInputStream: int readInt()>()
+org.jfree.chart.axis.CategoryAxis.readPaintMap : i1 = 0
+org.jfree.chart.axis.CategoryAxis.readPaintMap : z0 = virtualinvoke r1.<java.io.ObjectInputStream: boolean readBoolean()>()
+org.jfree.chart.axis.CategoryAxis.readPaintMap : return r2
+org.jfree.chart.axis.CategoryAxis.readPaintMap : if z0 == 0 goto $r5 = new java.util.HashMap
+org.jfree.chart.axis.CategoryAxis.readPaintMap : $r5 = new java.util.HashMap
+org.jfree.chart.axis.CategoryAxis.writeObject : $r2 = r0.<org.jfree.chart.axis.CategoryAxis: java.util.Map tickLabelPaintMap>
+org.jfree.chart.axis.CategoryAxis.writeObject : virtualinvoke r1.<java.io.ObjectOutputStream: void defaultWriteObject()>()
+org.jfree.chart.axis.CategoryAxis.equals : $i4 = r2.<org.jfree.chart.axis.CategoryAxis: int categoryLabelPositionOffset>
+org.jfree.chart.axis.CategoryAxis.equals : if r1 != r0 goto $z0 = r1 instanceof org.jfree.chart.axis.CategoryAxis
+org.jfree.chart.axis.CategoryAxis.equals : $z0 = r1 instanceof org.jfree.chart.axis.CategoryAxis
+org.jfree.chart.axis.CategoryAxis.equals : $f0 = r2.<org.jfree.chart.axis.CategoryAxis: float maximumCategoryLabelWidthRatio>
+org.jfree.chart.axis.CategoryAxis.equals : return 1
+org.jfree.chart.axis.CategoryAxis.equals : $d2 = r2.<org.jfree.chart.axis.CategoryAxis: double upperMargin>
+org.jfree.chart.axis.CategoryAxis.equals : $r9 = r0.<org.jfree.chart.axis.CategoryAxis: java.util.Map tickLabelPaintMap>
+org.jfree.chart.axis.CategoryAxis.equals : $r5 = r2.<org.jfree.chart.axis.CategoryAxis: java.util.Map categoryLabelToolTips>
+org.jfree.chart.axis.CategoryAxis.equals : $r7 = r0.<org.jfree.chart.axis.CategoryAxis: java.util.Map tickLabelFontMap>
+org.jfree.chart.axis.CategoryAxis.equals : $d4 = r2.<org.jfree.chart.axis.CategoryAxis: double categoryMargin>
+org.jfree.chart.axis.CategoryAxis.equals : r2 = (org.jfree.chart.axis.CategoryAxis) r1
+org.jfree.chart.axis.CategoryAxis.equals : $z1 = specialinvoke r0.<org.jfree.chart.axis.Axis: boolean equals(java.lang.Object)>(r1)
+org.jfree.chart.axis.CategoryAxis.equals : $d0 = r2.<org.jfree.chart.axis.CategoryAxis: double lowerMargin>
+org.jfree.chart.axis.CategoryAxis.equals : $r3 = r2.<org.jfree.chart.axis.CategoryAxis: org.jfree.chart.axis.CategoryLabelPositions categoryLabelPositions>
+org.jfree.chart.axis.ExtendedCategoryAxis.readObject : $r2 = staticinvoke <org.jfree.io.SerialUtilities: java.awt.Paint readPaint(java.io.ObjectInputStream)>(r1)
+org.jfree.chart.axis.ExtendedCategoryAxis.readObject : virtualinvoke r1.<java.io.ObjectInputStream: void defaultReadObject()>()
+org.jfree.chart.axis.Axis.equals : $r11 = r0.<org.jfree.chart.axis.Axis: java.awt.Stroke axisLineStroke>
+org.jfree.chart.axis.Axis.equals : if r1 != r0 goto $z0 = r1 instanceof org.jfree.chart.axis.Axis
+org.jfree.chart.axis.Axis.equals : $f2 = r0.<org.jfree.chart.axis.Axis: float tickMarkOutsideLength>
+org.jfree.chart.axis.Axis.equals : $r5 = r0.<org.jfree.chart.axis.Axis: java.awt.Font labelFont>
+org.jfree.chart.axis.Axis.equals : $r21 = r0.<org.jfree.chart.axis.Axis: java.awt.Paint tickMarkPaint>
+org.jfree.chart.axis.Axis.equals : $r23 = r0.<org.jfree.chart.axis.Axis: java.awt.Stroke tickMarkStroke>
+org.jfree.chart.axis.Axis.equals : $f6 = r0.<org.jfree.chart.axis.Axis: float minorTickMarkOutsideLength>
+org.jfree.chart.axis.Axis.equals : $d0 = r0.<org.jfree.chart.axis.Axis: double labelAngle>
+org.jfree.chart.axis.Axis.equals : $r15 = r0.<org.jfree.chart.axis.Axis: java.awt.Font tickLabelFont>
+org.jfree.chart.axis.Axis.equals : $z7 = r0.<org.jfree.chart.axis.Axis: boolean axisLineVisible>
+org.jfree.chart.axis.Axis.equals : $r19 = r0.<org.jfree.chart.axis.Axis: org.jfree.ui.RectangleInsets tickLabelInsets>
+org.jfree.chart.axis.Axis.equals : $z20 = r0.<org.jfree.chart.axis.Axis: boolean minorTickMarksVisible>
+org.jfree.chart.axis.Axis.equals : $z0 = r1 instanceof org.jfree.chart.axis.Axis
+org.jfree.chart.axis.Axis.equals : $z16 = r0.<org.jfree.chart.axis.Axis: boolean tickMarksVisible>
+org.jfree.chart.axis.Axis.equals : $z11 = r0.<org.jfree.chart.axis.Axis: boolean tickLabelsVisible>
+org.jfree.chart.axis.Axis.equals : $r13 = r0.<org.jfree.chart.axis.Axis: java.awt.Paint axisLinePaint>
+org.jfree.chart.axis.Axis.equals : return 1
+org.jfree.chart.axis.Axis.equals : $f4 = r0.<org.jfree.chart.axis.Axis: float minorTickMarkInsideLength>
+org.jfree.chart.axis.Axis.equals : $r7 = r0.<org.jfree.chart.axis.Axis: java.awt.Paint labelPaint>
+org.jfree.chart.axis.Axis.equals : $r17 = r0.<org.jfree.chart.axis.Axis: java.awt.Paint tickLabelPaint>
+org.jfree.chart.axis.Axis.equals : $d2 = r0.<org.jfree.chart.axis.Axis: double fixedDimension>
+org.jfree.chart.axis.Axis.equals : $r9 = r0.<org.jfree.chart.axis.Axis: org.jfree.ui.RectangleInsets labelInsets>
+org.jfree.chart.axis.Axis.equals : r2 = (org.jfree.chart.axis.Axis) r1
+org.jfree.chart.axis.Axis.equals : $r3 = r0.<org.jfree.chart.axis.Axis: java.lang.String label>
+org.jfree.chart.axis.Axis.equals : $z1 = r0.<org.jfree.chart.axis.Axis: boolean visible>
+org.jfree.chart.axis.Axis.equals : $f0 = r0.<org.jfree.chart.axis.Axis: float tickMarkInsideLength>
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null goto return
+org.jfree.chart.axis.CategoryLabelPositions.equals : r2 = (org.jfree.chart.axis.CategoryLabelPositions) r1
+org.jfree.chart.axis.CategoryLabelPositions.equals : $z0 = r1 instanceof org.jfree.chart.axis.CategoryLabelPositions
+org.jfree.chart.axis.CategoryLabelPositions.equals : $r5 = r0.<org.jfree.chart.axis.CategoryLabelPositions: org.jfree.chart.axis.CategoryLabelPosition positionForAxisAtBottom>
+org.jfree.chart.axis.CategoryLabelPositions.equals : $r3 = r0.<org.jfree.chart.axis.CategoryLabelPositions: org.jfree.chart.axis.CategoryLabelPosition positionForAxisAtTop>
+org.jfree.chart.axis.CategoryLabelPositions.equals : if r0 != r1 goto $z0 = r1 instanceof org.jfree.chart.axis.CategoryLabelPositions
+org.jfree.chart.axis.CategoryLabelPositions.equals : return 1
+org.jfree.chart.axis.CategoryLabelPositions.equals : $r7 = r0.<org.jfree.chart.axis.CategoryLabelPositions: org.jfree.chart.axis.CategoryLabelPosition positionForAxisAtLeft>
+org.jfree.chart.axis.CategoryLabelPositions.equals : $r9 = r0.<org.jfree.chart.axis.CategoryLabelPositions: org.jfree.chart.axis.CategoryLabelPosition positionForAxisAtRight>
+org.jfree.chart.axis.CategoryLabelWidthType.equals : $z0 = r1 instanceof org.jfree.chart.axis.CategoryLabelWidthType
+org.jfree.chart.axis.CategoryLabelWidthType.equals : $r3 = r0.<org.jfree.chart.axis.CategoryLabelWidthType: java.lang.String name>
+org.jfree.chart.axis.CategoryLabelWidthType.equals : return 1
+org.jfree.chart.axis.CategoryLabelWidthType.equals : return 0
+org.jfree.chart.axis.CategoryLabelWidthType.equals : r2 = (org.jfree.chart.axis.CategoryLabelWidthType) r1
+org.jfree.chart.axis.CategoryLabelWidthType.equals : if r0 != r1 goto $z0 = r1 instanceof org.jfree.chart.axis.CategoryLabelWidthType
+org.jfree.chart.axis.Axis.readObject : $r2 = staticinvoke <org.jfree.io.SerialUtilities: java.awt.Paint readPaint(java.io.ObjectInputStream)>(r1)
+org.jfree.chart.axis.Axis.readObject : $r8 = new javax.swing.event.EventListenerList
+org.jfree.chart.axis.Axis.readObject : $r5 = staticinvoke <org.jfree.io.SerialUtilities: java.awt.Paint readPaint(java.io.ObjectInputStream)>(r1)
+org.jfree.chart.axis.Axis.readObject : $r4 = staticinvoke <org.jfree.io.SerialUtilities: java.awt.Stroke readStroke(java.io.ObjectInputStream)>(r1)
+org.jfree.chart.axis.Axis.readObject : $r7 = staticinvoke <org.jfree.io.SerialUtilities: java.awt.Paint readPaint(java.io.ObjectInputStream)>(r1)
+org.jfree.chart.axis.Axis.readObject : virtualinvoke r1.<java.io.ObjectInputStream: void defaultReadObject()>()
+org.jfree.chart.axis.Axis.readObject : $r6 = staticinvoke <org.jfree.io.SerialUtilities: java.awt.Stroke readStroke(java.io.ObjectInputStream)>(r1)
+org.jfree.chart.axis.Axis.readObject : $r3 = staticinvoke <org.jfree.io.SerialUtilities: java.awt.Paint readPaint(java.io.ObjectInputStream)>(r1)

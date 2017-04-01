@@ -1,0 +1,24 @@
+org.jfree.data.statistics.Statistics.getStdDev : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r0, "data") >>>>>>>> org.jfree.data.statistics.Statistics.getStdDev : $i1 = lengthof r0
+org.jfree.data.statistics.Statistics.getStdDev : $i1 = lengthof r0 >>>>>>>> org.jfree.data.statistics.Statistics.getStdDev : if $i1 != 0
+org.jfree.data.statistics.Statistics.getStdDev : if $i1 != 0 >>>>>>>> org.jfree.data.statistics.Statistics.getStdDev : $r1 = new java.lang.IllegalArgumentException
+org.jfree.data.statistics.Statistics.getStdDev : if $i1 != 0 >>>>>>>> org.jfree.data.statistics.Statistics.getStdDev : d0 = staticinvoke <org.jfree.data.statistics.Statistics: double calculateMean(java.lang.Number[])>(r0)
+org.jfree.data.statistics.Statistics.getStdDev : d0 = staticinvoke <org.jfree.data.statistics.Statistics: double calculateMean(java.lang.Number[])>(r0) >>>>>>>> org.jfree.data.statistics.Statistics.getStdDev : d1 = 0.0
+org.jfree.data.statistics.Statistics.getStdDev : d1 = 0.0 >>>>>>>> org.jfree.data.statistics.Statistics.getStdDev : i0 = 0
+org.jfree.data.statistics.Statistics.getStdDev : i0 = 0 >>>>>>>> org.jfree.data.statistics.Statistics.getStdDev : $i2 = lengthof r0
+org.jfree.data.statistics.Statistics.getStdDev : $i2 = lengthof r0 >>>>>>>> org.jfree.data.statistics.Statistics.getStdDev : if i0 >= $i2
+org.jfree.data.statistics.Statistics.getStdDev : if i0 >= $i2 >>>>>>>> org.jfree.data.statistics.Statistics.getStdDev : $r2 = r0[i0]
+org.jfree.data.statistics.Statistics.getStdDev : if i0 >= $i2 >>>>>>>> org.jfree.data.statistics.Statistics.getStdDev : $i3 = lengthof r0
+org.jfree.data.statistics.Statistics.getStdDev : $i3 = lengthof r0 >>>>>>>> org.jfree.data.statistics.Statistics.getStdDev : $i4 = $i3 - 1
+org.jfree.data.statistics.Statistics.getStdDev : $i4 = $i3 - 1 >>>>>>>> org.jfree.data.statistics.Statistics.getStdDev : $d5 = (double) $i4
+org.jfree.data.statistics.Statistics.getStdDev : $d5 = (double) $i4 >>>>>>>> org.jfree.data.statistics.Statistics.getStdDev : $d6 = d1 / $d5
+org.jfree.data.statistics.Statistics.getStdDev : $d6 = d1 / $d5 >>>>>>>> org.jfree.data.statistics.Statistics.getStdDev : $d7 = staticinvoke <java.lang.Math: double sqrt(double)>($d6)
+org.jfree.data.statistics.Statistics.getStdDev : $d7 = staticinvoke <java.lang.Math: double sqrt(double)>($d6) >>>>>>>> org.jfree.data.statistics.Statistics.getStdDev : return $d7
+org.jfree.data.statistics.Statistics.getStdDev : $r2 = r0[i0] >>>>>>>> org.jfree.data.statistics.Statistics.getStdDev : $d3 = virtualinvoke $r2.<java.lang.Number: double doubleValue()>()
+org.jfree.data.statistics.Statistics.getStdDev : $d3 = virtualinvoke $r2.<java.lang.Number: double doubleValue()>() >>>>>>>> org.jfree.data.statistics.Statistics.getStdDev : d2 = $d3 - d0
+org.jfree.data.statistics.Statistics.getStdDev : d2 = $d3 - d0 >>>>>>>> org.jfree.data.statistics.Statistics.getStdDev : $d4 = d2 * d2
+org.jfree.data.statistics.Statistics.getStdDev : $d4 = d2 * d2 >>>>>>>> org.jfree.data.statistics.Statistics.getStdDev : d1 = d1 + $d4
+org.jfree.data.statistics.Statistics.getStdDev : d1 = d1 + $d4 >>>>>>>> org.jfree.data.statistics.Statistics.getStdDev : i0 = i0 + 1
+org.jfree.data.statistics.Statistics.getStdDev : i0 = i0 + 1 >>>>>>>> org.jfree.data.statistics.Statistics.getStdDev : goto [?= $i2 = lengthof r0]
+org.jfree.data.statistics.Statistics.getStdDev : goto [?= $i2 = lengthof r0] >>>>>>>> org.jfree.data.statistics.Statistics.getStdDev : $i2 = lengthof r0
+org.jfree.data.statistics.Statistics.getStdDev : $r1 = new java.lang.IllegalArgumentException >>>>>>>> org.jfree.data.statistics.Statistics.getStdDev : specialinvoke $r1.<java.lang.IllegalArgumentException: void <init>(java.lang.String)>("Zero length \'data\' array.")
+org.jfree.data.statistics.Statistics.getStdDev : specialinvoke $r1.<java.lang.IllegalArgumentException: void <init>(java.lang.String)>("Zero length \'data\' array.") >>>>>>>> org.jfree.data.statistics.Statistics.getStdDev : throw $r1

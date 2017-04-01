@@ -1,0 +1,20 @@
+org.jfree.chart.plot.Crosshair.getLabelPaint : $r1 = r0.<org.jfree.chart.plot.Crosshair: java.awt.Paint labelPaint>
+org.jfree.chart.labels.StandardCrosshairLabelGenerator.getLabelTemplate : $r1 = r0.<org.jfree.chart.labels.StandardCrosshairLabelGenerator: java.lang.String labelTemplate>
+org.jfree.chart.labels.StandardCrosshairLabelGenerator.generateLabel : $d0 = virtualinvoke r1.<org.jfree.chart.plot.Crosshair: double getValue()>()
+org.jfree.chart.labels.StandardCrosshairLabelGenerator.generateLabel : $r4 = newarray (java.lang.Object)[1]
+org.jfree.chart.labels.StandardCrosshairLabelGenerator.generateLabel : return r3
+org.jfree.chart.labels.StandardCrosshairLabelGenerator.generateLabel : $r7 = r0.<org.jfree.chart.labels.StandardCrosshairLabelGenerator: java.lang.String labelTemplate>
+org.jfree.chart.plot.Crosshair.getValue : $d0 = r0.<org.jfree.chart.plot.Crosshair: double value>
+org.jfree.chart.util.HexNumberFormat.format : return r4
+org.jfree.chart.util.HexNumberFormat.format : $r5 = staticinvoke <java.lang.Long: java.lang.String toHexString(long)>(l0)
+org.jfree.chart.util.HexNumberFormat.format : $r6 = new java.lang.StringBuffer
+org.jfree.chart.util.HexNumberFormat.format : if 0 >= i1 goto $i5 = 0
+org.jfree.chart.util.HexNumberFormat.format : i2 = 0
+org.jfree.chart.util.HexNumberFormat.format : virtualinvoke r4.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>(r3)
+org.jfree.chart.util.HexNumberFormat.format : $i3 = r0.<org.jfree.chart.util.HexNumberFormat: int m_numDigits>
+org.jfree.chart.util.HexNumberFormat.format : $l0 = (long) d0
+org.jfree.chart.util.HexNumberFormat.format : virtualinvoke r4.<java.lang.StringBuffer: java.lang.StringBuffer append(int)>(0)
+org.jfree.chart.urls.StandardXYURLGenerator.equals : if r1 != r0 goto $z0 = r1 instanceof org.jfree.chart.urls.StandardXYURLGenerator
+org.jfree.chart.urls.StandardXYURLGenerator.equals : return 0
+org.jfree.chart.urls.StandardXYURLGenerator.equals : $z0 = r1 instanceof org.jfree.chart.urls.StandardXYURLGenerator
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null goto return

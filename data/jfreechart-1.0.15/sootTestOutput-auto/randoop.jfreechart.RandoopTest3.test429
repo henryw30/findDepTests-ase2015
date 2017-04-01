@@ -1,0 +1,481 @@
+org.jfree.chart.plot.CombinedRangeXYPlot.getDataRange : return r2
+org.jfree.chart.plot.CombinedRangeXYPlot.getDataRange : $r5 = r0.<org.jfree.chart.plot.CombinedRangeXYPlot: java.util.List subplots>
+org.jfree.chart.plot.CombinedRangeXYPlot.getDataRange : r2 = null
+org.jfree.chart.axis.ValueAxis.getDefaultAutoRange : $r1 = r0.<org.jfree.chart.axis.ValueAxis: org.jfree.data.Range defaultAutoRange>
+org.jfree.chart.renderer.AbstractRenderer.setFillPaint : virtualinvoke r0.<org.jfree.chart.renderer.AbstractRenderer: void fireChangeEvent()>()
+org.jfree.chart.renderer.AbstractRenderer.setFillPaint : if z0 == 0 goto return
+org.jfree.chart.renderer.AbstractRenderer.setFillPaint : r0.<org.jfree.chart.renderer.AbstractRenderer: java.awt.Paint fillPaint> = r1
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : $b1 = d2 cmpg d4
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : d0 = virtualinvoke r3.<org.jfree.data.Range: double getUpperBound()>()
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : r1 = virtualinvoke r0.<org.jfree.chart.axis.NumberAxis: org.jfree.chart.plot.Plot getPlot()>()
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : d1 = staticinvoke <java.lang.Math: double min(double,double)>(d1, 0.0)
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : $r4 = r0.<org.jfree.chart.axis.NumberAxis: org.jfree.data.RangeType rangeType>
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : $d13 = virtualinvoke r0.<org.jfree.chart.axis.NumberAxis: double getUpperMargin()>()
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : d3 = virtualinvoke r0.<org.jfree.chart.axis.NumberAxis: double getFixedAutoRange()>()
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : d0 = staticinvoke <java.lang.Math: double max(double,double)>(d0, 0.0)
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : $r12 = new org.jfree.data.Range
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : if r1 != null goto $z0 = r1 instanceof org.jfree.chart.plot.ValueAxisPlot
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : if r3 != null goto d0 = virtualinvoke r3.<org.jfree.data.Range: double getUpperBound()>()
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : $z1 = virtualinvoke r0.<org.jfree.chart.axis.NumberAxis: boolean getAutoRangeIncludesZero()>()
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : r2 = (org.jfree.chart.plot.ValueAxisPlot) r1
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : $d15 = virtualinvoke r0.<org.jfree.chart.axis.NumberAxis: double getLowerMargin()>()
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : d2 = d0 - d1
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : d1 = virtualinvoke r3.<org.jfree.data.Range: double getLowerBound()>()
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : d4 = virtualinvoke r0.<org.jfree.chart.axis.NumberAxis: double getAutoRangeMinimumSize()>()
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : $z2 = virtualinvoke r0.<org.jfree.chart.axis.NumberAxis: boolean getAutoRangeStickyZero()>()
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : $r6 = r0.<org.jfree.chart.axis.NumberAxis: org.jfree.data.RangeType rangeType>
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : r3 = interfaceinvoke r2.<org.jfree.chart.plot.ValueAxisPlot: org.jfree.data.Range getDataRange(org.jfree.chart.axis.ValueAxis)>(r0)
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : $b0 = d3 cmpl 0.0
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : r3 = virtualinvoke r0.<org.jfree.chart.axis.NumberAxis: org.jfree.data.Range getDefaultAutoRange()>()
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : $z0 = r1 instanceof org.jfree.chart.plot.ValueAxisPlot
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : $b5 = d0 cmpg 0.0
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : $b6 = d1 cmpl 0.0
+org.jfree.chart.plot.CategoryPlot.getRenderer : $r2 = r0.<org.jfree.chart.plot.CategoryPlot: org.jfree.util.ObjectList renderers>
+org.jfree.chart.plot.CategoryPlot.getRenderer : r1 = null
+org.jfree.chart.plot.CategoryPlot.getRenderer : return r1
+org.jfree.chart.plot.CombinedRangeCategoryPlot.plotChanged : virtualinvoke r0.<org.jfree.chart.plot.CombinedRangeCategoryPlot: void notifyListeners(org.jfree.chart.event.PlotChangeEvent)>(r1)
+org.jfree.chart.plot.XYPlot.mapDatasetToRangeAxes : $r8 = new org.jfree.data.general.DatasetChangeEvent
+org.jfree.chart.plot.XYPlot.mapDatasetToRangeAxes : $r5 = r0.<org.jfree.chart.plot.XYPlot: java.util.Map datasetToRangeAxesMap>
+org.jfree.chart.plot.XYPlot.mapDatasetToRangeAxes : $r4 = new java.lang.Integer
+org.jfree.chart.plot.XYPlot.mapDatasetToRangeAxes : specialinvoke r0.<org.jfree.chart.plot.XYPlot: void checkAxisIndices(java.util.List)>(r1)
+org.jfree.chart.plot.XYPlot.mapDatasetToRangeAxes : if i0 >= 0 goto specialinvoke r0.<org.jfree.chart.plot.XYPlot: void checkAxisIndices(java.util.List)>(r1)
+org.jfree.chart.plot.CombinedRangeXYPlot.plotChanged : virtualinvoke r0.<org.jfree.chart.plot.CombinedRangeXYPlot: void notifyListeners(org.jfree.chart.event.PlotChangeEvent)>(r1)
+org.jfree.chart.plot.Plot.fireChangeEvent : $r1 = new org.jfree.chart.event.PlotChangeEvent
+org.jfree.chart.axis.ValueAxis.getFixedAutoRange : $d0 = r0.<org.jfree.chart.axis.ValueAxis: double fixedAutoRange>
+org.jfree.chart.plot.CategoryPlot.getRendererForDataset : goto [?= return r2]
+org.jfree.chart.plot.CategoryPlot.getRendererForDataset : return r2
+org.jfree.chart.plot.CategoryPlot.getRendererForDataset : $r4 = r0.<org.jfree.chart.plot.CategoryPlot: org.jfree.util.ObjectList datasets>
+org.jfree.chart.plot.CategoryPlot.getRendererForDataset : i0 = 0
+org.jfree.chart.plot.CategoryPlot.getRendererForDataset : $r6 = r0.<org.jfree.chart.plot.CategoryPlot: org.jfree.util.ObjectList renderers>
+org.jfree.chart.plot.CategoryPlot.getRendererForDataset : r2 = null
+org.jfree.data.time.Week.peg : $l1 = virtualinvoke r0.<org.jfree.data.time.Week: long getLastMillisecond(java.util.Calendar)>(r1)
+org.jfree.data.time.Week.peg : $l0 = virtualinvoke r0.<org.jfree.data.time.Week: long getFirstMillisecond(java.util.Calendar)>(r1)
+org.jfree.data.time.Week.getFirstMillisecond : $s0 = r0.<org.jfree.data.time.Week: short year>
+org.jfree.data.time.Week.getFirstMillisecond : virtualinvoke r2.<java.util.Calendar: void clear()>()
+org.jfree.data.time.Week.getFirstMillisecond : $b1 = r0.<org.jfree.data.time.Week: byte week>
+org.jfree.data.time.Week.getFirstMillisecond : $r3 = virtualinvoke r1.<java.util.Calendar: java.lang.Object clone()>()
+org.jfree.data.time.Week.getFirstMillisecond : virtualinvoke r2.<java.util.Calendar: void set(int,int)>(10, 0)
+org.jfree.data.time.Week.getFirstMillisecond : $l3 = virtualinvoke r2.<java.util.Calendar: long getTimeInMillis()>()
+org.jfree.data.time.Week.getFirstMillisecond : virtualinvoke r2.<java.util.Calendar: void set(int,int)>(12, 0)
+org.jfree.data.time.Week.getFirstMillisecond : virtualinvoke r2.<java.util.Calendar: void set(int,int)>(14, 0)
+org.jfree.data.time.Week.getFirstMillisecond : virtualinvoke r2.<java.util.Calendar: void set(int,int)>(13, 0)
+org.jfree.data.time.Week.getFirstMillisecond : $i2 = virtualinvoke r2.<java.util.Calendar: int getFirstDayOfWeek()>()
+org.jfree.chart.axis.NumberAxis.configure : $z0 = virtualinvoke r0.<org.jfree.chart.axis.NumberAxis: boolean isAutoRange()>()
+org.jfree.chart.axis.NumberAxis.configure : virtualinvoke r0.<org.jfree.chart.axis.NumberAxis: void autoAdjustRange()>()
+org.jfree.chart.plot.CategoryPlot.datasetChanged : i1 = 0
+org.jfree.chart.plot.CategoryPlot.datasetChanged : virtualinvoke r0.<org.jfree.chart.plot.CategoryPlot: void notifyListeners(org.jfree.chart.event.PlotChangeEvent)>(r7)
+org.jfree.chart.plot.CategoryPlot.datasetChanged : if r2 == null goto i1 = i1 + 1
+org.jfree.chart.plot.CategoryPlot.datasetChanged : $r6 = new org.jfree.chart.event.PlotChangeEvent
+org.jfree.chart.plot.CategoryPlot.datasetChanged : r2 = virtualinvoke r0.<org.jfree.chart.plot.CategoryPlot: org.jfree.chart.axis.ValueAxis getRangeAxis(int)>(i1)
+org.jfree.chart.plot.CategoryPlot.datasetChanged : virtualinvoke r2.<org.jfree.chart.axis.ValueAxis: void configure()>()
+org.jfree.chart.plot.CategoryPlot.datasetChanged : $r3 = r0.<org.jfree.chart.plot.CategoryPlot: org.jfree.util.ObjectList rangeAxes>
+org.jfree.chart.plot.CategoryPlot.datasetChanged : $r4 = virtualinvoke r0.<org.jfree.chart.plot.CategoryPlot: org.jfree.chart.plot.Plot getParent()>()
+org.jfree.chart.plot.CategoryPlot.datasetChanged : $r8 = <org.jfree.chart.event.ChartChangeEventType: org.jfree.chart.event.ChartChangeEventType DATASET_UPDATED>
+org.jfree.chart.plot.Plot.notifyListeners : $r4 = r2[i0]
+org.jfree.chart.plot.Plot.notifyListeners : $i2 = i0 + 1
+org.jfree.chart.plot.Plot.notifyListeners : $r3 = r0.<org.jfree.chart.plot.Plot: javax.swing.event.EventListenerList listenerList>
+org.jfree.chart.plot.Plot.notifyListeners : $i1 = lengthof r2
+org.jfree.chart.plot.Plot.notifyListeners : $z0 = r0.<org.jfree.chart.plot.Plot: boolean notify>
+org.jfree.chart.renderer.xy.AbstractXYItemRenderer.setURLGenerator : virtualinvoke r0.<org.jfree.chart.renderer.xy.AbstractXYItemRenderer: void fireChangeEvent()>()
+org.jfree.chart.renderer.xy.AbstractXYItemRenderer.setURLGenerator : r0.<org.jfree.chart.renderer.xy.AbstractXYItemRenderer: org.jfree.chart.urls.XYURLGenerator urlGenerator> = r1
+org.jfree.chart.axis.ValueAxis.setFixedAutoRange : virtualinvoke r0.<org.jfree.chart.axis.ValueAxis: void autoAdjustRange()>()
+org.jfree.chart.axis.ValueAxis.setFixedAutoRange : $z0 = virtualinvoke r0.<org.jfree.chart.axis.ValueAxis: boolean isAutoRange()>()
+org.jfree.chart.axis.ValueAxis.setFixedAutoRange : r0.<org.jfree.chart.axis.ValueAxis: double fixedAutoRange> = d0
+org.jfree.chart.axis.ValueAxis.setFixedAutoRange : $r1 = new org.jfree.chart.event.AxisChangeEvent
+org.jfree.chart.plot.CategoryPlot.getOrientation : $r1 = r0.<org.jfree.chart.plot.CategoryPlot: org.jfree.chart.plot.PlotOrientation orientation>
+org.jfree.chart.plot.CategoryPlot.getDomainCrosshairStroke : $r1 = r0.<org.jfree.chart.plot.CategoryPlot: java.awt.Stroke domainCrosshairStroke>
+org.jfree.chart.plot.CategoryPlot.removeAnnotation : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "annotation")
+org.jfree.chart.plot.CategoryPlot.removeAnnotation : $r2 = r0.<org.jfree.chart.plot.CategoryPlot: java.util.List annotations>
+org.jfree.chart.plot.CategoryPlot.removeAnnotation : if z1 == 0 goto return z1
+org.jfree.chart.plot.CategoryPlot.removeAnnotation : return z1
+org.jfree.chart.plot.CategoryPlot.removeAnnotation : interfaceinvoke r1.<org.jfree.chart.annotations.CategoryAnnotation: void removeChangeListener(org.jfree.chart.event.AnnotationChangeListener)>(r0)
+org.jfree.chart.axis.Axis.getTickLabelPaint : $r1 = r0.<org.jfree.chart.axis.Axis: java.awt.Paint tickLabelPaint>
+org.jfree.chart.plot.CombinedDomainCategoryPlot.equals : if r1 != r0 goto $z0 = r1 instanceof org.jfree.chart.plot.CombinedDomainCategoryPlot
+org.jfree.chart.plot.CombinedDomainCategoryPlot.equals : return 0
+org.jfree.chart.plot.CombinedDomainCategoryPlot.equals : $z0 = r1 instanceof org.jfree.chart.plot.CombinedDomainCategoryPlot
+org.jfree.chart.renderer.xy.AbstractXYItemRenderer.getSeriesItemLabelGenerator : $r1 = r0.<org.jfree.chart.renderer.xy.AbstractXYItemRenderer: org.jfree.util.ObjectList itemLabelGeneratorList>
+org.jfree.chart.axis.NumberAxis.getAutoRangeStickyZero : $z0 = r0.<org.jfree.chart.axis.NumberAxis: boolean autoRangeStickyZero>
+org.jfree.chart.axis.TickUnit.compareTo : return -1
+org.jfree.chart.axis.TickUnit.compareTo : $d0 = r0.<org.jfree.chart.axis.TickUnit: double size>
+org.jfree.chart.axis.TickUnit.compareTo : $z0 = r1 instanceof org.jfree.chart.axis.TickUnit
+org.jfree.chart.axis.TickUnit.compareTo : $d2 = r0.<org.jfree.chart.axis.TickUnit: double size>
+org.jfree.chart.axis.TickUnit.compareTo : return 1
+org.jfree.chart.axis.TickUnit.compareTo : r2 = (org.jfree.chart.axis.TickUnit) r1
+org.jfree.chart.annotations.AbstractAnnotation.removeChangeListener : $r2 = r0.<org.jfree.chart.annotations.AbstractAnnotation: javax.swing.event.EventListenerList listenerList>
+org.jfree.chart.plot.CategoryPlot.clearRangeMarkers : virtualinvoke r0.<org.jfree.chart.plot.CategoryPlot: void fireChangeEvent()>()
+org.jfree.chart.plot.CategoryPlot.clearRangeMarkers : $z0 = interfaceinvoke r2.<java.util.Iterator: boolean hasNext()>()
+org.jfree.chart.plot.CategoryPlot.clearRangeMarkers : $r7 = r0.<org.jfree.chart.plot.CategoryPlot: java.util.Map backgroundRangeMarkers>
+org.jfree.chart.plot.CategoryPlot.clearRangeMarkers : r11 = interfaceinvoke r10.<java.util.Set: java.util.Iterator iterator()>()
+org.jfree.chart.plot.CategoryPlot.clearRangeMarkers : r2 = interfaceinvoke r1.<java.util.Set: java.util.Iterator iterator()>()
+org.jfree.chart.plot.CategoryPlot.clearRangeMarkers : $r1 = new java.lang.Integer
+org.jfree.chart.plot.CategoryPlot.clearRangeMarkers : if r3 == null goto $r10 = r0.<org.jfree.chart.plot.CategoryPlot: java.util.Map foregroundRangeMarkers>
+org.jfree.chart.plot.CategoryPlot.clearRangeMarkers : $r4 = r0.<org.jfree.chart.plot.CategoryPlot: java.util.Map backgroundRangeMarkers>
+org.jfree.chart.plot.CategoryPlot.clearRangeMarkers : $r5 = r0.<org.jfree.chart.plot.CategoryPlot: java.util.Map backgroundRangeMarkers>
+org.jfree.chart.plot.CategoryPlot.clearRangeMarkers : $r6 = r0.<org.jfree.chart.plot.CategoryPlot: java.util.Map backgroundRangeMarkers>
+org.jfree.chart.plot.CategoryPlot.clearRangeMarkers : $z1 = interfaceinvoke r11.<java.util.Iterator: boolean hasNext()>()
+org.jfree.chart.plot.CategoryPlot.clearRangeMarkers : $r9 = r0.<org.jfree.chart.plot.CategoryPlot: java.util.Map foregroundRangeMarkers>
+org.jfree.chart.plot.CategoryPlot.clearRangeMarkers : $r11 = r0.<org.jfree.chart.plot.CategoryPlot: java.util.Map foregroundRangeMarkers>
+org.jfree.chart.plot.CategoryPlot.clearRangeMarkers : $r14 = r0.<org.jfree.chart.plot.CategoryPlot: java.util.Map foregroundRangeMarkers>
+org.jfree.chart.plot.CategoryPlot.clearRangeMarkers : $r10 = r0.<org.jfree.chart.plot.CategoryPlot: java.util.Map foregroundRangeMarkers>
+org.jfree.chart.plot.CategoryPlot.clearRangeMarkers : if r13 == null goto virtualinvoke r0.<org.jfree.chart.plot.CategoryPlot: void fireChangeEvent()>()
+org.jfree.chart.plot.CategoryPlot.clearRangeMarkers : $r12 = interfaceinvoke $r11.<java.util.Map: java.lang.Object get(java.lang.Object)>(r2)
+org.jfree.chart.plot.CategoryPlot.clearRangeMarkers : $r8 = r0.<org.jfree.chart.plot.CategoryPlot: java.util.Map foregroundRangeMarkers>
+org.jfree.chart.plot.CategoryPlot.clearRangeMarkers : $r8 = interfaceinvoke $r7.<java.util.Map: java.lang.Object get(java.lang.Object)>(r2)
+org.jfree.chart.axis.TickUnit.getSize : $d0 = r0.<org.jfree.chart.axis.TickUnit: double size>
+org.jfree.chart.plot.CategoryPlot.setRangeAxis : if z0 == 0 goto return
+org.jfree.chart.plot.CategoryPlot.setRangeAxis : $r5 = r0.<org.jfree.chart.plot.CategoryPlot: org.jfree.util.ObjectList rangeAxes>
+org.jfree.chart.plot.CategoryPlot.setRangeAxis : if r1 == null goto $r5 = r0.<org.jfree.chart.plot.CategoryPlot: org.jfree.util.ObjectList rangeAxes>
+org.jfree.chart.plot.CategoryPlot.setRangeAxis : virtualinvoke r0.<org.jfree.chart.plot.CategoryPlot: void setRangeAxis(int,org.jfree.chart.axis.ValueAxis)>(0, r1)
+org.jfree.chart.plot.CategoryPlot.setRangeAxis : if r2 == null goto (branch)
+org.jfree.chart.plot.CategoryPlot.setRangeAxis : virtualinvoke r0.<org.jfree.chart.plot.CategoryPlot: void fireChangeEvent()>()
+org.jfree.chart.plot.CategoryPlot.setRangeAxis : if r1 == null goto (branch)
+org.jfree.chart.plot.CategoryPlot.setRangeAxis : $r3 = r0.<org.jfree.chart.plot.CategoryPlot: org.jfree.util.ObjectList rangeAxes>
+org.jfree.chart.plot.CategoryPlot.setRangeAxis : virtualinvoke r0.<org.jfree.chart.plot.CategoryPlot: void setRangeAxis(int,org.jfree.chart.axis.ValueAxis,boolean)>(i0, r1, 1)
+org.jfree.chart.plot.CategoryPlot.mapDatasetToRangeAxis : virtualinvoke r0.<org.jfree.chart.plot.CategoryPlot: void mapDatasetToRangeAxes(int,java.util.List)>(i0, r2)
+org.jfree.chart.plot.CategoryPlot.mapDatasetToRangeAxis : $r3 = new java.lang.Integer
+org.jfree.chart.plot.CategoryPlot.mapDatasetToRangeAxis : $r1 = new java.util.ArrayList
+org.jfree.chart.plot.CategoryPlot.getDataset : $r3 = r0.<org.jfree.chart.plot.CategoryPlot: org.jfree.util.ObjectList datasets>
+org.jfree.chart.plot.CategoryPlot.getDataset : r1 = null
+org.jfree.chart.plot.CategoryPlot.getDataset : return r1
+org.jfree.chart.plot.CategoryPlot.getDataset : $r2 = r0.<org.jfree.chart.plot.CategoryPlot: org.jfree.util.ObjectList datasets>
+org.jfree.chart.axis.CyclicNumberAxis.setFixedAutoRange : specialinvoke r0.<org.jfree.chart.axis.NumberAxis: void setFixedAutoRange(double)>(d0)
+org.jfree.chart.axis.CyclicNumberAxis.setFixedAutoRange : r0.<org.jfree.chart.axis.CyclicNumberAxis: double period> = d0
+org.jfree.chart.plot.Plot.getParent : $r1 = r0.<org.jfree.chart.plot.Plot: org.jfree.chart.plot.Plot parent>
+org.jfree.chart.renderer.AbstractRenderer.fireChangeEvent : $r1 = new org.jfree.chart.event.RendererChangeEvent
+org.jfree.chart.axis.ValueAxis.setRange : if z0 == 0 goto r0.<org.jfree.chart.axis.ValueAxis: org.jfree.data.Range range> = r1
+org.jfree.chart.axis.ValueAxis.setRange : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "range")
+org.jfree.chart.axis.ValueAxis.setRange : r0.<org.jfree.chart.axis.ValueAxis: org.jfree.data.Range range> = r1
+org.jfree.chart.axis.ValueAxis.setRange : if z1 == 0 goto return
+org.jfree.chart.renderer.AbstractRenderer.setBaseLegendShape : virtualinvoke r0.<org.jfree.chart.renderer.AbstractRenderer: void fireChangeEvent()>()
+org.jfree.chart.renderer.AbstractRenderer.setBaseLegendShape : r0.<org.jfree.chart.renderer.AbstractRenderer: java.awt.Shape baseLegendShape> = r1
+org.jfree.chart.plot.Plot.addChangeListener : $r2 = r0.<org.jfree.chart.plot.Plot: javax.swing.event.EventListenerList listenerList>
+org.jfree.chart.plot.CategoryPlot.mapDatasetToDomainAxis : $r3 = new java.lang.Integer
+org.jfree.chart.plot.CategoryPlot.mapDatasetToDomainAxis : virtualinvoke r0.<org.jfree.chart.plot.CategoryPlot: void mapDatasetToDomainAxes(int,java.util.List)>(i0, r2)
+org.jfree.chart.plot.CategoryPlot.mapDatasetToDomainAxis : $r1 = new java.util.ArrayList
+org.jfree.chart.plot.Plot.setParent : r0.<org.jfree.chart.plot.Plot: org.jfree.chart.plot.Plot parent> = r1
+org.jfree.chart.axis.Axis.addChangeListener : $r2 = r0.<org.jfree.chart.axis.Axis: javax.swing.event.EventListenerList listenerList>
+org.jfree.chart.renderer.category.AbstractCategoryItemRenderer.setToolTipGenerator : r0.<org.jfree.chart.renderer.category.AbstractCategoryItemRenderer: org.jfree.chart.labels.CategoryToolTipGenerator toolTipGenerator> = r1
+org.jfree.chart.renderer.category.AbstractCategoryItemRenderer.setToolTipGenerator : virtualinvoke r0.<org.jfree.chart.renderer.category.AbstractCategoryItemRenderer: void fireChangeEvent()>()
+org.jfree.chart.plot.Plot.getDrawingSupplier : return r2
+org.jfree.chart.plot.Plot.getDrawingSupplier : if r1 == null goto r2 = r0.<org.jfree.chart.plot.Plot: org.jfree.chart.plot.DrawingSupplier drawingSupplier>
+org.jfree.chart.plot.Plot.getDrawingSupplier : r2 = r0.<org.jfree.chart.plot.Plot: org.jfree.chart.plot.DrawingSupplier drawingSupplier>
+org.jfree.chart.plot.Plot.getDrawingSupplier : r1 = virtualinvoke r0.<org.jfree.chart.plot.Plot: org.jfree.chart.plot.Plot getParent()>()
+org.jfree.chart.plot.Plot.getDrawingSupplier : n0 = null
+org.jfree.chart.renderer.AbstractRenderer.notifyListeners : $r3 = r0.<org.jfree.chart.renderer.AbstractRenderer: javax.swing.event.EventListenerList listenerList>
+org.jfree.chart.renderer.AbstractRenderer.notifyListeners : $i1 = lengthof r2
+org.jfree.chart.plot.XYPlot.mapDatasetToDomainAxes : $r5 = r0.<org.jfree.chart.plot.XYPlot: java.util.Map datasetToDomainAxesMap>
+org.jfree.chart.plot.XYPlot.mapDatasetToDomainAxes : $r8 = new org.jfree.data.general.DatasetChangeEvent
+org.jfree.chart.plot.XYPlot.mapDatasetToDomainAxes : $r4 = new java.lang.Integer
+org.jfree.chart.plot.XYPlot.mapDatasetToDomainAxes : specialinvoke r0.<org.jfree.chart.plot.XYPlot: void checkAxisIndices(java.util.List)>(r1)
+org.jfree.chart.plot.XYPlot.mapDatasetToDomainAxes : if i0 >= 0 goto specialinvoke r0.<org.jfree.chart.plot.XYPlot: void checkAxisIndices(java.util.List)>(r1)
+org.jfree.chart.event.ChartChangeEvent.setType : r0.<org.jfree.chart.event.ChartChangeEvent: org.jfree.chart.event.ChartChangeEventType type> = r1
+org.jfree.chart.renderer.category.BarRenderer.getDefaultShadowsVisible : $z0 = <org.jfree.chart.renderer.category.BarRenderer: boolean defaultShadowsVisible>
+org.jfree.chart.plot.CategoryPlot.checkAxisIndices : if i0 != 0 goto $r5 = new java.util.HashSet
+org.jfree.chart.plot.CategoryPlot.checkAxisIndices : i1 = 0
+org.jfree.chart.plot.CategoryPlot.checkAxisIndices : r3 = interfaceinvoke r1.<java.util.List: java.lang.Object get(int)>(i1)
+org.jfree.chart.plot.CategoryPlot.checkAxisIndices : i0 = interfaceinvoke r1.<java.util.List: int size()>()
+org.jfree.chart.plot.CategoryPlot.checkAxisIndices : if r1 != null goto i0 = interfaceinvoke r1.<java.util.List: int size()>()
+org.jfree.chart.plot.CategoryPlot.checkAxisIndices : virtualinvoke r2.<java.util.HashSet: boolean add(java.lang.Object)>(r3)
+org.jfree.chart.plot.CategoryPlot.checkAxisIndices : $r5 = new java.util.HashSet
+org.jfree.chart.plot.CategoryPlot.checkAxisIndices : $z0 = r3 instanceof java.lang.Integer
+org.jfree.chart.plot.CategoryPlot.checkAxisIndices : $z1 = virtualinvoke r2.<java.util.HashSet: boolean contains(java.lang.Object)>(r3)
+org.jfree.chart.axis.Axis.notifyListeners : $i1 = lengthof r2
+org.jfree.chart.axis.Axis.notifyListeners : $r3 = r0.<org.jfree.chart.axis.Axis: javax.swing.event.EventListenerList listenerList>
+org.jfree.chart.plot.CategoryPlot.datasetsMappedToRangeAxis : $r13 = r0.<org.jfree.chart.plot.CategoryPlot: org.jfree.util.ObjectList datasets>
+org.jfree.chart.plot.CategoryPlot.datasetsMappedToRangeAxis : $z2 = interfaceinvoke r4.<java.util.List: boolean contains(java.lang.Object)>(r2)
+org.jfree.chart.plot.CategoryPlot.datasetsMappedToRangeAxis : i1 = 0
+org.jfree.chart.plot.CategoryPlot.datasetsMappedToRangeAxis : return r3
+org.jfree.chart.plot.CategoryPlot.datasetsMappedToRangeAxis : if r4 != null goto $z2 = interfaceinvoke r4.<java.util.List: boolean contains(java.lang.Object)>(r2)
+org.jfree.chart.plot.CategoryPlot.datasetsMappedToRangeAxis : $r7 = r0.<org.jfree.chart.plot.CategoryPlot: java.util.TreeMap datasetToRangeAxesMap>
+org.jfree.chart.plot.CategoryPlot.datasetsMappedToRangeAxis : $r5 = new java.util.ArrayList
+org.jfree.chart.plot.CategoryPlot.datasetsMappedToRangeAxis : $r1 = new java.lang.Integer
+org.jfree.chart.plot.CombinedDomainCategoryPlot.add : $r4 = new org.jfree.ui.RectangleInsets
+org.jfree.chart.plot.CombinedDomainCategoryPlot.add : virtualinvoke r1.<org.jfree.chart.plot.CategoryPlot: void setDomainAxis(org.jfree.chart.axis.CategoryAxis)>(null)
+org.jfree.chart.plot.CombinedDomainCategoryPlot.add : virtualinvoke r0.<org.jfree.chart.plot.CombinedDomainCategoryPlot: void add(org.jfree.chart.plot.CategoryPlot,int)>(r1, 1)
+org.jfree.chart.plot.CombinedDomainCategoryPlot.add : if i0 >= 1 goto virtualinvoke r1.<org.jfree.chart.plot.CategoryPlot: void setParent(org.jfree.chart.plot.Plot)>(r0)
+org.jfree.chart.plot.CombinedDomainCategoryPlot.add : $r5 = virtualinvoke r0.<org.jfree.chart.plot.CombinedDomainCategoryPlot: org.jfree.chart.plot.PlotOrientation getOrientation()>()
+org.jfree.chart.plot.CombinedDomainCategoryPlot.add : r2 = virtualinvoke r0.<org.jfree.chart.plot.CombinedDomainCategoryPlot: org.jfree.chart.axis.CategoryAxis getDomainAxis()>()
+org.jfree.chart.plot.CombinedDomainCategoryPlot.add : virtualinvoke r1.<org.jfree.chart.plot.CategoryPlot: void setParent(org.jfree.chart.plot.Plot)>(r0)
+org.jfree.chart.plot.CombinedDomainCategoryPlot.add : virtualinvoke r0.<org.jfree.chart.plot.CombinedDomainCategoryPlot: void fireChangeEvent()>()
+org.jfree.chart.plot.CombinedDomainCategoryPlot.add : virtualinvoke r1.<org.jfree.chart.plot.CategoryPlot: void addChangeListener(org.jfree.chart.event.PlotChangeListener)>(r0)
+org.jfree.chart.plot.CombinedDomainCategoryPlot.add : virtualinvoke r2.<org.jfree.chart.axis.CategoryAxis: void configure()>()
+org.jfree.chart.plot.CombinedDomainCategoryPlot.add : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "subplot")
+org.jfree.chart.plot.CombinedDomainCategoryPlot.add : if r2 == null goto virtualinvoke r0.<org.jfree.chart.plot.CombinedDomainCategoryPlot: void fireChangeEvent()>()
+org.jfree.chart.plot.CombinedDomainCategoryPlot.add : virtualinvoke r1.<org.jfree.chart.plot.CategoryPlot: void setWeight(int)>(i0)
+org.jfree.chart.plot.CombinedDomainCategoryPlot.add : $r6 = r0.<org.jfree.chart.plot.CombinedDomainCategoryPlot: java.util.List subplots>
+org.jfree.chart.plot.Plot.setInsets : if z0 == 0 goto return
+org.jfree.chart.plot.Plot.setInsets : $r2 = r0.<org.jfree.chart.plot.Plot: org.jfree.ui.RectangleInsets insets>
+org.jfree.chart.plot.Plot.setInsets : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "insets")
+org.jfree.chart.plot.Plot.setInsets : r0.<org.jfree.chart.plot.Plot: org.jfree.ui.RectangleInsets insets> = r1
+org.jfree.chart.plot.Plot.setInsets : virtualinvoke r0.<org.jfree.chart.plot.Plot: void fireChangeEvent()>()
+org.jfree.chart.plot.Plot.setInsets : virtualinvoke r0.<org.jfree.chart.plot.Plot: void setInsets(org.jfree.ui.RectangleInsets,boolean)>(r1, 1)
+org.jfree.chart.plot.CombinedRangeCategoryPlot.getDataRange : $z0 = interfaceinvoke r3.<java.util.Iterator: boolean hasNext()>()
+org.jfree.chart.plot.CombinedRangeCategoryPlot.getDataRange : return r2
+org.jfree.chart.plot.CombinedRangeCategoryPlot.getDataRange : $r7 = interfaceinvoke r3.<java.util.Iterator: java.lang.Object next()>()
+org.jfree.chart.plot.CombinedRangeCategoryPlot.getDataRange : $r5 = r0.<org.jfree.chart.plot.CombinedRangeCategoryPlot: java.util.List subplots>
+org.jfree.chart.plot.CombinedRangeCategoryPlot.getDataRange : goto [?= staticinvoke <edu.washington.cs.dt.impact.util.Tracer: void trace(java.lang.String,java.lang.String)>("$z0 = interfaceinvoke r3.<java.util.Iterator: boolean hasNext()>()", "org.jfree.chart.plot.CombinedRangeCategoryPlot.getDataRange")]
+org.jfree.chart.plot.CombinedRangeCategoryPlot.getDataRange : $r6 = r0.<org.jfree.chart.plot.CombinedRangeCategoryPlot: java.util.List subplots>
+org.jfree.chart.plot.CombinedRangeCategoryPlot.getDataRange : r2 = null
+org.jfree.chart.plot.CombinedRangeCategoryPlot.getDataRange : $r8 = virtualinvoke r4.<org.jfree.chart.plot.CategoryPlot: org.jfree.data.Range getDataRange(org.jfree.chart.axis.ValueAxis)>(r1)
+org.jfree.chart.plot.CombinedDomainCategoryPlot.getSubplots : $r2 = r0.<org.jfree.chart.plot.CombinedDomainCategoryPlot: java.util.List subplots>
+org.jfree.chart.plot.CombinedDomainCategoryPlot.getSubplots : $r1 = r0.<org.jfree.chart.plot.CombinedDomainCategoryPlot: java.util.List subplots>
+org.jfree.chart.axis.ValueAxis.getUpperMargin : $d0 = r0.<org.jfree.chart.axis.ValueAxis: double upperMargin>
+org.jfree.chart.plot.CategoryPlot.setWeight : virtualinvoke r0.<org.jfree.chart.plot.CategoryPlot: void fireChangeEvent()>()
+org.jfree.chart.plot.CategoryPlot.setWeight : r0.<org.jfree.chart.plot.CategoryPlot: int weight> = i0
+org.jfree.chart.plot.XYPlot.mapDatasetToRangeAxis : $r3 = new java.lang.Integer
+org.jfree.chart.plot.XYPlot.mapDatasetToRangeAxis : $r1 = new java.util.ArrayList
+org.jfree.chart.plot.XYPlot.mapDatasetToRangeAxis : virtualinvoke r0.<org.jfree.chart.plot.XYPlot: void mapDatasetToRangeAxes(int,java.util.List)>(i0, r2)
+org.jfree.data.time.Week.getLastMillisecond : $s0 = r0.<org.jfree.data.time.Week: short year>
+org.jfree.data.time.Week.getLastMillisecond : virtualinvoke r2.<java.util.Calendar: void clear()>()
+org.jfree.data.time.Week.getLastMillisecond : $b1 = r0.<org.jfree.data.time.Week: byte week>
+org.jfree.data.time.Week.getLastMillisecond : $r3 = virtualinvoke r1.<java.util.Calendar: java.lang.Object clone()>()
+org.jfree.data.time.Week.getLastMillisecond : virtualinvoke r2.<java.util.Calendar: void set(int,int)>(10, 0)
+org.jfree.data.time.Week.getLastMillisecond : virtualinvoke r2.<java.util.Calendar: void set(int,int)>(12, 0)
+org.jfree.data.time.Week.getLastMillisecond : $l4 = virtualinvoke r2.<java.util.Calendar: long getTimeInMillis()>()
+org.jfree.data.time.Week.getLastMillisecond : virtualinvoke r2.<java.util.Calendar: void set(int,int)>(14, 0)
+org.jfree.data.time.Week.getLastMillisecond : virtualinvoke r2.<java.util.Calendar: void set(int,int)>(13, 0)
+org.jfree.data.time.Week.getLastMillisecond : $i3 = virtualinvoke r2.<java.util.Calendar: int getFirstDayOfWeek()>()
+org.jfree.chart.plot.Marker.notifyListeners : $r3 = r0.<org.jfree.chart.plot.Marker: javax.swing.event.EventListenerList listenerList>
+org.jfree.chart.plot.Marker.notifyListeners : $i1 = lengthof r2
+org.jfree.chart.plot.CategoryPlot.clearDomainMarkers : $r9 = r0.<org.jfree.chart.plot.CategoryPlot: java.util.Map foregroundDomainMarkers>
+org.jfree.chart.plot.CategoryPlot.clearDomainMarkers : virtualinvoke r0.<org.jfree.chart.plot.CategoryPlot: void fireChangeEvent()>()
+org.jfree.chart.plot.CategoryPlot.clearDomainMarkers : $r7 = r0.<org.jfree.chart.plot.CategoryPlot: java.util.Map backgroundDomainMarkers>
+org.jfree.chart.plot.CategoryPlot.clearDomainMarkers : $z0 = interfaceinvoke r2.<java.util.Iterator: boolean hasNext()>()
+org.jfree.chart.plot.CategoryPlot.clearDomainMarkers : r11 = interfaceinvoke r10.<java.util.Set: java.util.Iterator iterator()>()
+org.jfree.chart.plot.CategoryPlot.clearDomainMarkers : r2 = interfaceinvoke r1.<java.util.Set: java.util.Iterator iterator()>()
+org.jfree.chart.plot.CategoryPlot.clearDomainMarkers : $r4 = r0.<org.jfree.chart.plot.CategoryPlot: java.util.Map backgroundDomainMarkers>
+org.jfree.chart.plot.CategoryPlot.clearDomainMarkers : $r14 = r0.<org.jfree.chart.plot.CategoryPlot: java.util.Map foregroundDomainMarkers>
+org.jfree.chart.plot.CategoryPlot.clearDomainMarkers : $r5 = r0.<org.jfree.chart.plot.CategoryPlot: java.util.Map backgroundDomainMarkers>
+org.jfree.chart.plot.CategoryPlot.clearDomainMarkers : $z1 = interfaceinvoke r11.<java.util.Iterator: boolean hasNext()>()
+org.jfree.chart.plot.CategoryPlot.clearDomainMarkers : $r8 = r0.<org.jfree.chart.plot.CategoryPlot: java.util.Map foregroundDomainMarkers>
+org.jfree.chart.renderer.AbstractRenderer.setBaseNegativeItemLabelPosition : virtualinvoke r0.<org.jfree.chart.renderer.AbstractRenderer: void fireChangeEvent()>()
+org.jfree.chart.renderer.AbstractRenderer.setBaseNegativeItemLabelPosition : if z0 == 0 goto return
+org.jfree.chart.renderer.AbstractRenderer.setBaseNegativeItemLabelPosition : r0.<org.jfree.chart.renderer.AbstractRenderer: org.jfree.chart.labels.ItemLabelPosition baseNegativeItemLabelPosition> = r1
+org.jfree.chart.renderer.AbstractRenderer.setBaseNegativeItemLabelPosition : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "position")
+org.jfree.chart.renderer.AbstractRenderer.setBaseNegativeItemLabelPosition : virtualinvoke r0.<org.jfree.chart.renderer.AbstractRenderer: void setBaseNegativeItemLabelPosition(org.jfree.chart.labels.ItemLabelPosition,boolean)>(r1, 1)
+org.jfree.chart.plot.CategoryPlot.configureDomainAxes : $r3 = r0.<org.jfree.chart.plot.CategoryPlot: org.jfree.util.ObjectList domainAxes>
+org.jfree.chart.plot.CategoryPlot.configureDomainAxes : if r1 == null goto i0 = i0 + 1
+org.jfree.chart.plot.CategoryPlot.configureDomainAxes : i0 = 0
+org.jfree.chart.plot.CategoryPlot.configureDomainAxes : virtualinvoke r1.<org.jfree.chart.axis.CategoryAxis: void configure()>()
+org.jfree.chart.renderer.AbstractRenderer.getItemLabelFont : $r1 = r0.<org.jfree.chart.renderer.AbstractRenderer: java.awt.Font itemLabelFont>
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r84 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r90 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r73 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r44 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r50 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r77 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r71 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r34 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r52 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r89 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r83 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r20 = new java.text.DecimalFormat
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r87 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r24 = new java.text.DecimalFormat
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r22 = new java.text.DecimalFormat
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r82 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : return r1
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r51 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r86 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r26 = new java.text.DecimalFormat
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r17 = new java.text.DecimalFormat
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r61 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r35 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r33 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r16 = new java.text.DecimalFormat
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r25 = new java.text.DecimalFormat
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r47 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r45 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r32 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r57 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r31 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r21 = new java.text.DecimalFormat
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r75 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r58 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r62 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r67 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r59 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r39 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r37 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r79 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r66 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r68 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r65 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r74 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r49 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r48 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r41 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r70 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r54 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r15 = new java.text.DecimalFormat
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r43 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r81 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r27 = new java.text.DecimalFormat
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r78 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r42 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r28 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r60 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r55 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r63 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r56 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r30 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r36 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r46 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r88 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r80 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r18 = new java.text.DecimalFormat
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r23 = new java.text.DecimalFormat
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r29 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r19 = new java.text.DecimalFormat
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r38 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r64 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r76 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r69 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r72 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r53 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r85 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r0 = new org.jfree.chart.axis.TickUnits
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r40 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.plot.CategoryPlot.setDomainGridlinePaint : virtualinvoke r0.<org.jfree.chart.plot.CategoryPlot: void fireChangeEvent()>()
+org.jfree.chart.plot.CategoryPlot.setDomainGridlinePaint : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "paint")
+org.jfree.chart.plot.CategoryPlot.setDomainGridlinePaint : r0.<org.jfree.chart.plot.CategoryPlot: java.awt.Paint domainGridlinePaint> = r1
+org.jfree.chart.plot.Marker.setLabelOffsetType : r0.<org.jfree.chart.plot.Marker: org.jfree.ui.LengthAdjustmentType labelOffsetType> = r1
+org.jfree.chart.plot.Marker.setLabelOffsetType : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "adj")
+org.jfree.chart.plot.Marker.setLabelOffsetType : $r2 = new org.jfree.chart.event.MarkerChangeEvent
+org.jfree.chart.plot.XYPlot.configureDomainAxes : if r1 == null goto i0 = i0 + 1
+org.jfree.chart.plot.XYPlot.configureDomainAxes : i0 = 0
+org.jfree.chart.plot.XYPlot.configureDomainAxes : $r3 = r0.<org.jfree.chart.plot.XYPlot: org.jfree.util.ObjectList domainAxes>
+org.jfree.chart.axis.TickUnits.add : $r3 = r0.<org.jfree.chart.axis.TickUnits: java.util.List tickUnits>
+org.jfree.chart.axis.TickUnits.add : if r1 != null goto $r3 = r0.<org.jfree.chart.axis.TickUnits: java.util.List tickUnits>
+org.jfree.chart.axis.TickUnits.add : $r4 = r0.<org.jfree.chart.axis.TickUnits: java.util.List tickUnits>
+org.jfree.chart.renderer.AbstractRenderer.setBasePositiveItemLabelPosition : virtualinvoke r0.<org.jfree.chart.renderer.AbstractRenderer: void fireChangeEvent()>()
+org.jfree.chart.renderer.AbstractRenderer.setBasePositiveItemLabelPosition : if z0 == 0 goto return
+org.jfree.chart.renderer.AbstractRenderer.setBasePositiveItemLabelPosition : virtualinvoke r0.<org.jfree.chart.renderer.AbstractRenderer: void setBasePositiveItemLabelPosition(org.jfree.chart.labels.ItemLabelPosition,boolean)>(r1, 1)
+org.jfree.chart.renderer.AbstractRenderer.setBasePositiveItemLabelPosition : r0.<org.jfree.chart.renderer.AbstractRenderer: org.jfree.chart.labels.ItemLabelPosition basePositiveItemLabelPosition> = r1
+org.jfree.chart.renderer.AbstractRenderer.setBasePositiveItemLabelPosition : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "position")
+org.jfree.chart.plot.XYPlot.configureRangeAxes : $r3 = r0.<org.jfree.chart.plot.XYPlot: org.jfree.util.ObjectList rangeAxes>
+org.jfree.chart.plot.XYPlot.configureRangeAxes : if r1 == null goto i0 = i0 + 1
+org.jfree.chart.plot.XYPlot.configureRangeAxes : i0 = 0
+org.jfree.chart.plot.XYPlot.configureRangeAxes : virtualinvoke r1.<org.jfree.chart.axis.ValueAxis: void configure()>()
+org.jfree.chart.axis.NumberAxis.getAutoRangeIncludesZero : $z0 = r0.<org.jfree.chart.axis.NumberAxis: boolean autoRangeIncludesZero>
+org.jfree.chart.plot.CategoryPlot.setDomainCrosshairColumnKey : if z0 == 0 goto return
+org.jfree.chart.plot.CategoryPlot.setDomainCrosshairColumnKey : virtualinvoke r0.<org.jfree.chart.plot.CategoryPlot: void fireChangeEvent()>()
+org.jfree.chart.plot.CategoryPlot.setDomainCrosshairColumnKey : virtualinvoke r0.<org.jfree.chart.plot.CategoryPlot: void setDomainCrosshairColumnKey(java.lang.Comparable,boolean)>(r1, 1)
+org.jfree.chart.plot.CategoryPlot.setDomainCrosshairColumnKey : r0.<org.jfree.chart.plot.CategoryPlot: java.lang.Comparable domainCrosshairColumnKey> = r1
+org.jfree.chart.plot.XYPlot.datasetChanged : $r5 = new org.jfree.chart.event.PlotChangeEvent
+org.jfree.chart.plot.XYPlot.datasetChanged : $r3 = virtualinvoke r0.<org.jfree.chart.plot.XYPlot: org.jfree.chart.plot.Plot getParent()>()
+org.jfree.chart.plot.XYPlot.datasetChanged : virtualinvoke r0.<org.jfree.chart.plot.XYPlot: void configureRangeAxes()>()
+org.jfree.chart.plot.XYPlot.datasetChanged : virtualinvoke r0.<org.jfree.chart.plot.XYPlot: void notifyListeners(org.jfree.chart.event.PlotChangeEvent)>(r2)
+org.jfree.chart.plot.XYPlot.datasetChanged : virtualinvoke r0.<org.jfree.chart.plot.XYPlot: void configureDomainAxes()>()
+org.jfree.chart.plot.XYPlot.datasetChanged : $r6 = <org.jfree.chart.event.ChartChangeEventType: org.jfree.chart.event.ChartChangeEventType DATASET_UPDATED>
+org.jfree.chart.axis.ValueAxis.getAutoRangeMinimumSize : $d0 = r0.<org.jfree.chart.axis.ValueAxis: double autoRangeMinimumSize>
+org.jfree.chart.plot.CategoryPlot.getRangeAxis : $r5 = r0.<org.jfree.chart.plot.CategoryPlot: org.jfree.util.ObjectList rangeAxes>
+org.jfree.chart.plot.CategoryPlot.getRangeAxis : $r4 = r0.<org.jfree.chart.plot.CategoryPlot: org.jfree.util.ObjectList rangeAxes>
+org.jfree.chart.plot.CategoryPlot.getRangeAxis : $r1 = virtualinvoke r0.<org.jfree.chart.plot.CategoryPlot: org.jfree.chart.axis.ValueAxis getRangeAxis(int)>(0)
+org.jfree.chart.plot.CategoryPlot.getRangeAxis : if r1 != null goto return r1
+org.jfree.chart.plot.CategoryPlot.getRangeAxis : r1 = virtualinvoke r3.<org.jfree.chart.plot.CategoryPlot: org.jfree.chart.axis.ValueAxis getRangeAxis(int)>(i0)
+org.jfree.chart.plot.CategoryPlot.getRangeAxis : r1 = null
+org.jfree.chart.plot.CategoryPlot.getRangeAxis : return r1
+org.jfree.chart.plot.CategoryPlot.getRangeAxis : r2 = virtualinvoke r0.<org.jfree.chart.plot.CategoryPlot: org.jfree.chart.plot.Plot getParent()>()
+org.jfree.chart.plot.CategoryPlot.getRangeAxis : $z0 = r2 instanceof org.jfree.chart.plot.CategoryPlot
+org.jfree.chart.plot.CategoryPlot.getRangeAxis : r3 = (org.jfree.chart.plot.CategoryPlot) r2
+org.jfree.chart.axis.ValueAxis.getLowerMargin : $d0 = r0.<org.jfree.chart.axis.ValueAxis: double lowerMargin>
+org.jfree.chart.axis.ValueAxis.isAutoRange : $z0 = r0.<org.jfree.chart.axis.ValueAxis: boolean autoRange>
+org.jfree.chart.plot.CategoryPlot.configureRangeAxes : if r1 == null goto i0 = i0 + 1
+org.jfree.chart.plot.CategoryPlot.configureRangeAxes : i0 = 0
+org.jfree.chart.plot.CategoryPlot.configureRangeAxes : virtualinvoke r1.<org.jfree.chart.axis.ValueAxis: void configure()>()
+org.jfree.chart.plot.CategoryPlot.configureRangeAxes : $r3 = r0.<org.jfree.chart.plot.CategoryPlot: org.jfree.util.ObjectList rangeAxes>
+org.jfree.chart.plot.CategoryPlot.getDataRange : return r2
+org.jfree.chart.plot.CategoryPlot.getDataRange : $r11 = specialinvoke r0.<org.jfree.chart.plot.CategoryPlot: java.util.List datasetsMappedToRangeAxis(int)>(0)
+org.jfree.chart.plot.CategoryPlot.getDataRange : $r12 = interfaceinvoke r4.<java.util.Iterator: java.lang.Object next()>()
+org.jfree.chart.plot.CategoryPlot.getDataRange : r4 = interfaceinvoke r3.<java.util.List: java.util.Iterator iterator()>()
+org.jfree.chart.plot.CategoryPlot.getDataRange : r6 = virtualinvoke r0.<org.jfree.chart.plot.CategoryPlot: org.jfree.chart.renderer.category.CategoryItemRenderer getRendererForDataset(org.jfree.data.category.CategoryDataset)>(r5)
+org.jfree.chart.plot.CategoryPlot.getDataRange : if i0 < 0 goto $r10 = virtualinvoke r0.<org.jfree.chart.plot.CategoryPlot: org.jfree.chart.axis.ValueAxis getRangeAxis()>()
+org.jfree.chart.plot.CategoryPlot.getDataRange : $r10 = virtualinvoke r0.<org.jfree.chart.plot.CategoryPlot: org.jfree.chart.axis.ValueAxis getRangeAxis()>()
+org.jfree.chart.plot.CategoryPlot.getDataRange : if r6 == null goto (branch)
+org.jfree.chart.plot.CategoryPlot.getDataRange : $r7 = new java.util.ArrayList
+org.jfree.chart.plot.CategoryPlot.getDataRange : $r8 = r0.<org.jfree.chart.plot.CategoryPlot: org.jfree.util.ObjectList rangeAxes>
+org.jfree.chart.plot.CategoryPlot.getDataRange : $z2 = interfaceinvoke r4.<java.util.Iterator: boolean hasNext()>()
+org.jfree.chart.plot.CategoryPlot.getDataRange : r2 = null
+org.jfree.chart.plot.CategoryPlot.getDataRange : goto [?= staticinvoke <edu.washington.cs.dt.impact.util.Tracer: void trace(java.lang.String,java.lang.String)>("$z2 = interfaceinvoke r4.<java.util.Iterator: boolean hasNext()>()", "org.jfree.chart.plot.CategoryPlot.getDataRange")]
+org.jfree.chart.plot.XYPlot.checkAxisIndices : if i0 != 0 goto $r5 = new java.util.HashSet
+org.jfree.chart.plot.XYPlot.checkAxisIndices : i1 = 0
+org.jfree.chart.plot.XYPlot.checkAxisIndices : r3 = interfaceinvoke r1.<java.util.List: java.lang.Object get(int)>(i1)
+org.jfree.chart.plot.XYPlot.checkAxisIndices : i0 = interfaceinvoke r1.<java.util.List: int size()>()
+org.jfree.chart.plot.XYPlot.checkAxisIndices : if r1 != null goto i0 = interfaceinvoke r1.<java.util.List: int size()>()
+org.jfree.chart.plot.XYPlot.checkAxisIndices : virtualinvoke r2.<java.util.HashSet: boolean add(java.lang.Object)>(r3)
+org.jfree.chart.plot.XYPlot.checkAxisIndices : $r5 = new java.util.HashSet
+org.jfree.chart.plot.XYPlot.checkAxisIndices : $z0 = r3 instanceof java.lang.Integer
+org.jfree.chart.plot.XYPlot.checkAxisIndices : $z1 = virtualinvoke r2.<java.util.HashSet: boolean contains(java.lang.Object)>(r3)
+org.jfree.chart.plot.CategoryPlot.getDrawSharedDomainAxis : $z0 = r0.<org.jfree.chart.plot.CategoryPlot: boolean drawSharedDomainAxis>
+org.jfree.data.Range.getLowerBound : $d0 = r0.<org.jfree.data.Range: double lower>
+org.jfree.chart.plot.CategoryPlot.getDomainAxis : $r1 = virtualinvoke r0.<org.jfree.chart.plot.CategoryPlot: org.jfree.chart.axis.CategoryAxis getDomainAxis(int)>(0)
+org.jfree.chart.plot.CategoryPlot.getDomainAxis : if r1 != null goto return r1
+org.jfree.chart.plot.CategoryPlot.getDomainAxis : $r4 = r0.<org.jfree.chart.plot.CategoryPlot: org.jfree.util.ObjectList domainAxes>
+org.jfree.chart.plot.CategoryPlot.getDomainAxis : $r5 = r0.<org.jfree.chart.plot.CategoryPlot: org.jfree.util.ObjectList domainAxes>
+org.jfree.chart.plot.CategoryPlot.getDomainAxis : r1 = null
+org.jfree.chart.plot.CategoryPlot.getDomainAxis : return r1
+org.jfree.chart.plot.CategoryPlot.mapDatasetToDomainAxes : specialinvoke r0.<org.jfree.chart.plot.CategoryPlot: void checkAxisIndices(java.util.List)>(r1)
+org.jfree.chart.plot.CategoryPlot.mapDatasetToDomainAxes : $r8 = new org.jfree.data.general.DatasetChangeEvent
+org.jfree.chart.plot.CategoryPlot.mapDatasetToDomainAxes : if i0 >= 0 goto specialinvoke r0.<org.jfree.chart.plot.CategoryPlot: void checkAxisIndices(java.util.List)>(r1)
+org.jfree.chart.plot.CategoryPlot.mapDatasetToDomainAxes : $r4 = new java.lang.Integer
+org.jfree.chart.plot.CategoryPlot.mapDatasetToDomainAxes : $r5 = r0.<org.jfree.chart.plot.CategoryPlot: java.util.TreeMap datasetToDomainAxesMap>
+org.jfree.chart.axis.Axis.getPlot : $r1 = r0.<org.jfree.chart.axis.Axis: org.jfree.chart.plot.Plot plot>
+org.jfree.chart.plot.XYPlot.mapDatasetToDomainAxis : $r3 = new java.lang.Integer
+org.jfree.chart.plot.XYPlot.mapDatasetToDomainAxis : virtualinvoke r0.<org.jfree.chart.plot.XYPlot: void mapDatasetToDomainAxes(int,java.util.List)>(i0, r2)
+org.jfree.chart.plot.XYPlot.mapDatasetToDomainAxis : $r1 = new java.util.ArrayList
+org.jfree.chart.plot.CategoryPlot.mapDatasetToRangeAxes : specialinvoke r0.<org.jfree.chart.plot.CategoryPlot: void checkAxisIndices(java.util.List)>(r1)
+org.jfree.chart.plot.CategoryPlot.mapDatasetToRangeAxes : $r8 = new org.jfree.data.general.DatasetChangeEvent
+org.jfree.chart.plot.CategoryPlot.mapDatasetToRangeAxes : $r5 = r0.<org.jfree.chart.plot.CategoryPlot: java.util.TreeMap datasetToRangeAxesMap>
+org.jfree.chart.plot.CategoryPlot.mapDatasetToRangeAxes : if i0 >= 0 goto specialinvoke r0.<org.jfree.chart.plot.CategoryPlot: void checkAxisIndices(java.util.List)>(r1)
+org.jfree.chart.plot.CategoryPlot.mapDatasetToRangeAxes : $r4 = new java.lang.Integer
+org.jfree.chart.renderer.category.BarRenderer.getDefaultBarPainter : $r0 = <org.jfree.chart.renderer.category.BarRenderer: org.jfree.chart.renderer.category.BarPainter defaultBarPainter>
+org.jfree.chart.plot.Marker.setLabelPaint : r0.<org.jfree.chart.plot.Marker: java.awt.Paint labelPaint> = r1
+org.jfree.chart.plot.Marker.setLabelPaint : $r2 = new org.jfree.chart.event.MarkerChangeEvent
+org.jfree.chart.plot.Marker.setLabelPaint : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "paint")
+org.jfree.chart.axis.Axis.setPlot : r0.<org.jfree.chart.axis.Axis: org.jfree.chart.plot.Plot plot> = r1
+org.jfree.chart.axis.Axis.setPlot : virtualinvoke r0.<org.jfree.chart.axis.Axis: void configure()>()
+org.jfree.chart.plot.Plot.isNotify : $z0 = r0.<org.jfree.chart.plot.Plot: boolean notify>
+org.jfree.chart.plot.XYPlot.getDataset : $r3 = r0.<org.jfree.chart.plot.XYPlot: org.jfree.util.ObjectList datasets>
+org.jfree.chart.plot.XYPlot.getDataset : $r2 = r0.<org.jfree.chart.plot.XYPlot: org.jfree.util.ObjectList datasets>
+org.jfree.chart.plot.XYPlot.getDataset : r1 = null
+org.jfree.chart.plot.XYPlot.getDataset : return r1
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null goto return
+org.jfree.chart.plot.CombinedRangeCategoryPlot.add : $r4 = new org.jfree.ui.RectangleInsets
+org.jfree.chart.plot.CombinedRangeCategoryPlot.add : virtualinvoke r1.<org.jfree.chart.plot.CategoryPlot: void setRangeAxis(org.jfree.chart.axis.ValueAxis)>(null)
+org.jfree.chart.plot.CombinedRangeCategoryPlot.add : $r6 = r0.<org.jfree.chart.plot.CombinedRangeCategoryPlot: java.util.List subplots>
+org.jfree.chart.plot.CombinedRangeCategoryPlot.add : virtualinvoke r1.<org.jfree.chart.plot.CategoryPlot: void setParent(org.jfree.chart.plot.Plot)>(r0)
+org.jfree.chart.plot.CombinedRangeCategoryPlot.add : r2 = virtualinvoke r0.<org.jfree.chart.plot.CombinedRangeCategoryPlot: org.jfree.chart.axis.ValueAxis getRangeAxis()>()
+org.jfree.chart.plot.CombinedRangeCategoryPlot.add : virtualinvoke r2.<org.jfree.chart.axis.ValueAxis: void configure()>()
+org.jfree.chart.plot.CombinedRangeCategoryPlot.add : if i0 > 0 goto virtualinvoke r1.<org.jfree.chart.plot.CategoryPlot: void setParent(org.jfree.chart.plot.Plot)>(r0)
+org.jfree.chart.plot.CombinedRangeCategoryPlot.add : virtualinvoke r0.<org.jfree.chart.plot.CombinedRangeCategoryPlot: void fireChangeEvent()>()
+org.jfree.chart.plot.CombinedRangeCategoryPlot.add : virtualinvoke r1.<org.jfree.chart.plot.CategoryPlot: void addChangeListener(org.jfree.chart.event.PlotChangeListener)>(r0)
+org.jfree.chart.plot.CombinedRangeCategoryPlot.add : if r2 == null goto virtualinvoke r0.<org.jfree.chart.plot.CombinedRangeCategoryPlot: void fireChangeEvent()>()
+org.jfree.chart.plot.CombinedRangeCategoryPlot.add : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "subplot")
+org.jfree.chart.plot.CombinedRangeCategoryPlot.add : $r5 = virtualinvoke r0.<org.jfree.chart.plot.CombinedRangeCategoryPlot: org.jfree.chart.plot.PlotOrientation getOrientation()>()
+org.jfree.chart.plot.CombinedRangeCategoryPlot.add : virtualinvoke r1.<org.jfree.chart.plot.CategoryPlot: void setWeight(int)>(i0)
+org.jfree.data.Range.getUpperBound : $d0 = r0.<org.jfree.data.Range: double upper>
+org.jfree.chart.plot.CategoryPlot.setRangeAxisLocation : if z0 == 0 goto return
+org.jfree.chart.plot.CategoryPlot.setRangeAxisLocation : virtualinvoke r0.<org.jfree.chart.plot.CategoryPlot: void setRangeAxisLocation(int,org.jfree.chart.axis.AxisLocation,boolean)>(0, r1, z0)
+org.jfree.chart.plot.CategoryPlot.setRangeAxisLocation : $r3 = r0.<org.jfree.chart.plot.CategoryPlot: org.jfree.util.ObjectList rangeAxisLocations>
+org.jfree.chart.plot.CategoryPlot.setRangeAxisLocation : if i0 != 0 goto $r3 = r0.<org.jfree.chart.plot.CategoryPlot: org.jfree.util.ObjectList rangeAxisLocations>
+org.jfree.data.Range.combine : return r1
+org.jfree.data.Range.combine : if r0 != null goto (branch)
+org.jfree.chart.renderer.xy.AbstractXYItemRenderer.setBaseToolTipGenerator : r0.<org.jfree.chart.renderer.xy.AbstractXYItemRenderer: org.jfree.chart.labels.XYToolTipGenerator baseToolTipGenerator> = r1
+org.jfree.chart.renderer.xy.AbstractXYItemRenderer.setBaseToolTipGenerator : virtualinvoke r0.<org.jfree.chart.renderer.xy.AbstractXYItemRenderer: void fireChangeEvent()>()
+org.jfree.chart.plot.CategoryPlot.setOrientation : virtualinvoke r0.<org.jfree.chart.plot.CategoryPlot: void fireChangeEvent()>()
+org.jfree.chart.plot.CategoryPlot.setOrientation : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "orientation")
+org.jfree.chart.plot.CategoryPlot.setOrientation : r0.<org.jfree.chart.plot.CategoryPlot: org.jfree.chart.plot.PlotOrientation orientation> = r1
+org.jfree.chart.plot.CategoryPlot.setDomainAxis : if z0 == 0 goto return
+org.jfree.chart.plot.CategoryPlot.setDomainAxis : virtualinvoke r0.<org.jfree.chart.plot.CategoryPlot: void setDomainAxis(int,org.jfree.chart.axis.CategoryAxis)>(0, r1)
+org.jfree.chart.plot.CategoryPlot.setDomainAxis : if r2 == null goto (branch)
+org.jfree.chart.plot.CategoryPlot.setDomainAxis : virtualinvoke r0.<org.jfree.chart.plot.CategoryPlot: void fireChangeEvent()>()
+org.jfree.chart.plot.CategoryPlot.setDomainAxis : $r3 = r0.<org.jfree.chart.plot.CategoryPlot: org.jfree.util.ObjectList domainAxes>
+org.jfree.chart.plot.CategoryPlot.setDomainAxis : if r1 == null goto $r5 = r0.<org.jfree.chart.plot.CategoryPlot: org.jfree.util.ObjectList domainAxes>
+org.jfree.chart.plot.CategoryPlot.setDomainAxis : $r5 = r0.<org.jfree.chart.plot.CategoryPlot: org.jfree.util.ObjectList domainAxes>
+org.jfree.chart.plot.CategoryPlot.setDomainAxis : if r1 == null goto (branch)
+org.jfree.chart.plot.CategoryPlot.setDomainAxis : virtualinvoke r0.<org.jfree.chart.plot.CategoryPlot: void setDomainAxis(int,org.jfree.chart.axis.CategoryAxis,boolean)>(i0, r1, 1)
+org.jfree.chart.plot.CategoryPlot.setDomainAxisLocation : if z0 == 0 goto return
+org.jfree.chart.plot.CategoryPlot.setDomainAxisLocation : if i0 != 0 goto $r3 = r0.<org.jfree.chart.plot.CategoryPlot: org.jfree.util.ObjectList domainAxisLocations>
+org.jfree.chart.plot.CategoryPlot.setDomainAxisLocation : $r3 = r0.<org.jfree.chart.plot.CategoryPlot: org.jfree.util.ObjectList domainAxisLocations>
+org.jfree.chart.plot.CategoryPlot.setDomainAxisLocation : virtualinvoke r0.<org.jfree.chart.plot.CategoryPlot: void setDomainAxisLocation(int,org.jfree.chart.axis.AxisLocation,boolean)>(0, r1, z0)

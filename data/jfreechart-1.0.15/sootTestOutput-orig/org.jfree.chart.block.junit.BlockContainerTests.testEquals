@@ -1,0 +1,46 @@
+org.jfree.chart.block.AbstractBlock.setWidth : r0.<org.jfree.chart.block.AbstractBlock: double width> = d0
+org.jfree.chart.block.BlockContainer.setArrangement : r0.<org.jfree.chart.block.BlockContainer: org.jfree.chart.block.Arrangement arrangement> = r1
+org.jfree.chart.block.BlockContainer.setArrangement : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "arrangement")
+org.jfree.chart.block.BlockBorder.equals : if r1 != r0 goto $z0 = r1 instanceof org.jfree.chart.block.BlockBorder
+org.jfree.chart.block.BlockBorder.equals : return 1
+org.jfree.chart.block.AbstractBlock.equals : $r11 = r0.<org.jfree.chart.block.AbstractBlock: org.jfree.ui.RectangleInsets padding>
+org.jfree.chart.block.AbstractBlock.equals : $r9 = r0.<org.jfree.chart.block.AbstractBlock: org.jfree.ui.RectangleInsets margin>
+org.jfree.chart.block.AbstractBlock.equals : r2 = (org.jfree.chart.block.AbstractBlock) r1
+org.jfree.chart.block.AbstractBlock.equals : $d2 = r0.<org.jfree.chart.block.AbstractBlock: double width>
+org.jfree.chart.block.AbstractBlock.equals : $d0 = r0.<org.jfree.chart.block.AbstractBlock: double height>
+org.jfree.chart.block.AbstractBlock.equals : if r1 != r0 goto $z0 = r1 instanceof org.jfree.chart.block.AbstractBlock
+org.jfree.chart.block.AbstractBlock.equals : $r3 = r0.<org.jfree.chart.block.AbstractBlock: java.lang.String id>
+org.jfree.chart.block.AbstractBlock.equals : return 1
+org.jfree.chart.block.AbstractBlock.equals : $r5 = r0.<org.jfree.chart.block.AbstractBlock: org.jfree.chart.block.BlockFrame frame>
+org.jfree.chart.block.AbstractBlock.equals : $z0 = r1 instanceof org.jfree.chart.block.AbstractBlock
+org.jfree.chart.block.AbstractBlock.equals : $r7 = r0.<org.jfree.chart.block.AbstractBlock: java.awt.geom.Rectangle2D bounds>
+org.jfree.chart.block.AbstractBlock.setHeight : r0.<org.jfree.chart.block.AbstractBlock: double height> = d0
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null goto return
+org.jfree.chart.block.ColumnArrangement.equals : $z0 = r1 instanceof org.jfree.chart.block.ColumnArrangement
+org.jfree.chart.block.ColumnArrangement.equals : $d0 = r0.<org.jfree.chart.block.ColumnArrangement: double horizontalGap>
+org.jfree.chart.block.ColumnArrangement.equals : return 1
+org.jfree.chart.block.ColumnArrangement.equals : $r5 = r0.<org.jfree.chart.block.ColumnArrangement: org.jfree.ui.VerticalAlignment verticalAlignment>
+org.jfree.chart.block.ColumnArrangement.equals : r2 = (org.jfree.chart.block.ColumnArrangement) r1
+org.jfree.chart.block.ColumnArrangement.equals : return 0
+org.jfree.chart.block.ColumnArrangement.equals : $r3 = r0.<org.jfree.chart.block.ColumnArrangement: org.jfree.ui.HorizontalAlignment horizontalAlignment>
+org.jfree.chart.block.ColumnArrangement.equals : $d2 = r0.<org.jfree.chart.block.ColumnArrangement: double verticalGap>
+org.jfree.chart.block.ColumnArrangement.equals : if r1 != r0 goto $z0 = r1 instanceof org.jfree.chart.block.ColumnArrangement
+org.jfree.chart.block.FlowArrangement.equals : $z0 = r1 instanceof org.jfree.chart.block.FlowArrangement
+org.jfree.chart.block.FlowArrangement.equals : $r5 = r0.<org.jfree.chart.block.FlowArrangement: org.jfree.ui.VerticalAlignment verticalAlignment>
+org.jfree.chart.block.FlowArrangement.equals : $d2 = r0.<org.jfree.chart.block.FlowArrangement: double verticalGap>
+org.jfree.chart.block.FlowArrangement.equals : $r3 = r0.<org.jfree.chart.block.FlowArrangement: org.jfree.ui.HorizontalAlignment horizontalAlignment>
+org.jfree.chart.block.FlowArrangement.equals : return 1
+org.jfree.chart.block.FlowArrangement.equals : if r1 != r0 goto $z0 = r1 instanceof org.jfree.chart.block.FlowArrangement
+org.jfree.chart.block.FlowArrangement.equals : r2 = (org.jfree.chart.block.FlowArrangement) r1
+org.jfree.chart.block.FlowArrangement.equals : $d0 = r0.<org.jfree.chart.block.FlowArrangement: double horizontalGap>
+org.jfree.chart.block.BlockContainer.equals : $r3 = r0.<org.jfree.chart.block.BlockContainer: org.jfree.chart.block.Arrangement arrangement>
+org.jfree.chart.block.BlockContainer.equals : $r5 = r0.<org.jfree.chart.block.BlockContainer: java.util.List blocks>
+org.jfree.chart.block.BlockContainer.equals : $z0 = r1 instanceof org.jfree.chart.block.BlockContainer
+org.jfree.chart.block.BlockContainer.equals : if r1 != r0 goto $z0 = r1 instanceof org.jfree.chart.block.BlockContainer
+org.jfree.chart.block.BlockContainer.equals : return 1
+org.jfree.chart.block.BlockContainer.equals : r2 = (org.jfree.chart.block.BlockContainer) r1
+org.jfree.chart.block.BlockContainer.equals : return 0
+org.jfree.chart.block.BlockContainer.equals : $z1 = specialinvoke r0.<org.jfree.chart.block.AbstractBlock: boolean equals(java.lang.Object)>(r1)
+org.jfree.chart.block.BlockContainer.add : $r3 = r0.<org.jfree.chart.block.BlockContainer: java.util.List blocks>
+org.jfree.chart.block.BlockContainer.add : virtualinvoke r0.<org.jfree.chart.block.BlockContainer: void add(org.jfree.chart.block.Block,java.lang.Object)>(r1, null)
+org.jfree.chart.block.BlockContainer.add : $r4 = r0.<org.jfree.chart.block.BlockContainer: org.jfree.chart.block.Arrangement arrangement>

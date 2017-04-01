@@ -1,0 +1,83 @@
+org.jfree.data.general.AbstractDataset.addChangeListener : $r2 = r0.<org.jfree.data.general.AbstractDataset: javax.swing.event.EventListenerList listenerList>
+org.jfree.data.DefaultKeyedValues2D.getColumnKeys : $r1 = r0.<org.jfree.data.DefaultKeyedValues2D: java.util.List columnKeys>
+org.jfree.data.category.DefaultCategoryDataset.getColumnCount : $r1 = r0.<org.jfree.data.category.DefaultCategoryDataset: org.jfree.data.DefaultKeyedValues2D data>
+org.jfree.data.DefaultKeyedValues2D.addValue : virtualinvoke r0.<org.jfree.data.DefaultKeyedValues2D: void setValue(java.lang.Number,java.lang.Comparable,java.lang.Comparable)>(r1, r2, r3)
+org.jfree.data.xy.CategoryTableXYDataset.getSeriesCount : $r1 = r0.<org.jfree.data.xy.CategoryTableXYDataset: org.jfree.data.DefaultKeyedValues2D values>
+org.jfree.data.DefaultKeyedValues.getIndex : return -1
+org.jfree.data.DefaultKeyedValues.getIndex : $r3 = r0.<org.jfree.data.DefaultKeyedValues: java.util.HashMap indexMap>
+org.jfree.data.DefaultKeyedValues.getIndex : $i0 = virtualinvoke r2.<java.lang.Integer: int intValue()>()
+org.jfree.data.DefaultKeyedValues.getIndex : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "key")
+org.jfree.data.DefaultKeyedValues.getIndex : if r2 != null goto $i0 = virtualinvoke r2.<java.lang.Integer: int intValue()>()
+org.jfree.data.category.DefaultCategoryDataset.getColumnKeys : $r1 = r0.<org.jfree.data.category.DefaultCategoryDataset: org.jfree.data.DefaultKeyedValues2D data>
+org.jfree.data.category.DefaultCategoryDataset.getValue : $r1 = r0.<org.jfree.data.category.DefaultCategoryDataset: org.jfree.data.DefaultKeyedValues2D data>
+org.jfree.data.category.DefaultCategoryDataset.getRowCount : $r1 = r0.<org.jfree.data.category.DefaultCategoryDataset: org.jfree.data.DefaultKeyedValues2D data>
+org.jfree.data.general.DatasetUtilities.isEmptyOrNull : if i0 == 0 goto return 1
+org.jfree.data.general.DatasetUtilities.isEmptyOrNull : i3 = 0
+org.jfree.data.general.DatasetUtilities.isEmptyOrNull : i1 = interfaceinvoke r0.<org.jfree.data.category.CategoryDataset: int getColumnCount()>()
+org.jfree.data.general.DatasetUtilities.isEmptyOrNull : $r1 = interfaceinvoke r0.<org.jfree.data.category.CategoryDataset: java.lang.Number getValue(int,int)>(i2, i3)
+org.jfree.data.general.DatasetUtilities.isEmptyOrNull : i2 = 0
+org.jfree.data.general.DatasetUtilities.isEmptyOrNull : i0 = interfaceinvoke r0.<org.jfree.data.category.CategoryDataset: int getRowCount()>()
+org.jfree.data.general.DatasetUtilities.isEmptyOrNull : return 0
+org.jfree.data.general.DatasetUtilities.isEmptyOrNull : if r0 != null goto i0 = interfaceinvoke r0.<org.jfree.data.category.CategoryDataset: int getRowCount()>()
+org.jfree.data.DefaultKeyedValues2D.getRowCount : $r1 = r0.<org.jfree.data.DefaultKeyedValues2D: java.util.List rowKeys>
+org.jfree.data.general.AbstractDataset.notifyListeners : $r3 = r0.<org.jfree.data.general.AbstractDataset: javax.swing.event.EventListenerList listenerList>
+org.jfree.data.general.AbstractDataset.notifyListeners : $i1 = lengthof r2
+org.jfree.data.DefaultKeyedValues.getValue : $r1 = r0.<org.jfree.data.DefaultKeyedValues: java.util.ArrayList values>
+org.jfree.data.general.AbstractDataset.getGroup : $r1 = r0.<org.jfree.data.general.AbstractDataset: org.jfree.data.general.DatasetGroup group>
+org.jfree.data.xy.CategoryTableXYDataset.getItemCount : $r1 = r0.<org.jfree.data.xy.CategoryTableXYDataset: org.jfree.data.DefaultKeyedValues2D values>
+org.jfree.data.xy.CategoryTableXYDataset.getItemCount : $i1 = virtualinvoke r0.<org.jfree.data.xy.CategoryTableXYDataset: int getItemCount()>()
+org.jfree.data.general.AbstractSeriesDataset.indexOf : return -1
+org.jfree.data.general.AbstractSeriesDataset.indexOf : i1 = 0
+org.jfree.data.general.AbstractSeriesDataset.indexOf : i0 = virtualinvoke r0.<org.jfree.data.general.AbstractSeriesDataset: int getSeriesCount()>()
+org.jfree.data.DefaultKeyedValues2D.getRowIndex : $z0 = r0.<org.jfree.data.DefaultKeyedValues2D: boolean sortRowKeys>
+org.jfree.data.DefaultKeyedValues2D.getRowIndex : $r3 = r0.<org.jfree.data.DefaultKeyedValues2D: java.util.List rowKeys>
+org.jfree.data.DefaultKeyedValues2D.getRowIndex : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "key")
+org.jfree.data.DefaultKeyedValues2D.setValue : if i0 < 0 goto $r7 = new org.jfree.data.DefaultKeyedValues
+org.jfree.data.DefaultKeyedValues2D.setValue : $r13 = r0.<org.jfree.data.DefaultKeyedValues2D: java.util.List columnKeys>
+org.jfree.data.DefaultKeyedValues2D.setValue : if i1 >= 0 goto return
+org.jfree.data.DefaultKeyedValues2D.setValue : $z0 = r0.<org.jfree.data.DefaultKeyedValues2D: boolean sortRowKeys>
+org.jfree.data.DefaultKeyedValues2D.setValue : $r7 = new org.jfree.data.DefaultKeyedValues
+org.jfree.data.DefaultKeyedValues2D.setValue : $r11 = r0.<org.jfree.data.DefaultKeyedValues2D: java.util.List rows>
+org.jfree.data.DefaultKeyedValues2D.setValue : i0 = virtualinvoke r0.<org.jfree.data.DefaultKeyedValues2D: int getRowIndex(java.lang.Comparable)>(r2)
+org.jfree.data.DefaultKeyedValues2D.setValue : $r12 = r0.<org.jfree.data.DefaultKeyedValues2D: java.util.List columnKeys>
+org.jfree.data.DefaultKeyedValues2D.setValue : virtualinvoke r4.<org.jfree.data.DefaultKeyedValues: void setValue(java.lang.Comparable,java.lang.Number)>(r3, r1)
+org.jfree.data.DefaultKeyedValues2D.setValue : $r10 = r0.<org.jfree.data.DefaultKeyedValues2D: java.util.List rowKeys>
+org.jfree.data.DefaultKeyedValues.setValue : i0 = virtualinvoke r0.<org.jfree.data.DefaultKeyedValues: int getIndex(java.lang.Comparable)>(r1)
+org.jfree.data.DefaultKeyedValues.setValue : $r8 = r0.<org.jfree.data.DefaultKeyedValues: java.util.ArrayList values>
+org.jfree.data.DefaultKeyedValues.setValue : $r9 = r0.<org.jfree.data.DefaultKeyedValues: java.util.HashMap indexMap>
+org.jfree.data.DefaultKeyedValues.setValue : $r7 = r0.<org.jfree.data.DefaultKeyedValues: java.util.ArrayList keys>
+org.jfree.data.DefaultKeyedValues.setValue : if i0 < 0 goto $r7 = r0.<org.jfree.data.DefaultKeyedValues: java.util.ArrayList keys>
+org.jfree.data.DefaultKeyedValues.setValue : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "key")
+org.jfree.data.category.DefaultCategoryDataset.addValue : virtualinvoke r0.<org.jfree.data.category.DefaultCategoryDataset: void fireDatasetChanged()>()
+org.jfree.data.category.DefaultCategoryDataset.addValue : $r4 = r0.<org.jfree.data.category.DefaultCategoryDataset: org.jfree.data.DefaultKeyedValues2D data>
+org.jfree.data.general.DatasetUtilities.iterateToFindDomainBounds : i0 = interfaceinvoke r0.<org.jfree.data.xy.XYDataset: int indexOf(java.lang.Comparable)>(r4)
+org.jfree.data.general.DatasetUtilities.iterateToFindDomainBounds : goto [?= staticinvoke <edu.washington.cs.dt.impact.util.Tracer: void trace(java.lang.String,java.lang.String)>("$z2 = interfaceinvoke r3.<java.util.Iterator: boolean hasNext()>()", "org.jfree.data.general.DatasetUtilities.iterateToFindDomainBounds")]
+org.jfree.data.general.DatasetUtilities.iterateToFindDomainBounds : d0 = #Infinity
+org.jfree.data.general.DatasetUtilities.iterateToFindDomainBounds : r2 = (org.jfree.data.xy.IntervalXYDataset) r0
+org.jfree.data.general.DatasetUtilities.iterateToFindDomainBounds : $z2 = interfaceinvoke r3.<java.util.Iterator: boolean hasNext()>()
+org.jfree.data.general.DatasetUtilities.iterateToFindDomainBounds : d1 = #-Infinity
+org.jfree.data.general.DatasetUtilities.iterateToFindDomainBounds : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "visibleSeriesKeys")
+org.jfree.data.general.DatasetUtilities.iterateToFindDomainBounds : goto [?= $b6 = d0 cmpl #Infinity]
+org.jfree.data.general.DatasetUtilities.iterateToFindDomainBounds : return null
+org.jfree.data.general.DatasetUtilities.iterateToFindDomainBounds : $b6 = d0 cmpl #Infinity
+org.jfree.data.general.DatasetUtilities.iterateToFindDomainBounds : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r0, "dataset")
+org.jfree.data.general.DatasetUtilities.iterateToFindDomainBounds : i2 = 0
+org.jfree.data.general.DatasetUtilities.iterateToFindDomainBounds : r3 = interfaceinvoke r1.<java.util.List: java.util.Iterator iterator()>()
+org.jfree.data.general.DatasetUtilities.iterateToFindDomainBounds : i1 = interfaceinvoke r0.<org.jfree.data.xy.XYDataset: int getItemCount(int)>(i0)
+org.jfree.data.general.DatasetUtilities.iterateToFindDomainBounds : if z0 == 0 goto r6 = interfaceinvoke r1.<java.util.List: java.util.Iterator iterator()>()
+org.jfree.data.general.DatasetUtilities.iterateToFindDomainBounds : $r5 = interfaceinvoke r3.<java.util.Iterator: java.lang.Object next()>()
+org.jfree.data.general.DatasetUtilities.findDomainBounds : $z1 = r0 instanceof org.jfree.data.xy.XYDomainInfo
+org.jfree.data.general.DatasetUtilities.findDomainBounds : return r3
+org.jfree.data.general.DatasetUtilities.findDomainBounds : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r0, "dataset")
+org.jfree.data.general.DatasetUtilities.findDomainBounds : r3 = staticinvoke <org.jfree.data.general.DatasetUtilities: org.jfree.data.Range iterateToFindDomainBounds(org.jfree.data.xy.XYDataset,java.util.List,boolean)>(r0, r1, z0)
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null goto return
+org.jfree.data.general.AbstractDataset.fireDatasetChanged : $r1 = new org.jfree.data.general.DatasetChangeEvent
+org.jfree.data.DefaultKeyedValues2D.getValue : $r4 = r0.<org.jfree.data.DefaultKeyedValues2D: java.util.List rows>
+org.jfree.data.DefaultKeyedValues2D.getValue : $r6 = r0.<org.jfree.data.DefaultKeyedValues2D: java.util.List columnKeys>
+org.jfree.data.DefaultKeyedValues2D.getValue : if r2 == null goto return r1
+org.jfree.data.DefaultKeyedValues2D.getValue : if i2 < 0 goto return r1
+org.jfree.data.DefaultKeyedValues2D.getValue : r1 = virtualinvoke r2.<org.jfree.data.DefaultKeyedValues: java.lang.Number getValue(int)>(i2)
+org.jfree.data.DefaultKeyedValues2D.getValue : i2 = virtualinvoke r2.<org.jfree.data.DefaultKeyedValues: int getIndex(java.lang.Comparable)>(r3)
+org.jfree.data.DefaultKeyedValues2D.getValue : r1 = null
+org.jfree.data.DefaultKeyedValues2D.getValue : return r1
+org.jfree.data.DefaultKeyedValues2D.getColumnCount : $r1 = r0.<org.jfree.data.DefaultKeyedValues2D: java.util.List columnKeys>

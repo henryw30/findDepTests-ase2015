@@ -1,0 +1,13 @@
+org.jfree.chart.imagemap.ImageMapUtilities.javascriptEscape : i1 = 0
+org.jfree.chart.imagemap.ImageMapUtilities.javascriptEscape : if c2 != 39 goto (branch)
+org.jfree.chart.imagemap.ImageMapUtilities.javascriptEscape : i0 = virtualinvoke r0.<java.lang.String: int length()>()
+org.jfree.chart.imagemap.ImageMapUtilities.javascriptEscape : $r7 = virtualinvoke r1.<java.lang.StringBuffer: java.lang.String toString()>()
+org.jfree.chart.imagemap.ImageMapUtilities.javascriptEscape : c2 = virtualinvoke r0.<java.lang.String: char charAt(int)>(i1)
+org.jfree.chart.imagemap.ImageMapUtilities.javascriptEscape : $r2 = new java.lang.StringBuffer
+org.jfree.chart.imagemap.ImageMapUtilities.javascriptEscape : if c2 != 34 goto (branch)
+org.jfree.chart.imagemap.ImageMapUtilities.javascriptEscape : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r0, "input")
+org.jfree.chart.imagemap.ImageMapUtilities.javascriptEscape : virtualinvoke r1.<java.lang.StringBuffer: java.lang.StringBuffer append(char)>(c2)
+org.jfree.chart.imagemap.ImageMapUtilities.javascriptEscape : if c2 != 92 goto virtualinvoke r1.<java.lang.StringBuffer: java.lang.StringBuffer append(char)>(c2)
+org.jfree.chart.imagemap.OverLIBToolTipTagFragmentGenerator.generateToolTipFragment : $r4 = staticinvoke <org.jfree.chart.imagemap.ImageMapUtilities: java.lang.String javascriptEscape(java.lang.String)>(r1)
+org.jfree.chart.imagemap.OverLIBToolTipTagFragmentGenerator.generateToolTipFragment : $r2 = new java.lang.StringBuilder
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null goto return

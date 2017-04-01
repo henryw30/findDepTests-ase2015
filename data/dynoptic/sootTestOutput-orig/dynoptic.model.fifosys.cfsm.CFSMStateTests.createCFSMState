@@ -1,0 +1,29 @@
+dynoptic.model.AbsFSMState$2.eval : $z0 = virtualinvoke r1.<dynoptic.model.AbsFSMState: boolean isInitial()>()
+dynoptic.model.AbsFSMState$2.eval : $r2 = (dynoptic.model.AbsFSMState) r1
+dynoptic.model.fifosys.cfsm.CFSMState.isAccept : $r2 = r0.<dynoptic.model.fifosys.cfsm.CFSMState: java.util.List fsmStates>
+dynoptic.model.fifosys.cfsm.CFSMStateTests.setUp : $r1 = new dynoptic.model.fifosys.cfsm.fsm.FSMState
+dynoptic.model.fifosys.cfsm.CFSMStateTests.setUp : $r3 = new dynoptic.model.fifosys.cfsm.fsm.FSMState
+dynoptic.model.fifosys.cfsm.CFSMStateTests.setUp : $r4 = staticinvoke <synoptic.model.event.DistEventType: synoptic.model.event.DistEventType LocalEvent(java.lang.String,int)>("e", 0)
+dynoptic.model.fifosys.cfsm.CFSMStateTests.setUp : $r2 = new dynoptic.model.fifosys.cfsm.fsm.FSMState
+dynoptic.util.Util.newSet : $r0 = new java.util.LinkedHashSet
+dynoptic.model.fifosys.cfsm.CFSMState.getTransitioningEvents : r1 = staticinvoke <dynoptic.util.Util: java.util.Set newSet()>()
+dynoptic.model.fifosys.cfsm.CFSMState.getTransitioningEvents : goto [?= $z0 = interfaceinvoke r2.<java.util.Iterator: boolean hasNext()>()]
+dynoptic.model.fifosys.cfsm.CFSMState.getTransitioningEvents : $r6 = virtualinvoke r3.<dynoptic.model.fifosys.cfsm.fsm.FSMState: java.util.Set getTransitioningEvents()>()
+dynoptic.model.fifosys.cfsm.CFSMState.getTransitioningEvents : $r4 = r0.<dynoptic.model.fifosys.cfsm.CFSMState: java.util.List fsmStates>
+dynoptic.model.fifosys.cfsm.CFSMState.getTransitioningEvents : return r1
+dynoptic.model.fifosys.cfsm.CFSMState.isAcceptForPid : $z0 = <dynoptic.model.fifosys.cfsm.CFSMState: boolean $assertionsDisabled>
+dynoptic.model.fifosys.cfsm.CFSMState.isAcceptForPid : $r3 = r0.<dynoptic.model.fifosys.cfsm.CFSMState: java.util.List fsmStates>
+dynoptic.model.AbsFSMState.statesEvalToTrue : r2 = interfaceinvoke r0.<java.util.Collection: java.util.Iterator iterator()>()
+dynoptic.model.AbsFSMState.statesEvalToTrue : $z1 = interfaceinvoke r1.<dynoptic.model.AbsFSMState$IStateToBooleanFn: boolean eval(java.lang.Object)>(r3)
+dynoptic.model.AbsFSMState.statesEvalToTrue : goto [?= $z0 = interfaceinvoke r2.<java.util.Iterator: boolean hasNext()>()]
+dynoptic.model.AbsFSMState.statesEvalToTrue : return 0
+dynoptic.model.fifosys.cfsm.CFSMState.isInitial : $r2 = r0.<dynoptic.model.fifosys.cfsm.CFSMState: java.util.List fsmStates>
+dynoptic.model.fifosys.cfsm.fsm.FSMState.isAccept : $z0 = r0.<dynoptic.model.fifosys.cfsm.fsm.FSMState: boolean isAccept>
+dynoptic.model.fifosys.cfsm.fsm.FSMState.isInitial : $z0 = r0.<dynoptic.model.fifosys.cfsm.fsm.FSMState: boolean isInitial>
+dynoptic.model.fifosys.cfsm.CFSMState.isInitForPid : $z0 = <dynoptic.model.fifosys.cfsm.CFSMState: boolean $assertionsDisabled>
+dynoptic.model.fifosys.cfsm.CFSMState.isInitForPid : $r3 = r0.<dynoptic.model.fifosys.cfsm.CFSMState: java.util.List fsmStates>
+dynoptic.util.Util.newList : $r0 = new java.util.ArrayList
+dynoptic.util.Util.newMap : $r0 = new java.util.LinkedHashMap
+dynoptic.model.fifosys.cfsm.fsm.FSMState.getTransitioningEvents : $r1 = r0.<dynoptic.model.fifosys.cfsm.fsm.FSMState: java.util.Map transitions>
+dynoptic.model.AbsFSMState$1.eval : $z0 = virtualinvoke r1.<dynoptic.model.AbsFSMState: boolean isAccept()>()
+dynoptic.model.AbsFSMState$1.eval : $r2 = (dynoptic.model.AbsFSMState) r1

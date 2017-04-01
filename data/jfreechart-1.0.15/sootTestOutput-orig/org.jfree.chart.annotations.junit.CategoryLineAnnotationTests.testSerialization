@@ -1,0 +1,24 @@
+org.jfree.chart.annotations.CategoryLineAnnotation.getCategory2 : $r1 = r0.<org.jfree.chart.annotations.CategoryLineAnnotation: java.lang.Comparable category2>
+org.jfree.chart.annotations.CategoryLineAnnotation.getCategory1 : $r1 = r0.<org.jfree.chart.annotations.CategoryLineAnnotation: java.lang.Comparable category1>
+org.jfree.chart.annotations.CategoryLineAnnotation.getValue1 : $d0 = r0.<org.jfree.chart.annotations.CategoryLineAnnotation: double value1>
+org.jfree.chart.annotations.CategoryLineAnnotation.getValue2 : $d0 = r0.<org.jfree.chart.annotations.CategoryLineAnnotation: double value2>
+org.jfree.chart.annotations.CategoryLineAnnotation.writeObject : $r2 = r0.<org.jfree.chart.annotations.CategoryLineAnnotation: java.awt.Paint paint>
+org.jfree.chart.annotations.CategoryLineAnnotation.writeObject : virtualinvoke r1.<java.io.ObjectOutputStream: void defaultWriteObject()>()
+org.jfree.chart.annotations.CategoryLineAnnotation.writeObject : $r3 = r0.<org.jfree.chart.annotations.CategoryLineAnnotation: java.awt.Stroke stroke>
+org.jfree.chart.annotations.AbstractAnnotation.writeObject : virtualinvoke r1.<java.io.ObjectOutputStream: void defaultWriteObject()>()
+org.jfree.chart.annotations.CategoryLineAnnotation.equals : $r7 = r0.<org.jfree.chart.annotations.CategoryLineAnnotation: java.awt.Paint paint>
+org.jfree.chart.annotations.CategoryLineAnnotation.equals : $r5 = r0.<org.jfree.chart.annotations.CategoryLineAnnotation: java.lang.Comparable category2>
+org.jfree.chart.annotations.CategoryLineAnnotation.equals : $r3 = r0.<org.jfree.chart.annotations.CategoryLineAnnotation: java.lang.Comparable category1>
+org.jfree.chart.annotations.CategoryLineAnnotation.equals : if r1 != r0 goto $z0 = r1 instanceof org.jfree.chart.annotations.CategoryLineAnnotation
+org.jfree.chart.annotations.CategoryLineAnnotation.equals : $d2 = r0.<org.jfree.chart.annotations.CategoryLineAnnotation: double value2>
+org.jfree.chart.annotations.CategoryLineAnnotation.equals : $z0 = r1 instanceof org.jfree.chart.annotations.CategoryLineAnnotation
+org.jfree.chart.annotations.CategoryLineAnnotation.equals : r2 = (org.jfree.chart.annotations.CategoryLineAnnotation) r1
+org.jfree.chart.annotations.CategoryLineAnnotation.equals : return 1
+org.jfree.chart.annotations.CategoryLineAnnotation.equals : $r9 = r0.<org.jfree.chart.annotations.CategoryLineAnnotation: java.awt.Stroke stroke>
+org.jfree.chart.annotations.CategoryLineAnnotation.equals : $d0 = r0.<org.jfree.chart.annotations.CategoryLineAnnotation: double value1>
+org.jfree.chart.annotations.AbstractAnnotation.readObject : $r2 = new javax.swing.event.EventListenerList
+org.jfree.chart.annotations.AbstractAnnotation.readObject : virtualinvoke r1.<java.io.ObjectInputStream: void defaultReadObject()>()
+org.jfree.chart.annotations.CategoryLineAnnotation.readObject : $r2 = staticinvoke <org.jfree.io.SerialUtilities: java.awt.Paint readPaint(java.io.ObjectInputStream)>(r1)
+org.jfree.chart.annotations.CategoryLineAnnotation.readObject : virtualinvoke r1.<java.io.ObjectInputStream: void defaultReadObject()>()
+org.jfree.chart.annotations.CategoryLineAnnotation.readObject : $r3 = staticinvoke <org.jfree.io.SerialUtilities: java.awt.Stroke readStroke(java.io.ObjectInputStream)>(r1)
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null goto return

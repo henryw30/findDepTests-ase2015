@@ -1,0 +1,17 @@
+dynoptic.model.fifosys.gfsm.observed.ObsFSMState.toString : $r1 = new java.lang.StringBuilder
+dynoptic.model.AbsFSMState.getNextStates : r1 = staticinvoke <dynoptic.util.Util: java.util.Set newSet()>()
+dynoptic.model.AbsFSMState.getNextStates : $r4 = virtualinvoke r0.<dynoptic.model.AbsFSMState: java.util.Set getTransitioningEvents()>()
+dynoptic.model.AbsFSMState.getNextStates : return r1
+dynoptic.model.fifosys.cfsm.fsm.FSMState.toShortIntString : $i0 = r0.<dynoptic.model.fifosys.cfsm.fsm.FSMState: int scmId>
+dynoptic.model.fifosys.gfsm.observed.ObsFSMState.equals : return 0
+dynoptic.model.fifosys.gfsm.observed.ObsFSMState.equals : if r1 != null goto (branch)
+dynoptic.model.fifosys.gfsm.observed.ObsFSMState.equals : $z0 = r1 instanceof dynoptic.model.fifosys.gfsm.observed.ObsFSMState
+dynoptic.model.fifosys.gfsm.observed.ObsFSMState.equals : if r0 != r1 goto $z0 = r1 instanceof dynoptic.model.fifosys.gfsm.observed.ObsFSMState
+dynoptic.model.fifosys.gfsm.observed.ObsFSMState.getNextAnonName : $i0 = <dynoptic.model.fifosys.gfsm.observed.ObsFSMState: int prevAnonId>
+dynoptic.model.fifosys.gfsm.observed.ObsFSMState.getNextAnonName : $i2 = <dynoptic.model.fifosys.gfsm.observed.ObsFSMState: int prevAnonId>
+dynoptic.util.Util.newSet : $r0 = new java.util.LinkedHashSet
+dynoptic.model.fifosys.gfsm.observed.ObsFSMState.isInitial : $z0 = r0.<dynoptic.model.fifosys.gfsm.observed.ObsFSMState: boolean isInitial>
+dynoptic.model.fifosys.gfsm.observed.ObsFSMState.anonObsFSMState : $r0 = new dynoptic.model.fifosys.gfsm.observed.ObsFSMState
+dynoptic.util.Util.newMap : $r0 = new java.util.LinkedHashMap
+dynoptic.model.fifosys.gfsm.observed.ObsFSMState.isTerminal : $z0 = r0.<dynoptic.model.fifosys.gfsm.observed.ObsFSMState: boolean isTerminal>
+dynoptic.model.fifosys.cfsm.fsm.FSMState.getTransitioningEvents : $r1 = r0.<dynoptic.model.fifosys.cfsm.fsm.FSMState: java.util.Map transitions>

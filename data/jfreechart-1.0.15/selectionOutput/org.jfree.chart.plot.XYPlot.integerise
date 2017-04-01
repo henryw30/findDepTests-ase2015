@@ -1,0 +1,16 @@
+org.jfree.chart.plot.XYPlot.integerise : $d0 = virtualinvoke r1.<java.awt.geom.Rectangle2D: double getMinX()>() >>>>>>>> org.jfree.chart.plot.XYPlot.integerise : $d1 = staticinvoke <java.lang.Math: double ceil(double)>($d0)
+org.jfree.chart.plot.XYPlot.integerise : $d1 = staticinvoke <java.lang.Math: double ceil(double)>($d0) >>>>>>>> org.jfree.chart.plot.XYPlot.integerise : i0 = (int) $d1
+org.jfree.chart.plot.XYPlot.integerise : i0 = (int) $d1 >>>>>>>> org.jfree.chart.plot.XYPlot.integerise : $d2 = virtualinvoke r1.<java.awt.geom.Rectangle2D: double getMinY()>()
+org.jfree.chart.plot.XYPlot.integerise : $d2 = virtualinvoke r1.<java.awt.geom.Rectangle2D: double getMinY()>() >>>>>>>> org.jfree.chart.plot.XYPlot.integerise : $d3 = staticinvoke <java.lang.Math: double ceil(double)>($d2)
+org.jfree.chart.plot.XYPlot.integerise : $d3 = staticinvoke <java.lang.Math: double ceil(double)>($d2) >>>>>>>> org.jfree.chart.plot.XYPlot.integerise : i1 = (int) $d3
+org.jfree.chart.plot.XYPlot.integerise : i1 = (int) $d3 >>>>>>>> org.jfree.chart.plot.XYPlot.integerise : $d4 = virtualinvoke r1.<java.awt.geom.Rectangle2D: double getMaxX()>()
+org.jfree.chart.plot.XYPlot.integerise : $d4 = virtualinvoke r1.<java.awt.geom.Rectangle2D: double getMaxX()>() >>>>>>>> org.jfree.chart.plot.XYPlot.integerise : $d5 = staticinvoke <java.lang.Math: double floor(double)>($d4)
+org.jfree.chart.plot.XYPlot.integerise : $d5 = staticinvoke <java.lang.Math: double floor(double)>($d4) >>>>>>>> org.jfree.chart.plot.XYPlot.integerise : i2 = (int) $d5
+org.jfree.chart.plot.XYPlot.integerise : i2 = (int) $d5 >>>>>>>> org.jfree.chart.plot.XYPlot.integerise : $d6 = virtualinvoke r1.<java.awt.geom.Rectangle2D: double getMaxY()>()
+org.jfree.chart.plot.XYPlot.integerise : $d6 = virtualinvoke r1.<java.awt.geom.Rectangle2D: double getMaxY()>() >>>>>>>> org.jfree.chart.plot.XYPlot.integerise : $d7 = staticinvoke <java.lang.Math: double floor(double)>($d6)
+org.jfree.chart.plot.XYPlot.integerise : $d7 = staticinvoke <java.lang.Math: double floor(double)>($d6) >>>>>>>> org.jfree.chart.plot.XYPlot.integerise : i3 = (int) $d7
+org.jfree.chart.plot.XYPlot.integerise : i3 = (int) $d7 >>>>>>>> org.jfree.chart.plot.XYPlot.integerise : $r2 = new java.awt.Rectangle
+org.jfree.chart.plot.XYPlot.integerise : $r2 = new java.awt.Rectangle >>>>>>>> org.jfree.chart.plot.XYPlot.integerise : $i4 = i2 - i0
+org.jfree.chart.plot.XYPlot.integerise : $i4 = i2 - i0 >>>>>>>> org.jfree.chart.plot.XYPlot.integerise : $i5 = i3 - i1
+org.jfree.chart.plot.XYPlot.integerise : $i5 = i3 - i1 >>>>>>>> org.jfree.chart.plot.XYPlot.integerise : specialinvoke $r2.<java.awt.Rectangle: void <init>(int,int,int,int)>(i0, i1, $i4, $i5)
+org.jfree.chart.plot.XYPlot.integerise : specialinvoke $r2.<java.awt.Rectangle: void <init>(int,int,int,int)>(i0, i1, $i4, $i5) >>>>>>>> org.jfree.chart.plot.XYPlot.integerise : return $r2

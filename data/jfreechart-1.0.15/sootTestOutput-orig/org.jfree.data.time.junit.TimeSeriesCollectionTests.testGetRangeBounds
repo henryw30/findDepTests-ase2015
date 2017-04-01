@@ -1,0 +1,85 @@
+org.jfree.data.time.Year.getFirstMillisecond : $l1 = virtualinvoke r1.<java.util.Calendar: long getTimeInMillis()>()
+org.jfree.data.time.Year.getFirstMillisecond : virtualinvoke r1.<java.util.Calendar: void set(int,int)>(14, 0)
+org.jfree.data.time.Year.getFirstMillisecond : $s0 = r0.<org.jfree.data.time.Year: short year>
+org.jfree.data.time.Year.getLastMillisecond : virtualinvoke r1.<java.util.Calendar: void set(int,int)>(14, 999)
+org.jfree.data.time.Year.getLastMillisecond : $l1 = virtualinvoke r1.<java.util.Calendar: long getTimeInMillis()>()
+org.jfree.data.time.Year.getLastMillisecond : $s0 = r0.<org.jfree.data.time.Year: short year>
+org.jfree.data.time.TimeSeries.removeAgedItems : $i1 = virtualinvoke r0.<org.jfree.data.time.TimeSeries: int getItemCount()>()
+org.jfree.data.time.TimeSeries.getMinY : $d0 = r0.<org.jfree.data.time.TimeSeries: double minY>
+org.jfree.data.time.TimeSeries.updateBoundsForAddedItem : $d1 = r0.<org.jfree.data.time.TimeSeries: double minY>
+org.jfree.data.time.TimeSeries.updateBoundsForAddedItem : r2 = virtualinvoke r1.<org.jfree.data.time.TimeSeriesDataItem: java.lang.Number getValue()>()
+org.jfree.data.time.TimeSeries.updateBoundsForAddedItem : $r3 = virtualinvoke r1.<org.jfree.data.time.TimeSeriesDataItem: java.lang.Number getValue()>()
+org.jfree.data.time.TimeSeries.updateBoundsForAddedItem : $d3 = r0.<org.jfree.data.time.TimeSeries: double maxY>
+org.jfree.data.time.TimeSeries.updateBoundsForAddedItem : d0 = virtualinvoke r2.<java.lang.Number: double doubleValue()>()
+org.jfree.data.Range.getUpperBound : $d0 = r0.<org.jfree.data.Range: double upper>
+org.jfree.data.time.TimeSeriesDataItem.getPeriod : $r1 = r0.<org.jfree.data.time.TimeSeriesDataItem: org.jfree.data.time.RegularTimePeriod period>
+org.jfree.data.general.AbstractSeriesDataset.seriesChanged : virtualinvoke r0.<org.jfree.data.general.AbstractSeriesDataset: void fireDatasetChanged()>()
+org.jfree.data.Range.max : return d0
+org.jfree.data.Range.max : $z0 = staticinvoke <java.lang.Double: boolean isNaN(double)>(d0)
+org.jfree.data.Range.max : $z1 = staticinvoke <java.lang.Double: boolean isNaN(double)>(d1)
+org.jfree.data.Range.combineIgnoringNaN : $r2 = new org.jfree.data.Range
+org.jfree.data.Range.combineIgnoringNaN : $d2 = virtualinvoke r0.<org.jfree.data.Range: double getLowerBound()>()
+org.jfree.data.Range.combineIgnoringNaN : if r1 != null goto $d2 = virtualinvoke r0.<org.jfree.data.Range: double getLowerBound()>()
+org.jfree.data.Range.combineIgnoringNaN : $d4 = virtualinvoke r0.<org.jfree.data.Range: double getUpperBound()>()
+org.jfree.data.Range.combineIgnoringNaN : return r1
+org.jfree.data.Range.combineIgnoringNaN : if r0 != null goto (branch)
+org.jfree.data.time.TimeSeries.add : if z4 == 0 goto return
+org.jfree.data.time.TimeSeries.add : virtualinvoke r0.<org.jfree.data.time.TimeSeries: void fireSeriesChanged()>()
+org.jfree.data.time.TimeSeries.add : $r2 = new org.jfree.data.time.TimeSeriesDataItem
+org.jfree.data.time.TimeSeries.add : $r8 = virtualinvoke r7.<org.jfree.data.time.TimeSeriesDataItem: org.jfree.data.time.RegularTimePeriod getPeriod()>()
+org.jfree.data.time.TimeSeries.add : virtualinvoke r0.<org.jfree.data.time.TimeSeries: void removeAgedItems(boolean)>(0)
+org.jfree.data.time.TimeSeries.add : specialinvoke r0.<org.jfree.data.time.TimeSeries: void updateBoundsForAddedItem(org.jfree.data.time.TimeSeriesDataItem)>(r7)
+org.jfree.data.time.TimeSeries.add : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "item")
+org.jfree.data.time.TimeSeries.add : i0 = virtualinvoke r0.<org.jfree.data.time.TimeSeries: int getItemCount()>()
+org.jfree.data.time.TimeSeries.add : z2 = 0
+org.jfree.data.time.TimeSeries.add : if i0 != 0 goto $i2 = virtualinvoke r0.<org.jfree.data.time.TimeSeries: int getItemCount()>()
+org.jfree.data.time.TimeSeries.add : virtualinvoke r0.<org.jfree.data.time.TimeSeries: void add(org.jfree.data.time.RegularTimePeriod,double,boolean)>(r1, d0, 1)
+org.jfree.data.time.TimeSeries.add : if z0 == 0 goto return
+org.jfree.data.time.TimeSeries.add : $r25 = r0.<org.jfree.data.time.TimeSeries: java.util.List data>
+org.jfree.data.time.TimeSeries.add : $r9 = r0.<org.jfree.data.time.TimeSeries: java.lang.Class timePeriodClass>
+org.jfree.data.time.TimeSeries.add : $i7 = virtualinvoke r0.<org.jfree.data.time.TimeSeries: int getItemCount()>()
+org.jfree.data.time.TimeSeries.add : z4 = 1
+org.jfree.data.time.TimeSeries.add : virtualinvoke r0.<org.jfree.data.time.TimeSeries: void add(org.jfree.data.time.TimeSeriesDataItem,boolean)>(r3, z0)
+org.jfree.data.time.TimeSeries.add : $r6 = virtualinvoke r1.<org.jfree.data.time.TimeSeriesDataItem: java.lang.Object clone()>()
+org.jfree.data.time.TimeSeries.add : r0.<org.jfree.data.time.TimeSeries: java.lang.Class timePeriodClass> = r2
+org.jfree.data.general.AbstractDataset.notifyListeners : $r3 = r0.<org.jfree.data.general.AbstractDataset: javax.swing.event.EventListenerList listenerList>
+org.jfree.data.general.AbstractDataset.notifyListeners : $i1 = lengthof r2
+org.jfree.data.Range.getLowerBound : $d0 = r0.<org.jfree.data.Range: double lower>
+org.jfree.data.time.TimeSeriesCollection.getRangeBounds : goto [?= staticinvoke <edu.washington.cs.dt.impact.util.Tracer: void trace(java.lang.String,java.lang.String)>("$z1 = interfaceinvoke r2.<java.util.Iterator: boolean hasNext()>()", "org.jfree.data.time.TimeSeriesCollection.getRangeBounds")]
+org.jfree.data.time.TimeSeriesCollection.getRangeBounds : r1 = staticinvoke <org.jfree.data.Range: org.jfree.data.Range combineIgnoringNaN(org.jfree.data.Range,org.jfree.data.Range)>(r1, r7)
+org.jfree.data.time.TimeSeriesCollection.getRangeBounds : $z1 = interfaceinvoke r2.<java.util.Iterator: boolean hasNext()>()
+org.jfree.data.time.TimeSeriesCollection.getRangeBounds : $r5 = interfaceinvoke r2.<java.util.Iterator: java.lang.Object next()>()
+org.jfree.data.time.TimeSeriesCollection.getRangeBounds : n0 = null
+org.jfree.data.time.TimeSeriesCollection.getRangeBounds : r1 = null
+org.jfree.data.time.TimeSeriesCollection.getRangeBounds : return r1
+org.jfree.data.time.TimeSeriesCollection.getRangeBounds : $r6 = new org.jfree.data.Range
+org.jfree.data.time.TimeSeriesCollection.getRangeBounds : $r4 = r0.<org.jfree.data.time.TimeSeriesCollection: java.util.List data>
+org.jfree.data.general.AbstractDataset.fireDatasetChanged : $r1 = new org.jfree.data.general.DatasetChangeEvent
+org.jfree.data.time.TimeSeries.getMaxY : $d0 = r0.<org.jfree.data.time.TimeSeries: double maxY>
+org.jfree.data.time.TimeSeries.getItemCount : $r1 = r0.<org.jfree.data.time.TimeSeries: java.util.List data>
+org.jfree.data.Range.min : return d0
+org.jfree.data.Range.min : $z0 = staticinvoke <java.lang.Double: boolean isNaN(double)>(d0)
+org.jfree.data.Range.min : $z1 = staticinvoke <java.lang.Double: boolean isNaN(double)>(d1)
+org.jfree.data.time.TimeSeriesDataItem.clone : goto [?= return r1]
+org.jfree.data.time.TimeSeriesDataItem.clone : r1 = null
+org.jfree.data.time.TimeSeriesDataItem.clone : return r1
+org.jfree.data.time.TimeSeriesDataItem.clone : r1 = specialinvoke r0.<java.lang.Object: java.lang.Object clone()>()
+org.jfree.data.general.Series.addChangeListener : $r2 = r0.<org.jfree.data.general.Series: javax.swing.event.EventListenerList listeners>
+org.jfree.data.general.Series.fireSeriesChanged : $z0 = r0.<org.jfree.data.general.Series: boolean notify>
+org.jfree.data.general.Series.fireSeriesChanged : $r1 = new org.jfree.data.general.SeriesChangeEvent
+org.jfree.data.time.Year.peg : $l1 = virtualinvoke r0.<org.jfree.data.time.Year: long getLastMillisecond(java.util.Calendar)>(r1)
+org.jfree.data.time.Year.peg : $l0 = virtualinvoke r0.<org.jfree.data.time.Year: long getFirstMillisecond(java.util.Calendar)>(r1)
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null goto return
+org.jfree.data.time.TimeSeriesDataItem.getValue : $r1 = r0.<org.jfree.data.time.TimeSeriesDataItem: java.lang.Number value>
+org.jfree.data.time.TimeSeries.maxIgnoreNaN : return d1
+org.jfree.data.time.TimeSeries.maxIgnoreNaN : $z0 = staticinvoke <java.lang.Double: boolean isNaN(double)>(d0)
+org.jfree.data.time.TimeSeries.minIgnoreNaN : return d1
+org.jfree.data.time.TimeSeries.minIgnoreNaN : $z0 = staticinvoke <java.lang.Double: boolean isNaN(double)>(d0)
+org.jfree.data.general.Series.notifyListeners : $r4 = r2[i0]
+org.jfree.data.general.Series.notifyListeners : $r3 = r0.<org.jfree.data.general.Series: javax.swing.event.EventListenerList listeners>
+org.jfree.data.general.Series.notifyListeners : $i2 = i0 + 1
+org.jfree.data.general.Series.notifyListeners : $i1 = lengthof r2
+org.jfree.data.time.TimeSeriesCollection.addSeries : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "series")
+org.jfree.data.time.TimeSeriesCollection.addSeries : virtualinvoke r0.<org.jfree.data.time.TimeSeriesCollection: void fireDatasetChanged()>()
+org.jfree.data.time.TimeSeriesCollection.addSeries : virtualinvoke r1.<org.jfree.data.time.TimeSeries: void addChangeListener(org.jfree.data.general.SeriesChangeListener)>(r0)
+org.jfree.data.time.TimeSeriesCollection.addSeries : $r2 = r0.<org.jfree.data.time.TimeSeriesCollection: java.util.List data>

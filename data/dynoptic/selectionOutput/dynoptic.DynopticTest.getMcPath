@@ -1,0 +1,26 @@
+dynoptic.DynopticTest.getMcPath : r0 = null >>>>>>>> dynoptic.DynopticTest.getMcPath : $z0 = staticinvoke <mcscm.Os: boolean isLinux()>()
+dynoptic.DynopticTest.getMcPath : $z0 = staticinvoke <mcscm.Os: boolean isLinux()>() >>>>>>>> dynoptic.DynopticTest.getMcPath : if $z0 == 0
+dynoptic.DynopticTest.getMcPath : if $z0 == 0 >>>>>>>> dynoptic.DynopticTest.getMcPath : r0 = "linux.static"
+dynoptic.DynopticTest.getMcPath : if $z0 == 0 >>>>>>>> dynoptic.DynopticTest.getMcPath : $z1 = staticinvoke <mcscm.Os: boolean isMac()>()
+dynoptic.DynopticTest.getMcPath : $z1 = staticinvoke <mcscm.Os: boolean isMac()>() >>>>>>>> dynoptic.DynopticTest.getMcPath : if $z1 == 0
+dynoptic.DynopticTest.getMcPath : if $z1 == 0 >>>>>>>> dynoptic.DynopticTest.getMcPath : r1 = staticinvoke <mcscm.Os: java.lang.String getMajorOSXVersion()>()
+dynoptic.DynopticTest.getMcPath : if $z1 == 0 >>>>>>>> dynoptic.DynopticTest.getMcPath : staticinvoke <org.junit.Assert: void fail(java.lang.String)>("Running on an unsupported OS (not Linux, and not Mac).")
+dynoptic.DynopticTest.getMcPath : staticinvoke <org.junit.Assert: void fail(java.lang.String)>("Running on an unsupported OS (not Linux, and not Mac).") >>>>>>>> dynoptic.DynopticTest.getMcPath : $r9 = new java.lang.StringBuilder
+dynoptic.DynopticTest.getMcPath : $r9 = new java.lang.StringBuilder >>>>>>>> dynoptic.DynopticTest.getMcPath : specialinvoke $r9.<java.lang.StringBuilder: void <init>()>()
+dynoptic.DynopticTest.getMcPath : specialinvoke $r9.<java.lang.StringBuilder: void <init>()>() >>>>>>>> dynoptic.DynopticTest.getMcPath : $r10 = virtualinvoke $r9.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("../bin/mcscm/verify.native.")
+dynoptic.DynopticTest.getMcPath : $r10 = virtualinvoke $r9.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("../bin/mcscm/verify.native.") >>>>>>>> dynoptic.DynopticTest.getMcPath : $r11 = virtualinvoke $r10.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(r0)
+dynoptic.DynopticTest.getMcPath : $r11 = virtualinvoke $r10.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(r0) >>>>>>>> dynoptic.DynopticTest.getMcPath : $r12 = virtualinvoke $r11.<java.lang.StringBuilder: java.lang.String toString()>()
+dynoptic.DynopticTest.getMcPath : $r12 = virtualinvoke $r11.<java.lang.StringBuilder: java.lang.String toString()>() >>>>>>>> dynoptic.DynopticTest.getMcPath : return $r12
+dynoptic.DynopticTest.getMcPath : r1 = staticinvoke <mcscm.Os: java.lang.String getMajorOSXVersion()>() >>>>>>>> dynoptic.DynopticTest.getMcPath : r2 = staticinvoke <mcscm.Os: java.lang.String getOsArch()>()
+dynoptic.DynopticTest.getMcPath : r2 = staticinvoke <mcscm.Os: java.lang.String getOsArch()>() >>>>>>>> dynoptic.DynopticTest.getMcPath : $r3 = new java.lang.StringBuilder
+dynoptic.DynopticTest.getMcPath : $r3 = new java.lang.StringBuilder >>>>>>>> dynoptic.DynopticTest.getMcPath : specialinvoke $r3.<java.lang.StringBuilder: void <init>()>()
+dynoptic.DynopticTest.getMcPath : specialinvoke $r3.<java.lang.StringBuilder: void <init>()>() >>>>>>>> dynoptic.DynopticTest.getMcPath : $r4 = virtualinvoke $r3.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("osx-")
+dynoptic.DynopticTest.getMcPath : $r4 = virtualinvoke $r3.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("osx-") >>>>>>>> dynoptic.DynopticTest.getMcPath : $r5 = virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(r1)
+dynoptic.DynopticTest.getMcPath : $r5 = virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(r1) >>>>>>>> dynoptic.DynopticTest.getMcPath : $r6 = virtualinvoke $r5.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("-")
+dynoptic.DynopticTest.getMcPath : $r6 = virtualinvoke $r5.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("-") >>>>>>>> dynoptic.DynopticTest.getMcPath : $r7 = virtualinvoke $r6.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(r2)
+dynoptic.DynopticTest.getMcPath : $r7 = virtualinvoke $r6.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(r2) >>>>>>>> dynoptic.DynopticTest.getMcPath : $r8 = virtualinvoke $r7.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(".dynamic")
+dynoptic.DynopticTest.getMcPath : $r8 = virtualinvoke $r7.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(".dynamic") >>>>>>>> dynoptic.DynopticTest.getMcPath : r0 = virtualinvoke $r8.<java.lang.StringBuilder: java.lang.String toString()>()
+dynoptic.DynopticTest.getMcPath : r0 = virtualinvoke $r8.<java.lang.StringBuilder: java.lang.String toString()>() >>>>>>>> dynoptic.DynopticTest.getMcPath : goto [?= $r9 = new java.lang.StringBuilder]
+dynoptic.DynopticTest.getMcPath : goto [?= $r9 = new java.lang.StringBuilder] >>>>>>>> dynoptic.DynopticTest.getMcPath : $r9 = new java.lang.StringBuilder
+dynoptic.DynopticTest.getMcPath : r0 = "linux.static" >>>>>>>> dynoptic.DynopticTest.getMcPath : goto [?= $r9 = new java.lang.StringBuilder]
+dynoptic.DynopticTest.getMcPath : goto [?= $r9 = new java.lang.StringBuilder] >>>>>>>> dynoptic.DynopticTest.getMcPath : $r9 = new java.lang.StringBuilder

@@ -1,0 +1,25 @@
+org.joda.time.Period.toStandardHours : specialinvoke r0.<org.joda.time.Period: void checkYearsAndMonths(java.lang.String)>("Hours") >>>>>>>> org.joda.time.Period.toStandardHours : $i2 = virtualinvoke r0.<org.joda.time.Period: int getMillis()>()
+org.joda.time.Period.toStandardHours : $i2 = virtualinvoke r0.<org.joda.time.Period: int getMillis()>() >>>>>>>> org.joda.time.Period.toStandardHours : l0 = (long) $i2
+org.joda.time.Period.toStandardHours : l0 = (long) $i2 >>>>>>>> org.joda.time.Period.toStandardHours : $i3 = virtualinvoke r0.<org.joda.time.Period: int getSeconds()>()
+org.joda.time.Period.toStandardHours : $i3 = virtualinvoke r0.<org.joda.time.Period: int getSeconds()>() >>>>>>>> org.joda.time.Period.toStandardHours : $l4 = (long) $i3
+org.joda.time.Period.toStandardHours : $l4 = (long) $i3 >>>>>>>> org.joda.time.Period.toStandardHours : $l5 = $l4 * 1000L
+org.joda.time.Period.toStandardHours : $l5 = $l4 * 1000L >>>>>>>> org.joda.time.Period.toStandardHours : l6 = l0 + $l5
+org.joda.time.Period.toStandardHours : l6 = l0 + $l5 >>>>>>>> org.joda.time.Period.toStandardHours : $i7 = virtualinvoke r0.<org.joda.time.Period: int getMinutes()>()
+org.joda.time.Period.toStandardHours : $i7 = virtualinvoke r0.<org.joda.time.Period: int getMinutes()>() >>>>>>>> org.joda.time.Period.toStandardHours : $l8 = (long) $i7
+org.joda.time.Period.toStandardHours : $l8 = (long) $i7 >>>>>>>> org.joda.time.Period.toStandardHours : $l9 = $l8 * 60000L
+org.joda.time.Period.toStandardHours : $l9 = $l8 * 60000L >>>>>>>> org.joda.time.Period.toStandardHours : l10 = l6 + $l9
+org.joda.time.Period.toStandardHours : l10 = l6 + $l9 >>>>>>>> org.joda.time.Period.toStandardHours : l1 = l10 / 3600000L
+org.joda.time.Period.toStandardHours : l1 = l10 / 3600000L >>>>>>>> org.joda.time.Period.toStandardHours : $i11 = virtualinvoke r0.<org.joda.time.Period: int getHours()>()
+org.joda.time.Period.toStandardHours : $i11 = virtualinvoke r0.<org.joda.time.Period: int getHours()>() >>>>>>>> org.joda.time.Period.toStandardHours : $l12 = (long) $i11
+org.joda.time.Period.toStandardHours : $l12 = (long) $i11 >>>>>>>> org.joda.time.Period.toStandardHours : l13 = staticinvoke <org.joda.time.field.FieldUtils: long safeAdd(long,long)>(l1, $l12)
+org.joda.time.Period.toStandardHours : l13 = staticinvoke <org.joda.time.field.FieldUtils: long safeAdd(long,long)>(l1, $l12) >>>>>>>> org.joda.time.Period.toStandardHours : $i14 = virtualinvoke r0.<org.joda.time.Period: int getDays()>()
+org.joda.time.Period.toStandardHours : $i14 = virtualinvoke r0.<org.joda.time.Period: int getDays()>() >>>>>>>> org.joda.time.Period.toStandardHours : $l15 = (long) $i14
+org.joda.time.Period.toStandardHours : $l15 = (long) $i14 >>>>>>>> org.joda.time.Period.toStandardHours : $l16 = $l15 * 24L
+org.joda.time.Period.toStandardHours : $l16 = $l15 * 24L >>>>>>>> org.joda.time.Period.toStandardHours : l17 = staticinvoke <org.joda.time.field.FieldUtils: long safeAdd(long,long)>(l13, $l16)
+org.joda.time.Period.toStandardHours : l17 = staticinvoke <org.joda.time.field.FieldUtils: long safeAdd(long,long)>(l13, $l16) >>>>>>>> org.joda.time.Period.toStandardHours : $i18 = virtualinvoke r0.<org.joda.time.Period: int getWeeks()>()
+org.joda.time.Period.toStandardHours : $i18 = virtualinvoke r0.<org.joda.time.Period: int getWeeks()>() >>>>>>>> org.joda.time.Period.toStandardHours : $l19 = (long) $i18
+org.joda.time.Period.toStandardHours : $l19 = (long) $i18 >>>>>>>> org.joda.time.Period.toStandardHours : $l20 = $l19 * 168L
+org.joda.time.Period.toStandardHours : $l20 = $l19 * 168L >>>>>>>> org.joda.time.Period.toStandardHours : l21 = staticinvoke <org.joda.time.field.FieldUtils: long safeAdd(long,long)>(l17, $l20)
+org.joda.time.Period.toStandardHours : l21 = staticinvoke <org.joda.time.field.FieldUtils: long safeAdd(long,long)>(l17, $l20) >>>>>>>> org.joda.time.Period.toStandardHours : $i22 = staticinvoke <org.joda.time.field.FieldUtils: int safeToInt(long)>(l21)
+org.joda.time.Period.toStandardHours : $i22 = staticinvoke <org.joda.time.field.FieldUtils: int safeToInt(long)>(l21) >>>>>>>> org.joda.time.Period.toStandardHours : $r1 = staticinvoke <org.joda.time.Hours: org.joda.time.Hours hours(int)>($i22)
+org.joda.time.Period.toStandardHours : $r1 = staticinvoke <org.joda.time.Hours: org.joda.time.Hours hours(int)>($i22) >>>>>>>> org.joda.time.Period.toStandardHours : return $r1

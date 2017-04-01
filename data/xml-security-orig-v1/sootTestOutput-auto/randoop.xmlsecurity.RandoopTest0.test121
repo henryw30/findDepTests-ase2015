@@ -1,0 +1,7 @@
+org.apache.xml.security.c14n.helper.C14nHelper.normalizeText : i1 = 0
+org.apache.xml.security.c14n.helper.C14nHelper.normalizeText : $r8 = virtualinvoke r2.<java.lang.StringBuffer: java.lang.String toString()>()
+org.apache.xml.security.c14n.helper.C14nHelper.normalizeText : virtualinvoke r2.<java.lang.StringBuffer: java.lang.StringBuffer append(char)>(c2)
+org.apache.xml.security.c14n.helper.C14nHelper.normalizeText : $r1 = new java.lang.StringBuffer
+org.apache.xml.security.c14n.helper.C14nHelper.normalizeText : lookupswitch(c2) {     case 13: goto virtualinvoke r2.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>("&#xD;");     case 38: goto virtualinvoke r2.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>("&amp;");     case 60: goto virtualinvoke r2.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>("&lt;");     case 62: goto virtualinvoke r2.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>("&gt;");     default: goto virtualinvoke r2.<java.lang.StringBuffer: java.lang.StringBuffer append(char)>(c2); }
+org.apache.xml.security.c14n.helper.C14nHelper.normalizeText : c2 = virtualinvoke r0.<java.lang.String: char charAt(int)>(i1)
+org.apache.xml.security.c14n.helper.C14nHelper.normalizeText : if r0 != null goto $i3 = virtualinvoke r0.<java.lang.String: int length()>()

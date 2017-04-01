@@ -1,0 +1,9 @@
+org.joda.time.LocalDateTime.withLocalMillis : $l1 = virtualinvoke r0.<org.joda.time.LocalDateTime: long getLocalMillis()>() >>>>>>>> org.joda.time.LocalDateTime.withLocalMillis : $b2 = l0 cmp $l1
+org.joda.time.LocalDateTime.withLocalMillis : $b2 = l0 cmp $l1 >>>>>>>> org.joda.time.LocalDateTime.withLocalMillis : if $b2 != 0
+org.joda.time.LocalDateTime.withLocalMillis : if $b2 != 0 >>>>>>>> org.joda.time.LocalDateTime.withLocalMillis : $r1 = r0
+org.joda.time.LocalDateTime.withLocalMillis : if $b2 != 0 >>>>>>>> org.joda.time.LocalDateTime.withLocalMillis : $r1 = new org.joda.time.LocalDateTime
+org.joda.time.LocalDateTime.withLocalMillis : $r1 = new org.joda.time.LocalDateTime >>>>>>>> org.joda.time.LocalDateTime.withLocalMillis : $r2 = virtualinvoke r0.<org.joda.time.LocalDateTime: org.joda.time.Chronology getChronology()>()
+org.joda.time.LocalDateTime.withLocalMillis : $r2 = virtualinvoke r0.<org.joda.time.LocalDateTime: org.joda.time.Chronology getChronology()>() >>>>>>>> org.joda.time.LocalDateTime.withLocalMillis : specialinvoke $r1.<org.joda.time.LocalDateTime: void <init>(long,org.joda.time.Chronology)>(l0, $r2)
+org.joda.time.LocalDateTime.withLocalMillis : specialinvoke $r1.<org.joda.time.LocalDateTime: void <init>(long,org.joda.time.Chronology)>(l0, $r2) >>>>>>>> org.joda.time.LocalDateTime.withLocalMillis : return $r1
+org.joda.time.LocalDateTime.withLocalMillis : $r1 = r0 >>>>>>>> org.joda.time.LocalDateTime.withLocalMillis : goto [?= return $r1]
+org.joda.time.LocalDateTime.withLocalMillis : goto [?= return $r1] >>>>>>>> org.joda.time.LocalDateTime.withLocalMillis : return $r1

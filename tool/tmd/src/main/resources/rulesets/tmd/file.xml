@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+
+<ruleset name="basic"
+    xmlns="http://pmd.sourceforge.net/ruleset/2.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://pmd.sourceforge.net/ruleset/2.0.0 http://pmd.sourceforge.net/ruleset_2_0_0.xsd">
+  <description>
+The Basic ruleset contains a collection of good practices which should be followed.
+  </description>
+
+<rule name="StringBasedFileRule"
+      message="Incorrect file dependencies detected."
+      class="edu.unl.e2.tmd.StringPathFileRule"
+      language="java">
+     <description></description>
+     <priority>3</priority>
+     <example>
+     <![CDATA[]]>
+     </example>
+</rule>
+
+<rule name="ObjectBasedFileRule"
+      message="Incorrect file dependencies detected."
+      class="edu.unl.e2.tmd.ObjectFileRule"
+      language="java">
+     <description></description>
+     <priority>3</priority>
+     <example>
+     <![CDATA[]]>
+     </example>
+</rule>
+
+</ruleset>

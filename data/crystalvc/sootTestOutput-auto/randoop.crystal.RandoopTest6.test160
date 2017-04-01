@@ -1,0 +1,36 @@
+crystal.client.ClientPreferences.setRefresh : r0.<crystal.client.ClientPreferences: long _refresh> = l0
+crystal.client.ClientPreferences.getTempDirectory : $r1 = r0.<crystal.client.ClientPreferences: java.lang.String _tempDirectory>
+crystal.client.ClientPreferences.savePreferencesToXML : staticinvoke <crystal.util.XMLTools: boolean writeXMLDocument(org.jdom.Document,java.lang.String)>(r2, r1)
+crystal.client.ClientPreferences.savePreferencesToXML : $r14 = new org.jdom.Element
+crystal.client.ClientPreferences.savePreferencesToXML : $r22 = <crystal.client.ClientPreferences$IPrefXML: java.lang.String[] TMP_DIR>
+crystal.client.ClientPreferences.savePreferencesToXML : virtualinvoke r2.<org.jdom.Document: org.jdom.Document setRootElement(org.jdom.Element)>(r4)
+crystal.client.ClientPreferences.savePreferencesToXML : $r16 = new org.jdom.Comment
+crystal.client.ClientPreferences.savePreferencesToXML : virtualinvoke r2.<org.jdom.Document: org.jdom.Document addContent(org.jdom.Content)>(r6)
+crystal.client.ClientPreferences.savePreferencesToXML : $r26 = <crystal.client.ClientPreferences$IPrefXML: java.lang.String[] REFRESH>
+crystal.client.ClientPreferences.savePreferencesToXML : virtualinvoke r2.<org.jdom.Document: org.jdom.Document addContent(org.jdom.Content)>(r7)
+crystal.client.ClientPreferences.savePreferencesToXML : virtualinvoke r2.<org.jdom.Document: org.jdom.Document addContent(org.jdom.Content)>(r5)
+crystal.client.ClientPreferences.savePreferencesToXML : $r18 = new org.jdom.Comment
+crystal.client.ClientPreferences.savePreferencesToXML : $r17 = new org.jdom.Comment
+crystal.client.ClientPreferences.savePreferencesToXML : r2 = staticinvoke <crystal.util.XMLTools: org.jdom.Document newXMLDocument()>()
+crystal.client.ClientPreferences.savePreferencesToXML : $r31 = virtualinvoke r0.<crystal.client.ClientPreferences: java.util.Collection getProjectPreference()>()
+crystal.client.ClientPreferences.setChanged : r0.<crystal.client.ClientPreferences: boolean _hasChanged> = z0
+crystal.client.ClientPreferences.hasChanged : $z0 = r0.<crystal.client.ClientPreferences: boolean _hasChanged>
+crystal.client.ClientPreferences.getRefresh : $l0 = r0.<crystal.client.ClientPreferences: long _refresh>
+crystal.client.ConflictDaemon.enable : r0.<crystal.client.ConflictDaemon: boolean _enabled> = z0
+crystal.client.ConflictDaemon.getRelationships : $r1 = r0.<crystal.client.ConflictDaemon: java.util.Hashtable _relationshipMap>
+crystal.client.ClientPreferences.getProjectPreference : $r1 = r0.<crystal.client.ClientPreferences: java.util.Vector _projectPreferences>
+crystal.client.ClientPreferences.setGitPath : r0.<crystal.client.ClientPreferences: java.lang.String _gitPath> = r1
+crystal.util.ValidInputChecker.checkValidStringInput : if r0 == null goto $r2 = new java.lang.IllegalArgumentException
+crystal.client.ConflictDaemon.getInstance : $r0 = <crystal.client.ConflictDaemon: crystal.client.ConflictDaemon _instance>
+crystal.client.ConflictDaemon.getInstance : $r2 = <crystal.client.ConflictDaemon: crystal.client.ConflictDaemon _instance>
+crystal.client.ClientPreferences.setTempDirectory : r0.<crystal.client.ClientPreferences: java.lang.String _tempDirectory> = r1
+crystal.client.ClientPreferences.equals : return 0
+crystal.client.ClientPreferences.equals : if r1 == null goto return 0
+crystal.util.XMLTools.writeXMLDocument : $r7 = staticinvoke <org.jdom.output.Format: org.jdom.output.Format getPrettyFormat()>()
+crystal.util.XMLTools.writeXMLDocument : $r6 = new org.jdom.output.XMLOutputter
+crystal.util.XMLTools.writeXMLDocument : $r5 = new java.io.FileOutputStream
+crystal.util.XMLTools.writeXMLDocument : $z0 = 1
+crystal.util.XMLTools.writeXMLDocument : l0 = staticinvoke <java.lang.System: long currentTimeMillis()>()
+crystal.util.XMLTools.writeXMLDocument : virtualinvoke r3.<org.jdom.output.XMLOutputter: void output(org.jdom.Document,java.io.OutputStream)>(r0, r2)
+crystal.util.XMLTools.writeXMLDocument : if r0 != null goto l0 = staticinvoke <java.lang.System: long currentTimeMillis()>()
+crystal.util.XMLTools.newXMLDocument : $r0 = new org.jdom.Document

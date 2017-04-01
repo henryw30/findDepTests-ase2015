@@ -1,0 +1,60 @@
+org.jfree.data.xy.DefaultIntervalXYDataset.addSeries : $r14 = r0.<org.jfree.data.xy.DefaultIntervalXYDataset: java.util.List seriesList>
+org.jfree.data.xy.DefaultIntervalXYDataset.addSeries : if i1 != -1 goto $r15 = r0.<org.jfree.data.xy.DefaultIntervalXYDataset: java.util.List seriesList>
+org.jfree.data.xy.DefaultIntervalXYDataset.addSeries : $r18 = new org.jfree.data.general.DatasetChangeEvent
+org.jfree.data.xy.DefaultIntervalXYDataset.addSeries : $r6 = r2[0]
+org.jfree.data.xy.DefaultIntervalXYDataset.addSeries : $r13 = r0.<org.jfree.data.xy.DefaultIntervalXYDataset: java.util.List seriesKeys>
+org.jfree.data.xy.DefaultIntervalXYDataset.addSeries : i1 = virtualinvoke r0.<org.jfree.data.xy.DefaultIntervalXYDataset: int indexOf(java.lang.Comparable)>(r1)
+org.jfree.data.xy.DefaultIntervalXYDataset.addSeries : if r2 != null goto $i2 = lengthof r2
+org.jfree.data.xy.DefaultIntervalXYDataset.addSeries : $i2 = lengthof r2
+org.jfree.data.xy.DefaultIntervalXYDataset.addSeries : if r1 != null goto (branch)
+org.jfree.data.xy.DefaultIntervalXYDataset.addSeries : $r7 = r2[1]
+org.jfree.data.Range.getUpperBound : $d0 = r0.<org.jfree.data.Range: double upper>
+org.jfree.data.general.AbstractDataset.notifyListeners : $r3 = r0.<org.jfree.data.general.AbstractDataset: javax.swing.event.EventListenerList listenerList>
+org.jfree.data.general.AbstractDataset.notifyListeners : $i1 = lengthof r2
+org.jfree.data.general.AbstractSeriesDataset.indexOf : return -1
+org.jfree.data.general.AbstractSeriesDataset.indexOf : i1 = 0
+org.jfree.data.general.AbstractSeriesDataset.indexOf : i0 = virtualinvoke r0.<org.jfree.data.general.AbstractSeriesDataset: int getSeriesCount()>()
+org.jfree.data.Range.getLowerBound : $d0 = r0.<org.jfree.data.Range: double lower>
+org.jfree.data.xy.DefaultIntervalXYDataset.getXValue : $r5 = r1[0]
+org.jfree.data.xy.DefaultIntervalXYDataset.getXValue : $r2 = r0.<org.jfree.data.xy.DefaultIntervalXYDataset: java.util.List seriesList>
+org.jfree.data.xy.DefaultIntervalXYDataset.getStartXValue : $r5 = r1[1]
+org.jfree.data.xy.DefaultIntervalXYDataset.getStartXValue : $r2 = r0.<org.jfree.data.xy.DefaultIntervalXYDataset: java.util.List seriesList>
+org.jfree.data.xy.DefaultIntervalXYDataset.getEndXValue : $r5 = r1[2]
+org.jfree.data.xy.DefaultIntervalXYDataset.getEndXValue : $r2 = r0.<org.jfree.data.xy.DefaultIntervalXYDataset: java.util.List seriesList>
+org.jfree.data.xy.DefaultIntervalXYDataset.getItemCount : $r6 = r1[0]
+org.jfree.data.xy.DefaultIntervalXYDataset.getItemCount : $r3 = r0.<org.jfree.data.xy.DefaultIntervalXYDataset: java.util.List seriesList>
+org.jfree.data.xy.DefaultIntervalXYDataset.getItemCount : if i0 < 0 goto $r2 = new java.lang.IllegalArgumentException
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null goto return
+org.jfree.data.xy.DefaultIntervalXYDataset.getSeriesCount : $r1 = r0.<org.jfree.data.xy.DefaultIntervalXYDataset: java.util.List seriesList>
+org.jfree.data.general.DatasetUtilities.iterateDomainBounds : $r2 = new org.jfree.data.Range
+org.jfree.data.general.DatasetUtilities.iterateDomainBounds : d5 = interfaceinvoke r0.<org.jfree.data.xy.XYDataset: double getXValue(int,int)>(i4, i6)
+org.jfree.data.general.DatasetUtilities.iterateDomainBounds : d1 = staticinvoke <java.lang.Math: double max(double,double)>(d1, d2)
+org.jfree.data.general.DatasetUtilities.iterateDomainBounds : d0 = #Infinity
+org.jfree.data.general.DatasetUtilities.iterateDomainBounds : d1 = staticinvoke <java.lang.Math: double max(double,double)>(d1, d4)
+org.jfree.data.general.DatasetUtilities.iterateDomainBounds : d4 = interfaceinvoke r1.<org.jfree.data.xy.IntervalXYDataset: double getEndXValue(int,int)>(i1, i3)
+org.jfree.data.general.DatasetUtilities.iterateDomainBounds : i0 = interfaceinvoke r0.<org.jfree.data.xy.XYDataset: int getSeriesCount()>()
+org.jfree.data.general.DatasetUtilities.iterateDomainBounds : i3 = 0
+org.jfree.data.general.DatasetUtilities.iterateDomainBounds : d0 = staticinvoke <java.lang.Math: double min(double,double)>(d0, d3)
+org.jfree.data.general.DatasetUtilities.iterateDomainBounds : i6 = 0
+org.jfree.data.general.DatasetUtilities.iterateDomainBounds : d1 = #-Infinity
+org.jfree.data.general.DatasetUtilities.iterateDomainBounds : i1 = 0
+org.jfree.data.general.DatasetUtilities.iterateDomainBounds : d1 = staticinvoke <java.lang.Math: double max(double,double)>(d1, d6)
+org.jfree.data.general.DatasetUtilities.iterateDomainBounds : i2 = interfaceinvoke r0.<org.jfree.data.xy.XYDataset: int getItemCount(int)>(i1)
+org.jfree.data.general.DatasetUtilities.iterateDomainBounds : d0 = staticinvoke <java.lang.Math: double min(double,double)>(d0, d5)
+org.jfree.data.general.DatasetUtilities.iterateDomainBounds : $z5 = staticinvoke <java.lang.Double: boolean isNaN(double)>(d5)
+org.jfree.data.general.DatasetUtilities.iterateDomainBounds : d1 = staticinvoke <java.lang.Math: double max(double,double)>(d1, d3)
+org.jfree.data.general.DatasetUtilities.iterateDomainBounds : $z2 = staticinvoke <java.lang.Double: boolean isNaN(double)>(d2)
+org.jfree.data.general.DatasetUtilities.iterateDomainBounds : d0 = staticinvoke <java.lang.Math: double min(double,double)>(d0, d4)
+org.jfree.data.general.DatasetUtilities.iterateDomainBounds : if z0 == 0 goto i4 = 0
+org.jfree.data.general.DatasetUtilities.iterateDomainBounds : d0 = staticinvoke <java.lang.Math: double min(double,double)>(d0, d2)
+org.jfree.data.general.DatasetUtilities.iterateDomainBounds : r1 = (org.jfree.data.xy.IntervalXYDataset) r0
+org.jfree.data.general.DatasetUtilities.iterateDomainBounds : i5 = interfaceinvoke r0.<org.jfree.data.xy.XYDataset: int getItemCount(int)>(i4)
+org.jfree.data.general.DatasetUtilities.iterateDomainBounds : d2 = interfaceinvoke r1.<org.jfree.data.xy.IntervalXYDataset: double getXValue(int,int)>(i1, i3)
+org.jfree.data.general.DatasetUtilities.iterateDomainBounds : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r0, "dataset")
+org.jfree.data.general.DatasetUtilities.iterateDomainBounds : $z3 = staticinvoke <java.lang.Double: boolean isNaN(double)>(d3)
+org.jfree.data.general.DatasetUtilities.iterateDomainBounds : $b7 = d0 cmpl d1
+org.jfree.data.general.DatasetUtilities.iterateDomainBounds : $z4 = staticinvoke <java.lang.Double: boolean isNaN(double)>(d4)
+org.jfree.data.general.DatasetUtilities.iterateDomainBounds : d3 = interfaceinvoke r1.<org.jfree.data.xy.IntervalXYDataset: double getStartXValue(int,int)>(i1, i3)
+org.jfree.data.general.DatasetUtilities.iterateDomainBounds : d6 = d5
+org.jfree.data.general.DatasetUtilities.iterateDomainBounds : goto [?= $b7 = d0 cmpl d1]
+org.jfree.data.general.DatasetUtilities.iterateDomainBounds : i4 = 0

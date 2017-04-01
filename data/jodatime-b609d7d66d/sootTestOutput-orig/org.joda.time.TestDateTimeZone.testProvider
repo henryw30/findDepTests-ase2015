@@ -1,0 +1,90 @@
+org.joda.time.tz.ZoneInfoProvider.getAvailableIDs : $r1 = new java.util.TreeSet
+org.joda.time.tz.UTCProvider.getAvailableIDs : $r1 = staticinvoke <java.util.Collections: java.util.Set singleton(java.lang.Object)>("UTC")
+org.joda.time.tz.ZoneInfoProvider.readZoneInfoMap : $i4 = virtualinvoke r0.<java.io.DataInputStream: int readUnsignedShort()>()
+org.joda.time.tz.ZoneInfoProvider.readZoneInfoMap : i1 = 0
+org.joda.time.tz.ZoneInfoProvider.readZoneInfoMap : goto [?= i3 = i3 + 1]
+org.joda.time.tz.ZoneInfoProvider.readZoneInfoMap : i3 = 0
+org.joda.time.tz.ZoneInfoProvider.readZoneInfoMap : i2 = virtualinvoke r0.<java.io.DataInputStream: int readUnsignedShort()>()
+org.joda.time.tz.ZoneInfoProvider.readZoneInfoMap : i0 = virtualinvoke r0.<java.io.DataInputStream: int readUnsignedShort()>()
+org.joda.time.tz.ZoneInfoProvider.readZoneInfoMap : $r4 = virtualinvoke r0.<java.io.DataInputStream: java.lang.String readUTF()>()
+org.joda.time.tz.ZoneInfoProvider.readZoneInfoMap : r2 = newarray (java.lang.String)[i0]
+org.joda.time.tz.ZoneInfoProvider.loadZoneInfoMap : return r2
+org.joda.time.tz.ZoneInfoProvider.loadZoneInfoMap : virtualinvoke r3.<java.io.DataInputStream: void close()>()
+org.joda.time.tz.ZoneInfoProvider.loadZoneInfoMap : $r12 = new java.lang.ref.SoftReference
+org.joda.time.tz.ZoneInfoProvider.loadZoneInfoMap : staticinvoke <org.joda.time.tz.ZoneInfoProvider: void readZoneInfoMap(java.io.DataInputStream,java.util.Map)>(r3, r2)
+org.joda.time.tz.ZoneInfoProvider.loadZoneInfoMap : $r8 = new java.io.DataInputStream
+org.joda.time.tz.ZoneInfoProvider.loadZoneInfoMap : $r1 = new java.util.concurrent.ConcurrentHashMap
+org.joda.time.tz.ZoneInfoProvider.loadZoneInfoMap : goto [?= $r12 = new java.lang.ref.SoftReference]
+org.joda.time.TestDateTimeZone$MockBadUTCProvider.getZone : return null
+org.joda.time.tz.FixedDateTimeZone.equals : $z0 = r1 instanceof org.joda.time.tz.FixedDateTimeZone
+org.joda.time.tz.FixedDateTimeZone.equals : return 1
+org.joda.time.tz.FixedDateTimeZone.equals : return 0
+org.joda.time.tz.FixedDateTimeZone.equals : if r0 != r1 goto $z0 = r1 instanceof org.joda.time.tz.FixedDateTimeZone
+org.joda.time.DateTimeZone.setProvider : if r1 == null goto staticinvoke <org.joda.time.DateTimeZone: void setProvider0(org.joda.time.tz.Provider)>(r0)
+org.joda.time.DateTimeZone.setProvider : staticinvoke <org.joda.time.DateTimeZone: void setProvider0(org.joda.time.tz.Provider)>(r0)
+org.joda.time.DateTimeZone.setProvider : r1 = staticinvoke <java.lang.System: java.lang.SecurityManager getSecurityManager()>()
+org.joda.time.TestDateTimeZone$MockEmptyIDSProvider.getAvailableIDs : $r1 = new java.util.HashSet
+org.joda.time.TestDateTimeZone$MockBadUTCProvider.getAvailableIDs : return r2
+org.joda.time.TestDateTimeZone$MockBadUTCProvider.getAvailableIDs : interfaceinvoke r2.<java.util.Set: boolean add(java.lang.Object)>("Europe/London")
+org.joda.time.TestDateTimeZone$MockBadUTCProvider.getAvailableIDs : $r1 = new java.util.HashSet
+org.joda.time.TestDateTimeZone$MockBadUTCProvider.getAvailableIDs : interfaceinvoke r2.<java.util.Set: boolean add(java.lang.Object)>("UTC")
+org.joda.time.TestDateTimeZone$MockNoUTCProvider.getAvailableIDs : return r2
+org.joda.time.TestDateTimeZone$MockNoUTCProvider.getAvailableIDs : interfaceinvoke r2.<java.util.Set: boolean add(java.lang.Object)>("Europe/London")
+org.joda.time.TestDateTimeZone$MockNoUTCProvider.getAvailableIDs : $r1 = new java.util.HashSet
+org.joda.time.tz.ZoneInfoProvider.getZone : return r4
+org.joda.time.tz.ZoneInfoProvider.getZone : if r1 != null goto $r5 = r0.<org.joda.time.tz.ZoneInfoProvider: java.util.Map iZoneInfoMap>
+org.joda.time.tz.ZoneInfoProvider.getZone : $z0 = virtualinvoke r1.<java.lang.String: boolean equals(java.lang.Object)>(r2)
+org.joda.time.tz.ZoneInfoProvider.getZone : $r5 = r0.<org.joda.time.tz.ZoneInfoProvider: java.util.Map iZoneInfoMap>
+org.joda.time.tz.ZoneInfoProvider.getZone : r3 = (java.lang.ref.SoftReference) r2
+org.joda.time.tz.ZoneInfoProvider.getZone : if r2 != null goto $z0 = virtualinvoke r1.<java.lang.String: boolean equals(java.lang.Object)>(r2)
+org.joda.time.tz.ZoneInfoProvider.getZone : $z1 = r2 instanceof java.lang.ref.SoftReference
+org.joda.time.tz.ZoneInfoProvider.getZone : $r7 = virtualinvoke r3.<java.lang.ref.SoftReference: java.lang.Object get()>()
+org.joda.time.tz.ZoneInfoProvider.getZone : if r4 == null goto $r8 = specialinvoke r0.<org.joda.time.tz.ZoneInfoProvider: org.joda.time.DateTimeZone loadZoneData(java.lang.String)>(r1)
+org.joda.time.DateTimeZone.getDefaultProvider : $r4 = staticinvoke <java.lang.Class: java.lang.Class forName(java.lang.String)>(r1)
+org.joda.time.DateTimeZone.getDefaultProvider : if r0 != null goto return r0
+org.joda.time.DateTimeZone.getDefaultProvider : r0 = null
+org.joda.time.DateTimeZone.getDefaultProvider : $r10 = new org.joda.time.tz.ZoneInfoProvider
+org.joda.time.DateTimeZone.getDefaultProvider : $r7 = virtualinvoke r3.<java.lang.Thread: java.lang.ThreadGroup getThreadGroup()>()
+org.joda.time.DateTimeZone.getDefaultProvider : r2 = $r6
+org.joda.time.DateTimeZone.getDefaultProvider : r3 = staticinvoke <java.lang.Thread: java.lang.Thread currentThread()>()
+org.joda.time.DateTimeZone.getDefaultProvider : goto [?= (branch)]
+org.joda.time.DateTimeZone.getDefaultProvider : if r1 == null goto (branch)
+org.joda.time.DateTimeZone.getDefaultProvider : return r0
+org.joda.time.DateTimeZone.getDefaultProvider : r1 = staticinvoke <java.lang.System: java.lang.String getProperty(java.lang.String)>("org.joda.time.DateTimeZone.Provider")
+org.joda.time.DateTimeZone.getDefaultProvider : if r0 != null goto (branch)
+org.joda.time.DateTimeZone.setProvider0 : $r3 = new java.lang.IllegalArgumentException
+org.joda.time.DateTimeZone.setProvider0 : if r0 != null goto r1 = interfaceinvoke r0.<org.joda.time.tz.Provider: java.util.Set getAvailableIDs()>()
+org.joda.time.DateTimeZone.setProvider0 : $r4 = <org.joda.time.DateTimeZone: org.joda.time.DateTimeZone UTC>
+org.joda.time.DateTimeZone.setProvider0 : <org.joda.time.DateTimeZone: java.util.Set cAvailableIDs> = r1
+org.joda.time.DateTimeZone.setProvider0 : if r1 == null goto $r2 = new java.lang.IllegalArgumentException
+org.joda.time.DateTimeZone.setProvider0 : $z0 = interfaceinvoke r1.<java.util.Set: boolean contains(java.lang.Object)>("UTC")
+org.joda.time.DateTimeZone.setProvider0 : <org.joda.time.DateTimeZone: org.joda.time.tz.Provider cProvider> = r0
+org.joda.time.DateTimeZone.setProvider0 : $r6 = new java.lang.IllegalArgumentException
+org.joda.time.DateTimeZone.setProvider0 : r1 = interfaceinvoke r0.<org.joda.time.tz.Provider: java.util.Set getAvailableIDs()>()
+org.joda.time.DateTimeZone.setProvider0 : r0 = staticinvoke <org.joda.time.DateTimeZone: org.joda.time.tz.Provider getDefaultProvider()>()
+org.joda.time.DateTimeZone.setProvider0 : $r2 = new java.lang.IllegalArgumentException
+org.joda.time.TestDateTimeZone$MockNullIDSProvider.getAvailableIDs : return null
+org.joda.time.DateTimeZone.getDefault : if r0 != null goto return r0
+org.joda.time.DateTimeZone.getDefault : r0 = <org.joda.time.DateTimeZone: org.joda.time.DateTimeZone cDefault>
+org.joda.time.DateTimeZone.getDefault : return r0
+org.joda.time.DateTimeZone.getAvailableIDs : $r0 = <org.joda.time.DateTimeZone: java.util.Set cAvailableIDs>
+org.joda.time.TestDateTimeZone$MockOKProvider.getAvailableIDs : return r2
+org.joda.time.TestDateTimeZone$MockOKProvider.getAvailableIDs : interfaceinvoke r2.<java.util.Set: boolean add(java.lang.Object)>("Europe/London")
+org.joda.time.TestDateTimeZone$MockOKProvider.getAvailableIDs : $r1 = new java.util.HashSet
+org.joda.time.TestDateTimeZone$MockOKProvider.getAvailableIDs : interfaceinvoke r2.<java.util.Set: boolean add(java.lang.Object)>("UTC")
+org.joda.time.tz.UTCProvider.getZone : $r3 = <org.joda.time.DateTimeZone: org.joda.time.DateTimeZone UTC>
+org.joda.time.tz.UTCProvider.getZone : $r2 = "UTC"
+org.joda.time.tz.ZoneInfoProvider.openResource : return r3
+org.joda.time.tz.ZoneInfoProvider.openResource : $r10 = r0.<org.joda.time.tz.ZoneInfoProvider: java.lang.ClassLoader iLoader>
+org.joda.time.tz.ZoneInfoProvider.openResource : $r9 = r0.<org.joda.time.tz.ZoneInfoProvider: java.lang.String iResourcePath>
+org.joda.time.tz.ZoneInfoProvider.openResource : $r6 = r0.<org.joda.time.tz.ZoneInfoProvider: java.io.File iFileDir>
+org.joda.time.tz.ZoneInfoProvider.openResource : if r3 != null goto return r3
+org.joda.time.tz.ZoneInfoProvider.openResource : $r11 = r0.<org.joda.time.tz.ZoneInfoProvider: java.lang.ClassLoader iLoader>
+org.joda.time.DateTimeZone.getProvider : $r0 = <org.joda.time.DateTimeZone: org.joda.time.tz.Provider cProvider>
+org.joda.time.DateTimeZone.setDefault : exitmonitor r3
+org.joda.time.DateTimeZone.setDefault : $r6 = class "org/joda/time/DateTimeZone"
+org.joda.time.DateTimeZone.setDefault : <org.joda.time.DateTimeZone: org.joda.time.DateTimeZone cDefault> = r0
+org.joda.time.DateTimeZone.setDefault : if r1 == null goto (branch)
+org.joda.time.DateTimeZone.setDefault : if r0 != null goto $r6 = class "org/joda/time/DateTimeZone"
+org.joda.time.DateTimeZone.setDefault : r1 = staticinvoke <java.lang.System: java.lang.SecurityManager getSecurityManager()>()
+org.joda.time.TestDateTimeZone$MockOKProvider.getZone : $r2 = <org.joda.time.DateTimeZone: org.joda.time.DateTimeZone UTC>

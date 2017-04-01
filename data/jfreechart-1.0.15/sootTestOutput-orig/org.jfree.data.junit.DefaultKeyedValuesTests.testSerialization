@@ -1,0 +1,30 @@
+org.jfree.data.DefaultKeyedValues.getItemCount : $r1 = r0.<org.jfree.data.DefaultKeyedValues: java.util.HashMap indexMap>
+org.jfree.data.DefaultKeyedValues.getIndex : return -1
+org.jfree.data.DefaultKeyedValues.getIndex : $r3 = r0.<org.jfree.data.DefaultKeyedValues: java.util.HashMap indexMap>
+org.jfree.data.DefaultKeyedValues.getIndex : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "key")
+org.jfree.data.DefaultKeyedValues.getIndex : if r2 != null goto $i0 = virtualinvoke r2.<java.lang.Integer: int intValue()>()
+org.jfree.data.DefaultKeyedValues.setValue : i0 = virtualinvoke r0.<org.jfree.data.DefaultKeyedValues: int getIndex(java.lang.Comparable)>(r1)
+org.jfree.data.DefaultKeyedValues.setValue : $r8 = r0.<org.jfree.data.DefaultKeyedValues: java.util.ArrayList values>
+org.jfree.data.DefaultKeyedValues.setValue : $r9 = r0.<org.jfree.data.DefaultKeyedValues: java.util.HashMap indexMap>
+org.jfree.data.DefaultKeyedValues.setValue : $r7 = r0.<org.jfree.data.DefaultKeyedValues: java.util.ArrayList keys>
+org.jfree.data.DefaultKeyedValues.setValue : if i0 < 0 goto $r7 = r0.<org.jfree.data.DefaultKeyedValues: java.util.ArrayList keys>
+org.jfree.data.DefaultKeyedValues.setValue : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "key")
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null goto return
+org.jfree.data.DefaultKeyedValues.addValue : virtualinvoke r0.<org.jfree.data.DefaultKeyedValues: void setValue(java.lang.Comparable,java.lang.Number)>(r1, r2)
+org.jfree.data.DefaultKeyedValues.getKey : $r1 = r0.<org.jfree.data.DefaultKeyedValues: java.util.ArrayList keys>
+org.jfree.data.DefaultKeyedValues.equals : if r6 == null goto i1 = i1 + 1
+org.jfree.data.DefaultKeyedValues.equals : i1 = 0
+org.jfree.data.DefaultKeyedValues.equals : $i2 = interfaceinvoke r2.<org.jfree.data.KeyedValues: int getItemCount()>()
+org.jfree.data.DefaultKeyedValues.equals : r2 = (org.jfree.data.KeyedValues) r1
+org.jfree.data.DefaultKeyedValues.equals : if r1 != r0 goto $z0 = r1 instanceof org.jfree.data.KeyedValues
+org.jfree.data.DefaultKeyedValues.equals : if r5 != null goto $z2 = virtualinvoke r5.<java.lang.Object: boolean equals(java.lang.Object)>(r6)
+org.jfree.data.DefaultKeyedValues.equals : r4 = interfaceinvoke r2.<org.jfree.data.KeyedValues: java.lang.Comparable getKey(int)>(i1)
+org.jfree.data.DefaultKeyedValues.equals : $z0 = r1 instanceof org.jfree.data.KeyedValues
+org.jfree.data.DefaultKeyedValues.equals : r6 = interfaceinvoke r2.<org.jfree.data.KeyedValues: java.lang.Number getValue(int)>(i1)
+org.jfree.data.DefaultKeyedValues.equals : $z1 = virtualinvoke r3.<java.lang.Object: boolean equals(java.lang.Object)>(r4)
+org.jfree.data.DefaultKeyedValues.equals : $z2 = virtualinvoke r5.<java.lang.Object: boolean equals(java.lang.Object)>(r6)
+org.jfree.data.DefaultKeyedValues.equals : r5 = virtualinvoke r0.<org.jfree.data.DefaultKeyedValues: java.lang.Number getValue(int)>(i1)
+org.jfree.data.DefaultKeyedValues.equals : i0 = virtualinvoke r0.<org.jfree.data.DefaultKeyedValues: int getItemCount()>()
+org.jfree.data.DefaultKeyedValues.equals : return 1
+org.jfree.data.DefaultKeyedValues.equals : r3 = virtualinvoke r0.<org.jfree.data.DefaultKeyedValues: java.lang.Comparable getKey(int)>(i1)
+org.jfree.data.DefaultKeyedValues.getValue : $r1 = r0.<org.jfree.data.DefaultKeyedValues: java.util.ArrayList values>

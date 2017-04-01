@@ -1,0 +1,10 @@
+org.joda.time.chrono.BasicChronology.getWeekyear : i1 = virtualinvoke r0.<org.joda.time.chrono.BasicChronology: int getYear(long)>(l0) >>>>>>>> org.joda.time.chrono.BasicChronology.getWeekyear : i2 = virtualinvoke r0.<org.joda.time.chrono.BasicChronology: int getWeekOfWeekyear(long,int)>(l0, i1)
+org.joda.time.chrono.BasicChronology.getWeekyear : i2 = virtualinvoke r0.<org.joda.time.chrono.BasicChronology: int getWeekOfWeekyear(long,int)>(l0, i1) >>>>>>>> org.joda.time.chrono.BasicChronology.getWeekyear : if i2 != 1
+org.joda.time.chrono.BasicChronology.getWeekyear : if i2 != 1 >>>>>>>> org.joda.time.chrono.BasicChronology.getWeekyear : $l3 = l0 + 604800000L
+org.joda.time.chrono.BasicChronology.getWeekyear : if i2 != 1 >>>>>>>> org.joda.time.chrono.BasicChronology.getWeekyear : if i2 <= 51
+org.joda.time.chrono.BasicChronology.getWeekyear : if i2 <= 51 >>>>>>>> org.joda.time.chrono.BasicChronology.getWeekyear : $l5 = l0 - 1209600000L
+org.joda.time.chrono.BasicChronology.getWeekyear : if i2 <= 51 >>>>>>>> org.joda.time.chrono.BasicChronology.getWeekyear : return i1
+org.joda.time.chrono.BasicChronology.getWeekyear : $l5 = l0 - 1209600000L >>>>>>>> org.joda.time.chrono.BasicChronology.getWeekyear : $i6 = virtualinvoke r0.<org.joda.time.chrono.BasicChronology: int getYear(long)>($l5)
+org.joda.time.chrono.BasicChronology.getWeekyear : $i6 = virtualinvoke r0.<org.joda.time.chrono.BasicChronology: int getYear(long)>($l5) >>>>>>>> org.joda.time.chrono.BasicChronology.getWeekyear : return $i6
+org.joda.time.chrono.BasicChronology.getWeekyear : $l3 = l0 + 604800000L >>>>>>>> org.joda.time.chrono.BasicChronology.getWeekyear : $i4 = virtualinvoke r0.<org.joda.time.chrono.BasicChronology: int getYear(long)>($l3)
+org.joda.time.chrono.BasicChronology.getWeekyear : $i4 = virtualinvoke r0.<org.joda.time.chrono.BasicChronology: int getYear(long)>($l3) >>>>>>>> org.joda.time.chrono.BasicChronology.getWeekyear : return $i4

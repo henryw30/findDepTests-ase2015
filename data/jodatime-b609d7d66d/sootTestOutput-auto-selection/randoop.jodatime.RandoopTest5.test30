@@ -1,0 +1,10 @@
+org.joda.time.tz.FixedDateTimeZone.isFixed : return 1 >>>>>>>> org.joda.time.tz.FixedDateTimeZone.toTimeZone : r1 = virtualinvoke r0.<org.joda.time.tz.FixedDateTimeZone: java.lang.String getID()>()
+org.joda.time.tz.FixedDateTimeZone.toTimeZone : r1 = virtualinvoke r0.<org.joda.time.tz.FixedDateTimeZone: java.lang.String getID()>() >>>>>>>> org.joda.time.DateTimeZone.getID : $r1 = r0.<org.joda.time.DateTimeZone: java.lang.String iID>
+org.joda.time.DateTimeZone.getID : $r1 = r0.<org.joda.time.DateTimeZone: java.lang.String iID> >>>>>>>> org.joda.time.DateTimeZone.getID : return $r1
+org.joda.time.DateTimeZone.getID : return $r1 >>>>>>>> org.joda.time.tz.FixedDateTimeZone.toTimeZone : $i0 = virtualinvoke r1.<java.lang.String: int length()>()
+org.joda.time.tz.FixedDateTimeZone.toTimeZone : $i0 = virtualinvoke r1.<java.lang.String: int length()>() >>>>>>>> org.joda.time.tz.FixedDateTimeZone.toTimeZone : if $i0 != 6
+org.joda.time.tz.FixedDateTimeZone.toTimeZone : if $i0 != 6 >>>>>>>> org.joda.time.tz.FixedDateTimeZone.toTimeZone : $r8 = new java.util.SimpleTimeZone
+org.joda.time.tz.FixedDateTimeZone.toTimeZone : $r8 = new java.util.SimpleTimeZone >>>>>>>> org.joda.time.tz.FixedDateTimeZone.toTimeZone : $i1 = r0.<org.joda.time.tz.FixedDateTimeZone: int iWallOffset>
+org.joda.time.tz.FixedDateTimeZone.toTimeZone : $i1 = r0.<org.joda.time.tz.FixedDateTimeZone: int iWallOffset> >>>>>>>> org.joda.time.tz.FixedDateTimeZone.toTimeZone : $r9 = virtualinvoke r0.<org.joda.time.tz.FixedDateTimeZone: java.lang.String getID()>()
+org.joda.time.tz.FixedDateTimeZone.toTimeZone : $r9 = virtualinvoke r0.<org.joda.time.tz.FixedDateTimeZone: java.lang.String getID()>() >>>>>>>> org.joda.time.tz.FixedDateTimeZone.toTimeZone : specialinvoke $r8.<java.util.SimpleTimeZone: void <init>(int,java.lang.String)>($i1, $r9)
+org.joda.time.tz.FixedDateTimeZone.toTimeZone : specialinvoke $r8.<java.util.SimpleTimeZone: void <init>(int,java.lang.String)>($i1, $r9) >>>>>>>> org.joda.time.tz.FixedDateTimeZone.toTimeZone : return $r8

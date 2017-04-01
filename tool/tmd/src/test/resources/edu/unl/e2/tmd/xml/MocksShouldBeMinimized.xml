@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<test-data>
+    <test-code>
+        <description><![CDATA[
+simple failure case
+     ]]></description>
+        <expected-problems>1</expected-problems>
+        <code><![CDATA[
+import static org.mockito.Mockito.*;
+import static org.mockito.Mockito.when;
+import static org.mockito.Mockito.verify;
+
+import org.junit.Test;
+
+
+public class BadTest {
+
+@Test
+public void testName() throws Exception {
+	OneInferface mock=mock(OneInferface.class);
+	
+	when(mock.doSomething()).thenReturn(1);
+	
+	
+	verify(mock).doSomething();
+		
+}
+
+}
+     ]]></code>
+    </test-code>
+    <test-code>
+        <description><![CDATA[
+simple failure case
+     ]]></description>
+        <expected-problems>0</expected-problems>
+        <code><![CDATA[
+import static org.mockito.Mockito.*;
+import static org.mockito.Mockito.when;
+import static org.mockito.Mockito.verify;
+
+import org.junit.Test;
+
+
+public class BadTest {
+
+@Test
+public void testName() throws Exception {
+	OneInferface mock=mock(OneInferface.class);
+	
+	when(mock.doSomething()).thenReturn(1);
+			
+}
+
+}
+     ]]></code>
+    </test-code>
+
+</test-data>

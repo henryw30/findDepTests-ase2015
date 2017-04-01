@@ -1,0 +1,18 @@
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null >>>>>>>> org.jfree.data.gantt.Task.getSubtaskCount : $r1 = r0.<org.jfree.data.gantt.Task: java.util.List subtasks>
+org.jfree.data.gantt.Task.getSubtaskCount : $r1 = r0.<org.jfree.data.gantt.Task: java.util.List subtasks> >>>>>>>> org.jfree.data.gantt.Task.getSubtaskCount : $i0 = interfaceinvoke $r1.<java.util.List: int size()>()
+org.jfree.data.gantt.Task.getSubtaskCount : $i0 = interfaceinvoke $r1.<java.util.List: int size()>() >>>>>>>> org.jfree.data.gantt.Task.getSubtaskCount : return $i0
+org.jfree.data.gantt.Task.getSubtaskCount : return $i0 >>>>>>>> org.jfree.data.gantt.Task.addSubtask : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "subtask")
+org.jfree.data.gantt.Task.addSubtask : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "subtask") >>>>>>>> org.jfree.data.gantt.Task.addSubtask : $r2 = r0.<org.jfree.data.gantt.Task: java.util.List subtasks>
+org.jfree.data.gantt.Task.addSubtask : $r2 = r0.<org.jfree.data.gantt.Task: java.util.List subtasks> >>>>>>>> org.jfree.data.gantt.Task.addSubtask : interfaceinvoke $r2.<java.util.List: boolean add(java.lang.Object)>(r1)
+org.jfree.data.gantt.Task.addSubtask : interfaceinvoke $r2.<java.util.List: boolean add(java.lang.Object)>(r1) >>>>>>>> org.jfree.data.gantt.Task.removeSubtask : $r2 = r0.<org.jfree.data.gantt.Task: java.util.List subtasks>
+org.jfree.data.gantt.Task.removeSubtask : $r2 = r0.<org.jfree.data.gantt.Task: java.util.List subtasks> >>>>>>>> org.jfree.data.gantt.Task.removeSubtask : interfaceinvoke $r2.<java.util.List: boolean remove(java.lang.Object)>(r1)
+org.jfree.data.gantt.Task.removeSubtask : interfaceinvoke $r2.<java.util.List: boolean remove(java.lang.Object)>(r1) >>>>>>>> org.jfree.data.gantt.Task.equals : if r1 != r0
+org.jfree.data.gantt.Task.equals : if r1 != r0 >>>>>>>> org.jfree.data.gantt.Task.equals : $z0 = r1 instanceof org.jfree.data.gantt.Task
+org.jfree.data.gantt.Task.equals : $z0 = r1 instanceof org.jfree.data.gantt.Task >>>>>>>> org.jfree.data.gantt.Task.equals : if $z0 != 0
+org.jfree.data.gantt.Task.equals : if $z0 != 0 >>>>>>>> org.jfree.data.gantt.Task.equals : r2 = (org.jfree.data.gantt.Task) r1
+org.jfree.data.gantt.Task.equals : r2 = (org.jfree.data.gantt.Task) r1 >>>>>>>> org.jfree.data.gantt.Task.equals : $r3 = r0.<org.jfree.data.gantt.Task: java.lang.String description>
+org.jfree.data.gantt.Task.equals : $r3 = r0.<org.jfree.data.gantt.Task: java.lang.String description> >>>>>>>> org.jfree.data.gantt.Task.equals : $r4 = r2.<org.jfree.data.gantt.Task: java.lang.String description>
+org.jfree.data.gantt.Task.equals : $r4 = r2.<org.jfree.data.gantt.Task: java.lang.String description> >>>>>>>> org.jfree.data.gantt.Task.equals : $z1 = staticinvoke <org.jfree.util.ObjectUtilities: boolean equal(java.lang.Object,java.lang.Object)>($r3, $r4)
+org.jfree.data.gantt.Task.equals : $z1 = staticinvoke <org.jfree.util.ObjectUtilities: boolean equal(java.lang.Object,java.lang.Object)>($r3, $r4) >>>>>>>> org.jfree.data.gantt.Task.equals : if $z1 != 0
+org.jfree.data.gantt.Task.equals : if $z1 != 0 >>>>>>>> org.jfree.data.gantt.Task.equals : return 0
+org.jfree.data.gantt.Task.equals : return 0 >>>>>>>> org.jfree.data.gantt.Task.equals : return 1

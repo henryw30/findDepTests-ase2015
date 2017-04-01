@@ -1,0 +1,62 @@
+org.jfree.chart.ChartPanel.mousePressed : $r5 = r0.<org.jfree.chart.ChartPanel: org.jfree.chart.JFreeChart chart> >>>>>>>> org.jfree.chart.ChartPanel.mousePressed : if $r5 != null
+org.jfree.chart.ChartPanel.mousePressed : if $r5 != null >>>>>>>> org.jfree.chart.ChartPanel.mousePressed : return
+org.jfree.chart.ChartPanel.mousePressed : if $r5 != null >>>>>>>> org.jfree.chart.ChartPanel.mousePressed : $r6 = r0.<org.jfree.chart.ChartPanel: org.jfree.chart.JFreeChart chart>
+org.jfree.chart.ChartPanel.mousePressed : $r6 = r0.<org.jfree.chart.ChartPanel: org.jfree.chart.JFreeChart chart> >>>>>>>> org.jfree.chart.ChartPanel.mousePressed : r2 = virtualinvoke $r6.<org.jfree.chart.JFreeChart: org.jfree.chart.plot.Plot getPlot()>()
+org.jfree.chart.ChartPanel.mousePressed : r2 = virtualinvoke $r6.<org.jfree.chart.JFreeChart: org.jfree.chart.plot.Plot getPlot()>() >>>>>>>> org.jfree.chart.ChartPanel.mousePressed : i0 = virtualinvoke r1.<java.awt.event.MouseEvent: int getModifiers()>()
+org.jfree.chart.ChartPanel.mousePressed : i0 = virtualinvoke r1.<java.awt.event.MouseEvent: int getModifiers()>() >>>>>>>> org.jfree.chart.ChartPanel.mousePressed : $i1 = r0.<org.jfree.chart.ChartPanel: int panMask>
+org.jfree.chart.ChartPanel.mousePressed : $i1 = r0.<org.jfree.chart.ChartPanel: int panMask> >>>>>>>> org.jfree.chart.ChartPanel.mousePressed : $i2 = i0 & $i1
+org.jfree.chart.ChartPanel.mousePressed : $i2 = i0 & $i1 >>>>>>>> org.jfree.chart.ChartPanel.mousePressed : $i3 = r0.<org.jfree.chart.ChartPanel: int panMask>
+org.jfree.chart.ChartPanel.mousePressed : $i3 = r0.<org.jfree.chart.ChartPanel: int panMask> >>>>>>>> org.jfree.chart.ChartPanel.mousePressed : if $i2 != $i3
+org.jfree.chart.ChartPanel.mousePressed : if $i2 != $i3 >>>>>>>> org.jfree.chart.ChartPanel.mousePressed : $z0 = r2 instanceof org.jfree.chart.plot.Pannable
+org.jfree.chart.ChartPanel.mousePressed : if $i2 != $i3 >>>>>>>> org.jfree.chart.ChartPanel.mousePressed : $r10 = r0.<org.jfree.chart.ChartPanel: java.awt.geom.Rectangle2D zoomRectangle>
+org.jfree.chart.ChartPanel.mousePressed : $r10 = r0.<org.jfree.chart.ChartPanel: java.awt.geom.Rectangle2D zoomRectangle> >>>>>>>> org.jfree.chart.ChartPanel.mousePressed : if $r10 != null
+org.jfree.chart.ChartPanel.mousePressed : if $r10 != null >>>>>>>> org.jfree.chart.ChartPanel.mousePressed : $i6 = virtualinvoke r1.<java.awt.event.MouseEvent: int getX()>()
+org.jfree.chart.ChartPanel.mousePressed : if $r10 != null >>>>>>>> org.jfree.chart.ChartPanel.mousePressed : return
+org.jfree.chart.ChartPanel.mousePressed : $i6 = virtualinvoke r1.<java.awt.event.MouseEvent: int getX()>() >>>>>>>> org.jfree.chart.ChartPanel.mousePressed : $i7 = virtualinvoke r1.<java.awt.event.MouseEvent: int getY()>()
+org.jfree.chart.ChartPanel.mousePressed : $i7 = virtualinvoke r1.<java.awt.event.MouseEvent: int getY()>() >>>>>>>> org.jfree.chart.ChartPanel.mousePressed : r11 = virtualinvoke r0.<org.jfree.chart.ChartPanel: java.awt.geom.Rectangle2D getScreenDataArea(int,int)>($i6, $i7)
+org.jfree.chart.ChartPanel.mousePressed : r11 = virtualinvoke r0.<org.jfree.chart.ChartPanel: java.awt.geom.Rectangle2D getScreenDataArea(int,int)>($i6, $i7) >>>>>>>> org.jfree.chart.ChartPanel.mousePressed : if r11 == null
+org.jfree.chart.ChartPanel.mousePressed : if r11 == null >>>>>>>> org.jfree.chart.ChartPanel.mousePressed : $i8 = virtualinvoke r1.<java.awt.event.MouseEvent: int getX()>()
+org.jfree.chart.ChartPanel.mousePressed : if r11 == null >>>>>>>> org.jfree.chart.ChartPanel.mousePressed : r0.<org.jfree.chart.ChartPanel: java.awt.geom.Point2D zoomPoint> = null
+org.jfree.chart.ChartPanel.mousePressed : r0.<org.jfree.chart.ChartPanel: java.awt.geom.Point2D zoomPoint> = null >>>>>>>> org.jfree.chart.ChartPanel.mousePressed : $z4 = virtualinvoke r1.<java.awt.event.MouseEvent: boolean isPopupTrigger()>()
+org.jfree.chart.ChartPanel.mousePressed : $z4 = virtualinvoke r1.<java.awt.event.MouseEvent: boolean isPopupTrigger()>() >>>>>>>> org.jfree.chart.ChartPanel.mousePressed : if $z4 == 0
+org.jfree.chart.ChartPanel.mousePressed : if $z4 == 0 >>>>>>>> org.jfree.chart.ChartPanel.mousePressed : $r13 = r0.<org.jfree.chart.ChartPanel: javax.swing.JPopupMenu popup>
+org.jfree.chart.ChartPanel.mousePressed : if $z4 == 0 >>>>>>>> org.jfree.chart.ChartPanel.mousePressed : return
+org.jfree.chart.ChartPanel.mousePressed : $r13 = r0.<org.jfree.chart.ChartPanel: javax.swing.JPopupMenu popup> >>>>>>>> org.jfree.chart.ChartPanel.mousePressed : if $r13 == null
+org.jfree.chart.ChartPanel.mousePressed : if $r13 == null >>>>>>>> org.jfree.chart.ChartPanel.mousePressed : $i10 = virtualinvoke r1.<java.awt.event.MouseEvent: int getX()>()
+org.jfree.chart.ChartPanel.mousePressed : if $r13 == null >>>>>>>> org.jfree.chart.ChartPanel.mousePressed : return
+org.jfree.chart.ChartPanel.mousePressed : $i10 = virtualinvoke r1.<java.awt.event.MouseEvent: int getX()>() >>>>>>>> org.jfree.chart.ChartPanel.mousePressed : $i11 = virtualinvoke r1.<java.awt.event.MouseEvent: int getY()>()
+org.jfree.chart.ChartPanel.mousePressed : $i11 = virtualinvoke r1.<java.awt.event.MouseEvent: int getY()>() >>>>>>>> org.jfree.chart.ChartPanel.mousePressed : virtualinvoke r0.<org.jfree.chart.ChartPanel: void displayPopupMenu(int,int)>($i10, $i11)
+org.jfree.chart.ChartPanel.mousePressed : virtualinvoke r0.<org.jfree.chart.ChartPanel: void displayPopupMenu(int,int)>($i10, $i11) >>>>>>>> org.jfree.chart.ChartPanel.mousePressed : return
+org.jfree.chart.ChartPanel.mousePressed : $i8 = virtualinvoke r1.<java.awt.event.MouseEvent: int getX()>() >>>>>>>> org.jfree.chart.ChartPanel.mousePressed : $i9 = virtualinvoke r1.<java.awt.event.MouseEvent: int getY()>()
+org.jfree.chart.ChartPanel.mousePressed : $i9 = virtualinvoke r1.<java.awt.event.MouseEvent: int getY()>() >>>>>>>> org.jfree.chart.ChartPanel.mousePressed : $r12 = specialinvoke r0.<org.jfree.chart.ChartPanel: java.awt.geom.Point2D getPointInRectangle(int,int,java.awt.geom.Rectangle2D)>($i8, $i9, r11)
+org.jfree.chart.ChartPanel.mousePressed : $r12 = specialinvoke r0.<org.jfree.chart.ChartPanel: java.awt.geom.Point2D getPointInRectangle(int,int,java.awt.geom.Rectangle2D)>($i8, $i9, r11) >>>>>>>> org.jfree.chart.ChartPanel.mousePressed : r0.<org.jfree.chart.ChartPanel: java.awt.geom.Point2D zoomPoint> = $r12
+org.jfree.chart.ChartPanel.mousePressed : r0.<org.jfree.chart.ChartPanel: java.awt.geom.Point2D zoomPoint> = $r12 >>>>>>>> org.jfree.chart.ChartPanel.mousePressed : goto [?= $z4 = virtualinvoke r1.<java.awt.event.MouseEvent: boolean isPopupTrigger()>()]
+org.jfree.chart.ChartPanel.mousePressed : goto [?= $z4 = virtualinvoke r1.<java.awt.event.MouseEvent: boolean isPopupTrigger()>()] >>>>>>>> org.jfree.chart.ChartPanel.mousePressed : $z4 = virtualinvoke r1.<java.awt.event.MouseEvent: boolean isPopupTrigger()>()
+org.jfree.chart.ChartPanel.mousePressed : $z0 = r2 instanceof org.jfree.chart.plot.Pannable >>>>>>>> org.jfree.chart.ChartPanel.mousePressed : if $z0 == 0
+org.jfree.chart.ChartPanel.mousePressed : if $z0 == 0 >>>>>>>> org.jfree.chart.ChartPanel.mousePressed : r3 = (org.jfree.chart.plot.Pannable) r2
+org.jfree.chart.ChartPanel.mousePressed : if $z0 == 0 >>>>>>>> org.jfree.chart.ChartPanel.mousePressed : return
+org.jfree.chart.ChartPanel.mousePressed : r3 = (org.jfree.chart.plot.Pannable) r2 >>>>>>>> org.jfree.chart.ChartPanel.mousePressed : $z1 = interfaceinvoke r3.<org.jfree.chart.plot.Pannable: boolean isDomainPannable()>()
+org.jfree.chart.ChartPanel.mousePressed : $z1 = interfaceinvoke r3.<org.jfree.chart.plot.Pannable: boolean isDomainPannable()>() >>>>>>>> org.jfree.chart.ChartPanel.mousePressed : if $z1 != 0
+org.jfree.chart.ChartPanel.mousePressed : if $z1 != 0 >>>>>>>> org.jfree.chart.ChartPanel.mousePressed : $z2 = interfaceinvoke r3.<org.jfree.chart.plot.Pannable: boolean isRangePannable()>()
+org.jfree.chart.ChartPanel.mousePressed : if $z1 != 0 >>>>>>>> org.jfree.chart.ChartPanel.mousePressed : $i4 = virtualinvoke r1.<java.awt.event.MouseEvent: int getX()>()
+org.jfree.chart.ChartPanel.mousePressed : $i4 = virtualinvoke r1.<java.awt.event.MouseEvent: int getX()>() >>>>>>>> org.jfree.chart.ChartPanel.mousePressed : $i5 = virtualinvoke r1.<java.awt.event.MouseEvent: int getY()>()
+org.jfree.chart.ChartPanel.mousePressed : $i5 = virtualinvoke r1.<java.awt.event.MouseEvent: int getY()>() >>>>>>>> org.jfree.chart.ChartPanel.mousePressed : r4 = virtualinvoke r0.<org.jfree.chart.ChartPanel: java.awt.geom.Rectangle2D getScreenDataArea(int,int)>($i4, $i5)
+org.jfree.chart.ChartPanel.mousePressed : r4 = virtualinvoke r0.<org.jfree.chart.ChartPanel: java.awt.geom.Rectangle2D getScreenDataArea(int,int)>($i4, $i5) >>>>>>>> org.jfree.chart.ChartPanel.mousePressed : if r4 == null
+org.jfree.chart.ChartPanel.mousePressed : if r4 == null >>>>>>>> org.jfree.chart.ChartPanel.mousePressed : $r7 = virtualinvoke r1.<java.awt.event.MouseEvent: java.awt.Point getPoint()>()
+org.jfree.chart.ChartPanel.mousePressed : if r4 == null >>>>>>>> org.jfree.chart.ChartPanel.mousePressed : goto [?= return]
+org.jfree.chart.ChartPanel.mousePressed : goto [?= return] >>>>>>>> org.jfree.chart.ChartPanel.mousePressed : return
+org.jfree.chart.ChartPanel.mousePressed : $r7 = virtualinvoke r1.<java.awt.event.MouseEvent: java.awt.Point getPoint()>() >>>>>>>> org.jfree.chart.ChartPanel.mousePressed : $z3 = virtualinvoke r4.<java.awt.geom.Rectangle2D: boolean contains(java.awt.geom.Point2D)>($r7)
+org.jfree.chart.ChartPanel.mousePressed : $z3 = virtualinvoke r4.<java.awt.geom.Rectangle2D: boolean contains(java.awt.geom.Point2D)>($r7) >>>>>>>> org.jfree.chart.ChartPanel.mousePressed : if $z3 == 0
+org.jfree.chart.ChartPanel.mousePressed : if $z3 == 0 >>>>>>>> org.jfree.chart.ChartPanel.mousePressed : $d0 = virtualinvoke r4.<java.awt.geom.Rectangle2D: double getWidth()>()
+org.jfree.chart.ChartPanel.mousePressed : if $z3 == 0 >>>>>>>> org.jfree.chart.ChartPanel.mousePressed : goto [?= return]
+org.jfree.chart.ChartPanel.mousePressed : $d0 = virtualinvoke r4.<java.awt.geom.Rectangle2D: double getWidth()>() >>>>>>>> org.jfree.chart.ChartPanel.mousePressed : r0.<org.jfree.chart.ChartPanel: double panW> = $d0
+org.jfree.chart.ChartPanel.mousePressed : r0.<org.jfree.chart.ChartPanel: double panW> = $d0 >>>>>>>> org.jfree.chart.ChartPanel.mousePressed : $d1 = virtualinvoke r4.<java.awt.geom.Rectangle2D: double getHeight()>()
+org.jfree.chart.ChartPanel.mousePressed : $d1 = virtualinvoke r4.<java.awt.geom.Rectangle2D: double getHeight()>() >>>>>>>> org.jfree.chart.ChartPanel.mousePressed : r0.<org.jfree.chart.ChartPanel: double panH> = $d1
+org.jfree.chart.ChartPanel.mousePressed : r0.<org.jfree.chart.ChartPanel: double panH> = $d1 >>>>>>>> org.jfree.chart.ChartPanel.mousePressed : $r8 = virtualinvoke r1.<java.awt.event.MouseEvent: java.awt.Point getPoint()>()
+org.jfree.chart.ChartPanel.mousePressed : $r8 = virtualinvoke r1.<java.awt.event.MouseEvent: java.awt.Point getPoint()>() >>>>>>>> org.jfree.chart.ChartPanel.mousePressed : r0.<org.jfree.chart.ChartPanel: java.awt.Point panLast> = $r8
+org.jfree.chart.ChartPanel.mousePressed : r0.<org.jfree.chart.ChartPanel: java.awt.Point panLast> = $r8 >>>>>>>> org.jfree.chart.ChartPanel.mousePressed : $r9 = staticinvoke <java.awt.Cursor: java.awt.Cursor getPredefinedCursor(int)>(13)
+org.jfree.chart.ChartPanel.mousePressed : $r9 = staticinvoke <java.awt.Cursor: java.awt.Cursor getPredefinedCursor(int)>(13) >>>>>>>> org.jfree.chart.ChartPanel.mousePressed : virtualinvoke r0.<org.jfree.chart.ChartPanel: void setCursor(java.awt.Cursor)>($r9)
+org.jfree.chart.ChartPanel.mousePressed : virtualinvoke r0.<org.jfree.chart.ChartPanel: void setCursor(java.awt.Cursor)>($r9) >>>>>>>> org.jfree.chart.ChartPanel.mousePressed : goto [?= return]
+org.jfree.chart.ChartPanel.mousePressed : $z2 = interfaceinvoke r3.<org.jfree.chart.plot.Pannable: boolean isRangePannable()>() >>>>>>>> org.jfree.chart.ChartPanel.mousePressed : if $z2 == 0
+org.jfree.chart.ChartPanel.mousePressed : if $z2 == 0 >>>>>>>> org.jfree.chart.ChartPanel.mousePressed : $i4 = virtualinvoke r1.<java.awt.event.MouseEvent: int getX()>()
+org.jfree.chart.ChartPanel.mousePressed : if $z2 == 0 >>>>>>>> org.jfree.chart.ChartPanel.mousePressed : goto [?= return]

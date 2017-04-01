@@ -1,0 +1,19 @@
+org.jfree.chart.PaintMap.put : $r3 = r0.<org.jfree.chart.PaintMap: java.util.Map store>
+org.jfree.chart.PaintMap.put : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "key")
+org.jfree.chart.PaintMap.equals : $r8 = r0.<org.jfree.chart.PaintMap: java.util.Map store>
+org.jfree.chart.PaintMap.equals : $r11 = interfaceinvoke r4.<java.util.Iterator: java.lang.Object next()>()
+org.jfree.chart.PaintMap.equals : r4 = interfaceinvoke r3.<java.util.Set: java.util.Iterator iterator()>()
+org.jfree.chart.PaintMap.equals : $r10 = r0.<org.jfree.chart.PaintMap: java.util.Map store>
+org.jfree.chart.PaintMap.equals : r7 = virtualinvoke r2.<org.jfree.chart.PaintMap: java.awt.Paint getPaint(java.lang.Comparable)>(r5)
+org.jfree.chart.PaintMap.equals : $z2 = staticinvoke <org.jfree.util.PaintUtilities: boolean equal(java.awt.Paint,java.awt.Paint)>(r6, r7)
+org.jfree.chart.PaintMap.equals : r6 = virtualinvoke r0.<org.jfree.chart.PaintMap: java.awt.Paint getPaint(java.lang.Comparable)>(r5)
+org.jfree.chart.PaintMap.equals : r2 = (org.jfree.chart.PaintMap) r1
+org.jfree.chart.PaintMap.equals : if r1 != r0 goto $z0 = r1 instanceof org.jfree.chart.PaintMap
+org.jfree.chart.PaintMap.equals : $z1 = interfaceinvoke r4.<java.util.Iterator: boolean hasNext()>()
+org.jfree.chart.PaintMap.equals : return 1
+org.jfree.chart.PaintMap.equals : goto [?= staticinvoke <edu.washington.cs.dt.impact.util.Tracer: void trace(java.lang.String,java.lang.String)>("$z1 = interfaceinvoke r4.<java.util.Iterator: boolean hasNext()>()", "org.jfree.chart.PaintMap.equals")]
+org.jfree.chart.PaintMap.equals : $z0 = r1 instanceof org.jfree.chart.PaintMap
+org.jfree.chart.PaintMap.clone : $r1 = specialinvoke r0.<java.lang.Object: java.lang.Object clone()>()
+org.jfree.chart.PaintMap.getPaint : $r2 = r0.<org.jfree.chart.PaintMap: java.util.Map store>
+org.jfree.chart.PaintMap.getPaint : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "key")
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null goto return

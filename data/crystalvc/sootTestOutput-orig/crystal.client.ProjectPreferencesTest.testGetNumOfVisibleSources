@@ -1,0 +1,16 @@
+crystal.client.ProjectPreferences.getDataSources : $r1 = r0.<crystal.client.ProjectPreferences: java.util.Vector _dataSources>
+crystal.model.DataSource.setParent : if r1 == null goto r0.<crystal.model.DataSource: java.lang.String _parent> = null
+crystal.model.DataSource.setParent : r0.<crystal.model.DataSource: java.lang.String _parent> = r1
+crystal.client.ProjectPreferences.getNumOfVisibleSources : return i0
+crystal.client.ProjectPreferences.getNumOfVisibleSources : i0 = i0 + 1
+crystal.client.ProjectPreferences.getNumOfVisibleSources : goto [?= $z0 = interfaceinvoke r1.<java.util.Iterator: boolean hasNext()>()]
+crystal.client.ProjectPreferences.getNumOfVisibleSources : i0 = 0
+crystal.client.ProjectPreferences.getNumOfVisibleSources : $z1 = virtualinvoke r2.<crystal.model.DataSource: boolean isHidden()>()
+crystal.client.ProjectPreferences.getNumOfVisibleSources : $r3 = r0.<crystal.client.ProjectPreferences: java.util.Vector _dataSources>
+crystal.model.DataSource.isHidden : $z0 = r0.<crystal.model.DataSource: boolean _hide>
+crystal.util.ValidInputChecker.checkValidStringInput : if r0 == null goto $r2 = new java.lang.IllegalArgumentException
+crystal.model.DataSource.getShortName : $r1 = r0.<crystal.model.DataSource: java.lang.String _shortName>
+crystal.client.ProjectPreferences.addDataSource : $r5 = r0.<crystal.client.ProjectPreferences: java.util.Vector _dataSources>
+crystal.client.ProjectPreferences.addDataSource : goto [?= $z0 = interfaceinvoke r2.<java.util.Iterator: boolean hasNext()>()]
+crystal.client.ProjectPreferences.addDataSource : $r7 = virtualinvoke r3.<crystal.model.DataSource: java.lang.String getShortName()>()
+crystal.client.ProjectPreferences.addDataSource : $r18 = r0.<crystal.client.ProjectPreferences: java.util.Vector _dataSources>

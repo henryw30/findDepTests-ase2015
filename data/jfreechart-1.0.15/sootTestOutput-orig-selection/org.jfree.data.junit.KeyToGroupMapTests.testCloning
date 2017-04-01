@@ -1,0 +1,101 @@
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null >>>>>>>> org.jfree.data.KeyToGroupMap.mapKeyToGroup : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "key")
+org.jfree.data.KeyToGroupMap.mapKeyToGroup : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "key") >>>>>>>> org.jfree.data.KeyToGroupMap.mapKeyToGroup : r3 = virtualinvoke r0.<org.jfree.data.KeyToGroupMap: java.lang.Comparable getGroup(java.lang.Comparable)>(r1)
+org.jfree.data.KeyToGroupMap.mapKeyToGroup : r3 = virtualinvoke r0.<org.jfree.data.KeyToGroupMap: java.lang.Comparable getGroup(java.lang.Comparable)>(r1) >>>>>>>> org.jfree.data.KeyToGroupMap.getGroup : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "key")
+org.jfree.data.KeyToGroupMap.getGroup : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "key") >>>>>>>> org.jfree.data.KeyToGroupMap.getGroup : r2 = r0.<org.jfree.data.KeyToGroupMap: java.lang.Comparable defaultGroup>
+org.jfree.data.KeyToGroupMap.getGroup : r2 = r0.<org.jfree.data.KeyToGroupMap: java.lang.Comparable defaultGroup> >>>>>>>> org.jfree.data.KeyToGroupMap.getGroup : $r4 = r0.<org.jfree.data.KeyToGroupMap: java.util.Map keyToGroupMap>
+org.jfree.data.KeyToGroupMap.getGroup : $r4 = r0.<org.jfree.data.KeyToGroupMap: java.util.Map keyToGroupMap> >>>>>>>> org.jfree.data.KeyToGroupMap.getGroup : $r5 = interfaceinvoke $r4.<java.util.Map: java.lang.Object get(java.lang.Object)>(r1)
+org.jfree.data.KeyToGroupMap.getGroup : $r5 = interfaceinvoke $r4.<java.util.Map: java.lang.Object get(java.lang.Object)>(r1) >>>>>>>> org.jfree.data.KeyToGroupMap.getGroup : r3 = (java.lang.Comparable) $r5
+org.jfree.data.KeyToGroupMap.getGroup : r3 = (java.lang.Comparable) $r5 >>>>>>>> org.jfree.data.KeyToGroupMap.getGroup : if r3 == null
+org.jfree.data.KeyToGroupMap.getGroup : if r3 == null >>>>>>>> org.jfree.data.KeyToGroupMap.getGroup : return r2
+org.jfree.data.KeyToGroupMap.getGroup : return r2 >>>>>>>> org.jfree.data.KeyToGroupMap.mapKeyToGroup : $r4 = r0.<org.jfree.data.KeyToGroupMap: java.lang.Comparable defaultGroup>
+org.jfree.data.KeyToGroupMap.mapKeyToGroup : $r4 = r0.<org.jfree.data.KeyToGroupMap: java.lang.Comparable defaultGroup> >>>>>>>> org.jfree.data.KeyToGroupMap.mapKeyToGroup : $z0 = virtualinvoke r3.<java.lang.Object: boolean equals(java.lang.Object)>($r4)
+org.jfree.data.KeyToGroupMap.mapKeyToGroup : $z0 = virtualinvoke r3.<java.lang.Object: boolean equals(java.lang.Object)>($r4) >>>>>>>> org.jfree.data.KeyToGroupMap.mapKeyToGroup : if $z0 != 0
+org.jfree.data.KeyToGroupMap.mapKeyToGroup : if $z0 != 0 >>>>>>>> org.jfree.data.KeyToGroupMap.mapKeyToGroup : if r2 != null
+org.jfree.data.KeyToGroupMap.mapKeyToGroup : if r2 != null >>>>>>>> org.jfree.data.KeyToGroupMap.mapKeyToGroup : $r8 = r0.<org.jfree.data.KeyToGroupMap: java.util.List groups>
+org.jfree.data.KeyToGroupMap.mapKeyToGroup : $r8 = r0.<org.jfree.data.KeyToGroupMap: java.util.List groups> >>>>>>>> org.jfree.data.KeyToGroupMap.mapKeyToGroup : $z3 = interfaceinvoke $r8.<java.util.List: boolean contains(java.lang.Object)>(r2)
+org.jfree.data.KeyToGroupMap.mapKeyToGroup : $z3 = interfaceinvoke $r8.<java.util.List: boolean contains(java.lang.Object)>(r2) >>>>>>>> org.jfree.data.KeyToGroupMap.mapKeyToGroup : if $z3 != 0
+org.jfree.data.KeyToGroupMap.mapKeyToGroup : if $z3 != 0 >>>>>>>> org.jfree.data.KeyToGroupMap.mapKeyToGroup : $r9 = r0.<org.jfree.data.KeyToGroupMap: java.lang.Comparable defaultGroup>
+org.jfree.data.KeyToGroupMap.mapKeyToGroup : $r9 = r0.<org.jfree.data.KeyToGroupMap: java.lang.Comparable defaultGroup> >>>>>>>> org.jfree.data.KeyToGroupMap.mapKeyToGroup : $z4 = virtualinvoke $r9.<java.lang.Object: boolean equals(java.lang.Object)>(r2)
+org.jfree.data.KeyToGroupMap.mapKeyToGroup : $z4 = virtualinvoke $r9.<java.lang.Object: boolean equals(java.lang.Object)>(r2) >>>>>>>> org.jfree.data.KeyToGroupMap.mapKeyToGroup : if $z4 != 0
+org.jfree.data.KeyToGroupMap.mapKeyToGroup : if $z4 != 0 >>>>>>>> org.jfree.data.KeyToGroupMap.mapKeyToGroup : $r10 = r0.<org.jfree.data.KeyToGroupMap: java.util.List groups>
+org.jfree.data.KeyToGroupMap.mapKeyToGroup : $r10 = r0.<org.jfree.data.KeyToGroupMap: java.util.List groups> >>>>>>>> org.jfree.data.KeyToGroupMap.mapKeyToGroup : interfaceinvoke $r10.<java.util.List: boolean add(java.lang.Object)>(r2)
+org.jfree.data.KeyToGroupMap.mapKeyToGroup : interfaceinvoke $r10.<java.util.List: boolean add(java.lang.Object)>(r2) >>>>>>>> org.jfree.data.KeyToGroupMap.mapKeyToGroup : $r11 = r0.<org.jfree.data.KeyToGroupMap: java.util.Map keyToGroupMap>
+org.jfree.data.KeyToGroupMap.mapKeyToGroup : $r11 = r0.<org.jfree.data.KeyToGroupMap: java.util.Map keyToGroupMap> >>>>>>>> org.jfree.data.KeyToGroupMap.mapKeyToGroup : interfaceinvoke $r11.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r1, r2)
+org.jfree.data.KeyToGroupMap.mapKeyToGroup : interfaceinvoke $r11.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r1, r2) >>>>>>>> org.jfree.data.KeyToGroupMap.clone : $r2 = specialinvoke r0.<java.lang.Object: java.lang.Object clone()>()
+org.jfree.data.KeyToGroupMap.clone : $r2 = specialinvoke r0.<java.lang.Object: java.lang.Object clone()>() >>>>>>>> org.jfree.data.KeyToGroupMap.clone : r1 = (org.jfree.data.KeyToGroupMap) $r2
+org.jfree.data.KeyToGroupMap.clone : r1 = (org.jfree.data.KeyToGroupMap) $r2 >>>>>>>> org.jfree.data.KeyToGroupMap.clone : $r3 = r0.<org.jfree.data.KeyToGroupMap: java.lang.Comparable defaultGroup>
+org.jfree.data.KeyToGroupMap.clone : $r3 = r0.<org.jfree.data.KeyToGroupMap: java.lang.Comparable defaultGroup> >>>>>>>> org.jfree.data.KeyToGroupMap.clone : $r4 = staticinvoke <org.jfree.data.KeyToGroupMap: java.lang.Object clone(java.lang.Object)>($r3)
+org.jfree.data.KeyToGroupMap.clone : $r4 = staticinvoke <org.jfree.data.KeyToGroupMap: java.lang.Object clone(java.lang.Object)>($r3) >>>>>>>> org.jfree.data.KeyToGroupMap.clone : if r0 != null
+org.jfree.data.KeyToGroupMap.clone : if r0 != null >>>>>>>> org.jfree.data.KeyToGroupMap.clone : r1 = virtualinvoke r0.<java.lang.Object: java.lang.Class getClass()>()
+org.jfree.data.KeyToGroupMap.clone : r1 = virtualinvoke r0.<java.lang.Object: java.lang.Class getClass()>() >>>>>>>> org.jfree.data.KeyToGroupMap.clone : r2 = null
+org.jfree.data.KeyToGroupMap.clone : r2 = null >>>>>>>> org.jfree.data.KeyToGroupMap.clone : $r5 = (java.lang.Class[]) null
+org.jfree.data.KeyToGroupMap.clone : $r5 = (java.lang.Class[]) null >>>>>>>> org.jfree.data.KeyToGroupMap.clone : r3 = virtualinvoke r1.<java.lang.Class: java.lang.reflect.Method getMethod(java.lang.String,java.lang.Class[])>("clone", $r5)
+org.jfree.data.KeyToGroupMap.clone : r3 = virtualinvoke r1.<java.lang.Class: java.lang.reflect.Method getMethod(java.lang.String,java.lang.Class[])>("clone", $r5) >>>>>>>> org.jfree.data.KeyToGroupMap.clone : r9 = $r8
+org.jfree.data.KeyToGroupMap.clone : r9 = $r8 >>>>>>>> org.jfree.data.KeyToGroupMap.clone : r2 = r0
+org.jfree.data.KeyToGroupMap.clone : r2 = r0 >>>>>>>> org.jfree.data.KeyToGroupMap.clone : return r2
+org.jfree.data.KeyToGroupMap.clone : return r2 >>>>>>>> org.jfree.data.KeyToGroupMap.clone : $r5 = (java.lang.Comparable) $r4
+org.jfree.data.KeyToGroupMap.clone : $r5 = (java.lang.Comparable) $r4 >>>>>>>> org.jfree.data.KeyToGroupMap.clone : r1.<org.jfree.data.KeyToGroupMap: java.lang.Comparable defaultGroup> = $r5
+org.jfree.data.KeyToGroupMap.clone : r1.<org.jfree.data.KeyToGroupMap: java.lang.Comparable defaultGroup> = $r5 >>>>>>>> org.jfree.data.KeyToGroupMap.clone : $r6 = r0.<org.jfree.data.KeyToGroupMap: java.util.List groups>
+org.jfree.data.KeyToGroupMap.clone : $r6 = r0.<org.jfree.data.KeyToGroupMap: java.util.List groups> >>>>>>>> org.jfree.data.KeyToGroupMap.clone : $r7 = staticinvoke <org.jfree.data.KeyToGroupMap: java.util.Collection clone(java.util.Collection)>($r6)
+org.jfree.data.KeyToGroupMap.clone : $r7 = staticinvoke <org.jfree.data.KeyToGroupMap: java.util.Collection clone(java.util.Collection)>($r6) >>>>>>>> org.jfree.data.KeyToGroupMap.clone : r1 = null
+org.jfree.data.KeyToGroupMap.clone : r1 = null >>>>>>>> org.jfree.data.KeyToGroupMap.clone : if r0 == null
+org.jfree.data.KeyToGroupMap.clone : if r0 == null >>>>>>>> org.jfree.data.KeyToGroupMap.clone : $r4 = virtualinvoke r0.<java.lang.Object: java.lang.Class getClass()>()
+org.jfree.data.KeyToGroupMap.clone : $r4 = virtualinvoke r0.<java.lang.Object: java.lang.Class getClass()>() >>>>>>>> org.jfree.data.KeyToGroupMap.clone : $r5 = virtualinvoke $r4.<java.lang.Class: java.lang.Object newInstance()>()
+org.jfree.data.KeyToGroupMap.clone : $r5 = virtualinvoke $r4.<java.lang.Class: java.lang.Object newInstance()>() >>>>>>>> org.jfree.data.KeyToGroupMap.clone : r2 = (java.util.List) $r5
+org.jfree.data.KeyToGroupMap.clone : r2 = (java.util.List) $r5 >>>>>>>> org.jfree.data.KeyToGroupMap.clone : r3 = interfaceinvoke r0.<java.util.Collection: java.util.Iterator iterator()>()
+org.jfree.data.KeyToGroupMap.clone : r3 = interfaceinvoke r0.<java.util.Collection: java.util.Iterator iterator()>() >>>>>>>> org.jfree.data.KeyToGroupMap.clone : $z0 = interfaceinvoke r3.<java.util.Iterator: boolean hasNext()>()
+org.jfree.data.KeyToGroupMap.clone : $z0 = interfaceinvoke r3.<java.util.Iterator: boolean hasNext()>() >>>>>>>> org.jfree.data.KeyToGroupMap.clone : if $z0 == 0
+org.jfree.data.KeyToGroupMap.clone : if $z0 == 0 >>>>>>>> org.jfree.data.KeyToGroupMap.clone : $r6 = interfaceinvoke r3.<java.util.Iterator: java.lang.Object next()>()
+org.jfree.data.KeyToGroupMap.clone : $r6 = interfaceinvoke r3.<java.util.Iterator: java.lang.Object next()>() >>>>>>>> org.jfree.data.KeyToGroupMap.clone : $r7 = staticinvoke <org.jfree.data.KeyToGroupMap: java.lang.Object clone(java.lang.Object)>($r6)
+org.jfree.data.KeyToGroupMap.clone : $r7 = staticinvoke <org.jfree.data.KeyToGroupMap: java.lang.Object clone(java.lang.Object)>($r6) >>>>>>>> org.jfree.data.KeyToGroupMap.clone : interfaceinvoke r2.<java.util.List: boolean add(java.lang.Object)>($r7)
+org.jfree.data.KeyToGroupMap.clone : interfaceinvoke r2.<java.util.List: boolean add(java.lang.Object)>($r7) >>>>>>>> org.jfree.data.KeyToGroupMap.clone : goto [?= $z0 = interfaceinvoke r3.<java.util.Iterator: boolean hasNext()>()]
+org.jfree.data.KeyToGroupMap.clone : goto [?= $z0 = interfaceinvoke r3.<java.util.Iterator: boolean hasNext()>()] >>>>>>>> org.jfree.data.KeyToGroupMap.clone : r1 = r2
+org.jfree.data.KeyToGroupMap.clone : r1 = r2 >>>>>>>> org.jfree.data.KeyToGroupMap.clone : goto [?= return r1]
+org.jfree.data.KeyToGroupMap.clone : goto [?= return r1] >>>>>>>> org.jfree.data.KeyToGroupMap.clone : return r1
+org.jfree.data.KeyToGroupMap.clone : return r1 >>>>>>>> org.jfree.data.KeyToGroupMap.clone : $r8 = (java.util.List) $r7
+org.jfree.data.KeyToGroupMap.clone : $r8 = (java.util.List) $r7 >>>>>>>> org.jfree.data.KeyToGroupMap.clone : r1.<org.jfree.data.KeyToGroupMap: java.util.List groups> = $r8
+org.jfree.data.KeyToGroupMap.clone : r1.<org.jfree.data.KeyToGroupMap: java.util.List groups> = $r8 >>>>>>>> org.jfree.data.KeyToGroupMap.clone : $r9 = r0.<org.jfree.data.KeyToGroupMap: java.util.Map keyToGroupMap>
+org.jfree.data.KeyToGroupMap.clone : $r9 = r0.<org.jfree.data.KeyToGroupMap: java.util.Map keyToGroupMap> >>>>>>>> org.jfree.data.KeyToGroupMap.clone : $r10 = staticinvoke <org.jfree.data.KeyToGroupMap: java.lang.Object clone(java.lang.Object)>($r9)
+org.jfree.data.KeyToGroupMap.clone : $r10 = staticinvoke <org.jfree.data.KeyToGroupMap: java.lang.Object clone(java.lang.Object)>($r9) >>>>>>>> org.jfree.data.KeyToGroupMap.clone : $i0 = virtualinvoke r3.<java.lang.reflect.Method: int getModifiers()>()
+org.jfree.data.KeyToGroupMap.clone : $i0 = virtualinvoke r3.<java.lang.reflect.Method: int getModifiers()>() >>>>>>>> org.jfree.data.KeyToGroupMap.clone : $z0 = staticinvoke <java.lang.reflect.Modifier: boolean isPublic(int)>($i0)
+org.jfree.data.KeyToGroupMap.clone : $z0 = staticinvoke <java.lang.reflect.Modifier: boolean isPublic(int)>($i0) >>>>>>>> org.jfree.data.KeyToGroupMap.clone : $r6 = (java.lang.Object[]) null
+org.jfree.data.KeyToGroupMap.clone : $r6 = (java.lang.Object[]) null >>>>>>>> org.jfree.data.KeyToGroupMap.clone : r2 = virtualinvoke r3.<java.lang.reflect.Method: java.lang.Object invoke(java.lang.Object,java.lang.Object[])>(r0, $r6)
+org.jfree.data.KeyToGroupMap.clone : r2 = virtualinvoke r3.<java.lang.reflect.Method: java.lang.Object invoke(java.lang.Object,java.lang.Object[])>(r0, $r6) >>>>>>>> org.jfree.data.KeyToGroupMap.clone : goto [?= (branch)]
+org.jfree.data.KeyToGroupMap.clone : goto [?= (branch)] >>>>>>>> org.jfree.data.KeyToGroupMap.clone : goto [?= return r2]
+org.jfree.data.KeyToGroupMap.clone : goto [?= return r2] >>>>>>>> org.jfree.data.KeyToGroupMap.clone : $r11 = (java.util.Map) $r10
+org.jfree.data.KeyToGroupMap.clone : $r11 = (java.util.Map) $r10 >>>>>>>> org.jfree.data.KeyToGroupMap.clone : r1.<org.jfree.data.KeyToGroupMap: java.util.Map keyToGroupMap> = $r11
+org.jfree.data.KeyToGroupMap.clone : r1.<org.jfree.data.KeyToGroupMap: java.util.Map keyToGroupMap> = $r11 >>>>>>>> org.jfree.data.KeyToGroupMap.equals : if r1 != r0
+org.jfree.data.KeyToGroupMap.equals : if r1 != r0 >>>>>>>> org.jfree.data.KeyToGroupMap.equals : $z0 = r1 instanceof org.jfree.data.KeyToGroupMap
+org.jfree.data.KeyToGroupMap.equals : $z0 = r1 instanceof org.jfree.data.KeyToGroupMap >>>>>>>> org.jfree.data.KeyToGroupMap.equals : if $z0 != 0
+org.jfree.data.KeyToGroupMap.equals : if $z0 != 0 >>>>>>>> org.jfree.data.KeyToGroupMap.equals : r2 = (org.jfree.data.KeyToGroupMap) r1
+org.jfree.data.KeyToGroupMap.equals : r2 = (org.jfree.data.KeyToGroupMap) r1 >>>>>>>> org.jfree.data.KeyToGroupMap.equals : $r3 = r0.<org.jfree.data.KeyToGroupMap: java.lang.Comparable defaultGroup>
+org.jfree.data.KeyToGroupMap.equals : $r3 = r0.<org.jfree.data.KeyToGroupMap: java.lang.Comparable defaultGroup> >>>>>>>> org.jfree.data.KeyToGroupMap.equals : $r4 = r2.<org.jfree.data.KeyToGroupMap: java.lang.Comparable defaultGroup>
+org.jfree.data.KeyToGroupMap.equals : $r4 = r2.<org.jfree.data.KeyToGroupMap: java.lang.Comparable defaultGroup> >>>>>>>> org.jfree.data.KeyToGroupMap.equals : $z1 = staticinvoke <org.jfree.util.ObjectUtilities: boolean equal(java.lang.Object,java.lang.Object)>($r3, $r4)
+org.jfree.data.KeyToGroupMap.equals : $z1 = staticinvoke <org.jfree.util.ObjectUtilities: boolean equal(java.lang.Object,java.lang.Object)>($r3, $r4) >>>>>>>> org.jfree.data.KeyToGroupMap.equals : if $z1 != 0
+org.jfree.data.KeyToGroupMap.equals : if $z1 != 0 >>>>>>>> org.jfree.data.KeyToGroupMap.equals : $r5 = r0.<org.jfree.data.KeyToGroupMap: java.util.Map keyToGroupMap>
+org.jfree.data.KeyToGroupMap.equals : $r5 = r0.<org.jfree.data.KeyToGroupMap: java.util.Map keyToGroupMap> >>>>>>>> org.jfree.data.KeyToGroupMap.equals : $r6 = r2.<org.jfree.data.KeyToGroupMap: java.util.Map keyToGroupMap>
+org.jfree.data.KeyToGroupMap.equals : $r6 = r2.<org.jfree.data.KeyToGroupMap: java.util.Map keyToGroupMap> >>>>>>>> org.jfree.data.KeyToGroupMap.equals : $z2 = interfaceinvoke $r5.<java.util.Map: boolean equals(java.lang.Object)>($r6)
+org.jfree.data.KeyToGroupMap.equals : $z2 = interfaceinvoke $r5.<java.util.Map: boolean equals(java.lang.Object)>($r6) >>>>>>>> org.jfree.data.KeyToGroupMap.equals : if $z2 != 0
+org.jfree.data.KeyToGroupMap.equals : if $z2 != 0 >>>>>>>> org.jfree.data.KeyToGroupMap.equals : return 1
+org.jfree.data.KeyToGroupMap.equals : return 1 >>>>>>>> org.jfree.data.KeyToGroupMap.getGroup : r2 = r3
+org.jfree.data.KeyToGroupMap.getGroup : r2 = r3 >>>>>>>> org.jfree.data.KeyToGroupMap.mapKeyToGroup : $z1 = virtualinvoke r3.<java.lang.Object: boolean equals(java.lang.Object)>(r2)
+org.jfree.data.KeyToGroupMap.mapKeyToGroup : $z1 = virtualinvoke r3.<java.lang.Object: boolean equals(java.lang.Object)>(r2) >>>>>>>> org.jfree.data.KeyToGroupMap.mapKeyToGroup : if $z1 != 0
+org.jfree.data.KeyToGroupMap.mapKeyToGroup : if $z1 != 0 >>>>>>>> org.jfree.data.KeyToGroupMap.mapKeyToGroup : i0 = virtualinvoke r0.<org.jfree.data.KeyToGroupMap: int getKeyCount(java.lang.Comparable)>(r3)
+org.jfree.data.KeyToGroupMap.mapKeyToGroup : i0 = virtualinvoke r0.<org.jfree.data.KeyToGroupMap: int getKeyCount(java.lang.Comparable)>(r3) >>>>>>>> org.jfree.data.KeyToGroupMap.getKeyCount : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "group")
+org.jfree.data.KeyToGroupMap.getKeyCount : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "group") >>>>>>>> org.jfree.data.KeyToGroupMap.getKeyCount : i0 = 0
+org.jfree.data.KeyToGroupMap.getKeyCount : i0 = 0 >>>>>>>> org.jfree.data.KeyToGroupMap.getKeyCount : $r4 = r0.<org.jfree.data.KeyToGroupMap: java.util.Map keyToGroupMap>
+org.jfree.data.KeyToGroupMap.getKeyCount : $r4 = r0.<org.jfree.data.KeyToGroupMap: java.util.Map keyToGroupMap> >>>>>>>> org.jfree.data.KeyToGroupMap.getKeyCount : $r5 = interfaceinvoke $r4.<java.util.Map: java.util.Collection values()>()
+org.jfree.data.KeyToGroupMap.getKeyCount : $r5 = interfaceinvoke $r4.<java.util.Map: java.util.Collection values()>() >>>>>>>> org.jfree.data.KeyToGroupMap.getKeyCount : r2 = interfaceinvoke $r5.<java.util.Collection: java.util.Iterator iterator()>()
+org.jfree.data.KeyToGroupMap.getKeyCount : r2 = interfaceinvoke $r5.<java.util.Collection: java.util.Iterator iterator()>() >>>>>>>> org.jfree.data.KeyToGroupMap.getKeyCount : $z0 = interfaceinvoke r2.<java.util.Iterator: boolean hasNext()>()
+org.jfree.data.KeyToGroupMap.getKeyCount : $z0 = interfaceinvoke r2.<java.util.Iterator: boolean hasNext()>() >>>>>>>> org.jfree.data.KeyToGroupMap.getKeyCount : if $z0 == 0
+org.jfree.data.KeyToGroupMap.getKeyCount : if $z0 == 0 >>>>>>>> org.jfree.data.KeyToGroupMap.getKeyCount : $r6 = interfaceinvoke r2.<java.util.Iterator: java.lang.Object next()>()
+org.jfree.data.KeyToGroupMap.getKeyCount : $r6 = interfaceinvoke r2.<java.util.Iterator: java.lang.Object next()>() >>>>>>>> org.jfree.data.KeyToGroupMap.getKeyCount : r3 = (java.lang.Comparable) $r6
+org.jfree.data.KeyToGroupMap.getKeyCount : r3 = (java.lang.Comparable) $r6 >>>>>>>> org.jfree.data.KeyToGroupMap.getKeyCount : $z1 = virtualinvoke r1.<java.lang.Object: boolean equals(java.lang.Object)>(r3)
+org.jfree.data.KeyToGroupMap.getKeyCount : $z1 = virtualinvoke r1.<java.lang.Object: boolean equals(java.lang.Object)>(r3) >>>>>>>> org.jfree.data.KeyToGroupMap.getKeyCount : if $z1 == 0
+org.jfree.data.KeyToGroupMap.getKeyCount : if $z1 == 0 >>>>>>>> org.jfree.data.KeyToGroupMap.getKeyCount : i0 = i0 + 1
+org.jfree.data.KeyToGroupMap.getKeyCount : i0 = i0 + 1 >>>>>>>> org.jfree.data.KeyToGroupMap.getKeyCount : goto [?= $z0 = interfaceinvoke r2.<java.util.Iterator: boolean hasNext()>()]
+org.jfree.data.KeyToGroupMap.getKeyCount : goto [?= $z0 = interfaceinvoke r2.<java.util.Iterator: boolean hasNext()>()] >>>>>>>> org.jfree.data.KeyToGroupMap.getKeyCount : return i0
+org.jfree.data.KeyToGroupMap.getKeyCount : return i0 >>>>>>>> org.jfree.data.KeyToGroupMap.mapKeyToGroup : if i0 != 1
+org.jfree.data.KeyToGroupMap.mapKeyToGroup : if i0 != 1 >>>>>>>> org.jfree.data.KeyToGroupMap.mapKeyToGroup : $r5 = r0.<org.jfree.data.KeyToGroupMap: java.util.List groups>
+org.jfree.data.KeyToGroupMap.mapKeyToGroup : $r5 = r0.<org.jfree.data.KeyToGroupMap: java.util.List groups> >>>>>>>> org.jfree.data.KeyToGroupMap.mapKeyToGroup : interfaceinvoke $r5.<java.util.List: boolean remove(java.lang.Object)>(r3)
+org.jfree.data.KeyToGroupMap.mapKeyToGroup : interfaceinvoke $r5.<java.util.List: boolean remove(java.lang.Object)>(r3) >>>>>>>> org.jfree.data.KeyToGroupMap.equals : return 0

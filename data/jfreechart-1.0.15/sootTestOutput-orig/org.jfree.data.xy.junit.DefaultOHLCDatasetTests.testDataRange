@@ -1,0 +1,41 @@
+org.jfree.data.xy.DefaultOHLCDataset.getItemCount : $r1 = r0.<org.jfree.data.xy.DefaultOHLCDataset: org.jfree.data.xy.OHLCDataItem[] data>
+org.jfree.data.xy.DefaultOHLCDataset.getLow : $r1 = r0.<org.jfree.data.xy.DefaultOHLCDataset: org.jfree.data.xy.OHLCDataItem[] data>
+org.jfree.data.xy.DefaultOHLCDataset.getSeriesCount : return 1
+org.jfree.data.Range.getUpperBound : $d0 = r0.<org.jfree.data.Range: double upper>
+org.jfree.data.general.DatasetUtilities.findRangeBounds : r2 = staticinvoke <org.jfree.data.general.DatasetUtilities: org.jfree.data.Range iterateRangeBounds(org.jfree.data.xy.XYDataset,boolean)>(r0, z0)
+org.jfree.data.general.DatasetUtilities.findRangeBounds : return r2
+org.jfree.data.general.DatasetUtilities.findRangeBounds : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r0, "dataset")
+org.jfree.data.general.DatasetUtilities.findRangeBounds : $z1 = r0 instanceof org.jfree.data.RangeInfo
+org.jfree.data.Range.getLowerBound : $d0 = r0.<org.jfree.data.Range: double lower>
+org.jfree.data.xy.DefaultOHLCDataset.getLowValue : d0 = #NaN
+org.jfree.data.xy.DefaultOHLCDataset.getLowValue : return d0
+org.jfree.data.xy.DefaultOHLCDataset.getLowValue : d0 = virtualinvoke r1.<java.lang.Number: double doubleValue()>()
+org.jfree.data.xy.DefaultOHLCDataset.getLowValue : if r1 == null goto return d0
+org.jfree.data.xy.DefaultOHLCDataset.getLowValue : r1 = virtualinvoke r0.<org.jfree.data.xy.DefaultOHLCDataset: java.lang.Number getLow(int,int)>(i0, i1)
+org.jfree.data.xy.OHLCDataItem.getLow : $r1 = r0.<org.jfree.data.xy.OHLCDataItem: java.lang.Number low>
+org.jfree.data.xy.DefaultOHLCDataset.getHighValue : d0 = #NaN
+org.jfree.data.xy.DefaultOHLCDataset.getHighValue : return d0
+org.jfree.data.xy.DefaultOHLCDataset.getHighValue : d0 = virtualinvoke r1.<java.lang.Number: double doubleValue()>()
+org.jfree.data.xy.DefaultOHLCDataset.getHighValue : r1 = virtualinvoke r0.<org.jfree.data.xy.DefaultOHLCDataset: java.lang.Number getHigh(int,int)>(i0, i1)
+org.jfree.data.xy.DefaultOHLCDataset.getHighValue : if r1 == null goto return d0
+org.jfree.data.xy.OHLCDataItem.getHigh : $r1 = r0.<org.jfree.data.xy.OHLCDataItem: java.lang.Number high>
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null goto return
+org.jfree.data.general.DatasetUtilities.iterateRangeBounds : goto [?= $b10 = d0 cmpl #Infinity]
+org.jfree.data.general.DatasetUtilities.iterateRangeBounds : d0 = #Infinity
+org.jfree.data.general.DatasetUtilities.iterateRangeBounds : i0 = interfaceinvoke r0.<org.jfree.data.xy.XYDataset: int getSeriesCount()>()
+org.jfree.data.general.DatasetUtilities.iterateRangeBounds : d1 = #-Infinity
+org.jfree.data.general.DatasetUtilities.iterateRangeBounds : i6 = 0
+org.jfree.data.general.DatasetUtilities.iterateRangeBounds : $z7 = staticinvoke <java.lang.Double: boolean isNaN(double)>(d6)
+org.jfree.data.general.DatasetUtilities.iterateRangeBounds : $b10 = d0 cmpl #Infinity
+org.jfree.data.general.DatasetUtilities.iterateRangeBounds : if z0 == 0 goto (branch)
+org.jfree.data.general.DatasetUtilities.iterateRangeBounds : i5 = interfaceinvoke r0.<org.jfree.data.xy.XYDataset: int getItemCount(int)>(i4)
+org.jfree.data.general.DatasetUtilities.iterateRangeBounds : d1 = staticinvoke <java.lang.Math: double max(double,double)>(d1, d6)
+org.jfree.data.general.DatasetUtilities.iterateRangeBounds : d5 = interfaceinvoke r2.<org.jfree.data.xy.OHLCDataset: double getLowValue(int,int)>(i4, i6)
+org.jfree.data.general.DatasetUtilities.iterateRangeBounds : $r3 = new org.jfree.data.Range
+org.jfree.data.general.DatasetUtilities.iterateRangeBounds : d6 = interfaceinvoke r2.<org.jfree.data.xy.OHLCDataset: double getHighValue(int,int)>(i4, i6)
+org.jfree.data.general.DatasetUtilities.iterateRangeBounds : d0 = staticinvoke <java.lang.Math: double min(double,double)>(d0, d5)
+org.jfree.data.general.DatasetUtilities.iterateRangeBounds : $z6 = staticinvoke <java.lang.Double: boolean isNaN(double)>(d5)
+org.jfree.data.general.DatasetUtilities.iterateRangeBounds : if z0 == 0 goto i7 = 0
+org.jfree.data.general.DatasetUtilities.iterateRangeBounds : r2 = (org.jfree.data.xy.OHLCDataset) r0
+org.jfree.data.general.DatasetUtilities.iterateRangeBounds : i4 = 0
+org.jfree.data.xy.DefaultOHLCDataset.getHigh : $r1 = r0.<org.jfree.data.xy.DefaultOHLCDataset: org.jfree.data.xy.OHLCDataItem[] data>

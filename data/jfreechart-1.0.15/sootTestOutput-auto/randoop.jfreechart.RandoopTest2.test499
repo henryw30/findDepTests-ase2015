@@ -1,0 +1,257 @@
+org.jfree.chart.axis.ValueAxis.getDefaultAutoRange : $r1 = r0.<org.jfree.chart.axis.ValueAxis: org.jfree.data.Range defaultAutoRange>
+org.jfree.chart.axis.PeriodAxis.setMinorTickMarksVisible : r0.<org.jfree.chart.axis.PeriodAxis: boolean minorTickMarksVisible> = z0
+org.jfree.chart.axis.PeriodAxis.setMinorTickMarksVisible : $r1 = new org.jfree.chart.event.AxisChangeEvent
+org.jfree.data.time.Year.getFirstMillisecond : $l1 = virtualinvoke r1.<java.util.Calendar: long getTimeInMillis()>()
+org.jfree.data.time.Year.getFirstMillisecond : virtualinvoke r1.<java.util.Calendar: void set(int,int)>(14, 0)
+org.jfree.data.time.Year.getFirstMillisecond : $s0 = r0.<org.jfree.data.time.Year: short year>
+org.jfree.chart.plot.Plot.fireChangeEvent : $r1 = new org.jfree.chart.event.PlotChangeEvent
+org.jfree.data.DefaultKeyedValues2D.removeValue : $r4 = r0.<org.jfree.data.DefaultKeyedValues2D: java.util.List rows>
+org.jfree.data.DefaultKeyedValues2D.removeValue : $r6 = virtualinvoke r3.<org.jfree.data.DefaultKeyedValues: java.lang.Number getValue(int)>(i1)
+org.jfree.data.DefaultKeyedValues2D.removeValue : i0 = virtualinvoke r0.<org.jfree.data.DefaultKeyedValues2D: int getRowIndex(java.lang.Comparable)>(r1)
+org.jfree.data.DefaultKeyedValues2D.removeValue : i1 = i1 + 1
+org.jfree.data.DefaultKeyedValues2D.removeValue : if z1 == 0 goto return
+org.jfree.data.DefaultKeyedValues2D.removeValue : $r20 = r0.<org.jfree.data.DefaultKeyedValues2D: java.util.List columnKeys>
+org.jfree.data.DefaultKeyedValues2D.removeValue : $r9 = r0.<org.jfree.data.DefaultKeyedValues2D: java.util.List rows>
+org.jfree.data.DefaultKeyedValues2D.removeValue : i6 = 0
+org.jfree.data.DefaultKeyedValues2D.removeValue : i1 = 0
+org.jfree.data.DefaultKeyedValues2D.removeValue : virtualinvoke r0.<org.jfree.data.DefaultKeyedValues2D: void setValue(java.lang.Number,java.lang.Comparable,java.lang.Comparable)>(null, r1, r2)
+org.jfree.data.DefaultKeyedValues2D.removeValue : z0 = 1
+org.jfree.data.DefaultKeyedValues2D.removeValue : $r7 = r0.<org.jfree.data.DefaultKeyedValues2D: java.util.List rowKeys>
+org.jfree.data.DefaultKeyedValues2D.removeValue : z1 = 1
+org.jfree.data.DefaultKeyedValues2D.removeValue : if z0 == 0 goto z1 = 1
+org.jfree.data.DefaultKeyedValues2D.removeValue : i4 = 0
+org.jfree.chart.plot.PolarPlot.getAxisIndex : return i0
+org.jfree.chart.plot.PolarPlot.getAxisIndex : r2 = virtualinvoke r0.<org.jfree.chart.plot.PolarPlot: org.jfree.chart.plot.Plot getParent()>()
+org.jfree.chart.plot.PolarPlot.getAxisIndex : $z0 = r2 instanceof org.jfree.chart.plot.PolarPlot
+org.jfree.chart.plot.PolarPlot.getAxisIndex : if i0 >= 0 goto return i0
+org.jfree.chart.plot.PolarPlot.getAxisIndex : $r4 = r0.<org.jfree.chart.plot.PolarPlot: org.jfree.util.ObjectList axes>
+org.jfree.data.time.Week.peg : $l1 = virtualinvoke r0.<org.jfree.data.time.Week: long getLastMillisecond(java.util.Calendar)>(r1)
+org.jfree.data.time.Week.peg : $l0 = virtualinvoke r0.<org.jfree.data.time.Week: long getFirstMillisecond(java.util.Calendar)>(r1)
+org.jfree.data.time.Week.getFirstMillisecond : $s0 = r0.<org.jfree.data.time.Week: short year>
+org.jfree.data.time.Week.getFirstMillisecond : virtualinvoke r2.<java.util.Calendar: void clear()>()
+org.jfree.data.time.Week.getFirstMillisecond : $b1 = r0.<org.jfree.data.time.Week: byte week>
+org.jfree.data.time.Week.getFirstMillisecond : $r3 = virtualinvoke r1.<java.util.Calendar: java.lang.Object clone()>()
+org.jfree.data.time.Week.getFirstMillisecond : virtualinvoke r2.<java.util.Calendar: void set(int,int)>(10, 0)
+org.jfree.data.time.Week.getFirstMillisecond : $l3 = virtualinvoke r2.<java.util.Calendar: long getTimeInMillis()>()
+org.jfree.data.time.Week.getFirstMillisecond : virtualinvoke r2.<java.util.Calendar: void set(int,int)>(12, 0)
+org.jfree.data.time.Week.getFirstMillisecond : virtualinvoke r2.<java.util.Calendar: void set(int,int)>(14, 0)
+org.jfree.data.time.Week.getFirstMillisecond : virtualinvoke r2.<java.util.Calendar: void set(int,int)>(13, 0)
+org.jfree.data.time.Week.getFirstMillisecond : $i2 = virtualinvoke r2.<java.util.Calendar: int getFirstDayOfWeek()>()
+org.jfree.chart.plot.CategoryPlot.datasetChanged : i1 = 0
+org.jfree.chart.plot.CategoryPlot.datasetChanged : virtualinvoke r0.<org.jfree.chart.plot.CategoryPlot: void notifyListeners(org.jfree.chart.event.PlotChangeEvent)>(r7)
+org.jfree.chart.plot.CategoryPlot.datasetChanged : if r2 == null goto i1 = i1 + 1
+org.jfree.chart.plot.CategoryPlot.datasetChanged : $r6 = new org.jfree.chart.event.PlotChangeEvent
+org.jfree.chart.plot.CategoryPlot.datasetChanged : r2 = virtualinvoke r0.<org.jfree.chart.plot.CategoryPlot: org.jfree.chart.axis.ValueAxis getRangeAxis(int)>(i1)
+org.jfree.chart.plot.CategoryPlot.datasetChanged : $r3 = r0.<org.jfree.chart.plot.CategoryPlot: org.jfree.util.ObjectList rangeAxes>
+org.jfree.chart.plot.CategoryPlot.datasetChanged : $r4 = virtualinvoke r0.<org.jfree.chart.plot.CategoryPlot: org.jfree.chart.plot.Plot getParent()>()
+org.jfree.chart.plot.CategoryPlot.datasetChanged : $r8 = <org.jfree.chart.event.ChartChangeEventType: org.jfree.chart.event.ChartChangeEventType DATASET_UPDATED>
+org.jfree.chart.plot.Plot.notifyListeners : $r3 = r0.<org.jfree.chart.plot.Plot: javax.swing.event.EventListenerList listenerList>
+org.jfree.chart.plot.Plot.notifyListeners : $i1 = lengthof r2
+org.jfree.chart.plot.Plot.notifyListeners : $z0 = r0.<org.jfree.chart.plot.Plot: boolean notify>
+org.jfree.data.DefaultKeyedValues.getIndex : return -1
+org.jfree.data.DefaultKeyedValues.getIndex : $r3 = r0.<org.jfree.data.DefaultKeyedValues: java.util.HashMap indexMap>
+org.jfree.data.DefaultKeyedValues.getIndex : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "key")
+org.jfree.data.DefaultKeyedValues.getIndex : if r2 != null goto $i0 = virtualinvoke r2.<java.lang.Integer: int intValue()>()
+org.jfree.chart.plot.PolarPlot.setAxis : if z0 == 0 goto return
+org.jfree.chart.plot.PolarPlot.setAxis : r2 = virtualinvoke r0.<org.jfree.chart.plot.PolarPlot: org.jfree.chart.axis.ValueAxis getAxis(int)>(i0)
+org.jfree.chart.plot.PolarPlot.setAxis : virtualinvoke r0.<org.jfree.chart.plot.PolarPlot: void fireChangeEvent()>()
+org.jfree.chart.plot.PolarPlot.setAxis : virtualinvoke r1.<org.jfree.chart.axis.ValueAxis: void addChangeListener(org.jfree.chart.event.AxisChangeListener)>(r0)
+org.jfree.chart.plot.PolarPlot.setAxis : if r2 == null goto (branch)
+org.jfree.chart.plot.PolarPlot.setAxis : virtualinvoke r0.<org.jfree.chart.plot.PolarPlot: void setAxis(int,org.jfree.chart.axis.ValueAxis,boolean)>(i0, r1, 1)
+org.jfree.chart.plot.PolarPlot.setAxis : virtualinvoke r1.<org.jfree.chart.axis.ValueAxis: void setPlot(org.jfree.chart.plot.Plot)>(r0)
+org.jfree.chart.plot.PolarPlot.setAxis : if r1 == null goto $r3 = r0.<org.jfree.chart.plot.PolarPlot: org.jfree.util.ObjectList axes>
+org.jfree.chart.plot.PolarPlot.setAxis : $r3 = r0.<org.jfree.chart.plot.PolarPlot: org.jfree.util.ObjectList axes>
+org.jfree.chart.plot.PolarPlot.setAxis : virtualinvoke r1.<org.jfree.chart.axis.ValueAxis: void configure()>()
+org.jfree.chart.plot.PolarPlot.setAxis : if r1 == null goto (branch)
+org.jfree.data.time.Year.getLastMillisecond : virtualinvoke r1.<java.util.Calendar: void set(int,int)>(14, 999)
+org.jfree.data.time.Year.getLastMillisecond : $l1 = virtualinvoke r1.<java.util.Calendar: long getTimeInMillis()>()
+org.jfree.data.time.Year.getLastMillisecond : $s0 = r0.<org.jfree.data.time.Year: short year>
+org.jfree.data.time.Month.getLastMillisecond : $l6 = virtualinvoke r1.<java.util.Calendar: long getTimeInMillis()>()
+org.jfree.data.time.Month.getLastMillisecond : $l0 = r0.<org.jfree.data.time.Month: long lastMillisecond>
+org.jfree.data.time.Month.getLastMillisecond : virtualinvoke r1.<java.util.Calendar: void set(int,int)>(14, 999)
+org.jfree.data.time.Month.getLastMillisecond : $i1 = r0.<org.jfree.data.time.Month: int month>
+org.jfree.data.time.Month.getLastMillisecond : $i3 = r0.<org.jfree.data.time.Month: int year>
+org.jfree.data.time.Week.getWeek : $b0 = r0.<org.jfree.data.time.Week: byte week>
+org.jfree.chart.axis.PeriodAxis.configure : virtualinvoke r0.<org.jfree.chart.axis.PeriodAxis: void autoAdjustRange()>()
+org.jfree.chart.axis.PeriodAxis.configure : $z0 = virtualinvoke r0.<org.jfree.chart.axis.PeriodAxis: boolean isAutoRange()>()
+org.jfree.data.time.TimeTableXYDataset.remove : if z0 == 0 goto return
+org.jfree.data.time.TimeTableXYDataset.remove : $r3 = r0.<org.jfree.data.time.TimeTableXYDataset: org.jfree.data.DefaultKeyedValues2D values>
+org.jfree.data.DefaultKeyedValues.getItemCount : $r1 = r0.<org.jfree.data.DefaultKeyedValues: java.util.HashMap indexMap>
+org.jfree.chart.plot.CategoryPlot.mapDatasetToRangeAxis : virtualinvoke r0.<org.jfree.chart.plot.CategoryPlot: void mapDatasetToRangeAxes(int,java.util.List)>(i0, r2)
+org.jfree.chart.plot.CategoryPlot.mapDatasetToRangeAxis : $r3 = new java.lang.Integer
+org.jfree.chart.plot.CategoryPlot.mapDatasetToRangeAxis : $r1 = new java.util.ArrayList
+org.jfree.chart.plot.CategoryPlot.getDataset : $r3 = r0.<org.jfree.chart.plot.CategoryPlot: org.jfree.util.ObjectList datasets>
+org.jfree.chart.plot.CategoryPlot.getDataset : r1 = null
+org.jfree.chart.plot.CategoryPlot.getDataset : return r1
+org.jfree.chart.plot.CategoryPlot.getDataset : $r2 = r0.<org.jfree.chart.plot.CategoryPlot: org.jfree.util.ObjectList datasets>
+org.jfree.chart.plot.PolarPlot.isRadiusGridlinesVisible : $z0 = r0.<org.jfree.chart.plot.PolarPlot: boolean radiusGridlinesVisible>
+org.jfree.chart.plot.Plot.getParent : $r1 = r0.<org.jfree.chart.plot.Plot: org.jfree.chart.plot.Plot parent>
+org.jfree.chart.axis.ValueAxis.setRange : if z0 == 0 goto r0.<org.jfree.chart.axis.ValueAxis: org.jfree.data.Range range> = r1
+org.jfree.chart.axis.ValueAxis.setRange : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "range")
+org.jfree.chart.axis.ValueAxis.setRange : r0.<org.jfree.chart.axis.ValueAxis: org.jfree.data.Range range> = r1
+org.jfree.chart.axis.ValueAxis.setRange : if z1 == 0 goto return
+org.jfree.chart.plot.PolarPlot.getDataRange : return r2
+org.jfree.chart.plot.PolarPlot.getDataRange : r4 = interfaceinvoke r3.<java.util.List: java.util.Iterator iterator()>()
+org.jfree.chart.plot.PolarPlot.getDataRange : $r7 = new java.lang.Integer
+org.jfree.chart.plot.PolarPlot.getDataRange : i0 = virtualinvoke r0.<org.jfree.chart.plot.PolarPlot: int getAxisIndex(org.jfree.chart.axis.ValueAxis)>(r1)
+org.jfree.chart.plot.PolarPlot.getDataRange : if i0 < 0 goto r4 = interfaceinvoke r3.<java.util.List: java.util.Iterator iterator()>()
+org.jfree.chart.plot.PolarPlot.getDataRange : $z0 = interfaceinvoke r4.<java.util.Iterator: boolean hasNext()>()
+org.jfree.chart.plot.PolarPlot.getDataRange : r2 = null
+org.jfree.chart.plot.PolarPlot.getDataRange : $r6 = new java.util.ArrayList
+org.jfree.chart.plot.PolarPlot.getDataRange : i1 = -1
+org.jfree.chart.plot.CategoryPlot.mapDatasetToDomainAxis : $r3 = new java.lang.Integer
+org.jfree.chart.plot.CategoryPlot.mapDatasetToDomainAxis : virtualinvoke r0.<org.jfree.chart.plot.CategoryPlot: void mapDatasetToDomainAxes(int,java.util.List)>(i0, r2)
+org.jfree.chart.plot.CategoryPlot.mapDatasetToDomainAxis : $r1 = new java.util.ArrayList
+org.jfree.chart.axis.Axis.addChangeListener : $r2 = r0.<org.jfree.chart.axis.Axis: javax.swing.event.EventListenerList listenerList>
+org.jfree.chart.plot.PolarPlot.getAxis : r1 = null
+org.jfree.chart.plot.PolarPlot.getAxis : return r1
+org.jfree.chart.plot.PolarPlot.getAxis : $r2 = r0.<org.jfree.chart.plot.PolarPlot: org.jfree.util.ObjectList axes>
+org.jfree.chart.plot.PolarPlot.getDatasetsMappedToAxis : $r6 = r0.<org.jfree.chart.plot.PolarPlot: java.util.Map datasetToAxesMap>
+org.jfree.chart.plot.PolarPlot.getDatasetsMappedToAxis : return r2
+org.jfree.chart.plot.PolarPlot.getDatasetsMappedToAxis : i0 = 0
+org.jfree.chart.plot.PolarPlot.getDatasetsMappedToAxis : if r3 != null goto $z2 = interfaceinvoke r3.<java.util.List: boolean contains(java.lang.Object)>(r1)
+org.jfree.chart.plot.PolarPlot.getDatasetsMappedToAxis : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "axisIndex")
+org.jfree.chart.plot.PolarPlot.getDatasetsMappedToAxis : $r4 = new java.util.ArrayList
+org.jfree.chart.plot.PolarPlot.getDatasetsMappedToAxis : $r9 = <org.jfree.chart.plot.PolarPlot: java.lang.Number ZERO>
+org.jfree.chart.event.ChartChangeEvent.setType : r0.<org.jfree.chart.event.ChartChangeEvent: org.jfree.chart.event.ChartChangeEventType type> = r1
+org.jfree.data.time.Month.getSerialIndex : $i0 = r0.<org.jfree.data.time.Month: int year>
+org.jfree.chart.plot.CategoryPlot.checkAxisIndices : if i0 != 0 goto $r5 = new java.util.HashSet
+org.jfree.chart.plot.CategoryPlot.checkAxisIndices : i1 = 0
+org.jfree.chart.plot.CategoryPlot.checkAxisIndices : r3 = interfaceinvoke r1.<java.util.List: java.lang.Object get(int)>(i1)
+org.jfree.chart.plot.CategoryPlot.checkAxisIndices : i0 = interfaceinvoke r1.<java.util.List: int size()>()
+org.jfree.chart.plot.CategoryPlot.checkAxisIndices : if r1 != null goto i0 = interfaceinvoke r1.<java.util.List: int size()>()
+org.jfree.chart.plot.CategoryPlot.checkAxisIndices : virtualinvoke r2.<java.util.HashSet: boolean add(java.lang.Object)>(r3)
+org.jfree.chart.plot.CategoryPlot.checkAxisIndices : $r5 = new java.util.HashSet
+org.jfree.chart.plot.CategoryPlot.checkAxisIndices : $z0 = r3 instanceof java.lang.Integer
+org.jfree.chart.plot.CategoryPlot.checkAxisIndices : $z1 = virtualinvoke r2.<java.util.HashSet: boolean contains(java.lang.Object)>(r3)
+org.jfree.chart.axis.Axis.notifyListeners : $i1 = lengthof r2
+org.jfree.chart.axis.Axis.notifyListeners : $r3 = r0.<org.jfree.chart.axis.Axis: javax.swing.event.EventListenerList listenerList>
+org.jfree.chart.plot.PolarPlot.isCounterClockwise : $z0 = r0.<org.jfree.chart.plot.PolarPlot: boolean counterClockwise>
+org.jfree.chart.axis.PeriodAxis.createInstance : return r5
+org.jfree.chart.axis.PeriodAxis.createInstance : $r8 = newarray (java.lang.Class)[3]
+org.jfree.chart.axis.PeriodAxis.createInstance : goto [?= return r5]
+org.jfree.chart.axis.PeriodAxis.createInstance : $r9 = newarray (java.lang.Object)[3]
+org.jfree.chart.axis.PeriodAxis.createInstance : r5 = null
+org.jfree.data.time.Month.peg : $l0 = virtualinvoke r0.<org.jfree.data.time.Month: long getFirstMillisecond(java.util.Calendar)>(r1)
+org.jfree.data.time.Month.peg : $l1 = virtualinvoke r0.<org.jfree.data.time.Month: long getLastMillisecond(java.util.Calendar)>(r1)
+org.jfree.data.DefaultKeyedValues.getValue : $r1 = r0.<org.jfree.data.DefaultKeyedValues: java.util.ArrayList values>
+org.jfree.data.time.Week.getLastMillisecond : $s0 = r0.<org.jfree.data.time.Week: short year>
+org.jfree.data.time.Week.getLastMillisecond : virtualinvoke r2.<java.util.Calendar: void clear()>()
+org.jfree.data.time.Week.getLastMillisecond : $b1 = r0.<org.jfree.data.time.Week: byte week>
+org.jfree.data.time.Week.getLastMillisecond : $r3 = virtualinvoke r1.<java.util.Calendar: java.lang.Object clone()>()
+org.jfree.data.time.Week.getLastMillisecond : virtualinvoke r2.<java.util.Calendar: void set(int,int)>(10, 0)
+org.jfree.data.time.Week.getLastMillisecond : virtualinvoke r2.<java.util.Calendar: void set(int,int)>(12, 0)
+org.jfree.data.time.Week.getLastMillisecond : $l4 = virtualinvoke r2.<java.util.Calendar: long getTimeInMillis()>()
+org.jfree.data.time.Week.getLastMillisecond : virtualinvoke r2.<java.util.Calendar: void set(int,int)>(14, 0)
+org.jfree.data.time.Week.getLastMillisecond : virtualinvoke r2.<java.util.Calendar: void set(int,int)>(13, 0)
+org.jfree.data.time.Week.getLastMillisecond : $i3 = virtualinvoke r2.<java.util.Calendar: int getFirstDayOfWeek()>()
+org.jfree.chart.axis.ValueAxis.setAutoRange : $z2 = r0.<org.jfree.chart.axis.ValueAxis: boolean autoRange>
+org.jfree.chart.axis.ValueAxis.setAutoRange : virtualinvoke r0.<org.jfree.chart.axis.ValueAxis: void setAutoRange(boolean,boolean)>(z0, 1)
+org.jfree.chart.axis.PeriodAxis.setRange : $d1 = virtualinvoke r1.<org.jfree.data.Range: double getLowerBound()>()
+org.jfree.chart.axis.PeriodAxis.setRange : $r12 = new org.jfree.data.Range
+org.jfree.chart.axis.PeriodAxis.setRange : $r3 = r0.<org.jfree.chart.axis.PeriodAxis: java.lang.Class autoRangeTimePeriodClass>
+org.jfree.chart.axis.PeriodAxis.setRange : $r7 = r0.<org.jfree.chart.axis.PeriodAxis: java.lang.Class autoRangeTimePeriodClass>
+org.jfree.chart.axis.PeriodAxis.setRange : $l3 = virtualinvoke $r14.<org.jfree.data.time.RegularTimePeriod: long getLastMillisecond()>()
+org.jfree.chart.axis.PeriodAxis.setRange : $d0 = virtualinvoke r1.<org.jfree.data.Range: double getUpperBound()>()
+org.jfree.chart.plot.CategoryPlot.configureDomainAxes : $r3 = r0.<org.jfree.chart.plot.CategoryPlot: org.jfree.util.ObjectList domainAxes>
+org.jfree.chart.plot.CategoryPlot.configureDomainAxes : if r1 == null goto i0 = i0 + 1
+org.jfree.chart.plot.CategoryPlot.configureDomainAxes : i0 = 0
+org.jfree.chart.plot.CategoryPlot.configureDomainAxes : virtualinvoke r1.<org.jfree.chart.axis.CategoryAxis: void configure()>()
+org.jfree.data.time.Week.getYear : $r1 = new org.jfree.data.time.Year
+org.jfree.data.DefaultKeyedValues2D.getRowIndex : $r2 = r0.<org.jfree.data.DefaultKeyedValues2D: java.util.List rowKeys>
+org.jfree.data.DefaultKeyedValues2D.getRowIndex : $z0 = r0.<org.jfree.data.DefaultKeyedValues2D: boolean sortRowKeys>
+org.jfree.data.DefaultKeyedValues2D.getRowIndex : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "key")
+org.jfree.data.time.RegularTimePeriod.downsize : $z1 = virtualinvoke r0.<java.lang.Object: boolean equals(java.lang.Object)>(class "org/jfree/data/time/Quarter")
+org.jfree.data.time.RegularTimePeriod.downsize : $z0 = virtualinvoke r0.<java.lang.Object: boolean equals(java.lang.Object)>(class "org/jfree/data/time/Year")
+org.jfree.data.time.RegularTimePeriod.downsize : return class "org/jfree/data/time/Day"
+org.jfree.data.time.RegularTimePeriod.downsize : $z2 = virtualinvoke r0.<java.lang.Object: boolean equals(java.lang.Object)>(class "org/jfree/data/time/Month")
+org.jfree.data.time.Month.getFirstMillisecond : virtualinvoke r1.<java.util.Calendar: void set(int,int)>(14, 0)
+org.jfree.data.time.Month.getFirstMillisecond : $l3 = virtualinvoke r1.<java.util.Calendar: long getTimeInMillis()>()
+org.jfree.data.time.Month.getFirstMillisecond : $i0 = r0.<org.jfree.data.time.Month: int year>
+org.jfree.data.time.Month.getFirstMillisecond : $l0 = r0.<org.jfree.data.time.Month: long firstMillisecond>
+org.jfree.data.DefaultKeyedValues2D.setValue : if i0 < 0 goto $r7 = new org.jfree.data.DefaultKeyedValues
+org.jfree.data.DefaultKeyedValues2D.setValue : $r13 = r0.<org.jfree.data.DefaultKeyedValues2D: java.util.List columnKeys>
+org.jfree.data.DefaultKeyedValues2D.setValue : if i1 >= 0 goto return
+org.jfree.data.DefaultKeyedValues2D.setValue : $z0 = r0.<org.jfree.data.DefaultKeyedValues2D: boolean sortRowKeys>
+org.jfree.data.DefaultKeyedValues2D.setValue : $r7 = new org.jfree.data.DefaultKeyedValues
+org.jfree.data.DefaultKeyedValues2D.setValue : $r8 = r0.<org.jfree.data.DefaultKeyedValues2D: java.util.List rowKeys>
+org.jfree.data.DefaultKeyedValues2D.setValue : $r9 = r0.<org.jfree.data.DefaultKeyedValues2D: java.util.List rows>
+org.jfree.data.DefaultKeyedValues2D.setValue : $i2 = neg i0
+org.jfree.data.DefaultKeyedValues2D.setValue : i0 = virtualinvoke r0.<org.jfree.data.DefaultKeyedValues2D: int getRowIndex(java.lang.Comparable)>(r2)
+org.jfree.data.DefaultKeyedValues2D.setValue : $r12 = r0.<org.jfree.data.DefaultKeyedValues2D: java.util.List columnKeys>
+org.jfree.data.DefaultKeyedValues2D.setValue : virtualinvoke r4.<org.jfree.data.DefaultKeyedValues: void setValue(java.lang.Comparable,java.lang.Number)>(r3, r1)
+org.jfree.data.DefaultKeyedValues.setValue : i0 = virtualinvoke r0.<org.jfree.data.DefaultKeyedValues: int getIndex(java.lang.Comparable)>(r1)
+org.jfree.data.DefaultKeyedValues.setValue : $r8 = r0.<org.jfree.data.DefaultKeyedValues: java.util.ArrayList values>
+org.jfree.data.DefaultKeyedValues.setValue : $r9 = r0.<org.jfree.data.DefaultKeyedValues: java.util.HashMap indexMap>
+org.jfree.data.DefaultKeyedValues.setValue : $r7 = r0.<org.jfree.data.DefaultKeyedValues: java.util.ArrayList keys>
+org.jfree.data.DefaultKeyedValues.setValue : if i0 < 0 goto $r7 = r0.<org.jfree.data.DefaultKeyedValues: java.util.ArrayList keys>
+org.jfree.data.DefaultKeyedValues.setValue : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "key")
+org.jfree.data.time.Year.peg : $l1 = virtualinvoke r0.<org.jfree.data.time.Year: long getLastMillisecond(java.util.Calendar)>(r1)
+org.jfree.data.time.Year.peg : $l0 = virtualinvoke r0.<org.jfree.data.time.Year: long getFirstMillisecond(java.util.Calendar)>(r1)
+org.jfree.chart.plot.CategoryPlot.getRangeAxis : $r5 = r0.<org.jfree.chart.plot.CategoryPlot: org.jfree.util.ObjectList rangeAxes>
+org.jfree.chart.plot.CategoryPlot.getRangeAxis : $r4 = r0.<org.jfree.chart.plot.CategoryPlot: org.jfree.util.ObjectList rangeAxes>
+org.jfree.chart.plot.CategoryPlot.getRangeAxis : if r1 != null goto return r1
+org.jfree.chart.plot.CategoryPlot.getRangeAxis : r1 = null
+org.jfree.chart.plot.CategoryPlot.getRangeAxis : return r1
+org.jfree.chart.plot.CategoryPlot.getRangeAxis : r2 = virtualinvoke r0.<org.jfree.chart.plot.CategoryPlot: org.jfree.chart.plot.Plot getParent()>()
+org.jfree.chart.plot.CategoryPlot.getRangeAxis : $z0 = r2 instanceof org.jfree.chart.plot.CategoryPlot
+org.jfree.chart.axis.ValueAxis.isAutoRange : $z0 = r0.<org.jfree.chart.axis.ValueAxis: boolean autoRange>
+org.jfree.chart.plot.CategoryPlot.configureRangeAxes : if r1 == null goto i0 = i0 + 1
+org.jfree.chart.plot.CategoryPlot.configureRangeAxes : i0 = 0
+org.jfree.chart.plot.CategoryPlot.configureRangeAxes : $r3 = r0.<org.jfree.chart.plot.CategoryPlot: org.jfree.util.ObjectList rangeAxes>
+org.jfree.data.time.Month.previous : $i0 = r0.<org.jfree.data.time.Month: int month>
+org.jfree.data.time.Month.previous : $i4 = r0.<org.jfree.data.time.Month: int year>
+org.jfree.data.time.Month.previous : r1 = null
+org.jfree.data.time.Month.previous : return r1
+org.jfree.data.time.Week.compareTo : goto [?= return i0]
+org.jfree.data.time.Week.compareTo : if i0 != 0 goto (branch)
+org.jfree.data.time.Week.compareTo : return i0
+org.jfree.data.time.Week.compareTo : r2 = (org.jfree.data.time.Week) r1
+org.jfree.data.time.Week.compareTo : $b3 = r0.<org.jfree.data.time.Week: byte week>
+org.jfree.data.time.Week.compareTo : $z0 = r1 instanceof org.jfree.data.time.Week
+org.jfree.data.time.Week.compareTo : $s1 = r0.<org.jfree.data.time.Week: short year>
+org.jfree.chart.axis.PeriodAxis.autoAdjustRange : r3 = interfaceinvoke r2.<org.jfree.chart.plot.ValueAxisPlot: org.jfree.data.Range getDataRange(org.jfree.chart.axis.ValueAxis)>(r0)
+org.jfree.chart.axis.PeriodAxis.autoAdjustRange : $d0 = virtualinvoke r3.<org.jfree.data.Range: double getUpperBound()>()
+org.jfree.chart.axis.PeriodAxis.autoAdjustRange : r2 = (org.jfree.chart.plot.ValueAxisPlot) r1
+org.jfree.chart.axis.PeriodAxis.autoAdjustRange : virtualinvoke r0.<org.jfree.chart.axis.PeriodAxis: void setRange(org.jfree.data.Range,boolean,boolean)>(r3, 0, 0)
+org.jfree.chart.axis.PeriodAxis.autoAdjustRange : $r9 = r0.<org.jfree.chart.axis.PeriodAxis: java.lang.Class autoRangeTimePeriodClass>
+org.jfree.chart.axis.PeriodAxis.autoAdjustRange : if r3 != null goto $d0 = virtualinvoke r3.<org.jfree.data.Range: double getUpperBound()>()
+org.jfree.chart.axis.PeriodAxis.autoAdjustRange : $z0 = r1 instanceof org.jfree.chart.plot.ValueAxisPlot
+org.jfree.chart.axis.PeriodAxis.autoAdjustRange : if r1 != null goto $z0 = r1 instanceof org.jfree.chart.plot.ValueAxisPlot
+org.jfree.chart.axis.PeriodAxis.autoAdjustRange : r1 = virtualinvoke r0.<org.jfree.chart.axis.PeriodAxis: org.jfree.chart.plot.Plot getPlot()>()
+org.jfree.chart.axis.PeriodAxis.autoAdjustRange : $r5 = r0.<org.jfree.chart.axis.PeriodAxis: java.lang.Class autoRangeTimePeriodClass>
+org.jfree.chart.axis.PeriodAxis.autoAdjustRange : $d1 = virtualinvoke r3.<org.jfree.data.Range: double getLowerBound()>()
+org.jfree.chart.axis.PeriodAxis.autoAdjustRange : r3 = virtualinvoke r0.<org.jfree.chart.axis.PeriodAxis: org.jfree.data.Range getDefaultAutoRange()>()
+org.jfree.data.time.Year.getYear : $s0 = r0.<org.jfree.data.time.Year: short year>
+org.jfree.data.Range.getLowerBound : $d0 = r0.<org.jfree.data.Range: double lower>
+org.jfree.chart.plot.CategoryPlot.mapDatasetToDomainAxes : specialinvoke r0.<org.jfree.chart.plot.CategoryPlot: void checkAxisIndices(java.util.List)>(r1)
+org.jfree.chart.plot.CategoryPlot.mapDatasetToDomainAxes : $r8 = new org.jfree.data.general.DatasetChangeEvent
+org.jfree.chart.plot.CategoryPlot.mapDatasetToDomainAxes : if i0 >= 0 goto specialinvoke r0.<org.jfree.chart.plot.CategoryPlot: void checkAxisIndices(java.util.List)>(r1)
+org.jfree.chart.plot.CategoryPlot.mapDatasetToDomainAxes : $r4 = new java.lang.Integer
+org.jfree.chart.plot.CategoryPlot.mapDatasetToDomainAxes : $r5 = r0.<org.jfree.chart.plot.CategoryPlot: java.util.TreeMap datasetToDomainAxesMap>
+org.jfree.chart.axis.Axis.getPlot : $r1 = r0.<org.jfree.chart.axis.Axis: org.jfree.chart.plot.Plot plot>
+org.jfree.chart.plot.CategoryPlot.mapDatasetToRangeAxes : specialinvoke r0.<org.jfree.chart.plot.CategoryPlot: void checkAxisIndices(java.util.List)>(r1)
+org.jfree.chart.plot.CategoryPlot.mapDatasetToRangeAxes : $r8 = new org.jfree.data.general.DatasetChangeEvent
+org.jfree.chart.plot.CategoryPlot.mapDatasetToRangeAxes : $r5 = r0.<org.jfree.chart.plot.CategoryPlot: java.util.TreeMap datasetToRangeAxesMap>
+org.jfree.chart.plot.CategoryPlot.mapDatasetToRangeAxes : if i0 >= 0 goto specialinvoke r0.<org.jfree.chart.plot.CategoryPlot: void checkAxisIndices(java.util.List)>(r1)
+org.jfree.chart.plot.CategoryPlot.mapDatasetToRangeAxes : $r4 = new java.lang.Integer
+org.jfree.chart.axis.Axis.setPlot : r0.<org.jfree.chart.axis.Axis: org.jfree.chart.plot.Plot plot> = r1
+org.jfree.chart.axis.Axis.setPlot : virtualinvoke r0.<org.jfree.chart.axis.Axis: void configure()>()
+org.jfree.data.time.Year.compareTo : return i0
+org.jfree.data.time.Year.compareTo : $z1 = r1 instanceof org.jfree.data.time.RegularTimePeriod
+org.jfree.data.time.Year.compareTo : i0 = 1
+org.jfree.data.time.Year.compareTo : $z0 = r1 instanceof org.jfree.data.time.Year
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null goto return
+org.jfree.data.Range.getUpperBound : $d0 = r0.<org.jfree.data.Range: double upper>
+org.jfree.chart.plot.CategoryPlot.setRangeAxisLocation : if z0 == 0 goto return
+org.jfree.chart.plot.CategoryPlot.setRangeAxisLocation : virtualinvoke r0.<org.jfree.chart.plot.CategoryPlot: void setRangeAxisLocation(int,org.jfree.chart.axis.AxisLocation,boolean)>(0, r1, z0)
+org.jfree.chart.plot.CategoryPlot.setRangeAxisLocation : $r3 = r0.<org.jfree.chart.plot.CategoryPlot: org.jfree.util.ObjectList rangeAxisLocations>
+org.jfree.chart.plot.CategoryPlot.setRangeAxisLocation : if i0 != 0 goto $r3 = r0.<org.jfree.chart.plot.CategoryPlot: org.jfree.util.ObjectList rangeAxisLocations>
+org.jfree.chart.plot.CategoryPlot.setDomainAxisLocation : if z0 == 0 goto return
+org.jfree.chart.plot.CategoryPlot.setDomainAxisLocation : if i0 != 0 goto $r3 = r0.<org.jfree.chart.plot.CategoryPlot: org.jfree.util.ObjectList domainAxisLocations>
+org.jfree.chart.plot.CategoryPlot.setDomainAxisLocation : $r3 = r0.<org.jfree.chart.plot.CategoryPlot: org.jfree.util.ObjectList domainAxisLocations>
+org.jfree.chart.plot.CategoryPlot.setDomainAxisLocation : virtualinvoke r0.<org.jfree.chart.plot.CategoryPlot: void setDomainAxisLocation(int,org.jfree.chart.axis.AxisLocation,boolean)>(0, r1, z0)
+org.jfree.chart.axis.PeriodAxis.setFirst : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "first")
+org.jfree.chart.axis.PeriodAxis.setFirst : $r2 = r0.<org.jfree.chart.axis.PeriodAxis: org.jfree.data.time.RegularTimePeriod first>
+org.jfree.chart.axis.PeriodAxis.setFirst : $r4 = new org.jfree.chart.event.AxisChangeEvent
+org.jfree.chart.axis.PeriodAxis.setFirst : r0.<org.jfree.chart.axis.PeriodAxis: org.jfree.data.time.RegularTimePeriod first> = r1

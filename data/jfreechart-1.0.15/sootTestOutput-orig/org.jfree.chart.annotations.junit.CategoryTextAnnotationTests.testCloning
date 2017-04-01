@@ -1,0 +1,35 @@
+org.jfree.chart.axis.CategoryAnchor.equals : return 1
+org.jfree.chart.axis.CategoryAnchor.equals : if r0 != r1 goto $z0 = r1 instanceof org.jfree.chart.axis.CategoryAnchor
+org.jfree.chart.annotations.CategoryTextAnnotation.getCategoryAnchor : $r1 = r0.<org.jfree.chart.annotations.CategoryTextAnnotation: org.jfree.chart.axis.CategoryAnchor categoryAnchor>
+org.jfree.chart.annotations.TextAnnotation.getFont : $r1 = r0.<org.jfree.chart.annotations.TextAnnotation: java.awt.Font font>
+org.jfree.chart.annotations.TextAnnotation.getPaint : $r1 = r0.<org.jfree.chart.annotations.TextAnnotation: java.awt.Paint paint>
+org.jfree.chart.annotations.AbstractAnnotation.clone : $r2 = new javax.swing.event.EventListenerList
+org.jfree.chart.annotations.AbstractAnnotation.clone : return r1
+org.jfree.chart.annotations.AbstractAnnotation.clone : $r3 = specialinvoke r0.<java.lang.Object: java.lang.Object clone()>()
+org.jfree.chart.annotations.CategoryTextAnnotation.equals : $r3 = r0.<org.jfree.chart.annotations.CategoryTextAnnotation: java.lang.Comparable category>
+org.jfree.chart.annotations.CategoryTextAnnotation.equals : $z0 = r1 instanceof org.jfree.chart.annotations.CategoryTextAnnotation
+org.jfree.chart.annotations.CategoryTextAnnotation.equals : if r1 != r0 goto $z0 = r1 instanceof org.jfree.chart.annotations.CategoryTextAnnotation
+org.jfree.chart.annotations.CategoryTextAnnotation.equals : return 1
+org.jfree.chart.annotations.CategoryTextAnnotation.equals : $r5 = r0.<org.jfree.chart.annotations.CategoryTextAnnotation: org.jfree.chart.axis.CategoryAnchor categoryAnchor>
+org.jfree.chart.annotations.CategoryTextAnnotation.equals : r2 = (org.jfree.chart.annotations.CategoryTextAnnotation) r1
+org.jfree.chart.annotations.CategoryTextAnnotation.equals : $z1 = specialinvoke r0.<org.jfree.chart.annotations.TextAnnotation: boolean equals(java.lang.Object)>(r1)
+org.jfree.chart.annotations.CategoryTextAnnotation.equals : $d0 = r0.<org.jfree.chart.annotations.CategoryTextAnnotation: double value>
+org.jfree.chart.annotations.TextAnnotation.getRotationAngle : $d0 = r0.<org.jfree.chart.annotations.TextAnnotation: double rotationAngle>
+org.jfree.chart.annotations.CategoryTextAnnotation.clone : $r1 = specialinvoke r0.<org.jfree.chart.annotations.TextAnnotation: java.lang.Object clone()>()
+org.jfree.chart.annotations.TextAnnotation.getRotationAnchor : $r1 = r0.<org.jfree.chart.annotations.TextAnnotation: org.jfree.ui.TextAnchor rotationAnchor>
+org.jfree.chart.annotations.CategoryTextAnnotation.getCategory : $r1 = r0.<org.jfree.chart.annotations.CategoryTextAnnotation: java.lang.Comparable category>
+org.jfree.chart.annotations.TextAnnotation.equals : if r1 != r0 goto $z0 = r1 instanceof org.jfree.chart.annotations.TextAnnotation
+org.jfree.chart.annotations.TextAnnotation.equals : $r11 = r0.<org.jfree.chart.annotations.TextAnnotation: org.jfree.ui.TextAnchor rotationAnchor>
+org.jfree.chart.annotations.TextAnnotation.equals : $r3 = r0.<org.jfree.chart.annotations.TextAnnotation: java.lang.String text>
+org.jfree.chart.annotations.TextAnnotation.equals : $d0 = r0.<org.jfree.chart.annotations.TextAnnotation: double rotationAngle>
+org.jfree.chart.annotations.TextAnnotation.equals : r2 = (org.jfree.chart.annotations.TextAnnotation) r1
+org.jfree.chart.annotations.TextAnnotation.equals : $z0 = r1 instanceof org.jfree.chart.annotations.TextAnnotation
+org.jfree.chart.annotations.TextAnnotation.equals : $r9 = r0.<org.jfree.chart.annotations.TextAnnotation: org.jfree.ui.TextAnchor textAnchor>
+org.jfree.chart.annotations.TextAnnotation.equals : $r7 = r0.<org.jfree.chart.annotations.TextAnnotation: java.awt.Paint paint>
+org.jfree.chart.annotations.TextAnnotation.equals : return 1
+org.jfree.chart.annotations.TextAnnotation.equals : $r5 = r0.<org.jfree.chart.annotations.TextAnnotation: java.awt.Font font>
+org.jfree.chart.annotations.TextAnnotation.equals : $r12 = virtualinvoke r2.<org.jfree.chart.annotations.TextAnnotation: org.jfree.ui.TextAnchor getRotationAnchor()>()
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null goto return
+org.jfree.chart.annotations.TextAnnotation.getTextAnchor : $r1 = r0.<org.jfree.chart.annotations.TextAnnotation: org.jfree.ui.TextAnchor textAnchor>
+org.jfree.chart.annotations.TextAnnotation.getText : $r1 = r0.<org.jfree.chart.annotations.TextAnnotation: java.lang.String text>
+org.jfree.chart.annotations.CategoryTextAnnotation.getValue : $d0 = r0.<org.jfree.chart.annotations.CategoryTextAnnotation: double value>

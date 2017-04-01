@@ -1,0 +1,20 @@
+crystal.model.RevisionHistory.equals : if r1 != null >>>>>>>> crystal.model.RevisionHistory.equals : return 0
+crystal.model.RevisionHistory.equals : if r1 != null >>>>>>>> crystal.model.RevisionHistory.equals : $z0 = r1 instanceof crystal.model.RevisionHistory
+crystal.model.RevisionHistory.equals : $z0 = r1 instanceof crystal.model.RevisionHistory >>>>>>>> crystal.model.RevisionHistory.equals : if $z0 == 0
+crystal.model.RevisionHistory.equals : if $z0 == 0 >>>>>>>> crystal.model.RevisionHistory.equals : r2 = (crystal.model.RevisionHistory) r1
+crystal.model.RevisionHistory.equals : if $z0 == 0 >>>>>>>> crystal.model.RevisionHistory.equals : return 0
+crystal.model.RevisionHistory.equals : r2 = (crystal.model.RevisionHistory) r1 >>>>>>>> crystal.model.RevisionHistory.equals : $r5 = r2.<crystal.model.RevisionHistory: java.util.HashMap _changesets>
+crystal.model.RevisionHistory.equals : $r5 = r2.<crystal.model.RevisionHistory: java.util.HashMap _changesets> >>>>>>>> crystal.model.RevisionHistory.equals : r3 = virtualinvoke $r5.<java.util.HashMap: java.util.Set keySet()>()
+crystal.model.RevisionHistory.equals : r3 = virtualinvoke $r5.<java.util.HashMap: java.util.Set keySet()>() >>>>>>>> crystal.model.RevisionHistory.equals : $r6 = r0.<crystal.model.RevisionHistory: java.util.HashMap _changesets>
+crystal.model.RevisionHistory.equals : $r6 = r0.<crystal.model.RevisionHistory: java.util.HashMap _changesets> >>>>>>>> crystal.model.RevisionHistory.equals : r4 = virtualinvoke $r6.<java.util.HashMap: java.util.Set keySet()>()
+crystal.model.RevisionHistory.equals : r4 = virtualinvoke $r6.<java.util.HashMap: java.util.Set keySet()>() >>>>>>>> crystal.model.RevisionHistory.equals : $i0 = interfaceinvoke r4.<java.util.Set: int size()>()
+crystal.model.RevisionHistory.equals : $i0 = interfaceinvoke r4.<java.util.Set: int size()>() >>>>>>>> crystal.model.RevisionHistory.equals : $i1 = interfaceinvoke r3.<java.util.Set: int size()>()
+crystal.model.RevisionHistory.equals : $i1 = interfaceinvoke r3.<java.util.Set: int size()>() >>>>>>>> crystal.model.RevisionHistory.equals : if $i0 != $i1
+crystal.model.RevisionHistory.equals : if $i0 != $i1 >>>>>>>> crystal.model.RevisionHistory.equals : $z1 = interfaceinvoke r4.<java.util.Set: boolean containsAll(java.util.Collection)>(r3)
+crystal.model.RevisionHistory.equals : if $i0 != $i1 >>>>>>>> crystal.model.RevisionHistory.equals : $z2 = 0
+crystal.model.RevisionHistory.equals : $z2 = 0 >>>>>>>> crystal.model.RevisionHistory.equals : return $z2
+crystal.model.RevisionHistory.equals : $z1 = interfaceinvoke r4.<java.util.Set: boolean containsAll(java.util.Collection)>(r3) >>>>>>>> crystal.model.RevisionHistory.equals : if $z1 == 0
+crystal.model.RevisionHistory.equals : if $z1 == 0 >>>>>>>> crystal.model.RevisionHistory.equals : $z2 = 1
+crystal.model.RevisionHistory.equals : if $z1 == 0 >>>>>>>> crystal.model.RevisionHistory.equals : $z2 = 0
+crystal.model.RevisionHistory.equals : $z2 = 1 >>>>>>>> crystal.model.RevisionHistory.equals : goto [?= return $z2]
+crystal.model.RevisionHistory.equals : goto [?= return $z2] >>>>>>>> crystal.model.RevisionHistory.equals : return $z2

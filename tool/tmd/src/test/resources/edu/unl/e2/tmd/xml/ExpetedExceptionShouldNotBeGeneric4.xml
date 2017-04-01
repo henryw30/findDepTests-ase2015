@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<test-data>
+    <test-code>
+        <description><![CDATA[
+simple failure case
+     ]]></description>
+        <expected-problems>0</expected-problems>
+        <code><![CDATA[
+
+	class SomeTest{
+	
+		@Test
+		public void test(){
+			try{
+				doSomething();
+			}catch(Exception ex){
+				doSomething();
+				fail();
+				//assertEquals(ex.getType(),InvalidException.class);
+			}
+		}
+	}
+
+     ]]></code>
+    </test-code>
+        <test-code>
+        <description><![CDATA[
+simple failure case
+     ]]></description>
+        <expected-problems>1</expected-problems>
+        <code><![CDATA[
+
+	class SomeTest{
+	
+		@Test
+		public void test(){
+			try{
+				doSomething();
+			}catch(Exception ex){
+				doSomething();
+			}
+		}
+	}
+
+     ]]></code>
+    </test-code>
+            <test-code>
+        <description><![CDATA[
+simple failure case
+     ]]></description>
+        <expected-problems>1</expected-problems>
+        <code><![CDATA[
+
+	class SomeTest{
+	
+		@Test(expected=Exception.class)
+		public void test(){
+				doSomething();
+		}
+	}
+
+     ]]></code>
+    </test-code>
+     <test-code>
+        <description><![CDATA[
+simple failure case
+     ]]></description>
+        <expected-problems>1</expected-problems>
+        <code><![CDATA[
+
+	class SomeTest{
+	
+		@Test
+		public void test(){
+			try{
+				doSomething();
+			}catch(Exception ex){
+				doSomething();
+			}
+		}
+	}
+
+     ]]></code>
+    </test-code>
+    <test-code>
+        <description><![CDATA[
+simple failure case
+     ]]></description>
+        <expected-problems>0</expected-problems>
+        <code><![CDATA[
+
+	class SomeTest{
+	
+		@Test
+		public void test(){
+			try{
+				doSomething();
+			}catch(Exception ex){
+				doSomething();
+				assertEquals(ex.getType(),InvalidException.class);
+			}
+		}
+	}
+
+     ]]></code>
+    </test-code>
+    <test-code>
+        <description><![CDATA[
+simple failure case
+     ]]></description>
+        <expected-problems>0</expected-problems>
+        <code><![CDATA[
+
+	class SomeTest{
+	
+		@Test
+		public void test(){
+			try{
+				doSomething();
+			}catch(Exception ex){
+				doSomething();
+				assertEquals(getType(ex),InvalidException.class);
+			}
+		}
+	}
+
+     ]]></code>
+    </test-code>
+</test-data>

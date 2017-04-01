@@ -1,0 +1,16 @@
+org.joda.time.DateTimeFieldType.secondOfMinute : $r0 = <org.joda.time.DateTimeFieldType: org.joda.time.DateTimeFieldType SECOND_OF_MINUTE_TYPE>
+org.joda.time.field.TestBaseDateTimeField$MockBaseDateTimeField.getMinimumValue : return 0
+org.joda.time.field.BaseDateTimeField.addWrapField : $i4 = virtualinvoke r0.<org.joda.time.field.BaseDateTimeField: int getMinimumValue(long)>(l0)
+org.joda.time.field.BaseDateTimeField.addWrapField : $l6 = virtualinvoke r0.<org.joda.time.field.BaseDateTimeField: long set(long,int)>(l0, i3)
+org.joda.time.field.BaseDateTimeField.addWrapField : i2 = virtualinvoke r0.<org.joda.time.field.BaseDateTimeField: int get(long)>(l0)
+org.joda.time.field.TestBaseDateTimeField$MockBaseDateTimeField.get : $l1 = l0 / 60L
+org.joda.time.field.TestBaseDateTimeField$MockBaseDateTimeField.set : $i2 = 1000 + i1
+org.joda.time.field.BaseDateTimeField.getMinimumValue : $i1 = virtualinvoke r0.<org.joda.time.field.BaseDateTimeField: int getMinimumValue()>()
+org.joda.time.field.BaseDateTimeField.getMaximumValue : $i1 = virtualinvoke r0.<org.joda.time.field.BaseDateTimeField: int getMaximumValue()>()
+org.joda.time.field.FieldUtils.getWrappedValue : if i6 < 0 goto $i9 = neg i6
+org.joda.time.field.FieldUtils.getWrappedValue : i6 = i0 - i1
+org.joda.time.field.FieldUtils.getWrappedValue : if i1 < i2 goto $i5 = i2 - i1
+org.joda.time.field.FieldUtils.getWrappedValue : $i4 = i0 + i1
+org.joda.time.field.FieldUtils.getWrappedValue : $i7 = i6 % i3
+org.joda.time.field.FieldUtils.getWrappedValue : $i5 = i2 - i1
+org.joda.time.field.TestBaseDateTimeField$MockBaseDateTimeField.getMaximumValue : return 59

@@ -1,0 +1,20 @@
+org.jfree.chart.JFreeChartInfo.getLogo : r1 = specialinvoke r0.<org.jfree.ui.about.ProjectInfo: java.awt.Image getLogo()>()
+org.jfree.chart.JFreeChartInfo.getLogo : if r1 != null goto return r1
+org.jfree.chart.JFreeChartInfo.getLogo : return r1
+org.jfree.chart.annotations.AbstractXYAnnotation.equals : $r5 = r0.<org.jfree.chart.annotations.AbstractXYAnnotation: java.lang.String url>
+org.jfree.chart.annotations.AbstractXYAnnotation.equals : if r1 != r0 goto $z0 = r1 instanceof org.jfree.chart.annotations.AbstractXYAnnotation
+org.jfree.chart.annotations.AbstractXYAnnotation.equals : r2 = (org.jfree.chart.annotations.AbstractXYAnnotation) r1
+org.jfree.chart.annotations.AbstractXYAnnotation.equals : return 1
+org.jfree.chart.annotations.AbstractXYAnnotation.equals : $z0 = r1 instanceof org.jfree.chart.annotations.AbstractXYAnnotation
+org.jfree.chart.annotations.AbstractXYAnnotation.equals : $r3 = r0.<org.jfree.chart.annotations.AbstractXYAnnotation: java.lang.String toolTipText>
+org.jfree.chart.annotations.XYImageAnnotation.hashCode : $r1 = r0.<org.jfree.chart.annotations.XYImageAnnotation: java.awt.Image image>
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null goto return
+org.jfree.chart.annotations.XYImageAnnotation.equals : $r3 = r0.<org.jfree.chart.annotations.XYImageAnnotation: java.awt.Image image>
+org.jfree.chart.annotations.XYImageAnnotation.equals : $z0 = specialinvoke r0.<org.jfree.chart.annotations.AbstractXYAnnotation: boolean equals(java.lang.Object)>(r1)
+org.jfree.chart.annotations.XYImageAnnotation.equals : $d0 = r0.<org.jfree.chart.annotations.XYImageAnnotation: double x>
+org.jfree.chart.annotations.XYImageAnnotation.equals : if r1 != r0 goto $z0 = specialinvoke r0.<org.jfree.chart.annotations.AbstractXYAnnotation: boolean equals(java.lang.Object)>(r1)
+org.jfree.chart.annotations.XYImageAnnotation.equals : $r5 = r0.<org.jfree.chart.annotations.XYImageAnnotation: org.jfree.ui.RectangleAnchor anchor>
+org.jfree.chart.annotations.XYImageAnnotation.equals : $z1 = r1 instanceof org.jfree.chart.annotations.XYImageAnnotation
+org.jfree.chart.annotations.XYImageAnnotation.equals : return 1
+org.jfree.chart.annotations.XYImageAnnotation.equals : r2 = (org.jfree.chart.annotations.XYImageAnnotation) r1
+org.jfree.chart.annotations.XYImageAnnotation.equals : $d2 = r0.<org.jfree.chart.annotations.XYImageAnnotation: double y>

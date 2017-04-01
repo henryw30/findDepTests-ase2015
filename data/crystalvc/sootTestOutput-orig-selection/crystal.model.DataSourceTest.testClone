@@ -1,0 +1,24 @@
+crystal.model.DataSource.setParent : if r1 == null >>>>>>>> crystal.model.DataSource.setParent : $r2 = virtualinvoke r1.<java.lang.String: java.lang.String trim()>()
+crystal.model.DataSource.setParent : $r2 = virtualinvoke r1.<java.lang.String: java.lang.String trim()>() >>>>>>>> crystal.model.DataSource.setParent : $z0 = virtualinvoke $r2.<java.lang.String: boolean equals(java.lang.Object)>("")
+crystal.model.DataSource.setParent : $z0 = virtualinvoke $r2.<java.lang.String: boolean equals(java.lang.Object)>("") >>>>>>>> crystal.model.DataSource.setParent : if $z0 == 0
+crystal.model.DataSource.setParent : if $z0 == 0 >>>>>>>> crystal.model.DataSource.setParent : r0.<crystal.model.DataSource: java.lang.String _parent> = r1
+crystal.model.DataSource.setParent : r0.<crystal.model.DataSource: java.lang.String _parent> = r1 >>>>>>>> crystal.model.DataSource.clone : $r2 = specialinvoke r0.<java.lang.Object: java.lang.Object clone()>()
+crystal.model.DataSource.clone : $r2 = specialinvoke r0.<java.lang.Object: java.lang.Object clone()>() >>>>>>>> crystal.model.DataSource.clone : r1 = (crystal.model.DataSource) $r2
+crystal.model.DataSource.clone : r1 = (crystal.model.DataSource) $r2 >>>>>>>> crystal.model.DataSource.clone : $r3 = r0.<crystal.model.DataSource: crystal.model.RevisionHistory _history>
+crystal.model.DataSource.clone : $r3 = r0.<crystal.model.DataSource: crystal.model.RevisionHistory _history> >>>>>>>> crystal.model.DataSource.clone : if $r3 == null
+crystal.model.DataSource.clone : if $r3 == null >>>>>>>> crystal.model.DataSource.clone : $r6 = r0.<crystal.model.DataSource: crystal.model.RevisionHistory _oldHistory>
+crystal.model.DataSource.clone : $r6 = r0.<crystal.model.DataSource: crystal.model.RevisionHistory _oldHistory> >>>>>>>> crystal.model.DataSource.clone : if $r6 == null
+crystal.model.DataSource.clone : if $r6 == null >>>>>>>> crystal.model.DataSource.clone : return r1
+crystal.model.DataSource.clone : return r1 >>>>>>>> crystal.model.DataSource.setShortName : staticinvoke <crystal.util.ValidInputChecker: void checkValidStringInput(java.lang.String)>(r1)
+crystal.model.DataSource.setShortName : staticinvoke <crystal.util.ValidInputChecker: void checkValidStringInput(java.lang.String)>(r1) >>>>>>>> crystal.util.ValidInputChecker.checkValidStringInput : if r0 == null
+crystal.util.ValidInputChecker.checkValidStringInput : if r0 == null >>>>>>>> crystal.util.ValidInputChecker.checkValidStringInput : $r1 = virtualinvoke r0.<java.lang.String: java.lang.String trim()>()
+crystal.util.ValidInputChecker.checkValidStringInput : $r1 = virtualinvoke r0.<java.lang.String: java.lang.String trim()>() >>>>>>>> crystal.util.ValidInputChecker.checkValidStringInput : $z0 = virtualinvoke $r1.<java.lang.String: boolean equals(java.lang.Object)>("")
+crystal.util.ValidInputChecker.checkValidStringInput : $z0 = virtualinvoke $r1.<java.lang.String: boolean equals(java.lang.Object)>("") >>>>>>>> crystal.util.ValidInputChecker.checkValidStringInput : if $z0 == 0
+crystal.util.ValidInputChecker.checkValidStringInput : if $z0 == 0 >>>>>>>> crystal.model.DataSource.setShortName : $r2 = virtualinvoke r1.<java.lang.String: java.lang.String replace(char,char)>(32, 95)
+crystal.model.DataSource.setShortName : $r2 = virtualinvoke r1.<java.lang.String: java.lang.String replace(char,char)>(32, 95) >>>>>>>> crystal.model.DataSource.setShortName : $r3 = virtualinvoke $r2.<java.lang.String: java.lang.String replace(char,char)>(92, 95)
+crystal.model.DataSource.setShortName : $r3 = virtualinvoke $r2.<java.lang.String: java.lang.String replace(char,char)>(92, 95) >>>>>>>> crystal.model.DataSource.setShortName : $r4 = virtualinvoke $r3.<java.lang.String: java.lang.String replace(char,char)>(47, 95)
+crystal.model.DataSource.setShortName : $r4 = virtualinvoke $r3.<java.lang.String: java.lang.String replace(char,char)>(47, 95) >>>>>>>> crystal.model.DataSource.setShortName : $r5 = virtualinvoke $r4.<java.lang.String: java.lang.String replace(char,char)>(58, 95)
+crystal.model.DataSource.setShortName : $r5 = virtualinvoke $r4.<java.lang.String: java.lang.String replace(char,char)>(58, 95) >>>>>>>> crystal.model.DataSource.setShortName : $r6 = virtualinvoke $r5.<java.lang.String: java.lang.String replace(char,char)>(59, 95)
+crystal.model.DataSource.setShortName : $r6 = virtualinvoke $r5.<java.lang.String: java.lang.String replace(char,char)>(59, 95) >>>>>>>> crystal.model.DataSource.setShortName : r0.<crystal.model.DataSource: java.lang.String _shortName> = $r6
+crystal.model.DataSource.setShortName : r0.<crystal.model.DataSource: java.lang.String _shortName> = $r6 >>>>>>>> crystal.model.DataSource.getShortName : $r1 = r0.<crystal.model.DataSource: java.lang.String _shortName>
+crystal.model.DataSource.getShortName : $r1 = r0.<crystal.model.DataSource: java.lang.String _shortName> >>>>>>>> crystal.model.DataSource.getShortName : return $r1

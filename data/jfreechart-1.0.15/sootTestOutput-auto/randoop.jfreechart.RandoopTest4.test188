@@ -1,0 +1,29 @@
+org.jfree.chart.renderer.xy.AbstractXYItemRenderer.setURLGenerator : virtualinvoke r0.<org.jfree.chart.renderer.xy.AbstractXYItemRenderer: void fireChangeEvent()>()
+org.jfree.chart.renderer.xy.AbstractXYItemRenderer.setURLGenerator : r0.<org.jfree.chart.renderer.xy.AbstractXYItemRenderer: org.jfree.chart.urls.XYURLGenerator urlGenerator> = r1
+org.jfree.chart.labels.StandardXYToolTipGenerator.clone : $r1 = specialinvoke r0.<org.jfree.chart.labels.AbstractXYItemLabelGenerator: java.lang.Object clone()>()
+org.jfree.chart.labels.AbstractXYItemLabelGenerator.clone : $r2 = specialinvoke r0.<java.lang.Object: java.lang.Object clone()>()
+org.jfree.chart.labels.AbstractXYItemLabelGenerator.clone : $r11 = r0.<org.jfree.chart.labels.AbstractXYItemLabelGenerator: java.text.DateFormat xDateFormat>
+org.jfree.chart.labels.AbstractXYItemLabelGenerator.clone : $r15 = r0.<org.jfree.chart.labels.AbstractXYItemLabelGenerator: java.text.DateFormat yDateFormat>
+org.jfree.chart.labels.AbstractXYItemLabelGenerator.clone : $r4 = r0.<org.jfree.chart.labels.AbstractXYItemLabelGenerator: java.text.NumberFormat xFormat>
+org.jfree.chart.labels.AbstractXYItemLabelGenerator.clone : $r8 = r0.<org.jfree.chart.labels.AbstractXYItemLabelGenerator: java.text.NumberFormat yFormat>
+org.jfree.chart.labels.AbstractXYItemLabelGenerator.clone : $r7 = r0.<org.jfree.chart.labels.AbstractXYItemLabelGenerator: java.text.NumberFormat yFormat>
+org.jfree.chart.labels.AbstractXYItemLabelGenerator.clone : return r1
+org.jfree.chart.labels.AbstractXYItemLabelGenerator.clone : $r3 = r0.<org.jfree.chart.labels.AbstractXYItemLabelGenerator: java.text.NumberFormat xFormat>
+org.jfree.chart.renderer.AbstractRenderer.fireChangeEvent : $r1 = new org.jfree.chart.event.RendererChangeEvent
+org.jfree.chart.renderer.AbstractRenderer.notifyListeners : $r3 = r0.<org.jfree.chart.renderer.AbstractRenderer: javax.swing.event.EventListenerList listenerList>
+org.jfree.chart.renderer.AbstractRenderer.notifyListeners : $i1 = lengthof r2
+org.jfree.chart.renderer.xy.XYLineAndShapeRenderer.setBaseShapesVisible : r0.<org.jfree.chart.renderer.xy.XYLineAndShapeRenderer: boolean baseShapesVisible> = z0
+org.jfree.chart.renderer.xy.XYLineAndShapeRenderer.setBaseShapesVisible : virtualinvoke r0.<org.jfree.chart.renderer.xy.XYLineAndShapeRenderer: void fireChangeEvent()>()
+org.jfree.chart.urls.StandardXYURLGenerator.equals : $r3 = r2.<org.jfree.chart.urls.StandardXYURLGenerator: java.lang.String prefix>
+org.jfree.chart.urls.StandardXYURLGenerator.equals : if r1 != r0 goto $z0 = r1 instanceof org.jfree.chart.urls.StandardXYURLGenerator
+org.jfree.chart.urls.StandardXYURLGenerator.equals : return 1
+org.jfree.chart.urls.StandardXYURLGenerator.equals : $r5 = r2.<org.jfree.chart.urls.StandardXYURLGenerator: java.lang.String seriesParameterName>
+org.jfree.chart.urls.StandardXYURLGenerator.equals : $z0 = r1 instanceof org.jfree.chart.urls.StandardXYURLGenerator
+org.jfree.chart.urls.StandardXYURLGenerator.equals : r2 = (org.jfree.chart.urls.StandardXYURLGenerator) r1
+org.jfree.chart.urls.StandardXYURLGenerator.equals : $r7 = r2.<org.jfree.chart.urls.StandardXYURLGenerator: java.lang.String itemParameterName>
+org.jfree.chart.labels.IntervalCategoryToolTipGenerator.equals : $z0 = r1 instanceof org.jfree.chart.labels.IntervalCategoryToolTipGenerator
+org.jfree.chart.labels.IntervalCategoryToolTipGenerator.equals : if r1 != r0 goto $z0 = r1 instanceof org.jfree.chart.labels.IntervalCategoryToolTipGenerator
+org.jfree.chart.labels.IntervalCategoryToolTipGenerator.equals : return 0
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null goto return
+org.jfree.chart.renderer.xy.AbstractXYItemRenderer.setBaseToolTipGenerator : r0.<org.jfree.chart.renderer.xy.AbstractXYItemRenderer: org.jfree.chart.labels.XYToolTipGenerator baseToolTipGenerator> = r1
+org.jfree.chart.renderer.xy.AbstractXYItemRenderer.setBaseToolTipGenerator : virtualinvoke r0.<org.jfree.chart.renderer.xy.AbstractXYItemRenderer: void fireChangeEvent()>()

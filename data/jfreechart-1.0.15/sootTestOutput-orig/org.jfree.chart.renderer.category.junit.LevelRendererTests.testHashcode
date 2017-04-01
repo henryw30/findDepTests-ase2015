@@ -1,0 +1,145 @@
+org.jfree.chart.renderer.AbstractRenderer.setBaseOutlinePaint : virtualinvoke r0.<org.jfree.chart.renderer.AbstractRenderer: void fireChangeEvent()>()
+org.jfree.chart.renderer.AbstractRenderer.setBaseOutlinePaint : if z0 == 0 goto return
+org.jfree.chart.renderer.AbstractRenderer.setBaseOutlinePaint : r0.<org.jfree.chart.renderer.AbstractRenderer: java.awt.Paint baseOutlinePaint> = r1
+org.jfree.chart.renderer.AbstractRenderer.setBaseOutlinePaint : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "paint")
+org.jfree.chart.renderer.AbstractRenderer.setBaseOutlinePaint : virtualinvoke r0.<org.jfree.chart.renderer.AbstractRenderer: void setBaseOutlinePaint(java.awt.Paint,boolean)>(r1, 1)
+org.jfree.chart.labels.ItemLabelAnchor.equals : if r0 != r1 goto $z0 = r1 instanceof org.jfree.chart.labels.ItemLabelAnchor
+org.jfree.chart.labels.ItemLabelAnchor.equals : return 1
+org.jfree.chart.renderer.AbstractRenderer.hashCode : $r7 = r0.<org.jfree.chart.renderer.AbstractRenderer: org.jfree.util.PaintList outlinePaintList>
+org.jfree.chart.renderer.AbstractRenderer.hashCode : s0 = 193
+org.jfree.chart.renderer.AbstractRenderer.hashCode : $r1 = r0.<org.jfree.chart.renderer.AbstractRenderer: org.jfree.util.BooleanList seriesVisibleList>
+org.jfree.chart.renderer.AbstractRenderer.hashCode : $r10 = r0.<org.jfree.chart.renderer.AbstractRenderer: java.awt.Stroke baseStroke>
+org.jfree.chart.renderer.AbstractRenderer.hashCode : $r2 = r0.<org.jfree.chart.renderer.AbstractRenderer: org.jfree.util.BooleanList seriesVisibleInLegendList>
+org.jfree.chart.renderer.AbstractRenderer.hashCode : $r14 = r0.<org.jfree.chart.renderer.AbstractRenderer: java.lang.Boolean baseItemLabelsVisible>
+org.jfree.chart.renderer.AbstractRenderer.hashCode : $z1 = r0.<org.jfree.chart.renderer.AbstractRenderer: boolean baseSeriesVisibleInLegend>
+org.jfree.chart.renderer.AbstractRenderer.hashCode : $r13 = r0.<org.jfree.chart.renderer.AbstractRenderer: org.jfree.util.BooleanList itemLabelsVisibleList>
+org.jfree.chart.renderer.AbstractRenderer.hashCode : $r11 = r0.<org.jfree.chart.renderer.AbstractRenderer: org.jfree.util.StrokeList outlineStrokeList>
+org.jfree.chart.renderer.AbstractRenderer.hashCode : $r4 = r0.<org.jfree.chart.renderer.AbstractRenderer: java.awt.Paint basePaint>
+org.jfree.chart.renderer.AbstractRenderer.hashCode : $r6 = r0.<org.jfree.chart.renderer.AbstractRenderer: java.awt.Paint baseFillPaint>
+org.jfree.chart.renderer.AbstractRenderer.hashCode : $r5 = r0.<org.jfree.chart.renderer.AbstractRenderer: org.jfree.util.PaintList fillPaintList>
+org.jfree.chart.renderer.AbstractRenderer.hashCode : $r8 = r0.<org.jfree.chart.renderer.AbstractRenderer: java.awt.Paint baseOutlinePaint>
+org.jfree.chart.renderer.AbstractRenderer.hashCode : $r12 = r0.<org.jfree.chart.renderer.AbstractRenderer: java.awt.Stroke baseOutlineStroke>
+org.jfree.chart.renderer.AbstractRenderer.hashCode : $r9 = r0.<org.jfree.chart.renderer.AbstractRenderer: org.jfree.util.StrokeList strokeList>
+org.jfree.chart.renderer.AbstractRenderer.hashCode : return i16
+org.jfree.chart.renderer.AbstractRenderer.hashCode : $z0 = r0.<org.jfree.chart.renderer.AbstractRenderer: boolean baseSeriesVisible>
+org.jfree.chart.renderer.AbstractRenderer.hashCode : $r3 = r0.<org.jfree.chart.renderer.AbstractRenderer: org.jfree.util.PaintList paintList>
+org.jfree.chart.renderer.category.AbstractCategoryItemRenderer.equals : $r19 = r0.<org.jfree.chart.renderer.category.AbstractCategoryItemRenderer: org.jfree.chart.urls.CategoryURLGenerator baseItemURLGenerator>
+org.jfree.chart.renderer.category.AbstractCategoryItemRenderer.equals : $z0 = r1 instanceof org.jfree.chart.renderer.category.AbstractCategoryItemRenderer
+org.jfree.chart.renderer.category.AbstractCategoryItemRenderer.equals : $r5 = r0.<org.jfree.chart.renderer.category.AbstractCategoryItemRenderer: org.jfree.util.ObjectList itemLabelGeneratorList>
+org.jfree.chart.renderer.category.AbstractCategoryItemRenderer.equals : $r13 = r0.<org.jfree.chart.renderer.category.AbstractCategoryItemRenderer: org.jfree.chart.labels.CategoryToolTipGenerator baseToolTipGenerator>
+org.jfree.chart.renderer.category.AbstractCategoryItemRenderer.equals : r2 = (org.jfree.chart.renderer.category.AbstractCategoryItemRenderer) r1
+org.jfree.chart.renderer.category.AbstractCategoryItemRenderer.equals : $r21 = r0.<org.jfree.chart.renderer.category.AbstractCategoryItemRenderer: org.jfree.chart.labels.CategorySeriesLabelGenerator legendItemLabelGenerator>
+org.jfree.chart.renderer.category.AbstractCategoryItemRenderer.equals : $r23 = r0.<org.jfree.chart.renderer.category.AbstractCategoryItemRenderer: org.jfree.chart.labels.CategorySeriesLabelGenerator legendItemToolTipGenerator>
+org.jfree.chart.renderer.category.AbstractCategoryItemRenderer.equals : if r1 != r0 goto $z0 = r1 instanceof org.jfree.chart.renderer.category.AbstractCategoryItemRenderer
+org.jfree.chart.renderer.category.AbstractCategoryItemRenderer.equals : $r9 = r0.<org.jfree.chart.renderer.category.AbstractCategoryItemRenderer: org.jfree.chart.labels.CategoryToolTipGenerator toolTipGenerator>
+org.jfree.chart.renderer.category.AbstractCategoryItemRenderer.equals : $r17 = r0.<org.jfree.chart.renderer.category.AbstractCategoryItemRenderer: org.jfree.util.ObjectList itemURLGeneratorList>
+org.jfree.chart.renderer.category.AbstractCategoryItemRenderer.equals : $r7 = r0.<org.jfree.chart.renderer.category.AbstractCategoryItemRenderer: org.jfree.chart.labels.CategoryItemLabelGenerator baseItemLabelGenerator>
+org.jfree.chart.renderer.category.AbstractCategoryItemRenderer.equals : $r25 = r0.<org.jfree.chart.renderer.category.AbstractCategoryItemRenderer: org.jfree.chart.labels.CategorySeriesLabelGenerator legendItemURLGenerator>
+org.jfree.chart.renderer.category.AbstractCategoryItemRenderer.equals : $r15 = r0.<org.jfree.chart.renderer.category.AbstractCategoryItemRenderer: org.jfree.chart.urls.CategoryURLGenerator itemURLGenerator>
+org.jfree.chart.renderer.category.AbstractCategoryItemRenderer.equals : $r3 = r0.<org.jfree.chart.renderer.category.AbstractCategoryItemRenderer: org.jfree.chart.labels.CategoryItemLabelGenerator itemLabelGenerator>
+org.jfree.chart.renderer.category.AbstractCategoryItemRenderer.equals : $z13 = specialinvoke r0.<org.jfree.chart.renderer.AbstractRenderer: boolean equals(java.lang.Object)>(r1)
+org.jfree.chart.renderer.category.AbstractCategoryItemRenderer.equals : $r11 = r0.<org.jfree.chart.renderer.category.AbstractCategoryItemRenderer: org.jfree.util.ObjectList toolTipGeneratorList>
+org.jfree.chart.renderer.category.AbstractCategoryItemRenderer.hashCode : return i0
+org.jfree.chart.renderer.category.AbstractCategoryItemRenderer.hashCode : i0 = specialinvoke r0.<org.jfree.chart.renderer.AbstractRenderer: int hashCode()>()
+org.jfree.chart.labels.ItemLabelPosition.equals : $r5 = r0.<org.jfree.chart.labels.ItemLabelPosition: org.jfree.ui.TextAnchor textAnchor>
+org.jfree.chart.labels.ItemLabelPosition.equals : if r1 != r0 goto $z0 = r1 instanceof org.jfree.chart.labels.ItemLabelPosition
+org.jfree.chart.labels.ItemLabelPosition.equals : $d0 = r0.<org.jfree.chart.labels.ItemLabelPosition: double angle>
+org.jfree.chart.labels.ItemLabelPosition.equals : $z0 = r1 instanceof org.jfree.chart.labels.ItemLabelPosition
+org.jfree.chart.labels.ItemLabelPosition.equals : $r3 = r0.<org.jfree.chart.labels.ItemLabelPosition: org.jfree.chart.labels.ItemLabelAnchor itemLabelAnchor>
+org.jfree.chart.labels.ItemLabelPosition.equals : $r7 = r0.<org.jfree.chart.labels.ItemLabelPosition: org.jfree.ui.TextAnchor rotationAnchor>
+org.jfree.chart.labels.ItemLabelPosition.equals : return 1
+org.jfree.chart.labels.ItemLabelPosition.equals : r2 = (org.jfree.chart.labels.ItemLabelPosition) r1
+org.jfree.chart.renderer.category.LevelRenderer.hashCode : $d0 = r0.<org.jfree.chart.renderer.category.LevelRenderer: double itemMargin>
+org.jfree.chart.renderer.category.LevelRenderer.hashCode : $d1 = r0.<org.jfree.chart.renderer.category.LevelRenderer: double maxItemWidth>
+org.jfree.chart.renderer.category.LevelRenderer.hashCode : i0 = specialinvoke r0.<org.jfree.chart.renderer.category.AbstractCategoryItemRenderer: int hashCode()>()
+org.jfree.chart.renderer.category.LevelRenderer.hashCode : return i2
+org.jfree.chart.renderer.AbstractRenderer.fireChangeEvent : $r1 = new org.jfree.chart.event.RendererChangeEvent
+org.jfree.chart.renderer.AbstractRenderer.notifyListeners : $r3 = r0.<org.jfree.chart.renderer.AbstractRenderer: javax.swing.event.EventListenerList listenerList>
+org.jfree.chart.renderer.AbstractRenderer.notifyListeners : $i1 = lengthof r2
+org.jfree.chart.HashUtilities.hashCodeForPaint : $z0 = r0 instanceof java.awt.GradientPaint
+org.jfree.chart.HashUtilities.hashCodeForPaint : i12 = virtualinvoke r0.<java.lang.Object: int hashCode()>()
+org.jfree.chart.HashUtilities.hashCodeForPaint : return i12
+org.jfree.chart.HashUtilities.hashCodeForPaint : if r0 != null goto $z0 = r0 instanceof java.awt.GradientPaint
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null goto return
+org.jfree.chart.HashUtilities.hashCode : i2 = virtualinvoke r0.<org.jfree.util.BooleanList: int size()>()
+org.jfree.chart.HashUtilities.hashCode : $i6 = 37 * i0
+org.jfree.chart.HashUtilities.hashCode : $i1 = 37 * i0
+org.jfree.chart.HashUtilities.hashCode : $i2 = 37 * i0
+org.jfree.chart.HashUtilities.hashCode : $i3 = 37 * i0
+org.jfree.chart.HashUtilities.hashCode : i2 = virtualinvoke r0.<org.jfree.util.PaintList: int size()>()
+org.jfree.chart.HashUtilities.hashCode : i3 = staticinvoke <org.jfree.chart.HashUtilities: int hashCode(int,int)>(b1, i2)
+org.jfree.chart.HashUtilities.hashCode : l1 = staticinvoke <java.lang.Double: long doubleToLongBits(double)>(d0)
+org.jfree.chart.HashUtilities.hashCode : i2 = virtualinvoke r0.<org.jfree.util.StrokeList: int size()>()
+org.jfree.chart.HashUtilities.hashCode : if r0 != null goto b1 = 127
+org.jfree.chart.HashUtilities.hashCode : if r0 == null goto $i2 = 0
+org.jfree.chart.HashUtilities.hashCode : if i2 <= 0 goto $i6 = 37 * i0
+org.jfree.chart.HashUtilities.hashCode : b1 = 127
+org.jfree.chart.renderer.AbstractRenderer.setBaseLegendShape : virtualinvoke r0.<org.jfree.chart.renderer.AbstractRenderer: void fireChangeEvent()>()
+org.jfree.chart.renderer.AbstractRenderer.setBaseLegendShape : r0.<org.jfree.chart.renderer.AbstractRenderer: java.awt.Shape baseLegendShape> = r1
+org.jfree.chart.renderer.category.LevelRenderer.equals : $d0 = r0.<org.jfree.chart.renderer.category.LevelRenderer: double itemMargin>
+org.jfree.chart.renderer.category.LevelRenderer.equals : r2 = (org.jfree.chart.renderer.category.LevelRenderer) r1
+org.jfree.chart.renderer.category.LevelRenderer.equals : $z0 = r1 instanceof org.jfree.chart.renderer.category.LevelRenderer
+org.jfree.chart.renderer.category.LevelRenderer.equals : if r1 != r0 goto $z0 = r1 instanceof org.jfree.chart.renderer.category.LevelRenderer
+org.jfree.chart.renderer.category.LevelRenderer.equals : $d2 = r0.<org.jfree.chart.renderer.category.LevelRenderer: double maxItemWidth>
+org.jfree.chart.renderer.category.LevelRenderer.equals : $z1 = specialinvoke r0.<org.jfree.chart.renderer.category.AbstractCategoryItemRenderer: boolean equals(java.lang.Object)>(r1)
+org.jfree.chart.labels.StandardCategorySeriesLabelGenerator.equals : if r1 != r0 goto $z0 = r1 instanceof org.jfree.chart.labels.StandardCategorySeriesLabelGenerator
+org.jfree.chart.labels.StandardCategorySeriesLabelGenerator.equals : $z0 = r1 instanceof org.jfree.chart.labels.StandardCategorySeriesLabelGenerator
+org.jfree.chart.labels.StandardCategorySeriesLabelGenerator.equals : return 1
+org.jfree.chart.labels.StandardCategorySeriesLabelGenerator.equals : r2 = (org.jfree.chart.labels.StandardCategorySeriesLabelGenerator) r1
+org.jfree.chart.labels.StandardCategorySeriesLabelGenerator.equals : $r3 = r0.<org.jfree.chart.labels.StandardCategorySeriesLabelGenerator: java.lang.String formatPattern>
+org.jfree.chart.renderer.AbstractRenderer.equals : $r61 = r0.<org.jfree.chart.renderer.AbstractRenderer: org.jfree.util.PaintList itemLabelPaintList>
+org.jfree.chart.renderer.AbstractRenderer.equals : $r79 = r0.<org.jfree.chart.renderer.AbstractRenderer: org.jfree.util.BooleanList createEntitiesList>
+org.jfree.chart.renderer.AbstractRenderer.equals : $z3 = r0.<org.jfree.chart.renderer.AbstractRenderer: boolean treatLegendShapeAsLine>
+org.jfree.chart.renderer.AbstractRenderer.equals : $r69 = r0.<org.jfree.chart.renderer.AbstractRenderer: org.jfree.chart.labels.ItemLabelPosition basePositiveItemLabelPosition>
+org.jfree.chart.renderer.AbstractRenderer.equals : r2 = (org.jfree.chart.renderer.AbstractRenderer) r1
+org.jfree.chart.renderer.AbstractRenderer.equals : $r37 = r0.<org.jfree.chart.renderer.AbstractRenderer: org.jfree.util.StrokeList outlineStrokeList>
+org.jfree.chart.renderer.AbstractRenderer.equals : $r43 = r0.<org.jfree.chart.renderer.AbstractRenderer: org.jfree.util.ShapeList shapeList>
+org.jfree.chart.renderer.AbstractRenderer.equals : $r83 = r0.<org.jfree.chart.renderer.AbstractRenderer: java.awt.Shape baseLegendShape>
+org.jfree.chart.renderer.AbstractRenderer.equals : $r29 = r0.<org.jfree.chart.renderer.AbstractRenderer: java.awt.Stroke stroke>
+org.jfree.chart.renderer.AbstractRenderer.equals : $r15 = r0.<org.jfree.chart.renderer.AbstractRenderer: java.awt.Paint basePaint>
+org.jfree.chart.renderer.AbstractRenderer.equals : $r73 = r0.<org.jfree.chart.renderer.AbstractRenderer: org.jfree.util.ObjectList negativeItemLabelPositionList>
+org.jfree.chart.renderer.AbstractRenderer.equals : $r25 = r0.<org.jfree.chart.renderer.AbstractRenderer: org.jfree.util.PaintList outlinePaintList>
+org.jfree.chart.renderer.AbstractRenderer.equals : $r17 = r0.<org.jfree.chart.renderer.AbstractRenderer: java.awt.Paint fillPaint>
+org.jfree.chart.renderer.AbstractRenderer.equals : $r45 = r0.<org.jfree.chart.renderer.AbstractRenderer: java.awt.Shape baseShape>
+org.jfree.chart.renderer.AbstractRenderer.equals : $r71 = r0.<org.jfree.chart.renderer.AbstractRenderer: org.jfree.chart.labels.ItemLabelPosition negativeItemLabelPosition>
+org.jfree.chart.renderer.AbstractRenderer.equals : $r49 = r0.<org.jfree.chart.renderer.AbstractRenderer: org.jfree.util.BooleanList itemLabelsVisibleList>
+org.jfree.chart.renderer.AbstractRenderer.equals : $r51 = r0.<org.jfree.chart.renderer.AbstractRenderer: java.lang.Boolean baseItemLabelsVisible>
+org.jfree.chart.renderer.AbstractRenderer.equals : $r35 = r0.<org.jfree.chart.renderer.AbstractRenderer: java.awt.Stroke outlineStroke>
+org.jfree.chart.renderer.AbstractRenderer.equals : $r85 = r0.<org.jfree.chart.renderer.AbstractRenderer: org.jfree.util.ObjectList legendTextFont>
+org.jfree.chart.renderer.AbstractRenderer.equals : $r39 = r0.<org.jfree.chart.renderer.AbstractRenderer: java.awt.Stroke baseOutlineStroke>
+org.jfree.chart.renderer.AbstractRenderer.equals : $r3 = r0.<org.jfree.chart.renderer.AbstractRenderer: java.lang.Boolean seriesVisible>
+org.jfree.chart.renderer.AbstractRenderer.equals : $z11 = r0.<org.jfree.chart.renderer.AbstractRenderer: boolean baseSeriesVisibleInLegend>
+org.jfree.chart.renderer.AbstractRenderer.equals : $z48 = r0.<org.jfree.chart.renderer.AbstractRenderer: boolean baseCreateEntities>
+org.jfree.chart.renderer.AbstractRenderer.equals : $r5 = r0.<org.jfree.chart.renderer.AbstractRenderer: org.jfree.util.BooleanList seriesVisibleList>
+org.jfree.chart.renderer.AbstractRenderer.equals : if r1 != r0 goto $z0 = r1 instanceof org.jfree.chart.renderer.AbstractRenderer
+org.jfree.chart.renderer.AbstractRenderer.equals : $r67 = r0.<org.jfree.chart.renderer.AbstractRenderer: org.jfree.util.ObjectList positiveItemLabelPositionList>
+org.jfree.chart.renderer.AbstractRenderer.equals : $r65 = r0.<org.jfree.chart.renderer.AbstractRenderer: org.jfree.chart.labels.ItemLabelPosition positiveItemLabelPosition>
+org.jfree.chart.renderer.AbstractRenderer.equals : $r63 = r0.<org.jfree.chart.renderer.AbstractRenderer: java.awt.Paint baseItemLabelPaint>
+org.jfree.chart.renderer.AbstractRenderer.equals : $i0 = r0.<org.jfree.chart.renderer.AbstractRenderer: int defaultEntityRadius>
+org.jfree.chart.renderer.AbstractRenderer.equals : $r13 = r0.<org.jfree.chart.renderer.AbstractRenderer: org.jfree.util.PaintList paintList>
+org.jfree.chart.renderer.AbstractRenderer.equals : $z7 = r0.<org.jfree.chart.renderer.AbstractRenderer: boolean baseSeriesVisible>
+org.jfree.chart.renderer.AbstractRenderer.equals : $r87 = r0.<org.jfree.chart.renderer.AbstractRenderer: java.awt.Font baseLegendTextFont>
+org.jfree.chart.renderer.AbstractRenderer.equals : $r57 = r0.<org.jfree.chart.renderer.AbstractRenderer: java.awt.Font baseItemLabelFont>
+org.jfree.chart.renderer.AbstractRenderer.equals : $r89 = r0.<org.jfree.chart.renderer.AbstractRenderer: org.jfree.util.PaintList legendTextPaint>
+org.jfree.chart.renderer.AbstractRenderer.equals : $r31 = r0.<org.jfree.chart.renderer.AbstractRenderer: org.jfree.util.StrokeList strokeList>
+org.jfree.chart.renderer.AbstractRenderer.equals : $r33 = r0.<org.jfree.chart.renderer.AbstractRenderer: java.awt.Stroke baseStroke>
+org.jfree.chart.renderer.AbstractRenderer.equals : $r53 = r0.<org.jfree.chart.renderer.AbstractRenderer: java.awt.Font itemLabelFont>
+org.jfree.chart.renderer.AbstractRenderer.equals : $r21 = r0.<org.jfree.chart.renderer.AbstractRenderer: java.awt.Paint baseFillPaint>
+org.jfree.chart.renderer.AbstractRenderer.equals : $r27 = r0.<org.jfree.chart.renderer.AbstractRenderer: java.awt.Paint baseOutlinePaint>
+org.jfree.chart.renderer.AbstractRenderer.equals : $r23 = r0.<org.jfree.chart.renderer.AbstractRenderer: java.awt.Paint outlinePaint>
+org.jfree.chart.renderer.AbstractRenderer.equals : $r9 = r0.<org.jfree.chart.renderer.AbstractRenderer: org.jfree.util.BooleanList seriesVisibleInLegendList>
+org.jfree.chart.renderer.AbstractRenderer.equals : $r41 = r0.<org.jfree.chart.renderer.AbstractRenderer: java.awt.Shape shape>
+org.jfree.chart.renderer.AbstractRenderer.equals : $r55 = r0.<org.jfree.chart.renderer.AbstractRenderer: org.jfree.util.ObjectList itemLabelFontList>
+org.jfree.chart.renderer.AbstractRenderer.equals : $r91 = r0.<org.jfree.chart.renderer.AbstractRenderer: java.awt.Paint baseLegendTextPaint>
+org.jfree.chart.renderer.AbstractRenderer.equals : return 1
+org.jfree.chart.renderer.AbstractRenderer.equals : $r19 = r0.<org.jfree.chart.renderer.AbstractRenderer: org.jfree.util.PaintList fillPaintList>
+org.jfree.chart.renderer.AbstractRenderer.equals : $r77 = r0.<org.jfree.chart.renderer.AbstractRenderer: java.lang.Boolean createEntities>
+org.jfree.chart.renderer.AbstractRenderer.equals : $z1 = r0.<org.jfree.chart.renderer.AbstractRenderer: boolean dataBoundsIncludesVisibleSeriesOnly>
+org.jfree.chart.renderer.AbstractRenderer.equals : $r75 = r0.<org.jfree.chart.renderer.AbstractRenderer: org.jfree.chart.labels.ItemLabelPosition baseNegativeItemLabelPosition>
+org.jfree.chart.renderer.AbstractRenderer.equals : $d0 = r0.<org.jfree.chart.renderer.AbstractRenderer: double itemLabelAnchorOffset>
+org.jfree.chart.renderer.AbstractRenderer.equals : $r7 = r0.<org.jfree.chart.renderer.AbstractRenderer: java.lang.Boolean seriesVisibleInLegend>
+org.jfree.chart.renderer.AbstractRenderer.equals : $r81 = r0.<org.jfree.chart.renderer.AbstractRenderer: org.jfree.util.ShapeList legendShapeList>
+org.jfree.chart.renderer.AbstractRenderer.equals : $r47 = r0.<org.jfree.chart.renderer.AbstractRenderer: java.lang.Boolean itemLabelsVisible>
+org.jfree.chart.renderer.AbstractRenderer.equals : $z0 = r1 instanceof org.jfree.chart.renderer.AbstractRenderer
+org.jfree.chart.renderer.AbstractRenderer.equals : $r11 = r0.<org.jfree.chart.renderer.AbstractRenderer: java.awt.Paint paint>
+org.jfree.chart.renderer.AbstractRenderer.equals : $r59 = r0.<org.jfree.chart.renderer.AbstractRenderer: java.awt.Paint itemLabelPaint>

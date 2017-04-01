@@ -1,0 +1,52 @@
+crystal.model.DataSource.setParent : if r1 == null >>>>>>>> crystal.model.DataSource.setParent : $r2 = virtualinvoke r1.<java.lang.String: java.lang.String trim()>()
+crystal.model.DataSource.setParent : $r2 = virtualinvoke r1.<java.lang.String: java.lang.String trim()>() >>>>>>>> crystal.model.DataSource.setParent : $z0 = virtualinvoke $r2.<java.lang.String: boolean equals(java.lang.Object)>("")
+crystal.model.DataSource.setParent : $z0 = virtualinvoke $r2.<java.lang.String: boolean equals(java.lang.Object)>("") >>>>>>>> crystal.model.DataSource.setParent : if $z0 == 0
+crystal.model.DataSource.setParent : if $z0 == 0 >>>>>>>> crystal.model.DataSource.setParent : r0.<crystal.model.DataSource: java.lang.String _parent> = r1
+crystal.model.DataSource.setParent : r0.<crystal.model.DataSource: java.lang.String _parent> = r1 >>>>>>>> crystal.client.ProjectPreferences.addDataSource : $r5 = r0.<crystal.client.ProjectPreferences: java.util.Vector _dataSources>
+crystal.client.ProjectPreferences.addDataSource : $r5 = r0.<crystal.client.ProjectPreferences: java.util.Vector _dataSources> >>>>>>>> crystal.client.ProjectPreferences.addDataSource : r2 = virtualinvoke $r5.<java.util.Vector: java.util.Iterator iterator()>()
+crystal.client.ProjectPreferences.addDataSource : r2 = virtualinvoke $r5.<java.util.Vector: java.util.Iterator iterator()>() >>>>>>>> crystal.client.ProjectPreferences.addDataSource : $z0 = interfaceinvoke r2.<java.util.Iterator: boolean hasNext()>()
+crystal.client.ProjectPreferences.addDataSource : $z0 = interfaceinvoke r2.<java.util.Iterator: boolean hasNext()>() >>>>>>>> crystal.client.ProjectPreferences.addDataSource : if $z0 == 0
+crystal.client.ProjectPreferences.addDataSource : if $z0 == 0 >>>>>>>> crystal.client.ProjectPreferences.addDataSource : $r18 = r0.<crystal.client.ProjectPreferences: java.util.Vector _dataSources>
+crystal.client.ProjectPreferences.addDataSource : $r18 = r0.<crystal.client.ProjectPreferences: java.util.Vector _dataSources> >>>>>>>> crystal.client.ProjectPreferences.addDataSource : virtualinvoke $r18.<java.util.Vector: boolean add(java.lang.Object)>(r1)
+crystal.client.ProjectPreferences.addDataSource : virtualinvoke $r18.<java.util.Vector: boolean add(java.lang.Object)>(r1) >>>>>>>> crystal.model.DataSource.setParent : r0.<crystal.model.DataSource: java.lang.String _parent> = null
+crystal.model.DataSource.setParent : r0.<crystal.model.DataSource: java.lang.String _parent> = null >>>>>>>> crystal.model.DataSource.setParent : goto [?= return]
+crystal.model.DataSource.setParent : goto [?= return] >>>>>>>> crystal.client.ProjectPreferences.addDataSource : $r6 = interfaceinvoke r2.<java.util.Iterator: java.lang.Object next()>()
+crystal.client.ProjectPreferences.addDataSource : $r6 = interfaceinvoke r2.<java.util.Iterator: java.lang.Object next()>() >>>>>>>> crystal.client.ProjectPreferences.addDataSource : r3 = (crystal.model.DataSource) $r6
+crystal.client.ProjectPreferences.addDataSource : r3 = (crystal.model.DataSource) $r6 >>>>>>>> crystal.client.ProjectPreferences.addDataSource : $r7 = virtualinvoke r3.<crystal.model.DataSource: java.lang.String getShortName()>()
+crystal.client.ProjectPreferences.addDataSource : $r7 = virtualinvoke r3.<crystal.model.DataSource: java.lang.String getShortName()>() >>>>>>>> crystal.model.DataSource.getShortName : $r1 = r0.<crystal.model.DataSource: java.lang.String _shortName>
+crystal.model.DataSource.getShortName : $r1 = r0.<crystal.model.DataSource: java.lang.String _shortName> >>>>>>>> crystal.model.DataSource.getShortName : return $r1
+crystal.model.DataSource.getShortName : return $r1 >>>>>>>> crystal.client.ProjectPreferences.addDataSource : $r8 = virtualinvoke r1.<crystal.model.DataSource: java.lang.String getShortName()>()
+crystal.client.ProjectPreferences.addDataSource : $r8 = virtualinvoke r1.<crystal.model.DataSource: java.lang.String getShortName()>() >>>>>>>> crystal.client.ProjectPreferences.addDataSource : $z1 = virtualinvoke $r7.<java.lang.String: boolean equals(java.lang.Object)>($r8)
+crystal.client.ProjectPreferences.addDataSource : $z1 = virtualinvoke $r7.<java.lang.String: boolean equals(java.lang.Object)>($r8) >>>>>>>> crystal.client.ProjectPreferences.addDataSource : if $z1 == 0
+crystal.client.ProjectPreferences.addDataSource : if $z1 == 0 >>>>>>>> crystal.client.ProjectPreferences.addDataSource : goto [?= $z0 = interfaceinvoke r2.<java.util.Iterator: boolean hasNext()>()]
+crystal.client.ProjectPreferences.addDataSource : goto [?= $z0 = interfaceinvoke r2.<java.util.Iterator: boolean hasNext()>()] >>>>>>>> crystal.client.ClientPreferences.getProjectPreference : $r1 = r0.<crystal.client.ClientPreferences: java.util.Vector _projectPreferences>
+crystal.client.ClientPreferences.getProjectPreference : $r1 = r0.<crystal.client.ClientPreferences: java.util.Vector _projectPreferences> >>>>>>>> crystal.client.ClientPreferences.getProjectPreference : return $r1
+crystal.client.ClientPreferences.getProjectPreference : return $r1 >>>>>>>> crystal.client.ProjectPreferences.equals : if r1 == null
+crystal.client.ProjectPreferences.equals : if r1 == null >>>>>>>> crystal.client.ProjectPreferences.equals : $r3 = virtualinvoke r0.<java.lang.Object: java.lang.Class getClass()>()
+crystal.client.ProjectPreferences.equals : $r3 = virtualinvoke r0.<java.lang.Object: java.lang.Class getClass()>() >>>>>>>> crystal.client.ProjectPreferences.equals : $r4 = virtualinvoke r1.<java.lang.Object: java.lang.Class getClass()>()
+crystal.client.ProjectPreferences.equals : $r4 = virtualinvoke r1.<java.lang.Object: java.lang.Class getClass()>() >>>>>>>> crystal.client.ProjectPreferences.equals : if $r3 != $r4
+crystal.client.ProjectPreferences.equals : if $r3 != $r4 >>>>>>>> crystal.client.ProjectPreferences.equals : r2 = (crystal.client.ProjectPreferences) r1
+crystal.client.ProjectPreferences.equals : r2 = (crystal.client.ProjectPreferences) r1 >>>>>>>> crystal.client.ProjectPreferences.equals : $r5 = r0.<crystal.client.ProjectPreferences: crystal.model.DataSource _myEnvironment>
+crystal.client.ProjectPreferences.equals : $r5 = r0.<crystal.client.ProjectPreferences: crystal.model.DataSource _myEnvironment> >>>>>>>> crystal.client.ProjectPreferences.equals : $r6 = r2.<crystal.client.ProjectPreferences: crystal.model.DataSource _myEnvironment>
+crystal.client.ProjectPreferences.equals : $r6 = r2.<crystal.client.ProjectPreferences: crystal.model.DataSource _myEnvironment> >>>>>>>> crystal.client.ProjectPreferences.equals : $z0 = virtualinvoke $r5.<crystal.model.DataSource: boolean equals(java.lang.Object)>($r6)
+crystal.client.ProjectPreferences.equals : $z0 = virtualinvoke $r5.<crystal.model.DataSource: boolean equals(java.lang.Object)>($r6) >>>>>>>> crystal.model.DataSource.equals : if r1 == null
+crystal.model.DataSource.equals : if r1 == null >>>>>>>> crystal.model.DataSource.equals : $r3 = virtualinvoke r0.<java.lang.Object: java.lang.Class getClass()>()
+crystal.model.DataSource.equals : $r3 = virtualinvoke r0.<java.lang.Object: java.lang.Class getClass()>() >>>>>>>> crystal.model.DataSource.equals : $r4 = virtualinvoke r1.<java.lang.Object: java.lang.Class getClass()>()
+crystal.model.DataSource.equals : $r4 = virtualinvoke r1.<java.lang.Object: java.lang.Class getClass()>() >>>>>>>> crystal.model.DataSource.equals : if $r3 != $r4
+crystal.model.DataSource.equals : if $r3 != $r4 >>>>>>>> crystal.model.DataSource.equals : r2 = (crystal.model.DataSource) r1
+crystal.model.DataSource.equals : r2 = (crystal.model.DataSource) r1 >>>>>>>> crystal.model.DataSource.equals : $r5 = r0.<crystal.model.DataSource: java.lang.String _shortName>
+crystal.model.DataSource.equals : $r5 = r0.<crystal.model.DataSource: java.lang.String _shortName> >>>>>>>> crystal.model.DataSource.equals : if $r5 != null
+crystal.model.DataSource.equals : if $r5 != null >>>>>>>> crystal.model.DataSource.equals : $r7 = r0.<crystal.model.DataSource: java.lang.String _shortName>
+crystal.model.DataSource.equals : $r7 = r0.<crystal.model.DataSource: java.lang.String _shortName> >>>>>>>> crystal.model.DataSource.equals : $r8 = r2.<crystal.model.DataSource: java.lang.String _shortName>
+crystal.model.DataSource.equals : $r8 = r2.<crystal.model.DataSource: java.lang.String _shortName> >>>>>>>> crystal.model.DataSource.equals : $z0 = virtualinvoke $r7.<java.lang.String: boolean equals(java.lang.Object)>($r8)
+crystal.model.DataSource.equals : $z0 = virtualinvoke $r7.<java.lang.String: boolean equals(java.lang.Object)>($r8) >>>>>>>> crystal.model.DataSource.equals : if $z0 == 0
+crystal.model.DataSource.equals : if $z0 == 0 >>>>>>>> crystal.model.DataSource.equals : $z1 = 1
+crystal.model.DataSource.equals : $z1 = 1 >>>>>>>> crystal.model.DataSource.equals : goto [?= return $z1]
+crystal.model.DataSource.equals : goto [?= return $z1] >>>>>>>> crystal.model.DataSource.equals : return $z1
+crystal.model.DataSource.equals : return $z1 >>>>>>>> crystal.client.ProjectPreferences.equals : return $z0
+crystal.client.ProjectPreferences.equals : return $z0 >>>>>>>> crystal.client.ClientPreferences.getRefresh : $l0 = r0.<crystal.client.ClientPreferences: long _refresh>
+crystal.client.ClientPreferences.getRefresh : $l0 = r0.<crystal.client.ClientPreferences: long _refresh> >>>>>>>> crystal.client.ClientPreferences.getRefresh : return $l0
+crystal.client.ClientPreferences.getRefresh : return $l0 >>>>>>>> crystal.client.ClientPreferences.getHgPath : $r1 = r0.<crystal.client.ClientPreferences: java.lang.String _hgPath>
+crystal.client.ClientPreferences.getHgPath : $r1 = r0.<crystal.client.ClientPreferences: java.lang.String _hgPath> >>>>>>>> crystal.client.ClientPreferences.getHgPath : return $r1
+crystal.client.ClientPreferences.getHgPath : return $r1 >>>>>>>> crystal.client.ClientPreferences.getTempDirectory : $r1 = r0.<crystal.client.ClientPreferences: java.lang.String _tempDirectory>
+crystal.client.ClientPreferences.getTempDirectory : $r1 = r0.<crystal.client.ClientPreferences: java.lang.String _tempDirectory> >>>>>>>> crystal.client.ClientPreferences.getTempDirectory : return $r1

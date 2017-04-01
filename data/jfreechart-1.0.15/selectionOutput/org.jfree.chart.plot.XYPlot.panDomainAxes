@@ -1,0 +1,18 @@
+org.jfree.chart.plot.XYPlot.panDomainAxes : $z0 = virtualinvoke r0.<org.jfree.chart.plot.XYPlot: boolean isDomainPannable()>() >>>>>>>> org.jfree.chart.plot.XYPlot.panDomainAxes : if $z0 != 0
+org.jfree.chart.plot.XYPlot.panDomainAxes : if $z0 != 0 >>>>>>>> org.jfree.chart.plot.XYPlot.panDomainAxes : return
+org.jfree.chart.plot.XYPlot.panDomainAxes : if $z0 != 0 >>>>>>>> org.jfree.chart.plot.XYPlot.panDomainAxes : i0 = virtualinvoke r0.<org.jfree.chart.plot.XYPlot: int getDomainAxisCount()>()
+org.jfree.chart.plot.XYPlot.panDomainAxes : i0 = virtualinvoke r0.<org.jfree.chart.plot.XYPlot: int getDomainAxisCount()>() >>>>>>>> org.jfree.chart.plot.XYPlot.panDomainAxes : i1 = 0
+org.jfree.chart.plot.XYPlot.panDomainAxes : i1 = 0 >>>>>>>> org.jfree.chart.plot.XYPlot.panDomainAxes : if i1 >= i0
+org.jfree.chart.plot.XYPlot.panDomainAxes : if i1 >= i0 >>>>>>>> org.jfree.chart.plot.XYPlot.panDomainAxes : r3 = virtualinvoke r0.<org.jfree.chart.plot.XYPlot: org.jfree.chart.axis.ValueAxis getDomainAxis(int)>(i1)
+org.jfree.chart.plot.XYPlot.panDomainAxes : if i1 >= i0 >>>>>>>> org.jfree.chart.plot.XYPlot.panDomainAxes : return
+org.jfree.chart.plot.XYPlot.panDomainAxes : r3 = virtualinvoke r0.<org.jfree.chart.plot.XYPlot: org.jfree.chart.axis.ValueAxis getDomainAxis(int)>(i1) >>>>>>>> org.jfree.chart.plot.XYPlot.panDomainAxes : if r3 != null
+org.jfree.chart.plot.XYPlot.panDomainAxes : if r3 != null >>>>>>>> org.jfree.chart.plot.XYPlot.panDomainAxes : goto [?= i1 = i1 + 1]
+org.jfree.chart.plot.XYPlot.panDomainAxes : if r3 != null >>>>>>>> org.jfree.chart.plot.XYPlot.panDomainAxes : $z1 = virtualinvoke r3.<org.jfree.chart.axis.ValueAxis: boolean isInverted()>()
+org.jfree.chart.plot.XYPlot.panDomainAxes : $z1 = virtualinvoke r3.<org.jfree.chart.axis.ValueAxis: boolean isInverted()>() >>>>>>>> org.jfree.chart.plot.XYPlot.panDomainAxes : if $z1 == 0
+org.jfree.chart.plot.XYPlot.panDomainAxes : if $z1 == 0 >>>>>>>> org.jfree.chart.plot.XYPlot.panDomainAxes : d0 = neg d0
+org.jfree.chart.plot.XYPlot.panDomainAxes : if $z1 == 0 >>>>>>>> org.jfree.chart.plot.XYPlot.panDomainAxes : virtualinvoke r3.<org.jfree.chart.axis.ValueAxis: void pan(double)>(d0)
+org.jfree.chart.plot.XYPlot.panDomainAxes : virtualinvoke r3.<org.jfree.chart.axis.ValueAxis: void pan(double)>(d0) >>>>>>>> org.jfree.chart.plot.XYPlot.panDomainAxes : i1 = i1 + 1
+org.jfree.chart.plot.XYPlot.panDomainAxes : i1 = i1 + 1 >>>>>>>> org.jfree.chart.plot.XYPlot.panDomainAxes : goto [?= (branch)]
+org.jfree.chart.plot.XYPlot.panDomainAxes : goto [?= (branch)] >>>>>>>> org.jfree.chart.plot.XYPlot.panDomainAxes : if i1 >= i0
+org.jfree.chart.plot.XYPlot.panDomainAxes : d0 = neg d0 >>>>>>>> org.jfree.chart.plot.XYPlot.panDomainAxes : virtualinvoke r3.<org.jfree.chart.axis.ValueAxis: void pan(double)>(d0)
+org.jfree.chart.plot.XYPlot.panDomainAxes : goto [?= i1 = i1 + 1] >>>>>>>> org.jfree.chart.plot.XYPlot.panDomainAxes : i1 = i1 + 1

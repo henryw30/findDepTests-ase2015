@@ -1,0 +1,56 @@
+org.joda.time.LocalDateTime.toDate : i0 = virtualinvoke r0.<org.joda.time.LocalDateTime: int getDayOfMonth()>() >>>>>>>> org.joda.time.LocalDateTime.toDate : $r4 = new java.util.Date
+org.joda.time.LocalDateTime.toDate : $r4 = new java.util.Date >>>>>>>> org.joda.time.LocalDateTime.toDate : $i1 = virtualinvoke r0.<org.joda.time.LocalDateTime: int getYear()>()
+org.joda.time.LocalDateTime.toDate : $i1 = virtualinvoke r0.<org.joda.time.LocalDateTime: int getYear()>() >>>>>>>> org.joda.time.LocalDateTime.toDate : $i2 = $i1 - 1900
+org.joda.time.LocalDateTime.toDate : $i2 = $i1 - 1900 >>>>>>>> org.joda.time.LocalDateTime.toDate : $i3 = virtualinvoke r0.<org.joda.time.LocalDateTime: int getMonthOfYear()>()
+org.joda.time.LocalDateTime.toDate : $i3 = virtualinvoke r0.<org.joda.time.LocalDateTime: int getMonthOfYear()>() >>>>>>>> org.joda.time.LocalDateTime.toDate : $i4 = $i3 - 1
+org.joda.time.LocalDateTime.toDate : $i4 = $i3 - 1 >>>>>>>> org.joda.time.LocalDateTime.toDate : $i5 = virtualinvoke r0.<org.joda.time.LocalDateTime: int getHourOfDay()>()
+org.joda.time.LocalDateTime.toDate : $i5 = virtualinvoke r0.<org.joda.time.LocalDateTime: int getHourOfDay()>() >>>>>>>> org.joda.time.LocalDateTime.toDate : $i6 = virtualinvoke r0.<org.joda.time.LocalDateTime: int getMinuteOfHour()>()
+org.joda.time.LocalDateTime.toDate : $i6 = virtualinvoke r0.<org.joda.time.LocalDateTime: int getMinuteOfHour()>() >>>>>>>> org.joda.time.LocalDateTime.toDate : $i7 = virtualinvoke r0.<org.joda.time.LocalDateTime: int getSecondOfMinute()>()
+org.joda.time.LocalDateTime.toDate : $i7 = virtualinvoke r0.<org.joda.time.LocalDateTime: int getSecondOfMinute()>() >>>>>>>> org.joda.time.LocalDateTime.toDate : specialinvoke $r4.<java.util.Date: void <init>(int,int,int,int,int,int)>($i2, $i4, i0, $i5, $i6, $i7)
+org.joda.time.LocalDateTime.toDate : specialinvoke $r4.<java.util.Date: void <init>(int,int,int,int,int,int)>($i2, $i4, i0, $i5, $i6, $i7) >>>>>>>> org.joda.time.LocalDateTime.toDate : r1 = $r4
+org.joda.time.LocalDateTime.toDate : r1 = $r4 >>>>>>>> org.joda.time.LocalDateTime.toDate : $l8 = virtualinvoke r1.<java.util.Date: long getTime()>()
+org.joda.time.LocalDateTime.toDate : $l8 = virtualinvoke r1.<java.util.Date: long getTime()>() >>>>>>>> org.joda.time.LocalDateTime.toDate : $i9 = virtualinvoke r0.<org.joda.time.LocalDateTime: int getMillisOfSecond()>()
+org.joda.time.LocalDateTime.toDate : $i9 = virtualinvoke r0.<org.joda.time.LocalDateTime: int getMillisOfSecond()>() >>>>>>>> org.joda.time.LocalDateTime.toDate : $l10 = (long) $i9
+org.joda.time.LocalDateTime.toDate : $l10 = (long) $i9 >>>>>>>> org.joda.time.LocalDateTime.toDate : $l11 = $l8 + $l10
+org.joda.time.LocalDateTime.toDate : $l11 = $l8 + $l10 >>>>>>>> org.joda.time.LocalDateTime.toDate : virtualinvoke r1.<java.util.Date: void setTime(long)>($l11)
+org.joda.time.LocalDateTime.toDate : virtualinvoke r1.<java.util.Date: void setTime(long)>($l11) >>>>>>>> org.joda.time.LocalDateTime.toDate : r2 = staticinvoke <org.joda.time.LocalDateTime: org.joda.time.LocalDateTime fromDateFields(java.util.Date)>(r1)
+org.joda.time.LocalDateTime.toDate : r2 = staticinvoke <org.joda.time.LocalDateTime: org.joda.time.LocalDateTime fromDateFields(java.util.Date)>(r1) >>>>>>>> org.joda.time.LocalDateTime.toDate : $z0 = virtualinvoke r2.<org.joda.time.LocalDateTime: boolean isBefore(org.joda.time.ReadablePartial)>(r0)
+org.joda.time.LocalDateTime.toDate : $z0 = virtualinvoke r2.<org.joda.time.LocalDateTime: boolean isBefore(org.joda.time.ReadablePartial)>(r0) >>>>>>>> org.joda.time.LocalDateTime.toDate : if $z0 == 0
+org.joda.time.LocalDateTime.toDate : if $z0 == 0 >>>>>>>> org.joda.time.LocalDateTime.toDate : $z1 = virtualinvoke r2.<org.joda.time.LocalDateTime: boolean isBefore(org.joda.time.ReadablePartial)>(r0)
+org.joda.time.LocalDateTime.toDate : if $z0 == 0 >>>>>>>> org.joda.time.LocalDateTime.toDate : $z3 = virtualinvoke r2.<org.joda.time.LocalDateTime: boolean equals(java.lang.Object)>(r0)
+org.joda.time.LocalDateTime.toDate : $z3 = virtualinvoke r2.<org.joda.time.LocalDateTime: boolean equals(java.lang.Object)>(r0) >>>>>>>> org.joda.time.LocalDateTime.toDate : if $z3 == 0
+org.joda.time.LocalDateTime.toDate : if $z3 == 0 >>>>>>>> org.joda.time.LocalDateTime.toDate : $r5 = new java.util.Date
+org.joda.time.LocalDateTime.toDate : if $z3 == 0 >>>>>>>> org.joda.time.LocalDateTime.toDate : return r1
+org.joda.time.LocalDateTime.toDate : $r5 = new java.util.Date >>>>>>>> org.joda.time.LocalDateTime.toDate : $l18 = virtualinvoke r1.<java.util.Date: long getTime()>()
+org.joda.time.LocalDateTime.toDate : $l18 = virtualinvoke r1.<java.util.Date: long getTime()>() >>>>>>>> org.joda.time.LocalDateTime.toDate : $r6 = staticinvoke <java.util.TimeZone: java.util.TimeZone getDefault()>()
+org.joda.time.LocalDateTime.toDate : $r6 = staticinvoke <java.util.TimeZone: java.util.TimeZone getDefault()>() >>>>>>>> org.joda.time.LocalDateTime.toDate : $i19 = virtualinvoke $r6.<java.util.TimeZone: int getDSTSavings()>()
+org.joda.time.LocalDateTime.toDate : $i19 = virtualinvoke $r6.<java.util.TimeZone: int getDSTSavings()>() >>>>>>>> org.joda.time.LocalDateTime.toDate : $l20 = (long) $i19
+org.joda.time.LocalDateTime.toDate : $l20 = (long) $i19 >>>>>>>> org.joda.time.LocalDateTime.toDate : $l21 = $l18 - $l20
+org.joda.time.LocalDateTime.toDate : $l21 = $l18 - $l20 >>>>>>>> org.joda.time.LocalDateTime.toDate : specialinvoke $r5.<java.util.Date: void <init>(long)>($l21)
+org.joda.time.LocalDateTime.toDate : specialinvoke $r5.<java.util.Date: void <init>(long)>($l21) >>>>>>>> org.joda.time.LocalDateTime.toDate : r3 = $r5
+org.joda.time.LocalDateTime.toDate : r3 = $r5 >>>>>>>> org.joda.time.LocalDateTime.toDate : r7 = staticinvoke <org.joda.time.LocalDateTime: org.joda.time.LocalDateTime fromDateFields(java.util.Date)>(r3)
+org.joda.time.LocalDateTime.toDate : r7 = staticinvoke <org.joda.time.LocalDateTime: org.joda.time.LocalDateTime fromDateFields(java.util.Date)>(r3) >>>>>>>> org.joda.time.LocalDateTime.toDate : $z4 = virtualinvoke r7.<org.joda.time.LocalDateTime: boolean equals(java.lang.Object)>(r0)
+org.joda.time.LocalDateTime.toDate : $z4 = virtualinvoke r7.<org.joda.time.LocalDateTime: boolean equals(java.lang.Object)>(r0) >>>>>>>> org.joda.time.LocalDateTime.toDate : if $z4 == 0
+org.joda.time.LocalDateTime.toDate : if $z4 == 0 >>>>>>>> org.joda.time.LocalDateTime.toDate : r1 = r3
+org.joda.time.LocalDateTime.toDate : if $z4 == 0 >>>>>>>> org.joda.time.LocalDateTime.toDate : return r1
+org.joda.time.LocalDateTime.toDate : r1 = r3 >>>>>>>> org.joda.time.LocalDateTime.toDate : return r1
+org.joda.time.LocalDateTime.toDate : $z1 = virtualinvoke r2.<org.joda.time.LocalDateTime: boolean isBefore(org.joda.time.ReadablePartial)>(r0) >>>>>>>> org.joda.time.LocalDateTime.toDate : if $z1 == 0
+org.joda.time.LocalDateTime.toDate : if $z1 == 0 >>>>>>>> org.joda.time.LocalDateTime.toDate : $l12 = virtualinvoke r1.<java.util.Date: long getTime()>()
+org.joda.time.LocalDateTime.toDate : if $z1 == 0 >>>>>>>> org.joda.time.LocalDateTime.toDate : $z2 = virtualinvoke r2.<org.joda.time.LocalDateTime: boolean isBefore(org.joda.time.ReadablePartial)>(r0)
+org.joda.time.LocalDateTime.toDate : $z2 = virtualinvoke r2.<org.joda.time.LocalDateTime: boolean isBefore(org.joda.time.ReadablePartial)>(r0) >>>>>>>> org.joda.time.LocalDateTime.toDate : if $z2 != 0
+org.joda.time.LocalDateTime.toDate : if $z2 != 0 >>>>>>>> org.joda.time.LocalDateTime.toDate : $l14 = virtualinvoke r1.<java.util.Date: long getTime()>()
+org.joda.time.LocalDateTime.toDate : if $z2 != 0 >>>>>>>> org.joda.time.LocalDateTime.toDate : $l16 = virtualinvoke r1.<java.util.Date: long getTime()>()
+org.joda.time.LocalDateTime.toDate : $l16 = virtualinvoke r1.<java.util.Date: long getTime()>() >>>>>>>> org.joda.time.LocalDateTime.toDate : $l17 = $l16 + 1000L
+org.joda.time.LocalDateTime.toDate : $l17 = $l16 + 1000L >>>>>>>> org.joda.time.LocalDateTime.toDate : virtualinvoke r1.<java.util.Date: void setTime(long)>($l17)
+org.joda.time.LocalDateTime.toDate : virtualinvoke r1.<java.util.Date: void setTime(long)>($l17) >>>>>>>> org.joda.time.LocalDateTime.toDate : goto [?= return r1]
+org.joda.time.LocalDateTime.toDate : goto [?= return r1] >>>>>>>> org.joda.time.LocalDateTime.toDate : return r1
+org.joda.time.LocalDateTime.toDate : $l14 = virtualinvoke r1.<java.util.Date: long getTime()>() >>>>>>>> org.joda.time.LocalDateTime.toDate : $l15 = $l14 - 1000L
+org.joda.time.LocalDateTime.toDate : $l15 = $l14 - 1000L >>>>>>>> org.joda.time.LocalDateTime.toDate : virtualinvoke r1.<java.util.Date: void setTime(long)>($l15)
+org.joda.time.LocalDateTime.toDate : virtualinvoke r1.<java.util.Date: void setTime(long)>($l15) >>>>>>>> org.joda.time.LocalDateTime.toDate : r2 = staticinvoke <org.joda.time.LocalDateTime: org.joda.time.LocalDateTime fromDateFields(java.util.Date)>(r1)
+org.joda.time.LocalDateTime.toDate : r2 = staticinvoke <org.joda.time.LocalDateTime: org.joda.time.LocalDateTime fromDateFields(java.util.Date)>(r1) >>>>>>>> org.joda.time.LocalDateTime.toDate : goto [?= $z2 = virtualinvoke r2.<org.joda.time.LocalDateTime: boolean isBefore(org.joda.time.ReadablePartial)>(r0)]
+org.joda.time.LocalDateTime.toDate : goto [?= $z2 = virtualinvoke r2.<org.joda.time.LocalDateTime: boolean isBefore(org.joda.time.ReadablePartial)>(r0)] >>>>>>>> org.joda.time.LocalDateTime.toDate : $z2 = virtualinvoke r2.<org.joda.time.LocalDateTime: boolean isBefore(org.joda.time.ReadablePartial)>(r0)
+org.joda.time.LocalDateTime.toDate : $l12 = virtualinvoke r1.<java.util.Date: long getTime()>() >>>>>>>> org.joda.time.LocalDateTime.toDate : $l13 = $l12 + 60000L
+org.joda.time.LocalDateTime.toDate : $l13 = $l12 + 60000L >>>>>>>> org.joda.time.LocalDateTime.toDate : virtualinvoke r1.<java.util.Date: void setTime(long)>($l13)
+org.joda.time.LocalDateTime.toDate : virtualinvoke r1.<java.util.Date: void setTime(long)>($l13) >>>>>>>> org.joda.time.LocalDateTime.toDate : r2 = staticinvoke <org.joda.time.LocalDateTime: org.joda.time.LocalDateTime fromDateFields(java.util.Date)>(r1)
+org.joda.time.LocalDateTime.toDate : r2 = staticinvoke <org.joda.time.LocalDateTime: org.joda.time.LocalDateTime fromDateFields(java.util.Date)>(r1) >>>>>>>> org.joda.time.LocalDateTime.toDate : goto [?= $z1 = virtualinvoke r2.<org.joda.time.LocalDateTime: boolean isBefore(org.joda.time.ReadablePartial)>(r0)]
+org.joda.time.LocalDateTime.toDate : goto [?= $z1 = virtualinvoke r2.<org.joda.time.LocalDateTime: boolean isBefore(org.joda.time.ReadablePartial)>(r0)] >>>>>>>> org.joda.time.LocalDateTime.toDate : $z1 = virtualinvoke r2.<org.joda.time.LocalDateTime: boolean isBefore(org.joda.time.ReadablePartial)>(r0)

@@ -1,0 +1,47 @@
+org.jfree.chart.plot.Crosshair.equals : if r1 != r0 goto $z0 = r1 instanceof org.jfree.chart.plot.Crosshair
+org.jfree.chart.plot.Crosshair.equals : $z12 = r0.<org.jfree.chart.plot.Crosshair: boolean labelOutlineVisible>
+org.jfree.chart.plot.Crosshair.equals : $d0 = r0.<org.jfree.chart.plot.Crosshair: double value>
+org.jfree.chart.plot.Crosshair.equals : $r13 = r0.<org.jfree.chart.plot.Crosshair: java.awt.Paint labelPaint>
+org.jfree.chart.plot.Crosshair.equals : $r5 = r0.<org.jfree.chart.plot.Crosshair: java.awt.Stroke stroke>
+org.jfree.chart.plot.Crosshair.equals : $r7 = r0.<org.jfree.chart.plot.Crosshair: org.jfree.chart.labels.CrosshairLabelGenerator labelGenerator>
+org.jfree.chart.plot.Crosshair.equals : return 1
+org.jfree.chart.plot.Crosshair.equals : $z0 = r1 instanceof org.jfree.chart.plot.Crosshair
+org.jfree.chart.plot.Crosshair.equals : r2 = (org.jfree.chart.plot.Crosshair) r1
+org.jfree.chart.plot.Crosshair.equals : $r3 = r0.<org.jfree.chart.plot.Crosshair: java.awt.Paint paint>
+org.jfree.chart.plot.Crosshair.equals : $r11 = r0.<org.jfree.chart.plot.Crosshair: java.awt.Font labelFont>
+org.jfree.chart.plot.Crosshair.equals : $r17 = r0.<org.jfree.chart.plot.Crosshair: java.awt.Paint labelOutlinePaint>
+org.jfree.chart.plot.Crosshair.equals : $r15 = r0.<org.jfree.chart.plot.Crosshair: java.awt.Paint labelBackgroundPaint>
+org.jfree.chart.plot.Crosshair.equals : $z5 = r0.<org.jfree.chart.plot.Crosshair: boolean labelVisible>
+org.jfree.chart.plot.Crosshair.equals : $r9 = r0.<org.jfree.chart.plot.Crosshair: org.jfree.ui.RectangleAnchor labelAnchor>
+org.jfree.chart.plot.Crosshair.equals : $d4 = r0.<org.jfree.chart.plot.Crosshair: double labelYOffset>
+org.jfree.chart.plot.Crosshair.equals : $r19 = r0.<org.jfree.chart.plot.Crosshair: java.awt.Stroke labelOutlineStroke>
+org.jfree.chart.plot.Crosshair.equals : $z1 = r0.<org.jfree.chart.plot.Crosshair: boolean visible>
+org.jfree.chart.plot.Crosshair.equals : $d2 = r0.<org.jfree.chart.plot.Crosshair: double labelXOffset>
+org.jfree.chart.panel.AbstractOverlay.fireOverlayChanged : virtualinvoke r0.<org.jfree.chart.panel.AbstractOverlay: void notifyListeners(org.jfree.chart.event.OverlayChangeEvent)>(r2)
+org.jfree.chart.panel.AbstractOverlay.fireOverlayChanged : $r1 = new org.jfree.chart.event.OverlayChangeEvent
+org.jfree.chart.labels.StandardCrosshairLabelGenerator.equals : if r1 != r0 goto $z0 = r1 instanceof org.jfree.chart.labels.StandardCrosshairLabelGenerator
+org.jfree.chart.labels.StandardCrosshairLabelGenerator.equals : return 1
+org.jfree.chart.panel.AbstractOverlay.notifyListeners : $i1 = lengthof r2
+org.jfree.chart.panel.AbstractOverlay.notifyListeners : $r3 = r0.<org.jfree.chart.panel.AbstractOverlay: javax.swing.event.EventListenerList changeListeners>
+org.jfree.chart.panel.CrosshairOverlay.addDomainCrosshair : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "crosshair")
+org.jfree.chart.panel.CrosshairOverlay.addDomainCrosshair : $r2 = r0.<org.jfree.chart.panel.CrosshairOverlay: java.util.List xCrosshairs>
+org.jfree.chart.panel.CrosshairOverlay.addDomainCrosshair : virtualinvoke r0.<org.jfree.chart.panel.CrosshairOverlay: void fireOverlayChanged()>()
+org.jfree.chart.panel.CrosshairOverlay.addDomainCrosshair : virtualinvoke r1.<org.jfree.chart.plot.Crosshair: void addPropertyChangeListener(java.beans.PropertyChangeListener)>(r0)
+org.jfree.chart.panel.CrosshairOverlay.equals : $r5 = r0.<org.jfree.chart.panel.CrosshairOverlay: java.util.List yCrosshairs>
+org.jfree.chart.panel.CrosshairOverlay.equals : $r3 = r0.<org.jfree.chart.panel.CrosshairOverlay: java.util.List xCrosshairs>
+org.jfree.chart.panel.CrosshairOverlay.equals : $z0 = r1 instanceof org.jfree.chart.panel.CrosshairOverlay
+org.jfree.chart.panel.CrosshairOverlay.equals : return 1
+org.jfree.chart.panel.CrosshairOverlay.equals : return 0
+org.jfree.chart.panel.CrosshairOverlay.equals : if r1 != r0 goto $z0 = r1 instanceof org.jfree.chart.panel.CrosshairOverlay
+org.jfree.chart.panel.CrosshairOverlay.equals : r2 = (org.jfree.chart.panel.CrosshairOverlay) r1
+org.jfree.chart.panel.CrosshairOverlay.addRangeCrosshair : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "crosshair")
+org.jfree.chart.panel.CrosshairOverlay.addRangeCrosshair : virtualinvoke r0.<org.jfree.chart.panel.CrosshairOverlay: void fireOverlayChanged()>()
+org.jfree.chart.panel.CrosshairOverlay.addRangeCrosshair : virtualinvoke r1.<org.jfree.chart.plot.Crosshair: void addPropertyChangeListener(java.beans.PropertyChangeListener)>(r0)
+org.jfree.chart.panel.CrosshairOverlay.addRangeCrosshair : $r2 = r0.<org.jfree.chart.panel.CrosshairOverlay: java.util.List yCrosshairs>
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null goto return
+org.jfree.chart.panel.CrosshairOverlay.clone : $r2 = specialinvoke r0.<java.lang.Object: java.lang.Object clone()>()
+org.jfree.chart.panel.CrosshairOverlay.clone : $r6 = r0.<org.jfree.chart.panel.CrosshairOverlay: java.util.List yCrosshairs>
+org.jfree.chart.panel.CrosshairOverlay.clone : $r3 = r0.<org.jfree.chart.panel.CrosshairOverlay: java.util.List xCrosshairs>
+org.jfree.chart.panel.CrosshairOverlay.clone : return r1
+org.jfree.chart.plot.Crosshair.addPropertyChangeListener : $r2 = r0.<org.jfree.chart.plot.Crosshair: java.beans.PropertyChangeSupport pcs>
+org.jfree.chart.plot.Crosshair.clone : $r1 = specialinvoke r0.<java.lang.Object: java.lang.Object clone()>()

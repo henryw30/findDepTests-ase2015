@@ -1,0 +1,10 @@
+org.jfree.data.xy.XIntervalSeriesCollection.addSeries : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "series")
+org.jfree.data.xy.XIntervalSeriesCollection.addSeries : virtualinvoke r1.<org.jfree.data.xy.XIntervalSeries: void addChangeListener(org.jfree.data.general.SeriesChangeListener)>(r0)
+org.jfree.data.xy.XIntervalSeriesCollection.addSeries : virtualinvoke r0.<org.jfree.data.xy.XIntervalSeriesCollection: void fireDatasetChanged()>()
+org.jfree.data.xy.XIntervalSeriesCollection.addSeries : $r2 = r0.<org.jfree.data.xy.XIntervalSeriesCollection: java.util.List data>
+org.jfree.data.general.AbstractDataset.notifyListeners : $r3 = r0.<org.jfree.data.general.AbstractDataset: javax.swing.event.EventListenerList listenerList>
+org.jfree.data.general.AbstractDataset.notifyListeners : $i1 = lengthof r2
+org.jfree.data.xy.XIntervalSeriesCollection.getEndX : $r3 = r0.<org.jfree.data.xy.XIntervalSeriesCollection: java.util.List data>
+org.jfree.data.general.Series.addChangeListener : $r2 = r0.<org.jfree.data.general.Series: javax.swing.event.EventListenerList listeners>
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null goto return
+org.jfree.data.general.AbstractDataset.fireDatasetChanged : $r1 = new org.jfree.data.general.DatasetChangeEvent

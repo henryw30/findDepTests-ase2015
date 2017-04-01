@@ -1,0 +1,6 @@
+mcscm.Os.getMajorOSXVersion : r0 = staticinvoke <mcscm.Os: java.lang.String getOsVersion()>() >>>>>>>> mcscm.Os.getMajorOSXVersion : $z0 = virtualinvoke r0.<java.lang.String: boolean contains(java.lang.CharSequence)>(".")
+mcscm.Os.getMajorOSXVersion : $z0 = virtualinvoke r0.<java.lang.String: boolean contains(java.lang.CharSequence)>(".") >>>>>>>> mcscm.Os.getMajorOSXVersion : if $z0 != 0
+mcscm.Os.getMajorOSXVersion : if $z0 != 0 >>>>>>>> mcscm.Os.getMajorOSXVersion : return r0
+mcscm.Os.getMajorOSXVersion : if $z0 != 0 >>>>>>>> mcscm.Os.getMajorOSXVersion : i0 = virtualinvoke r0.<java.lang.String: int lastIndexOf(java.lang.String)>(".")
+mcscm.Os.getMajorOSXVersion : i0 = virtualinvoke r0.<java.lang.String: int lastIndexOf(java.lang.String)>(".") >>>>>>>> mcscm.Os.getMajorOSXVersion : $r1 = virtualinvoke r0.<java.lang.String: java.lang.String substring(int,int)>(0, i0)
+mcscm.Os.getMajorOSXVersion : $r1 = virtualinvoke r0.<java.lang.String: java.lang.String substring(int,int)>(0, i0) >>>>>>>> mcscm.Os.getMajorOSXVersion : return $r1

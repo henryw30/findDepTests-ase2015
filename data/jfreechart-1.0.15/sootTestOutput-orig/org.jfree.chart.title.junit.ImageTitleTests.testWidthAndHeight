@@ -1,0 +1,10 @@
+org.jfree.chart.block.AbstractBlock.setWidth : r0.<org.jfree.chart.block.AbstractBlock: double width> = d0
+org.jfree.chart.block.AbstractBlock.getWidth : $d0 = r0.<org.jfree.chart.block.AbstractBlock: double width>
+org.jfree.chart.JFreeChartInfo.getLogo : r1 = specialinvoke r0.<org.jfree.ui.about.ProjectInfo: java.awt.Image getLogo()>()
+org.jfree.chart.JFreeChartInfo.getLogo : if r1 != null goto return r1
+org.jfree.chart.JFreeChartInfo.getLogo : return r1
+org.jfree.chart.block.AbstractBlock.setPadding : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "padding")
+org.jfree.chart.block.AbstractBlock.setPadding : r0.<org.jfree.chart.block.AbstractBlock: org.jfree.ui.RectangleInsets padding> = r1
+org.jfree.chart.block.AbstractBlock.getHeight : $d0 = r0.<org.jfree.chart.block.AbstractBlock: double height>
+org.jfree.chart.block.AbstractBlock.setHeight : r0.<org.jfree.chart.block.AbstractBlock: double height> = d0
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null goto return

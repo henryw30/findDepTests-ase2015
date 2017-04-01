@@ -1,0 +1,9 @@
+org.jfree.chart.renderer.category.LineAndShapeRenderer.setBaseShapesFilled : virtualinvoke r0.<org.jfree.chart.renderer.category.LineAndShapeRenderer: void fireChangeEvent()>()
+org.jfree.chart.renderer.category.LineAndShapeRenderer.setBaseShapesFilled : r0.<org.jfree.chart.renderer.category.LineAndShapeRenderer: boolean baseShapesFilled> = z0
+org.jfree.chart.renderer.AbstractRenderer.fireChangeEvent : $r1 = new org.jfree.chart.event.RendererChangeEvent
+org.jfree.chart.renderer.AbstractRenderer.notifyListeners : $r3 = r0.<org.jfree.chart.renderer.AbstractRenderer: javax.swing.event.EventListenerList listenerList>
+org.jfree.chart.renderer.AbstractRenderer.notifyListeners : $i1 = lengthof r2
+org.jfree.chart.renderer.category.LineAndShapeRenderer.setShapesVisible : virtualinvoke r0.<org.jfree.chart.renderer.category.LineAndShapeRenderer: void fireChangeEvent()>()
+org.jfree.chart.renderer.category.LineAndShapeRenderer.setShapesVisible : $r1 = staticinvoke <org.jfree.util.BooleanUtilities: java.lang.Boolean valueOf(boolean)>(z0)
+org.jfree.chart.renderer.category.LineAndShapeRenderer.setShapesVisible : r0.<org.jfree.chart.renderer.category.LineAndShapeRenderer: java.lang.Boolean shapesVisible> = r1
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null goto return

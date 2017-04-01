@@ -1,0 +1,129 @@
+org.jfree.chart.axis.ValueAxis.isVerticalTickLabels : $z0 = r0.<org.jfree.chart.axis.ValueAxis: boolean verticalTickLabels>
+org.jfree.chart.axis.Axis.getTickLabelFont : $r1 = r0.<org.jfree.chart.axis.Axis: java.awt.Font tickLabelFont>
+org.jfree.chart.axis.TickUnit.compareTo : return -1
+org.jfree.chart.axis.TickUnit.compareTo : $d0 = r0.<org.jfree.chart.axis.TickUnit: double size>
+org.jfree.chart.axis.TickUnit.compareTo : $z0 = r1 instanceof org.jfree.chart.axis.TickUnit
+org.jfree.chart.axis.TickUnit.compareTo : $d2 = r0.<org.jfree.chart.axis.TickUnit: double size>
+org.jfree.chart.axis.TickUnit.compareTo : return 1
+org.jfree.chart.axis.TickUnit.compareTo : return 0
+org.jfree.chart.axis.TickUnit.compareTo : r2 = (org.jfree.chart.axis.TickUnit) r1
+org.jfree.chart.axis.TickUnit.getSize : $d0 = r0.<org.jfree.chart.axis.TickUnit: double size>
+org.jfree.chart.axis.Axis.notifyListeners : $i1 = lengthof r2
+org.jfree.chart.axis.Axis.notifyListeners : $r3 = r0.<org.jfree.chart.axis.Axis: javax.swing.event.EventListenerList listenerList>
+org.jfree.chart.axis.LogAxis.refreshTicks : $z0 = staticinvoke <org.jfree.ui.RectangleEdge: boolean isTopOrBottom(org.jfree.ui.RectangleEdge)>(r4)
+org.jfree.chart.axis.LogAxis.refreshTicks : return r6
+org.jfree.chart.axis.LogAxis.refreshTicks : $r5 = new java.util.ArrayList
+org.jfree.chart.axis.LogAxis.refreshTicks : r6 = virtualinvoke r0.<org.jfree.chart.axis.LogAxis: java.util.List refreshTicksHorizontal(java.awt.Graphics2D,java.awt.geom.Rectangle2D,org.jfree.ui.RectangleEdge)>(r1, r3, r4)
+org.jfree.chart.axis.TickUnits.add : $r3 = r0.<org.jfree.chart.axis.TickUnits: java.util.List tickUnits>
+org.jfree.chart.axis.TickUnits.add : if r1 != null goto $r3 = r0.<org.jfree.chart.axis.TickUnits: java.util.List tickUnits>
+org.jfree.chart.axis.TickUnits.add : $r4 = r0.<org.jfree.chart.axis.TickUnits: java.util.List tickUnits>
+org.jfree.data.Range.getUpperBound : $d0 = r0.<org.jfree.data.Range: double upper>
+org.jfree.chart.axis.TickUnits.getCeilingTickUnit : $r3 = r0.<org.jfree.chart.axis.TickUnits: java.util.List tickUnits>
+org.jfree.chart.axis.TickUnits.getCeilingTickUnit : $r2 = r0.<org.jfree.chart.axis.TickUnits: java.util.List tickUnits>
+org.jfree.chart.axis.TickUnits.getCeilingTickUnit : if i0 < 0 goto $i1 = i0 + 1
+org.jfree.chart.axis.TickUnits.getCeilingTickUnit : $r1 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.TickUnits.getCeilingTickUnit : $r2 = staticinvoke <java.text.NumberFormat: java.text.NumberFormat getInstance()>()
+org.jfree.chart.axis.LogAxis.selectAutoTickUnit : $z0 = staticinvoke <org.jfree.ui.RectangleEdge: boolean isTopOrBottom(org.jfree.ui.RectangleEdge)>(r3)
+org.jfree.chart.axis.LogAxis.selectAutoTickUnit : virtualinvoke r0.<org.jfree.chart.axis.LogAxis: void selectHorizontalAutoTickUnit(java.awt.Graphics2D,java.awt.geom.Rectangle2D,org.jfree.ui.RectangleEdge)>(r1, r2, r3)
+org.jfree.chart.axis.LogAxis.selectHorizontalAutoTickUnit : $d7 = virtualinvoke r6.<org.jfree.chart.axis.NumberTickUnit: double getSize()>()
+org.jfree.chart.axis.LogAxis.selectHorizontalAutoTickUnit : $r7 = virtualinvoke r0.<org.jfree.chart.axis.LogAxis: org.jfree.chart.axis.NumberTickUnit getTickUnit()>()
+org.jfree.chart.axis.LogAxis.selectHorizontalAutoTickUnit : d8 = virtualinvoke r0.<org.jfree.chart.axis.LogAxis: double estimateMaximumTickLabelWidth(java.awt.Graphics2D,org.jfree.chart.axis.TickUnit)>(r1, r6)
+org.jfree.chart.axis.LogAxis.selectHorizontalAutoTickUnit : $d5 = d0 / d1
+org.jfree.chart.axis.LogAxis.selectHorizontalAutoTickUnit : $d4 = virtualinvoke r5.<org.jfree.chart.axis.TickUnit: double getSize()>()
+org.jfree.chart.axis.LogAxis.selectHorizontalAutoTickUnit : $r9 = interfaceinvoke r4.<org.jfree.chart.axis.TickUnitSource: org.jfree.chart.axis.TickUnit getCeilingTickUnit(double)>(d2)
+org.jfree.chart.axis.LogAxis.selectHorizontalAutoTickUnit : virtualinvoke r0.<org.jfree.chart.axis.LogAxis: void setTickUnit(org.jfree.chart.axis.NumberTickUnit,boolean,boolean)>(r6, 0, 0)
+org.jfree.chart.axis.LogAxis.selectHorizontalAutoTickUnit : $r8 = virtualinvoke r0.<org.jfree.chart.axis.LogAxis: org.jfree.chart.axis.NumberTickUnit getTickUnit()>()
+org.jfree.chart.axis.LogAxis.selectHorizontalAutoTickUnit : r4 = virtualinvoke r0.<org.jfree.chart.axis.LogAxis: org.jfree.chart.axis.TickUnitSource getStandardTickUnits()>()
+org.jfree.chart.axis.LogAxis.selectHorizontalAutoTickUnit : d0 = virtualinvoke r0.<org.jfree.chart.axis.LogAxis: double estimateMaximumTickLabelWidth(java.awt.Graphics2D,org.jfree.chart.axis.TickUnit)>(r1, $r7)
+org.jfree.chart.axis.LogAxis.selectHorizontalAutoTickUnit : $b0 = d8 cmpl d3
+org.jfree.chart.axis.LogAxis.createLogTickUnits : return r2
+org.jfree.chart.axis.LogAxis.createLogTickUnits : $r5 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.LogAxis.createLogTickUnits : $r1 = new org.jfree.chart.axis.TickUnits
+org.jfree.chart.axis.LogAxis.createLogTickUnits : $r11 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.LogAxis.createLogTickUnits : $r17 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.LogAxis.createLogTickUnits : $r15 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.LogAxis.createLogTickUnits : $r7 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.LogAxis.createLogTickUnits : $r4 = new org.jfree.chart.util.LogFormat
+org.jfree.chart.axis.LogAxis.createLogTickUnits : $r12 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.LogAxis.createLogTickUnits : $r13 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.LogAxis.createLogTickUnits : $r10 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.LogAxis.createLogTickUnits : $r6 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.LogAxis.createLogTickUnits : $r18 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.LogAxis.createLogTickUnits : $r16 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.LogAxis.createLogTickUnits : $r14 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.LogAxis.createLogTickUnits : $r9 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.LogAxis.createLogTickUnits : $r8 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.LogAxis.setTickUnit : if z0 == 0 goto return
+org.jfree.chart.axis.LogAxis.setTickUnit : if z1 == 0 goto (branch)
+org.jfree.chart.axis.LogAxis.setTickUnit : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "unit")
+org.jfree.chart.axis.LogAxis.setTickUnit : r0.<org.jfree.chart.axis.LogAxis: org.jfree.chart.axis.NumberTickUnit tickUnit> = r1
+org.jfree.chart.axis.Axis.getTickLabelInsets : $r1 = r0.<org.jfree.chart.axis.Axis: org.jfree.ui.RectangleInsets tickLabelInsets>
+org.jfree.chart.axis.LogAxis.valueToJava2D : d7 = virtualinvoke r0.<org.jfree.chart.axis.LogAxis: double calculateLog(double)>(d0)
+org.jfree.chart.axis.LogAxis.valueToJava2D : $d6 = virtualinvoke r3.<org.jfree.data.Range: double getUpperBound()>()
+org.jfree.chart.axis.LogAxis.valueToJava2D : r3 = virtualinvoke r0.<org.jfree.chart.axis.LogAxis: org.jfree.data.Range getRange()>()
+org.jfree.chart.axis.LogAxis.valueToJava2D : d3 = virtualinvoke r1.<java.awt.geom.Rectangle2D: double getX()>()
+org.jfree.chart.axis.LogAxis.valueToJava2D : d4 = 0.0
+org.jfree.chart.axis.LogAxis.valueToJava2D : $d14 = d7 - d1
+org.jfree.chart.axis.LogAxis.valueToJava2D : $z2 = virtualinvoke r0.<org.jfree.chart.axis.LogAxis: boolean isInverted()>()
+org.jfree.chart.axis.LogAxis.valueToJava2D : d4 = virtualinvoke r1.<java.awt.geom.Rectangle2D: double getMaxX()>()
+org.jfree.chart.axis.LogAxis.valueToJava2D : $d5 = virtualinvoke r3.<org.jfree.data.Range: double getLowerBound()>()
+org.jfree.chart.axis.LogAxis.valueToJava2D : $z0 = staticinvoke <org.jfree.ui.RectangleEdge: boolean isTopOrBottom(org.jfree.ui.RectangleEdge)>(r2)
+org.jfree.chart.axis.LogAxis.valueToJava2D : d3 = 0.0
+org.jfree.chart.axis.LogAxis.getNumberFormatOverride : $r1 = r0.<org.jfree.chart.axis.LogAxis: java.text.NumberFormat numberFormatOverride>
+org.jfree.chart.axis.ValueAxis.getStandardTickUnits : $r1 = r0.<org.jfree.chart.axis.ValueAxis: org.jfree.chart.axis.TickUnitSource standardTickUnits>
+org.jfree.data.Range.getLowerBound : $d0 = r0.<org.jfree.data.Range: double lower>
+org.jfree.chart.axis.LogAxis.estimateMaximumTickLabelWidth : r8 = virtualinvoke r2.<org.jfree.chart.axis.TickUnit: java.lang.String valueToString(double)>(d2)
+org.jfree.chart.axis.LogAxis.estimateMaximumTickLabelWidth : $i1 = virtualinvoke r11.<java.awt.FontMetrics: int stringWidth(java.lang.String)>(r8)
+org.jfree.chart.axis.LogAxis.estimateMaximumTickLabelWidth : d2 = virtualinvoke r12.<org.jfree.data.Range: double getUpperBound()>()
+org.jfree.chart.axis.LogAxis.estimateMaximumTickLabelWidth : return d8
+org.jfree.chart.axis.LogAxis.estimateMaximumTickLabelWidth : $z0 = virtualinvoke r0.<org.jfree.chart.axis.LogAxis: boolean isVerticalTickLabels()>()
+org.jfree.chart.axis.LogAxis.estimateMaximumTickLabelWidth : d1 = virtualinvoke r12.<org.jfree.data.Range: double getLowerBound()>()
+org.jfree.chart.axis.LogAxis.estimateMaximumTickLabelWidth : $d9 = staticinvoke <java.lang.Math: double max(double,double)>(d3, d4)
+org.jfree.chart.axis.LogAxis.estimateMaximumTickLabelWidth : $r10 = virtualinvoke r0.<org.jfree.chart.axis.LogAxis: java.awt.Font getTickLabelFont()>()
+org.jfree.chart.axis.LogAxis.estimateMaximumTickLabelWidth : r7 = virtualinvoke r2.<org.jfree.chart.axis.TickUnit: java.lang.String valueToString(double)>(d1)
+org.jfree.chart.axis.LogAxis.estimateMaximumTickLabelWidth : if r6 == null goto r7 = virtualinvoke r2.<org.jfree.chart.axis.TickUnit: java.lang.String valueToString(double)>(d1)
+org.jfree.chart.axis.LogAxis.estimateMaximumTickLabelWidth : $d5 = virtualinvoke r3.<org.jfree.ui.RectangleInsets: double getLeft()>()
+org.jfree.chart.axis.LogAxis.estimateMaximumTickLabelWidth : r12 = virtualinvoke r0.<org.jfree.chart.axis.LogAxis: org.jfree.data.Range getRange()>()
+org.jfree.chart.axis.LogAxis.estimateMaximumTickLabelWidth : r3 = virtualinvoke r0.<org.jfree.chart.axis.LogAxis: org.jfree.ui.RectangleInsets getTickLabelInsets()>()
+org.jfree.chart.axis.LogAxis.estimateMaximumTickLabelWidth : r6 = virtualinvoke r0.<org.jfree.chart.axis.LogAxis: java.text.NumberFormat getNumberFormatOverride()>()
+org.jfree.chart.axis.LogAxis.estimateMaximumTickLabelWidth : $i0 = virtualinvoke r11.<java.awt.FontMetrics: int stringWidth(java.lang.String)>(r7)
+org.jfree.chart.axis.ValueAxis.isInverted : $z0 = r0.<org.jfree.chart.axis.ValueAxis: boolean inverted>
+org.jfree.chart.axis.LogAxis.calculateLog : $d1 = staticinvoke <java.lang.Math: double log(double)>(d0)
+org.jfree.chart.axis.ValueAxis.setDefaultAutoRange : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "range")
+org.jfree.chart.axis.ValueAxis.setDefaultAutoRange : $r2 = new org.jfree.chart.event.AxisChangeEvent
+org.jfree.chart.axis.ValueAxis.setDefaultAutoRange : r0.<org.jfree.chart.axis.ValueAxis: org.jfree.data.Range defaultAutoRange> = r1
+org.jfree.chart.axis.ValueAxis.getLowerBound : $r1 = r0.<org.jfree.chart.axis.ValueAxis: org.jfree.data.Range range>
+org.jfree.chart.axis.LogAxis.refreshTicksHorizontal : virtualinvoke r1.<java.awt.Graphics2D: void setFont(java.awt.Font)>(r6)
+org.jfree.chart.axis.LogAxis.refreshTicksHorizontal : $r10 = <org.jfree.ui.RectangleEdge: org.jfree.ui.RectangleEdge TOP>
+org.jfree.chart.axis.LogAxis.refreshTicksHorizontal : virtualinvoke r0.<org.jfree.chart.axis.LogAxis: void selectAutoTickUnit(java.awt.Graphics2D,java.awt.geom.Rectangle2D,org.jfree.ui.RectangleEdge)>(r1, r2, r3)
+org.jfree.chart.axis.LogAxis.refreshTicksHorizontal : return r5
+org.jfree.chart.axis.LogAxis.refreshTicksHorizontal : $d6 = virtualinvoke r0.<org.jfree.chart.axis.LogAxis: double getLowerBound()>()
+org.jfree.chart.axis.LogAxis.refreshTicksHorizontal : d2 = d0
+org.jfree.chart.axis.LogAxis.refreshTicksHorizontal : r7 = <org.jfree.ui.TextAnchor: org.jfree.ui.TextAnchor BOTTOM_CENTER>
+org.jfree.chart.axis.LogAxis.refreshTicksHorizontal : r6 = virtualinvoke r0.<org.jfree.chart.axis.LogAxis: java.awt.Font getTickLabelFont()>()
+org.jfree.chart.axis.LogAxis.refreshTicksHorizontal : $d8 = virtualinvoke r0.<org.jfree.chart.axis.LogAxis: double getUpperBound()>()
+org.jfree.chart.axis.LogAxis.refreshTicksHorizontal : $r9 = new java.util.ArrayList
+org.jfree.chart.axis.LogAxis.refreshTicksHorizontal : $z1 = virtualinvoke r0.<org.jfree.chart.axis.LogAxis: boolean isAutoTickUnitSelection()>()
+org.jfree.chart.axis.LogAxis.refreshTicksHorizontal : $r11 = r0.<org.jfree.chart.axis.LogAxis: org.jfree.chart.axis.NumberTickUnit tickUnit>
+org.jfree.chart.axis.LogAxis.refreshTicksHorizontal : $z2 = staticinvoke <java.lang.Double: boolean isInfinite(double)>(d0)
+org.jfree.chart.axis.LogAxis.refreshTicksHorizontal : if z0 == 0 goto return r5
+org.jfree.chart.axis.LogAxis.refreshTicksHorizontal : r4 = virtualinvoke r0.<org.jfree.chart.axis.LogAxis: org.jfree.data.Range getRange()>()
+org.jfree.chart.axis.LogAxis.refreshTicksHorizontal : $r12 = r0.<org.jfree.chart.axis.LogAxis: org.jfree.chart.axis.NumberTickUnit tickUnit>
+org.jfree.chart.util.LogFormat.calculateLog : $d1 = staticinvoke <java.lang.Math: double log(double)>(d0)
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null goto return
+org.jfree.chart.axis.NumberTickUnit.valueToString : $r1 = r0.<org.jfree.chart.axis.NumberTickUnit: java.text.NumberFormat formatter>
+org.jfree.chart.util.LogFormat.format : return r4
+org.jfree.chart.util.LogFormat.format : $r5 = r0.<org.jfree.chart.util.LogFormat: java.lang.String baseLabel>
+org.jfree.chart.util.LogFormat.format : $r7 = r0.<org.jfree.chart.util.LogFormat: java.lang.String powerLabel>
+org.jfree.chart.util.LogFormat.format : $z0 = r0.<org.jfree.chart.util.LogFormat: boolean showBase>
+org.jfree.chart.util.LogFormat.format : $r9 = r0.<org.jfree.chart.util.LogFormat: java.text.NumberFormat formatter>
+org.jfree.chart.util.LogFormat.format : $r3 = new java.lang.StringBuffer
+org.jfree.chart.axis.LogAxis.exponentLengthToJava2D : $d4 = d0 + 1.0
+org.jfree.chart.axis.LogAxis.exponentLengthToJava2D : $d6 = d2 - d1
+org.jfree.chart.axis.LogAxis.exponentLengthToJava2D : $d3 = virtualinvoke r0.<org.jfree.chart.axis.LogAxis: double calculateValue(double)>(1.0)
+org.jfree.chart.axis.LogAxis.calculateValue : $d1 = r0.<org.jfree.chart.axis.LogAxis: double base>
+org.jfree.chart.axis.ValueAxis.isAutoTickUnitSelection : $z0 = r0.<org.jfree.chart.axis.ValueAxis: boolean autoTickUnitSelection>
+org.jfree.chart.axis.ValueAxis.getUpperBound : $r1 = r0.<org.jfree.chart.axis.ValueAxis: org.jfree.data.Range range>
+org.jfree.chart.axis.ValueAxis.getRange : $r1 = r0.<org.jfree.chart.axis.ValueAxis: org.jfree.data.Range range>
+org.jfree.chart.axis.LogAxis.getTickUnit : $r1 = r0.<org.jfree.chart.axis.LogAxis: org.jfree.chart.axis.NumberTickUnit tickUnit>
+org.jfree.chart.axis.TickUnit.getMinorTickCount : $i0 = r0.<org.jfree.chart.axis.TickUnit: int minorTickCount>

@@ -1,0 +1,216 @@
+org.apache.xml.security.Init.init : $z0 = <org.apache.xml.security.Init: boolean _alreadyInitialized> >>>>>>>> org.apache.xml.security.Init.init : if $z0 != 0
+org.apache.xml.security.Init.init : if $z0 != 0 >>>>>>>> org.apache.xml.security.utils.Base64.encode : $i0 = staticinvoke <org.apache.xml.security.utils.Base64: int getBase64WrapLength()>()
+org.apache.xml.security.utils.Base64.encode : $i0 = staticinvoke <org.apache.xml.security.utils.Base64: int getBase64WrapLength()>() >>>>>>>> org.apache.xml.security.utils.Base64.getBase64WrapLength : $i0 = <org.apache.xml.security.utils.Base64: int _base64length>
+org.apache.xml.security.utils.Base64.getBase64WrapLength : $i0 = <org.apache.xml.security.utils.Base64: int _base64length> >>>>>>>> org.apache.xml.security.utils.Base64.getBase64WrapLength : return $i0
+org.apache.xml.security.utils.Base64.getBase64WrapLength : return $i0 >>>>>>>> org.apache.xml.security.utils.Base64.encode : $r1 = staticinvoke <org.apache.xml.security.utils.Base64: java.lang.String encode(byte[],int)>(r0, $i0)
+org.apache.xml.security.utils.Base64.encode : $r1 = staticinvoke <org.apache.xml.security.utils.Base64: java.lang.String encode(byte[],int)>(r0, $i0) >>>>>>>> org.apache.xml.security.utils.Base64.encode : $i5 = lengthof r0
+org.apache.xml.security.utils.Base64.encode : $i5 = lengthof r0 >>>>>>>> org.apache.xml.security.utils.Base64.encode : $i6 = $i5 + 2
+org.apache.xml.security.utils.Base64.encode : $i6 = $i5 + 2 >>>>>>>> org.apache.xml.security.utils.Base64.encode : $i7 = $i6 / 3
+org.apache.xml.security.utils.Base64.encode : $i7 = $i6 / 3 >>>>>>>> org.apache.xml.security.utils.Base64.encode : i1 = $i7 * 4
+org.apache.xml.security.utils.Base64.encode : i1 = $i7 * 4 >>>>>>>> org.apache.xml.security.utils.Base64.encode : if i0 <= 3
+org.apache.xml.security.utils.Base64.encode : if i0 <= 3 >>>>>>>> org.apache.xml.security.utils.Base64.encode : $i8 = i0 % 4
+org.apache.xml.security.utils.Base64.encode : $i8 = i0 % 4 >>>>>>>> org.apache.xml.security.utils.Base64.encode : i9 = i0 - $i8
+org.apache.xml.security.utils.Base64.encode : i9 = i0 - $i8 >>>>>>>> org.apache.xml.security.utils.Base64.encode : $i10 = i1 / i9
+org.apache.xml.security.utils.Base64.encode : $i10 = i1 / i9 >>>>>>>> org.apache.xml.security.utils.Base64.encode : $i11 = 2 * $i10
+org.apache.xml.security.utils.Base64.encode : $i11 = 2 * $i10 >>>>>>>> org.apache.xml.security.utils.Base64.encode : i1 = i1 + $i11
+org.apache.xml.security.utils.Base64.encode : i1 = i1 + $i11 >>>>>>>> org.apache.xml.security.utils.Base64.encode : goto [?= $r2 = new java.lang.StringBuffer]
+org.apache.xml.security.utils.Base64.encode : goto [?= $r2 = new java.lang.StringBuffer] >>>>>>>> org.apache.xml.security.utils.Base64.encode : $r2 = new java.lang.StringBuffer
+org.apache.xml.security.utils.Base64.encode : $r2 = new java.lang.StringBuffer >>>>>>>> org.apache.xml.security.utils.Base64.encode : specialinvoke $r2.<java.lang.StringBuffer: void <init>(int)>(i1)
+org.apache.xml.security.utils.Base64.encode : specialinvoke $r2.<java.lang.StringBuffer: void <init>(int)>(i1) >>>>>>>> org.apache.xml.security.utils.Base64.encode : r1 = $r2
+org.apache.xml.security.utils.Base64.encode : r1 = $r2 >>>>>>>> org.apache.xml.security.utils.Base64.encode : $i12 = lengthof r0
+org.apache.xml.security.utils.Base64.encode : $i12 = lengthof r0 >>>>>>>> org.apache.xml.security.utils.Base64.encode : $i13 = $i12 / 3
+org.apache.xml.security.utils.Base64.encode : $i13 = $i12 / 3 >>>>>>>> org.apache.xml.security.utils.Base64.encode : i2 = $i13 * 3
+org.apache.xml.security.utils.Base64.encode : i2 = $i13 * 3 >>>>>>>> org.apache.xml.security.utils.Base64.encode : i3 = 0
+org.apache.xml.security.utils.Base64.encode : i3 = 0 >>>>>>>> org.apache.xml.security.utils.Base64.encode : i4 = 0
+org.apache.xml.security.utils.Base64.encode : i4 = 0 >>>>>>>> org.apache.xml.security.utils.Base64.encode : if i4 >= i2
+org.apache.xml.security.utils.Base64.encode : if i4 >= i2 >>>>>>>> org.apache.xml.security.utils.Base64.encode : $i14 = i3 + 4
+org.apache.xml.security.utils.Base64.encode : $i14 = i3 + 4 >>>>>>>> org.apache.xml.security.utils.Base64.encode : if $i14 <= i9
+org.apache.xml.security.utils.Base64.encode : if $i14 <= i9 >>>>>>>> org.apache.xml.security.utils.Base64.encode : $r4 = staticinvoke <org.apache.xml.security.utils.Base64: char[] encodeFullBlock(byte[],int)>(r0, i4)
+org.apache.xml.security.utils.Base64.encode : $r4 = staticinvoke <org.apache.xml.security.utils.Base64: char[] encodeFullBlock(byte[],int)>(r0, i4) >>>>>>>> org.apache.xml.security.utils.Base64.encodeFullBlock : i1 = 0
+org.apache.xml.security.utils.Base64.encodeFullBlock : i1 = 0 >>>>>>>> org.apache.xml.security.utils.Base64.encodeFullBlock : i2 = 0
+org.apache.xml.security.utils.Base64.encodeFullBlock : i2 = 0 >>>>>>>> org.apache.xml.security.utils.Base64.encodeFullBlock : if i2 >= 3
+org.apache.xml.security.utils.Base64.encodeFullBlock : if i2 >= 3 >>>>>>>> org.apache.xml.security.utils.Base64.encodeFullBlock : i5 = i1 << 8
+org.apache.xml.security.utils.Base64.encodeFullBlock : i5 = i1 << 8 >>>>>>>> org.apache.xml.security.utils.Base64.encodeFullBlock : $i6 = i0 + i2
+org.apache.xml.security.utils.Base64.encodeFullBlock : $i6 = i0 + i2 >>>>>>>> org.apache.xml.security.utils.Base64.encodeFullBlock : $b7 = r0[$i6]
+org.apache.xml.security.utils.Base64.encodeFullBlock : $b7 = r0[$i6] >>>>>>>> org.apache.xml.security.utils.Base64.encodeFullBlock : $s8 = 255 & $b7
+org.apache.xml.security.utils.Base64.encodeFullBlock : $s8 = 255 & $b7 >>>>>>>> org.apache.xml.security.utils.Base64.encodeFullBlock : i1 = i5 + $s8
+org.apache.xml.security.utils.Base64.encodeFullBlock : i1 = i5 + $s8 >>>>>>>> org.apache.xml.security.utils.Base64.encodeFullBlock : i2 = i2 + 1
+org.apache.xml.security.utils.Base64.encodeFullBlock : i2 = i2 + 1 >>>>>>>> org.apache.xml.security.utils.Base64.encodeFullBlock : goto [?= (branch)]
+org.apache.xml.security.utils.Base64.encodeFullBlock : goto [?= (branch)] >>>>>>>> org.apache.xml.security.utils.Base64.encodeFullBlock : $b9 = r0[i0]
+org.apache.xml.security.utils.Base64.encodeFullBlock : $b9 = r0[i0] >>>>>>>> org.apache.xml.security.utils.Base64.encodeFullBlock : $s10 = $b9 & 255
+org.apache.xml.security.utils.Base64.encodeFullBlock : $s10 = $b9 & 255 >>>>>>>> org.apache.xml.security.utils.Base64.encodeFullBlock : $i11 = $s10 << 16
+org.apache.xml.security.utils.Base64.encodeFullBlock : $i11 = $s10 << 16 >>>>>>>> org.apache.xml.security.utils.Base64.encodeFullBlock : $i12 = i0 + 1
+org.apache.xml.security.utils.Base64.encodeFullBlock : $i12 = i0 + 1 >>>>>>>> org.apache.xml.security.utils.Base64.encodeFullBlock : $b13 = r0[$i12]
+org.apache.xml.security.utils.Base64.encodeFullBlock : $b13 = r0[$i12] >>>>>>>> org.apache.xml.security.utils.Base64.encodeFullBlock : $s14 = $b13 & 255
+org.apache.xml.security.utils.Base64.encodeFullBlock : $s14 = $b13 & 255 >>>>>>>> org.apache.xml.security.utils.Base64.encodeFullBlock : $i15 = $s14 << 8
+org.apache.xml.security.utils.Base64.encodeFullBlock : $i15 = $s14 << 8 >>>>>>>> org.apache.xml.security.utils.Base64.encodeFullBlock : $i16 = $i11 + $i15
+org.apache.xml.security.utils.Base64.encodeFullBlock : $i16 = $i11 + $i15 >>>>>>>> org.apache.xml.security.utils.Base64.encodeFullBlock : $i17 = i0 + 2
+org.apache.xml.security.utils.Base64.encodeFullBlock : $i17 = i0 + 2 >>>>>>>> org.apache.xml.security.utils.Base64.encodeFullBlock : $b18 = r0[$i17]
+org.apache.xml.security.utils.Base64.encodeFullBlock : $b18 = r0[$i17] >>>>>>>> org.apache.xml.security.utils.Base64.encodeFullBlock : $s19 = $b18 & 255
+org.apache.xml.security.utils.Base64.encodeFullBlock : $s19 = $b18 & 255 >>>>>>>> org.apache.xml.security.utils.Base64.encodeFullBlock : i20 = $i16 + $s19
+org.apache.xml.security.utils.Base64.encodeFullBlock : i20 = $i16 + $s19 >>>>>>>> org.apache.xml.security.utils.Base64.encodeFullBlock : r1 = newarray (char)[4]
+org.apache.xml.security.utils.Base64.encodeFullBlock : r1 = newarray (char)[4] >>>>>>>> org.apache.xml.security.utils.Base64.encodeFullBlock : i3 = 3
+org.apache.xml.security.utils.Base64.encodeFullBlock : i3 = 3 >>>>>>>> org.apache.xml.security.utils.Base64.encodeFullBlock : if i3 < 0
+org.apache.xml.security.utils.Base64.encodeFullBlock : if i3 < 0 >>>>>>>> org.apache.xml.security.utils.Base64.encodeFullBlock : i4 = i20 & 63
+org.apache.xml.security.utils.Base64.encodeFullBlock : i4 = i20 & 63 >>>>>>>> org.apache.xml.security.utils.Base64.encodeFullBlock : $c21 = staticinvoke <org.apache.xml.security.utils.Base64: char getChar(int)>(i4)
+org.apache.xml.security.utils.Base64.encodeFullBlock : $c21 = staticinvoke <org.apache.xml.security.utils.Base64: char getChar(int)>(i4) >>>>>>>> org.apache.xml.security.utils.Base64.getChar : if i0 < 0
+org.apache.xml.security.utils.Base64.getChar : if i0 < 0 >>>>>>>> org.apache.xml.security.utils.Base64.getChar : if i0 >= 26
+org.apache.xml.security.utils.Base64.getChar : if i0 >= 26 >>>>>>>> org.apache.xml.security.utils.Base64.getChar : if i0 < 26
+org.apache.xml.security.utils.Base64.getChar : if i0 < 26 >>>>>>>> org.apache.xml.security.utils.Base64.getChar : if i0 >= 52
+org.apache.xml.security.utils.Base64.getChar : if i0 >= 52 >>>>>>>> org.apache.xml.security.utils.Base64.getChar : $i3 = i0 - 26
+org.apache.xml.security.utils.Base64.getChar : $i3 = i0 - 26 >>>>>>>> org.apache.xml.security.utils.Base64.getChar : $i4 = 97 + $i3
+org.apache.xml.security.utils.Base64.getChar : $i4 = 97 + $i3 >>>>>>>> org.apache.xml.security.utils.Base64.getChar : $c5 = (char) $i4
+org.apache.xml.security.utils.Base64.getChar : $c5 = (char) $i4 >>>>>>>> org.apache.xml.security.utils.Base64.getChar : return $c5
+org.apache.xml.security.utils.Base64.getChar : return $c5 >>>>>>>> org.apache.xml.security.utils.Base64.encodeFullBlock : r1[i3] = $c21
+org.apache.xml.security.utils.Base64.encodeFullBlock : r1[i3] = $c21 >>>>>>>> org.apache.xml.security.utils.Base64.encodeFullBlock : i20 = i20 >> 6
+org.apache.xml.security.utils.Base64.encodeFullBlock : i20 = i20 >> 6 >>>>>>>> org.apache.xml.security.utils.Base64.encodeFullBlock : i3 = i3 + -1
+org.apache.xml.security.utils.Base64.encodeFullBlock : i3 = i3 + -1 >>>>>>>> org.apache.xml.security.utils.Base64.getChar : $i1 = 65 + i0
+org.apache.xml.security.utils.Base64.getChar : $i1 = 65 + i0 >>>>>>>> org.apache.xml.security.utils.Base64.getChar : $c2 = (char) $i1
+org.apache.xml.security.utils.Base64.getChar : $c2 = (char) $i1 >>>>>>>> org.apache.xml.security.utils.Base64.getChar : return $c2
+org.apache.xml.security.utils.Base64.getChar : return $c2 >>>>>>>> org.apache.xml.security.utils.Base64.encodeFullBlock : return r1
+org.apache.xml.security.utils.Base64.encodeFullBlock : return r1 >>>>>>>> org.apache.xml.security.utils.Base64.encode : virtualinvoke r1.<java.lang.StringBuffer: java.lang.StringBuffer append(char[])>($r4)
+org.apache.xml.security.utils.Base64.encode : virtualinvoke r1.<java.lang.StringBuffer: java.lang.StringBuffer append(char[])>($r4) >>>>>>>> org.apache.xml.security.utils.Base64.encode : i4 = i4 + 3
+org.apache.xml.security.utils.Base64.encode : i4 = i4 + 3 >>>>>>>> org.apache.xml.security.utils.Base64.encode : i3 = i3 + 4
+org.apache.xml.security.utils.Base64.encode : i3 = i3 + 4 >>>>>>>> org.apache.xml.security.utils.Base64.encode : goto [?= (branch)]
+org.apache.xml.security.utils.Base64.encode : goto [?= (branch)] >>>>>>>> org.apache.xml.security.utils.Base64.encode : if i3 < i9
+org.apache.xml.security.utils.Base64.encode : if i3 < i9 >>>>>>>> org.apache.xml.security.utils.Base64.encode : $i15 = lengthof r0
+org.apache.xml.security.utils.Base64.encode : $i15 = lengthof r0 >>>>>>>> org.apache.xml.security.utils.Base64.encode : if i2 >= $i15
+org.apache.xml.security.utils.Base64.encode : if i2 >= $i15 >>>>>>>> org.apache.xml.security.utils.Base64.encode : $r7 = staticinvoke <org.apache.xml.security.utils.Base64: char[] encodeBlock(byte[],int)>(r0, i2)
+org.apache.xml.security.utils.Base64.encode : $r7 = staticinvoke <org.apache.xml.security.utils.Base64: char[] encodeBlock(byte[],int)>(r0, i2) >>>>>>>> org.apache.xml.security.utils.Base64.encodeBlock : i1 = 0
+org.apache.xml.security.utils.Base64.encodeBlock : i1 = 0 >>>>>>>> org.apache.xml.security.utils.Base64.encodeBlock : $i7 = lengthof r0
+org.apache.xml.security.utils.Base64.encodeBlock : $i7 = lengthof r0 >>>>>>>> org.apache.xml.security.utils.Base64.encodeBlock : $i8 = $i7 - i0
+org.apache.xml.security.utils.Base64.encodeBlock : $i8 = $i7 - i0 >>>>>>>> org.apache.xml.security.utils.Base64.encodeBlock : i2 = $i8 - 1
+org.apache.xml.security.utils.Base64.encodeBlock : i2 = $i8 - 1 >>>>>>>> org.apache.xml.security.utils.Base64.encodeBlock : if i2 < 2
+org.apache.xml.security.utils.Base64.encodeBlock : if i2 < 2 >>>>>>>> org.apache.xml.security.utils.Base64.encodeBlock : $i9 = i2
+org.apache.xml.security.utils.Base64.encodeBlock : $i9 = i2 >>>>>>>> org.apache.xml.security.utils.Base64.encodeBlock : i3 = $i9
+org.apache.xml.security.utils.Base64.encodeBlock : i3 = $i9 >>>>>>>> org.apache.xml.security.utils.Base64.encodeBlock : i4 = 0
+org.apache.xml.security.utils.Base64.encodeBlock : i4 = 0 >>>>>>>> org.apache.xml.security.utils.Base64.encodeBlock : if i4 >= 3
+org.apache.xml.security.utils.Base64.encodeBlock : if i4 >= 3 >>>>>>>> org.apache.xml.security.utils.Base64.encodeBlock : $i10 = i0 + i4
+org.apache.xml.security.utils.Base64.encodeBlock : $i10 = i0 + i4 >>>>>>>> org.apache.xml.security.utils.Base64.encodeBlock : $i11 = lengthof r0
+org.apache.xml.security.utils.Base64.encodeBlock : $i11 = lengthof r0 >>>>>>>> org.apache.xml.security.utils.Base64.encodeBlock : if $i10 >= $i11
+org.apache.xml.security.utils.Base64.encodeBlock : if $i10 >= $i11 >>>>>>>> org.apache.xml.security.utils.Base64.encodeBlock : $i12 = i0 + i4
+org.apache.xml.security.utils.Base64.encodeBlock : $i12 = i0 + i4 >>>>>>>> org.apache.xml.security.utils.Base64.encodeBlock : $b13 = r0[$i12]
+org.apache.xml.security.utils.Base64.encodeBlock : $b13 = r0[$i12] >>>>>>>> org.apache.xml.security.utils.Base64.encodeBlock : goto [?= b5 = $b13]
+org.apache.xml.security.utils.Base64.encodeBlock : goto [?= b5 = $b13] >>>>>>>> org.apache.xml.security.utils.Base64.encodeBlock : b5 = $b13
+org.apache.xml.security.utils.Base64.encodeBlock : b5 = $b13 >>>>>>>> org.apache.xml.security.utils.Base64.encodeBlock : if b5 >= 0
+org.apache.xml.security.utils.Base64.encodeBlock : if b5 >= 0 >>>>>>>> org.apache.xml.security.utils.Base64.encodeBlock : $i14 = b5
+org.apache.xml.security.utils.Base64.encodeBlock : $i14 = b5 >>>>>>>> org.apache.xml.security.utils.Base64.encodeBlock : i6 = $i14
+org.apache.xml.security.utils.Base64.encodeBlock : i6 = $i14 >>>>>>>> org.apache.xml.security.utils.Base64.encodeBlock : i15 = i1 << 8
+org.apache.xml.security.utils.Base64.encodeBlock : i15 = i1 << 8 >>>>>>>> org.apache.xml.security.utils.Base64.encodeBlock : i1 = i15 + i6
+org.apache.xml.security.utils.Base64.encodeBlock : i1 = i15 + i6 >>>>>>>> org.apache.xml.security.utils.Base64.encodeBlock : i4 = i4 + 1
+org.apache.xml.security.utils.Base64.encodeBlock : i4 = i4 + 1 >>>>>>>> org.apache.xml.security.utils.Base64.encodeBlock : goto [?= (branch)]
+org.apache.xml.security.utils.Base64.encodeBlock : goto [?= (branch)] >>>>>>>> org.apache.xml.security.utils.Base64.encodeBlock : $b13 = 0
+org.apache.xml.security.utils.Base64.encodeBlock : $b13 = 0 >>>>>>>> org.apache.xml.security.utils.Base64.encodeBlock : r1 = newarray (char)[4]
+org.apache.xml.security.utils.Base64.encodeBlock : r1 = newarray (char)[4] >>>>>>>> org.apache.xml.security.utils.Base64.encodeBlock : i16 = 3
+org.apache.xml.security.utils.Base64.encodeBlock : i16 = 3 >>>>>>>> org.apache.xml.security.utils.Base64.encodeBlock : if i16 < 0
+org.apache.xml.security.utils.Base64.encodeBlock : if i16 < 0 >>>>>>>> org.apache.xml.security.utils.Base64.encodeBlock : i17 = i1 & 63
+org.apache.xml.security.utils.Base64.encodeBlock : i17 = i1 & 63 >>>>>>>> org.apache.xml.security.utils.Base64.encodeBlock : $c18 = staticinvoke <org.apache.xml.security.utils.Base64: char getChar(int)>(i17)
+org.apache.xml.security.utils.Base64.encodeBlock : $c18 = staticinvoke <org.apache.xml.security.utils.Base64: char getChar(int)>(i17) >>>>>>>> org.apache.xml.security.utils.Base64.encodeBlock : r1[i16] = $c18
+org.apache.xml.security.utils.Base64.encodeBlock : r1[i16] = $c18 >>>>>>>> org.apache.xml.security.utils.Base64.encodeBlock : i1 = i1 >> 6
+org.apache.xml.security.utils.Base64.encodeBlock : i1 = i1 >> 6 >>>>>>>> org.apache.xml.security.utils.Base64.encodeBlock : i16 = i16 + -1
+org.apache.xml.security.utils.Base64.encodeBlock : i16 = i16 + -1 >>>>>>>> org.apache.xml.security.utils.Base64.getChar : if i0 < 52
+org.apache.xml.security.utils.Base64.getChar : if i0 < 52 >>>>>>>> org.apache.xml.security.utils.Base64.getChar : if i0 >= 62
+org.apache.xml.security.utils.Base64.getChar : if i0 >= 62 >>>>>>>> org.apache.xml.security.utils.Base64.getChar : $i6 = i0 - 52
+org.apache.xml.security.utils.Base64.getChar : $i6 = i0 - 52 >>>>>>>> org.apache.xml.security.utils.Base64.getChar : $i7 = 48 + $i6
+org.apache.xml.security.utils.Base64.getChar : $i7 = 48 + $i6 >>>>>>>> org.apache.xml.security.utils.Base64.getChar : $c8 = (char) $i7
+org.apache.xml.security.utils.Base64.getChar : $c8 = (char) $i7 >>>>>>>> org.apache.xml.security.utils.Base64.getChar : return $c8
+org.apache.xml.security.utils.Base64.getChar : return $c8 >>>>>>>> org.apache.xml.security.utils.Base64.encodeBlock : if i2 >= 1
+org.apache.xml.security.utils.Base64.encodeBlock : if i2 >= 1 >>>>>>>> org.apache.xml.security.utils.Base64.encodeBlock : if i2 >= 2
+org.apache.xml.security.utils.Base64.encodeBlock : if i2 >= 2 >>>>>>>> org.apache.xml.security.utils.Base64.encodeBlock : r1[3] = 61
+org.apache.xml.security.utils.Base64.encodeBlock : r1[3] = 61 >>>>>>>> org.apache.xml.security.utils.Base64.encodeBlock : return r1
+org.apache.xml.security.utils.Base64.encodeBlock : return r1 >>>>>>>> org.apache.xml.security.utils.Base64.encode : virtualinvoke r1.<java.lang.StringBuffer: java.lang.StringBuffer append(char[])>($r7)
+org.apache.xml.security.utils.Base64.encode : virtualinvoke r1.<java.lang.StringBuffer: java.lang.StringBuffer append(char[])>($r7) >>>>>>>> org.apache.xml.security.utils.Base64.encode : $r9 = virtualinvoke r1.<java.lang.StringBuffer: java.lang.String toString()>()
+org.apache.xml.security.utils.Base64.encode : $r9 = virtualinvoke r1.<java.lang.StringBuffer: java.lang.String toString()>() >>>>>>>> org.apache.xml.security.utils.Base64.encode : return $r9
+org.apache.xml.security.utils.Base64.encode : return $r9 >>>>>>>> org.apache.xml.security.utils.Base64.encode : return $r1
+org.apache.xml.security.utils.Base64.encode : return $r1 >>>>>>>> org.apache.xml.security.utils.Base64.decode : $i6 = virtualinvoke r0.<java.lang.String: int length()>()
+org.apache.xml.security.utils.Base64.decode : $i6 = virtualinvoke r0.<java.lang.String: int length()>() >>>>>>>> org.apache.xml.security.utils.Base64.decode : if $i6 >= 30
+org.apache.xml.security.utils.Base64.decode : if $i6 >= 30 >>>>>>>> org.apache.xml.security.utils.Base64.decode : $r4 = <org.apache.xml.security.utils.Base64: org.apache.log4j.Category cat>
+org.apache.xml.security.utils.Base64.decode : $r4 = <org.apache.xml.security.utils.Base64: org.apache.log4j.Category cat> >>>>>>>> org.apache.xml.security.utils.Base64.decode : $r5 = new java.lang.StringBuilder
+org.apache.xml.security.utils.Base64.decode : $r5 = new java.lang.StringBuilder >>>>>>>> org.apache.xml.security.utils.Base64.decode : specialinvoke $r5.<java.lang.StringBuilder: void <init>()>()
+org.apache.xml.security.utils.Base64.decode : specialinvoke $r5.<java.lang.StringBuilder: void <init>()>() >>>>>>>> org.apache.xml.security.utils.Base64.decode : $r6 = virtualinvoke $r5.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("I was asked to decode \"")
+org.apache.xml.security.utils.Base64.decode : $r6 = virtualinvoke $r5.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("I was asked to decode \"") >>>>>>>> org.apache.xml.security.utils.Base64.decode : $r7 = virtualinvoke $r6.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(r0)
+org.apache.xml.security.utils.Base64.decode : $r7 = virtualinvoke $r6.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(r0) >>>>>>>> org.apache.xml.security.utils.Base64.decode : $r8 = virtualinvoke $r7.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("\"")
+org.apache.xml.security.utils.Base64.decode : $r8 = virtualinvoke $r7.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("\"") >>>>>>>> org.apache.xml.security.utils.Base64.decode : $r9 = virtualinvoke $r8.<java.lang.StringBuilder: java.lang.String toString()>()
+org.apache.xml.security.utils.Base64.decode : $r9 = virtualinvoke $r8.<java.lang.StringBuilder: java.lang.String toString()>() >>>>>>>> org.apache.xml.security.utils.Base64.decode : virtualinvoke $r4.<org.apache.log4j.Category: void debug(java.lang.Object)>($r9)
+org.apache.xml.security.utils.Base64.decode : virtualinvoke $r4.<org.apache.log4j.Category: void debug(java.lang.Object)>($r9) >>>>>>>> org.apache.xml.security.utils.Base64.decode : goto [?= $r17 = new java.util.StringTokenizer]
+org.apache.xml.security.utils.Base64.decode : goto [?= $r17 = new java.util.StringTokenizer] >>>>>>>> org.apache.xml.security.utils.Base64.decode : $r17 = new java.util.StringTokenizer
+org.apache.xml.security.utils.Base64.decode : $r17 = new java.util.StringTokenizer >>>>>>>> org.apache.xml.security.utils.Base64.decode : specialinvoke $r17.<java.util.StringTokenizer: void <init>(java.lang.String,java.lang.String,boolean)>(r0, " \n\r\t", 0)
+org.apache.xml.security.utils.Base64.decode : specialinvoke $r17.<java.util.StringTokenizer: void <init>(java.lang.String,java.lang.String,boolean)>(r0, " \n\r\t", 0) >>>>>>>> org.apache.xml.security.utils.Base64.decode : r1 = $r17
+org.apache.xml.security.utils.Base64.decode : r1 = $r17 >>>>>>>> org.apache.xml.security.utils.Base64.decode : $r18 = new java.lang.StringBuffer
+org.apache.xml.security.utils.Base64.decode : $r18 = new java.lang.StringBuffer >>>>>>>> org.apache.xml.security.utils.Base64.decode : $i7 = virtualinvoke r0.<java.lang.String: int length()>()
+org.apache.xml.security.utils.Base64.decode : $i7 = virtualinvoke r0.<java.lang.String: int length()>() >>>>>>>> org.apache.xml.security.utils.Base64.decode : specialinvoke $r18.<java.lang.StringBuffer: void <init>(int)>($i7)
+org.apache.xml.security.utils.Base64.decode : specialinvoke $r18.<java.lang.StringBuffer: void <init>(int)>($i7) >>>>>>>> org.apache.xml.security.utils.Base64.decode : r2 = $r18
+org.apache.xml.security.utils.Base64.decode : r2 = $r18 >>>>>>>> org.apache.xml.security.utils.Base64.decode : $z0 = virtualinvoke r1.<java.util.StringTokenizer: boolean hasMoreElements()>()
+org.apache.xml.security.utils.Base64.decode : $z0 = virtualinvoke r1.<java.util.StringTokenizer: boolean hasMoreElements()>() >>>>>>>> org.apache.xml.security.utils.Base64.decode : if $z0 == 0
+org.apache.xml.security.utils.Base64.decode : if $z0 == 0 >>>>>>>> org.apache.xml.security.utils.Base64.decode : $r19 = virtualinvoke r1.<java.util.StringTokenizer: java.lang.String nextToken()>()
+org.apache.xml.security.utils.Base64.decode : $r19 = virtualinvoke r1.<java.util.StringTokenizer: java.lang.String nextToken()>() >>>>>>>> org.apache.xml.security.utils.Base64.decode : virtualinvoke r2.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>($r19)
+org.apache.xml.security.utils.Base64.decode : virtualinvoke r2.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>($r19) >>>>>>>> org.apache.xml.security.utils.Base64.decode : goto [?= $z0 = virtualinvoke r1.<java.util.StringTokenizer: boolean hasMoreElements()>()]
+org.apache.xml.security.utils.Base64.decode : goto [?= $z0 = virtualinvoke r1.<java.util.StringTokenizer: boolean hasMoreElements()>()] >>>>>>>> org.apache.xml.security.utils.Base64.decode : r21 = virtualinvoke r2.<java.lang.StringBuffer: java.lang.String toString()>()
+org.apache.xml.security.utils.Base64.decode : r21 = virtualinvoke r2.<java.lang.StringBuffer: java.lang.String toString()>() >>>>>>>> org.apache.xml.security.utils.Base64.decode : i0 = 0
+org.apache.xml.security.utils.Base64.decode : i0 = 0 >>>>>>>> org.apache.xml.security.utils.Base64.decode : $i8 = virtualinvoke r21.<java.lang.String: int length()>()
+org.apache.xml.security.utils.Base64.decode : $i8 = virtualinvoke r21.<java.lang.String: int length()>() >>>>>>>> org.apache.xml.security.utils.Base64.decode : i1 = $i8 - 1
+org.apache.xml.security.utils.Base64.decode : i1 = $i8 - 1 >>>>>>>> org.apache.xml.security.utils.Base64.decode : if i1 <= 0
+org.apache.xml.security.utils.Base64.decode : if i1 <= 0 >>>>>>>> org.apache.xml.security.utils.Base64.decode : $c9 = virtualinvoke r21.<java.lang.String: char charAt(int)>(i1)
+org.apache.xml.security.utils.Base64.decode : $c9 = virtualinvoke r21.<java.lang.String: char charAt(int)>(i1) >>>>>>>> org.apache.xml.security.utils.Base64.decode : if $c9 != 61
+org.apache.xml.security.utils.Base64.decode : if $c9 != 61 >>>>>>>> org.apache.xml.security.utils.Base64.decode : i0 = i0 + 1
+org.apache.xml.security.utils.Base64.decode : i0 = i0 + 1 >>>>>>>> org.apache.xml.security.utils.Base64.decode : i1 = i1 + -1
+org.apache.xml.security.utils.Base64.decode : i1 = i1 + -1 >>>>>>>> org.apache.xml.security.utils.Base64.decode : goto [?= (branch)]
+org.apache.xml.security.utils.Base64.decode : goto [?= (branch)] >>>>>>>> org.apache.xml.security.utils.Base64.decode : $i10 = virtualinvoke r21.<java.lang.String: int length()>()
+org.apache.xml.security.utils.Base64.decode : $i10 = virtualinvoke r21.<java.lang.String: int length()>() >>>>>>>> org.apache.xml.security.utils.Base64.decode : $i11 = $i10 / 4
+org.apache.xml.security.utils.Base64.decode : $i11 = $i10 / 4 >>>>>>>> org.apache.xml.security.utils.Base64.decode : $i12 = $i11 * 3
+org.apache.xml.security.utils.Base64.decode : $i12 = $i11 * 3 >>>>>>>> org.apache.xml.security.utils.Base64.decode : i13 = $i12 - i0
+org.apache.xml.security.utils.Base64.decode : i13 = $i12 - i0 >>>>>>>> org.apache.xml.security.utils.Base64.decode : r3 = newarray (byte)[i13]
+org.apache.xml.security.utils.Base64.decode : r3 = newarray (byte)[i13] >>>>>>>> org.apache.xml.security.utils.Base64.decode : i2 = 0
+org.apache.xml.security.utils.Base64.decode : i2 = 0 >>>>>>>> org.apache.xml.security.utils.Base64.decode : i3 = 0
+org.apache.xml.security.utils.Base64.decode : i3 = 0 >>>>>>>> org.apache.xml.security.utils.Base64.decode : $i14 = virtualinvoke r21.<java.lang.String: int length()>()
+org.apache.xml.security.utils.Base64.decode : $i14 = virtualinvoke r21.<java.lang.String: int length()>() >>>>>>>> org.apache.xml.security.utils.Base64.decode : if i2 >= $i14
+org.apache.xml.security.utils.Base64.decode : if i2 >= $i14 >>>>>>>> org.apache.xml.security.utils.Base64.decode : $c15 = virtualinvoke r21.<java.lang.String: char charAt(int)>(i2)
+org.apache.xml.security.utils.Base64.decode : $c15 = virtualinvoke r21.<java.lang.String: char charAt(int)>(i2) >>>>>>>> org.apache.xml.security.utils.Base64.decode : $i16 = staticinvoke <org.apache.xml.security.utils.Base64: int getValue(char)>($c15)
+org.apache.xml.security.utils.Base64.decode : $i16 = staticinvoke <org.apache.xml.security.utils.Base64: int getValue(char)>($c15) >>>>>>>> org.apache.xml.security.utils.Base64.getValue : if c0 < 65
+org.apache.xml.security.utils.Base64.getValue : if c0 < 65 >>>>>>>> org.apache.xml.security.utils.Base64.getValue : if c0 > 90
+org.apache.xml.security.utils.Base64.getValue : if c0 > 90 >>>>>>>> org.apache.xml.security.utils.Base64.getValue : $i1 = c0 - 65
+org.apache.xml.security.utils.Base64.getValue : $i1 = c0 - 65 >>>>>>>> org.apache.xml.security.utils.Base64.getValue : return $i1
+org.apache.xml.security.utils.Base64.getValue : return $i1 >>>>>>>> org.apache.xml.security.utils.Base64.decode : $i17 = $i16 << 18
+org.apache.xml.security.utils.Base64.decode : $i17 = $i16 << 18 >>>>>>>> org.apache.xml.security.utils.Base64.decode : $i18 = i2 + 1
+org.apache.xml.security.utils.Base64.decode : $i18 = i2 + 1 >>>>>>>> org.apache.xml.security.utils.Base64.decode : $c19 = virtualinvoke r21.<java.lang.String: char charAt(int)>($i18)
+org.apache.xml.security.utils.Base64.decode : $c19 = virtualinvoke r21.<java.lang.String: char charAt(int)>($i18) >>>>>>>> org.apache.xml.security.utils.Base64.decode : $i20 = staticinvoke <org.apache.xml.security.utils.Base64: int getValue(char)>($c19)
+org.apache.xml.security.utils.Base64.decode : $i20 = staticinvoke <org.apache.xml.security.utils.Base64: int getValue(char)>($c19) >>>>>>>> org.apache.xml.security.utils.Base64.decode : $i21 = $i20 << 12
+org.apache.xml.security.utils.Base64.decode : $i21 = $i20 << 12 >>>>>>>> org.apache.xml.security.utils.Base64.decode : $i22 = $i17 + $i21
+org.apache.xml.security.utils.Base64.decode : $i22 = $i17 + $i21 >>>>>>>> org.apache.xml.security.utils.Base64.decode : $i23 = i2 + 2
+org.apache.xml.security.utils.Base64.decode : $i23 = i2 + 2 >>>>>>>> org.apache.xml.security.utils.Base64.decode : $c24 = virtualinvoke r21.<java.lang.String: char charAt(int)>($i23)
+org.apache.xml.security.utils.Base64.decode : $c24 = virtualinvoke r21.<java.lang.String: char charAt(int)>($i23) >>>>>>>> org.apache.xml.security.utils.Base64.decode : $i25 = staticinvoke <org.apache.xml.security.utils.Base64: int getValue(char)>($c24)
+org.apache.xml.security.utils.Base64.decode : $i25 = staticinvoke <org.apache.xml.security.utils.Base64: int getValue(char)>($c24) >>>>>>>> org.apache.xml.security.utils.Base64.decode : $i26 = $i25 << 6
+org.apache.xml.security.utils.Base64.decode : $i26 = $i25 << 6 >>>>>>>> org.apache.xml.security.utils.Base64.decode : $i27 = $i22 + $i26
+org.apache.xml.security.utils.Base64.decode : $i27 = $i22 + $i26 >>>>>>>> org.apache.xml.security.utils.Base64.decode : $i28 = i2 + 3
+org.apache.xml.security.utils.Base64.decode : $i28 = i2 + 3 >>>>>>>> org.apache.xml.security.utils.Base64.decode : $c29 = virtualinvoke r21.<java.lang.String: char charAt(int)>($i28)
+org.apache.xml.security.utils.Base64.decode : $c29 = virtualinvoke r21.<java.lang.String: char charAt(int)>($i28) >>>>>>>> org.apache.xml.security.utils.Base64.decode : $i30 = staticinvoke <org.apache.xml.security.utils.Base64: int getValue(char)>($c29)
+org.apache.xml.security.utils.Base64.decode : $i30 = staticinvoke <org.apache.xml.security.utils.Base64: int getValue(char)>($c29) >>>>>>>> org.apache.xml.security.utils.Base64.getValue : if c0 < 97
+org.apache.xml.security.utils.Base64.getValue : if c0 < 97 >>>>>>>> org.apache.xml.security.utils.Base64.getValue : if c0 > 122
+org.apache.xml.security.utils.Base64.getValue : if c0 > 122 >>>>>>>> org.apache.xml.security.utils.Base64.getValue : $i2 = c0 - 97
+org.apache.xml.security.utils.Base64.getValue : $i2 = c0 - 97 >>>>>>>> org.apache.xml.security.utils.Base64.getValue : $i3 = $i2 + 26
+org.apache.xml.security.utils.Base64.getValue : $i3 = $i2 + 26 >>>>>>>> org.apache.xml.security.utils.Base64.getValue : return $i3
+org.apache.xml.security.utils.Base64.getValue : return $i3 >>>>>>>> org.apache.xml.security.utils.Base64.decode : i4 = $i27 + $i30
+org.apache.xml.security.utils.Base64.decode : i4 = $i27 + $i30 >>>>>>>> org.apache.xml.security.utils.Base64.decode : i5 = 2
+org.apache.xml.security.utils.Base64.decode : i5 = 2 >>>>>>>> org.apache.xml.security.utils.Base64.decode : if i5 < 0
+org.apache.xml.security.utils.Base64.decode : if i5 < 0 >>>>>>>> org.apache.xml.security.utils.Base64.decode : $i31 = i3 + i5
+org.apache.xml.security.utils.Base64.decode : $i31 = i3 + i5 >>>>>>>> org.apache.xml.security.utils.Base64.decode : $i32 = lengthof r3
+org.apache.xml.security.utils.Base64.decode : $i32 = lengthof r3 >>>>>>>> org.apache.xml.security.utils.Base64.decode : if $i31 >= $i32
+org.apache.xml.security.utils.Base64.decode : if $i31 >= $i32 >>>>>>>> org.apache.xml.security.utils.Base64.decode : $i33 = i3 + i5
+org.apache.xml.security.utils.Base64.decode : $i33 = i3 + i5 >>>>>>>> org.apache.xml.security.utils.Base64.decode : $i34 = i4 & 255
+org.apache.xml.security.utils.Base64.decode : $i34 = i4 & 255 >>>>>>>> org.apache.xml.security.utils.Base64.decode : $b35 = (byte) $i34
+org.apache.xml.security.utils.Base64.decode : $b35 = (byte) $i34 >>>>>>>> org.apache.xml.security.utils.Base64.decode : r3[$i33] = $b35
+org.apache.xml.security.utils.Base64.decode : r3[$i33] = $b35 >>>>>>>> org.apache.xml.security.utils.Base64.decode : i4 = i4 >> 8
+org.apache.xml.security.utils.Base64.decode : i4 = i4 >> 8 >>>>>>>> org.apache.xml.security.utils.Base64.decode : i5 = i5 + -1
+org.apache.xml.security.utils.Base64.decode : i5 = i5 + -1 >>>>>>>> org.apache.xml.security.utils.Base64.decode : i2 = i2 + 4
+org.apache.xml.security.utils.Base64.decode : i2 = i2 + 4 >>>>>>>> org.apache.xml.security.utils.Base64.decode : i3 = i3 + 3
+org.apache.xml.security.utils.Base64.decode : i3 = i3 + 3 >>>>>>>> org.apache.xml.security.utils.Base64.decode : goto [?= $i14 = virtualinvoke r21.<java.lang.String: int length()>()]
+org.apache.xml.security.utils.Base64.decode : goto [?= $i14 = virtualinvoke r21.<java.lang.String: int length()>()] >>>>>>>> org.apache.xml.security.utils.Base64.getValue : if c0 < 48
+org.apache.xml.security.utils.Base64.getValue : if c0 < 48 >>>>>>>> org.apache.xml.security.utils.Base64.getValue : if c0 > 57
+org.apache.xml.security.utils.Base64.getValue : if c0 > 57 >>>>>>>> org.apache.xml.security.utils.Base64.getValue : $i4 = c0 - 48
+org.apache.xml.security.utils.Base64.getValue : $i4 = c0 - 48 >>>>>>>> org.apache.xml.security.utils.Base64.getValue : $i5 = $i4 + 52
+org.apache.xml.security.utils.Base64.getValue : $i5 = $i4 + 52 >>>>>>>> org.apache.xml.security.utils.Base64.getValue : return $i5
+org.apache.xml.security.utils.Base64.getValue : return $i5 >>>>>>>> org.apache.xml.security.utils.Base64.getValue : if c0 != 43
+org.apache.xml.security.utils.Base64.getValue : if c0 != 43 >>>>>>>> org.apache.xml.security.utils.Base64.getValue : if c0 != 47
+org.apache.xml.security.utils.Base64.getValue : if c0 != 47 >>>>>>>> org.apache.xml.security.utils.Base64.getValue : if c0 != 61
+org.apache.xml.security.utils.Base64.getValue : if c0 != 61 >>>>>>>> org.apache.xml.security.utils.Base64.getValue : return 0
+org.apache.xml.security.utils.Base64.getValue : return 0 >>>>>>>> org.apache.xml.security.utils.Base64.decode : return r3

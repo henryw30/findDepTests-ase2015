@@ -1,0 +1,8 @@
+crystal.util.ValidInputChecker.checkNullInput : if r0 != null goto return
+crystal.client.ClientPreferences.setChanged : r0.<crystal.client.ClientPreferences: boolean _hasChanged> = z0
+crystal.client.ClientPreferences.getProjectPreference : $r1 = r0.<crystal.client.ClientPreferences: java.util.Vector _projectPreferences>
+crystal.client.ClientPreferences.setGitPath : r0.<crystal.client.ClientPreferences: java.lang.String _gitPath> = r1
+crystal.util.ValidInputChecker.checkValidStringInput : if r0 == null goto $r2 = new java.lang.IllegalArgumentException
+crystal.model.Relationship.getDominant : r2 = interfaceinvoke r0.<java.util.Collection: java.util.Iterator iterator()>()
+crystal.model.Relationship.getDominant : $r5 = virtualinvoke r1.<crystal.model.Relationship: java.awt.Image getImage()>()
+crystal.model.Relationship.getDominant : r1 = null

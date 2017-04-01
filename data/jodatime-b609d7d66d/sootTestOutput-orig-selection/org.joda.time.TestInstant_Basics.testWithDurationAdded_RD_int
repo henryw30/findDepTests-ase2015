@@ -1,0 +1,84 @@
+org.joda.time.DateTimeUtils.setCurrentMillisSystem : staticinvoke <org.joda.time.DateTimeUtils: void checkPermission()>() >>>>>>>> org.joda.time.DateTimeUtils.checkPermission : r0 = staticinvoke <java.lang.System: java.lang.SecurityManager getSecurityManager()>()
+org.joda.time.DateTimeUtils.checkPermission : r0 = staticinvoke <java.lang.System: java.lang.SecurityManager getSecurityManager()>() >>>>>>>> org.joda.time.DateTimeUtils.checkPermission : if r0 == null
+org.joda.time.DateTimeUtils.checkPermission : if r0 == null >>>>>>>> org.joda.time.DateTimeUtils.setCurrentMillisSystem : $r0 = <org.joda.time.DateTimeUtils: org.joda.time.DateTimeUtils$SystemMillisProvider SYSTEM_MILLIS_PROVIDER>
+org.joda.time.DateTimeUtils.setCurrentMillisSystem : $r0 = <org.joda.time.DateTimeUtils: org.joda.time.DateTimeUtils$SystemMillisProvider SYSTEM_MILLIS_PROVIDER> >>>>>>>> org.joda.time.DateTimeUtils.setCurrentMillisSystem : <org.joda.time.DateTimeUtils: org.joda.time.DateTimeUtils$MillisProvider cMillisProvider> = $r0
+org.joda.time.DateTimeUtils.setCurrentMillisSystem : <org.joda.time.DateTimeUtils: org.joda.time.DateTimeUtils$MillisProvider cMillisProvider> = $r0 >>>>>>>> org.joda.time.DateTimeZone.setDefault : r1 = staticinvoke <java.lang.System: java.lang.SecurityManager getSecurityManager()>()
+org.joda.time.DateTimeZone.setDefault : r1 = staticinvoke <java.lang.System: java.lang.SecurityManager getSecurityManager()>() >>>>>>>> org.joda.time.DateTimeZone.setDefault : if r1 == null
+org.joda.time.DateTimeZone.setDefault : if r1 == null >>>>>>>> org.joda.time.DateTimeZone.setDefault : if r0 != null
+org.joda.time.DateTimeZone.setDefault : if r0 != null >>>>>>>> org.joda.time.DateTimeZone.setDefault : $r6 = class "org/joda/time/DateTimeZone"
+org.joda.time.DateTimeZone.setDefault : $r6 = class "org/joda/time/DateTimeZone" >>>>>>>> org.joda.time.DateTimeZone.setDefault : r3 = $r6
+org.joda.time.DateTimeZone.setDefault : r3 = $r6 >>>>>>>> org.joda.time.DateTimeZone.setDefault : entermonitor $r6
+org.joda.time.DateTimeZone.setDefault : entermonitor $r6 >>>>>>>> org.joda.time.DateTimeZone.setDefault : <org.joda.time.DateTimeZone: org.joda.time.DateTimeZone cDefault> = r0
+org.joda.time.DateTimeZone.setDefault : <org.joda.time.DateTimeZone: org.joda.time.DateTimeZone cDefault> = r0 >>>>>>>> org.joda.time.DateTimeZone.setDefault : exitmonitor r3
+org.joda.time.DateTimeZone.setDefault : exitmonitor r3 >>>>>>>> org.joda.time.DateTimeZone.setDefault : goto [?= return]
+org.joda.time.DateTimeZone.setDefault : goto [?= return] >>>>>>>> org.joda.time.DateTimeUtils.setCurrentMillisFixed : staticinvoke <org.joda.time.DateTimeUtils: void checkPermission()>()
+org.joda.time.DateTimeUtils.setCurrentMillisFixed : staticinvoke <org.joda.time.DateTimeUtils: void checkPermission()>() >>>>>>>> org.joda.time.DateTimeUtils.setCurrentMillisFixed : $r0 = new org.joda.time.DateTimeUtils$FixedMillisProvider
+org.joda.time.DateTimeUtils.setCurrentMillisFixed : $r0 = new org.joda.time.DateTimeUtils$FixedMillisProvider >>>>>>>> org.joda.time.DateTimeUtils.setCurrentMillisFixed : specialinvoke $r0.<org.joda.time.DateTimeUtils$FixedMillisProvider: void <init>(long)>(l0)
+org.joda.time.DateTimeUtils.setCurrentMillisFixed : specialinvoke $r0.<org.joda.time.DateTimeUtils$FixedMillisProvider: void <init>(long)>(l0) >>>>>>>> org.joda.time.DateTimeUtils.setCurrentMillisFixed : <org.joda.time.DateTimeUtils: org.joda.time.DateTimeUtils$MillisProvider cMillisProvider> = $r0
+org.joda.time.DateTimeUtils.setCurrentMillisFixed : <org.joda.time.DateTimeUtils: org.joda.time.DateTimeUtils$MillisProvider cMillisProvider> = $r0 >>>>>>>> org.joda.time.DateTimeZone.getDefault : r0 = <org.joda.time.DateTimeZone: org.joda.time.DateTimeZone cDefault>
+org.joda.time.DateTimeZone.getDefault : r0 = <org.joda.time.DateTimeZone: org.joda.time.DateTimeZone cDefault> >>>>>>>> org.joda.time.DateTimeZone.getDefault : if r0 != null
+org.joda.time.DateTimeZone.getDefault : if r0 != null >>>>>>>> org.joda.time.DateTimeZone.getDefault : return r0
+org.joda.time.DateTimeZone.getDefault : return r0 >>>>>>>> org.joda.time.Instant.withDurationAdded : if r1 == null
+org.joda.time.Instant.withDurationAdded : if r1 == null >>>>>>>> org.joda.time.Instant.withDurationAdded : if i0 != 0
+org.joda.time.Instant.withDurationAdded : if i0 != 0 >>>>>>>> org.joda.time.Instant.withDurationAdded : $l1 = interfaceinvoke r1.<org.joda.time.ReadableDuration: long getMillis()>()
+org.joda.time.Instant.withDurationAdded : $l1 = interfaceinvoke r1.<org.joda.time.ReadableDuration: long getMillis()>() >>>>>>>> org.joda.time.base.BaseDuration.getMillis : $l0 = r0.<org.joda.time.base.BaseDuration: long iMillis>
+org.joda.time.base.BaseDuration.getMillis : $l0 = r0.<org.joda.time.base.BaseDuration: long iMillis> >>>>>>>> org.joda.time.base.BaseDuration.getMillis : return $l0
+org.joda.time.base.BaseDuration.getMillis : return $l0 >>>>>>>> org.joda.time.Instant.withDurationAdded : $r2 = virtualinvoke r0.<org.joda.time.Instant: org.joda.time.Instant withDurationAdded(long,int)>($l1, i0)
+org.joda.time.Instant.withDurationAdded : $r2 = virtualinvoke r0.<org.joda.time.Instant: org.joda.time.Instant withDurationAdded(long,int)>($l1, i0) >>>>>>>> org.joda.time.Instant.withDurationAdded : $b3 = l0 cmp 0L
+org.joda.time.Instant.withDurationAdded : $b3 = l0 cmp 0L >>>>>>>> org.joda.time.Instant.withDurationAdded : if $b3 == 0
+org.joda.time.Instant.withDurationAdded : if $b3 == 0 >>>>>>>> org.joda.time.Instant.withDurationAdded : if i1 != 0
+org.joda.time.Instant.withDurationAdded : if i1 != 0 >>>>>>>> org.joda.time.Instant.withDurationAdded : $r1 = virtualinvoke r0.<org.joda.time.Instant: org.joda.time.Chronology getChronology()>()
+org.joda.time.Instant.withDurationAdded : $r1 = virtualinvoke r0.<org.joda.time.Instant: org.joda.time.Chronology getChronology()>() >>>>>>>> org.joda.time.Instant.getChronology : $r1 = staticinvoke <org.joda.time.chrono.ISOChronology: org.joda.time.chrono.ISOChronology getInstanceUTC()>()
+org.joda.time.Instant.getChronology : $r1 = staticinvoke <org.joda.time.chrono.ISOChronology: org.joda.time.chrono.ISOChronology getInstanceUTC()>() >>>>>>>> org.joda.time.chrono.ISOChronology.getInstanceUTC : $r0 = <org.joda.time.chrono.ISOChronology: org.joda.time.chrono.ISOChronology INSTANCE_UTC>
+org.joda.time.chrono.ISOChronology.getInstanceUTC : $r0 = <org.joda.time.chrono.ISOChronology: org.joda.time.chrono.ISOChronology INSTANCE_UTC> >>>>>>>> org.joda.time.chrono.ISOChronology.getInstanceUTC : return $r0
+org.joda.time.chrono.ISOChronology.getInstanceUTC : return $r0 >>>>>>>> org.joda.time.Instant.getChronology : return $r1
+org.joda.time.Instant.getChronology : return $r1 >>>>>>>> org.joda.time.Instant.withDurationAdded : $l4 = virtualinvoke r0.<org.joda.time.Instant: long getMillis()>()
+org.joda.time.Instant.withDurationAdded : $l4 = virtualinvoke r0.<org.joda.time.Instant: long getMillis()>() >>>>>>>> org.joda.time.Instant.getMillis : $l0 = r0.<org.joda.time.Instant: long iMillis>
+org.joda.time.Instant.getMillis : $l0 = r0.<org.joda.time.Instant: long iMillis> >>>>>>>> org.joda.time.Instant.getMillis : return $l0
+org.joda.time.Instant.getMillis : return $l0 >>>>>>>> org.joda.time.Instant.withDurationAdded : l2 = virtualinvoke $r1.<org.joda.time.Chronology: long add(long,long,int)>($l4, l0, i1)
+org.joda.time.Instant.withDurationAdded : l2 = virtualinvoke $r1.<org.joda.time.Chronology: long add(long,long,int)>($l4, l0, i1) >>>>>>>> org.joda.time.chrono.BaseChronology.add : $b4 = l1 cmp 0L
+org.joda.time.chrono.BaseChronology.add : $b4 = l1 cmp 0L >>>>>>>> org.joda.time.chrono.BaseChronology.add : if $b4 == 0
+org.joda.time.chrono.BaseChronology.add : if $b4 == 0 >>>>>>>> org.joda.time.chrono.BaseChronology.add : if i2 != 0
+org.joda.time.chrono.BaseChronology.add : if i2 != 0 >>>>>>>> org.joda.time.chrono.BaseChronology.add : l3 = staticinvoke <org.joda.time.field.FieldUtils: long safeMultiply(long,int)>(l1, i2)
+org.joda.time.chrono.BaseChronology.add : l3 = staticinvoke <org.joda.time.field.FieldUtils: long safeMultiply(long,int)>(l1, i2) >>>>>>>> org.joda.time.field.FieldUtils.safeMultiply : tableswitch(i1) {     case -1:
+org.joda.time.field.FieldUtils.safeMultiply : tableswitch(i1) {     case -1: >>>>>>>> org.joda.time.field.FieldUtils.safeMultiply : return l0
+org.joda.time.field.FieldUtils.safeMultiply : return l0 >>>>>>>> org.joda.time.chrono.BaseChronology.add : $l5 = staticinvoke <org.joda.time.field.FieldUtils: long safeAdd(long,long)>(l0, l3)
+org.joda.time.chrono.BaseChronology.add : $l5 = staticinvoke <org.joda.time.field.FieldUtils: long safeAdd(long,long)>(l0, l3) >>>>>>>> org.joda.time.field.FieldUtils.safeAdd : l2 = l0 + l1
+org.joda.time.field.FieldUtils.safeAdd : l2 = l0 + l1 >>>>>>>> org.joda.time.field.FieldUtils.safeAdd : $l3 = l0 ^ l2
+org.joda.time.field.FieldUtils.safeAdd : $l3 = l0 ^ l2 >>>>>>>> org.joda.time.field.FieldUtils.safeAdd : $b4 = $l3 cmp 0L
+org.joda.time.field.FieldUtils.safeAdd : $b4 = $l3 cmp 0L >>>>>>>> org.joda.time.field.FieldUtils.safeAdd : if $b4 >= 0
+org.joda.time.field.FieldUtils.safeAdd : if $b4 >= 0 >>>>>>>> org.joda.time.field.FieldUtils.safeAdd : return l2
+org.joda.time.field.FieldUtils.safeAdd : return l2 >>>>>>>> org.joda.time.chrono.BaseChronology.add : return $l5
+org.joda.time.chrono.BaseChronology.add : return $l5 >>>>>>>> org.joda.time.Instant.withDurationAdded : $r2 = virtualinvoke r0.<org.joda.time.Instant: org.joda.time.Instant withMillis(long)>(l2)
+org.joda.time.Instant.withDurationAdded : $r2 = virtualinvoke r0.<org.joda.time.Instant: org.joda.time.Instant withMillis(long)>(l2) >>>>>>>> org.joda.time.Instant.withMillis : $l1 = r0.<org.joda.time.Instant: long iMillis>
+org.joda.time.Instant.withMillis : $l1 = r0.<org.joda.time.Instant: long iMillis> >>>>>>>> org.joda.time.Instant.withMillis : $b2 = l0 cmp $l1
+org.joda.time.Instant.withMillis : $b2 = l0 cmp $l1 >>>>>>>> org.joda.time.Instant.withMillis : if $b2 != 0
+org.joda.time.Instant.withMillis : if $b2 != 0 >>>>>>>> org.joda.time.Instant.withMillis : $r1 = new org.joda.time.Instant
+org.joda.time.Instant.withMillis : $r1 = new org.joda.time.Instant >>>>>>>> org.joda.time.Instant.withMillis : specialinvoke $r1.<org.joda.time.Instant: void <init>(long)>(l0)
+org.joda.time.Instant.withMillis : specialinvoke $r1.<org.joda.time.Instant: void <init>(long)>(l0) >>>>>>>> org.joda.time.Instant.withMillis : return $r1
+org.joda.time.Instant.withMillis : return $r1 >>>>>>>> org.joda.time.Instant.withDurationAdded : return $r2
+org.joda.time.Instant.withDurationAdded : return $r2 >>>>>>>> org.joda.time.base.AbstractInstant.equals : if r0 != r1
+org.joda.time.base.AbstractInstant.equals : if r0 != r1 >>>>>>>> org.joda.time.base.AbstractInstant.equals : $z0 = r1 instanceof org.joda.time.ReadableInstant
+org.joda.time.base.AbstractInstant.equals : $z0 = r1 instanceof org.joda.time.ReadableInstant >>>>>>>> org.joda.time.base.AbstractInstant.equals : if $z0 != 0
+org.joda.time.base.AbstractInstant.equals : if $z0 != 0 >>>>>>>> org.joda.time.base.AbstractInstant.equals : r2 = (org.joda.time.ReadableInstant) r1
+org.joda.time.base.AbstractInstant.equals : r2 = (org.joda.time.ReadableInstant) r1 >>>>>>>> org.joda.time.base.AbstractInstant.equals : $l0 = virtualinvoke r0.<org.joda.time.base.AbstractInstant: long getMillis()>()
+org.joda.time.base.AbstractInstant.equals : $l0 = virtualinvoke r0.<org.joda.time.base.AbstractInstant: long getMillis()>() >>>>>>>> org.joda.time.base.AbstractInstant.equals : $l1 = interfaceinvoke r2.<org.joda.time.ReadableInstant: long getMillis()>()
+org.joda.time.base.AbstractInstant.equals : $l1 = interfaceinvoke r2.<org.joda.time.ReadableInstant: long getMillis()>() >>>>>>>> org.joda.time.base.AbstractInstant.equals : $b2 = $l0 cmp $l1
+org.joda.time.base.AbstractInstant.equals : $b2 = $l0 cmp $l1 >>>>>>>> org.joda.time.base.AbstractInstant.equals : if $b2 != 0
+org.joda.time.base.AbstractInstant.equals : if $b2 != 0 >>>>>>>> org.joda.time.base.AbstractInstant.equals : $r3 = virtualinvoke r0.<org.joda.time.base.AbstractInstant: org.joda.time.Chronology getChronology()>()
+org.joda.time.base.AbstractInstant.equals : $r3 = virtualinvoke r0.<org.joda.time.base.AbstractInstant: org.joda.time.Chronology getChronology()>() >>>>>>>> org.joda.time.base.AbstractInstant.equals : $r4 = interfaceinvoke r2.<org.joda.time.ReadableInstant: org.joda.time.Chronology getChronology()>()
+org.joda.time.base.AbstractInstant.equals : $r4 = interfaceinvoke r2.<org.joda.time.ReadableInstant: org.joda.time.Chronology getChronology()>() >>>>>>>> org.joda.time.base.AbstractInstant.equals : $z1 = staticinvoke <org.joda.time.field.FieldUtils: boolean equals(java.lang.Object,java.lang.Object)>($r3, $r4)
+org.joda.time.base.AbstractInstant.equals : $z1 = staticinvoke <org.joda.time.field.FieldUtils: boolean equals(java.lang.Object,java.lang.Object)>($r3, $r4) >>>>>>>> org.joda.time.field.FieldUtils.equals : if r0 != r1
+org.joda.time.field.FieldUtils.equals : if r0 != r1 >>>>>>>> org.joda.time.field.FieldUtils.equals : return 1
+org.joda.time.field.FieldUtils.equals : return 1 >>>>>>>> org.joda.time.base.AbstractInstant.equals : if $z1 == 0
+org.joda.time.base.AbstractInstant.equals : if $z1 == 0 >>>>>>>> org.joda.time.base.AbstractInstant.equals : $z2 = 1
+org.joda.time.base.AbstractInstant.equals : $z2 = 1 >>>>>>>> org.joda.time.base.AbstractInstant.equals : goto [?= return $z2]
+org.joda.time.base.AbstractInstant.equals : goto [?= return $z2] >>>>>>>> org.joda.time.base.AbstractInstant.equals : return $z2
+org.joda.time.base.AbstractInstant.equals : return $z2 >>>>>>>> org.joda.time.Instant.withDurationAdded : return r0
+org.joda.time.Instant.withDurationAdded : return r0 >>>>>>>> org.joda.time.field.FieldUtils.safeMultiply : $l4 = (long) i1
+org.joda.time.field.FieldUtils.safeMultiply : $l4 = (long) i1 >>>>>>>> org.joda.time.field.FieldUtils.safeMultiply : l2 = l0 * $l4
+org.joda.time.field.FieldUtils.safeMultiply : l2 = l0 * $l4 >>>>>>>> org.joda.time.field.FieldUtils.safeMultiply : $l5 = (long) i1
+org.joda.time.field.FieldUtils.safeMultiply : $l5 = (long) i1 >>>>>>>> org.joda.time.field.FieldUtils.safeMultiply : $l6 = l2 / $l5
+org.joda.time.field.FieldUtils.safeMultiply : $l6 = l2 / $l5 >>>>>>>> org.joda.time.field.FieldUtils.safeMultiply : $b7 = $l6 cmp l0
+org.joda.time.field.FieldUtils.safeMultiply : $b7 = $l6 cmp l0 >>>>>>>> org.joda.time.field.FieldUtils.safeMultiply : if $b7 == 0
+org.joda.time.field.FieldUtils.safeMultiply : if $b7 == 0 >>>>>>>> org.joda.time.field.FieldUtils.safeMultiply : return l2

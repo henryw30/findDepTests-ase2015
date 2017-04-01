@@ -1,0 +1,40 @@
+org.joda.time.format.FormatUtils.writePaddedInteger : i2 = (int) l0 >>>>>>>> org.joda.time.format.FormatUtils.writePaddedInteger : $l4 = (long) i2
+org.joda.time.format.FormatUtils.writePaddedInteger : $l4 = (long) i2 >>>>>>>> org.joda.time.format.FormatUtils.writePaddedInteger : $b5 = $l4 cmp l0
+org.joda.time.format.FormatUtils.writePaddedInteger : $b5 = $l4 cmp l0 >>>>>>>> org.joda.time.format.FormatUtils.writePaddedInteger : if $b5 != 0
+org.joda.time.format.FormatUtils.writePaddedInteger : if $b5 != 0 >>>>>>>> org.joda.time.format.FormatUtils.writePaddedInteger : staticinvoke <org.joda.time.format.FormatUtils: void writePaddedInteger(java.io.Writer,int,int)>(r0, i2, i1)
+org.joda.time.format.FormatUtils.writePaddedInteger : if $b5 != 0 >>>>>>>> org.joda.time.format.FormatUtils.writePaddedInteger : if i1 > 19
+org.joda.time.format.FormatUtils.writePaddedInteger : if i1 > 19 >>>>>>>> org.joda.time.format.FormatUtils.writePaddedInteger : $r1 = staticinvoke <java.lang.Long: java.lang.String toString(long)>(l0)
+org.joda.time.format.FormatUtils.writePaddedInteger : if i1 > 19 >>>>>>>> org.joda.time.format.FormatUtils.writePaddedInteger : $b6 = l0 cmp 0L
+org.joda.time.format.FormatUtils.writePaddedInteger : $b6 = l0 cmp 0L >>>>>>>> org.joda.time.format.FormatUtils.writePaddedInteger : if $b6 >= 0
+org.joda.time.format.FormatUtils.writePaddedInteger : if $b6 >= 0 >>>>>>>> org.joda.time.format.FormatUtils.writePaddedInteger : virtualinvoke r0.<java.io.Writer: void write(int)>(45)
+org.joda.time.format.FormatUtils.writePaddedInteger : if $b6 >= 0 >>>>>>>> org.joda.time.format.FormatUtils.writePaddedInteger : $d0 = (double) l0
+org.joda.time.format.FormatUtils.writePaddedInteger : $d0 = (double) l0 >>>>>>>> org.joda.time.format.FormatUtils.writePaddedInteger : $d1 = staticinvoke <java.lang.Math: double log(double)>($d0)
+org.joda.time.format.FormatUtils.writePaddedInteger : $d1 = staticinvoke <java.lang.Math: double log(double)>($d0) >>>>>>>> org.joda.time.format.FormatUtils.writePaddedInteger : $d2 = <org.joda.time.format.FormatUtils: double LOG_10>
+org.joda.time.format.FormatUtils.writePaddedInteger : $d2 = <org.joda.time.format.FormatUtils: double LOG_10> >>>>>>>> org.joda.time.format.FormatUtils.writePaddedInteger : $d3 = $d1 / $d2
+org.joda.time.format.FormatUtils.writePaddedInteger : $d3 = $d1 / $d2 >>>>>>>> org.joda.time.format.FormatUtils.writePaddedInteger : $i8 = (int) $d3
+org.joda.time.format.FormatUtils.writePaddedInteger : $i8 = (int) $d3 >>>>>>>> org.joda.time.format.FormatUtils.writePaddedInteger : i3 = $i8 + 1
+org.joda.time.format.FormatUtils.writePaddedInteger : i3 = $i8 + 1 >>>>>>>> org.joda.time.format.FormatUtils.writePaddedInteger : if i1 <= i3
+org.joda.time.format.FormatUtils.writePaddedInteger : if i1 <= i3 >>>>>>>> org.joda.time.format.FormatUtils.writePaddedInteger : virtualinvoke r0.<java.io.Writer: void write(int)>(48)
+org.joda.time.format.FormatUtils.writePaddedInteger : if i1 <= i3 >>>>>>>> org.joda.time.format.FormatUtils.writePaddedInteger : $r2 = staticinvoke <java.lang.Long: java.lang.String toString(long)>(l0)
+org.joda.time.format.FormatUtils.writePaddedInteger : $r2 = staticinvoke <java.lang.Long: java.lang.String toString(long)>(l0) >>>>>>>> org.joda.time.format.FormatUtils.writePaddedInteger : virtualinvoke r0.<java.io.Writer: void write(java.lang.String)>($r2)
+org.joda.time.format.FormatUtils.writePaddedInteger : virtualinvoke r0.<java.io.Writer: void write(java.lang.String)>($r2) >>>>>>>> org.joda.time.format.FormatUtils.writePaddedInteger : return
+org.joda.time.format.FormatUtils.writePaddedInteger : virtualinvoke r0.<java.io.Writer: void write(int)>(48) >>>>>>>> org.joda.time.format.FormatUtils.writePaddedInteger : i1 = i1 + -1
+org.joda.time.format.FormatUtils.writePaddedInteger : i1 = i1 + -1 >>>>>>>> org.joda.time.format.FormatUtils.writePaddedInteger : goto [?= (branch)]
+org.joda.time.format.FormatUtils.writePaddedInteger : goto [?= (branch)] >>>>>>>> org.joda.time.format.FormatUtils.writePaddedInteger : if i1 <= i3
+org.joda.time.format.FormatUtils.writePaddedInteger : virtualinvoke r0.<java.io.Writer: void write(int)>(45) >>>>>>>> org.joda.time.format.FormatUtils.writePaddedInteger : $b7 = l0 cmp -9223372036854775808L
+org.joda.time.format.FormatUtils.writePaddedInteger : $b7 = l0 cmp -9223372036854775808L >>>>>>>> org.joda.time.format.FormatUtils.writePaddedInteger : if $b7 == 0
+org.joda.time.format.FormatUtils.writePaddedInteger : if $b7 == 0 >>>>>>>> org.joda.time.format.FormatUtils.writePaddedInteger : l0 = neg l0
+org.joda.time.format.FormatUtils.writePaddedInteger : if $b7 == 0 >>>>>>>> org.joda.time.format.FormatUtils.writePaddedInteger : if i1 <= 19
+org.joda.time.format.FormatUtils.writePaddedInteger : if i1 <= 19 >>>>>>>> org.joda.time.format.FormatUtils.writePaddedInteger : virtualinvoke r0.<java.io.Writer: void write(int)>(48)
+org.joda.time.format.FormatUtils.writePaddedInteger : if i1 <= 19 >>>>>>>> org.joda.time.format.FormatUtils.writePaddedInteger : virtualinvoke r0.<java.io.Writer: void write(java.lang.String)>("9223372036854775808")
+org.joda.time.format.FormatUtils.writePaddedInteger : virtualinvoke r0.<java.io.Writer: void write(java.lang.String)>("9223372036854775808") >>>>>>>> org.joda.time.format.FormatUtils.writePaddedInteger : return
+org.joda.time.format.FormatUtils.writePaddedInteger : virtualinvoke r0.<java.io.Writer: void write(int)>(48) >>>>>>>> org.joda.time.format.FormatUtils.writePaddedInteger : i1 = i1 + -1
+org.joda.time.format.FormatUtils.writePaddedInteger : i1 = i1 + -1 >>>>>>>> org.joda.time.format.FormatUtils.writePaddedInteger : goto [?= (branch)]
+org.joda.time.format.FormatUtils.writePaddedInteger : goto [?= (branch)] >>>>>>>> org.joda.time.format.FormatUtils.writePaddedInteger : if i1 <= 19
+org.joda.time.format.FormatUtils.writePaddedInteger : l0 = neg l0 >>>>>>>> org.joda.time.format.FormatUtils.writePaddedInteger : goto [?= $d0 = (double) l0]
+org.joda.time.format.FormatUtils.writePaddedInteger : goto [?= $d0 = (double) l0] >>>>>>>> org.joda.time.format.FormatUtils.writePaddedInteger : $d0 = (double) l0
+org.joda.time.format.FormatUtils.writePaddedInteger : $r1 = staticinvoke <java.lang.Long: java.lang.String toString(long)>(l0) >>>>>>>> org.joda.time.format.FormatUtils.writePaddedInteger : virtualinvoke r0.<java.io.Writer: void write(java.lang.String)>($r1)
+org.joda.time.format.FormatUtils.writePaddedInteger : virtualinvoke r0.<java.io.Writer: void write(java.lang.String)>($r1) >>>>>>>> org.joda.time.format.FormatUtils.writePaddedInteger : goto [?= return]
+org.joda.time.format.FormatUtils.writePaddedInteger : goto [?= return] >>>>>>>> org.joda.time.format.FormatUtils.writePaddedInteger : return
+org.joda.time.format.FormatUtils.writePaddedInteger : staticinvoke <org.joda.time.format.FormatUtils: void writePaddedInteger(java.io.Writer,int,int)>(r0, i2, i1) >>>>>>>> org.joda.time.format.FormatUtils.writePaddedInteger : goto [?= return]
+org.joda.time.format.FormatUtils.writePaddedInteger : goto [?= return] >>>>>>>> org.joda.time.format.FormatUtils.writePaddedInteger : return

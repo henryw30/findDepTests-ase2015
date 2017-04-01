@@ -1,0 +1,25 @@
+org.jfree.chart.labels.CustomXYToolTipGenerator.getListCount : $r1 = r0.<org.jfree.chart.labels.CustomXYToolTipGenerator: java.util.List toolTipSeries>
+org.jfree.chart.labels.CustomXYToolTipGenerator.equals : r4 = virtualinvoke r2.<org.jfree.chart.labels.CustomXYToolTipGenerator: java.lang.String getToolTipText(int,int)>(i0, i1)
+org.jfree.chart.labels.CustomXYToolTipGenerator.equals : i1 = 0
+org.jfree.chart.labels.CustomXYToolTipGenerator.equals : if r3 == null goto (branch)
+org.jfree.chart.labels.CustomXYToolTipGenerator.equals : z0 = 1
+org.jfree.chart.labels.CustomXYToolTipGenerator.equals : $z1 = r1 instanceof org.jfree.chart.labels.CustomXYToolTipGenerator
+org.jfree.chart.labels.CustomXYToolTipGenerator.equals : return z0
+org.jfree.chart.labels.CustomXYToolTipGenerator.equals : i0 = 0
+org.jfree.chart.labels.CustomXYToolTipGenerator.equals : r2 = (org.jfree.chart.labels.CustomXYToolTipGenerator) r1
+org.jfree.chart.labels.CustomXYToolTipGenerator.equals : if r1 != r0 goto $z1 = r1 instanceof org.jfree.chart.labels.CustomXYToolTipGenerator
+org.jfree.chart.labels.CustomXYToolTipGenerator.equals : if z0 == 0 goto $z3 = 0
+org.jfree.chart.labels.CustomXYToolTipGenerator.equals : r3 = virtualinvoke r0.<org.jfree.chart.labels.CustomXYToolTipGenerator: java.lang.String getToolTipText(int,int)>(i0, i1)
+org.jfree.chart.labels.CustomXYToolTipGenerator.addToolTipSeries : $r2 = r0.<org.jfree.chart.labels.CustomXYToolTipGenerator: java.util.List toolTipSeries>
+org.jfree.chart.labels.CustomXYToolTipGenerator.getToolTipText : if r2 == null goto return r1
+org.jfree.chart.labels.CustomXYToolTipGenerator.getToolTipText : $r3 = r0.<org.jfree.chart.labels.CustomXYToolTipGenerator: java.util.List toolTipSeries>
+org.jfree.chart.labels.CustomXYToolTipGenerator.getToolTipText : $i3 = interfaceinvoke r2.<java.util.List: int size()>()
+org.jfree.chart.labels.CustomXYToolTipGenerator.getToolTipText : $i2 = virtualinvoke r0.<org.jfree.chart.labels.CustomXYToolTipGenerator: int getListCount()>()
+org.jfree.chart.labels.CustomXYToolTipGenerator.getToolTipText : r1 = null
+org.jfree.chart.labels.CustomXYToolTipGenerator.getToolTipText : return r1
+org.jfree.chart.labels.CustomXYToolTipGenerator.getToolTipText : $r5 = interfaceinvoke r2.<java.util.List: java.lang.Object get(int)>(i1)
+org.jfree.chart.labels.CustomXYToolTipGenerator.getToolTipCount : i1 = 0
+org.jfree.chart.labels.CustomXYToolTipGenerator.getToolTipCount : if r1 == null goto return i1
+org.jfree.chart.labels.CustomXYToolTipGenerator.getToolTipCount : i1 = interfaceinvoke r1.<java.util.List: int size()>()
+org.jfree.chart.labels.CustomXYToolTipGenerator.getToolTipCount : $r2 = r0.<org.jfree.chart.labels.CustomXYToolTipGenerator: java.util.List toolTipSeries>
+org.jfree.chart.labels.CustomXYToolTipGenerator.getToolTipCount : return i1

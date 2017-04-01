@@ -1,0 +1,20 @@
+org.apache.xml.security.utils.HelperNodeList.getLength : $r1 = r0.<org.apache.xml.security.utils.HelperNodeList: java.util.ArrayList nodes>
+org.apache.xml.security.utils.HexDump.prettyPrintHex : $r3 = virtualinvoke r2.<sun.misc.HexDumpEncoder: java.lang.String encodeBuffer(byte[])>(r0)
+org.apache.xml.security.utils.HexDump.prettyPrintHex : $r1 = new sun.misc.HexDumpEncoder
+org.apache.xml.security.c14n.CanonicalizerSpi.engineCanonicalize : r5 = staticinvoke <javax.xml.parsers.DocumentBuilderFactory: javax.xml.parsers.DocumentBuilderFactory newInstance()>()
+org.apache.xml.security.c14n.CanonicalizerSpi.engineCanonicalize : r7 = virtualinvoke r6.<javax.xml.parsers.DocumentBuilder: org.w3c.dom.Document parse(org.xml.sax.InputSource)>(r4)
+org.apache.xml.security.c14n.CanonicalizerSpi.engineCanonicalize : virtualinvoke r5.<javax.xml.parsers.DocumentBuilderFactory: void setNamespaceAware(boolean)>(1)
+org.apache.xml.security.c14n.CanonicalizerSpi.engineCanonicalize : $r9 = new org.xml.sax.InputSource
+org.apache.xml.security.c14n.CanonicalizerSpi.engineCanonicalize : r6 = virtualinvoke r5.<javax.xml.parsers.DocumentBuilderFactory: javax.xml.parsers.DocumentBuilder newDocumentBuilder()>()
+org.apache.xml.security.c14n.CanonicalizerSpi.engineCanonicalize : $r2 = new java.io.ByteArrayInputStream
+org.apache.xml.security.c14n.implementations.Canonicalizer20010315ExclOmitComments.engineGetURI : return "http://www.w3.org/2001/10/xml-exc-c14n#"
+org.apache.xml.security.utils.XMLUtils.convertNodelistToSet : i0 = interfaceinvoke r0.<org.w3c.dom.NodeList: int getLength()>()
+org.apache.xml.security.utils.XMLUtils.convertNodelistToSet : i1 = 0
+org.apache.xml.security.utils.XMLUtils.convertNodelistToSet : if r0 != null goto i0 = interfaceinvoke r0.<org.w3c.dom.NodeList: int getLength()>()
+org.apache.xml.security.utils.XMLUtils.convertNodelistToSet : $r3 = new java.util.HashSet
+org.apache.xml.security.utils.XMLUtils.convertNodelistToSet : return r1
+org.apache.xml.security.c14n.implementations.Canonicalizer20010315ExclOmitComments.engineGetIncludeComments : return 0
+org.apache.xml.security.c14n.implementations.Canonicalizer20010315Excl.engineCanonicalizeXPathNodeSet : $r2 = virtualinvoke r0.<org.apache.xml.security.c14n.implementations.Canonicalizer20010315Excl: byte[] engineCanonicalizeXPathNodeSet(java.util.Set,java.lang.String)>(r1, "")
+org.apache.xml.security.c14n.implementations.Canonicalizer20010315Excl.engineCanonicalizeXPathNodeSet : $r6 = r0.<org.apache.xml.security.c14n.implementations.Canonicalizer20010315Excl: java.util.Set _xpathNodeSet>
+org.apache.xml.security.c14n.implementations.Canonicalizer20010315Excl.engineCanonicalizeXPathNodeSet : r0.<org.apache.xml.security.c14n.implementations.Canonicalizer20010315Excl: java.util.Set _xpathNodeSet> = r1
+org.apache.xml.security.c14n.implementations.Canonicalizer20010315Excl.engineCanonicalizeXPathNodeSet : $r7 = newarray (byte)[0]

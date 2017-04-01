@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<test-data>
+	<test-code>
+		<description><![CDATA[
+simple failure case
+     ]]></description>
+		<expected-problems>1</expected-problems>
+		<code><![CDATA[
+
+import java.io.FileReader;
+
+public class BadTest {
+
+	
+	@Test()
+	public void testName2() throws Exception {
+		
+		FileReader reader = new FileReader("file");
+		
+		int character=reader.read();
+		
+	}
+	
+
+}
+
+     ]]></code>
+	</test-code>
+
+
+	<test-code>
+		<description><![CDATA[
+another simple failure case
+     ]]></description>
+		<expected-problems>1</expected-problems>
+		<code><![CDATA[
+
+import java.io.FileReader;
+import java.io.File;
+
+public class BadTest {
+
+
+	@Test()
+	public void testName2() throws Exception {
+		
+		File file=new File("file");
+		FileReader reader = new FileReader(file);
+		
+		int character=reader.read();
+		
+	}
+	
+
+}
+
+     ]]></code>
+	</test-code>
+
+
+	<test-code>
+		<description><![CDATA[
+another simple failure case
+     ]]></description>
+		<expected-problems>1</expected-problems>
+		<code><![CDATA[
+
+import java.io.FileReader;
+import java.io.File;
+
+public class BadTest {
+
+
+	File file;
+
+	@Before
+	public void setUp(){
+		file=new File("file");
+	}
+
+	@Test()
+	public void testName2() throws Exception {
+		
+		FileReader reader = new FileReader(file);
+		
+		int character=reader.read();
+		
+	}
+	
+
+}
+
+     ]]></code>
+	</test-code>
+
+
+	<test-code>
+		<description><![CDATA[
+		file instantiated at setup.
+     ]]></description>
+		<expected-problems>0</expected-problems>
+		<code><![CDATA[
+
+import java.io.FileReader;
+import java.io.File;
+
+public class BadTest {
+
+
+	File file;
+
+	@Before
+	public void setUp(){
+		file=new File("file");
+	}
+
+	@Test()
+	public void testName2() throws Exception {
+		
+		assertTrue(file.exists());
+		FileReader reader = new FileReader(file);
+		
+		
+		int character=reader.read();
+		
+	}
+	
+
+}
+
+     ]]></code>
+	</test-code>
+
+
+
+	<test-code>
+		<description><![CDATA[
+simple ok case
+     ]]></description>
+		<expected-problems>0</expected-problems>
+		<code><![CDATA[
+
+import java.io.FileReader;
+import java.io.File;
+
+public class BadTest {
+
+
+	@Test()
+	public void testName2() throws Exception {
+		
+		File file=new File("file");
+		FileReader reader = new FileReader(file);
+		
+		assertTrue(file.exists());
+		int character=reader.read();
+		
+	}
+	
+
+}
+
+     ]]></code>
+	</test-code>
+	
+	<test-code>
+		<description><![CDATA[
+simple ok case (create file)
+     ]]></description>
+		<expected-problems>0</expected-problems>
+		<code><![CDATA[
+
+import java.io.FileReader;
+import java.io.File;
+
+public class BadTest {
+
+
+	@Test()
+	public void testName2() throws Exception {
+		
+		File file=new File("file");
+		assertTrue(file.createNewFile());
+		FileReader reader = new FileReader(file);
+		
+		int character=reader.read();
+		
+	}
+	
+
+}
+
+     ]]></code>
+	</test-code>
+	
+	<test-code>
+		<description><![CDATA[
+simple ok case (create directory)
+     ]]></description>
+		<expected-problems>0</expected-problems>
+		<code><![CDATA[
+
+import java.io.FileReader;
+import java.io.File;
+
+public class BadTest {
+
+
+	@Test()
+	public void testName2() throws Exception {
+		
+		File file=new File("file");
+		file.mkdir();
+		FileReader reader = new FileReader(file);
+		
+		int character=reader.read();
+		
+	}
+	
+
+}
+
+     ]]></code>
+	</test-code>
+	
+	
+
+	<test-code>
+		<description><![CDATA[
+simple ok case
+     ]]></description>
+		<expected-problems>0</expected-problems>
+		<code><![CDATA[
+
+import java.io.FileReader;
+import java.io.File;
+
+public class BadTest {
+
+
+	@Test()
+	public void testName2() throws Exception {
+		if(true){
+			File file=new File("file");
+			FileReader reader = new FileReader(file);
+			
+			assertTrue(file.exists());
+			int character=reader.read();
+		}
+	}
+	
+
+}
+
+     ]]></code>
+	</test-code>
+	
+		<test-code>
+		<description><![CDATA[
+there is a write operation before reading
+     ]]></description>
+		<expected-problems>0</expected-problems>
+		<code><![CDATA[
+
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.File;
+
+public class BadTest {
+
+
+	File file;
+
+	@Before
+	public void setUp(){
+		file=new File("file");
+	}
+
+	@Test()
+	public void testName2() throws Exception {
+		
+		FileWriter writer = new FileWriter(file);
+		
+		writer.write("");
+		
+		FileReader reader = new FileReader(file);
+
+		int character=reader.read();
+
+	}
+	
+
+}
+
+     ]]></code>
+	</test-code>
+			<test-code>
+		<description><![CDATA[
+there is a write operation before reading
+     ]]></description>
+		<expected-problems>0</expected-problems>
+		<code><![CDATA[
+
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.File;
+
+public class BadTest {
+
+
+	@Test()
+	public void testName2() throws Exception {
+
+		File file=new File("file");
+		
+		FileWriter writer = new FileWriter(file);
+		
+		writer.write("");
+		
+		FileReader reader = new FileReader(file);
+
+		int character=reader.read();
+
+	}
+	
+
+}
+
+     ]]></code>
+	</test-code>
+	
+	<test-code>
+		<description><![CDATA[
+
+     ]]></description>
+		<expected-problems>1</expected-problems>
+		<code><![CDATA[
+
+import java.io.FileReader;
+import java.io.File;
+
+public class BadTest {
+
+
+	@Test()
+	public void testName2() throws Exception {
+		if(true){
+			File file=new File("file");
+			FileReader reader = new FileReader(file);
+			
+			int character=reader.read();
+			assertTrue(file.exists());
+		}
+	}
+	
+
+}
+
+     ]]></code>
+	</test-code>
+
+
+	
+	<test-code>
+		<description><![CDATA[
+
+     ]]></description>
+		<expected-problems>1</expected-problems>
+		<code><![CDATA[
+
+import java.io.FileReader;
+import java.io.File;
+
+public class BadTest {
+
+
+	@Test()
+	public void testName2() throws Exception {
+		if(true){
+			File file=new File("file");
+			FileReader reader = new FileReader(file);
+			
+			int character=reader.read();
+			assertTrue(file.exists());
+		}
+	}
+	
+
+}
+
+     ]]></code>
+	</test-code>
+
+
+</test-data>

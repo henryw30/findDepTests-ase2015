@@ -1,0 +1,24 @@
+org.jfree.data.DataUtilities.createNumberArray2D : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r0, "data") >>>>>>>> org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null >>>>>>>> org.jfree.data.DataUtilities.createNumberArray2D : i0 = lengthof r0
+org.jfree.data.DataUtilities.createNumberArray2D : i0 = lengthof r0 >>>>>>>> org.jfree.data.DataUtilities.createNumberArray2D : r1 = newarray (java.lang.Number[])[i0]
+org.jfree.data.DataUtilities.createNumberArray2D : r1 = newarray (java.lang.Number[])[i0] >>>>>>>> org.jfree.data.DataUtilities.createNumberArray2D : i1 = 0
+org.jfree.data.DataUtilities.createNumberArray2D : i1 = 0 >>>>>>>> org.jfree.data.DataUtilities.createNumberArray2D : if i1 >= i0
+org.jfree.data.DataUtilities.createNumberArray2D : if i1 >= i0 >>>>>>>> org.jfree.data.DataUtilities.createNumberArray2D : $r2 = r0[i1]
+org.jfree.data.DataUtilities.createNumberArray2D : $r2 = r0[i1] >>>>>>>> org.jfree.data.DataUtilities.createNumberArray2D : $r3 = staticinvoke <org.jfree.data.DataUtilities: java.lang.Number[] createNumberArray(double[])>($r2)
+org.jfree.data.DataUtilities.createNumberArray2D : $r3 = staticinvoke <org.jfree.data.DataUtilities: java.lang.Number[] createNumberArray(double[])>($r2) >>>>>>>> org.jfree.data.DataUtilities.createNumberArray : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r0, "data")
+org.jfree.data.DataUtilities.createNumberArray : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r0, "data") >>>>>>>> org.jfree.data.DataUtilities.createNumberArray : $i1 = lengthof r0
+org.jfree.data.DataUtilities.createNumberArray : $i1 = lengthof r0 >>>>>>>> org.jfree.data.DataUtilities.createNumberArray : r1 = newarray (java.lang.Number)[$i1]
+org.jfree.data.DataUtilities.createNumberArray : r1 = newarray (java.lang.Number)[$i1] >>>>>>>> org.jfree.data.DataUtilities.createNumberArray : i0 = 0
+org.jfree.data.DataUtilities.createNumberArray : i0 = 0 >>>>>>>> org.jfree.data.DataUtilities.createNumberArray : $i2 = lengthof r0
+org.jfree.data.DataUtilities.createNumberArray : $i2 = lengthof r0 >>>>>>>> org.jfree.data.DataUtilities.createNumberArray : if i0 >= $i2
+org.jfree.data.DataUtilities.createNumberArray : if i0 >= $i2 >>>>>>>> org.jfree.data.DataUtilities.createNumberArray : $r2 = new java.lang.Double
+org.jfree.data.DataUtilities.createNumberArray : $r2 = new java.lang.Double >>>>>>>> org.jfree.data.DataUtilities.createNumberArray : $d0 = r0[i0]
+org.jfree.data.DataUtilities.createNumberArray : $d0 = r0[i0] >>>>>>>> org.jfree.data.DataUtilities.createNumberArray : specialinvoke $r2.<java.lang.Double: void <init>(double)>($d0)
+org.jfree.data.DataUtilities.createNumberArray : specialinvoke $r2.<java.lang.Double: void <init>(double)>($d0) >>>>>>>> org.jfree.data.DataUtilities.createNumberArray : r1[i0] = $r2
+org.jfree.data.DataUtilities.createNumberArray : r1[i0] = $r2 >>>>>>>> org.jfree.data.DataUtilities.createNumberArray : i0 = i0 + 1
+org.jfree.data.DataUtilities.createNumberArray : i0 = i0 + 1 >>>>>>>> org.jfree.data.DataUtilities.createNumberArray : goto [?= $i2 = lengthof r0]
+org.jfree.data.DataUtilities.createNumberArray : goto [?= $i2 = lengthof r0] >>>>>>>> org.jfree.data.DataUtilities.createNumberArray : return r1
+org.jfree.data.DataUtilities.createNumberArray : return r1 >>>>>>>> org.jfree.data.DataUtilities.createNumberArray2D : r1[i1] = $r3
+org.jfree.data.DataUtilities.createNumberArray2D : r1[i1] = $r3 >>>>>>>> org.jfree.data.DataUtilities.createNumberArray2D : i1 = i1 + 1
+org.jfree.data.DataUtilities.createNumberArray2D : i1 = i1 + 1 >>>>>>>> org.jfree.data.DataUtilities.createNumberArray2D : goto [?= (branch)]
+org.jfree.data.DataUtilities.createNumberArray2D : goto [?= (branch)] >>>>>>>> org.jfree.data.DataUtilities.createNumberArray2D : return r1

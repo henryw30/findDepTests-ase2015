@@ -1,0 +1,71 @@
+org.jfree.data.xy.AbstractXYDataset.getYValue : d0 = #NaN
+org.jfree.data.xy.AbstractXYDataset.getYValue : return d0
+org.jfree.data.xy.AbstractXYDataset.getYValue : d0 = virtualinvoke r1.<java.lang.Number: double doubleValue()>()
+org.jfree.data.xy.AbstractXYDataset.getYValue : if r1 == null goto return d0
+org.jfree.data.xy.AbstractXYDataset.getYValue : r1 = virtualinvoke r0.<org.jfree.data.xy.AbstractXYDataset: java.lang.Number getY(int,int)>(i0, i1)
+org.jfree.data.statistics.HistogramDataset.getY : $i2 = specialinvoke r0.<org.jfree.data.statistics.HistogramDataset: int getTotal(int)>(i0)
+org.jfree.data.statistics.HistogramDataset.getY : r1 = virtualinvoke r0.<org.jfree.data.statistics.HistogramDataset: java.util.List getBins(int)>(i0)
+org.jfree.data.statistics.HistogramDataset.getY : $r3 = interfaceinvoke r1.<java.util.List: java.lang.Object get(int)>(i1)
+org.jfree.data.statistics.HistogramDataset.getY : d1 = specialinvoke r0.<org.jfree.data.statistics.HistogramDataset: double getBinWidth(int)>(i0)
+org.jfree.data.statistics.HistogramDataset.getY : $r6 = new java.lang.Double
+org.jfree.data.statistics.HistogramDataset.getY : $r4 = r0.<org.jfree.data.statistics.HistogramDataset: org.jfree.data.statistics.HistogramType type>
+org.jfree.data.statistics.HistogramBin.getCount : $i0 = r0.<org.jfree.data.statistics.HistogramBin: int count>
+org.jfree.data.statistics.HistogramBin.getEndBoundary : $d0 = r0.<org.jfree.data.statistics.HistogramBin: double endBoundary>
+org.jfree.data.xy.AbstractIntervalXYDataset.getStartXValue : r1 = virtualinvoke r0.<org.jfree.data.xy.AbstractIntervalXYDataset: java.lang.Number getStartX(int,int)>(i0, i1)
+org.jfree.data.xy.AbstractIntervalXYDataset.getStartXValue : d0 = #NaN
+org.jfree.data.xy.AbstractIntervalXYDataset.getStartXValue : return d0
+org.jfree.data.xy.AbstractIntervalXYDataset.getStartXValue : d0 = virtualinvoke r1.<java.lang.Number: double doubleValue()>()
+org.jfree.data.xy.AbstractIntervalXYDataset.getStartXValue : if r1 == null goto return d0
+org.jfree.data.statistics.HistogramDataset.addSeries : $i3 = i1 + 1
+org.jfree.data.statistics.HistogramDataset.addSeries : $b8 = d5 cmpg 0.0
+org.jfree.data.statistics.HistogramDataset.addSeries : $r17 = new java.lang.Double
+org.jfree.data.statistics.HistogramDataset.addSeries : virtualinvoke r10.<org.jfree.data.statistics.HistogramBin: void incrementCount()>()
+org.jfree.data.statistics.HistogramDataset.addSeries : $r15 = new java.lang.Integer
+org.jfree.data.statistics.HistogramDataset.addSeries : d5 = 0.0
+org.jfree.data.statistics.HistogramDataset.addSeries : $d6 = d1 - d0
+org.jfree.data.statistics.HistogramDataset.addSeries : d3 = d0
+org.jfree.data.statistics.HistogramDataset.addSeries : d3 = d4
+org.jfree.data.statistics.HistogramDataset.addSeries : i1 = 0
+org.jfree.data.statistics.HistogramDataset.addSeries : $r9 = interfaceinvoke r3.<java.util.List: java.lang.Object get(int)>(i6)
+org.jfree.data.statistics.HistogramDataset.addSeries : $r11 = new java.util.HashMap
+org.jfree.data.statistics.HistogramDataset.addSeries : if i6 < i0 goto $r9 = interfaceinvoke r3.<java.util.List: java.lang.Object get(int)>(i6)
+org.jfree.data.statistics.HistogramDataset.addSeries : if i0 >= 1 goto $d6 = d1 - d0
+org.jfree.data.statistics.HistogramDataset.addSeries : $i2 = i0 - 1
+org.jfree.data.statistics.HistogramDataset.addSeries : $r6 = new java.util.ArrayList
+org.jfree.data.statistics.HistogramDataset.addSeries : $d11 = r2[i4]
+org.jfree.data.statistics.HistogramDataset.addSeries : interfaceinvoke r3.<java.util.List: boolean add(java.lang.Object)>(r4)
+org.jfree.data.statistics.HistogramDataset.addSeries : $d14 = (double) i0
+org.jfree.data.statistics.HistogramDataset.addSeries : virtualinvoke r0.<org.jfree.data.statistics.HistogramDataset: void fireDatasetChanged()>()
+org.jfree.data.statistics.HistogramDataset.addSeries : i6 = i0 - 1
+org.jfree.data.statistics.HistogramDataset.addSeries : interfaceinvoke r12.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>("bins", r3)
+org.jfree.data.statistics.HistogramDataset.addSeries : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "key")
+org.jfree.data.statistics.HistogramDataset.addSeries : interfaceinvoke r12.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>("key", r1)
+org.jfree.data.statistics.HistogramDataset.addSeries : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r2, "values")
+org.jfree.data.statistics.HistogramDataset.addSeries : $r7 = new org.jfree.data.statistics.HistogramBin
+org.jfree.data.statistics.HistogramDataset.addSeries : $r19 = r0.<org.jfree.data.statistics.HistogramDataset: java.util.List list>
+org.jfree.data.statistics.HistogramDataset.addSeries : $r8 = new org.jfree.data.statistics.HistogramBin
+org.jfree.data.statistics.HistogramDataset.addSeries : $d10 = r2[i4]
+org.jfree.data.statistics.HistogramDataset.addSeries : i4 = 0
+org.jfree.data.general.AbstractDataset.notifyListeners : $r3 = r0.<org.jfree.data.general.AbstractDataset: javax.swing.event.EventListenerList listenerList>
+org.jfree.data.general.AbstractDataset.notifyListeners : $i1 = lengthof r2
+org.jfree.data.statistics.HistogramBin.incrementCount : $i0 = r0.<org.jfree.data.statistics.HistogramBin: int count>
+org.jfree.data.general.AbstractDataset.fireDatasetChanged : $r1 = new org.jfree.data.general.DatasetChangeEvent
+org.jfree.data.xy.AbstractIntervalXYDataset.getEndXValue : d0 = #NaN
+org.jfree.data.xy.AbstractIntervalXYDataset.getEndXValue : return d0
+org.jfree.data.xy.AbstractIntervalXYDataset.getEndXValue : r1 = virtualinvoke r0.<org.jfree.data.xy.AbstractIntervalXYDataset: java.lang.Number getEndX(int,int)>(i0, i1)
+org.jfree.data.xy.AbstractIntervalXYDataset.getEndXValue : d0 = virtualinvoke r1.<java.lang.Number: double doubleValue()>()
+org.jfree.data.xy.AbstractIntervalXYDataset.getEndXValue : if r1 == null goto return d0
+org.jfree.data.statistics.HistogramDataset.getTotal : $r2 = r0.<org.jfree.data.statistics.HistogramDataset: java.util.List list>
+org.jfree.data.statistics.HistogramDataset.getTotal : $r4 = interfaceinvoke r1.<java.util.Map: java.lang.Object get(java.lang.Object)>("values.length")
+org.jfree.data.statistics.HistogramDataset.getBins : $r2 = r0.<org.jfree.data.statistics.HistogramDataset: java.util.List list>
+org.jfree.data.statistics.HistogramDataset.getBins : $r4 = interfaceinvoke r1.<java.util.Map: java.lang.Object get(java.lang.Object)>("bins")
+org.jfree.data.statistics.HistogramDataset.getBinWidth : $r2 = r0.<org.jfree.data.statistics.HistogramDataset: java.util.List list>
+org.jfree.data.statistics.HistogramDataset.getBinWidth : $r4 = interfaceinvoke r1.<java.util.Map: java.lang.Object get(java.lang.Object)>("bin width")
+org.jfree.data.statistics.HistogramDataset.getStartX : r1 = virtualinvoke r0.<org.jfree.data.statistics.HistogramDataset: java.util.List getBins(int)>(i0)
+org.jfree.data.statistics.HistogramDataset.getStartX : $r3 = interfaceinvoke r1.<java.util.List: java.lang.Object get(int)>(i1)
+org.jfree.data.statistics.HistogramDataset.getStartX : $r4 = new java.lang.Double
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null goto return
+org.jfree.data.statistics.HistogramBin.getStartBoundary : $d0 = r0.<org.jfree.data.statistics.HistogramBin: double startBoundary>
+org.jfree.data.statistics.HistogramDataset.getEndX : r1 = virtualinvoke r0.<org.jfree.data.statistics.HistogramDataset: java.util.List getBins(int)>(i0)
+org.jfree.data.statistics.HistogramDataset.getEndX : $r3 = interfaceinvoke r1.<java.util.List: java.lang.Object get(int)>(i1)
+org.jfree.data.statistics.HistogramDataset.getEndX : $r4 = new java.lang.Double

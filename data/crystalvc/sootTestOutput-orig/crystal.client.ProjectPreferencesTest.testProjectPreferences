@@ -1,0 +1,57 @@
+crystal.client.ProjectPreferences.getDataSources : $r1 = r0.<crystal.client.ProjectPreferences: java.util.Vector _dataSources>
+crystal.client.ProjectPreferences.getEnvironment : $r1 = r0.<crystal.client.ProjectPreferences: crystal.model.DataSource _myEnvironment>
+crystal.model.DataSource.setParent : r0.<crystal.model.DataSource: java.lang.String _parent> = null
+crystal.model.DataSource.setParent : if r1 == null goto r0.<crystal.model.DataSource: java.lang.String _parent> = null
+crystal.model.DataSource.setParent : r0.<crystal.model.DataSource: java.lang.String _parent> = r1
+crystal.client.ClientPreferences.addProjectPreferences : $r17 = r0.<crystal.client.ClientPreferences: java.util.Vector _projectPreferences>
+crystal.client.ClientPreferences.addProjectPreferences : $r5 = r0.<crystal.client.ClientPreferences: java.util.Vector _projectPreferences>
+crystal.util.LSMRLogger.startLog4J : virtualinvoke r62.<org.apache.log4j.RollingFileAppender: void setMaxBackupIndex(int)>(10)
+crystal.util.LSMRLogger.startLog4J : virtualinvoke r62.<org.apache.log4j.RollingFileAppender: void setMaxFileSize(java.lang.String)>("10MB")
+crystal.util.LSMRLogger.startLog4J : $r63 = staticinvoke <org.apache.log4j.Logger: org.apache.log4j.Logger getRootLogger()>()
+crystal.util.LSMRLogger.startLog4J : n0 = null
+crystal.util.LSMRLogger.startLog4J : if r4 == null goto (branch)
+crystal.util.LSMRLogger.startLog4J : $r30 = new org.apache.log4j.RollingFileAppender
+crystal.util.LSMRLogger.startLog4J : virtualinvoke r25.<org.apache.log4j.RollingFileAppender: void setMaxBackupIndex(int)>(10)
+crystal.util.LSMRLogger.startLog4J : if z1 == 0 goto $r36 = new org.apache.log4j.PatternLayout
+crystal.util.LSMRLogger.startLog4J : $z3 = virtualinvoke r6.<java.io.File: boolean exists()>()
+crystal.util.LSMRLogger.startLog4J : $r18 = new java.io.File
+crystal.util.LSMRLogger.startLog4J : $r45 = new org.apache.log4j.xml.XMLLayout
+crystal.util.LSMRLogger.startLog4J : $r3 = staticinvoke <org.apache.log4j.Logger: org.apache.log4j.Logger getRootLogger()>()
+crystal.util.LSMRLogger.startLog4J : $r44 = staticinvoke <org.apache.log4j.Logger: org.apache.log4j.Logger getRootLogger()>()
+crystal.util.LSMRLogger.startLog4J : if r2 != null goto r25 = null
+crystal.util.LSMRLogger.startLog4J : $r14 = new java.lang.StringBuilder
+crystal.util.LSMRLogger.startLog4J : $r56 = new org.apache.log4j.RollingFileAppender
+crystal.util.LSMRLogger.startLog4J : $r10 = staticinvoke <org.apache.log4j.Logger: org.apache.log4j.Logger getRootLogger()>()
+crystal.util.LSMRLogger.startLog4J : virtualinvoke r52.<org.apache.log4j.RollingFileAppender: void setMaxFileSize(java.lang.String)>("10MB")
+crystal.util.LSMRLogger.startLog4J : virtualinvoke r8.<org.apache.log4j.xml.XMLLayout: void setLocationInfo(boolean)>(1)
+crystal.util.LSMRLogger.startLog4J : r25 = null
+crystal.util.LSMRLogger.startLog4J : $r54 = new org.apache.log4j.PatternLayout
+crystal.util.LSMRLogger.startLog4J : $r66 = staticinvoke <org.apache.log4j.Logger: org.apache.log4j.Logger getRootLogger()>()
+crystal.util.LSMRLogger.startLog4J : $r53 = staticinvoke <org.apache.log4j.Logger: org.apache.log4j.Logger getRootLogger()>()
+crystal.util.LSMRLogger.startLog4J : goto [?= $r66 = staticinvoke <org.apache.log4j.Logger: org.apache.log4j.Logger getRootLogger()>()]
+crystal.util.LSMRLogger.startLog4J : if z0 == 0 goto (branch)
+crystal.util.LSMRLogger.startLog4J : virtualinvoke r52.<org.apache.log4j.RollingFileAppender: void setMaxBackupIndex(int)>(10)
+crystal.util.LSMRLogger.startLog4J : $r29 = new org.apache.log4j.PatternLayout
+crystal.util.LSMRLogger.startLog4J : $r46 = new org.apache.log4j.RollingFileAppender
+crystal.util.LSMRLogger.startLog4J : virtualinvoke r25.<org.apache.log4j.RollingFileAppender: void setMaxFileSize(java.lang.String)>("10MB")
+crystal.util.LSMRLogger.startLog4J : $r26 = new org.apache.log4j.xml.XMLLayout
+crystal.util.LSMRLogger.startLog4J : if z1 == 0 goto $r28 = new org.apache.log4j.xml.XMLLayout
+crystal.util.LSMRLogger.startLog4J : if r1 == null goto (branch)
+crystal.util.LSMRLogger.startLog4J : $r5 = <org.apache.log4j.Level: org.apache.log4j.Level ERROR>
+crystal.util.LSMRLogger.startLog4J : staticinvoke <org.apache.log4j.BasicConfigurator: void configure()>()
+crystal.util.ValidInputChecker.checkValidStringInput : if r0 == null goto $r2 = new java.lang.IllegalArgumentException
+crystal.model.DataSource.equals : $z0 = virtualinvoke $r7.<java.lang.String: boolean equals(java.lang.Object)>($r8)
+crystal.model.DataSource.equals : if r1 == null goto return 0
+crystal.model.DataSource.equals : r2 = (crystal.model.DataSource) r1
+crystal.model.DataSource.equals : $r5 = r0.<crystal.model.DataSource: java.lang.String _shortName>
+crystal.client.ProjectPreferences.getClientPreferences : $r1 = r0.<crystal.client.ProjectPreferences: crystal.client.ClientPreferences _clientPreferences>
+crystal.model.DataSource.getShortName : $r1 = r0.<crystal.model.DataSource: java.lang.String _shortName>
+crystal.client.ConflictSystemTray.startLogging : $r0 = <crystal.Constants: org.apache.log4j.Level LOG_LEVEL>
+crystal.client.ClientPreferences.equals : $z2 = virtualinvoke $r9.<java.util.Vector: boolean equals(java.lang.Object)>($r10)
+crystal.client.ClientPreferences.equals : r2 = (crystal.client.ClientPreferences) r1
+crystal.client.ClientPreferences.equals : if r1 == null goto return 0
+crystal.client.ClientPreferences.equals : $r5 = r0.<crystal.client.ClientPreferences: java.lang.String _tempDirectory>
+crystal.client.ProjectPreferences.addDataSource : $r5 = r0.<crystal.client.ProjectPreferences: java.util.Vector _dataSources>
+crystal.client.ProjectPreferences.addDataSource : goto [?= $z0 = interfaceinvoke r2.<java.util.Iterator: boolean hasNext()>()]
+crystal.client.ProjectPreferences.addDataSource : $r7 = virtualinvoke r3.<crystal.model.DataSource: java.lang.String getShortName()>()
+crystal.client.ProjectPreferences.addDataSource : $r18 = r0.<crystal.client.ProjectPreferences: java.util.Vector _dataSources>

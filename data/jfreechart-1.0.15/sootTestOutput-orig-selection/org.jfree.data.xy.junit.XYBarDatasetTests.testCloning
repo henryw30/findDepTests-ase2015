@@ -1,0 +1,139 @@
+org.jfree.data.xy.DefaultXYDataset.addSeries : if r1 != null >>>>>>>> org.jfree.data.xy.DefaultXYDataset.addSeries : if r2 != null
+org.jfree.data.xy.DefaultXYDataset.addSeries : if r2 != null >>>>>>>> org.jfree.data.xy.DefaultXYDataset.addSeries : $i1 = lengthof r2
+org.jfree.data.xy.DefaultXYDataset.addSeries : $i1 = lengthof r2 >>>>>>>> org.jfree.data.xy.DefaultXYDataset.addSeries : if $i1 == 2
+org.jfree.data.xy.DefaultXYDataset.addSeries : if $i1 == 2 >>>>>>>> org.jfree.data.xy.DefaultXYDataset.addSeries : $r6 = r2[0]
+org.jfree.data.xy.DefaultXYDataset.addSeries : $r6 = r2[0] >>>>>>>> org.jfree.data.xy.DefaultXYDataset.addSeries : $i2 = lengthof $r6
+org.jfree.data.xy.DefaultXYDataset.addSeries : $i2 = lengthof $r6 >>>>>>>> org.jfree.data.xy.DefaultXYDataset.addSeries : $r7 = r2[1]
+org.jfree.data.xy.DefaultXYDataset.addSeries : $r7 = r2[1] >>>>>>>> org.jfree.data.xy.DefaultXYDataset.addSeries : $i3 = lengthof $r7
+org.jfree.data.xy.DefaultXYDataset.addSeries : $i3 = lengthof $r7 >>>>>>>> org.jfree.data.xy.DefaultXYDataset.addSeries : if $i2 == $i3
+org.jfree.data.xy.DefaultXYDataset.addSeries : if $i2 == $i3 >>>>>>>> org.jfree.data.xy.DefaultXYDataset.addSeries : i0 = virtualinvoke r0.<org.jfree.data.xy.DefaultXYDataset: int indexOf(java.lang.Comparable)>(r1)
+org.jfree.data.xy.DefaultXYDataset.addSeries : i0 = virtualinvoke r0.<org.jfree.data.xy.DefaultXYDataset: int indexOf(java.lang.Comparable)>(r1) >>>>>>>> org.jfree.data.xy.DefaultXYDataset.indexOf : $r2 = r0.<org.jfree.data.xy.DefaultXYDataset: java.util.List seriesKeys>
+org.jfree.data.xy.DefaultXYDataset.indexOf : $r2 = r0.<org.jfree.data.xy.DefaultXYDataset: java.util.List seriesKeys> >>>>>>>> org.jfree.data.xy.DefaultXYDataset.indexOf : $i0 = interfaceinvoke $r2.<java.util.List: int indexOf(java.lang.Object)>(r1)
+org.jfree.data.xy.DefaultXYDataset.indexOf : $i0 = interfaceinvoke $r2.<java.util.List: int indexOf(java.lang.Object)>(r1) >>>>>>>> org.jfree.data.xy.DefaultXYDataset.indexOf : return $i0
+org.jfree.data.xy.DefaultXYDataset.indexOf : return $i0 >>>>>>>> org.jfree.data.xy.DefaultXYDataset.addSeries : if i0 != -1
+org.jfree.data.xy.DefaultXYDataset.addSeries : if i0 != -1 >>>>>>>> org.jfree.data.xy.DefaultXYDataset.addSeries : $r9 = r0.<org.jfree.data.xy.DefaultXYDataset: java.util.List seriesKeys>
+org.jfree.data.xy.DefaultXYDataset.addSeries : $r9 = r0.<org.jfree.data.xy.DefaultXYDataset: java.util.List seriesKeys> >>>>>>>> org.jfree.data.xy.DefaultXYDataset.addSeries : interfaceinvoke $r9.<java.util.List: boolean add(java.lang.Object)>(r1)
+org.jfree.data.xy.DefaultXYDataset.addSeries : interfaceinvoke $r9.<java.util.List: boolean add(java.lang.Object)>(r1) >>>>>>>> org.jfree.data.xy.DefaultXYDataset.addSeries : $r10 = r0.<org.jfree.data.xy.DefaultXYDataset: java.util.List seriesList>
+org.jfree.data.xy.DefaultXYDataset.addSeries : $r10 = r0.<org.jfree.data.xy.DefaultXYDataset: java.util.List seriesList> >>>>>>>> org.jfree.data.xy.DefaultXYDataset.addSeries : interfaceinvoke $r10.<java.util.List: boolean add(java.lang.Object)>(r2)
+org.jfree.data.xy.DefaultXYDataset.addSeries : interfaceinvoke $r10.<java.util.List: boolean add(java.lang.Object)>(r2) >>>>>>>> org.jfree.data.xy.DefaultXYDataset.addSeries : goto [?= $r14 = new org.jfree.data.general.DatasetChangeEvent]
+org.jfree.data.xy.DefaultXYDataset.addSeries : goto [?= $r14 = new org.jfree.data.general.DatasetChangeEvent] >>>>>>>> org.jfree.data.xy.DefaultXYDataset.addSeries : $r14 = new org.jfree.data.general.DatasetChangeEvent
+org.jfree.data.xy.DefaultXYDataset.addSeries : $r14 = new org.jfree.data.general.DatasetChangeEvent >>>>>>>> org.jfree.data.xy.DefaultXYDataset.addSeries : specialinvoke $r14.<org.jfree.data.general.DatasetChangeEvent: void <init>(java.lang.Object,org.jfree.data.general.Dataset)>(r0, r0)
+org.jfree.data.xy.DefaultXYDataset.addSeries : specialinvoke $r14.<org.jfree.data.general.DatasetChangeEvent: void <init>(java.lang.Object,org.jfree.data.general.Dataset)>(r0, r0) >>>>>>>> org.jfree.data.xy.DefaultXYDataset.addSeries : virtualinvoke r0.<org.jfree.data.xy.DefaultXYDataset: void notifyListeners(org.jfree.data.general.DatasetChangeEvent)>($r14)
+org.jfree.data.xy.DefaultXYDataset.addSeries : virtualinvoke r0.<org.jfree.data.xy.DefaultXYDataset: void notifyListeners(org.jfree.data.general.DatasetChangeEvent)>($r14) >>>>>>>> org.jfree.data.general.AbstractDataset.notifyListeners : $r3 = r0.<org.jfree.data.general.AbstractDataset: javax.swing.event.EventListenerList listenerList>
+org.jfree.data.general.AbstractDataset.notifyListeners : $r3 = r0.<org.jfree.data.general.AbstractDataset: javax.swing.event.EventListenerList listenerList> >>>>>>>> org.jfree.data.general.AbstractDataset.notifyListeners : r2 = virtualinvoke $r3.<javax.swing.event.EventListenerList: java.lang.Object[] getListenerList()>()
+org.jfree.data.general.AbstractDataset.notifyListeners : r2 = virtualinvoke $r3.<javax.swing.event.EventListenerList: java.lang.Object[] getListenerList()>() >>>>>>>> org.jfree.data.general.AbstractDataset.notifyListeners : $i1 = lengthof r2
+org.jfree.data.general.AbstractDataset.notifyListeners : $i1 = lengthof r2 >>>>>>>> org.jfree.data.general.AbstractDataset.notifyListeners : i0 = $i1 - 2
+org.jfree.data.general.AbstractDataset.notifyListeners : i0 = $i1 - 2 >>>>>>>> org.jfree.data.general.AbstractDataset.notifyListeners : if i0 < 0
+org.jfree.data.general.AbstractDataset.notifyListeners : if i0 < 0 >>>>>>>> org.jfree.data.general.AbstractDataset.addChangeListener : $r2 = r0.<org.jfree.data.general.AbstractDataset: javax.swing.event.EventListenerList listenerList>
+org.jfree.data.general.AbstractDataset.addChangeListener : $r2 = r0.<org.jfree.data.general.AbstractDataset: javax.swing.event.EventListenerList listenerList> >>>>>>>> org.jfree.data.general.AbstractDataset.addChangeListener : virtualinvoke $r2.<javax.swing.event.EventListenerList: void add(java.lang.Class,java.util.EventListener)>(class "org/jfree/data/general/DatasetChangeListener", r1)
+org.jfree.data.general.AbstractDataset.addChangeListener : virtualinvoke $r2.<javax.swing.event.EventListenerList: void add(java.lang.Class,java.util.EventListener)>(class "org/jfree/data/general/DatasetChangeListener", r1) >>>>>>>> org.jfree.data.xy.XYBarDataset.clone : $r3 = specialinvoke r0.<org.jfree.data.xy.AbstractIntervalXYDataset: java.lang.Object clone()>()
+org.jfree.data.xy.XYBarDataset.clone : $r3 = specialinvoke r0.<org.jfree.data.xy.AbstractIntervalXYDataset: java.lang.Object clone()>() >>>>>>>> org.jfree.data.general.AbstractDataset.clone : $r3 = specialinvoke r0.<java.lang.Object: java.lang.Object clone()>()
+org.jfree.data.general.AbstractDataset.clone : $r3 = specialinvoke r0.<java.lang.Object: java.lang.Object clone()>() >>>>>>>> org.jfree.data.general.AbstractDataset.clone : r1 = (org.jfree.data.general.AbstractDataset) $r3
+org.jfree.data.general.AbstractDataset.clone : r1 = (org.jfree.data.general.AbstractDataset) $r3 >>>>>>>> org.jfree.data.general.AbstractDataset.clone : $r2 = new javax.swing.event.EventListenerList
+org.jfree.data.general.AbstractDataset.clone : $r2 = new javax.swing.event.EventListenerList >>>>>>>> org.jfree.data.general.AbstractDataset.clone : specialinvoke $r2.<javax.swing.event.EventListenerList: void <init>()>()
+org.jfree.data.general.AbstractDataset.clone : specialinvoke $r2.<javax.swing.event.EventListenerList: void <init>()>() >>>>>>>> org.jfree.data.general.AbstractDataset.clone : r1.<org.jfree.data.general.AbstractDataset: javax.swing.event.EventListenerList listenerList> = $r2
+org.jfree.data.general.AbstractDataset.clone : r1.<org.jfree.data.general.AbstractDataset: javax.swing.event.EventListenerList listenerList> = $r2 >>>>>>>> org.jfree.data.general.AbstractDataset.clone : return r1
+org.jfree.data.general.AbstractDataset.clone : return r1 >>>>>>>> org.jfree.data.xy.XYBarDataset.clone : r1 = (org.jfree.data.xy.XYBarDataset) $r3
+org.jfree.data.xy.XYBarDataset.clone : r1 = (org.jfree.data.xy.XYBarDataset) $r3 >>>>>>>> org.jfree.data.xy.XYBarDataset.clone : $r4 = r0.<org.jfree.data.xy.XYBarDataset: org.jfree.data.xy.XYDataset underlying>
+org.jfree.data.xy.XYBarDataset.clone : $r4 = r0.<org.jfree.data.xy.XYBarDataset: org.jfree.data.xy.XYDataset underlying> >>>>>>>> org.jfree.data.xy.XYBarDataset.clone : $z0 = $r4 instanceof org.jfree.util.PublicCloneable
+org.jfree.data.xy.XYBarDataset.clone : $z0 = $r4 instanceof org.jfree.util.PublicCloneable >>>>>>>> org.jfree.data.xy.XYBarDataset.clone : if $z0 == 0
+org.jfree.data.xy.XYBarDataset.clone : if $z0 == 0 >>>>>>>> org.jfree.data.xy.XYBarDataset.clone : $r5 = r0.<org.jfree.data.xy.XYBarDataset: org.jfree.data.xy.XYDataset underlying>
+org.jfree.data.xy.XYBarDataset.clone : $r5 = r0.<org.jfree.data.xy.XYBarDataset: org.jfree.data.xy.XYDataset underlying> >>>>>>>> org.jfree.data.xy.XYBarDataset.clone : r2 = (org.jfree.util.PublicCloneable) $r5
+org.jfree.data.xy.XYBarDataset.clone : r2 = (org.jfree.util.PublicCloneable) $r5 >>>>>>>> org.jfree.data.xy.XYBarDataset.clone : $r6 = interfaceinvoke r2.<org.jfree.util.PublicCloneable: java.lang.Object clone()>()
+org.jfree.data.xy.XYBarDataset.clone : $r6 = interfaceinvoke r2.<org.jfree.util.PublicCloneable: java.lang.Object clone()>() >>>>>>>> org.jfree.data.xy.DefaultXYDataset.clone : $r8 = specialinvoke r0.<org.jfree.data.xy.AbstractXYDataset: java.lang.Object clone()>()
+org.jfree.data.xy.DefaultXYDataset.clone : $r8 = specialinvoke r0.<org.jfree.data.xy.AbstractXYDataset: java.lang.Object clone()>() >>>>>>>> org.jfree.data.xy.DefaultXYDataset.clone : r1 = (org.jfree.data.xy.DefaultXYDataset) $r8
+org.jfree.data.xy.DefaultXYDataset.clone : r1 = (org.jfree.data.xy.DefaultXYDataset) $r8 >>>>>>>> org.jfree.data.xy.DefaultXYDataset.clone : $r2 = new java.util.ArrayList
+org.jfree.data.xy.DefaultXYDataset.clone : $r2 = new java.util.ArrayList >>>>>>>> org.jfree.data.xy.DefaultXYDataset.clone : $r9 = r0.<org.jfree.data.xy.DefaultXYDataset: java.util.List seriesKeys>
+org.jfree.data.xy.DefaultXYDataset.clone : $r9 = r0.<org.jfree.data.xy.DefaultXYDataset: java.util.List seriesKeys> >>>>>>>> org.jfree.data.xy.DefaultXYDataset.clone : specialinvoke $r2.<java.util.ArrayList: void <init>(java.util.Collection)>($r9)
+org.jfree.data.xy.DefaultXYDataset.clone : specialinvoke $r2.<java.util.ArrayList: void <init>(java.util.Collection)>($r9) >>>>>>>> org.jfree.data.xy.DefaultXYDataset.clone : r1.<org.jfree.data.xy.DefaultXYDataset: java.util.List seriesKeys> = $r2
+org.jfree.data.xy.DefaultXYDataset.clone : r1.<org.jfree.data.xy.DefaultXYDataset: java.util.List seriesKeys> = $r2 >>>>>>>> org.jfree.data.xy.DefaultXYDataset.clone : $r10 = new java.util.ArrayList
+org.jfree.data.xy.DefaultXYDataset.clone : $r10 = new java.util.ArrayList >>>>>>>> org.jfree.data.xy.DefaultXYDataset.clone : $r11 = r0.<org.jfree.data.xy.DefaultXYDataset: java.util.List seriesList>
+org.jfree.data.xy.DefaultXYDataset.clone : $r11 = r0.<org.jfree.data.xy.DefaultXYDataset: java.util.List seriesList> >>>>>>>> org.jfree.data.xy.DefaultXYDataset.clone : $i1 = interfaceinvoke $r11.<java.util.List: int size()>()
+org.jfree.data.xy.DefaultXYDataset.clone : $i1 = interfaceinvoke $r11.<java.util.List: int size()>() >>>>>>>> org.jfree.data.xy.DefaultXYDataset.clone : specialinvoke $r10.<java.util.ArrayList: void <init>(int)>($i1)
+org.jfree.data.xy.DefaultXYDataset.clone : specialinvoke $r10.<java.util.ArrayList: void <init>(int)>($i1) >>>>>>>> org.jfree.data.xy.DefaultXYDataset.clone : r1.<org.jfree.data.xy.DefaultXYDataset: java.util.List seriesList> = $r10
+org.jfree.data.xy.DefaultXYDataset.clone : r1.<org.jfree.data.xy.DefaultXYDataset: java.util.List seriesList> = $r10 >>>>>>>> org.jfree.data.xy.DefaultXYDataset.clone : i0 = 0
+org.jfree.data.xy.DefaultXYDataset.clone : i0 = 0 >>>>>>>> org.jfree.data.xy.DefaultXYDataset.clone : $r12 = r0.<org.jfree.data.xy.DefaultXYDataset: java.util.List seriesList>
+org.jfree.data.xy.DefaultXYDataset.clone : $r12 = r0.<org.jfree.data.xy.DefaultXYDataset: java.util.List seriesList> >>>>>>>> org.jfree.data.xy.DefaultXYDataset.clone : $i2 = interfaceinvoke $r12.<java.util.List: int size()>()
+org.jfree.data.xy.DefaultXYDataset.clone : $i2 = interfaceinvoke $r12.<java.util.List: int size()>() >>>>>>>> org.jfree.data.xy.DefaultXYDataset.clone : if i0 >= $i2
+org.jfree.data.xy.DefaultXYDataset.clone : if i0 >= $i2 >>>>>>>> org.jfree.data.xy.DefaultXYDataset.clone : $r13 = r0.<org.jfree.data.xy.DefaultXYDataset: java.util.List seriesList>
+org.jfree.data.xy.DefaultXYDataset.clone : $r13 = r0.<org.jfree.data.xy.DefaultXYDataset: java.util.List seriesList> >>>>>>>> org.jfree.data.xy.DefaultXYDataset.clone : $r14 = interfaceinvoke $r13.<java.util.List: java.lang.Object get(int)>(i0)
+org.jfree.data.xy.DefaultXYDataset.clone : $r14 = interfaceinvoke $r13.<java.util.List: java.lang.Object get(int)>(i0) >>>>>>>> org.jfree.data.xy.DefaultXYDataset.clone : $r15 = (double[][]) $r14
+org.jfree.data.xy.DefaultXYDataset.clone : $r15 = (double[][]) $r14 >>>>>>>> org.jfree.data.xy.DefaultXYDataset.clone : r3 = (double[][]) $r15
+org.jfree.data.xy.DefaultXYDataset.clone : r3 = (double[][]) $r15 >>>>>>>> org.jfree.data.xy.DefaultXYDataset.clone : r4 = r3[0]
+org.jfree.data.xy.DefaultXYDataset.clone : r4 = r3[0] >>>>>>>> org.jfree.data.xy.DefaultXYDataset.clone : r5 = r3[1]
+org.jfree.data.xy.DefaultXYDataset.clone : r5 = r3[1] >>>>>>>> org.jfree.data.xy.DefaultXYDataset.clone : $i3 = lengthof r4
+org.jfree.data.xy.DefaultXYDataset.clone : $i3 = lengthof r4 >>>>>>>> org.jfree.data.xy.DefaultXYDataset.clone : r6 = newarray (double)[$i3]
+org.jfree.data.xy.DefaultXYDataset.clone : r6 = newarray (double)[$i3] >>>>>>>> org.jfree.data.xy.DefaultXYDataset.clone : $i4 = lengthof r5
+org.jfree.data.xy.DefaultXYDataset.clone : $i4 = lengthof r5 >>>>>>>> org.jfree.data.xy.DefaultXYDataset.clone : r7 = newarray (double)[$i4]
+org.jfree.data.xy.DefaultXYDataset.clone : r7 = newarray (double)[$i4] >>>>>>>> org.jfree.data.xy.DefaultXYDataset.clone : $i5 = lengthof r4
+org.jfree.data.xy.DefaultXYDataset.clone : $i5 = lengthof r4 >>>>>>>> org.jfree.data.xy.DefaultXYDataset.clone : staticinvoke <java.lang.System: void arraycopy(java.lang.Object,int,java.lang.Object,int,int)>(r4, 0, r6, 0, $i5)
+org.jfree.data.xy.DefaultXYDataset.clone : staticinvoke <java.lang.System: void arraycopy(java.lang.Object,int,java.lang.Object,int,int)>(r4, 0, r6, 0, $i5) >>>>>>>> org.jfree.data.xy.DefaultXYDataset.clone : $i6 = lengthof r5
+org.jfree.data.xy.DefaultXYDataset.clone : $i6 = lengthof r5 >>>>>>>> org.jfree.data.xy.DefaultXYDataset.clone : staticinvoke <java.lang.System: void arraycopy(java.lang.Object,int,java.lang.Object,int,int)>(r5, 0, r7, 0, $i6)
+org.jfree.data.xy.DefaultXYDataset.clone : staticinvoke <java.lang.System: void arraycopy(java.lang.Object,int,java.lang.Object,int,int)>(r5, 0, r7, 0, $i6) >>>>>>>> org.jfree.data.xy.DefaultXYDataset.clone : $r16 = r1.<org.jfree.data.xy.DefaultXYDataset: java.util.List seriesList>
+org.jfree.data.xy.DefaultXYDataset.clone : $r16 = r1.<org.jfree.data.xy.DefaultXYDataset: java.util.List seriesList> >>>>>>>> org.jfree.data.xy.DefaultXYDataset.clone : $r17 = newarray (double[])[2]
+org.jfree.data.xy.DefaultXYDataset.clone : $r17 = newarray (double[])[2] >>>>>>>> org.jfree.data.xy.DefaultXYDataset.clone : $r17[0] = r6
+org.jfree.data.xy.DefaultXYDataset.clone : $r17[0] = r6 >>>>>>>> org.jfree.data.xy.DefaultXYDataset.clone : $r17[1] = r7
+org.jfree.data.xy.DefaultXYDataset.clone : $r17[1] = r7 >>>>>>>> org.jfree.data.xy.DefaultXYDataset.clone : interfaceinvoke $r16.<java.util.List: void add(int,java.lang.Object)>(i0, $r17)
+org.jfree.data.xy.DefaultXYDataset.clone : interfaceinvoke $r16.<java.util.List: void add(int,java.lang.Object)>(i0, $r17) >>>>>>>> org.jfree.data.xy.DefaultXYDataset.clone : i0 = i0 + 1
+org.jfree.data.xy.DefaultXYDataset.clone : i0 = i0 + 1 >>>>>>>> org.jfree.data.xy.DefaultXYDataset.clone : goto [?= $r12 = r0.<org.jfree.data.xy.DefaultXYDataset: java.util.List seriesList>]
+org.jfree.data.xy.DefaultXYDataset.clone : goto [?= $r12 = r0.<org.jfree.data.xy.DefaultXYDataset: java.util.List seriesList>] >>>>>>>> org.jfree.data.xy.DefaultXYDataset.clone : return r1
+org.jfree.data.xy.DefaultXYDataset.clone : return r1 >>>>>>>> org.jfree.data.xy.XYBarDataset.clone : $r7 = (org.jfree.data.xy.XYDataset) $r6
+org.jfree.data.xy.XYBarDataset.clone : $r7 = (org.jfree.data.xy.XYDataset) $r6 >>>>>>>> org.jfree.data.xy.XYBarDataset.clone : r1.<org.jfree.data.xy.XYBarDataset: org.jfree.data.xy.XYDataset underlying> = $r7
+org.jfree.data.xy.XYBarDataset.clone : r1.<org.jfree.data.xy.XYBarDataset: org.jfree.data.xy.XYDataset underlying> = $r7 >>>>>>>> org.jfree.data.xy.XYBarDataset.clone : return r1
+org.jfree.data.xy.XYBarDataset.clone : return r1 >>>>>>>> org.jfree.data.xy.XYBarDataset.equals : if r1 != r0
+org.jfree.data.xy.XYBarDataset.equals : if r1 != r0 >>>>>>>> org.jfree.data.xy.XYBarDataset.equals : $z0 = r1 instanceof org.jfree.data.xy.XYBarDataset
+org.jfree.data.xy.XYBarDataset.equals : $z0 = r1 instanceof org.jfree.data.xy.XYBarDataset >>>>>>>> org.jfree.data.xy.XYBarDataset.equals : if $z0 != 0
+org.jfree.data.xy.XYBarDataset.equals : if $z0 != 0 >>>>>>>> org.jfree.data.xy.XYBarDataset.equals : r2 = (org.jfree.data.xy.XYBarDataset) r1
+org.jfree.data.xy.XYBarDataset.equals : r2 = (org.jfree.data.xy.XYBarDataset) r1 >>>>>>>> org.jfree.data.xy.XYBarDataset.equals : $r3 = r0.<org.jfree.data.xy.XYBarDataset: org.jfree.data.xy.XYDataset underlying>
+org.jfree.data.xy.XYBarDataset.equals : $r3 = r0.<org.jfree.data.xy.XYBarDataset: org.jfree.data.xy.XYDataset underlying> >>>>>>>> org.jfree.data.xy.XYBarDataset.equals : $r4 = r2.<org.jfree.data.xy.XYBarDataset: org.jfree.data.xy.XYDataset underlying>
+org.jfree.data.xy.XYBarDataset.equals : $r4 = r2.<org.jfree.data.xy.XYBarDataset: org.jfree.data.xy.XYDataset underlying> >>>>>>>> org.jfree.data.xy.XYBarDataset.equals : $z1 = virtualinvoke $r3.<java.lang.Object: boolean equals(java.lang.Object)>($r4)
+org.jfree.data.xy.XYBarDataset.equals : $z1 = virtualinvoke $r3.<java.lang.Object: boolean equals(java.lang.Object)>($r4) >>>>>>>> org.jfree.data.xy.DefaultXYDataset.equals : if r1 != r0
+org.jfree.data.xy.DefaultXYDataset.equals : if r1 != r0 >>>>>>>> org.jfree.data.xy.DefaultXYDataset.equals : $z0 = r1 instanceof org.jfree.data.xy.DefaultXYDataset
+org.jfree.data.xy.DefaultXYDataset.equals : $z0 = r1 instanceof org.jfree.data.xy.DefaultXYDataset >>>>>>>> org.jfree.data.xy.DefaultXYDataset.equals : if $z0 != 0
+org.jfree.data.xy.DefaultXYDataset.equals : if $z0 != 0 >>>>>>>> org.jfree.data.xy.DefaultXYDataset.equals : r2 = (org.jfree.data.xy.DefaultXYDataset) r1
+org.jfree.data.xy.DefaultXYDataset.equals : r2 = (org.jfree.data.xy.DefaultXYDataset) r1 >>>>>>>> org.jfree.data.xy.DefaultXYDataset.equals : $r9 = r0.<org.jfree.data.xy.DefaultXYDataset: java.util.List seriesKeys>
+org.jfree.data.xy.DefaultXYDataset.equals : $r9 = r0.<org.jfree.data.xy.DefaultXYDataset: java.util.List seriesKeys> >>>>>>>> org.jfree.data.xy.DefaultXYDataset.equals : $r10 = r2.<org.jfree.data.xy.DefaultXYDataset: java.util.List seriesKeys>
+org.jfree.data.xy.DefaultXYDataset.equals : $r10 = r2.<org.jfree.data.xy.DefaultXYDataset: java.util.List seriesKeys> >>>>>>>> org.jfree.data.xy.DefaultXYDataset.equals : $z1 = interfaceinvoke $r9.<java.util.List: boolean equals(java.lang.Object)>($r10)
+org.jfree.data.xy.DefaultXYDataset.equals : $z1 = interfaceinvoke $r9.<java.util.List: boolean equals(java.lang.Object)>($r10) >>>>>>>> org.jfree.data.xy.DefaultXYDataset.equals : if $z1 != 0
+org.jfree.data.xy.DefaultXYDataset.equals : if $z1 != 0 >>>>>>>> org.jfree.data.xy.DefaultXYDataset.equals : i0 = 0
+org.jfree.data.xy.DefaultXYDataset.equals : i0 = 0 >>>>>>>> org.jfree.data.xy.DefaultXYDataset.equals : $r11 = r0.<org.jfree.data.xy.DefaultXYDataset: java.util.List seriesList>
+org.jfree.data.xy.DefaultXYDataset.equals : $r11 = r0.<org.jfree.data.xy.DefaultXYDataset: java.util.List seriesList> >>>>>>>> org.jfree.data.xy.DefaultXYDataset.equals : $i1 = interfaceinvoke $r11.<java.util.List: int size()>()
+org.jfree.data.xy.DefaultXYDataset.equals : $i1 = interfaceinvoke $r11.<java.util.List: int size()>() >>>>>>>> org.jfree.data.xy.DefaultXYDataset.equals : if i0 >= $i1
+org.jfree.data.xy.DefaultXYDataset.equals : if i0 >= $i1 >>>>>>>> org.jfree.data.xy.DefaultXYDataset.equals : $r12 = r0.<org.jfree.data.xy.DefaultXYDataset: java.util.List seriesList>
+org.jfree.data.xy.DefaultXYDataset.equals : $r12 = r0.<org.jfree.data.xy.DefaultXYDataset: java.util.List seriesList> >>>>>>>> org.jfree.data.xy.DefaultXYDataset.equals : $r13 = interfaceinvoke $r12.<java.util.List: java.lang.Object get(int)>(i0)
+org.jfree.data.xy.DefaultXYDataset.equals : $r13 = interfaceinvoke $r12.<java.util.List: java.lang.Object get(int)>(i0) >>>>>>>> org.jfree.data.xy.DefaultXYDataset.equals : $r14 = (double[][]) $r13
+org.jfree.data.xy.DefaultXYDataset.equals : $r14 = (double[][]) $r13 >>>>>>>> org.jfree.data.xy.DefaultXYDataset.equals : r3 = (double[][]) $r14
+org.jfree.data.xy.DefaultXYDataset.equals : r3 = (double[][]) $r14 >>>>>>>> org.jfree.data.xy.DefaultXYDataset.equals : $r15 = r2.<org.jfree.data.xy.DefaultXYDataset: java.util.List seriesList>
+org.jfree.data.xy.DefaultXYDataset.equals : $r15 = r2.<org.jfree.data.xy.DefaultXYDataset: java.util.List seriesList> >>>>>>>> org.jfree.data.xy.DefaultXYDataset.equals : $r16 = interfaceinvoke $r15.<java.util.List: java.lang.Object get(int)>(i0)
+org.jfree.data.xy.DefaultXYDataset.equals : $r16 = interfaceinvoke $r15.<java.util.List: java.lang.Object get(int)>(i0) >>>>>>>> org.jfree.data.xy.DefaultXYDataset.equals : $r17 = (double[][]) $r16
+org.jfree.data.xy.DefaultXYDataset.equals : $r17 = (double[][]) $r16 >>>>>>>> org.jfree.data.xy.DefaultXYDataset.equals : r4 = (double[][]) $r17
+org.jfree.data.xy.DefaultXYDataset.equals : r4 = (double[][]) $r17 >>>>>>>> org.jfree.data.xy.DefaultXYDataset.equals : r5 = r3[0]
+org.jfree.data.xy.DefaultXYDataset.equals : r5 = r3[0] >>>>>>>> org.jfree.data.xy.DefaultXYDataset.equals : r6 = r4[0]
+org.jfree.data.xy.DefaultXYDataset.equals : r6 = r4[0] >>>>>>>> org.jfree.data.xy.DefaultXYDataset.equals : $z2 = staticinvoke <java.util.Arrays: boolean equals(double[],double[])>(r5, r6)
+org.jfree.data.xy.DefaultXYDataset.equals : $z2 = staticinvoke <java.util.Arrays: boolean equals(double[],double[])>(r5, r6) >>>>>>>> org.jfree.data.xy.DefaultXYDataset.equals : if $z2 != 0
+org.jfree.data.xy.DefaultXYDataset.equals : if $z2 != 0 >>>>>>>> org.jfree.data.xy.DefaultXYDataset.equals : r7 = r3[1]
+org.jfree.data.xy.DefaultXYDataset.equals : r7 = r3[1] >>>>>>>> org.jfree.data.xy.DefaultXYDataset.equals : r8 = r4[1]
+org.jfree.data.xy.DefaultXYDataset.equals : r8 = r4[1] >>>>>>>> org.jfree.data.xy.DefaultXYDataset.equals : $z3 = staticinvoke <java.util.Arrays: boolean equals(double[],double[])>(r7, r8)
+org.jfree.data.xy.DefaultXYDataset.equals : $z3 = staticinvoke <java.util.Arrays: boolean equals(double[],double[])>(r7, r8) >>>>>>>> org.jfree.data.xy.DefaultXYDataset.equals : if $z3 != 0
+org.jfree.data.xy.DefaultXYDataset.equals : if $z3 != 0 >>>>>>>> org.jfree.data.xy.DefaultXYDataset.equals : i0 = i0 + 1
+org.jfree.data.xy.DefaultXYDataset.equals : i0 = i0 + 1 >>>>>>>> org.jfree.data.xy.DefaultXYDataset.equals : goto [?= $r11 = r0.<org.jfree.data.xy.DefaultXYDataset: java.util.List seriesList>]
+org.jfree.data.xy.DefaultXYDataset.equals : goto [?= $r11 = r0.<org.jfree.data.xy.DefaultXYDataset: java.util.List seriesList>] >>>>>>>> org.jfree.data.xy.DefaultXYDataset.equals : return 1
+org.jfree.data.xy.DefaultXYDataset.equals : return 1 >>>>>>>> org.jfree.data.xy.XYBarDataset.equals : if $z1 != 0
+org.jfree.data.xy.XYBarDataset.equals : if $z1 != 0 >>>>>>>> org.jfree.data.xy.XYBarDataset.equals : $d0 = r0.<org.jfree.data.xy.XYBarDataset: double barWidth>
+org.jfree.data.xy.XYBarDataset.equals : $d0 = r0.<org.jfree.data.xy.XYBarDataset: double barWidth> >>>>>>>> org.jfree.data.xy.XYBarDataset.equals : $d1 = r2.<org.jfree.data.xy.XYBarDataset: double barWidth>
+org.jfree.data.xy.XYBarDataset.equals : $d1 = r2.<org.jfree.data.xy.XYBarDataset: double barWidth> >>>>>>>> org.jfree.data.xy.XYBarDataset.equals : $b0 = $d0 cmpl $d1
+org.jfree.data.xy.XYBarDataset.equals : $b0 = $d0 cmpl $d1 >>>>>>>> org.jfree.data.xy.XYBarDataset.equals : if $b0 == 0
+org.jfree.data.xy.XYBarDataset.equals : if $b0 == 0 >>>>>>>> org.jfree.data.xy.XYBarDataset.equals : return 1
+org.jfree.data.xy.XYBarDataset.equals : return 1 >>>>>>>> org.jfree.data.xy.XYBarDataset.getUnderlyingDataset : $r1 = r0.<org.jfree.data.xy.XYBarDataset: org.jfree.data.xy.XYDataset underlying>
+org.jfree.data.xy.XYBarDataset.getUnderlyingDataset : $r1 = r0.<org.jfree.data.xy.XYBarDataset: org.jfree.data.xy.XYDataset underlying> >>>>>>>> org.jfree.data.xy.XYBarDataset.getUnderlyingDataset : return $r1
+org.jfree.data.xy.XYBarDataset.getUnderlyingDataset : return $r1 >>>>>>>> org.jfree.data.general.AbstractDataset.notifyListeners : $r4 = r2[i0]
+org.jfree.data.general.AbstractDataset.notifyListeners : $r4 = r2[i0] >>>>>>>> org.jfree.data.general.AbstractDataset.notifyListeners : if $r4 != class "org/jfree/data/general/DatasetChangeListener"
+org.jfree.data.general.AbstractDataset.notifyListeners : if $r4 != class "org/jfree/data/general/DatasetChangeListener" >>>>>>>> org.jfree.data.general.AbstractDataset.notifyListeners : $i2 = i0 + 1
+org.jfree.data.general.AbstractDataset.notifyListeners : $i2 = i0 + 1 >>>>>>>> org.jfree.data.general.AbstractDataset.notifyListeners : $r5 = r2[$i2]
+org.jfree.data.general.AbstractDataset.notifyListeners : $r5 = r2[$i2] >>>>>>>> org.jfree.data.general.AbstractDataset.notifyListeners : $r6 = (org.jfree.data.general.DatasetChangeListener) $r5
+org.jfree.data.general.AbstractDataset.notifyListeners : $r6 = (org.jfree.data.general.DatasetChangeListener) $r5 >>>>>>>> org.jfree.data.general.AbstractDataset.notifyListeners : interfaceinvoke $r6.<org.jfree.data.general.DatasetChangeListener: void datasetChanged(org.jfree.data.general.DatasetChangeEvent)>(r1)
+org.jfree.data.general.AbstractDataset.notifyListeners : interfaceinvoke $r6.<org.jfree.data.general.DatasetChangeListener: void datasetChanged(org.jfree.data.general.DatasetChangeEvent)>(r1) >>>>>>>> org.jfree.data.xy.XYBarDataset.datasetChanged : virtualinvoke r0.<org.jfree.data.xy.XYBarDataset: void notifyListeners(org.jfree.data.general.DatasetChangeEvent)>(r1)
+org.jfree.data.xy.XYBarDataset.datasetChanged : virtualinvoke r0.<org.jfree.data.xy.XYBarDataset: void notifyListeners(org.jfree.data.general.DatasetChangeEvent)>(r1) >>>>>>>> org.jfree.data.general.AbstractDataset.notifyListeners : i0 = i0 + -2
+org.jfree.data.general.AbstractDataset.notifyListeners : i0 = i0 + -2 >>>>>>>> org.jfree.data.general.AbstractDataset.notifyListeners : goto [?= (branch)]
+org.jfree.data.general.AbstractDataset.notifyListeners : goto [?= (branch)] >>>>>>>> org.jfree.data.xy.DefaultXYDataset.equals : return 0
+org.jfree.data.xy.DefaultXYDataset.equals : return 0 >>>>>>>> org.jfree.data.xy.XYBarDataset.equals : return 0

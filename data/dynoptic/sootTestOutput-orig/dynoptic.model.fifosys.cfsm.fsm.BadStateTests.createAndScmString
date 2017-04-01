@@ -1,0 +1,27 @@
+dynoptic.main.DynopticMain.setUpLogging : $r1 = <dynoptic.main.DynopticMain: java.util.logging.Logger logger>
+dynoptic.model.fifosys.gfsm.observed.fifosys.ObsFifoSysState.clearCache : $r0 = <dynoptic.model.fifosys.gfsm.observed.fifosys.ObsFifoSysState: java.util.Map fifoSysStatesMap>
+dynoptic.model.fifosys.gfsm.observed.ObsFSMState.clearCache : $r1 = <dynoptic.model.fifosys.gfsm.observed.ObsFSMState: java.util.Map initialProcessStatesMap>
+dynoptic.model.fifosys.gfsm.observed.ObsFSMState.clearCache : <dynoptic.model.fifosys.gfsm.observed.ObsFSMState: int prevAnonId> = -1
+dynoptic.model.fifosys.gfsm.observed.ObsFSMState.clearCache : $r0 = <dynoptic.model.fifosys.gfsm.observed.ObsFSMState: java.util.Map prevStateAndEventMap>
+dynoptic.model.fifosys.gfsm.observed.ObsMultFSMState.clearCache : $r0 = <dynoptic.model.fifosys.gfsm.observed.ObsMultFSMState: java.util.Map cache>
+dynoptic.model.fifosys.cfsm.fsm.FSMState.getScmId : $i0 = r0.<dynoptic.model.fifosys.cfsm.fsm.FSMState: int scmId>
+dynoptic.model.fifosys.AbsMultiFSMState.getNumProcesses : $i0 = r0.<dynoptic.model.fifosys.AbsMultiFSMState: int numProcesses>
+dynoptic.model.fifosys.cfsm.BadState.toScmString : $r18 = r0.<dynoptic.model.fifosys.cfsm.BadState: java.util.List qReList>
+dynoptic.model.fifosys.cfsm.BadState.toScmString : $r24 = new java.lang.StringBuilder
+dynoptic.model.fifosys.cfsm.BadState.toScmString : $r30 = new java.lang.StringBuilder
+dynoptic.model.fifosys.cfsm.BadState.toScmString : $r21 = new java.lang.StringBuilder
+dynoptic.model.fifosys.cfsm.BadState.toScmString : $r4 = new java.lang.StringBuilder
+dynoptic.model.fifosys.cfsm.BadState.toScmString : $r20 = interfaceinvoke r19.<java.util.Iterator: java.lang.Object next()>()
+dynoptic.model.fifosys.cfsm.BadState.toScmString : goto [?= staticinvoke <edu.washington.cs.dt.impact.util.Tracer: void trace(java.lang.String,java.lang.String)>("$z1 = interfaceinvoke r19.<java.util.Iterator: boolean hasNext()>()", "dynoptic.model.fifosys.cfsm.BadState.toScmString")]
+dynoptic.model.fifosys.cfsm.BadState.toScmString : $r10 = virtualinvoke $r9.<dynoptic.model.fifosys.cfsm.CFSMState: dynoptic.model.fifosys.cfsm.fsm.FSMState getFSMState(int)>(i0)
+dynoptic.model.fifosys.cfsm.BadState.toScmString : $r13 = r0.<dynoptic.model.fifosys.cfsm.BadState: java.util.List qReList>
+dynoptic.model.fifosys.cfsm.BadState.toScmString : $z2 = interfaceinvoke r19.<java.util.Iterator: boolean hasNext()>()
+dynoptic.model.fifosys.cfsm.BadState.toScmString : i0 = 0
+dynoptic.model.fifosys.cfsm.BadState.toScmString : $r14 = new java.lang.StringBuilder
+dynoptic.model.fifosys.cfsm.BadState.toScmString : r1 = "("
+dynoptic.model.fifosys.cfsm.BadState.toScmString : $r27 = new java.lang.StringBuilder
+dynoptic.model.fifosys.cfsm.BadState.toScmString : $z1 = interfaceinvoke r19.<java.util.Iterator: boolean hasNext()>()
+dynoptic.model.fifosys.cfsm.BadState.toString : $r1 = virtualinvoke r0.<dynoptic.model.fifosys.cfsm.BadState: java.lang.String toScmString()>()
+dynoptic.model.fifosys.cfsm.CFSMState.getFSMState : $r1 = r0.<dynoptic.model.fifosys.cfsm.CFSMState: java.util.List fsmStates>
+dynoptic.util.Util.newMap : $r0 = new java.util.LinkedHashMap
+dynoptic.util.Util.newList : $r0 = new java.util.ArrayList

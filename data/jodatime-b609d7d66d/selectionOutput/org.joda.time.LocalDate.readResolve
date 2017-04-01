@@ -1,0 +1,11 @@
+org.joda.time.LocalDate.readResolve : $r1 = <org.joda.time.DateTimeZone: org.joda.time.DateTimeZone UTC> >>>>>>>> org.joda.time.LocalDate.readResolve : $r2 = r0.<org.joda.time.LocalDate: org.joda.time.Chronology iChronology>
+org.joda.time.LocalDate.readResolve : $r2 = r0.<org.joda.time.LocalDate: org.joda.time.Chronology iChronology> >>>>>>>> org.joda.time.LocalDate.readResolve : $r3 = virtualinvoke $r2.<org.joda.time.Chronology: org.joda.time.DateTimeZone getZone()>()
+org.joda.time.LocalDate.readResolve : $r3 = virtualinvoke $r2.<org.joda.time.Chronology: org.joda.time.DateTimeZone getZone()>() >>>>>>>> org.joda.time.LocalDate.readResolve : $z0 = virtualinvoke $r1.<org.joda.time.DateTimeZone: boolean equals(java.lang.Object)>($r3)
+org.joda.time.LocalDate.readResolve : $z0 = virtualinvoke $r1.<org.joda.time.DateTimeZone: boolean equals(java.lang.Object)>($r3) >>>>>>>> org.joda.time.LocalDate.readResolve : if $z0 != 0
+org.joda.time.LocalDate.readResolve : if $z0 != 0 >>>>>>>> org.joda.time.LocalDate.readResolve : $r4 = new org.joda.time.LocalDate
+org.joda.time.LocalDate.readResolve : if $z0 != 0 >>>>>>>> org.joda.time.LocalDate.readResolve : return r0
+org.joda.time.LocalDate.readResolve : $r4 = new org.joda.time.LocalDate >>>>>>>> org.joda.time.LocalDate.readResolve : $l0 = r0.<org.joda.time.LocalDate: long iLocalMillis>
+org.joda.time.LocalDate.readResolve : $l0 = r0.<org.joda.time.LocalDate: long iLocalMillis> >>>>>>>> org.joda.time.LocalDate.readResolve : $r5 = r0.<org.joda.time.LocalDate: org.joda.time.Chronology iChronology>
+org.joda.time.LocalDate.readResolve : $r5 = r0.<org.joda.time.LocalDate: org.joda.time.Chronology iChronology> >>>>>>>> org.joda.time.LocalDate.readResolve : $r6 = virtualinvoke $r5.<org.joda.time.Chronology: org.joda.time.Chronology withUTC()>()
+org.joda.time.LocalDate.readResolve : $r6 = virtualinvoke $r5.<org.joda.time.Chronology: org.joda.time.Chronology withUTC()>() >>>>>>>> org.joda.time.LocalDate.readResolve : specialinvoke $r4.<org.joda.time.LocalDate: void <init>(long,org.joda.time.Chronology)>($l0, $r6)
+org.joda.time.LocalDate.readResolve : specialinvoke $r4.<org.joda.time.LocalDate: void <init>(long,org.joda.time.Chronology)>($l0, $r6) >>>>>>>> org.joda.time.LocalDate.readResolve : return $r4

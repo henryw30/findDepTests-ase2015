@@ -1,0 +1,18 @@
+org.jfree.data.general.CombinedDataset.getDatasetInfo : $r1 = r0.<org.jfree.data.general.CombinedDataset: java.util.List datasetInfo>
+org.jfree.data.xy.XIntervalSeriesCollection.addSeries : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "series")
+org.jfree.data.xy.XIntervalSeriesCollection.addSeries : virtualinvoke r1.<org.jfree.data.xy.XIntervalSeries: void addChangeListener(org.jfree.data.general.SeriesChangeListener)>(r0)
+org.jfree.data.xy.XIntervalSeriesCollection.addSeries : virtualinvoke r0.<org.jfree.data.xy.XIntervalSeriesCollection: void fireDatasetChanged()>()
+org.jfree.data.xy.XIntervalSeriesCollection.addSeries : $r2 = r0.<org.jfree.data.xy.XIntervalSeriesCollection: java.util.List data>
+org.jfree.data.general.CombinedDataset.getSeriesKey : r1 = specialinvoke r0.<org.jfree.data.general.CombinedDataset: org.jfree.data.general.CombinedDataset$DatasetInfo getDatasetInfo(int)>(i0)
+org.jfree.data.general.CombinedDataset.add : virtualinvoke r0.<org.jfree.data.general.CombinedDataset: void notifyListeners(org.jfree.data.general.DatasetChangeEvent)>(r4)
+org.jfree.data.general.CombinedDataset.add : $r3 = new org.jfree.data.general.DatasetChangeEvent
+org.jfree.data.general.CombinedDataset.add : i0 = 0
+org.jfree.data.general.CombinedDataset.add : $r2 = r1[i0]
+org.jfree.data.general.AbstractDataset.notifyListeners : $r3 = r0.<org.jfree.data.general.AbstractDataset: javax.swing.event.EventListenerList listenerList>
+org.jfree.data.general.AbstractDataset.notifyListeners : $i1 = lengthof r2
+org.jfree.data.xy.XIntervalSeriesCollection.getSeriesCount : $r1 = r0.<org.jfree.data.xy.XIntervalSeriesCollection: java.util.List data>
+org.jfree.data.general.CombinedDataset.fastAdd : $r2 = r0.<org.jfree.data.general.CombinedDataset: java.util.List datasetInfo>
+org.jfree.data.general.CombinedDataset.fastAdd : i0 = 0
+org.jfree.data.general.Series.addChangeListener : $r2 = r0.<org.jfree.data.general.Series: javax.swing.event.EventListenerList listeners>
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null goto return
+org.jfree.data.general.AbstractDataset.fireDatasetChanged : $r1 = new org.jfree.data.general.DatasetChangeEvent

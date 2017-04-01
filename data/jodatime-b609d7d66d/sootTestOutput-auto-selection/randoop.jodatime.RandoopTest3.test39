@@ -1,0 +1,155 @@
+org.joda.time.chrono.JulianChronology.getInstanceUTC : $r0 = <org.joda.time.chrono.JulianChronology: org.joda.time.chrono.JulianChronology INSTANCE_UTC> >>>>>>>> org.joda.time.chrono.JulianChronology.getInstanceUTC : return $r0
+org.joda.time.chrono.JulianChronology.getInstanceUTC : return $r0 >>>>>>>> org.joda.time.DateMidnight.now : if r0 != null
+org.joda.time.DateMidnight.now : if r0 != null >>>>>>>> org.joda.time.DateMidnight.now : $r2 = new org.joda.time.DateMidnight
+org.joda.time.DateMidnight.now : $r2 = new org.joda.time.DateMidnight >>>>>>>> org.joda.time.DateMidnight.now : specialinvoke $r2.<org.joda.time.DateMidnight: void <init>(org.joda.time.Chronology)>(r0)
+org.joda.time.DateMidnight.now : specialinvoke $r2.<org.joda.time.DateMidnight: void <init>(org.joda.time.Chronology)>(r0) >>>>>>>> org.joda.time.DateTimeUtils.currentTimeMillis : $r0 = <org.joda.time.DateTimeUtils: org.joda.time.DateTimeUtils$MillisProvider cMillisProvider>
+org.joda.time.DateTimeUtils.currentTimeMillis : $r0 = <org.joda.time.DateTimeUtils: org.joda.time.DateTimeUtils$MillisProvider cMillisProvider> >>>>>>>> org.joda.time.DateTimeUtils.currentTimeMillis : $l0 = interfaceinvoke $r0.<org.joda.time.DateTimeUtils$MillisProvider: long getMillis()>()
+org.joda.time.DateTimeUtils.currentTimeMillis : $l0 = interfaceinvoke $r0.<org.joda.time.DateTimeUtils$MillisProvider: long getMillis()>() >>>>>>>> org.joda.time.DateTimeUtils$FixedMillisProvider.getMillis : $l0 = r0.<org.joda.time.DateTimeUtils$FixedMillisProvider: long iMillis>
+org.joda.time.DateTimeUtils$FixedMillisProvider.getMillis : $l0 = r0.<org.joda.time.DateTimeUtils$FixedMillisProvider: long iMillis> >>>>>>>> org.joda.time.DateTimeUtils$FixedMillisProvider.getMillis : return $l0
+org.joda.time.DateTimeUtils$FixedMillisProvider.getMillis : return $l0 >>>>>>>> org.joda.time.DateTimeUtils.currentTimeMillis : return $l0
+org.joda.time.DateTimeUtils.currentTimeMillis : return $l0 >>>>>>>> org.joda.time.base.BaseDateTime.checkChronology : $r2 = staticinvoke <org.joda.time.DateTimeUtils: org.joda.time.Chronology getChronology(org.joda.time.Chronology)>(r1)
+org.joda.time.base.BaseDateTime.checkChronology : $r2 = staticinvoke <org.joda.time.DateTimeUtils: org.joda.time.Chronology getChronology(org.joda.time.Chronology)>(r1) >>>>>>>> org.joda.time.DateTimeUtils.getChronology : if r0 != null
+org.joda.time.DateTimeUtils.getChronology : if r0 != null >>>>>>>> org.joda.time.DateTimeUtils.getChronology : return r0
+org.joda.time.DateTimeUtils.getChronology : return r0 >>>>>>>> org.joda.time.base.BaseDateTime.checkChronology : return $r2
+org.joda.time.base.BaseDateTime.checkChronology : return $r2 >>>>>>>> org.joda.time.DateMidnight.checkInstant : $r2 = virtualinvoke r1.<org.joda.time.Chronology: org.joda.time.DateTimeField dayOfMonth()>()
+org.joda.time.DateMidnight.checkInstant : $r2 = virtualinvoke r1.<org.joda.time.Chronology: org.joda.time.DateTimeField dayOfMonth()>() >>>>>>>> org.joda.time.chrono.AssembledChronology.dayOfMonth : $r1 = r0.<org.joda.time.chrono.AssembledChronology: org.joda.time.DateTimeField iDayOfMonth>
+org.joda.time.chrono.AssembledChronology.dayOfMonth : $r1 = r0.<org.joda.time.chrono.AssembledChronology: org.joda.time.DateTimeField iDayOfMonth> >>>>>>>> org.joda.time.chrono.AssembledChronology.dayOfMonth : return $r1
+org.joda.time.chrono.AssembledChronology.dayOfMonth : return $r1 >>>>>>>> org.joda.time.DateMidnight.checkInstant : $l1 = virtualinvoke $r2.<org.joda.time.DateTimeField: long roundFloor(long)>(l0)
+org.joda.time.DateMidnight.checkInstant : $l1 = virtualinvoke $r2.<org.joda.time.DateTimeField: long roundFloor(long)>(l0) >>>>>>>> org.joda.time.field.PreciseDurationDateTimeField.roundFloor : $b1 = l0 cmp 0L
+org.joda.time.field.PreciseDurationDateTimeField.roundFloor : $b1 = l0 cmp 0L >>>>>>>> org.joda.time.field.PreciseDurationDateTimeField.roundFloor : if $b1 < 0
+org.joda.time.field.PreciseDurationDateTimeField.roundFloor : if $b1 < 0 >>>>>>>> org.joda.time.field.PreciseDurationDateTimeField.roundFloor : $l2 = r0.<org.joda.time.field.PreciseDurationDateTimeField: long iUnitMillis>
+org.joda.time.field.PreciseDurationDateTimeField.roundFloor : $l2 = r0.<org.joda.time.field.PreciseDurationDateTimeField: long iUnitMillis> >>>>>>>> org.joda.time.field.PreciseDurationDateTimeField.roundFloor : $l3 = l0 % $l2
+org.joda.time.field.PreciseDurationDateTimeField.roundFloor : $l3 = l0 % $l2 >>>>>>>> org.joda.time.field.PreciseDurationDateTimeField.roundFloor : $l4 = l0 - $l3
+org.joda.time.field.PreciseDurationDateTimeField.roundFloor : $l4 = l0 - $l3 >>>>>>>> org.joda.time.field.PreciseDurationDateTimeField.roundFloor : return $l4
+org.joda.time.field.PreciseDurationDateTimeField.roundFloor : return $l4 >>>>>>>> org.joda.time.DateMidnight.checkInstant : return $l1
+org.joda.time.DateMidnight.checkInstant : return $l1 >>>>>>>> org.joda.time.DateMidnight.now : return $r2
+org.joda.time.DateMidnight.now : return $r2 >>>>>>>> org.joda.time.DateMidnight.plusDays : if i0 != 0
+org.joda.time.DateMidnight.plusDays : if i0 != 0 >>>>>>>> org.joda.time.DateMidnight.plusDays : $r1 = virtualinvoke r0.<org.joda.time.DateMidnight: org.joda.time.Chronology getChronology()>()
+org.joda.time.DateMidnight.plusDays : $r1 = virtualinvoke r0.<org.joda.time.DateMidnight: org.joda.time.Chronology getChronology()>() >>>>>>>> org.joda.time.base.BaseDateTime.getChronology : $r1 = r0.<org.joda.time.base.BaseDateTime: org.joda.time.Chronology iChronology>
+org.joda.time.base.BaseDateTime.getChronology : $r1 = r0.<org.joda.time.base.BaseDateTime: org.joda.time.Chronology iChronology> >>>>>>>> org.joda.time.base.BaseDateTime.getChronology : return $r1
+org.joda.time.base.BaseDateTime.getChronology : return $r1 >>>>>>>> org.joda.time.DateMidnight.plusDays : $r2 = virtualinvoke $r1.<org.joda.time.Chronology: org.joda.time.DurationField days()>()
+org.joda.time.DateMidnight.plusDays : $r2 = virtualinvoke $r1.<org.joda.time.Chronology: org.joda.time.DurationField days()>() >>>>>>>> org.joda.time.chrono.AssembledChronology.days : $r1 = r0.<org.joda.time.chrono.AssembledChronology: org.joda.time.DurationField iDays>
+org.joda.time.chrono.AssembledChronology.days : $r1 = r0.<org.joda.time.chrono.AssembledChronology: org.joda.time.DurationField iDays> >>>>>>>> org.joda.time.chrono.AssembledChronology.days : return $r1
+org.joda.time.chrono.AssembledChronology.days : return $r1 >>>>>>>> org.joda.time.DateMidnight.plusDays : $l2 = virtualinvoke r0.<org.joda.time.DateMidnight: long getMillis()>()
+org.joda.time.DateMidnight.plusDays : $l2 = virtualinvoke r0.<org.joda.time.DateMidnight: long getMillis()>() >>>>>>>> org.joda.time.base.BaseDateTime.getMillis : $l0 = r0.<org.joda.time.base.BaseDateTime: long iMillis>
+org.joda.time.base.BaseDateTime.getMillis : $l0 = r0.<org.joda.time.base.BaseDateTime: long iMillis> >>>>>>>> org.joda.time.base.BaseDateTime.getMillis : return $l0
+org.joda.time.base.BaseDateTime.getMillis : return $l0 >>>>>>>> org.joda.time.DateMidnight.plusDays : l1 = virtualinvoke $r2.<org.joda.time.DurationField: long add(long,int)>($l2, i0)
+org.joda.time.DateMidnight.plusDays : l1 = virtualinvoke $r2.<org.joda.time.DurationField: long add(long,int)>($l2, i0) >>>>>>>> org.joda.time.field.PreciseDurationField.add : $l3 = (long) i1
+org.joda.time.field.PreciseDurationField.add : $l3 = (long) i1 >>>>>>>> org.joda.time.field.PreciseDurationField.add : $l4 = r0.<org.joda.time.field.PreciseDurationField: long iUnitMillis>
+org.joda.time.field.PreciseDurationField.add : $l4 = r0.<org.joda.time.field.PreciseDurationField: long iUnitMillis> >>>>>>>> org.joda.time.field.PreciseDurationField.add : l2 = $l3 * $l4
+org.joda.time.field.PreciseDurationField.add : l2 = $l3 * $l4 >>>>>>>> org.joda.time.field.PreciseDurationField.add : $l5 = staticinvoke <org.joda.time.field.FieldUtils: long safeAdd(long,long)>(l0, l2)
+org.joda.time.field.PreciseDurationField.add : $l5 = staticinvoke <org.joda.time.field.FieldUtils: long safeAdd(long,long)>(l0, l2) >>>>>>>> org.joda.time.field.FieldUtils.safeAdd : l2 = l0 + l1
+org.joda.time.field.FieldUtils.safeAdd : l2 = l0 + l1 >>>>>>>> org.joda.time.field.FieldUtils.safeAdd : $l3 = l0 ^ l2
+org.joda.time.field.FieldUtils.safeAdd : $l3 = l0 ^ l2 >>>>>>>> org.joda.time.field.FieldUtils.safeAdd : $b4 = $l3 cmp 0L
+org.joda.time.field.FieldUtils.safeAdd : $b4 = $l3 cmp 0L >>>>>>>> org.joda.time.field.FieldUtils.safeAdd : if $b4 >= 0
+org.joda.time.field.FieldUtils.safeAdd : if $b4 >= 0 >>>>>>>> org.joda.time.field.FieldUtils.safeAdd : return l2
+org.joda.time.field.FieldUtils.safeAdd : return l2 >>>>>>>> org.joda.time.field.PreciseDurationField.add : return $l5
+org.joda.time.field.PreciseDurationField.add : return $l5 >>>>>>>> org.joda.time.DateMidnight.plusDays : $r3 = virtualinvoke r0.<org.joda.time.DateMidnight: org.joda.time.DateMidnight withMillis(long)>(l1)
+org.joda.time.DateMidnight.plusDays : $r3 = virtualinvoke r0.<org.joda.time.DateMidnight: org.joda.time.DateMidnight withMillis(long)>(l1) >>>>>>>> org.joda.time.DateMidnight.withMillis : r1 = virtualinvoke r0.<org.joda.time.DateMidnight: org.joda.time.Chronology getChronology()>()
+org.joda.time.DateMidnight.withMillis : r1 = virtualinvoke r0.<org.joda.time.DateMidnight: org.joda.time.Chronology getChronology()>() >>>>>>>> org.joda.time.DateMidnight.withMillis : l1 = virtualinvoke r0.<org.joda.time.DateMidnight: long checkInstant(long,org.joda.time.Chronology)>(l0, r1)
+org.joda.time.DateMidnight.withMillis : l1 = virtualinvoke r0.<org.joda.time.DateMidnight: long checkInstant(long,org.joda.time.Chronology)>(l0, r1) >>>>>>>> org.joda.time.DateMidnight.withMillis : $l2 = virtualinvoke r0.<org.joda.time.DateMidnight: long getMillis()>()
+org.joda.time.DateMidnight.withMillis : $l2 = virtualinvoke r0.<org.joda.time.DateMidnight: long getMillis()>() >>>>>>>> org.joda.time.DateMidnight.withMillis : $b3 = l1 cmp $l2
+org.joda.time.DateMidnight.withMillis : $b3 = l1 cmp $l2 >>>>>>>> org.joda.time.DateMidnight.withMillis : if $b3 != 0
+org.joda.time.DateMidnight.withMillis : if $b3 != 0 >>>>>>>> org.joda.time.DateMidnight.withMillis : $r2 = new org.joda.time.DateMidnight
+org.joda.time.DateMidnight.withMillis : $r2 = new org.joda.time.DateMidnight >>>>>>>> org.joda.time.DateMidnight.withMillis : specialinvoke $r2.<org.joda.time.DateMidnight: void <init>(long,org.joda.time.Chronology)>(l1, r1)
+org.joda.time.DateMidnight.withMillis : specialinvoke $r2.<org.joda.time.DateMidnight: void <init>(long,org.joda.time.Chronology)>(l1, r1) >>>>>>>> org.joda.time.DateMidnight.withMillis : return $r2
+org.joda.time.DateMidnight.withMillis : return $r2 >>>>>>>> org.joda.time.DateMidnight.plusDays : return $r3
+org.joda.time.DateMidnight.plusDays : return $r3 >>>>>>>> org.joda.time.DateMidnight.centuryOfEra : $r1 = new org.joda.time.DateMidnight$Property
+org.joda.time.DateMidnight.centuryOfEra : $r1 = new org.joda.time.DateMidnight$Property >>>>>>>> org.joda.time.DateMidnight.centuryOfEra : $r2 = virtualinvoke r0.<org.joda.time.DateMidnight: org.joda.time.Chronology getChronology()>()
+org.joda.time.DateMidnight.centuryOfEra : $r2 = virtualinvoke r0.<org.joda.time.DateMidnight: org.joda.time.Chronology getChronology()>() >>>>>>>> org.joda.time.DateMidnight.centuryOfEra : $r3 = virtualinvoke $r2.<org.joda.time.Chronology: org.joda.time.DateTimeField centuryOfEra()>()
+org.joda.time.DateMidnight.centuryOfEra : $r3 = virtualinvoke $r2.<org.joda.time.Chronology: org.joda.time.DateTimeField centuryOfEra()>() >>>>>>>> org.joda.time.chrono.AssembledChronology.centuryOfEra : $r1 = r0.<org.joda.time.chrono.AssembledChronology: org.joda.time.DateTimeField iCenturyOfEra>
+org.joda.time.chrono.AssembledChronology.centuryOfEra : $r1 = r0.<org.joda.time.chrono.AssembledChronology: org.joda.time.DateTimeField iCenturyOfEra> >>>>>>>> org.joda.time.chrono.AssembledChronology.centuryOfEra : return $r1
+org.joda.time.chrono.AssembledChronology.centuryOfEra : return $r1 >>>>>>>> org.joda.time.DateMidnight.centuryOfEra : specialinvoke $r1.<org.joda.time.DateMidnight$Property: void <init>(org.joda.time.DateMidnight,org.joda.time.DateTimeField)>(r0, $r3)
+org.joda.time.DateMidnight.centuryOfEra : specialinvoke $r1.<org.joda.time.DateMidnight$Property: void <init>(org.joda.time.DateMidnight,org.joda.time.DateTimeField)>(r0, $r3) >>>>>>>> org.joda.time.DateMidnight.centuryOfEra : return $r1
+org.joda.time.DateMidnight.centuryOfEra : return $r1 >>>>>>>> org.joda.time.convert.ConverterManager.getInstance : $r0 = <org.joda.time.convert.ConverterManager: org.joda.time.convert.ConverterManager INSTANCE>
+org.joda.time.convert.ConverterManager.getInstance : $r0 = <org.joda.time.convert.ConverterManager: org.joda.time.convert.ConverterManager INSTANCE> >>>>>>>> org.joda.time.convert.ConverterManager.getInstance : if $r0 != null
+org.joda.time.convert.ConverterManager.getInstance : if $r0 != null >>>>>>>> org.joda.time.convert.ConverterManager.getInstance : $r2 = <org.joda.time.convert.ConverterManager: org.joda.time.convert.ConverterManager INSTANCE>
+org.joda.time.convert.ConverterManager.getInstance : $r2 = <org.joda.time.convert.ConverterManager: org.joda.time.convert.ConverterManager INSTANCE> >>>>>>>> org.joda.time.convert.ConverterManager.getInstance : return $r2
+org.joda.time.convert.ConverterManager.getInstance : return $r2 >>>>>>>> org.joda.time.convert.ConverterManager.getPeriodConverter : $r4 = r0.<org.joda.time.convert.ConverterManager: org.joda.time.convert.ConverterSet iPeriodConverters>
+org.joda.time.convert.ConverterManager.getPeriodConverter : $r4 = r0.<org.joda.time.convert.ConverterManager: org.joda.time.convert.ConverterSet iPeriodConverters> >>>>>>>> org.joda.time.convert.ConverterManager.getPeriodConverter : if r1 != null
+org.joda.time.convert.ConverterManager.getPeriodConverter : if r1 != null >>>>>>>> org.joda.time.convert.ConverterManager.getPeriodConverter : $r5 = virtualinvoke r1.<java.lang.Object: java.lang.Class getClass()>()
+org.joda.time.convert.ConverterManager.getPeriodConverter : $r5 = virtualinvoke r1.<java.lang.Object: java.lang.Class getClass()>() >>>>>>>> org.joda.time.convert.ConverterManager.getPeriodConverter : $r6 = virtualinvoke $r4.<org.joda.time.convert.ConverterSet: org.joda.time.convert.Converter select(java.lang.Class)>($r5)
+org.joda.time.convert.ConverterManager.getPeriodConverter : $r6 = virtualinvoke $r4.<org.joda.time.convert.ConverterSet: org.joda.time.convert.Converter select(java.lang.Class)>($r5) >>>>>>>> org.joda.time.convert.ConverterSet.select : r2 = r0.<org.joda.time.convert.ConverterSet: org.joda.time.convert.ConverterSet$Entry[] iSelectEntries>
+org.joda.time.convert.ConverterSet.select : r2 = r0.<org.joda.time.convert.ConverterSet: org.joda.time.convert.ConverterSet$Entry[] iSelectEntries> >>>>>>>> org.joda.time.convert.ConverterSet.select : i0 = lengthof r2
+org.joda.time.convert.ConverterSet.select : i0 = lengthof r2 >>>>>>>> org.joda.time.convert.ConverterSet.select : if r1 != null
+org.joda.time.convert.ConverterSet.select : if r1 != null >>>>>>>> org.joda.time.convert.ConverterSet.select : $i5 = virtualinvoke r1.<java.lang.Object: int hashCode()>()
+org.joda.time.convert.ConverterSet.select : $i5 = virtualinvoke r1.<java.lang.Object: int hashCode()>() >>>>>>>> org.joda.time.convert.ConverterSet.select : $i6 = i0 - 1
+org.joda.time.convert.ConverterSet.select : $i6 = i0 - 1 >>>>>>>> org.joda.time.convert.ConverterSet.select : $i4 = $i5 & $i6
+org.joda.time.convert.ConverterSet.select : $i4 = $i5 & $i6 >>>>>>>> org.joda.time.convert.ConverterSet.select : i1 = $i4
+org.joda.time.convert.ConverterSet.select : i1 = $i4 >>>>>>>> org.joda.time.convert.ConverterSet.select : $r6 = r2[i1]
+org.joda.time.convert.ConverterSet.select : $r6 = r2[i1] >>>>>>>> org.joda.time.convert.ConverterSet.select : r3 = $r6
+org.joda.time.convert.ConverterSet.select : r3 = $r6 >>>>>>>> org.joda.time.convert.ConverterSet.select : if $r6 == null
+org.joda.time.convert.ConverterSet.select : if $r6 == null >>>>>>>> org.joda.time.convert.ConverterSet.select : $r7 = r3.<org.joda.time.convert.ConverterSet$Entry: java.lang.Class iType>
+org.joda.time.convert.ConverterSet.select : $r7 = r3.<org.joda.time.convert.ConverterSet$Entry: java.lang.Class iType> >>>>>>>> org.joda.time.convert.ConverterSet.select : if $r7 != r1
+org.joda.time.convert.ConverterSet.select : if $r7 != r1 >>>>>>>> org.joda.time.convert.ConverterSet.select : i1 = i1 + 1
+org.joda.time.convert.ConverterSet.select : i1 = i1 + 1 >>>>>>>> org.joda.time.convert.ConverterSet.select : if i1 < i0
+org.joda.time.convert.ConverterSet.select : if i1 < i0 >>>>>>>> org.joda.time.convert.ConverterSet.select : i1 = 0
+org.joda.time.convert.ConverterSet.select : i1 = 0 >>>>>>>> org.joda.time.convert.ConverterSet.select : goto [?= $r6 = r2[i1]]
+org.joda.time.convert.ConverterSet.select : goto [?= $r6 = r2[i1]] >>>>>>>> org.joda.time.convert.ConverterSet.select : r4 = staticinvoke <org.joda.time.convert.ConverterSet: org.joda.time.convert.Converter selectSlow(org.joda.time.convert.ConverterSet,java.lang.Class)>(r0, r1)
+org.joda.time.convert.ConverterSet.select : r4 = staticinvoke <org.joda.time.convert.ConverterSet: org.joda.time.convert.Converter selectSlow(org.joda.time.convert.ConverterSet,java.lang.Class)>(r0, r1) >>>>>>>> org.joda.time.convert.ConverterSet.selectSlow : r2 = r0.<org.joda.time.convert.ConverterSet: org.joda.time.convert.Converter[] iConverters>
+org.joda.time.convert.ConverterSet.selectSlow : r2 = r0.<org.joda.time.convert.ConverterSet: org.joda.time.convert.Converter[] iConverters> >>>>>>>> org.joda.time.convert.ConverterSet.selectSlow : i0 = lengthof r2
+org.joda.time.convert.ConverterSet.selectSlow : i0 = lengthof r2 >>>>>>>> org.joda.time.convert.ConverterSet.selectSlow : i1 = i0
+org.joda.time.convert.ConverterSet.selectSlow : i1 = i0 >>>>>>>> org.joda.time.convert.ConverterSet.selectSlow : i1 = i1 + -1
+org.joda.time.convert.ConverterSet.selectSlow : i1 = i1 + -1 >>>>>>>> org.joda.time.convert.ConverterSet.selectSlow : if i1 < 0
+org.joda.time.convert.ConverterSet.selectSlow : if i1 < 0 >>>>>>>> org.joda.time.convert.ConverterSet.selectSlow : r3 = r2[i1]
+org.joda.time.convert.ConverterSet.selectSlow : r3 = r2[i1] >>>>>>>> org.joda.time.convert.ConverterSet.selectSlow : r4 = interfaceinvoke r3.<org.joda.time.convert.Converter: java.lang.Class getSupportedType()>()
+org.joda.time.convert.ConverterSet.selectSlow : r4 = interfaceinvoke r3.<org.joda.time.convert.Converter: java.lang.Class getSupportedType()>() >>>>>>>> org.joda.time.convert.NullConverter.getSupportedType : return null
+org.joda.time.convert.NullConverter.getSupportedType : return null >>>>>>>> org.joda.time.convert.ConverterSet.selectSlow : if r4 != r1
+org.joda.time.convert.ConverterSet.selectSlow : if r4 != r1 >>>>>>>> org.joda.time.convert.ConverterSet.selectSlow : if r4 == null
+org.joda.time.convert.ConverterSet.selectSlow : if r4 == null >>>>>>>> org.joda.time.convert.ConverterSet.selectSlow : r0 = virtualinvoke r0.<org.joda.time.convert.ConverterSet: org.joda.time.convert.ConverterSet remove(int,org.joda.time.convert.Converter[])>(i1, null)
+org.joda.time.convert.ConverterSet.selectSlow : r0 = virtualinvoke r0.<org.joda.time.convert.ConverterSet: org.joda.time.convert.ConverterSet remove(int,org.joda.time.convert.Converter[])>(i1, null) >>>>>>>> org.joda.time.convert.ConverterSet.remove : r2 = r0.<org.joda.time.convert.ConverterSet: org.joda.time.convert.Converter[] iConverters>
+org.joda.time.convert.ConverterSet.remove : r2 = r0.<org.joda.time.convert.ConverterSet: org.joda.time.convert.Converter[] iConverters> >>>>>>>> org.joda.time.convert.ConverterSet.remove : i1 = lengthof r2
+org.joda.time.convert.ConverterSet.remove : i1 = lengthof r2 >>>>>>>> org.joda.time.convert.ConverterSet.remove : if i0 < i1
+org.joda.time.convert.ConverterSet.remove : if i0 < i1 >>>>>>>> org.joda.time.convert.ConverterSet.remove : if r1 == null
+org.joda.time.convert.ConverterSet.remove : if r1 == null >>>>>>>> org.joda.time.convert.ConverterSet.remove : $i4 = i1 - 1
+org.joda.time.convert.ConverterSet.remove : $i4 = i1 - 1 >>>>>>>> org.joda.time.convert.ConverterSet.remove : r3 = newarray (org.joda.time.convert.Converter)[$i4]
+org.joda.time.convert.ConverterSet.remove : r3 = newarray (org.joda.time.convert.Converter)[$i4] >>>>>>>> org.joda.time.convert.ConverterSet.remove : i2 = 0
+org.joda.time.convert.ConverterSet.remove : i2 = 0 >>>>>>>> org.joda.time.convert.ConverterSet.remove : i3 = 0
+org.joda.time.convert.ConverterSet.remove : i3 = 0 >>>>>>>> org.joda.time.convert.ConverterSet.remove : if i3 >= i1
+org.joda.time.convert.ConverterSet.remove : if i3 >= i1 >>>>>>>> org.joda.time.convert.ConverterSet.remove : if i3 == i0
+org.joda.time.convert.ConverterSet.remove : if i3 == i0 >>>>>>>> org.joda.time.convert.ConverterSet.remove : $i5 = i2
+org.joda.time.convert.ConverterSet.remove : $i5 = i2 >>>>>>>> org.joda.time.convert.ConverterSet.remove : i2 = i2 + 1
+org.joda.time.convert.ConverterSet.remove : i2 = i2 + 1 >>>>>>>> org.joda.time.convert.ConverterSet.remove : $r6 = r2[i3]
+org.joda.time.convert.ConverterSet.remove : $r6 = r2[i3] >>>>>>>> org.joda.time.convert.ConverterSet.remove : r3[$i5] = $r6
+org.joda.time.convert.ConverterSet.remove : r3[$i5] = $r6 >>>>>>>> org.joda.time.convert.ConverterSet.remove : i3 = i3 + 1
+org.joda.time.convert.ConverterSet.remove : i3 = i3 + 1 >>>>>>>> org.joda.time.convert.ConverterSet.remove : goto [?= (branch)]
+org.joda.time.convert.ConverterSet.remove : goto [?= (branch)] >>>>>>>> org.joda.time.convert.ConverterSet.remove : $r7 = new org.joda.time.convert.ConverterSet
+org.joda.time.convert.ConverterSet.remove : $r7 = new org.joda.time.convert.ConverterSet >>>>>>>> org.joda.time.convert.ConverterSet.remove : specialinvoke $r7.<org.joda.time.convert.ConverterSet: void <init>(org.joda.time.convert.Converter[])>(r3)
+org.joda.time.convert.ConverterSet.remove : specialinvoke $r7.<org.joda.time.convert.ConverterSet: void <init>(org.joda.time.convert.Converter[])>(r3) >>>>>>>> org.joda.time.convert.ConverterSet.remove : return $r7
+org.joda.time.convert.ConverterSet.remove : return $r7 >>>>>>>> org.joda.time.convert.ConverterSet.selectSlow : goto [?= i1 = i1 + -1]
+org.joda.time.convert.ConverterSet.selectSlow : goto [?= i1 = i1 + -1] >>>>>>>> org.joda.time.convert.StringConverter.getSupportedType : return class "java/lang/String"
+org.joda.time.convert.StringConverter.getSupportedType : return class "java/lang/String" >>>>>>>> org.joda.time.convert.ConverterSet.selectSlow : if r1 == null
+org.joda.time.convert.ConverterSet.selectSlow : if r1 == null >>>>>>>> org.joda.time.convert.ConverterSet.selectSlow : $z0 = virtualinvoke r4.<java.lang.Class: boolean isAssignableFrom(java.lang.Class)>(r1)
+org.joda.time.convert.ConverterSet.selectSlow : $z0 = virtualinvoke r4.<java.lang.Class: boolean isAssignableFrom(java.lang.Class)>(r1) >>>>>>>> org.joda.time.convert.ConverterSet.selectSlow : if $z0 != 0
+org.joda.time.convert.ConverterSet.selectSlow : if $z0 != 0 >>>>>>>> org.joda.time.convert.ReadableIntervalConverter.getSupportedType : return class "org/joda/time/ReadableInterval"
+org.joda.time.convert.ReadableIntervalConverter.getSupportedType : return class "org/joda/time/ReadableInterval" >>>>>>>> org.joda.time.convert.ReadablePeriodConverter.getSupportedType : return class "org/joda/time/ReadablePeriod"
+org.joda.time.convert.ReadablePeriodConverter.getSupportedType : return class "org/joda/time/ReadablePeriod" >>>>>>>> org.joda.time.convert.ReadableDurationConverter.getSupportedType : return class "org/joda/time/ReadableDuration"
+org.joda.time.convert.ReadableDurationConverter.getSupportedType : return class "org/joda/time/ReadableDuration" >>>>>>>> org.joda.time.convert.ConverterSet.selectSlow : if i0 != 0
+org.joda.time.convert.ConverterSet.selectSlow : if i0 != 0 >>>>>>>> org.joda.time.convert.ConverterSet.selectSlow : return null
+org.joda.time.convert.ConverterSet.selectSlow : return null >>>>>>>> org.joda.time.convert.ConverterSet.select : $r9 = new org.joda.time.convert.ConverterSet$Entry
+org.joda.time.convert.ConverterSet.select : $r9 = new org.joda.time.convert.ConverterSet$Entry >>>>>>>> org.joda.time.convert.ConverterSet.select : specialinvoke $r9.<org.joda.time.convert.ConverterSet$Entry: void <init>(java.lang.Class,org.joda.time.convert.Converter)>(r1, r4)
+org.joda.time.convert.ConverterSet.select : specialinvoke $r9.<org.joda.time.convert.ConverterSet$Entry: void <init>(java.lang.Class,org.joda.time.convert.Converter)>(r1, r4) >>>>>>>> org.joda.time.convert.ConverterSet.select : r10 = $r9
+org.joda.time.convert.ConverterSet.select : r10 = $r9 >>>>>>>> org.joda.time.convert.ConverterSet.select : $r11 = virtualinvoke r2.<java.lang.Object: java.lang.Object clone()>()
+org.joda.time.convert.ConverterSet.select : $r11 = virtualinvoke r2.<java.lang.Object: java.lang.Object clone()>() >>>>>>>> org.joda.time.convert.ConverterSet.select : $r12 = (org.joda.time.convert.ConverterSet$Entry[]) $r11
+org.joda.time.convert.ConverterSet.select : $r12 = (org.joda.time.convert.ConverterSet$Entry[]) $r11 >>>>>>>> org.joda.time.convert.ConverterSet.select : r13 = (org.joda.time.convert.ConverterSet$Entry[]) $r12
+org.joda.time.convert.ConverterSet.select : r13 = (org.joda.time.convert.ConverterSet$Entry[]) $r12 >>>>>>>> org.joda.time.convert.ConverterSet.select : r13[i1] = r10
+org.joda.time.convert.ConverterSet.select : r13[i1] = r10 >>>>>>>> org.joda.time.convert.ConverterSet.select : i2 = 0
+org.joda.time.convert.ConverterSet.select : i2 = 0 >>>>>>>> org.joda.time.convert.ConverterSet.select : if i2 >= i0
+org.joda.time.convert.ConverterSet.select : if i2 >= i0 >>>>>>>> org.joda.time.convert.ConverterSet.select : $r14 = r13[i2]
+org.joda.time.convert.ConverterSet.select : $r14 = r13[i2] >>>>>>>> org.joda.time.convert.ConverterSet.select : if $r14 != null
+org.joda.time.convert.ConverterSet.select : if $r14 != null >>>>>>>> org.joda.time.convert.ConverterSet.select : i2 = i2 + 1
+org.joda.time.convert.ConverterSet.select : i2 = i2 + 1 >>>>>>>> org.joda.time.convert.ConverterSet.select : goto [?= (branch)]
+org.joda.time.convert.ConverterSet.select : goto [?= (branch)] >>>>>>>> org.joda.time.convert.ConverterSet.select : r0.<org.joda.time.convert.ConverterSet: org.joda.time.convert.ConverterSet$Entry[] iSelectEntries> = r13
+org.joda.time.convert.ConverterSet.select : r0.<org.joda.time.convert.ConverterSet: org.joda.time.convert.ConverterSet$Entry[] iSelectEntries> = r13 >>>>>>>> org.joda.time.convert.ConverterSet.select : return r4
+org.joda.time.convert.ConverterSet.select : return r4 >>>>>>>> org.joda.time.convert.ConverterManager.getPeriodConverter : r2 = (org.joda.time.convert.PeriodConverter) $r6
+org.joda.time.convert.ConverterManager.getPeriodConverter : r2 = (org.joda.time.convert.PeriodConverter) $r6 >>>>>>>> org.joda.time.convert.ConverterManager.getPeriodConverter : if r2 == null
+org.joda.time.convert.ConverterManager.getPeriodConverter : if r2 == null >>>>>>>> org.joda.time.convert.ConverterManager.getPeriodConverter : $r7 = new java.lang.IllegalArgumentException
+org.joda.time.convert.ConverterManager.getPeriodConverter : $r7 = new java.lang.IllegalArgumentException >>>>>>>> org.joda.time.convert.ConverterManager.getPeriodConverter : $r3 = new java.lang.StringBuilder
+org.joda.time.convert.ConverterManager.getPeriodConverter : $r3 = new java.lang.StringBuilder >>>>>>>> org.joda.time.convert.ConverterManager.getPeriodConverter : specialinvoke $r3.<java.lang.StringBuilder: void <init>()>()
+org.joda.time.convert.ConverterManager.getPeriodConverter : specialinvoke $r3.<java.lang.StringBuilder: void <init>()>() >>>>>>>> org.joda.time.convert.ConverterManager.getPeriodConverter : $r9 = virtualinvoke $r3.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("No period converter found for type: ")
+org.joda.time.convert.ConverterManager.getPeriodConverter : $r9 = virtualinvoke $r3.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("No period converter found for type: ") >>>>>>>> org.joda.time.convert.ConverterManager.getPeriodConverter : $r11 = virtualinvoke r1.<java.lang.Object: java.lang.Class getClass()>()
+org.joda.time.convert.ConverterManager.getPeriodConverter : $r11 = virtualinvoke r1.<java.lang.Object: java.lang.Class getClass()>() >>>>>>>> org.joda.time.convert.ConverterManager.getPeriodConverter : $r10 = virtualinvoke $r11.<java.lang.Class: java.lang.String getName()>()
+org.joda.time.convert.ConverterManager.getPeriodConverter : $r10 = virtualinvoke $r11.<java.lang.Class: java.lang.String getName()>() >>>>>>>> org.joda.time.convert.ConverterManager.getPeriodConverter : $r12 = virtualinvoke $r9.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($r10)
+org.joda.time.convert.ConverterManager.getPeriodConverter : $r12 = virtualinvoke $r9.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($r10) >>>>>>>> org.joda.time.convert.ConverterManager.getPeriodConverter : $r13 = virtualinvoke $r12.<java.lang.StringBuilder: java.lang.String toString()>()
+org.joda.time.convert.ConverterManager.getPeriodConverter : $r13 = virtualinvoke $r12.<java.lang.StringBuilder: java.lang.String toString()>() >>>>>>>> org.joda.time.convert.ConverterManager.getPeriodConverter : specialinvoke $r7.<java.lang.IllegalArgumentException: void <init>(java.lang.String)>($r13)
+org.joda.time.convert.ConverterManager.getPeriodConverter : specialinvoke $r7.<java.lang.IllegalArgumentException: void <init>(java.lang.String)>($r13) >>>>>>>> org.joda.time.convert.ConverterManager.getPeriodConverter : throw $r7

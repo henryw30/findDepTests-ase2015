@@ -1,0 +1,85 @@
+org.jfree.chart.block.RectangleConstraint.calculateConstrainedSize : $r23 = r0.<org.jfree.chart.block.RectangleConstraint: org.jfree.chart.block.LengthConstraintType widthConstraintType>
+org.jfree.chart.block.RectangleConstraint.calculateConstrainedSize : return r3
+org.jfree.chart.block.RectangleConstraint.calculateConstrainedSize : $r13 = r0.<org.jfree.chart.block.RectangleConstraint: org.jfree.chart.block.LengthConstraintType widthConstraintType>
+org.jfree.chart.block.RectangleConstraint.calculateConstrainedSize : $r4 = r0.<org.jfree.chart.block.RectangleConstraint: org.jfree.chart.block.LengthConstraintType widthConstraintType>
+org.jfree.chart.block.RectangleConstraint.calculateConstrainedSize : $r25 = r0.<org.jfree.chart.block.RectangleConstraint: org.jfree.chart.block.LengthConstraintType heightConstraintType>
+org.jfree.chart.block.RectangleConstraint.calculateConstrainedSize : $r2 = new org.jfree.ui.Size2D
+org.jfree.chart.block.RectangleConstraint.calculateConstrainedSize : $d12 = r1.<org.jfree.ui.Size2D: double height>
+org.jfree.chart.block.RectangleConstraint.calculateConstrainedSize : $d11 = r0.<org.jfree.chart.block.RectangleConstraint: double width>
+org.jfree.chart.block.RectangleConstraint.toUnconstrainedHeight : $r3 = r0.<org.jfree.chart.block.RectangleConstraint: org.jfree.chart.block.LengthConstraintType heightConstraintType>
+org.jfree.chart.block.RectangleConstraint.toUnconstrainedHeight : $r4 = new org.jfree.chart.block.RectangleConstraint
+org.jfree.data.Range.contains : $d1 = r0.<org.jfree.data.Range: double lower>
+org.jfree.chart.block.AbstractBlock.setWidth : r0.<org.jfree.chart.block.AbstractBlock: double width> = d0
+org.jfree.chart.block.EmptyBlock.arrange : $r3 = new org.jfree.ui.Size2D
+org.jfree.chart.block.EmptyBlock.arrange : $r5 = virtualinvoke r2.<org.jfree.chart.block.RectangleConstraint: org.jfree.ui.Size2D calculateConstrainedSize(org.jfree.ui.Size2D)>(r4)
+org.jfree.chart.block.EmptyBlock.arrange : $d2 = virtualinvoke r0.<org.jfree.chart.block.EmptyBlock: double getHeight()>()
+org.jfree.chart.block.RectangleConstraint.getHeight : $d0 = r0.<org.jfree.chart.block.RectangleConstraint: double height>
+org.jfree.chart.block.AbstractBlock.getWidth : $d0 = r0.<org.jfree.chart.block.AbstractBlock: double width>
+org.jfree.chart.block.RectangleConstraint.getWidthConstraintType : $r1 = r0.<org.jfree.chart.block.RectangleConstraint: org.jfree.chart.block.LengthConstraintType widthConstraintType>
+org.jfree.chart.block.BlockContainer.getBlocks : $r1 = r0.<org.jfree.chart.block.BlockContainer: java.util.List blocks>
+org.jfree.chart.block.AbstractBlock.calculateTotalWidth : $r4 = r0.<org.jfree.chart.block.AbstractBlock: org.jfree.ui.RectangleInsets margin>
+org.jfree.chart.block.AbstractBlock.calculateTotalWidth : $r1 = r0.<org.jfree.chart.block.AbstractBlock: org.jfree.ui.RectangleInsets padding>
+org.jfree.chart.block.AbstractBlock.calculateTotalWidth : $r2 = r0.<org.jfree.chart.block.AbstractBlock: org.jfree.chart.block.BlockFrame frame>
+org.jfree.chart.block.AbstractBlock.calculateTotalWidth : d1 = d0
+org.jfree.chart.block.AbstractBlock.calculateTotalWidth : return d4
+org.jfree.chart.block.AbstractBlock.calculateTotalHeight : $r4 = r0.<org.jfree.chart.block.AbstractBlock: org.jfree.ui.RectangleInsets margin>
+org.jfree.chart.block.AbstractBlock.calculateTotalHeight : $r1 = r0.<org.jfree.chart.block.AbstractBlock: org.jfree.ui.RectangleInsets padding>
+org.jfree.chart.block.AbstractBlock.calculateTotalHeight : $r2 = r0.<org.jfree.chart.block.AbstractBlock: org.jfree.chart.block.BlockFrame frame>
+org.jfree.chart.block.AbstractBlock.calculateTotalHeight : d1 = d0
+org.jfree.chart.block.AbstractBlock.calculateTotalHeight : return d4
+org.jfree.chart.block.AbstractBlock.getHeight : $d0 = r0.<org.jfree.chart.block.AbstractBlock: double height>
+org.jfree.chart.block.BlockBorder.getInsets : $r1 = r0.<org.jfree.chart.block.BlockBorder: org.jfree.ui.RectangleInsets insets>
+org.jfree.chart.block.AbstractBlock.setHeight : r0.<org.jfree.chart.block.AbstractBlock: double height> = d0
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null goto return
+org.jfree.chart.block.RectangleConstraint.toFixedWidth : $r1 = new org.jfree.chart.block.RectangleConstraint
+org.jfree.chart.block.GridArrangement.arrangeFR : return r5
+org.jfree.chart.block.GridArrangement.arrangeFR : r5 = virtualinvoke r0.<org.jfree.chart.block.GridArrangement: org.jfree.ui.Size2D arrange(org.jfree.chart.block.BlockContainer,java.awt.Graphics2D,org.jfree.chart.block.RectangleConstraint)>(r1, r2, r4)
+org.jfree.chart.block.GridArrangement.arrangeFR : $r7 = virtualinvoke r3.<org.jfree.chart.block.RectangleConstraint: org.jfree.data.Range getHeightRange()>()
+org.jfree.chart.block.GridArrangement.arrangeFR : r4 = virtualinvoke r3.<org.jfree.chart.block.RectangleConstraint: org.jfree.chart.block.RectangleConstraint toUnconstrainedHeight()>()
+org.jfree.chart.block.RectangleConstraint.getHeightConstraintType : $r1 = r0.<org.jfree.chart.block.RectangleConstraint: org.jfree.chart.block.LengthConstraintType heightConstraintType>
+org.jfree.chart.block.GridArrangement.arrangeFN : if r6 == null goto i1 = i1 + 1
+org.jfree.chart.block.GridArrangement.arrangeFN : $i8 = interfaceinvoke r5.<java.util.List: int size()>()
+org.jfree.chart.block.GridArrangement.arrangeFN : i1 = 0
+org.jfree.chart.block.GridArrangement.arrangeFN : $i9 = r0.<org.jfree.chart.block.GridArrangement: int rows>
+org.jfree.chart.block.GridArrangement.arrangeFN : d1 = 0.0
+org.jfree.chart.block.GridArrangement.arrangeFN : $d4 = virtualinvoke r7.<org.jfree.ui.Size2D: double getHeight()>()
+org.jfree.chart.block.GridArrangement.arrangeFN : $r8 = interfaceinvoke r5.<java.util.List: java.lang.Object get(int)>(i2)
+org.jfree.chart.block.GridArrangement.arrangeFN : $d2 = virtualinvoke r3.<org.jfree.chart.block.RectangleConstraint: double getWidth()>()
+org.jfree.chart.block.GridArrangement.arrangeFN : r5 = virtualinvoke r1.<org.jfree.chart.block.BlockContainer: java.util.List getBlocks()>()
+org.jfree.chart.block.GridArrangement.arrangeFN : $i6 = r0.<org.jfree.chart.block.GridArrangement: int columns>
+org.jfree.chart.block.GridArrangement.arrangeFN : i0 = 0
+org.jfree.chart.block.GridArrangement.arrangeFN : $r10 = virtualinvoke r0.<org.jfree.chart.block.GridArrangement: org.jfree.ui.Size2D arrange(org.jfree.chart.block.BlockContainer,java.awt.Graphics2D,org.jfree.chart.block.RectangleConstraint)>(r1, r2, r9)
+org.jfree.chart.block.GridArrangement.arrangeFN : r7 = interfaceinvoke r6.<org.jfree.chart.block.Block: org.jfree.ui.Size2D arrange(java.awt.Graphics2D,org.jfree.chart.block.RectangleConstraint)>(r2, r4)
+org.jfree.chart.block.GridArrangement.arrangeFN : r4 = virtualinvoke r3.<org.jfree.chart.block.RectangleConstraint: org.jfree.chart.block.RectangleConstraint toFixedWidth(double)>(d0)
+org.jfree.chart.block.GridArrangement.arrangeFN : goto [?= i0 = i0 + 1]
+org.jfree.chart.block.GridArrangement.arrangeFF : i1 = 0
+org.jfree.chart.block.GridArrangement.arrangeFF : r4 = virtualinvoke r1.<org.jfree.chart.block.BlockContainer: java.util.List getBlocks()>()
+org.jfree.chart.block.GridArrangement.arrangeFF : $i9 = interfaceinvoke r4.<java.util.List: int size()>()
+org.jfree.chart.block.GridArrangement.arrangeFF : $d2 = virtualinvoke r3.<org.jfree.chart.block.RectangleConstraint: double getWidth()>()
+org.jfree.chart.block.GridArrangement.arrangeFF : $r6 = interfaceinvoke r4.<java.util.List: java.lang.Object get(int)>(i2)
+org.jfree.chart.block.GridArrangement.arrangeFF : $i7 = r0.<org.jfree.chart.block.GridArrangement: int columns>
+org.jfree.chart.block.GridArrangement.arrangeFF : i0 = 0
+org.jfree.chart.block.GridArrangement.arrangeFF : $d4 = virtualinvoke r3.<org.jfree.chart.block.RectangleConstraint: double getHeight()>()
+org.jfree.chart.block.GridArrangement.arrangeFF : $r8 = new org.jfree.ui.Size2D
+org.jfree.chart.block.GridArrangement.arrangeFF : goto [?= i0 = i0 + 1]
+org.jfree.chart.block.GridArrangement.arrangeFF : if r5 == null goto i1 = i1 + 1
+org.jfree.chart.block.GridArrangement.arrangeFF : $r7 = new java.awt.geom.Rectangle2D$Double
+org.jfree.chart.block.GridArrangement.arrange : $r17 = virtualinvoke r0.<org.jfree.chart.block.GridArrangement: org.jfree.ui.Size2D arrangeFF(org.jfree.chart.block.BlockContainer,java.awt.Graphics2D,org.jfree.chart.block.RectangleConstraint)>(r1, r2, r3)
+org.jfree.chart.block.GridArrangement.arrange : r5 = virtualinvoke r3.<org.jfree.chart.block.RectangleConstraint: org.jfree.chart.block.LengthConstraintType getHeightConstraintType()>()
+org.jfree.chart.block.GridArrangement.arrange : $r14 = <org.jfree.chart.block.LengthConstraintType: org.jfree.chart.block.LengthConstraintType NONE>
+org.jfree.chart.block.GridArrangement.arrange : $r15 = virtualinvoke r0.<org.jfree.chart.block.GridArrangement: org.jfree.ui.Size2D arrangeFN(org.jfree.chart.block.BlockContainer,java.awt.Graphics2D,org.jfree.chart.block.RectangleConstraint)>(r1, r2, r3)
+org.jfree.chart.block.GridArrangement.arrange : $r18 = <org.jfree.chart.block.LengthConstraintType: org.jfree.chart.block.LengthConstraintType RANGE>
+org.jfree.chart.block.GridArrangement.arrange : r4 = virtualinvoke r3.<org.jfree.chart.block.RectangleConstraint: org.jfree.chart.block.LengthConstraintType getWidthConstraintType()>()
+org.jfree.chart.block.GridArrangement.arrange : $r19 = virtualinvoke r0.<org.jfree.chart.block.GridArrangement: org.jfree.ui.Size2D arrangeFR(org.jfree.chart.block.BlockContainer,java.awt.Graphics2D,org.jfree.chart.block.RectangleConstraint)>(r1, r2, r3)
+org.jfree.chart.block.GridArrangement.arrange : $r16 = <org.jfree.chart.block.LengthConstraintType: org.jfree.chart.block.LengthConstraintType FIXED>
+org.jfree.chart.block.GridArrangement.arrange : $r13 = <org.jfree.chart.block.LengthConstraintType: org.jfree.chart.block.LengthConstraintType FIXED>
+org.jfree.chart.block.GridArrangement.arrange : $r6 = <org.jfree.chart.block.LengthConstraintType: org.jfree.chart.block.LengthConstraintType NONE>
+org.jfree.chart.block.BlockContainer.arrange : $r3 = r0.<org.jfree.chart.block.BlockContainer: org.jfree.chart.block.Arrangement arrangement>
+org.jfree.chart.block.RectangleConstraint.getWidth : $d0 = r0.<org.jfree.chart.block.RectangleConstraint: double width>
+org.jfree.chart.block.RectangleConstraint.toFixedHeight : $r1 = new org.jfree.chart.block.RectangleConstraint
+org.jfree.chart.block.AbstractBlock.setBounds : r0.<org.jfree.chart.block.AbstractBlock: java.awt.geom.Rectangle2D bounds> = r1
+org.jfree.chart.block.AbstractBlock.setBounds : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "bounds")
+org.jfree.chart.block.RectangleConstraint.getHeightRange : $r1 = r0.<org.jfree.chart.block.RectangleConstraint: org.jfree.data.Range heightRange>
+org.jfree.chart.block.BlockContainer.add : $r3 = r0.<org.jfree.chart.block.BlockContainer: java.util.List blocks>
+org.jfree.chart.block.BlockContainer.add : virtualinvoke r0.<org.jfree.chart.block.BlockContainer: void add(org.jfree.chart.block.Block,java.lang.Object)>(r1, null)
+org.jfree.chart.block.BlockContainer.add : $r4 = r0.<org.jfree.chart.block.BlockContainer: org.jfree.chart.block.Arrangement arrangement>

@@ -1,0 +1,16 @@
+org.jfree.data.KeyedObjects.clone : $r5 = specialinvoke r0.<java.lang.Object: java.lang.Object clone()>() >>>>>>>> org.jfree.data.KeyedObjects.clone : r1 = (org.jfree.data.KeyedObjects) $r5
+org.jfree.data.KeyedObjects.clone : r1 = (org.jfree.data.KeyedObjects) $r5 >>>>>>>> org.jfree.data.KeyedObjects.clone : $r2 = new java.util.ArrayList
+org.jfree.data.KeyedObjects.clone : $r2 = new java.util.ArrayList >>>>>>>> org.jfree.data.KeyedObjects.clone : specialinvoke $r2.<java.util.ArrayList: void <init>()>()
+org.jfree.data.KeyedObjects.clone : specialinvoke $r2.<java.util.ArrayList: void <init>()>() >>>>>>>> org.jfree.data.KeyedObjects.clone : r1.<org.jfree.data.KeyedObjects: java.util.List data> = $r2
+org.jfree.data.KeyedObjects.clone : r1.<org.jfree.data.KeyedObjects: java.util.List data> = $r2 >>>>>>>> org.jfree.data.KeyedObjects.clone : $r6 = r0.<org.jfree.data.KeyedObjects: java.util.List data>
+org.jfree.data.KeyedObjects.clone : $r6 = r0.<org.jfree.data.KeyedObjects: java.util.List data> >>>>>>>> org.jfree.data.KeyedObjects.clone : r3 = interfaceinvoke $r6.<java.util.List: java.util.Iterator iterator()>()
+org.jfree.data.KeyedObjects.clone : r3 = interfaceinvoke $r6.<java.util.List: java.util.Iterator iterator()>() >>>>>>>> org.jfree.data.KeyedObjects.clone : $z0 = interfaceinvoke r3.<java.util.Iterator: boolean hasNext()>()
+org.jfree.data.KeyedObjects.clone : $z0 = interfaceinvoke r3.<java.util.Iterator: boolean hasNext()>() >>>>>>>> org.jfree.data.KeyedObjects.clone : if $z0 == 0
+org.jfree.data.KeyedObjects.clone : if $z0 == 0 >>>>>>>> org.jfree.data.KeyedObjects.clone : $r7 = interfaceinvoke r3.<java.util.Iterator: java.lang.Object next()>()
+org.jfree.data.KeyedObjects.clone : if $z0 == 0 >>>>>>>> org.jfree.data.KeyedObjects.clone : return r1
+org.jfree.data.KeyedObjects.clone : $r7 = interfaceinvoke r3.<java.util.Iterator: java.lang.Object next()>() >>>>>>>> org.jfree.data.KeyedObjects.clone : r4 = (org.jfree.data.KeyedObject) $r7
+org.jfree.data.KeyedObjects.clone : r4 = (org.jfree.data.KeyedObject) $r7 >>>>>>>> org.jfree.data.KeyedObjects.clone : $r8 = r1.<org.jfree.data.KeyedObjects: java.util.List data>
+org.jfree.data.KeyedObjects.clone : $r8 = r1.<org.jfree.data.KeyedObjects: java.util.List data> >>>>>>>> org.jfree.data.KeyedObjects.clone : $r9 = virtualinvoke r4.<org.jfree.data.KeyedObject: java.lang.Object clone()>()
+org.jfree.data.KeyedObjects.clone : $r9 = virtualinvoke r4.<org.jfree.data.KeyedObject: java.lang.Object clone()>() >>>>>>>> org.jfree.data.KeyedObjects.clone : interfaceinvoke $r8.<java.util.List: boolean add(java.lang.Object)>($r9)
+org.jfree.data.KeyedObjects.clone : interfaceinvoke $r8.<java.util.List: boolean add(java.lang.Object)>($r9) >>>>>>>> org.jfree.data.KeyedObjects.clone : goto [?= $z0 = interfaceinvoke r3.<java.util.Iterator: boolean hasNext()>()]
+org.jfree.data.KeyedObjects.clone : goto [?= $z0 = interfaceinvoke r3.<java.util.Iterator: boolean hasNext()>()] >>>>>>>> org.jfree.data.KeyedObjects.clone : $z0 = interfaceinvoke r3.<java.util.Iterator: boolean hasNext()>()

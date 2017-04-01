@@ -1,0 +1,17 @@
+org.jfree.chart.entity.ContourEntity.equals : r2 = (org.jfree.chart.entity.ContourEntity) r1
+org.jfree.chart.entity.ContourEntity.equals : $z0 = r1 instanceof org.jfree.chart.entity.ContourEntity
+org.jfree.chart.entity.ContourEntity.equals : return 1
+org.jfree.chart.entity.ContourEntity.equals : if r1 != r0 goto $z0 = r1 instanceof org.jfree.chart.entity.ContourEntity
+org.jfree.chart.entity.ContourEntity.equals : $i0 = r0.<org.jfree.chart.entity.ContourEntity: int index>
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null goto return
+org.jfree.chart.entity.ChartEntity.equals : $r7 = r0.<org.jfree.chart.entity.ChartEntity: java.lang.String urlText>
+org.jfree.chart.entity.ChartEntity.equals : return 1
+org.jfree.chart.entity.ChartEntity.equals : $r3 = r0.<org.jfree.chart.entity.ChartEntity: java.awt.Shape area>
+org.jfree.chart.entity.ChartEntity.equals : r2 = (org.jfree.chart.entity.ChartEntity) r1
+org.jfree.chart.entity.ChartEntity.equals : $z0 = r1 instanceof org.jfree.chart.entity.ChartEntity
+org.jfree.chart.entity.ChartEntity.equals : if r1 != r0 goto $z0 = r1 instanceof org.jfree.chart.entity.ChartEntity
+org.jfree.chart.entity.ChartEntity.equals : $r5 = r0.<org.jfree.chart.entity.ChartEntity: java.lang.String toolTipText>
+org.jfree.chart.entity.ChartEntity.writeObject : $r2 = r0.<org.jfree.chart.entity.ChartEntity: java.awt.Shape area>
+org.jfree.chart.entity.ChartEntity.writeObject : virtualinvoke r1.<java.io.ObjectOutputStream: void defaultWriteObject()>()
+org.jfree.chart.entity.ChartEntity.readObject : virtualinvoke r1.<java.io.ObjectInputStream: void defaultReadObject()>()
+org.jfree.chart.entity.ChartEntity.readObject : $r2 = staticinvoke <org.jfree.io.SerialUtilities: java.awt.Shape readShape(java.io.ObjectInputStream)>(r1)

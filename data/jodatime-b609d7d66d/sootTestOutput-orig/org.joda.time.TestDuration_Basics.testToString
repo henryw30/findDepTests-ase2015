@@ -1,0 +1,44 @@
+org.joda.time.format.FormatUtils.appendUnpaddedInteger : $r1 = staticinvoke <java.lang.Long: java.lang.String toString(long)>(l0)
+org.joda.time.format.FormatUtils.appendUnpaddedInteger : if i0 >= 100 goto $r6 = staticinvoke <java.lang.Integer: java.lang.String toString(int)>(i0)
+org.joda.time.format.FormatUtils.appendUnpaddedInteger : $l2 = (long) i1
+org.joda.time.format.FormatUtils.appendUnpaddedInteger : staticinvoke <org.joda.time.format.FormatUtils: void appendUnpaddedInteger(java.lang.StringBuffer,int)>(r0, i1)
+org.joda.time.format.FormatUtils.appendUnpaddedInteger : if i0 >= 0 goto (branch)
+org.joda.time.format.FormatUtils.appendUnpaddedInteger : $i4 = i0 + 1
+org.joda.time.format.FormatUtils.appendUnpaddedInteger : if i0 >= 10 goto (branch)
+org.joda.time.format.FormatUtils.appendUnpaddedInteger : $r6 = staticinvoke <java.lang.Integer: java.lang.String toString(int)>(i0)
+org.joda.time.format.FormatUtils.appendUnpaddedInteger : if i0 == -2147483648 goto virtualinvoke r0.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>("2147483648")
+org.joda.time.format.FormatUtils.appendUnpaddedInteger : $i6 = i1 + 48
+org.joda.time.format.FormatUtils.appendUnpaddedInteger : $i8 = i1 << 3
+org.joda.time.format.FormatUtils.appendUnpaddedInteger : virtualinvoke r0.<java.lang.StringBuffer: java.lang.StringBuffer append(char)>(45)
+org.joda.time.format.FormatUtils.appendUnpaddedInteger : i1 = (int) l0
+org.joda.time.format.FormatUtils.appendUnpaddedInteger : i0 = neg i0
+org.joda.time.format.FormatUtils.appendUnpaddedInteger : goto [?= return]
+org.joda.time.format.FormatUtils.appendUnpaddedInteger : $i2 = i0 + 48
+org.joda.time.base.AbstractDuration.toString : $i2 = virtualinvoke r1.<java.lang.StringBuffer: int length()>()
+org.joda.time.base.AbstractDuration.toString : virtualinvoke r1.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>("PT")
+org.joda.time.base.AbstractDuration.toString : $r8 = virtualinvoke r1.<java.lang.StringBuffer: java.lang.String toString()>()
+org.joda.time.base.AbstractDuration.toString : virtualinvoke r1.<java.lang.StringBuffer: java.lang.StringBuffer append(char)>(83)
+org.joda.time.base.AbstractDuration.toString : $l5 = l0 / 1000L
+org.joda.time.base.AbstractDuration.toString : $b1 = l0 cmp 0L
+org.joda.time.base.AbstractDuration.toString : l0 = virtualinvoke r0.<org.joda.time.base.AbstractDuration: long getMillis()>()
+org.joda.time.base.AbstractDuration.toString : staticinvoke <org.joda.time.format.FormatUtils: void appendUnpaddedInteger(java.lang.StringBuffer,long)>(r1, l0)
+org.joda.time.base.AbstractDuration.toString : if z0 == 0 goto $b4 = 2
+org.joda.time.base.AbstractDuration.toString : $r2 = new java.lang.StringBuffer
+org.joda.time.base.AbstractDuration.toString : $i8 = virtualinvoke r1.<java.lang.StringBuffer: int length()>()
+org.joda.time.base.AbstractDuration.toString : $i10 = virtualinvoke r1.<java.lang.StringBuffer: int length()>()
+org.joda.time.DateTimeUtils.checkPermission : r0 = staticinvoke <java.lang.System: java.lang.SecurityManager getSecurityManager()>()
+org.joda.time.DateTimeUtils.checkPermission : if r0 == null goto return
+org.joda.time.DateTimeZone.getDefault : if r0 != null goto return r0
+org.joda.time.DateTimeZone.getDefault : r0 = <org.joda.time.DateTimeZone: org.joda.time.DateTimeZone cDefault>
+org.joda.time.DateTimeZone.getDefault : return r0
+org.joda.time.DateTimeUtils.setCurrentMillisFixed : $r0 = new org.joda.time.DateTimeUtils$FixedMillisProvider
+org.joda.time.DateTimeUtils.setCurrentMillisFixed : staticinvoke <org.joda.time.DateTimeUtils: void checkPermission()>()
+org.joda.time.DateTimeZone.setDefault : exitmonitor r3
+org.joda.time.DateTimeZone.setDefault : $r6 = class "org/joda/time/DateTimeZone"
+org.joda.time.DateTimeZone.setDefault : <org.joda.time.DateTimeZone: org.joda.time.DateTimeZone cDefault> = r0
+org.joda.time.DateTimeZone.setDefault : if r1 == null goto (branch)
+org.joda.time.DateTimeZone.setDefault : if r0 != null goto $r6 = class "org/joda/time/DateTimeZone"
+org.joda.time.DateTimeZone.setDefault : r1 = staticinvoke <java.lang.System: java.lang.SecurityManager getSecurityManager()>()
+org.joda.time.base.BaseDuration.getMillis : $l0 = r0.<org.joda.time.base.BaseDuration: long iMillis>
+org.joda.time.DateTimeUtils.setCurrentMillisSystem : staticinvoke <org.joda.time.DateTimeUtils: void checkPermission()>()
+org.joda.time.DateTimeUtils.setCurrentMillisSystem : $r0 = <org.joda.time.DateTimeUtils: org.joda.time.DateTimeUtils$SystemMillisProvider SYSTEM_MILLIS_PROVIDER>

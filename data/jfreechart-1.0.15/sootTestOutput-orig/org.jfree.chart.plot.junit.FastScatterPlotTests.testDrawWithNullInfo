@@ -1,0 +1,822 @@
+org.jfree.chart.axis.Axis.getLabelFont : $r1 = r0.<org.jfree.chart.axis.Axis: java.awt.Font labelFont>
+org.jfree.chart.JFreeChart.isBorderVisible : $z0 = r0.<org.jfree.chart.JFreeChart: boolean borderVisible>
+org.jfree.chart.axis.AxisState.cursorDown : $d1 = r0.<org.jfree.chart.axis.AxisState: double cursor>
+org.jfree.chart.plot.Plot.drawOutline : virtualinvoke r1.<java.awt.Graphics2D: void draw(java.awt.Shape)>(r2)
+org.jfree.chart.plot.Plot.drawOutline : $r6 = r0.<org.jfree.chart.plot.Plot: java.awt.Paint outlinePaint>
+org.jfree.chart.plot.Plot.drawOutline : $r3 = r0.<org.jfree.chart.plot.Plot: java.awt.Stroke outlineStroke>
+org.jfree.chart.plot.Plot.drawOutline : $r5 = r0.<org.jfree.chart.plot.Plot: java.awt.Stroke outlineStroke>
+org.jfree.chart.plot.Plot.drawOutline : $z0 = r0.<org.jfree.chart.plot.Plot: boolean outlineVisible>
+org.jfree.chart.axis.Tick.getText : $r1 = r0.<org.jfree.chart.axis.Tick: java.lang.String text>
+org.jfree.chart.axis.ValueAxis.getFixedAutoRange : $d0 = r0.<org.jfree.chart.axis.ValueAxis: double fixedAutoRange>
+org.jfree.chart.axis.ValueTick.getValue : $d0 = r0.<org.jfree.chart.axis.ValueTick: double value>
+org.jfree.chart.axis.ValueAxis.isVerticalTickLabels : $z0 = r0.<org.jfree.chart.axis.ValueAxis: boolean verticalTickLabels>
+org.jfree.chart.axis.Axis.getTickLabelFont : $r1 = r0.<org.jfree.chart.axis.Axis: java.awt.Font tickLabelFont>
+org.jfree.chart.axis.TickUnit.compareTo : return -1
+org.jfree.chart.axis.TickUnit.compareTo : $d0 = r0.<org.jfree.chart.axis.TickUnit: double size>
+org.jfree.chart.axis.TickUnit.compareTo : $z0 = r1 instanceof org.jfree.chart.axis.TickUnit
+org.jfree.chart.axis.TickUnit.compareTo : $d2 = r0.<org.jfree.chart.axis.TickUnit: double size>
+org.jfree.chart.axis.TickUnit.compareTo : return 1
+org.jfree.chart.axis.TickUnit.compareTo : return 0
+org.jfree.chart.axis.TickUnit.compareTo : r2 = (org.jfree.chart.axis.TickUnit) r1
+org.jfree.chart.title.Title.setPosition : $r3 = new org.jfree.chart.event.TitleChangeEvent
+org.jfree.chart.title.Title.setPosition : r0.<org.jfree.chart.title.Title: org.jfree.ui.RectangleEdge position> = r1
+org.jfree.chart.title.Title.setPosition : $r2 = r0.<org.jfree.chart.title.Title: org.jfree.ui.RectangleEdge position>
+org.jfree.chart.title.Title.setPosition : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "position")
+org.jfree.chart.axis.TickUnit.getSize : $d0 = r0.<org.jfree.chart.axis.TickUnit: double size>
+org.jfree.chart.plot.Plot.fillBackground : $z0 = r4 instanceof java.awt.GradientPaint
+org.jfree.chart.plot.Plot.fillBackground : r4 = r0.<org.jfree.chart.plot.Plot: java.awt.Paint backgroundPaint>
+org.jfree.chart.plot.Plot.fillBackground : $r6 = r0.<org.jfree.chart.plot.Plot: java.awt.Paint backgroundPaint>
+org.jfree.chart.plot.Plot.fillBackground : virtualinvoke r1.<java.awt.Graphics2D: void setComposite(java.awt.Composite)>(r15)
+org.jfree.chart.plot.Plot.fillBackground : r15 = virtualinvoke r1.<java.awt.Graphics2D: java.awt.Composite getComposite()>()
+org.jfree.chart.plot.Plot.fillBackground : $f8 = r0.<org.jfree.chart.plot.Plot: float backgroundAlpha>
+org.jfree.chart.plot.Plot.fillBackground : $r3 = <org.jfree.chart.plot.PlotOrientation: org.jfree.chart.plot.PlotOrientation VERTICAL>
+org.jfree.chart.plot.Plot.fillBackground : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r3, "orientation")
+org.jfree.chart.plot.Plot.fillBackground : virtualinvoke r1.<java.awt.Graphics2D: void fill(java.awt.Shape)>(r2)
+org.jfree.chart.plot.Plot.fillBackground : virtualinvoke r1.<java.awt.Graphics2D: void setPaint(java.awt.Paint)>(r4)
+org.jfree.chart.block.AbstractBlock.setMargin : r0.<org.jfree.chart.block.AbstractBlock: org.jfree.ui.RectangleInsets margin> = r1
+org.jfree.chart.block.AbstractBlock.setMargin : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "margin")
+org.jfree.chart.plot.Plot.drawBackgroundImage : $r6 = r0.<org.jfree.chart.plot.Plot: java.awt.Image backgroundImage>
+org.jfree.chart.block.BlockContainer.draw : virtualinvoke r0.<org.jfree.chart.block.BlockContainer: void drawBorder(java.awt.Graphics2D,java.awt.geom.Rectangle2D)>(r1, r16)
+org.jfree.chart.block.BlockContainer.draw : return r22
+org.jfree.chart.block.BlockContainer.draw : if r4 == null goto return r22
+org.jfree.chart.block.BlockContainer.draw : r22 = null
+org.jfree.chart.block.BlockContainer.draw : r4 = null
+org.jfree.chart.block.BlockContainer.draw : r17 = virtualinvoke r0.<org.jfree.chart.block.BlockContainer: java.awt.geom.Rectangle2D trimBorder(java.awt.geom.Rectangle2D)>(r16)
+org.jfree.chart.block.BlockContainer.draw : r16 = virtualinvoke r0.<org.jfree.chart.block.BlockContainer: java.awt.geom.Rectangle2D trimMargin(java.awt.geom.Rectangle2D)>(r6)
+org.jfree.chart.block.BlockContainer.draw : r5 = (org.jfree.chart.block.EntityBlockParams) r3
+org.jfree.chart.block.BlockContainer.draw : $z1 = interfaceinvoke r5.<org.jfree.chart.block.EntityBlockParams: boolean getGenerateEntities()>()
+org.jfree.chart.block.BlockContainer.draw : $r19 = r0.<org.jfree.chart.block.BlockContainer: java.util.List blocks>
+org.jfree.chart.block.BlockContainer.draw : $r15 = virtualinvoke r2.<java.awt.geom.Rectangle2D: java.lang.Object clone()>()
+org.jfree.chart.block.BlockContainer.draw : $z0 = r3 instanceof org.jfree.chart.block.EntityBlockParams
+org.jfree.chart.block.BlockContainer.draw : virtualinvoke r0.<org.jfree.chart.block.BlockContainer: java.awt.geom.Rectangle2D trimPadding(java.awt.geom.Rectangle2D)>(r17)
+org.jfree.chart.block.BlockContainer.draw : $z2 = interfaceinvoke r7.<java.util.Iterator: boolean hasNext()>()
+org.jfree.chart.JFreeChart.createAlignedRectangle2D : d1 = #NaN
+org.jfree.chart.JFreeChart.createAlignedRectangle2D : d0 = #NaN
+org.jfree.chart.JFreeChart.createAlignedRectangle2D : $r6 = <org.jfree.ui.HorizontalAlignment: org.jfree.ui.HorizontalAlignment CENTER>
+org.jfree.chart.JFreeChart.createAlignedRectangle2D : $r11 = new java.awt.geom.Rectangle2D$Double
+org.jfree.chart.JFreeChart.createAlignedRectangle2D : $r9 = <org.jfree.ui.VerticalAlignment: org.jfree.ui.VerticalAlignment CENTER>
+org.jfree.chart.JFreeChart.createAlignedRectangle2D : $d2 = virtualinvoke r2.<java.awt.geom.Rectangle2D: double getCenterX()>()
+org.jfree.chart.JFreeChart.createAlignedRectangle2D : $r8 = <org.jfree.ui.VerticalAlignment: org.jfree.ui.VerticalAlignment TOP>
+org.jfree.chart.JFreeChart.createAlignedRectangle2D : $d10 = virtualinvoke r2.<java.awt.geom.Rectangle2D: double getMaxY()>()
+org.jfree.chart.JFreeChart.createAlignedRectangle2D : $r10 = <org.jfree.ui.VerticalAlignment: org.jfree.ui.VerticalAlignment BOTTOM>
+org.jfree.chart.JFreeChart.createAlignedRectangle2D : $r5 = <org.jfree.ui.HorizontalAlignment: org.jfree.ui.HorizontalAlignment LEFT>
+org.jfree.data.Range.contains : $d1 = r0.<org.jfree.data.Range: double lower>
+org.jfree.chart.axis.Tick.getRotationAnchor : $r1 = r0.<org.jfree.chart.axis.Tick: org.jfree.ui.TextAnchor rotationAnchor>
+org.jfree.chart.axis.Tick.getAngle : $d0 = r0.<org.jfree.chart.axis.Tick: double angle>
+org.jfree.chart.axis.NumberAxis.getNumberFormatOverride : $r1 = r0.<org.jfree.chart.axis.NumberAxis: java.text.NumberFormat numberFormatOverride>
+org.jfree.chart.JFreeChart.notifyListeners : $i1 = lengthof r2
+org.jfree.chart.JFreeChart.notifyListeners : $r3 = r0.<org.jfree.chart.JFreeChart: javax.swing.event.EventListenerList progressListeners>
+org.jfree.chart.block.BlockContainer.setArrangement : r0.<org.jfree.chart.block.BlockContainer: org.jfree.chart.block.Arrangement arrangement> = r1
+org.jfree.chart.block.BlockContainer.setArrangement : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "arrangement")
+org.jfree.chart.axis.TickUnits.add : $r3 = r0.<org.jfree.chart.axis.TickUnits: java.util.List tickUnits>
+org.jfree.chart.axis.TickUnits.add : if r1 != null goto $r3 = r0.<org.jfree.chart.axis.TickUnits: java.util.List tickUnits>
+org.jfree.chart.axis.TickUnits.add : $r4 = r0.<org.jfree.chart.axis.TickUnits: java.util.List tickUnits>
+org.jfree.chart.axis.ValueAxis.calculateAnchorPoint : return r5
+org.jfree.chart.axis.ValueAxis.calculateAnchorPoint : $d8 = virtualinvoke r4.<org.jfree.ui.RectangleInsets: double getTop()>()
+org.jfree.chart.axis.ValueAxis.calculateAnchorPoint : r5 = newarray (float)[2]
+org.jfree.chart.axis.ValueAxis.calculateAnchorPoint : $d11 = virtualinvoke r4.<org.jfree.ui.RectangleInsets: double getLeft()>()
+org.jfree.chart.axis.ValueAxis.calculateAnchorPoint : $d6 = virtualinvoke r1.<org.jfree.chart.axis.ValueTick: double getValue()>()
+org.jfree.chart.axis.ValueAxis.calculateAnchorPoint : $d14 = virtualinvoke r1.<org.jfree.chart.axis.ValueTick: double getValue()>()
+org.jfree.chart.axis.ValueAxis.calculateAnchorPoint : $r8 = <org.jfree.ui.RectangleEdge: org.jfree.ui.RectangleEdge LEFT>
+org.jfree.chart.axis.ValueAxis.calculateAnchorPoint : $r7 = <org.jfree.ui.RectangleEdge: org.jfree.ui.RectangleEdge BOTTOM>
+org.jfree.chart.axis.ValueAxis.calculateAnchorPoint : $r6 = <org.jfree.ui.RectangleEdge: org.jfree.ui.RectangleEdge TOP>
+org.jfree.chart.axis.ValueAxis.calculateAnchorPoint : r4 = virtualinvoke r0.<org.jfree.chart.axis.ValueAxis: org.jfree.ui.RectangleInsets getTickLabelInsets()>()
+org.jfree.chart.axis.NumberAxis.calculateLowestVisibleTickValue : $r2 = virtualinvoke r0.<org.jfree.chart.axis.NumberAxis: org.jfree.data.Range getRange()>()
+org.jfree.chart.axis.NumberAxis.calculateLowestVisibleTickValue : $r1 = virtualinvoke r0.<org.jfree.chart.axis.NumberAxis: org.jfree.chart.axis.NumberTickUnit getTickUnit()>()
+org.jfree.chart.axis.NumberAxis.calculateLowestVisibleTickValue : $d4 = d1 * d0
+org.jfree.chart.plot.Plot.getInsets : $r1 = r0.<org.jfree.chart.plot.Plot: org.jfree.ui.RectangleInsets insets>
+org.jfree.chart.axis.ValueAxis.isAutoRange : $z0 = r0.<org.jfree.chart.axis.ValueAxis: boolean autoRange>
+org.jfree.chart.block.AbstractBlock.drawBorder : $r3 = r0.<org.jfree.chart.block.AbstractBlock: org.jfree.chart.block.BlockFrame frame>
+org.jfree.chart.plot.FastScatterPlot.draw : if r5 == null goto virtualinvoke r0.<org.jfree.chart.plot.FastScatterPlot: void drawBackground(java.awt.Graphics2D,java.awt.geom.Rectangle2D)>(r1, r9)
+org.jfree.chart.plot.FastScatterPlot.draw : $r24 = virtualinvoke r11.<org.jfree.chart.axis.AxisState: java.util.List getTicks()>()
+org.jfree.chart.plot.FastScatterPlot.draw : $d0 = virtualinvoke r9.<java.awt.geom.Rectangle2D: double getMaxY()>()
+org.jfree.chart.plot.FastScatterPlot.draw : virtualinvoke r6.<org.jfree.ui.RectangleInsets: void trim(java.awt.geom.Rectangle2D)>(r2)
+org.jfree.chart.plot.FastScatterPlot.draw : $r16 = r0.<org.jfree.chart.plot.FastScatterPlot: org.jfree.chart.axis.ValueAxis domainAxis>
+org.jfree.chart.plot.FastScatterPlot.draw : $f0 = virtualinvoke r0.<org.jfree.chart.plot.FastScatterPlot: float getForegroundAlpha()>()
+org.jfree.chart.plot.FastScatterPlot.draw : virtualinvoke r1.<java.awt.Graphics2D: void clip(java.awt.Shape)>(r9)
+org.jfree.chart.plot.FastScatterPlot.draw : $r25 = virtualinvoke r12.<org.jfree.chart.axis.AxisState: java.util.List getTicks()>()
+org.jfree.chart.plot.FastScatterPlot.draw : if r5 == null goto r6 = virtualinvoke r0.<org.jfree.chart.plot.FastScatterPlot: org.jfree.ui.RectangleInsets getInsets()>()
+org.jfree.chart.plot.FastScatterPlot.draw : $r15 = new org.jfree.chart.axis.AxisSpace
+org.jfree.chart.plot.FastScatterPlot.draw : r14 = virtualinvoke r1.<java.awt.Graphics2D: java.awt.Composite getComposite()>()
+org.jfree.chart.plot.FastScatterPlot.draw : $r22 = r0.<org.jfree.chart.plot.FastScatterPlot: org.jfree.chart.axis.ValueAxis rangeAxis>
+org.jfree.chart.plot.FastScatterPlot.draw : r13 = virtualinvoke r1.<java.awt.Graphics2D: java.awt.Shape getClip()>()
+org.jfree.chart.plot.FastScatterPlot.draw : virtualinvoke r1.<java.awt.Graphics2D: void setClip(java.awt.Shape)>(r13)
+org.jfree.chart.plot.FastScatterPlot.draw : r6 = virtualinvoke r0.<org.jfree.chart.plot.FastScatterPlot: org.jfree.ui.RectangleInsets getInsets()>()
+org.jfree.chart.plot.FastScatterPlot.draw : $r21 = r0.<org.jfree.chart.plot.FastScatterPlot: org.jfree.chart.axis.ValueAxis domainAxis>
+org.jfree.chart.plot.FastScatterPlot.draw : virtualinvoke r0.<org.jfree.chart.plot.FastScatterPlot: void drawOutline(java.awt.Graphics2D,java.awt.geom.Rectangle2D)>(r1, r9)
+org.jfree.chart.plot.FastScatterPlot.draw : virtualinvoke r0.<org.jfree.chart.plot.FastScatterPlot: void render(java.awt.Graphics2D,java.awt.geom.Rectangle2D,org.jfree.chart.plot.PlotRenderingInfo,org.jfree.chart.plot.CrosshairState)>(r1, r9, r5, null)
+org.jfree.chart.plot.FastScatterPlot.draw : virtualinvoke r1.<java.awt.Graphics2D: void setComposite(java.awt.Composite)>(r14)
+org.jfree.chart.plot.FastScatterPlot.draw : $r26 = staticinvoke <java.awt.AlphaComposite: java.awt.AlphaComposite getInstance(int,float)>(3, $f0)
+org.jfree.chart.plot.FastScatterPlot.draw : r9 = virtualinvoke r20.<org.jfree.chart.axis.AxisSpace: java.awt.geom.Rectangle2D shrink(java.awt.geom.Rectangle2D,java.awt.geom.Rectangle2D)>(r2, null)
+org.jfree.chart.plot.FastScatterPlot.draw : $r18 = r0.<org.jfree.chart.plot.FastScatterPlot: org.jfree.chart.axis.ValueAxis rangeAxis>
+org.jfree.chart.plot.FastScatterPlot.draw : virtualinvoke r0.<org.jfree.chart.plot.FastScatterPlot: void drawBackground(java.awt.Graphics2D,java.awt.geom.Rectangle2D)>(r1, r9)
+org.jfree.chart.axis.Axis.setPlot : r0.<org.jfree.chart.axis.Axis: org.jfree.chart.plot.Plot plot> = r1
+org.jfree.chart.axis.Axis.setPlot : virtualinvoke r0.<org.jfree.chart.axis.Axis: void configure()>()
+org.jfree.chart.axis.Axis.isVisible : $z0 = r0.<org.jfree.chart.axis.Axis: boolean visible>
+org.jfree.data.Range.getUpperBound : $d0 = r0.<org.jfree.data.Range: double upper>
+org.jfree.chart.axis.TickUnits.getCeilingTickUnit : $r3 = r0.<org.jfree.chart.axis.TickUnits: java.util.List tickUnits>
+org.jfree.chart.axis.TickUnits.getCeilingTickUnit : $r2 = r0.<org.jfree.chart.axis.TickUnits: java.util.List tickUnits>
+org.jfree.chart.axis.TickUnits.getCeilingTickUnit : if i0 < 0 goto $i1 = i0 + 1
+org.jfree.chart.axis.TickUnits.getCeilingTickUnit : $r6 = r0.<org.jfree.chart.axis.TickUnits: java.util.List tickUnits>
+org.jfree.chart.axis.TickUnits.getCeilingTickUnit : $r1 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.TickUnits.getCeilingTickUnit : $r2 = staticinvoke <java.text.NumberFormat: java.text.NumberFormat getInstance()>()
+org.jfree.chart.axis.TickUnits.getCeilingTickUnit : $i3 = interfaceinvoke $r7.<java.util.List: int size()>()
+org.jfree.chart.axis.TickUnits.getCeilingTickUnit : $i1 = i0 + 1
+org.jfree.chart.axis.Axis.drawLabel : $r15 = <org.jfree.ui.RectangleEdge: org.jfree.ui.RectangleEdge TOP>
+org.jfree.chart.axis.Axis.drawLabel : r7 = virtualinvoke r0.<org.jfree.chart.axis.Axis: java.awt.Font getLabelFont()>()
+org.jfree.chart.axis.Axis.drawLabel : d42 = virtualinvoke r4.<java.awt.geom.Rectangle2D: double getCenterY()>()
+org.jfree.chart.axis.Axis.drawLabel : $d43 = virtualinvoke r0.<org.jfree.chart.axis.Axis: double getLabelAngle()>()
+org.jfree.chart.axis.Axis.drawLabel : goto [?= return r6]
+org.jfree.chart.axis.Axis.drawLabel : return r6
+org.jfree.chart.axis.Axis.drawLabel : r9 = virtualinvoke r2.<java.awt.Graphics2D: java.awt.FontMetrics getFontMetrics()>()
+org.jfree.chart.axis.Axis.drawLabel : if r1 == null goto return r6
+org.jfree.chart.axis.Axis.drawLabel : $d26 = virtualinvoke r0.<org.jfree.chart.axis.Axis: double getLabelAngle()>()
+org.jfree.chart.axis.Axis.drawLabel : $d36 = virtualinvoke r6.<org.jfree.chart.axis.AxisState: double getCursor()>()
+org.jfree.chart.axis.Axis.drawLabel : $r24 = <org.jfree.ui.RectangleEdge: org.jfree.ui.RectangleEdge LEFT>
+org.jfree.chart.axis.Axis.drawLabel : d19 = virtualinvoke r4.<java.awt.geom.Rectangle2D: double getCenterX()>()
+org.jfree.chart.axis.Axis.drawLabel : $d27 = virtualinvoke r8.<org.jfree.ui.RectangleInsets: double getTop()>()
+org.jfree.chart.axis.Axis.drawLabel : $d48 = virtualinvoke r8.<org.jfree.ui.RectangleInsets: double getRight()>()
+org.jfree.chart.axis.Axis.drawLabel : r8 = virtualinvoke r0.<org.jfree.chart.axis.Axis: org.jfree.ui.RectangleInsets getLabelInsets()>()
+org.jfree.chart.axis.Axis.drawLabel : r19 = staticinvoke <java.awt.geom.AffineTransform: java.awt.geom.AffineTransform getRotateInstance(double,double,double)>($d16, $d17, $d18)
+org.jfree.chart.axis.Axis.drawLabel : $r14 = virtualinvoke r0.<org.jfree.chart.axis.Axis: java.awt.Paint getLabelPaint()>()
+org.jfree.chart.axis.Axis.drawLabel : r27 = interfaceinvoke r26.<java.awt.Shape: java.awt.geom.Rectangle2D getBounds2D()>()
+org.jfree.chart.axis.Axis.drawLabel : $d37 = virtualinvoke r8.<org.jfree.ui.RectangleInsets: double getRight()>()
+org.jfree.chart.axis.Axis.drawLabel : virtualinvoke r2.<java.awt.Graphics2D: void setFont(java.awt.Font)>(r7)
+org.jfree.chart.axis.Axis.drawLabel : r26 = virtualinvoke r25.<java.awt.geom.AffineTransform: java.awt.Shape createTransformedShape(java.awt.Shape)>(r10)
+org.jfree.chart.axis.Axis.drawLabel : r25 = staticinvoke <java.awt.geom.AffineTransform: java.awt.geom.AffineTransform getRotateInstance(double,double,double)>($d33, $d34, $d35)
+org.jfree.chart.axis.Axis.drawLabel : $d16 = virtualinvoke r0.<org.jfree.chart.axis.Axis: double getLabelAngle()>()
+org.jfree.chart.axis.Axis.drawLabel : $d21 = virtualinvoke r8.<org.jfree.ui.RectangleInsets: double getTop()>()
+org.jfree.chart.axis.Axis.drawLabel : $d18 = virtualinvoke r10.<java.awt.geom.Rectangle2D: double getCenterY()>()
+org.jfree.chart.axis.Axis.drawLabel : $r18 = <org.jfree.ui.RectangleEdge: org.jfree.ui.RectangleEdge BOTTOM>
+org.jfree.chart.axis.Axis.drawLabel : $d20 = virtualinvoke r6.<org.jfree.chart.axis.AxisState: double getCursor()>()
+org.jfree.chart.axis.Axis.drawLabel : $d35 = virtualinvoke r10.<java.awt.geom.Rectangle2D: double getCenterY()>()
+org.jfree.chart.axis.Axis.drawLabel : r10 = staticinvoke <org.jfree.text.TextUtilities: java.awt.geom.Rectangle2D getTextBounds(java.lang.String,java.awt.Graphics2D,java.awt.FontMetrics)>(r1, r2, r9)
+org.jfree.chart.axis.Axis.drawLabel : r20 = virtualinvoke r19.<java.awt.geom.AffineTransform: java.awt.Shape createTransformedShape(java.awt.Shape)>(r10)
+org.jfree.chart.axis.Axis.drawLabel : $f2 = (float) d19
+org.jfree.chart.axis.Axis.drawLabel : $d30 = virtualinvoke r8.<org.jfree.ui.RectangleInsets: double getBottom()>()
+org.jfree.chart.axis.Axis.drawLabel : $d45 = virtualinvoke r8.<org.jfree.ui.RectangleInsets: double getLeft()>()
+org.jfree.chart.axis.Axis.drawLabel : $d32 = virtualinvoke r0.<org.jfree.chart.axis.Axis: double getLabelAngle()>()
+org.jfree.chart.axis.Axis.drawLabel : r21 = interfaceinvoke r20.<java.awt.Shape: java.awt.geom.Rectangle2D getBounds2D()>()
+org.jfree.chart.axis.Axis.drawLabel : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r6, "state")
+org.jfree.chart.axis.Axis.drawLabel : $f4 = (float) d41
+org.jfree.chart.axis.Axis.getAxisLineStroke : $r1 = r0.<org.jfree.chart.axis.Axis: java.awt.Stroke axisLineStroke>
+org.jfree.chart.title.LegendTitle.arrange : return r4
+org.jfree.chart.title.LegendTitle.arrange : $r3 = new org.jfree.ui.Size2D
+org.jfree.chart.title.LegendTitle.arrange : virtualinvoke r0.<org.jfree.chart.title.LegendTitle: void fetchLegendItems()>()
+org.jfree.chart.title.LegendTitle.arrange : $r8 = r0.<org.jfree.chart.title.LegendTitle: org.jfree.chart.block.BlockContainer items>
+org.jfree.chart.axis.Axis.isMinorTickMarksVisible : $z0 = r0.<org.jfree.chart.axis.Axis: boolean minorTickMarksVisible>
+org.jfree.chart.block.AbstractBlock.setFrame : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "frame")
+org.jfree.chart.block.AbstractBlock.setFrame : r0.<org.jfree.chart.block.AbstractBlock: org.jfree.chart.block.BlockFrame frame> = r1
+org.jfree.chart.axis.Axis.createAndAddEntity : if r4 == null goto return
+org.jfree.chart.title.Title.addChangeListener : $r2 = r0.<org.jfree.chart.title.Title: javax.swing.event.EventListenerList listenerList>
+org.jfree.chart.axis.Axis.getTickMarkOutsideLength : $f0 = r0.<org.jfree.chart.axis.Axis: float tickMarkOutsideLength>
+org.jfree.chart.title.Title.notifyListeners : $z0 = r0.<org.jfree.chart.title.Title: boolean notify>
+org.jfree.chart.title.Title.notifyListeners : $i1 = lengthof r2
+org.jfree.chart.title.Title.notifyListeners : $r3 = r0.<org.jfree.chart.title.Title: javax.swing.event.EventListenerList listenerList>
+org.jfree.chart.axis.ValueAxis.lengthToJava2D : $d3 = d2 - d1
+org.jfree.chart.axis.ValueAxis.lengthToJava2D : d1 = virtualinvoke r0.<org.jfree.chart.axis.ValueAxis: double valueToJava2D(double,java.awt.geom.Rectangle2D,org.jfree.ui.RectangleEdge)>(0.0, r1, r2)
+org.jfree.chart.axis.ValueAxis.lengthToJava2D : d2 = virtualinvoke r0.<org.jfree.chart.axis.ValueAxis: double valueToJava2D(double,java.awt.geom.Rectangle2D,org.jfree.ui.RectangleEdge)>(d0, r1, r2)
+org.jfree.chart.axis.NumberAxis.draw : return r11
+org.jfree.chart.axis.NumberAxis.draw : $z0 = virtualinvoke r0.<org.jfree.chart.axis.NumberAxis: boolean isVisible()>()
+org.jfree.chart.axis.NumberAxis.draw : virtualinvoke r0.<org.jfree.chart.axis.NumberAxis: void createAndAddEntity(double,org.jfree.chart.axis.AxisState,java.awt.geom.Rectangle2D,org.jfree.ui.RectangleEdge,org.jfree.chart.plot.PlotRenderingInfo)>(d0, r11, r3, r4, r5)
+org.jfree.chart.axis.NumberAxis.draw : n0 = null
+org.jfree.chart.axis.NumberAxis.draw : r9 = virtualinvoke r0.<org.jfree.chart.axis.NumberAxis: org.jfree.chart.axis.AxisState drawTickMarksAndLabels(java.awt.Graphics2D,double,java.awt.geom.Rectangle2D,java.awt.geom.Rectangle2D,org.jfree.ui.RectangleEdge)>(r1, d0, r2, r3, r4)
+org.jfree.chart.axis.NumberAxis.draw : $r10 = virtualinvoke r0.<org.jfree.chart.axis.NumberAxis: java.lang.String getLabel()>()
+org.jfree.chart.axis.Axis.getFixedDimension : $d0 = r0.<org.jfree.chart.axis.Axis: double fixedDimension>
+org.jfree.chart.block.LineBorder.getInsets : $r1 = r0.<org.jfree.chart.block.LineBorder: org.jfree.ui.RectangleInsets insets>
+org.jfree.chart.block.BlockParams.setGenerateEntities : r0.<org.jfree.chart.block.BlockParams: boolean generateEntities> = z0
+org.jfree.chart.axis.AxisSpace.add : $r2 = <org.jfree.ui.RectangleEdge: org.jfree.ui.RectangleEdge TOP>
+org.jfree.chart.axis.AxisSpace.add : $r6 = <org.jfree.ui.RectangleEdge: org.jfree.ui.RectangleEdge LEFT>
+org.jfree.chart.axis.AxisSpace.add : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "edge")
+org.jfree.chart.axis.AxisSpace.add : $r4 = <org.jfree.ui.RectangleEdge: org.jfree.ui.RectangleEdge BOTTOM>
+org.jfree.chart.axis.AxisSpace.add : $d3 = r0.<org.jfree.chart.axis.AxisSpace: double bottom>
+org.jfree.chart.axis.AxisSpace.add : $d5 = r0.<org.jfree.chart.axis.AxisSpace: double left>
+org.jfree.chart.axis.NumberAxis.selectAutoTickUnit : virtualinvoke r0.<org.jfree.chart.axis.NumberAxis: void selectHorizontalAutoTickUnit(java.awt.Graphics2D,java.awt.geom.Rectangle2D,org.jfree.ui.RectangleEdge)>(r1, r2, r3)
+org.jfree.chart.axis.NumberAxis.selectAutoTickUnit : $z0 = staticinvoke <org.jfree.ui.RectangleEdge: boolean isTopOrBottom(org.jfree.ui.RectangleEdge)>(r3)
+org.jfree.chart.axis.NumberAxis.selectAutoTickUnit : virtualinvoke r0.<org.jfree.chart.axis.NumberAxis: void selectVerticalAutoTickUnit(java.awt.Graphics2D,java.awt.geom.Rectangle2D,org.jfree.ui.RectangleEdge)>(r1, r2, r3)
+org.jfree.chart.axis.NumberAxis.selectAutoTickUnit : $z1 = staticinvoke <org.jfree.ui.RectangleEdge: boolean isLeftOrRight(org.jfree.ui.RectangleEdge)>(r3)
+org.jfree.chart.title.LegendTitle.setBackgroundPaint : $r2 = new org.jfree.chart.event.TitleChangeEvent
+org.jfree.chart.title.LegendTitle.setBackgroundPaint : r0.<org.jfree.chart.title.LegendTitle: java.awt.Paint backgroundPaint> = r1
+org.jfree.chart.axis.Axis.addChangeListener : $r2 = r0.<org.jfree.chart.axis.Axis: javax.swing.event.EventListenerList listenerList>
+org.jfree.chart.axis.TickType.equals : r2 = (org.jfree.chart.axis.TickType) r1
+org.jfree.chart.axis.TickType.equals : if r0 != r1 goto $z0 = r1 instanceof org.jfree.chart.axis.TickType
+org.jfree.chart.axis.TickType.equals : $r3 = r0.<org.jfree.chart.axis.TickType: java.lang.String name>
+org.jfree.chart.axis.TickType.equals : return 1
+org.jfree.chart.axis.TickType.equals : return 0
+org.jfree.chart.axis.TickType.equals : $z0 = r1 instanceof org.jfree.chart.axis.TickType
+org.jfree.chart.axis.NumberAxis.valueToJava2D : d2 = virtualinvoke r3.<org.jfree.data.Range: double getUpperBound()>()
+org.jfree.chart.axis.NumberAxis.valueToJava2D : d4 = 0.0
+org.jfree.chart.axis.NumberAxis.valueToJava2D : $z2 = virtualinvoke r0.<org.jfree.chart.axis.NumberAxis: boolean isInverted()>()
+org.jfree.chart.axis.NumberAxis.valueToJava2D : d1 = virtualinvoke r3.<org.jfree.data.Range: double getLowerBound()>()
+org.jfree.chart.axis.NumberAxis.valueToJava2D : d4 = virtualinvoke r1.<java.awt.geom.Rectangle2D: double getMaxX()>()
+org.jfree.chart.axis.NumberAxis.valueToJava2D : $z1 = staticinvoke <org.jfree.ui.RectangleEdge: boolean isLeftOrRight(org.jfree.ui.RectangleEdge)>(r2)
+org.jfree.chart.axis.NumberAxis.valueToJava2D : d4 = virtualinvoke r1.<java.awt.geom.Rectangle2D: double getMinY()>()
+org.jfree.chart.axis.NumberAxis.valueToJava2D : d3 = virtualinvoke r1.<java.awt.geom.Rectangle2D: double getX()>()
+org.jfree.chart.axis.NumberAxis.valueToJava2D : r3 = virtualinvoke r0.<org.jfree.chart.axis.NumberAxis: org.jfree.data.Range getRange()>()
+org.jfree.chart.axis.NumberAxis.valueToJava2D : $z0 = staticinvoke <org.jfree.ui.RectangleEdge: boolean isTopOrBottom(org.jfree.ui.RectangleEdge)>(r2)
+org.jfree.chart.axis.NumberAxis.valueToJava2D : $d11 = d0 - d1
+org.jfree.chart.axis.NumberAxis.valueToJava2D : d3 = virtualinvoke r1.<java.awt.geom.Rectangle2D: double getMaxY()>()
+org.jfree.chart.axis.NumberAxis.valueToJava2D : d3 = 0.0
+org.jfree.chart.axis.AxisState.getCursor : $d0 = r0.<org.jfree.chart.axis.AxisState: double cursor>
+org.jfree.chart.plot.Plot.getLegendItems : return null
+org.jfree.chart.axis.Axis.getLabelPaint : $r1 = r0.<org.jfree.chart.axis.Axis: java.awt.Paint labelPaint>
+org.jfree.chart.axis.Axis.getTickMarkStroke : $r1 = r0.<org.jfree.chart.axis.Axis: java.awt.Stroke tickMarkStroke>
+org.jfree.chart.axis.ValueAxis.getUpperMargin : $d0 = r0.<org.jfree.chart.axis.ValueAxis: double upperMargin>
+org.jfree.chart.axis.AxisState.cursorLeft : $d1 = r0.<org.jfree.chart.axis.AxisState: double cursor>
+org.jfree.chart.axis.ValueTick.getTickType : $r1 = r0.<org.jfree.chart.axis.ValueTick: org.jfree.chart.axis.TickType tickType>
+org.jfree.chart.axis.Axis.getAxisLinePaint : $r1 = r0.<org.jfree.chart.axis.Axis: java.awt.Paint axisLinePaint>
+org.jfree.chart.axis.AxisState.setTicks : r0.<org.jfree.chart.axis.AxisState: java.util.List ticks> = r1
+org.jfree.chart.plot.Plot.getForegroundAlpha : $f0 = r0.<org.jfree.chart.plot.Plot: float foregroundAlpha>
+org.jfree.chart.block.BlockContainer.isEmpty : $r1 = r0.<org.jfree.chart.block.BlockContainer: java.util.List blocks>
+org.jfree.chart.axis.NumberAxis.calculateVisibleTickCount : $d1 = virtualinvoke r1.<org.jfree.data.Range: double getUpperBound()>()
+org.jfree.chart.axis.NumberAxis.calculateVisibleTickCount : $d4 = virtualinvoke r1.<org.jfree.data.Range: double getLowerBound()>()
+org.jfree.chart.axis.NumberAxis.calculateVisibleTickCount : r1 = virtualinvoke r0.<org.jfree.chart.axis.NumberAxis: org.jfree.data.Range getRange()>()
+org.jfree.chart.axis.NumberAxis.calculateVisibleTickCount : $r2 = virtualinvoke r0.<org.jfree.chart.axis.NumberAxis: org.jfree.chart.axis.NumberTickUnit getTickUnit()>()
+org.jfree.chart.axis.Axis.getTickLabelInsets : $r1 = r0.<org.jfree.chart.axis.Axis: org.jfree.ui.RectangleInsets tickLabelInsets>
+org.jfree.chart.axis.AxisSpace.shrink : if r2 != null goto $d0 = virtualinvoke r1.<java.awt.geom.Rectangle2D: double getX()>()
+org.jfree.chart.axis.AxisSpace.shrink : virtualinvoke r2.<java.awt.geom.Rectangle2D: void setRect(double,double,double,double)>($d2, $d5, $d10, $d15)
+org.jfree.chart.axis.AxisSpace.shrink : return r2
+org.jfree.chart.axis.AxisSpace.shrink : $d0 = virtualinvoke r1.<java.awt.geom.Rectangle2D: double getX()>()
+org.jfree.chart.axis.AxisSpace.shrink : $d11 = virtualinvoke r1.<java.awt.geom.Rectangle2D: double getHeight()>()
+org.jfree.chart.axis.AxisSpace.shrink : $r3 = new java.awt.geom.Rectangle2D$Double
+org.jfree.chart.axis.AxisSpace.shrink : $d6 = virtualinvoke r1.<java.awt.geom.Rectangle2D: double getWidth()>()
+org.jfree.chart.axis.AxisSpace.shrink : $d3 = virtualinvoke r1.<java.awt.geom.Rectangle2D: double getY()>()
+org.jfree.chart.axis.NumberAxis.getTickUnit : $r1 = r0.<org.jfree.chart.axis.NumberAxis: org.jfree.chart.axis.NumberTickUnit tickUnit>
+org.jfree.chart.axis.Axis.getLabelEnclosure : return r4
+org.jfree.chart.axis.Axis.getLabelEnclosure : d0 = d0 - 1.5707963267948966
+org.jfree.chart.axis.Axis.getLabelEnclosure : d2 = virtualinvoke r12.<java.awt.geom.Rectangle2D: double getCenterY()>()
+org.jfree.chart.axis.Axis.getLabelEnclosure : r12 = virtualinvoke r8.<org.jfree.ui.RectangleInsets: java.awt.geom.Rectangle2D createOutsetRectangle(java.awt.geom.Rectangle2D)>(r7)
+org.jfree.chart.axis.Axis.getLabelEnclosure : $r3 = new java.awt.geom.Rectangle2D$Double
+org.jfree.chart.axis.Axis.getLabelEnclosure : r4 = interfaceinvoke r10.<java.awt.Shape: java.awt.geom.Rectangle2D getBounds2D()>()
+org.jfree.chart.axis.Axis.getLabelEnclosure : r10 = virtualinvoke r9.<java.awt.geom.AffineTransform: java.awt.Shape createTransformedShape(java.awt.Shape)>(r12)
+org.jfree.chart.axis.Axis.getLabelEnclosure : d0 = virtualinvoke r0.<org.jfree.chart.axis.Axis: double getLabelAngle()>()
+org.jfree.chart.axis.Axis.getLabelEnclosure : if r5 == null goto return r4
+org.jfree.chart.axis.Axis.getLabelEnclosure : r8 = virtualinvoke r0.<org.jfree.chart.axis.Axis: org.jfree.ui.RectangleInsets getLabelInsets()>()
+org.jfree.chart.axis.Axis.getLabelEnclosure : $r11 = virtualinvoke r0.<org.jfree.chart.axis.Axis: java.awt.Font getLabelFont()>()
+org.jfree.chart.axis.Axis.getLabelEnclosure : $r13 = <org.jfree.ui.RectangleEdge: org.jfree.ui.RectangleEdge LEFT>
+org.jfree.chart.axis.Axis.getLabelEnclosure : r9 = staticinvoke <java.awt.geom.AffineTransform: java.awt.geom.AffineTransform getRotateInstance(double,double,double)>(d0, d1, d2)
+org.jfree.chart.axis.Axis.getLabelEnclosure : r7 = staticinvoke <org.jfree.text.TextUtilities: java.awt.geom.Rectangle2D getTextBounds(java.lang.String,java.awt.Graphics2D,java.awt.FontMetrics)>(r5, r1, r6)
+org.jfree.chart.axis.Axis.getLabelEnclosure : d1 = virtualinvoke r12.<java.awt.geom.Rectangle2D: double getCenterX()>()
+org.jfree.chart.axis.Axis.getLabelEnclosure : r5 = virtualinvoke r0.<org.jfree.chart.axis.Axis: java.lang.String getLabel()>()
+org.jfree.chart.plot.Plot.drawBackground : virtualinvoke r0.<org.jfree.chart.plot.Plot: void drawBackgroundImage(java.awt.Graphics2D,java.awt.geom.Rectangle2D)>(r1, r2)
+org.jfree.chart.plot.Plot.drawBackground : virtualinvoke r0.<org.jfree.chart.plot.Plot: void fillBackground(java.awt.Graphics2D,java.awt.geom.Rectangle2D)>(r1, r2)
+org.jfree.chart.axis.ValueAxis.getStandardTickUnits : $r1 = r0.<org.jfree.chart.axis.ValueAxis: org.jfree.chart.axis.TickUnitSource standardTickUnits>
+org.jfree.chart.axis.NumberAxis.estimateMaximumTickLabelWidth : r12 = virtualinvoke r0.<org.jfree.chart.axis.NumberAxis: org.jfree.data.Range getRange()>()
+org.jfree.chart.axis.NumberAxis.estimateMaximumTickLabelWidth : r8 = virtualinvoke r2.<org.jfree.chart.axis.TickUnit: java.lang.String valueToString(double)>(d2)
+org.jfree.chart.axis.NumberAxis.estimateMaximumTickLabelWidth : $i1 = virtualinvoke r11.<java.awt.FontMetrics: int stringWidth(java.lang.String)>(r8)
+org.jfree.chart.axis.NumberAxis.estimateMaximumTickLabelWidth : r6 = virtualinvoke r0.<org.jfree.chart.axis.NumberAxis: java.text.NumberFormat getNumberFormatOverride()>()
+org.jfree.chart.axis.NumberAxis.estimateMaximumTickLabelWidth : r3 = virtualinvoke r0.<org.jfree.chart.axis.NumberAxis: org.jfree.ui.RectangleInsets getTickLabelInsets()>()
+org.jfree.chart.axis.NumberAxis.estimateMaximumTickLabelWidth : d2 = virtualinvoke r12.<org.jfree.data.Range: double getUpperBound()>()
+org.jfree.chart.axis.NumberAxis.estimateMaximumTickLabelWidth : $r10 = virtualinvoke r0.<org.jfree.chart.axis.NumberAxis: java.awt.Font getTickLabelFont()>()
+org.jfree.chart.axis.NumberAxis.estimateMaximumTickLabelWidth : return d8
+org.jfree.chart.axis.NumberAxis.estimateMaximumTickLabelWidth : d1 = virtualinvoke r12.<org.jfree.data.Range: double getLowerBound()>()
+org.jfree.chart.axis.NumberAxis.estimateMaximumTickLabelWidth : $d9 = staticinvoke <java.lang.Math: double max(double,double)>(d3, d4)
+org.jfree.chart.axis.NumberAxis.estimateMaximumTickLabelWidth : r7 = virtualinvoke r2.<org.jfree.chart.axis.TickUnit: java.lang.String valueToString(double)>(d1)
+org.jfree.chart.axis.NumberAxis.estimateMaximumTickLabelWidth : if r6 == null goto r7 = virtualinvoke r2.<org.jfree.chart.axis.TickUnit: java.lang.String valueToString(double)>(d1)
+org.jfree.chart.axis.NumberAxis.estimateMaximumTickLabelWidth : $d5 = virtualinvoke r3.<org.jfree.ui.RectangleInsets: double getLeft()>()
+org.jfree.chart.axis.NumberAxis.estimateMaximumTickLabelWidth : $i0 = virtualinvoke r11.<java.awt.FontMetrics: int stringWidth(java.lang.String)>(r7)
+org.jfree.chart.axis.NumberAxis.estimateMaximumTickLabelWidth : $z0 = virtualinvoke r0.<org.jfree.chart.axis.NumberAxis: boolean isVerticalTickLabels()>()
+org.jfree.chart.axis.NumberAxis.selectVerticalAutoTickUnit : $r7 = virtualinvoke r0.<org.jfree.chart.axis.NumberAxis: org.jfree.chart.axis.NumberTickUnit getTickUnit()>()
+org.jfree.chart.axis.NumberAxis.selectVerticalAutoTickUnit : d8 = virtualinvoke r0.<org.jfree.chart.axis.NumberAxis: double estimateMaximumTickLabelHeight(java.awt.Graphics2D)>(r1)
+org.jfree.chart.axis.NumberAxis.selectVerticalAutoTickUnit : $d7 = virtualinvoke r6.<org.jfree.chart.axis.NumberTickUnit: double getSize()>()
+org.jfree.chart.axis.NumberAxis.selectVerticalAutoTickUnit : d0 = virtualinvoke r0.<org.jfree.chart.axis.NumberAxis: double estimateMaximumTickLabelHeight(java.awt.Graphics2D)>(r1)
+org.jfree.chart.axis.NumberAxis.selectVerticalAutoTickUnit : r4 = virtualinvoke r0.<org.jfree.chart.axis.NumberAxis: org.jfree.chart.axis.TickUnitSource getStandardTickUnits()>()
+org.jfree.chart.axis.NumberAxis.selectVerticalAutoTickUnit : virtualinvoke r0.<org.jfree.chart.axis.NumberAxis: void setTickUnit(org.jfree.chart.axis.NumberTickUnit,boolean,boolean)>(r6, 0, 0)
+org.jfree.chart.axis.NumberAxis.selectVerticalAutoTickUnit : $d5 = d0 / d1
+org.jfree.chart.axis.NumberAxis.selectVerticalAutoTickUnit : $d4 = virtualinvoke r5.<org.jfree.chart.axis.TickUnit: double getSize()>()
+org.jfree.chart.axis.NumberAxis.selectVerticalAutoTickUnit : $b0 = d8 cmpl d3
+org.jfree.chart.axis.NumberAxis.selectVerticalAutoTickUnit : $r8 = interfaceinvoke r4.<org.jfree.chart.axis.TickUnitSource: org.jfree.chart.axis.TickUnit getCeilingTickUnit(double)>(d2)
+org.jfree.data.Range.getLowerBound : $d0 = r0.<org.jfree.data.Range: double lower>
+org.jfree.chart.JFreeChart.draw : $r15 = r0.<org.jfree.chart.JFreeChart: java.awt.RenderingHints renderingHints>
+org.jfree.chart.JFreeChart.draw : goto [?= staticinvoke <edu.washington.cs.dt.impact.util.Tracer: void trace(java.lang.String,java.lang.String)>("$z4 = interfaceinvoke r38.<java.util.Iterator: boolean hasNext()>()", "org.jfree.chart.JFreeChart.draw")]
+org.jfree.chart.JFreeChart.draw : $z5 = virtualinvoke r40.<org.jfree.chart.title.Title: boolean isVisible()>()
+org.jfree.chart.JFreeChart.draw : $r16 = r0.<org.jfree.chart.JFreeChart: java.awt.Paint backgroundPaint>
+org.jfree.chart.JFreeChart.draw : $r47 = r0.<org.jfree.chart.JFreeChart: org.jfree.chart.plot.Plot plot>
+org.jfree.chart.JFreeChart.draw : if r11 == null goto (branch)
+org.jfree.chart.JFreeChart.draw : $r18 = r0.<org.jfree.chart.JFreeChart: java.awt.Image backgroundImage>
+org.jfree.chart.JFreeChart.draw : if r4 == null goto (branch)
+org.jfree.chart.JFreeChart.draw : virtualinvoke r28.<java.awt.geom.Rectangle2D: void setRect(java.awt.geom.Rectangle2D)>(r2)
+org.jfree.chart.JFreeChart.draw : r6 = null
+org.jfree.chart.JFreeChart.draw : $z4 = interfaceinvoke r38.<java.util.Iterator: boolean hasNext()>()
+org.jfree.chart.JFreeChart.draw : $r37 = r0.<org.jfree.chart.JFreeChart: java.util.List subtitles>
+org.jfree.chart.JFreeChart.draw : $r48 = new org.jfree.chart.event.ChartProgressEvent
+org.jfree.chart.JFreeChart.draw : $r29 = r0.<org.jfree.chart.JFreeChart: org.jfree.ui.RectangleInsets padding>
+org.jfree.chart.JFreeChart.draw : $r27 = new java.awt.geom.Rectangle2D$Double
+org.jfree.chart.JFreeChart.draw : r45 = r28
+org.jfree.chart.JFreeChart.draw : $r39 = interfaceinvoke r38.<java.util.Iterator: java.lang.Object next()>()
+org.jfree.chart.JFreeChart.draw : $z1 = virtualinvoke r0.<org.jfree.chart.JFreeChart: boolean isBorderVisible()>()
+org.jfree.chart.JFreeChart.draw : if r6 == null goto $z6 = 0
+org.jfree.chart.JFreeChart.draw : if r4 == null goto $r47 = r0.<org.jfree.chart.JFreeChart: org.jfree.chart.plot.Plot plot>
+org.jfree.chart.JFreeChart.draw : r7 = virtualinvoke r1.<java.awt.Graphics2D: java.awt.Shape getClip()>()
+org.jfree.chart.JFreeChart.draw : r46 = null
+org.jfree.chart.JFreeChart.draw : virtualinvoke r1.<java.awt.Graphics2D: void setClip(java.awt.Shape)>(r7)
+org.jfree.chart.JFreeChart.draw : virtualinvoke r1.<java.awt.Graphics2D: void clip(java.awt.Shape)>(r2)
+org.jfree.chart.JFreeChart.draw : $r17 = r0.<org.jfree.chart.JFreeChart: java.awt.Paint backgroundPaint>
+org.jfree.chart.JFreeChart.draw : $r30 = r0.<org.jfree.chart.JFreeChart: org.jfree.chart.title.TextTitle title>
+org.jfree.chart.JFreeChart.draw : if r6 == null goto r7 = virtualinvoke r1.<java.awt.Graphics2D: java.awt.Shape getClip()>()
+org.jfree.chart.JFreeChart.draw : virtualinvoke r1.<java.awt.Graphics2D: void fill(java.awt.Shape)>(r2)
+org.jfree.chart.JFreeChart.draw : $r5 = new org.jfree.chart.event.ChartProgressEvent
+org.jfree.chart.axis.Axis.getPlot : $r1 = r0.<org.jfree.chart.axis.Axis: org.jfree.chart.plot.Plot plot>
+org.jfree.chart.axis.ValueAxis.drawAxisLine : $r5 = <org.jfree.ui.RectangleEdge: org.jfree.ui.RectangleEdge TOP>
+org.jfree.chart.axis.ValueAxis.drawAxisLine : $d6 = virtualinvoke r2.<java.awt.geom.Rectangle2D: double getMaxX()>()
+org.jfree.chart.axis.ValueAxis.drawAxisLine : $r12 = <org.jfree.ui.RectangleEdge: org.jfree.ui.RectangleEdge LEFT>
+org.jfree.chart.axis.ValueAxis.drawAxisLine : if z1 == 0 goto return
+org.jfree.chart.axis.ValueAxis.drawAxisLine : $z4 = r0.<org.jfree.chart.axis.ValueAxis: boolean negativeArrowVisible>
+org.jfree.chart.axis.ValueAxis.drawAxisLine : r4 = null
+org.jfree.chart.axis.ValueAxis.drawAxisLine : virtualinvoke r1.<java.awt.Graphics2D: void draw(java.awt.Shape)>(r4)
+org.jfree.chart.axis.ValueAxis.drawAxisLine : $r11 = new java.awt.geom.Line2D$Double
+org.jfree.chart.axis.ValueAxis.drawAxisLine : if z0 == 0 goto (branch)
+org.jfree.chart.axis.ValueAxis.drawAxisLine : $r17 = virtualinvoke r0.<org.jfree.chart.axis.ValueAxis: java.awt.Stroke getAxisLineStroke()>()
+org.jfree.chart.axis.ValueAxis.drawAxisLine : z0 = 0
+org.jfree.chart.axis.ValueAxis.drawAxisLine : $r10 = <org.jfree.ui.RectangleEdge: org.jfree.ui.RectangleEdge BOTTOM>
+org.jfree.chart.axis.ValueAxis.drawAxisLine : $z2 = r0.<org.jfree.chart.axis.ValueAxis: boolean positiveArrowVisible>
+org.jfree.chart.axis.ValueAxis.drawAxisLine : z1 = 0
+org.jfree.chart.axis.ValueAxis.drawAxisLine : $d8 = virtualinvoke r2.<java.awt.geom.Rectangle2D: double getMaxY()>()
+org.jfree.chart.axis.ValueAxis.drawAxisLine : $r13 = new java.awt.geom.Line2D$Double
+org.jfree.chart.axis.ValueAxis.drawAxisLine : $r16 = virtualinvoke r0.<org.jfree.chart.axis.ValueAxis: java.awt.Paint getAxisLinePaint()>()
+org.jfree.chart.axis.Axis.isTickLabelsVisible : $z0 = r0.<org.jfree.chart.axis.Axis: boolean tickLabelsVisible>
+org.jfree.chart.block.LineBorder.draw : $b0 = d0 cmpg 0.0
+org.jfree.chart.block.LineBorder.draw : d1 = virtualinvoke r2.<java.awt.geom.Rectangle2D: double getHeight()>()
+org.jfree.chart.block.LineBorder.draw : d0 = virtualinvoke r2.<java.awt.geom.Rectangle2D: double getWidth()>()
+org.jfree.chart.axis.ValueAxis.isInverted : $z0 = r0.<org.jfree.chart.axis.ValueAxis: boolean inverted>
+org.jfree.chart.plot.FastScatterPlot.isDomainGridlinesVisible : $z0 = r0.<org.jfree.chart.plot.FastScatterPlot: boolean domainGridlinesVisible>
+org.jfree.chart.axis.ValueAxis.findMaximumTickLabelWidth : goto [?= staticinvoke <edu.washington.cs.dt.impact.util.Tracer: void trace(java.lang.String,java.lang.String)>("$z1 = interfaceinvoke r7.<java.util.Iterator: boolean hasNext()>()", "org.jfree.chart.axis.ValueAxis.findMaximumTickLabelWidth")]
+org.jfree.chart.axis.ValueAxis.findMaximumTickLabelWidth : r5 = virtualinvoke r0.<org.jfree.chart.axis.ValueAxis: java.awt.Font getTickLabelFont()>()
+org.jfree.chart.axis.ValueAxis.findMaximumTickLabelWidth : $d4 = virtualinvoke r4.<org.jfree.ui.RectangleInsets: double getRight()>()
+org.jfree.chart.axis.ValueAxis.findMaximumTickLabelWidth : $d1 = virtualinvoke r9.<java.awt.geom.Rectangle2D: double getWidth()>()
+org.jfree.chart.axis.ValueAxis.findMaximumTickLabelWidth : d0 = 0.0
+org.jfree.chart.axis.ValueAxis.findMaximumTickLabelWidth : $d7 = virtualinvoke r4.<org.jfree.ui.RectangleInsets: double getLeft()>()
+org.jfree.chart.axis.ValueAxis.findMaximumTickLabelWidth : if z0 != 0 goto $r12 = virtualinvoke r2.<java.awt.Graphics2D: java.awt.font.FontRenderContext getFontRenderContext()>()
+org.jfree.chart.axis.ValueAxis.findMaximumTickLabelWidth : r9 = staticinvoke <org.jfree.text.TextUtilities: java.awt.geom.Rectangle2D getTextBounds(java.lang.String,java.awt.Graphics2D,java.awt.FontMetrics)>($r11, r2, r6)
+org.jfree.chart.axis.ValueAxis.findMaximumTickLabelWidth : $r11 = virtualinvoke r8.<org.jfree.chart.axis.Tick: java.lang.String getText()>()
+org.jfree.chart.axis.ValueAxis.findMaximumTickLabelWidth : $z1 = interfaceinvoke r7.<java.util.Iterator: boolean hasNext()>()
+org.jfree.chart.axis.ValueAxis.findMaximumTickLabelWidth : $d6 = virtualinvoke r9.<java.awt.geom.Rectangle2D: double getWidth()>()
+org.jfree.chart.axis.ValueAxis.findMaximumTickLabelWidth : $r10 = interfaceinvoke r7.<java.util.Iterator: java.lang.Object next()>()
+org.jfree.chart.axis.ValueAxis.findMaximumTickLabelWidth : return d0
+org.jfree.chart.axis.ValueAxis.findMaximumTickLabelWidth : goto [?= return d0]
+org.jfree.chart.axis.ValueAxis.findMaximumTickLabelWidth : r7 = interfaceinvoke r1.<java.util.List: java.util.Iterator iterator()>()
+org.jfree.chart.axis.ValueAxis.findMaximumTickLabelWidth : r6 = virtualinvoke r2.<java.awt.Graphics2D: java.awt.FontMetrics getFontMetrics(java.awt.Font)>(r5)
+org.jfree.chart.axis.ValueAxis.findMaximumTickLabelWidth : r4 = virtualinvoke r0.<org.jfree.chart.axis.ValueAxis: org.jfree.ui.RectangleInsets getTickLabelInsets()>()
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : $z1 = virtualinvoke r0.<org.jfree.chart.axis.NumberAxis: boolean getAutoRangeIncludesZero()>()
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : $d15 = virtualinvoke r0.<org.jfree.chart.axis.NumberAxis: double getLowerMargin()>()
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : r2 = (org.jfree.chart.plot.ValueAxisPlot) r1
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : $b1 = d2 cmpg d4
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : d2 = d0 - d1
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : d1 = virtualinvoke r3.<org.jfree.data.Range: double getLowerBound()>()
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : d0 = virtualinvoke r3.<org.jfree.data.Range: double getUpperBound()>()
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : r1 = virtualinvoke r0.<org.jfree.chart.axis.NumberAxis: org.jfree.chart.plot.Plot getPlot()>()
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : d1 = staticinvoke <java.lang.Math: double min(double,double)>(d1, 0.0)
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : $r4 = r0.<org.jfree.chart.axis.NumberAxis: org.jfree.data.RangeType rangeType>
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : $d13 = virtualinvoke r0.<org.jfree.chart.axis.NumberAxis: double getUpperMargin()>()
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : d4 = virtualinvoke r0.<org.jfree.chart.axis.NumberAxis: double getAutoRangeMinimumSize()>()
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : $z2 = virtualinvoke r0.<org.jfree.chart.axis.NumberAxis: boolean getAutoRangeStickyZero()>()
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : d3 = virtualinvoke r0.<org.jfree.chart.axis.NumberAxis: double getFixedAutoRange()>()
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : $r6 = r0.<org.jfree.chart.axis.NumberAxis: org.jfree.data.RangeType rangeType>
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : $b0 = d3 cmpl 0.0
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : d0 = staticinvoke <java.lang.Math: double max(double,double)>(d0, 0.0)
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : r3 = interfaceinvoke r2.<org.jfree.chart.plot.ValueAxisPlot: org.jfree.data.Range getDataRange(org.jfree.chart.axis.ValueAxis)>(r0)
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : $b5 = d0 cmpg 0.0
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : $z0 = r1 instanceof org.jfree.chart.plot.ValueAxisPlot
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : $r12 = new org.jfree.data.Range
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : $b6 = d1 cmpl 0.0
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : if r1 != null goto $z0 = r1 instanceof org.jfree.chart.plot.ValueAxisPlot
+org.jfree.chart.axis.NumberAxis.autoAdjustRange : if r3 != null goto d0 = virtualinvoke r3.<org.jfree.data.Range: double getUpperBound()>()
+org.jfree.chart.axis.Axis.getLabelInsets : $r1 = r0.<org.jfree.chart.axis.Axis: org.jfree.ui.RectangleInsets labelInsets>
+org.jfree.chart.axis.NumberAxis.configure : $z0 = virtualinvoke r0.<org.jfree.chart.axis.NumberAxis: boolean isAutoRange()>()
+org.jfree.chart.axis.NumberAxis.configure : virtualinvoke r0.<org.jfree.chart.axis.NumberAxis: void autoAdjustRange()>()
+org.jfree.chart.axis.Tick.getTextAnchor : $r1 = r0.<org.jfree.chart.axis.Tick: org.jfree.ui.TextAnchor textAnchor>
+org.jfree.chart.axis.Axis.getTickLabelPaint : $r1 = r0.<org.jfree.chart.axis.Axis: java.awt.Paint tickLabelPaint>
+org.jfree.chart.plot.FastScatterPlot.getRangeGridlinePaint : $r1 = r0.<org.jfree.chart.plot.FastScatterPlot: java.awt.Paint rangeGridlinePaint>
+org.jfree.chart.axis.NumberAxis.getAutoRangeStickyZero : $z0 = r0.<org.jfree.chart.axis.NumberAxis: boolean autoRangeStickyZero>
+org.jfree.chart.axis.ValueAxis.reserveSpace : return r5
+org.jfree.chart.axis.ValueAxis.reserveSpace : r10 = virtualinvoke r0.<org.jfree.chart.axis.ValueAxis: java.awt.geom.Rectangle2D getLabelEnclosure(java.awt.Graphics2D,org.jfree.ui.RectangleEdge)>(r1, r4)
+org.jfree.chart.axis.ValueAxis.reserveSpace : $z1 = virtualinvoke r0.<org.jfree.chart.axis.ValueAxis: boolean isTickLabelsVisible()>()
+org.jfree.chart.axis.ValueAxis.reserveSpace : d4 = 0.0
+org.jfree.chart.axis.ValueAxis.reserveSpace : $z3 = virtualinvoke r0.<org.jfree.chart.axis.ValueAxis: boolean isVerticalTickLabels()>()
+org.jfree.chart.axis.ValueAxis.reserveSpace : if r5 != null goto $z0 = virtualinvoke r0.<org.jfree.chart.axis.ValueAxis: boolean isVisible()>()
+org.jfree.chart.axis.ValueAxis.reserveSpace : d5 = virtualinvoke r10.<java.awt.geom.Rectangle2D: double getHeight()>()
+org.jfree.chart.axis.ValueAxis.reserveSpace : d1 = 0.0
+org.jfree.chart.axis.ValueAxis.reserveSpace : $z2 = staticinvoke <org.jfree.ui.RectangleEdge: boolean isTopOrBottom(org.jfree.ui.RectangleEdge)>(r4)
+org.jfree.chart.axis.ValueAxis.reserveSpace : $z0 = virtualinvoke r0.<org.jfree.chart.axis.ValueAxis: boolean isVisible()>()
+org.jfree.chart.axis.ValueAxis.reserveSpace : $d8 = d7 + d2
+org.jfree.chart.axis.ValueAxis.reserveSpace : d0 = virtualinvoke r0.<org.jfree.chart.axis.ValueAxis: double getFixedDimension()>()
+org.jfree.chart.axis.ValueAxis.reserveSpace : $z4 = staticinvoke <org.jfree.ui.RectangleEdge: boolean isLeftOrRight(org.jfree.ui.RectangleEdge)>(r4)
+org.jfree.chart.axis.ValueAxis.reserveSpace : d2 = 0.0
+org.jfree.chart.axis.ValueAxis.reserveSpace : $z5 = virtualinvoke r0.<org.jfree.chart.axis.ValueAxis: boolean isVerticalTickLabels()>()
+org.jfree.chart.axis.ValueAxis.reserveSpace : $r8 = virtualinvoke r0.<org.jfree.chart.axis.ValueAxis: java.awt.Font getTickLabelFont()>()
+org.jfree.chart.axis.ValueAxis.reserveSpace : $d6 = d5 + d1
+org.jfree.chart.axis.ValueAxis.reserveSpace : d1 = virtualinvoke r0.<org.jfree.chart.axis.ValueAxis: double findMaximumTickLabelHeight(java.util.List,java.awt.Graphics2D,java.awt.geom.Rectangle2D,boolean)>(r6, r1, r3, $z3)
+org.jfree.chart.axis.ValueAxis.reserveSpace : $r9 = new org.jfree.chart.axis.AxisState
+org.jfree.chart.axis.ValueAxis.reserveSpace : d7 = virtualinvoke r10.<java.awt.geom.Rectangle2D: double getWidth()>()
+org.jfree.chart.axis.ValueAxis.reserveSpace : d2 = virtualinvoke r0.<org.jfree.chart.axis.ValueAxis: double findMaximumTickLabelWidth(java.util.List,java.awt.Graphics2D,java.awt.geom.Rectangle2D,boolean)>(r6, r1, r3, $z5)
+org.jfree.chart.axis.ValueAxis.reserveSpace : $z7 = staticinvoke <org.jfree.ui.RectangleEdge: boolean isLeftOrRight(org.jfree.ui.RectangleEdge)>(r4)
+org.jfree.chart.axis.ValueAxis.reserveSpace : $z6 = staticinvoke <org.jfree.ui.RectangleEdge: boolean isTopOrBottom(org.jfree.ui.RectangleEdge)>(r4)
+org.jfree.chart.axis.ValueAxis.reserveSpace : $b0 = d0 cmpl 0.0
+org.jfree.chart.axis.ValueAxis.reserveSpace : d3 = 0.0
+org.jfree.chart.block.BlockBorder.draw : $r9 = new java.awt.geom.Rectangle2D$Double
+org.jfree.chart.block.BlockBorder.draw : $r6 = r0.<org.jfree.chart.block.BlockBorder: org.jfree.ui.RectangleInsets insets>
+org.jfree.chart.block.BlockBorder.draw : d4 = virtualinvoke r2.<java.awt.geom.Rectangle2D: double getX()>()
+org.jfree.chart.block.BlockBorder.draw : d6 = virtualinvoke r2.<java.awt.geom.Rectangle2D: double getWidth()>()
+org.jfree.chart.block.BlockBorder.draw : $b2 = d2 cmpl 0.0
+org.jfree.chart.block.BlockBorder.draw : $r4 = r0.<org.jfree.chart.block.BlockBorder: org.jfree.ui.RectangleInsets insets>
+org.jfree.chart.block.BlockBorder.draw : $r8 = r0.<org.jfree.chart.block.BlockBorder: java.awt.Paint paint>
+org.jfree.chart.block.BlockBorder.draw : $b1 = d1 cmpl 0.0
+org.jfree.chart.block.BlockBorder.draw : $r7 = r0.<org.jfree.chart.block.BlockBorder: org.jfree.ui.RectangleInsets insets>
+org.jfree.chart.block.BlockBorder.draw : d7 = virtualinvoke r2.<java.awt.geom.Rectangle2D: double getHeight()>()
+org.jfree.chart.block.BlockBorder.draw : d5 = virtualinvoke r2.<java.awt.geom.Rectangle2D: double getY()>()
+org.jfree.chart.block.BlockBorder.draw : $b0 = d0 cmpl 0.0
+org.jfree.chart.block.BlockBorder.draw : $b3 = d3 cmpl 0.0
+org.jfree.chart.block.BlockBorder.draw : $r5 = r0.<org.jfree.chart.block.BlockBorder: org.jfree.ui.RectangleInsets insets>
+org.jfree.chart.axis.NumberAxis.refreshTicks : $z0 = staticinvoke <org.jfree.ui.RectangleEdge: boolean isTopOrBottom(org.jfree.ui.RectangleEdge)>(r4)
+org.jfree.chart.axis.NumberAxis.refreshTicks : r6 = virtualinvoke r0.<org.jfree.chart.axis.NumberAxis: java.util.List refreshTicksHorizontal(java.awt.Graphics2D,java.awt.geom.Rectangle2D,org.jfree.ui.RectangleEdge)>(r1, r3, r4)
+org.jfree.chart.axis.NumberAxis.refreshTicks : return r6
+org.jfree.chart.axis.NumberAxis.refreshTicks : r6 = virtualinvoke r0.<org.jfree.chart.axis.NumberAxis: java.util.List refreshTicksVertical(java.awt.Graphics2D,java.awt.geom.Rectangle2D,org.jfree.ui.RectangleEdge)>(r1, r3, r4)
+org.jfree.chart.axis.NumberAxis.refreshTicks : $r5 = new java.util.ArrayList
+org.jfree.chart.axis.NumberAxis.refreshTicks : $z1 = staticinvoke <org.jfree.ui.RectangleEdge: boolean isLeftOrRight(org.jfree.ui.RectangleEdge)>(r4)
+org.jfree.chart.axis.ValueAxis.setRange : if z0 == 0 goto r0.<org.jfree.chart.axis.ValueAxis: org.jfree.data.Range range> = r1
+org.jfree.chart.axis.ValueAxis.setRange : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "range")
+org.jfree.chart.axis.ValueAxis.setRange : r0.<org.jfree.chart.axis.ValueAxis: org.jfree.data.Range range> = r1
+org.jfree.chart.axis.ValueAxis.setRange : if z1 == 0 goto return
+org.jfree.chart.block.AbstractBlock.setPadding : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "padding")
+org.jfree.chart.block.AbstractBlock.setPadding : r0.<org.jfree.chart.block.AbstractBlock: org.jfree.ui.RectangleInsets padding> = r1
+org.jfree.chart.plot.FastScatterPlot.drawDomainGridlines : $r9 = r0.<org.jfree.chart.plot.FastScatterPlot: org.jfree.chart.axis.ValueAxis domainAxis>
+org.jfree.chart.plot.FastScatterPlot.drawDomainGridlines : $r8 = interfaceinvoke r4.<java.util.Iterator: java.lang.Object next()>()
+org.jfree.chart.plot.FastScatterPlot.drawDomainGridlines : $r12 = virtualinvoke r0.<org.jfree.chart.plot.FastScatterPlot: java.awt.Stroke getDomainGridlineStroke()>()
+org.jfree.chart.plot.FastScatterPlot.drawDomainGridlines : r4 = interfaceinvoke r3.<java.util.List: java.util.Iterator iterator()>()
+org.jfree.chart.plot.FastScatterPlot.drawDomainGridlines : $z0 = virtualinvoke r0.<org.jfree.chart.plot.FastScatterPlot: boolean isDomainGridlinesVisible()>()
+org.jfree.chart.plot.FastScatterPlot.drawDomainGridlines : $r10 = new java.awt.geom.Line2D$Double
+org.jfree.chart.plot.FastScatterPlot.drawDomainGridlines : $z1 = interfaceinvoke r4.<java.util.Iterator: boolean hasNext()>()
+org.jfree.chart.plot.FastScatterPlot.drawDomainGridlines : virtualinvoke r1.<java.awt.Graphics2D: void draw(java.awt.Shape)>(r7)
+org.jfree.chart.plot.FastScatterPlot.drawDomainGridlines : goto [?= staticinvoke <edu.washington.cs.dt.impact.util.Tracer: void trace(java.lang.String,java.lang.String)>("$z1 = interfaceinvoke r4.<java.util.Iterator: boolean hasNext()>()", "org.jfree.chart.plot.FastScatterPlot.drawDomainGridlines")]
+org.jfree.chart.plot.FastScatterPlot.drawDomainGridlines : $d3 = virtualinvoke r2.<java.awt.geom.Rectangle2D: double getMaxY()>()
+org.jfree.chart.plot.FastScatterPlot.drawDomainGridlines : $r11 = virtualinvoke r0.<org.jfree.chart.plot.FastScatterPlot: java.awt.Paint getDomainGridlinePaint()>()
+org.jfree.chart.JFreeChart.createBufferedImage : virtualinvoke r4.<java.awt.Graphics2D: void dispose()>()
+org.jfree.chart.JFreeChart.createBufferedImage : r4 = virtualinvoke r3.<java.awt.image.BufferedImage: java.awt.Graphics2D createGraphics()>()
+org.jfree.chart.JFreeChart.createBufferedImage : return r3
+org.jfree.chart.JFreeChart.createBufferedImage : $r2 = virtualinvoke r0.<org.jfree.chart.JFreeChart: java.awt.image.BufferedImage createBufferedImage(int,int,int,org.jfree.chart.ChartRenderingInfo)>(i0, i1, 2, r1)
+org.jfree.chart.JFreeChart.createBufferedImage : $r5 = new java.awt.geom.Rectangle2D$Double
+org.jfree.chart.JFreeChart.createBufferedImage : $r2 = new java.awt.image.BufferedImage
+org.jfree.chart.plot.FastScatterPlot.getRangeGridlineStroke : $r1 = r0.<org.jfree.chart.plot.FastScatterPlot: java.awt.Stroke rangeGridlineStroke>
+org.jfree.chart.plot.FastScatterPlot.isRangeGridlinesVisible : $z0 = r0.<org.jfree.chart.plot.FastScatterPlot: boolean rangeGridlinesVisible>
+org.jfree.chart.block.BlockBorder.getInsets : $r1 = r0.<org.jfree.chart.block.BlockBorder: org.jfree.ui.RectangleInsets insets>
+org.jfree.chart.plot.FastScatterPlot.calculateXDataRange : $b3 = f2 cmpl f1
+org.jfree.chart.plot.FastScatterPlot.calculateXDataRange : return r2
+org.jfree.chart.plot.FastScatterPlot.calculateXDataRange : f0 = f2
+org.jfree.chart.plot.FastScatterPlot.calculateXDataRange : f1 = f2
+org.jfree.chart.plot.FastScatterPlot.calculateXDataRange : i0 = 0
+org.jfree.chart.plot.FastScatterPlot.calculateXDataRange : f0 = #InfinityF
+org.jfree.chart.plot.FastScatterPlot.calculateXDataRange : f1 = #-InfinityF
+org.jfree.chart.plot.FastScatterPlot.calculateXDataRange : $b2 = f2 cmpg f0
+org.jfree.chart.plot.FastScatterPlot.calculateXDataRange : if r1 == null goto return r2
+org.jfree.chart.plot.FastScatterPlot.calculateXDataRange : r2 = null
+org.jfree.chart.plot.FastScatterPlot.calculateXDataRange : $r5 = new org.jfree.data.Range
+org.jfree.chart.plot.FastScatterPlot.calculateXDataRange : $b4 = f0 cmpg f1
+org.jfree.chart.plot.FastScatterPlot.calculateXDataRange : $r4 = r1[0]
+org.jfree.chart.block.BlockParams.getGenerateEntities : $z0 = r0.<org.jfree.chart.block.BlockParams: boolean generateEntities>
+org.jfree.chart.plot.FastScatterPlot.getDomainGridlinePaint : $r1 = r0.<org.jfree.chart.plot.FastScatterPlot: java.awt.Paint domainGridlinePaint>
+org.jfree.chart.axis.NumberAxis.refreshTicksVertical : return r5
+org.jfree.chart.axis.NumberAxis.refreshTicksVertical : if i0 > 500 goto return r5
+org.jfree.chart.axis.NumberAxis.refreshTicksVertical : $r15 = virtualinvoke r0.<org.jfree.chart.axis.NumberAxis: org.jfree.data.Range getRange()>()
+org.jfree.chart.axis.NumberAxis.refreshTicksVertical : if i1 > 0 goto i2 = 1
+org.jfree.chart.axis.NumberAxis.refreshTicksVertical : i1 = virtualinvoke r7.<org.jfree.chart.axis.TickUnit: int getMinorTickCount()>()
+org.jfree.chart.axis.NumberAxis.refreshTicksVertical : i3 = 1
+org.jfree.chart.axis.NumberAxis.refreshTicksVertical : i0 = virtualinvoke r0.<org.jfree.chart.axis.NumberAxis: int calculateVisibleTickCount()>()
+org.jfree.chart.axis.NumberAxis.refreshTicksVertical : $d6 = (double) i2
+org.jfree.chart.axis.NumberAxis.refreshTicksVertical : $i5 = i4 + 1
+org.jfree.chart.axis.NumberAxis.refreshTicksVertical : $d10 = (double) i4
+org.jfree.chart.axis.NumberAxis.refreshTicksVertical : $r21 = new org.jfree.chart.axis.NumberTick
+org.jfree.chart.axis.NumberAxis.refreshTicksVertical : if r10 == null goto $r18 = virtualinvoke r0.<org.jfree.chart.axis.NumberAxis: org.jfree.chart.axis.NumberTickUnit getTickUnit()>()
+org.jfree.chart.axis.NumberAxis.refreshTicksVertical : d1 = virtualinvoke r0.<org.jfree.chart.axis.NumberAxis: double calculateLowestVisibleTickValue()>()
+org.jfree.chart.axis.NumberAxis.refreshTicksVertical : r13 = <org.jfree.ui.TextAnchor: org.jfree.ui.TextAnchor CENTER_RIGHT>
+org.jfree.chart.axis.NumberAxis.refreshTicksVertical : r6 = virtualinvoke r0.<org.jfree.chart.axis.NumberAxis: java.awt.Font getTickLabelFont()>()
+org.jfree.chart.axis.NumberAxis.refreshTicksVertical : r10 = virtualinvoke r0.<org.jfree.chart.axis.NumberAxis: java.text.NumberFormat getNumberFormatOverride()>()
+org.jfree.chart.axis.NumberAxis.refreshTicksVertical : $d15 = d4 - d12
+org.jfree.chart.axis.NumberAxis.refreshTicksVertical : interfaceinvoke r5.<java.util.List: boolean add(java.lang.Object)>(r14)
+org.jfree.chart.axis.NumberAxis.refreshTicksVertical : i1 = virtualinvoke r0.<org.jfree.chart.axis.NumberAxis: int getMinorTickCount()>()
+org.jfree.chart.axis.NumberAxis.refreshTicksVertical : $z0 = virtualinvoke r0.<org.jfree.chart.axis.NumberAxis: boolean isAutoTickUnitSelection()>()
+org.jfree.chart.axis.NumberAxis.refreshTicksVertical : $r4 = new java.util.ArrayList
+org.jfree.chart.axis.NumberAxis.refreshTicksVertical : virtualinvoke r1.<java.awt.Graphics2D: void setFont(java.awt.Font)>(r6)
+org.jfree.chart.axis.NumberAxis.refreshTicksVertical : $r18 = virtualinvoke r0.<org.jfree.chart.axis.NumberAxis: org.jfree.chart.axis.NumberTickUnit getTickUnit()>()
+org.jfree.chart.axis.NumberAxis.refreshTicksVertical : interfaceinvoke r5.<java.util.List: void clear()>()
+org.jfree.chart.axis.NumberAxis.refreshTicksVertical : $r24 = new org.jfree.chart.axis.NumberTick
+org.jfree.chart.axis.NumberAxis.refreshTicksVertical : $r20 = <org.jfree.ui.RectangleEdge: org.jfree.ui.RectangleEdge LEFT>
+org.jfree.chart.axis.NumberAxis.refreshTicksVertical : r7 = virtualinvoke r0.<org.jfree.chart.axis.NumberAxis: org.jfree.chart.axis.NumberTickUnit getTickUnit()>()
+org.jfree.chart.axis.NumberAxis.refreshTicksVertical : $r23 = virtualinvoke r0.<org.jfree.chart.axis.NumberAxis: org.jfree.data.Range getRange()>()
+org.jfree.chart.axis.NumberAxis.refreshTicksVertical : virtualinvoke r0.<org.jfree.chart.axis.NumberAxis: void selectAutoTickUnit(java.awt.Graphics2D,java.awt.geom.Rectangle2D,org.jfree.ui.RectangleEdge)>(r1, r2, r3)
+org.jfree.chart.axis.NumberAxis.refreshTicksVertical : d0 = virtualinvoke r7.<org.jfree.chart.axis.TickUnit: double getSize()>()
+org.jfree.chart.axis.NumberAxis.refreshTicksVertical : i3 = i3 + 1
+org.jfree.chart.axis.NumberAxis.refreshTicksVertical : r12 = <org.jfree.ui.TextAnchor: org.jfree.ui.TextAnchor CENTER_RIGHT>
+org.jfree.chart.axis.NumberAxis.refreshTicksVertical : i2 = 1
+org.jfree.chart.axis.NumberAxis.refreshTicksVertical : $z3 = virtualinvoke r0.<org.jfree.chart.axis.NumberAxis: boolean isVerticalTickLabels()>()
+org.jfree.chart.axis.NumberAxis.refreshTicksVertical : i4 = 0
+org.jfree.chart.axis.NumberAxis.refreshTicksVertical : d3 = 0.0
+org.jfree.chart.title.Title.isVisible : $z0 = r0.<org.jfree.chart.title.Title: boolean visible>
+org.jfree.chart.axis.ValueAxis.getAutoRangeMinimumSize : $d0 = r0.<org.jfree.chart.axis.ValueAxis: double autoRangeMinimumSize>
+org.jfree.chart.plot.FastScatterPlot.drawRangeGridlines : $r8 = interfaceinvoke r4.<java.util.Iterator: java.lang.Object next()>()
+org.jfree.chart.plot.FastScatterPlot.drawRangeGridlines : goto [?= staticinvoke <edu.washington.cs.dt.impact.util.Tracer: void trace(java.lang.String,java.lang.String)>("$z1 = interfaceinvoke r4.<java.util.Iterator: boolean hasNext()>()", "org.jfree.chart.plot.FastScatterPlot.drawRangeGridlines")]
+org.jfree.chart.plot.FastScatterPlot.drawRangeGridlines : $r9 = r0.<org.jfree.chart.plot.FastScatterPlot: org.jfree.chart.axis.ValueAxis rangeAxis>
+org.jfree.chart.plot.FastScatterPlot.drawRangeGridlines : $r12 = virtualinvoke r0.<org.jfree.chart.plot.FastScatterPlot: java.awt.Stroke getRangeGridlineStroke()>()
+org.jfree.chart.plot.FastScatterPlot.drawRangeGridlines : r4 = interfaceinvoke r3.<java.util.List: java.util.Iterator iterator()>()
+org.jfree.chart.plot.FastScatterPlot.drawRangeGridlines : $r11 = virtualinvoke r0.<org.jfree.chart.plot.FastScatterPlot: java.awt.Paint getRangeGridlinePaint()>()
+org.jfree.chart.plot.FastScatterPlot.drawRangeGridlines : $r10 = new java.awt.geom.Line2D$Double
+org.jfree.chart.plot.FastScatterPlot.drawRangeGridlines : $z1 = interfaceinvoke r4.<java.util.Iterator: boolean hasNext()>()
+org.jfree.chart.plot.FastScatterPlot.drawRangeGridlines : virtualinvoke r1.<java.awt.Graphics2D: void draw(java.awt.Shape)>(r7)
+org.jfree.chart.plot.FastScatterPlot.drawRangeGridlines : $z0 = virtualinvoke r0.<org.jfree.chart.plot.FastScatterPlot: boolean isRangeGridlinesVisible()>()
+org.jfree.chart.plot.FastScatterPlot.drawRangeGridlines : $d3 = virtualinvoke r2.<java.awt.geom.Rectangle2D: double getMaxX()>()
+org.jfree.chart.axis.Axis.getLabel : $r1 = r0.<org.jfree.chart.axis.Axis: java.lang.String label>
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null goto return
+org.jfree.chart.axis.NumberAxis.selectHorizontalAutoTickUnit : $r7 = virtualinvoke r0.<org.jfree.chart.axis.NumberAxis: org.jfree.chart.axis.NumberTickUnit getTickUnit()>()
+org.jfree.chart.axis.NumberAxis.selectHorizontalAutoTickUnit : $d7 = virtualinvoke r6.<org.jfree.chart.axis.NumberTickUnit: double getSize()>()
+org.jfree.chart.axis.NumberAxis.selectHorizontalAutoTickUnit : d8 = virtualinvoke r0.<org.jfree.chart.axis.NumberAxis: double estimateMaximumTickLabelWidth(java.awt.Graphics2D,org.jfree.chart.axis.TickUnit)>(r1, r6)
+org.jfree.chart.axis.NumberAxis.selectHorizontalAutoTickUnit : $r8 = virtualinvoke r0.<org.jfree.chart.axis.NumberAxis: org.jfree.chart.axis.NumberTickUnit getTickUnit()>()
+org.jfree.chart.axis.NumberAxis.selectHorizontalAutoTickUnit : r4 = virtualinvoke r0.<org.jfree.chart.axis.NumberAxis: org.jfree.chart.axis.TickUnitSource getStandardTickUnits()>()
+org.jfree.chart.axis.NumberAxis.selectHorizontalAutoTickUnit : d0 = virtualinvoke r0.<org.jfree.chart.axis.NumberAxis: double estimateMaximumTickLabelWidth(java.awt.Graphics2D,org.jfree.chart.axis.TickUnit)>(r1, $r7)
+org.jfree.chart.axis.NumberAxis.selectHorizontalAutoTickUnit : virtualinvoke r0.<org.jfree.chart.axis.NumberAxis: void setTickUnit(org.jfree.chart.axis.NumberTickUnit,boolean,boolean)>(r6, 0, 0)
+org.jfree.chart.axis.NumberAxis.selectHorizontalAutoTickUnit : $d5 = d0 / d1
+org.jfree.chart.axis.NumberAxis.selectHorizontalAutoTickUnit : $d4 = virtualinvoke r5.<org.jfree.chart.axis.TickUnit: double getSize()>()
+org.jfree.chart.axis.NumberAxis.selectHorizontalAutoTickUnit : $r9 = interfaceinvoke r4.<org.jfree.chart.axis.TickUnitSource: org.jfree.chart.axis.TickUnit getCeilingTickUnit(double)>(d2)
+org.jfree.chart.axis.NumberAxis.selectHorizontalAutoTickUnit : $b0 = d8 cmpl d3
+org.jfree.chart.axis.Axis.isAxisLineVisible : $z0 = r0.<org.jfree.chart.axis.Axis: boolean axisLineVisible>
+org.jfree.chart.JFreeChart.drawTitle : $r20 = <org.jfree.ui.RectangleEdge: org.jfree.ui.RectangleEdge BOTTOM>
+org.jfree.chart.JFreeChart.drawTitle : $b0 = d0 cmpg 0.0
+org.jfree.chart.JFreeChart.drawTitle : return r36
+org.jfree.chart.JFreeChart.drawTitle : n0 = null
+org.jfree.chart.JFreeChart.drawTitle : goto [?= r36 = null]
+org.jfree.chart.JFreeChart.drawTitle : $b1 = d1 cmpg 0.0
+org.jfree.chart.JFreeChart.drawTitle : $d16 = virtualinvoke r3.<java.awt.geom.Rectangle2D: double getHeight()>()
+org.jfree.chart.JFreeChart.drawTitle : d0 = virtualinvoke r3.<java.awt.geom.Rectangle2D: double getWidth()>()
+org.jfree.chart.JFreeChart.drawTitle : d1 = virtualinvoke r3.<java.awt.geom.Rectangle2D: double getHeight()>()
+org.jfree.chart.JFreeChart.drawTitle : $r11 = new org.jfree.chart.block.RectangleConstraint
+org.jfree.chart.JFreeChart.drawTitle : $r15 = new org.jfree.chart.block.BlockParams
+org.jfree.chart.JFreeChart.drawTitle : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "t")
+org.jfree.chart.JFreeChart.drawTitle : r36 = null
+org.jfree.chart.JFreeChart.drawTitle : virtualinvoke r7.<org.jfree.chart.block.BlockParams: void setGenerateEntities(boolean)>(z0)
+org.jfree.chart.JFreeChart.drawTitle : $r22 = virtualinvoke r1.<org.jfree.chart.title.Title: org.jfree.ui.HorizontalAlignment getHorizontalAlignment()>()
+org.jfree.chart.JFreeChart.drawTitle : $d13 = virtualinvoke r3.<java.awt.geom.Rectangle2D: double getX()>()
+org.jfree.chart.JFreeChart.drawTitle : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r3, "area")
+org.jfree.chart.JFreeChart.drawTitle : r4 = virtualinvoke r1.<org.jfree.chart.title.Title: org.jfree.ui.RectangleEdge getPosition()>()
+org.jfree.chart.JFreeChart.drawTitle : r19 = virtualinvoke r1.<org.jfree.chart.title.Title: java.lang.Object draw(java.awt.Graphics2D,java.awt.geom.Rectangle2D,java.lang.Object)>(r2, r24, r7)
+org.jfree.chart.JFreeChart.drawTitle : r24 = specialinvoke r0.<org.jfree.chart.JFreeChart: java.awt.geom.Rectangle2D createAlignedRectangle2D(org.jfree.ui.Size2D,java.awt.geom.Rectangle2D,org.jfree.ui.HorizontalAlignment,org.jfree.ui.VerticalAlignment)>(r21, r3, $r22, $r23)
+org.jfree.chart.JFreeChart.drawTitle : r21 = virtualinvoke r1.<org.jfree.chart.title.Title: org.jfree.ui.Size2D arrange(java.awt.Graphics2D,org.jfree.chart.block.RectangleConstraint)>(r2, r6)
+org.jfree.chart.JFreeChart.drawTitle : $z1 = r19 instanceof org.jfree.chart.block.EntityBlockResult
+org.jfree.chart.JFreeChart.drawTitle : $r16 = <org.jfree.ui.RectangleEdge: org.jfree.ui.RectangleEdge TOP>
+org.jfree.chart.axis.NumberTickUnit.valueToString : $r1 = r0.<org.jfree.chart.axis.NumberTickUnit: java.text.NumberFormat formatter>
+org.jfree.chart.plot.FastScatterPlot.getDataRange : $r3 = r0.<org.jfree.chart.plot.FastScatterPlot: org.jfree.chart.axis.ValueAxis domainAxis>
+org.jfree.chart.plot.FastScatterPlot.getDataRange : return r2
+org.jfree.chart.plot.FastScatterPlot.getDataRange : r2 = r0.<org.jfree.chart.plot.FastScatterPlot: org.jfree.data.Range xDataRange>
+org.jfree.chart.plot.FastScatterPlot.getDataRange : r2 = null
+org.jfree.chart.plot.FastScatterPlot.getDataRange : r2 = r0.<org.jfree.chart.plot.FastScatterPlot: org.jfree.data.Range yDataRange>
+org.jfree.chart.plot.FastScatterPlot.getDataRange : $r4 = r0.<org.jfree.chart.plot.FastScatterPlot: org.jfree.chart.axis.ValueAxis rangeAxis>
+org.jfree.chart.title.Title.getPosition : $r1 = r0.<org.jfree.chart.title.Title: org.jfree.ui.RectangleEdge position>
+org.jfree.chart.axis.Axis.getLabelAngle : $d0 = r0.<org.jfree.chart.axis.Axis: double labelAngle>
+org.jfree.chart.axis.NumberAxis.setTickUnit : if z0 == 0 goto return
+org.jfree.chart.axis.NumberAxis.setTickUnit : r0.<org.jfree.chart.axis.NumberAxis: org.jfree.chart.axis.NumberTickUnit tickUnit> = r1
+org.jfree.chart.axis.NumberAxis.setTickUnit : if z1 == 0 goto (branch)
+org.jfree.chart.axis.NumberAxis.setTickUnit : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "unit")
+org.jfree.chart.title.LegendTitle.draw : $z2 = r9 instanceof org.jfree.chart.block.BlockResult
+org.jfree.chart.title.LegendTitle.draw : if r8 != null goto r20 = virtualinvoke r0.<org.jfree.chart.title.LegendTitle: java.awt.geom.Rectangle2D trimPadding(java.awt.geom.Rectangle2D)>(r16)
+org.jfree.chart.title.LegendTitle.draw : $z1 = interfaceinvoke $r13.<org.jfree.chart.block.EntityBlockParams: boolean getGenerateEntities()>()
+org.jfree.chart.title.LegendTitle.draw : return r9
+org.jfree.chart.title.LegendTitle.draw : r16 = virtualinvoke r0.<org.jfree.chart.title.LegendTitle: java.awt.geom.Rectangle2D trimMargin(java.awt.geom.Rectangle2D)>(r4)
+org.jfree.chart.title.LegendTitle.draw : $r17 = r0.<org.jfree.chart.title.LegendTitle: java.awt.Paint backgroundPaint>
+org.jfree.chart.title.LegendTitle.draw : virtualinvoke r1.<java.awt.Graphics2D: void fill(java.awt.Shape)>(r16)
+org.jfree.chart.title.LegendTitle.draw : $r12 = virtualinvoke r2.<java.awt.geom.Rectangle2D: java.lang.Object clone()>()
+org.jfree.chart.title.LegendTitle.draw : r20 = virtualinvoke r0.<org.jfree.chart.title.LegendTitle: java.awt.geom.Rectangle2D trimPadding(java.awt.geom.Rectangle2D)>(r16)
+org.jfree.chart.title.LegendTitle.draw : r9 = virtualinvoke r8.<org.jfree.chart.block.BlockContainer: java.lang.Object draw(java.awt.Graphics2D,java.awt.geom.Rectangle2D,java.lang.Object)>(r1, r20, r3)
+org.jfree.chart.title.LegendTitle.draw : r7 = virtualinvoke r0.<org.jfree.chart.title.LegendTitle: org.jfree.chart.block.BlockFrame getFrame()>()
+org.jfree.chart.title.LegendTitle.draw : r6 = null
+org.jfree.chart.title.LegendTitle.draw : $r19 = interfaceinvoke r7.<org.jfree.chart.block.BlockFrame: org.jfree.ui.RectangleInsets getInsets()>()
+org.jfree.chart.title.LegendTitle.draw : r8 = r0.<org.jfree.chart.title.LegendTitle: org.jfree.chart.block.BlockContainer items>
+org.jfree.chart.title.LegendTitle.draw : r8 = r0.<org.jfree.chart.title.LegendTitle: org.jfree.chart.block.BlockContainer wrapper>
+org.jfree.chart.title.LegendTitle.draw : $r11 = virtualinvoke r2.<java.awt.geom.Rectangle2D: java.lang.Object clone()>()
+org.jfree.chart.title.LegendTitle.draw : $r18 = r0.<org.jfree.chart.title.LegendTitle: java.awt.Paint backgroundPaint>
+org.jfree.chart.title.LegendTitle.draw : $z0 = r3 instanceof org.jfree.chart.block.EntityBlockParams
+org.jfree.chart.title.LegendTitle.draw : interfaceinvoke r7.<org.jfree.chart.block.BlockFrame: void draw(java.awt.Graphics2D,java.awt.geom.Rectangle2D)>(r1, r16)
+org.jfree.chart.axis.NumberAxis.estimateMaximumTickLabelHeight : $r5 = virtualinvoke r3.<java.awt.Font: java.awt.font.LineMetrics getLineMetrics(java.lang.String,java.awt.font.FontRenderContext)>("123", r4)
+org.jfree.chart.axis.NumberAxis.estimateMaximumTickLabelHeight : r3 = virtualinvoke r0.<org.jfree.chart.axis.NumberAxis: java.awt.Font getTickLabelFont()>()
+org.jfree.chart.axis.NumberAxis.estimateMaximumTickLabelHeight : return d4
+org.jfree.chart.axis.NumberAxis.estimateMaximumTickLabelHeight : r4 = virtualinvoke r1.<java.awt.Graphics2D: java.awt.font.FontRenderContext getFontRenderContext()>()
+org.jfree.chart.axis.NumberAxis.estimateMaximumTickLabelHeight : $d1 = virtualinvoke r2.<org.jfree.ui.RectangleInsets: double getTop()>()
+org.jfree.chart.axis.NumberAxis.estimateMaximumTickLabelHeight : r2 = virtualinvoke r0.<org.jfree.chart.axis.NumberAxis: org.jfree.ui.RectangleInsets getTickLabelInsets()>()
+org.jfree.chart.block.AbstractBlock.trimBorder : $r2 = r0.<org.jfree.chart.block.AbstractBlock: org.jfree.chart.block.BlockFrame frame>
+org.jfree.chart.block.AbstractBlock.trimBorder : return r1
+org.jfree.chart.plot.Plot.addChangeListener : $r2 = r0.<org.jfree.chart.plot.Plot: javax.swing.event.EventListenerList listenerList>
+org.jfree.chart.axis.Axis.isTickMarksVisible : $z0 = r0.<org.jfree.chart.axis.Axis: boolean tickMarksVisible>
+org.jfree.chart.title.Title.getHorizontalAlignment : $r1 = r0.<org.jfree.chart.title.Title: org.jfree.ui.HorizontalAlignment horizontalAlignment>
+org.jfree.chart.axis.Axis.getTickMarkInsideLength : $f0 = r0.<org.jfree.chart.axis.Axis: float tickMarkInsideLength>
+org.jfree.chart.axis.ValueAxis.drawTickMarksAndLabels : virtualinvoke r0.<org.jfree.chart.axis.ValueAxis: void drawAxisLine(java.awt.Graphics2D,double,java.awt.geom.Rectangle2D,org.jfree.ui.RectangleEdge)>(r1, d0, r3, r4)
+org.jfree.chart.axis.ValueAxis.drawTickMarksAndLabels : $r22 = virtualinvoke r9.<org.jfree.chart.axis.ValueTick: org.jfree.chart.axis.TickType getTickType()>()
+org.jfree.chart.axis.ValueAxis.drawTickMarksAndLabels : return r6
+org.jfree.chart.axis.ValueAxis.drawTickMarksAndLabels : $r15 = virtualinvoke r9.<org.jfree.chart.axis.ValueTick: java.lang.String getText()>()
+org.jfree.chart.axis.ValueAxis.drawTickMarksAndLabels : $d6 = virtualinvoke r9.<org.jfree.chart.axis.ValueTick: double getValue()>()
+org.jfree.chart.axis.ValueAxis.drawTickMarksAndLabels : $r34 = <org.jfree.ui.RectangleEdge: org.jfree.ui.RectangleEdge BOTTOM>
+org.jfree.chart.axis.ValueAxis.drawTickMarksAndLabels : $r26 = virtualinvoke r0.<org.jfree.chart.axis.ValueAxis: java.awt.Stroke getTickMarkStroke()>()
+org.jfree.chart.axis.ValueAxis.drawTickMarksAndLabels : $r39 = <org.jfree.ui.RectangleEdge: org.jfree.ui.RectangleEdge BOTTOM>
+org.jfree.chart.axis.ValueAxis.drawTickMarksAndLabels : $f6 = virtualinvoke r0.<org.jfree.chart.axis.ValueAxis: float getTickMarkInsideLength()>()
+org.jfree.chart.axis.ValueAxis.drawTickMarksAndLabels : $r38 = <org.jfree.ui.RectangleEdge: org.jfree.ui.RectangleEdge TOP>
+org.jfree.chart.axis.ValueAxis.drawTickMarksAndLabels : r8 = interfaceinvoke r7.<java.util.List: java.util.Iterator iterator()>()
+org.jfree.chart.axis.ValueAxis.drawTickMarksAndLabels : $r30 = <org.jfree.ui.RectangleEdge: org.jfree.ui.RectangleEdge RIGHT>
+org.jfree.chart.axis.ValueAxis.drawTickMarksAndLabels : $r27 = virtualinvoke r0.<org.jfree.chart.axis.ValueAxis: java.awt.Paint getTickMarkPaint()>()
+org.jfree.chart.axis.ValueAxis.drawTickMarksAndLabels : $r36 = <org.jfree.ui.RectangleEdge: org.jfree.ui.RectangleEdge LEFT>
+org.jfree.chart.axis.ValueAxis.drawTickMarksAndLabels : $r12 = virtualinvoke r0.<org.jfree.chart.axis.ValueAxis: java.awt.Font getTickLabelFont()>()
+org.jfree.chart.axis.ValueAxis.drawTickMarksAndLabels : r10 = virtualinvoke r0.<org.jfree.chart.axis.ValueAxis: float[] calculateAnchorPoint(org.jfree.chart.axis.ValueTick,double,java.awt.geom.Rectangle2D,org.jfree.ui.RectangleEdge)>(r9, d0, r3, r4)
+org.jfree.chart.axis.ValueAxis.drawTickMarksAndLabels : d29 = virtualinvoke r0.<org.jfree.chart.axis.ValueAxis: double findMaximumTickLabelHeight(java.util.List,java.awt.Graphics2D,java.awt.geom.Rectangle2D,boolean)>(r7, r1, r2, $z13)
+org.jfree.chart.axis.ValueAxis.drawTickMarksAndLabels : $r35 = new java.awt.geom.Line2D$Double
+org.jfree.chart.axis.ValueAxis.drawTickMarksAndLabels : $r16 = virtualinvoke r9.<org.jfree.chart.axis.ValueTick: org.jfree.ui.TextAnchor getTextAnchor()>()
+org.jfree.chart.axis.ValueAxis.drawTickMarksAndLabels : $z10 = virtualinvoke r0.<org.jfree.chart.axis.ValueAxis: boolean isVerticalTickLabels()>()
+org.jfree.chart.axis.ValueAxis.drawTickMarksAndLabels : $z9 = virtualinvoke r0.<org.jfree.chart.axis.ValueAxis: boolean isTickLabelsVisible()>()
+org.jfree.chart.axis.ValueAxis.drawTickMarksAndLabels : $z1 = interfaceinvoke r8.<java.util.Iterator: boolean hasNext()>()
+org.jfree.chart.axis.ValueAxis.drawTickMarksAndLabels : $r24 = virtualinvoke r9.<org.jfree.chart.axis.ValueTick: org.jfree.chart.axis.TickType getTickType()>()
+org.jfree.chart.axis.ValueAxis.drawTickMarksAndLabels : virtualinvoke r1.<java.awt.Graphics2D: void draw(java.awt.Shape)>(r11)
+org.jfree.chart.axis.ValueAxis.drawTickMarksAndLabels : d24 = 0.0
+org.jfree.chart.axis.ValueAxis.drawTickMarksAndLabels : virtualinvoke r6.<org.jfree.chart.axis.AxisState: void cursorDown(double)>(d29)
+org.jfree.chart.axis.ValueAxis.drawTickMarksAndLabels : $r14 = virtualinvoke r0.<org.jfree.chart.axis.ValueAxis: java.awt.Paint getTickLabelPaint()>()
+org.jfree.chart.axis.ValueAxis.drawTickMarksAndLabels : $z13 = virtualinvoke r0.<org.jfree.chart.axis.ValueAxis: boolean isVerticalTickLabels()>()
+org.jfree.chart.axis.ValueAxis.drawTickMarksAndLabels : r7 = virtualinvoke r0.<org.jfree.chart.axis.ValueAxis: java.util.List refreshTicks(java.awt.Graphics2D,org.jfree.chart.axis.AxisState,java.awt.geom.Rectangle2D,org.jfree.ui.RectangleEdge)>(r1, r6, r3, r4)
+org.jfree.chart.axis.ValueAxis.drawTickMarksAndLabels : $z2 = virtualinvoke r0.<org.jfree.chart.axis.ValueAxis: boolean isTickLabelsVisible()>()
+org.jfree.chart.axis.ValueAxis.drawTickMarksAndLabels : $r13 = interfaceinvoke r8.<java.util.Iterator: java.lang.Object next()>()
+org.jfree.chart.axis.ValueAxis.drawTickMarksAndLabels : $r5 = new org.jfree.chart.axis.AxisState
+org.jfree.chart.axis.ValueAxis.drawTickMarksAndLabels : $r37 = <org.jfree.ui.RectangleEdge: org.jfree.ui.RectangleEdge RIGHT>
+org.jfree.chart.axis.ValueAxis.drawTickMarksAndLabels : $r32 = <org.jfree.ui.RectangleEdge: org.jfree.ui.RectangleEdge TOP>
+org.jfree.chart.axis.ValueAxis.drawTickMarksAndLabels : goto [?= staticinvoke <edu.washington.cs.dt.impact.util.Tracer: void trace(java.lang.String,java.lang.String)>("$z1 = interfaceinvoke r8.<java.util.Iterator: boolean hasNext()>()", "org.jfree.chart.axis.ValueAxis.drawTickMarksAndLabels")]
+org.jfree.chart.axis.ValueAxis.drawTickMarksAndLabels : $z3 = virtualinvoke r0.<org.jfree.chart.axis.ValueAxis: boolean isTickMarksVisible()>()
+org.jfree.chart.axis.ValueAxis.drawTickMarksAndLabels : $d25 = virtualinvoke r0.<org.jfree.chart.axis.ValueAxis: double findMaximumTickLabelWidth(java.util.List,java.awt.Graphics2D,java.awt.geom.Rectangle2D,boolean)>(r7, r1, r2, $z10)
+org.jfree.chart.axis.ValueAxis.drawTickMarksAndLabels : r11 = null
+org.jfree.chart.axis.ValueAxis.drawTickMarksAndLabels : virtualinvoke r6.<org.jfree.chart.axis.AxisState: void setTicks(java.util.List)>(r7)
+org.jfree.chart.axis.ValueAxis.drawTickMarksAndLabels : $d2 = virtualinvoke r9.<org.jfree.chart.axis.ValueTick: double getAngle()>()
+org.jfree.chart.axis.ValueAxis.drawTickMarksAndLabels : $f4 = virtualinvoke r0.<org.jfree.chart.axis.ValueAxis: float getTickMarkOutsideLength()>()
+org.jfree.chart.axis.ValueAxis.drawTickMarksAndLabels : $z5 = virtualinvoke r0.<org.jfree.chart.axis.ValueAxis: boolean isMinorTickMarksVisible()>()
+org.jfree.chart.axis.ValueAxis.drawTickMarksAndLabels : virtualinvoke r6.<org.jfree.chart.axis.AxisState: void cursorLeft(double)>(d26)
+org.jfree.chart.axis.ValueAxis.drawTickMarksAndLabels : $r28 = <org.jfree.ui.RectangleEdge: org.jfree.ui.RectangleEdge LEFT>
+org.jfree.chart.axis.ValueAxis.drawTickMarksAndLabels : $z0 = virtualinvoke r0.<org.jfree.chart.axis.ValueAxis: boolean isAxisLineVisible()>()
+org.jfree.chart.axis.ValueAxis.drawTickMarksAndLabels : $r29 = new java.awt.geom.Line2D$Double
+org.jfree.chart.plot.FastScatterPlot.render : $r14 = r0.<org.jfree.chart.plot.FastScatterPlot: org.jfree.chart.axis.ValueAxis domainAxis>
+org.jfree.chart.plot.FastScatterPlot.render : $r10 = r0.<org.jfree.chart.plot.FastScatterPlot: float[][] data>
+org.jfree.chart.plot.FastScatterPlot.render : i0 = 0
+org.jfree.chart.plot.FastScatterPlot.render : $r6 = r0.<org.jfree.chart.plot.FastScatterPlot: java.awt.Paint paint>
+org.jfree.chart.plot.FastScatterPlot.render : virtualinvoke r1.<java.awt.Graphics2D: void fillRect(int,int,int,int)>(i1, i2, 1, 1)
+org.jfree.chart.plot.FastScatterPlot.render : $r12 = r0.<org.jfree.chart.plot.FastScatterPlot: float[][] data>
+org.jfree.chart.plot.FastScatterPlot.render : $r7 = r0.<org.jfree.chart.plot.FastScatterPlot: float[][] data>
+org.jfree.chart.plot.FastScatterPlot.render : $r15 = r0.<org.jfree.chart.plot.FastScatterPlot: org.jfree.chart.axis.ValueAxis rangeAxis>
+org.jfree.chart.block.AbstractBlock.trimPadding : $r2 = r0.<org.jfree.chart.block.AbstractBlock: org.jfree.ui.RectangleInsets padding>
+org.jfree.chart.block.AbstractBlock.trimPadding : return r1
+org.jfree.chart.axis.ValueAxis.getMinorTickCount : $i0 = r0.<org.jfree.chart.axis.ValueAxis: int minorTickCount>
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r84 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r90 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r73 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r44 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r50 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r77 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r71 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r34 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r52 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r89 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r83 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r20 = new java.text.DecimalFormat
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r87 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r24 = new java.text.DecimalFormat
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r22 = new java.text.DecimalFormat
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r82 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : return r1
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r51 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r86 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r26 = new java.text.DecimalFormat
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r17 = new java.text.DecimalFormat
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r61 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r35 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r33 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r16 = new java.text.DecimalFormat
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r25 = new java.text.DecimalFormat
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r47 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r45 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r32 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r57 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r31 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r21 = new java.text.DecimalFormat
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r75 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r58 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r62 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r67 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r59 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r39 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r37 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r79 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r66 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r68 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r65 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r74 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r49 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r48 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r41 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r70 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r54 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r15 = new java.text.DecimalFormat
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r43 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r81 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r27 = new java.text.DecimalFormat
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r78 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r42 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r28 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r60 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r55 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r63 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r56 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r30 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r36 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r46 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r88 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r80 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r18 = new java.text.DecimalFormat
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r23 = new java.text.DecimalFormat
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r29 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r19 = new java.text.DecimalFormat
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r38 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r64 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r76 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r69 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r72 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r53 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r85 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r0 = new org.jfree.chart.axis.TickUnits
+org.jfree.chart.axis.NumberAxis.createStandardTickUnits : $r40 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.plot.FastScatterPlot.calculateYDataRange : $b3 = f2 cmpl f1
+org.jfree.chart.plot.FastScatterPlot.calculateYDataRange : return r2
+org.jfree.chart.plot.FastScatterPlot.calculateYDataRange : f0 = f2
+org.jfree.chart.plot.FastScatterPlot.calculateYDataRange : f1 = f2
+org.jfree.chart.plot.FastScatterPlot.calculateYDataRange : i0 = 0
+org.jfree.chart.plot.FastScatterPlot.calculateYDataRange : f0 = #InfinityF
+org.jfree.chart.plot.FastScatterPlot.calculateYDataRange : $r4 = r1[1]
+org.jfree.chart.plot.FastScatterPlot.calculateYDataRange : f1 = #-InfinityF
+org.jfree.chart.plot.FastScatterPlot.calculateYDataRange : $b2 = f2 cmpg f0
+org.jfree.chart.plot.FastScatterPlot.calculateYDataRange : if r1 == null goto return r2
+org.jfree.chart.plot.FastScatterPlot.calculateYDataRange : r2 = null
+org.jfree.chart.plot.FastScatterPlot.calculateYDataRange : $r5 = new org.jfree.data.Range
+org.jfree.chart.plot.FastScatterPlot.calculateYDataRange : $b4 = f0 cmpg f1
+org.jfree.chart.axis.ValueAxis.isAutoTickUnitSelection : $z0 = r0.<org.jfree.chart.axis.ValueAxis: boolean autoTickUnitSelection>
+org.jfree.chart.axis.Axis.getTickMarkPaint : $r1 = r0.<org.jfree.chart.axis.Axis: java.awt.Paint tickMarkPaint>
+org.jfree.chart.axis.NumberAxis.refreshTicksHorizontal : return r5
+org.jfree.chart.axis.NumberAxis.refreshTicksHorizontal : if i0 > 500 goto return r5
+org.jfree.chart.axis.NumberAxis.refreshTicksHorizontal : if i1 > 0 goto i2 = 1
+org.jfree.chart.axis.NumberAxis.refreshTicksHorizontal : i1 = virtualinvoke r7.<org.jfree.chart.axis.TickUnit: int getMinorTickCount()>()
+org.jfree.chart.axis.NumberAxis.refreshTicksHorizontal : n1 = null
+org.jfree.chart.axis.NumberAxis.refreshTicksHorizontal : i3 = 1
+org.jfree.chart.axis.NumberAxis.refreshTicksHorizontal : n0 = null
+org.jfree.chart.axis.NumberAxis.refreshTicksHorizontal : i0 = virtualinvoke r0.<org.jfree.chart.axis.NumberAxis: int calculateVisibleTickCount()>()
+org.jfree.chart.axis.NumberAxis.refreshTicksHorizontal : $d6 = (double) i2
+org.jfree.chart.axis.NumberAxis.refreshTicksHorizontal : $i5 = i4 + 1
+org.jfree.chart.axis.NumberAxis.refreshTicksHorizontal : r17 = <org.jfree.ui.TextAnchor: org.jfree.ui.TextAnchor TOP_CENTER>
+org.jfree.chart.axis.NumberAxis.refreshTicksHorizontal : $d10 = (double) i4
+org.jfree.chart.axis.NumberAxis.refreshTicksHorizontal : $r21 = new org.jfree.chart.axis.NumberTick
+org.jfree.chart.axis.NumberAxis.refreshTicksHorizontal : d1 = virtualinvoke r0.<org.jfree.chart.axis.NumberAxis: double calculateLowestVisibleTickValue()>()
+org.jfree.chart.axis.NumberAxis.refreshTicksHorizontal : r6 = virtualinvoke r0.<org.jfree.chart.axis.NumberAxis: java.awt.Font getTickLabelFont()>()
+org.jfree.chart.axis.NumberAxis.refreshTicksHorizontal : $r13 = virtualinvoke r0.<org.jfree.chart.axis.NumberAxis: org.jfree.data.Range getRange()>()
+org.jfree.chart.axis.NumberAxis.refreshTicksHorizontal : r10 = virtualinvoke r0.<org.jfree.chart.axis.NumberAxis: java.text.NumberFormat getNumberFormatOverride()>()
+org.jfree.chart.axis.NumberAxis.refreshTicksHorizontal : $d15 = d4 - d12
+org.jfree.chart.axis.NumberAxis.refreshTicksHorizontal : i1 = virtualinvoke r0.<org.jfree.chart.axis.NumberAxis: int getMinorTickCount()>()
+org.jfree.chart.axis.NumberAxis.refreshTicksHorizontal : $z0 = virtualinvoke r0.<org.jfree.chart.axis.NumberAxis: boolean isAutoTickUnitSelection()>()
+org.jfree.chart.axis.NumberAxis.refreshTicksHorizontal : $r4 = new java.util.ArrayList
+org.jfree.chart.axis.NumberAxis.refreshTicksHorizontal : interfaceinvoke r5.<java.util.List: boolean add(java.lang.Object)>(r12)
+org.jfree.chart.axis.NumberAxis.refreshTicksHorizontal : virtualinvoke r1.<java.awt.Graphics2D: void setFont(java.awt.Font)>(r6)
+org.jfree.chart.axis.NumberAxis.refreshTicksHorizontal : $r24 = new org.jfree.chart.axis.NumberTick
+org.jfree.chart.axis.NumberAxis.refreshTicksHorizontal : r7 = virtualinvoke r0.<org.jfree.chart.axis.NumberAxis: org.jfree.chart.axis.NumberTickUnit getTickUnit()>()
+org.jfree.chart.axis.NumberAxis.refreshTicksHorizontal : $r23 = virtualinvoke r0.<org.jfree.chart.axis.NumberAxis: org.jfree.data.Range getRange()>()
+org.jfree.chart.axis.NumberAxis.refreshTicksHorizontal : virtualinvoke r0.<org.jfree.chart.axis.NumberAxis: void selectAutoTickUnit(java.awt.Graphics2D,java.awt.geom.Rectangle2D,org.jfree.ui.RectangleEdge)>(r1, r2, r3)
+org.jfree.chart.axis.NumberAxis.refreshTicksHorizontal : if r10 == null goto $r16 = virtualinvoke r0.<org.jfree.chart.axis.NumberAxis: org.jfree.chart.axis.NumberTickUnit getTickUnit()>()
+org.jfree.chart.axis.NumberAxis.refreshTicksHorizontal : d0 = virtualinvoke r7.<org.jfree.chart.axis.TickUnit: double getSize()>()
+org.jfree.chart.axis.NumberAxis.refreshTicksHorizontal : i3 = i3 + 1
+org.jfree.chart.axis.NumberAxis.refreshTicksHorizontal : $r20 = <org.jfree.ui.RectangleEdge: org.jfree.ui.RectangleEdge TOP>
+org.jfree.chart.axis.NumberAxis.refreshTicksHorizontal : $r16 = virtualinvoke r0.<org.jfree.chart.axis.NumberAxis: org.jfree.chart.axis.NumberTickUnit getTickUnit()>()
+org.jfree.chart.axis.NumberAxis.refreshTicksHorizontal : i2 = 1
+org.jfree.chart.axis.NumberAxis.refreshTicksHorizontal : r18 = <org.jfree.ui.TextAnchor: org.jfree.ui.TextAnchor TOP_CENTER>
+org.jfree.chart.axis.NumberAxis.refreshTicksHorizontal : $z3 = virtualinvoke r0.<org.jfree.chart.axis.NumberAxis: boolean isVerticalTickLabels()>()
+org.jfree.chart.axis.NumberAxis.refreshTicksHorizontal : i4 = 0
+org.jfree.chart.axis.NumberAxis.refreshTicksHorizontal : d3 = 0.0
+org.jfree.chart.axis.NumberAxis.getAutoRangeIncludesZero : $z0 = r0.<org.jfree.chart.axis.NumberAxis: boolean autoRangeIncludesZero>
+org.jfree.chart.axis.ValueAxis.getLowerMargin : $d0 = r0.<org.jfree.chart.axis.ValueAxis: double lowerMargin>
+org.jfree.chart.axis.AxisState.getTicks : $r1 = r0.<org.jfree.chart.axis.AxisState: java.util.List ticks>
+org.jfree.chart.title.LegendTitle.fetchLegendItems : $r11 = r0.<org.jfree.chart.title.LegendTitle: org.jfree.chart.LegendItemSource[] sources>
+org.jfree.chart.title.LegendTitle.fetchLegendItems : r1 = virtualinvoke r0.<org.jfree.chart.title.LegendTitle: org.jfree.ui.RectangleEdge getPosition()>()
+org.jfree.chart.title.LegendTitle.fetchLegendItems : $r8 = r0.<org.jfree.chart.title.LegendTitle: org.jfree.util.SortOrder sortOrder>
+org.jfree.chart.title.LegendTitle.fetchLegendItems : i0 = 0
+org.jfree.chart.title.LegendTitle.fetchLegendItems : if r2 == null goto i0 = i0 + 1
+org.jfree.chart.title.LegendTitle.fetchLegendItems : r2 = interfaceinvoke $r12.<org.jfree.chart.LegendItemSource: org.jfree.chart.LegendItemCollection getLegendItems()>()
+org.jfree.chart.title.LegendTitle.fetchLegendItems : $r3 = r0.<org.jfree.chart.title.LegendTitle: org.jfree.chart.block.BlockContainer items>
+org.jfree.chart.title.LegendTitle.fetchLegendItems : $r4 = r0.<org.jfree.chart.title.LegendTitle: org.jfree.chart.block.BlockContainer items>
+org.jfree.chart.title.LegendTitle.fetchLegendItems : $z0 = staticinvoke <org.jfree.ui.RectangleEdge: boolean isTopOrBottom(org.jfree.ui.RectangleEdge)>(r1)
+org.jfree.chart.block.AbstractBlock.trimMargin : $r2 = r0.<org.jfree.chart.block.AbstractBlock: org.jfree.ui.RectangleInsets margin>
+org.jfree.chart.block.AbstractBlock.trimMargin : return r1
+org.jfree.chart.block.AbstractBlock.getFrame : $r1 = r0.<org.jfree.chart.block.AbstractBlock: org.jfree.chart.block.BlockFrame frame>
+org.jfree.chart.axis.ValueAxis.getRange : $r1 = r0.<org.jfree.chart.axis.ValueAxis: org.jfree.data.Range range>
+org.jfree.chart.plot.FastScatterPlot.getDomainGridlineStroke : $r1 = r0.<org.jfree.chart.plot.FastScatterPlot: java.awt.Stroke domainGridlineStroke>
+org.jfree.chart.block.BlockContainer.clear : $r2 = r0.<org.jfree.chart.block.BlockContainer: org.jfree.chart.block.Arrangement arrangement>
+org.jfree.chart.block.BlockContainer.clear : $r1 = r0.<org.jfree.chart.block.BlockContainer: java.util.List blocks>
+org.jfree.chart.axis.ValueAxis.findMaximumTickLabelHeight : return d0
+org.jfree.chart.axis.ValueAxis.findMaximumTickLabelHeight : $r12 = virtualinvoke r2.<java.awt.Graphics2D: java.awt.font.FontRenderContext getFontRenderContext()>()
+org.jfree.chart.axis.ValueAxis.findMaximumTickLabelHeight : if z0 == 0 goto $r12 = virtualinvoke r2.<java.awt.Graphics2D: java.awt.font.FontRenderContext getFontRenderContext()>()
+org.jfree.chart.axis.ValueAxis.findMaximumTickLabelHeight : r5 = virtualinvoke r0.<org.jfree.chart.axis.ValueAxis: java.awt.Font getTickLabelFont()>()
+org.jfree.chart.axis.ValueAxis.findMaximumTickLabelHeight : $d11 = virtualinvoke r4.<org.jfree.ui.RectangleInsets: double getTop()>()
+org.jfree.chart.axis.ValueAxis.findMaximumTickLabelHeight : $f0 = virtualinvoke r13.<java.awt.font.LineMetrics: float getHeight()>()
+org.jfree.chart.axis.ValueAxis.findMaximumTickLabelHeight : d0 = 0.0
+org.jfree.chart.axis.ValueAxis.findMaximumTickLabelHeight : r4 = virtualinvoke r0.<org.jfree.chart.axis.ValueAxis: org.jfree.ui.RectangleInsets getTickLabelInsets()>()
+org.jfree.chart.axis.ValueAxis.findMaximumTickLabelHeight : r13 = virtualinvoke r5.<java.awt.Font: java.awt.font.LineMetrics getLineMetrics(java.lang.String,java.awt.font.FontRenderContext)>("ABCxyz", $r12)
+org.jfree.chart.axis.TickUnit.getMinorTickCount : $i0 = r0.<org.jfree.chart.axis.TickUnit: int minorTickCount>

@@ -1,0 +1,156 @@
+org.jfree.chart.axis.PeriodAxis.equals : $r5 = r0.<org.jfree.chart.axis.PeriodAxis: org.jfree.data.time.RegularTimePeriod last>
+org.jfree.chart.axis.PeriodAxis.equals : $r7 = r0.<org.jfree.chart.axis.PeriodAxis: java.util.TimeZone timeZone>
+org.jfree.chart.axis.PeriodAxis.equals : $z6 = virtualinvoke r0.<org.jfree.chart.axis.PeriodAxis: boolean isMinorTickMarksVisible()>()
+org.jfree.chart.axis.PeriodAxis.equals : $r9 = r0.<org.jfree.chart.axis.PeriodAxis: java.util.Locale locale>
+org.jfree.chart.axis.PeriodAxis.equals : $z13 = specialinvoke r0.<org.jfree.chart.axis.ValueAxis: boolean equals(java.lang.Object)>(r1)
+org.jfree.chart.axis.PeriodAxis.equals : return 0
+org.jfree.chart.axis.PeriodAxis.equals : $r3 = r0.<org.jfree.chart.axis.PeriodAxis: org.jfree.data.time.RegularTimePeriod first>
+org.jfree.chart.axis.PeriodAxis.equals : $r17 = r0.<org.jfree.chart.axis.PeriodAxis: java.awt.Paint minorTickMarkPaint>
+org.jfree.chart.axis.PeriodAxis.equals : $r15 = r0.<org.jfree.chart.axis.PeriodAxis: java.lang.Class minorTickTimePeriodClass>
+org.jfree.chart.axis.PeriodAxis.equals : $z0 = r1 instanceof org.jfree.chart.axis.PeriodAxis
+org.jfree.chart.axis.PeriodAxis.equals : $r19 = r0.<org.jfree.chart.axis.PeriodAxis: java.awt.Stroke minorTickMarkStroke>
+org.jfree.chart.axis.PeriodAxis.equals : $r13 = r0.<org.jfree.chart.axis.PeriodAxis: java.lang.Class majorTickTimePeriodClass>
+org.jfree.chart.axis.PeriodAxis.equals : $r21 = r0.<org.jfree.chart.axis.PeriodAxis: org.jfree.chart.axis.PeriodAxisLabelInfo[] labelInfo>
+org.jfree.chart.axis.PeriodAxis.equals : if r1 != r0 goto $z0 = r1 instanceof org.jfree.chart.axis.PeriodAxis
+org.jfree.chart.axis.PeriodAxis.equals : $r11 = r0.<org.jfree.chart.axis.PeriodAxis: java.lang.Class autoRangeTimePeriodClass>
+org.jfree.chart.axis.PeriodAxis.equals : r2 = (org.jfree.chart.axis.PeriodAxis) r1
+org.jfree.data.time.Year.getFirstMillisecond : $l1 = virtualinvoke r1.<java.util.Calendar: long getTimeInMillis()>()
+org.jfree.data.time.Year.getFirstMillisecond : virtualinvoke r1.<java.util.Calendar: void set(int,int)>(14, 0)
+org.jfree.data.time.Year.getFirstMillisecond : $s0 = r0.<org.jfree.data.time.Year: short year>
+org.jfree.data.time.Year.getLastMillisecond : virtualinvoke r1.<java.util.Calendar: void set(int,int)>(14, 999)
+org.jfree.data.time.Year.getLastMillisecond : $l1 = virtualinvoke r1.<java.util.Calendar: long getTimeInMillis()>()
+org.jfree.data.time.Year.getLastMillisecond : $s0 = r0.<org.jfree.data.time.Year: short year>
+org.jfree.chart.axis.ValueAxis.equals : $d6 = r0.<org.jfree.chart.axis.ValueAxis: double fixedAutoRange>
+org.jfree.chart.axis.ValueAxis.equals : $z9 = r0.<org.jfree.chart.axis.ValueAxis: boolean autoRange>
+org.jfree.chart.axis.ValueAxis.equals : $r5 = r0.<org.jfree.chart.axis.ValueAxis: org.jfree.data.Range defaultAutoRange>
+org.jfree.chart.axis.ValueAxis.equals : r2 = (org.jfree.chart.axis.ValueAxis) r1
+org.jfree.chart.axis.ValueAxis.equals : $z5 = r0.<org.jfree.chart.axis.ValueAxis: boolean inverted>
+org.jfree.chart.axis.ValueAxis.equals : $d0 = r0.<org.jfree.chart.axis.ValueAxis: double autoRangeMinimumSize>
+org.jfree.chart.axis.ValueAxis.equals : $z12 = r0.<org.jfree.chart.axis.ValueAxis: boolean autoTickUnitSelection>
+org.jfree.chart.axis.ValueAxis.equals : if r1 != r0 goto $z0 = r1 instanceof org.jfree.chart.axis.ValueAxis
+org.jfree.chart.axis.ValueAxis.equals : $z3 = r0.<org.jfree.chart.axis.ValueAxis: boolean negativeArrowVisible>
+org.jfree.chart.axis.ValueAxis.equals : $z1 = r0.<org.jfree.chart.axis.ValueAxis: boolean positiveArrowVisible>
+org.jfree.chart.axis.ValueAxis.equals : $i4 = r0.<org.jfree.chart.axis.ValueAxis: int minorTickCount>
+org.jfree.chart.axis.ValueAxis.equals : $d2 = r0.<org.jfree.chart.axis.ValueAxis: double upperMargin>
+org.jfree.chart.axis.ValueAxis.equals : $r7 = r0.<org.jfree.chart.axis.ValueAxis: org.jfree.chart.axis.TickUnitSource standardTickUnits>
+org.jfree.chart.axis.ValueAxis.equals : $z7 = r0.<org.jfree.chart.axis.ValueAxis: boolean autoRange>
+org.jfree.chart.axis.ValueAxis.equals : $z15 = r0.<org.jfree.chart.axis.ValueAxis: boolean verticalTickLabels>
+org.jfree.chart.axis.ValueAxis.equals : $z0 = r1 instanceof org.jfree.chart.axis.ValueAxis
+org.jfree.chart.axis.ValueAxis.equals : $z17 = specialinvoke r0.<org.jfree.chart.axis.Axis: boolean equals(java.lang.Object)>(r1)
+org.jfree.chart.axis.ValueAxis.equals : $d4 = r0.<org.jfree.chart.axis.ValueAxis: double lowerMargin>
+org.jfree.chart.axis.Axis.notifyListeners : $i1 = lengthof r2
+org.jfree.chart.axis.Axis.notifyListeners : $r3 = r0.<org.jfree.chart.axis.Axis: javax.swing.event.EventListenerList listenerList>
+org.jfree.data.time.RegularTimePeriod.downsize : $z1 = virtualinvoke r0.<java.lang.Object: boolean equals(java.lang.Object)>(class "org/jfree/data/time/Quarter")
+org.jfree.data.time.RegularTimePeriod.downsize : $z0 = virtualinvoke r0.<java.lang.Object: boolean equals(java.lang.Object)>(class "org/jfree/data/time/Year")
+org.jfree.data.time.RegularTimePeriod.downsize : return class "org/jfree/data/time/Hour"
+org.jfree.data.time.RegularTimePeriod.downsize : $z3 = virtualinvoke r0.<java.lang.Object: boolean equals(java.lang.Object)>(class "org/jfree/data/time/Day")
+org.jfree.data.time.RegularTimePeriod.downsize : $z2 = virtualinvoke r0.<java.lang.Object: boolean equals(java.lang.Object)>(class "org/jfree/data/time/Month")
+org.jfree.data.Range.equals : $d2 = r0.<org.jfree.data.Range: double upper>
+org.jfree.data.Range.equals : $z0 = r1 instanceof org.jfree.data.Range
+org.jfree.data.Range.equals : $d0 = r0.<org.jfree.data.Range: double lower>
+org.jfree.data.Range.equals : return 1
+org.jfree.data.Range.equals : r2 = (org.jfree.data.Range) r1
+org.jfree.chart.axis.PeriodAxis.setLabelInfo : r0.<org.jfree.chart.axis.PeriodAxis: org.jfree.chart.axis.PeriodAxisLabelInfo[] labelInfo> = r1
+org.jfree.chart.axis.PeriodAxis.setLabelInfo : $r2 = new org.jfree.chart.event.AxisChangeEvent
+org.jfree.data.time.Day.equals : if r1 != r0 goto $z0 = r1 instanceof org.jfree.data.time.Day
+org.jfree.data.time.Day.equals : r2 = (org.jfree.data.time.Day) r1
+org.jfree.data.time.Day.equals : $r3 = r0.<org.jfree.data.time.Day: org.jfree.date.SerialDate serialDate>
+org.jfree.data.time.Day.equals : return 1
+org.jfree.data.time.Day.equals : $z0 = r1 instanceof org.jfree.data.time.Day
+org.jfree.data.time.Day.getLastMillisecond : virtualinvoke r1.<java.util.Calendar: void set(int,int)>(14, 999)
+org.jfree.data.time.Day.getLastMillisecond : $r2 = r0.<org.jfree.data.time.Day: org.jfree.date.SerialDate serialDate>
+org.jfree.data.time.Day.getLastMillisecond : $r3 = r0.<org.jfree.data.time.Day: org.jfree.date.SerialDate serialDate>
+org.jfree.data.time.Day.getLastMillisecond : $i3 = i1 - 1
+org.jfree.data.time.Day.getLastMillisecond : virtualinvoke r1.<java.util.Calendar: void clear()>()
+org.jfree.data.time.Day.getLastMillisecond : $r4 = r0.<org.jfree.data.time.Day: org.jfree.date.SerialDate serialDate>
+org.jfree.data.time.Day.getLastMillisecond : $l4 = virtualinvoke r1.<java.util.Calendar: long getTimeInMillis()>()
+org.jfree.chart.axis.PeriodAxis.setFirst : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "first")
+org.jfree.chart.axis.PeriodAxis.setFirst : $r2 = r0.<org.jfree.chart.axis.PeriodAxis: org.jfree.data.time.RegularTimePeriod first>
+org.jfree.chart.axis.PeriodAxis.setFirst : $r4 = new org.jfree.chart.event.AxisChangeEvent
+org.jfree.chart.axis.PeriodAxis.setFirst : r0.<org.jfree.chart.axis.PeriodAxis: org.jfree.data.time.RegularTimePeriod first> = r1
+org.jfree.chart.axis.PeriodAxis.setMinorTickMarksVisible : r0.<org.jfree.chart.axis.PeriodAxis: boolean minorTickMarksVisible> = z0
+org.jfree.chart.axis.PeriodAxis.setMinorTickMarksVisible : $r1 = new org.jfree.chart.event.AxisChangeEvent
+org.jfree.chart.axis.PeriodAxis.setMinorTickMarkStroke : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "stroke")
+org.jfree.chart.axis.PeriodAxis.setMinorTickMarkStroke : $r2 = new org.jfree.chart.event.AxisChangeEvent
+org.jfree.chart.axis.PeriodAxis.setMinorTickMarkStroke : r0.<org.jfree.chart.axis.PeriodAxis: java.awt.Stroke minorTickMarkStroke> = r1
+org.jfree.chart.axis.PeriodAxis.setAutoRangeTimePeriodClass : r0.<org.jfree.chart.axis.PeriodAxis: java.lang.Class autoRangeTimePeriodClass> = r1
+org.jfree.chart.axis.PeriodAxis.setAutoRangeTimePeriodClass : $r2 = new org.jfree.chart.event.AxisChangeEvent
+org.jfree.chart.axis.PeriodAxis.setAutoRangeTimePeriodClass : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "c")
+org.jfree.chart.axis.PeriodAxis.setLast : $r2 = r0.<org.jfree.chart.axis.PeriodAxis: org.jfree.data.time.RegularTimePeriod last>
+org.jfree.chart.axis.PeriodAxis.setLast : r0.<org.jfree.chart.axis.PeriodAxis: org.jfree.data.time.RegularTimePeriod last> = r1
+org.jfree.chart.axis.PeriodAxis.setLast : $r4 = new org.jfree.chart.event.AxisChangeEvent
+org.jfree.chart.axis.PeriodAxis.setLast : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "last")
+org.jfree.data.time.Year.peg : $l1 = virtualinvoke r0.<org.jfree.data.time.Year: long getLastMillisecond(java.util.Calendar)>(r1)
+org.jfree.data.time.Year.peg : $l0 = virtualinvoke r0.<org.jfree.data.time.Year: long getFirstMillisecond(java.util.Calendar)>(r1)
+org.jfree.data.time.Day.getSerialDate : $r1 = r0.<org.jfree.data.time.Day: org.jfree.date.SerialDate serialDate>
+org.jfree.chart.axis.Axis.equals : $r11 = r0.<org.jfree.chart.axis.Axis: java.awt.Stroke axisLineStroke>
+org.jfree.chart.axis.Axis.equals : if r1 != r0 goto $z0 = r1 instanceof org.jfree.chart.axis.Axis
+org.jfree.chart.axis.Axis.equals : $f2 = r0.<org.jfree.chart.axis.Axis: float tickMarkOutsideLength>
+org.jfree.chart.axis.Axis.equals : $r5 = r0.<org.jfree.chart.axis.Axis: java.awt.Font labelFont>
+org.jfree.chart.axis.Axis.equals : $r21 = r0.<org.jfree.chart.axis.Axis: java.awt.Paint tickMarkPaint>
+org.jfree.chart.axis.Axis.equals : $r23 = r0.<org.jfree.chart.axis.Axis: java.awt.Stroke tickMarkStroke>
+org.jfree.chart.axis.Axis.equals : $f6 = r0.<org.jfree.chart.axis.Axis: float minorTickMarkOutsideLength>
+org.jfree.chart.axis.Axis.equals : $d0 = r0.<org.jfree.chart.axis.Axis: double labelAngle>
+org.jfree.chart.axis.Axis.equals : $r15 = r0.<org.jfree.chart.axis.Axis: java.awt.Font tickLabelFont>
+org.jfree.chart.axis.Axis.equals : $z7 = r0.<org.jfree.chart.axis.Axis: boolean axisLineVisible>
+org.jfree.chart.axis.Axis.equals : $r19 = r0.<org.jfree.chart.axis.Axis: org.jfree.ui.RectangleInsets tickLabelInsets>
+org.jfree.chart.axis.Axis.equals : $z20 = r0.<org.jfree.chart.axis.Axis: boolean minorTickMarksVisible>
+org.jfree.chart.axis.Axis.equals : $z0 = r1 instanceof org.jfree.chart.axis.Axis
+org.jfree.chart.axis.Axis.equals : $z16 = r0.<org.jfree.chart.axis.Axis: boolean tickMarksVisible>
+org.jfree.chart.axis.Axis.equals : $z11 = r0.<org.jfree.chart.axis.Axis: boolean tickLabelsVisible>
+org.jfree.chart.axis.Axis.equals : $r13 = r0.<org.jfree.chart.axis.Axis: java.awt.Paint axisLinePaint>
+org.jfree.chart.axis.Axis.equals : return 1
+org.jfree.chart.axis.Axis.equals : $f4 = r0.<org.jfree.chart.axis.Axis: float minorTickMarkInsideLength>
+org.jfree.chart.axis.Axis.equals : $r7 = r0.<org.jfree.chart.axis.Axis: java.awt.Paint labelPaint>
+org.jfree.chart.axis.Axis.equals : $r17 = r0.<org.jfree.chart.axis.Axis: java.awt.Paint tickLabelPaint>
+org.jfree.chart.axis.Axis.equals : $d2 = r0.<org.jfree.chart.axis.Axis: double fixedDimension>
+org.jfree.chart.axis.Axis.equals : $r9 = r0.<org.jfree.chart.axis.Axis: org.jfree.ui.RectangleInsets labelInsets>
+org.jfree.chart.axis.Axis.equals : r2 = (org.jfree.chart.axis.Axis) r1
+org.jfree.chart.axis.Axis.equals : $r3 = r0.<org.jfree.chart.axis.Axis: java.lang.String label>
+org.jfree.chart.axis.Axis.equals : $z1 = r0.<org.jfree.chart.axis.Axis: boolean visible>
+org.jfree.chart.axis.Axis.equals : $f0 = r0.<org.jfree.chart.axis.Axis: float tickMarkInsideLength>
+org.jfree.data.time.Year.equals : r2 = (org.jfree.data.time.Year) r1
+org.jfree.data.time.Year.equals : if r1 != r0 goto $z0 = r1 instanceof org.jfree.data.time.Year
+org.jfree.data.time.Year.equals : return 0
+org.jfree.data.time.Year.equals : $z0 = r1 instanceof org.jfree.data.time.Year
+org.jfree.data.time.Year.equals : $s0 = r0.<org.jfree.data.time.Year: short year>
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null goto return
+org.jfree.data.time.Day.peg : $l1 = virtualinvoke r0.<org.jfree.data.time.Day: long getLastMillisecond(java.util.Calendar)>(r1)
+org.jfree.data.time.Day.peg : $l0 = virtualinvoke r0.<org.jfree.data.time.Day: long getFirstMillisecond(java.util.Calendar)>(r1)
+org.jfree.chart.axis.PeriodAxis.setMinorTickTimePeriodClass : r0.<org.jfree.chart.axis.PeriodAxis: java.lang.Class minorTickTimePeriodClass> = r1
+org.jfree.chart.axis.PeriodAxis.setMinorTickTimePeriodClass : $r2 = new org.jfree.chart.event.AxisChangeEvent
+org.jfree.chart.axis.PeriodAxis.setMinorTickTimePeriodClass : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "c")
+org.jfree.chart.axis.PeriodAxis.setTimeZone : $r4 = r0.<org.jfree.chart.axis.PeriodAxis: org.jfree.data.time.RegularTimePeriod first>
+org.jfree.chart.axis.PeriodAxis.setTimeZone : $r6 = r0.<org.jfree.chart.axis.PeriodAxis: org.jfree.data.time.RegularTimePeriod last>
+org.jfree.chart.axis.PeriodAxis.setTimeZone : $r8 = new org.jfree.chart.event.AxisChangeEvent
+org.jfree.chart.axis.PeriodAxis.setTimeZone : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "zone")
+org.jfree.chart.axis.PeriodAxis.setTimeZone : $r2 = r0.<org.jfree.chart.axis.PeriodAxis: java.util.Locale locale>
+org.jfree.chart.axis.PeriodAxis.setTimeZone : r0.<org.jfree.chart.axis.PeriodAxis: java.util.TimeZone timeZone> = r1
+org.jfree.chart.axis.PeriodAxis.setMajorTickTimePeriodClass : r0.<org.jfree.chart.axis.PeriodAxis: java.lang.Class majorTickTimePeriodClass> = r1
+org.jfree.chart.axis.PeriodAxis.setMajorTickTimePeriodClass : $r2 = new org.jfree.chart.event.AxisChangeEvent
+org.jfree.chart.axis.PeriodAxis.setMajorTickTimePeriodClass : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "c")
+org.jfree.chart.axis.ValueAxis.setAutoRange : $z2 = r0.<org.jfree.chart.axis.ValueAxis: boolean autoRange>
+org.jfree.chart.axis.ValueAxis.setAutoRange : virtualinvoke r0.<org.jfree.chart.axis.ValueAxis: void setAutoRange(boolean,boolean)>(z0, 1)
+org.jfree.chart.axis.PeriodAxis.setMinorTickMarkPaint : r0.<org.jfree.chart.axis.PeriodAxis: java.awt.Paint minorTickMarkPaint> = r1
+org.jfree.chart.axis.PeriodAxis.setMinorTickMarkPaint : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "paint")
+org.jfree.chart.axis.PeriodAxis.setMinorTickMarkPaint : $r2 = new org.jfree.chart.event.AxisChangeEvent
+org.jfree.data.time.Day.getFirstMillisecond : $r2 = r0.<org.jfree.data.time.Day: org.jfree.date.SerialDate serialDate>
+org.jfree.data.time.Day.getFirstMillisecond : virtualinvoke r1.<java.util.Calendar: void set(int,int)>(14, 0)
+org.jfree.data.time.Day.getFirstMillisecond : $r3 = r0.<org.jfree.data.time.Day: org.jfree.date.SerialDate serialDate>
+org.jfree.data.time.Day.getFirstMillisecond : $i3 = i1 - 1
+org.jfree.data.time.Day.getFirstMillisecond : virtualinvoke r1.<java.util.Calendar: void clear()>()
+org.jfree.data.time.Day.getFirstMillisecond : $r4 = r0.<org.jfree.data.time.Day: org.jfree.date.SerialDate serialDate>
+org.jfree.data.time.Day.getFirstMillisecond : $l4 = virtualinvoke r1.<java.util.Calendar: long getTimeInMillis()>()
+org.jfree.chart.axis.PeriodAxis.isMinorTickMarksVisible : $z0 = r0.<org.jfree.chart.axis.PeriodAxis: boolean minorTickMarksVisible>
+org.jfree.chart.axis.PeriodAxisLabelInfo.equals : $r7 = r2.<org.jfree.chart.axis.PeriodAxisLabelInfo: org.jfree.ui.RectangleInsets padding>
+org.jfree.chart.axis.PeriodAxisLabelInfo.equals : $r3 = r2.<org.jfree.chart.axis.PeriodAxisLabelInfo: java.lang.Class periodClass>
+org.jfree.chart.axis.PeriodAxisLabelInfo.equals : $z0 = r1 instanceof org.jfree.chart.axis.PeriodAxisLabelInfo
+org.jfree.chart.axis.PeriodAxisLabelInfo.equals : $r15 = r2.<org.jfree.chart.axis.PeriodAxisLabelInfo: java.awt.Paint dividerPaint>
+org.jfree.chart.axis.PeriodAxisLabelInfo.equals : $r13 = r2.<org.jfree.chart.axis.PeriodAxisLabelInfo: java.awt.Stroke dividerStroke>
+org.jfree.chart.axis.PeriodAxisLabelInfo.equals : $r11 = r2.<org.jfree.chart.axis.PeriodAxisLabelInfo: java.awt.Paint labelPaint>
+org.jfree.chart.axis.PeriodAxisLabelInfo.equals : $r5 = r2.<org.jfree.chart.axis.PeriodAxisLabelInfo: java.text.DateFormat dateFormat>
+org.jfree.chart.axis.PeriodAxisLabelInfo.equals : return 1
+org.jfree.chart.axis.PeriodAxisLabelInfo.equals : r2 = (org.jfree.chart.axis.PeriodAxisLabelInfo) r1
+org.jfree.chart.axis.PeriodAxisLabelInfo.equals : $z6 = r2.<org.jfree.chart.axis.PeriodAxisLabelInfo: boolean drawDividers>
+org.jfree.chart.axis.PeriodAxisLabelInfo.equals : $r9 = r2.<org.jfree.chart.axis.PeriodAxisLabelInfo: java.awt.Font labelFont>
+org.jfree.chart.axis.PeriodAxisLabelInfo.equals : if r1 != r0 goto $z0 = r1 instanceof org.jfree.chart.axis.PeriodAxisLabelInfo

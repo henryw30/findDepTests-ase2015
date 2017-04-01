@@ -1,0 +1,20 @@
+dynoptic.model.fifosys.gfsm.GFSMPath.getExtrema : $r2 = virtualinvoke r1.<dynoptic.model.fifosys.gfsm.GFSMState: java.util.Set getObservedStates()>() >>>>>>>> dynoptic.model.fifosys.gfsm.GFSMPath.getExtrema : $i0 = interfaceinvoke $r2.<java.util.Set: int size()>()
+dynoptic.model.fifosys.gfsm.GFSMPath.getExtrema : $i0 = interfaceinvoke $r2.<java.util.Set: int size()>() >>>>>>>> dynoptic.model.fifosys.gfsm.GFSMPath.getExtrema : if $i0 != 1
+dynoptic.model.fifosys.gfsm.GFSMPath.getExtrema : if $i0 != 1 >>>>>>>> dynoptic.model.fifosys.gfsm.GFSMPath.getExtrema : return null
+dynoptic.model.fifosys.gfsm.GFSMPath.getExtrema : if $i0 != 1 >>>>>>>> dynoptic.model.fifosys.gfsm.GFSMPath.getExtrema : n0 = null
+dynoptic.model.fifosys.gfsm.GFSMPath.getExtrema : n0 = null >>>>>>>> dynoptic.model.fifosys.gfsm.GFSMPath.getExtrema : if z0 == 0
+dynoptic.model.fifosys.gfsm.GFSMPath.getExtrema : if z0 == 0 >>>>>>>> dynoptic.model.fifosys.gfsm.GFSMPath.getExtrema : $i1 = r0.<dynoptic.model.fifosys.gfsm.GFSMPath: int pid>
+dynoptic.model.fifosys.gfsm.GFSMPath.getExtrema : if z0 == 0 >>>>>>>> dynoptic.model.fifosys.gfsm.GFSMPath.getExtrema : $i2 = r0.<dynoptic.model.fifosys.gfsm.GFSMPath: int pid>
+dynoptic.model.fifosys.gfsm.GFSMPath.getExtrema : $i2 = r0.<dynoptic.model.fifosys.gfsm.GFSMPath: int pid> >>>>>>>> dynoptic.model.fifosys.gfsm.GFSMPath.getExtrema : r3 = virtualinvoke r1.<dynoptic.model.fifosys.gfsm.GFSMState: java.util.Set getTerminalObsForPid(int)>($i2)
+dynoptic.model.fifosys.gfsm.GFSMPath.getExtrema : r3 = virtualinvoke r1.<dynoptic.model.fifosys.gfsm.GFSMState: java.util.Set getTerminalObsForPid(int)>($i2) >>>>>>>> dynoptic.model.fifosys.gfsm.GFSMPath.getExtrema : $z1 = interfaceinvoke r3.<java.util.Set: boolean isEmpty()>()
+dynoptic.model.fifosys.gfsm.GFSMPath.getExtrema : $z1 = interfaceinvoke r3.<java.util.Set: boolean isEmpty()>() >>>>>>>> dynoptic.model.fifosys.gfsm.GFSMPath.getExtrema : if $z1 == 0
+dynoptic.model.fifosys.gfsm.GFSMPath.getExtrema : if $z1 == 0 >>>>>>>> dynoptic.model.fifosys.gfsm.GFSMPath.getExtrema : return null
+dynoptic.model.fifosys.gfsm.GFSMPath.getExtrema : if $z1 == 0 >>>>>>>> dynoptic.model.fifosys.gfsm.GFSMPath.getExtrema : $i3 = interfaceinvoke r3.<java.util.Set: int size()>()
+dynoptic.model.fifosys.gfsm.GFSMPath.getExtrema : $i3 = interfaceinvoke r3.<java.util.Set: int size()>() >>>>>>>> dynoptic.model.fifosys.gfsm.GFSMPath.getExtrema : $r4 = virtualinvoke r1.<dynoptic.model.fifosys.gfsm.GFSMState: java.util.Set getObservedStates()>()
+dynoptic.model.fifosys.gfsm.GFSMPath.getExtrema : $r4 = virtualinvoke r1.<dynoptic.model.fifosys.gfsm.GFSMState: java.util.Set getObservedStates()>() >>>>>>>> dynoptic.model.fifosys.gfsm.GFSMPath.getExtrema : $i4 = interfaceinvoke $r4.<java.util.Set: int size()>()
+dynoptic.model.fifosys.gfsm.GFSMPath.getExtrema : $i4 = interfaceinvoke $r4.<java.util.Set: int size()>() >>>>>>>> dynoptic.model.fifosys.gfsm.GFSMPath.getExtrema : if $i3 != $i4
+dynoptic.model.fifosys.gfsm.GFSMPath.getExtrema : if $i3 != $i4 >>>>>>>> dynoptic.model.fifosys.gfsm.GFSMPath.getExtrema : return null
+dynoptic.model.fifosys.gfsm.GFSMPath.getExtrema : if $i3 != $i4 >>>>>>>> dynoptic.model.fifosys.gfsm.GFSMPath.getExtrema : return r3
+dynoptic.model.fifosys.gfsm.GFSMPath.getExtrema : $i1 = r0.<dynoptic.model.fifosys.gfsm.GFSMPath: int pid> >>>>>>>> dynoptic.model.fifosys.gfsm.GFSMPath.getExtrema : r3 = virtualinvoke r1.<dynoptic.model.fifosys.gfsm.GFSMState: java.util.Set getInitialObsForPid(int)>($i1)
+dynoptic.model.fifosys.gfsm.GFSMPath.getExtrema : r3 = virtualinvoke r1.<dynoptic.model.fifosys.gfsm.GFSMState: java.util.Set getInitialObsForPid(int)>($i1) >>>>>>>> dynoptic.model.fifosys.gfsm.GFSMPath.getExtrema : goto [?= $z1 = interfaceinvoke r3.<java.util.Set: boolean isEmpty()>()]
+dynoptic.model.fifosys.gfsm.GFSMPath.getExtrema : goto [?= $z1 = interfaceinvoke r3.<java.util.Set: boolean isEmpty()>()] >>>>>>>> dynoptic.model.fifosys.gfsm.GFSMPath.getExtrema : $z1 = interfaceinvoke r3.<java.util.Set: boolean isEmpty()>()

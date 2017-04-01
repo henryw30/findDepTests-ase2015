@@ -1,0 +1,62 @@
+org.joda.time.DateTimeZone.convertLocalToUTC : i1 = virtualinvoke r0.<org.joda.time.DateTimeZone: int getOffset(long)>(l0) >>>>>>>> org.joda.time.DateTimeZone.convertLocalToUTC : $l5 = (long) i1
+org.joda.time.DateTimeZone.convertLocalToUTC : $l5 = (long) i1 >>>>>>>> org.joda.time.DateTimeZone.convertLocalToUTC : $l6 = l0 - $l5
+org.joda.time.DateTimeZone.convertLocalToUTC : $l6 = l0 - $l5 >>>>>>>> org.joda.time.DateTimeZone.convertLocalToUTC : i2 = virtualinvoke r0.<org.joda.time.DateTimeZone: int getOffset(long)>($l6)
+org.joda.time.DateTimeZone.convertLocalToUTC : i2 = virtualinvoke r0.<org.joda.time.DateTimeZone: int getOffset(long)>($l6) >>>>>>>> org.joda.time.DateTimeZone.convertLocalToUTC : if i1 == i2
+org.joda.time.DateTimeZone.convertLocalToUTC : if i1 == i2 >>>>>>>> org.joda.time.DateTimeZone.convertLocalToUTC : if z0 != 0
+org.joda.time.DateTimeZone.convertLocalToUTC : if i1 == i2 >>>>>>>> org.joda.time.DateTimeZone.convertLocalToUTC : $l18 = (long) i2
+org.joda.time.DateTimeZone.convertLocalToUTC : $l18 = (long) i2 >>>>>>>> org.joda.time.DateTimeZone.convertLocalToUTC : l19 = l0 - $l18
+org.joda.time.DateTimeZone.convertLocalToUTC : l19 = l0 - $l18 >>>>>>>> org.joda.time.DateTimeZone.convertLocalToUTC : $l20 = l0 ^ l19
+org.joda.time.DateTimeZone.convertLocalToUTC : $l20 = l0 ^ l19 >>>>>>>> org.joda.time.DateTimeZone.convertLocalToUTC : $b21 = $l20 cmp 0L
+org.joda.time.DateTimeZone.convertLocalToUTC : $b21 = $l20 cmp 0L >>>>>>>> org.joda.time.DateTimeZone.convertLocalToUTC : if $b21 >= 0
+org.joda.time.DateTimeZone.convertLocalToUTC : if $b21 >= 0 >>>>>>>> org.joda.time.DateTimeZone.convertLocalToUTC : $l22 = (long) i2
+org.joda.time.DateTimeZone.convertLocalToUTC : if $b21 >= 0 >>>>>>>> org.joda.time.DateTimeZone.convertLocalToUTC : return l19
+org.joda.time.DateTimeZone.convertLocalToUTC : $l22 = (long) i2 >>>>>>>> org.joda.time.DateTimeZone.convertLocalToUTC : $l23 = l0 ^ $l22
+org.joda.time.DateTimeZone.convertLocalToUTC : $l23 = l0 ^ $l22 >>>>>>>> org.joda.time.DateTimeZone.convertLocalToUTC : $b24 = $l23 cmp 0L
+org.joda.time.DateTimeZone.convertLocalToUTC : $b24 = $l23 cmp 0L >>>>>>>> org.joda.time.DateTimeZone.convertLocalToUTC : if $b24 >= 0
+org.joda.time.DateTimeZone.convertLocalToUTC : if $b24 >= 0 >>>>>>>> org.joda.time.DateTimeZone.convertLocalToUTC : $r13 = new java.lang.ArithmeticException
+org.joda.time.DateTimeZone.convertLocalToUTC : if $b24 >= 0 >>>>>>>> org.joda.time.DateTimeZone.convertLocalToUTC : return l19
+org.joda.time.DateTimeZone.convertLocalToUTC : $r13 = new java.lang.ArithmeticException >>>>>>>> org.joda.time.DateTimeZone.convertLocalToUTC : specialinvoke $r13.<java.lang.ArithmeticException: void <init>(java.lang.String)>("Subtracting time zone offset caused overflow")
+org.joda.time.DateTimeZone.convertLocalToUTC : specialinvoke $r13.<java.lang.ArithmeticException: void <init>(java.lang.String)>("Subtracting time zone offset caused overflow") >>>>>>>> org.joda.time.DateTimeZone.convertLocalToUTC : throw $r13
+org.joda.time.DateTimeZone.convertLocalToUTC : if z0 != 0 >>>>>>>> org.joda.time.DateTimeZone.convertLocalToUTC : if i1 >= 0
+org.joda.time.DateTimeZone.convertLocalToUTC : if z0 != 0 >>>>>>>> org.joda.time.DateTimeZone.convertLocalToUTC : $l7 = (long) i1
+org.joda.time.DateTimeZone.convertLocalToUTC : $l7 = (long) i1 >>>>>>>> org.joda.time.DateTimeZone.convertLocalToUTC : $l8 = l0 - $l7
+org.joda.time.DateTimeZone.convertLocalToUTC : $l8 = l0 - $l7 >>>>>>>> org.joda.time.DateTimeZone.convertLocalToUTC : l3 = virtualinvoke r0.<org.joda.time.DateTimeZone: long nextTransition(long)>($l8)
+org.joda.time.DateTimeZone.convertLocalToUTC : l3 = virtualinvoke r0.<org.joda.time.DateTimeZone: long nextTransition(long)>($l8) >>>>>>>> org.joda.time.DateTimeZone.convertLocalToUTC : $l9 = (long) i1
+org.joda.time.DateTimeZone.convertLocalToUTC : $l9 = (long) i1 >>>>>>>> org.joda.time.DateTimeZone.convertLocalToUTC : $l10 = l0 - $l9
+org.joda.time.DateTimeZone.convertLocalToUTC : $l10 = l0 - $l9 >>>>>>>> org.joda.time.DateTimeZone.convertLocalToUTC : $b11 = l3 cmp $l10
+org.joda.time.DateTimeZone.convertLocalToUTC : $b11 = l3 cmp $l10 >>>>>>>> org.joda.time.DateTimeZone.convertLocalToUTC : if $b11 != 0
+org.joda.time.DateTimeZone.convertLocalToUTC : if $b11 != 0 >>>>>>>> org.joda.time.DateTimeZone.convertLocalToUTC : l3 = 9223372036854775807L
+org.joda.time.DateTimeZone.convertLocalToUTC : if $b11 != 0 >>>>>>>> org.joda.time.DateTimeZone.convertLocalToUTC : $l12 = (long) i2
+org.joda.time.DateTimeZone.convertLocalToUTC : $l12 = (long) i2 >>>>>>>> org.joda.time.DateTimeZone.convertLocalToUTC : $l13 = l0 - $l12
+org.joda.time.DateTimeZone.convertLocalToUTC : $l13 = l0 - $l12 >>>>>>>> org.joda.time.DateTimeZone.convertLocalToUTC : l4 = virtualinvoke r0.<org.joda.time.DateTimeZone: long nextTransition(long)>($l13)
+org.joda.time.DateTimeZone.convertLocalToUTC : l4 = virtualinvoke r0.<org.joda.time.DateTimeZone: long nextTransition(long)>($l13) >>>>>>>> org.joda.time.DateTimeZone.convertLocalToUTC : $l14 = (long) i2
+org.joda.time.DateTimeZone.convertLocalToUTC : $l14 = (long) i2 >>>>>>>> org.joda.time.DateTimeZone.convertLocalToUTC : $l15 = l0 - $l14
+org.joda.time.DateTimeZone.convertLocalToUTC : $l15 = l0 - $l14 >>>>>>>> org.joda.time.DateTimeZone.convertLocalToUTC : $b16 = l4 cmp $l15
+org.joda.time.DateTimeZone.convertLocalToUTC : $b16 = l4 cmp $l15 >>>>>>>> org.joda.time.DateTimeZone.convertLocalToUTC : if $b16 != 0
+org.joda.time.DateTimeZone.convertLocalToUTC : if $b16 != 0 >>>>>>>> org.joda.time.DateTimeZone.convertLocalToUTC : l4 = 9223372036854775807L
+org.joda.time.DateTimeZone.convertLocalToUTC : if $b16 != 0 >>>>>>>> org.joda.time.DateTimeZone.convertLocalToUTC : $b17 = l3 cmp l4
+org.joda.time.DateTimeZone.convertLocalToUTC : $b17 = l3 cmp l4 >>>>>>>> org.joda.time.DateTimeZone.convertLocalToUTC : if $b17 == 0
+org.joda.time.DateTimeZone.convertLocalToUTC : if $b17 == 0 >>>>>>>> org.joda.time.DateTimeZone.convertLocalToUTC : if z0 == 0
+org.joda.time.DateTimeZone.convertLocalToUTC : if $b17 == 0 >>>>>>>> org.joda.time.DateTimeZone.convertLocalToUTC : $l18 = (long) i2
+org.joda.time.DateTimeZone.convertLocalToUTC : if z0 == 0 >>>>>>>> org.joda.time.DateTimeZone.convertLocalToUTC : $r1 = new java.lang.IllegalArgumentException
+org.joda.time.DateTimeZone.convertLocalToUTC : if z0 == 0 >>>>>>>> org.joda.time.DateTimeZone.convertLocalToUTC : i2 = i1
+org.joda.time.DateTimeZone.convertLocalToUTC : i2 = i1 >>>>>>>> org.joda.time.DateTimeZone.convertLocalToUTC : $l18 = (long) i2
+org.joda.time.DateTimeZone.convertLocalToUTC : $r1 = new java.lang.IllegalArgumentException >>>>>>>> org.joda.time.DateTimeZone.convertLocalToUTC : $r2 = new java.lang.StringBuilder
+org.joda.time.DateTimeZone.convertLocalToUTC : $r2 = new java.lang.StringBuilder >>>>>>>> org.joda.time.DateTimeZone.convertLocalToUTC : specialinvoke $r2.<java.lang.StringBuilder: void <init>()>()
+org.joda.time.DateTimeZone.convertLocalToUTC : specialinvoke $r2.<java.lang.StringBuilder: void <init>()>() >>>>>>>> org.joda.time.DateTimeZone.convertLocalToUTC : $r3 = virtualinvoke $r2.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("Illegal instant due to time zone offset transition: ")
+org.joda.time.DateTimeZone.convertLocalToUTC : $r3 = virtualinvoke $r2.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("Illegal instant due to time zone offset transition: ") >>>>>>>> org.joda.time.DateTimeZone.convertLocalToUTC : $r4 = staticinvoke <org.joda.time.format.DateTimeFormat: org.joda.time.format.DateTimeFormatter forPattern(java.lang.String)>("yyyy-MM-dd\'T\'HH:mm:ss.SSS")
+org.joda.time.DateTimeZone.convertLocalToUTC : $r4 = staticinvoke <org.joda.time.format.DateTimeFormat: org.joda.time.format.DateTimeFormatter forPattern(java.lang.String)>("yyyy-MM-dd\'T\'HH:mm:ss.SSS") >>>>>>>> org.joda.time.DateTimeZone.convertLocalToUTC : $r5 = new org.joda.time.Instant
+org.joda.time.DateTimeZone.convertLocalToUTC : $r5 = new org.joda.time.Instant >>>>>>>> org.joda.time.DateTimeZone.convertLocalToUTC : specialinvoke $r5.<org.joda.time.Instant: void <init>(long)>(l0)
+org.joda.time.DateTimeZone.convertLocalToUTC : specialinvoke $r5.<org.joda.time.Instant: void <init>(long)>(l0) >>>>>>>> org.joda.time.DateTimeZone.convertLocalToUTC : $r6 = virtualinvoke $r4.<org.joda.time.format.DateTimeFormatter: java.lang.String print(org.joda.time.ReadableInstant)>($r5)
+org.joda.time.DateTimeZone.convertLocalToUTC : $r6 = virtualinvoke $r4.<org.joda.time.format.DateTimeFormatter: java.lang.String print(org.joda.time.ReadableInstant)>($r5) >>>>>>>> org.joda.time.DateTimeZone.convertLocalToUTC : $r7 = virtualinvoke $r3.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($r6)
+org.joda.time.DateTimeZone.convertLocalToUTC : $r7 = virtualinvoke $r3.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($r6) >>>>>>>> org.joda.time.DateTimeZone.convertLocalToUTC : $r8 = virtualinvoke $r7.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(" (")
+org.joda.time.DateTimeZone.convertLocalToUTC : $r8 = virtualinvoke $r7.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(" (") >>>>>>>> org.joda.time.DateTimeZone.convertLocalToUTC : $r9 = virtualinvoke r0.<org.joda.time.DateTimeZone: java.lang.String getID()>()
+org.joda.time.DateTimeZone.convertLocalToUTC : $r9 = virtualinvoke r0.<org.joda.time.DateTimeZone: java.lang.String getID()>() >>>>>>>> org.joda.time.DateTimeZone.convertLocalToUTC : $r10 = virtualinvoke $r8.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($r9)
+org.joda.time.DateTimeZone.convertLocalToUTC : $r10 = virtualinvoke $r8.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($r9) >>>>>>>> org.joda.time.DateTimeZone.convertLocalToUTC : $r11 = virtualinvoke $r10.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(")")
+org.joda.time.DateTimeZone.convertLocalToUTC : $r11 = virtualinvoke $r10.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(")") >>>>>>>> org.joda.time.DateTimeZone.convertLocalToUTC : $r12 = virtualinvoke $r11.<java.lang.StringBuilder: java.lang.String toString()>()
+org.joda.time.DateTimeZone.convertLocalToUTC : $r12 = virtualinvoke $r11.<java.lang.StringBuilder: java.lang.String toString()>() >>>>>>>> org.joda.time.DateTimeZone.convertLocalToUTC : specialinvoke $r1.<java.lang.IllegalArgumentException: void <init>(java.lang.String)>($r12)
+org.joda.time.DateTimeZone.convertLocalToUTC : specialinvoke $r1.<java.lang.IllegalArgumentException: void <init>(java.lang.String)>($r12) >>>>>>>> org.joda.time.DateTimeZone.convertLocalToUTC : throw $r1
+org.joda.time.DateTimeZone.convertLocalToUTC : l4 = 9223372036854775807L >>>>>>>> org.joda.time.DateTimeZone.convertLocalToUTC : $b17 = l3 cmp l4
+org.joda.time.DateTimeZone.convertLocalToUTC : l3 = 9223372036854775807L >>>>>>>> org.joda.time.DateTimeZone.convertLocalToUTC : $l12 = (long) i2
+org.joda.time.DateTimeZone.convertLocalToUTC : if i1 >= 0 >>>>>>>> org.joda.time.DateTimeZone.convertLocalToUTC : $l7 = (long) i1
+org.joda.time.DateTimeZone.convertLocalToUTC : if i1 >= 0 >>>>>>>> org.joda.time.DateTimeZone.convertLocalToUTC : $l18 = (long) i2

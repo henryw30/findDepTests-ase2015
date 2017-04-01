@@ -1,0 +1,84 @@
+org.joda.time.chrono.ISOChronology.withUTC : $r1 = <org.joda.time.chrono.ISOChronology: org.joda.time.chrono.ISOChronology INSTANCE_UTC>
+org.joda.time.chrono.ISOChronology.getInstance : if r0 != null goto $i1 = staticinvoke <java.lang.System: int identityHashCode(java.lang.Object)>(r0)
+org.joda.time.chrono.ISOChronology.getInstance : $i1 = staticinvoke <java.lang.System: int identityHashCode(java.lang.Object)>(r0)
+org.joda.time.chrono.ISOChronology.getInstance : $r5 = <org.joda.time.chrono.ISOChronology: org.joda.time.chrono.ISOChronology[] cFastCache>
+org.joda.time.chrono.ISOChronology.getInstance : return r1
+org.joda.time.chrono.ISOChronology.getInstance : if r1 == null goto $r7 = <org.joda.time.chrono.ISOChronology: java.util.Map cCache>
+org.joda.time.chrono.ISOChronology.getInstance : $r0 = staticinvoke <org.joda.time.DateTimeZone: org.joda.time.DateTimeZone getDefault()>()
+org.joda.time.format.DateTimeFormatter.selectChronology : return r2
+org.joda.time.format.DateTimeFormatter.selectChronology : $r4 = r0.<org.joda.time.format.DateTimeFormatter: org.joda.time.DateTimeZone iZone>
+org.joda.time.format.DateTimeFormatter.selectChronology : $r3 = r0.<org.joda.time.format.DateTimeFormatter: org.joda.time.Chronology iChrono>
+org.joda.time.format.DateTimeFormatter.selectChronology : r2 = staticinvoke <org.joda.time.DateTimeUtils: org.joda.time.Chronology getChronology(org.joda.time.Chronology)>(r1)
+org.joda.time.format.DateTimeFormatter.parseLocalDate : $r2 = virtualinvoke r0.<org.joda.time.format.DateTimeFormatter: org.joda.time.LocalDateTime parseLocalDateTime(java.lang.String)>(r1)
+org.joda.time.chrono.BasicChronology.getZone : $r2 = virtualinvoke r0.<org.joda.time.chrono.BasicChronology: org.joda.time.Chronology getBase()>()
+org.joda.time.chrono.BasicChronology.getZone : $r4 = <org.joda.time.DateTimeZone: org.joda.time.DateTimeZone UTC>
+org.joda.time.chrono.ZonedChronology.getZone : $r1 = virtualinvoke r0.<org.joda.time.chrono.ZonedChronology: java.lang.Object getParam()>()
+org.joda.time.DateTimeUtils.getChronology : if r0 != null goto return r0
+org.joda.time.DateTimeUtils.getChronology : return r0
+org.joda.time.DateTimeUtils.getChronology : $r1 = staticinvoke <org.joda.time.chrono.ISOChronology: org.joda.time.chrono.ISOChronology getInstance()>()
+org.joda.time.chrono.AssembledChronology.getBase : $r1 = r0.<org.joda.time.chrono.AssembledChronology: org.joda.time.Chronology iBase>
+org.joda.time.format.DateTimeFormatterBuilder$TextField.parseInto : if r5 != null goto $r17 = r0.<org.joda.time.format.DateTimeFormatterBuilder$TextField: org.joda.time.DateTimeFieldType iFieldType>
+org.joda.time.format.DateTimeFormatterBuilder$TextField.parseInto : if r6 != null goto $r43 = r6[0]
+org.joda.time.format.DateTimeFormatterBuilder$TextField.parseInto : $i11 = i0 ^ -1
+org.joda.time.format.DateTimeFormatterBuilder$TextField.parseInto : n0 = null
+org.joda.time.format.DateTimeFormatterBuilder$TextField.parseInto : $z12 = interfaceinvoke r20.<java.util.Set: boolean contains(java.lang.Object)>(r47)
+org.joda.time.format.DateTimeFormatterBuilder$TextField.parseInto : $r43 = r6[0]
+org.joda.time.format.DateTimeFormatterBuilder$TextField.parseInto : $r11 = <org.joda.time.format.DateTimeFormatterBuilder$TextField: java.util.Map cParseCache>
+org.joda.time.format.DateTimeFormatterBuilder$TextField.parseInto : r3 = virtualinvoke r1.<org.joda.time.format.DateTimeParserBucket: java.util.Locale getLocale()>()
+org.joda.time.format.DateTimeFormatterBuilder$TextField.parseInto : z0 = 0
+org.joda.time.format.DateTimeFormatterBuilder$TextField.parseInto : $r12 = <org.joda.time.format.DateTimeFormatterBuilder$TextField: java.util.Map cParseCache>
+org.joda.time.format.DateTimeFormatterBuilder$TextField.parseInto : r47 = virtualinvoke r2.<java.lang.String: java.lang.String substring(int,int)>(i0, i10)
+org.joda.time.format.DateTimeFormatterBuilder$TextField.parseInto : exitmonitor r4
+org.joda.time.format.DateTimeFormatterBuilder$TextField.parseInto : $r17 = r0.<org.joda.time.format.DateTimeFormatterBuilder$TextField: org.joda.time.DateTimeFieldType iFieldType>
+org.joda.time.format.DateTimeFormatterBuilder$TextField.parseInto : $i7 = virtualinvoke r2.<java.lang.String: int length()>()
+org.joda.time.format.DateTimeFormatterBuilder$TextField.parseInto : $r44 = r6[1]
+org.joda.time.format.DateTimeFormatterBuilder$TextField.parseInto : i10 = i9
+org.joda.time.format.FormatUtils.createErrorMessage : $r3 = new java.lang.StringBuilder
+org.joda.time.format.FormatUtils.createErrorMessage : i1 = i0 + 32
+org.joda.time.format.FormatUtils.createErrorMessage : $i2 = virtualinvoke r0.<java.lang.String: int length()>()
+org.joda.time.format.FormatUtils.createErrorMessage : r1 = r0
+org.joda.time.format.FormatUtils.createErrorMessage : if i0 > 0 goto $i4 = virtualinvoke r0.<java.lang.String: int length()>()
+org.joda.time.chrono.AssembledChronology.getZone : $r3 = virtualinvoke r1.<org.joda.time.Chronology: org.joda.time.DateTimeZone getZone()>()
+org.joda.time.chrono.AssembledChronology.getZone : $r2 = r0.<org.joda.time.chrono.AssembledChronology: org.joda.time.Chronology iBase>
+org.joda.time.format.DateTimeFormat$StyleFormatter.parseInto : $i1 = interfaceinvoke r3.<org.joda.time.format.DateTimeParser: int parseInto(org.joda.time.format.DateTimeParserBucket,java.lang.String,int)>(r1, r2, i0)
+org.joda.time.format.DateTimeFormat$StyleFormatter.parseInto : $r4 = virtualinvoke r1.<org.joda.time.format.DateTimeParserBucket: java.util.Locale getLocale()>()
+org.joda.time.format.DateTimeFormatter.requireParser : if r1 != null goto return r1
+org.joda.time.format.DateTimeFormatter.requireParser : r1 = r0.<org.joda.time.format.DateTimeFormatter: org.joda.time.format.DateTimeParser iParser>
+org.joda.time.format.DateTimeFormatter.requireParser : return r1
+org.joda.time.DateTimeZone.getDefault : if r0 != null goto return r0
+org.joda.time.DateTimeZone.getDefault : r0 = <org.joda.time.DateTimeZone: org.joda.time.DateTimeZone cDefault>
+org.joda.time.DateTimeZone.getDefault : return r0
+org.joda.time.format.DateTimeFormatter.getParser : $r1 = r0.<org.joda.time.format.DateTimeFormatter: org.joda.time.format.DateTimeParser iParser>
+org.joda.time.format.DateTimeFormat.createFormatterForStyleIndex : return r5
+org.joda.time.format.DateTimeFormat.createFormatterForStyleIndex : $r4 = <org.joda.time.format.DateTimeFormat: org.joda.time.format.DateTimeFormatter[] cStyleCache>
+org.joda.time.format.DateTimeFormat.createFormatterForStyleIndex : exitmonitor r0
+org.joda.time.format.DateTimeFormat.createFormatterForStyleIndex : $r3 = <org.joda.time.format.DateTimeFormat: org.joda.time.format.DateTimeFormatter[] cStyleCache>
+org.joda.time.format.DateTimeFormat.createFormatterForStyleIndex : if r5 != null goto exitmonitor r0
+org.joda.time.format.DateTimeFormat.createFormatterForStyleIndex : n0 = null
+org.joda.time.format.DateTimeFormat.createFormatterForStyleIndex : $i4 = i0 << 2
+org.joda.time.chrono.AssembledChronology.getParam : $r1 = r0.<org.joda.time.chrono.AssembledChronology: java.lang.Object iParam>
+org.joda.time.format.DateTimeFormatter.parseLocalDateTime : i0 = interfaceinvoke r2.<org.joda.time.format.DateTimeParser: int parseInto(org.joda.time.format.DateTimeParserBucket,java.lang.String,int)>(r4, r1, 0)
+org.joda.time.format.DateTimeFormatter.parseLocalDateTime : i0 = i0 ^ -1
+org.joda.time.format.DateTimeFormatter.parseLocalDateTime : $r7 = new org.joda.time.format.DateTimeParserBucket
+org.joda.time.format.DateTimeFormatter.parseLocalDateTime : $r6 = specialinvoke r0.<org.joda.time.format.DateTimeFormatter: org.joda.time.Chronology selectChronology(org.joda.time.Chronology)>(null)
+org.joda.time.format.DateTimeFormatter.parseLocalDateTime : if i0 < 0 goto i0 = i0 ^ -1
+org.joda.time.format.DateTimeFormatter.parseLocalDateTime : r2 = specialinvoke r0.<org.joda.time.format.DateTimeFormatter: org.joda.time.format.DateTimeParser requireParser()>()
+org.joda.time.format.DateTimeFormatter.parseLocalDateTime : $r15 = new java.lang.IllegalArgumentException
+org.joda.time.DateTimeFieldType$StandardDateTimeFieldType.hashCode : $b0 = r0.<org.joda.time.DateTimeFieldType$StandardDateTimeFieldType: byte iOrdinal>
+org.joda.time.format.DateTimeFormat.mediumDateTime : $r0 = staticinvoke <org.joda.time.format.DateTimeFormat: org.joda.time.format.DateTimeFormatter createFormatterForStyleIndex(int,int)>(2, 2)
+org.joda.time.format.DateTimeFormatterBuilder$Composite.parseInto : $r5 = r3[i2]
+org.joda.time.format.DateTimeFormatterBuilder$Composite.parseInto : r3 = r0.<org.joda.time.format.DateTimeFormatterBuilder$Composite: org.joda.time.format.DateTimeParser[] iParsers>
+org.joda.time.format.DateTimeFormatterBuilder$Composite.parseInto : return i0
+org.joda.time.format.DateTimeFormatterBuilder$Composite.parseInto : i2 = 0
+org.joda.time.format.DateTimeFormatterBuilder$Composite.parseInto : if r3 != null goto i1 = lengthof r3
+org.joda.time.format.DateTimeFormatterBuilder$Composite.parseInto : i1 = lengthof r3
+org.joda.time.chrono.GregorianChronology.getZone : $r1 = specialinvoke r0.<org.joda.time.chrono.BasicGJChronology: org.joda.time.DateTimeZone getZone()>()
+org.joda.time.format.DateTimeFormat$StyleFormatter.getFormatter : exitmonitor r3
+org.joda.time.format.DateTimeFormat$StyleFormatter.getFormatter : return r16
+org.joda.time.format.DateTimeFormat$StyleFormatter.getFormatter : n0 = null
+org.joda.time.format.DateTimeFormat$StyleFormatter.getFormatter : if r16 != null goto exitmonitor r3
+org.joda.time.format.DateTimeFormat$StyleFormatter.getFormatter : $r8 = new java.lang.StringBuilder
+org.joda.time.format.DateTimeFormat$StyleFormatter.getFormatter : if r1 != null goto $r6 = r1
+org.joda.time.format.DateTimeFormat$StyleFormatter.getFormatter : $r14 = <org.joda.time.format.DateTimeFormat$StyleFormatter: java.util.Map cCache>
+org.joda.time.format.DateTimeFormat$StyleFormatter.getFormatter : $r13 = <org.joda.time.format.DateTimeFormat$StyleFormatter: java.util.Map cCache>
+org.joda.time.format.DateTimeParserBucket.getLocale : $r1 = r0.<org.joda.time.format.DateTimeParserBucket: java.util.Locale iLocale>

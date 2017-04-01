@@ -1,0 +1,19 @@
+org.jfree.data.time.Month.peg : $l0 = virtualinvoke r0.<org.jfree.data.time.Month: long getFirstMillisecond(java.util.Calendar)>(r1)
+org.jfree.data.time.Month.peg : $l1 = virtualinvoke r0.<org.jfree.data.time.Month: long getLastMillisecond(java.util.Calendar)>(r1)
+org.jfree.data.time.Month.getFirstMillisecond : virtualinvoke r1.<java.util.Calendar: void set(int,int)>(14, 0)
+org.jfree.data.time.Month.getFirstMillisecond : $l3 = virtualinvoke r1.<java.util.Calendar: long getTimeInMillis()>()
+org.jfree.data.time.Month.getFirstMillisecond : $i0 = r0.<org.jfree.data.time.Month: int year>
+org.jfree.data.time.Month.equals : if r1 != r0 goto $z0 = r1 instanceof org.jfree.data.time.Month
+org.jfree.data.time.Month.equals : $i0 = r0.<org.jfree.data.time.Month: int month>
+org.jfree.data.time.Month.equals : r2 = (org.jfree.data.time.Month) r1
+org.jfree.data.time.Month.equals : $z0 = r1 instanceof org.jfree.data.time.Month
+org.jfree.data.time.Month.equals : $i2 = r0.<org.jfree.data.time.Month: int year>
+org.jfree.data.time.Month.equals : return 1
+org.jfree.data.time.Month.getLastMillisecond : $l6 = virtualinvoke r1.<java.util.Calendar: long getTimeInMillis()>()
+org.jfree.data.time.Month.getLastMillisecond : virtualinvoke r1.<java.util.Calendar: void set(int,int)>(14, 999)
+org.jfree.data.time.Month.getLastMillisecond : $i1 = r0.<org.jfree.data.time.Month: int month>
+org.jfree.data.time.Month.getLastMillisecond : $i3 = r0.<org.jfree.data.time.Month: int year>
+org.jfree.data.time.Month.hashCode : b0 = 17
+org.jfree.data.time.Month.hashCode : $i1 = 37 * b0
+org.jfree.data.time.Month.hashCode : return i6
+org.jfree.data.time.Month.hashCode : $i4 = 37 * i3

@@ -1,0 +1,24 @@
+org.jfree.data.xy.XYSeriesCollection.getRangeBounds : d0 = #Infinity >>>>>>>> org.jfree.data.xy.XYSeriesCollection.getRangeBounds : d1 = #-Infinity
+org.jfree.data.xy.XYSeriesCollection.getRangeBounds : d1 = #-Infinity >>>>>>>> org.jfree.data.xy.XYSeriesCollection.getRangeBounds : i0 = virtualinvoke r0.<org.jfree.data.xy.XYSeriesCollection: int getSeriesCount()>()
+org.jfree.data.xy.XYSeriesCollection.getRangeBounds : i0 = virtualinvoke r0.<org.jfree.data.xy.XYSeriesCollection: int getSeriesCount()>() >>>>>>>> org.jfree.data.xy.XYSeriesCollection.getRangeBounds : i1 = 0
+org.jfree.data.xy.XYSeriesCollection.getRangeBounds : i1 = 0 >>>>>>>> org.jfree.data.xy.XYSeriesCollection.getRangeBounds : if i1 >= i0
+org.jfree.data.xy.XYSeriesCollection.getRangeBounds : if i1 >= i0 >>>>>>>> org.jfree.data.xy.XYSeriesCollection.getRangeBounds : r1 = virtualinvoke r0.<org.jfree.data.xy.XYSeriesCollection: org.jfree.data.xy.XYSeries getSeries(int)>(i1)
+org.jfree.data.xy.XYSeriesCollection.getRangeBounds : if i1 >= i0 >>>>>>>> org.jfree.data.xy.XYSeriesCollection.getRangeBounds : $b2 = d0 cmpl d1
+org.jfree.data.xy.XYSeriesCollection.getRangeBounds : $b2 = d0 cmpl d1 >>>>>>>> org.jfree.data.xy.XYSeriesCollection.getRangeBounds : if $b2 <= 0
+org.jfree.data.xy.XYSeriesCollection.getRangeBounds : if $b2 <= 0 >>>>>>>> org.jfree.data.xy.XYSeriesCollection.getRangeBounds : return null
+org.jfree.data.xy.XYSeriesCollection.getRangeBounds : if $b2 <= 0 >>>>>>>> org.jfree.data.xy.XYSeriesCollection.getRangeBounds : $r2 = new org.jfree.data.Range
+org.jfree.data.xy.XYSeriesCollection.getRangeBounds : $r2 = new org.jfree.data.Range >>>>>>>> org.jfree.data.xy.XYSeriesCollection.getRangeBounds : specialinvoke $r2.<org.jfree.data.Range: void <init>(double,double)>(d0, d1)
+org.jfree.data.xy.XYSeriesCollection.getRangeBounds : specialinvoke $r2.<org.jfree.data.Range: void <init>(double,double)>(d0, d1) >>>>>>>> org.jfree.data.xy.XYSeriesCollection.getRangeBounds : return $r2
+org.jfree.data.xy.XYSeriesCollection.getRangeBounds : r1 = virtualinvoke r0.<org.jfree.data.xy.XYSeriesCollection: org.jfree.data.xy.XYSeries getSeries(int)>(i1) >>>>>>>> org.jfree.data.xy.XYSeriesCollection.getRangeBounds : d2 = virtualinvoke r1.<org.jfree.data.xy.XYSeries: double getMinY()>()
+org.jfree.data.xy.XYSeriesCollection.getRangeBounds : d2 = virtualinvoke r1.<org.jfree.data.xy.XYSeries: double getMinY()>() >>>>>>>> org.jfree.data.xy.XYSeriesCollection.getRangeBounds : $z1 = staticinvoke <java.lang.Double: boolean isNaN(double)>(d2)
+org.jfree.data.xy.XYSeriesCollection.getRangeBounds : $z1 = staticinvoke <java.lang.Double: boolean isNaN(double)>(d2) >>>>>>>> org.jfree.data.xy.XYSeriesCollection.getRangeBounds : if $z1 != 0
+org.jfree.data.xy.XYSeriesCollection.getRangeBounds : if $z1 != 0 >>>>>>>> org.jfree.data.xy.XYSeriesCollection.getRangeBounds : d0 = staticinvoke <java.lang.Math: double min(double,double)>(d0, d2)
+org.jfree.data.xy.XYSeriesCollection.getRangeBounds : if $z1 != 0 >>>>>>>> org.jfree.data.xy.XYSeriesCollection.getRangeBounds : d3 = virtualinvoke r1.<org.jfree.data.xy.XYSeries: double getMaxY()>()
+org.jfree.data.xy.XYSeriesCollection.getRangeBounds : d3 = virtualinvoke r1.<org.jfree.data.xy.XYSeries: double getMaxY()>() >>>>>>>> org.jfree.data.xy.XYSeriesCollection.getRangeBounds : $z2 = staticinvoke <java.lang.Double: boolean isNaN(double)>(d3)
+org.jfree.data.xy.XYSeriesCollection.getRangeBounds : $z2 = staticinvoke <java.lang.Double: boolean isNaN(double)>(d3) >>>>>>>> org.jfree.data.xy.XYSeriesCollection.getRangeBounds : if $z2 != 0
+org.jfree.data.xy.XYSeriesCollection.getRangeBounds : if $z2 != 0 >>>>>>>> org.jfree.data.xy.XYSeriesCollection.getRangeBounds : d1 = staticinvoke <java.lang.Math: double max(double,double)>(d1, d3)
+org.jfree.data.xy.XYSeriesCollection.getRangeBounds : if $z2 != 0 >>>>>>>> org.jfree.data.xy.XYSeriesCollection.getRangeBounds : i1 = i1 + 1
+org.jfree.data.xy.XYSeriesCollection.getRangeBounds : i1 = i1 + 1 >>>>>>>> org.jfree.data.xy.XYSeriesCollection.getRangeBounds : goto [?= (branch)]
+org.jfree.data.xy.XYSeriesCollection.getRangeBounds : goto [?= (branch)] >>>>>>>> org.jfree.data.xy.XYSeriesCollection.getRangeBounds : if i1 >= i0
+org.jfree.data.xy.XYSeriesCollection.getRangeBounds : d1 = staticinvoke <java.lang.Math: double max(double,double)>(d1, d3) >>>>>>>> org.jfree.data.xy.XYSeriesCollection.getRangeBounds : i1 = i1 + 1
+org.jfree.data.xy.XYSeriesCollection.getRangeBounds : d0 = staticinvoke <java.lang.Math: double min(double,double)>(d0, d2) >>>>>>>> org.jfree.data.xy.XYSeriesCollection.getRangeBounds : d3 = virtualinvoke r1.<org.jfree.data.xy.XYSeries: double getMaxY()>()

@@ -1,0 +1,120 @@
+org.jfree.data.xy.XYSeriesCollection.getItemCount : $r1 = virtualinvoke r0.<org.jfree.data.xy.XYSeriesCollection: org.jfree.data.xy.XYSeries getSeries(int)>(i0)
+org.jfree.data.xy.XYDataItem.getY : $r1 = r0.<org.jfree.data.xy.XYDataItem: java.lang.Number y>
+org.jfree.data.general.AbstractDataset.addChangeListener : $r2 = r0.<org.jfree.data.general.AbstractDataset: javax.swing.event.EventListenerList listenerList>
+org.jfree.data.general.Series.getKey : $r1 = r0.<org.jfree.data.general.Series: java.lang.Comparable key>
+org.jfree.data.xy.XYSeriesCollection.getSeries : $r8 = new org.jfree.data.UnknownKeyException
+org.jfree.data.xy.XYSeriesCollection.getSeries : if i0 < 0 goto $r1 = new java.lang.IllegalArgumentException
+org.jfree.data.xy.XYSeriesCollection.getSeries : $z0 = interfaceinvoke r2.<java.util.Iterator: boolean hasNext()>()
+org.jfree.data.xy.XYSeriesCollection.getSeries : $r2 = r0.<org.jfree.data.xy.XYSeriesCollection: java.util.List data>
+org.jfree.data.xy.XYSeriesCollection.getSeries : $r5 = r0.<org.jfree.data.xy.XYSeriesCollection: java.util.List data>
+org.jfree.data.xy.XYSeriesCollection.getSeries : goto [?= staticinvoke <edu.washington.cs.dt.impact.util.Tracer: void trace(java.lang.String,java.lang.String)>("$z0 = interfaceinvoke r2.<java.util.Iterator: boolean hasNext()>()", "org.jfree.data.xy.XYSeriesCollection.getSeries")]
+org.jfree.data.xy.XYSeriesCollection.getSeries : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "key")
+org.jfree.data.xy.XYSeriesCollection.getSeries : $r7 = virtualinvoke r3.<org.jfree.data.xy.XYSeries: java.lang.Comparable getKey()>()
+org.jfree.data.xy.XYSeriesCollection.getSeries : $r6 = interfaceinvoke r2.<java.util.Iterator: java.lang.Object next()>()
+org.jfree.chart.axis.StandardTickUnitSource.getLargerTickUnit : d3 = staticinvoke <java.lang.Math: double ceil(double)>(d2)
+org.jfree.chart.axis.StandardTickUnitSource.getLargerTickUnit : $d4 = staticinvoke <java.lang.Math: double log(double)>(d0)
+org.jfree.chart.axis.StandardTickUnitSource.getLargerTickUnit : d0 = virtualinvoke r1.<org.jfree.chart.axis.TickUnit: double getSize()>()
+org.jfree.chart.axis.StandardTickUnitSource.getLargerTickUnit : $r2 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.data.xy.XYSeries.maxIgnoreNaN : return d1
+org.jfree.data.xy.XYSeries.maxIgnoreNaN : $z0 = staticinvoke <java.lang.Double: boolean isNaN(double)>(d0)
+org.jfree.chart.plot.PolarPlot.getAngleTickUnit : $r1 = r0.<org.jfree.chart.plot.PolarPlot: org.jfree.chart.axis.TickUnit angleTickUnit>
+org.jfree.chart.axis.NumberTickUnit.valueToString : $r1 = r0.<org.jfree.chart.axis.NumberTickUnit: java.text.NumberFormat formatter>
+org.jfree.chart.renderer.xy.XYLineAndShapeRenderer.setDrawSeriesLineAsPath : virtualinvoke r0.<org.jfree.chart.renderer.xy.XYLineAndShapeRenderer: void fireChangeEvent()>()
+org.jfree.chart.renderer.xy.XYLineAndShapeRenderer.setDrawSeriesLineAsPath : r0.<org.jfree.chart.renderer.xy.XYLineAndShapeRenderer: boolean drawSeriesLineAsPath> = z0
+org.jfree.chart.renderer.xy.XYLineAndShapeRenderer.setDrawSeriesLineAsPath : $z1 = r0.<org.jfree.chart.renderer.xy.XYLineAndShapeRenderer: boolean drawSeriesLineAsPath>
+org.jfree.chart.renderer.xy.DeviationRenderer.findRangeBounds : $r2 = virtualinvoke r0.<org.jfree.chart.renderer.xy.DeviationRenderer: org.jfree.data.Range findRangeBounds(org.jfree.data.xy.XYDataset,boolean)>(r1, 1)
+org.jfree.data.xy.XYDataItem.getXValue : $r1 = r0.<org.jfree.data.xy.XYDataItem: java.lang.Number x>
+org.jfree.chart.axis.TickUnit.getSize : $d0 = r0.<org.jfree.chart.axis.TickUnit: double size>
+org.jfree.chart.renderer.AbstractRenderer.fireChangeEvent : $r1 = new org.jfree.chart.event.RendererChangeEvent
+org.jfree.data.xy.XYSeries.add : if z0 == 0 goto return
+org.jfree.data.xy.XYSeries.add : $i7 = virtualinvoke r0.<org.jfree.data.xy.XYSeries: int getItemCount()>()
+org.jfree.data.xy.XYSeries.add : goto [?= specialinvoke r0.<org.jfree.data.xy.XYSeries: void updateBoundsForAddedItem(org.jfree.data.xy.XYDataItem)>(r3)]
+org.jfree.data.xy.XYSeries.add : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "item")
+org.jfree.data.xy.XYSeries.add : virtualinvoke r0.<org.jfree.data.xy.XYSeries: void add(org.jfree.data.xy.XYDataItem,boolean)>(r4, z0)
+org.jfree.data.xy.XYSeries.add : $r3 = new org.jfree.data.xy.XYDataItem
+org.jfree.data.xy.XYSeries.add : $z1 = r0.<org.jfree.data.xy.XYSeries: boolean autoSort>
+org.jfree.data.xy.XYSeries.add : $r5 = r0.<org.jfree.data.xy.XYSeries: java.util.List data>
+org.jfree.data.xy.XYSeries.add : if i0 >= 0 goto $z2 = r0.<org.jfree.data.xy.XYSeries: boolean allowDuplicateXValues>
+org.jfree.data.xy.XYSeries.add : $r4 = r0.<org.jfree.data.xy.XYSeries: java.util.List data>
+org.jfree.data.xy.XYSeries.add : $r1 = new java.lang.Double
+org.jfree.data.xy.XYSeries.add : specialinvoke r0.<org.jfree.data.xy.XYSeries: void updateBoundsForAddedItem(org.jfree.data.xy.XYDataItem)>(r3)
+org.jfree.data.xy.XYSeries.add : $r2 = virtualinvoke r1.<org.jfree.data.xy.XYDataItem: java.lang.Object clone()>()
+org.jfree.data.xy.XYSeries.getItemCount : $r1 = r0.<org.jfree.data.xy.XYSeries: java.util.List data>
+org.jfree.chart.axis.NumberTickUnit.equals : if r1 != r0 goto $z0 = r1 instanceof org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.NumberTickUnit.equals : return 0
+org.jfree.chart.axis.NumberTickUnit.equals : $z0 = r1 instanceof org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.NumberTickUnit.toString : $r1 = new java.lang.StringBuilder
+org.jfree.chart.renderer.AbstractRenderer.notifyListeners : $r3 = r0.<org.jfree.chart.renderer.AbstractRenderer: javax.swing.event.EventListenerList listenerList>
+org.jfree.chart.renderer.AbstractRenderer.notifyListeners : $i1 = lengthof r2
+org.jfree.data.xy.XYSeries.minIgnoreNaN : return d1
+org.jfree.data.xy.XYSeries.minIgnoreNaN : $z0 = staticinvoke <java.lang.Double: boolean isNaN(double)>(d0)
+org.jfree.data.xy.XYSeries.clear : $r1 = r0.<org.jfree.data.xy.XYSeries: java.util.List data>
+org.jfree.data.general.DatasetUtilities.iterateToFindRangeBounds : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r2, "xRange")
+org.jfree.data.general.DatasetUtilities.iterateToFindRangeBounds : r13 = (org.jfree.data.xy.IntervalXYDataset) r0
+org.jfree.data.general.DatasetUtilities.iterateToFindRangeBounds : d0 = #Infinity
+org.jfree.data.general.DatasetUtilities.iterateToFindRangeBounds : goto [?= $b12 = d0 cmpl #Infinity]
+org.jfree.data.general.DatasetUtilities.iterateToFindRangeBounds : r14 = interfaceinvoke r1.<java.util.List: java.util.Iterator iterator()>()
+org.jfree.data.general.DatasetUtilities.iterateToFindRangeBounds : goto [?= staticinvoke <edu.washington.cs.dt.impact.util.Tracer: void trace(java.lang.String,java.lang.String)>("$z10 = interfaceinvoke r14.<java.util.Iterator: boolean hasNext()>()", "org.jfree.data.general.DatasetUtilities.iterateToFindRangeBounds")]
+org.jfree.data.general.DatasetUtilities.iterateToFindRangeBounds : $z10 = interfaceinvoke r14.<java.util.Iterator: boolean hasNext()>()
+org.jfree.data.general.DatasetUtilities.iterateToFindRangeBounds : d1 = #-Infinity
+org.jfree.data.general.DatasetUtilities.iterateToFindRangeBounds : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "visibleSeriesKeys")
+org.jfree.data.general.DatasetUtilities.iterateToFindRangeBounds : if z0 == 0 goto (branch)
+org.jfree.data.general.DatasetUtilities.iterateToFindRangeBounds : i6 = interfaceinvoke r0.<org.jfree.data.xy.XYDataset: int indexOf(java.lang.Comparable)>(r16)
+org.jfree.data.general.DatasetUtilities.iterateToFindRangeBounds : return null
+org.jfree.data.general.DatasetUtilities.iterateToFindRangeBounds : i8 = 0
+org.jfree.data.general.DatasetUtilities.iterateToFindRangeBounds : i7 = interfaceinvoke r0.<org.jfree.data.xy.XYDataset: int getItemCount(int)>(i6)
+org.jfree.data.general.DatasetUtilities.iterateToFindRangeBounds : if z0 == 0 goto r17 = interfaceinvoke r1.<java.util.List: java.util.Iterator iterator()>()
+org.jfree.data.general.DatasetUtilities.iterateToFindRangeBounds : $b12 = d0 cmpl #Infinity
+org.jfree.data.general.DatasetUtilities.iterateToFindRangeBounds : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r0, "dataset")
+org.jfree.data.general.DatasetUtilities.iterateToFindRangeBounds : $r15 = interfaceinvoke r14.<java.util.Iterator: java.lang.Object next()>()
+org.jfree.data.xy.XYDataItem.getYValue : d0 = #NaN
+org.jfree.data.xy.XYDataItem.getYValue : $r1 = r0.<org.jfree.data.xy.XYDataItem: java.lang.Number y>
+org.jfree.data.xy.XYDataItem.getYValue : return d0
+org.jfree.data.xy.XYDataItem.getYValue : $r2 = r0.<org.jfree.data.xy.XYDataItem: java.lang.Number y>
+org.jfree.chart.renderer.xy.DeviationRenderer.getAlpha : $f0 = r0.<org.jfree.chart.renderer.xy.DeviationRenderer: float alpha>
+org.jfree.chart.renderer.AbstractRenderer.isSeriesVisible : if r1 == null goto return z0
+org.jfree.chart.renderer.AbstractRenderer.isSeriesVisible : $r4 = r0.<org.jfree.chart.renderer.AbstractRenderer: org.jfree.util.BooleanList seriesVisibleList>
+org.jfree.chart.renderer.AbstractRenderer.isSeriesVisible : $r2 = r0.<org.jfree.chart.renderer.AbstractRenderer: java.lang.Boolean seriesVisible>
+org.jfree.chart.renderer.AbstractRenderer.isSeriesVisible : return z0
+org.jfree.chart.renderer.AbstractRenderer.isSeriesVisible : z0 = r0.<org.jfree.chart.renderer.AbstractRenderer: boolean baseSeriesVisible>
+org.jfree.data.general.Series.addChangeListener : $r2 = r0.<org.jfree.data.general.Series: javax.swing.event.EventListenerList listeners>
+org.jfree.chart.axis.StandardTickUnitSource.getCeilingTickUnit : $r2 = virtualinvoke r0.<org.jfree.chart.axis.StandardTickUnitSource: org.jfree.chart.axis.TickUnit getLargerTickUnit(org.jfree.chart.axis.TickUnit)>(r1)
+org.jfree.data.general.AbstractSeriesDataset.indexOf : i1 = 0
+org.jfree.data.general.AbstractSeriesDataset.indexOf : i0 = virtualinvoke r0.<org.jfree.data.general.AbstractSeriesDataset: int getSeriesCount()>()
+org.jfree.data.general.AbstractSeriesDataset.indexOf : $r2 = virtualinvoke r0.<org.jfree.data.general.AbstractSeriesDataset: java.lang.Comparable getSeriesKey(int)>(i1)
+org.jfree.data.general.AbstractSeriesDataset.indexOf : return i1
+org.jfree.data.xy.XYSeries.updateBoundsForAddedItem : $d2 = r0.<org.jfree.data.xy.XYSeries: double minX>
+org.jfree.data.xy.XYSeries.updateBoundsForAddedItem : d0 = virtualinvoke r1.<org.jfree.data.xy.XYDataItem: double getXValue()>()
+org.jfree.data.xy.XYSeries.updateBoundsForAddedItem : $d4 = r0.<org.jfree.data.xy.XYSeries: double maxX>
+org.jfree.data.xy.XYSeries.updateBoundsForAddedItem : $d6 = r0.<org.jfree.data.xy.XYSeries: double minY>
+org.jfree.data.xy.XYSeries.updateBoundsForAddedItem : $d8 = r0.<org.jfree.data.xy.XYSeries: double maxY>
+org.jfree.data.xy.XYSeries.updateBoundsForAddedItem : $r2 = virtualinvoke r1.<org.jfree.data.xy.XYDataItem: java.lang.Number getY()>()
+org.jfree.data.xy.XYSeries.updateBoundsForAddedItem : d1 = virtualinvoke r1.<org.jfree.data.xy.XYDataItem: double getYValue()>()
+org.jfree.data.xy.XYSeries.getMinX : $d0 = r0.<org.jfree.data.xy.XYSeries: double minX>
+org.jfree.data.general.DatasetUtilities.findRangeBounds : return r4
+org.jfree.data.general.DatasetUtilities.findRangeBounds : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r0, "dataset")
+org.jfree.data.general.DatasetUtilities.findRangeBounds : r4 = staticinvoke <org.jfree.data.general.DatasetUtilities: org.jfree.data.Range iterateToFindRangeBounds(org.jfree.data.xy.XYDataset,java.util.List,org.jfree.data.Range,boolean)>(r0, r1, r2, z0)
+org.jfree.data.general.DatasetUtilities.findRangeBounds : $z1 = r0 instanceof org.jfree.data.xy.XYRangeInfo
+org.jfree.chart.renderer.xy.AbstractXYItemRenderer.getPlot : $r1 = r0.<org.jfree.chart.renderer.xy.AbstractXYItemRenderer: org.jfree.chart.plot.XYPlot plot>
+org.jfree.data.xy.XYDataItem.clone : goto [?= return r1]
+org.jfree.data.xy.XYDataItem.clone : r1 = null
+org.jfree.data.xy.XYDataItem.clone : return r1
+org.jfree.data.xy.XYDataItem.clone : r1 = specialinvoke r0.<java.lang.Object: java.lang.Object clone()>()
+org.jfree.chart.renderer.AbstractRenderer.getDataBoundsIncludesVisibleSeriesOnly : $z0 = r0.<org.jfree.chart.renderer.AbstractRenderer: boolean dataBoundsIncludesVisibleSeriesOnly>
+org.jfree.data.xy.XYSeriesCollection.getSeriesCount : $r1 = r0.<org.jfree.data.xy.XYSeriesCollection: java.util.List data>
+org.jfree.data.xy.XYSeriesCollection.getSeriesKey : $r1 = virtualinvoke r0.<org.jfree.data.xy.XYSeriesCollection: org.jfree.data.xy.XYSeries getSeries(int)>(i0)
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null goto return
+org.jfree.data.general.Series.addVetoableChangeListener : $r2 = r0.<org.jfree.data.general.Series: java.beans.VetoableChangeSupport vetoableChangeSupport>
+org.jfree.chart.renderer.xy.AbstractXYItemRenderer.findRangeBounds : $z1 = virtualinvoke r0.<org.jfree.chart.renderer.xy.AbstractXYItemRenderer: boolean getDataBoundsIncludesVisibleSeriesOnly()>()
+org.jfree.chart.renderer.xy.AbstractXYItemRenderer.findRangeBounds : r7 = null
+org.jfree.chart.renderer.xy.AbstractXYItemRenderer.findRangeBounds : $r10 = staticinvoke <org.jfree.data.general.DatasetUtilities: org.jfree.data.Range findRangeBounds(org.jfree.data.xy.XYDataset,java.util.List,org.jfree.data.Range,boolean)>(r1, r2, r7, z0)
+org.jfree.chart.renderer.xy.AbstractXYItemRenderer.findRangeBounds : if r3 == null goto (branch)
+org.jfree.chart.renderer.xy.AbstractXYItemRenderer.findRangeBounds : $r5 = new java.util.ArrayList
+org.jfree.chart.renderer.xy.AbstractXYItemRenderer.findRangeBounds : $z2 = virtualinvoke r0.<org.jfree.chart.renderer.xy.AbstractXYItemRenderer: boolean isSeriesVisible(int)>(i1)
+org.jfree.chart.renderer.xy.AbstractXYItemRenderer.findRangeBounds : if r7 != null goto $r10 = staticinvoke <org.jfree.data.general.DatasetUtilities: org.jfree.data.Range findRangeBounds(org.jfree.data.xy.XYDataset,java.util.List,org.jfree.data.Range,boolean)>(r1, r2, r7, z0)
+org.jfree.chart.renderer.xy.AbstractXYItemRenderer.findRangeBounds : i1 = 0
+org.jfree.chart.renderer.xy.AbstractXYItemRenderer.findRangeBounds : if r1 != null goto $z1 = virtualinvoke r0.<org.jfree.chart.renderer.xy.AbstractXYItemRenderer: boolean getDataBoundsIncludesVisibleSeriesOnly()>()
+org.jfree.chart.renderer.xy.AbstractXYItemRenderer.findRangeBounds : $r6 = interfaceinvoke r1.<org.jfree.data.xy.XYDataset: java.lang.Comparable getSeriesKey(int)>(i1)
+org.jfree.chart.renderer.xy.AbstractXYItemRenderer.findRangeBounds : $r9 = new org.jfree.data.Range
+org.jfree.chart.renderer.xy.AbstractXYItemRenderer.findRangeBounds : i0 = interfaceinvoke r1.<org.jfree.data.xy.XYDataset: int getSeriesCount()>()
+org.jfree.chart.renderer.xy.AbstractXYItemRenderer.findRangeBounds : r3 = virtualinvoke r0.<org.jfree.chart.renderer.xy.AbstractXYItemRenderer: org.jfree.chart.plot.XYPlot getPlot()>()

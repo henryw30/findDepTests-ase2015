@@ -1,0 +1,36 @@
+org.jfree.data.time.Month.parseMonth : n0 = null >>>>>>>> org.jfree.data.time.Month.parseMonth : if r0 != null
+org.jfree.data.time.Month.parseMonth : if r0 != null >>>>>>>> org.jfree.data.time.Month.parseMonth : r5 = virtualinvoke r0.<java.lang.String: java.lang.String trim()>()
+org.jfree.data.time.Month.parseMonth : r5 = virtualinvoke r0.<java.lang.String: java.lang.String trim()>() >>>>>>>> org.jfree.data.time.Month.parseMonth : i0 = staticinvoke <org.jfree.data.time.Month: int findSeparator(java.lang.String)>(r5)
+org.jfree.data.time.Month.parseMonth : i0 = staticinvoke <org.jfree.data.time.Month: int findSeparator(java.lang.String)>(r5) >>>>>>>> org.jfree.data.time.Month.findSeparator : i0 = virtualinvoke r0.<java.lang.String: int indexOf(int)>(45)
+org.jfree.data.time.Month.findSeparator : i0 = virtualinvoke r0.<java.lang.String: int indexOf(int)>(45) >>>>>>>> org.jfree.data.time.Month.findSeparator : if i0 != -1
+org.jfree.data.time.Month.findSeparator : if i0 != -1 >>>>>>>> org.jfree.data.time.Month.findSeparator : i0 = virtualinvoke r0.<java.lang.String: int indexOf(int)>(44)
+org.jfree.data.time.Month.findSeparator : i0 = virtualinvoke r0.<java.lang.String: int indexOf(int)>(44) >>>>>>>> org.jfree.data.time.Month.findSeparator : i0 = virtualinvoke r0.<java.lang.String: int indexOf(int)>(32)
+org.jfree.data.time.Month.findSeparator : i0 = virtualinvoke r0.<java.lang.String: int indexOf(int)>(32) >>>>>>>> org.jfree.data.time.Month.findSeparator : return i0
+org.jfree.data.time.Month.findSeparator : return i0 >>>>>>>> org.jfree.data.time.Month.parseMonth : if i0 != -1
+org.jfree.data.time.Month.parseMonth : if i0 != -1 >>>>>>>> org.jfree.data.time.Month.parseMonth : $r6 = virtualinvoke r5.<java.lang.String: java.lang.String substring(int,int)>(0, i0)
+org.jfree.data.time.Month.parseMonth : $r6 = virtualinvoke r5.<java.lang.String: java.lang.String substring(int,int)>(0, i0) >>>>>>>> org.jfree.data.time.Month.parseMonth : r1 = virtualinvoke $r6.<java.lang.String: java.lang.String trim()>()
+org.jfree.data.time.Month.parseMonth : r1 = virtualinvoke $r6.<java.lang.String: java.lang.String trim()>() >>>>>>>> org.jfree.data.time.Month.parseMonth : $i1 = i0 + 1
+org.jfree.data.time.Month.parseMonth : $i1 = i0 + 1 >>>>>>>> org.jfree.data.time.Month.parseMonth : $i2 = virtualinvoke r5.<java.lang.String: int length()>()
+org.jfree.data.time.Month.parseMonth : $i2 = virtualinvoke r5.<java.lang.String: int length()>() >>>>>>>> org.jfree.data.time.Month.parseMonth : $r7 = virtualinvoke r5.<java.lang.String: java.lang.String substring(int,int)>($i1, $i2)
+org.jfree.data.time.Month.parseMonth : $r7 = virtualinvoke r5.<java.lang.String: java.lang.String substring(int,int)>($i1, $i2) >>>>>>>> org.jfree.data.time.Month.parseMonth : r2 = virtualinvoke $r7.<java.lang.String: java.lang.String trim()>()
+org.jfree.data.time.Month.parseMonth : r2 = virtualinvoke $r7.<java.lang.String: java.lang.String trim()>() >>>>>>>> org.jfree.data.time.Month.parseMonth : r3 = staticinvoke <org.jfree.data.time.Month: org.jfree.data.time.Year evaluateAsYear(java.lang.String)>(r1)
+org.jfree.data.time.Month.parseMonth : r3 = staticinvoke <org.jfree.data.time.Month: org.jfree.data.time.Year evaluateAsYear(java.lang.String)>(r1) >>>>>>>> org.jfree.data.time.Month.evaluateAsYear : r1 = null
+org.jfree.data.time.Month.evaluateAsYear : r1 = null >>>>>>>> org.jfree.data.time.Month.evaluateAsYear : r1 = staticinvoke <org.jfree.data.time.Year: org.jfree.data.time.Year parseYear(java.lang.String)>(r0)
+org.jfree.data.time.Month.evaluateAsYear : r1 = staticinvoke <org.jfree.data.time.Year: org.jfree.data.time.Year parseYear(java.lang.String)>(r0) >>>>>>>> org.jfree.data.time.Year.parseYear : $r2 = virtualinvoke r0.<java.lang.String: java.lang.String trim()>()
+org.jfree.data.time.Year.parseYear : $r2 = virtualinvoke r0.<java.lang.String: java.lang.String trim()>() >>>>>>>> org.jfree.data.time.Year.parseYear : i0 = staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>($r2)
+org.jfree.data.time.Year.parseYear : i0 = staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>($r2) >>>>>>>> org.jfree.data.time.Year.parseYear : r1 = $r3
+org.jfree.data.time.Year.parseYear : r1 = $r3 >>>>>>>> org.jfree.data.time.Year.parseYear : $r4 = new org.jfree.data.time.TimePeriodFormatException
+org.jfree.data.time.Year.parseYear : $r4 = new org.jfree.data.time.TimePeriodFormatException >>>>>>>> org.jfree.data.time.Year.parseYear : specialinvoke $r4.<org.jfree.data.time.TimePeriodFormatException: void <init>(java.lang.String)>("Cannot parse string.")
+org.jfree.data.time.Year.parseYear : specialinvoke $r4.<org.jfree.data.time.TimePeriodFormatException: void <init>(java.lang.String)>("Cannot parse string.") >>>>>>>> org.jfree.data.time.Year.parseYear : throw $r4
+org.jfree.data.time.Year.parseYear : throw $r4 >>>>>>>> org.jfree.data.time.Month.evaluateAsYear : r2 = $r3
+org.jfree.data.time.Month.evaluateAsYear : r2 = $r3 >>>>>>>> org.jfree.data.time.Month.evaluateAsYear : return r1
+org.jfree.data.time.Month.evaluateAsYear : return r1 >>>>>>>> org.jfree.data.time.Month.parseMonth : if r3 != null
+org.jfree.data.time.Month.parseMonth : if r3 != null >>>>>>>> org.jfree.data.time.Month.parseMonth : z0 = 0
+org.jfree.data.time.Month.parseMonth : z0 = 0 >>>>>>>> org.jfree.data.time.Month.parseMonth : goto [?= (branch)]
+org.jfree.data.time.Month.parseMonth : goto [?= (branch)] >>>>>>>> org.jfree.data.time.Month.parseMonth : if z0 == 0
+org.jfree.data.time.Month.parseMonth : if z0 == 0 >>>>>>>> org.jfree.data.time.Month.parseMonth : r8 = staticinvoke <org.jfree.data.time.Month: org.jfree.data.time.Year evaluateAsYear(java.lang.String)>(r2)
+org.jfree.data.time.Month.parseMonth : r8 = staticinvoke <org.jfree.data.time.Month: org.jfree.data.time.Year evaluateAsYear(java.lang.String)>(r2) >>>>>>>> org.jfree.data.time.Month.parseMonth : i5 = staticinvoke <org.jfree.date.SerialDate: int stringToMonthCode(java.lang.String)>(r1)
+org.jfree.data.time.Month.parseMonth : i5 = staticinvoke <org.jfree.date.SerialDate: int stringToMonthCode(java.lang.String)>(r1) >>>>>>>> org.jfree.data.time.Month.parseMonth : if i5 != -1
+org.jfree.data.time.Month.parseMonth : if i5 != -1 >>>>>>>> org.jfree.data.time.Month.parseMonth : $r9 = new org.jfree.data.time.TimePeriodFormatException
+org.jfree.data.time.Month.parseMonth : $r9 = new org.jfree.data.time.TimePeriodFormatException >>>>>>>> org.jfree.data.time.Month.parseMonth : specialinvoke $r9.<org.jfree.data.time.TimePeriodFormatException: void <init>(java.lang.String)>("Can\'t evaluate the month.")
+org.jfree.data.time.Month.parseMonth : specialinvoke $r9.<org.jfree.data.time.TimePeriodFormatException: void <init>(java.lang.String)>("Can\'t evaluate the month.") >>>>>>>> org.jfree.data.time.Month.parseMonth : throw $r9

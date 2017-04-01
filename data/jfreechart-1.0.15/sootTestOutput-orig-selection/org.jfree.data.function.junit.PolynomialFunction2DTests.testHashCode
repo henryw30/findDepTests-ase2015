@@ -1,0 +1,18 @@
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null >>>>>>>> org.jfree.data.function.PolynomialFunction2D.hashCode : $r1 = r0.<org.jfree.data.function.PolynomialFunction2D: double[] coefficients>
+org.jfree.data.function.PolynomialFunction2D.hashCode : $r1 = r0.<org.jfree.data.function.PolynomialFunction2D: double[] coefficients> >>>>>>>> org.jfree.data.function.PolynomialFunction2D.hashCode : $i0 = staticinvoke <org.jfree.chart.HashUtilities: int hashCodeForDoubleArray(double[])>($r1)
+org.jfree.data.function.PolynomialFunction2D.hashCode : $i0 = staticinvoke <org.jfree.chart.HashUtilities: int hashCodeForDoubleArray(double[])>($r1) >>>>>>>> org.jfree.chart.HashUtilities.hashCodeForDoubleArray : if r0 != null
+org.jfree.chart.HashUtilities.hashCodeForDoubleArray : if r0 != null >>>>>>>> org.jfree.chart.HashUtilities.hashCodeForDoubleArray : i0 = 193
+org.jfree.chart.HashUtilities.hashCodeForDoubleArray : i0 = 193 >>>>>>>> org.jfree.chart.HashUtilities.hashCodeForDoubleArray : i1 = 0
+org.jfree.chart.HashUtilities.hashCodeForDoubleArray : i1 = 0 >>>>>>>> org.jfree.chart.HashUtilities.hashCodeForDoubleArray : $i3 = lengthof r0
+org.jfree.chart.HashUtilities.hashCodeForDoubleArray : $i3 = lengthof r0 >>>>>>>> org.jfree.chart.HashUtilities.hashCodeForDoubleArray : if i1 >= $i3
+org.jfree.chart.HashUtilities.hashCodeForDoubleArray : if i1 >= $i3 >>>>>>>> org.jfree.chart.HashUtilities.hashCodeForDoubleArray : $d0 = r0[i1]
+org.jfree.chart.HashUtilities.hashCodeForDoubleArray : $d0 = r0[i1] >>>>>>>> org.jfree.chart.HashUtilities.hashCodeForDoubleArray : l2 = staticinvoke <java.lang.Double: long doubleToLongBits(double)>($d0)
+org.jfree.chart.HashUtilities.hashCodeForDoubleArray : l2 = staticinvoke <java.lang.Double: long doubleToLongBits(double)>($d0) >>>>>>>> org.jfree.chart.HashUtilities.hashCodeForDoubleArray : $i4 = 29 * i0
+org.jfree.chart.HashUtilities.hashCodeForDoubleArray : $i4 = 29 * i0 >>>>>>>> org.jfree.chart.HashUtilities.hashCodeForDoubleArray : $l5 = l2 >>> 32
+org.jfree.chart.HashUtilities.hashCodeForDoubleArray : $l5 = l2 >>> 32 >>>>>>>> org.jfree.chart.HashUtilities.hashCodeForDoubleArray : $l6 = l2 ^ $l5
+org.jfree.chart.HashUtilities.hashCodeForDoubleArray : $l6 = l2 ^ $l5 >>>>>>>> org.jfree.chart.HashUtilities.hashCodeForDoubleArray : $i7 = (int) $l6
+org.jfree.chart.HashUtilities.hashCodeForDoubleArray : $i7 = (int) $l6 >>>>>>>> org.jfree.chart.HashUtilities.hashCodeForDoubleArray : i0 = $i4 + $i7
+org.jfree.chart.HashUtilities.hashCodeForDoubleArray : i0 = $i4 + $i7 >>>>>>>> org.jfree.chart.HashUtilities.hashCodeForDoubleArray : i1 = i1 + 1
+org.jfree.chart.HashUtilities.hashCodeForDoubleArray : i1 = i1 + 1 >>>>>>>> org.jfree.chart.HashUtilities.hashCodeForDoubleArray : goto [?= $i3 = lengthof r0]
+org.jfree.chart.HashUtilities.hashCodeForDoubleArray : goto [?= $i3 = lengthof r0] >>>>>>>> org.jfree.chart.HashUtilities.hashCodeForDoubleArray : return i0
+org.jfree.chart.HashUtilities.hashCodeForDoubleArray : return i0 >>>>>>>> org.jfree.data.function.PolynomialFunction2D.hashCode : return $i0

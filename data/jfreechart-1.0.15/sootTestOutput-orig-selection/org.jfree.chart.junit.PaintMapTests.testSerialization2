@@ -1,0 +1,59 @@
+org.jfree.chart.PaintMap.put : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "key") >>>>>>>> org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null >>>>>>>> org.jfree.chart.PaintMap.put : $r3 = r0.<org.jfree.chart.PaintMap: java.util.Map store>
+org.jfree.chart.PaintMap.put : $r3 = r0.<org.jfree.chart.PaintMap: java.util.Map store> >>>>>>>> org.jfree.chart.PaintMap.put : interfaceinvoke $r3.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r1, r2)
+org.jfree.chart.PaintMap.put : interfaceinvoke $r3.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r1, r2) >>>>>>>> org.jfree.chart.PaintMap.writeObject : virtualinvoke r1.<java.io.ObjectOutputStream: void defaultWriteObject()>()
+org.jfree.chart.PaintMap.writeObject : virtualinvoke r1.<java.io.ObjectOutputStream: void defaultWriteObject()>() >>>>>>>> org.jfree.chart.PaintMap.writeObject : $r6 = r0.<org.jfree.chart.PaintMap: java.util.Map store>
+org.jfree.chart.PaintMap.writeObject : $r6 = r0.<org.jfree.chart.PaintMap: java.util.Map store> >>>>>>>> org.jfree.chart.PaintMap.writeObject : $i0 = interfaceinvoke $r6.<java.util.Map: int size()>()
+org.jfree.chart.PaintMap.writeObject : $i0 = interfaceinvoke $r6.<java.util.Map: int size()>() >>>>>>>> org.jfree.chart.PaintMap.writeObject : virtualinvoke r1.<java.io.ObjectOutputStream: void writeInt(int)>($i0)
+org.jfree.chart.PaintMap.writeObject : virtualinvoke r1.<java.io.ObjectOutputStream: void writeInt(int)>($i0) >>>>>>>> org.jfree.chart.PaintMap.writeObject : $r7 = r0.<org.jfree.chart.PaintMap: java.util.Map store>
+org.jfree.chart.PaintMap.writeObject : $r7 = r0.<org.jfree.chart.PaintMap: java.util.Map store> >>>>>>>> org.jfree.chart.PaintMap.writeObject : r2 = interfaceinvoke $r7.<java.util.Map: java.util.Set keySet()>()
+org.jfree.chart.PaintMap.writeObject : r2 = interfaceinvoke $r7.<java.util.Map: java.util.Set keySet()>() >>>>>>>> org.jfree.chart.PaintMap.writeObject : r3 = interfaceinvoke r2.<java.util.Set: java.util.Iterator iterator()>()
+org.jfree.chart.PaintMap.writeObject : r3 = interfaceinvoke r2.<java.util.Set: java.util.Iterator iterator()>() >>>>>>>> org.jfree.chart.PaintMap.writeObject : $z0 = interfaceinvoke r3.<java.util.Iterator: boolean hasNext()>()
+org.jfree.chart.PaintMap.writeObject : $z0 = interfaceinvoke r3.<java.util.Iterator: boolean hasNext()>() >>>>>>>> org.jfree.chart.PaintMap.writeObject : if $z0 == 0
+org.jfree.chart.PaintMap.writeObject : if $z0 == 0 >>>>>>>> org.jfree.chart.PaintMap.writeObject : $r8 = interfaceinvoke r3.<java.util.Iterator: java.lang.Object next()>()
+org.jfree.chart.PaintMap.writeObject : $r8 = interfaceinvoke r3.<java.util.Iterator: java.lang.Object next()>() >>>>>>>> org.jfree.chart.PaintMap.writeObject : r4 = (java.lang.Comparable) $r8
+org.jfree.chart.PaintMap.writeObject : r4 = (java.lang.Comparable) $r8 >>>>>>>> org.jfree.chart.PaintMap.writeObject : virtualinvoke r1.<java.io.ObjectOutputStream: void writeObject(java.lang.Object)>(r4)
+org.jfree.chart.PaintMap.writeObject : virtualinvoke r1.<java.io.ObjectOutputStream: void writeObject(java.lang.Object)>(r4) >>>>>>>> org.jfree.chart.PaintMap.writeObject : r5 = virtualinvoke r0.<org.jfree.chart.PaintMap: java.awt.Paint getPaint(java.lang.Comparable)>(r4)
+org.jfree.chart.PaintMap.writeObject : r5 = virtualinvoke r0.<org.jfree.chart.PaintMap: java.awt.Paint getPaint(java.lang.Comparable)>(r4) >>>>>>>> org.jfree.chart.PaintMap.getPaint : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "key")
+org.jfree.chart.PaintMap.getPaint : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "key") >>>>>>>> org.jfree.chart.PaintMap.getPaint : $r2 = r0.<org.jfree.chart.PaintMap: java.util.Map store>
+org.jfree.chart.PaintMap.getPaint : $r2 = r0.<org.jfree.chart.PaintMap: java.util.Map store> >>>>>>>> org.jfree.chart.PaintMap.getPaint : $r3 = interfaceinvoke $r2.<java.util.Map: java.lang.Object get(java.lang.Object)>(r1)
+org.jfree.chart.PaintMap.getPaint : $r3 = interfaceinvoke $r2.<java.util.Map: java.lang.Object get(java.lang.Object)>(r1) >>>>>>>> org.jfree.chart.PaintMap.getPaint : $r4 = (java.awt.Paint) $r3
+org.jfree.chart.PaintMap.getPaint : $r4 = (java.awt.Paint) $r3 >>>>>>>> org.jfree.chart.PaintMap.getPaint : return $r4
+org.jfree.chart.PaintMap.getPaint : return $r4 >>>>>>>> org.jfree.chart.PaintMap.writeObject : staticinvoke <org.jfree.io.SerialUtilities: void writePaint(java.awt.Paint,java.io.ObjectOutputStream)>(r5, r1)
+org.jfree.chart.PaintMap.writeObject : staticinvoke <org.jfree.io.SerialUtilities: void writePaint(java.awt.Paint,java.io.ObjectOutputStream)>(r5, r1) >>>>>>>> org.jfree.chart.PaintMap.writeObject : goto [?= $z0 = interfaceinvoke r3.<java.util.Iterator: boolean hasNext()>()]
+org.jfree.chart.PaintMap.writeObject : goto [?= $z0 = interfaceinvoke r3.<java.util.Iterator: boolean hasNext()>()] >>>>>>>> org.jfree.chart.PaintMap.readObject : virtualinvoke r1.<java.io.ObjectInputStream: void defaultReadObject()>()
+org.jfree.chart.PaintMap.readObject : virtualinvoke r1.<java.io.ObjectInputStream: void defaultReadObject()>() >>>>>>>> org.jfree.chart.PaintMap.readObject : $r2 = new java.util.HashMap
+org.jfree.chart.PaintMap.readObject : $r2 = new java.util.HashMap >>>>>>>> org.jfree.chart.PaintMap.readObject : specialinvoke $r2.<java.util.HashMap: void <init>()>()
+org.jfree.chart.PaintMap.readObject : specialinvoke $r2.<java.util.HashMap: void <init>()>() >>>>>>>> org.jfree.chart.PaintMap.readObject : r0.<org.jfree.chart.PaintMap: java.util.Map store> = $r2
+org.jfree.chart.PaintMap.readObject : r0.<org.jfree.chart.PaintMap: java.util.Map store> = $r2 >>>>>>>> org.jfree.chart.PaintMap.readObject : i0 = virtualinvoke r1.<java.io.ObjectInputStream: int readInt()>()
+org.jfree.chart.PaintMap.readObject : i0 = virtualinvoke r1.<java.io.ObjectInputStream: int readInt()>() >>>>>>>> org.jfree.chart.PaintMap.readObject : i1 = 0
+org.jfree.chart.PaintMap.readObject : i1 = 0 >>>>>>>> org.jfree.chart.PaintMap.readObject : if i1 >= i0
+org.jfree.chart.PaintMap.readObject : if i1 >= i0 >>>>>>>> org.jfree.chart.PaintMap.readObject : $r5 = virtualinvoke r1.<java.io.ObjectInputStream: java.lang.Object readObject()>()
+org.jfree.chart.PaintMap.readObject : $r5 = virtualinvoke r1.<java.io.ObjectInputStream: java.lang.Object readObject()>() >>>>>>>> org.jfree.chart.PaintMap.readObject : r3 = (java.lang.Comparable) $r5
+org.jfree.chart.PaintMap.readObject : r3 = (java.lang.Comparable) $r5 >>>>>>>> org.jfree.chart.PaintMap.readObject : r4 = staticinvoke <org.jfree.io.SerialUtilities: java.awt.Paint readPaint(java.io.ObjectInputStream)>(r1)
+org.jfree.chart.PaintMap.readObject : r4 = staticinvoke <org.jfree.io.SerialUtilities: java.awt.Paint readPaint(java.io.ObjectInputStream)>(r1) >>>>>>>> org.jfree.chart.PaintMap.readObject : $r6 = r0.<org.jfree.chart.PaintMap: java.util.Map store>
+org.jfree.chart.PaintMap.readObject : $r6 = r0.<org.jfree.chart.PaintMap: java.util.Map store> >>>>>>>> org.jfree.chart.PaintMap.readObject : interfaceinvoke $r6.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r3, r4)
+org.jfree.chart.PaintMap.readObject : interfaceinvoke $r6.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r3, r4) >>>>>>>> org.jfree.chart.PaintMap.readObject : i1 = i1 + 1
+org.jfree.chart.PaintMap.readObject : i1 = i1 + 1 >>>>>>>> org.jfree.chart.PaintMap.readObject : goto [?= (branch)]
+org.jfree.chart.PaintMap.readObject : goto [?= (branch)] >>>>>>>> org.jfree.chart.PaintMap.equals : if r1 != r0
+org.jfree.chart.PaintMap.equals : if r1 != r0 >>>>>>>> org.jfree.chart.PaintMap.equals : $z0 = r1 instanceof org.jfree.chart.PaintMap
+org.jfree.chart.PaintMap.equals : $z0 = r1 instanceof org.jfree.chart.PaintMap >>>>>>>> org.jfree.chart.PaintMap.equals : if $z0 != 0
+org.jfree.chart.PaintMap.equals : if $z0 != 0 >>>>>>>> org.jfree.chart.PaintMap.equals : r2 = (org.jfree.chart.PaintMap) r1
+org.jfree.chart.PaintMap.equals : r2 = (org.jfree.chart.PaintMap) r1 >>>>>>>> org.jfree.chart.PaintMap.equals : $r8 = r0.<org.jfree.chart.PaintMap: java.util.Map store>
+org.jfree.chart.PaintMap.equals : $r8 = r0.<org.jfree.chart.PaintMap: java.util.Map store> >>>>>>>> org.jfree.chart.PaintMap.equals : $i0 = interfaceinvoke $r8.<java.util.Map: int size()>()
+org.jfree.chart.PaintMap.equals : $i0 = interfaceinvoke $r8.<java.util.Map: int size()>() >>>>>>>> org.jfree.chart.PaintMap.equals : $r9 = r2.<org.jfree.chart.PaintMap: java.util.Map store>
+org.jfree.chart.PaintMap.equals : $r9 = r2.<org.jfree.chart.PaintMap: java.util.Map store> >>>>>>>> org.jfree.chart.PaintMap.equals : $i1 = interfaceinvoke $r9.<java.util.Map: int size()>()
+org.jfree.chart.PaintMap.equals : $i1 = interfaceinvoke $r9.<java.util.Map: int size()>() >>>>>>>> org.jfree.chart.PaintMap.equals : if $i0 == $i1
+org.jfree.chart.PaintMap.equals : if $i0 == $i1 >>>>>>>> org.jfree.chart.PaintMap.equals : $r10 = r0.<org.jfree.chart.PaintMap: java.util.Map store>
+org.jfree.chart.PaintMap.equals : $r10 = r0.<org.jfree.chart.PaintMap: java.util.Map store> >>>>>>>> org.jfree.chart.PaintMap.equals : r3 = interfaceinvoke $r10.<java.util.Map: java.util.Set keySet()>()
+org.jfree.chart.PaintMap.equals : r3 = interfaceinvoke $r10.<java.util.Map: java.util.Set keySet()>() >>>>>>>> org.jfree.chart.PaintMap.equals : r4 = interfaceinvoke r3.<java.util.Set: java.util.Iterator iterator()>()
+org.jfree.chart.PaintMap.equals : r4 = interfaceinvoke r3.<java.util.Set: java.util.Iterator iterator()>() >>>>>>>> org.jfree.chart.PaintMap.equals : $z1 = interfaceinvoke r4.<java.util.Iterator: boolean hasNext()>()
+org.jfree.chart.PaintMap.equals : $z1 = interfaceinvoke r4.<java.util.Iterator: boolean hasNext()>() >>>>>>>> org.jfree.chart.PaintMap.equals : if $z1 == 0
+org.jfree.chart.PaintMap.equals : if $z1 == 0 >>>>>>>> org.jfree.chart.PaintMap.equals : $r11 = interfaceinvoke r4.<java.util.Iterator: java.lang.Object next()>()
+org.jfree.chart.PaintMap.equals : $r11 = interfaceinvoke r4.<java.util.Iterator: java.lang.Object next()>() >>>>>>>> org.jfree.chart.PaintMap.equals : r5 = (java.lang.Comparable) $r11
+org.jfree.chart.PaintMap.equals : r5 = (java.lang.Comparable) $r11 >>>>>>>> org.jfree.chart.PaintMap.equals : r6 = virtualinvoke r0.<org.jfree.chart.PaintMap: java.awt.Paint getPaint(java.lang.Comparable)>(r5)
+org.jfree.chart.PaintMap.equals : r6 = virtualinvoke r0.<org.jfree.chart.PaintMap: java.awt.Paint getPaint(java.lang.Comparable)>(r5) >>>>>>>> org.jfree.chart.PaintMap.equals : r7 = virtualinvoke r2.<org.jfree.chart.PaintMap: java.awt.Paint getPaint(java.lang.Comparable)>(r5)
+org.jfree.chart.PaintMap.equals : r7 = virtualinvoke r2.<org.jfree.chart.PaintMap: java.awt.Paint getPaint(java.lang.Comparable)>(r5) >>>>>>>> org.jfree.chart.PaintMap.equals : $z2 = staticinvoke <org.jfree.util.PaintUtilities: boolean equal(java.awt.Paint,java.awt.Paint)>(r6, r7)
+org.jfree.chart.PaintMap.equals : $z2 = staticinvoke <org.jfree.util.PaintUtilities: boolean equal(java.awt.Paint,java.awt.Paint)>(r6, r7) >>>>>>>> org.jfree.chart.PaintMap.equals : if $z2 != 0
+org.jfree.chart.PaintMap.equals : if $z2 != 0 >>>>>>>> org.jfree.chart.PaintMap.equals : goto [?= $z1 = interfaceinvoke r4.<java.util.Iterator: boolean hasNext()>()]
+org.jfree.chart.PaintMap.equals : goto [?= $z1 = interfaceinvoke r4.<java.util.Iterator: boolean hasNext()>()] >>>>>>>> org.jfree.chart.PaintMap.equals : return 1

@@ -1,0 +1,43 @@
+org.jfree.chart.plot.dial.AbstractDialLayer.addChangeListener : $r2 = r0.<org.jfree.chart.plot.dial.AbstractDialLayer: javax.swing.event.EventListenerList listenerList>
+org.jfree.chart.plot.dial.AbstractDialLayer.notifyListeners : $r3 = r0.<org.jfree.chart.plot.dial.AbstractDialLayer: javax.swing.event.EventListenerList listenerList>
+org.jfree.chart.plot.dial.AbstractDialLayer.notifyListeners : $i1 = lengthof r2
+org.jfree.chart.plot.dial.AbstractDialLayer.equals : $z1 = r0.<org.jfree.chart.plot.dial.AbstractDialLayer: boolean visible>
+org.jfree.chart.plot.dial.AbstractDialLayer.equals : if r1 != r0 goto $z0 = r1 instanceof org.jfree.chart.plot.dial.AbstractDialLayer
+org.jfree.chart.plot.dial.AbstractDialLayer.equals : $z0 = r1 instanceof org.jfree.chart.plot.dial.AbstractDialLayer
+org.jfree.chart.plot.dial.AbstractDialLayer.equals : r2 = (org.jfree.chart.plot.dial.AbstractDialLayer) r1
+org.jfree.chart.plot.dial.StandardDialScale.clone : $r1 = specialinvoke r0.<org.jfree.chart.plot.dial.AbstractDialLayer: java.lang.Object clone()>()
+org.jfree.chart.plot.dial.AbstractDialLayer.clone : $r2 = new javax.swing.event.EventListenerList
+org.jfree.chart.plot.dial.AbstractDialLayer.clone : return r1
+org.jfree.chart.plot.dial.AbstractDialLayer.clone : $r3 = specialinvoke r0.<java.lang.Object: java.lang.Object clone()>()
+org.jfree.chart.plot.dial.StandardDialScale.setMajorTickStroke : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "stroke")
+org.jfree.chart.plot.dial.StandardDialScale.setMajorTickStroke : $r2 = new org.jfree.chart.plot.dial.DialLayerChangeEvent
+org.jfree.chart.plot.dial.StandardDialScale.setMajorTickStroke : r0.<org.jfree.chart.plot.dial.StandardDialScale: java.awt.Stroke majorTickStroke> = r1
+org.jfree.chart.plot.dial.AbstractDialLayer.hasListener : $z0 = interfaceinvoke r2.<java.util.List: boolean contains(java.lang.Object)>(r1)
+org.jfree.chart.plot.dial.AbstractDialLayer.hasListener : $r3 = r0.<org.jfree.chart.plot.dial.AbstractDialLayer: javax.swing.event.EventListenerList listenerList>
+org.jfree.chart.plot.dial.StandardDialScale.setMajorTickPaint : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "paint")
+org.jfree.chart.plot.dial.StandardDialScale.setMajorTickPaint : r0.<org.jfree.chart.plot.dial.StandardDialScale: java.awt.Paint majorTickPaint> = r1
+org.jfree.chart.plot.dial.StandardDialScale.setMajorTickPaint : $r2 = new org.jfree.chart.plot.dial.DialLayerChangeEvent
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null goto return
+org.jfree.chart.plot.dial.StandardDialScale.equals : $d4 = r0.<org.jfree.chart.plot.dial.StandardDialScale: double startAngle>
+org.jfree.chart.plot.dial.StandardDialScale.equals : $r3 = r0.<org.jfree.chart.plot.dial.StandardDialScale: java.awt.Paint majorTickPaint>
+org.jfree.chart.plot.dial.StandardDialScale.equals : $r5 = r0.<org.jfree.chart.plot.dial.StandardDialScale: java.awt.Stroke majorTickStroke>
+org.jfree.chart.plot.dial.StandardDialScale.equals : $d10 = r0.<org.jfree.chart.plot.dial.StandardDialScale: double majorTickIncrement>
+org.jfree.chart.plot.dial.StandardDialScale.equals : $i7 = r0.<org.jfree.chart.plot.dial.StandardDialScale: int minorTickCount>
+org.jfree.chart.plot.dial.StandardDialScale.equals : $d12 = r0.<org.jfree.chart.plot.dial.StandardDialScale: double majorTickLength>
+org.jfree.chart.plot.dial.StandardDialScale.equals : $d0 = r0.<org.jfree.chart.plot.dial.StandardDialScale: double lowerBound>
+org.jfree.chart.plot.dial.StandardDialScale.equals : $d2 = r0.<org.jfree.chart.plot.dial.StandardDialScale: double upperBound>
+org.jfree.chart.plot.dial.StandardDialScale.equals : $r13 = r0.<org.jfree.chart.plot.dial.StandardDialScale: java.awt.Paint tickLabelPaint>
+org.jfree.chart.plot.dial.StandardDialScale.equals : if r1 != r0 goto $z0 = r1 instanceof org.jfree.chart.plot.dial.StandardDialScale
+org.jfree.chart.plot.dial.StandardDialScale.equals : $d6 = r0.<org.jfree.chart.plot.dial.StandardDialScale: double extent>
+org.jfree.chart.plot.dial.StandardDialScale.equals : $d16 = r0.<org.jfree.chart.plot.dial.StandardDialScale: double tickLabelOffset>
+org.jfree.chart.plot.dial.StandardDialScale.equals : $z9 = specialinvoke r0.<org.jfree.chart.plot.dial.AbstractDialLayer: boolean equals(java.lang.Object)>(r1)
+org.jfree.chart.plot.dial.StandardDialScale.equals : $z5 = r0.<org.jfree.chart.plot.dial.StandardDialScale: boolean tickLabelsVisible>
+org.jfree.chart.plot.dial.StandardDialScale.equals : $r7 = r0.<org.jfree.chart.plot.dial.StandardDialScale: java.awt.Paint minorTickPaint>
+org.jfree.chart.plot.dial.StandardDialScale.equals : $d8 = r0.<org.jfree.chart.plot.dial.StandardDialScale: double tickRadius>
+org.jfree.chart.plot.dial.StandardDialScale.equals : $z0 = r1 instanceof org.jfree.chart.plot.dial.StandardDialScale
+org.jfree.chart.plot.dial.StandardDialScale.equals : $r11 = r0.<org.jfree.chart.plot.dial.StandardDialScale: java.awt.Font tickLabelFont>
+org.jfree.chart.plot.dial.StandardDialScale.equals : $d14 = r0.<org.jfree.chart.plot.dial.StandardDialScale: double minorTickLength>
+org.jfree.chart.plot.dial.StandardDialScale.equals : $r9 = r0.<org.jfree.chart.plot.dial.StandardDialScale: java.awt.Stroke minorTickStroke>
+org.jfree.chart.plot.dial.StandardDialScale.equals : r2 = (org.jfree.chart.plot.dial.StandardDialScale) r1
+org.jfree.chart.plot.dial.StandardDialScale.setExtent : r0.<org.jfree.chart.plot.dial.StandardDialScale: double extent> = d0
+org.jfree.chart.plot.dial.StandardDialScale.setExtent : $r1 = new org.jfree.chart.plot.dial.DialLayerChangeEvent

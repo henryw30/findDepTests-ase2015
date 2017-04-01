@@ -1,0 +1,20 @@
+org.jfree.data.Range.getUpperBound : $d0 = r0.<org.jfree.data.Range: double upper>
+org.jfree.data.Range.shiftWithNoZeroCrossing : $d4 = d0 + d1
+org.jfree.data.Range.shiftWithNoZeroCrossing : $b1 = d0 cmpg 0.0
+org.jfree.data.Range.shiftWithNoZeroCrossing : $b0 = d0 cmpl 0.0
+org.jfree.data.Range.shiftWithNoZeroCrossing : $d2 = d0 + d1
+org.jfree.data.Range.equals : $d2 = r0.<org.jfree.data.Range: double upper>
+org.jfree.data.Range.equals : $z0 = r1 instanceof org.jfree.data.Range
+org.jfree.data.Range.equals : $d0 = r0.<org.jfree.data.Range: double lower>
+org.jfree.data.Range.equals : return 1
+org.jfree.data.Range.equals : r2 = (org.jfree.data.Range) r1
+org.jfree.data.Range.getLowerBound : $d0 = r0.<org.jfree.data.Range: double lower>
+org.jfree.data.Range.shift : $r2 = new org.jfree.data.Range
+org.jfree.data.Range.shift : $d3 = virtualinvoke r0.<org.jfree.data.Range: double getUpperBound()>()
+org.jfree.data.Range.shift : $d7 = virtualinvoke r0.<org.jfree.data.Range: double getUpperBound()>()
+org.jfree.data.Range.shift : if z0 == 0 goto $r2 = new org.jfree.data.Range
+org.jfree.data.Range.shift : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r0, "base")
+org.jfree.data.Range.shift : $r1 = new org.jfree.data.Range
+org.jfree.data.Range.shift : $r1 = staticinvoke <org.jfree.data.Range: org.jfree.data.Range shift(org.jfree.data.Range,double,boolean)>(r0, d0, 0)
+org.jfree.chart.util.ParamChecks.nullNotPermitted : $r3 = new java.lang.IllegalArgumentException
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null goto return

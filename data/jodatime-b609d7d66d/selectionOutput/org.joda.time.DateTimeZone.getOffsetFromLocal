@@ -1,0 +1,30 @@
+org.joda.time.DateTimeZone.getOffsetFromLocal : i1 = virtualinvoke r0.<org.joda.time.DateTimeZone: int getOffset(long)>(l0) >>>>>>>> org.joda.time.DateTimeZone.getOffsetFromLocal : $l7 = (long) i1
+org.joda.time.DateTimeZone.getOffsetFromLocal : $l7 = (long) i1 >>>>>>>> org.joda.time.DateTimeZone.getOffsetFromLocal : l2 = l0 - $l7
+org.joda.time.DateTimeZone.getOffsetFromLocal : l2 = l0 - $l7 >>>>>>>> org.joda.time.DateTimeZone.getOffsetFromLocal : i3 = virtualinvoke r0.<org.joda.time.DateTimeZone: int getOffset(long)>(l2)
+org.joda.time.DateTimeZone.getOffsetFromLocal : i3 = virtualinvoke r0.<org.joda.time.DateTimeZone: int getOffset(long)>(l2) >>>>>>>> org.joda.time.DateTimeZone.getOffsetFromLocal : if i1 == i3
+org.joda.time.DateTimeZone.getOffsetFromLocal : if i1 == i3 >>>>>>>> org.joda.time.DateTimeZone.getOffsetFromLocal : $i8 = i1 - i3
+org.joda.time.DateTimeZone.getOffsetFromLocal : if i1 == i3 >>>>>>>> org.joda.time.DateTimeZone.getOffsetFromLocal : if i1 < 0
+org.joda.time.DateTimeZone.getOffsetFromLocal : if i1 < 0 >>>>>>>> org.joda.time.DateTimeZone.getOffsetFromLocal : l12 = virtualinvoke r0.<org.joda.time.DateTimeZone: long previousTransition(long)>(l2)
+org.joda.time.DateTimeZone.getOffsetFromLocal : if i1 < 0 >>>>>>>> org.joda.time.DateTimeZone.getOffsetFromLocal : return i3
+org.joda.time.DateTimeZone.getOffsetFromLocal : l12 = virtualinvoke r0.<org.joda.time.DateTimeZone: long previousTransition(long)>(l2) >>>>>>>> org.joda.time.DateTimeZone.getOffsetFromLocal : $b13 = l12 cmp l2
+org.joda.time.DateTimeZone.getOffsetFromLocal : $b13 = l12 cmp l2 >>>>>>>> org.joda.time.DateTimeZone.getOffsetFromLocal : if $b13 >= 0
+org.joda.time.DateTimeZone.getOffsetFromLocal : if $b13 >= 0 >>>>>>>> org.joda.time.DateTimeZone.getOffsetFromLocal : i14 = virtualinvoke r0.<org.joda.time.DateTimeZone: int getOffset(long)>(l12)
+org.joda.time.DateTimeZone.getOffsetFromLocal : if $b13 >= 0 >>>>>>>> org.joda.time.DateTimeZone.getOffsetFromLocal : return i3
+org.joda.time.DateTimeZone.getOffsetFromLocal : i14 = virtualinvoke r0.<org.joda.time.DateTimeZone: int getOffset(long)>(l12) >>>>>>>> org.joda.time.DateTimeZone.getOffsetFromLocal : i6 = i14 - i1
+org.joda.time.DateTimeZone.getOffsetFromLocal : i6 = i14 - i1 >>>>>>>> org.joda.time.DateTimeZone.getOffsetFromLocal : $l15 = l2 - l12
+org.joda.time.DateTimeZone.getOffsetFromLocal : $l15 = l2 - l12 >>>>>>>> org.joda.time.DateTimeZone.getOffsetFromLocal : $l16 = (long) i6
+org.joda.time.DateTimeZone.getOffsetFromLocal : $l16 = (long) i6 >>>>>>>> org.joda.time.DateTimeZone.getOffsetFromLocal : $b17 = $l15 cmp $l16
+org.joda.time.DateTimeZone.getOffsetFromLocal : $b17 = $l15 cmp $l16 >>>>>>>> org.joda.time.DateTimeZone.getOffsetFromLocal : if $b17 > 0
+org.joda.time.DateTimeZone.getOffsetFromLocal : if $b17 > 0 >>>>>>>> org.joda.time.DateTimeZone.getOffsetFromLocal : return i14
+org.joda.time.DateTimeZone.getOffsetFromLocal : if $b17 > 0 >>>>>>>> org.joda.time.DateTimeZone.getOffsetFromLocal : return i3
+org.joda.time.DateTimeZone.getOffsetFromLocal : $i8 = i1 - i3 >>>>>>>> org.joda.time.DateTimeZone.getOffsetFromLocal : if $i8 >= 0
+org.joda.time.DateTimeZone.getOffsetFromLocal : if $i8 >= 0 >>>>>>>> org.joda.time.DateTimeZone.getOffsetFromLocal : l4 = virtualinvoke r0.<org.joda.time.DateTimeZone: long nextTransition(long)>(l2)
+org.joda.time.DateTimeZone.getOffsetFromLocal : if $i8 >= 0 >>>>>>>> org.joda.time.DateTimeZone.getOffsetFromLocal : return i3
+org.joda.time.DateTimeZone.getOffsetFromLocal : l4 = virtualinvoke r0.<org.joda.time.DateTimeZone: long nextTransition(long)>(l2) >>>>>>>> org.joda.time.DateTimeZone.getOffsetFromLocal : $l9 = (long) i3
+org.joda.time.DateTimeZone.getOffsetFromLocal : $l9 = (long) i3 >>>>>>>> org.joda.time.DateTimeZone.getOffsetFromLocal : $l10 = l0 - $l9
+org.joda.time.DateTimeZone.getOffsetFromLocal : $l10 = l0 - $l9 >>>>>>>> org.joda.time.DateTimeZone.getOffsetFromLocal : l5 = virtualinvoke r0.<org.joda.time.DateTimeZone: long nextTransition(long)>($l10)
+org.joda.time.DateTimeZone.getOffsetFromLocal : l5 = virtualinvoke r0.<org.joda.time.DateTimeZone: long nextTransition(long)>($l10) >>>>>>>> org.joda.time.DateTimeZone.getOffsetFromLocal : $b11 = l4 cmp l5
+org.joda.time.DateTimeZone.getOffsetFromLocal : $b11 = l4 cmp l5 >>>>>>>> org.joda.time.DateTimeZone.getOffsetFromLocal : if $b11 == 0
+org.joda.time.DateTimeZone.getOffsetFromLocal : if $b11 == 0 >>>>>>>> org.joda.time.DateTimeZone.getOffsetFromLocal : return i1
+org.joda.time.DateTimeZone.getOffsetFromLocal : if $b11 == 0 >>>>>>>> org.joda.time.DateTimeZone.getOffsetFromLocal : goto [?= return i3]
+org.joda.time.DateTimeZone.getOffsetFromLocal : goto [?= return i3] >>>>>>>> org.joda.time.DateTimeZone.getOffsetFromLocal : return i3

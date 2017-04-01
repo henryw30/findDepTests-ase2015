@@ -1,0 +1,10 @@
+org.apache.xml.security.transforms.Transform.register : if r2 == null goto $r6 = <org.apache.xml.security.transforms.Transform: java.util.HashMap _transformHash>
+org.apache.xml.security.transforms.Transform.register : r2 = staticinvoke <org.apache.xml.security.transforms.Transform: java.lang.String getImplementingClass(java.lang.String)>(r0)
+org.apache.xml.security.transforms.Transform.register : $r6 = <org.apache.xml.security.transforms.Transform: java.util.HashMap _transformHash>
+org.apache.xml.security.transforms.Transform.getImplementingClass : goto [?= staticinvoke <edu.washington.cs.dt.impact.util.Tracer: void trace(java.lang.String,java.lang.String)>("$z0 = interfaceinvoke r2.<java.util.Iterator: boolean hasNext()>()", "org.apache.xml.security.transforms.Transform.getImplementingClass")]
+org.apache.xml.security.transforms.Transform.getImplementingClass : return null
+org.apache.xml.security.transforms.Transform.getImplementingClass : $z1 = virtualinvoke r3.<java.lang.String: boolean equals(java.lang.Object)>(r0)
+org.apache.xml.security.transforms.Transform.getImplementingClass : $r5 = interfaceinvoke r2.<java.util.Iterator: java.lang.Object next()>()
+org.apache.xml.security.transforms.Transform.getImplementingClass : goto [?= return null]
+org.apache.xml.security.transforms.Transform.getImplementingClass : $r1 = <org.apache.xml.security.transforms.Transform: java.util.HashMap _transformHash>
+org.apache.xml.security.transforms.Transform.getImplementingClass : $z0 = interfaceinvoke r2.<java.util.Iterator: boolean hasNext()>()

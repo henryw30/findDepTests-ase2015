@@ -1,0 +1,27 @@
+org.joda.time.convert.ConverterManager.checkAlterPartialConverters : if r1 == null goto return
+org.joda.time.convert.ConverterManager.checkAlterPartialConverters : r1 = staticinvoke <java.lang.System: java.lang.SecurityManager getSecurityManager()>()
+org.joda.time.convert.StringConverter.getSupportedType : return class "java/lang/String"
+org.joda.time.convert.ConverterSet.copyInto : $r2 = r0.<org.joda.time.convert.ConverterSet: org.joda.time.convert.Converter[] iConverters>
+org.joda.time.convert.ConverterManager.getPartialConverters : virtualinvoke r1.<org.joda.time.convert.ConverterSet: void copyInto(org.joda.time.convert.Converter[])>(r2)
+org.joda.time.convert.ConverterManager.getPartialConverters : return r2
+org.joda.time.convert.ConverterManager.getPartialConverters : r1 = r0.<org.joda.time.convert.ConverterManager: org.joda.time.convert.ConverterSet iPartialConverters>
+org.joda.time.convert.ConverterManager.getPartialConverters : $i0 = virtualinvoke r1.<org.joda.time.convert.ConverterSet: int size()>()
+org.joda.time.convert.ReadableInstantConverter.getSupportedType : return class "org/joda/time/ReadableInstant"
+org.joda.time.convert.ConverterSet.add : $r6 = interfaceinvoke r1.<org.joda.time.convert.Converter: java.lang.Class getSupportedType()>()
+org.joda.time.convert.ConverterSet.add : i1 = 0
+org.joda.time.convert.ConverterSet.add : r3 = r0.<org.joda.time.convert.ConverterSet: org.joda.time.convert.Converter[] iConverters>
+org.joda.time.convert.ConverterSet.add : $z0 = virtualinvoke r1.<java.lang.Object: boolean equals(java.lang.Object)>(r4)
+org.joda.time.convert.ConverterSet.add : r4 = r3[i1]
+org.joda.time.convert.ConverterSet.add : i0 = lengthof r3
+org.joda.time.convert.ConverterSet.add : return r0
+org.joda.time.convert.ConverterSet.add : if r2 == null goto return r0
+org.joda.time.convert.ConverterSet.add : r2[0] = null
+org.joda.time.convert.ConverterManager.addPartialConverter : if r1 != null goto r2 = newarray (org.joda.time.convert.PartialConverter)[1]
+org.joda.time.convert.ConverterManager.addPartialConverter : $r3 = r0.<org.joda.time.convert.ConverterManager: org.joda.time.convert.ConverterSet iPartialConverters>
+org.joda.time.convert.ConverterManager.addPartialConverter : r2 = newarray (org.joda.time.convert.PartialConverter)[1]
+org.joda.time.convert.ConverterManager.addPartialConverter : specialinvoke r0.<org.joda.time.convert.ConverterManager: void checkAlterPartialConverters()>()
+org.joda.time.convert.ConverterManager.addPartialConverter : $r5 = r2[0]
+org.joda.time.convert.ReadablePartialConverter.getSupportedType : return class "org/joda/time/ReadablePartial"
+org.joda.time.convert.ConverterManager.getInstance : $r2 = <org.joda.time.convert.ConverterManager: org.joda.time.convert.ConverterManager INSTANCE>
+org.joda.time.convert.ConverterManager.getInstance : $r0 = <org.joda.time.convert.ConverterManager: org.joda.time.convert.ConverterManager INSTANCE>
+org.joda.time.convert.ConverterSet.size : $r1 = r0.<org.joda.time.convert.ConverterSet: org.joda.time.convert.Converter[] iConverters>

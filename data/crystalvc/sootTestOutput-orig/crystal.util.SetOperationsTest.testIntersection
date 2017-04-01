@@ -1,0 +1,12 @@
+crystal.util.ValidInputChecker.checkNullInput : if r0 != null goto return
+crystal.util.SetOperations.intersection : staticinvoke <crystal.util.ValidInputChecker: void checkNullInput(java.lang.Object)>(r1)
+crystal.util.SetOperations.intersection : return r3
+crystal.util.SetOperations.intersection : goto [?= $z2 = interfaceinvoke r4.<java.util.Iterator: boolean hasNext()>()]
+crystal.util.SetOperations.intersection : interfaceinvoke r2.<java.util.Set: boolean addAll(java.util.Collection)>(r1)
+crystal.util.SetOperations.intersection : interfaceinvoke r2.<java.util.Set: boolean addAll(java.util.Collection)>(r0)
+crystal.util.SetOperations.intersection : staticinvoke <crystal.util.ValidInputChecker: void checkNullInput(java.lang.Object)>(r0)
+crystal.util.SetOperations.intersection : $z3 = interfaceinvoke r0.<java.util.Set: boolean contains(java.lang.Object)>(r5)
+crystal.util.SetOperations.intersection : r4 = interfaceinvoke r2.<java.util.Set: java.util.Iterator iterator()>()
+crystal.util.SetOperations.intersection : interfaceinvoke r3.<java.util.Set: boolean add(java.lang.Object)>(r5)
+crystal.util.SetOperations.intersection : $r6 = new java.util.HashSet
+crystal.util.SetOperations.intersection : $r7 = new java.util.HashSet

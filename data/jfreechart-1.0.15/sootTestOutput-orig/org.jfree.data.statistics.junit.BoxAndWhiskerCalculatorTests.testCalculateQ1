@@ -1,0 +1,33 @@
+org.jfree.data.statistics.BoxAndWhiskerCalculator.calculateQ1 : d0 = staticinvoke <org.jfree.data.statistics.Statistics: double calculateMedian(java.util.List,int,int)>(r0, 0, 0)
+org.jfree.data.statistics.BoxAndWhiskerCalculator.calculateQ1 : d0 = #NaN
+org.jfree.data.statistics.BoxAndWhiskerCalculator.calculateQ1 : $i2 = i0 / 2
+org.jfree.data.statistics.BoxAndWhiskerCalculator.calculateQ1 : return d0
+org.jfree.data.statistics.BoxAndWhiskerCalculator.calculateQ1 : if i0 <= 0 goto return d0
+org.jfree.data.statistics.BoxAndWhiskerCalculator.calculateQ1 : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r0, "values")
+org.jfree.data.statistics.BoxAndWhiskerCalculator.calculateQ1 : i0 = interfaceinvoke r0.<java.util.List: int size()>()
+org.jfree.data.statistics.BoxAndWhiskerCalculator.calculateQ1 : if i0 <= 1 goto d0 = staticinvoke <org.jfree.data.statistics.Statistics: double calculateMedian(java.util.List,int,int)>(r0, 0, 0)
+org.jfree.data.statistics.BoxAndWhiskerCalculator.calculateQ1 : $i3 = i0 / 2
+org.jfree.data.statistics.BoxAndWhiskerCalculator.calculateQ1 : $i1 = i0 % 2
+org.jfree.chart.util.ParamChecks.nullNotPermitted : $r3 = new java.lang.IllegalArgumentException
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null goto return
+org.jfree.data.statistics.Statistics.calculateMedian : if i2 <= 1 goto $r6 = interfaceinvoke r0.<java.util.List: java.lang.Object get(int)>(0)
+org.jfree.data.statistics.Statistics.calculateMedian : if z0 == 0 goto i2 = interfaceinvoke r0.<java.util.List: int size()>()
+org.jfree.data.statistics.Statistics.calculateMedian : d0 = #NaN
+org.jfree.data.statistics.Statistics.calculateMedian : $i8 = i2 / 2
+org.jfree.data.statistics.Statistics.calculateMedian : $r4 = interfaceinvoke r0.<java.util.List: java.lang.Object get(int)>(i2)
+org.jfree.data.statistics.Statistics.calculateMedian : if i2 <= 0 goto return d0
+org.jfree.data.statistics.Statistics.calculateMedian : $d1 = virtualinvoke r9.<java.lang.Number: double doubleValue()>()
+org.jfree.data.statistics.Statistics.calculateMedian : $d0 = staticinvoke <org.jfree.data.statistics.Statistics: double calculateMedian(java.util.List,int,int,boolean)>(r0, i0, i1, 1)
+org.jfree.data.statistics.Statistics.calculateMedian : i2 = i0
+org.jfree.data.statistics.Statistics.calculateMedian : $i6 = i2 / 2
+org.jfree.data.statistics.Statistics.calculateMedian : $i3 = i2 % 2
+org.jfree.data.statistics.Statistics.calculateMedian : return d0
+org.jfree.data.statistics.Statistics.calculateMedian : if z0 == 0 goto $i5 = i1 - i0
+org.jfree.data.statistics.Statistics.calculateMedian : goto [?= return d0]
+org.jfree.data.statistics.Statistics.calculateMedian : staticinvoke <java.util.Collections: void sort(java.util.List)>(r1)
+org.jfree.data.statistics.Statistics.calculateMedian : $r3 = new java.util.ArrayList
+org.jfree.data.statistics.Statistics.calculateMedian : d0 = staticinvoke <org.jfree.data.statistics.Statistics: double calculateMedian(java.util.List,boolean)>(r1, 0)
+org.jfree.data.statistics.Statistics.calculateMedian : i2 = interfaceinvoke r0.<java.util.List: int size()>()
+org.jfree.data.statistics.Statistics.calculateMedian : d0 = virtualinvoke r7.<java.lang.Number: double doubleValue()>()
+org.jfree.data.statistics.Statistics.calculateMedian : if r0 == null goto return d0
+org.jfree.data.statistics.Statistics.calculateMedian : $r6 = interfaceinvoke r0.<java.util.List: java.lang.Object get(int)>(0)

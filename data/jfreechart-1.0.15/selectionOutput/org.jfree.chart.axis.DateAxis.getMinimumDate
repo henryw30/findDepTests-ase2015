@@ -1,0 +1,13 @@
+org.jfree.chart.axis.DateAxis.getMinimumDate : n0 = null >>>>>>>> org.jfree.chart.axis.DateAxis.getMinimumDate : r1 = virtualinvoke r0.<org.jfree.chart.axis.DateAxis: org.jfree.data.Range getRange()>()
+org.jfree.chart.axis.DateAxis.getMinimumDate : r1 = virtualinvoke r0.<org.jfree.chart.axis.DateAxis: org.jfree.data.Range getRange()>() >>>>>>>> org.jfree.chart.axis.DateAxis.getMinimumDate : $z0 = r1 instanceof org.jfree.data.time.DateRange
+org.jfree.chart.axis.DateAxis.getMinimumDate : $z0 = r1 instanceof org.jfree.data.time.DateRange >>>>>>>> org.jfree.chart.axis.DateAxis.getMinimumDate : if $z0 == 0
+org.jfree.chart.axis.DateAxis.getMinimumDate : if $z0 == 0 >>>>>>>> org.jfree.chart.axis.DateAxis.getMinimumDate : r2 = (org.jfree.data.time.DateRange) r1
+org.jfree.chart.axis.DateAxis.getMinimumDate : if $z0 == 0 >>>>>>>> org.jfree.chart.axis.DateAxis.getMinimumDate : $r4 = new java.util.Date
+org.jfree.chart.axis.DateAxis.getMinimumDate : $r4 = new java.util.Date >>>>>>>> org.jfree.chart.axis.DateAxis.getMinimumDate : $d0 = virtualinvoke r1.<org.jfree.data.Range: double getLowerBound()>()
+org.jfree.chart.axis.DateAxis.getMinimumDate : $d0 = virtualinvoke r1.<org.jfree.data.Range: double getLowerBound()>() >>>>>>>> org.jfree.chart.axis.DateAxis.getMinimumDate : $l0 = (long) $d0
+org.jfree.chart.axis.DateAxis.getMinimumDate : $l0 = (long) $d0 >>>>>>>> org.jfree.chart.axis.DateAxis.getMinimumDate : specialinvoke $r4.<java.util.Date: void <init>(long)>($l0)
+org.jfree.chart.axis.DateAxis.getMinimumDate : specialinvoke $r4.<java.util.Date: void <init>(long)>($l0) >>>>>>>> org.jfree.chart.axis.DateAxis.getMinimumDate : r3 = $r4
+org.jfree.chart.axis.DateAxis.getMinimumDate : r3 = $r4 >>>>>>>> org.jfree.chart.axis.DateAxis.getMinimumDate : return r3
+org.jfree.chart.axis.DateAxis.getMinimumDate : r2 = (org.jfree.data.time.DateRange) r1 >>>>>>>> org.jfree.chart.axis.DateAxis.getMinimumDate : r3 = virtualinvoke r2.<org.jfree.data.time.DateRange: java.util.Date getLowerDate()>()
+org.jfree.chart.axis.DateAxis.getMinimumDate : r3 = virtualinvoke r2.<org.jfree.data.time.DateRange: java.util.Date getLowerDate()>() >>>>>>>> org.jfree.chart.axis.DateAxis.getMinimumDate : goto [?= return r3]
+org.jfree.chart.axis.DateAxis.getMinimumDate : goto [?= return r3] >>>>>>>> org.jfree.chart.axis.DateAxis.getMinimumDate : return r3

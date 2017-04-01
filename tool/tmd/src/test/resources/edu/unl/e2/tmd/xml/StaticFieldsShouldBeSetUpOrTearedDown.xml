@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<test-data>
+<test-code>
+        <description><![CDATA[
+	Writes a static field without setUp or tearDown methods.
+     ]]></description>
+        <expected-problems>1</expected-problems>
+        <code><![CDATA[
+public class BadTest {
+
+	private static int variable=4;
+	
+	@Test
+	public void testSomething() throws Exception {
+		
+		variable=4;
+		Person a= new Person("aPersonName");
+		
+		assertNotNull(a);
+	}
+	
+	@Test
+	public void testSomething2() throws Exception {
+
+		int b=variable;
+		Person a= new Person("aPerson");
+		
+		assertNotNull(a);
+	}
+	
+}
+     ]]></code>
+</test-code>
+
+<test-code>
+        <description><![CDATA[
+	If there is a setUp initializing the static field there is no violation.
+     ]]></description>
+        <expected-problems>0</expected-problems>
+        <code><![CDATA[
+public class BadTest {
+
+	private static int variable=4;
+	
+	@Before public void setUp(){
+		variable=5;
+	
+	}
+	
+	@Test
+	public void testSomething() throws Exception {
+		
+		variable=4;
+		Person a= new Person("aPersonName");
+		
+		assertNotNull(a);
+	}
+	
+	@Test
+	public void testSomething2() throws Exception {
+
+		int b=variable;
+		Person a= new Person("aPerson");
+		
+		assertNotNull(a);
+	}
+	
+}
+     ]]></code>
+</test-code>
+
+<test-code>
+        <description><![CDATA[
+	If there is a setUp and no tearDown but this method does not initialize the static field there is a violation.
+     ]]></description>
+        <expected-problems>1</expected-problems>
+        <code><![CDATA[
+public class BadTest {
+
+	private static int variable=4;
+	
+	@Before public void setUp(){	
+	}
+	
+	@Test
+	public void testSomething() throws Exception {
+		
+		variable=4;
+		Person a= new Person("aPersonName");
+		
+		assertNotNull(a);
+	}
+	
+	@Test
+	public void testSomething2() throws Exception {
+
+		int b=variable;
+		Person a= new Person("aPerson");
+		
+		assertNotNull(a);
+	}
+	
+}
+     ]]></code>
+</test-code>
+
+
+
+<test-code>
+        <description><![CDATA[
+	If there is a tearDown and no setUp but this method does not initialize the static field there is a violation.
+     ]]></description>
+        <expected-problems>1</expected-problems>
+        <code><![CDATA[
+public class BadTest {
+
+	private static int variable=4;
+	
+	@After public void tearDown(){	
+	}
+	
+	@Test
+	public void testSomething() throws Exception {
+		
+		variable=4;
+		Person a= new Person("aPersonName");
+		
+		assertNotNull(a);
+	}
+	
+	@Test
+	public void testSomething2() throws Exception {
+
+		int b=variable;
+		Person a= new Person("aPerson");
+		
+		assertNotNull(a);
+	}
+	
+}
+     ]]></code>
+</test-code>
+<test-code>
+        <description><![CDATA[
+	There is no setUp or tearDown but it just read static field.
+     ]]></description>
+        <expected-problems>0</expected-problems>
+        <code><![CDATA[
+public class BadTest {
+
+	private static int variable=4;
+	
+	@Test
+	public void testSomething() throws Exception {
+		
+		int b= variable;
+		Person a= new Person("aPersonName");
+		
+		assertNotNull(a);
+	}
+	
+	@Test
+	public void testSomething2() throws Exception {
+
+		int b=variable;
+		Person a= new Person("aPerson");
+		
+		assertNotNull(a);
+	}
+	
+}
+     ]]></code>
+</test-code>
+
+
+
+<test-code>
+        <description><![CDATA[
+	Recognize when the static field is overridden.
+     ]]></description>
+        <expected-problems>0</expected-problems>
+        <code><![CDATA[
+public class BadTest {
+
+	private static int variable=4;
+	
+	@Test
+	public void testSomething() throws Exception {
+		
+		String variable= "name";
+		Person a= new Person(variable);
+		
+		assertNotNull(a);
+	}
+	
+	@Test
+	public void testSomething2() throws Exception {
+
+		int b=variable;
+		Person a= new Person("aPerson");
+		
+		assertNotNull(a);
+	}
+	
+}
+     ]]></code>
+</test-code>
+
+<test-code>
+        <description><![CDATA[
+	
+     ]]></description>
+        <expected-problems>0</expected-problems>
+        <code><![CDATA[
+public class BadTest extends TestCase {
+
+	private static final boolean OLD_JDK;
+    static {
+        String str = System.getProperty("java.version");
+        boolean old = true;
+        if (str.length() > 3 &&
+            str.charAt(0) == '1' &&
+            str.charAt(1) == '.' &&
+            (str.charAt(2) == '4' || str.charAt(2) == '5' || str.charAt(2) == '6')) {
+            old = false;
+        }
+        OLD_JDK = old;
+    }
+    
+    public void testSomething(){
+    
+    }
+	
+}
+     ]]></code>
+</test-code>
+
+
+</test-data>

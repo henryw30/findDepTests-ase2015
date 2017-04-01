@@ -1,0 +1,46 @@
+org.jfree.chart.axis.ValueAxis.setDefaultAutoRange : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "range")
+org.jfree.chart.axis.ValueAxis.setDefaultAutoRange : $r2 = new org.jfree.chart.event.AxisChangeEvent
+org.jfree.chart.axis.ValueAxis.setDefaultAutoRange : r0.<org.jfree.chart.axis.ValueAxis: org.jfree.data.Range defaultAutoRange> = r1
+org.jfree.chart.axis.NumberTickUnit.valueToString : $r1 = r0.<org.jfree.chart.axis.NumberTickUnit: java.text.NumberFormat formatter>
+org.jfree.chart.axis.TickUnit.compareTo : $d0 = r0.<org.jfree.chart.axis.TickUnit: double size>
+org.jfree.chart.axis.TickUnit.compareTo : $z0 = r1 instanceof org.jfree.chart.axis.TickUnit
+org.jfree.chart.axis.TickUnit.compareTo : return 1
+org.jfree.chart.axis.TickUnit.compareTo : r2 = (org.jfree.chart.axis.TickUnit) r1
+org.jfree.chart.axis.TickUnit.getSize : $d0 = r0.<org.jfree.chart.axis.TickUnit: double size>
+org.jfree.chart.axis.LogAxis.createLogTickUnits : return r2
+org.jfree.chart.axis.LogAxis.createLogTickUnits : $r5 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.LogAxis.createLogTickUnits : $r1 = new org.jfree.chart.axis.TickUnits
+org.jfree.chart.axis.LogAxis.createLogTickUnits : $r11 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.LogAxis.createLogTickUnits : $r17 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.LogAxis.createLogTickUnits : $r15 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.LogAxis.createLogTickUnits : $r7 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.LogAxis.createLogTickUnits : $r4 = new org.jfree.chart.util.LogFormat
+org.jfree.chart.axis.LogAxis.createLogTickUnits : $r12 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.LogAxis.createLogTickUnits : $r13 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.LogAxis.createLogTickUnits : $r10 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.LogAxis.createLogTickUnits : $r6 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.LogAxis.createLogTickUnits : $r18 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.LogAxis.createLogTickUnits : $r16 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.LogAxis.createLogTickUnits : $r14 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.LogAxis.createLogTickUnits : $r9 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.LogAxis.createLogTickUnits : $r8 = new org.jfree.chart.axis.NumberTickUnit
+org.jfree.chart.axis.LogAxis.setTickUnit : if z0 == 0 goto return
+org.jfree.chart.axis.LogAxis.setTickUnit : $r2 = new org.jfree.chart.event.AxisChangeEvent
+org.jfree.chart.axis.LogAxis.setTickUnit : if z1 == 0 goto (branch)
+org.jfree.chart.axis.LogAxis.setTickUnit : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "unit")
+org.jfree.chart.axis.LogAxis.setTickUnit : r0.<org.jfree.chart.axis.LogAxis: org.jfree.chart.axis.NumberTickUnit tickUnit> = r1
+org.jfree.chart.axis.Axis.notifyListeners : $i1 = lengthof r2
+org.jfree.chart.axis.Axis.notifyListeners : $r3 = r0.<org.jfree.chart.axis.Axis: javax.swing.event.EventListenerList listenerList>
+org.jfree.chart.axis.TickUnits.add : $r3 = r0.<org.jfree.chart.axis.TickUnits: java.util.List tickUnits>
+org.jfree.chart.axis.TickUnits.add : if r1 != null goto $r3 = r0.<org.jfree.chart.axis.TickUnits: java.util.List tickUnits>
+org.jfree.chart.axis.TickUnits.add : $r4 = r0.<org.jfree.chart.axis.TickUnits: java.util.List tickUnits>
+org.jfree.chart.util.HexNumberFormat.format : return r4
+org.jfree.chart.util.HexNumberFormat.format : $r5 = staticinvoke <java.lang.Long: java.lang.String toHexString(long)>(l0)
+org.jfree.chart.util.HexNumberFormat.format : $r6 = new java.lang.StringBuffer
+org.jfree.chart.util.HexNumberFormat.format : if 0 >= i1 goto $i5 = 0
+org.jfree.chart.util.HexNumberFormat.format : i2 = 0
+org.jfree.chart.util.HexNumberFormat.format : virtualinvoke r4.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>(r3)
+org.jfree.chart.util.HexNumberFormat.format : $i3 = r0.<org.jfree.chart.util.HexNumberFormat: int m_numDigits>
+org.jfree.chart.util.HexNumberFormat.format : $l0 = (long) d0
+org.jfree.chart.util.HexNumberFormat.format : virtualinvoke r4.<java.lang.StringBuffer: java.lang.StringBuffer append(int)>(0)
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null goto return

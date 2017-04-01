@@ -1,0 +1,15 @@
+ant.Md5Task.getBytesFromFile : n0 = null >>>>>>>> ant.Md5Task.getBytesFromFile : $r4 = new java.io.FileInputStream
+ant.Md5Task.getBytesFromFile : $r4 = new java.io.FileInputStream >>>>>>>> ant.Md5Task.getBytesFromFile : specialinvoke $r4.<java.io.FileInputStream: void <init>(java.lang.String)>(r0)
+ant.Md5Task.getBytesFromFile : specialinvoke $r4.<java.io.FileInputStream: void <init>(java.lang.String)>(r0) >>>>>>>> ant.Md5Task.getBytesFromFile : r1 = $r4
+ant.Md5Task.getBytesFromFile : r1 = $r4 >>>>>>>> ant.Md5Task.getBytesFromFile : $r5 = new java.io.ByteArrayOutputStream
+ant.Md5Task.getBytesFromFile : $r5 = new java.io.ByteArrayOutputStream >>>>>>>> ant.Md5Task.getBytesFromFile : specialinvoke $r5.<java.io.ByteArrayOutputStream: void <init>()>()
+ant.Md5Task.getBytesFromFile : specialinvoke $r5.<java.io.ByteArrayOutputStream: void <init>()>() >>>>>>>> ant.Md5Task.getBytesFromFile : r2 = $r5
+ant.Md5Task.getBytesFromFile : r2 = $r5 >>>>>>>> ant.Md5Task.getBytesFromFile : r3 = newarray (byte)[1024]
+ant.Md5Task.getBytesFromFile : r3 = newarray (byte)[1024] >>>>>>>> ant.Md5Task.getBytesFromFile : $i1 = virtualinvoke r1.<java.io.FileInputStream: int read(byte[])>(r3)
+ant.Md5Task.getBytesFromFile : $i1 = virtualinvoke r1.<java.io.FileInputStream: int read(byte[])>(r3) >>>>>>>> ant.Md5Task.getBytesFromFile : i0 = $i1
+ant.Md5Task.getBytesFromFile : i0 = $i1 >>>>>>>> ant.Md5Task.getBytesFromFile : if $i1 <= 0
+ant.Md5Task.getBytesFromFile : if $i1 <= 0 >>>>>>>> ant.Md5Task.getBytesFromFile : virtualinvoke r2.<java.io.ByteArrayOutputStream: void write(byte[],int,int)>(r3, 0, i0)
+ant.Md5Task.getBytesFromFile : if $i1 <= 0 >>>>>>>> ant.Md5Task.getBytesFromFile : r6 = virtualinvoke r2.<java.io.ByteArrayOutputStream: byte[] toByteArray()>()
+ant.Md5Task.getBytesFromFile : r6 = virtualinvoke r2.<java.io.ByteArrayOutputStream: byte[] toByteArray()>() >>>>>>>> ant.Md5Task.getBytesFromFile : return r6
+ant.Md5Task.getBytesFromFile : virtualinvoke r2.<java.io.ByteArrayOutputStream: void write(byte[],int,int)>(r3, 0, i0) >>>>>>>> ant.Md5Task.getBytesFromFile : goto [?= $i1 = virtualinvoke r1.<java.io.FileInputStream: int read(byte[])>(r3)]
+ant.Md5Task.getBytesFromFile : goto [?= $i1 = virtualinvoke r1.<java.io.FileInputStream: int read(byte[])>(r3)] >>>>>>>> ant.Md5Task.getBytesFromFile : $i1 = virtualinvoke r1.<java.io.FileInputStream: int read(byte[])>(r3)

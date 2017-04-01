@@ -1,0 +1,20 @@
+org.joda.time.DateTimeUtils.isContiguous : if r0 != null >>>>>>>> org.joda.time.DateTimeUtils.isContiguous : $r3 = new java.lang.IllegalArgumentException
+org.joda.time.DateTimeUtils.isContiguous : if r0 != null >>>>>>>> org.joda.time.DateTimeUtils.isContiguous : r1 = null
+org.joda.time.DateTimeUtils.isContiguous : r1 = null >>>>>>>> org.joda.time.DateTimeUtils.isContiguous : i0 = 0
+org.joda.time.DateTimeUtils.isContiguous : i0 = 0 >>>>>>>> org.joda.time.DateTimeUtils.isContiguous : $i1 = interfaceinvoke r0.<org.joda.time.ReadablePartial: int size()>()
+org.joda.time.DateTimeUtils.isContiguous : $i1 = interfaceinvoke r0.<org.joda.time.ReadablePartial: int size()>() >>>>>>>> org.joda.time.DateTimeUtils.isContiguous : if i0 >= $i1
+org.joda.time.DateTimeUtils.isContiguous : if i0 >= $i1 >>>>>>>> org.joda.time.DateTimeUtils.isContiguous : r2 = interfaceinvoke r0.<org.joda.time.ReadablePartial: org.joda.time.DateTimeField getField(int)>(i0)
+org.joda.time.DateTimeUtils.isContiguous : if i0 >= $i1 >>>>>>>> org.joda.time.DateTimeUtils.isContiguous : return 1
+org.joda.time.DateTimeUtils.isContiguous : r2 = interfaceinvoke r0.<org.joda.time.ReadablePartial: org.joda.time.DateTimeField getField(int)>(i0) >>>>>>>> org.joda.time.DateTimeUtils.isContiguous : if i0 <= 0
+org.joda.time.DateTimeUtils.isContiguous : if i0 <= 0 >>>>>>>> org.joda.time.DateTimeUtils.isContiguous : $r4 = virtualinvoke r2.<org.joda.time.DateTimeField: org.joda.time.DurationField getRangeDurationField()>()
+org.joda.time.DateTimeUtils.isContiguous : if i0 <= 0 >>>>>>>> org.joda.time.DateTimeUtils.isContiguous : $r6 = virtualinvoke r2.<org.joda.time.DateTimeField: org.joda.time.DurationField getDurationField()>()
+org.joda.time.DateTimeUtils.isContiguous : $r6 = virtualinvoke r2.<org.joda.time.DateTimeField: org.joda.time.DurationField getDurationField()>() >>>>>>>> org.joda.time.DateTimeUtils.isContiguous : r1 = virtualinvoke $r6.<org.joda.time.DurationField: org.joda.time.DurationFieldType getType()>()
+org.joda.time.DateTimeUtils.isContiguous : r1 = virtualinvoke $r6.<org.joda.time.DurationField: org.joda.time.DurationFieldType getType()>() >>>>>>>> org.joda.time.DateTimeUtils.isContiguous : i0 = i0 + 1
+org.joda.time.DateTimeUtils.isContiguous : i0 = i0 + 1 >>>>>>>> org.joda.time.DateTimeUtils.isContiguous : goto [?= $i1 = interfaceinvoke r0.<org.joda.time.ReadablePartial: int size()>()]
+org.joda.time.DateTimeUtils.isContiguous : goto [?= $i1 = interfaceinvoke r0.<org.joda.time.ReadablePartial: int size()>()] >>>>>>>> org.joda.time.DateTimeUtils.isContiguous : $i1 = interfaceinvoke r0.<org.joda.time.ReadablePartial: int size()>()
+org.joda.time.DateTimeUtils.isContiguous : $r4 = virtualinvoke r2.<org.joda.time.DateTimeField: org.joda.time.DurationField getRangeDurationField()>() >>>>>>>> org.joda.time.DateTimeUtils.isContiguous : $r5 = virtualinvoke $r4.<org.joda.time.DurationField: org.joda.time.DurationFieldType getType()>()
+org.joda.time.DateTimeUtils.isContiguous : $r5 = virtualinvoke $r4.<org.joda.time.DurationField: org.joda.time.DurationFieldType getType()>() >>>>>>>> org.joda.time.DateTimeUtils.isContiguous : if $r5 == r1
+org.joda.time.DateTimeUtils.isContiguous : if $r5 == r1 >>>>>>>> org.joda.time.DateTimeUtils.isContiguous : return 0
+org.joda.time.DateTimeUtils.isContiguous : if $r5 == r1 >>>>>>>> org.joda.time.DateTimeUtils.isContiguous : $r6 = virtualinvoke r2.<org.joda.time.DateTimeField: org.joda.time.DurationField getDurationField()>()
+org.joda.time.DateTimeUtils.isContiguous : $r3 = new java.lang.IllegalArgumentException >>>>>>>> org.joda.time.DateTimeUtils.isContiguous : specialinvoke $r3.<java.lang.IllegalArgumentException: void <init>(java.lang.String)>("Partial must not be null")
+org.joda.time.DateTimeUtils.isContiguous : specialinvoke $r3.<java.lang.IllegalArgumentException: void <init>(java.lang.String)>("Partial must not be null") >>>>>>>> org.joda.time.DateTimeUtils.isContiguous : throw $r3

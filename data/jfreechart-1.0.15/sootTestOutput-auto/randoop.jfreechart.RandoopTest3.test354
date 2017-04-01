@@ -1,0 +1,48 @@
+org.jfree.chart.imagemap.StandardToolTipTagFragmentGenerator.generateToolTipFragment : $r2 = new java.lang.StringBuilder
+org.jfree.chart.entity.ChartEntity.getImageMapAreaTag : virtualinvoke r4.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>("/>")
+org.jfree.chart.entity.ChartEntity.getImageMapAreaTag : $r13 = virtualinvoke $r12.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>(" coords=\"")
+org.jfree.chart.entity.ChartEntity.getImageMapAreaTag : $r17 = r0.<org.jfree.chart.entity.ChartEntity: java.lang.String toolTipText>
+org.jfree.chart.entity.ChartEntity.getImageMapAreaTag : $r7 = r0.<org.jfree.chart.entity.ChartEntity: java.lang.String toolTipText>
+org.jfree.chart.entity.ChartEntity.getImageMapAreaTag : $r5 = r0.<org.jfree.chart.entity.ChartEntity: java.lang.String urlText>
+org.jfree.chart.entity.ChartEntity.getImageMapAreaTag : if z1 != 0 goto virtualinvoke r4.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>("/>")
+org.jfree.chart.entity.ChartEntity.getImageMapAreaTag : $z3 = virtualinvoke $r6.<java.lang.String: boolean equals(java.lang.Object)>("")
+org.jfree.chart.entity.ChartEntity.getImageMapAreaTag : $r26 = virtualinvoke r4.<java.lang.StringBuffer: java.lang.String toString()>()
+org.jfree.chart.entity.ChartEntity.getImageMapAreaTag : $r3 = new java.lang.StringBuffer
+org.jfree.chart.entity.ChartEntity.getImageMapAreaTag : $z5 = virtualinvoke $r8.<java.lang.String: boolean equals(java.lang.Object)>("")
+org.jfree.chart.entity.ChartEntity.getImageMapAreaTag : $r9 = virtualinvoke r4.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>("<area shape=\"")
+org.jfree.chart.entity.ChartEntity.getImageMapAreaTag : if z0 == 0 goto virtualinvoke r4.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>(" nohref=\"nohref\"")
+org.jfree.chart.entity.ChartEntity.getImageMapAreaTag : if z1 == 0 goto (branch)
+org.jfree.chart.entity.ChartEntity.getImageMapAreaTag : $r20 = r0.<org.jfree.chart.entity.ChartEntity: java.lang.String urlText>
+org.jfree.chart.entity.ChartEntity.getImageMapAreaTag : if z0 != 0 goto $r9 = virtualinvoke r4.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>("<area shape=\"")
+org.jfree.chart.renderer.xy.XYBarRenderer.getLegendBar : $r1 = r0.<org.jfree.chart.renderer.xy.XYBarRenderer: java.awt.Shape legendBar>
+org.jfree.chart.imagemap.StandardURLTagFragmentGenerator.generateURLFragment : $r2 = new java.lang.StringBuilder
+org.jfree.chart.entity.ChartEntity.getShapeType : return "rect"
+org.jfree.chart.entity.ChartEntity.getShapeType : $r1 = r0.<org.jfree.chart.entity.ChartEntity: java.awt.Shape area>
+org.jfree.chart.entity.ChartEntity.clone : $r1 = specialinvoke r0.<java.lang.Object: java.lang.Object clone()>()
+org.jfree.chart.entity.ChartEntity.getShapeCoords : $r1 = r0.<org.jfree.chart.entity.ChartEntity: java.awt.Shape area>
+org.jfree.chart.entity.ChartEntity.getShapeCoords : $r2 = r0.<org.jfree.chart.entity.ChartEntity: java.awt.Shape area>
+org.jfree.chart.entity.ContourEntity.clone : $r1 = specialinvoke r0.<org.jfree.chart.entity.ChartEntity: java.lang.Object clone()>()
+org.jfree.chart.renderer.xy.XYBarRenderer.getDefaultShadowsVisible : $z0 = <org.jfree.chart.renderer.xy.XYBarRenderer: boolean defaultShadowsVisible>
+org.jfree.chart.entity.ChartEntity.getRectCoords : $d0 = virtualinvoke r1.<java.awt.geom.Rectangle2D: double getX()>()
+org.jfree.chart.entity.ChartEntity.getRectCoords : $d1 = virtualinvoke r1.<java.awt.geom.Rectangle2D: double getY()>()
+org.jfree.chart.entity.ChartEntity.getRectCoords : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "rectangle")
+org.jfree.chart.entity.ChartEntity.getRectCoords : if i2 != i0 goto (branch)
+org.jfree.chart.entity.ChartEntity.getRectCoords : $d3 = virtualinvoke r1.<java.awt.geom.Rectangle2D: double getHeight()>()
+org.jfree.chart.entity.ChartEntity.getRectCoords : $d2 = virtualinvoke r1.<java.awt.geom.Rectangle2D: double getWidth()>()
+org.jfree.chart.entity.ChartEntity.getRectCoords : if i3 != i1 goto $r2 = new java.lang.StringBuilder
+org.jfree.chart.entity.ChartEntity.getRectCoords : $r2 = new java.lang.StringBuilder
+org.jfree.chart.renderer.xy.XYBarRenderer.getDefaultBarPainter : $r0 = <org.jfree.chart.renderer.xy.XYBarRenderer: org.jfree.chart.renderer.xy.XYBarPainter defaultBarPainter>
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null goto return
+org.jfree.chart.imagemap.ImageMapUtilities.htmlEscape : if c2 != 39 goto (branch)
+org.jfree.chart.imagemap.ImageMapUtilities.htmlEscape : i0 = virtualinvoke r0.<java.lang.String: int length()>()
+org.jfree.chart.imagemap.ImageMapUtilities.htmlEscape : c2 = virtualinvoke r0.<java.lang.String: char charAt(int)>(i1)
+org.jfree.chart.imagemap.ImageMapUtilities.htmlEscape : $r10 = virtualinvoke r1.<java.lang.StringBuffer: java.lang.String toString()>()
+org.jfree.chart.imagemap.ImageMapUtilities.htmlEscape : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r0, "input")
+org.jfree.chart.imagemap.ImageMapUtilities.htmlEscape : if c2 != 92 goto virtualinvoke r1.<java.lang.StringBuffer: java.lang.StringBuffer append(char)>(c2)
+org.jfree.chart.imagemap.ImageMapUtilities.htmlEscape : i1 = 0
+org.jfree.chart.imagemap.ImageMapUtilities.htmlEscape : if c2 != 38 goto (branch)
+org.jfree.chart.imagemap.ImageMapUtilities.htmlEscape : if c2 != 62 goto (branch)
+org.jfree.chart.imagemap.ImageMapUtilities.htmlEscape : if c2 != 60 goto (branch)
+org.jfree.chart.imagemap.ImageMapUtilities.htmlEscape : $r2 = new java.lang.StringBuffer
+org.jfree.chart.imagemap.ImageMapUtilities.htmlEscape : if c2 != 34 goto (branch)
+org.jfree.chart.imagemap.ImageMapUtilities.htmlEscape : virtualinvoke r1.<java.lang.StringBuffer: java.lang.StringBuffer append(char)>(c2)

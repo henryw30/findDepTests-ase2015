@@ -1,0 +1,40 @@
+org.joda.time.format.FormatUtils.appendPaddedInteger : i2 = (int) l0 >>>>>>>> org.joda.time.format.FormatUtils.appendPaddedInteger : $l4 = (long) i2
+org.joda.time.format.FormatUtils.appendPaddedInteger : $l4 = (long) i2 >>>>>>>> org.joda.time.format.FormatUtils.appendPaddedInteger : $b5 = $l4 cmp l0
+org.joda.time.format.FormatUtils.appendPaddedInteger : $b5 = $l4 cmp l0 >>>>>>>> org.joda.time.format.FormatUtils.appendPaddedInteger : if $b5 != 0
+org.joda.time.format.FormatUtils.appendPaddedInteger : if $b5 != 0 >>>>>>>> org.joda.time.format.FormatUtils.appendPaddedInteger : staticinvoke <org.joda.time.format.FormatUtils: void appendPaddedInteger(java.lang.StringBuffer,int,int)>(r0, i2, i1)
+org.joda.time.format.FormatUtils.appendPaddedInteger : if $b5 != 0 >>>>>>>> org.joda.time.format.FormatUtils.appendPaddedInteger : if i1 > 19
+org.joda.time.format.FormatUtils.appendPaddedInteger : if i1 > 19 >>>>>>>> org.joda.time.format.FormatUtils.appendPaddedInteger : $r1 = staticinvoke <java.lang.Long: java.lang.String toString(long)>(l0)
+org.joda.time.format.FormatUtils.appendPaddedInteger : if i1 > 19 >>>>>>>> org.joda.time.format.FormatUtils.appendPaddedInteger : $b6 = l0 cmp 0L
+org.joda.time.format.FormatUtils.appendPaddedInteger : $b6 = l0 cmp 0L >>>>>>>> org.joda.time.format.FormatUtils.appendPaddedInteger : if $b6 >= 0
+org.joda.time.format.FormatUtils.appendPaddedInteger : if $b6 >= 0 >>>>>>>> org.joda.time.format.FormatUtils.appendPaddedInteger : virtualinvoke r0.<java.lang.StringBuffer: java.lang.StringBuffer append(char)>(45)
+org.joda.time.format.FormatUtils.appendPaddedInteger : if $b6 >= 0 >>>>>>>> org.joda.time.format.FormatUtils.appendPaddedInteger : $d0 = (double) l0
+org.joda.time.format.FormatUtils.appendPaddedInteger : $d0 = (double) l0 >>>>>>>> org.joda.time.format.FormatUtils.appendPaddedInteger : $d1 = staticinvoke <java.lang.Math: double log(double)>($d0)
+org.joda.time.format.FormatUtils.appendPaddedInteger : $d1 = staticinvoke <java.lang.Math: double log(double)>($d0) >>>>>>>> org.joda.time.format.FormatUtils.appendPaddedInteger : $d2 = <org.joda.time.format.FormatUtils: double LOG_10>
+org.joda.time.format.FormatUtils.appendPaddedInteger : $d2 = <org.joda.time.format.FormatUtils: double LOG_10> >>>>>>>> org.joda.time.format.FormatUtils.appendPaddedInteger : $d3 = $d1 / $d2
+org.joda.time.format.FormatUtils.appendPaddedInteger : $d3 = $d1 / $d2 >>>>>>>> org.joda.time.format.FormatUtils.appendPaddedInteger : $i8 = (int) $d3
+org.joda.time.format.FormatUtils.appendPaddedInteger : $i8 = (int) $d3 >>>>>>>> org.joda.time.format.FormatUtils.appendPaddedInteger : i3 = $i8 + 1
+org.joda.time.format.FormatUtils.appendPaddedInteger : i3 = $i8 + 1 >>>>>>>> org.joda.time.format.FormatUtils.appendPaddedInteger : if i1 <= i3
+org.joda.time.format.FormatUtils.appendPaddedInteger : if i1 <= i3 >>>>>>>> org.joda.time.format.FormatUtils.appendPaddedInteger : virtualinvoke r0.<java.lang.StringBuffer: java.lang.StringBuffer append(char)>(48)
+org.joda.time.format.FormatUtils.appendPaddedInteger : if i1 <= i3 >>>>>>>> org.joda.time.format.FormatUtils.appendPaddedInteger : $r7 = staticinvoke <java.lang.Long: java.lang.String toString(long)>(l0)
+org.joda.time.format.FormatUtils.appendPaddedInteger : $r7 = staticinvoke <java.lang.Long: java.lang.String toString(long)>(l0) >>>>>>>> org.joda.time.format.FormatUtils.appendPaddedInteger : virtualinvoke r0.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>($r7)
+org.joda.time.format.FormatUtils.appendPaddedInteger : virtualinvoke r0.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>($r7) >>>>>>>> org.joda.time.format.FormatUtils.appendPaddedInteger : return
+org.joda.time.format.FormatUtils.appendPaddedInteger : virtualinvoke r0.<java.lang.StringBuffer: java.lang.StringBuffer append(char)>(48) >>>>>>>> org.joda.time.format.FormatUtils.appendPaddedInteger : i1 = i1 + -1
+org.joda.time.format.FormatUtils.appendPaddedInteger : i1 = i1 + -1 >>>>>>>> org.joda.time.format.FormatUtils.appendPaddedInteger : goto [?= (branch)]
+org.joda.time.format.FormatUtils.appendPaddedInteger : goto [?= (branch)] >>>>>>>> org.joda.time.format.FormatUtils.appendPaddedInteger : if i1 <= i3
+org.joda.time.format.FormatUtils.appendPaddedInteger : virtualinvoke r0.<java.lang.StringBuffer: java.lang.StringBuffer append(char)>(45) >>>>>>>> org.joda.time.format.FormatUtils.appendPaddedInteger : $b7 = l0 cmp -9223372036854775808L
+org.joda.time.format.FormatUtils.appendPaddedInteger : $b7 = l0 cmp -9223372036854775808L >>>>>>>> org.joda.time.format.FormatUtils.appendPaddedInteger : if $b7 == 0
+org.joda.time.format.FormatUtils.appendPaddedInteger : if $b7 == 0 >>>>>>>> org.joda.time.format.FormatUtils.appendPaddedInteger : l0 = neg l0
+org.joda.time.format.FormatUtils.appendPaddedInteger : if $b7 == 0 >>>>>>>> org.joda.time.format.FormatUtils.appendPaddedInteger : if i1 <= 19
+org.joda.time.format.FormatUtils.appendPaddedInteger : if i1 <= 19 >>>>>>>> org.joda.time.format.FormatUtils.appendPaddedInteger : virtualinvoke r0.<java.lang.StringBuffer: java.lang.StringBuffer append(char)>(48)
+org.joda.time.format.FormatUtils.appendPaddedInteger : if i1 <= 19 >>>>>>>> org.joda.time.format.FormatUtils.appendPaddedInteger : virtualinvoke r0.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>("9223372036854775808")
+org.joda.time.format.FormatUtils.appendPaddedInteger : virtualinvoke r0.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>("9223372036854775808") >>>>>>>> org.joda.time.format.FormatUtils.appendPaddedInteger : return
+org.joda.time.format.FormatUtils.appendPaddedInteger : virtualinvoke r0.<java.lang.StringBuffer: java.lang.StringBuffer append(char)>(48) >>>>>>>> org.joda.time.format.FormatUtils.appendPaddedInteger : i1 = i1 + -1
+org.joda.time.format.FormatUtils.appendPaddedInteger : i1 = i1 + -1 >>>>>>>> org.joda.time.format.FormatUtils.appendPaddedInteger : goto [?= (branch)]
+org.joda.time.format.FormatUtils.appendPaddedInteger : goto [?= (branch)] >>>>>>>> org.joda.time.format.FormatUtils.appendPaddedInteger : if i1 <= 19
+org.joda.time.format.FormatUtils.appendPaddedInteger : l0 = neg l0 >>>>>>>> org.joda.time.format.FormatUtils.appendPaddedInteger : goto [?= $d0 = (double) l0]
+org.joda.time.format.FormatUtils.appendPaddedInteger : goto [?= $d0 = (double) l0] >>>>>>>> org.joda.time.format.FormatUtils.appendPaddedInteger : $d0 = (double) l0
+org.joda.time.format.FormatUtils.appendPaddedInteger : $r1 = staticinvoke <java.lang.Long: java.lang.String toString(long)>(l0) >>>>>>>> org.joda.time.format.FormatUtils.appendPaddedInteger : virtualinvoke r0.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>($r1)
+org.joda.time.format.FormatUtils.appendPaddedInteger : virtualinvoke r0.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>($r1) >>>>>>>> org.joda.time.format.FormatUtils.appendPaddedInteger : goto [?= return]
+org.joda.time.format.FormatUtils.appendPaddedInteger : goto [?= return] >>>>>>>> org.joda.time.format.FormatUtils.appendPaddedInteger : return
+org.joda.time.format.FormatUtils.appendPaddedInteger : staticinvoke <org.joda.time.format.FormatUtils: void appendPaddedInteger(java.lang.StringBuffer,int,int)>(r0, i2, i1) >>>>>>>> org.joda.time.format.FormatUtils.appendPaddedInteger : goto [?= return]
+org.joda.time.format.FormatUtils.appendPaddedInteger : goto [?= return] >>>>>>>> org.joda.time.format.FormatUtils.appendPaddedInteger : return

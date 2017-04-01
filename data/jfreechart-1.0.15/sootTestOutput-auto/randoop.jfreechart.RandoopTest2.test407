@@ -1,0 +1,9 @@
+org.jfree.data.KeyedObjects2D.removeColumn : $r5 = new org.jfree.data.UnknownKeyException
+org.jfree.data.KeyedObjects2D.removeColumn : if i0 >= 0 goto $r10 = r0.<org.jfree.data.KeyedObjects2D: java.util.List rows>
+org.jfree.data.KeyedObjects2D.removeColumn : i0 = virtualinvoke r0.<org.jfree.data.KeyedObjects2D: int getColumnIndex(java.lang.Comparable)>(r1)
+org.jfree.data.KeyedObjects2D.getColumnIndex : staticinvoke <org.jfree.chart.util.ParamChecks: void nullNotPermitted(java.lang.Object,java.lang.String)>(r1, "key")
+org.jfree.data.KeyedObjects2D.getColumnIndex : $r2 = r0.<org.jfree.data.KeyedObjects2D: java.util.List columnKeys>
+org.jfree.chart.util.ParamChecks.nullNotPermitted : if r0 != null goto return
+org.jfree.data.KeyedObjects2D.clear : $r1 = r0.<org.jfree.data.KeyedObjects2D: java.util.List rowKeys>
+org.jfree.data.KeyedObjects2D.clear : $r3 = r0.<org.jfree.data.KeyedObjects2D: java.util.List rows>
+org.jfree.data.KeyedObjects2D.clear : $r2 = r0.<org.jfree.data.KeyedObjects2D: java.util.List columnKeys>

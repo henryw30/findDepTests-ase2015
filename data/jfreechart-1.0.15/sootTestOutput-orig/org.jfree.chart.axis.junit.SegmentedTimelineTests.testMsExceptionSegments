@@ -1,0 +1,83 @@
+org.jfree.chart.axis.SegmentedTimeline.getExceptionSegments : $r1 = r0.<org.jfree.chart.axis.SegmentedTimeline: java.util.List exceptionSegments>
+org.jfree.chart.axis.SegmentedTimeline.getSegmentSize : $l0 = r0.<org.jfree.chart.axis.SegmentedTimeline: long segmentSize>
+org.jfree.chart.axis.SegmentedTimeline.newFifteenMinuteTimeline : $r0 = new org.jfree.chart.axis.SegmentedTimeline
+org.jfree.chart.axis.SegmentedTimeline.newFifteenMinuteTimeline : $r2 = staticinvoke <org.jfree.chart.axis.SegmentedTimeline: org.jfree.chart.axis.SegmentedTimeline newMondayThroughFridayTimeline()>()
+org.jfree.chart.axis.SegmentedTimeline.newFifteenMinuteTimeline : $l1 = virtualinvoke r1.<org.jfree.chart.axis.SegmentedTimeline: long getSegmentSize()>()
+org.jfree.chart.axis.SegmentedTimeline.newFifteenMinuteTimeline : $l0 = staticinvoke <org.jfree.chart.axis.SegmentedTimeline: long firstMondayAfter1900()>()
+org.jfree.chart.axis.SegmentedTimeline.newFifteenMinuteTimeline : return r1
+org.jfree.chart.axis.SegmentedTimeline.newMondayThroughFridayTimeline : $r0 = new org.jfree.chart.axis.SegmentedTimeline
+org.jfree.chart.axis.SegmentedTimeline.newMondayThroughFridayTimeline : $l0 = staticinvoke <org.jfree.chart.axis.SegmentedTimeline: long firstMondayAfter1900()>()
+org.jfree.chart.axis.SegmentedTimeline.newMondayThroughFridayTimeline : return r1
+org.jfree.chart.axis.SegmentedTimeline$Segment.calculateSegmentNumber : $l5 = staticinvoke <org.jfree.chart.axis.SegmentedTimeline: long access$100(org.jfree.chart.axis.SegmentedTimeline)>($r3)
+org.jfree.chart.axis.SegmentedTimeline$Segment.calculateSegmentNumber : $r1 = r0.<org.jfree.chart.axis.SegmentedTimeline$Segment: org.jfree.chart.axis.SegmentedTimeline this$0>
+org.jfree.chart.axis.SegmentedTimeline$Segment.calculateSegmentNumber : $r2 = r0.<org.jfree.chart.axis.SegmentedTimeline$Segment: org.jfree.chart.axis.SegmentedTimeline this$0>
+org.jfree.chart.axis.SegmentedTimeline$Segment.getSegmentNumberRelativeToGroup : $i2 = staticinvoke <org.jfree.chart.axis.SegmentedTimeline: int access$300(org.jfree.chart.axis.SegmentedTimeline)>($r1)
+org.jfree.chart.axis.SegmentedTimeline$Segment.getSegmentNumberRelativeToGroup : $b4 = l0 cmp 0L
+org.jfree.chart.axis.SegmentedTimeline$Segment.getSegmentNumberRelativeToGroup : return l0
+org.jfree.chart.axis.SegmentedTimeline$Segment.getSegmentNumberRelativeToGroup : $l1 = r0.<org.jfree.chart.axis.SegmentedTimeline$Segment: long segmentNumber>
+org.jfree.chart.axis.SegmentedTimeline.addException : i0 = specialinvoke r0.<org.jfree.chart.axis.SegmentedTimeline: int binarySearchExceptionSegments(org.jfree.chart.axis.SegmentedTimeline$Segment)>(r1)
+org.jfree.chart.axis.SegmentedTimeline.addException : $r1 = new org.jfree.chart.axis.SegmentedTimeline$Segment
+org.jfree.chart.axis.SegmentedTimeline.addException : $r2 = r0.<org.jfree.chart.axis.SegmentedTimeline: java.util.List exceptionSegments>
+org.jfree.chart.axis.SegmentedTimeline.addException : $z0 = virtualinvoke r1.<org.jfree.chart.axis.SegmentedTimeline$Segment: boolean inIncludeSegments()>()
+org.jfree.chart.axis.SegmentedTimeline.access$400 : $i0 = specialinvoke r0.<org.jfree.chart.axis.SegmentedTimeline: int binarySearchExceptionSegments(org.jfree.chart.axis.SegmentedTimeline$Segment)>(r1)
+org.jfree.chart.axis.SegmentedTimeline.getExceptionSegmentCount : return 0L
+org.jfree.chart.axis.SegmentedTimeline.getExceptionSegmentCount : if r3 == null goto (branch)
+org.jfree.chart.axis.SegmentedTimeline.getExceptionSegmentCount : goto [?= staticinvoke <edu.washington.cs.dt.impact.util.Tracer: void trace(java.lang.String,java.lang.String)>("$z0 = interfaceinvoke r1.<java.util.Iterator: boolean hasNext()>()", "org.jfree.chart.axis.SegmentedTimeline.getExceptionSegmentCount")]
+org.jfree.chart.axis.SegmentedTimeline.getExceptionSegmentCount : i2 = 0
+org.jfree.chart.axis.SegmentedTimeline.getExceptionSegmentCount : $l7 = (long) i2
+org.jfree.chart.axis.SegmentedTimeline.getExceptionSegmentCount : $l4 = (long) i2
+org.jfree.chart.axis.SegmentedTimeline.getExceptionSegmentCount : $b3 = l1 cmp l0
+org.jfree.chart.axis.SegmentedTimeline.getExceptionSegmentCount : $z0 = interfaceinvoke r1.<java.util.Iterator: boolean hasNext()>()
+org.jfree.chart.axis.SegmentedTimeline.getExceptionSegmentCount : $r4 = r0.<org.jfree.chart.axis.SegmentedTimeline: java.util.List exceptionSegments>
+org.jfree.chart.axis.SegmentedTimeline.getExceptionSegmentCount : r3 = virtualinvoke r2.<org.jfree.chart.axis.SegmentedTimeline$Segment: org.jfree.chart.axis.SegmentedTimeline$Segment intersect(long,long)>(l0, l1)
+org.jfree.chart.axis.SegmentedTimeline.getExceptionSegmentCount : $r5 = interfaceinvoke r1.<java.util.Iterator: java.lang.Object next()>()
+org.jfree.chart.axis.SegmentedTimeline$Segment.inExceptionSegments : $r1 = r0.<org.jfree.chart.axis.SegmentedTimeline$Segment: org.jfree.chart.axis.SegmentedTimeline this$0>
+org.jfree.chart.axis.SegmentedTimeline.setBaseTimeline : r0.<org.jfree.chart.axis.SegmentedTimeline: org.jfree.chart.axis.SegmentedTimeline baseTimeline> = r1
+org.jfree.chart.axis.SegmentedTimeline.setBaseTimeline : if r1 == null goto r0.<org.jfree.chart.axis.SegmentedTimeline: org.jfree.chart.axis.SegmentedTimeline baseTimeline> = r1
+org.jfree.chart.axis.SegmentedTimeline.setBaseTimeline : $l0 = virtualinvoke r1.<org.jfree.chart.axis.SegmentedTimeline: long getSegmentSize()>()
+org.jfree.chart.axis.SegmentedTimeline.setBaseTimeline : $l3 = virtualinvoke r1.<org.jfree.chart.axis.SegmentedTimeline: long getStartTime()>()
+org.jfree.chart.axis.SegmentedTimeline.setBaseTimeline : $l11 = virtualinvoke r1.<org.jfree.chart.axis.SegmentedTimeline: long getStartTime()>()
+org.jfree.chart.axis.SegmentedTimeline.setBaseTimeline : $l6 = virtualinvoke r1.<org.jfree.chart.axis.SegmentedTimeline: long getSegmentSize()>()
+org.jfree.chart.axis.SegmentedTimeline.setBaseTimeline : $l10 = r0.<org.jfree.chart.axis.SegmentedTimeline: long startTime>
+org.jfree.chart.axis.SegmentedTimeline$Segment.contains : $l0 = virtualinvoke r1.<org.jfree.chart.axis.SegmentedTimeline$Segment: long getSegmentStart()>()
+org.jfree.chart.axis.SegmentedTimeline$Segment.contains : $l2 = r0.<org.jfree.chart.axis.SegmentedTimeline$Segment: long segmentStart>
+org.jfree.chart.axis.SegmentedTimeline.access$200 : $i0 = r0.<org.jfree.chart.axis.SegmentedTimeline: int segmentsIncluded>
+org.jfree.chart.axis.SegmentedTimeline.access$300 : $i0 = r0.<org.jfree.chart.axis.SegmentedTimeline: int groupSegmentCount>
+org.jfree.chart.axis.SegmentedTimeline$Segment.before : $l0 = r0.<org.jfree.chart.axis.SegmentedTimeline$Segment: long segmentEnd>
+org.jfree.chart.axis.SegmentedTimeline$Segment.getSegmentCount : return 1L
+org.jfree.chart.axis.SegmentedTimeline$Segment.intersect : return null
+org.jfree.chart.axis.SegmentedTimeline$Segment.intersect : return r0
+org.jfree.chart.axis.SegmentedTimeline$Segment.intersect : $l2 = r0.<org.jfree.chart.axis.SegmentedTimeline$Segment: long segmentStart>
+org.jfree.chart.axis.SegmentedTimeline$Segment.getSegmentStart : $l0 = r0.<org.jfree.chart.axis.SegmentedTimeline$Segment: long segmentStart>
+org.jfree.chart.axis.SegmentedTimeline.firstMondayAfter1900 : $r8 = new java.util.GregorianCalendar
+org.jfree.chart.axis.SegmentedTimeline.firstMondayAfter1900 : $i1 = virtualinvoke r3.<java.util.Calendar: int get(int)>(7)
+org.jfree.chart.axis.SegmentedTimeline.firstMondayAfter1900 : $r4 = new java.util.SimpleTimeZone
+org.jfree.chart.axis.SegmentedTimeline.firstMondayAfter1900 : virtualinvoke r3.<java.util.Calendar: void set(int,int,int,int,int,int)>(1900, 0, 1, 0, 0, 0)
+org.jfree.chart.axis.SegmentedTimeline.firstMondayAfter1900 : virtualinvoke r3.<java.util.Calendar: void set(int,int)>(14, 0)
+org.jfree.chart.axis.SegmentedTimeline.firstMondayAfter1900 : $r9 = virtualinvoke r3.<java.util.Calendar: java.util.Date getTime()>()
+org.jfree.chart.axis.SegmentedTimeline.firstMondayAfter1900 : $r0 = staticinvoke <java.util.TimeZone: java.util.TimeZone getDefault()>()
+org.jfree.chart.axis.SegmentedTimeline$Segment.inIncludeSegments : $i1 = staticinvoke <org.jfree.chart.axis.SegmentedTimeline: int access$200(org.jfree.chart.axis.SegmentedTimeline)>($r1)
+org.jfree.chart.axis.SegmentedTimeline$Segment.inIncludeSegments : return 0
+org.jfree.chart.axis.SegmentedTimeline$Segment.inIncludeSegments : $l0 = specialinvoke r0.<org.jfree.chart.axis.SegmentedTimeline$Segment: long getSegmentNumberRelativeToGroup()>()
+org.jfree.chart.axis.SegmentedTimeline$Segment.inIncludeSegments : $z0 = virtualinvoke r0.<org.jfree.chart.axis.SegmentedTimeline$Segment: boolean inExceptionSegments()>()
+org.jfree.chart.axis.SegmentedTimeline.getStartTime : $l0 = r0.<org.jfree.chart.axis.SegmentedTimeline: long startTime>
+org.jfree.chart.axis.SegmentedTimeline$Segment.after : $l0 = r0.<org.jfree.chart.axis.SegmentedTimeline$Segment: long segmentStart>
+org.jfree.chart.axis.SegmentedTimeline.setStartTime : r0.<org.jfree.chart.axis.SegmentedTimeline: long startTime> = l0
+org.jfree.chart.axis.SegmentedTimeline.setExceptionSegments : r0.<org.jfree.chart.axis.SegmentedTimeline: java.util.List exceptionSegments> = r1
+org.jfree.chart.axis.SegmentedTimeline.binarySearchExceptionSegments : i1 = i2 - 1
+org.jfree.chart.axis.SegmentedTimeline.binarySearchExceptionSegments : $z0 = virtualinvoke r1.<org.jfree.chart.axis.SegmentedTimeline$Segment: boolean contains(org.jfree.chart.axis.SegmentedTimeline$Segment)>(r2)
+org.jfree.chart.axis.SegmentedTimeline.binarySearchExceptionSegments : $r3 = r0.<org.jfree.chart.axis.SegmentedTimeline: java.util.List exceptionSegments>
+org.jfree.chart.axis.SegmentedTimeline.binarySearchExceptionSegments : i0 = i2 + 1
+org.jfree.chart.axis.SegmentedTimeline.binarySearchExceptionSegments : $z3 = virtualinvoke r2.<org.jfree.chart.axis.SegmentedTimeline$Segment: boolean after(org.jfree.chart.axis.SegmentedTimeline$Segment)>(r1)
+org.jfree.chart.axis.SegmentedTimeline.binarySearchExceptionSegments : $z2 = virtualinvoke r2.<org.jfree.chart.axis.SegmentedTimeline$Segment: boolean before(org.jfree.chart.axis.SegmentedTimeline$Segment)>(r1)
+org.jfree.chart.axis.SegmentedTimeline.binarySearchExceptionSegments : $i5 = i0 + 1
+org.jfree.chart.axis.SegmentedTimeline.binarySearchExceptionSegments : i0 = 0
+org.jfree.chart.axis.SegmentedTimeline.binarySearchExceptionSegments : if i0 > i1 goto $i5 = i0 + 1
+org.jfree.chart.axis.SegmentedTimeline.binarySearchExceptionSegments : $i4 = i0 + i1
+org.jfree.chart.axis.SegmentedTimeline.binarySearchExceptionSegments : $r4 = r0.<org.jfree.chart.axis.SegmentedTimeline: java.util.List exceptionSegments>
+org.jfree.chart.axis.SegmentedTimeline.binarySearchExceptionSegments : goto [?= staticinvoke <edu.washington.cs.dt.impact.util.Tracer: void trace(java.lang.String,java.lang.String)>("if i0 > i1 goto $i5 = i0 + 1", "org.jfree.chart.axis.SegmentedTimeline.binarySearchExceptionSegments")]
+org.jfree.chart.axis.SegmentedTimeline.binarySearchExceptionSegments : return i2
+org.jfree.chart.axis.SegmentedTimeline.access$100 : $l0 = r0.<org.jfree.chart.axis.SegmentedTimeline: long segmentSize>
+org.jfree.chart.axis.SegmentedTimeline.access$000 : $l0 = r0.<org.jfree.chart.axis.SegmentedTimeline: long startTime>
+org.jfree.chart.axis.SegmentedTimeline.getSegment : $r1 = new org.jfree.chart.axis.SegmentedTimeline$Segment
+org.jfree.chart.axis.SegmentedTimeline$Segment.getSegmentEnd : $l0 = r0.<org.jfree.chart.axis.SegmentedTimeline$Segment: long segmentEnd>

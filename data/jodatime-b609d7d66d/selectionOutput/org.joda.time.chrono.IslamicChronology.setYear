@@ -1,0 +1,12 @@
+org.joda.time.chrono.IslamicChronology.setYear : i2 = virtualinvoke r0.<org.joda.time.chrono.IslamicChronology: int getYear(long)>(l0) >>>>>>>> org.joda.time.chrono.IslamicChronology.setYear : i3 = virtualinvoke r0.<org.joda.time.chrono.IslamicChronology: int getDayOfYear(long,int)>(l0, i2)
+org.joda.time.chrono.IslamicChronology.setYear : i3 = virtualinvoke r0.<org.joda.time.chrono.IslamicChronology: int getDayOfYear(long,int)>(l0, i2) >>>>>>>> org.joda.time.chrono.IslamicChronology.setYear : i4 = virtualinvoke r0.<org.joda.time.chrono.IslamicChronology: int getMillisOfDay(long)>(l0)
+org.joda.time.chrono.IslamicChronology.setYear : i4 = virtualinvoke r0.<org.joda.time.chrono.IslamicChronology: int getMillisOfDay(long)>(l0) >>>>>>>> org.joda.time.chrono.IslamicChronology.setYear : if i3 <= 354
+org.joda.time.chrono.IslamicChronology.setYear : if i3 <= 354 >>>>>>>> org.joda.time.chrono.IslamicChronology.setYear : $z0 = virtualinvoke r0.<org.joda.time.chrono.IslamicChronology: boolean isLeapYear(int)>(i1)
+org.joda.time.chrono.IslamicChronology.setYear : if i3 <= 354 >>>>>>>> org.joda.time.chrono.IslamicChronology.setYear : l5 = virtualinvoke r0.<org.joda.time.chrono.IslamicChronology: long getYearMonthDayMillis(int,int,int)>(i1, 1, i3)
+org.joda.time.chrono.IslamicChronology.setYear : l5 = virtualinvoke r0.<org.joda.time.chrono.IslamicChronology: long getYearMonthDayMillis(int,int,int)>(i1, 1, i3) >>>>>>>> org.joda.time.chrono.IslamicChronology.setYear : $l6 = (long) i4
+org.joda.time.chrono.IslamicChronology.setYear : $l6 = (long) i4 >>>>>>>> org.joda.time.chrono.IslamicChronology.setYear : l7 = l5 + $l6
+org.joda.time.chrono.IslamicChronology.setYear : l7 = l5 + $l6 >>>>>>>> org.joda.time.chrono.IslamicChronology.setYear : return l7
+org.joda.time.chrono.IslamicChronology.setYear : $z0 = virtualinvoke r0.<org.joda.time.chrono.IslamicChronology: boolean isLeapYear(int)>(i1) >>>>>>>> org.joda.time.chrono.IslamicChronology.setYear : if $z0 != 0
+org.joda.time.chrono.IslamicChronology.setYear : if $z0 != 0 >>>>>>>> org.joda.time.chrono.IslamicChronology.setYear : i3 = i3 + -1
+org.joda.time.chrono.IslamicChronology.setYear : if $z0 != 0 >>>>>>>> org.joda.time.chrono.IslamicChronology.setYear : l5 = virtualinvoke r0.<org.joda.time.chrono.IslamicChronology: long getYearMonthDayMillis(int,int,int)>(i1, 1, i3)
+org.joda.time.chrono.IslamicChronology.setYear : i3 = i3 + -1 >>>>>>>> org.joda.time.chrono.IslamicChronology.setYear : l5 = virtualinvoke r0.<org.joda.time.chrono.IslamicChronology: long getYearMonthDayMillis(int,int,int)>(i1, 1, i3)

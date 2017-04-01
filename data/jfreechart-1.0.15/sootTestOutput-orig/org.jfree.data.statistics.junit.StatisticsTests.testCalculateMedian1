@@ -1,0 +1,18 @@
+org.jfree.data.statistics.Statistics.calculateMedian : if i2 <= 1 goto $r6 = interfaceinvoke r0.<java.util.List: java.lang.Object get(int)>(0)
+org.jfree.data.statistics.Statistics.calculateMedian : if z0 == 0 goto i2 = interfaceinvoke r0.<java.util.List: int size()>()
+org.jfree.data.statistics.Statistics.calculateMedian : d0 = #NaN
+org.jfree.data.statistics.Statistics.calculateMedian : r0 = r1
+org.jfree.data.statistics.Statistics.calculateMedian : i0 = interfaceinvoke r0.<java.util.List: int size()>()
+org.jfree.data.statistics.Statistics.calculateMedian : $r3 = interfaceinvoke r0.<java.util.List: java.lang.Object get(int)>(i1)
+org.jfree.data.statistics.Statistics.calculateMedian : if i2 <= 0 goto return d0
+org.jfree.data.statistics.Statistics.calculateMedian : i1 = 0
+org.jfree.data.statistics.Statistics.calculateMedian : $i3 = i2 % 2
+org.jfree.data.statistics.Statistics.calculateMedian : return d0
+org.jfree.data.statistics.Statistics.calculateMedian : goto [?= return d0]
+org.jfree.data.statistics.Statistics.calculateMedian : $d0 = staticinvoke <org.jfree.data.statistics.Statistics: double calculateMedian(java.util.List,boolean)>(r0, 1)
+org.jfree.data.statistics.Statistics.calculateMedian : staticinvoke <java.util.Collections: void sort(java.util.List)>(r1)
+org.jfree.data.statistics.Statistics.calculateMedian : $r2 = new java.util.ArrayList
+org.jfree.data.statistics.Statistics.calculateMedian : i2 = interfaceinvoke r0.<java.util.List: int size()>()
+org.jfree.data.statistics.Statistics.calculateMedian : d0 = virtualinvoke r7.<java.lang.Number: double doubleValue()>()
+org.jfree.data.statistics.Statistics.calculateMedian : if r0 == null goto return d0
+org.jfree.data.statistics.Statistics.calculateMedian : $r6 = interfaceinvoke r0.<java.util.List: java.lang.Object get(int)>(0)
